@@ -1,0 +1,355 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+               "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--
+  Licensed to the Apache Software Foundation (ASF) under one
+  or more contributor license agreements.  See the NOTICE file
+  distributed with this work for additional information
+  regarding copyright ownership.  The ASF licenses this file
+  to you under the Apache License, Version 2.0 (the
+  "License"); you may not use this file except in compliance
+  with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing,
+  software distributed under the License is distributed on an
+  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  KIND, either express or implied.  See the License for the
+  specific language governing permissions and limitations
+  under the License. 
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" href="../style/bootstrap-1-3-0-min.css" type="text/css" />
+  <link rel="stylesheet" href="../style/style.css" type="text/css" />
+        <title>Experimental Release Guide (DRAFT) - Apache Incubator</title>
+  
+ </head>
+ <body>
+ <div class="container">
+  <div class="row">
+<div class="span12">
+  <a href="http://www.apache.org/"><img src="http://incubator.apache.org/images/asf_logo_wide_small.png" alt="The Apache Software Foundation" border="0" style="margin-top: 2px" width="62%"/></a>
+</div>
+<div class="span4">
+<a href="http://incubator.apache.org/"><img src="../images/egg-logo2.png" alt="Apache Incubator" border="0"/></a>
+</div>
+</div>
+  <div class="row"><div class="span16"><hr noshade="noshade" size="1"/></div></div>
+  
+  <div class="row">
+   <div class="span4">
+    <form action="http://www.google.com/search" method="get">
+     <input value="incubator.apache.org" name="sitesearch" type="hidden"/>
+     <input size="20" name="q" id="query" type="text" value="search..."
+      onclick="if(this.value == 'search...') {this.value = ''}"/>
+     <input name="Search" value="Go" type="submit"/>
+    </form>
+          <div class="menuheader">General</div>
+    <menu compact="compact">
+          <li><a href="../index.html">Welcome</a></li> 
+          <li><a href="../incubation/Process_Description.html">Incubation Overview</a></li> 
+          <li><a href="../incubation/Incubation_Policy.html">Incubation Policy</a></li> 
+          <li><a href="../guides/index.html">Incubation Guides</a></li> 
+          <li><a href="../incubation/Roles_and_Responsibilities.html">Roles and Responsibilities</a></li> 
+          <li><a href="../faq.html">General FAQ</a></li> 
+          <li><a href="http://wiki.apache.org/incubator">Incubator Wiki</a></li> 
+          <li><a href="../whoweare.html">Who We Are</a></li> 
+          <li><a href="../sitemap.html">Site Map</a></li> 
+            </menu>
+      <div class="menuheader">Status</div>
+    <menu compact="compact">
+          <li><a href="../projects/index.html">Project List</a></li> 
+          <li><a href="../clutch.html">Clutch Report</a></li> 
+          <li><a href="../ip-clearance/index.html">IP Clearance</a></li> 
+          <li><a href="../history/index.html">Incubator History</a></li> 
+            </menu>
+      <div class="menuheader">Entry Guides</div>
+    <menu compact="compact">
+          <li><a href="../guides/proposal.html">Proposal Guide</a></li> 
+            </menu>
+      <div class="menuheader">Podling Guides</div>
+    <menu compact="compact">
+          <li><a href="../guides/committer.html">Podling Committers</a></li> 
+          <li><a href="../guides/ppmc.html">Podling PMC (PPMC)</a></li> 
+          <li><a href="../guides/mentor.html">Podling Mentor</a></li> 
+          <li><a href="../guides/releasemanagement.html">Podling Releases</a></li> 
+          <li><a href="../guides/branding.html">Podling Branding/Publicity</a></li> 
+          <li><a href="../guides/sites.html">Podling Websites</a></li> 
+          <li><a href="../guides/graduation.html">Graduation</a></li> 
+          <li><a href="../guides/retirement.html">Retirement</a></li> 
+            </menu>
+      <div class="menuheader">Other Guides</div>
+    <menu compact="compact">
+          <li><a href="../guides/participation.html">Participation</a></li> 
+          <li><a href="../faq.html">General FAQ</a></li> 
+          <li><a href="../guides/pmc.html">Incubator PMC (IPMC)</a></li> 
+          <li><a href="../guides/chair.html">IPMC Chair</a></li> 
+          <li><a href="../guides/lists.html">Mailing Lists</a></li> 
+          <li><a href="../guides/website.html">Incubator Website</a></li> 
+            </menu>
+      <div class="menuheader">ASF</div>
+    <menu compact="compact">
+          <li><a href="http://www.apache.org/foundation/how-it-works.html">How Apache Works</a></li> 
+          <li><a href="http://www.apache.org/dev/">Developer Documentation</a></li> 
+          <li><a href="http://www.apache.org/foundation/">Foundation</a></li> 
+          <li><a href="http://www.apache.org/foundation/sponsorship.html">Sponsor Apache</a></li> 
+          <li><a href="http://www.apache.org/foundation/thanks.html">Thanks</a></li> 
+            </menu>
+    <!-- start Ads Server -->
+    <iframe src="http://www.apache.org/ads/buttonbar.html"
+     style="border-width:0; float: left" frameborder="0" scrolling="no"
+     width="135" height="265"></iframe>
+    <!-- end Ads Server -->
+   </div>
+   
+   <div class="span12">
+            <h2 id='status'><img src="../images/redarrow.gif" />DRAFT</h2>
+<div class="section-content">
+<p style="color:red">
+<strong>This document is a DRAFT being developed with the hope of eventually superseding the <a href="releasemanagement.html">Release Management Guide</a> (itself still a "DRAFT" after several years).</strong>
+      </p>
+</div>
+        <h2 id='TOC'><img src="../images/redarrow.gif" />Contents</h2>
+<div class="section-content">
+<ul>
+<li><a href='#status'>
+DRAFT
+ </a>
+</li>
+<li><a href='#TOC'>
+Contents
+ </a>
+</li>
+<li><a href='#intro'>
+Abstract
+ </a>
+</li>
+<li><a href='#references'>
+References
+ </a>
+</li>
+<li><a href='#checklist'>
+Release Checklist
+ </a>
+</li>
+<li><a href='#manifest-usage'>
+2013 Alternate Release Procedure
+ </a>
+ <ul>
+<li><a href='#release-manifest-template'>
+Release Manifest Template
+ </a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+        <h2 id='intro'><img src="../images/redarrow.gif" />Abstract</h2>
+<div class="section-content">
+<p>
+This <a href="/guides/index.html">guide</a> has two main purposes:
+        <ol>
+          <li>Provide <a href="#references">references</a> to authoritative release policy.</li>
+          <li>Describe Incubator-specific release procedures and resources.</li>
+        </ol>
+      </p>
+</div>
+        <h2 id='references'><img src="../images/redarrow.gif" />References</h2>
+<div class="section-content">
+<p>
+For official release policy, consult the following resources:
+      </p>
+<ul>
+        <li><a href="http://www.apache.org/dev/release.html">ASF Release Policy</a></li>
+        <li><a href="/incubation/Incubation_Policy.html#Releases">Incubator Release Policy</a></li>
+      </ul>
+<p>
+Release Managers and PPMC members should also familiarize themselves with the following:
+      </p>
+<ul>
+        <li><a href="http://www.apache.org/dev/#releases">Index of release-related developer resources</a></li>
+        <li><a href="http://www.apache.org/dev/release-publishing.html">ASF release process guide</a></li>
+        <li><a href="http://www.apache.org/dev/licensing-howto.html">How-to for assembling LICENSE
+        and NOTICE</a></li>
+        <li><a href="http://www.apache.org/legal/src-headers.html">ASF Source Header and Copyright
+        Notice Policy</a></li>
+        <li><a href="http://www.apache.org/legal/resolved.html">ASF Legal Previously Asked
+        Questions</a></li>
+        <li><a href="http://www.apache.org/dev/release-signing.html">Release signing guide</a></li>
+        <li><a href="http://www.apache.org/foundation/glossary.html">Glossary of Apache-Related Terms</a></li>
+      </ul>
+</div>
+        <h2 id='checklist'><img src="../images/redarrow.gif" />Release Checklist</h2>
+<div class="section-content">
+<p>
+Each review item in this list is either required by Foundation-wide policy and would block a release by any Apache
+top-level project, or is required by Incubator <a href="http://incubator.apache.org/incubation/Incubation_Policy.html">policy</a>.
+      </p>
+<dl>
+
+        <dt>
+1.1 Checksums and PGP signatures are valid.
+        </dt>
+        <dd>
+See the <a href="http://www.apache.org/dev/release-signing.html#basic-facts">Release
+Signing</a> dev documentation.
+        </dd>
+
+        <dt>
+2.1 Build is successful including automated tests.
+        </dt>
+        <dd>
+The expanded source archive is expected to <a href="http://www.apache.org/dev/release.html#what-must-every-release-contain">
+build and pass tests</a>.
+        </dd>
+
+        <dt>
+3.1 DISCLAIMER is correct, filenames include "incubating".
+        </dt>
+        <dd>
+See the <a href="http://incubator.apache.org/guides/branding.html#disclaimers">Podling
+Branding Guide</a>.
+        </dd>
+
+        <dt>
+3.2 Top-level LICENSE and NOTICE are correct for each distribution.
+        </dt>
+        <dd>
+See the <a href="http://www.apache.org/dev/licensing-howto.html">Licensing
+How-To</a>, plus various pages under <a href="http://www.apache.org/legal">Legal Affairs</a>.
+        </dd>
+
+        <dt>
+3.3 All source files have license headers where appropriate.
+        </dt>
+        <dd>
+See the <a href="http://www.apache.org/legal/src-headers.html">ASF Source
+Header and Copyright Notice Policy</a>.
+        </dd>
+
+        <dt>
+3.4 The provenance of all source files is clear (ASF or software grants).
+        </dt>
+        <dd>
+See the <a href="http://incubator.apache.org/guides/mentor.html#initial-ip-clearance">IP
+clearance</a> section of the Mentor's guide, as well as the <a href="http://incubator.apache.org/incubation/Incubation_Policy.html#Releases">Releases</a>
+section of the Incubator's policy page.
+        </dd>
+
+        <dt>
+3.5 Dependencies licenses are ok as per http://apache.org/legal/
+        </dt>
+        <dd>
+See <a href="http://www.apache.org/legal/resolved.html">ASF Legal Previously
+Asked Questions</a>.
+        </dd>
+
+        <dt>
+3.6 Release consists of source code only, no binaries.
+        </dt>
+        <dd>
+Each Apache release <a href="http://www.apache.org/dev/release-publishing.html#valid">must contain a
+source package</a>.  This package may not contain compiled components (such as
+"jar" files) because compiled components are not open source, even if they
+were built from open source.
+        </dd>
+
+      </dl>
+<p>
+A list of possible additional items is
+maintained on the <a href="http://wiki.apache.org/incubator/ReleaseChecklist">ReleaseChecklist</a> wiki page.
+      </p>
+</div>
+        <h2 id='manifest-usage'><img src="../images/redarrow.gif" />2013 Alternate Release Procedure</h2>
+<div class="section-content">
+<p>
+This section explains an alternate release procedure established in December 2013, as documented in the Incubator's <a href="http://incubator.apache.org/incubation/Incubation_Policy.html#Releases">incubation policy</a> page.  It is
+available only to selected podlings.
+      </p>
+<p>
+Once a release candidate is ready, the <a href="http://www.apache.org/dev/release-publishing.html#release_manager">Release Manager</a> creates a <a href="http://incubator.apache.org/guides/release.html#release-manifest-template">Release
+Manifest</a> as a plain text file at http://svn.apache.org/repos/asf/incubator/public/trunk/votes/$PODLING and fills in
+all initial fields:
+      </p>
+<pre>
+== Apache Release Manifest ===============================================
+
+Project: Apache Foo
+Release Candidate: Apache Foo 1.2.3-incubating RC1
+Release Manager: Grace Hopper (ghopper)
+PPMC vote thread URL:
+Approved by Mentor: 
+Usage: http://incubator.apache.org/guides/release.html
+
+== Contents ==============================================================
+
+apache-foo-1.2.3-incubating.zip
+apache-foo-1.2.3-incubating.zip.asc
+apache-foo-1.2.3-incubating.zip.md5
+apache-foo-1.2.3-incubating.zip.sha
+      </pre>
+<p>
+A [VOTE] thread is started on the podling's dev list in accordance with <a href="http://incubator.apache.org/incubation/Incubation_Policy.html#Releases">Incubator policy on releases</a>.  The
+email kicking off the [VOTE] contains a link URL for the Manifest.  While the [VOTE] is in progress, reviewers update
+the Manifest accordingly, signing each item with their Apache ID to indicate that they have reviewed it and found it OK.
+Comments are optional.
+      </p>
+<pre>
+== Reviewers and release votes ===========================================
+
++1 PPMC Grace Hopper (ghopper)
++1 PPMC Niklaus Wirth (nwirth)
+
+== Review Items ==========================================================
+
+1.1 Checksums and PGP signatures are valid.
+    Reviewers: ghopper nwirth 
+
+2.1 Build is successful including automated tests.
+    Reviewers: ghopper nwirth 
+    Comments:
+        ghopper: Relay test still broken on Mark II (FOO-35). +1 anyway.
+      </pre>
+<p>
+Reviewers don't need to look at all items; as long as there's sufficient coverage of each item the release can go out.
+To complete the Manifest, it must be approved by a Mentor:
+      </p>
+<pre>
+Approved by Mentor: Alan Turing (aturing)
+      </pre>
+<p>
+If the dev list [VOTE] passes, a [VOTE] on general@incubator is called, again
+in accordance with Incubator release <a href="http://incubator.apache.org/incubation/Incubation_Policy.html#Releases">policy</a> and again referencing the
+Manifest URL.
+      </p>
+<p>
+Once the voting process concludes -- regardless of success or failure -- the Release Manager archives the Manifest
+permanently by moving it from votes/$PODLING/ to votes/$PODLING/archive/.
+      </p>
+<h3 id='release-manifest-template'>Release Manifest Template</h3>
+<div class="section-content">
+<p>
+Podlings typically start from the Incubator's <a href="release_manifest.txt">default Release Manifest</a> template,
+which contains a <a href="releasemanagement.html#check-list">checklist</a> of review items.  Optionally, a custom
+template may be created by augmenting the default Manifest template with additional review items.
+        </p>
+</div>
+</div>
+       </div>
+   </div>
+  
+   <div class="row"><div class="span16"><hr noshade="noshade" size="1"/></div></div>
+  <div class="row">
+   <div class="span16 footer">
+     Copyright &#169; 2009-2016 The Apache Software Foundation<br />
+     Licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License, Version 2.0</a>.<br/>
+     Apache Incubator, Apache, the Apache feather logo, and the Apache Incubator project logo are trademarks of The Apache Software Foundation.
+     
+     
+    </div>
+  </div>
+ </div> 
+ </body>
+</html>

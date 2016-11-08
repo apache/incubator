@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+  <properties>
+    <title>Apache Felix File Install Codebase Intellectual Property (IP) Clearance Status</title>
+  </properties>
+  <body>
+    <section id="Apache+Felix+File+Install+Codebase+Intellectual+Property+%28IP%29+Clearance+Status">
+      <title>Apache Felix File Install Codebase Intellectual Property (IP) Clearance Status</title>
+    </section>
+    <section id="Description">
+      <title>Description</title>
+      <p>Simple utility bundle that runs inside an OSGi framework and monitors a directory to install and/or update bundles placed in the directory. Bundle is comprised of two new source files.</p>
+    </section>
+    <section id="Project+info">
+      <title>Project info</title>
+      <ul>
+        <li>Which PMC will be responsible for the code: Apache Felix</li>
+      </ul>
+      <ul>
+        <li>Into which existing project/module: Apache Felix</li>
+      </ul>
+      <ul>
+        <li>Officer or member managing donation: Richard S. Hall</li>
+      </ul>
+      <p>
+        <em>Completed tasks are shown by the completion date (YYYY-MM-dd).</em>
+      </p>
+      <section id="Identify+the+codebase">
+        <title>Identify the codebase</title>
+        <table>
+          <tr>
+            <th>date</th>
+            <th>item</th>
+          </tr>
+          <tr>
+            <td>n/a</td>
+            <td>If applicable, make sure that any associated name does not
+                already exist and is not already trademarked for an existing software
+                product.</td>
+          </tr>
+        </table>
+        <p>
+MD5 or SHA1 sum for donated software: md5 ca78492731fd3613bf8d4935de024baa (available at <a href="https://issues.apache.org/jira/browse/FELIX-470">FELIX-470</a>)
+        </p>
+        <section id="Copyright">
+          <title>Copyright</title>
+          <table>
+            <tr>
+              <th>date</th>
+              <th>item</th>
+            </tr>
+            <tr>
+              <td>2008-01-12</td>
+              <td>Check and make sure that the papers that transfer rights to
+                  the ASF been received. It is only necessary to transfer
+                  rights for the package, the core code, and any new code
+                  produced by the project.</td>
+            </tr>
+            <tr>
+              <td>2008-01-30</td>
+              <td>Check and make sure that the files that have been donated
+                  have been updated to reflect the new ASF copyright.</td>
+            </tr>
+          </table>
+          <p>
+Identify name recorded for software grant: <em>http://www.aqute.biz/Code/FileInstall</em> 
+          </p>
+        </section>
+        <section id="Verify+distribution+rights">
+          <title>Verify distribution rights</title>
+            <p>
+Corporations and individuals holding existing distribution rights:
+            </p>
+            <ul>
+<li>
+Peter Kriens
+</li>
+            </ul>
+          <table>
+            <tr>
+              <th>date</th>
+              <th>item</th>
+            </tr>
+            <tr>
+              <td>2008-01-12</td>
+              <td>Check that all active committers have a signed CLA on
+                  record.</td>
+            </tr>
+            <tr>
+              <td>2008-01-12</td>
+              <td>Remind active committers that they are responsible for
+                  ensuring that a Corporate CLA is recorded if such is
+                  required to authorize their contributions under their
+                  individual CLA.</td>
+            </tr>
+            <tr>
+              <td>n/a</td>
+              <td>Check and make sure that for all items included with the
+                  distribution that is not under the Apache license, we have
+                  the right to combine with Apache-licensed code and
+                  redistribute.</td>
+            </tr>
+            <tr>
+              <td>n/a</td>
+              <td>Check and make sure that all items depended upon by the
+                  project is covered by one or more of the following approved
+                  licenses: Apache, BSD, Artistic, MIT/X, MIT/W3C, MPL 1.1, or
+                  something with essentially the same terms.</td>
+            </tr>
+          </table>
+          <p>Generally, the result of checking off these items will be a
+             Software Grant, CLA, and Corporate CLA for ASF licensed code,
+             which must have no dependencies upon items whose licenses that
+             are incompatible with the Apache License.</p>
+        </section>
+      </section>
+      <section id="Organizational+acceptance+of+responsibility+for+the+project">
+        <title>Organizational acceptance of responsibility for the project
+</title>
+        <p>
+Related VOTEs: 
+        </p>
+        <ul>
+          <li><em><a href="http://mail-archives.apache.org/mod_mbox/felix-dev/200802.mbox/%3c47A74BEC.90505@ungoverned.org%3e">VOTE RESULT</a></em></li>
+        </ul>
+      </section>
+    </section>
+  </body>
+</document>

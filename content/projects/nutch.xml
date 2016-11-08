@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+  <properties><!--
+
+    <meta content="HTML Tidy, see www.w3.org" name="generator"/>-->
+<!--
+
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>-->
+
+    <title>Nutch Incubation Status
+</title>
+    <link href="http://purl.org/DC/elements/1.0/" rel="schema.DC"/>
+  </properties>
+  <body>
+    <section id="Nutch+Project+Incubation+Status">
+      <title>Nutch Project Incubation Status
+</title>
+      <p>On 2005-06-01, the Nutch project has been voted in by the Lucene PMC
+to become part of the Lucene project.
+</p>
+<p><span class="graduated">The Nutch project graduated on 2005-06-01</span></p>
+    </section>
+    <section id="Description">
+      <title>Description
+</title>
+      <p>Nutch is web search software. It builds on the Apache Lucene search
+library, adding a crawler, web database (including full link graph),
+plugins for various document formats, user interface, etc. It is
+currently used by sites such as
+
+        <a href="http://search.creativecommons.org/">The Creative Commons
+</a>,
+
+        <a href="http://oregonstate.edu/">Oregon State University
+</a>, and The Internet Archive.
+
+      </p>
+    </section>
+    <section id="Project+info">
+      <title>Project info
+</title>
+      <ul>
+        <li>Project Website:
+
+          <a href="http://www.nutch.org/">http://www.nutch.org/
+</a>
+        </li>
+      </ul>
+      <ul>
+        <li>Project Mailing Lists:
+
+          <a href="http://incubator.apache.org/nutch/mailing_lists.html">http://incubator.apache.org/nutch/mailing_lists.html
+</a>
+        </li>
+      </ul>
+      <p>If the project website and code repository are not yet setup, use the
+following table:
+</p>
+      <table>
+        <tr>
+          <th>item
+</th>
+          <th>type
+</th>
+          <th>reference
+</th>
+        </tr>
+        <tr>
+          <td>Website
+</td>
+          <td>www
+</td>
+          <td>
+            <a href="http://incubator.apache.org/nutch/">http://incubator.apache.org/nutch/
+</a>
+          </td>
+        </tr>
+        <tr>
+          <td/>
+          <td>wiki
+</td>
+          <td>http://wiki.apache.org/nutch/
+</td>
+        </tr>
+        <tr>
+          <td>Mailing list
+</td>
+          <td>dev
+</td>
+          <td>nutch-dev@incubator.apache.org
+</td>
+        </tr>
+        <tr>
+          <td/>
+          <td>commits
+</td>
+          <td>nutch-commits@incubator.apache.org
+</td>
+        </tr>
+        <tr>
+          <td/>
+          <td>user
+</td>
+          <td>nutch-user@incubator.apache.org
+</td>
+        </tr>
+        <tr>
+          <td/>
+          <td>agent
+</td>
+          <td>nutch-agent@incubator.apache.org
+</td>
+        </tr>
+        <tr>
+          <td/>
+          <td/>
+          <td>nutch-general@incubator.apache.org
+</td>
+        </tr>
+        <tr>
+          <td>Bug tracking
+</td>
+          <td>Jira
+</td>
+          <td>
+            <a href="http://issues.apache.org/jira">http://issues.apache.org/jira/
+</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Source code
+</td>
+          <td>SVN
+</td>
+          <td>
+            <a href="https://svn.apache.org/repos/asf/incubator/nutch">https://svn.apache.org/repos/asf/incubator/nutch
+</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Mentors
+</td>
+          <td>cutting
+</td>
+          <td>Doug Cutting
+</td>
+        </tr>
+        <tr>
+          <td/>
+          <td>ehatcher
+</td>
+          <td>Erik Hatcher
+</td>
+        </tr>
+        <tr>
+          <td>Committers
+</td>
+          <td>cutting
+</td>
+          <td>Doug Cutting
+</td>
+        </tr>
+        <tr>
+          <td/>
+          <td>cafarella
+</td>
+          <td>Michael Cafarella
+</td>
+        </tr>
+        <tr>
+          <td/>
+          <td>abial
+</td>
+          <td>Andrzej Bialecki
+</td>
+        </tr>
+        <tr>
+          <td/>
+          <td>johnx
+</td>
+          <td>John Xing
+</td>
+        </tr>
+        <tr>
+          <td/>
+          <td>ziren
+</td>
+          <td>Sami Siren
+</td>
+        </tr>
+      </table>
+    </section>
+    <section id="Incubation+status+reports">
+      <title>Incubation status reports
+</title>
+      <ul>
+        <li>none yet
+</li>
+      </ul>
+    </section>
+    <section id="Incubation+work+items">
+      <title>Incubation work items
+</title>
+      <section id="Project+Setup">
+        <title>Project Setup
+</title>
+        <p>This is the first phase on incubation, needed to start the project at
+Apache.
+</p>
+        <p>
+          <em>Item assignment is shown by the Apache id.
+</em>
+          <em>Completed tasks are shown by the completion date (YYYY-MM-dd).
+</em>
+        </p>
+        <section id="Identify+the+project+to+be+incubated">
+          <title>Identify the project to be incubated
+</title>
+          <table>
+            <tr>
+              <th>status
+</th>
+              <th>item
+</th>
+            </tr>
+            <tr>
+              <td>DONE
+</td>
+              <td>Make sure that the requested project name does not already exist and
+check www.nameprotect.com to be sure that the name is not already
+trademarked for an existing software product.
+</td>
+            </tr>
+            <tr>
+              <td>DONE
+</td>
+              <td>If request from an existing Apache project to adopt an external
+package, then ask the Apache project for the cvs module and mail
+address names.
+</td>
+            </tr>
+            <tr>
+              <td>DONE
+</td>
+              <td>If request from outside Apache to enter an existing Apache project,
+then post a message to that project for them to decide on acceptance.
+</td>
+            </tr>
+            <tr>
+              <td>DONE
+</td>
+              <td>If request from anywhere to become a stand-alone PMC, then assess the
+fit with the ASF, and create the lists and modules under the
+incubator address/module names if accepted.
+</td>
+            </tr>
+          </table>
+        </section>
+        <section id="Interim+responsibility">
+          <title>Interim responsibility
+</title>
+          <table>
+            <tr>
+              <th>status
+</th>
+              <th>item
+</th>
+            </tr>
+            <tr>
+              <td>DONE
+</td>
+              <td>Identify all the Mentors for the incubation, by asking all that can
+be Mentors.
+</td>
+            </tr>
+            <tr>
+              <td>DONE
+</td>
+              <td>Subscribe all Mentors on the pmc and general lists.
+</td>
+            </tr>
+            <tr>
+              <td>DONE
+</td>
+              <td>Give all Mentors access to all incubator CVS modules. (to be done by
+PMC chair)
+</td>
+            </tr>
+            <tr>
+              <td>DONE
+</td>
+              <td>Tell Mentors to track progress in the file
+'incubator/projects/{project.name}.cwiki'
+</td>
+            </tr>
+          </table>
+        </section>
+        <section id="Copyright">
+          <title>Copyright
+</title>
+          <table>
+            <tr>
+              <th>status
+</th>
+              <th>item
+</th>
+            </tr>
+            <tr>
+              <td>DONE
+</td>
+              <td>Check and make sure that the papers that transfer rights to the ASF
+been received. It is only necessary to transfer rights for the
+package, the core code, and any new code produced by the project.
+</td>
+            </tr>
+            <tr>
+              <td>DONE
+</td>
+              <td>Check and make sure that the files that have been donated have been
+updated to reflect the new ASF copyright.
+</td>
+            </tr>
+          </table>
+        </section>
+        <section id="Verify+distribution+rights">
+          <title>Verify distribution rights
+</title>
+          <table>
+            <tr>
+              <th>status
+</th>
+              <th>item
+</th>
+            </tr>
+            <tr>
+              <td>DONE
+</td>
+              <td>Check and make sure that for all code included with the distribution
+that is not under the Apache license, e have the right to combine
+with Apache-licensed code and redistribute.
+</td>
+            </tr>
+            <tr>
+              <td>DONE
+</td>
+              <td>Check and make sure that all source code distributed by the project
+is covered by one or more of the following approved licenses: Apache,
+BSD, Artistic, MIT/X, MIT/W3C, MPL 1.1, or something with essentially
+the same terms.
+</td>
+            </tr>
+          </table>
+        </section>
+        <section id="Establish+a+list+of+active+committers+%21">
+          <title>Establish a list of active committers !
+</title>
+          <table>
+            <tr>
+              <th>status
+</th>
+              <th>item
+</th>
+            </tr>
+            <tr>
+              <td>DONE
+</td>
+              <td>Check that all active committers have submitted a contributors
+agreement.
+</td>
+            </tr>
+            <tr>
+              <td>DONE
+</td>
+              <td>Add all active committers in the STATUS file.
+</td>
+            </tr>
+            <tr>
+              <td>DONE
+</td>
+              <td>Ask root for the creation of committers' accounts on cvs.apache.org.
+</td>
+            </tr>
+          </table>
+        </section>
+        <section id="Infrastructure+%21">
+          <title>Infrastructure !
+</title>
+          <table>
+            <tr>
+              <th>status
+</th>
+              <th>item
+</th>
+            </tr>
+            <tr>
+              <td>DONE
+</td>
+              <td>Ask infrastructure to create source repository modules and grant the
+committers karma.
+</td>
+            </tr>
+            <tr>
+              <td>DONE
+</td>
+              <td>Ask infrastructure to set up and archive Mailing lists.
+</td>
+            </tr>
+            <tr>
+              <td>DONE
+</td>
+              <td>Decide about and then ask infrastructure to setup an issuetracking
+system (Bugzilla, Scarab, Jira).
+</td>
+            </tr>
+            <tr>
+              <td>DONE
+</td>
+              <td>Migrate the project to our infrastructure.
+</td>
+            </tr>
+          </table>
+        </section>
+        <section id="Project+specific">
+          <title>Project specific
+</title>
+          <p>
+            <em>Add project specific tasks here.
+</em>
+          </p>
+        </section>
+      </section>
+      <section id="Incubation">
+        <title>Incubation
+</title>
+        <p>These action items have to be checked for during the whole incubation
+process.
+</p>
+        <p>
+          <em>These items are not to be signed as done during incubation, as they
+may change during incubation.
+</em>
+          <em>They are to be looked into and described in the status reports and
+completed in the request for incubation signoff.
+</em>
+        </p>
+        <section id="Collaborative+Development">
+          <title>Collaborative Development
+</title>
+          <ul>
+            <li>Have all of the active long-term volunteers been identified and
+acknowledged as committers on the project?
+</li>
+          </ul>
+          <p>Yes. All existing committers have migrated to Apache.
+</p>
+          <ul>
+            <li>Are there three or more independent committers? (The legal definition
+of independent is long and boring, but basically it means that there
+is no binding relationship between the individuals, such as a shared
+employer, that is capable of overriding their free will as
+individuals, directly or indirectly.)
+</li>
+          </ul>
+          <p>Yes. Nutch has five committers. No two committers share an employer.
+Yahoo! at times contracts with two of the five committers (Mike &amp;
+Doug) to work on Nutch.
+</p>
+          <ul>
+            <li>Are project decisions being made in public by the committers?
+</li>
+          </ul>
+          <p>Yes. Project discussions are on public mailing lists.
+</p>
+          <ul>
+            <li>Are the decision-making guidelines published and agreed to by all of
+the committers?
+</li>
+          </ul>
+          <p>Yes. Committers are using Apache decision-making guidelines.
+</p>
+          <div style="margin-left: 2em">
+            <h3>Licensing awareness
+</h3>
+            <ul>
+              <li>Are all licensing, trademark, credit issues being taken care of and
+acknowleged by all committers?
+</li>
+            </ul>
+          </div>
+          <p>Yes. Several Nutch plugins were disabled when Nutch entered
+incubation, since they required libraries with incompatible licenses.
+Nearly all of these have since been re-written and re-enabled. Two
+plugins remain disabled (parse-mp3 and parse-rtf) but these are not
+critical. Through this process, all comitters have become familiar
+with the legal issues related to Apache software.
+</p>
+          <div style="margin-left: 2em">
+            <h3>Project Specific
+</h3>
+            <p>
+              <em>Add project specific tasks here.
+</em>
+            </p>
+            <h2>Exit
+</h2>
+            <p>
+              <em>Things to check for before voting the project out.
+</em>
+            </p>
+            <h3>Organizational acceptance of responsibility for the project
+</h3>
+            <ul>
+              <li>If graduating to an existing PMC, has the PMC voted to accept it?
+</li>
+            </ul>
+            <p>Yes. It has on 2005-06-01.
+</p>
+            <h3>Incubator sign-off
+</h3>
+            <ul>
+              <li>Has the Incubator decided that the project has accomplished all of
+the above tasks?
+</li>
+            </ul>
+            <p>Yes. It has on 2005-06-01.
+</p>
+          </div>
+        </section>
+      </section>
+    </section>
+  </body>
+</document>

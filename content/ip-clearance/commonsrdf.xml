@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+  <properties>
+    <title>Commons RDF Codebase Intellectual Property (IP) Clearance Status</title>
+  </properties>
+  <body>
+    <section id="Commons+RDF+Codebase+Intellectual+Property+IP+Clearance+Status">
+      <title>Commons RDF Codebase Intellectual Property (IP) Clearance Status</title>
+    </section>
+    <section id="Description">
+      <title>Description</title>
+      <p>
+        Commons RDF is a library which provides a set of interfaces for the RDF 
+        1.1 concepts that can be used to expose common RDF 1.1 concepts using 
+        common Java interfaces. The goal is to provide agreed and clear 
+        interfaces that could be implemented by the upcoming versions of the 
+        main Java toolkits (Apache Jena 3.0 and OpenRDF Sesame 4.0) as well as 
+        reused by existing wrappers.
+      </p>
+    </section>
+    <section id="Project+info">
+      <title>Project info</title>
+      <ul>
+        <li>Which PMC will be responsible for the code: Apache Commons</li>
+      </ul>
+      <ul>
+        <li>Into which existing project/module: Apache Commons Sanbox</li>
+      </ul>
+      <ul>
+        <li>Officer or member managing donation: @@TODO@@</li>
+      </ul>
+      <p>
+        <em>Completed tasks are shown by the completion date (YYYY-MM-dd).</em>
+      </p>
+      <section id="Identify+the+codebase">
+        <title>Identify the codebase</title>
+        <table>
+          <tr>
+            <th>date</th>
+            <th>item</th>
+          </tr>
+          <tr>
+            <td>2015-03-26</td>
+            <td>
+              No evidences of registration of the trademark for an existing 
+              software product have been found.
+          </td>
+          </tr>
+          <tr>
+            <td>2015-03-27</td>
+            <td>
+              Attached to <a href="https://issues.apache.org/jira/browse/COMMONSRDF-1">COMMONSRDF-1</a> 
+              as <strong>commons-rdf.bundle</strong> a bundle containing the master branch at github
+              (<a href="https://github.com/commons-rdf/commons-rdf/tree/master">https://github.com/commons-rdf/commons-rdf/tree/master</a>
+              by 2015-03-28 (tagged as 
+              <a href="https://github.com/commons-rdf/commons-rdf/releases/tag/apache-import-20150327">apache-import-20150327</a>). 
+              Software Grant Agreement signed and archived by ASF Secretary.
+            </td>
+          </tr>
+        </table>
+        <p>
+          MD5 sum for donated software:  <tt>84095aae6d752b864e10181ec78ed299</tt>.
+        </p>
+        <section id="Copyright">
+          <title>Copyright</title>
+          <table>
+            <tr>
+              <th>date</th>
+              <th>item</th>
+            </tr>
+            <tr>
+              <td>2015-03-26</td>
+              <td>
+                Code was developed by Sergio Fernández (Apache ID wikier), Andy
+                Seaborne (andy), Peter Ansell (ansell) and Stian Soiland-Reyes 
+                (stain), who already are all ASF committers and have both ICLA 
+                and CCLA with effect when the code was developed. 
+              </td>
+            </tr>
+            <tr>
+              <td>2015-03-29</td>
+              <td>
+                All code files now have standard ASF headers, license headers 
+                added to other relevant files (POMs, XML etc).  RAT report is 
+                clean.
+              </td>
+            </tr>
+          </table>
+          <p>
+            Identify name recorded for software grant: n/a.
+          </p>
+        </section>
+        <section id="Verify+distribution+rights">
+          <title>Verify distribution rights</title>
+          <p>
+            Corporations and individuals holding existing distribution rights:
+          </p>
+          <table>
+            <tr>
+              <th>date</th>
+              <th>item</th>
+            </tr>
+            <tr>
+              <td>2015-03-26</td>
+              <td>All committers have an ICLA on file</td>
+            </tr>
+            <tr>
+              <td>2015-03-26</td>
+              <td>All committers have an a CCLA on file that names him and has agreed to donate the code to the Apache Commons under the existing ICLA and CCLA</td>
+            </tr>
+            <tr>
+              <td>2015-03-26</td>
+              <td>There is no non-Apache licensed code present in the donated software</td>
+            </tr>
+            <tr>
+              <td>2015-03-26</td>
+              <td>All dependencies are other Apache projects or open source projects compatible with the Apache License</td>
+            </tr>
+          </table>
+        </section>
+      </section>
+      <section id="Organizational+acceptance+of+responsibility+for+the+project">
+        <title>Organizational acceptance of responsibility for the project</title>
+        <p>
+          Related VOTEs: n/a. 
+        </p>
+        <p>
+          The original donation discussion can be found at the thread
+          <a href="http://mail-archives.apache.org/mod_mbox/commons-dev/201407.mbox/%3C53CCEA51.9070801%40apache.org%3E">http://mail-archives.apache.org/mod_mbox/commons-dev/201407.mbox/%3C53CCEA51.9070801%40apache.org%3E</a>
+        </p>
+      </section>
+    </section>
+  </body>
+</document>

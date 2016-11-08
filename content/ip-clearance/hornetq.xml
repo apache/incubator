@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+  <properties>
+    <title>HornetQ Codebase Intellectual Property (IP) Clearance Status</title>
+  </properties>
+  <body>
+    <section id="HornetQ+Codebase+Intellectual+Property+%28IP%29+Clearance+Status">
+      <title>HornetQ Codebase Intellectual Property (IP) Clearance Status</title>
+    </section>
+    <section id="Description">
+      <title>Description</title>
+      <p>HornetQ is an open source project to build a multi-protocol, embeddable, very high performance, clustered, asynchronous messaging system.  
+        This is large code grant of the whole project.  HornetQ was previously licensed under the Apache License 2.0 and is now being granted to the ASF.</p>
+    </section>
+    <section id="Project+info">
+      <title>Project info</title>
+      <ul>
+        <li>Which PMC will be responsible for the code: Apache ActiveMQ PMC</li>
+      </ul>
+      <ul>
+        <li>Into which existing project/module: New ActiveMQ subproject</li>
+      </ul>
+      <ul>
+        <li>Officer or member managing donation: Hiram Chirino</li>
+      </ul>
+      <p>
+        <em>Completed tasks are shown by the completion date (YYYY-MM-dd).</em>
+      </p>
+      <section id="Identify+the+codebase">
+        <title>Identify the codebase</title>
+        <table>
+          <tr>
+            <th>date</th>
+            <th>item</th>
+          </tr>
+          <tr>
+            <td>2014-07-10</td>
+            <td>https://github.com/hornetq/hornetq/archive/90d43fbc158a0e6e3028c7179dbcf984757b88fb.zip
+              (MD5: c41d7dafd24c02dd040217f46255c64e )
+              </td>
+          </tr>
+        </table>
+        <section id="Copyright">
+          <title>Copyright</title>
+          <table>
+            <tr>
+              <th>date</th>
+              <th>item</th>
+            </tr>
+            <tr>
+              <td>2015-04-13</td>
+              <td>Check and make sure that the papers that transfer rights to
+                  the ASF been received. It is only necessary to transfer
+                  rights for the package, the core code, and any new code
+                  produced by the project.
+                  <br/>
+                  A CCLA was recorded cover grant from 'Red Hat, Inc. as - David Ingham:dingham@redhat.com:Signed Corp CLA for Clebert Suconic, Andy Taylor, Justin Bertram, Youg Hao Gao, Martyn Taylor for hornetq, hornetq.utils.UUID, hornetq.utils.base64, hornetq.utils.json'
+               </td>
+            </tr>
+            <tr>
+              <td>2015-05-27</td>
+              <td>Check and make sure that the files that have been donated
+                  have been updated to reflect the new ASF copyright.</td>
+            </tr>
+          </table>
+          <p>
+              Identify name recorded for software grant: CCLA was recorded as <em>Red Hat, Inc. - David Ingham:dingham@redhat.com:Signed Corp CLA for Clebert Suconic, Andy Taylor, Justin Bertram, Youg Hao Gao, Martyn Taylor for hornetq, hornetq.utils.UUID, hornetq.utils.base64, hornetq.utils.json</em>
+          </p>
+        </section>
+        <section id="Verify+distribution+rights">
+          <title>Verify distribution rights</title>
+            <p>
+Corporations and individuals holding existing distribution rights:
+            </p>
+            <ul>
+              <li>Red Hat, Inc.</li>
+            </ul>
+          <table>
+            <tr>
+              <th>date</th>
+              <th>item</th>
+            </tr>
+            <tr>
+              <td>2015-04-13</td>
+              <td>Check that all active committers have a signed CLA on
+                  record.</td>
+            </tr>
+            <tr>
+              <td>2015-04-13</td>
+              <td>Remind active committers that they are responsible for
+                  ensuring that a Corporate CLA is recorded if such is
+                  required to authorize their contributions under their
+                  individual CLA.</td>
+            </tr>
+            <tr>
+              <td>2015-05-27</td>
+              <td>Check and make sure that for all items included with the
+                  distribution that is not under the Apache license, we have
+                  the right to combine with Apache-licensed code and
+                  redistribute.</td>
+            </tr>
+            <tr>
+              <td>2015-05-27</td>
+              <td>Check and make sure that all items depended upon by the
+                  project is covered by one or more of the following approved
+                  licenses: Apache, BSD, Artistic, MIT/X, MIT/W3C, MPL 1.1, or
+                  something with essentially the same terms.</td>
+            </tr>
+          </table>
+          <p>Generally, the result of checking off these items will be a
+             Software Grant, CLA, and Corporate CLA for ASF licensed code,
+             which must have no dependencies upon items whose licenses that
+             are incompatible with the Apache License.</p>
+        </section>
+      </section>
+      <section id="Organizational+acceptance+of+responsibility+for+the+project">
+        <title>Organizational acceptance of responsibility for the project
+</title>
+        <p>
+Related VOTEs:
+        </p>
+        <ul>
+          <li><a href="http://activemq.markmail.org/thread/asmdcnxetocg4jnb">http://activemq.markmail.org/thread/asmdcnxetocg4jnb</a></li>
+        </ul>
+      </section>
+    </section>
+  </body>
+</document>

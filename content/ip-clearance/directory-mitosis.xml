@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+  <properties>
+    <title>XYZ Codebase Intellectual Property (IP) Clearance Status</title>
+  </properties>
+  <body>
+    <section id="Mitosis+Codebase+Intellectual+Property+%28IP%29+Clearance+Status">
+      <title>Mitosis Codebase Intellectual Property (IP) Clearance Status</title>
+    </section>
+    <section id="Description">
+      <title>Description</title>
+      <p>Mitosis is a functional module for performing multimaster replication
+with ApacheDS.</p>
+    </section>
+    <section id="Project+info">
+      <title>Project info</title>
+      <ul>
+        <li>The Directory PMC will be responsible for the code</li>
+      </ul>
+      <ul>
+        <li>The Mitosis code will <b>NOT</b> constitute a new project under the
+Directory TLP but will be incorporated into the existing ApacheDS code base.</li>
+      </ul>
+      <ul>
+        <li>Officer or member managing donation: Alex Karasulu</li>
+      </ul>
+      <section id="Identify+the+codebase">
+        <title>Identify the codebase</title>
+        <table>
+          <tr>
+            <th>date</th>
+            <th>item</th>
+          </tr>
+          <tr>
+            <td>2006-10-17</td>
+            <td>Mitosis: the name is NOT significant since Mitosis will not 
+become a separate product but will be integrated directly into ApacheDS</td>
+          </tr>
+        </table>
+        <p>
+SHA1 sum for donated software: 4aafaae35ea0ce9dc4e21fac4ce437005db17ee3 (1.0).
+        </p>
+        <section id="Copyright">
+          <title>Copyright</title>
+          <table>
+            <tr>
+              <th>date</th>
+              <th>item</th>
+            </tr>
+            <tr>
+              <td>2006-10-17</td>
+              <td>Software grant filed with Secretary and Directory VP</td>
+            </tr>
+            <tr>
+              <td>2006-10-17</td>
+              <td>New ASF copyright has been assigned in file headers.</td>
+            </tr>
+          </table>
+          <p>
+Identify name recorded for software grant: Alex Karasulu
+          </p>
+        </section>
+        <section id="Verify+distribution+rights">
+          <title>Verify distribution rights</title>
+            <ul>
+<li>
+<em>For individuals, use the name as recorded on the committers page</em>
+</li>
+            </ul>
+          <table>
+            <tr>
+              <th>date</th>
+              <th>item</th>
+            </tr>
+            <tr>
+              <td>2006-10-17</td>
+              <td>Check that all active committers have a signed CLA on
+                  record.</td>
+            </tr>
+            <tr>
+              <td>2006-10-17</td>
+              <td>Remind active committers that they are responsible for
+                  ensuring that a Corporate CLA is recorded if such is
+                  required to authorize their contributions under their
+                  individual CLA.</td>
+            </tr>
+            <tr>
+              <td>2006-10-17</td>
+              <td>Check and make sure that for all items included with the
+                  distribution that is not under the Apache license, we have
+                  the right to combine with Apache-licensed code and
+                  redistribute.</td>
+            </tr>
+            <tr>
+              <td>2006-10-17</td>
+              <td>Check and make sure that all items depended upon by the
+                  project is covered by one or more of the following approved
+                  licenses: Apache, BSD, Artistic, MIT/X, MIT/W3C, MPL 1.1, or
+                  something with essentially the same terms.</td>
+            </tr>
+          </table>
+          <p>Generally, the result of checking off these items will be a
+             Software Grant, CLA, and Corporate CLA for ASF licensed code,
+             which must have no dependencies upon items whose licenses that
+             are incompatible with the Apache License.</p>
+        </section>
+      </section>
+      <section id="Organizational+acceptance+of+responsibility+for+the+project">
+        <title>Organizational acceptance of responsibility for the project
+</title>
+        <p>
+Related VOTEs: 
+        </p>
+        <ul>
+          <li>http://www.mail-archive.com/dev@directory.apache.org/msg08136.html</li>
+        </ul>
+      </section>
+    </section>
+  </body>
+</document>

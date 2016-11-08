@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+  <properties>
+    <title>shade-maven-plugin Codebase Intellectual Property (IP) Clearance Status</title>
+  </properties>
+  <body>
+    <section id="shade-maven-plugin+Codebase+Intellectual+Property+%28IP%29+Clearance+Status">
+      <title>shade-maven-plugin Codebase Intellectual Property (IP) Clearance Status</title>
+    </section>
+    <section id="Description">
+      <title>Description</title>
+      <p>The shade plugin is a tool for creating optimized aggregate JARs for deployment. </p>
+    </section>
+    <section id="Project+info">
+      <title>Project info</title>
+      <ul>
+        <li>The Maven PMC is responsible for the code.</li>
+      </ul>
+      <ul>
+        <li>The code will be imported into http://svn.apache.org/repos/asf/maven/plugins/trunk as part of the Maven project.</li>
+      </ul>
+      <ul>
+        <li>Jason van Zyl is the officer responsible for managing the donation process.</li>
+      </ul>
+      <p>
+        <em>Completed tasks are shown by the completion date (YYYY-MM-dd).</em>
+      </p>
+      <section id="Identify+the+codebase">
+        <title>Identify the codebase</title>
+        <table>
+          <tr>
+            <th>date</th>
+            <th>item</th>
+          </tr>
+          <tr>
+            <td>2007-09-09</td>
+            <td>If applicable, make sure that any associated name does not
+                already exist and is not already trademarked for an existing software
+                product.</td>
+          </tr>
+		  http://people.apache.org/~brianf/shade.tar.gz (from: https://svn.codehaus.org/mojo/tags/shade-maven-plugin-move-to-apache rev 5191)
+		  MD5 HASH: 79CE2685E3C0A18D41EAE17C4C262C47
+        </table>
+        <p>
+
+        </p>
+        <section id="Copyright">
+          <title>Copyright</title>
+          <table>
+            <tr>
+              <th>date</th>
+              <th>item</th>
+            </tr>
+            <tr>
+              <td>NA</td>
+              <td>Check and make sure that the papers that transfer rights to
+                  the ASF been received. It is only necessary to transfer
+                  rights for the package, the core code, and any new code
+                  produced by the project.</td>
+            </tr>
+            <tr>
+              <td>....-..-..</td>
+              <td>Check and make sure that the files that have been donated
+                  have been updated to reflect the new ASF copyright.</td>
+            </tr>
+          </table>
+          <p>
+Identify name recorded for software grant: <em>the name of the grant as record 
+in the grants.txt document so that the grant can be easily identified</em> 
+          </p>
+        </section>
+        <section id="Verify+distribution+rights">
+          <title>Verify distribution rights</title>
+            <p>
+Corporations and individuals holding existing distribution rights:
+            </p>
+            <ul>
+				<li>
+					<em>Kenney Westerhof</em>
+				</li>
+            </ul>
+			<ul>
+				<li>
+					<em>Jason van Zyl</em>
+				</li>
+            </ul>
+			<ul>
+				<li>
+					<em>Mauro Talevi</em>
+				</li>
+            </ul>
+			<ul>
+				<li>
+					<em>Daniel Diephouse</em>
+				</li>
+            </ul>
+          <table>
+            <tr>
+              <th>date</th>
+              <th>item</th>
+            </tr>
+            <tr>
+              <td>2007-09-02</td>
+              <td>Check that all active committers have a signed CLA on
+                  record.</td>
+            </tr>
+            <tr>
+              <td>2007-09-02</td>
+              <td>Remind active committers that they are responsible for
+                  ensuring that a Corporate CLA is recorded if such is
+                  required to authorize their contributions under their
+                  individual CLA.</td>
+            </tr>
+            <tr>
+              <td>2007-09-02</td>
+              <td>Check and make sure that for all items included with the
+                  distribution that is not under the Apache license, we have
+                  the right to combine with Apache-licensed code and
+                  redistribute.</td>
+            </tr>
+            <tr>
+              <td>2007-09-02</td>
+              <td>Check and make sure that all items depended upon by the
+                  project is covered by one or more of the following approved
+                  licenses: Apache, BSD, Artistic, MIT/X, MIT/W3C, MPL 1.1, or
+                  something with essentially the same terms.</td>
+            </tr>
+          </table>
+          <p>Generally, the result of checking off these items will be a
+             Software Grant, CLA, and Corporate CLA for ASF licensed code,
+             which must have no dependencies upon items whose licenses that
+             are incompatible with the Apache License.</p>
+        </section>
+      </section>
+      <section id="Organizational+acceptance+of+responsibility+for+the+project">
+        <title>Organizational acceptance of responsibility for the project
+</title>
+        <p>
+Related VOTEs: 
+        </p>
+        <ul>
+          <li><em></em></li>
+        </ul>
+      </section>
+    </section>
+  </body>
+</document>

@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+    <properties>
+        <title>Pivot Incubation Status</title>
+        <link href="http://purl.org/DC/elements/1.0/" rel="schema.DC"/>
+    </properties>
+    <body>
+        <section id="Pivot+Project+Incubation+Status">
+            <title>Pivot Project Incubation Status
+            </title>
+            <p>This page tracks the project status, incubator-wise.</p>
+            <p><span class="graduated">The Pivot project graduated on 2009-12-16</span></p>
+        </section>
+        <section id="Description">
+            <title>Description
+            </title>
+            <p>
+                Pivot - an open-source platform for building rich internet applications in Java.
+            </p>
+            <p>
+              Pivot combines the enhanced productivity and usability features of a
+              modern RIA toolkit with the robustness of the Java platform. Pivot
+              applications are written using a combination of Java and XML and can
+              be run either as an applet or as a standalone, optionally offline,
+              desktop application.
+            </p>
+        </section>
+        <section id="News">
+            <title>News
+            </title>
+            <ul>
+                <li>2009-12-16 Board passes resolution graduating Pivot to a top-level project</li>
+                <li>2009-11-20 Graduation vote passes Apache Incubator</li>
+                <li>2009-09-22 Apache Pivot 1.3 released</li>
+                <li>2009-07-02 New PPMC member: Noel Grandin</li>
+                <li>2009-06-18 Apache Pivot 1.2 released</li>
+                <li>2009-05-07 New PPMC member: Sandro Martini</li>
+                <li>2009-05-07 New PPMC member: Christopher Brind</li>
+                <li>2009-04-17 Apache Pivot 1.1 released</li>
+                <li>2009-03-29 New committer: Noel Grandin</li>
+                <li>2009-01-26 Project enters incubation</li>
+            </ul>
+        </section>
+        <section id="Project+info">
+            <title>Project info
+            </title>
+            <table>
+                <tr>
+                    <th>item</th>
+                    <th>type</th>
+                    <th>reference</th>
+                </tr>
+                <tr>
+                    <td>Website</td>
+                    <td>www</td>
+                    <td id="www"><a href="http://incubator.apache.org/pivot/">http://incubator.apache.org/pivot/</a></td>
+                </tr>
+                <tr>
+                    <td>Mailing list</td>
+                    <td>dev</td>
+                    <td id="mail-dev"><code>pivot-dev</code><code>@</code><code>incubator.apache.org</code></td>
+                </tr>
+                <tr>
+                    <td>Mailing list</td>
+                    <td>commits</td>
+                    <td id="mail-commits"><code>pivot-commits</code><code>@</code><code>incubator.apache.org</code></td>
+                </tr>
+                <tr>
+                    <td>Mailing list</td>
+                    <td>users</td>
+                    <td><code>pivot-user</code><code>@</code><code>incubator.apache.org</code></td>
+                </tr>
+                <tr>
+                    <td>Mailing list</td>
+                    <td>PPMC</td>
+                    <td><code>pivot-private</code><code>@</code><code>incubator.apache.org</code></td>
+                </tr>
+                <tr>
+                    <td>Bug tracking</td>
+                    <td>JIRA</td>
+                    <td id="tracker">
+                      <a href="http://issues.apache.org/jira/browse/PIVOT">http://issues.apache.org/jira/browse/PIVOT</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Source code</td>
+                    <td>SVN</td>
+                    <td id="svn">
+                        <a href="http://svn.apache.org/repos/asf/incubator/pivot/">
+                          http://svn.apache.org/repos/asf/incubator/pivot/
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Proposal</td>
+                    <td>Wiki
+                    </td>
+                    <td>
+                        <a href="http://wiki.apache.org/incubator/PivotProposal">
+                            http://wiki.apache.org/incubator/PivotProposal</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Mentors</td>
+                    <td>
+                        Niclas Hedhman<br/>
+                        Martijn Dashorst<br/>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>PMC Members</td>
+                    <td>
+                        Christopher Brind<br/>
+                        Greg Brown<br/>
+                        Martijn Dashorst<br/>
+                        Noel Grandin<br/>
+                        Niclas Hedhman<br/>
+                        Sandro Martini<br/>
+                        Todd Volkert<br/>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Committers</td>
+                    <td>
+                       	Christopher Brind<br/>
+                        Greg Brown<br/>
+                        Noel Grandin<br/>
+                        Sandro Martini<br/>
+                        Todd Volkert<br/>
+                    </td>
+                    <td></td>
+                </tr>
+            </table>
+        </section>
+        <section id="Incubation+Status+Reports">
+            <title>Incubation Status Reports
+            </title>
+            <ul>
+                <li><a href="http://wiki.apache.org/incubator/March2009">March 2009</a></li>
+                <li><a href="http://wiki.apache.org/incubator/April2009">April 2009</a></li>
+                <li><a href="http://wiki.apache.org/incubator/May2009">May 2009</a></li>
+                <li><a href="http://wiki.apache.org/incubator/August2009">August 2009</a></li>
+                <li><a href="http://wiki.apache.org/incubator/November2009">November 2009</a></li>
+            </ul>
+        </section>
+        <section id="Incubation+Work+Items">
+            <title>Incubation Work Items
+            </title>
+            <section id="Project+Setup">
+                <title>Project Setup</title>
+                <p>This is the first phase on incubation, needed to start the project at Apache.</p>
+                <p>
+                    <em>Item assignment is shown by the Apache id.</em>
+                    <em>Completed tasks are shown by the completion date (YYYY-MM-dd).</em>
+                </p>
+                <section id="Identify+the+project+to+be+incubated%26%23xD%3B">
+                    <title>Identify the project to be incubated&amp;#xD;</title>
+                    <table>
+                        <tr>
+                            <th>date</th>
+                            <th>item</th>
+                            <th>note</th>
+                        </tr>
+                        <tr>
+                            <td>N/A</td>
+                            <td>
+                                Make sure that the requested project name does not already
+                                exist and check www.nameprotect.com to be sure that the name
+                                is not already trademarked for an existing software product.
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>N/A</td>
+                            <td>
+                                If request from anywhere to become a stand-alone PMC, then
+                                assess the fit with the ASF, and create the lists and modules
+                                under the incubator address/module names if accepted.
+                            </td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </section>
+                <section id="Interim+responsibility">
+                    <title>Interim responsibility</title>
+                    <table>
+                        <tr>
+                            <th>date</th>
+                            <th>item</th>
+                        </tr>
+                        <tr>
+                            <td>2009-01-06</td>
+                            <td>
+                                Identify all the Mentors for the incubation, by asking all
+                                that can be Mentors.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2009-02-20</td>
+                            <td>Subscribe all Mentors on the private and development lists.</td>
+                        </tr>
+                        <tr>
+                            <td>2009-03-04</td>
+                            <td>
+                                Give all initial committers access to the incubator SVN repository.
+                                (to be done by PMC chair)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2009-02-20</td>
+                            <td>
+                                Tell Mentors to track progress in the file
+                                'incubator/projects/pivot.html'
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+                <section id="Copyright">
+                    <title>Copyright</title>
+                    <table>
+                        <tr>
+                            <th>date</th>
+                            <th>item</th>
+                        </tr>
+                        <tr>
+                            <td>2009-02-21</td>
+                            <td>
+                                Check and make sure that the papers that transfer rights to
+                                the ASF been received. It is only necessary to transfer rights
+                                for the package, the core code, and any new code produced by
+                                the project.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2009-03-31</td>
+                            <td>
+                                Check and make sure that the files that have been donated have
+                                been updated to reflect the new ASF copyright.
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+                <section id="Verify+distribution+rights">
+                    <title>Verify distribution rights</title>
+                    <table>
+                        <tr>
+                            <th>date</th>
+                            <th>item</th>
+                        </tr>
+                        <tr>
+                            <td>2009-04-01</td>
+                            <td>
+                                Check and make sure that for all code included with the
+                                distribution that is not under the Apache license, we have
+                                the right to combine with Apache-licensed code and
+                                redistribute.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2009-04-01</td>
+                            <td>
+                                Check and make sure that all source code distributed by the
+                                project is covered by one or more of the following approved
+                                licenses: Apache, BSD, Artistic, MIT/X, MIT/W3C, MPL 1.1, or
+                                something with essentially the same terms.
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+                <section id="Establish+a+list+of+active+committers">
+                    <title>Establish a list of active committers</title>
+                    <table>
+                        <tr>
+                            <th>status</th>
+                            <th>item</th>
+                        </tr>
+                        <tr>
+                            <td>2009-02-20</td>
+                            <td>
+                                Check that all active committers have submitted a contributors
+                                agreement.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2009-02-20</td>
+                            <td>
+                                Ask root for the creation of committers' accounts on
+                                people.apache.org.
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+                <section id="Infrastructure">
+                    <title>Infrastructure</title>
+                    <table>
+                        <tr>
+                            <th>status</th>
+                            <th>item</th>
+                        </tr>
+                        <tr>
+                            <td>2009-03-06</td>
+                            <td>
+                                Ask infrastructure to create source repository modules and
+                                grant the committers karma.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2009-01-26</td>
+                            <td>Ask infrastructure to set up and archive Mailing lists.</td>
+                        </tr>
+                        <tr>
+                            <td>2009-01-26</td>
+                            <td>
+                                Decide about and then ask infrastructure to setup an issue
+                                tracking system (Bugzilla, Scarab, Jira).
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2009-03-14</td>
+                            <td>Migrate the project to our infrastructure.</td>
+                        </tr>
+                    </table>
+                </section>
+                <section id="Project+specific">
+                    <title>Project specific</title>
+                    <table>
+                        <tr>
+                            <th>status</th>
+                            <th>item</th>
+                        </tr>
+                    </table>
+                </section>
+            </section>
+            <section id="Incubation">
+                <title>Incubation</title>
+                <p>These action items have to be checked for during the whole incubation
+                    process.
+                </p>
+                <p>
+                    <em>These items are not to be signed as done during incubation, as they
+                        may change during incubation.
+                    </em>
+                    <em>They are to be looked into and described in the status reports and
+                        completed in the request for incubation signoff.
+                    </em>
+                </p>
+                <section id="Collaborative+Development">
+                    <title>Collaborative Development
+                    </title>
+                    <ul>
+                        <li>Have all of the active long-term volunteers been identified and
+                            acknowledged as committers on the project? <i>Yes</i>
+                        </li>
+                        <li>Are there three or more independent committers? (The legal definition
+                            of independent is long and boring, but basically it means that there
+                            is no binding relationship between the individuals, such as a shared
+                            employer, that is capable of overriding their free will as
+                            individuals, directly or indirectly.) <i>Yes</i>
+                        </li>
+                        <li>Are project decisions being made in public by the committers? <i>Yes</i>
+                        </li>
+                        <li>Are the decision-making guidelines published and agreed to by all of
+                            the committers? <i>Yes</i>
+                        </li>
+                    </ul>
+                </section>
+                <section id="Licensing+awareness">
+                    <title>Licensing awareness
+                    </title>
+                    <ul>
+                        <li>Are all licensing, trademark, credit issues being taken care of and
+                            acknowleged by all committers? <i>Yes</i>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+            <section id="Exit">
+                <title>Exit
+                </title>
+                <p>
+                    <em>Things to check for before voting the project out.
+                    </em>
+                </p>
+                <section id="Organizational+acceptance+of+responsibility+for+the+project">
+                    <title>Organizational acceptance of responsibility for the project
+                    </title>
+                    <ul>
+                        <li>If graduating to an existing PMC, has the PMC voted to accept it? <i>N/A</i>
+                        </li>
+                        <li>If graduating to a new PMC, has the board voted to accept it? <i>Yes</i>
+                        </li>
+                    </ul>
+                </section>
+                <section id="Incubator+sign-off">
+                    <title>Incubator sign-off
+                    </title>
+                    <ul>
+                        <li>Has the Incubator decided that the project has accomplished all of
+                            the above tasks? <i>Yes</i>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+        </section>
+    </body>
+</document>

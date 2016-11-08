@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+  <properties>
+    <title>Jakarta Commons CSV Intellectual Property (IP) Clearance Status</title>
+  </properties>
+  <body>
+    <section id="Jakarta+Commons+CSV+Codebase+Intellectual+Property+%28IP%29+Clearance+Status">
+      <title>Jakarta Commons CSV Codebase Intellectual Property (IP) Clearance Status</title>
+    </section>
+    <section id="Description">
+      <title>Description</title>
+      <p><em>Implementation of a CSV (Comma Separated Values) parser in Java. </em></p>
+    </section>
+    <section id="Project+info">
+      <title>Project info</title>
+      <ul>
+        <li>Which PMC will be responsible for the code: <strong>Jakarta</strong></li>
+      </ul>
+      <ul>
+        <li>Into which existing project/module: <strong>Jakarta Commons</strong></li>
+      </ul>
+      <ul>
+        <li>Officer or member managing donation: Henri Yandell (bayard@apache.org)</li>
+      </ul>
+      <p>
+        <em>Completed tasks are shown by the completion date (YYYY-MM-dd).</em>
+      </p>
+      <section id="Identify+the+codebase">
+        <title>Identify the codebase</title>
+        <table>
+          <tr>
+            <th>date</th>
+            <th>item</th>
+          </tr>
+          <tr>
+            <td>not applicable</td>
+            <td>If applicable, make sure that any associated name does not
+                already exist and check www.nameprotect.com to be sure that
+                the name is not already trademarked for an existing software
+                product.</td>
+          </tr>
+        </table>
+          <p>
+MD5 sum for donated software: <strong>aaa5ffe2c1413ed1ece266663a4764f8</strong> (OpenSSL 0.9.7d).
+          </p>
+        <section id="Copyright">
+          <title>Copyright</title>
+          <table>
+            <tr>
+              <th>date</th>
+              <th>item</th>
+            </tr>
+            <tr>
+              <td>2005-12-12</td>
+              <td>Check and make sure that the papers that transfer rights to
+                  the ASF been received. It is only necessary to transfer
+                  rights for the package, the core code, and any new code
+                  produced by the project.</td>
+            </tr>
+            <tr>
+              <td>2005-12-16</td>
+              <td>Check and make sure that the files that have been donated
+                  have been updated to reflect the new ASF copyright.</td>
+            </tr>
+          </table>
+          <p>
+Identify name recorded for software grant:
+          </p>
+<quote><pre>
+Netcetera AG / Joachim Hagger, CTO
+   "CSV parsing and printing software including test and build
+    files (all delivered as source code). The file contributed is
+    found at:
+      ftp:ftp.netcetera.ch/pub/csvparser.jar
+    Dated 2005-06-05, 10:42:00, size 42KB"      
+</pre></quote>
+        </section>
+        <section id="Verify+distribution+rights">
+          <title>Verify distribution rights</title>
+          <p>
+Corporations and individuals holding existing distribution rights:
+          </p>
+          <ul>
+            <li>
+Netcetera AG. (Our contact: Stefan Rufer (<em>stefan.rufer@netcetera.ch</em>))
+            </li>
+          </ul>
+          <table>
+            <tr>
+              <th>date</th>
+              <th>item</th>
+            </tr>
+            <tr>
+              <td>not applicable</td>
+              <td>Check that all active committers have a signed CLA on
+                  record.</td>
+            </tr>
+            <tr>
+              <td>not applicable</td>
+              <td>Remind active committers that they are responsible for
+                  ensuring that a Corporate CLA is recorded if such is
+                  required to authorize their contributions under their
+                  individual CLA.</td>
+            </tr>
+            <tr>
+              <td>not applicable</td>
+              <td>Check and make sure that for all items included with the
+                  distribution that is not under the Apache license, we have
+                  the right to combine with Apache-licensed code and
+                  redistribute.</td>
+            </tr>
+            <tr>
+              <td>not applicable</td>
+              <td>Check and make sure that all items depended upon by the
+                  project is covered by one or more of the following approved
+                  licenses: Apache, BSD, Artistic, MIT/X, MIT/W3C, MPL 1.1, or
+                  something with essentially the same terms.</td>
+            </tr>
+          </table>
+          <p>Generally, the result of checking off these items will be a
+             Software Grant, CLA, and Corporate CLA for ASF licensed code,
+             which must have no dependencies upon items whose licenses that
+             are incompatible with the Apache License.</p>
+        </section>
+      </section>
+      <section id="Organizational+acceptance+of+responsibility+for+the+project">
+        <title>Organizational acceptance of responsibility for the project</title>
+        <ul>
+          <li>Has the receiving PMC voted to accept it? 
+<a href='http://mail-archives.apache.org/mod_mbox/jakarta-commons-dev/200508.mbox/%3c31cc37360508312212278c97c5@mail.gmail.com%3e'>Yes</a></li>
+          <li>Subversion URL for official record of initial codebase: <a href='http://svn.apache.org/repos/asf/jakarta/grants/'>(not currently available)</a>.</li>
+        </ul>
+      </section>
+    </section>
+  </body>
+</document>

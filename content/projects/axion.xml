@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+  <properties>
+    <title>Axion Project Incubation Status
+</title>
+    <version>$Revision: 1.4 $ $Date: 2014-03-27 23:51:21 +0000 (Thu, 27 Mar 2014) $
+</version>
+    <authors>
+      <person email="general@incubator.apache.org" name="the Apache Incubator Project"/>
+      <person email="axion-dev@db.apache.org" name="the Axion Development Team"/>
+    </authors>
+  </properties>
+  <body>
+    <section id="Overview">
+      <title>Overview
+</title>
+      <p>Axion is a Java-based relational database engine.
+</p>
+      <p>This page tracks Axion's incubation status. For general project
+status, see the Axion project website.
+</p>
+<p><span class="retired">The Axion project retired on 2006-01-23</span></p>
+    </section>
+    <section id="News">
+      <title>News
+</title>
+      <section id="Incubation+Related">
+        <title>Incubation Related
+</title>
+        <dl>
+           <dt>2006-01-23</dt>
+           <dd><a href="http://mail-archives.apache.org/mod_mbox/incubator-general/200601.mbox/%3cB94F91F8-4E42-4336-B9C6-B06D63BC8BF0@apache.org%3e">Cancelled at request of Sponsoring TLP.  The axion project never moved to the ASF from tigris.org.</a></dd>
+        </dl>
+        <dl>
+          <dt>2003-12-19
+</dt>
+          <dd>The
+
+            <a href="http://incubator.apache.org/">Apache Incubator Project
+</a>has acknowledged Axion's acceptance by the
+
+            <a href="http://db.apache.org/">Apache Database Project
+</a>. Incubation is officially underway.
+
+          </dd>
+          <dt>2003-12-02
+</dt>
+          <dd>The
+
+            <a href="http://db.apache.org/">Apache Database Project
+</a>has accepted Axion's proposal. Send message to
+
+            <a href="mailto:general-thread.243@db.apache.org">general-thread.243@db.apache.org
+</a>to retrieve the VOTE thread, and to
+
+            <a href="mailto:general-thread.247@db.apache.org">general-thread.257@db.apache.org
+</a>to retrieve the RESULT thread. Morgan Delegrange has
+
+            <a href="http://axion.tigris.org/servlets/ReadMsg?list=dev&amp;msgNo=720">volunteered
+</a>to act as "mentor".
+
+          </dd>
+          <dt>2003-11-04
+</dt>
+          <dd>Axion team
+
+            <a href="http://axion.tigris.org/servlets/ReadMsg?list=dev&amp;msgNo=697">has voted
+</a>to move the
+
+            <a href="http://db.apache.org/">Apache Database Project
+</a>.
+
+          </dd>
+        </dl>
+      </section>
+      <section id="Project+Related">
+        <title>Project Related
+</title>
+        <p>Currently, see
+
+          <a href="http://axion.tigris.org/news.html">http://axion.tigris.org/news.html
+</a>for project related news.
+
+        </p>
+      </section>
+    </section>
+    <section id="Project+Info">
+      <title>Project Info
+</title>
+      <table>
+        <tr>
+          <th colspan="1" rowspan="1">item
+</th>
+          <th colspan="1" rowspan="1">type
+</th>
+          <th colspan="1" rowspan="1">reference
+</th>
+        </tr>
+        <tr>
+          <td colspan="1" rowspan="1">Website
+</td>
+          <td colspan="1" rowspan="1">www
+</td>
+          <td colspan="1" rowspan="1">Currently
+
+            <a href="http://axion.tigris.org/">http://axion.tigris.org/
+</a>. Eventually
+
+            <a href="http://db.apache.org/axion/">http://db.apache.org/axion/
+</a>.
+
+          </td>
+        </tr><!--
+        <tr>
+          <td>&#160;</td>
+          <td>wiki</td>
+          <td>&#160;</td>
+        </tr>
+        -->
+        <tr>
+          <td colspan="1" rowspan="1">Mailing List
+</td>
+          <td colspan="1" rowspan="1">dev
+</td>
+          <td colspan="1" rowspan="1">axion-dev@db.apache.org (deprecated: dev@axion.tigris.org)
+</td>
+        </tr>
+        <tr>
+          <td colspan="1" rowspan="1"> 
+</td>
+          <td colspan="1" rowspan="1">user
+</td>
+          <td colspan="1" rowspan="1">axion-user@db.apache.org (deprecated: users@axion.tigris.org)
+</td>
+        </tr>
+        <tr>
+          <td colspan="1" rowspan="1"> 
+</td>
+          <td colspan="1" rowspan="1">cvs
+</td>
+          <td colspan="1" rowspan="1">axion-dev@db.apache.org (deprecated: cvs@axion.tigris.org)
+</td>
+        </tr>
+        <tr>
+          <td colspan="1" rowspan="1">Issue Database
+</td>
+          <td colspan="1" rowspan="1"> 
+</td>
+          <td colspan="1" rowspan="1">Currently
+
+            <a href="http://axion.tigris.org/servlets/ProjectIssues">http://axion.tigris.org/servlets/ProjectIssues
+</a>. Soon Bugzilla? Jira? To be determined.
+
+          </td>
+        </tr>
+        <tr>
+          <td colspan="1" rowspan="1">Source Repository
+</td>
+          <td colspan="1" rowspan="1">CVS
+</td>
+          <td colspan="1" rowspan="1">Currently
+
+            <a href="http://axion.tigris.org/source/browse/axion/">http://axion.tigris.org/source/browse/axion/
+</a>. Soon
+
+            <a href="http://cvs.apache.org/viewcvs/db-axion">db-axion
+</a>.
+
+          </td>
+        </tr>
+        <tr>
+          <td colspan="1" rowspan="1">Mentors
+</td>
+          <td colspan="1" rowspan="1"> 
+</td>
+          <td colspan="1" rowspan="1">Morgan Delegrange (morgand@apache)
+</td>
+        </tr>
+        <tr>
+          <td colspan="1" rowspan="1">Committers
+</td>
+          <td colspan="1" rowspan="1"> 
+</td>
+          <td colspan="1" rowspan="1">For now, see
+
+            <a href="http://axion.tigris.org/servlets/ProjectMemberList">http://axion.tigris.org/servlets/ProjectMemberList
+</a>
+          </td>
+        </tr>
+      </table>
+    </section>
+    <section id="Incubation+Status+Reports">
+      <title>Incubation Status Reports
+</title>
+      <p>ToDo: Add links here.
+</p>
+    </section>
+    <section id="Incubation+Work+Areas">
+      <title>Incubation Work Areas
+</title>
+      <section id="Project+Setup">
+        <title>Project Setup
+</title>
+        <p>This is the first phase on incubation, needed to start the project at
+Apache.
+</p>
+        <section id="Identify+the+project+to+be+incubated">
+          <title>Identify the project to be incubated
+</title>
+          <table>
+            <tr>
+              <th colspan="1" rowspan="1">date completed
+</th>
+              <th colspan="1" rowspan="1">item
+</th>
+            </tr>
+            <tr>
+              <td colspan="1" rowspan="1">2003-12-19
+</td>
+              <td colspan="1" rowspan="1">Make sure that the requested project name does not already exist and
+check www.nameprotect.com to be sure that the name is not already
+trademarked for an existing software product.
+
+                <br/>
+                <strong>Done.
+</strong>
+                <em>As of 19 December 2003, nothing seems relevant (
+
+                  <a href="http://nameprotect.com/cgi-bin/FREESearch/search.cgi?action=SEARCH&amp;db=PTO&amp;ss=axion" title="nameprotect.com search">try it yourself
+</a>). Note that "axion" is
+
+                  <a href="http://www.m-w.com/cgi-bin/dictionary?axion" title="look up &quot;axion&quot; in the dictionary">a scientific term
+</a>.
+
+                </em>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="1" rowspan="1">2003-12-02
+</td>
+              <td colspan="1" rowspan="1">If request from an existing Apache project to adopt an external
+package, then ask the Apache project for the cvs module and mail
+address names.
+
+                <br/>
+                <strong>Done.
+</strong>
+                <em>Send a message to
+
+                  <a href="mailto:general-thread.243@db.apache.org">general-thread.243@db.apache.org
+</a>to retrieve the VOTE thread, and to
+
+                  <a href="mailto:general-thread.247@db.apache.org">general-thread.257@db.apache.org
+</a>to retrieve the RESULT thread.
+
+                </em>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="1" rowspan="1">2003-11-04
+</td>
+              <td colspan="1" rowspan="1">If request from outside Apache to enter an existing Apache project,
+then post a message to that project for them to decide on acceptance.
+
+                <br/>
+                <strong>Done.
+</strong>
+                <em>See
+
+                  <a href="http://axion.tigris.org/servlets/ReadMsg?list=dev&amp;msgNo=697">http://axion.tigris.org/servlets/ReadMsg?list=dev&amp;msgNo=697
+</a>.
+
+                </em>
+              </td>
+            </tr>
+          </table>
+        </section>
+        <section id="Interim+responsibility">
+          <title>Interim responsibility
+</title>
+          <table>
+            <tr>
+              <th colspan="1" rowspan="1">date completed
+</th>
+              <th colspan="1" rowspan="1">item
+</th>
+            </tr>
+            <tr>
+              <td colspan="1" rowspan="1">2003-12-03
+</td>
+              <td colspan="1" rowspan="1">Identify all the Mentors for the incubation, by asking all that can
+be Mentors.
+
+                <br/>
+                <strong>Done.
+</strong>
+                <em>See
+
+                  <a href="http://axion.tigris.org/servlets/ReadMsg?list=dev&amp;msgNo=720">http://axion.tigris.org/servlets/ReadMsg?list=dev&amp;msgNo=720
+</a>.
+
+                </em>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="1" rowspan="1">2003-12-19
+</td>
+              <td colspan="1" rowspan="1">Subscribe all Mentors on the pmc and general lists.
+
+                <br/>
+                <strong>Done.
+</strong>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="1" rowspan="1">2003-12-19
+</td>
+              <td colspan="1" rowspan="1">Give all Mentors access to all incubator CVS modules. (to be done by
+PMC chair)
+
+                <br/>
+                <strong>Done.
+</strong>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="1" rowspan="1">2003-12-19
+</td>
+              <td colspan="1" rowspan="1">Tell Mentors to track progress in the file
+
+                <code>incubator/projects/{project.name}.cwiki
+</code>
+                <br/>
+                <strong>Done.
+</strong>
+                <em>Using
+
+                  <code>incubator/projects/axion.xml
+</code>instead, since Forrest's cwiki parser seems to be broken.
+
+                </em>
+              </td>
+            </tr>
+          </table>
+        </section>
+        <section id="Copyright">
+          <title>Copyright
+</title>
+          <table>
+            <tr>
+              <th colspan="1" rowspan="1">date completed
+</th>
+              <th colspan="1" rowspan="1">item
+</th>
+            </tr>
+            <tr>
+              <td colspan="1" rowspan="1">Submitted 16-July-2004
+</td>
+              <td colspan="1" rowspan="1">Check that the papers that transfer rights to the ASF been received.
+It is only necessary to transfer rights for the package, the core
+code, and any new code produced by the project.
+
+                <br/>(Fax submitted 16-July-2004. Not yet acknowledged.)
+
+              </td>
+            </tr>
+            <tr>
+              <td colspan="1" rowspan="1"> 
+</td>
+              <td colspan="1" rowspan="1">Check that the files that have been donated have been updated to
+reflect the new ASF copyright.
+
+                <br/>
+              </td>
+            </tr>
+          </table>
+        </section>
+        <section id="Verify+distribution+rights">
+          <title>Verify distribution rights
+</title>
+          <table>
+            <tr>
+              <th colspan="1" rowspan="1">date completed
+</th>
+              <th colspan="1" rowspan="1">item
+</th>
+            </tr>
+            <tr>
+              <td colspan="1" rowspan="1">2003-12-19
+</td>
+              <td colspan="1" rowspan="1">Check that for all code included with the distribution that is not
+under the Apache license, we have the right to combine with
+Apache-licensed code and redistribute.
+
+                <br/>
+                <strong>Done.
+</strong>
+                <em>All code currently distributed by the project is already available
+under an ASF-like license. See
+
+                  <a href="http://axion.tigris.org/unbranded-source/browse/*checkout*/axion/LICENSE.txt?rev=HEAD">Axion's original license
+</a>. This will be changed to the ASF license when the copyright is
+transfered (see
+
+                  <a href="#copyright">above
+</a>).
+
+                </em>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="1" rowspan="1">2003-12-19
+</td>
+              <td colspan="1" rowspan="1">Check that all source code distributed by the project is covered by
+one or more of the following approved licenses: Apache, BSD,
+Artistic, MIT/X, MIT/W3C, MPL 1.1, or something with essentially the
+same terms.
+
+                <br/>
+                <strong>Done.
+</strong>
+                <em>All code currently distributed by the project is already available
+under an ASF-like license. See
+
+                  <a href="http://axion.tigris.org/unbranded-source/browse/*checkout*/axion/LICENSE.txt?rev=HEAD">Axion's original license
+</a>. This will be changed to the ASF license when the copyright is
+transfered (see
+
+                  <a href="#copyright">above
+</a>).
+
+                </em>
+              </td>
+            </tr>
+          </table>
+        </section>
+        <section id="Establish+a+list+of+active+committers">
+          <title>Establish a list of active committers
+</title>
+          <table>
+            <tr>
+              <th colspan="1" rowspan="1">date completed
+</th>
+              <th colspan="1" rowspan="1">item
+</th>
+            </tr>
+            <tr>
+              <td colspan="1" rowspan="1"> 
+</td>
+              <td colspan="1" rowspan="1">Check that all active committers have submitted a contributors
+agreement.
+</td>
+            </tr>
+            <tr>
+              <td colspan="1" rowspan="1"> 
+</td>
+              <td colspan="1" rowspan="1">Add all active committers in the STATUS file.
+</td>
+            </tr>
+            <tr>
+              <td colspan="1" rowspan="1"> 
+</td>
+              <td colspan="1" rowspan="1">Ask root for the creation of committers' accounts on cvs.apache.org.
+</td>
+            </tr>
+          </table>
+        </section>
+        <section id="Infrastructure">
+          <title>Infrastructure
+</title>
+          <table>
+            <tr>
+              <th colspan="1" rowspan="1">date completed
+</th>
+              <th colspan="1" rowspan="1">item
+</th>
+            </tr>
+            <tr>
+              <td colspan="1" rowspan="1">2004-06-14
+</td>
+              <td colspan="1" rowspan="1">Ask infrastructure to create source repository modules and add the
+committers to the avail file.
+
+                <br/>
+                <strong>Done.
+</strong>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="1" rowspan="1">2004-06-14
+</td>
+              <td colspan="1" rowspan="1">Ask infrastructure to set up and archive Mailing lists.
+
+                <br/>
+                <strong>Done.
+</strong>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="1" rowspan="1"> 
+</td>
+              <td colspan="1" rowspan="1">Decide about and then ask infrastructure to setup an issue tracking
+system (Bugzilla, Scarab, Jira).
+</td>
+            </tr>
+            <tr>
+              <td colspan="1" rowspan="1"> 
+</td>
+              <td colspan="1" rowspan="1">Migrate the project to our infrastructure.
+
+                <br/>
+                <em>As previously discussed, waiting on final Milestone 3 release from
+Tigris.
+</em>
+              </td>
+            </tr>
+          </table>
+        </section>
+      </section>
+      <section id="Incubation">
+        <title>Incubation
+</title>
+        <p>These action items have to be checked for during the whole incubation
+process.
+</p>
+        <note>These items are not to be signed as done during incubation, as they
+may change during incubation. They are to be looked into and
+described in the status reports and completed in the request for
+incubation signoff.
+</note>
+        <section id="Collaborative+Development">
+          <title>Collaborative Development
+</title>
+          <ul>
+            <li>Have all of the active long-term volunteers been identified and
+acknowledged as committers on the project?
+</li>
+            <li>Are there three or more independent committers? (The legal definition
+of independent is long and boring, but basically it means that there
+is no binding relationship between the individuals, such as a shared
+employer, that is capable of overriding their free will as
+individuals, directly or indirectly.)
+</li>
+            <li>Are project decisions being made in public by the committers?
+</li>
+            <li>Are the decision-making guidelines published and agreed to by all of
+the committers?
+</li>
+          </ul>
+        </section>
+        <section id="Licensing+awareness">
+          <title>Licensing awareness
+</title>
+          <ul>
+            <li>Are all licensing, trademark, credit issues being taken care of and
+acknowleged by all committers?
+</li>
+          </ul>
+        </section>
+      </section>
+      <section id="Exit">
+        <title>Exit
+</title>
+        <p>Things to check for before voting the project out.
+</p>
+        <section id="Organizational+acceptance+of+responsibility+for+the+project">
+          <title>Organizational acceptance of responsibility for the project
+</title>
+          <dl>
+            <dt>If graduating to an existing PMC, has the PMC voted to accept it?
+</dt>
+            <dd>
+              <em>Yes. Send a message to
+
+                <a href="mailto:general-thread.243@db.apache.org">general-thread.243@db.apache.org
+</a>to retrieve the VOTE thread, and to
+
+                <a href="mailto:general-thread.247@db.apache.org">general-thread.257@db.apache.org
+</a>to retrieve the RESULT thread.
+
+              </em>
+            </dd>
+          </dl>
+        </section>
+        <section id="Incubator+sign-off">
+          <title>Incubator sign-off
+</title>
+          <dl>
+            <dt>Has the Incubator decided that the project has accomplished all of
+the above tasks?
+</dt>
+            <dd> 
+</dd>
+          </dl>
+        </section>
+      </section>
+    </section>
+  </body>
+</document>

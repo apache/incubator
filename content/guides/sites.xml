@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+
+<!DOCTYPE document
+[
+<!ENTITY root-path   '..'> <!-- The path to the incubator root -->
+]>
+
+<document>
+  <properties>
+    <atom url="http://mail-archives.apache.org/mod_mbox/incubator-general/?format=atom">general@incubator.apache.org Archives</atom>
+    <title>Podling Web Site Guide</title>
+  </properties>
+  <body>
+  
+    <section>
+        <title>Abstract</title>
+        <p>
+Podlings need to build a community in Apache in order to be accepted
+as part of the Apache Software Foundation. One of the tools used to build
+a community is the web site.
+        </p>
+    </section>
+     
+    <section>
+        <title>Podling Website Requirements</title>
+        <p>
+Podlings are, by definition, not yet fully accepted as part of the
+Apache Software Foundation. Therefore, they are subject to additional
+constraints on their websites.  These policies MUST be adhered to
+before Graduation is considered unless prior approval is obtained from
+the Incubator PMC.
+        </p>
+        <ul>
+            <li>
+The published site for each podling must conform to the guidelines in
+<a href="&root-path;/guides/branding.html">Podling Branding/Publicity</a>.
+            </li>
+            <li>
+The sources for every podling site sources should be maintained in the podling's site SVN or git directory
+            </li>
+            <li>
+The published site for each podling should conform to this URL space:
+<code>http://podlingname.incubator.apache.org/</code>
+            </li>
+			<li>
+The staging site for each podling should conform to this URL space:
+<code>http://podlingname.staging.apache.org/</code>
+		    </li>
+            <li>
+Every podling should maintain an incubation status file under:
+<code>http://incubator.apache.org/projects/podlingname.html</code>
+            </li>
+            <li>
+Eventual extra incubation documents should be filed under:
+<code>http://incubator.apache.org/projects/podlingname/**</code>
+           </li>
+           <li>
+The website lives in the following directory on people.apache.org:
+           <code>/www/podlingname.apache.org/content/</code>
+           </li>
+        </ul>
+     </section>
+       
+     <section>
+        <title>Creating the Podling Website</title>
+        <section>
+        <title>Creating A Good Podling Site</title>
+            <p>
+  Apache Project Web Sites typically include several standard pages.
+  Each page is formatted with a navigation bar on the left and a project
+  standard header that includes the Incubator graphic.
+            </p>
+            <p>
+  The Web Site can be established during incubation, and migrated
+  after incubation to a permanent place in the TLP home.
+            </p>
+            <ul>
+                <li>
+  Project Home Page: the primary entry point to the site; contains 
+  project description, news, invitation to join the project.
+                </li><li>
+  License Page: usually, the Apache License 2.0
+                </li><li>
+  Downloads: many projects in incubation will release code,
+  and this page describes them and has links to the download pages
+  that redirect to Apache Mirror sites.
+                </li><li>
+  Documentation: this page describes the project documentation,
+  including javadoc for Java projects; guides, tutorials, and links to
+  external documentation.
+                </li><li>
+  Committers: a list of current committers on the project.
+                </li><li>
+  Mailing Lists: there are several mailing lists that the
+  community might be interested in, and this page contains mailto: links
+  that allow easy subscription (and unsubscription) to any of them.
+                </li><li>
+  FAQ: frequently asked questions are answered here.
+                </li><li>
+  Road Map: if the project has a vision of future community
+  or development activities, the road map is published here.
+                </li><li>
+  Source Code: links to the browsable source repository and
+  svn commands to check out the sources.
+                </li><li>
+  Coding Standards: the coding standards for submitted code
+  by the community, along with a description of how strict the project
+  intends to be.
+                </li><li>
+  Issue Tracking: links to the JIRA or other issue tracking
+  tool, possibly including frequently used filters for issue lists.
+                </li><li>
+  Dependencies: other projects that this project depends on.
+                </li><li>
+  favicon: the project's icon in a format suitable for a browser's address bar.  If absent, an Apache Feather will be displayed.
+                </li></ul>
+        </section>
+  
+    <section id="Tool">
+        <title>Web Site Generation Tool</title>
+            <p>
+  The choice of tool used to generate the web site is left to 
+  the podling. If you already have a tool that you are comfortable
+  with, you can continue to use it. If you do not, consider using
+  the <a href="http://www.apache.org/dev/cmsref.html">Apache CMS</a>.
+            </p>
+            <p>
+  Regardless of which tool you use, the web site should be maintained
+  in the svn repository, and include the site generation tool as a binary
+  file. This simplifies the process of site generation and enables changes
+  to the site to be made by any committer. The generated site should also
+  be checked into svn. This allows the generated site to be relocated
+  to any part of the Apache site after incubation is complete.
+            </p>
+            <p>
+  Since the site is independent of the code, it should exist high in
+  the svn repository, e.g. parallel to the trunk of the source tree.
+            </p>
+        </section>
+        
+        <section><title>Publishing The Website</title>
+            <p>
+              <b>THIS IS VERY OUTDATED AND NEEDS FIXING</b><br/>
+The website is published by checking out the content from SVN into 
+the directory <code>/www/incubator.apache.org/content/podlingname</code>
+(old way) or <code>/www/podlingname.apache.org</code> (new way) on 
+<code>people.apache.org</code>. The particular SVN module used to
+store the website is a matter for the podling but it should be in SVN.
+           </p>
+           <p>
+People using Maven, Forrest, or any other tool still have
+to address the SVN publishing requirement that the
+infrastructure team has laid out. If that is done, then we
+just run "svn update" in that directory to load the site from
+SVN.
+           </p>
+           <p>
+The Mentors MUST add the information to the podling
+incubation status file, to describe the SVN module and the
+directory which holds the published site.
+           </p>
+        </section>
+        
+        <section id='create-website-using-wiki'><title>Using A Wiki To Create Documentation</title>
+        <p>
+        Podlings may use a wiki to create documentation (including the website) providing that follow the 
+        <a href='http://cwiki.apache.org/CWIKI/'>guidelines</a>. In particular, care must be taken to 
+        ensure that access to the wiki used to create documentation that may be included in the project
+        release is restricted to only those with filed <a href='http://www.apache.org/licenses/'>individual CLAs</a>. The PPMC MUST review all changes and ensure that
+        trust is not abused.
+        </p>
+        </section>
+    </section>
+    
+    <section>
+      <title>Main Incubator Website</title>
+      
+      <p>Please read the <a href="website.html">Incubator Website guide</a>
+      for more information about how the general Incubator site is laid out
+      and how to edit/regenerate the top-level documentation and a project's
+      status file.
+      </p>
+    </section>
+  </body>
+</document>

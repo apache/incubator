@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+  <properties>
+    <title>httpd mod_domain (nee mod_dns) IP clearance</title>
+  </properties>
+  <body>
+<section id="clearance">
+  <title>httpd mod_domain (nee mod_dns) IP clearance</title>
+
+<p>Apache HTTP Server's mod_domain is a module for httpd that
+enables the server framework to provide Domain Name Services (DNS).
+It was originally called mod_dns, but the name has been changed to
+avoid confusion with a different third-party module called mod_dns.</p>
+
+<table>
+  <tr>
+    <th>item</th>
+    <th>record</th>
+  </tr><tr>
+    <td>Date</td>
+    <td>2008-04-18</td>
+  </tr><tr>
+    <td>Contribution</td>
+    <td>mod_dns</td>
+  </tr><tr>
+    <td>Contributor(s)</td>
+    <td>Netmask (El-Mar) Internet Technologies Ltd.,<br />
+        Issac Goldstand</td>
+  </tr><tr>
+    <td>Software Grant(s)</td>
+    <td>grants/netmask.tif</td>
+  </tr><tr>
+    <td>Corporate CLA(s)</td>
+    <td>cclas/netmask-el-mar.pdf</td>
+  </tr><tr>
+    <td>Individual CLA(s)</td>
+    <td>Issac Goldstand (issac)</td>
+  </tr><tr>
+    <td>Location of import</td>
+    <td><a href="http://svn.apache.org/repos/asf/httpd/sandbox/mod_domain/">httpd/sandbox/mod_domain/</a></td>
+  </tr><tr>
+    <td>Destination PMC</td>
+    <td>Apache HTTP Server (httpd)</td>
+  </tr>
+</table>
+
+    </section>
+  </body>
+</document>

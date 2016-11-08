@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+  <properties>
+    <title>Lucene Korean Analyzer Intellectual Property (IP) Clearance Status</title>
+  </properties>
+  <body>
+    <section id="Lucene+Korean+Analyzer+Intellectual+Property+%28IP%29+Clearance+Status">
+      <title>Lucene Korean Analyzer Intellectual Property (IP) Clearance Status</title>
+    </section>
+    <section id="Description">
+      <title>Description</title>
+      <p>
+        이수명 (SooMyung Lee) is contributing software he wrote to perform Korean text
+        processing in Lucene, including a Korean morphological analyzer, dictionaries, a 
+        Korean tokenizer and a Korean filter.
+      </p>
+      <p>
+        The software package has been hosted on SourceForge, at
+        <a href="http://sourceforge.net/projects/lucenekorean"
+        >http://sourceforge.net/projects/lucenekorean</a>.
+      </p>
+      <p>
+        The donation process is being tracked on
+        <a href="https://issues.apache.org/jira/browse/LUCENE-4956">LUCENE-4956</a>.
+      </p>
+    </section>
+    <section id="Project+info">
+      <title>Project info</title>
+      <ul>
+        <li>The Lucene PMC will be responsible for the code.</li>
+      </ul>
+      <ul>
+        <li>The code will be included in the Lucene Core project.</li>
+      </ul>
+      <ul>
+        <li>Steve Rowe is managing the donation process.</li>
+      </ul>
+      <p>
+        <em>Completed tasks are shown by the completion date (YYYY-MM-dd).</em>
+      </p>
+      <section id="Identify+the+codebase">
+        <title>Identify the codebase</title>
+        <table>
+          <tr>
+            <th>date</th>
+            <th>item</th>
+          </tr>
+          <tr>
+            <td>2013-04-24</td>
+            <td>See <a href="https://issues.apache.org/jira/browse/LUCENE-4956">LUCENE-4956</a></td>
+          </tr>
+        </table>
+        <p>
+MD5 sum for donated software: see <a href="https://issues.apache.org/jira/browse/LUCENE-4956">LUCENE-4956</a>.
+        </p>
+        <section id="Copyright">
+          <title>Copyright</title>
+          <table>
+            <tr>
+              <th>date</th>
+              <th>item</th>
+            </tr>
+            <tr>
+              <td>2013-04-26</td>
+              <td>Check and make sure that the papers that transfer rights to
+                  the ASF been received. It is only necessary to transfer
+                  rights for the package, the core code, and any new code
+                  produced by the project.</td>
+            </tr>
+            <tr>
+              <td>2013-05-05</td>
+              <td>Check and make sure that the files that have been donated
+                  have been updated to reflect the new ASF copyright.</td>
+            </tr>
+          </table>
+          <p>
+Identify name recorded for software grant: SooMyung Lee (original developer)
+          </p>
+        </section>
+        <section id="Verify+distribution+rights">
+          <title>Verify distribution rights</title>
+            <p>
+Corporations and individuals holding existing distribution rights:
+            </p>
+            <ul>
+              <li>SooMyung Lee (original developer)</li>
+            </ul>
+          <table>
+            <tr>
+              <th>date</th>
+              <th>item</th>
+            </tr>
+            <tr>
+              <td>2013-04-26</td>
+              <td>Check that all active committers have a signed CLA on
+                  record.</td>
+            </tr>
+            <tr>
+              <td>2013-04-24</td>
+              <td>Remind active committers that they are responsible for
+                  ensuring that a Corporate CLA is recorded if such is
+                  required to authorize their contributions under their
+                  individual CLA.</td>
+            </tr>
+            <tr>
+              <td>2013-05-05</td>
+              <td>Check and make sure that for all items included with the
+                  distribution that is not under the Apache license, we have
+                  the right to combine with Apache-licensed code and
+                  redistribute.</td>
+            </tr>
+            <tr>
+              <td>2013-05-05</td>
+              <td>Check and make sure that all items depended upon by the
+                  project is covered by one or more of the following approved
+                  licenses: Apache, BSD, Artistic, MIT/X, MIT/W3C, MPL 1.1, or
+                  something with essentially the same terms.</td>
+            </tr>
+          </table>
+          <p>Generally, the result of checking off these items will be a
+             Software Grant, CLA, and Corporate CLA for ASF licensed code,
+             which must have no dependencies upon items whose licenses that
+             are incompatible with the Apache License.</p>
+        </section>
+      </section>
+      <section id="Organizational+acceptance+of+responsibility+for+the+project">
+        <title>Organizational acceptance of responsibility for the project
+</title>
+        <p>
+Related VOTEs:
+        </p>
+        <ul>
+          <li>
+            The VOTE thread on general@incubator.apache.org is here:
+            <a href="http://mail-archives.apache.org/mod_mbox/incubator-general/201305.mbox/%3c7AD4D4E3-530B-41E3-8323-DA3D66A40E7E@apache.org%3e"
+            >http://mail-archives.apache.org/mod_mbox/incubator-general/201305.mbox/%3c7AD4D4E3-530B-41E3-8323-DA3D66A40E7E@apache.org%3e</a>
+          </li>
+        </ul>
+      </section>
+    </section>
+  </body>
+</document>

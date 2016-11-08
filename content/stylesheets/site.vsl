@@ -1,0 +1,313 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+               "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--
+  Licensed to the Apache Software Foundation (ASF) under one
+  or more contributor license agreements.  See the NOTICE file
+  distributed with this work for additional information
+  regarding copyright ownership.  The ASF licenses this file
+  to you under the Apache License, Version 2.0 (the
+  "License"); you may not use this file except in compliance
+  with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing,
+  software distributed under the License is distributed on an
+  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  KIND, either express or implied.  See the License for the
+  specific language governing permissions and limitations
+  under the License. 
+-->
+##
+## Content Stylesheet for Site
+##
+## Defined variables
+##
+#set ($year = $date.getYear()+1900)
+##    
+## Start and end the processing
+##
+#document()
+##
+## This is where the macros live
+##
+#macro ( color_table $table )
+#set ($table = $table.setAttribute("class", "colortable"))
+#foreach ( $tw in $treeWalk.allElements($table) )
+#if ($tw.getName().equals("trh"))
+#set ($tw = $tw.setAttribute("align", "left"))
+#set ($tw = $tw.setName("th"))
+#end
+#end
+#if (! $table.getAttributeValue("width"))
+#set ($table = $table.setAttribute("width", "100%"))
+#end
+$table
+#end
+##
+#macro ( make_toc )
+#set ($allSections = $root.getChild("body").getChildren("section"))
+<ul>
+#foreach ( $section in $allSections )
+<li>#if ($section.getAttributeValue("id"))
+<a href='#$section.getAttributeValue("id")'>
+#end
+$section.getChild("title").getText()
+#if ($section.getAttributeValue("id")) </a>
+#end
+#if ( $section.getChildren("section").size() > 0 ) <ul>
+#foreach ( $subsection in $section.getChildren("section") )
+<li>#if ($subsection.getAttributeValue("id"))
+<a href='#$subsection.getAttributeValue("id")'>
+#end
+$subsection.getChild("title").getText()
+#if ($subsection.getAttributeValue("id")) </a>
+#end
+#if ( $subsection.getChildren("section").size() > 0  ) <ul>
+#foreach ( $subsubsection in $subsection.getChildren("section") )
+<li>#if ($subsubsection.getAttributeValue("id"))
+<a href='#$subsubsection.getAttributeValue("id")'>
+#end
+$subsubsection.getChild("title").getText()
+#if ($subsubsection.getAttributeValue("id")) </a>
+#end
+#if ( $subsubsection.getChildren("section").size() > 0  ) <ul>
+#foreach ( $subsubsubsection in $subsubsection.getChildren("section") )
+<li>#if ($subsubsubsection.getAttributeValue("id"))
+<a href='#$subsubsubsection.getAttributeValue("id")'>
+#end
+$subsubsubsection.getChild("title").getText()
+#if ($subsubsubsection.getAttributeValue("id")) </a>
+#end
+</li>
+#end
+</ul>
+#end
+</li>
+#end
+</ul>
+#end
+</li>
+#end
+</ul>
+#end
+</li>
+#end
+</ul>
+#end
+##
+##
+#macro ( make_note $note)
+<div class="note">
+$note
+</div>
+#end
+##
+##
+#macro ( metaauthor $author $email )
+<meta name="author" content="$author" /><meta name="email" content="$email" />
+#end
+##
+##
+#macro ( metaatom $title $url )
+<link rel="alternate" title="$title" type="application/atom+xml" href="$url" />
+#end
+##
+##
+#macro ( source $value )
+<div class="source"><code>$escape.getText($value.getText())</code>
+</div>
+#end
+##
+##
+#macro ( section $section $level )
+#if ($section.getChild("title"))
+#set ($heading = $section.getChildText("title"))
+#elseif ($section.getAttributeValue("id"))
+#set ($heading = $section.getAttributeValue("id"))
+#else
+#set ($heading = "")
+#end
+## add id="anchor" as link target rather than <a name="anchor">
+#set ($tmp = "$!section.getAttributeValue('id')")
+#if ($tmp != "")#set ($id=" id='$tmp'")#else#set ($id="")#end
+#if ($level == 1)
+<h2$id><img src="$relativePath/images/redarrow.gif" />$heading</h2>
+#elseif ($level == 2)
+<h3$id>$heading</h3>
+#elseif ($level == 3)
+<h4$id>$heading</h4>
+#else
+<h5$id>$heading</h5> 
+#end
+<div class="section-content">
+## output the section-level children with transformers
+#foreach ( $items in $section.getChildren() )
+#if ($items.getName().equals("source"))
+#source ($items)
+#elseif ($items.getName().equals("table"))
+#color_table ($items)
+#elseif ($items.getName().equals("note"))
+#make_note ($items)
+#elseif ($items.getName().equals("toc"))
+#make_toc ()
+#elseif ($items.getName().equals("section"))
+##set ($sublevel = $level + 1)
+#if ($level == 1)
+#section ($items 2)
+#elseif ($level == 2)
+#section ($items 3)
+#elseif ($level == 3)
+#section ($items 4)
+#else
+#section ($items 5)
+#end
+#elseif ($items.getName().equals("title"))
+## we already handled this one
+#else
+$items
+#end
+#end
+</div>
+#end
+##
+##
+#macro ( makeProject )
+#set ($menus = $project.selectNodes("body/menu"))
+#foreach ( $menu in $menus )
+#set ($title = $menu.getChild("title"))
+#if ($title.getAttributeValue("href"))
+      <div class="menuheader"><a 
+href="$title.getAttributeValue("href")">$menu.getChildText("title")</a></div>
+#else
+      <div class="menuheader">$menu.getChildText("title")</div>
+#end
+    <menu compact="compact">
+    #foreach ( $item in $menu.getChildren("li") ) 
+      $item 
+    #end 
+    </menu>
+#end
+#end
+##
+##
+#macro ( listProjects )
+#set ($menus = $project.selectNodes("body/projects")) 
+#foreach ( $menu in $menus ) 
+#set ($title = $menu.getChild("title")) 
+## Convert site-absolute links to site-relative
+#set ( $href = "$!title.getAttributeValue('href')" )
+#if ($href != "") 
+#if ($href.startsWith("/"))
+#set ($href = "$relativePath$href")
+#end
+      <div class="menuheader"><a 
+href="$href">$menu.getChildText("title")</a></div> 
+#else 
+      <div class="menuheader">$menu.getChildText("title")</div>
+#end 
+    <menu compact="compact">
+    #foreach ( $item in $menu.getChildren("li") ) 
+## much simpler than descending the tree here
+      $item.toString().replaceAll("<a href=\"/","<a href=\"${relativePath}/") 
+    #end 
+    #foreach ( $item in $menu.getChildren("p") ) 
+      $item 
+    #end 
+    </menu>
+#end 
+#end 
+##
+##
+#macro ( getProjectImage )
+#if ($project.getChild("logo"))
+
+<div class="span12">
+  <a href="http://www.apache.org/"><img src="http://incubator.apache.org/images/asf_logo_wide_small.png" alt="The Apache Software Foundation" border="0" style="margin-top: 2px" width="62%"/></a>
+</div>
+<div class="span4">
+#set ( $logoString = $project.getChild("logo").getAttributeValue("href") )
+#if ( $logoString.startsWith("/") )
+<a href="$project.getAttributeValue("href")"><img src="$relativePath$logoString" alt="$project.getChild("logo").getText()" border="0"/></a>
+#else
+<a href="$project.getAttributeValue("href")"><img src="$logoString" alt="$project.getChild("logo").getText()" border="0"/></a>
+#end
+</div>
+#else
+<div class="span16">
+<a href="http://www.apache.org/"><img src="http://www.apache.org/images/asf_logo_wide_small.png" alt="The Apache Software Foundation" align="left" border="0" style="margin-top: 2px" width="62%/></a>
+</div>
+##<td width="150" valign="middle" align="center">
+##  <p><strong><a href="http://www.apache.org/dyn/closer.cgi">Mirrored<br />
+##                                                       Worldwide</a></strong></p>
+##</td>
+#end
+#end
+##
+##
+#macro ( document )
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+#if ( $root.getChild("properties").getChild("base") )
+  $root.getChild("properties").getChild("base")
+#end
+  <link rel="stylesheet" href="$relativePath/style/bootstrap-1-3-0-min.css" type="text/css" />
+  <link rel="stylesheet" href="$relativePath/style/style.css" type="text/css" />
+    #set ($atoms = $root.getChild("properties").getChildren("atom"))
+#foreach ( $atom in $atoms )
+#metaatom ( $atom.getText() $atom.getAttributeValue("url") )
+#end
+  #set ($authors = $root.getChild("properties").getChildren("author"))
+  #foreach ( $au in $authors )
+   #metaauthor ( $au.getText() $au.getAttributeValue("email") )
+  #end
+  <title>$root.getChild("properties").getChild("title").getText() - $project.getChild("title").getText()</title>
+#set ($scripts = $root.getChild("properties").getChildren("script"))
+#if ( $scripts )
+  $scripts
+#end
+ </head>
+ <body>
+ <div class="container">
+  <div class="row">#getProjectImage()</div>
+  <div class="row"><div class="span16"><hr noshade="noshade" size="1"/></div></div>
+  
+  <div class="row">
+   <div class="span4">
+    <form action="http://www.google.com/search" method="get">
+     <input value="incubator.apache.org" name="sitesearch" type="hidden"/>
+     <input size="20" name="q" id="query" type="text" value="search..."
+      onclick="if(this.value == 'search...') {this.value = ''}"/>
+     <input name="Search" value="Go" type="submit"/>
+    </form>
+    #listProjects()
+    <!-- start Ads Server -->
+    <iframe src="http://www.apache.org/ads/buttonbar.html"
+     style="border-width:0; float: left" frameborder="0" scrolling="no"
+     width="135" height="265"></iframe>
+    <!-- end Ads Server -->
+   </div>
+   
+   <div class="span12">
+    #set ($allSections = $root.getChild("body").getChildren("section"))
+    #foreach ( $section in $allSections )
+    #section ($section 1)
+    #end
+   </div>
+   </div>
+  
+   <div class="row"><div class="span16"><hr noshade="noshade" size="1"/></div></div>
+  <div class="row">
+   <div class="span16 footer">
+     Copyright &#169; 2009-${year} The Apache Software Foundation<br />
+     Licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License, Version 2.0</a>.<br/>
+     Apache Incubator, Apache, the Apache feather logo, and the Apache Incubator project logo are trademarks of The Apache Software Foundation.
+     
+     
+    </div>
+  </div>
+ </div> 
+ </body>
+</html>
+#end

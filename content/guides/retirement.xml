@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Licensed under the Apache License, Version 2.0 (the "License");
+	you may not use this file except in compliance with the License.
+	You may obtain a copy of the License at
+
+	http://www.apache.org/licenses/LICENSE-2.0
+
+	Unless required by applicable law or agreed to in writing, software
+	distributed under the License is distributed on an "AS IS" BASIS,
+	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+	See the License for the specific language governing permissions and
+	limitations under the License.
+-->
+<document>
+	<properties>
+		<title>Guide to Retirement</title>
+		<atom url="http://mail-archives.apache.org/mod_mbox/incubator-general/?format=atom">general@incubator.apache.org Archives</atom>
+	</properties>
+	<body>
+		<section id="preamble">
+			<title>Guide to Retirement</title>
+			<section id="abstract">
+				<title>Abstract</title>
+				<p>
+					The intent of this document is to help Mentors and other
+					community members understand retirement, both as a
+					concept and a process.
+				</p>
+			</section>
+		</section>
+		<section id="introduction">
+			<title>What is Retirement?</title>
+			<p>
+				A retired podling is one which has been closed down on the
+				initiative of the PPMC or the IPMC for various reasons.  It is
+				no longer developed at the Apache Incubator and does not have
+				any other duties.
+			</p>
+			<p>
+				It's important to view this process as being the retirement of
+				the podling community, not the code. It should not be implied
+				that the code is not for use - just that it has no community.
+				So long as the Incubator's copyright requirements are
+				fulfilled by the podling prior to retirement, its source code
+				will continue to be made available through version control.
+			</p>
+			<p>
+				Retiring a podling is analogous to moving a top-level Apache
+				project to the <a href="http://attic.apache.org">Attic</a>,
+				but podlings receive a lower level of ongoing support -- for
+				example, podling websites are deleted outright rather than
+				munged to indicate retired status.
+			</p>
+		</section>
+
+		<section id="decision">
+			<title>Deciding to retire</title>
+			<p>
+				In the vast majority of cases, a podling decides to retire on
+				its own and that decision is later formally ratified by the
+				Incubator PMC; very rarely, the IPMC may act unilaterally.
+				(This is deliberate mimicry of Board oversight of TLPs -- 
+				the language and role titles change but in general the Board
+				and the IMPC merely implement the wishes of the community.)
+			</p>
+			<p>
+				Before the IPMC gets involved, a public discussion and
+				community vote SHOULD be held on the podling's dev list.  This
+				ensures that all podling stakeholders are properly informed and
+				have the opportunity to participate in the decision.
+			</p>
+			<p>
+				The final decision to retire the podling takes the form of a
+				vote by the IPMC on general@incubator.
+			</p>
+		</section>
+
+		<section id='steps-to-retirement'>
+			<title>Steps to retirement</title>
+			<p>
+			Once the IPMC vote to retire the podling has closed, a Mentor
+			or other volunteer needs to perform the following steps.
+			</p>
+			<ol>
+				<li>
+					Update <code>content/podlings.xml</code>:
+					<ul>
+						<li>Update podling status to "retired".</li>
+						<li>Add an "enddate" attribute set to the date that the IPMC vote concluded.</li>
+						<li>Remove the "reporting" element.</li>
+						<li>Add the "resolution" element. (Follow the example of other recently retired podlings.)</li>
+					</ul>
+				</li>
+				<li>
+					Update the podling's status page with a prominent message
+					indicating when the podling retired: &lt;p&gt;&lt;span
+					class="retired"&gt;The ${podling} podling retired on
+					XXXX-XX-XX&lt;/span&gt;&lt;/p&gt;.
+				</li>
+				<li>
+					Has the copyright checkbox of the podling's incubation
+					status page been checked off? If not, try to resolve it.
+					If it cannot be resolved, the podling's source code must
+					be removed from version control.
+				</li>
+				<li>
+					Delete the podling's dist dir, so that its releases will no
+					longer be mirrored:
+					<pre>svn remove https://dist.apache.org/repos/dist/release/incubator/${podling}</pre>
+					Any incubating releases will still be available via
+					<a href="http://archive.apache.org/dist/incubator">archive.apache.org/dist/incubator</a>.
+				</li>
+				<li>
+					Create a file RETIRED.txt at the top-level of each podling
+					source repository.  This should contain something like the
+					following:<br/>
+					<pre>This podling has been retired, please see:<br/>http://incubator.apache.org/projects/index.html#{podling-name}</pre>
+				</li>
+                <li>
+                    If the podling has a DOAP referenced in the
+                    <a href="https://svn.apache.org/repos/asf/comdev/projects.apache.org/data/projects.xml">projects.xml</a>
+                    file used for generating
+                    <a href="http://projects.apache.org">projects.apache.org</a>,
+                    remove the entry.
+                </li>
+				<li>
+					Open a "task" INFRA JIRA ticket entitled "Retire the
+					${podling} Incubator podling".  Open sub-tickets
+					using "Create Sub-Task" as applicable:
+					<ul>
+						<li>Close ${podling} mailing lists</li>
+						<li>(If copyright task completed) Make ${podling} version control read-only</li>
+						<li>(If copyright task <strong>not</strong> completed) Remove ${podling} version control</li>
+						<li>(If JIRA) Move ${podling} JIRA to "retired" and set read-only</li>
+						<li>(If Bugzilla) Close ${podling} Bugzilla</li>
+						<li>Make ${podling} wiki read-only</li>
+						<li>Turn off ${podling} automatic builds</li>
+						<li>Update ${podling} Incubator SVN
+							<ul>
+								<li>Add entries to asf-mailer.conf and send mail to cvs at incubator.apache.org</li>
+								<li>Remove entries from asf-authorizaton - this makes the directory rw to the Incubator PMC.</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li>
+					After Infra modifies the website SVN permissions, disable
+					the podling website by installing an
+					<a href="http://svn.apache.org/repos/asf/incubator/ripple/site/.htaccess">.htaccess</a>
+					file at the root of the podling website dir which consists
+					of only a redirect to the podling status page.
+				</li>
+				<li>When all steps towards retirement are done, announce completeness on general@incubator.</li>
+				<li>Indicate that the podling is closed down in the next board report.</li>
+			</ol>
+			<p>
+				The user accounts of the projects committers do not need
+				to be removed.
+			</p>
+		</section>
+	</body>
+</document>

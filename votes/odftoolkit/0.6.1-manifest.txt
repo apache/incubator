@@ -1,0 +1,105 @@
+== Apache Release Manifest ===============================================
+
+Project: Apache ODF Toolkit
+Release Candidate: Apache ODF Toolkit 0.6.1-incubating RC4
+Release Manager: Rob Weir (robweir)
+PPMC vote thread URL: http://markmail.org/message/uu4zzmzdqxr57njm
+Approved by Mentor: Nick Burch (nick)
+Usage: http://incubator.apache.org/guides/release.html
+
+== Contents ==============================================================
+
+From http://people.apache.org/~robweir/odftoolkit-release/odftoolkit-0.6.1-incubating/
+
+odftoolkit-0.6.1-incubating-src.zip     
+odftoolkit-0.6.1-incubating-src.zip.asc 
+odftoolkit-0.6.1-incubating-src.zip.md5 
+odftoolkit-0.6.1-incubating-src.zip.sha 
+
+odftoolkit-0.6.1-incubating-bin.zip     
+odftoolkit-0.6.1-incubating-bin.zip.asc 
+odftoolkit-0.6.1-incubating-bin.zip.md5 
+odftoolkit-0.6.1-incubating-bin.zip.sha 
+
+odftoolkit-0.6.1-incubating-doc.zip     
+odftoolkit-0.6.1-incubating-doc.zip.asc 
+odftoolkit-0.6.1-incubating-doc.zip.md5 
+odftoolkit-0.6.1-incubating-doc.zip.sha 
+
+
+== Reviewers and release votes ===========================================
++1 PPMC Oliver Rau (olira)
++1 PPMC Rob Weir (robweir)
++1 PPMC Svante Schubert (svanteschubert)
+
+== Review Items ==========================================================
+
+1.1 Checksums and PGP signatures are valid.
+    Reviewers: olira, nick
+
+2.1 Build is successful including automated tests.
+    Reviewers: robweir (WinXP/Oracle Java 1.7.0_21/Maven 3.0.5)
+               olira (MacOS/Oracle Java 1.7.0_21/Maven 3.0.5)
+               svanteschubert (Win7/Oracle Java 1.7.0_51/Maven 3.1.1)
+               ianc (Fedora17/Oracle Java 1.7.0_25/Maven 3.0.4)
+
+
+3.1 DISCLAIMER is correct, filenames include "incubating".
+    Reviewers: olira,robweir
+
+3.2 Top-level LICENSE and NOTICE are correct for each distribution.
+    Reviewers: robweir
+
+Comment:  the LICENSE and NOTICE appear in the root of the source archive, but in the META-INF directory of the JAR files 
+in the convenience prebuilt JAR and JavaDoc archives.  This ensures that this documentation does not become disassociated
+from these packages.
+
+
+3.3 All source files have license headers where appropriate.
+    Reviewers: robweir (built with -Ppedantic flag)
+               svanteschubert (built with -Ppedantic flag)
+
+3.4 The provenance of all source files is clear (ASF or software grants).
+    Reviewers: robweir 
+
+Comment: Initial check in was of ALv2 code from The ODF Toolkit Union.  We confirmed the contributors to that project
+    from the original Mercurial logs:  http://svn.apache.org/repos/asf/incubator/odf/pmc/ip-clearance/contributors.txt)
+
+3.5 Dependencies licenses are ok as per http://apache.org/legal/
+    Reviewers: robweir
+
+Note: There are dependencies on the schema definition files for ODF (OASIS) and MathML (W3C). The originating organizations 
+permit redistribution but not modification.  So they are not under an open source license.  Based on a legal-discuss
+conversation we do not include these files but download them at build time.
+
+See:
+
+http://mail-archives.apache.org/mod_mbox/www-legal-discuss/201111.mbox/%3CCAP-ksogA9Y-tbwHRkyJ4cNvwuKfaFsu4xJgYX_iudaG7tgzAPw%40mail.gmail.com%3E
+
+http://www.apache.org/legal/resolved.html#no-modification
+
+https://issues.apache.org/jira/browse/LEGAL-109
+
+
+3.6 Release consists of source code only, no binaries.
+    Reviewers: robweir
+
+Reviewed source archive for files of the following extensions:  JAR, WAR, EXE, COM, GIF, JPG.  None found.
+
+Comment:  There are some binary image files associated with the JavaDoc template, e.g., UML diagrams and similar illustrations.  These were
+binary originally, from screen shots, etc.  There is no source version.
+
+
+== Additional Notes ======================================================
+svanteschubert:
+Successful unzip/reference for check of documentation of
+http://people.apache.org/~robweir/odftoolkit-release/odftoolkit-0.6.1-incubating/odftoolkit-0.6.1-incubating-doc.zip
+
+Unzipped the JAR and tested the ODF specification reference created by our taglets for all three types class types
+
+* elements
+* attributes
+* types
+
+successful!
+

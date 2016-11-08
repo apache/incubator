@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+  <properties>
+    <title>Apache Storm JMS Integration Intellectual Property (IP) Clearance Status</title>
+  </properties>
+  <body>
+    <section id="Apache+Storm+JMS+Integration+SQE+Intellectual+Property+%28IP%29+Clearance+Status">
+      <title>Apache Storm JMS Integration Intellectual Property (IP) Clearance Status</title>
+    </section>
+    <section id="Description">
+      <title>Description</title>
+      <p>Apache Storm JMS Integration provides integration between Storm and the Java Message Service</p>
+    </section>
+    <section id="Project+info">
+      <title>Project info</title>
+      <ul>
+        <li>The Apache Storm PMC will be responsible for the code</li>
+      </ul>
+      <ul>
+        <li>This contribution will be placed in the "external" directory of the Apache Storm repository</li>
+      </ul>
+      <ul>
+        <li>Officer or member managing donation: P. Taylor Goetz (ptgoetz@apache.org)</li>
+      </ul>
+      <p>
+        <em>Completed tasks are shown by the completion date (YYYY-MM-dd).</em>
+      </p>
+      <section id="Identify+the+codebase">
+        <title>Identify the codebase</title>
+        <table>
+          <tr>
+            <th>date</th>
+            <th>item</th>
+          </tr>
+          <tr>
+            <td>2016-09-21</td>
+            <td>The source code can be found at <a href="https://github.com/ptgoetz/storm-jms">https://github.com/ptgoetz/storm-jms (including wiki content)</a>
+            with the following git commit SHA: aab6acdf316c48bf566e37776790116f2794199b</td>
+          </tr>
+          <tr>
+            <td>2016-09-21</td>
+            <td>If applicable, make sure that any associated name does not
+                already exist and is not already trademarked for an existing software
+                product.</td>
+          </tr>
+        </table>
+        <p>
+Git commit SHA for donated software:  (aab6acdf316c48bf566e37776790116f2794199b).
+        </p>
+        <section id="Copyright">
+          <title>Copyright</title>
+          <table>
+            <tr>
+              <th>date</th>
+              <th>item</th>
+            </tr>
+            <tr>
+              <td>2016-09-28</td>
+              <td>Check and make sure that the papers that transfer rights to
+                  the ASF been received. It is only necessary to transfer
+                  rights for the package, the core code, and any new code
+                  produced by the project.</td>
+            </tr>
+            <tr>
+              <td>2016-09-21</td>
+              <td>Check and make sure that the files that have been donated
+                  have been updated to reflect the new ASF copyright.</td>
+            </tr>
+          </table>
+          <p>
+Identify name recorded for software grant: <em>grants.txt:  file: peter-taylor-goetz-storm-jms.pdf, for: Apache Storm JMS Integration</em>
+          </p>
+        </section>
+        <section id="Verify+distribution+rights">
+          <title>Verify distribution rights</title>
+            <p>
+Corporations and individuals holding existing distribution rights:
+            </p>
+            <ul>
+    <li>Author: P. Taylor Goetz (Storm PMC Chair)</li>
+    <li>Contributor: Brian O'Neill (ICLA on file)</li>
+    <li>Contributor: Andy Toone (ICLA request sent)</li>
+    <li>Contributor: Tyler Benson (minor commit)</li>
+    <li>Contributor: Paul Codding (minor commit)</li>
+    <li>Contributor: Parth Brahmbhatt (Storm PMC)</li>
+            </ul>
+          <table>
+            <tr>
+              <th>date</th>
+              <th>item</th>
+            </tr>
+            <tr>
+              <td>2016-09-21</td>
+              <td>Check that all active committers have a signed CLA on
+                  record.</td>
+            </tr>
+            <tr>
+              <td>2016-09-21</td>
+              <td>Remind active committers that they are responsible for
+                  ensuring that a Corporate CLA is recorded if such is
+                  required to authorize their contributions under their
+                  individual CLA.</td>
+            </tr>
+            <tr>
+              <td>2016-09-21</td>
+              <td>Check and make sure that for all items included with the
+                  distribution that is not under the Apache license, we have
+                  the right to combine with Apache-licensed code and
+                  redistribute.</td>
+            </tr>
+            <tr>
+              <td>2016-09-21</td>
+              <td>Check and make sure that all items depended upon by the
+                  project is covered by one or more of the following approved
+                  licenses: Apache, BSD, Artistic, MIT/X, MIT/W3C, MPL 1.1, or
+                  something with essentially the same terms.</td>
+            </tr>
+          </table>
+          <p>Generally, the result of checking off these items will be a
+             Software Grant, CLA, and Corporate CLA for ASF licensed code,
+             which must have no dependencies upon items whose licenses that
+             are incompatible with the Apache License.</p>
+        </section>
+      </section>
+      <section id="Organizational+acceptance+of+responsibility+for+the+project">
+        <title>Organizational acceptance of responsibility for the project
+</title>
+        <p>
+Related VOTEs:
+        </p>
+        <ul>
+          <li><em>Vote thread on dev@: <a href="http://mail-archives.apache.org/mod_mbox/storm-dev/201609.mbox/%3cC06062BF-2520-4122-BE1E-3192CDA8EF25@gmail.com%3e">http://mail-archives.apache.org/mod_mbox/storm-dev/201609.mbox/%3cC06062BF-2520-4122-BE1E-3192CDA8EF25@gmail.com%3e</a></em></li>
+        </ul>
+      </section>
+    </section>
+  </body>
+</document>

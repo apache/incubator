@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+
+<!DOCTYPE project
+[
+<!ENTITY project-menu   SYSTEM "../target/project-menu.ent">
+]>
+
+<document>
+  <properties>
+    <atom url="http://mail-archives.apache.org/mod_mbox/incubator-general/?format=atom">general@incubator.apache.org Archives</atom>
+    <title>The Story of a Podling</title>
+  </properties>
+  <body>
+    <section id="story">
+      <title>DRAFT - The Story of a Podling</title>
+      <p><b>This is just a draft for now...still a work in progress</b></p>
+      <p>
+        This is an informational overview of the life of a podling, from proposal to graduation.
+      </p>
+      <p>
+        It is intended for people considering incubating their project at the ASF, or people joining podlings,
+        as a single page that gives an overview of the incubation process, without going into too much detail.
+      </p>
+      <p>
+        Links to examples of proposals, discussions etc. are provided
+        to give a more concrete overview of what happens during incubation. 
+      </p>
+      <p>
+        We won't include many details - the goal is to keep this short, 
+        so that you consume it in about ten minutes.
+      </p>
+      
+        <section id="foo">
+          <title>Proposal</title>
+          <p>
+            The first step towards incubation is to create a proposal for the Incubator.
+            Examples like the <a href="http://wiki.apache.org/incubator/ClerezzaProposal">Clerezza</a> and 
+            <a href="http://wiki.apache.org/incubator/FlexProposal">Flex</a> proposals will
+            give you a feel for what to put in there.
+          </p>
+          <p>
+            Creating the proposal will usually raise a number of questions about your future
+            podling, and it's good to already find an ASF <a href="http://incubator.apache.org/incubation/Roles_and_Responsibilities.html#Champion">champion</a> 
+            at this stage,
+            to answer any questions that you might have or make the necessary contacts.
+          </p>
+          <p>
+            Once your proposal is ready and you have decided to go forward, you can add it 
+            to the <a href="http://wiki.apache.org/incubator/">wiki</a> and send a [PROPOSAL]
+            message to the general@a.o list. Incubator PMC members can then give their feedback
+            to help refine the proposal before voting upon it. 
+            See the <a href="http://markmail.org/message/5udhowlggdmjsmd6">Flex discussion</a> for an example.
+          </p>
+        </section>
+        <section id="foo">
+          <title>Mentors and initial committers</title>
+          <p>In general 2-3 incubation mentors, either ASF members of Incubator PMC members</p>
+          <p>Need to decide how to manage the list of initial committers</p>
+        </section>
+        <section id="foo">
+          <title>Incubator entry vote</title>
+          <p>Starts when discussion is done</p>
+          <p>Point to Flex vote</p>
+          <p>72 hours as per ASF voting rules</p>
+          <p>Usually driven by the champion</p>
+          <p>Usually not contentious, as the previous phases help build consensus</p>
+        </section>
+        <section id="foo">
+          <title>Podling creation</title>
+          <p>Point to Flex jira issues</p>
+          <p>Driven by the champion</p>
+        </section>
+        <section id="foo">
+          <title>Initial code and trademarks</title>
+          <p>If initial code is being donated you need software grants</p>
+          <p>If the donated code has multiple owners or contributors, you might need to chase them down at this point, or omit the code for which you cannot get permission</p>
+          <p>Any relevant trademarks should be donated at this point</p>
+        </section>
+        <section id="foo">
+          <title>First release</title>
+          <p>
+            It's good to make a first release early, even if it's not of great technical quality.
+            From the Incubator's point of view, the release only has to fulfill the ASF's release requirements, which are primarily legal.
+            Whether the product is good or useful software doesn't matter at this stage.  
+          </p>
+          <p>
+            Learning the ASF's legal rules and customs, adapting the codebase to conform to them, and getting that first release past the Incubator PMC voting stage can be hard, so it's a good idea to tackle this task during the initial burst of energy as incubation begins.
+            A secondary goal of making an early release is to document the podling's release process (link to Flex or Sling process), so that subsequent releases are easy and fast and people who are not core developers may serve as release managers.
+          </p>
+        </section>
+        <section id="foo">
+          <title>Community growth</title>
+          <p>
+            To graduate, a podling has to demonstrate its ability to grow its community. In practice, this means attracting and electing new committers and PPMC members.
+            Starting early on this helps. (TODO: reading list, Jukka's posts?)
+          </p>
+          <p>
+            TODO: demonstrate openness/diversity
+          </p>
+        </section>
+        <section id="foo">
+          <title>Exit discussions</title>
+          <p>Incubation can proceed in unexpected directions - the standard exit is to become a TLP but that's not the only possibility (join a TLP, go elsewhere, retire, ...)
+            - which are not necessarily failures.
+          </p>
+          <p>Discuss with the mentors and community based on the graduation criteria (link - Clerezza discussion?)</p>
+        </section>
+        <section id="foo">
+          <title>Graduation vote</title>
+          <p>If graduating to TLP, First step is to create the board resolution, discuss who's on the new PMC (link to flex as one example), 
+            it's good to have at least one ASF member in there.</p>
+          <p>Community votes first, then IPMC.</p>
+          <p>Point to policy + example votes</p>
+        </section>
+        <section id="foo">
+          <title>Board resolution</title>
+          <p>The Incubator PMC acceptance vote is only a recommendation for the board to accept the new project.</p>
+          <p>The new TLP only exists once the board approves the resolution to establish it. This is usually announced right after the board meeting, and the new PMC chair
+          can then start the mechanics of establishing the TLP.</p>
+        </section>
+        <section id="foo">
+          <title>Champagne!</title>
+          <p>Congratulations - at this point the new TLP is a full blown Apache project, and the newly created PMC is fully in charge of its destiny.</p>
+        </section>
+    </section>
+  </body>
+</document>

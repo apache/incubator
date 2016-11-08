@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+    <properties>
+        <title>Etch Incubation Status</title>
+        <link href="http://purl.org/DC/elements/1.0/" rel="schema.DC"/>
+    </properties>
+    <body>
+        <section id="Etch+Project+Incubation+Status">
+            <title>Etch Project Incubation Status
+            </title>
+            <p>
+                This page tracks the project status, incubator-wise. For more general
+                project status, look at the
+                <a href="http://incubator.apache.org/etch/">project website</a>.
+            </p>
+            <p><span class="graduated">The Etch project graduated on 2013-01-16</span></p>
+        </section>
+        <section id="Description">
+            <title>Description
+            </title>
+            <p>
+                Etch - a cross-platform, language- and transport-independent
+                framework for building and consuming network services.
+            </p>
+            <p>
+              Etch is a cross-platform, language- and transport-independent
+              framework for building and consuming network services. The Etch
+              toolset includes a network service description language, a compiler,
+              and binding libraries for a variety of programming languages. Etch is
+              also transport-independent, allowing for a variety of different
+              transports to used based on need and circumstance. The goal of Etch is
+              to make it simple to define small, focused services that can be easily
+              accessed, combined, and deployed in a similar manner. Ultimately with
+              Etch, service development and consumption becomes no more difficult
+              than library development and consumption.
+            </p>
+        </section>
+        <section id="News">
+            <title>News
+            </title>
+            <ul>
+                <li>2013-01-16 Apache Etch has been established as a Top Level Project</li>
+                <li>2012-12-18 Added missing status report links, signed off open items</li>
+                <li>2012-03-12 Suitable name search completed (signed off at 2012-04-16)</li>
+                <li>2012-02-08 Thomas Marsh was added as a new committer.</li>
+                <li>2011-10-13 Martin Veith was added as a new committer.</li>
+                <li>2010-06-02 Michael Fitzner was added as a new committer.</li>
+                <li>2010-05-19 Holger Grandy was added as a new committer.</li>
+                <li>2009-04-28 Please welcome new committer manoj ganesan.</li>
+                <li>2009-04-16 Release 1.0.2 announced.</li>
+                <li>2008-09-02 Project enters incubation.</li>
+            </ul>
+        </section>
+        <section id="Project+info">
+            <title>Project info
+            </title>
+            <table>
+                <tr>
+                    <th>item</th>
+                    <th>type</th>
+                    <th>reference</th>
+                </tr>
+                <tr>
+                    <td>Website</td>
+                    <td>www</td>
+                    <td id="www"><a href="http://incubator.apache.org/etch/">http://incubator.apache.org/etch/</a></td>
+                </tr>
+                <tr>
+                    <td>Mailing list</td>
+                    <td>dev</td>
+                    <td id="mail-dev"><code>etch-dev</code><code>@</code><code>incubator.apache.org</code></td>
+                </tr>
+                <tr>
+                    <td>Mailing list</td>
+                    <td>commits</td>
+                    <td id="mail-commits"><code>etch-commits</code><code>@</code><code>incubator.apache.org</code></td>
+                </tr>
+                <tr>
+                    <td>Mailing list</td>
+                    <td>users</td>
+                    <td><code>etch-user</code><code>@</code><code>incubator.apache.org</code></td>
+                </tr>
+                <tr>
+                    <td>Mailing list</td>
+                    <td>PPMC</td>
+                    <td><code>etch-private</code><code>@</code><code>incubator.apache.org</code></td>
+                </tr>
+                <tr>
+                    <td>Bug tracking</td>
+                    <td>JIRA</td>
+                    <td id="tracker">
+                      <a href="http://issues.apache.org/jira/browse/ETCH">http://issues.apache.org/jira/browse/ETCH</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Source code</td>
+                    <td>SVN</td>
+                    <td id="svn">
+                        <a href="http://svn.apache.org/repos/asf/incubator/etch/">
+                          http://svn.apache.org/repos/asf/incubator/etch/
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Proposal</td>
+                    <td>Wiki
+                    </td>
+                    <td>
+                        <a href="http://wiki.apache.org/incubator/EtchProposal">
+                            http://wiki.apache.org/incubator/EtchProposal</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Mentors</td>
+                    <td>cutting</td>
+                    <td>Doug Cutting</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>yonik</td>
+                    <td>Yonik Seeley</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>dashorst</td>
+                    <td>Martijn Dashorst</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>gmcdonald</td>
+                    <td>Gavin McDonald</td>
+                </tr>
+                <tr>
+                    <td>Committers</td>
+                    <td>dixson</td>
+                    <td>James Dixson</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>gsandhir</td>
+                    <td>Gaurav Sandhir</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>jdecocq</td>
+                    <td>James deCocq</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>manojganesan</td>
+                    <td>Manoj Ganesan</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>rebarraz</td>
+                    <td>Rene Barazza</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>sccomer</td>
+                    <td>Scott Comer</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>ypark</td>
+                    <td>Youngjin Park</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>grandyho</td>
+                    <td>Holger Grandy</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>fitzner</td>
+                    <td>Michael Fitzner</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>veithm</td>
+                    <td>Martin Veith</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>tmarsh</td>
+                    <td>Thomas Marsh</td>
+                </tr>
+            </table>
+        </section>
+        <section id="Incubation+Status+Reports">
+            <title>Incubation Status Reports
+            </title>
+            <ul>
+                <li><a href="http://wiki.apache.org/incubator/December2012">December 2012</a></li>
+                <li><a href="http://wiki.apache.org/incubator/September2012">September 2012</a></li>
+                <li><a href="http://wiki.apache.org/incubator/June2012">June 2012</a></li>
+                <li><a href="http://wiki.apache.org/incubator/March2012">March 2012</a></li>
+                <li><a href="http://wiki.apache.org/incubator/December2011">December 2011</a></li>
+                <li><a href="http://wiki.apache.org/incubator/September2011">September 2011</a></li>
+                <li><a href="http://wiki.apache.org/incubator/June2011">June 2011</a></li>
+                <li><a href="http://wiki.apache.org/incubator/March2011">March 2011</a></li>
+                <li><a href="http://wiki.apache.org/incubator/December2010">December 2010</a></li>
+                <li><a href="http://wiki.apache.org/incubator/September2010">September 2010</a></li>
+                <li><a href="http://wiki.apache.org/incubator/June2010">June 2010</a></li>
+                <li><a href="http://wiki.apache.org/incubator/March2010">March 2010</a></li>
+                <li><a href="http://wiki.apache.org/incubator/December2009">December 2009</a></li>
+                <li><a href="http://wiki.apache.org/incubator/September2009">September 2009</a></li>
+                <li><a href="http://wiki.apache.org/incubator/June2009">June 2009</a></li>
+                <li><a href="http://wiki.apache.org/incubator/March2009">March 2009</a></li>
+                <li><a href="http://wiki.apache.org/incubator/December2008">December 2008</a></li>
+                <li><a href="http://wiki.apache.org/incubator/November2008">November 2008</a></li>
+                <li><a href="http://wiki.apache.org/incubator/October2008">October 2008</a></li>
+            </ul>
+        </section>
+        <section id="Incubation+Work+Items">
+            <title>Incubation Work Items
+            </title>
+            <section id="Project+Setup">
+                <title>Project Setup</title>
+                <p>This is the first phase on incubation, needed to start the project at Apache.</p>
+                <p>
+                    <em>Item assignment is shown by the Apache id.</em>
+                    <em>Completed tasks are shown by the completion date (YYYY-MM-dd).</em>
+                </p>
+                <section id="Identify+the+project+to+be+incubated%26%23xD%3B">
+                    <title>Identify the project to be incubated&amp;#xD;</title>
+                    <table>
+                        <tr>
+                            <th>date</th>
+                            <th>item</th>
+                            <th>note</th>
+                        </tr>
+                        <tr>
+                            <td>2012-04-16</td>
+                            <td>
+                                Make sure that the requested project name does not already
+                                exist and check www.nameprotect.com to be sure that the name
+                                is not already trademarked for an existing software product.
+                            </td>
+                            <td>
+                                Prior to acceptance there was a great deal of discussion whether
+                                Apache Etch would interfere with the Debian Etch distribution. The
+                                sceptics meant that Debian Etch is extremely well-known name and 
+                                should be avoided. The team defended the position by pointing out
+                                that by the time Apache Etch graduates, Debian Lenny has taken 
+                                over the world and another year or two the Debian Etch is just a
+                                distant memory.
+                                <p>
+                                    In 2012 Scott Corner has completed a suitable name search and didn't
+                                    uncover any issues. VP Trademarks has signed off the suitable name
+                                    search on 2012-04-16
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2012-12-18</td>
+                            <td>
+                                If request from anywhere to become a stand-alone PMC, then
+                                assess the fit with the ASF, and create the lists and modules
+                                under the incubator address/module names if accepted.
+                        </td>
+                        <td></td>
+                        </tr>
+                    </table>
+                </section>
+                <section id="Interim+responsibility">
+                    <title>Interim responsibility</title>
+                    <table>
+                        <tr>
+                            <th>date</th>
+                            <th>item</th>
+                        </tr>
+                        <tr>
+                            <td>2008-07</td>
+                            <td>
+                                Identify all the Mentors for the incubation, by asking all
+                                that can be Mentors.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2008-10</td>
+                            <td>Subscribe all Mentors on the private and development lists.</td>
+                        </tr>
+                        <tr>
+                            <td>2008-10</td>
+                            <td>
+                                Give all initial committers access to the incubator SVN repository.
+                                (to be done by PMC chair)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2008-11</td>
+                            <td>
+                                Tell Mentors to track progress in the file
+                                'incubator/projects/etch.html'
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+                <section id="Copyright">
+                    <title>Copyright</title>
+                    <table>
+                        <tr>
+                            <th>date</th>
+                            <th>item</th>
+                        </tr>
+                        <tr>
+                            <td>2011-08-20</td>
+                            <td>
+                                Check and make sure that the papers that transfer rights to
+                                the ASF been received. It is only necessary to transfer rights
+                                for the package, the core code, and any new code produced by
+                                the project.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2009-06-12</td>
+                            <td>
+                                Check and make sure that the files that have been donated have
+                                been updated to reflect the new ASF copyright.
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+                <section id="Verify+distribution+rights">
+                    <title>Verify distribution rights</title>
+                    <table>
+                        <tr>
+                            <th>date</th>
+                            <th>item</th>
+                        </tr>
+                        <tr>
+                            <td>2009-06-12</td>
+                            <td>
+                                Check and make sure that for all code included with the
+                                distribution that is not under the Apache license, we have
+                                the right to combine with Apache-licensed code and
+                                redistribute.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2009-06-12</td>
+                            <td>
+                                Check and make sure that all source code distributed by the
+                                project is covered by one or more of the following approved
+                                licenses: Apache, BSD, Artistic, MIT/X, MIT/W3C, MPL 1.1, or
+                                something with essentially the same terms.
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+                <section id="Establish+a+list+of+active+committers">
+                    <title>Establish a list of active committers</title>
+                    <table>
+                        <tr>
+                            <th>status</th>
+                            <th>item</th>
+                        </tr>
+                        <tr>
+                            <td>2008-10-22</td>
+                            <td>
+                                Check that all active committers have submitted a contributors
+                                agreement.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2008-10-25</td>
+                            <td>
+                                Ask root for the creation of committers' accounts on
+                                people.apache.org.
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+                <section id="Infrastructure">
+                    <title>Infrastructure</title>
+                    <table>
+                        <tr>
+                            <th>status</th>
+                            <th>item</th>
+                        </tr>
+                        <tr>
+                            <td>2008-11-11</td>
+                            <td>
+                                Ask infrastructure to create source repository modules and
+                                grant the committers karma.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2008-10-02</td>
+                            <td>Ask infrastructure to set up and archive Mailing lists.</td>
+                        </tr>
+                        <tr>
+                            <td>2008-09-24</td>
+                            <td>
+                                Decide about and then ask infrastructure to setup an issue
+                                tracking system (Bugzilla, Scarab, Jira).
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2008-11-10</td>
+                            <td>Migrate the project to our infrastructure.</td>
+                        </tr>
+                    </table>
+                </section>
+                <section id="Project+specific">
+                    <title>Project specific</title>
+                    <table>
+                        <tr>
+                            <th>status</th>
+                            <th>item</th>
+                        </tr>
+                        <tr>
+                            <td>2008-11-09</td>
+                            <td>transfer project wiki pages from developer.cisco.com</td>
+                        </tr>
+                    </table>
+                </section>
+            </section>
+            <section id="Incubation">
+                <title>Incubation</title>
+                <p>These action items have to be checked for during the whole incubation
+                    process.
+                </p>
+                <p>
+                    <em>These items are not to be signed as done during incubation, as they
+                        may change during incubation.
+                    </em>
+                    <em>They are to be looked into and described in the status reports and
+                        completed in the request for incubation signoff.
+                    </em>
+                </p>
+                <section id="Collaborative+Development">
+                    <title>Collaborative Development
+                    </title>
+                    <table>
+                        <tr>
+                            <th>status</th>
+                            <th>item</th>
+                        </tr>
+                        <tr>
+                            <td>2012-12-18</td>
+                            <td>Have all of the active long-term volunteers been identified and
+                            acknowledged as committers on the project?</td>
+                        </tr>
+                        <tr>
+                            <td>2012-12-18</td>
+                            <td>Are there three or more independent committers? (The legal definition
+                            of independent is long and boring, but basically it means that there
+                            is no binding relationship between the individuals, such as a shared
+                            employer, that is capable of overriding their free will as
+                            individuals, directly or indirectly.)</td>
+                        </tr>
+                        <tr>
+                            <td>2012-12-18</td>
+                            <td>Are project decisions being made in public by the committers?</td>
+                        </tr>
+                        <tr>
+                            <td>2012-12-18</td>
+                            <td>Are the decision-making guidelines published and agreed to by all of
+                            the committers?</td>
+                        </tr>
+                    </table>
+                </section>
+                <section id="Licensing+awareness">
+                    <title>Licensing awareness
+                    </title>
+                    <table>
+                        <tr>
+                            <th>status</th>
+                            <th>item</th>
+                        </tr>
+                        <tr>
+                            <td>2012-12-18</td>
+                            <td>Are all licensing, trademark, credit issues being taken care of and
+                            acknowleged by all committers?</td>
+                        </tr>
+                    </table>
+                </section>
+            </section>
+            <section id="Exit">
+                <title>Exit
+                </title>
+                <p>
+                    <em>Things to check for before voting the project out.
+                    </em>
+                </p>
+                <section id="Organizational+acceptance+of+responsibility+for+the+project">
+                    <title>Organizational acceptance of responsibility for the project
+                    </title>
+                    <table>
+                        <tr>
+                            <th>status</th>
+                            <th>item</th>
+                        </tr>
+                        <tr>
+                            <td>2013-01-16</td>
+                            <td>If graduating to a new PMC, has the board voted to accept it?</td>
+                        </tr>
+                    </table>
+                </section>
+                <section id="Incubator+sign-off">
+                    <title>Incubator sign-off
+                    </title>
+                    <table>
+                        <tr>
+                            <th>status</th>
+                            <th>item</th>
+                        </tr>
+                        <tr>
+                            <td>2013-01-16</td>
+                            <td>Has the Incubator decided that the project has accomplished all of
+                            the above tasks?</td>
+                        </tr>
+                    </table>
+                </section>
+            </section>
+        </section>
+    </body>
+</document>

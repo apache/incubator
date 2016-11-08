@@ -1,0 +1,1414 @@
+
+= Incubator PMC report for November 2016 =
+
+=== Timeline ===
+||Wed November 02 ||Podling reports due by end of day ||
+||Sun November 06 ||Shepherd reviews due by end of day ||
+||Sun November 06 ||Summary due by end of day ||
+||Tue November 08 ||Mentor signoff due by end of day ||
+||Wed November 09 ||Report submitted to Board ||
+||Wed November 16 ||Board meeting ||
+
+
+=== Shepherd Assignments ===
+||Drew Farris ||PredictionIO ||
+||Drew Farris ||Toree ||
+||John Ament ||DataFu ||
+||John Ament ||Fluo ||
+||Justin Mclean ||Unomi ||
+||P. Taylor Goetz ||AriaTosca ||
+||P. Taylor Goetz ||Beam ||
+||P. Taylor Goetz ||Fineract ||
+||Timothy Chen ||Eagle ||
+||Timothy Chen ||Slider ||
+||Timothy Chen ||iota ||
+||[none] ||Annotator ||
+||[none] ||Blur ||
+||[none] ||CarbonData ||
+||[none] ||Climate Model Diagnostic Analyzer ||
+||[none] ||DistributedLog ||
+||[none] ||Edgent ||
+||[none] ||Guacamole ||
+||[none] ||Hivemall ||
+||[none] ||Impala ||
+||[none] ||Joshua ||
+||[none] ||NetBeans ||
+||[none] ||S2Graph ||
+||[none] ||Sirona ||
+||[none] ||Spot ||
+||[none] ||SystemML ||
+||[none] ||Tamaya ||
+
+=== Report content ===
+{{{
+Incubator PMC report for November 2016
+
+The Apache Incubator is the entry path into the ASF for projects and
+codebases wishing to become part of the Foundation's efforts.
+
+< narrative >
+
+* Community
+
+  New IPMC members:
+
+
+
+  People who left the IPMC:
+
+
+
+* New Podlings
+
+
+
+* Graduations
+
+  The board has motions for the following:
+
+
+
+* Releases
+
+  The following releases entered distribution during the month of
+  October:
+
+
+* IP Clearance
+
+
+
+* Legal / Trademarks
+
+
+
+* Infrastructure
+
+
+
+* Miscellaneous
+
+
+
+* Credits
+
+  - Report Manager:
+
+-------------------- Summary of podling reports --------------------
+
+* Still getting started at the Incubator
+
+
+
+* Not yet ready to graduate
+
+  No release:
+
+
+
+  Community growth:
+
+
+
+* Ready to graduate
+
+  The Board has motions for the following:
+
+
+
+* Did not report, expected next month
+
+
+
+----------------------------------------------------------------------
+                       Table of Contents
+Annotator
+AriaTosca
+Beam
+Blur
+CarbonData
+Climate Model Diagnostic Analyzer
+DataFu
+DistributedLog
+Eagle
+Edgent
+Fineract
+Fluo
+Guacamole
+Hivemall
+Impala
+iota
+Joshua
+NetBeans
+PredictionIO
+S2Graph
+Sirona
+Slider
+Spot
+SystemML
+Tamaya
+Toree
+Unomi
+
+----------------------------------------------------------------------
+
+--------------------
+Annotator
+
+Annotator provides annotation enabling code for browsers, servers, and humans.
+
+Annotator has been incubating since 2016-08-30.
+
+Three most important issues to address in the move towards graduation:
+
+  1.
+  2.
+  3.
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+
+
+How has the community developed since the last report?
+
+
+
+How has the project developed since the last report?
+
+
+
+Date of last release:
+
+  XXXX-XX-XX
+
+When were the last committers or PMC members elected?
+
+
+
+Signed-off-by:
+
+  [ ](annotator) Nick Kew
+  [ ](annotator) Brian McCallister
+  [ ](annotator) Daniel Gruno
+  [ ](annotator) Jim Jagielski
+
+Shepherd/Mentor notes:
+
+
+
+--------------------
+AriaTosca
+
+ARIA TOSCA project offers an easily consumable Software Development Kit(SDK)
+and a Command Line Interface(CLI) to implement TOSCA(Topology and
+Orchestration Specification of Cloud Applications) based solutions.
+
+AriaTosca has been incubating since 2016-08-27.
+
+Three most important issues to address in the move towards graduation:
+
+  1.
+  2.
+  3.
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+
+
+How has the community developed since the last report?
+
+
+
+How has the project developed since the last report?
+
+
+
+Date of last release:
+
+  XXXX-XX-XX
+
+When were the last committers or PMC members elected?
+
+
+
+Signed-off-by:
+
+  [ ](ariatosca) Suneel Marthi
+  [ ](ariatosca) John D. Ament
+  [ ](ariatosca) Jakob Homan
+
+Shepherd/Mentor notes:
+
+
+
+--------------------
+Beam
+
+Apache Beam is an open source, unified model and set of language-specific SDKs
+for defining and executing data processing workflows, and also data ingestion
+and integration flows, supporting Enterprise Integration Patterns (EIPs) and
+Domain Specific Languages (DSLs). Dataflow pipelines simplify the mechanics of
+large-scale batch and streaming data processing and can run on a number of
+runtimes like Apache Flink, Apache Spark, and Google Cloud Dataflow (a cloud
+service). Beam also brings DSL in different languages, allowing users to
+easily implement their data integration processes.
+
+Beam has been incubating since 2016-02-01.
+
+Three most important issues to address in the move towards graduation:
+
+  1.
+  2.
+  3.
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+
+
+How has the community developed since the last report?
+
+
+
+How has the project developed since the last report?
+
+
+
+Date of last release:
+
+  XXXX-XX-XX
+
+When were the last committers or PMC members elected?
+
+
+
+Signed-off-by:
+
+  [ ](beam) Jean-Baptiste Onofre
+  [ ](beam) Jim Jagielski
+  [ ](beam) Venkatesh Seetharam
+  [ ](beam) Bertrand Delacretaz
+  [ ](beam) Ted Dunning
+
+Shepherd/Mentor notes:
+
+
+
+--------------------
+Blur
+
+Blur is a search platform capable of searching massive amounts of data
+in a cloud computing environment.
+
+Blur has been incubating since 2012-07-24.
+
+Three most important issues to address in the move towards graduation:
+
+  1.
+  2.
+  3.
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+
+
+How has the community developed since the last report?
+
+
+
+How has the project developed since the last report?
+
+
+
+Date of last release:
+
+  XXXX-XX-XX
+
+When were the last committers or PMC members elected?
+
+
+
+Signed-off-by:
+
+  [ ](blur) Doug Cutting
+  [ ](blur) Patrick Hunt
+  [ ](blur) Tim Williams
+
+Shepherd/Mentor notes:
+
+
+
+--------------------
+CarbonData
+
+Apache CarbonData is a new Apache Hadoop native file format for faster
+interactive query using advanced columnar storage, index, compression and
+encoding techniques to improve computing efficiency, in turn it will help
+speedup queries an order of magnitude faster over PetaBytes of data.
+
+CarbonData has been incubating since 2016-06-02.
+
+Three most important issues to address in the move towards graduation:
+
+  1.
+  2.
+  3.
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+
+
+How has the community developed since the last report?
+
+
+
+How has the project developed since the last report?
+
+
+
+Date of last release:
+
+  XXXX-XX-XX
+
+When were the last committers or PMC members elected?
+
+
+
+Signed-off-by:
+
+  [ ](carbondata) Henry Saputra
+  [ ](carbondata) Jean-Baptiste Onofre
+  [ ](carbondata) Uma Maheswara Rao G
+
+Shepherd/Mentor notes:
+
+
+
+--------------------
+Climate Model Diagnostic Analyzer
+
+CMDA provides web services for multi-aspect physics-based and phenomenon-
+oriented climate model performance evaluation and diagnosis through the
+comprehensive and synergistic use of multiple observational data, reanalysis
+data, and model outputs.
+
+Climate Model Diagnostic Analyzer has been incubating since 2015-05-08.
+
+Three most important issues to address in the move towards graduation:
+
+  1.
+  2.
+  3.
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+
+
+How has the community developed since the last report?
+
+
+
+How has the project developed since the last report?
+
+
+
+Date of last release:
+
+  XXXX-XX-XX
+
+When were the last committers or PMC members elected?
+
+
+
+Signed-off-by:
+
+  [ ](climatemodeldiagnosticanalyzer) James W. Carman
+  [ ](climatemodeldiagnosticanalyzer) Chris Mattmann
+  [ ](climatemodeldiagnosticanalyzer) Michael James Joyce
+  [ ](climatemodeldiagnosticanalyzer) Kim Whitehall
+  [ ](climatemodeldiagnosticanalyzer) Gregory D. Reddin
+
+Shepherd/Mentor notes:
+
+
+
+--------------------
+DataFu
+
+DataFu provides a collection of Hadoop MapReduce jobs and functions in higher
+level languages based on it to perform data analysis. It provides functions
+for common statistics tasks (e.g. quantiles, sampling), PageRank, stream
+sessionization, and set and bag operations. DataFu also provides Hadoop jobs
+for incremental data processing in MapReduce.
+
+DataFu has been incubating since 2014-01-05.
+
+Three most important issues to address in the move towards graduation:
+
+  1.
+  2.
+  3.
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+
+
+How has the community developed since the last report?
+
+
+
+How has the project developed since the last report?
+
+
+
+Date of last release:
+
+  XXXX-XX-XX
+
+When were the last committers or PMC members elected?
+
+
+
+Signed-off-by:
+
+  [ ](datafu) Ashutosh Chauhan
+  [ ](datafu) Roman Shaposhnik
+  [ ](datafu) Ted Dunning
+
+Shepherd/Mentor notes:
+
+
+
+--------------------
+DistributedLog
+
+DistributedLog is a high-performance replicated log service. It offers
+durability, replication and strong consistency, which provides a fundamental
+building block for building reliable distributed systems.
+
+DistributedLog has been incubating since 2016-06-24.
+
+Three most important issues to address in the move towards graduation:
+
+  1.
+  2.
+  3.
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+
+
+How has the community developed since the last report?
+
+
+
+How has the project developed since the last report?
+
+
+
+Date of last release:
+
+  XXXX-XX-XX
+
+When were the last committers or PMC members elected?
+
+
+
+Signed-off-by:
+
+  [ ](distributedlog) Flavio Junqueira
+  [ ](distributedlog) Chris Nauroth
+  [ ](distributedlog) Henry Saputra
+
+Shepherd/Mentor notes:
+
+
+
+--------------------
+Eagle
+
+Eagle is a Monitoring solution for Hadoop to instantly identify access to
+sensitive data, recognize attacks, malicious activities and take actions in
+real time.
+
+Eagle has been incubating since 2015-10-26.
+
+Three most important issues to address in the move towards graduation:
+
+  1.
+  2.
+  3.
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+
+
+How has the community developed since the last report?
+
+
+
+How has the project developed since the last report?
+
+
+
+Date of last release:
+
+  XXXX-XX-XX
+
+When were the last committers or PMC members elected?
+
+
+
+Signed-off-by:
+
+  [ ](eagle) Owen O'Malley
+  [ ](eagle) Henry Saputra
+  [ ](eagle) Julian Hyde
+  [ ](eagle) P. Taylor Goetz
+  [ ](eagle) Amareshwari Sriramdasu
+
+Shepherd/Mentor notes:
+
+
+
+--------------------
+Edgent
+
+Edgent is a stream processing programming model and lightweight runtime to
+execute analytics at devices on the edge or at the gateway.
+
+Edgent has been incubating since 2016-02-29.
+
+Three most important issues to address in the move towards graduation:
+
+  1.
+  2.
+  3.
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+
+
+How has the community developed since the last report?
+
+
+
+How has the project developed since the last report?
+
+
+
+Date of last release:
+
+  XXXX-XX-XX
+
+When were the last committers or PMC members elected?
+
+
+
+Signed-off-by:
+
+  [ ](edgent) Daniel Debrunner
+  [ ](edgent) Luciano Resende
+  [ ](edgent) Katherine Marsden
+  [ ](edgent) Justin Mclean
+
+Shepherd/Mentor notes:
+
+
+
+--------------------
+Fineract
+
+Fineract is an open source system for core banking as a platform.
+
+Fineract has been incubating since 2015-12-15.
+
+Three most important issues to address in the move towards graduation:
+
+  1.
+  2.
+  3.
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+
+
+How has the community developed since the last report?
+
+
+
+How has the project developed since the last report?
+
+
+
+Date of last release:
+
+  XXXX-XX-XX
+
+When were the last committers or PMC members elected?
+
+
+
+Signed-off-by:
+
+  [ ](fineract) Ross Gardler
+  [ ](fineract) Greg Stein
+  [ ](fineract) Roman Shaposhnik
+
+Shepherd/Mentor notes:
+
+
+
+--------------------
+Fluo
+
+Fluo is a distributed system for incrementally processing large data sets
+stored in Accumulo.
+
+Fluo has been incubating since 2016-05-17.
+
+Three most important issues to address in the move towards graduation:
+
+  1.
+  2.
+  3.
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+
+
+How has the community developed since the last report?
+
+
+
+How has the project developed since the last report?
+
+
+
+Date of last release:
+
+  XXXX-XX-XX
+
+When were the last committers or PMC members elected?
+
+
+
+Signed-off-by:
+
+  [ ](fluo) Billie Rinaldi
+  [ ](fluo) Drew Farris
+  [ ](fluo) Josh Elser
+
+Shepherd/Mentor notes:
+
+
+
+--------------------
+Guacamole
+
+Guacamole is an enterprise-grade, protocol-agnostic, remote desktop gateway.
+Combined with cloud hosting, Guacamole provides an excellent alternative to
+traditional desktops. Guacamole aims to make cloud-hosted desktop access
+preferable to traditional, local access.
+
+Guacamole has been incubating since 2016-02-10.
+
+Three most important issues to address in the move towards graduation:
+
+  1.
+  2.
+  3.
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+
+
+How has the community developed since the last report?
+
+
+
+How has the project developed since the last report?
+
+
+
+Date of last release:
+
+  XXXX-XX-XX
+
+When were the last committers or PMC members elected?
+
+
+
+Signed-off-by:
+
+  [ ](guacamole) Jean-Baptiste Onofre
+  [ ](guacamole) Daniel Gruno
+  [ ](guacamole) Olivier Lamy
+  [ ](guacamole) Jim Jagielski
+  [ ](guacamole) Greg Trasuk
+
+Shepherd/Mentor notes:
+
+
+
+--------------------
+Hivemall
+
+Hivemall is a library for machine learning implemented as Hive
+UDFs/UDAFs/UDTFs.
+
+Hivemall has been incubating since 2016-09-13.
+
+Three most important issues to address in the move towards graduation:
+
+  1.
+  2.
+  3.
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+
+
+How has the community developed since the last report?
+
+
+
+How has the project developed since the last report?
+
+
+
+Date of last release:
+
+  XXXX-XX-XX
+
+When were the last committers or PMC members elected?
+
+
+
+Signed-off-by:
+
+  [ ](hivemall) Reynold Xin
+  [ ](hivemall) Markus Weimer
+  [ ](hivemall) Xiangrui Meng
+
+Shepherd/Mentor notes:
+
+
+
+--------------------
+Impala
+
+Impala is a high-performance C++ and Java SQL query engine for data stored in
+Apache Hadoop-based clusters.
+
+Impala has been incubating since 2015-12-03.
+
+Three most important issues to address in the move towards graduation:
+
+  1.
+  2.
+  3.
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+
+
+How has the community developed since the last report?
+
+
+
+How has the project developed since the last report?
+
+
+
+Date of last release:
+
+  XXXX-XX-XX
+
+When were the last committers or PMC members elected?
+
+
+
+Signed-off-by:
+
+  [ ](impala) Tom White
+  [ ](impala) Todd Lipcon
+  [ ](impala) Carl Steinbach
+  [ ](impala) Brock Noland
+
+Shepherd/Mentor notes:
+
+
+
+--------------------
+iota
+
+Open source system that enables the orchestration of IoT devices.
+
+iota has been incubating since 2016-01-20.
+
+Three most important issues to address in the move towards graduation:
+
+  1.
+  2.
+  3.
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+
+
+How has the community developed since the last report?
+
+
+
+How has the project developed since the last report?
+
+
+
+Date of last release:
+
+  XXXX-XX-XX
+
+When were the last committers or PMC members elected?
+
+
+
+Signed-off-by:
+
+  [ ](iota) Daniel Gruno
+  [ ](iota) Sterling Hughes
+  [ ](iota) Justin Mclean
+  [ ](iota) Hadrian Zbarcea
+
+Shepherd/Mentor notes:
+
+
+
+--------------------
+Joshua
+
+Joshua is a statistical machine translation toolkit
+
+Joshua has been incubating since 2016-02-13.
+
+Three most important issues to address in the move towards graduation:
+
+  1.
+  2.
+  3.
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+
+
+How has the community developed since the last report?
+
+
+
+How has the project developed since the last report?
+
+
+
+Date of last release:
+
+  XXXX-XX-XX
+
+When were the last committers or PMC members elected?
+
+
+
+Signed-off-by:
+
+  [ ](joshua) Paul Ramirez
+  [ ](joshua) Lewis John McGibbney
+  [ ](joshua) Chris Mattmann
+  [ ](joshua) Tom Barber
+  [ ](joshua) Henri Yandell
+
+Shepherd/Mentor notes:
+
+
+
+--------------------
+NetBeans
+
+NetBeans is a development environment, tooling platform and application
+framework.
+
+NetBeans has been incubating since 2016-10-01.
+
+Three most important issues to address in the move towards graduation:
+
+  1.
+  2.
+  3.
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+
+
+How has the community developed since the last report?
+
+
+
+How has the project developed since the last report?
+
+
+
+Date of last release:
+
+  XXXX-XX-XX
+
+When were the last committers or PMC members elected?
+
+
+
+Signed-off-by:
+
+  [ ](netbeans) Ate Douma
+  [ ](netbeans) Bertrand Delacretaz
+  [ ](netbeans) Emmanuel Lecharny
+  [ ](netbeans) Daniel Gruno
+  [ ](netbeans) Jim Jagielski
+  [ ](netbeans) Mark Struberg
+
+Shepherd/Mentor notes:
+
+
+
+--------------------
+PredictionIO
+
+PredictionIO is an open source Machine Learning Server built on top of state-
+of-the-art open source stack, that enables developers to manage and deploy
+production-ready predictive services for various kinds of machine learning
+tasks.
+
+PredictionIO has been incubating since 2016-05-26.
+
+Three most important issues to address in the move towards graduation:
+
+  1.
+  2.
+  3.
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+
+
+How has the community developed since the last report?
+
+
+
+How has the project developed since the last report?
+
+
+
+Date of last release:
+
+  XXXX-XX-XX
+
+When were the last committers or PMC members elected?
+
+
+
+Signed-off-by:
+
+  [ ](predictionio) Andrew Purtell
+  [ ](predictionio) James Taylor
+  [ ](predictionio) Lars Hofhansl
+  [ ](predictionio) Luciano Resende
+  [ ](predictionio) Xiangrui Meng
+  [ ](predictionio) Suneel Marthi
+
+Shepherd/Mentor notes:
+
+
+
+--------------------
+S2Graph
+
+S2Graph is a distributed and scalable OLTP graph database built on Apache
+HBase to support fast traversal of extremely large graphs.
+
+S2Graph has been incubating since 2015-11-29.
+
+Three most important issues to address in the move towards graduation:
+
+  1.
+  2.
+  3.
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+
+
+How has the community developed since the last report?
+
+
+
+How has the project developed since the last report?
+
+
+
+Date of last release:
+
+  XXXX-XX-XX
+
+When were the last committers or PMC members elected?
+
+
+
+Signed-off-by:
+
+  [ ](s2graph) Andrew Purtell
+  [ ](s2graph) Seetharam Venkatesh
+  [ ](s2graph) Sergio Fernández
+
+Shepherd/Mentor notes:
+
+
+
+--------------------
+Sirona
+
+Monitoring Solution.
+
+Sirona has been incubating since 2013-10-15.
+
+Three most important issues to address in the move towards graduation:
+
+  1.
+  2.
+  3.
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+
+
+How has the community developed since the last report?
+
+
+
+How has the project developed since the last report?
+
+
+
+Date of last release:
+
+  XXXX-XX-XX
+
+When were the last committers or PMC members elected?
+
+
+
+Signed-off-by:
+
+  [ ](sirona) Olivier Lamy
+  [ ](sirona) Henri Gomez
+  [ ](sirona) Jean-Baptiste Onofre
+  [ ](sirona) Tammo van Lessen
+  [ ](sirona) Mark Struberg
+
+Shepherd/Mentor notes:
+
+
+
+--------------------
+Slider
+
+Slider is a collection of tools and technologies to package, deploy, and
+manage long running applications on Apache Hadoop YARN clusters.
+
+Slider has been incubating since 2014-04-29.
+
+Three most important issues to address in the move towards graduation:
+
+  1.
+  2.
+  3.
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+
+
+How has the community developed since the last report?
+
+
+
+How has the project developed since the last report?
+
+
+
+Date of last release:
+
+  XXXX-XX-XX
+
+When were the last committers or PMC members elected?
+
+
+
+Signed-off-by:
+
+  [ ](slider) Arun C Murthy
+  [ ](slider) Devaraj Das
+  [ ](slider) Jean-Baptiste Onofré
+  [ ](slider) Mahadev Konar
+
+Shepherd/Mentor notes:
+
+
+
+--------------------
+Spot
+
+Apache Spot is a platform for network telemetry built on an open data model
+and Apache Hadoop.
+
+Spot has been incubating since 2016-09-23.
+
+Three most important issues to address in the move towards graduation:
+
+  1.
+  2.
+  3.
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+
+
+How has the community developed since the last report?
+
+
+
+How has the project developed since the last report?
+
+
+
+Date of last release:
+
+  XXXX-XX-XX
+
+When were the last committers or PMC members elected?
+
+
+
+Signed-off-by:
+
+  [ ](spot) Jarek Jarcec Cecho
+  [ ](spot) Brock Noland
+  [ ](spot) Andrei Savu
+  [ ](spot) Uma Maheswara Rao G
+
+Shepherd/Mentor notes:
+
+
+
+--------------------
+SystemML
+
+SystemML provides declarative large-scale machine learning (ML) that aims at
+flexible specification of ML algorithms and automatic generation of hybrid
+runtime plans ranging from single node, in-memory computations, to distributed
+computations such as Apache Hadoop MapReduce and Apache Spark.
+
+SystemML has been incubating since 2015-11-02.
+
+Three most important issues to address in the move towards graduation:
+
+  1.
+  2.
+  3.
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+
+
+How has the community developed since the last report?
+
+
+
+How has the project developed since the last report?
+
+
+
+Date of last release:
+
+  XXXX-XX-XX
+
+When were the last committers or PMC members elected?
+
+
+
+Signed-off-by:
+
+  [ ](systemml) Luciano Resende
+  [ ](systemml) Patrick Wendell
+  [ ](systemml) Reynold Xin
+  [ ](systemml) Rich Bowen
+
+Shepherd/Mentor notes:
+
+
+
+--------------------
+Tamaya
+
+Tamaya is a highly flexible configuration solution based on an modular,
+extensible and injectable key/value based design, which should provide a
+minimal but extendible modern and functional API leveraging SE, ME and EE
+environments.
+
+Tamaya has been incubating since 2014-11-14.
+
+Three most important issues to address in the move towards graduation:
+
+  1.
+  2.
+  3.
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+
+
+How has the community developed since the last report?
+
+
+
+How has the project developed since the last report?
+
+
+
+Date of last release:
+
+  XXXX-XX-XX
+
+When were the last committers or PMC members elected?
+
+
+
+Signed-off-by:
+
+  [ ](tamaya) John D. Ament
+  [ ](tamaya) David Blevins
+
+Shepherd/Mentor notes:
+
+
+
+--------------------
+Toree
+
+Toree provides applications with a mechanism to interactively and remotely
+access Apache Spark.
+
+Toree has been incubating since 2015-12-02.
+
+Three most important issues to address in the move towards graduation:
+
+  1.
+  2.
+  3.
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+
+
+How has the community developed since the last report?
+
+
+
+How has the project developed since the last report?
+
+
+
+Date of last release:
+
+  XXXX-XX-XX
+
+When were the last committers or PMC members elected?
+
+
+
+Signed-off-by:
+
+  [ ](toree) Luciano Resende
+  [ ](toree) Reynold Xin
+  [ ](toree) Hitesh Shah
+  [ ](toree) Julien Le Dem
+
+Shepherd/Mentor notes:
+
+
+
+--------------------
+Unomi
+
+Unomi is a reference implementation of the OASIS Context Server specification
+currently being worked on by the OASIS Context Server Technical Committee. It
+provides a high-performance user profile and event tracking server.
+
+Unomi has been incubating since 2015-10-05.
+
+Three most important issues to address in the move towards graduation:
+
+  1.
+  2.
+  3.
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+
+
+How has the community developed since the last report?
+
+
+
+How has the project developed since the last report?
+
+
+
+Date of last release:
+
+  XXXX-XX-XX
+
+When were the last committers or PMC members elected?
+
+
+
+Signed-off-by:
+
+  [ ](unomi) Bertrand Delacretaz
+  [ ](unomi) Chris Mattmann
+
+Shepherd/Mentor notes:
+
+
+
+}}}

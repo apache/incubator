@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+
+<!DOCTYPE document
+[
+<!ENTITY root-path   '..'> <!-- The path to the incubator root -->
+]>
+
+<document>
+  <properties>
+    <atom url="http://mail-archives.apache.org/mod_mbox/incubator-general/?format=atom">general@incubator.apache.org Archives</atom>
+    <title>Apache Incubator: Podling Project Management Committee</title>
+  </properties>
+  <body>
+    
+[TOC]
+
+    <section id="PPMC">
+      <title>Podling Project Management Committee (PPMC)</title>
+        <p>The Podling Project Management Committee (PPMC) helps a
+        Podling learn how to govern itself.  It works like a PMC but
+        reports to the Incubator PMC instead of to the ASF Board.
+        Initially, it is composed of the Podling's mentors and initial
+        committers.  The PPMC is directly responsible for the oversight
+        of the podling and it also decides who to add as a PPMC member.</p>
+        
+        <p>For general information about PMCs, see the <a
+        href="http://www.apache.org/dev/pmc.html">PMC FAQ</a>.</p>
+    </section>
+
+    <section id="PPMC+Mail+List">
+      <title>Private Mail List</title>
+ 
+        <p>A private mail list, named <em>project</em>-private, lets 
+        the PPMC discuss confidential topics.
+        <em>Most communication should be on the Podling's dev list!</em>
+        The private list is used only for confidential discussions that
+        should not be made public, such as the suitability of a
+        particular individual to become a committer or a member of the
+        PPMC. See the ASF <em>How it Works</em> section titled <a
+        href="http://www.apache.org/foundation/how-it-works.html#confidential">
+        Balancing confidentiality and public discussion</a>.
+        </p>
+
+        <p>The mentors should verify that all PPMC members are actually
+        subscribed to the private list. Mailing list moderators can
+        request the list of subscribers using ezmlm commands, and any
+        subscriber can send a "ping - please reply" message to check
+        who is actually "listening" to the PPMC list.
+        </p>
+
+      <p><b><em>Don't mix private and public lists in posts!</em></b></p>
+
+         <ul>
+           <li>Don't post to both the dev and private lists.
+               Each member of the PPMC should be on the dev list, so posting
+               to dev is sufficient.</li>
+           <li>Likewise, don't post to both the Incubator general and
+               Incubator private lists. Each member of the Incubator PMC is on
+               the Incubator general list, so posting to general is
+               sufficient.</li>
+         </ul>
+    <p>
+    Note that the lists used to be named <em>project</em>-ppmc or
+    pmc@<em>tlp</em>, so you may see those names referenced in other ASF 
+    documentation or in the mail list archives. It was 
+    <a href="&root-path;/official/mailing-lists.html#july-2005">resolved</a>
+    that these lists should be named <em>private</em> 
+    to make it clear that they should be used for confidential discussion, 
+    not as a general purpose way to contact (P)PMC members.
+    </p>
+    </section>
+
+    <section id="Incubator+ASF+Board+Reports">
+      <title>Podling Status Reports</title>
+      <p>On a regular basis, reports from each incubating project are
+      aggregated and sent to the ASF Board. Watch the Incubator general
+      mail list for when these become due.</p>
+      <p>The Incubator reports to the ASF Board monthly and includes
+      status for a subset of the incubating projects. Currently new
+      Podlings report to the Incubator monthly for the first three
+      months, then quarterly thereafter. The <a
+      href="../report-groups.txt">
+      reporting schedule</a> is generated from podlings.xml.</p>
+
+      <p>The PPMC does not have to fill out the report itself; the PPMC
+      is just responsible for making sure that it gets filled out. In
+      fact, it is better to discuss the report on the dev list and ask
+      Podling developers to contribute to it. If Mentors disagree with
+      the posted report, they should say so; otherwise, the Incubator
+      PMC will assume that it speaks for the community.</p>
+
+      <p>Please add the following items:</p>
+      <ul>
+        <li> Project name and one-line summary.</li>
+        <li> Date of entry to the Incubator.</li>
+        <li> Top three items to resolve before graduation.</li>
+      </ul>
+
+      <p>Here are the points to be addressed:</p>
+      <ul>
+        <li>Is there anything that the Incubator PMC or ASF Board
+            specifically needs to address?</li>
+        <li>Are there any legal, infrastructure, cross-project or
+            personal issues that need to be addressed?  (Are
+            there any stumbling blocks that impede the podling?)</li>
+        <li>Check that the project's Incubation 
+            <a href="../projects/index.html">Status</a> file up to date.
+            (Also provide the URL.)</li>
+        <li>What has been done (releases, milestones, etc.) since the
+            last report?</li>
+        <li>What are the plans and expectations for the next period?</li>
+        <li>Are there any recommendations for how incubation could run more 
+            smoothly for you?</li>
+        <li>etc. (your own thoughts on what is important would be
+            helpful!)</li>
+      </ul>
+
+       <p>It is required for mentors to sign off on podling reports.</p>
+       <ul>
+         <li>Mentors must sign off on the podling report.  If there is no mentor sign off, the report from that podling will not be accepted and they will be moved to monthly, expected to report next month.</li>
+       </ul>
+
+       <p>Podling reports get added to the Incubator wiki</p>
+       <ul>
+	     <li>All podling reports must be added to the <a href="http://wiki.apache.org/incubator/">Incubator wiki</a></li>
+	     <li>Follow the instructions in your monthly reminder, and post on the &lt;Month&gt;&lt;Year&gt; page, with the provided template</li>
+	   </ul>
+    </section>
+
+    <section id="Project+Status+Updates">
+      <title>Project Status Page</title>
+      <p>In addition to the quarterly status reports, each Podling has a
+      page on the Incubator web site that tracks the status
+      (see the <a
+      href="http://incubator.apache.org/projects/index.html">complete
+      list</a> for examples). Instructions for updating the status page
+      are in the <a href="website.html">Incubator web site guide</a>
+      under <a href="website.html#Edit+your+project+status+page">Edit
+      your project status report</a>.</p>
+      <p>This is one of the primary
+      <a href="mentor.html#Overview">sources</a>
+      of information about your podling's
+      status to the Incubator PMC and to the general public.  Be sure to
+      keep it updated as your podling progresses!</p>
+    </section>
+
+    <section id="Voting+in+a+new+committer">
+      <title>Adding new committers</title>
+
+      <p>Adding new committers is one of the most important functions
+      of any PMC, and Incubator podlings are no different.</p>
+
+      <p>There are no ASF wide rules on how to decide when to make someone 
+      a committer, podlings need to agree an approach that works for them. 
+      Some ASF projects have a high bar requiring significant contributions before
+      someone is considered, other projects grant it more freely to anyone
+      who shows interest in contributing. Some projects use formal [DISCUSS] and
+      [VOTE] threads on the private mailing list, others use a more lazy consensus
+      approach. For more information see,<a
+      href="http://www.apache.org/foundation/glossary.html#CommitAccess">
+      commit access</a> and the ASF <em>How it Works</em> document,
+      which explains <a
+      href="http://www.apache.org/foundation/how-it-works.html#meritocracy">
+      meritocracy</a> and <a
+      href="http://www.apache.org/foundation/how-it-works.html#roles">
+      roles</a>.</p>
+
+      <p>The podling Incubator reports should document any new committers 
+      added since the last report.</p>
+
+      <p>Once the decision has been made the proposer offers committership 
+      to the nominee. If the nominee accepts the responsibility of being 
+      a committer for the project, the nominee formally becomes an 
+      Apache committer.</p>
+
+      <p>The proposer then asks an Incubator PMC member (typically one of
+      the mentors) to follow the
+      <a href="http://www.apache.org/dev/pmc.html#newcommitter">documented</a>
+      <a href="http://www.apache.org/dev/pmc.html#SVNaccess">procedures</a> 
+      to complete the process. If the nominee is already an Apache
+      committer on another project, the Incubator PMC member simply
+      <a href="http://www.apache.org/dev/pmc.html#SVNaccess">updates</a>
+      the SVN authorization settings to include the nominee as a committer
+      on the podling.
+      </p>
+      <p>The proposer then directs the new committer to the <a 
+      href="http://www.apache.org/dev/">Apache developer's pages</a>, 
+      to the  <a 
+      href="http://incubator.apache.org/">Apache Incubator site</a> 
+      and to the Incubator <a 
+      href="committer.html">Committers Guide</a> for important additional 
+      information.
+      </p>
+      <p>Finally, the proposer should update the Podling status page to
+      list the new committer there. For projects which wish to have all
+      committers also be PPMC members, the "Voting in a new PPMC member"
+      guide below should then be followed, noting that if desired it
+      is possible to run a joint committership and PPMC vote, providing
+      that the guidance for both is followed.
+      </p>
+    </section>
+    <section id="Voting+in+a+new+PPMC+member">
+      <title>Voting in a new PPMC member</title>
+      <p>It should be a goal of a podling to have all committers participate 
+      in the PPMC. The PPMC should take an active role in watching 
+      committers develop into community participants, identify those who 
+      are participating at a community level, not just a technical one, 
+      and approach them with an offer of PPMC membership.</p> 
+      <p>Any member of the PPMC can propose a new member of the PPMC. The
+      proposal should be discussed in private on the PPMC private alias,
+      with a subject line of [DISCUSS] Joe Bob PPMC membership. If there
+      is consensus that the proposed member is suitable, then there should
+      be a formal vote in the PPMC private alias, with the subject line of
+      [VOTE] Joe Bob PPMC membership. The [VOTE] message should be forwarded
+      to the IPMC (<a href="mailto:private@incubator.apache.org">
+      private@incubator.apache.org</a>) to notify them that the
+      vote is underway. Do not CC or BCC the IPMC on this thread.  Instead,
+      forward the initial VOTE email.</p>
+      <p>If the vote is successful, the proposer 
+      should send a message to the PPMC private alias, with
+      the subject line of [VOTE][RESULT] Joe Bob PPMC membership. The
+      message id of the [VOTE][RESULT] message should be preserved for
+      notifying the Incubator PMC. 
+      The nominating PPMC member should send a message to 
+      the IPMC (<a href="mailto:private@incubator.apache.org">
+      private@incubator.apache.org</a>) with a reference to
+      the vote result's message id of the following form:
+      </p><p>to: private@incubator.apache.org
+      </p><p>subject: New member of Frizzle PPMC Joe Bob
+      </p><p>body: Joe Bob has been voted as a new member of the Frizzle PPMC. 
+      </p><p>the vote thread is at:
+      </p><p>msgid: 23985678912386778989056789659048357@sponsoring.member.org
+      </p>
+      
+      <p>
+        <b>It should noted that there is a grace period of 72 hours from when the
+        above NOTICE is sent to the Incubator PMC to when the proposed member 
+        is formally invited. This is an important part of the overall
+        process. Failure to do this can result in an embarassing situation
+        for people involved.</b> 
+      </p>
+      
+      <p>After 72 hours, Joe Bob
+      should be invited to join the PPMC, using a sample message like 
+      <a href="ppmc-offer.txt">this</a>.
+      </p>
+      <p>Once the proposed member has accepted, the moderator for the 
+      PPMC mail alias will accept the new member's subscription request.
+      </p><p>The new member should be directed to 
+      <a href="ppmc.html">this page</a> for PPMC membership information.  
+      </p><p>The nominating member should also update the PPMC membership
+      section of the Podling's status file. For projects which choose to
+      always make new committers also PPMC members, simply updating
+      the committer list and ensuring that a statement such as
+      "The PPMC consists of all the committers and mentors listed here"
+      is generally sufficient.
+      </p>
+    </section>
+    <section id="Adding+new+mentors">
+	  <title>Adding new mentors</title>
+	  <p>At times, it may be desirable to add a new mentor to a podling.
+		Under all circumstances, a mentor must be an IPMC member.</p>
+	  <p>IPMC members are free to volunteer to be a mentor to a podling
+		as they see fit.  To do so, they should mail the podling stating
+		their intentions.  The podling should then decide if it wants to
+		add the new mentor or not.  If a decision has been reached to 
+		add the mentor, then all podling documentation should be updated
+		to reflect the change (podlings.xml, projects/{podling}.xml) and
+		the incubator be notified of the change as well.
+	</p>
+	<p>If a podling is in a position where they feel they need to add a new mentor,
+		they may want to drop a mail on the general incubator mailing list to try
+		to recruit a new mentor.</p>
+	</section>
+  </body>
+</document>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+  <properties>
+    <title>Jakarta Commons Mantissa Clearance Status</title>
+  </properties>
+  <body>
+    <section id="Mantissa+Codebase+Intellectual+Property+%28IP%29+Clearance+Status">
+      <title>Mantissa Codebase Intellectual Property (IP) Clearance Status</title>
+    </section>
+    <section id="Description">
+      <title>Description</title>
+      <p>Mantissa is a Java mathematics library including implementations for various standard 
+         numerical analysis and linear algebra algorithms.</p>
+    </section>
+    <section id="Project+info">
+      <title>Project info</title>
+      <ul>
+        <li>The Jakarta PMC will be responsible for the code</li>
+      </ul>
+      <ul>
+        <li>The Mantissa code will <b>NOT</b> constitute a new project under the
+            Jakarta TLP, or a new Jakarta Commons component, but will be incorporated into
+           the existing Jakarta Commons Math code base.</li>
+      </ul>
+      <ul>
+        <li>Officer or member managing donation: Phil Steitz</li>
+      </ul>
+      <section id="Identify+the+codebase">
+        <title>Identify the codebase</title>
+        <table>
+          <tr>
+            <th>date</th>
+            <th>item</th>
+          </tr>
+          <tr>
+            <td>2006-10-22</td>
+            <td>Mantissa: the name is NOT significant since Mantissa will not 
+become a separate product but will be integrated directly into Jakarta Commons Math</td>
+          </tr>
+        </table>
+        <p>
+MD5 hash for donated software: f9ecc079d79d2e0009a7b97e95d1e8de  mantissa-for-commons-math.zip
+        </p>
+        <section id="Copyright">
+          <title>Copyright</title>
+          <table>
+            <tr>
+              <th>date</th>
+              <th>item</th>
+            </tr>
+            <tr>
+              <td>Needs update</td>
+              <td>Software grant filed with Secretary, needs update to reflect MD5, mods</td>
+            </tr>
+            <tr>
+              <td>Verification in progress</td>
+              <td>New ASF copyright has been assigned in file headers.</td>
+            </tr>
+          </table>
+          <p>
+Identify name recorded for software grant: Pending
+          </p>
+        </section>
+        <section id="Verify+distribution+rights">
+          <title>Verify distribution rights</title>
+            <ul>
+<li>
+<em>For individuals, use the name as recorded on the committers page</em>
+</li>
+            </ul>
+          <table>
+            <tr>
+              <th>date</th>
+              <th>item</th>
+            </tr>
+            <tr>
+              <td>2006-10-22</td>
+              <td>Check that all active committers have a signed CLA on
+                  record.</td>
+            </tr>
+            <tr>
+              <td>2006-10-22</td>
+              <td>Remind active committers that they are responsible for
+                  ensuring that a Corporate CLA is recorded if such is
+                  required to authorize their contributions under their
+                  individual CLA.</td>
+            </tr>
+            <tr>
+              <td>2006-10-22</td>
+              <td>Check and make sure that for all items included with the
+                  distribution that is not under the Apache license, we have
+                  the right to combine with Apache-licensed code and
+                  redistribute.</td>
+            </tr>
+            <tr>
+              <td>2006-10-22</td>
+              <td>Check and make sure that all items depended upon by the
+                  project is covered by one or more of the following approved
+                  licenses: Apache, BSD, Artistic, MIT/X, MIT/W3C, MPL 1.1, or
+                  something with essentially the same terms.</td>
+            </tr>
+          </table>
+          <p>Generally, the result of checking off these items will be a
+             Software Grant, CLA, and Corporate CLA for ASF licensed code,
+             which must have no dependencies upon items whose licenses that
+             are incompatible with the Apache License.</p>
+        </section>
+      </section>
+      <section id="Organizational+acceptance+of+responsibility+for+the+project">
+        <title>Organizational acceptance of responsibility for the project
+</title>
+        <p>
+Related VOTEs: 
+        </p>
+        <ul>
+          <li>http://www.mail-archive.com/commons-dev@jakarta.apache.org/msg85445.html</li>
+        </ul>
+      </section>
+    </section>
+  </body>
+</document>

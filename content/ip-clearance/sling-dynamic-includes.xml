@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+    <properties>
+        <title>Sling Dynamic Includes - Intellectual Property (IP) Clearance Status</title>
+    </properties>
+    <body>
+        <section id="Sling+Pipes+IP+Clearance+Status">
+            <title>Sling Dynamic Includes - Intellectual Property (IP) Clearance Status</title>
+        </section>
+        <section id="Description">
+            <title>Description</title>
+            <p>The Sling Dynamic Includes module replaces Sling presentation components with server-side include tags</p>
+        </section>
+        <section id="Project+info">
+            <title>Project info</title>
+            <ul>
+                <li>Apache Sling PMC will be responsible for the code</li>
+            </ul>
+            <ul>
+                <li>This contribution will be placed under contrib</li>
+            </ul>
+            <ul>
+                <li>Officer or member managing donation: Bertrand Delacretaz (bdelacretaz@apache.org)</li>
+            </ul>
+            <p>
+                <em>Completed tasks are shown by the completion date (YYYY-MM-dd).</em>
+            </p>
+            <section id="Identify+the+codebase">
+                <title>Identify the codebase</title>
+                <table>
+                    <tr>
+                        <th>date</th>
+                        <th>item</th>
+                    </tr>
+                    <tr>
+                        <td>2016-03-30</td>
+                        <td>source code is attached to the SLING-5594 ticket as sling-dynamic-include.zip</td>
+                    </tr>
+                </table>
+                <p>
+                    SHA1 sum for donated software:
+                    <br/>  
+                    SHA1(sling-dynamic-include.zip)= b294fad33068dfe374fb1605b4fb3d98e1a8a1ce
+                </p>
+                <section id="Copyright">
+                    <title>Copyright</title>
+                    <table>
+                        <tr>
+                            <th>date</th>
+                            <th>item</th>
+                        </tr>
+                        <tr>
+                            <td>2016-03-30</td>
+                            <td>Check and make sure that the papers that transfer rights to
+                                the ASF been received. It is only necessary to transfer
+                                rights for the package, the core code, and any new code
+                                produced by the project.
+                                <br/>
+                                Software grant registered as <em>private/documents/grants/cognifide-sling-dynamic-include.pdf</em> on 2016-03-24.
+                                </td>
+                        </tr>
+                        <tr>
+                            <td>2016-03-30</td>
+                            <td>Check and make sure that the files that have been donated
+                                have been updated to reflect the new ASF copyright: done, all
+								source code files have the ASF header in the supplied archive.
+                                </td>
+                        </tr>
+                    </table>
+                    <p>
+                        Identify name recorded for software grant: <em>Cognifide LTD</em>
+                    </p>
+                </section>
+                <section id="Verify+distribution+rights">
+                    <title>Verify distribution rights</title>
+                    <p>
+                        Corporations and individuals holding existing distribution rights:
+                    </p>
+                    <ul>
+                        <li>
+                            <em>Cognifide LTD</em>
+                        </li>
+                    </ul>
+                    <table>
+                        <tr>
+                            <th>date</th>
+                            <th>item</th>
+                        </tr>
+                        <tr>
+                            <td>2016-03-30</td>
+                            <td>Check that all active committers have a signed CLA on
+                                record.</td>
+                        </tr>
+                        <tr>
+                            <td>2016-03-30</td>
+                            <td>Remind active committers that they are responsible for
+                                ensuring that a Corporate CLA is recorded if such is
+                                required to authorize their contributions under their
+                                individual CLA.</td>
+                        </tr>
+                        <tr>
+                            <td>2016-03-30</td>
+                            <td>Check and make sure that for all items included with the
+                                distribution that is not under the Apache license, we have
+                                the right to combine with Apache-licensed code and
+                                redistribute.
+                                </td>
+                        </tr>
+                        <tr>
+                            <td>2016-03-30</td>
+                            <td>Check and make sure that all items depended upon by the
+                                project is covered by one or more of the following approved
+                                licenses: Apache, BSD, Artistic, MIT/X, MIT/W3C, MPL 1.1, or
+                                something with essentially the same terms.
+                                </td>
+                        </tr>
+                    </table>
+                    <p>Generally, the result of checking off these items will be a
+                        Software Grant, CLA, and Corporate CLA for ASF licensed code,
+                        which must have no dependencies upon items whose licenses that
+                        are incompatible with the Apache License.</p>
+                </section>
+            </section>
+            <section id="Organizational+acceptance+of+responsibility+for+the+project">
+                <title>Organizational acceptance of responsibility for the project
+                </title>
+                <p>
+                    Related VOTEs:
+                </p>
+                <ul>
+                    <li>Vote on dev@sling:Message-ID: &lt;CAEWfVJ=55P2V8OapwsmuX6KDCa4_uVk3uk2Fe+No3Tr+HqSepg@mail.gmail.com&gt;</li>
+                    <li>Vote result on dev@sling: Message-ID: &lt;CAEWfVJ=8A1cd4fz0bELr226d=NNy1euNoWEbDNuGP4KaE4+4Xg@mail.gmail.com&gt;</li>
+                    <li>Lazy consensus vote on general@incubator: Message-ID: &lt;CAEWfVJm4h6wLTa-AXxWi7WWbK_YEE_U1kcZSsrfgsBXX=YRgdw@mail.gmail.com&gt;</li>
+                    <li>Lazy consensus vote result on general@incubator: Message-ID: &lt;CAEWfVJm+G+Lx2CHWt-TtLLZa7iV+Pbk=4yKqkoB8R988c_Q9GQ@mail.gmail.com&gt;</li> 
+                </ul>
+            </section>
+        </section>
+    </body>
+</document>

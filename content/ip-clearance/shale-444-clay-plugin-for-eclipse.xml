@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+  <properties>
+    <title>Shale Clay Plugin for Eclipse Intellectual Property (IP) Clearance Status</title>
+  </properties>
+  <body>
+    <section id="Shale+Clay+Plugin+for+Eclipse+Intellectual+Property+%28IP%29+Clearance+Status">
+      <title>Shale Clay Plugin for Eclipse Intellectual Property (IP) Clearance Status</title>
+    </section>
+    <section id="Description">
+      <title>Description</title>
+
+      <p>The Shale Clay Plugin for the Eclipse IDE is a visual editor targeted at creating 
+             and maintaining Shale Clay component meta-data.  The Shale Clay XML component 
+             meta-data is used to create JavaSever Faces (JSF) managed views.  The plugin supports 
+             auto-detection of Clay component definitions in an Eclipse workspace.  It allows 
+             XML component definitions to be extended through drag-and-drop from a component 
+             palette.  It also provides auto-completion of managed bean names and methods.  
+             The tool supports both visual and text modes.
+      </p>  
+      <p>The plugin is a significant contribution donated by Ryan Wynn and can be found attached to the 
+            <a href="https://issues.apache.org/struts/browse/SHALE-444">SHALE-444 JIRA ticket</a>.   The 
+            codebase consists of a single Eclipse plugin project that has dependencies with 
+            several Apache Commons libraries besides the shale-core and shale-clay libraries.
+            </p>
+
+    </section>
+    <section id="Project+info">
+      <title>Project info</title>
+      <ul>
+        <li>The Shale PMC will be responsible for the code contribution.</li>
+      </ul>
+      <ul>
+        <li>We foresee this codebase becoming a separate project within the tools offerings 
+            under the Shale community.</li>
+      </ul>
+      <ul>
+        <li>Officer or member managing donation:</li>
+        <ul><li>Wendy Smoak (ASF Member)</li>
+            <li>Gary VanMatre (Shale PMC)</li>
+        </ul>
+      </ul>
+      <p>
+        <em>Completed tasks are shown by the completion date (YYYY-MM-dd).</em>
+      </p>
+      <section id="Identify+the+codebase">
+        <title>Identify the codebase</title>
+        <table>
+          <tr>
+            <th>date</th>
+            <th>item</th>
+          </tr>
+          <tr>
+            <td>2007-07-11</td>
+            <td>If applicable, make sure that any associated name does not
+                already exist and is not already trademarked for an existing software
+                product.  (No existing product.  Complies with Eclipse Foundation
+                naming guidelines.)</td>
+          </tr>
+        </table>
+        <p>
+MD5 sum for donated software:  b038c63fced4b25024c5d41f995296e9 .
+        </p>
+        <section id="Copyright">
+          <title>Copyright</title>
+          <table>
+            <tr>
+              <th>date</th>
+              <th>item</th>
+            </tr>
+            <tr>
+              <td>2007-07-11</td>
+              <td>Check and make sure that the papers that transfer rights to
+                  the ASF been received. It is only necessary to transfer
+                  rights for the package, the core code, and any new code
+                  produced by the project.  (ICLA on file from Ryan Wynn.)</td>
+            </tr>
+            <tr>
+              <td>2007-07-11</td>
+              <td>Check and make sure that the files that have been donated
+                  have been updated to reflect the new ASF copyright.</td>
+            </tr>
+          </table>
+          <p>
+Identify name recorded for software grant: <em>N/A - single contributor with
+ICLA on file.</em> 
+          </p>
+        </section>
+        <section id="Verify+distribution+rights">
+          <title>Verify distribution rights</title>
+            <p>
+Corporations and individuals holding existing distribution rights:
+            </p>
+            <ul>
+<li>
+<em>Ryan Wynn</em>
+</li>
+            </ul>
+          <table>
+            <tr>
+              <th>date</th>
+              <th>item</th>
+            </tr>
+            <tr>
+              <td>2007-07-11</td>
+              <td>Check that all active committers have a signed CLA on
+                  record.</td>
+            </tr>
+            <tr>
+              <td>2007-07-11</td>
+              <td>Remind active committers that they are responsible for
+                  ensuring that a Corporate CLA is recorded if such is
+                  required to authorize their contributions under their
+                  individual CLA.</td>
+            </tr>
+            <tr>
+              <td>N/A</td>
+              <td>Check and make sure that for all items included with the
+                  distribution that is not under the Apache license, we have
+                  the right to combine with Apache-licensed code and
+                  redistribute.  (N/A - all included items are under the
+                  Apache license.)</td>
+            </tr>
+            <tr>
+              <td>2007-07-11</td>
+              <td>Check and make sure that all items depended upon by the
+                  project is covered by one or more of the following approved
+                  licenses: Apache, BSD, Artistic, MIT/X, MIT/W3C, MPL 1.1, or
+                  something with essentially the same terms.</td>
+            </tr>
+          </table>
+          <p>Generally, the result of checking off these items will be a
+             Software Grant, CLA, and Corporate CLA for ASF licensed code,
+             which must have no dependencies upon items whose licenses that
+             are incompatible with the Apache License.</p>
+        </section>
+      </section>
+      <section id="Organizational+acceptance+of+responsibility+for+the+project">
+        <title>Organizational acceptance of responsibility for the project
+</title>
+        <p>
+Related VOTEs: 
+        </p>
+        <ul>
+          <li><a href="http://www.nabble.com/-VOTE--Accept-the-Shale-Clay-Plugin-for-Eclipse-contribution-t4065440.html">
+          [VOTE] Accept the Shale Clay Plugin for Eclipse contribution</a></li>
+        </ul>
+      </section>
+    </section>
+  </body>
+</document>
+

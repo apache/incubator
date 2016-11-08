@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Licensed to the Apache Software Foundation (ASF) under one or more
+ contributor license agreements.  See the NOTICE file distributed with
+ this work for additional information regarding copyright ownership.
+ The ASF licenses this file to You under the Apache License, Version 2.0
+ (the "License"); you may not use this file except in compliance with
+ the License.  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+
+-->
+
+<!DOCTYPE project
+[
+<!ENTITY current-table   SYSTEM "../../target/current.ent">
+<!ENTITY graduated-table SYSTEM "../../target/graduated.ent">
+<!ENTITY retired-table   SYSTEM "../../target/retired.ent">
+]>
+
+
+
+<document>
+  <properties>
+    <title>Incubator Projects</title>
+    <link href="http://purl.org/DC/elements/1.0/" rel="schema.DC" />
+  </properties>
+  <body>
+    <section>
+      <title>This page lists all Incubator projects by status</title>
+      <p>
+       These tables are generated from the <code>podlings.xml</code> file.
+       Please keep your project metadata up-to-date (see
+       <a href="/guides/mentor.html#Overview">here</a> and
+       <a href="/guides/graduation.html#records">here</a>).
+      </p>
+      <ul>
+        <li><a href="#current">Currently in incubation</a></li>
+        <li><a href="#graduated">Graduated from incubation</a></li>
+        <li><a href="#retired">Retired from incubation</a></li>
+      </ul>
+    </section>
+
+    <section id="current">
+      <title>Currently in incubation</title>
+      &current-table;
+    </section>
+
+    <section id="graduated">
+      <title>Graduated from incubation</title>
+      &graduated-table;
+    </section>
+
+    <section id="retired">
+      <title>Retired from incubation</title>
+      &retired-table;
+    </section>
+  </body>
+</document>

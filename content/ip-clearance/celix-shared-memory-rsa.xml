@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+  <properties>
+    <title>Celix Shared Memory RSA Codebase Intellectual Property (IP) Clearance Status</title>
+  </properties>
+  <body>
+    <section id="Celix+Shared+Memory+RSA+Codebase+Intellectual+Property+%28IP%29+Clearance+Status">
+      <title>Celix Shared Memory RSA Codebase Intellectual Property (IP) Clearance Status</title>
+    </section>
+    <section id="Description">
+      <title>Description</title>
+      <p>The Celix Shared Memro RSA donation contains an implementation, based on shared memory, of the OSGi Remote Service Admin Specification adapted for use in Apache Celix.</p>
+    </section>
+    <section id="Project+info">
+      <title>Project info</title>
+      <ul>
+        <li>Which PMC will be responsible for the code</li>
+      </ul>
+      <ul>
+        <li>Into which existing project/module: Celix</li>
+      </ul>
+      <ul>
+        <li>Officer or member managing donation: Marcel Offermans</li>
+      </ul>
+      <p>
+        <em>Completed tasks are shown by the completion date (YYYY-MM-dd).</em>
+      </p>
+      <section id="Identify+the+codebase">
+        <title>Identify the codebase</title>
+        <table>
+          <tr>
+            <th>date</th>
+            <th>item</th>
+          </tr>
+          <tr>
+            <td>2013-12-10</td>
+            <td>If applicable, make sure that any associated name does not
+                already exist and is not already trademarked for an existing software
+                product.</td>
+          </tr>
+        </table>
+        <p>
+MD5 or SHA1 sum for donated software:  4e30ce1ec54b885cf77617388f9601ff (available as attachment on issue https://issues.apache.org/jira/browse/CELIX-81).
+        </p>
+        <section id="Copyright">
+          <title>Copyright</title>
+          <table>
+            <tr>
+              <th>date</th>
+              <th>item</th>
+            </tr>
+            <tr>
+              <td>2013-12-10</td>
+              <td>Check and make sure that the papers that transfer rights to
+                  the ASF been received. It is only necessary to transfer
+                  rights for the package, the core code, and any new code
+                  produced by the project.</td>
+            </tr>
+            <tr>
+              <td>2013-12-10</td>
+              <td>Check and make sure that the files that have been donated
+                  have been updated to reflect the new ASF copyright.</td>
+            </tr>
+          </table>
+          <p>
+Identify name recorded for software grant: source code attached at issue https://issues.apache.org/jira/browse/CELIX-81 and the grant is at https://svn.apache.org/repos/private/documents/grants/thales-nederland-celix-remote-services-admin-bundle.pdf
+          </p>
+        </section>
+        <section id="Verify+distribution+rights">
+          <title>Verify distribution rights</title>
+            <p>
+Corporations and individuals holding existing distribution rights:
+            </p>
+            <ul>
+              <li>Thales Nederland B.V.</li>
+            </ul>
+          <table>
+            <tr>
+              <th>date</th>
+              <th>item</th>
+            </tr>
+            <tr>
+              <td>2013-12-10</td>
+              <td>Check that all active committers have a signed CLA on
+                  record.</td>
+            </tr>
+            <tr>
+              <td>2013-12-10</td>
+              <td>Remind active committers that they are responsible for
+                  ensuring that a Corporate CLA is recorded if such is
+                  required to authorize their contributions under their
+                  individual CLA.</td>
+            </tr>
+            <tr>
+              <td>2013-12-10</td>
+              <td>Check and make sure that for all items included with the
+                  distribution that is not under the Apache license, we have
+                  the right to combine with Apache-licensed code and
+                  redistribute.</td>
+            </tr>
+            <tr>
+              <td>2013-12-10</td>
+              <td>Check and make sure that all items depended upon by the
+                  project is covered by one or more of the following approved
+                  licenses: Apache, BSD, Artistic, MIT/X, MIT/W3C, MPL 1.1, or
+                  something with essentially the same terms.</td>
+            </tr>
+          </table>
+          <p>Generally, the result of checking off these items will be a
+             Software Grant, CLA, and Corporate CLA for ASF licensed code,
+             which must have no dependencies upon items whose licenses that
+             are incompatible with the Apache License.</p>
+        </section>
+      </section>
+      <section id="Organizational+acceptance+of+responsibility+for+the+project">
+        <title>Organizational acceptance of responsibility for the project
+</title>
+        <p>
+Related VOTEs:
+        </p>
+        <ul>
+          <li><em>The VOTE thread accepting the donation may happen either
+before or after IP clearance. Adoption by lazy concensus is acceptable but
+not recommended.</em></li>
+        </ul>
+      </section>
+    </section>
+  </body>
+</document>

@@ -1,0 +1,126 @@
+<?xml version="1.0"?>
+<!--
+  Licensed to the Apache Software Foundation (ASF) under one
+  or more contributor license agreements.  See the NOTICE file
+  distributed with this work for additional information
+  regarding copyright ownership.  The ASF licenses this file
+  to you under the Apache License, Version 2.0 (the
+  "License"); you may not use this file except in compliance
+  with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing,
+  software distributed under the License is distributed on an
+  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  KIND, either express or implied.  See the License for the
+  specific language governing permissions and limitations
+  under the License. 
+-->
+<!--
+DO NOT EDIT 
+THIS IS GENERATED FROM xdocs/stylesheets/texen/index.vsl
+EDIT THAT FILE INSTEAD
+-->
+<document>
+  <properties>
+    <title>Audit Records</title>
+  </properties>
+<body>
+<section><title>Auditing</title>
+<p>
+The directories containing the released artifacts are scanned regularly. 
+Meta-data is collected for each file and stored as xml. Differences between
+successive runs are calculated then stored as xml. This xml is used to generate
+reports.
+</p>
+</section>
+<section><title>Audit Records</title>
+<ul>
+<li><a href='changes-2008-01-24.html'>changes-2008-01-24</a></li>
+<li><a href='changes-2008-01-26.html'>changes-2008-01-26</a></li>
+<li><a href='changes-2008-01-27.html'>changes-2008-01-27</a></li>
+<li><a href='changes-2008-01-29.html'>changes-2008-01-29</a></li>
+<li><a href='changes-2008-03-02.html'>changes-2008-03-02</a></li>
+<li><a href='changes-2008-05-05.html'>changes-2008-05-05</a></li>
+<li><a href='changes-2008-05-07.html'>changes-2008-05-07</a></li>
+<li><a href='changes-2008-05-17.html'>changes-2008-05-17</a></li>
+<li><a href='changes-2008-05-25.html'>changes-2008-05-25</a></li>
+<li><a href='changes-2008-05-26.html'>changes-2008-05-26</a></li>
+<li><a href='changes-2008-05-27.html'>changes-2008-05-27</a></li>
+<li><a href='changes-2008-05-29.html'>changes-2008-05-29</a></li>
+<li><a href='changes-2008-05-31.html'>changes-2008-05-31</a></li>
+<li><a href='changes-2008-06-11.html'>changes-2008-06-11</a></li>
+<li><a href='changes-2008-06-19.html'>changes-2008-06-19</a></li>
+<li><a href='rat-scan-data-2008-05-31.html'>rat-scan-data-2008-05-31</a></li>
+<li><a href='rat-scan-data-2008-06-11.html'>rat-scan-data-2008-06-11</a></li>
+<li><a href='rat-scan-data-2008-06-19.html'>rat-scan-data-2008-06-19</a></li>
+<li><a href='rat-scan-data-2008-06-21.html'>rat-scan-data-2008-06-21</a></li>
+<li><a href='rat-scan-data-2008-06-28.html'>rat-scan-data-2008-06-28</a></li>
+<li><a href='rat-scan-data-2008-06-29.html'>rat-scan-data-2008-06-29</a></li>
+<li><a href='rat-scan-data-2008-07-05.html'>rat-scan-data-2008-07-05</a></li>
+<li><a href='rat-scan-data-2008-07-13.html'>rat-scan-data-2008-07-13</a></li>
+<li><a href='rat-scan-data-2008-07-23.html'>rat-scan-data-2008-07-23</a></li>
+<li><a href='rat-scan-data-2008-07-26.html'>rat-scan-data-2008-07-26</a></li>
+<li><a href='rat-scan-data-2008-08-02.html'>rat-scan-data-2008-08-02</a></li>
+<li><a href='rat-scan-data-2008-08-13.html'>rat-scan-data-2008-08-13</a></li>
+<li><a href='rat-scan-data-2008-08-20.html'>rat-scan-data-2008-08-20</a></li>
+<li><a href='rat-scan-data-2008-08-23.html'>rat-scan-data-2008-08-23</a></li>
+<li><a href='rat-scan-data-2008-08-30.html'>rat-scan-data-2008-08-30</a></li>
+<li><a href='rat-scan-data-2008-09-06.html'>rat-scan-data-2008-09-06</a></li>
+<li><a href='rat-scan-data-2008-09-13.html'>rat-scan-data-2008-09-13</a></li>
+<li><a href='rat-scan-data-2008-09-20.html'>rat-scan-data-2008-09-20</a></li>
+<li><a href='rat-scan-data-2008-10-06.html'>rat-scan-data-2008-10-06</a></li>
+<li><a href='rat-scan-data-2008-10-27.html'>rat-scan-data-2008-10-27</a></li>
+<li><a href='rat-scan-data-2008-11-08.html'>rat-scan-data-2008-11-08</a></li>
+<li><a href='rat-scan-data-2008-11-29.html'>rat-scan-data-2008-11-29</a></li>
+<li><a href='rat-scan-data-2009-01-18.html'>rat-scan-data-2009-01-18</a></li>
+<li><a href='rat-scan-data-2009-05-06.html'>rat-scan-data-2009-05-06</a></li>
+<li><a href='rat-scan-diff-2008-06-11.html'>rat-scan-diff-2008-06-11</a></li>
+<li><a href='rat-scan-diff-2008-06-19.html'>rat-scan-diff-2008-06-19</a></li>
+<li><a href='rat-scan-diff-2008-06-21.html'>rat-scan-diff-2008-06-21</a></li>
+<li><a href='rat-scan-diff-2008-06-28.html'>rat-scan-diff-2008-06-28</a></li>
+<li><a href='rat-scan-diff-2008-07-05.html'>rat-scan-diff-2008-07-05</a></li>
+<li><a href='rat-scan-diff-2008-07-13.html'>rat-scan-diff-2008-07-13</a></li>
+<li><a href='rat-scan-diff-2008-07-23.html'>rat-scan-diff-2008-07-23</a></li>
+<li><a href='rat-scan-diff-2008-07-26.html'>rat-scan-diff-2008-07-26</a></li>
+<li><a href='rat-scan-diff-2008-08-02.html'>rat-scan-diff-2008-08-02</a></li>
+<li><a href='rat-scan-diff-2008-08-13.html'>rat-scan-diff-2008-08-13</a></li>
+<li><a href='rat-scan-diff-2008-08-20.html'>rat-scan-diff-2008-08-20</a></li>
+<li><a href='rat-scan-diff-2008-08-23.html'>rat-scan-diff-2008-08-23</a></li>
+<li><a href='rat-scan-diff-2008-08-30.html'>rat-scan-diff-2008-08-30</a></li>
+<li><a href='rat-scan-diff-2008-09-06.html'>rat-scan-diff-2008-09-06</a></li>
+<li><a href='rat-scan-diff-2008-09-13.html'>rat-scan-diff-2008-09-13</a></li>
+<li><a href='rat-scan-diff-2008-09-20.html'>rat-scan-diff-2008-09-20</a></li>
+<li><a href='rat-scan-diff-2008-10-06.html'>rat-scan-diff-2008-10-06</a></li>
+<li><a href='rat-scan-diff-2008-10-27.html'>rat-scan-diff-2008-10-27</a></li>
+<li><a href='rat-scan-diff-2008-11-08.html'>rat-scan-diff-2008-11-08</a></li>
+<li><a href='rat-scan-diff-2008-11-29.html'>rat-scan-diff-2008-11-29</a></li>
+<li><a href='rat-scan-diff-2009-01-18.html'>rat-scan-diff-2009-01-18</a></li>
+<li><a href='rat-scan-diff-2009-05-06.html'>rat-scan-diff-2009-05-06</a></li>
+<li><a href='rat-scan-report-2008-06-11.html'>rat-scan-report-2008-06-11</a></li>
+<li><a href='rat-scan-report-2008-06-19.html'>rat-scan-report-2008-06-19</a></li>
+<li><a href='rat-scan-report-2008-06-21.html'>rat-scan-report-2008-06-21</a></li>
+<li><a href='rat-scan-report-2008-06-28.html'>rat-scan-report-2008-06-28</a></li>
+<li><a href='rat-scan-report-2008-07-05.html'>rat-scan-report-2008-07-05</a></li>
+<li><a href='rat-scan-report-2008-07-13.html'>rat-scan-report-2008-07-13</a></li>
+<li><a href='rat-scan-report-2008-07-23.html'>rat-scan-report-2008-07-23</a></li>
+<li><a href='rat-scan-report-2008-07-26.html'>rat-scan-report-2008-07-26</a></li>
+<li><a href='rat-scan-report-2008-08-02.html'>rat-scan-report-2008-08-02</a></li>
+<li><a href='rat-scan-report-2008-08-13.html'>rat-scan-report-2008-08-13</a></li>
+<li><a href='rat-scan-report-2008-08-20.html'>rat-scan-report-2008-08-20</a></li>
+<li><a href='rat-scan-report-2008-08-23.html'>rat-scan-report-2008-08-23</a></li>
+<li><a href='rat-scan-report-2008-08-30.html'>rat-scan-report-2008-08-30</a></li>
+<li><a href='rat-scan-report-2008-09-06.html'>rat-scan-report-2008-09-06</a></li>
+<li><a href='rat-scan-report-2008-09-13.html'>rat-scan-report-2008-09-13</a></li>
+<li><a href='rat-scan-report-2008-09-20.html'>rat-scan-report-2008-09-20</a></li>
+<li><a href='rat-scan-report-2008-10-06.html'>rat-scan-report-2008-10-06</a></li>
+<li><a href='rat-scan-report-2008-10-27.html'>rat-scan-report-2008-10-27</a></li>
+<li><a href='rat-scan-report-2008-11-08.html'>rat-scan-report-2008-11-08</a></li>
+<li><a href='rat-scan-report-2008-11-29.html'>rat-scan-report-2008-11-29</a></li>
+<li><a href='rat-scan-report-2009-01-18.html'>rat-scan-report-2009-01-18</a></li>
+<li><a href='rat-scan-report-2009-05-06.html'>rat-scan-report-2009-05-06</a></li>
+</ul>
+</section>
+</body>
+</document>

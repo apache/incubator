@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+  <properties>
+    <title>depot
+</title>
+  </properties>
+  <body>
+    <section id="Depot+Project+Incubation+Status">
+      <title>Depot Project Incubation Status
+</title>
+      <p>This page tracks the project status, incubator-wise. For more general
+project status, look on the project website.
+</p>
+<p><span class="retired">The Depot project retired on 2004-10-28</span></p>
+    </section>
+    <section id="Description">
+      <title>Description
+</title>
+      <p>The Depot Project deals with integrated tools for automating
+downloading (with security checks), publishing (new artifacts) and
+managing the contents of the apache repository.
+</p>
+      <p>It also focuses on additional tools for manipulating metadata of the
+artifacts.
+</p>
+    </section>
+    <section id="News">
+      <title>News
+</title>
+      <ul>
+        <li>Project closed for lack of development.
+</li>
+      </ul>
+    </section>
+    <section id="Project+info">
+      <title>Project info
+</title>
+      <table>
+        <tr>
+          <th>item
+</th>
+          <th>type
+</th>
+          <th>reference
+</th>
+        </tr>
+        <tr>
+          <td>Website
+</td>
+          <td>www
+</td>
+          <td>
+            <a href="http://incubator.apache.org/depot/">http://incubator.apache.org/depot/
+</a>
+          </td>
+        </tr>
+        <tr>
+          <td>.
+</td>
+          <td>wiki
+</td>
+          <td>.
+</td>
+        </tr>
+        <tr>
+          <td>Mailing list
+</td>
+          <td>dev
+</td>
+          <td>depot-dev@incubator.apache.org
+</td>
+        </tr>
+        <tr>
+          <td>.
+</td>
+          <td>cvs
+</td>
+          <td>depot-cvs@incubator.apache.org
+</td>
+        </tr>
+        <tr>
+          <td>Bug tracking
+</td>
+          <td>JIRA
+</td>
+          <td>.
+</td>
+        </tr>
+        <tr>
+          <td>Source code
+</td>
+          <td>SVN
+</td>
+          <td>/repos/asf/depot/
+</td>
+        </tr>
+        <tr>
+          <td>Mentors
+</td>
+          <td>nicolaken
+</td>
+          <td>Nicola Ken Barozzi
+</td>
+        </tr>
+        <tr>
+          <td>Committers
+</td>
+          <td>ajack
+</td>
+          <td>Adam Jack
+</td>
+        </tr>
+        <tr>
+          <td>.
+</td>
+          <td>nickchalko
+</td>
+          <td>Nick Chalko
+</td>
+        </tr>
+        <tr>
+          <td>.
+</td>
+          <td>anou_mana
+</td>
+          <td>Anou Manavalan
+</td>
+        </tr>
+        <tr>
+          <td>.
+</td>
+          <td>mmay
+</td>
+          <td>Markus M. May
+</td>
+        </tr>
+        <tr>
+          <td>Extra
+</td>
+          <td>proposal
+</td>
+          <td>
+            <a href="http://nagoya.apache.org/wiki/apachewiki.cgi?RepoProposal">http://nagoya.apache.org/wiki/apachewiki.cgi?RepoProposal
+</a>
+          </td>
+        </tr>
+      </table>
+    </section>
+    <section id="Incubation+status+reports">
+      <title>Incubation status reports
+</title>
+      <section id="2004-10-28">
+        <title>2004-10-28
+</title>
+        <source>1). Is the STATUS file up to date? Yes. 2). Any legal, cross-project
+or personal issues that still need to be addressed? No. 3). What has
+been done for incubation since the last report? Project closed for
+lack of development. 4). Plans and expectations for the next period?
+Collaborate with Ant and Maven for artifact downloading. Hang out on
+the repository@apache.org. Eventually continue development on
+Sourceforge. 5). Any recommendations for how incubation could run
+more smoothly for you? The closing of the project is not due to
+problems/issues with Incubation.
+</source>
+      </section>
+      <section id="2004-07-18">
+        <title>2004-07-18
+</title>
+        <source>1). Is the STATUS file up to date? No 2). Any legal, cross-project or
+personal issues that still need to be addressed? No, all files
+licensed, all commiters have singed CLA 3). What has been done for
+incubation since the last report? * Site update. * Packages renamed
+to "depot" 4). Plans and expectations for the next period? * Delete
+unused under developed code. * Complete Download manger for use by
+gump and others. * Support "directory artifacts" for use by antworks
+and others. 5). Any recommendations for how incubation could run more
+smoothly for you? n/a
+</source>
+      </section>
+    </section>
+    <section id="Incubation+work+items">
+      <title>Incubation work items
+</title>
+      <section id="Project+Setup">
+        <title>Project Setup
+</title>
+        <p>This is the first phase on incubation, needed to start the project at
+Apache.
+</p>
+        <p>
+          <em>Item assignment is shown by the Apache id.
+</em>
+          <em>Completed tasks are shown by the completion date (YYYY-MM-dd).
+</em>
+        </p>
+        <section id="Identify+the+project+to+be+incubated">
+          <title>Identify the project to be incubated
+</title>
+          <table>
+            <tr>
+              <th>date
+</th>
+              <th>item
+</th>
+            </tr>
+            <tr>
+              <td>2003-12-04
+</td>
+              <td>Make sure that the requested project name does not already exist and
+check www.nameprotect.com to be sure that the name is not already
+trademarked for an existing software product.
+</td>
+            </tr>
+            <tr>
+              <td>2003-12-04
+</td>
+              <td>If request from anywhere to become a stand-alone PMC, then assess the
+fit with the ASF, and create the lists and modules under the
+incubator address/module names if accepted.
+</td>
+            </tr>
+          </table>
+        </section>
+        <section id="Interim+responsibility">
+          <title>Interim responsibility
+</title>
+          <table>
+            <tr>
+              <th>date
+</th>
+              <th>item
+</th>
+            </tr>
+            <tr>
+              <td>2003-12-04
+</td>
+              <td>Identify all the Mentors for the incubation, by asking all that can
+be Mentors.
+</td>
+            </tr>
+            <tr>
+              <td>2003-12-04
+</td>
+              <td>Subscribe all Mentors on the pmc and general lists.
+</td>
+            </tr>
+            <tr>
+              <td>2003-12-04
+</td>
+              <td>Give all Mentors access to all incubator CVS modules. (to be done by
+PMC chair)
+</td>
+            </tr>
+            <tr>
+              <td>2003-12-04
+</td>
+              <td>Tell Mentors to track progress in the file
+'incubator/projects/{project.name}.cwiki'
+</td>
+            </tr>
+          </table>
+        </section>
+        <section id="Copyright">
+          <title>Copyright
+</title>
+          <table>
+            <tr>
+              <th>date
+</th>
+              <th>item
+</th>
+            </tr>
+            <tr>
+              <td>2003-12-04
+</td>
+              <td>Check and make sure that the papers that transfer rights to the ASF
+been received. It is only necessary to transfer rights for the
+package, the core code, and any new code produced by the project.
+</td>
+            </tr>
+            <tr>
+              <td>....-..-..
+</td>
+              <td>Check and make sure that the files that have been donated have been
+updated to reflect the new ASF copyright.
+</td>
+            </tr>
+          </table>
+        </section>
+        <section id="Verify+distribution+rights">
+          <title>Verify distribution rights
+</title>
+          <table>
+            <tr>
+              <th>date
+</th>
+              <th>item
+</th>
+            </tr>
+            <tr>
+              <td>2003-12-04
+</td>
+              <td>Check and make sure that for all code included with the distribution
+that is not under the Apache license, e have the right to combine
+with Apache-licensed code and redistribute.
+</td>
+            </tr>
+            <tr>
+              <td>2003-12-04
+</td>
+              <td>Check and make sure that all source code distributed by the project
+is covered by one or more of the following approved licenses: Apache,
+BSD, Artistic, MIT/X, MIT/W3C, MPL 1.1, or something with essentially
+the same terms.
+</td>
+            </tr>
+          </table>
+        </section>
+        <section id="Establish+a+list+of+active+committers+%21">
+          <title>Establish a list of active committers !
+</title>
+          <table>
+            <tr>
+              <th>date
+</th>
+              <th>item
+</th>
+            </tr>
+            <tr>
+              <td>2003-12-20
+</td>
+              <td>Check that all active committers have submitted a contributors
+agreement.
+</td>
+            </tr>
+            <tr>
+              <td>2003-12-20
+</td>
+              <td>Add all active committers in the STATUS file.
+</td>
+            </tr>
+            <tr>
+              <td>2003-12-20
+</td>
+              <td>Ask root for the creation of committers' accounts on cvs.apache.org.
+</td>
+            </tr>
+          </table>
+        </section>
+        <section id="Infrastructure+%21">
+          <title>Infrastructure !
+</title>
+          <table>
+            <tr>
+              <th>date
+</th>
+              <th>item
+</th>
+            </tr>
+            <tr>
+              <td>2003-12-20
+</td>
+              <td>Ask infrastructure to create source repository modules and add
+thecommitters to the avail file.
+</td>
+            </tr>
+            <tr>
+              <td>2003-12-20
+</td>
+              <td>Ask infrastructure to set up and archive Mailing lists.
+</td>
+            </tr>
+            <tr>
+              <td>....-..-..
+</td>
+              <td>Decide about and then ask infrastructure to setup an issuetracking
+system (Bugzilla, Scarab, Jira).
+</td>
+            </tr>
+            <tr>
+              <td>....-..-..
+</td>
+              <td>Migrate the project to our infrastructure.
+</td>
+            </tr>
+          </table>
+        </section>
+        <section id="Project+specific">
+          <title>Project specific
+</title>
+          <p>
+            <em>Add project specific tasks here.
+</em>
+          </p>
+        </section>
+      </section>
+      <section id="Incubation">
+        <title>Incubation
+</title>
+        <p>These action items have to be checked for during the whole incubation
+process.
+</p>
+        <p>
+          <em>These items are not to be signed as done during incubation, as they
+may change during incubation.
+</em>
+          <em>They are to be looked into and described in the status reports and
+completed in the request for incubation signoff.
+</em>
+        </p>
+        <section id="Collaborative+Development">
+          <title>Collaborative Development
+</title>
+          <ul>
+            <li>Have all of the active long-term volunteers been identified and
+acknowledged as committers on the project?
+</li>
+            <li>Are there three or more independent committers? (The legal definition
+of independent is long and boring, but basically it means that there
+is no binding relationship between the individuals, such as a shared
+employer, that is capable of overriding their free will as
+individuals, directly or indirectly.)
+</li>
+            <li>Are project decisions being made in public by the committers?
+</li>
+            <li>Are the decision-making guidelines published and agreed to by all of
+the committers?
+</li>
+          </ul>
+        </section>
+        <section id="Licensing+awareness">
+          <title>Licensing awareness
+</title>
+          <ul>
+            <li>Are all licensing, trademark, credit issues being taken care of and
+acknowleged by all committers?
+</li>
+          </ul>
+        </section>
+        <section id="Project+Specific">
+          <title>Project Specific
+</title>
+          <p>
+            <em>Add project specific tasks here.
+</em>
+          </p>
+        </section>
+      </section>
+      <section id="Exit">
+        <title>Exit
+</title>
+        <p>
+          <em>Things to check for before voting the project out.
+</em>
+        </p>
+        <section id="Organizational+acceptance+of+responsibility+for+the+project">
+          <title>Organizational acceptance of responsibility for the project
+</title>
+          <ul>
+            <li>If graduating to an existing PMC, has the PMC voted to accept it?
+</li>
+            <li>If graduating to a new PMC, has the board voted to accept it?
+</li>
+          </ul>
+        </section>
+        <section id="Incubator+sign-off">
+          <title>Incubator sign-off
+</title>
+          <ul>
+            <li>Has the Incubator decided that the project has accomplished all of
+the above tasks?
+</li>
+          </ul>
+        </section>
+      </section>
+    </section>
+  </body>
+</document>

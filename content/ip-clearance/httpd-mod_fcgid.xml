@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+  <properties>
+    <title>Apache HTTP Server mod_fcgid Intellectual Property (IP) Clearance Status</title>
+  </properties>
+  <body>
+    <section id="Apache+HTTP+Server+mod_fcgid+Intellectual+Property+%28IP%29+Clearance+Status">
+      <title>Apache HTTP Server mod_fcgid Intellectual Property (IP) Clearance Status</title>
+    </section>
+    <section id="Description">
+      <title>Description</title>
+      <p>
+         Apache HTTP Server's mod_fcgid is a module for httpd that
+         enables the server framework to provide FastCGI services
+         using a clean-room implementation of the FastCGI 1.0 specification
+         (<a href="http://www.fastcgi.com/devkit/doc/fcgi-spec.html">http://www.fastcgi.com/devkit/doc/fcgi-spec.html</a>).
+      </p>
+    </section>
+    <section id="Project+info">
+      <title>Project info</title>
+      <ul>
+        <li>Which PMC will be responsible for the code: Apache HTTP Server</li>
+      </ul>
+      <ul>
+        <li>Into which existing project/module: Apache HTTP Server</li>
+      </ul>
+      <ul>
+        <li>Officer or member managing donation: Roy T. Fielding</li>
+      </ul>
+      <p>
+        <em>Completed tasks are shown by the completion date (YYYY-MM-dd).</em>
+      </p>
+      <section id="Identify+the+codebase">
+        <title>Identify the codebase</title>
+        <table>
+          <tr>
+            <th>date</th>
+            <th>item</th>
+          </tr>
+          <tr>
+            <td>2009-01-26</td>
+            <td>SourceForge CVS Repository
+                mod-fcgid.cvs.sourceforge.net:/cvsroot/mod-fcgid
+                checked out, relicensed, and packaged as
+                mod_fcgid-asf-20090126.tar.gz, available at
+                <a href="http://people.apache.org/~chrisd/donations/mod_fcgid/">http://people.apache.org/~chrisd/donations/mod_fcgid/</a></td>
+          </tr>
+        </table>
+        <p>
+           MD5 sum for donated software:
+           398260d989e2aad1df80c404d9fbaf4d
+           (OpenSSL 0.9.8h 28 May 2008).
+        </p>
+        <p>
+           SHA1 sum for donated software:
+           7bd43bf09d441da095af28459ad51aae680c8c6f
+           (OpenSSL 0.9.8h 28 May 2008).
+        </p>
+        <section id="Copyright">
+          <title>Copyright</title>
+          <table>
+            <tr>
+              <th>date</th>
+              <th>item</th>
+            </tr>
+            <tr>
+              <td>2009-01-26</td>
+              <td>Check and make sure that the papers that transfer rights to
+                  the ASF been received. It is only necessary to transfer
+                  rights for the package, the core code, and any new code
+                  produced by the project.</td>
+            </tr>
+            <tr>
+              <td>2009-01-26</td>
+              <td>Check and make sure that the files that have been donated
+                  have been updated to reflect the new ASF copyright.</td>
+            </tr>
+          </table>
+          <p>
+            Identify name recorded for software grant: mod_fcgid
+          </p>
+        </section>
+        <section id="Verify+distribution+rights">
+          <title>Verify distribution rights</title>
+            <p>
+              Corporations and individuals holding existing distribution rights:
+            </p>
+            <ul>
+	      <li>Ryan Pan (Pan Qingfeng, 潘庆峰) (sole original developer)</li>
+              <li>Paul Querna (patch contributions)</li>
+              <li>Nick Kew (patch contributions)</li>
+              <li>Chris Darroch (patch contributions)</li>
+            </ul>
+          <table>
+            <tr>
+              <th>date</th>
+              <th>item</th>
+            </tr>
+            <tr>
+              <td>2009-01-26</td>
+              <td>Check that all active committers have a signed CLA on
+                  record.</td>
+            </tr>
+            <tr>
+              <td>2009-01-26</td>
+              <td>Remind active committers that they are responsible for
+                  ensuring that a Corporate CLA is recorded if such is
+                  required to authorize their contributions under their
+                  individual CLA.</td>
+            </tr>
+            <tr>
+              <td>2008-12-12</td>
+              <td>Check and make sure that for all items included with the
+                  distribution that is not under the Apache license, we have
+                  the right to combine with Apache-licensed code and
+                  redistribute.</td>
+            </tr>
+            <tr>
+              <td>2009-12-12</td>
+              <td>Check and make sure that all items depended upon by the
+                  project is covered by one or more of the following approved
+                  licenses: Apache, BSD, Artistic, MIT/X, MIT/W3C, MPL 1.1, or
+                  something with essentially the same terms.</td>
+            </tr>
+          </table>
+          <p>
+             Generally, the result of checking off these items will be a
+             Software Grant, CLA, and Corporate CLA for ASF licensed code,
+             which must have no dependencies upon items whose licenses that
+             are incompatible with the Apache License.
+          </p>
+          <p>
+             On 2008-12-12 on the dev@httpd.apache.org mailing list Ryan Pan
+             <a href="http://mail-archives.apache.org/mod_mbox/httpd-dev/200812.mbox/%3c02c801c95bfd$5d08a170$9caba8c0@mailtech.cn%3e">confirmed
+             that mod_fcgid was an original project</a>
+             developed solely by himself.
+          </p>
+          <p>
+             On 2008-12-19 on the dev@httpd.apache.org mailing list
+             Ryan Pan also
+             <a href="http://mail-archives.apache.org/mod_mbox/httpd-dev/200812.mbox/%3c067f01c96185$65f8f950$9caba8c0@mailtech.cn%3e">provided
+             a list of contributors</a>
+             of minor and major patches to the project.
+          </p>
+          <p>
+             The two of these contributors who are not ASF members
+             were contacted to ensure that they considered their
+             contributions to be minor repairs which did not require a
+             signed CLA or Software Grant in order to be transferred to
+             the ASF as part of mod_fcgid.
+          </p>
+          <table>
+            <tr>
+              <th>date</th>
+              <th>item</th>
+            </tr>
+            <tr>
+              <td>2009-01-02</td>
+              <td>Piotr Gackiewicz
+                  <a href="http://mail-archives.apache.org/mod_mbox/httpd-dev/200901.mbox/%3cPine.LNX.4.64.0901020811550.21770@gacek.intertele.pl%3e">confirmed agreement</a>
+                  on the dev@httpd.apache.org mailing list.</td>
+            </tr>
+            <tr>
+              <td>2009-01-08</td>
+              <td>Tim Jensen
+                  <a href="http://mail-archives.apache.org/mod_mbox/httpd-dev/200901.mbox/%3c4966404C.2040000@rtsports.com%3e">confirmed agreement</a>
+                  on the dev@httpd.apache.org mailing list.</td>
+            </tr>
+          </table>
+        </section>
+      </section>
+      <section id="Organizational+acceptance+of+responsibility+for+the+project">
+        <title>Organizational acceptance of responsibility for the project</title>
+        <p>
+          Related VOTEs:
+        </p>
+        <ul>
+          <li>The vote on the dev@httpd.apache.org mailing list to accept
+              mod_fcgid into the Apache HTTP Server project
+              <a href="http://mail-archives.apache.org/mod_mbox/httpd-dev/200901.mbox/%3c4976322A.8030505@rowe-clan.net%3e">passed</a>
+              on 2009-01-20.</li>
+        </ul>
+      </section>
+    </section>
+  </body>
+</document>

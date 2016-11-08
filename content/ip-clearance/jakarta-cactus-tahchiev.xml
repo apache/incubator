@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+  <properties>
+    <title>Cactus Codebase Intellectual Property (IP) Clearance Status</title>
+  </properties>
+  <body>
+    <section id="Cactus+Codebase+Intellectual+Property+%28IP%29+Clearance+Status">
+      <title>Cactus Codebase Intellectual Property (IP) Clearance Status</title>
+    </section>
+    <section id="Description">
+      <title>Description</title>
+      <p>
+        Cactus is an existing project at Jakarta. It was tempoarily outside the
+        ASF repositiries, but on the sourceforge where we tested the new maven 
+        build system:
+        <ul>
+          <li>maven2 build system: A bunch of pom.xml's that automate the cactus build process.</li>
+          <li>maven2 plugin: Initial implementation of the "cactify" and "webxmlmerge" mojos.</li>
+          <li>cactus-site: A number of xdoc xml&apos;s that are transformed to html's using maven2.</li>
+        </ul>
+      </p>
+      <p>
+        The contributed code can be found at
+        <a href="https://mamouth.svn.sourceforge.net/svnroot/mamouth/Cactus/">
+        https://mamouth.svn.sourceforge.net/svnroot/mamouth/Cactus/</a>
+        and will be completely ported back to the current Jakarta Cactus codebase.
+      </p>
+    </section>
+    <section id="Project+info">
+      <title>Project info</title>
+      <ul>
+        <li>Which PMC will be responsible for the code: Apache Jakarta</li>
+      </ul>
+      <ul>
+        <li>Into which existing project/module: Cactus</li>
+      </ul>
+      <ul>
+        <li>Officer or member managing donation: Martin van den Bemt</li>
+      </ul>
+      <p>
+        <em>Completed tasks are shown by the completion date (YYYY-MM-dd).</em>
+      </p>
+      <section id="Identify+the+codebase">
+        <title>Identify the codebase</title>
+        <table>
+          <tr>
+            <th>date</th>
+            <th>item</th>
+          </tr>
+          <tr>
+            <td>NA</td>
+            <td>If applicable, make sure that any associated name does not
+                already exist and is not already trademarked for an existing software
+                product.</td>
+          </tr>
+        </table>
+        <p>
+          Complete move from sourceforge to Apache Jakarta Cactus. See 
+          <a href="https://mamouth.svn.sourceforge.net/svnroot/mamouth/Cactus/">
+           https://mamouth.svn.sourceforge.net/svnroot/mamouth/Cactus/</a>
+        </p>
+        <section id="Copyright">
+          <title>Copyright</title>
+          <table>
+            <tr>
+              <th>date</th>
+              <th>item</th>
+            </tr>
+            <tr>
+              <td>2007-03-15</td>
+              <td>Check and make sure that the papers that transfer rights to
+                  the ASF been received. It is only necessary to transfer
+                  rights for the package, the core code, and any new code
+                  produced by the project.</td>
+            </tr>
+            <tr>
+              <td>2007-03-16</td>
+              <td>Check and make sure that the files that have been donated
+                  have been updated to reflect the new ASF copyright.</td>
+            </tr>
+          </table>
+          <p>
+Identify name recorded for software grant: Cactus Maven2 Build System ...
+          </p>
+        </section>
+        <section id="Verify+distribution+rights">
+          <title>Verify distribution rights</title>
+            <p>
+Corporations and individuals holding existing distribution rights: Petar Tahchiev
+            </p>
+          <table>
+            <tr>
+              <th>date</th>
+              <th>item</th>
+            </tr>
+            <tr>
+              <td>2007-03-15</td>
+              <td>Check that all active committers have a signed CLA on
+                  record.</td>
+            </tr>
+            <tr>
+              <td>2007-03-15</td>
+              <td>Remind active committers that they are responsible for
+                  ensuring that a Corporate CLA is recorded if such is
+                  required to authorize their contributions under their
+                  individual CLA.</td>
+            </tr>
+            <tr>
+              <td>2007-03-15</td>
+              <td>Check and make sure that for all items included with the
+                  distribution that is not under the Apache license, we have
+                  the right to combine with Apache-licensed code and
+                  redistribute.</td>
+            </tr>
+            <tr>
+              <td>2007-03-15</td>
+              <td>Check and make sure that all items depended upon by the
+                  project is covered by one or more of the following approved
+                  licenses: Apache, BSD, Artistic, MIT/X, MIT/W3C, MPL 1.1, or
+                  something with essentially the same terms.</td>
+            </tr>
+          </table>
+          <p>Generally, the result of checking off these items will be a
+             Software Grant, CLA, and Corporate CLA for ASF licensed code,
+             which must have no dependencies upon items whose licenses that
+             are incompatible with the Apache License.</p>
+        </section>
+      </section>
+      <section id="Organizational+acceptance+of+responsibility+for+the+project">
+        <title>Organizational acceptance of responsibility for the project
+</title>
+        <p>
+Related VOTEs: 
+        </p>
+        <ul>
+          <li>Acceptance vote of code donation was finalised on 2007-04-22. See <a href="http://www.mail-archive.com/cactus-dev@jakarta.apache.org/msg08612.html">http://www.mail-archive.com/cactus-dev@jakarta.apache.org/msg08612.html</a>
+</li>
+        </ul>
+      </section>
+    </section>
+  </body>
+</document>

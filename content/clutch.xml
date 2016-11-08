@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Licensed to the Apache Software Foundation (ASF) under one or more
+  contributor license agreements.  See the NOTICE file distributed with
+  this work for additional information regarding copyright ownership.
+  The ASF licenses this file to You under the Apache License, Version 2.0
+  (the "License"); you may not use this file except in compliance with
+  the License.  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+
+<!DOCTYPE document
+[
+<!ENTITY root-path   '.'> <!-- The path to the incubator root -->
+<!ENTITY clutch-o1 SYSTEM  'clutcho1.ent'>
+<!ENTITY clutch-o2 SYSTEM  'clutcho2.ent'>
+<!ENTITY clutch-t  SYSTEM  'clutcht.ent'>
+<!ENTITY clutch-r1 SYSTEM  'clutchr1.ent'>
+<!ENTITY clutch-r2 SYSTEM  'clutchr2.ent'>
+<!ENTITY clutch-m  SYSTEM  'clutchm.ent'>
+<!ENTITY clutch-my SYSTEM  'clutchmy.ent'>
+]>
+
+<document>
+  <properties>
+    <title>Status of the clutch</title>
+    <script type="text/javascript" src="clutch.js"> </script>
+  </properties>
+  <body>
+    <section id="current">
+      <title>Status of the clutch currently in incubation</title>
+      <p>
+        Clutch is a tool which gathers details about the projects currently in
+        incubation and re-generates the table below.
+        It aims to encourage and nurture, to provide an overview of
+        the state of establishment of various resources, and to provide quick
+        access to those resources.
+        See more <a href="#notes">notes</a> below regarding purpose and
+        interpretation.
+      </p>
+      <ul>
+        <li>
+          The <span class="care">orange</span> items indicate where more care
+          and attention is needed. Anything <span class="issue">vermilion</span>
+          is an issue that should be addressed ASAP.
+          The <span class="cool1">bluish-green</span> items indicate success
+          and the <span class="cool2">yellow</span> items are okay.
+        </li>
+        <li>
+          A: startDate
+        </li>
+        <li>
+          B: elapsedDays
+          - <span class="cool3">&lt;3</span>
+            <span class="cool1">&lt;12</span>
+            <span class="cool2">&lt;18</span>
+            <span class="cool3">&lt;24</span>
+            <span class="cool4">&gt;24</span> months
+        </li>
+        <li>
+          C: reportingMonthly
+          (current report: &clutch-my;)
+        </li>
+        <li>
+          D: reportingGroup - in which set of months do they report:<br />
+          group-1=Jan,Apr,Jul,Oct group-2=Feb,May,Aug,Nov group-3=Mar,Jun,Sep,Dec
+        </li>
+        <li>
+          E: hasReportingGroup - did podling remember to choose a group
+        </li>
+        <li>
+          F: hasStatusEntry in
+          the main "Currently in incubation" table
+          (i.e. <a href="projects/">i.a.o/projects</a> generated from
+          content/podlings.xml)
+        </li>
+        <li>
+          G: statusUpdateDate - the status page was last updated
+        </li>
+        <li>
+          H: statusAge - days since the SVN status page was last updated
+          - <span class="cool1">&lt;2</span>
+            <span class="cool2">&lt;4</span>
+            <span class="cool3">&lt;9</span>
+            <span class="cool4">&gt;9</span> months
+        </li>
+        <li>
+          I: statusUpdateCounts - number of commits to status file in the
+          previous 2,4,9 months (cumulative)
+        </li>
+        <li>
+          J: numberCommitters - accounts have been established, total number to date
+        </li>
+        <li>
+          K: numberCommittersNew - new committers added since establishment
+          (gathered from each project's Status page "News" section)
+        </li>
+        <li>
+          L: hasSvn - Subversion repository is created
+        </li>
+        <li>
+          M: hasTracker - has an Issue Tracker
+        </li>
+        <li>
+          N: hasMailListDev - has dev mail list and archives
+        </li>
+        <li>
+          O: hasMailListCommits - has commits mail list and archives
+        </li>
+        <li>
+          P: hasWebSite
+        </li>
+        <li>
+          Q: hasDistributionArea - has w.a.o/dist/incubator/... area (not necessarily yet a release)
+        </li>
+        <li>
+          R: hasKeys - has a PGP "<code>KEYS</code>" file in their distribution area
+        </li>
+        <li>
+          S: hasRelease - has a release in their distribution area
+        </li>
+        <li>
+          other persistent <a href="#data">data files</a> 
+        </li>
+&clutch-o1;
+      </ul>
+      <p>&clutch-t;</p>
+      <table id="clutch">
+        <tr>
+          <th>Project</th>
+          <th>Sponsor</th>
+          <th title="Start Date">A</th>
+          <th title="elapsedDays">B</th>
+          <th title="reportingMonthly">C</th>
+          <th title="reportingGroup">D</th>
+          <th title="hasReportingGroup">E</th>
+          <th title="hasStatusEntry">F</th>
+          <th title="statusUpdateDate">G</th>
+          <th title="statusAge">H</th>
+          <th title="statusUpdateCounts">I</th>
+          <th title="numberCommitters">J</th>
+          <th title="numberCommittersNew">K</th>
+          <th title="hasSvn">L</th>
+          <th title="hasTracker">M</th>
+          <th title="hasMailListDev">N</th>
+          <th title="hasMailListCommits">O</th>
+          <th title="hasWebSite">P</th>
+          <th title="hasDistributionArea">Q</th>
+          <th title="hasKeys">R</th>
+          <th title="hasRelease">S</th>
+        </tr>
+&clutch-r1;
+        <tr>
+          <th>Project</th>
+          <th>Sponsor</th>
+          <th title="Start Date">A</th>
+          <th title="elapsedDays">B</th>
+          <th title="reportingMonthly">C</th>
+          <th title="reportingGroup">D</th>
+          <th title="hasReportingGroup">E</th>
+          <th title="hasStatusEntry">F</th>
+          <th title="statusUpdateDate">G</th>
+          <th title="statusAge">H</th>
+          <th title="statusUpdateCounts">I</th>
+          <th title="numberCommitters">J</th>
+          <th title="numberCommittersNew">K</th>
+          <th title="hasSvn">L</th>
+          <th title="hasTracker">M</th>
+          <th title="hasMailListDev">N</th>
+          <th title="hasMailListCommits">O</th>
+          <th title="hasWebSite">P</th>
+          <th title="hasDistributionArea">Q</th>
+          <th title="hasKeys">R</th>
+          <th title="hasRelease">S</th>
+        </tr>
+&clutch-r2;
+        <tr>
+          <th>Project</th>
+          <th>Sponsor</th>
+          <th title="Start Date">A</th>
+          <th title="elapsedDays">B</th>
+          <th title="reportingMonthly">C</th>
+          <th title="reportingGroup">D</th>
+          <th title="hasReportingGroup">E</th>
+          <th title="hasStatusEntry">F</th>
+          <th title="statusUpdateDate">G</th>
+          <th title="statusAge">H</th>
+          <th title="statusUpdateCounts">I</th>
+          <th title="numberCommitters">J</th>
+          <th title="numberCommittersNew">K</th>
+          <th title="hasSvn">L</th>
+          <th title="hasTracker">M</th>
+          <th title="hasMailListDev">N</th>
+          <th title="hasMailListCommits">O</th>
+          <th title="hasWebSite">P</th>
+          <th title="hasDistributionArea">Q</th>
+          <th title="hasKeys">R</th>
+          <th title="hasRelease">S</th>
+        </tr>
+      </table>
+    </section>
+    <section id="other">
+      <title>Other issues</title>
+      <p>
+        Occasionally there are other issues, usually regarding podlings not cleaning up after their "graduation".
+      </p>
+      <ul>
+        &clutch-o2;
+      </ul>
+    </section>
+    <section id="notes">
+      <title>Notes</title>
+      <p>
+        Any Incubator committer can run 'clutch'. In the top-level of the
+        "incubator/public/trunk" SVN, do: '<code>python3 clutch.py</code>' which will
+        re-generate some xml entities for the data.
+        The normal site build process will automatically combine these with
+        the "content/clutch.xml" source.
+        Do '<code>svn diff</code>' to see what changed.
+        Then build and deploy the <a href="&root-path;/guides/website.html">site</a> as normal.
+      </p>
+      <p>
+        Clutch reads the source file for the
+        "<a href="projects/">projects currently in incubation</a>" table
+        (i.e. content/podlings.xml),
+        ensures that each new project has an entry, adds some more attributes.
+        Clutch then gathers some data from each project's Status page, makes
+        other guesses, and validates that certain facilities are established
+        and steps are achieved.
+      </p>
+      <p>
+        The <a href="http://en.wikipedia.org/wiki/Clutch_(eggs)">clutch</a> is
+        the set of eggs which have been laid. The mother hen (our Incubator PMC)
+        needs to continually gather them, to ensure that none have rolled from
+        the nest or moved to the outside, being forgotten or becoming cold.
+        Clutch also means to grasp eagerly.
+      </p>
+      <p>
+        So please interpret this table from the point-of-view of encouragement
+        and nurture.
+      </p>
+    </section>
+    <section id="steps">
+      <title>Assist with Incubation Steps</title>
+      <p>
+        Essentially Clutch is helping us all to follow the process from the
+        "Acceptance" phase onwards (explained in
+        <a href="&root-path;/incubation/Process_Description.html#Acceptance">Process Description</a>
+        and
+        <a href="&root-path;/incubation/Incubation_Policy.html#Acceptance+By+Incubator">Incubation Policy</a>
+        and
+        <a href="&root-path;/guides/mentor.html">Mentor Guide</a>
+        and
+        <a href="&root-path;/guides/index.html">Other Guides</a>
+        and summarised at
+        <a href="&root-path;/guides/mentor.html#bootstrap">Podling Bootstrap</a>).
+        Any committer on a podling can help with these steps. Don't leave it
+        to your mentors, although there are some steps that only they can do.
+      </p>
+      <p>
+        The first steps are the "Acceptance" phase. See 
+        <a href="incubation/Process_Description.html#Acceptance">doc</a> and
+        <a href="incubation/Incubation_Policy.html#Acceptance+By+Incubator">doc</a> and
+        <a href="guides/mentor.html#Overview">doc</a>.
+      </p>
+      <p>
+        The <span class="care">orange</span> and <span class="issue">vermilion</span>
+        items indicate where more care and attention is needed. The following
+        notes for each column, expand on the column definitions
+        <a href="#current">above</a> and
+        attempt to link directly to the relevant process documentation:
+      </p>
+      <ul>
+        <li id="h-Project">Project -
+          If your project is in incubation, but is missing from the Clutch table,
+          then you have forgotten to add it to the podlings.xml file.
+          (See <a href="guides/mentor.html#Overview">doc</a> and
+          notes for "<a href="#h-hasStatusEntry">hasStatusEntry</a>" below.)
+        </li>
+        <li><span class="grad">Project</span> - If this cell is highlighted with a border, then this
+          project is in the process of graduating or retiring, and not yet finished their
+          <a href="#h-Graduate">move</a>.
+          Hence resources (e.g. mail lists, svn) seem to disappear as they migrate.
+          See <a href="#other">Other issues</a> below.
+        </li>
+        <li id="h-Sponsor">Sponsor -
+          This information is gathered from the list of
+          <a href="projects/">Projects in incubation</a> summary table.
+          The "not known" is because it is missing from that table.
+          See notes for "<a href="#h-hasStatusEntry">hasStatusEntry</a>" below.
+        </li>
+        <li id="h-startDate">
+          A: startDate -
+          This information is gathered from the list of
+          <a href="projects/">Projects in incubation</a> summary table.
+          The "not known" is because it is missing from that table.
+          See notes for "<a href="#h-hasStatusEntry">hasStatusEntry</a>" below.
+        </li>
+        <li id="h-elapsedDays">
+          B: elapsedDays - Calculated from startDate.
+        </li>
+        <li id="h-reportingMonthly">
+          C: reportingMonthly -
+          Your project PPMC should manage your entry in the podlings.xml file
+        </li>
+        <li id="h-reportingGroup">
+          D: reportingGroup - in which set of months do they report.
+        </li>
+        <li id="h-hasReportingGroup">
+          E: hasReportingGroup - did podling remember to choose a group.
+          See notes for "<a href="#h-Project">Project</a>" above.
+        </li>
+        <li id="h-hasStatusEntry">
+          F: hasStatusEntry in the <a href="projects/">Currently in incubation</a> table
+          (i.e. generated from content/podlings.xml)
+          and has an
+          associated project Status page.
+          (<a href="incubation/Incubation_Policy.html#Ongoing+Activities">doc</a> and
+          <a href="guides/mentor.html#Sending+in+an+Incubation+Report">doc</a> and
+          <a href="guides/mentor.html#Initialize+Podling+Status+Page">doc</a> and
+          <a href="guides/ppmc.html#Project+Status+Updates">doc</a> and
+          <a href="guides/website.html#Edit+your+project+status+page">doc</a>)
+        </li>
+        <li id="h-statusUpdateDate">
+          G: statusUpdateDate - the status page was last updated. Clutch does an 'svn log'
+          query for the project's Status page.
+        </li>
+        <li id="h-statusAge">
+          H: statusAge - days since the SVN status page was last updated
+        </li>
+        <li id="h-statusUpdateCounts">
+          I: statusUpdateCounts - number of commits to status file in the
+          previous 2,4,9 months (cumulative).
+          Clutch does an 'svn log' query for the project's Status page, and counts the edits
+          for those time ranges.
+        </li>
+        <li id="h-numberCommitters">
+          J: numberCommitters - accounts have been established, total number to date.
+          Clutch parses the relevant section of the
+          <a href="http://people.apache.org/committers-by-project.html">ASF Committers by Project Modules</a>
+          page and counts the total, including mentors.
+        </li>
+        <li id="h-numberCommittersNew">
+          K: numberCommittersNew - new committers added since establishment
+          (gathered from each project's Status page "News" section). Clutch parses the News
+          section and detects the string "new committer", counting each matched line.
+          See notes for "<a href="#h-hasStatusEntry">hasStatusEntry</a>" above.
+          (<a href="guides/ppmc.html#Voting+in+a+new+committer">doc</a> and
+          <a href="guides/ppmc.html#Voting+in+a+new+PPMC+member">doc</a> and
+          <a href="guides/community.html">doc</a>)
+        </li>
+        <li id="h-hasSvn">
+          L: hasSvn - Subversion repository is created.
+          (<a href="guides/mentor.html#Set+Up+Repository">doc</a> and
+          <a href="guides/mentor.html#Authorize+Committers">doc</a>)
+        </li>
+        <li id="h-hasTracker">
+          M: hasTracker - has an Issue Tracker
+        </li>
+        <li id="h-hasMailListDev">
+          N: hasMailListDev - Hints about mail list names are gathered from
+          their Status page, then tries standard convention, then verifies that
+          the <a href="http://mail-archives.apache.org/mod_mbox/#incubator">mailing lists</a>
+          are established, then ensures that the
+          <a href="mail/">mail archives</a> are now available.
+        </li>
+        <li id="h-hasMailListCommits">
+          O: hasMailListCommits - see above.
+        </li>
+        <li id="h-hasWebSite">
+          P: hasWebSite -
+        </li>
+        <li id="h-hasDistributionArea">
+          Q: hasDistributionArea - has w.a.o/dist/incubator/... area (not necessarily yet a release)
+        </li>
+        <li id="h-hasKeys">
+          R: hasKeys - has a PGP "<code>KEYS</code>" file in their distribution area.
+          This utilises Henk's
+          <a href="http://people.apache.org/~henkp/checker/md5.html">md5 checker</a>
+          which gathers the list of all KEYS files.
+        </li>
+        <li id="h-hasRelease">
+          S: hasRelease - has a release in their distribution area. The test is
+          whether they have a signature file (*.asc or *.sig ) associated with
+          a source release artifact (*.tar.gz or *.tgz or *.bz2 or *zip) and the
+          filename includes the word "incubating".
+          (<a href="guides/releasemanagement.html">doc</a> and
+           <a href="http://www.apache.org/dev/#releases">doc</a>)
+        </li>
+        <li id="h-otherIssues">
+          otherIssues - When projects graduate or become retired, then they need to clean up.
+        </li>
+        <li id="h-Graduate">
+          Graduating: Update your project metadata in the content/podlings.xml file as you
+          progress through the graduation phases.
+          Do various other tasks listed in the docs, such as final tidy of
+          Status page, tidy your old release distribution area, etc.
+          (<a href="incubation/Process_Description.html#Graduation">doc</a>
+          and
+          <a href="guides/graduation.html">doc</a>
+          and
+          <a href="guides/graduation.html#project-first-steps">doc</a>)
+        </li>
+        <li id="h-Retire">
+          Retiring: In the <a href="projects/">Projects in incubation</a> table, mark its status as
+          "retired".
+          (<a href="https://issues.apache.org/jira/browse/INCUBATOR-100">doc</a>)
+        </li>
+      </ul>
+    </section>
+    <section id="mentors">
+      <title>Mentors projects</title>
+      <p>
+        This list is gathered from the <a href="projects/">Projects in incubation</a>
+        summary table.
+        The <a href="&root-path;/incubation/Roles_and_Responsibilities.html#Mentor">Mentors</a>
+        are ASF members who have chosen to assist these projects.
+        The best way to find mentors for a new project, is during your
+        Discuss and Proposal phases on the general@ mail list.
+      </p>
+      <ul>
+      &clutch-m;
+      </ul>
+    </section>
+    <section id="data">
+      <title>Data files</title>
+      <p>
+        Data files are also generated so that other tools can easily re-use the
+        metadata for the set of projects currently in incubation: 
+      </p>
+      <ul>
+        <li>
+          <code><a href="clutch.txt">clutch.txt</a></code>
+          - list of projects, one per line. Comma-separated values (CSV).
+        </li>
+        <li>
+          <code>clutch.pkl</code>
+          - a Python "pickle" file with various attributes (it is in the top-level of SVN incubator/public/trunk).
+        </li>
+        <li>
+          <code><a href="report-groups.txt">report-groups.txt</a></code>
+          - list of current projects showing their report groups.
+        </li>
+        <li>
+          One text file for each Reporting group
+          listing the dev mail address of the group of projects due to report.
+          (See <code>report_due_[1-3].txt</code>)
+          This is used by other systems to send monthly marvin mail alert reminders.
+        </li>
+        <li>
+          Structured list of various details. Not yet happening - need to
+          decide which format (e.g. RDFa, etc.) and which attributes to be
+          stored.
+        </li>
+      </ul>
+    </section>
+    <section id="notes-2">
+      <title>Other Notes</title>
+      <section id="notes-origin">
+        <title>Origin</title>
+        <p>
+          The nest was becoming full, some podlings were forgotten, rolled
+          into dark corners:
+          <a href="http://thread.gmane.org/gmane.comp.apache.incubator.general/20226">new tool "clutch" assist oversight of all podlings</a>
+          2008-10-19 (<a href="http://s.apache.org/clutch_start?action=display">http://s.apache.org/clutch_start</a>).
+          There was prior list discussion. Also see
+          <a href="https://issues.apache.org/jira/browse/INCUBATOR-78">INCUBATOR-78</a>
+        </p>
+      </section>
+      <section id="notes-cud">
+        <title>Colour Scheme</title>
+        <p>
+          The colours for the table were specifically chosen to assist with
+          colour-blindness and general accessibility.
+          See the email discussion that led to this:
+          <a href="http://thread.gmane.org/gmane.comp.apache.incubator.general/20788/focus=20810">Re: Clutch color coding</a>
+          2008-12-04 (<a href="http://s.apache.org/clutch_colour?action=display">http://s.apache.org/clutch_colour</a>).
+          and see some testing
+          <a href="http://people.apache.org/~crossley/cud/test.html">notes</a> and demonstrations.
+        </p>
+        <p>
+          Thanks again to:
+          "Color Universal Design (CUD) - How to make figures and
+          presentations that are friendly to Colorblind people."
+          Masataka Okabe and Kei Ito.
+          (<a href="http://jfly.iam.u-tokyo.ac.jp/color/">http://jfly.iam.u-tokyo.ac.jp/color/</a>)
+        </p>
+      </section>
+      <section id="notes-summaries">
+        <title>Other Summaries</title>
+        <p>
+          A time-plot of Apache Incubator <a href="history/">history</a>.
+        </p>
+      </section>
+      <div id="clutch-bottom-spacer">
+        <!-- Spacer so that can link directly to each step above. -->
+      </div>
+    </section>
+  </body>
+</document>

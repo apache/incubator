@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+  <properties>
+    <title>XYZ Codebase Intellectual Property (IP) Clearance Status</title>
+  </properties>
+  <body>
+    <section id="Codebase+IP+Clearance+TEMPLATE">
+      <title>Codebase IP Clearance TEMPLATE</title>
+    </section>
+    <section id="XYZ+Codebase+Intellectual+Property+%28IP%29+Clearance+Status">
+      <title>XYZ Codebase Intellectual Property (IP) Clearance Status</title>
+    </section>
+    <section id="Description">
+      <title>Description</title>
+      <p>Describe the incoming codebase, including whether it is a large set
+of patches, new functional modules, etc.</p>
+    </section>
+    <section id="Project+info">
+      <title>Project info</title>
+      <ul>
+        <li>Which PMC will be responsible for the code: Apache Felix</li>
+      </ul>
+      <ul>
+        <li>Into which existing project/module: Apache Felix</li>
+      </ul>
+      <ul>
+        <li>Officer or member managing donation: Guillaume Nodet</li>
+      </ul>
+      <p>
+        <em>Completed tasks are shown by the completion date (YYYY-MM-dd).</em>
+      </p>
+      <section id="Identify+the+codebase">
+        <title>Identify the codebase</title>
+        <table>
+          <tr>
+            <th>date</th>
+            <th>item</th>
+          </tr>
+          <tr>
+            <td>2014-03-31</td>
+            <td>PojoSR code attached to FELIX-4445 (https://issues.apache.org/jira/secure/attachment/12637851/pojosr.zip).</td>
+          </tr>
+        </table>
+        <p>
+MD5 or SHA1 sum for donated software: MD5 (pojosr.zip) = 269434226a9dec1dd86a15a61bdeb92f
+        </p>
+        <section id="Copyright">
+          <title>Copyright</title>
+          <table>
+            <tr>
+              <th>date</th>
+              <th>item</th>
+            </tr>
+            <tr>
+              <td>2014-03-31</td>
+              <td>Check and make sure that the papers that transfer rights to
+                  the ASF been received. It is only necessary to transfer
+                  rights for the package, the core code, and any new code
+                  produced by the project.</td>
+            </tr>
+            <tr>
+              <td>2014-03-31</td>
+              <td>Check and make sure that the files that have been donated
+                  have been updated to reflect the new ASF copyright.</td>
+            </tr>
+          </table>
+          <p>
+Identify name recorded for software grant: Source code to PojoSR implementation as attached to code submission FELIX-4445 from Karl Pauls.
+          </p>
+        </section>
+        <section id="Verify+distribution+rights">
+          <title>Verify distribution rights</title>
+            <p>
+Corporations and individuals holding existing distribution rights: The codebase was developped by a
+single individual who is already an ASF committer: Karl Pauls.
+            </p>
+            <ul>
+<li>
+<em>For individuals, use the name as recorded on the committers page</em>
+</li>
+            </ul>
+          <table>
+            <tr>
+              <th>date</th>
+              <th>item</th>
+            </tr>
+            <tr>
+              <td>2014-03-31</td>
+              <td>Check that all active committers have a signed CLA on
+                  record.</td>
+            </tr>
+            <tr>
+              <td>2014-03-31</td>
+              <td>Remind active committers that they are responsible for
+                  ensuring that a Corporate CLA is recorded if such is
+                  required to authorize their contributions under their
+                  individual CLA.</td>
+            </tr>
+            <tr>
+              <td>2014-03-31</td>
+              <td>Check and make sure that for all items included with the
+                  distribution that is not under the Apache license, we have
+                  the right to combine with Apache-licensed code and
+                  redistribute.</td>
+            </tr>
+            <tr>
+              <td>2014-03-31</td>
+              <td>Check and make sure that all items depended upon by the
+                  project is covered by one or more of the following approved
+                  licenses: Apache, BSD, Artistic, MIT/X, MIT/W3C, MPL 1.1, or
+                  something with essentially the same terms.</td>
+            </tr>
+          </table>
+          <p>Generally, the result of checking off these items will be a
+             Software Grant, CLA, and Corporate CLA for ASF licensed code,
+             which must have no dependencies upon items whose licenses that
+             are incompatible with the Apache License.</p>
+        </section>
+      </section>
+      <section id="Organizational+acceptance+of+responsibility+for+the+project">
+        <title>Organizational acceptance of responsibility for the project
+</title>
+        <p>
+Related VOTEs:
+http://mail-archives.apache.org/mod_mbox/felix-dev/201403.mbox/%3CCAA66TpphivHOm4TLkARgeQQpwtZUm3rPL-i3dcx1UTwSOSADOA%40mail.gmail.com%3E
+http://mail-archives.apache.org/mod_mbox/felix-dev/201403.mbox/%3CCAA66Tprf9Y618BA-RTFJ6ZH24m5s09Bz9%3DOy%2Bp2WDGxhe%3DPdzA%40mail.gmail.com%3E
+        </p>
+        <ul>
+          <li><em>The VOTE thread accepting the donation may happen either
+before or after IP clearance. Adoption by lazy concensus is acceptable but
+not recommended.</em></li>
+        </ul>
+      </section>
+    </section>
+  </body>
+</document>

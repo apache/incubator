@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+  <properties>
+    <title>Apache Wicket Codebase Intellectual Property (IP) Clearance Status</title>
+  </properties>
+  <body>
+    <section id="Wicket+Codebase+Intellectual+Property+%28IP%29+Clearance+Status">
+      <title>Wicket Free Guide Intellectual Property (IP) Clearance Status</title>
+    </section>
+    <section id="Description">
+      <title>Description</title>
+      <p>Andrea del Bene has written a book documenting Apache Wicket, and it is intended to become the official reference guide for Wicket.</p>
+    </section>
+    <section id="Project+info">
+      <title>Project info</title>
+      <ul>
+        <li>The Wicket PMC is responsible for the document.</li>
+      </ul>
+      <ul>
+        <li>It will be incorporated into our public website as the official online documentation.</li>
+      </ul>
+      <ul>
+        <li>Officer or member managing donation: Martijn Dashorst</li>
+      </ul>
+      <p>
+        <em>Completed tasks are shown by the completion date (YYYY-MM-dd).</em>
+      </p>
+      <section id="Identify+the+codebase">
+        <title>Identify the codebase</title>
+        <table>
+          <tr>
+            <th>date</th>
+            <th>item</th>
+          </tr>
+          <tr>
+            <td>2013-08-18</td>
+            <td>The document that's donated is <a href="http://code.google.com/p/wicket-guide/">hosted at google code</a>. I have attached a version of the document to https://issues.apache.org/jira/browse/WICKET-5321 (MD5: f4e4ac60fd17be8cdff2a78c75109506)</td>
+          </tr>
+        </table>
+        <section id="Copyright">
+          <title>Copyright</title>
+          <table>
+            <tr>
+              <th>date</th>
+              <th>item</th>
+            </tr>
+            <tr>
+              <td>2013-07-28</td>
+              <td>Done. Check and make sure that the papers that transfer rights to
+                  the ASF been received. It is only necessary to transfer
+                  rights for the package, the core code, and any new code
+                  produced by the project.</td>
+            </tr>
+            <tr>
+              <td>2013-08-20</td>
+              <td>Done. Check and make sure that the files that have been donated
+                  have been updated to reflect the new ASF copyright.</td>
+            </tr>
+          </table>
+          <p>
+Identify name recorded for software grant: andrea-del-bene-wicket.pdf
+          </p>
+        </section>
+        <section id="Verify+distribution+rights">
+          <title>Verify distribution rights</title>
+            <p>
+Corporations and individuals holding existing distribution rights:
+            </p>
+            <ul>
+<li>
+Andrea del Bene (adelbene)
+</li>
+            </ul>
+          <table>
+            <tr>
+              <th>date</th>
+              <th>item</th>
+            </tr>
+            <tr>
+              <td>2013-08-18</td>
+              <td>n/a. Check that all active committers have a signed
+				  CLA on record.</td>
+            </tr>
+            <tr>
+              <td>2013-08-18</td>
+              <td>n/a. Remind active committers that they are responsible for
+                  ensuring that a Corporate CLA is recorded if such is
+                  required to authorize their contributions under their
+                  individual CLA.</td>
+            </tr>
+            <tr>
+              <td>2013-08-18</td>
+              <td>Done: Andrea recorded a SGA with secretary@ on 2013-07-28.
+				  Check and make sure that for all items included with the
+                  distribution that is not under the Apache license, we have
+                  the right to combine with Apache-licensed code and
+                  redistribute.</td>
+            </tr>
+            <tr>
+              <td>2013-08-18</td>
+              <td>n/a. Check and make sure that all items depended upon by the
+                  project is covered by one or more of the following approved
+                  licenses: Apache, BSD, Artistic, MIT/X, MIT/W3C, MPL 1.1, or
+                  something with essentially the same terms.</td>
+            </tr>
+          </table>
+          <p>Generally, the result of checking off these items will be a
+             Software Grant, CLA, and Corporate CLA for ASF licensed code,
+             which must have no dependencies upon items whose licenses that
+             are incompatible with the Apache License.</p>
+        </section>
+      </section>
+      <section id="Organizational+acceptance+of+responsibility+for+the+project">
+        <title>Organizational acceptance of responsibility for the project
+</title>
+        <p>
+Related VOTEs:
+        </p>
+        <ul>
+          <li><a href="http://mail-archives.apache.org/mod_mbox/wicket-dev/201308.mbox/%3cCAB63Y-ckdAYVODc9A6cnh9cAeuea4oiL-wgn3ZPO6kx7GjR5rw@mail.gmail.com%3e">Wicket dev@ list</a></li>
+        </ul>
+      </section>
+    </section>
+  </body>
+</document>

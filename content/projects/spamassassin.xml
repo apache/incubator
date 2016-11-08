@@ -1,0 +1,690 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+  <properties>
+    <title>spamassassin
+</title>
+  </properties>
+  <body>
+    <section id="SpamAssassin+Project+Incubation+Status">
+      <title>SpamAssassin Project Incubation Status
+</title>
+      <p>This page tracks the project status, incubator-wise. For more general
+project status, look on the project website.
+</p>
+<p><span class="graduated">The SpamAssassin project graduated on 2004-06-23</span></p>
+    </section>
+    <section id="Description">
+      <title>Description
+</title>
+      <p>SpamAssassin(tm) is a mail filter to identify spam.
+</p>
+      <p>Using its rule base, it uses a wide range of heuristic tests on mail
+headers and body text to identify "spam", also known as unsolicited
+commercial email.
+</p>
+    </section>
+    <section id="News">
+      <title>News
+</title>
+      <ul>
+        <li>none yet
+</li>
+      </ul>
+    </section>
+    <section id="Project+info">
+      <title>Project info
+</title>
+      <table>
+        <tr>
+          <th>item
+</th>
+          <th>type
+</th>
+          <th>reference
+</th>
+        </tr>
+        <tr>
+          <td>Website
+</td>
+          <td>www
+</td>
+          <td>
+            <a href="http://spamassassin.org/">http://spamassassin.org/
+</a>
+          </td>
+        </tr>
+        <tr>
+          <td>.
+</td>
+          <td>wiki
+</td>
+          <td>
+            <a href="http://wiki.apache.org/spamassassin/">http://wiki.apache.org/spamassassin/
+</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Mailing list
+</td>
+          <td>dev
+</td>
+          <td>spamassassin-dev@incubator.apache.org
+</td>
+        </tr>
+        <tr>
+          <td>.
+</td>
+          <td>cvs
+</td>
+          <td>spamassassin-cvs@incubator.apache.org
+</td>
+        </tr>
+        <tr>
+          <td>.
+</td>
+          <td>ppmc
+</td>
+          <td>spamassassin-ppmc@incubator.apache.org
+</td>
+        </tr>
+        <tr>
+          <td>.
+</td>
+          <td>users
+</td>
+          <td>spamassassin-users@incubator.apache.org
+</td>
+        </tr>
+        <tr>
+          <td>.
+</td>
+          <td>devel-br
+</td>
+          <td>spamassassin-devel-br@incubator.apache.org
+</td>
+        </tr>
+        <tr>
+          <td>.
+</td>
+          <td>devel-de
+</td>
+          <td>spamassassin-devel-de@incubator.apache.org
+</td>
+        </tr>
+        <tr>
+          <td>.
+</td>
+          <td>announce
+</td>
+          <td>spamassassin-announce@lists.sourceforge.net
+</td>
+        </tr>
+        <tr>
+          <td>.
+</td>
+          <td>.
+</td>
+          <td>(replacement spamassassin-announce exists on incubator, but will not
+be used until graduation)
+</td>
+        </tr>
+        <tr>
+          <td>Bug tracking
+</td>
+          <td>.
+</td>
+          <td>
+            <a href="http://bugzilla.spamassassin.org/">http://bugzilla.spamassassin.org/
+</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Source code
+</td>
+          <td>SVN
+</td>
+          <td>incubator/spamassassin/
+</td>
+        </tr>
+        <tr>
+          <td>Mentors
+</td>
+          <td>striker
+</td>
+          <td>Sander Striker
+</td>
+        </tr>
+        <tr>
+          <td>PPMC
+</td>
+          <td>felicity
+</td>
+          <td>Theo Van Dinter
+</td>
+        </tr>
+        <tr>
+          <td>.
+</td>
+          <td>jm
+</td>
+          <td>Justin Mason
+</td>
+        </tr>
+        <tr>
+          <td>.
+</td>
+          <td>quinlan
+</td>
+          <td>Daniel Quinlan
+</td>
+        </tr>
+        <tr>
+          <td>Committers
+</td>
+          <td>duncf
+</td>
+          <td>Duncan A. Findlay
+</td>
+        </tr>
+        <tr>
+          <td>.
+</td>
+          <td>felicity
+</td>
+          <td>Theo Van Dinter
+</td>
+        </tr>
+        <tr>
+          <td>.
+</td>
+          <td>jm
+</td>
+          <td>Justin Mason
+</td>
+        </tr>
+        <tr>
+          <td>.
+</td>
+          <td>mss
+</td>
+          <td>Malte Sebastian Stretz
+</td>
+        </tr>
+        <tr>
+          <td>.
+</td>
+          <td>parker
+</td>
+          <td>Michael Parker
+</td>
+        </tr>
+        <tr>
+          <td>.
+</td>
+          <td>quinlan
+</td>
+          <td>Daniel Quinlan
+</td>
+        </tr>
+        <tr>
+          <td>.
+</td>
+          <td>sidney
+</td>
+          <td>Sidney Markowitz
+</td>
+        </tr>
+        <tr>
+          <td>Extra
+</td>
+          <td>DNS
+</td>
+          <td>spamassassin.org
+</td>
+        </tr>
+      </table>
+    </section>
+    <section id="Incubation+status+reports">
+      <title>Incubation status reports
+</title>
+      <section id="2004-04-22">
+        <title>2004-04-22
+</title>
+        <source>* is the Incubation Status file up to date? (also post link) Yep --
+http://cvs.apache.org/viewcvs.cgi/*checkout*/incubator/site/projects/s
+amassassin.cwiki * any legal, cross-project or personal issues that
+still need to be addressed? Copyright and distribution rights still
+remain to be verified by ASF. The trademark issue on the
+"SpamAssassin" name is still in progress. * what has been done for
+incubation since the last report? news.spamassassin.org has been shut
+down; it was becoming just a dumping-ground for third-party press
+releases, and Wiki pages were more appropriate. We're still waiting
+for trademark assignment to be taken care of. Also unsure if the ASF
+have vetted the CLA coverage of the current codebase. Mostly, the
+ball is in the ASF's court ;) Have received agreement from current
+domain holder of "spamassassin.org" that it will be transferred to
+the ASF. * plans and expectations for the next period? Hopefully
+we'll get the TM assignment taken care of, and the CLAs vetted; then
+we'll be ready (at least in terms of ASF procedures) to issue a 3.0.0
+release of SpamAssassin as an ASF project. * any recommendations for
+how incubation could run more smoothly for you? * etc (your own
+thoughts on what is important would be helpful!)
+</source>
+      </section>
+      <section id="2004-03-%3F%3F">
+        <title>2004-03-??
+</title>
+        <source>* STATUS is up to date
+http://cvs.apache.org/viewcvs.cgi/*checkout*/incubator/site/projects/s
+amassassin.cwiki is now the canonical STATUS file and it is now
+up-to-date. The trunk copy points at it now. * 3.0.0 tree under
+development at ASF * 2.6x not under development at ASF
+</source>
+      </section>
+      <section id="2004-01-21">
+        <title>2004-01-21
+</title>
+        <source>* is the STATUS file up to date? (also post link)
+http://cvs.apache.org/viewcvs.cgi/*checkout*/incubator/site/projects/s
+amassass in.cwiki Not quite -- the two 'Establish a list of active
+committers' items are not up to date. All active committers are now
+signed up, so that can be closed off. The second item is 'Add all
+active committers in the STATUS file.' However, I'm now confused.
+Which is the canonical STATUS file --
+/incubator/spamassassin/trunk/STATUS, or
+/incubator/site/projects/spamassassin.cwiki? Some signs seem to be
+pointing to the latter... so, if the latter, some cut and paste from
+the former to the latter is then required (and note, I don't think I
+or anyone else on the SpamAssassin PPMC have write access to it). I'm
+kind of taking the approach that the latter is the incubation
+checklist, and the former is tracking our assets and people. That may
+be wrong though BTW the former is here:
+http://svn.apache.org/repos/asf/incubator/spamassassin/trunk/STATUS
+Also, the two tasks under 'Verify distribution rights', should be
+complete. All code in the trunk is covered by CLAs, and the
+non-covered branches have README files noting their non-Apache status
+and presence for historical purposes only. However, perhaps this may
+need to be verified by the ASF before the task can be marked as
+complete, I'm not sure. * any legal, cross-project or personal issues
+that still need to be addressed? Copyright and distribution rights
+still remain to be verified, although all CLAs should now be in. --
+so it's up to ASF legal now. The trademark issue on the
+"SpamAssassin" name is still in progress; as far as I know, NAI legal
+still need to provide some documentation to DW, Jim Jagielski et al.
+* what has been done for incubation since the last report? Lots! - -
+all committer accounts are set up; - - source code is now running
+from the Apache Incubator SVN repository; - - all of the
+developer-oriented mailing lists are now at the Incubator - although
+some user-oriented lists are still external, to avoid user confusion;
+- - all code has been vetted for CLA coverage, and removed or
+clean-roomed if a CLA could not be provided, and this is now awaiting
+verification by the ASF; - - and all major code or rules files in SVN
+are tagged with the ASL 1.1. - - The Wiki has been moved to
+wiki.apache.org. * plans and expectations for the next period? We
+need to transition more infrastructure, including our main website,
+Wiki and Bugzilla. Bugzilla uses some custom code to track CLAs,
+which would be nice to bring over. We also plan to finish up the
+legal situation, by getting the CLA coverage verified by the ASF,
+then the trademark. Also we have several cron scripts that are used
+to perform distributed rule QA, and a very large rsync server contain
+2.7Gb of data, which will need to be migrated. What to do with these
+is still a topic of discussion, since they're *big* in terms of disk
+space usage, and there may not be room at the ASF infrastructure for
+this! There's also a spamtrap server which almost definitely should
+*not* come along -- it handles approx 1 Gbit of traffic per day (in
+spam reports) and would be a waste of ASF hardware and bandwidth,
+IMO. * any recommendations for how incubation could run more smoothly
+for you? A little more introductory doco would be nice; I hadn't
+heard of http://www.apache.org/dev/ until quite late in the process,
+and there were a few other issues where I had to hop around the
+apache.org website to figure out what things meant or what a given
+procedure was. Also, one thing I'm concerned about is how many
+aspects of our infrastructure will wind up with "incubator" in their
+URL or hostname; as a mature project, it'd be much easier to
+transition with the minimum of changes for the existing community,
+and this scoping of URLs and hostnames as in incubation means an
+additional change once we leave the incubator. As a result, it gives
+us a bit of an incentive to *not* set things up (lists, etc.) until
+we leave.
+</source>
+      </section>
+    </section>
+    <section id="Incubation+work+items">
+      <title>Incubation work items
+</title>
+      <section id="Project+Setup">
+        <title>Project Setup
+</title>
+        <p>This is the first phase on incubation, needed to start the project at
+Apache.
+</p>
+        <p>
+          <em>Item assignment is shown by the Apache id.
+</em>
+          <em>Completed tasks are shown by the completion date (YYYY-MM-dd).
+</em>
+        </p>
+        <section id="Identify+the+project+to+be+incubated">
+          <title>Identify the project to be incubated
+</title>
+          <table>
+            <tr>
+              <th>date
+</th>
+              <th>item
+</th>
+            </tr>
+            <tr>
+              <td>2004-02-16
+</td>
+              <td>Make sure that the requested project name does not already exist and
+check www.nameprotect.com to be sure that the name is not already
+trademarked for an existing software product.
+</td>
+            </tr>
+            <tr>
+              <td>DONE
+</td>
+              <td>If request from anywhere to become a stand-alone PMC, then assess the
+fit with the ASF, and create the lists and modules under the
+incubator address/module names if accepted.
+</td>
+            </tr>
+          </table>
+          <p>
+            <em>NOTE
+</em>
+          </p>
+          <source>There is a trademark
+</source>
+        </section>
+        <section id="Interim+responsibility">
+          <title>Interim responsibility
+</title>
+          <table>
+            <tr>
+              <th>date
+</th>
+              <th>item
+</th>
+            </tr>
+            <tr>
+              <td>2003-12-20
+</td>
+              <td>Identify all the Mentors for the incubation, by asking all that can
+be Mentors.
+</td>
+            </tr>
+            <tr>
+              <td>N/A
+</td>
+              <td>Subscribe all Mentors on the pmc and general lists.
+</td>
+            </tr>
+            <tr>
+              <td>N/A
+</td>
+              <td>Give all Mentors access to all incubator CVS modules. (to be done by
+PMC chair)
+</td>
+            </tr>
+            <tr>
+              <td>2003-12-29
+</td>
+              <td>Tell Mentors to track progress in the file
+'incubator/projects/spamassassin.cwiki'
+</td>
+            </tr>
+          </table>
+        </section>
+        <section id="Copyright">
+          <title>Copyright
+</title>
+          <table>
+            <tr>
+              <th>date
+</th>
+              <th>item
+</th>
+            </tr>
+            <tr>
+              <td>2004-02-16
+</td>
+              <td>Check and make sure that the papers that transfer rights to the ASF
+been received. It is only necessary to transfer rights for the
+package, the core code, and any new code produced by the project.
+</td>
+            </tr>
+            <tr>
+              <td>2004-02-16
+</td>
+              <td>Check and make sure that the files that have been donated have been
+updated to reflect the new ASF copyright.
+</td>
+            </tr>
+          </table>
+        </section>
+        <section id="Verify+distribution+rights">
+          <title>Verify distribution rights
+</title>
+          <table>
+            <tr>
+              <th>date
+</th>
+              <th>item
+</th>
+            </tr>
+            <tr>
+              <td>DONE
+</td>
+              <td>Check and make sure that for all code included with the distribution
+that is not under the Apache license, we have the right to combine
+with Apache-licensed code and redistribute.
+</td>
+            </tr>
+            <tr>
+              <td>DONE
+</td>
+              <td>Check and make sure that all source code distributed by the project
+is covered by one or more of the following approved licenses: Apache,
+BSD, Artistic, MIT/X, MIT/W3C, MPL 1.1, or something with essentially
+the same terms.
+</td>
+            </tr>
+          </table>
+        </section>
+        <section id="Establish+a+list+of+active+committers">
+          <title>Establish a list of active committers
+</title>
+          <table>
+            <tr>
+              <th>date
+</th>
+              <th>item
+</th>
+            </tr>
+            <tr>
+              <td>2004-01-21
+</td>
+              <td>Check that all active committers have submitted a contributors
+agreement.
+</td>
+            </tr>
+            <tr>
+              <td>2004-01-21
+</td>
+              <td>Add all active committers in the STATUS file.
+</td>
+            </tr>
+          </table>
+        </section>
+        <section id="Infrastructure">
+          <title>Infrastructure
+</title>
+          <table>
+            <tr>
+              <th>date
+</th>
+              <th>item
+</th>
+            </tr>
+            <tr>
+              <td>2003-12-23
+</td>
+              <td>Ask root for the creation of committers' accounts on svn.apache.org.
+</td>
+            </tr>
+            <tr>
+              <td>2004-01-07
+</td>
+              <td>Ask infrastructure to create source repository modules and grant the
+committers karma.
+</td>
+            </tr>
+            <tr>
+              <td>2003-12-25
+</td>
+              <td>Ask infrastructure to set up and archive Mailing lists.
+</td>
+            </tr>
+            <tr>
+              <td>....-..-..
+</td>
+              <td>Decide about and then ask infrastructure to setup an issuetracking
+system (Bugzilla, Scarab, Jira).
+</td>
+            </tr>
+            <tr>
+              <td>....-..-..
+</td>
+              <td>Migrate the project to our infrastructure.
+</td>
+            </tr>
+          </table>
+          <p>
+            <em>NOTES
+</em>
+          </p>
+          <source>Discussion is underway to whether SA wants to use Jira, or wants to
+import their BZ database into the existing ASF installation.
+</source>
+          <source>The moving to the ASF infrastructure is partly delayed by the limited
+resources available in the ASF Infrastructure team (time). Also, this
+mature project has quite a lot of infrastructure to move. I suggest
+we don't let this be one of the points to keep SA in the Incubator;
+the intent to move to the ASF infrastructure is there.
+</source>
+        </section>
+        <section id="Project+specific">
+          <title>Project specific
+</title>
+          <p>
+            <em>Add project specific tasks here.
+</em>
+          </p>
+        </section>
+      </section>
+      <section id="Incubation">
+        <title>Incubation
+</title>
+        <p>These action items have to be checked for during the whole incubation
+process.
+</p>
+        <p>
+          <em>These items are not to be signed as done during incubation, as they
+may change during incubation.
+</em>
+          <em>They are to be looked into and described in the status reports and
+completed in the request for incubation signoff.
+</em>
+        </p>
+        <section id="Collaborative+Development">
+          <title>Collaborative Development
+</title>
+          <ul>
+            <li>Have all of the active long-term volunteers been identified and
+acknowledged as committers on the project?
+</li>
+          </ul>
+          <p>Yes.
+</p>
+          <ul>
+            <li>Are there three or more independent committers? (The legal definition
+of independent is long and boring, but basically it means that there
+is no binding relationship between the individuals, such as a shared
+employer, that is capable of overriding their free will as
+individuals, directly or indirectly.)
+</li>
+          </ul>
+          <p>Yes.
+</p>
+          <ul>
+            <li>Are project decisions being made in public by the committers?
+</li>
+          </ul>
+          <p>Yes.
+</p>
+          <ul>
+            <li>Are the decision-making guidelines published and agreed to by all of
+the committers?
+</li>
+          </ul>
+          <p>Yes.
+</p>
+        </section>
+        <section id="Licensing+awareness">
+          <title>Licensing awareness
+</title>
+          <ul>
+            <li>Are all licensing, trademark, credit issues being taken care of and
+acknowleged by all committers?
+</li>
+          </ul>
+          <p>Two trademarks are being assigned to the ASF:
+</p>
+          <p>SpamAssassin:
+http://assignments.uspto.gov/assignments/q?db=tm&amp;sno=78148991
+</p>
+          <p>Powered by SpamAssassin:
+http://assignments.uspto.gov/assignments/q?db=tm&amp;sno=78213077
+</p>
+        </section>
+        <section id="Project+Specific">
+          <title>Project Specific
+</title>
+          <p>
+            <em>Add project specific tasks here.
+</em>
+          </p>
+        </section>
+      </section>
+      <section id="Exit">
+        <title>Exit
+</title>
+        <p>
+          <em>Things to check for before voting the project out.
+</em>
+        </p>
+        <section id="Organizational+acceptance+of+responsibility+for+the+project">
+          <title>Organizational acceptance of responsibility for the project
+</title>
+          <ul>
+            <li>If graduating to an existing PMC, has the PMC voted to accept it?
+</li>
+            <li>If graduating to a new PMC, has the board voted to accept it?
+</li>
+          </ul>
+        </section>
+        <section id="Incubator+sign-off">
+          <title>Incubator sign-off
+</title>
+          <ul>
+            <li>Has the Incubator decided that the project has accomplished all of
+the above tasks?
+</li>
+          </ul>
+        </section>
+      </section>
+    </section>
+  </body>
+</document>

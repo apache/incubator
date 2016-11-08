@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+<document>
+  <properties>
+    <title>Committers</title>
+    <atom url="http://mail-archives.apache.org/mod_mbox/incubator-general/?format=atom">general@incubator.apache.org Archives</atom>
+  </properties>
+  <body>
+    <section id="Committers">
+      <title>Committers</title>
+      <p>The <a
+      href="http://incubator.apache.org/incubation/Roles_and_Responsibilities.html#Committers"
+      >Roles and Responsibilities</a> document describes the general role of a
+      committer on an incubating project. This page provides links to
+      more information to help new committers get started.</p>
+    <section id="Mailing+Lists">
+      <title>Mailing Lists</title>
+      <p>Everything -- but <em>everything</em>-- inside the Apache world
+      occurs or is reflected in email. As some people say, 'If it isn't
+      in my email, it didn't happen.' Decisions only get made on public
+      Apache mail lists -- not anywhere off list, such as IRC, IM, or private 
+      emails.</p>
+      <p> Each project has a set of lists, which are typically called
+      <em>project</em>-dev, <em>project</em>-user, and
+      <em>project</em>-commits. A few <a
+      href="http://www.apache.org/foundation/mailinglists.html"
+      >Apache-wide lists</a> cross all boundaries, including:</p>
+      <ul>
+        <li>
+          <strong>committers</strong>: sends important messages to all
+          Apache committers; it's not used for discussions;
+        </li>
+        <li>
+          <strong>community</strong>: where all Apache committers can
+          discuss things that are about Apache;
+        </li>
+        <li>
+          <strong>infrastructure</strong>: where the roots and the
+          infrastructure team discuss and work on the Apache
+          infrastructure needs;
+        </li>
+
+        <li>
+          <strong>legal-discuss</strong>: where Apache committers can
+          ask questions that have a legal aspect;
+        </li>
+
+        <li>
+          <strong>repository</strong>: discussions about the Apache
+          artifact repository;
+        </li>
+        <li>
+          <strong>party</strong>: where people plan how to have fun. :-)
+        </li>
+      </ul>
+
+      <p>Action items for committers include:</p>
+        <ul>
+          <li> Become familiar with Apache developer <a
+          href="http://www.apache.org/dev/contrib-email-tips.html">Tips
+          for email contributors</a>.
+          </li>
+          <li>Subscribe to the -user, -dev, and -commits lists for your
+          project.</li>
+          <li>Become aware of what else is going on in the Incubator by
+          subscribing to the Incubator's general list.</li>
+          <li>Become aware of what else is going on at the ASF by subscribing to the
+            <a href="http://www.apache.org/foundation/mailinglists.html#foundation-community"
+            >community</a>, <a
+            href="http://www.apache.org/foundation/mailinglists.html#foundation-infrastructure"
+            >infrastructure</a>, and <a
+            href="http://www.apache.org/foundation/mailinglists.html#foundation-legal"
+            >legal-discuss</a> Apache-wide lists.
+          </li>
+        </ul>
+
+        <p>Apache also has private lists. For example, your project will
+        probably have a private mail list named <em>project</em>-private, 
+        which your Podling PMC will use for sensitive discussions. Never 
+        mix public and private mail lists in the same post -- see the 
+        section titled <a
+        href="http://www.apache.org/foundation/how-it-works.html#
+        management">Balancing confidentiality and public discussion</a>
+        in <a
+        href="http://www.apache.org/foundation/how-it-works.html">How it
+        Works</a>. For example, never include both your dev and private
+        lists in the same post. Posting to the dev list is sufficient
+        because each member of your Podling PMC will also be on that
+        list. </p>
+      </section>
+      <section id="Project+Web+Site">
+        <title>Project Web Site</title>
+        <p>The Incubator <a
+        href="sites.html">Podling Websites</a> guide documents how to get 
+        your project web site going.</p>
+      </section>
+      <section id="Committer+Resources">
+        <title>Committer Resources</title>
+        <ul>
+          <li>
+            <p>The <a
+            href="http://www.apache.org/dev/new-committers-guide.html">
+            Guide for New Committers </a>is a great place to start and
+            points to additional committer-only resources.</p>
+          </li>
+          <li>
+            <p>Browse the pages at <a
+            href="http://www.apache.org/dev">http://www.apache.org/dev/</a>
+            often.
+            </p>
+          </li>
+          <li>
+            <p>Subscribe to the <a
+            href="http://www.apache.org/foundation/mailinglists.html#
+            foundation-infrastructure">infrastructure</a> list, then
+            raise awareness on your project on what goes on behind the
+            scenes.</p>
+            <p>Be proactive about responding to infrastructure issues on
+            your project mailing lists. Does the web server seem to be
+            down? Is Jira or Subversion down? Check the <a
+            href="http://www.apache.org/dev/#status">status of servers</a>
+            and explain the reason to your project lists (as you can
+            see, no need to alert the ASF infrastructure people).</p>
+          </li>
+        </ul>
+      </section>
+      <section id="Podling+PMC+%28PPMC%29">
+        <title>Podling PMC (PPMC)</title>
+        <p>If you are a member of your PPMC, become familiar with the <a
+        href="../incubation/Incubation_Policy.html">Incubation
+        Policy</a> and see the <a href="ppmc.html">Podling PMC
+        Guide</a>. </p>
+     </section>
+      <section id="Questions%3F">
+        <title>Questions?</title>
+        <p>If you have any questions, please ask on the Incubator's
+        general mail list.</p>
+        <p>Don't forget to check the information at:</p>
+        <ul>
+          <li><a
+          href="http://www.apache.org/dev">http://www.apache.org/dev/</a>
+          -- it is one of the most current resources for committers.</li>
+          <li><a href="general.html#FAQ">Incubator General FAQ</a></li>
+        </ul>
+      </section>
+    </section>
+  </body>
+</document>

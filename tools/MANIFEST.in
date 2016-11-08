@@ -1,0 +1,6 @@
+include README.rst
+include LICENSE.txt
+include NOTICE.txt
+include MANIFEST.in
+recursive-include asf *
+global-exclude *pyc *pyo

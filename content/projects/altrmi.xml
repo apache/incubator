@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+  <properties>
+    <title>altrmi
+</title>
+  </properties>
+  <body>
+    <section id="AltRMI+Project+Incubation+status">
+      <title>AltRMI Project Incubation status
+</title>
+      <p>This page tracks the project status, incubator-wise. Items marked
+
+        <strong>DONE
+</strong>have been completed.
+
+      </p>
+      <p><span class="retired">The AltRMI project retired on 2007-01-18</span></p>
+    </section>
+    <section id="News">
+      <title>News
+</title>
+      <section id="2007-01-18">
+        <title>2007-01-18</title>
+        <p>Project closed down. Activity moved to 
+        <a href="http://jremoting.codehaus.org/">JRemoting</a>. </p>
+      </section>
+      <section id="2003-10-30">
+        <title>2003-10-30
+</title>
+        <p>Still "refuses" 1.0 release. Currently at 0.98-SNAPSHOT. Major work
+recently included Mavenization. Reports of commercial usage. Team
+happy with remaining in the incubator for time being.
+</p>
+      </section>
+    </section>
+    <section id="Project+Website">
+      <title>Project Website
+</title>
+      <p>The website for altrmi is at
+
+        <a href="http://incubator.apache.org/projects/altrmi/">http://incubator.apache.org/projects/altrmi/
+</a>
+      </p>
+    </section>
+    <section id="Identify+the+project+to+be+incubated">
+      <title>Identify the project to be incubated
+</title>
+      <ul>
+        <li>Make sure that the requested project name does not already exist and
+check www.nameprotect.com to be sure that the name is not already
+trademarked for an existing software product.
+
+          <strong>DONE
+</strong>
+        </li>
+        <li>If request from an existing Apache project to adopt an external
+package, then ask the Apache project for the cvs module and mail
+address names.
+
+          <strong>DONE
+</strong>
+        </li>
+        <li>If request from outside Apache to enter an existing Apache project,
+then post a message to that project for them to decide on acceptance.
+
+          <strong>DONE
+</strong>
+        </li>
+        <li>If request from anywhere to become a stand-alone PMC, then assess the
+fit with the ASF, and create the lists and modules under the
+incubator address/module names if accepted.
+
+          <strong>DONE
+</strong>
+        </li>
+      </ul>
+    </section>
+    <section id="Interim+responsibility">
+      <title>Interim responsibility
+</title>
+      <ul>
+        <li>
+          <strong>DONE
+</strong>Who has been identified as the shepherd for the incubation?
+
+        </li>
+      </ul>
+      <p>
+        <strong>Nicola Ken Barozzi
+</strong>
+      </p>
+      <ul>
+        <li>Are they tracking progress in the file
+incubator/projects/{project_name}/STATUS?
+</li>
+      </ul>
+    </section>
+    <section id="Copyright">
+      <title>Copyright
+</title>
+      <ul>
+        <li>
+          <strong>DONE
+</strong>Have the papers that transfer rights to the ASF been received? It is
+only necessary to transfer rights for the package, the core code, and
+any new code produced by the project.
+
+          <strong>(project originated at the ASF)
+</strong>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <strong>DONE
+</strong>Have the files been updated to reflect the new ASF copyright?
+
+          <strong>(project originated at the ASF)
+</strong>
+        </li>
+      </ul>
+      <p>Verify distribution rights:
+</p>
+      <ul>
+        <li>
+          <strong>DONE
+</strong>For all code included with the distribution that is not under the
+Apache license, do we have the right to combine with Apache-licensed
+code and redistribute?
+
+        </li>
+      </ul>
+      <ul>
+        <ul>
+          <li>jUnit (not distributed; but IBM CPL)
+</li>
+          <li>qdox (ASF-based)
+</li>
+        </ul>
+      </ul>
+      <ul>
+        <li>
+          <strong>DONE
+</strong>Is all source code distributed by the project covered by one or more
+of the following approved licenses: Apache, BSD, Artistic, MIT/X,
+MIT/W3C, MPL 1.1, or something with essentially the same terms?
+
+          <strong>(everything is ASF-licensed)
+</strong>
+        </li>
+      </ul>
+    </section>
+    <section id="Establish+a+list+of+active+committers">
+      <title>Establish a list of active committers
+</title>
+      <ul>
+        <li>Are all active committers in the STATUS file?
+</li>
+      </ul>
+      <ul>
+        <li>
+          <strong>DONE
+</strong>Do they have accounts on cvs.apache.org?
+
+        </li>
+      </ul>
+      <ul>
+        <li>Have they submitted a contributors agreement?
+</li>
+      </ul>
+    </section>
+    <section id="Infrastructure">
+      <title>Infrastructure
+</title>
+      <ul>
+        <li>
+          <strong>DONE
+</strong>CVS modules created and committers added to avail file?
+
+        </li>
+      </ul>
+      <ul>
+        <li>Mailing lists set up and archived?
+</li>
+      </ul>
+      <ul>
+        <li>Problem tracking system (Bugzilla)?
+</li>
+      </ul>
+      <ul>
+        <li>Has the project migrated to our infrastructure?
+</li>
+      </ul>
+    </section>
+    <section id="Collaborative+Development">
+      <title>Collaborative Development
+</title>
+      <ul>
+        <li>
+          <strong>DONE
+</strong>Have all of the active long-term volunteers been identified and
+acknowledged as committers on the project?
+
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <strong>DONE
+</strong>Are there three or more independent committers?
+
+        </li>
+      </ul>
+      <p>(The legal definition of independent is long and boring, but
+basically it means that there is no binding relationship between the
+individuals, such as a shared employer, that is capable of overriding
+their free will as individuals, directly or indirectly.)
+</p>
+      <ul>
+        <ul>
+          <li>Paul Hammant
+</li>
+          <li>Vinay Chandran
+</li>
+          <li>(there are more committers but they are not active)
+</li>
+        </ul>
+      </ul>
+      <ul>
+        <li>Are project decisions being made in public by the committers?
+</li>
+      </ul>
+      <ul>
+        <li>
+          <strong>DONE
+</strong>Are the decision-making guidelines published and agreed to by all of
+the committers?
+
+        </li>
+      </ul>
+      <p>Following the "Standard" apache process
+</p>
+    </section>
+    <section id="Organizational+acceptance+of+responsibility+for+the+project">
+      <title>Organizational acceptance of responsibility for the project
+</title>
+      <ul>
+        <li>If graduating to an existing PMC, has the PMC voted to accept it?
+</li>
+      </ul>
+      <ul>
+        <li>If graduating to a new PMC, has the board voted to accept it?
+</li>
+      </ul>
+    </section>
+    <section id="Incubator+sign-off">
+      <title>Incubator sign-off
+</title>
+      <ul>
+        <li>Has the Incubator decided that the project has accomplished all of
+the above tasks?
+</li>
+      </ul>
+    </section>
+  </body>
+</document>

@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+  <properties>
+    <title>NMaven Project Incubation Status</title>
+    <link href="http://purl.org/DC/elements/1.0/" rel="schema.DC"/>
+  </properties>
+  <body>
+    <section id="NMaven+Project+Incubation+Status">
+      <title>NMaven Project Incubation Status</title>
+      <p>
+        This page tracks the project status, incubator-wise. Other 
+        information is recorded also under 
+        <a href='http://maven.apache.org/proposals/incubator/nmaven.html'>the original proposal</a>.
+      </p>
+      <p><span class="retired">The NMaven project retired on 2008-11-13</span></p>
+    </section>
+    <section id="Description">
+      <title>Description</title>
+      <p>
+        NMaven develops plugins and integration for Maven to make building and using .NET languages a first-class citizen in Maven. This project has been retired from the incubator. Development of the latest trunk has continued at <a href="http://www.codeplex.com/nmaven/">NMaven @ Codeplex</a>, and a continuation of the 0.14 branch is at <a href="http://www.codeplex.com/npanday">NPanday</a>.
+      </p>
+    </section>
+    <section id="News">
+      <title>News</title>
+      <ul>
+        <li>2008-11-13 Dissolved NMaven From the Incubator</li>
+        <li>2008-03-24 NMaven 0.15-incubating release</li>
+        <li>2007-07-11 New committer: Evan Worley</li>
+        <li>2006-12-10 NMaven code imported</li>
+        <li>2006-12-07 Mailing lists created</li>
+        <li>2006-12-06 NMaven software grant received by the ASF</li>
+        <li>2006-11-17 Project proposal <a href="http://maven.apache.org/proposals/incubator/nmaven.html">published</a>.</li>
+      </ul>
+    </section>
+    <section id="Project+info">
+      <title>Project info</title>
+      <table>
+        <tr>
+          <th>Item</th>
+          <th>Type</th>
+          <th>Reference</th>
+        </tr>
+        <tr>
+          <td>Website</td>
+          <td>www</td>
+          <td id="www">
+            <a href="http://incubator.apache.org/nmaven/">http://incubator.apache.org/nmaven/</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Website</td>
+          <td>wiki</td>
+          <td><em>not yet requested</em></td>
+        </tr>
+        <tr>
+          <td>Mailing list</td>
+          <td>private (for the members of the ppmc)</td>
+          <td><a href='mailto:nmaven-private@incubator.apache.org'>nmaven-private@incubator.apache.org</a></td>
+        </tr>
+        <tr>
+          <td>Mailing list</td>
+          <td>dev</td>
+          <td id="mail-dev">
+            <a href='mailto:nmaven-dev@incubator.apache.org'>nmaven-dev@incubator.apache.org</a>
+            [<a href='mailto:nmaven-dev-subscribe@incubator.apache.org'>Subscribe</a> | <a href='mailto:nmaven-dev-unsubscribe@incubator.apache.org'>Unsubscribe</a> | <a href="http://mail-archives.apache.org/mod_mbox/incubator-nmaven-dev/">Archive</a>]
+          </td>
+        </tr>
+        <tr>
+          <td>Mailing list</td>
+          <td>commits</td>
+          <td id="mail-commits">
+            <a href='mailto:nmaven-commits@incubator.apache.org'>nmaven-commits@incubator.apache.org</a>
+            [<a href='mailto:nmaven-commits-subscribe@incubator.apache.org'>Subscribe</a> | <a href='mailto:nmaven-commits-unsubscribe@incubator.apache.org'>Unsubscribe</a> | <a href="http://mail-archives.apache.org/mod_mbox/incubator-nmaven-commits/">Archive</a>]
+          </td>
+        </tr>
+        <tr>
+          <td>Bug tracking</td>
+          <td>JIRA</td>
+          <td id="tracker">NMAVEN</td>
+        </tr>
+        <tr>
+          <td>Source code</td>
+          <td>svn</td>
+          <td id="svn">
+            <a href='https://svn.apache.org/repos/asf/incubator/nmaven/'>https://svn.apache.org/repos/asf/incubator/nmaven/</a>
+          </td>
+        </tr>
+      </table>
+      <p></p>
+      <table>
+        <tr>
+          <th>Role</th>
+          <th>Apache Id</th>
+          <th>Name (Given Surname)</th>
+        </tr>
+        <tr>
+          <td>Champion, Mentor</td>
+          <td>brett</td>
+          <td>Brett Porter</td>
+        </tr>
+        <tr>
+          <td>Champion, Mentor</td>
+          <td>jvanzyl</td>
+          <td>Jason van Zyl</td>
+        </tr>
+        <tr>
+          <td>Committer</td>
+          <td>eworley</td>
+          <td>Evan Worley</td>
+        </tr>
+        <tr>
+          <td>Committer</td>
+          <td>sisbell</td>
+          <td>Shane Isbell</td>
+        </tr>
+        <tr>
+          <td>Committer</td>
+          <td>dfabulich</td>
+          <td>Dan Fabulich</td>
+        </tr>
+        <tr>
+          <td>Committer</td>
+          <td>chrisjs</td>
+          <td>Chris Stevenson</td>
+        </tr>
+        <tr>
+          <td>Committer</td>
+          <td>trygvis</td>
+          <td>Trygve Laugstol</td>
+        </tr>
+        <tr>
+          <td>Committer</td>
+          <td>jstrachan</td>
+          <td>James Strachan</td>
+        </tr>
+      </table>
+    </section>
+    <section id="Incubation+status+reports">
+      <title>Incubation status reports</title>
+      <ul>
+        <li>none yet</li>
+      </ul>
+    </section>
+    <section id="Incubation+work+items">
+      <title>Incubation work items</title>
+      <section id="Project+Setup">
+        <title>Project Setup</title>
+        <p>
+          This is the first phase on incubation, needed to start the 
+          project at Apache. <strong>DONE.</strong>
+        </p>
+        <section id="Interim+responsibility">
+          <title>Interim responsibility</title>
+          <table>
+            <tr>
+              <th>Date</th>
+              <th>Item</th>
+            </tr>
+            <tr>
+              <td>2006-11-17</td>
+              <td>
+                Identify all the Mentors for the incubation, by asking all 
+                that can be Mentors.
+              </td>
+            </tr>
+            <tr>
+              <td>2006-12-07</td>
+              <td>Subscribe all Mentors on the pmc and general lists.</td>
+            </tr>
+            <tr>
+              <td>2006-12-07</td>
+              <td>
+                Give all Mentors access to all incubator SVN modules. (to be 
+                done by PMC chair)
+              </td>
+            </tr>
+            <tr>
+              <td>2006-12-07</td>
+              <td>
+                Tell Mentors to track progress in the file 
+                'incubator/projects/nmaven.html' which is generated
+                from the XML status file.
+              </td>
+            </tr>
+          </table>
+        </section>
+        <section id="Copyright">
+          <title>Copyright</title>
+          <table>
+            <tr>
+              <th>Date</th>
+              <th>Item</th>
+            </tr>
+            <tr>
+              <td>2006-12-07</td>
+              <td>
+                Check and make sure that the papers that transfer rights 
+                to the ASF been received. It is only necessary to transfer 
+                rights for the package, the core code, and any new code 
+                produced by the project.
+              </td>
+            </tr>
+            <tr>
+              <td>2008-03-24</td>
+              <td>
+                Check and make sure that the files that have been donated 
+                have been updated to reflect the new ASF copyright.
+              </td>
+            </tr>
+          </table>
+        </section>
+        <section id="Verify+distribution+rights">
+          <title>Verify distribution rights</title>
+          <table>
+            <tr>
+              <th>Date</th>
+              <th>Item</th>
+            </tr>
+            <tr>
+              <td>2008-03-24</td>
+              <td>
+                Check and make sure that for all code included with the 
+                distribution that is not under the Apache license have the 
+                right to combine with Apache-licensed code and redistribute.
+              </td>
+            </tr>
+            <tr>
+              <td>2008-03-24</td>
+              <td>
+                Check and make sure that all source code distributed by the 
+                project is covered by one or more of the following approved 
+                licenses: Apache, BSD, Artistic, MIT/X, MIT/W3C, MPL 1.1, or 
+                something with essentially the same terms.
+              </td>
+            </tr>
+          </table>
+        </section>
+        <section id="Establish+a+list+of+active+committers">
+          <title>Establish a list of active committers</title>
+          <table>
+            <tr>
+              <th>Date</th>
+              <th>Item</th>
+            </tr>
+            <tr>
+              <td>2006-12-10</td>
+              <td>
+                Check that all active committers have submitted a contributors
+                agreement.
+              </td>
+            </tr>
+            <tr>
+              <td>2006-12-10</td>
+              <td>Add all active committers in the STATUS file.</td>
+            </tr>
+            <tr>
+              <td>2006-12-10</td>
+              <td>
+                Ask root for the creation of committers' accounts on 
+                people.apache.org.
+              </td>
+            </tr>
+          </table>
+        </section>
+        <section id="Infrastructure">
+          <title>Infrastructure</title>
+          <table>
+            <tr>
+              <th>Date</th>
+              <th>Item</th>
+            </tr>
+            <tr>
+              <td>2006-12-10</td>
+              <td>
+                Create source repository modules and 
+                grant the committers karma.
+              </td>
+            </tr>
+            <tr>
+              <td>2006-12-07</td>
+              <td>
+                Ask infrastructure to set up and archive Mailing lists.
+              </td>
+            </tr>
+            <tr>
+              <td>2006-12-10</td>
+              <td>Migrate the project to our infrastructure.</td>
+            </tr>
+          </table>
+        </section>
+        <section id="Project+specific">
+          <title>Project specific</title>
+          <p>
+            <em>Add project specific tasks here.</em>
+          </p>
+        </section>
+      </section>
+      <section id="Incubation">
+        <title>Incubation</title>
+        <p>
+          These action items have to be checked for during the whole 
+          incubation process.
+        </p>
+        <p>
+          <em>These items are not to be signed as done during incubation, 
+          as they may change during incubation.</em>
+          <em>They are to be looked into and described in the status reports 
+          and completed in the request for incubation signoff.</em>
+        </p>
+        <section id="Collaborative+Development">
+          <title>Collaborative Development</title>
+          <ul>
+            <li>
+              Have all of the active long-term volunteers been identified and
+              acknowledged as committers on the project?
+            </li>
+            <li>
+              Are there three or more independent committers? (The legal 
+              definition of independent is long and boring, but basically it 
+              means that there is no binding relationship between the 
+              individuals, such as a shared employer, that is capable of 
+              overriding their free will as individuals, directly or 
+              indirectly.)
+            </li>
+            <li>
+              Are project decisions being made in public by the committers?
+            </li>
+            <li>
+              Are the decision-making guidelines published and agreed to by 
+              all of the committers?
+            </li>
+          </ul>
+        </section>
+        <section id="Licensing+awareness">
+          <title>Licensing awareness</title>
+          <ul>
+            <li>
+              Are all licensing, trademark, credit issues being taken care of 
+              and acknowleged by all committers?
+            </li>
+          </ul>
+        </section>
+        <section id="Project+Specific">
+          <title>Project Specific</title>
+          <p>
+            <em>Add project specific tasks here.</em>
+          </p>
+        </section>
+      </section>
+      <section id="Exit">
+        <title>Exit</title>
+        <p>
+          <em>Things to check for before voting the project out.</em>
+        </p>
+        <section id="Organizational+acceptance+of+responsibility+for+the+project">
+          <title>
+            Organizational acceptance of responsibility for the project
+          </title>
+          <ul>
+            <li>
+              If graduating to an existing PMC, has the PMC voted to accept it?
+            </li>
+            <li>
+              If graduating to a new PMC, has the board voted to accept it?
+            </li>
+          </ul>
+        </section>
+        <section id="Incubator+sign-off">
+          <title>Incubator sign-off</title>
+          <ul>
+            <li>
+              Has the Incubator decided that the project has accomplished 
+              all of the above tasks?
+            </li>
+          </ul>
+        </section>
+      </section>
+    </section>
+  </body>
+</document>

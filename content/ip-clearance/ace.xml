@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+  <properties>
+    <title>Apache Ace Codebase Intellectual Property (IP) Clearance Status</title>
+  </properties>
+  <body>
+    <section id="Apache+Ace+Codebase+Intellectual+Property+%28IP%29+Clearance+Status">
+      <title>Apache Ace Codebase Intellectual Property (IP) Clearance Status</title>
+    </section>
+    <section id="Description">
+      <title>Description</title>
+      <p>Apache Ace is a software distribution framework that allows you to centrally 
+      manage and distribute software components, configuration data and other artifacts 
+      to target systems. It is built using OSGi and can be deployed in different topologies. 
+      The target systems are usually also OSGi based, but don't have to be. This is the
+      initial codebase and documentation which was originally developed at luminis.</p>
+      <p>The source code and documentation are made available via Jira as issue
+      <a href="https://issues.apache.org/jira/browse/ACE-17">ACE-17</a>.</p>
+    </section>
+    <section id="Project+info">
+      <title>Project info</title>
+      <ul>
+        <li>Because Apache Ace is still in the Incubator, the Incubator PMC is responsible for the code.</li>
+      </ul>
+      <ul>
+        <li>The code will be imported in the top level SVN directory for Ace.</li>
+      </ul>
+      <ul>
+        <li>Officer or member managing donation: Carsten Ziegeler (cziegeler)</li>
+      </ul>
+      <p>
+        <em>Completed tasks are shown by the completion date (YYYY-MM-dd).</em>
+      </p>
+      <section id="Identify+the+codebase">
+        <title>Identify the codebase</title>
+        <table>
+          <tr>
+            <th>date</th>
+            <th>item</th>
+          </tr>
+          <tr>
+              <td>2009-06-17</td>
+            <td>If applicable, make sure that any associated name does not
+                already exist and is not already trademarked for an existing software
+                product.</td>
+          </tr>
+        </table>
+        <p>
+MD5 or SHA1 sum for donated software: 26752157e61fa33c86487ff9c2c5f84f and e56fe5ee2c693439babf2d433ce955fe (ApacheA1.zip and ApacheA2.zip from ACE-17).
+        </p>
+        <section id="Copyright">
+          <title>Copyright</title>
+          <table>
+            <tr>
+              <th>date</th>
+              <th>item</th>
+            </tr>
+            <tr>
+              <td>2009-06-17</td>
+              <td>Check and make sure that the papers that transfer rights to
+                  the ASF been received. It is only necessary to transfer
+                  rights for the package, the core code, and any new code
+                  produced by the project.</td>
+            </tr>
+            <tr>
+              <td>....-..-..</td>
+              <td>Check and make sure that the files that have been donated
+                  have been updated to reflect the new ASF copyright.</td>
+            </tr>
+          </table>
+          <p>
+Identify name recorded for software grant: Apache Ace
+          </p>
+        </section>
+        <section id="Verify+distribution+rights">
+          <title>Verify distribution rights</title>
+            <p>
+Corporations and individuals holding existing distribution rights:
+            </p>
+            <ul>
+              <li>luminis</li>
+            </ul>
+          <table>
+            <tr>
+              <th>date</th>
+              <th>item</th>
+            </tr>
+            <tr>
+              <td>2009-06-17</td>
+              <td>Check that all active committers have a signed CLA on
+                  record.</td>
+            </tr>
+            <tr>
+              <td>n/a</td>
+              <td>Remind active committers that they are responsible for
+                  ensuring that a Corporate CLA is recorded if such is
+                  required to authorize their contributions under their
+                  individual CLA.</td>
+            </tr>
+            <tr>
+              <td>....-..-..</td>
+              <td>Check and make sure that for all items included with the
+                  distribution that is not under the Apache license, we have
+                  the right to combine with Apache-licensed code and
+                  redistribute.</td>
+            </tr>
+            <tr>
+              <td>....-..-..</td>
+              <td>Check and make sure that all items depended upon by the
+                  project is covered by one or more of the following approved
+                  licenses: Apache, BSD, Artistic, MIT/X, MIT/W3C, MPL 1.1, or
+                  something with essentially the same terms.</td>
+            </tr>
+          </table>
+          <p>Generally, the result of checking off these items will be a
+             Software Grant, CLA, and Corporate CLA for ASF licensed code,
+             which must have no dependencies upon items whose licenses that
+             are incompatible with the Apache License.</p>
+        </section>
+      </section>
+      <section id="Organizational+acceptance+of+responsibility+for+the+project">
+        <title>Organizational acceptance of responsibility for the project
+</title>
+        <p>
+Related VOTEs:
+        </p>
+        <ul>
+          <li><em>The VOTE thread accepting the donation may happen either
+before or after IP clearance. Adoption by lazy concensus is acceptable but
+not recommended.</em></li>
+        </ul>
+      </section>
+    </section>
+  </body>
+</document>

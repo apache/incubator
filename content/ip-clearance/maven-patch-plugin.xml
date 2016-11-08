@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+  <properties>
+    <title>maven-patch-plugin Codebase Intellectual Property (IP) Clearance Status</title>
+  </properties>
+  <body>
+    <section id="maven-patch-plugin+Codebase+Intellectual+Property+%28IP%29+Clearance+Status">
+      <title>maven-patch-plugin Codebase Intellectual Property (IP) Clearance Status</title>
+    </section>
+    <section id="Description">
+      <title>Description</title>
+      <p>This is a plugin for Maven 2.x that applies patch files to an existing project's source. It currently does
+      this by delegation to an external patch executable.</p>
+    </section>
+    <section id="Project+info">
+      <title>Project info</title>
+      <ul>
+        <li>Which PMC will be responsible for the code: Apache Maven</li>
+      </ul>
+      <ul>
+        <li>Into which existing project/module: Maven (Plugins)</li>
+      </ul>
+      <ul>
+        <li>Officer or member managing donation: Brett Porter</li>
+      </ul>
+      <p>
+        <em>Completed tasks are shown by the completion date (YYYY-MM-dd).</em>
+      </p>
+      <section id="Identify+the+codebase">
+        <title>Identify the codebase</title>
+        <table>
+          <tr>
+            <th>date</th>
+            <th>item</th>
+          </tr>
+          <tr>
+            <td>2007-06-08</td>
+            <td>If applicable, make sure that any associated name does not
+                already exist and is not already trademarked for an existing software
+                product.</td>
+          </tr>
+        </table>
+        <p>
+MD5 or SHA1 sum for donated software:  (<em>Note versioned software used to calculate sum in parentheses</em>).
+        </p>
+        <p>
+        72a2359b104c37e364ac5c0b573c1999  maven-patch-plugin.zip (md5sum; OS X 10.4.10, build 8R2232)
+        </p>
+        <section id="Copyright">
+          <title>Copyright</title>
+          <table>
+            <tr>
+              <th>date</th>
+              <th>item</th>
+            </tr>
+            <tr>
+              <td>2007-07-05</td>
+              <td>Check and make sure that the files that have been donated
+                  have been updated to reflect the new ASF license.</td>
+            </tr>
+          </table>
+          <p>
+            Contributed by original authors under the terms of their existing ASF CLA.
+          </p>
+        </section>
+        <section id="Verify+distribution+rights">
+          <title>Verify distribution rights</title>
+            <p>
+Corporations and individuals holding existing distribution rights:
+            </p>
+            <ul>
+<li>John Dennis Casey</li>
+<li>Codehaus</li>
+            </ul>
+          <table>
+            <tr>
+              <th>date</th>
+              <th>item</th>
+            </tr>
+            <tr>
+              <td>2007-06-08</td>
+              <td>Check that all active committers have a signed CLA on
+                  record.</td>
+            </tr>
+            <tr>
+              <td>2007-06-08</td>
+              <td>Remind active committers that they are responsible for
+                  ensuring that a Corporate CLA is recorded if such is
+                  required to authorize their contributions under their
+                  individual CLA.</td>
+            </tr>
+            <tr>
+              <td>2007-06-08</td>
+              <td>Check and make sure that for all items included with the
+                  distribution that is not under the Apache license, we have
+                  the right to combine with Apache-licensed code and
+                  redistribute.</td>
+            </tr>
+            <tr>
+              <td>2007-06-08</td>
+              <td>Check and make sure that all items depended upon by the
+                  project is covered by one or more of the following approved
+                  licenses: Apache, BSD, Artistic, MIT/X, MIT/W3C, MPL 1.1, or
+                  something with essentially the same terms.</td>
+            </tr>
+          </table>
+          <p>Generally, the result of checking off these items will be a
+             Software Grant, CLA, and Corporate CLA for ASF licensed code,
+             which must have no dependencies upon items whose licenses that
+             are incompatible with the Apache License.</p>
+        </section>
+      </section>
+      <section id="Organizational+acceptance+of+responsibility+for+the+project">
+        <title>Organizational acceptance of responsibility for the project
+</title>
+        <p>
+Related VOTEs: 
+        </p>
+        <ul>
+          <li>Contributed to sandbox by lazy consensus - vote will be undertaken for
+            promotion and release.</li>
+        </ul>
+      </section>
+    </section>
+  </body>
+</document>

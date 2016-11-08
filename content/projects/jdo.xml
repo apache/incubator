@@ -1,0 +1,602 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+  <properties><!--
+
+    <meta content="HTML Tidy, see www.w3.org" name="generator"/>-->
+<!--
+
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>-->
+
+    <title>Apache JDO Incubation Status
+</title>
+    <link href="http://purl.org/DC/elements/1.0/" rel="schema.DC"/>
+  </properties>
+  <body>
+    <section id="Apache+JDO+Project+Incubation+Status">
+      <title>Apache JDO Project Incubation Status
+</title>
+      <p>This page tracks the project status related to incubation. For more
+general project status, look on the project website.
+</p>
+<p><span class="graduated">The JDO project graduated on 2005-12-09</span></p>
+    </section>
+    <section id="Description">
+      <title>Description
+</title>
+      <p>The Apache JDO Project plan is to migrate the existing JDO 1.0 code
+base, including the API, RI, and TCK to Apache. Subsequently,
+development on JDO 2.0 will commence, using the JDO 1.0 code as a
+starting point. The API and TCK will be implemented entirely as
+Apache sub-projects. The licenses will be changed to be Apache
+licenses.
+
+        <br/>
+      </p>
+    </section>
+    <section id="News">
+      <title>News
+</title>
+    </section>
+    <section id="Project+info">
+      <title>Project info
+</title>
+      <p>If the project website and code repository are not yet setup, use the
+following table:
+</p>
+      <table>
+        <tr>
+          <th>item
+</th>
+          <th>type
+</th>
+          <th>reference
+</th>
+        </tr>
+        <tr>
+          <td>Website
+</td>
+          <td>www
+</td>
+          <td>
+            <a href="http://incubator.apache.org/jdo/">http://incubator.apache.org/jdo/
+</a>
+          </td>
+        </tr>
+        <tr>
+          <td>.
+</td>
+          <td>wiki
+</td>
+          <td>
+            <a href="http://wiki.apache.org/jdo/">http://wiki.apache.org/jdo/
+</a>
+            <br/>
+          </td>
+        </tr>
+        <tr>
+          <td>Mailing list
+</td>
+          <td>dev
+</td>
+          <td>jdo-dev@db.apache.org
+</td>
+        </tr>
+        <tr>
+          <td>.
+</td>
+          <td>svn
+</td>
+          <td>jdo-commits@db.apache.org
+</td>
+        </tr>
+        <tr>
+          <td>Bug tracking
+</td>
+          <td>JIRA
+
+            <br/>
+          </td>
+          <td>http://issues.apache.org/jira/browse/JDO
+
+            <br/>
+          </td>
+        </tr>
+        <tr>
+          <td>Source code
+</td>
+          <td>svn
+
+            <br/>
+          </td>
+          <td>incubator/jdo
+
+            <br/>
+          </td>
+        </tr>
+        <tr>
+          <td>Mentors
+</td>
+          <td>
+            <br/>
+          </td>
+          <td>Geir Magnusson Jr.
+
+            <br/>
+          </td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top;">Committers
+
+            <br/>
+          </td>
+          <td style="vertical-align: top;">
+            <br/>
+          </td>
+          <td style="vertical-align: top;">Craig Russell
+
+            <br/>
+          </td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top;">
+            <br/>
+          </td>
+          <td style="vertical-align: top;">
+            <br/>
+          </td>
+          <td style="vertical-align: top;">Dain Sundstrom
+
+            <br/>
+          </td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top;">
+            <br/>
+          </td>
+          <td style="vertical-align: top;">
+            <br/>
+          </td>
+          <td style="vertical-align: top;">Erik Bengston
+
+            <br/>
+          </td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top;">
+            <br/>
+          </td>
+          <td style="vertical-align: top;">
+            <br/>
+          </td>
+          <td style="vertical-align: top;">Geir Magnusson Jr.
+
+            <br/>
+          </td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top;">
+            <br/>
+          </td>
+          <td style="vertical-align: top;">
+            <br/>
+          </td>
+          <td style="vertical-align: top;">Brian McCallister
+
+            <br/>
+          </td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top;">
+            <br/>
+          </td>
+          <td style="vertical-align: top;">
+            <br/>
+          </td>
+          <td style="vertical-align: top;">Michael Bouschen
+
+            <br/>
+          </td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top;">
+            <br/>
+          </td>
+          <td style="vertical-align: top;">
+            <br/>
+          </td>
+          <td style="vertical-align: top;">Martin Zaun
+
+            <br/>
+          </td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top;">
+            <br/>
+          </td>
+          <td style="vertical-align: top;">
+            <br/>
+          </td>
+          <td style="vertical-align: top;">Matthew Adams
+
+            <br/>
+          </td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top;">
+            <br/>
+          </td>
+          <td style="vertical-align: top;">
+            <br/>
+          </td>
+          <td style="vertical-align: top;">Michael Watzek
+
+            <br/>
+          </td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top;">
+            <br/>
+          </td>
+          <td style="vertical-align: top;">
+            <br/>
+          </td>
+          <td style="vertical-align: top;">Michelle Caisse
+
+            <br/>
+          </td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top;">
+            <br/>
+          </td>
+          <td style="vertical-align: top;">
+            <br/>
+          </td>
+          <td style="vertical-align: top;">Patrick Linskey
+
+            <br/>
+          </td>
+        </tr>
+      </table>
+    </section>
+    <section id="Incubation+status+reports">
+      <title>Incubation status reports
+</title>
+      <ul>
+        <li>none yet
+</li>
+      </ul>
+    </section>
+    <section id="Incubation+work+items">
+      <title>Incubation work items
+</title>
+      <section id="Project+Setup">
+        <title>Project Setup
+</title>
+        <p>This is the first phase on incubation, needed to start the project at
+Apache.
+</p>
+        <p>
+          <em>Item assignment is shown by the Apache id.
+</em>
+          <em>Completed tasks are shown by the completion date (YYYY-MM-dd).
+</em>
+        </p>
+        <section id="Identify+the+project+to+be+incubated">
+          <title>Identify the project to be incubated
+</title>
+          <table>
+            <tr>
+              <th>date
+</th>
+              <th>item
+</th>
+            </tr>
+            <tr>
+              <td>2004-12-02
+</td>
+              <td>Make sure that the requested project name does not already exist and
+check www.nameprotect.com to be sure that the name is not already
+trademarked for an existing software product.
+</td>
+            </tr>
+            <tr>
+              <td>N/A
+
+                <br/>
+              </td>
+              <td>If request from an existing Apache project to adopt an external
+package, then ask the Apache project for the cvs module and mail
+address names.
+</td>
+            </tr>
+            <tr>
+              <td>2004-12-02
+
+                <br/>
+              </td>
+              <td>If request from outside Apache to enter an existing Apache project,
+then post a message to that project for them to decide on acceptance.
+</td>
+            </tr>
+            <tr>
+              <td>N/A
+</td>
+              <td>If request from anywhere to become a stand-alone PMC, then assess the
+fit with the ASF, and create the lists and modules under the
+incubator address/module names if accepted.
+</td>
+            </tr>
+          </table>
+        </section>
+        <section id="Interim+responsibility">
+          <title>Interim responsibility
+</title>
+          <table>
+            <tr>
+              <th>date
+</th>
+              <th>item
+</th>
+            </tr>
+            <tr>
+              <td>2004-12-06
+</td>
+              <td>Identify all the Mentors for the incubation, by asking all that can
+be Mentors.
+</td>
+            </tr>
+            <tr>
+              <td>2005-01-05
+
+                <br/>
+              </td>
+              <td>Subscribe all Mentors on the pmc and general lists.
+</td>
+            </tr>
+            <tr>
+              <td>2005-01-05
+
+                <br/>
+              </td>
+              <td>Give all Mentors access to all incubator CVS modules. (to be done by
+PMC chair)
+</td>
+            </tr>
+            <tr>
+              <td>2005-01-05
+
+                <br/>
+              </td>
+              <td>Tell Mentors to track progress in the file
+'site-author/projects/jdo.html'
+</td>
+            </tr>
+          </table>
+        </section>
+        <section id="Copyright">
+          <title>Copyright
+</title>
+          <table>
+            <tr>
+              <th>date
+</th>
+              <th>item
+</th>
+            </tr>
+            <tr>
+              <td>2005-03-07
+</td>
+              <td>Check and make sure that the papers that transfer rights to the ASF
+been received. It is only necessary to transfer rights for the
+package, the core code, and any new code produced by the project.
+</td>
+            </tr>
+            <tr>
+              <td>2004-12-10
+</td>
+              <td>Check and make sure that the files that have been donated have been
+updated to reflect the new ASF copyright.
+</td>
+            </tr>
+          </table>
+        </section>
+        <section id="Verify+distribution+rights">
+          <title>Verify distribution rights
+</title>
+          <table>
+            <tr>
+              <th>date
+</th>
+              <th>item
+</th>
+            </tr>
+            <tr>
+              <td>2004-12-10
+</td>
+              <td>Check and make sure that for all code included with the distribution
+that is not under the Apache license, e have the right to combine
+with Apache-licensed code and redistribute.
+</td>
+            </tr>
+            <tr>
+              <td>2004-12-10
+</td>
+              <td>Check and make sure that all source code distributed by the project
+is covered by one or more of the following approved licenses: Apache,
+BSD, Artistic, MIT/X, MIT/W3C, MPL 1.1, or something with essentially
+the same terms.
+</td>
+            </tr>
+          </table>
+        </section>
+        <section id="Establish+a+list+of+active+committers+%21">
+          <title>Establish a list of active committers !
+</title>
+          <table>
+            <tr>
+              <th>date
+</th>
+              <th>item
+</th>
+            </tr>
+            <tr>
+              <td>2005-03-16
+</td>
+              <td>Check that all active committers have submitted a contributors
+agreement.
+</td>
+            </tr>
+            <tr>
+              <td>2005-03-16
+</td>
+              <td>Add all active committers in the STATUS file.
+</td>
+            </tr>
+            <tr>
+              <td>2005-03-16
+</td>
+              <td>Ask root for the creation of committers' accounts on cvs.apache.org.
+</td>
+            </tr>
+          </table>
+        </section>
+        <section id="Infrastructure+%21">
+          <title>Infrastructure !
+</title>
+          <table>
+            <tr>
+              <th>date
+</th>
+              <th>item
+</th>
+            </tr>
+            <tr>
+              <td>2005-01-03
+
+                <br/>
+              </td>
+              <td>Ask infrastructure to create source repository modules and grant the
+committers karma.
+</td>
+            </tr>
+            <tr>
+              <td>2005-01-03
+
+                <br/>
+              </td>
+              <td>Ask infrastructure to set up and archive Mailing lists.
+</td>
+            </tr>
+            <tr>
+              <td>2005-01-03
+
+                <br/>
+              </td>
+              <td>Decide about and then ask infrastructure to setup an issuetracking
+system (Bugzilla, Scarab, Jira).
+</td>
+            </tr>
+            <tr>
+              <td>2005-03-18
+
+                <br/>
+              </td>
+              <td>Migrate the project to our infrastructure.
+</td>
+            </tr>
+          </table>
+        </section>
+        <section id="Project+specific">
+          <title>Project specific
+</title>
+          <p>
+            <em>Add project specific tasks here.
+</em>
+          </p>
+        </section>
+      </section>
+      <section id="Incubation">
+        <title>Incubation
+</title>
+        <p>These action items have to be checked for during the whole incubation
+process.
+</p>
+        <p>
+          <em>These items are not to be signed as done during incubation, as they
+may change during incubation.
+</em>
+          <em>They are to be looked into and described in the status reports and
+completed in the request for incubation signoff.
+</em>
+        </p>
+        <section id="Collaborative+Development">
+          <title>Collaborative Development
+</title>
+          <ul>
+            <li>Have all of the active long-term volunteers been identified and
+acknowledged as committers on the project?
+</li>
+            <li>Are there three or more independent committers? (The legal definition
+of independent is long and boring, but basically it means that there
+is no binding relationship between the individuals, such as a shared
+employer, that is capable of overriding their free will as
+individuals, directly or indirectly.)
+</li>
+            <li>Are project decisions being made in public by the committers?
+</li>
+            <li>Are the decision-making guidelines published and agreed to by all of
+the committers?
+</li>
+          </ul>
+        </section>
+        <section id="Licensing+awareness%C2%A0">
+          <title>Licensing awareness 
+
+            <br/>
+          </title>
+          <ul>
+            <li>Are all licensing, trademark, credit issues being taken care of and
+acknowleged by all committers?
+</li>
+          </ul>
+        </section>
+        <section id="Project+Specific">
+          <title>Project Specific
+</title>
+          <p>
+            <em>Add project specific tasks here.
+</em>
+          </p>
+        </section>
+      </section>
+      <section id="Exit">
+        <title>Exit
+</title>
+        <p>
+          <em>Things to check for before voting the project out.
+</em>
+        </p>
+        <section id="Organizational+acceptance+of+responsibility+for+the+project">
+          <title>Organizational acceptance of responsibility for the project
+</title>
+          <ul>
+            <li>If graduating to an existing PMC, has the PMC voted to accept it?
+</li>
+            <li>If graduating to a new PMC, has the board voted to accept it?
+</li>
+          </ul>
+        </section>
+        <section id="Incubator+sign-off">
+          <title>Incubator sign-off
+</title>
+          <ul>
+            <li>Has the Incubator decided that the project has accomplished all of
+the above tasks?
+</li>
+          </ul>
+        </section>
+      </section>
+    </section>
+  </body>
+</document>

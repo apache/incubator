@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+  <properties><!--
+
+    <meta content="HTML Tidy, see www.w3.org" name="generator"/>-->
+<!--
+
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>-->
+
+    <title>XBean Codebase Intellectual Property (IP) Clearance Status</title>
+    <link href="http://purl.org/DC/elements/1.0/" rel="schema.DC"/>
+  </properties>
+  <body>
+    <section id="XBean+Codebase+Intellectual+Property+%28IP%29+Clearance+Status">
+      <title>XBean Codebase Intellectual Property (IP) Clearance Status</title>
+    </section>
+
+    <section id="Description">
+      <title>Description</title>
+      <p>XBean is a new set of functional modules for the Apache Geronimo project. XBean includes the following
+        modules:</p>
+      <ul>
+        <li>classpath: Utilities for manipulating the class path of a server after is has been initialized</li>
+        <li>jmx: Utilities for automated wrapping of serves with an MBean</li>
+        <li>kernel: A light weight kernel</li>
+        <li>osgi: Experimental bidirectional bridge between OSGi and the XBean kernel</li>
+        <li>reflect: Simple API for build objects using reflection</li>
+        <li>sca: SCA annotation support for service building</li>
+        <li>server: Supporting classes to start a kernel in a standalone server</li>
+        <li>spring: Simplified XML extensions for Spring</li>
+        <li>telnet: Lightweight telnet server for scripting the kernel</li>
+      </ul>
+    </section>
+
+    <section id="Project+info">
+      <title>Project info</title>
+      <ul>
+        <li>Geronimo module</li>
+      </ul>
+      <ul>
+        <li>geronimo/xbean</li>
+      </ul>
+      <p>
+        <em>Completed tasks are shown by the completion date (YYYY-MM-dd).</em>
+      </p>
+
+      <section id="Identify+the+codebase">
+        <title>Identify the codebase</title>
+        <table>
+          <tr>
+            <th>date</th>
+            <th>item</th>
+          </tr>
+          <tr>
+            <td>2006-01-20</td>
+            <td>No hits at <a href="http://tess2.uspto.gov/bin/gate.exe?f=login&amp;p_lang=english&amp;p_d=trmk">United States Patent and Trademark Office</a></td>
+          </tr>
+        </table>
+
+        <section id="Copyright">
+          <title>Copyright</title>
+          <table>
+            <tr>
+              <th>date</th>
+              <th>item</th>
+            </tr>
+            <tr>
+              <td>2006-01-20</td>
+              <td>Check and make sure that the papers that transfer rights to the ASF
+                been received. It is only necessary to transfer rights for the
+                package, the core code, and any new code produced by the project.
+              </td>
+            </tr>
+            <tr>
+              <td>2006-01-20</td>
+              <td>Check and make sure that the files that have been donated have been
+                updated to reflect the new ASF copyright.
+              </td>
+            </tr>
+          </table>
+        </section>
+        <section id="Verify+distribution+rights">
+          <title>Verify distribution rights</title>
+          <table>
+            <tr>
+              <th>date</th>
+              <th>item</th>
+            </tr>
+            <tr>
+              <td>2006-01-20</td>
+              <td><p>Check that all active committers have a signed CLA on record.</p>
+                svn log https://svn.codehaus.org/xbean | grep "r[0-9][0-9]* | " |
+                sed "s/r[0-9][0-9]* | \(.*\) | .* | .*$/\1/" | sort | uniq
+                <p>All of the committers have a CLA on file at Apache. The following
+                  table maps the unix user names to real names:</p>
+                <table>
+                  <tr><td>chirino</td><td>Hiram Chirino</td></tr>
+                  <tr><td>dain</td><td>Dain Sundstrom</td></tr>
+                  <tr><td>dandiep</td><td>Daniel Diephouse</td></tr>
+                  <tr><td>dblevins</td><td>David Blevins</td></tr>
+                  <tr><td>gnt</td><td>Guillaume Nodet</td></tr>
+                  <tr><td>jstrachan</td><td>James Strachan</td></tr>
+                  <tr><td>jvanzyl</td><td>Jason van Zyl</td></tr>
+                  <tr><td>maguro</td><td>Alan Cabrera</td></tr>
+                  <tr><td>root</td><td>-service account-</td></tr>
+                  <tr><td>spullara</td><td>Sam Pullara</td></tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td>2006-01-20</td>
+              <td>Remind active committers that they are responsible for ensuring that
+                a Corporate CLA is recorded if such is is required to authorize their
+                contributions under their individual CLA.
+              </td>
+            </tr>
+            <tr>
+              <td>2006-01-20</td>
+              <td>Check and make sure that for all items included with the distribution
+                that is not under the Apache license, we have the right to combine
+                with Apache-licensed code and redistribute.
+              </td>
+            </tr>
+            <tr>
+              <td>2006-01-20</td>
+              <td>Check and make sure that all items depended upon by the project is
+                covered by one or more of the following approved licenses: Apache,
+                BSD, Artistic, MIT/X, MIT/W3C, MPL 1.1, or something with essentially
+                the same terms.
+              </td>
+            </tr>
+          </table>
+          <p>Generally, the result of checking off these items will be a Software
+            Grant, CLA, and Corporate CLA for ASF licensed code, which must have
+            no dependencies upon items whose licenses that are incompatible with
+            the Apache License.
+          </p>
+        </section>
+      </section>
+      <section id="Organizational+acceptance+of+responsibility+for+the+project">
+        <title>Organizational acceptance of responsibility for the project</title>
+        <ul>
+          <li>Has the receiving PMC voted to accept it? YES</li>
+        </ul>
+        <u>
+          <a href="http://mail-archives.apache.org/mod_mbox/geronimo-dev/200602.mbox/%3c43E282DD.8020502@hogstrom.org%3e">
+              http://mail-archives.apache.org/mod_mbox/geronimo-dev/200602.mbox/%3c43E282DD.8020502@hogstrom.org%3e
+            <br/>
+          </a>
+          <br/>
+        </u>
+        <u>
+          <a href="http://mail-archives.apache.org/mod_mbox/geronimo-dev/200601.mbox/%3c6BA20318-F62D-4645-AF21-AE31428C7351@iq80.com%3e">
+              http://mail-archives.apache.org/mod_mbox/geronimo-dev/200601.mbox/%3c6BA20318-F62D-4645-AF21-AE31428C7351@iq80.com%3e
+            <br/>
+          </a>
+          <br/>
+        </u>
+      </section>
+    </section>
+  </body>
+</document>

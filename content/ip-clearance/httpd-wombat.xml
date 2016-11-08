@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+  <properties>
+    <title>Wombat Codebase Intellectual Property (IP) Clearance Status</title>
+  </properties>
+  <body>
+    <section id="Wombat+Codebase+Intellectual+Property+%28IP%29+Clearance+Status">
+      <title>Wombat Codebase Intellectual Property (IP) Clearance Status</title>
+    </section>
+    <section id="Description">
+      <title>Description</title>
+      <p>Wombat is a module for the HTTPD Project which allows for Lua based modules
+          and configuration of the server,</p>
+    </section>
+    <section id="Project+info">
+      <title>Project info</title>
+      <ul>
+        <li>The HTTPD PMC will be responsible for this code.</li>
+      </ul>
+      <ul>
+        <li>The code will be imported into HTTPD</li>
+      </ul>
+      <ul>
+        <li>Brian McCallister is managing the donation.</li>
+      </ul>
+      <p>
+        <em>Completed tasks are shown by the completion date (YYYY-MM-dd).</em>
+      </p>
+      <section id="Identify+the+codebase">
+        <title>Identify the codebase</title>
+        <table>
+          <tr>
+            <td>2006-12-08</td>
+            <td>http://svn.i-want-a-pony.com/repos/wombat/trunk/</td>
+          </tr>
+          <tr>
+            <td>2006-12-19</td>
+            <td>http://people.apache.org/~brianm/wombat</td>
+          </tr>
+          <tr>
+            <td>Apache Wombat</td>
+            <td>If applicable, make sure that any associated name does not
+                already exist and is not already trademarked for an existing software
+                product.</td>
+          </tr>
+          <tr>
+            <td>SHA1 sum of http://people.apache.org/~brianm/wombat/wombat.tar.gz</td>
+            <td>SHA1 (wombat.tar.gz) = c1c2cb43c62d855e9d546471e7e788a79a820ba3</td>
+          </tr>
+          <tr>
+            <td>MD5 sum of http://people.apache.org/~brianm/wombat/wombat.tar.gz</td>
+            <td>MD5 (wombat.tar.gz) = 6733f0e674d19dd0fa4a259da5a8b781</td>
+          </tr>
+        </table>
+        <p>
+            We will be importing the subversion repository.
+        </p>
+        <section id="Copyright">
+          <title>Copyright</title>
+          <table>
+            <tr>
+              <th>date</th>
+              <th>item</th>
+            </tr>
+            <tr>
+              <td>2007-02-13</td>
+              <td>Check and make sure that the papers that transfer rights to
+                  the ASF been received. It is only necessary to transfer
+                  rights for the package, the core code, and any new code
+                  produced by the project.</td>
+            </tr>
+            <tr>
+              <td>2006-12-08</td>
+              <td>Check and make sure that the files that have been donated
+                  have been updated to reflect the new ASF copyright.</td>
+            </tr>
+          </table>
+          <p>
+Identify name recorded for software grant: <em>mod_wombat</em> 
+          </p>
+        </section>
+        <section id="Verify+distribution+rights">
+          <title>Verify distribution rights</title>
+            <p>
+Corporations and individuals holding existing distribution rights:
+            </p>
+            <ul>
+              <li>It is presently distributed under the Apache License, Version 2.0. <em>Everyone</em> not in violation of that license has distribution rights.</li>
+              <li>Contributions have been made by brianm, pquerna, rooneg, and Martin Traverso</li>
+            </ul>
+          <table>
+            <tr>
+              <th>date</th>
+              <th>item</th>
+            </tr>
+            <tr>
+              <td>2006-12-19</td>
+              <td>Check that all active committers have a signed CLA on
+                  record.</td>
+            </tr>
+            <tr>
+              <td>2006-12-19</td>
+              <td>Remind active committers that they are responsible for
+                  ensuring that a Corporate CLA is recorded if such is
+                  required to authorize their contributions under their
+                  individual CLA.</td>
+            </tr>
+            <tr>
+              <td>2006-12-08</td>
+              <td>Check and make sure that for all items included with the
+                  distribution that is not under the Apache license, we have
+                  the right to combine with Apache-licensed code and
+                  redistribute.</td>
+            </tr>
+            <tr>
+              <td>2006-12-08</td>
+              <td>Check and make sure that all items depended upon by the
+                  project is covered by one or more of the following approved
+                  licenses: Apache, BSD, Artistic, MIT/X, MIT/W3C, MPL 1.1, or
+                  something with essentially the same terms.</td>
+            </tr>
+          </table>
+          <p>Generally, the result of checking off these items will be a
+             Software Grant, CLA, and Corporate CLA for ASF licensed code,
+             which must have no dependencies upon items whose licenses that
+             are incompatible with the Apache License.</p>
+        </section>
+      </section>
+      <section id="Organizational+acceptance+of+responsibility+for+the+project">
+        <title>Organizational acceptance of responsibility for the project
+</title>
+        <p>
+Related VOTEs: 
+        </p>
+        <ul>
+          <li><em><a href="http://marc.theaimsgroup.com/?l=apache-httpd-dev&amp;m=116525513728295&amp;w=2">vote on httpd-dev</a></em></li>
+        </ul>
+      </section>
+    </section>
+  </body>
+</document>

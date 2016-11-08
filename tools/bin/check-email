@@ -1,0 +1,75 @@
+#!/usr/bin/env python
+#
+# Licensed to the Apache Software Foundation (ASF) under one
+# or more contributor license agreements.  See the NOTICE file
+# distributed with this work for additional information
+# regarding copyright ownership.  The ASF licenses this file
+# to you under the Apache License, Version 2.0 (the
+# "License"); you may not use this file except in compliance
+# with the License.  You may obtain a copy of the License at
+#
+#   http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing,
+# software distributed under the License is distributed on an
+# "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+# KIND, either express or implied.  See the License for the
+# specific language governing permissions and limitations
+# under the License.
+#
+"""
+Mailing list moderator tool.
+"""
+from asf.cli import entrypoint
+from asf.utils.committers import get_committer
+from asf.utils.emails import email_from_alias, is_apache_email_address, username_from_apache_email, get_mail_aliases
+
+
+def cmd_lookup(args):
+    mail_aliases = get_mail_aliases(args.username, args.password)
+    email_alias = args.email_alias
+    asf_email = email_alias if is_apache_email_address(email_alias) else email_from_alias(email_alias, mail_aliases)
+    if asf_email:
+        committer = get_committer(username_from_apache_email(asf_email), args.username, args.password)
+        if committer:
+            print committer.fullname, '-', committer.username
+            if committer.member:
+                print '  *ASF member'
+            if committer.projects:
+                print '  Projects:'
+                for project in sorted(committer.projects):
+                    print '   ', project
+            if committer.mentoring:
+                print '  Mentoring:'
+                for podling in sorted(committer.mentoring):
+                    print '   ', podling
+            if committer.committees:
+                print '  PMCs:'
+                for pmc in sorted(committer.committees):
+                    print '   ', pmc
+    else:
+        print email_alias, 'is not a registered email alias'
+
+def cmd_check(args):
+    print 'Email list checking is not supported yet'
+
+
+@entrypoint
+def main(cli):
+    cli.add_username_password(use_store=True)
+
+    parser = cli.argparser
+
+    subparsers = parser.add_subparsers()
+
+    lookup_parser = subparsers.add_parser('lookup', description='Lookup the email alias')
+    lookup_parser.add_argument('email_alias', help='The email alias to lookup')
+    lookup_parser.set_defaults(func=cmd_lookup)
+
+    reject_parser = subparsers.add_parser('check', description='Lists the projects user is member of')
+    reject_parser.add_argument('email_alias', help='The email alias to lookup')
+    reject_parser.add_argument('mailing_list', help='The mailing list email alias is attempting to join')
+    reject_parser.set_defaults(func=cmd_check)
+
+    with cli.run():
+        cli.args.func(cli.args)

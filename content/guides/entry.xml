@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+
+<!DOCTYPE document
+[
+<!ENTITY root-path   '..'> <!-- The path to the incubator root -->
+]>
+
+<document>
+  <properties>
+    <title>Enter The Incubator (DRAFT)</title>
+    <atom url="http://mail-archives.apache.org/mod_mbox/incubator-general/?format=atom">general@incubator.apache.org Archives</atom>
+  </properties>
+  <body>
+      <section id="preamble">
+        <title>Enter The Incubator (DRAFT)</title>
+        <section id="status">
+          <title>Status - DRAFT</title>
+          <p>
+This document is under <a href='#help-wanted'>development</a>. At the moment, this 
+is just a skeleton outline. 
+          </p>
+        </section>
+        <section id="abstract">
+          <title>Abstract</title>
+          <p>
+This document is descriptive not normative. It discusses and describes
+the process of incubator entry and offers some views about how to approach it.
+It is not an inflexible standard but
+represents a consensus condensed from previous discussions on the
+incubator general list.
+          </p>
+        </section>
+        <section id="background">
+          <title>Background</title>
+          <p>
+           </p>
+        </section>
+        <section id="help-wanted">
+          <title>Help Wanted!</title>
+          <p>
+Help to improve the system by posting a patch for this document to the
+incubator section of JIRA or a comment to the general list at incubator.
+          </p>
+        </section>
+    </section>
+    <section id='understanding'><title>Understanding The Acceptance Process</title>
+            <p>
+The acceptance process is simple in theory but complex in practice.
+        </p>
+            <p>
+The theory is that candidates are accepted or rejected by a vote on a mailing lists. 
+Anyone can vote (and are <a href='participation.html#general-list'>encouraged</a> to do so)
+but only eligable votes are binding on Apache. For candidates 
+<a href="&root-path;/incubation/Roles_and_Responsibilities.html#Sponsor">Sponsored</a> 
+by the <code>Incubator</code> this means members of the 
+<a href="&root-path;/incubation/Roles_and_Responsibilities.html#Incubator+Project+Management+Committee+%28PMC%29">Incubator PMC</a>.
+        </p>
+            <p>
+In practice, the process is more complex for candidates who want to give themselves 
+the best chance of being accepted. 
+        </p>
+            <p>
+Apache policy is set by the Board either directly or through it's special committees. 
+The incubation PMC is responsible to the board and so it is the duty of each PMC member
+to vote against a proposal that does not adhere to this policy.
+        </p>
+            <p>
+<a href="&root-path;/incubation/Incubation_Policy.html">Incubation Policy</a> state clearly when a . 
+All policy is decided by PMC vote and so represents an active consensus. Though PMC members
+are free to vote in whatever way they choose, it is reasonable to expect PMC members
+to vote against a proposal that does not satisfy policy. 
+        </p>
+            <p>
+However, satisfying current policy is not sufficient. Acceptance is a democractic process
+requiring positive approval by the electorate. The guides and other documentation are not
+policy. They are approved only through lazy consensus. 
+        </p>
+            <p>
+See:
+        </p>
+<ul><li>[links to posts and threads]</li></ul>
+    </section>
+    <section id='note'><title>Notes On The Process</title>
+        <section id='proposal'><title>The Proposal</title>
+            <p>
+        </p>
+    </section>
+        <section id='vote'><title>The Vote</title>
+            <p>
+When the proposal seems finished and some sort of consensus has emerged, the
+proposal can be put to the vote. 
+        </p>
+            <p>
+The right time is a matter for judgement. Ask the 
+<a href="&root-path;/incubator/Roles_and_Responsibilites.html#Champion">Champion</a> for advice
+or ask on the mailing list. It is usually best to ensure that the discussions 
+and debates surrounding the proposal are complete before moving to a vote. This may 
+mean move discussions which are not about the proposal to separate threads.
+        </p>
+            <p>
+The right duration for the vote is also a matter for judgement [link]. 
+        </p>
+    </section>
+ </section>   
+  </body>
+</document>

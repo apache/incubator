@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+    <properties>
+        <title>Fortress Codebase Intellectual Property (IP) Clearance Status</title>
+    </properties>
+    <body>
+        <section id="Codebase+IP+Clearance+TEMPLATE">
+            <title>Codebase IP Clearance</title>
+        </section>
+        <section id="FortressCodebase+Intellectual+Property+%28IP%29+Clearance+Status">
+            <title>Fortress Codebase Intellectual Property (IP) Clearance Status</title>
+        </section>
+        <section id="Description">
+            <title>Description</title>
+            <p>Apache Fortress™, or simply Fortress, is a standards based and Open Source Identity Access Management 
+				Java SDK for LDAP v3 compliant systems. Fortress is 100% compliant with RBAC, ARBAC02 and IETF's 
+				password policy draft .</p>
+        </section>
+        <section id="Project+info">
+            <title>Project info</title>
+            <ul>
+                <li>Which PMC will be responsible for the code: Apache Directory PMC</li>
+            </ul>
+            <ul>
+                <li>Into which existing project/module: Fortress will go into its own project</li>
+            </ul>
+            <ul>
+                <li>Officer or member managing donation: Emmanuel Lecharny</li>
+            </ul>
+            <p>
+                <em>Completed tasks are shown by the completion date (YYYY-MM-dd).</em>
+            </p>
+            <section id="Identify+the+codebase">
+                <title>Identify the codebase</title>
+                <table>
+                    <tr>
+                        <th>date</th>
+                        <th>item</th>
+                    </tr>
+                    <tr>
+                        <td>2014-10-21</td>
+                        <td>The code has been injected in the following git repo : 
+							http://git-wip-us.apache.org/repos/asf/directory-fortress-core/repo with all its history</td>
+                    </tr>
+                </table>
+			    <p>
+					MD5 or SHA1 sum for donated software: 76116bf38110d95ef043dbad8fad116e10918cae
+			    </p>
+                <section id="Copyright">
+                    <title>Copyright</title>
+                    <table>
+                        <tr>
+                            <th>date</th>
+                            <th>item</th>
+                        </tr>
+                        <tr>
+                            <td>2014-10-10</td>
+                            <td>Check and make sure that the papers that transfer rights to the ASF been received. 
+								It is only necessary to transfer rights for the package, the core code, and any 
+								new code produced by the project.</td>
+                        </tr>
+                        <tr>
+                            <td>2014-10-14 </td>
+                            <td>Check and make sure that the files that have been donated have been updated to 
+								reflect the new ASF copyright.</td>
+                        </tr>
+                    </table>
+                    <p>
+                        Identify name recorded for software grant:
+                        <em>Joshua Tree Software, file joshua-tree-software-FORTRESS.pdf</em>
+                        <b>DONE</b>
+                    </p>
+                </section>
+                <section id="Verify+distribution+rights">
+                    <title>Verify distribution rights</title>
+                    <p>
+                        Corporations and individuals holding existing distribution rights:
+                    </p>
+                    <ul>
+                        <li>
+                            o Shawn McKinney (smckinney)
+                        </li>
+                    </ul>
+                    <table>
+                        <tr>
+                            <th>date</th>
+                            <th>item</th>
+                        </tr>
+                        <tr>
+                          <td>2014-10-10</td>
+                          <td>
+							<p>Check that all active committers have a signed CLA on record.</p>
+                            <p>All of the committers have a CLA on file at Apache</p>
+                          </td>
+                        </tr>
+                        <tr>
+                            <td>2014-10-10 </td>
+                            <td>Remind active committers that they are responsible for
+                                ensuring that a Corporate CLA is recorded if such is
+                                required to authorize their contributions under their
+                                individual CLA.</td>
+                        </tr>
+                        <tr>
+                            <td>2014-11-24</td>
+                            <td>Check and make sure that for all items included with the
+                                distribution that is not under the Apache license, we have
+                                the right to combine with Apache-licensed code and
+                                redistribute.</td>
+                        </tr>
+                        <tr>
+                            <td>2014-11-24</td>
+                            <td>Check and make sure that all items depended upon by the
+                                project is covered by one or more of the following approved
+                                licenses: Apache, BSD, Artistic, MIT/X, MIT/W3C, MPL 1.1, or
+                                something with essentially the same terms.</td>
+                        </tr>
+                    </table>
+                    <p>Generally, the result of checking off these items will be a
+                        Software Grant, CLA, and Corporate CLA for ASF licensed code,
+                        which must have no dependencies upon items whose licenses that
+                        are incompatible with the Apache License.</p>
+                </section>
+            </section>
+            <section id="Organizational+acceptance+of+responsibility+for+the+project">
+                <title>Organizational acceptance of responsibility for the project
+                </title>
+                <p>
+                    Related VOTEs:
+                </p>
+                <ul>
+                    <li>
+						o Vote on dev@directory.apache.org Message-ID : &lt;5424389C.3050008@gmail.com&gt;
+                    </li>
+	                <li>
+						o Vote result on dev@directory.apache.org Message-ID : &lt;5429D55A.4000808@gmail.com&gt;
+                    </li>
+                </ul>
+            </section>
+        </section>
+    </body>
+</document>

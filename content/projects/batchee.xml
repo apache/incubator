@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+  <properties>
+    <title>Batchee Incubation Status</title>
+    <link href="http://purl.org/DC/elements/1.0/" rel="schema.DC"/>
+  </properties>
+  <body>
+    <section id="Batchee+Project+Incubation+Status">
+      <title>Batchee Project Incubation Status</title>
+      <p>This page tracks the project status, incubator-wise. For more general
+         project status, look on the project website.</p>
+    </section>
+    <section id="Description">
+      <title>Description</title>
+      <p>BatchEE will be an ASL-licensed implementation of the JBatch Specification which is defined as JSR-352 (for version 1.0).</p>
+    </section>
+    <section id="News">
+      <title>News</title>
+      <ul>
+        <li>2013-11-13 web site created.</li>        
+        <li>2013-10-29 JIRA, mailing lists, SVN space created.</li>
+        <li>2013-10-22 Project enters incubation.</li>
+      </ul>
+    </section>
+    <section id="Project+info">
+      <title>Project info</title>
+      <table>
+        <tr>
+          <th>item</th>
+          <th>type</th>
+          <th>reference</th>
+        </tr>
+        <tr>
+          <td>Website</td>
+          <td>www</td>
+          <td id="www">
+            <a href="http://batchee.incubator.apache.org/">http://batchee.incubator.apache.org</a>           
+          </td>
+        </tr>
+        <tr>
+          <td>.</td>
+          <td>wiki</td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td>Mailing list</td>
+          <td>dev</td>
+          <td id="mail-dev"><code>dev</code><code>@</code><code>batchee.incubator.apache.org</code></td>
+        </tr>
+        <tr>
+          <td>.</td>
+          <td>user</td>
+          <td id="mail-user"><code>user</code><code>@</code><code>batchee.incubator.apache.org</code></td>
+        </tr>
+        <tr>
+          <td>.</td>
+          <td>commits</td>
+          <td id="mail-commits"><code>commits</code><code>@</code><code>batchee.incubator.apache.org</code></td>
+        </tr>
+        <tr>
+          <td>Bug tracking</td>
+          <td>JIRA</td>
+          <td id="tracker">
+            <a href="https://issues.apache.org/jira/browse/BATCHEE">https://issues.apache.org/jira/browse/BATCHEE</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Source code</td>
+          <td>GIT</td>
+          <td id="git">
+            <a href="https://git-wip-us.apache.org/repos/asf?p=incubator-batchee.git">https://git-wip-us.apache.org/repos/asf?p=incubator-batchee.git</a>
+          </td>
+        </tr>
+        <tr>
+          <td>.</td>
+          <td>jbonofre</td>
+          <td>Jean-Baptiste Onofré</td>
+        </tr>         
+        <tr>
+          <td>Mentors</td>
+          <td>olamy</td>
+          <td>Olivier Lamy</td>
+        </tr>
+        <tr>
+          <td>.</td>
+          <td>struberg</td>
+          <td>Mark Struberg</td>
+        </tr>
+        <tr>
+          <td>Committers</td>
+          <td>rmannibucau</td>
+          <td>Romain Manni-Bucau</td>
+        </tr>
+        <tr>
+          <td>.</td>
+          <td>jlmonteiro</td>
+          <td>Jean-Louis Monteiro</td>
+        </tr>
+        <tr>
+          <td>.</td>
+          <td>gpetracek</td>
+          <td>Gerhard Petracek</td>
+        </tr> 
+        <tr>
+          <td>.</td>
+          <td>gpetracek</td>
+          <td>Gerhard Petracek</td>
+        </tr>  
+        <tr>
+          <td>.</td>
+          <td>stephenc</td>
+          <td>Stephen Connolly</td>
+        </tr> 
+        <tr>
+          <td>.</td>
+          <td>dblevins</td>
+          <td>David Blevins</td>
+        </tr>        
+      </table>
+    </section>
+    <section id="Incubation+status+reports">
+      <title>Incubation status reports</title>
+      <ul>
+        <li></li>
+      </ul>
+    </section>
+    <section id="Incubation+work+items">
+      <title>Incubation work items</title>
+      <section id="Project+Setup">
+        <title>Project Setup</title>
+        <p>This is the first phase on incubation, needed to start the project at Apache.</p>
+        <p>
+          <em>Item assignment is shown by the Apache id.</em>
+          <em>Completed tasks are shown by the completion date (YYYY-MM-dd).</em>
+        </p>
+        <section id="Identify+the+project+to+be+incubated">
+          <title>Identify the project to be incubated</title>
+          <table>
+            <tr>
+              <th>date</th>
+              <th>item</th>
+            </tr>
+            <tr>
+              <td>2013-10-20</td>
+              <td>Make sure that the requested project name does not already exist and
+                  check www.nameprotect.com to be sure that the name is not already
+                  trademarked for an existing software product.</td>
+            </tr>
+          </table>
+        </section>
+        <section id="Infrastructure">
+          <title>Infrastructure</title>
+          <table>
+            <tr>
+              <th>date</th>
+              <th>item</th>
+            </tr>
+            <tr>
+              <td>2013-10-20</td>
+              <td>Ask infrastructure to create source repository modules
+                  and grant the committers karma.</td>
+            </tr>
+            <tr>
+              <td>2011-10-18</td>
+              <td>Ask infrastructure to set up and archive mailing lists.</td>
+            </tr>
+            <tr>
+              <td>2011-10-18</td>
+              <td>Ask infrastructure to set up issue tracker (JIRA, Bugzilla).</td>
+            </tr>
+            <tr>
+              <td>2011-11-02</td>
+              <td>Ask infrastructure to set up wiki (Confluence, Moin).</td>
+            </tr>
+          </table>
+        </section>
+        <section id="Interim+responsibility">
+          <title>Mentor-related responsibility/oversight</title>
+          <table>
+            <tr>
+              <th>date</th>
+              <th>item</th>
+            </tr>
+            <tr>
+              <td>2013-10-10</td>
+              <td>Identify all the Mentors for the incubation, by asking all
+                  that can be Mentors.</td>
+            </tr>
+            <tr>
+              <td>2013-10-20</td>
+              <td>Subscribe all Mentors on the pmc and general lists.</td>
+            </tr>
+            <tr>
+              <td>2011-11-04</td>
+              <td>Give all Mentors access to the incubator SVN repository. 
+                (to be done by the Incubator PMC chair or an Incubator PMC
+                Member wih karma for the authorizations file)</td>
+            </tr>
+          </table>
+        </section>
+        <section id="Copyright">
+          <title>Copyright</title>
+          <table>
+            <tr>
+              <th>date</th>
+              <th>item</th>
+            </tr>
+          </table>
+        </section>
+        <section id="Verify+distribution+rights">
+          <title>Verify distribution rights</title>
+          <table>
+            <tr>
+              <th>date</th>
+              <th>item</th>
+            </tr>
+            <tr>
+              <td>2013-10-20</td>
+              <td>Check and make sure that for all code included with the distribution
+                  that is not under the Apache license, we have the right to combine
+                  with Apache-licensed code and redistribute.
+               </td>
+            </tr>
+            <tr>
+              <td>2013-10-20</td>
+              <td>Check and make sure that all source code distributed by the project
+                  is covered by one or more of the following approved licenses: Apache,
+                  BSD, Artistic, MIT/X, MIT/W3C, MPL 1.1, or something with essentially
+                  the same terms.</td>
+            </tr>
+          </table>
+        </section>
+        <section id="Establish+a+list+of+active+committers">
+          <title>Establish a list of active committers</title>
+          <table>
+            <tr>
+              <th>date</th>
+              <th>item</th>
+            </tr>
+            <tr>
+              <td>2013-10-20</td>
+              <td>Check that all active committers have submitted a contributors
+                  agreement.</td>
+            </tr>
+          </table>
+        </section>
+        <section id="Project+specific">
+          <title>Project specific</title>
+          <p>
+            <em>Add project specific tasks here.</em>
+          </p>
+        </section>
+      </section>
+      <section id="Incubation">
+        <title>Incubation</title>
+        <p>These action items have to be checked for during the whole incubation process.</p>
+        <p>
+          <em>These items are not to be signed as done during incubation, as they
+              may change during incubation.</em>
+          <em>They are to be looked into and described in the status reports and
+              completed in the request for incubation signoff.</em>
+        </p>
+        <section id="Collaborative+Development">
+          <title>Collaborative Development</title>
+          <ul>
+            <li>Have all of the active long-term volunteers been identified and
+                acknowledged as committers on the project? - YES
+            </li>
+            <li>Are there three or more independent committers? (The legal definition
+                of independent is long and boring, but basically it means that there
+                is no binding relationship between the individuals, such as a shared
+                employer, that is capable of overriding their free will as
+                individuals, directly or indirectly.) - YES</li>
+            <li>Are project decisions being made in public by the committers? - YES</li>
+            <li>Are the decision-making guidelines published and agreed to by all of
+                the committers? - YES</li>
+          </ul>
+        </section>
+        <section id="Licensing+awareness">
+          <title>Licensing awareness</title>
+          <ul>
+            <li>Are all licensing, trademark, credit issues being taken care of and
+                acknowleged by all committers? - YES</li>
+          </ul>
+        </section>
+        <section id="Project+Specific">
+          <title>Project Specific</title>
+          <p>
+            <em>Add project specific tasks here.</em>
+          </p>
+        </section>
+      </section>
+      <section id="Exit">
+        <title>Exit</title>
+        <p>
+          <em>Things to check for before voting the project out.</em>
+        </p>
+        <section id="Organizational+acceptance+of+responsibility+for+the+project">
+          <title>Organizational acceptance of responsibility for the project</title>
+          <ul>
+            <li>If graduating to an existing PMC, has the PMC voted to accept it?</li>
+            <li>If graduating to a new PMC, has the board voted to accept it? - ?</li>
+          </ul>
+        </section>
+        <section id="Incubator+sign-off">
+          <title>Incubator sign-off</title>
+          <ul>
+            <li>Has the Incubator decided that the project has accomplished all of
+                the above tasks? - ?</li>
+          </ul>
+        </section>
+      </section>
+    </section>
+  </body>
+</document>

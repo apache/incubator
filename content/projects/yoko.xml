@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+    <properties>
+        <title>Yoko Incubation Status</title>
+        <link href="http://purl.org/DC/elements/1.0/" rel="schema.DC"/>
+    </properties>
+    <body>
+        <section id="Yoko+Project+Incubation+Status">
+            <title>Yoko Project Incubation Status
+            </title>
+            <p>
+		<b>Yoko (CORBA implementation) has been dissolved, with parts going to Geronimo and CXF. </b>
+            </p>
+            <p><span class="retired">The Yoko project retired on 2007-12-17</span></p>
+        </section>
+        <section id="Description">
+            <title>Description
+            </title>
+            <p>
+                The Yoko project is a robust and high performance CORBA server which is integrated into Apache
+                Geronimo but also be usable from inside any JVM.  It is hoped that it will provide the ORB
+                implementation for the Harmony project.
+            </p>
+        </section>
+        <section id="News">
+            <title>News
+            </title>
+            <ul>
+                <li>2006-01-18 Project announced publicly.</li>
+                <li>2006-01-31 Project proposed and accepted for incubation in Apache.</li>
+                <li>2007-12-17 Project dissolved, with parts going to Geronimo and CXF. <br/><b>general-get.16751@incubator.apache.org</b></li>
+            </ul>
+        </section>
+        <section id="Project+info">
+            <title>Project info
+            </title>
+            <p>
+                If the project website and code repository are not yet setup, use the
+                following table:
+            </p>
+            <table>
+                <tr>
+                    <th>item</th>
+                    <th>type</th>
+                    <th>reference</th>
+                </tr>
+                <tr>
+                    <td>Website</td>
+                    <td>www</td>
+                    <td>
+                        <a href="http://incubator.apache.org/yoko/">http://incubator.apache.org/yoko/</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Wiki</td>
+                    <td>wiki</td>
+                    <td>
+                        <a href="http://wiki.apache.org/incubator-yoko/">http://wiki.apache.org/incubator-yoko/</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Mailing list</td>
+                    <td>dev</td>
+                    <td>yoko-dev@incubator.apache.org</td>
+                </tr>
+                <tr>
+                    <td>Mailing list</td>
+                    <td>users</td>
+                    <td>yoko-users@incubator.apache.org</td>
+                </tr>
+                <tr>
+                    <td>Mailing list</td>
+                    <td>commits</td>
+                    <td>yoko-commits@incubator.apache.org</td>
+                </tr>
+                <tr>
+                    <td>Bug tracking</td>
+                    <td>JIRA
+                        <br/>
+                    </td>
+                    <td>
+                        <a href="https://issues.apache.org/jira/browse/YOKO"> https://issues.apache.org/jira/browse/YOKO</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Source code</td>
+                    <td>SVN
+                        <br/>
+                    </td>
+                    <td>
+                        <a href="http://svn.apache.org/repos/asf/incubator/yoko/"> http://svn.apache.org/repos/asf/incubator/yoko/</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Proposal</td>
+                    <td>Wiki
+                    </td>
+                    <td>
+                        <a href="http://wiki.apache.org/incubator/CorbaProposal">
+                            http://wiki.apache.org/incubator/CorbaProposal</a>
+
+                        <br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Mentors</td>
+                    <td></td>
+                    <td>Matt Hogstrom, Geir Magnusson Jr., James Strachan</td>
+                </tr>
+                <tr>
+                    <td>Committer</td>
+                    <td>dblevins</td>
+                    <td>David Blevins</td>
+                </tr>
+                <tr>
+                    <td>Committer</td>
+                    <td>bravi</td>
+                    <td>Balaji Bravi</td>
+                </tr>
+                <tr>
+                    <td>Committer</td>
+                    <td>adc</td>
+                    <td>Alan Cabrera</td>
+                </tr>
+                <tr>
+                    <td>Committer</td>
+                    <td>chirino</td>
+                    <td>Hiram Chirino</td>
+                </tr>
+                <tr>
+                    <td>Committer</td>
+                    <td>jgenender</td>
+                    <td>Jeff Genender</td>
+                </tr>
+                <tr>
+                    <td>Committer</td>
+                    <td>hogstrom</td>
+                    <td>Matt Hogstrom</td>
+                </tr>
+                <tr>
+                    <td>Committer</td>
+                    <td>djencks</td>
+                    <td>David Jencks</td>
+                </tr>
+                <tr>
+                    <td>Committer</td>
+                    <td>ahj</td>
+                    <td>Anders Hessellund Jensen</td>
+                </tr>
+                <tr>
+                    <td>Committer</td>
+                    <td>pkosuru</td>
+                    <td>Prasad Kosuru</td>
+                </tr>
+                <tr>
+                    <td>Committer</td>
+                    <td>lkuehne</td>
+                    <td>Lars Kühne</td>
+                </tr>
+                <tr>
+                    <td>Committer</td>
+                    <td>trustin</td>
+                    <td>Trustin Lee</td>
+                </tr>
+                <tr>
+                    <td>Committer</td>
+                    <td>rickmcg</td>
+                    <td>Rick McGuire</td>
+                </tr>
+                <tr>
+                    <td>Committer</td>
+                    <td>dmiddlem</td>
+                    <td>Darren Middleman</td>
+                </tr>
+                <tr>
+                    <td>Committer</td>
+                    <td>enolan</td>
+                    <td>Edell Nolan</td>
+                </tr>
+                <tr>
+                    <td>Committer</td>
+                    <td>cjodea</td>
+                    <td>Conrad O'Dea</td>
+                </tr>
+                <tr>
+                    <td>Committer</td>
+                    <td>dpicco</td>
+                    <td>Dion Picco</td>
+                </tr>
+                <tr>
+                    <td>Committer</td>
+                    <td>andypiper</td>
+                    <td>Andy Piper</td>
+                </tr>
+                <tr>
+                    <td>Committer</td>
+                    <td>jsommer</td>
+                    <td>Jeppe Sommer</td>
+                </tr>
+                <tr>
+                    <td>Committer</td>
+                    <td>adisakala</td>
+                    <td>Adi Sakala</td>
+                </tr>
+                <tr>
+                    <td>Committer</td>
+                    <td>dain</td>
+                    <td>Dain Sundstrom</td>
+                </tr>
+                <tr>
+                    <td>Committer</td>
+                    <td>krab</td>
+                    <td>Kresten Krab Thorup</td>
+                </tr>
+                <tr>
+                    <td>Committer</td>
+                    <td>dweir</td>
+                    <td>David Weir</td>
+                </tr>
+            </table>
+        </section>
+        <section id="Incubation+Status+Reports">
+            <title>Incubation Status Reports
+            </title>
+            <ul>
+                <li>http://svn.apache.org/repos/asf/incubator/yoko/trunk/STATUS
+                </li>
+            </ul>
+        </section>
+        <section id="Incubation+Work+Items">
+            <title>Incubation Work Items
+            </title>
+            <section id="Project+Setup">
+                <title>Project Setup</title>
+                <p>This is the first phase on incubation, needed to start the project at
+                    Apache. This is currently in progress.
+                </p>
+            </section>
+            <section id="Incubation">
+                <title>Incubation</title>
+                <p>These action items have to be checked for during the whole incubation
+                    process.
+                </p>
+                <p>
+                    <em>These items are not to be signed as done during incubation, as they
+                        may change during incubation.
+                    </em>
+                    <em>They are to be looked into and described in the status reports and
+                        completed in the request for incubation signoff.
+                    </em>
+                </p>
+                <section id="Collaborative+Development">
+                    <title>Collaborative Development
+                    </title>
+                    <ul>
+                        <li>Have all of the active long-term volunteers been identified and
+                            acknowledged as committers on the project?
+                        </li>
+                        <li>Are there three or more independent committers? (The legal definition
+                            of independent is long and boring, but basically it means that there
+                            is no binding relationship between the individuals, such as a shared
+                            employer, that is capable of overriding their free will as
+                            individuals, directly or indirectly.)
+                        </li>
+                        <li>Are project decisions being made in public by the committers?
+                        </li>
+                        <li>Are the decision-making guidelines published and agreed to by all of
+                            the committers?
+                        </li>
+                    </ul>
+                </section>
+                <section id="Licensing+awareness">
+                    <title>Licensing awareness
+                    </title>
+                    <ul>
+                        <li>Are all licensing, trademark, credit issues being taken care of and
+                            acknowleged by all committers?
+                        </li>
+                    </ul>
+                </section>
+            </section>
+            <section id="Exit">
+                <title>Exit
+                </title>
+                <p>
+                    <em>Things to check for before voting the project out.
+                    </em>
+                </p>
+                <section id="Organizational+acceptance+of+responsibility+for+the+project">
+                    <title>Organizational acceptance of responsibility for the project
+                    </title>
+                    <ul>
+                        <li>If graduating to an existing PMC, has the PMC voted to accept it?
+                        </li>
+                        <li>If graduating to a new PMC, has the board voted to accept it? <b>Not Applicable</b>
+                        </li>
+                    </ul>
+                </section>
+                <section id="Incubator+sign-off">
+                    <title>Incubator sign-off
+                    </title>
+                    <ul>
+                        <li>Has the Incubator decided that the project has accomplished all of
+                            the above tasks?
+                        </li>
+                    </ul>
+                </section>
+            </section>
+        </section>
+    </body>
+</document>

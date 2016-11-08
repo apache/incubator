@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+
+<!DOCTYPE document
+[
+<!ENTITY root-path   '..'> <!-- The path to the incubator root -->
+]>
+
+<document>
+  <properties>
+    <atom url="http://mail-archives.apache.org/mod_mbox/incubator-general/?format=atom">general@incubator.apache.org Archives</atom>
+    <title>Guides</title>
+  </properties>
+  <body>
+    <section id='incubation-guides'><title>Incubation Guides</title>
+      <p>
+    The Incubation Guides linked below are descriptive and at times
+discursive documents. They describe established practices. 
+These guides are informational. They are something to start from 
+and improve on. 
+      </p><p>
+Unlike the <a href="&root-path;/incubation/Incubation_Policy.html">Policy</a>,
+the guides are <strong>not</strong> normative. You <code>MAY</code> diverge 
+from a guide whenever it makes sense for your project. Only the
+<a href="&root-path;/incubation/Incubation_Policy.html">Policy</a>
+is normative and <code>MUST</code> be followed by all projects.
+		</p>
+        <p>
+        For more information, see these <a href='#notes'>notes</a>.
+        </p>
+		<section id='entry_guides'><title>Entry Guides</title>
+			<ul>
+		      <li><a href="proposal.html">Proposal Guide</a></li>
+		    </ul>
+		</section>
+        <section id="podling_guides"><title>Podling Guides</title>
+            <ul>
+            <li><a href="committer.html">Podling Committers</a></li>
+            <li><a href="ppmc.html">Podling PMC (PPMC)</a></li>
+            <li><a href="mentor.html">Podling Mentor</a></li>
+            <li><a href="releasemanagement.html">Podling Releases</a></li>
+            <li><a href="branding.html">Podling Branding</a></li>
+            <li><a href="sites.html">Podling Websites</a></li>
+            <li><a href="names.html">A Suitable Name Search</a></li>
+            <li><a href="graduation.html">Graduation</a></li>
+            <li><a href="retirement.html">Retirement</a></li>
+        </ul>
+</section>
+    
+        <section id='other_guides'><title>General Incubator Guides</title>
+            <ul>
+            <li><a href="participation.html">Participation</a></li>
+            <li><a href="&root-path;/faq.html">General FAQ</a></li>
+            <li><a href="pmc.html">PMC</a> (<a href="chair.html">Chair</a>)</li>
+            <li><a href="lists.html">Mailing Lists</a></li>
+            <li><a href="website.html">Incubator Website</a></li>
+        </ul>
+    </section>
+        <section id='notes'><title>Notes</title>
+        <ul>
+        <li>
+Within all Incubator documentation, the terms <code>MAY</code>, <code>MUST</code> 
+and <code>SHOULD</code> are used as defined 
+by <a href='http://tools.ietf.org/html/rfc2119'>RFC2119</a>.
+        </li>
+      <li>
+Documentation is considered a secondary source. It records experiences and codifying consensus 
+formed on the mailing lists and in particular on <code>general.AT.incubator.apache.org</code>. 
+Please feel free to <a href='lists.html#general+at+incubator.apache.org'>subscribe</a>
+to this list and ask any questions not covered adequately by the documentation.
+        </li>
+        <li>
+The Incubator documentation is intended to be read as a superset of the documentation
+for full Apache projects. See
+      <ul>
+        <li>the Apache Software Foundation <a href="http://www.apache.org/foundation/">documentation
+</a>, especially:
+          <ul>
+            <li>
+        <a href="http://www.apache.org/foundation/how-it-works.html">Apache: How it works
+</a>
+            </li>
+          </ul>
+        </li>
+        <li>the Apache
+        <a href="http://www.apache.org/dev/">development documentation
+</a> which includes information for contributors, committers and PMCs
+        </li>
+        <li>the Apache
+        <a href="http://www.apache.org/legal/">legal group documentation
+</a>
+        </li>
+      </ul>
+      </li>
+      <li>
+      Questions <code>MAY</code> be expected on deviations from the established 
+      practices documented in these guides. The aim of this process is to improve
+      quality by ensuring that decisions are fully considered and to allow established
+      practices to evolve. Subjective quality is one factor taken to account by 
+      <a href='http://incubator.apache.org/incubation/Roles_and_Responsibilities.html#Incubator+Project+Management+Committee+%28PMC%29'>IPMC</a>
+      members during votes.
+      </li>
+      </ul>
+      </section>
+</section>
+  </body>
+</document>

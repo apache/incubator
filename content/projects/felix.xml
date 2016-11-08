@@ -1,0 +1,601 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+  <properties>
+
+
+    <title>Felix Incubation Status</title>
+    <link href="http://purl.org/DC/elements/1.0/" rel="schema.DC"/>
+  </properties>
+  <body>
+    <section id="Felix+Project+Incubation+Status">
+      <title>Felix Project Incubation Status
+</title>
+      <p>This page tracks the project status, incubator-wise. For more general
+project status, look on the project website.
+</p>
+<p><span class="graduated">The Felix project graduated on 2007-04-01</span></p>
+    </section>
+    <section id="Description">
+      <title>Description
+</title>
+      <p>The Felix Project has graduated from the Incubator at the Apache Software
+Project and is an implementation of the OSGi R4
+specification.
+</p>
+    </section>
+    <section id="News">
+      <title>News
+</title>
+      <ul>
+        <li>March 2007 - Felix graduated from the Incubator.
+</li>
+      </ul>
+    </section>
+    <section id="Project+info">
+      <title>Project info
+</title>
+      <ul><li>Main site: http://incubator.apache.org/felix/</li></ul>
+      <ul><li>Wiki site: http://cwiki.apache.org/FELIX/</li></ul>
+      <ul><li>Status: http://incubator.apache.org/projects/felix.html</li></ul>
+      <p>If the project website and code repository are not yet setup, use the
+following table:
+</p>
+      <table>
+        <tr>
+          <th>item
+</th>
+          <th>type
+</th>
+          <th>reference
+</th>
+        </tr>
+        <tr>
+          <td>Mailing list
+</td>
+          <td>dev
+</td>
+          <td>felix-dev@incubator.apache.org
+</td>
+        </tr>
+        <tr>
+          <td>Bug tracking
+</td>
+          <td>Jira</td>
+          <td>http://issues.apache.org/jira/browse/Felix</td>
+        </tr>
+        <tr>
+          <td>Source code
+</td>
+          <td>Subversion
+</td>
+          <td>https://svn.apache.org/repos/asf/incubator/felix
+</td>
+        </tr>
+        <tr>
+          <td>Mentors
+</td>
+          <td>akarasulu</td>
+          <td>Alex Karasulu</td>
+        </tr>
+        <tr>
+          <td>.</td>
+          <td>upayavira</td>
+          <td>Upayavira</td>
+        </tr>
+        <tr>
+          <td>Committers</td>
+          <td>akarasulu</td>
+          <td>Alex Karasulu</td>
+        </tr>
+        <tr>
+          <td>.</td>
+          <td>bloritsch</td>
+          <td>Berin Loritsch</td>
+        </tr>
+        <tr>
+          <td>.</td>
+          <td>cziegeler</td>
+          <td>Carsten Ziegeler</td>
+        </tr>
+        <tr>
+          <td>.</td>
+          <td>demuru</td>
+          <td>Matteo Demuru</td>
+        </tr>
+        <tr>
+          <td>.</td>
+          <td>erodriguez</td>
+          <td>Enrique Rodriguez</td>
+        </tr>
+        <tr>
+          <td>.</td>
+          <td>furfari</td>
+          <td>Francesco Furfari</td>
+        </tr>
+        <tr>
+          <td>.</td>
+          <td>humberto</td>
+          <td>Humberto Cervantes</td>
+        </tr>
+        <tr>
+          <td>.</td>
+          <td>lenzi</td>
+          <td>Stefano Lenzi</td>
+        </tr>
+        <tr>
+          <td>.</td>
+          <td>marrs</td>
+          <td>Marcel Offermans</td>
+        </tr>
+        <tr>
+          <td>.</td>
+          <td>noel</td>
+          <td>Noel Bergman</td>
+        </tr>
+        <tr>
+          <td>.</td>
+          <td>pauls</td>
+          <td>Karl Pauls</td>
+        </tr>
+        <tr>
+          <td>.</td>
+          <td>rickhall</td>
+          <td>Richard Hall</td>
+        </tr>
+        <tr>
+          <td>.</td>
+          <td>sylvain</td>
+          <td>Sylvain Wallez</td>
+        </tr>
+        <tr>
+          <td>.</td>
+          <td>tbennett</td>
+          <td>Timothy Bennett</td>
+        </tr>
+        <tr>
+          <td>.</td>
+          <td>trustin</td>
+          <td>Trustin Lee</td>
+        </tr>
+        <tr>
+          <td>.</td>
+          <td>walkerr</td>
+          <td>Rob Walker</td>
+        </tr>
+        <tr>
+          <td>.</td>
+          <td>sfrenot</td>
+          <td>Stephane Frenot</td>
+        </tr>
+        <tr>
+          <td>.</td>
+          <td>donsez</td>
+          <td>Didier Donsez</td>
+        </tr>
+        <tr>
+          <td>.</td>
+          <td>santillan</td>
+          <td>Manuel Santillan</td>
+        </tr>
+        <tr>
+          <td>.</td>
+          <td>jlruiz</td>
+          <td>Jose L. Ruiz</td>
+        </tr>
+        <tr>
+          <td>.</td>
+          <td>jcduenas</td>
+          <td>Juan C. Duenas</td>
+        </tr>
+        <tr>
+          <td>.</td>
+          <td>fmeschbe</td>
+          <td>Felix Meschberger</td>
+        </tr>
+        <tr>
+          <td>Extra
+</td>
+          <td>.
+</td>
+          <td>.
+</td>
+        </tr>
+      </table>
+    </section>
+    <section id="Incubation+status+reports">
+      <title>Incubation status reports
+</title>
+      <ul>
+        <li><a href="http://wiki.apache.org/incubator/IncubatorBoardReport2005Q4">Q4 2005</a></li>
+        <li><a href="http://wiki.apache.org/incubator/IncubatorBoardReport2006Q1">Q1 2006</a></li>
+        <li><a href="http://wiki.apache.org/incubator/April2006">April 2006</a></li>
+        <li><a href="http://wiki.apache.org/incubator/July2006">July 2006</a></li>
+        <li><a href="http://wiki.apache.org/incubator/October2006">October 2006</a></li>
+        <li><a href="http://wiki.apache.org/incubator/January2007">January 2007</a></li>
+      </ul>
+    </section>
+    <section id="Incubation+work+items">
+      <title>Incubation work items
+</title>
+      <section id="Project+Setup">
+        <title>Project Setup
+</title>
+        <p>This is the first phase on incubation, needed to start the project at
+Apache.
+</p>
+        <section id="Identify+the+project+to+be+incubated">
+          <title>Identify the project to be incubated
+</title>
+          <table>
+            <tr>
+              <th>date
+</th>
+              <th>item
+</th>
+            </tr>
+            <tr>
+              <td>2005-08-08</td>
+              <td>Make sure that the requested project name does not already exist and
+check www.nameprotect.com to be sure that the name is not already
+trademarked for an existing software product.
+<p>
+                 <em>After the name 'Felix' was proposed for the project, and before we 
+                     actually voted on it, a search on the US PTO for "Felix" was done.
+                     That search produced about 50 hits of live trademarks. As far as 
+                     could be determined, only one was definitely related to computers 
+                     (clusters). Further research from showed that the 
+                     owning company (MPI software technology) was acquired by another 
+                     company and no references on the new combined website could be 
+                     found regarding "Felix". References (message ID's on the oscar-dev mailing list):
+                     <ul>
+                       <li>&lt;200508081556.33891.niclas@hedhman.org&gt;</li>
+                       <li>&lt;200508090231.58289.niclas@hedhman.org&gt;</li>
+                     </ul>
+                 </em>
+                 </p>
+</td>
+            </tr>
+            <tr>
+              <td>n/a
+</td>
+              <td>If request from an existing Apache project to adopt an external
+package, then ask the Apache project for the cvs module and mail
+address names.
+</td>
+            </tr>
+            <tr>
+              <td>n/a
+</td>
+              <td>If request from outside Apache to enter an existing Apache project,
+then post a message to that project for them to decide on acceptance.
+</td>
+            </tr>
+            <tr>
+              <td>2005-07-19
+</td>
+              <td>If request from anywhere to become a stand-alone PMC, then assess the
+fit with the ASF, and create the lists and modules under the
+incubator address/module names if accepted.
+</td>
+            </tr>
+          </table>
+        </section>
+        <section id="Interim+responsibility">
+          <title>Interim responsibility
+</title>
+          <table>
+            <tr>
+              <th>date
+</th>
+              <th>item
+</th>
+            </tr>
+            <tr>
+              <td>2006-02-17
+</td>
+              <td>Identify all the Mentors for the incubation, by asking all that can
+be Mentors.
+</td>
+            </tr>
+            <tr>
+              <td>2006-02-17
+</td>
+              <td>Subscribe all Mentors on the pmc and general lists.
+</td>
+            </tr>
+            <tr>
+              <td>2006-02-17
+</td>
+              <td>Give all Mentors access to all incubator CVS modules. (to be done by
+PMC chair)
+</td>
+            </tr>
+            <tr>
+              <td>2006-05-04
+</td>
+              <td>Tell Mentors to track progress in the file
+'incubator/projects/felix.xml'
+</td>
+            </tr>
+          </table>
+        </section>
+        <section id="Copyright">
+          <title>Copyright
+</title>
+          <table>
+            <tr>
+              <th>date
+</th>
+              <th>item
+</th>
+            </tr>
+            <tr>
+              <td>2006-05-04
+</td>
+              <td>Check and make sure that the papers that transfer rights to the ASF
+been received. It is only necessary to transfer rights for the
+package, the core code, and any new code produced by the project.
+</td>
+            </tr>
+            <tr>
+              <td>2006-06-06
+</td>
+              <td>Check and make sure that the files that have been donated have been
+updated to reflect the new ASF copyright.
+</td>
+            </tr>
+          </table>
+        </section>
+        <section id="Verify+distribution+rights">
+          <title>Verify distribution rights
+</title>
+          <table>
+            <tr>
+              <th>date
+</th>
+              <th>item
+</th>
+            </tr>
+            <tr>
+              <td>2006-06-01
+</td>
+              <td>Check and make sure that for all code included with the distribution
+that is not under the Apache license, we have the right to combine
+with Apache-licensed code and redistribute.
+<em>
+For the source code, we have made sure that every file has an ASL license. On the private mailing 
+list there was a long thread about "Status page" which eventually led to  a message (message id: &lt;487a994c0606010455q6ff8caf3g3e451c9e79817f42@mail.gmail.com&gt;) confirming that all sources were 
+checked and contain the ASL copyright message. 
+</em>
+</td>
+            </tr>
+            <tr>
+              <td>2006-07-10
+</td>
+              <td>Check and make sure that all source code distributed by the project
+is covered by one or more of the following approved licenses: Apache,
+BSD, Artistic, MIT/X, MIT/W3C, MPL 1.1, or something with essentially
+the same terms. <em>See table below for complete list of dependencies with their licenses.</em>
+</td>
+            </tr>
+          </table>
+          <table>
+            <tr>
+              <th>Library</th>
+              <th>Version</th>
+              <th>License</th>
+            </tr>
+<tr>
+  <td>org.apache.maven maven-plugin-api</td><td>2.0</td><td>ASL</td>
+</tr>
+<tr>
+  <td>org.apache.maven maven-archiver</td><td>2.0</td><td>ASL</td>
+</tr>
+<tr>
+  <td>org.apache.maven maven-artifact</td><td>2.0</td><td>ASL</td>
+</tr>
+<tr>
+  <td>org.apache.directory.daemon daemon-bootstrappers</td><td>1.0-RC2-SNAPSHOT</td><td>ASL</td>
+</tr>
+<tr>
+  <td>org.codehaus.plexus plexus-utils</td><td>1.1</td><td>ASL</td>
+</tr>
+<tr>
+  <td>org.slf4j nlog4j</td><td>1.2.19</td><td>SLF4J license, claims to be compatible with ASL</td>
+</tr>
+<tr>
+  <td>commons-daemon commons-daemon</td><td>1.0.1</td><td>ASL</td>
+</tr>
+<tr>
+  <td>kxml2 kxml2</td><td>2.2.2</td><td>BSD</td>
+</tr>
+<tr>
+  <td>junit junit</td><td>3.8.2</td><td>CPL</td>
+</tr>
+<tr>
+  <td>tomcat servlet</td><td>4.0.6</td><td>APL</td>
+</tr>
+<tr>
+  <td>xerces xercesImpl</td><td>2.4.0</td><td>ASL</td>
+</tr>
+<tr>
+  <td>org-cybergarage cyberlink-upnp-patched</td><td>1.7.0</td><td>BSD</td>
+</tr>
+<tr>
+  <td>easymock easymock</td><td>1.2_Java1.3</td><td>MIT</td>
+</tr>
+<tr>
+  <td>jetty org.mortbay.jetty-jdk1.2</td><td>4.2.25</td><td>Jetty License, derived from Artistic License</td>
+</tr>
+<tr>
+  <td>asm</td><td>2.2.1</td><td>INRIA, France Telecom License, http://asm.objectweb.org/license.html</td>
+</tr>
+<tr>
+  <td>BND</td><td>0.0.106</td><td>ASL, http://www.aqute.biz/Code/Bnd</td>
+</tr>
+          </table>
+        </section>
+        <section id="Establish+a+list+of+active+committers+%21">
+          <title>Establish a list of active committers !
+</title>
+          <table>
+            <tr>
+              <th>date
+</th>
+              <th>item
+</th>
+            </tr>
+            <tr>
+              <td>2006-05-04
+</td>
+              <td>Check that all active committers have submitted a contributors
+agreement.
+</td>
+            </tr>
+            <tr>
+              <td>2006-05-04
+</td>
+              <td>Add all active committers in the STATUS file.
+</td>
+            </tr>
+            <tr>
+              <td>&lt;2006-05-04
+</td>
+              <td>Ask root for the creation of committers' accounts on cvs.apache.org.
+</td>
+            </tr>
+          </table>
+        </section>
+        <section id="Infrastructure+%21">
+          <title>Infrastructure !
+</title>
+          <table>
+            <tr>
+              <th>date
+</th>
+              <th>item
+</th>
+            </tr>
+            <tr>
+              <td>2005-07-19
+</td>
+              <td>Ask infrastructure to create source repository modules and grant the
+committers karma.
+</td>
+            </tr>
+            <tr>
+              <td>2005-07-18
+</td>
+              <td>Ask infrastructure to set up and archive Mailing lists.
+</td>
+            </tr>
+            <tr>
+              <td>&lt;2006-05-04
+</td>
+              <td>Decide about and then ask infrastructure to setup an issuetracking
+system (Bugzilla, Scarab, Jira).
+</td>
+            </tr>
+            <tr>
+              <td>&lt;2006-05-04
+</td>
+              <td>Migrate the project to our infrastructure.
+</td>
+            </tr>
+          </table>
+        </section>
+        <section id="Project+specific">
+          <title>Project specific
+</title>
+          <p>
+            <em>No project specific tasks.
+</em>
+          </p>
+        </section>
+      </section>
+      <section id="Incubation">
+        <title>Incubation
+</title>
+        <p>These action items have to be checked for during the whole incubation
+process.
+</p>
+        <p>
+          <em>These items are not to be signed as done during incubation, as they
+may change during incubation.
+</em>
+          <em>They are to be looked into and described in the status reports and
+completed in the request for incubation signoff.
+</em>
+        </p>
+        <section id="Collaborative+Development">
+          <title>Collaborative Development
+</title>
+          <ul>
+            <li>Have all of the active long-term volunteers been identified and
+acknowledged as committers on the project?<br/>
+                <strong>yes</strong>
+</li>
+            <li>Are there three or more independent committers? (The legal definition
+of independent is long and boring, but basically it means that there
+is no binding relationship between the individuals, such as a shared
+employer, that is capable of overriding their free will as
+individuals, directly or indirectly.)<br/>
+                <strong>yes</strong>
+</li>
+            <li>Are project decisions being made in public by the committers?<br/>
+                <strong>yes</strong>
+
+</li>
+            <li>Are the decision-making guidelines published and agreed to by all of
+the committers?
+<br/>
+             <strong>yes: </strong><a href="http://cwiki.apache.org/FELIX/felix-community-roles-and-processes.html">http://cwiki.apache.org/FELIX/felix-community-roles-and-processes.html</a>
+</li>
+          </ul>
+        </section>
+        <section id="Licensing+awareness">
+          <title>Licensing awareness
+</title>
+          <ul>
+            <li>Are all licensing, trademark, credit issues being taken care of and
+acknowleged by all committers?<br/>
+                <strong>yes</strong>
+</li>
+          </ul>
+        </section>
+        <section id="Project+Specific">
+          <title>Project Specific
+</title>
+          <p>None.</p>
+        </section>
+      </section>
+      <section id="Exit">
+        <title>Exit
+</title>
+        <p>
+          <em>Things to check for before voting the project out.
+</em>
+        </p>
+        <section id="Organizational+acceptance+of+responsibility+for+the+project">
+          <title>Organizational acceptance of responsibility for the project
+</title>
+          <ul>
+            <li>If graduating to an existing PMC, has the PMC voted to accept it?
+</li>
+            <li>If graduating to a new PMC, has the board voted to accept it?
+</li>
+          </ul>
+        </section>
+        <section id="Incubator+sign-off">
+          <title>Incubator sign-off
+</title>
+          <ul>
+            <li>Has the Incubator decided that the project has accomplished all of
+the above tasks?
+</li>
+          </ul>
+        </section>
+      </section>
+    </section>
+  </body>
+</document>

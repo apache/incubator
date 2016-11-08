@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+
+<!DOCTYPE project
+[
+<!ENTITY project-menu SYSTEM "project-menu.ent">
+]>
+
+
+<project name="Incubator"
+        href="http://incubator.apache.org/">
+
+  <title>Apache Incubator</title>
+  <logo href="/images/egg-logo2.png">Apache Incubator</logo>
+
+  <body>
+
+    <projects><title>General</title>
+      <li><a href="/index.html">Welcome</a></li>
+      <li><a href="/incubation/Process_Description.html">Incubation Overview</a></li>
+      <li><a href="/incubation/Incubation_Policy.html">Incubation Policy</a></li>
+      <li><a href="/guides/index.html">Incubation Guides</a></li>
+      <li><a href="/incubation/Roles_and_Responsibilities.html">Roles and Responsibilities</a></li>
+      <li><a href="/faq.html">General FAQ</a></li>
+      <li><a href="http://wiki.apache.org/incubator">Incubator Wiki</a></li>
+      <li><a href="/whoweare.html">Who We Are</a></li>
+      <li><a href="/sitemap.html">Site Map</a></li>
+    </projects>
+
+    <projects><title>Status</title>
+      <li><a href="/projects/index.html">Project List</a></li>
+      <li><a href="/clutch.html">Clutch Report</a></li>
+      <li><a href="/ip-clearance/index.html">IP Clearance</a></li>
+      <li><a href="/history/index.html">Incubator History</a></li>
+    </projects>
+
+    <projects><title>Entry Guides</title>
+      <li><a href="/guides/proposal.html">Proposal Guide</a></li>
+    </projects>
+
+    <projects><title>Podling Guides</title>
+      <li><a href="/guides/committer.html">Podling Committers</a></li>
+      <li><a href="/guides/ppmc.html">Podling PMC (PPMC)</a></li>
+      <li><a href="/guides/mentor.html">Podling Mentor</a></li>
+      <li><a href="/guides/releasemanagement.html">Podling Releases</a></li>
+      <li><a href="/guides/branding.html">Podling Branding/Publicity</a></li>
+      <li><a href="/guides/sites.html">Podling Websites</a></li>
+      <li><a href="/guides/graduation.html">Graduation</a></li>
+      <li><a href="/guides/retirement.html">Retirement</a></li>
+    </projects>
+
+    <projects><title>Other Guides</title>
+      <li><a href="/guides/participation.html">Participation</a></li>
+      <li><a href="/faq.html">General FAQ</a></li>
+      <li><a href="/guides/pmc.html">Incubator PMC (IPMC)</a></li>
+      <li><a href="/guides/chair.html">IPMC Chair</a></li>
+      <li><a href="/guides/lists.html">Mailing Lists</a></li>
+      <li><a href="/guides/website.html">Incubator Website</a></li>
+    </projects>
+
+    <projects><title>ASF</title>
+      <li><a href='http://www.apache.org/foundation/how-it-works.html'>How Apache Works</a></li>
+      <li><a href='http://www.apache.org/dev/'>Developer Documentation</a></li>
+      <li><a href='http://www.apache.org/foundation/'>Foundation</a></li>
+      <li><a href='http://www.apache.org/foundation/sponsorship.html'>Sponsor Apache</a></li>
+      <li><a href='http://www.apache.org/foundation/thanks.html'>Thanks</a></li>
+    </projects>
+
+  </body>
+</project>

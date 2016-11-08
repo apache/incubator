@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+  <properties>
+
+    <title>Cassandra Incubation Status</title>
+    <link href="http://purl.org/DC/elements/1.0/" rel="schema.DC"/>
+  </properties>
+  <body>
+    <section id="Cassandra+Project+Incubation+Status">
+      <title>Cassandra Project Incubation Status</title>
+      <p>This page tracks the project's status in the incubator. For more
+      general project status, please see the project website.</p>
+      <p><span class="graduated">The Cassandra project graduated on 2010-02-17</span></p>
+    </section>
+    <section id="Description">
+      <title>Description</title>
+      <p>The Cassandra Project is a massively scalable second generation
+      distributed database.</p>
+    </section>
+    <section id="News">
+      <title>News</title>
+      <ul>
+        <li>2009-12-31 0.5.0-rc1 released.</li>
+        <li>2009-12-16 Jaakko Laine added as a new committer.</li>
+        <li>2009-12-16 Gary Dusbabek added as a new committer.</li>
+        <li>2009-12-09 0.5.0-beta2 released.</li>
+        <li>2009-11-20 0.5.0-beta1 released.</li>
+        <li>2009-11-19 Johan Oskarsson added as a new committer.</li>
+        <li>2009-11-09 0.4.2 released.</li>
+        <li>2009-10-16 0.4.1 released.</li>
+        <li>2009-10-05 Chris Goffinet added as a new committer.</li>
+        <li>2009-09-26 0.4.0 released.</li>
+        <li>2009-09-16 0.4.0-rc2 released.</li>
+        <li>2009-08-17 0.4.0-beta1 released.</li>
+        <li>2009-07-20 0.3.0 released.</li>
+        <li>2009-06-29 Jun Rao added as a new committer.</li>
+        <li>2009-06-29 Eric Evans added as a new committer.</li>
+        <li>2009-03-26 Jonathan Ellis added as a new committer.</li>
+        <li>2009-01-02 Project enters incubation.</li>
+      </ul>
+    </section>
+    <section id="Project+info">
+      <title>Project info</title>
+      <table>
+        <tr>
+          <th>item</th>
+          <th>type</th>
+          <th>reference</th>
+        </tr>
+        <tr>
+          <td>Website</td>
+          <td>www</td>
+          <td id="www">
+            <a href="http://incubator.apache.org/cassandra/">http://incubator.apache.org/cassandra/</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Wiki</td>
+          <td>www</td>
+          <td><a href="http://wiki.apache.org/cassandra">
+              http://wiki.apache.org/cassandra</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Mailing list</td>
+          <td>devel</td>
+          <td id="mail-dev"><code>cassandra-dev</code><code>@</code><code>incubator.apache.org</code></td>
+        </tr>
+        <tr>
+          <td>Mailing list</td>
+          <td>user</td>
+          <td id="mail-dev"><code>cassandra-user</code><code>@</code><code>incubator.apache.org</code></td>
+        </tr>
+        <tr>
+          <td>Mailing list</td>
+          <td>commits</td>
+          <td id="mail-commits"><code>cassandra-commits</code><code>@</code><code>incubator.apache.org</code></td>
+        </tr>
+        <tr>
+          <td>Bug tracking</td>
+          <td>JIRA</td>
+          <td id="tracker">
+              <a href="http://issues.apache.org/jira/browse/CASSANDRA">
+                  http://issues.apache.org/jira/browse/CASSANDRA</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Source code</td>
+          <td>SVN</td>
+          <td id="svn">incubator/cassandra</td>
+        </tr>
+        <tr>
+          <td>Mentor</td>
+          <td>antelder</td>
+          <td>Ant Elder</td>
+        </tr>
+        <tr>
+          <td>Mentor</td>
+          <td>BrianM</td>
+          <td>Brian McCallister</td>
+        </tr>
+        <tr>
+          <td>Mentor</td>
+          <td>mriou</td>
+          <td>Matthieu Riou</td>
+        </tr>
+
+        <tr>
+          <td>Committer/PMC</td>
+          <td>alakshman</td>
+          <td>Avinash Lakshman</td>
+        </tr>
+        <tr>
+          <td>Committer/PMC</td>
+          <td>pmalik</td>
+          <td>Prashant Malik</td>
+        </tr>
+        <tr>
+          <td>Committer/PMC</td>
+          <td>jbellis</td>
+          <td>Jonathan Ellis</td>
+        </tr>
+        <tr>
+          <td>Committer/PMC</td>
+          <td>eevans</td>
+          <td>Eric Evans</td>
+        </tr>
+        <tr>
+          <td>Committer/PMC</td>
+          <td>junrao</td>
+          <td>Jun Rao</td>
+        </tr>
+        <tr>
+          <td>Committer/PMC</td>
+          <td>goffinet</td>
+          <td>Chris Goffinet</td>
+        </tr>
+        <tr>
+          <td>Committer</td>
+          <td>kannan</td>
+          <td>Kannan Muthukkaruppan</td>
+        </tr>
+        <tr>
+          <td>Committer</td>
+          <td>jhuang</td>
+          <td>Jiansheng Huang</td>
+        </tr>
+        <tr>
+          <td>Committer</td>
+          <td> </td>
+          <td>Dan Dumitriu</td>
+        </tr>
+        <tr>
+          <td>Committer</td>
+          <td>johan</td>
+          <td>Johan Oskarsson</td>
+        </tr>
+        <tr>
+          <td>Committer</td>
+          <td>gdusbabek</td>
+          <td>Gary Dusbabek</td>
+        </tr>
+        <tr>
+          <td>Committer</td>
+          <td>jaakko</td>
+          <td>Jaakko Laine</td>
+        </tr>
+
+      </table>
+    </section>
+    <section id="Incubation+status+reports">
+      <title>Incubation status reports</title>
+      <ul>
+        <li>
+          <a href="http://wiki.apache.org/incubator/April2009#Cassandra">
+              March 2009</a>
+        </li>
+        <li>
+          <a href="http://wiki.apache.org/incubator/June2009#Cassandra">
+              June 2009</a>
+        </li>
+        <li>
+          <a href="http://wiki.apache.org/incubator/September2009#Cassandra">
+              September 2009</a>
+        </li>
+        <li>
+          <a href="http://wiki.apache.org/incubator/December2009#Cassandra">
+              December 2009</a>
+        </li>
+      </ul>
+    </section>
+    <section id="Incubation+work+items">
+      <title>Incubation work items</title>
+      <section id="Project+Setup">
+        <title>Project Setup</title>
+        <p>This is the first phase on incubation, needed to start the project at Apache.</p>
+        <p>
+          <em>Item assignment is shown by the Apache id.</em>
+          <em>Completed tasks are shown by the completion date (YYYY-MM-dd).</em>
+        </p>
+        <section id="Identify+the+project+to+be+incubated">
+          <title>Identify the project to be incubated</title>
+          <table>
+            <tr>
+              <th>date</th>
+              <th>item</th>
+            </tr>
+            <tr>
+              <td nowrap="nowrap" valign="top">2009-01-02</td>
+              <td>Make sure that the requested project name does not already exist and
+                  check www.nameprotect.com to be sure that the name is not already
+                  trademarked for an existing software product.</td>
+            </tr>
+            <tr>
+              <td nowrap="nowrap" valign="top">2009-01-02</td>
+              <td>If request from an existing Apache project to adopt an external
+                  package, then ask the Apache project for the SVN module and mail
+                  address names.</td>
+            </tr>
+            <tr>
+              <td nowrap="nowrap" valign="top">2009-01-02</td>
+              <td>If request from outside Apache to enter an existing Apache project,
+                  then post a message to that project for them to decide on acceptance.</td>
+            </tr>
+            <tr>
+              <td nowrap="nowrap" valign="top">2009-01-02</td>
+              <td>If request from anywhere to become a stand-alone PMC, then assess the
+                  fit with the ASF, and create the lists and modules under the
+                  incubator address/module names if accepted.</td>
+            </tr>
+          </table>
+        </section>
+        <section id="Copyright">
+          <title>Copyright</title>
+          <table>
+            <tr>
+              <th>date</th>
+              <th>item</th>
+            </tr>
+            <tr>
+              <td nowrap="nowrap" valign="top">2009-01-02</td>
+              <td>Check and make sure that the papers that transfer rights to the ASF
+                  been received. It is only necessary to transfer rights for the
+                  package, the core code, and any new code produced by the project.
+              </td>
+            </tr>
+            <tr>
+              <td nowrap="nowrap" valign="top">2009-01-02</td>
+              <td>Check and make sure that the files that have been donated have been
+                  updated to reflect the new ASF copyright.</td>
+            </tr>
+          </table>
+        </section>
+        <section id="Verify+distribution+rights">
+          <title>Verify distribution rights</title>
+          <table>
+            <tr>
+              <th>date</th>
+              <th>item</th>
+            </tr>
+            <tr>
+              <td nowrap="nowrap" valign="top">2009-01-02</td>
+              <td>Check and make sure that for all code included with the distribution
+                  that is not under the Apache license, e have the right to combine
+                  with Apache-licensed code and redistribute.
+               </td>
+            </tr>
+            <tr>
+              <td nowrap="nowrap" valign="top">2009-01-02</td>
+              <td>Check and make sure that all source code distributed by the project
+                  is covered by one or more of the following approved licenses: Apache,
+                  BSD, Artistic, MIT/X, MIT/W3C, MPL 1.1, or something with essentially
+                  the same terms.</td>
+            </tr>
+          </table>
+        </section>
+        <section id="Establish+a+list+of+active+committers">
+          <title>Establish a list of active committers</title>
+          <table>
+            <tr>
+              <th>date</th>
+              <th>item</th>
+            </tr>
+            <tr>
+              <td nowrap="nowrap" valign="top">2009-01-02</td>
+              <td>Check that all active committers have submitted a contributors
+                  agreement.</td>
+            </tr>
+            <tr>
+              <td nowrap="nowrap" valign="top">2009-01-02</td>
+              <td>Add all active committers in the STATUS file.</td>
+            </tr>
+            <tr>
+              <td nowrap="nowrap" valign="top">2009-01-02</td>
+              <td>Ask root for the creation of committers' accounts on
+                  people.apache.org.</td>
+            </tr>
+          </table>
+        </section>
+        <section id="Infrastructure">
+          <title>Infrastructure</title>
+          <table>
+            <tr>
+              <th>date</th>
+              <th>item</th>
+            </tr>
+            <tr>
+              <td nowrap="nowrap" valign="top">2009-01-02</td>
+              <td>Ask infrastructure to create source repository modules and grant the
+                  committers karma. (JIRA: INFRA-1840)</td>
+            </tr>
+            <tr>
+              <td nowrap="nowrap" valign="top">2009-01-02</td>
+              <td>Ask infrastructure to set up and archive Mailing lists. (JIRA: INFRA-1841)</td>
+            </tr>
+            <tr>
+              <td nowrap="nowrap" valign="top">2009-01-02</td>
+              <td>Decide about and then ask infrastructure to setup an issuetracking
+                  system (Bugzilla, Scarab, Jira). (JIRA: INFRA-1842)</td>
+            </tr>
+            <tr>
+              <td nowrap="nowrap" valign="top">2009-01-02</td>
+              <td>Migrate the project to our infrastructure.</td>
+            </tr>
+          </table>
+        </section>
+      </section>
+      <section id="Incubation">
+        <title>Incubation</title>
+        <p>These action items have to be checked for during the whole incubation process.</p>
+        <p>
+          <em>These items are not to be signed as done during incubation, as they
+              may change during incubation.</em>
+          <em>They are to be looked into and described in the status reports and
+              completed in the request for incubation signoff.</em>
+        </p>
+        <section id="Collaborative+Development">
+          <title>Collaborative Development</title>
+          <ul>
+            <li>Have all of the active long-term volunteers been identified and
+                acknowledged as committers on the project?
+            </li>
+            <li>Are there three or more independent committers? (The legal definition
+                of independent is long and boring, but basically it means that there
+                is no binding relationship between the individuals, such as a shared
+                employer, that is capable of overriding their free will as
+                individuals, directly or indirectly.)</li>
+            <li>Are project decisions being made in public by the committers?</li>
+            <li>Are the decision-making guidelines published and agreed to by all of
+                the committers?</li>
+          </ul>
+        </section>
+        <section id="Licensing+awareness">
+          <title>Licensing awareness</title>
+          <ul>
+            <li>Are all licensing, trademark, credit issues being taken care of and
+                acknowledged by all committers?</li>
+          </ul>
+        </section>
+      </section>
+      <section id="Exit">
+        <title>Exit</title>
+        <p>
+          <em>Things to check for before voting the project out.</em>
+        </p>
+        <section id="Organizational+acceptance+of+responsibility+for+the+project">
+          <title>Organizational acceptance of responsibility for the project</title>
+          <ul>
+            <li>If graduating to an existing PMC, has the PMC voted to accept it?</li>
+            <li>If graduating to a new PMC, has the board voted to accept it?</li>
+          </ul>
+        </section>
+        <section id="Incubator+sign-off">
+          <title>Incubator sign-off</title>
+          <ul>
+            <li>Has the Incubator decided that the project has accomplished all of
+                the above tasks?</li>
+          </ul>
+        </section>
+      </section>
+    </section>
+  </body>
+</document>
