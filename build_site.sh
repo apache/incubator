@@ -7,5 +7,5 @@ git clean -f -d
 git pull origin asf-site
 cp -a /tmp/incubator-site/. output/
 git add .
-#git commit -m "Automatic Site Publish by Buildbot"
-#git push origin asf-site
+git commit -m "Automatic Site Publish by Buildbot"
+git push origin asf-site
