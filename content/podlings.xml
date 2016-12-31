@@ -268,9 +268,9 @@ and a set of useful extensions for this specification.</description>
             <mentor username="matzew">Matthias Wessendorf</mentor>
         </mentors>
     </podling>
-    <podling name="Beam" status="current" resource="beam" sponsor="Incubator" startdate="2016-02-01">
+    <podling name="Beam" status="graduated" resource="beam" sponsor="Incubator" startdate="2016-02-01" enddate="2016-12-21">
          <description>Apache Beam is an open source, unified model and set of language-specific SDKs for defining and executing data processing workflows, and also data ingestion and integration flows, supporting Enterprise Integration Patterns (EIPs) and Domain Specific Languages (DSLs). Dataflow pipelines simplify the mechanics of large-scale batch and streaming data processing and can run on a number of runtimes like Apache Flink, Apache Spark, and Google Cloud Dataflow (a cloud service). Beam also brings DSL in different languages, allowing users to easily implement their data integration processes.</description>
-         <reporting group="2"/>
+         <resolution tlp="true"/> 
          <champion availid="jbonofre">Jean-Baptiste Onofre</champion>
          <mentors>
              <mentor username="jbonofre">Jean-Baptiste Onofre</mentor>
@@ -487,9 +487,9 @@ and a set of useful extensions for this specification.</description>
             <mentor username="mnour">Mohammad Nour El-Din</mentor>
         </mentors>
     </podling>
-    <podling name="CommonsRDF" status="current" resource="commonsrdf" sponsor="Incubator" startdate="2015-03-06">
+    <podling name="CommonsRDF" status="graduated" resource="commonsrdf" sponsor="Incubator" startdate="2015-03-06" enddate="2016-11-28">
       <description>Commons RDF is a set of interfaces and classes for RDF 1.1 concepts and behaviours.  The commons-rdf-api module defines interfaces and testing harness.  The commons-rdf-simple module provides a basic reference implementation to exercise the test harness and clarify API contracts.</description>
-        <reporting group="3" />
+        <resolution url="https://commons.apache.org/proper/rdf"/>
         <champion availid="lewismc">Lewis John McGibbney</champion>
         <mentors>
             <mentor username="johndament">John D Ament</mentor>
@@ -573,7 +573,7 @@ and a set of useful extensions for this specification.</description>
     </podling>
     <podling name="DataFu" status="current" resource="datafu" sponsor="Incubator" startdate="2014-01-05">
         <description>DataFu provides a collection of Hadoop MapReduce jobs and functions in higher level languages based on it to perform data analysis. It provides functions for common statistics tasks (e.g. quantiles, sampling), PageRank, stream sessionization, and set and bag operations. DataFu also provides Hadoop jobs for incremental data processing in MapReduce.</description>
-        <reporting group="1" monthly="true">November</reporting>
+        <reporting group="1"/>
         <champion availid="jghoman">Jakob Homan</champion>
         <mentors>
             <mentor username="hashutosh">Ashutosh Chauhan</mentor>
@@ -873,13 +873,23 @@ and a set of useful extensions for this specification.</description>
         <mentors>
             <mentor username="ptgoetz">P. Taylor Goetz</mentor>
             <mentor username="elserj">Josh Elser</mentor>
-            <mentor username="busbey">Sean Busbey</mentor>
+            <mentor username="drew">Drew Farris</mentor>
         </mentors>
     </podling>
     <podling name="Graffito" status="retired" resource="graffito" sponsor="Portals" startdate="2004-09-20" enddate="2007-07-11">
         <description>Portal oriented Content Management System</description>
         <mentors>
             <mentor username="raphael">Raphael Luta</mentor>
+        </mentors>
+    </podling>
+    <podling name="Griffin" status="current" resource="griffin" sponsor="Incubator" startdate="2016-12-05">
+        <description>Griffin is a open source Data Quality solution for distributed data systems at any scale in both streaming or batch data context</description>
+        <reporting group="3"/>
+        <champion availid="hsaputra">Henry Saputra</champion>
+        <mentors>
+            <mentor username="kaspersor">Kasper Sørensen</mentor>
+            <mentor username="umamahesh">Uma Maheswara Rao Gangumalla</mentor>
+            <mentor username="lresende">Luciano Resende</mentor>
         </mentors>
     </podling>
     <podling name="Guacamole" status="current" resource="guacamole" sponsor="Incubator" startdate="2016-02-10">
@@ -894,9 +904,9 @@ and a set of useful extensions for this specification.</description>
              <mentor username="gtrasuk">Greg Trasuk</mentor>
          </mentors>
     </podling>
-    <podling name="Geode" status="current" resource="geode" sponsor="Incubator" startdate="2015-04-27">
+    <podling name="Geode" status="graduated" resource="geode" sponsor="Incubator" startdate="2015-04-27" enddate="2016-11-16">
         <description>Geode is a data management platform that provides real-time, consistent access to data-intensive applications throughout widely distributed cloud architectures.</description>
-        <reporting group="1" />
+        <resolution tlp="true"/> 
         <champion availid="rvs">Roman Shaposhnik</champion>
         <mentors>
             <mentor username="cos">Konstantin Boudnik</mentor>
@@ -1030,6 +1040,7 @@ and a set of useful extensions for this specification.</description>
             <mentor username="rxin">Reynold Xin</mentor>
             <mentor username="weimer">Markus Weimer</mentor>
             <mentor username="meng">Xiangrui Meng</mentor>
+	    <mentor username="daijy">Daniel Dai</mentor>
         </mentors>
     </podling>
     <podling name="HTrace" status="current" resource="htrace" sponsor="Incubator" startdate="2014-11-11">
@@ -1801,6 +1812,16 @@ and a set of useful extensions for this specification.</description>
             <mentor username="matzew">Matthias Wessendorf</mentor>
         </mentors>
     </podling>
+    <podling name="OpenWhisk" status="current" resource="openwhisk" sponsor="Incubator" startdate="2016-11-23">
+        <description>distributed Serverless computing platform</description>
+        <reporting group="3" monthly="true">December, January, February</reporting> 
+        <champion availid="rubys">Sam Ruby</champion>
+        <mentors>
+            <mentor username="fmeschbe">Felix Meschberger</mentor>
+            <mentor username="isabel">Isabel Drost-Fromm</mentor>
+            <mentor username="wikier">Sergio Fernández</mentor>
+        </mentors>
+    </podling>
     <podling name="Parquet" status="graduated" resource="parquet" sponsor="Incubator" startdate="2014-05-20" enddate="2015-04-22">
         <description>Parquet is a columnar storage format for Hadoop.</description>
         <resolution tlp="true"/>
@@ -2001,6 +2022,18 @@ and a set of useful extensions for this specification.</description>
             <mentor username="jukka">Jukka Zitting</mentor>
         </mentors>
     </podling>
+    <podling name="RocketMQ" status="current" resource="rocketmq" sponsor="Incubator" startdate="2016-11-21">
+        <description>RocketMQ is a fast, low latency, reliable, scalable, distributed, easy to use message-oriented middleware, especially for processing large amounts of streaming data.</description>
+      <reporting group="1" monthly="true">January, February</reporting> 
+      <champion availid="bsnyder">Bruce Snyder</champion>
+        <mentors>
+          <mentor username="bsnyder">Bruce Snyder</mentor>
+          <mentor username="brianm">Brian McCallister</mentor>
+          <mentor username="ningjiang">Willem Ning Jiang</mentor>
+          <mentor username="lukehan">Luke Han</mentor>
+          <mentor username="jmclean">Justin McLean</mentor>
+        </mentors>
+    </podling>
     <podling name="Roller" status="graduated" resource="roller" sponsor="Incubator" startdate="2005-06-20" enddate="2007-02-21">
         <description>Roller blog server</description>
         <resolution tlp="true"/>
@@ -2016,8 +2049,8 @@ and a set of useful extensions for this specification.</description>
         <mentors>
             <mentor username="elserj">Josh Elser</mentor>
             <mentor username="edwardyoon">Edward J. Yoon</mentor>
-            <mentor username="busbey">Sean Busbey</mentor>
             <mentor username="venkatesh">Venkatesh Seetharam</mentor>
+            <mentor username="billie">Billie Rinaldi</mentor>
         </mentors>
     </podling>
     <podling name="S2Graph" status="current" resource="s2graph" sponsor="Incubator" startdate="2015-11-29">
@@ -2386,9 +2419,10 @@ and a set of useful extensions for this specification.</description>
 	  <mentor username="andy">Andy Seaborne</mentor>
 	  <!--Retired <mentor username="mattmann">Chris Mattmann</mentor>-->
 	  <mentor username="djd">Daniel J Debrunner</mentor>
-	  <mentor username="suresh">Suresh Srinivas</mentor>
-	  <mentor username="smarru">Suresh Marru</mentor>
 	  <mentor username="mpierce">Marlon Pierce </mentor>
+	  <mentor username="stain">Stian Soiland-Reyes</mentor>
+	  <mentor username="smarru">Suresh Marru</mentor>
+	  <mentor username="suresh">Suresh Srinivas</mentor>
         </mentors>
     </podling>
     <podling name="Tephra" status="current" resource="tephra" sponsor="Incubator" startdate="2016-03-07">
@@ -2399,7 +2433,6 @@ top of Apache HBase and other storage engines.</description>
         <mentors>
             <mentor username="gates">Alan Gates</mentor>
             <mentor username="apurtell">Andrew Purtell</mentor>
-            <mentor username="hsaputra">Henry Saputra</mentor>
             <mentor username="jamestaylor">James Taylor</mentor>
             <mentor username="larsh">Lars Hofhansl</mentor>
         </mentors>
@@ -2617,6 +2650,17 @@ top of Apache HBase and other storage engines.</description>
             <mentor username="mrdon">Don Brown</mentor>
             <mentor username="martinc">Martin Cooper</mentor>
             <mentor username="husted">Ted Husted</mentor>
+        </mentors>
+    </podling>
+    <podling name="Weex" status="current" resource="weex" sponsor="Incubator" startdate="2016-11-30">
+        <description>Weex is a framework for building Mobile cross-platform high performance UI.</description>
+        <reporting group="1" monthly="true">January, February, March</reporting>
+         <champion availid="edwardyoon">Edward J. Yoon</champion>
+        <mentors>
+            <mentor username="lukehan">Luke Han</mentor>
+            <mentor username="ningjiang">Willem Jiang</mentor>
+            <mentor username="sewen">Stephan Ewen</mentor>
+            <mentor username="niclas">Niclas Hedhman</mentor>
         </mentors>
     </podling>
     <podling name="Whirr" status="graduated" resource="whirr" sponsor="Incubator" startdate="2010-05-11" enddate="2011-08-17">

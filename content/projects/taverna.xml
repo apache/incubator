@@ -19,7 +19,15 @@
       <title>News</title>
       <ul>
 <!--    <li>YYYY-MM-DD New committer: Fred Nerk</li>    -->
-        <li>2015-03-01 Mentor swap: Chris Mattman ➝ Dan Debrunner</li>
+        <li>2016-12-01 New mentor: Stian Soiland-Reyes</li>
+        <li>2016-10-20 New committer: Rajan Maurya</li>
+        <li>2016-10-20 New committer: Sagar</li>
+        <li>2016-09-20 New committer: Thilina Manamgoda</li>
+        <li>2016-07-01 Release: taverna-engine-3.1.0-incubating, taverna-common-activities-2.1.0-incubating, taverna-commandline-3.1.0-incubating</li>
+        <li>2016-03-11 Release: taverna-language-0.15.1-incubating, taverna-osgi-0.2.1-incubating</li>
+        <li>2016-03-11 Release: taverna-language-0.15.1-incubating, taverna-osgi-0.2.1-incubating</li>
+        <li>2016-03-11 Release: taverna-language-0.15.1-incubating</li>
+        <li>2016-03-01 Mentor swap: Chris Mattman ➝ Dan Debrunner</li>
         <li>2015-12-09 New PPMC member: Gale Naylor</li>
         <li>2015-12-01 New committer: Gale Naylor</li>
         <li>2015-08-11 First Apache Release: taverna-language-0.15.0-incubating</li>
@@ -30,19 +38,23 @@
     <section id="Project+info">
       <title>Project info</title>
       <ul>
-        <li><a href="http://taverna.incubator.apache.org/">Homepage</a></li>
+        <li><a href="https://taverna.incubator.apache.org/">Homepage</a></li>
       </ul>
       <ul>
-        <li>link to the page(s) that tell how to participate (<a href="http://taverna.incubator.apache.org/">Website</a>,
-          <a href="http://taverna.incubator.apache.org/contact/">Mailing lists</a>,
-          <a href="http://taverna.incubator.apache.org/community/issue-tracker">Bug tracking</a>,
-          <a href="http://taverna.incubator.apache.org/code/">Source code</a>,
-          <a href="http://taverna.incubator.apache.org/community/#contribute">Contributing</a>)</li>
+        <li>link to the page(s) that tell how to participate (<a href="https://taverna.incubator.apache.org/">Website</a>,
+          <a href="https://taverna.incubator.apache.org/contact/">Mailing lists</a>,
+          <a href="https://taverna.incubator.apache.org/community/issue-tracker">Bug tracking</a>,
+          <a href="https://taverna.incubator.apache.org/code/">Source code</a>,
+          <a href="https://taverna.incubator.apache.org/community/#contribute">Contributing</a>)</li>
       </ul>
       <ul>
         <li>link to the project status file (Committers,non-incubation action
             items,project resources, etc)</li>
       </ul>
+      <ul>
+        <li>link to the <a href="https://cwiki.apache.org/confluence/display/TAVERNADEV/2016-03+Taverna+Graduation+Maturity+Assessment">Project Maturity Assessment</a>)</li>
+      </ul>
+
       <p>If the project website and code repository are not yet setup, use the
          following table:</p>
       <table>
@@ -108,7 +120,12 @@
           <td>djd</td>
           <td>Daniel J Debrunner</td>
         </tr>
-	<tr>
+        <tr>
+          <td></td>
+          <td>stain</td>
+          <td>Stian Soiland-Reyes</td>
+        </tr>
+  <tr>
 	  <td></td>
 	  <td>suresh</td>
 	  <td>Suresh Srinivas</td>
@@ -125,68 +142,83 @@
         </tr>
 	<tr>
 	  <td>Committers</td>
-      <td>All committers are currently PPMC members as well</td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td></td>
 	  <td>alaninmcr</td>
-	  <td>Alan R Williams</td>
+	  <td>Alan R Williams (PPMC)</td>
 	</tr>
 	<tr>
 	  <td></td>
 	  <td>anenadic</td>
-	  <td>Aleksandra Nenadic</td>
+	  <td>Aleksandra Nenadic (PPMC)</td>
 	</tr>
 	<tr>
 	  <td></td>
 	  <td>brenninc</td>
-	  <td>Christian Y. Brenninkmeijer</td>
+	  <td>Christian Y. Brenninkmeijer (PPMC)</td>
 	</tr>
 	<tr>
 	  <td></td>
 	  <td>redmitry</td>
-	  <td>Dmitriy Repchevsky</td>
+	  <td>Dmitriy Repchevsky (PPMC)</td>
 	</tr>
 	<tr>
 	  <td></td>
 	  <td>dkf</td>
-	  <td>Donal K. Fellows</td>
+	  <td>Donal K. Fellows (PPMC)</td>
 	</tr>
     <tr>
 	  <td></td>
 	  <td>gnaylor</td>
-	  <td>Gale Naylor</td>
+	  <td>Gale Naylor (PPMC)</td>
 	</tr>
 	<tr>
 	  <td></td>
 	  <td>ianwdunlop</td>
-	  <td>Ian Dunlop</td>
+	  <td>Ian Dunlop (PPMC)</td>
 	</tr>
 	<tr>
 	  <td></td>
 	  <td>jgarrido</td>
-	  <td>Julián Garrido</td>
+	  <td>Julián Garrido (PPMC)</td>
 	</tr>
 	<tr>
 	  <td></td>
 	  <td>hainesr</td>
-	  <td>Robert Haines</td>
+	  <td>Robert Haines (PPMC)</td>
+	</tr>
+  <tr>
+	  <td></td>
+	  <td>therajanmaurya</td>
+	  <td>Rajan Maurya</td>
+	</tr>
+  <tr>
+	  <td></td>
+	  <td>sagar</td>
+	  <td>Sagar</td>
 	</tr>
 	<tr>
 	  <td></td>
 	  <td>shoaibsufi</td>
-	  <td>Shoaib Sufi</td>
+	  <td>Shoaib Sufi (PPMC)</td>
 	</tr>
 	<tr>
 	  <td></td>
 	  <td>stain</td>
-	  <td>Stian Soiland-Reyes</td>
+	  <td>Stian Soiland-Reyes (PPMC)</td>
 	</tr>
 	<tr>
 	  <td></td>
 	  <td>stuzart</td>
-	  <td>Stuart Owen</td>
+	  <td>Stuart Owen (PPMC)</td>
+	</tr>
+  <tr>
+	  <td></td>
+	  <td>maanadev</td>
+	  <td>Thilina Manamgoda</td>
 	</tr>
   <tr>
 	  <td>Emeritus</td>
@@ -198,6 +230,7 @@
     <td>mattmann</td>
     <td>Chris Mattmann</td>
   </tr>
+
       </table>
     </section>
     <section id="Incubation+status+reports">
@@ -212,7 +245,9 @@
         <li><a href="http://wiki.apache.org/incubator/September2015">September2015</a></li>
         <li><a href="http://wiki.apache.org/incubator/December2015">December2015</a></li>
         <li><a href="http://wiki.apache.org/incubator/March2016">March2016</a></li>
-        <!--<li><a href="http://wiki.apache.org/incubator/June2016">June2016</a></li>-->
+        <li><a href="http://wiki.apache.org/incubator/June2016">June2016</a></li>
+        <li><a href="http://wiki.apache.org/incubator/September2016">September2016</a></li>
+        <li><a href="http://wiki.apache.org/incubator/December2016">December2016</a></li>
       </ul>
     </section>
     <section id="Incubation+work+items">

@@ -224,11 +224,8 @@ limitations under the License.
       with a subject line of [DISCUSS] Joe Bob PPMC membership. If there
       is consensus that the proposed member is suitable, then there should
       be a formal vote in the PPMC private alias, with the subject line of
-      [VOTE] Joe Bob PPMC membership. The [VOTE] message should be forwarded
-      to the IPMC (<a href="mailto:private@incubator.apache.org">
-      private@incubator.apache.org</a>) to notify them that the
-      vote is underway. Do not CC or BCC the IPMC on this thread.  Instead,
-      forward the initial VOTE email.</p>
+      [VOTE] Joe Bob PPMC membership.
+      </p>
       <p>If the vote is successful, the proposer 
       should send a message to the PPMC private alias, with
       the subject line of [VOTE][RESULT] Joe Bob PPMC membership. The
@@ -284,6 +281,18 @@ limitations under the License.
 	<p>If a podling is in a position where they feel they need to add a new mentor,
 		they may want to drop a mail on the general incubator mailing list to try
 		to recruit a new mentor.</p>
+	</section>
+	<section id="PPMC+binding+votes">
+	  <title>PPMC and Binding Votes</title>
+      <p>
+	   The only time when a PPMC member's vote is binding is for the addition of
+	   new PPMC members and committers.  Release votes are only binding to IPMC
+	   members.
+	  </p>
+	  <p>
+		The binding status of a person's vote is not related to the mailing list
+		that the vote is occurring on.
+	  </p>
 	</section>
   </body>
 </document>

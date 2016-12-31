@@ -43,7 +43,7 @@ It is informational not normative. Policy is laid down in the
       <section id="Overview">
         <title>Overview</title>
         <p>
-          After the Podling has been accepted by the Incubator PMC, the mentor 
+          After the Podling has been accepted by the Incubator PMC, one of the mentors 
           <a href="../incubation/Incubation_Policy.html#Setting+Up+a+New+Podling">sets up</a>
           the Podling; <em>i.e.</em> adds the podling metadata, creates the initial Podling status page, and 
           either creates or requests that 
@@ -109,129 +109,246 @@ It is informational not normative. Policy is laid down in the
       committers subscribe then these may be used for discussion.
       </p>
       </section>
-      <section id="Set+Up+Podling">
-        <title>Set Up Podling</title>
+	    <section id='request-required-resources'><title>Request Required Resources</title>
+	      <p>
+	      The proposal should include a list of required resources. All of these will 
+	      require active set up. Some are created by infrastructure after an appropriate
+	      request, others can be set up by any IPMC members (typically mentors).
+	      </p><p>
+	      Mailing lists should be created first. Other resources typically
+	      post information to these lists.
+	      </p>
+	      <section id='request-mailing-lists'><title>Request Mailing Lists</title>
+	      <p>
+	      Apache mailing lists require volunteer moderators. New moderators can be 
+	      <a href='http://www.apache.org/dev/committers.html#mailing-list-moderators'>changed later</a> 
+	      but at least one volunteer is required before the mailing lists can be set up. 
+	      Moderation is a reasonably 
+	      <a href='http://www.apache.org/dev/committers.html#mail-moderate'>easy task</a>
+	      though moderators may want to set up 
+	      <a href='http://spamassassin.apache.org/'>spam filtering</a>.
+	      Having at least three moderators is recommended to spread the load.
+	      </p><p>
+	      The proposal should contain the rest of the information that needs to be collected
+	      before the mailing lists can be requested. Incubator is the responsible top level project.
+	      So the domain <code>MUST</code> be <code>incubator.apache.org</code>.
+	      For example:
+	      </p>
+	      <ul>
+	      <li>dev@${podling}.incubator.apache.org</li>
+	      <li>commits@${podling}.incubator.apache.org</li>
+	      <li>private@${podling}.incubator.apache.org</li>
+	      </ul>
+	      <p>
+	        For initial community building it is usually appropriate to only have
+	        a "dev" list, to keep the discussions focussed. Later add a "user" list
+	        if needed.
+	      </p>
+	      <note>
+	Commits under <code>http://svn.apache.org/repos/asf/incubator/<em>${podling}</em></code>
+	will be emailed to <code>commits@${podling}.incubator.apache.org</code>.
+	Any deviation will 
+	require special configuration in the <code>asf-mailer.conf</code> file by the IPMC.
+	      </note>
+	      <p>
+	      Mailing lists creation is a task for the <a href='#who-infra'>infrastructure team</a>. The
+	      infrastructure team offers a tool that simplifies the creation of mailing lists.  You can access the
+	      <a href="https://infra.apache.org/officers/mlreq/incubator" target="_new">Incubator Mailing List Request Form</a>
+	      to request a list.  A notification will be sent to private@incubator when the lists have been created.
+	      </p>
+	      <p>
+	      Remember to update the project status file with mailing list details. Prospective committers 
+	      and mentors will need to subscribe. Email them once the status file has been updated. Inform
+	      any existing mailing lists or forums previously used by the project.
+	      </p>
+	      <p>
+	      Once the <code>commits</code> list is created, the project MUST review
+	      the <code>/incubator/${podling}</code> tree, since any commits made prior
+	      to the list's creation will have generated no email trail.
+	      </p>
+	      <section id='mail-archives'><title>Mail Archives</title>
+	        <p>
+	Archives at <a href='http://mail-archives.apache.org'>http://mail-archives.apache.org</a> for the public
+	mailing lists will be setup as part of the mailing list creation process. No action is
+	required by Mentors. The archives will be <a href='http://mail-archives.apache.org/mod_mbox/'>visible</a> 
+	as soon as posts have been made (and moderated) to these lists.
+	        </p>
+	        <p>
+		    You can also leverage <a href="https://lists.apache.org" target="_new">lists.apache.org</a> for 
+		    mailing list archives.  There is a login link in the top right corner, which allows you to respond to
+		    threads from within the web application.
+		    </p>
+	        <p>
+	Many projects are independently archived externally (for example, at
+	<a href='http://www.mail-archive.com/'>The Mail Archive</a> and 
+	<a href='http://marc.info/?q=about'>MARC</a>)
+	Independent archives help to
+	increase project visibility as well as preserving a independent historic record.
+	These subscriptions are not automatically created. If desired, subscribe manually.
+	        </p><p>
+	Subscriptions to news-to-mailing-list bridges (for example, <a href='http://www.nabble.com'>Nabble</a>)
+	must also be created manually. Subscribing helps accessibility and visibility but Nabble news
+	users may not be aware that they are posting to a mailing list.
+	        </p>
+	      </section>
+	      <section id='mail-admin'><title>Mailing List Administration</title>
+	        <p>
+	Apache uses <a href='http://www.ezmlm.org/'>ezmlm</a>. See the 
+	<a href='http://www.ezmlm.org/man/ezmlmman.html'>manual</a> and 
+	committer <a href='http://www.apache.org/dev/committers.html#mail'>mail FAQ</a>
+	for more details.
+	        </p>
+	      </section>
+	      <section id='transition-mailing-lists'><title>Mailing List Transition</title>
+	        <p>
+	Independent mailing lists and groups are perfectly acceptable but development should
+	happen on the official mailing lists at Apache. If a project has existing mailing lists,
+	forums or groups the community needs to consider their future and plan for the transition
+	to the official Apache mailing lists.
+	        </p><p>
+	It may be useful to move development first to the official lists followed gradually 
+	by the user resources.
+	        </p>
+	        <p>
+	        Note that subscribers of external mailing lists will not be automatically subscribed
+	        to the new Incubator project mailing lists. Instead, a note should be posted to the
+	        old external mailing list asking them to subscribe to the new list. If possible, add
+	        a footer to the old mailing list with some instructions.
+	        </p>
+	      </section>
+	      <section id='request-issue-tracking'><title>Issue Tracking</title>
+	        <p>
+		If any Mentor has project-creation karma (in the issue tracking system to be used) 
+		then they should execute.
+		If no Mentor has the required karma then file an INFRA issue using the 'new jira project' 
+		type (not bug or request)
+	        </p>
+	        <p>
+	Remember to post an email announcing that the issue tracker is available.
+	        </p>
+	      </section>
+	      </section>
 
-      <p>
-      The most important responsibility for mentors is to set up the
-      podling source repository. Podlings can choose between svn and
-      git for source control.
-      </p>
+		      <section id="Set+Up+Podling+Source+Repository">
+		        <title>Set Up Podling Source Repository</title>
 
-     <section id="Set+Up+GIT+Repository">
-       <title>Set up GIT Repository</title>
-       <p>
-       Setting up git for a podling is simple. You open a JIRA to 
-       INFRA and request it.  You can either ask for a bare
-       repository or for a repository imported from some
-       publically-accessible existing repository; tell infra what you
-       need.
-       </p>
-       <p>
-       The Foundation's policy 
-       is to grant access to git repositories broadly to the incubator group,
-       not narrowly podling-by-podling. So, once the repository
-       exists, incubator group members gain access without further work.  Once
-       the podling graduates, a dedicated ldap group will be created to manage
-       access and only those members will be given access.
-       </p>
-      </section>
-      <section id="Set+Up+SVN+Repository">
-        <title>Set Up SVN Repository</title>
-        <p>
-      If the podling chooses svn, you must create the 
-      repository and give read/write access to the repository
-      to all the committers for the podling. This involves requesting
-      new committer accounts and granting access to mentors and existing
-      Apache committers.
-      </p>
-      <p>Setting up a podling subversion repository has two steps: Creating the SVN space
-        and configuring the authorization (in both svn and git).
-      </p>
-      <p>
-      Create the workspace in svn. This requires commit access to the
-      incubator svn repository. Podlings are given their own subdirectory
-      of the incubator svn repository. To create the podling subdirectory,
-      the mentor executes the svn command to create a remote directory:
-      <code>
-      svn mkdir https://svn.apache.org/repos/asf/incubator/{podling}
-      </code>
-      </p>
-      <p>Create the workspace authorization in asf-authorization-template.
-      This requires commit access to the file 
-      <code>https://svn.apache.org/repos/infra/infrastructure/trunk/subversion/authorization/asf-authorization-template</code>
-      as well as commit access to the git repo <code>infrastructure-puppet</code> to update the file 
-      <code>modules/subversion_server/files/authorization/asf-authorization-template</code>. Please follow the procedures in the <a href="https://cwiki.apache.org/confluence/display/INFRA/Git+workflow+for+infrastructure-puppet+repo">infrastructure puppet workflow</a> document.
-      </p>
-      <p>
-      Edit the file to add the podling repository in alphabetical order, e.g.
-      </p>
-      <source>{podling}={mentor1},{mentor2}</source>
-      <p>
-      In the section listing all the projects (again in alphabetical order)
-      add the podling directory and permissions, to enable the podling for its
-      eventual website:
-      </p>
-      <source>[/incubator/{podling}]
-@{podling} = rw
-...</source>
-      <p>
-      Enable the podling for the Incubator website:
-      </p>
-      <source>[/incubator/public]
-...
-@{podling} = rw
-...</source>
-      <p>
-This is a convenient time to add <a href='#Authorize+Committers'>authorization</a> for committers 
-who have accounts.
-      </p>
-      <p>
-<a href='#who-auth-karma'>Authorization</a> karma is restricted. If no Mentor
-has this karma then post an email to IPMC private list requesting that this 
-is actioned.
-      </p>
-      </section>
-      <section id="Authorize+Committers">
-        <title>Authorize Committers</title>
-      <p>The process to add committers to the podling depends on whether 
-         the new committer is already an Apache committer and whether
-         the new committer is in the list of original committers: 
-      </p>
-      <ul>
-      <li>The committer is in the list of original committers in the 
-          podling proposal to the incubator and is not already an Apache
-          committer:
-        <ul>
-        <li>
-          Ask developers to send their ICLA to secretary@apache.org according to 
-          <a href="http://apache.org/licenses/#submitting">standard procedure.</a>
-          Note that ICLA forms must be signed, either by hand or by digital signature.
-        </li>
-        <li>
-          Developers should choose an Apache id that is not already listed 
-          <a href="http://people.apache.org/committer-index.html">here.</a>
-        </li>
-        <li>
-          Developers should enter their preferred Apache id on the ICLA 
-          and enter the podling name in the "notify" field of the ICLA.
-        </li>
-        </ul>
-      </li>
-      <li> The committer is in the list of original committers in the 
-         podling proposal to the incubator and is already an Apache committer, only
-         <a href='#who-auth-karma'>incubator authorization</a> is required. 
-      </li>
-      <li>The committer was voted by the PPMC and approved by the incubator
-          PMC:
-      </li>
-      <p>
-        Perform one of the above procedures depending on whether the 
-        committer is already an Apache committer on another project.
-      </p>
-      </ul>
-      </section>
-      </section>
+		      <p>
+		      The most important responsibility for mentors is to set up the
+		      podling source repository. Podlings can choose between svn and
+		      git for source control.
+		      </p>
+
+		     <section id="Set+Up+GIT+Repository">
+		       <title>Set up GIT Repository</title>
+		       <p>
+		       Requests for new git repos are done via <a href="https://reporeq.apache.org/" target="_new">reporeq.apache.org</a>.
+		       This service will initialize a new repository, setup github mirrors and enable integrations for that repository.
+		       </p>
+		       <p>
+		       The Foundation's policy 
+		       is to grant access to git repositories broadly to the incubator group,
+		       not narrowly podling-by-podling. So, once the repository
+		       exists, incubator group members gain access without further work.  Once
+		       the podling graduates, a dedicated ldap group will be created to manage
+		       access and only those members will be given access.
+		       </p>
+		      </section>
+		      <section id="Set+Up+SVN+Repository">
+		        <title>Set Up SVN Repository</title>
+		        <p>
+		      If the podling chooses svn, you must create the 
+		      repository and give read/write access to the repository
+		      to all the committers for the podling. This involves requesting
+		      new committer accounts and granting access to mentors and existing
+		      Apache committers.
+		      </p>
+		      <p>Setting up a podling subversion repository has two steps: Creating the SVN space
+		        and configuring the authorization (in both svn and git).
+		      </p>
+		      <p>
+		      Create the workspace in svn. This requires commit access to the
+		      incubator svn repository. Podlings are given their own subdirectory
+		      of the incubator svn repository. To create the podling subdirectory,
+		      the mentor executes the svn command to create a remote directory:
+		      <code>
+		      svn mkdir https://svn.apache.org/repos/asf/incubator/{podling}
+		      </code>
+		      </p>
+		      <p>Create the workspace authorization in asf-authorization-template.
+		      This requires commit access to the file 
+		      <code>https://svn.apache.org/repos/infra/infrastructure/trunk/subversion/authorization/asf-authorization-template</code>
+		      as well as commit access to the git repo <code>infrastructure-puppet</code> to update the file 
+		      <code>modules/subversion_server/files/authorization/asf-authorization-template</code>. Please follow the procedures in the <a href="https://cwiki.apache.org/confluence/display/INFRA/Git+workflow+for+infrastructure-puppet+repo">infrastructure puppet workflow</a> document.
+		      </p>
+		      <p>
+		      Edit the file to add the podling repository in alphabetical order, e.g.
+		      </p>
+		      <source>{podling}={mentor1},{mentor2}</source>
+		      <p>
+		      In the section listing all the projects (again in alphabetical order)
+		      add the podling directory and permissions, to enable the podling for its
+		      eventual website:
+		      </p>
+		      <source>[/incubator/{podling}]
+		@{podling} = rw
+		...</source>
+		      <p>
+		      Enable the podling for the Incubator website:
+		      </p>
+		      <source>[/incubator/public]
+		...
+		@{podling} = rw
+		...</source>
+		      <p>
+		This is a convenient time to add <a href='#Authorize+Committers'>authorization</a> for committers 
+		who have accounts.
+		      </p>
+		      <p>
+		<a href='#who-auth-karma'>Authorization</a> karma is restricted. If no Mentor
+		has this karma then post an email to IPMC private list requesting that this 
+		is actioned.
+		      </p>
+		      </section>
+		      <section id="Authorize+Committers">
+		        <title>Authorize Committers</title>
+		      <p>The process to add committers to the podling depends on whether 
+		         the new committer is already an Apache committer and whether
+		         the new committer is in the list of original committers: 
+		      </p>
+		      <ul>
+		      <li>The committer is in the list of original committers in the 
+		          podling proposal to the incubator and is not already an Apache
+		          committer:
+		        <ul>
+		        <li>
+		          Ask developers to send their ICLA to secretary@apache.org according to 
+		          <a href="http://apache.org/licenses/#submitting">standard procedure.</a>
+		          Note that ICLA forms must be signed, either by hand or by digital signature.
+		        </li>
+		        <li>
+		          Developers should choose an Apache id that is not already listed 
+		          <a href="http://people.apache.org/committer-index.html">here.</a>
+		        </li>
+		        <li>
+		          Developers should enter their preferred Apache id on the ICLA 
+		          and enter the podling name in the "notify" field of the ICLA.
+		        </li>
+		        </ul>
+		      </li>
+		      <li> The committer is in the list of original committers in the 
+		         podling proposal to the incubator and is already an Apache committer, only
+		         <a href='#who-auth-karma'>incubator authorization</a> is required. 
+		      </li>
+		      <li>The committer was voted by the PPMC and approved by the incubator
+		          PMC:
+		      </li>
+		      <p>
+		        Perform one of the above procedures depending on whether the 
+		        committer is already an Apache committer on another project.
+		      </p>
+		      </ul>
+		      </section>
+		      </section>
 
     <section id='bootstrap'><title>[DRAFT] Podling Bootstrap</title>
     <p>
@@ -547,123 +664,6 @@ please ask the infrastructure team politely.
         </section>
       </section>
     </section>
-    
-    <section id='request-required-resources'><title>Request Required Resources</title>
-      <p>
-      The proposal should include a list of required resources. All of these will 
-      require active set up. Some are created by infrastructure after an appropriate
-      request, others can be set up by any IPMC members (typically mentors).
-      </p><p>
-      Mailing lists should be created first. Other resources typically
-      post information to these lists.
-      </p>
-      <section id='request-mailing-lists'><title>Request Mailing Lists</title>
-      <p>
-      Apache mailing lists require volunteer moderators. New moderators can be 
-      <a href='http://www.apache.org/dev/committers.html#mailing-list-moderators'>changed later</a> 
-      but at least one volunteer is required before the mailing lists can be set up. 
-      Moderation is a reasonably 
-      <a href='http://www.apache.org/dev/committers.html#mail-moderate'>easy task</a>
-      though moderators may want to set up 
-      <a href='http://spamassassin.apache.org/'>spam filtering</a>.
-      Having at least three moderators is recommended to spread the load.
-      </p><p>
-      The proposal should contain the rest of the information that needs to be collected
-      before the mailing lists can be requested. Incubator is the responsible top level project.
-      So the domain <code>MUST</code> be <code>incubator.apache.org</code>.
-      For example:
-      </p>
-      <ul>
-      <li>dev@${podling}.incubator.apache.org</li>
-      <li>commits@${podling}.incubator.apache.org</li>
-      <li>private@${podling}.incubator.apache.org</li>
-      </ul>
-      <p>
-        For initial community building it is usually appropriate to only have
-        a "dev" list, to keep the discussions focussed. Later add a "user" list
-        if needed.
-      </p>
-      <note>
-Commits under <code>http://svn.apache.org/repos/asf/incubator/<em>${podling}</em></code>
-will be emailed to <code>commits@${podling}.incubator.apache.org</code>.
-Any deviation will 
-require special configuration in the <code>asf-mailer.conf</code> file by the IPMC.
-      </note>
-      <p>
-      Mailing lists creation is a task for the <a href='#who-infra'>infrastructure team</a>. The
-      infrastructure team offers a tool that simplifies the creation of mailing lists - please  
-      visit the <a href='https://infra.apache.org/'>infrastructure site</a> for the latest link.
-      Note that there is an incubator-specific link at the bottom of the initial form. A notification
-      will be sent to private@incubator when the lists have been created.
-      </p>
-      <p>
-      Remember to update the project status file with mailing list details. Prospective committers 
-      and mentors will need to subscribe. Email them once the status file has been updated. Inform
-      any existing mailing lists or forums previously used by the project.
-      </p>
-      <p>
-      Once the <code>commits</code> list is created, the project MUST review
-      the <code>/incubator/${podling}</code> tree, since any commits made prior
-      to the list's creation will have generated no email trail.
-      </p>
-      <section id='mail-archives'><title>Mail Archives</title>
-        <p>
-Archives at <a href='http://mail-archives.apache.org'>http://mail-archives.apache.org</a> for the public
-mailing lists will be setup as part of the mailing list creation process. No action is
-required by Mentors. The archives will be <a href='http://mail-archives.apache.org/mod_mbox/'>visible</a> 
-as soon as posts have been made (and moderated) to these lists.
-        </p>
-        <p>
-Many projects are independently archived externally (for example, at
-<a href='http://www.mail-archive.com/'>The Mail Archive</a> and 
-<a href='http://marc.info/?q=about'>MARC</a>)
-Independent archives help to
-increase project visibility as well as preserving a independent historic record.
-These subscriptions are not automatically created. If desired, subscribe manually.
-        </p><p>
-Subscriptions to news-to-mailing-list bridges (for example, <a href='http://www.nabble.com'>Nabble</a>)
-must also be created manually. Subscribing helps accessibility and visibility but Nabble news
-users may not be aware that they are posting to a mailing list.
-        </p>
-      </section>
-      <section id='mail-admin'><title>Mailing List Administration</title>
-        <p>
-Apache uses <a href='http://www.ezmlm.org/'>ezmlm</a>. See the 
-<a href='http://www.ezmlm.org/man/ezmlmman.html'>manual</a> and 
-committer <a href='http://www.apache.org/dev/committers.html#mail'>mail FAQ</a>
-for more details.
-        </p>
-      </section>
-      <section id='transition-mailing-lists'><title>Mailing List Transition</title>
-        <p>
-Independent mailing lists and groups are perfectly acceptable but development should
-happen on the official mailing lists at Apache. If a project has existing mailing lists,
-forums or groups the community needs to consider their future and plan for the transition
-to the official Apache mailing lists.
-        </p><p>
-It may be useful to move development first to the official lists followed gradually 
-by the user resources.
-        </p>
-        <p>
-        Note that subscribers of external mailing lists will not be automatically subscribed
-        to the new Incubator project mailing lists. Instead, a note should be posted to the
-        old external mailing list asking them to subscribe to the new list. If possible, add
-        a footer to the old mailing list with some instructions.
-        </p>
-      </section>
-      <section id='request-issue-tracking'><title>Issue Tracking</title>
-        <p>
-	If any Mentor has project-creation karma (in the issue tracking system to be used) 
-	then they should execute.
-	If no Mentor has the required karma then file an INFRA issue using the 'new jira project' 
-	type (not bug or request)
-        </p>
-        <p>
-Remember to post an email announcing that the issue tracker is available.
-        </p>
-      </section>
-      </section>
-      
       <section id='orientation'><title>Orientating New Committers: Understanding Apache</title>
         <p>
         When a committer is elected by a typical top level project, the nominator

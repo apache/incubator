@@ -25,6 +25,10 @@ limitations under the License.
     <atom url="http://mail-archives.apache.org/mod_mbox/incubator-general/?format=atom">general@incubator.apache.org Archives</atom>
   </properties>
   <body>
+      <section id="toc">
+          <title>Contents</title>
+          <toc/>
+      </section>
     <section id="mailing-lists">
       <title>Incubator Mailing Lists Guide</title>
 
@@ -54,7 +58,7 @@ This is where general and public discussion of the Incubator takes place.
 </title>
           <p>
 This is the Incubator's "commits" list, named "cvs" for historical reasons.  Changes made to the <a
-href="http://svn.apache.org/viewvc/incubator/public/trunk">Incubator codebase and website</a> and
+href="https://svn.apache.org/viewvc/incubator/public/trunk">Incubator codebase and website</a> and
 the <a href="http://wiki.apache.org/incubator">Incubator wiki</a> trigger automatic notifications to
 this list.  Replies go to the <a href='general+at+incubator.apache.org'>general list</a>.
           </p>
