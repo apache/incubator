@@ -1,0 +1,1453 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+               "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--
+  Licensed to the Apache Software Foundation (ASF) under one
+  or more contributor license agreements.  See the NOTICE file
+  distributed with this work for additional information
+  regarding copyright ownership.  The ASF licenses this file
+  to you under the Apache License, Version 2.0 (the
+  "License"); you may not use this file except in compliance
+  with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing,
+  software distributed under the License is distributed on an
+  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  KIND, either express or implied.  See the License for the
+  specific language governing permissions and limitations
+  under the License. 
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" href="../style/bootstrap-1-3-0-min.css" type="text/css" />
+  <link rel="stylesheet" href="../style/style.css" type="text/css" />
+    <link rel="alternate" title="general@incubator.apache.org Archives" type="application/atom+xml" href="http://mail-archives.apache.org/mod_mbox/incubator-general/?format=atom" />
+    <title>Guide to Successful Graduation - Apache Incubator</title>
+  
+ </head>
+ <body>
+ <div class="container">
+  <div class="row">
+<div class="span12">
+  <a href="http://www.apache.org/"><img src="http://incubator.apache.org/images/asf_logo_wide_small.png" alt="The Apache Software Foundation" border="0" style="margin-top: 2px" width="62%"/></a>
+</div>
+<div class="span4">
+<a href="http://incubator.apache.org/"><img src="../images/egg-logo2.png" alt="Apache Incubator" border="0"/></a>
+</div>
+</div>
+  <div class="row"><div class="span16"><hr noshade="noshade" size="1"/></div></div>
+  
+  <div class="row">
+   <div class="span4">
+    <form action="http://www.google.com/search" method="get">
+     <input value="incubator.apache.org" name="sitesearch" type="hidden"/>
+     <input size="20" name="q" id="query" type="text" value="search..."
+      onclick="if(this.value == 'search...') {this.value = ''}"/>
+     <input name="Search" value="Go" type="submit"/>
+    </form>
+          <div class="menuheader">General</div>
+    <menu compact="compact">
+          <li><a href="../index.html">Welcome</a></li> 
+          <li><a href="../incubation/Process_Description.html">Incubation Overview</a></li> 
+          <li><a href="../incubation/Incubation_Policy.html">Incubation Policy</a></li> 
+          <li><a href="../guides/index.html">Incubation Guides</a></li> 
+          <li><a href="../incubation/Roles_and_Responsibilities.html">Roles and Responsibilities</a></li> 
+          <li><a href="../faq.html">General FAQ</a></li> 
+          <li><a href="http://wiki.apache.org/incubator">Incubator Wiki</a></li> 
+          <li><a href="../whoweare.html">Who We Are</a></li> 
+          <li><a href="../sitemap.html">Site Map</a></li> 
+            </menu>
+      <div class="menuheader">Status</div>
+    <menu compact="compact">
+          <li><a href="../projects/index.html">Project List</a></li> 
+          <li><a href="../clutch.html">Clutch Report</a></li> 
+          <li><a href="../ip-clearance/index.html">IP Clearance</a></li> 
+          <li><a href="../history/index.html">Incubator History</a></li> 
+            </menu>
+      <div class="menuheader">Entry Guides</div>
+    <menu compact="compact">
+          <li><a href="../guides/proposal.html">Proposal Guide</a></li> 
+            </menu>
+      <div class="menuheader">Podling Guides</div>
+    <menu compact="compact">
+          <li><a href="../guides/committer.html">Podling Committers</a></li> 
+          <li><a href="../guides/ppmc.html">Podling PMC (PPMC)</a></li> 
+          <li><a href="../guides/mentor.html">Podling Mentor</a></li> 
+          <li><a href="../guides/releasemanagement.html">Podling Releases</a></li> 
+          <li><a href="../guides/branding.html">Podling Branding/Publicity</a></li> 
+          <li><a href="../guides/sites.html">Podling Websites</a></li> 
+          <li><a href="../guides/graduation.html">Graduation</a></li> 
+          <li><a href="../guides/retirement.html">Retirement</a></li> 
+            </menu>
+      <div class="menuheader">Other Guides</div>
+    <menu compact="compact">
+          <li><a href="../guides/participation.html">Participation</a></li> 
+          <li><a href="../faq.html">General FAQ</a></li> 
+          <li><a href="../guides/pmc.html">Incubator PMC (IPMC)</a></li> 
+          <li><a href="../guides/chair.html">IPMC Chair</a></li> 
+          <li><a href="../guides/lists.html">Mailing Lists</a></li> 
+          <li><a href="../guides/website.html">Incubator Website</a></li> 
+            </menu>
+      <div class="menuheader">ASF</div>
+    <menu compact="compact">
+          <li><a href="http://www.apache.org/foundation/how-it-works.html">How Apache Works</a></li> 
+          <li><a href="http://www.apache.org/dev/">Developer Documentation</a></li> 
+          <li><a href="http://www.apache.org/foundation/">Foundation</a></li> 
+          <li><a href="http://www.apache.org/foundation/sponsorship.html">Sponsor Apache</a></li> 
+          <li><a href="http://www.apache.org/foundation/thanks.html">Thanks</a></li> 
+            </menu>
+    <!-- start Ads Server -->
+    <iframe src="http://www.apache.org/ads/buttonbar.html"
+     style="border-width:0; float: left" frameborder="0" scrolling="no"
+     width="135" height="265"></iframe>
+    <!-- end Ads Server -->
+   </div>
+   
+   <div class="span12">
+            <h2 id='preamble'><img src="../images/redarrow.gif" />Guide to Successful Graduation</h2>
+<div class="section-content">
+<h3 id='TOC'>Contents</h3>
+<div class="section-content">
+<ul>
+<li><a href='#preamble'>
+Guide to Successful Graduation
+ </a>
+ <ul>
+<li><a href='#TOC'>
+Contents
+ </a>
+</li>
+<li><a href='#abstract'>
+Abstract
+ </a>
+</li>
+</ul>
+</li>
+<li><a href='#introduction'>
+What is Graduation?
+ </a>
+ <ul>
+<li><a href='#subproject-or-top-level'>
+Whether to Graduate to Subproject or to Top Level Project
+ </a>
+</li>
+</ul>
+</li>
+<li><a href='#requirements'>
+Before You Graduate
+ </a>
+ <ul>
+<li><a href='#checklist'>
+Graduation Check List
+ </a>
+</li>
+<li><a href='#notes-status'>
+Checking the Status File
+ </a>
+</li>
+<li><a href='#notes-names'>
+Ensure suitable project name and product names
+ </a>
+</li>
+<li><a href='#releases'>
+Creating an Apache Release
+ </a>
+</li>
+<li><a href='#community'>
+Creating an Open and Diverse community
+ </a>
+</li>
+<li><a href='#notes-issues'>
+Other Issues
+ </a>
+</li>
+</ul>
+</li>
+<li><a href='#process'>
+The Graduation Process
+ </a>
+ <ul>
+<li><a href='#toplevel'>
+Graduating to a Top Level Project
+ </a>
+ <ul>
+<li><a href='#tlp-community-vote'>
+Community Graduation Vote
+ </a>
+</li>
+<li><a href='#tlp-resolution'>
+Preparing a Charter
+ </a>
+</li>
+<li><a href='#ipmc-top-level-recommendation'>
+The Recommendation Vote
+ </a>
+</li>
+<li><a href='#top-level-board-proposal'>
+Submission of the Resolution to the Board
+ </a>
+</li>
+</ul>
+</li>
+<li><a href='#subproject'>
+Graduating to a Subproject
+ </a>
+ <ul>
+<li><a href='#sp-community-vote'>
+Community Graduation Vote
+ </a>
+</li>
+<li><a href='#subproject-acceptance'>
+Subproject Acceptance Vote
+ </a>
+</li>
+<li><a href='#subproject-graduation'>
+Graduation Approval Vote
+ </a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href='#life-after-graduation'>
+Life After Graduation
+ </a>
+ <ul>
+<li><a href='#notes-on-hand-over'>
+Handover
+ </a>
+ <ul>
+<li><a href='#existing-project-hand-over'>
+Graduating as Subproject
+ </a>
+</li>
+<li><a href='#new-project-hand-over'>
+Graduating as New Top Level Project
+ </a>
+</li>
+</ul>
+</li>
+<li><a href='#project-first-steps'>
+First Steps Outside the Incubator
+ </a>
+ <ul>
+<li><a href='#transfer'>
+Transferring Resources
+ </a>
+</li>
+<li><a href='#unincubate'>
+Final Revision of Podling Incubation Records
+ </a>
+</li>
+<li><a href='#new-responsibilities'>
+New Responsibilities
+ </a>
+ <ul>
+<li><a href='#oversight'>
+Oversight
+ </a>
+</li>
+<li><a href='#security'>
+Security
+ </a>
+</li>
+</ul>
+</li>
+<li><a href='#final'>
+Stay In Touch
+ </a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<h3 id='abstract'>Abstract</h3>
+<div class="section-content">
+<p>
+                    The intent of this document is to help podlings
+                    understand the process of
+                    graduation and offer some views about how to approach it.
+                    It also links to the Incubator
+                    <a href="http://incubator.apache.org/incubation/Incubation_Policy.html#Graduating+from+the+Incubator">exit policies</a>.
+                    It is not an inflexible standard but represents a
+                    consensus condensed from previous discussions on the
+                    incubator general list. It also describes some of
+                    the first steps that should be taken after
+                    graduation.
+                </p>
+<p>
+                    <b>This is just a guide. Policy is stated 
+                    <a href="https://incubator.apache.org/incubation/Incubation_Policy.html">here</a>.</b>
+                </p>
+<p>
+                  Help to improve the system by posting a patch for
+                  this document to the incubator section of JIRA or a
+                  comment to the <a href="lists.html#general+at+incubator.apache.org">general</a> list at
+                  incubator.
+                </p>
+</div>
+</div>
+        <h2 id='introduction'><img src="../images/redarrow.gif" />What is Graduation?</h2>
+<div class="section-content">
+<p>
+                Graduation is the act of a podling becoming either a
+                subproject under an already existing Apache project, or
+                becoming a top level Apache project. Graduating is a
+                democratic process: in the end, it comes down to a <code><a href="http://www.apache.org/foundation/voting.html">VOTE</a></code>. Note
+                that during your stay in the incubator, you are already busy
+                with the process of Graduating: by adopting Apache procedures,
+                growing and fostering your community, having (civil) fights
+                concerning code style (tabs versus spaces), cutting releases
+                and so forth. All these acts have an influence on your
+                projects graduation.
+
+            </p>
+<p>
+
+                The road to graduation is pretty clear: depending on whether your
+                project wants to become a top level project, or join as a
+                subproject under an already existing project the steps are
+                fairly simple but do take time and effort. This document
+                provides guidelines for making this process run smooth.
+
+            </p>
+<p>
+                This document is offered for guidance and education only.
+                Actual policy is documented in the <a href="../incubation/Incubation_Policy.html">Incubation Policy
+                Guide</a> in <a href="../incubation/Incubation_Policy.html#Graduating+from+the+Incubator">this</a>
+                section. Please post any questions about graduation
+                to the <a href="lists.html#general+at+incubator.apache.org">general incubator list</a>.
+
+            </p>
+<h3 id='subproject-or-top-level'>Whether to Graduate to Subproject or to Top Level Project</h3>
+<div class="section-content">
+<p>
+                    Each proposal has a <a href="../incubation/Roles_and_Responsibilities.html#Sponsor">Sponsor</a>.
+                    The identity of the Sponsor indicates the natural
+                    destination. For proposals sponsored by the <a href="../incubation/Roles_and_Responsibilities.html#board">Board</a> or by
+                    the <a href="../incubation/Roles_and_Responsibilities.html#Incubator+Project+Management+Committee+%28PMC%29">Incubator
+                    PMC (IPMC)</a>, this is a top level project. For others,
+                    this is as a subproject of the sponsoring project. However, the
+                    destination is fixed only on graduation, not entry. Projects
+                    grow and evolve during the graduation process. As
+                    graduation approaches, this original preference should be
+                    reviewed based on where the project is now.
+
+                </p>
+<p>
+
+                    Graduation as a subproject is only possible if the
+                    subproject still falls within the scope of the project and
+                    requires the consent of the project <a href="http://www.apache.org/foundation/how-it-works.html#structure">PMC</a>.
+                    Graduation as a project requires the formation of the new
+                    project by the <a href="../incubation/Roles_and_Responsibilities.html#board">Board</a>.
+
+                </p>
+<p>
+
+                    The <a href="../incubation/Roles_and_Responsibilities.html#Incubator+Project+Management+Committee+%28PMC%29">IPMC</a>
+                    will also express a democratic opinion. For those seeking
+                    to graduate to a subproject this <code><a href="http://www.apache.org/foundation/voting.html">VOTE</a></code> 
+                    is to approve the
+                    transfer. For those seeking to graduation as a top level
+                    project, this will be a recommendation to the <a href="../incubation/Roles_and_Responsibilities.html#board">Board</a>.
+                    Expect IPMC-ers to ask questions about the project
+                    including about the choice of destination. This is part of
+                    the normal process.
+
+                </p>
+</div>
+</div>
+        <h2 id='requirements'><img src="../images/redarrow.gif" />Before You Graduate</h2>
+<div class="section-content">
+<p>
+
+                Before you start thinking about graduation, you need to make 
+                sure you are ready and meet the requirements imposed on Apache projects.
+                This section will provide a shortlist for podlings to
+                determine if they meet the criteria for asking graduation.
+
+            </p>
+<h3 id='checklist'>Graduation Check List</h3>
+<div class="section-content">
+<p>
+
+                    The following is a short checklist giving an overview, not
+                    a substitute for reading the content below.
+
+                </p>
+<ol>
+                    <li>Preparations
+                        <ul>
+                            <li>
+
+                                Complete (and sign off) tasks documented in
+                                the <a href="#notes-status">status file</a>
+
+                            </li>
+                            <li>
+                                Ensure <a href="#notes-names">suitable names</a>
+                                for project name and product names
+                            </li>
+                            <li>
+
+                                Demonstrate ability to <a href="#releases">create Apache releases</a>
+
+                            </li>
+                            <li>
+
+                                Demonstrate <a href="#community">community readiness</a>
+
+                            </li>
+                            <li>
+
+                                Ensure <a href="../incubation/Roles_and_Responsibilities.html#Mentor">Mentors</a> and <a href="../incubation/Roles_and_Responsibilities.html#Incubator+Project+Management+Committee+%28PMC%29">IPMC</a>
+                                have no <a href="#notes-issues">remaining issues</a>
+
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+
+                        Decide upon <a href="#subproject-or-top-level">destination</a>
+
+                    </li>
+                    <li>
+
+                        Prepare a <a href="#tlp-resolution">resolution</a>
+                        <em>(top level candidates only)</em>.
+
+                    </li>
+
+                    <li>
+
+                        <a href="#subproject-acceptance">Subproject acceptance
+                        <code>VOTE</code></a> by destination Project <em>(subproject
+                        candidates only)</em>
+
+                    </li>
+                    <li>
+
+                        <a href="../incubation/Roles_and_Responsibilities.html#Incubator+Project+Management+Committee+%28PMC%29">Incubator PMC (IPMC)</a>:
+                        <ul>
+                            <li>
+
+                                For top level candidates, this is a <a href="#ipmc-top-level-recommendation">recommendation
+                                <code>VOTE</code></a>
+
+                            </li>
+                            <li>
+
+                                For subproject candidates, this is a <a href="#subproject-graduation">graduation
+                                approval <code>VOTE</code></a>
+
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        Final <a href="#notes-on-hand-over">hand-over</a>
+                    </li>
+                    <li>
+
+                        Consider post graduation <a href="#project-first-steps">tasks</a>
+
+                    </li>
+                </ol>
+</div>
+<h3 id='notes-status'>Checking the Status File</h3>
+<div class="section-content">
+<p>
+
+                    The status file records and summarizes incubation-related
+                    information on the podling. The <a href="ppmc.html#Incubator+ASF+Board+Reports">PPMC</a> is
+                    responsible for keeping this file current. Before you are
+                    able to graduate, all tasks need to be completed.
+
+                </p>
+<p>
+
+                    The status file is a great way of keeping tabs on how your
+                    project is doing and what needs to be done to meet the
+                    graduation criteria. The <a href="../incubation/Roles_and_Responsibilities.html#Incubator+Project+Management+Committee+%28PMC%29">Incubator PMC</a> 
+                    will check this
+                    file when they vote on the graduation of your project.
+                    Once all tasks are done and the listed criteria met, your
+                    project may be ready for graduation.
+
+                </p>
+<p>
+
+                    The status file of the JUDDI project is <a href="http://incubator.apache.org/projects/juddi.html">one
+                    example</a>.
+
+                </p>
+</div>
+<h3 id='notes-names'>Ensure suitable project name and product names</h3>
+<div class="section-content">
+<p>
+                  Please read <a href="http://www.apache.org/foundation/marks/naming.html">detailed documentation here</a>.
+                  The "Process for ensuring suitable project and product names" is mandatory for every podling which wants to
+                  graduate.
+                </p>
+</div>
+<h3 id='releases'>Creating an Apache Release</h3>
+<div class="section-content">
+<blockquote cite="http://catb.org/esr/writings/cathedral-bazaar/cathedral-bazaar/ar01s04.html">
+                    <p>Release Early, Release Often</p>
+                    <div align="right">
+                        <p>
+                            <a href="http://catb.org/esr/writings/cathedral-bazaar/cathedral-bazaar/ar01s04.html">Eric Steven Raymond</a>
+                        </p>
+                    </div>
+                </blockquote>
+<p>
+
+                    Projects need to cut releases. Apache projects need to
+                    understand how to cut Apache releases. Therefore it is an
+                    important step during your stay in the incubator to
+                    demonstrate the ability to create an Apache Release.
+
+                </p>
+<p>
+
+                    Podlings do not need to actually <em>publish</em> a
+                    release to demonstrate that they understand how to
+                    accomplish such a feat. However, creating a release that
+                    is approved by the <a href="../incubation/Roles_and_Responsibilities.html#Incubator+Project+Management+Committee+%28PMC%29">
+                    incubator project management committee</a> is usually the
+                    simplest way to do this.
+
+                </p>
+<p>
+
+                    If you are going to cut a release (which is highly
+                    recommended), then please read the <a href="releasemanagement.html">Incubator Release Management
+                    Guide</a> for hints, tips and guidelines for cutting a
+                    release that will get approved by the <a href="../incubation/Roles_and_Responsibilities.html#Incubator+Project+Management+Committee+%28PMC%29">IPMC</a>
+                    without problems.
+
+                </p>
+</div>
+<h3 id='community'>Creating an Open and Diverse community</h3>
+<div class="section-content">
+<p>
+
+                    A major criterion for graduation is to have developed an
+                    open and diverse <a href="http://www.apache.org/foundation/glossary.html#Meritocracy">meritocratic</a>
+                    community. Time has demonstrated that these kinds of
+                    communities are more robust and productive than more
+                    closed ones.
+
+                </p>
+<p>
+
+                    Apache projects are self-sustaining and self-governing
+                    communities. Long term success and health requires that
+                    these communities understand how to:
+
+                </p>
+<ul>
+                    <li>recruit users, developers, committers and PMCers</li>
+                    <li>take responsible collective action</li>
+                    <li>disagree in public on technical matters without destroying personal relationships</li>
+                    <li>create an open, positive and inclusive atmosphere on the mailing lists</li>
+                </ul>
+<p>
+
+                    Graduation tests whether (in the opinion of the <a href="../incubation/Roles_and_Responsibilities.html#Incubator+Project+Management+Committee+%28PMC%29">IPMC</a>)
+                    a podling has learned enough and is responsible enough to
+                    sustain itself as such a community.
+
+                </p>
+<p>
+
+                    Read more on how to successfully build an open and diverse
+                    community for your podling in the <a href="community.html">community guide</a>.
+
+                </p>
+<p>
+
+                    As a project grows, it needs to renew itself by accepting
+                    new committers. A project needs to learn how it can
+                    recruit new developers and committers into the community.
+                    Accepting new committers usually increases the diversity
+                    of the project. So, this process is very beneficial. <a href="community.html">Community building</a> requires
+                    energy which could have been spent on code development but
+                    this cost is an important investment for the future of the
+                    project.
+
+                </p>
+<p>
+
+                    The openness of the community is not only measured by the
+                    number of contributors. Open and respectful discussions on
+                    the mailing lists are vital. Ways to resolve technical
+                    conflict without destroying personal relationships must be
+                    learned. Learning to use mailing lists effectively is very
+                    important. If this can be achieved, then you have shown to
+                    be a lively, active and successful community. The future
+                    looks bright.
+
+                </p>
+<p>
+
+                    The project is considered to have a diverse community when
+                    it is not highly dependent on any single contributor
+                    (there are at least 3 legally independent committers and
+                    there is no single company or entity that is vital to the
+                    success of the project). Basically this means that when a
+                    project mostly consists of contributors from one company,
+                    this is a sign of not being diverse enough. You can
+                    mitigate this requirement by admitting more external
+                    contributors to your project that have no tie to the
+                    single entity.
+
+                </p>
+<p>
+
+                    Growing an open and diverse meritocratic community is not
+                    something that just happens: it takes work. Read the <a href="community.html">building a community guide</a> for
+                    guidelines, hints and tips on how you can accomplish this
+                    for your project.
+
+                </p>
+</div>
+<h3 id='notes-issues'>Other Issues</h3>
+<div class="section-content">
+<p>
+                    The Incubator relies more on people than rules: rather
+                    than try to create rules to cover every circumstance,
+                    rules are developed and codified as required. People 
+                    are trusted to evolve process and policy. This guide
+                    can only document the most common issues and it is
+                    possible that there are other concerns that may require
+                    resolution that are not covered.
+              </p>
+<p>
+	      Podlings who are unsure if they are ready to graduate may want to consider completing the <a href="http://community.apache.org/apache-way/apache-project-maturity-model.html" target="_new">Apache Project Maturity Model</a>.  You may find this to be a useful guide when looking at various factors in your podling's community.
+	          </p>
+</div>
+</div>
+        <h2 id='process'><img src="../images/redarrow.gif" />The Graduation Process</h2>
+<div class="section-content">
+<h3 id='toplevel'>Graduating to a Top Level Project</h3>
+<div class="section-content">
+<p>
+
+                    Top level projects are created by the <a href="../incubation/Roles_and_Responsibilities.html#board">Board</a>. The <a href="../incubation/Roles_and_Responsibilities.html#Incubator+Project+Management+Committee+%28PMC%29">Incubator
+                    Project Management Committee (IPMC)</a> can therefore only
+                    recommend to the Board that the project is ready to
+                    graduate to a top level project.
+
+                </p>
+<p>
+
+                    Graduation to a top level project requires:
+
+                    <ul>
+                        <li>a charter for your project</li>
+                        <li>a positive community graduation <code><a href="http://www.apache.org/foundation/voting.html">VOTE</a></code></li>
+                        <li>a positive IPMC recommendation <code><a href="http://www.apache.org/foundation/voting.html">VOTE</a></code></li>
+                        <li>the acceptance of the <a href="#tlp-resolution">resolution</a> by the Board</li>
+                    </ul>
+
+                    This process can take a while, since it typically sparks
+                    some discussion inside the community and possibly in the
+                    IPMC.
+
+                </p>
+<p>
+
+                    Here's an estimated timeline for the graduation process.
+                    It should help you understand when you should start
+                    ramping up your community to get timely graduation and
+                    make the process smooth.
+
+                </p>
+<map name="GraffleExport">
+                    <area shape="rect" coords="13,112,84,155" href="#tlp-community-vote" />
+                    <area shape="rect" coords="15,166,511,209" href="#tlp-resolution" />
+                    <area shape="rect" coords="12,220,83,263" href="#ipmc-top-level-recommendation" />
+                    <area shape="rect" coords="15,273,79,317" href="#top-level-board-proposal" />
+                    <area shape="rect" coords="232,330,293,369" href="http://people.apache.org/calendar.html" />
+                </map>
+<img border="0" src="graduation-timeline.png" usemap="#GraffleExport" alt="Graduation timeline" title="Graduation timeline" />
+<p>
+
+                    For each event we scheduled one or two weeks. Even though
+                    a <code><a href="http://www.apache.org/foundation/voting.html">VOTE</a></code> 
+                    is usually limited to 72 hours, you should prepare
+                    for discussion and possibly having to cast a revote with a
+                    revised proposal.
+
+                </p>
+<h4 id='tlp-community-vote'>Community Graduation Vote</h4>
+<div class="section-content">
+<p>
+
+                        A community needs to be willing to govern itself
+                        before it can become a top level project. A good way
+                        to demonstrate this is through a free <code><a href="http://www.apache.org/foundation/voting.html">VOTE</a></code> (by the
+                        community) on the graduation proposal.
+
+                    </p>
+<p>
+
+                        This <code>VOTE</code> is not a requirement but is recommended. It
+                        is unlikely that <a href="../incubation/Roles_and_Responsibilities.html#Incubator+Project+Management+Committee+%28PMC%29">IPMC</a>
+                        members will vote to approve graduation unless the <a href="../incubation/Roles_and_Responsibilities.html#Mentor">Mentors</a>
+                        and community positively express their readiness for
+                        graduation. It is wise to notify the <a href="lists.html#general+at+incubator.apache.org">incubator
+                        general list</a> that the community vote is starting. Please do not Cc the
+                        vote to the general list as that creates confusion, instead you can either:
+                        <ul>
+                            <li> FWD the [VOTE] e-mail to the general list, or </li>
+                            <li> Send a different copy to the general list indicating that a graduation community [VOTE] is in progress </li>
+                        </ul>
+
+                    </p>
+</div>
+<h4 id='tlp-resolution'>Preparing a Charter</h4>
+<div class="section-content">
+<p>
+
+                        So, in this case a suitable <a href="../incubation/Roles_and_Responsibilities.html#board">Board</a> resolution should be
+                        drawn up by the community advised by the 
+                        <a href="../incubation/Roles_and_Responsibilities.html#Mentor">Mentors</a>.
+                        Committers can access the podling template for
+                        resolutions in the <a href="https://svn.apache.org/repos/private/committers/board/templates/podling-tlp-resolution.txt">committers
+                        svn repository</a>. Also, resolutions are included in
+                        the Board minutes, which are posted publicly <a href="http://www.apache.org/foundation/board/calendar.html">
+                        here </a> . These contain numerous examples. Good
+                        examples include:
+
+                        <ul>
+                            <li>
+                                Harmony (see section <em>E. Establish the Apache Harmony project</em> in the
+                                <a href="http://www.apache.org/foundation/records/minutes/2006/board_minutes_2006_10_25.txt">October 2006 Board minutes</a>)
+                            </li>
+                            <li>
+                                OFBiz (see section <em>B. Establish Apache Open for Business Project</em> in the
+                                <a href="http://www.apache.org/foundation/records/minutes/2006/board_minutes_2006_12_20.txt">December 2006 Board minutes</a>)
+                            </li>
+                            <li>
+                                Cayenne (see section <em>C. Establish Apache Cayenne Project</em> in the
+                                <a href="http://www.apache.org/foundation/records/minutes/2006/board_minutes_2006_12_20.txt">December 2006 Board minutes</a>)
+                            </li>
+                        </ul>
+                    </p>
+<p>
+
+                        The original proposal and the status document should
+                        be consulted when creating this document. Projects
+                        evolve over time and some deviation from the original
+                        proposal may well prove acceptable. The <a href="../incubation/Roles_and_Responsibilities.html#board">Board</a>
+                        resolution is the ultimate definition of the scope of
+                        an Apache project. So, it is important that it
+                        reflects the vision for the project as it appears on
+                        the eve of graduation.
+
+                    </p>
+<p>
+
+                        A good resolution is neither too narrow nor too broad.
+                        If the project's scope is too narrow, then its
+                        activities will be unnecessarily constrained. If a
+                        project's scope is too broad then it may lack focus
+                        and suffer from governance issues.
+
+
+                    </p>
+<p>
+
+                        If you read these resolutions you also see that you
+                        need to appoint a <a href="http://www.apache.org/foundation/glossary.html#Chair">Chair</a>
+                        for your project. It is up to the 
+                        <a href="ppmc.html">PPMC</a> to choose one
+                        person to act as the chair after graduation.
+
+                    </p>
+</div>
+<h4 id='ipmc-top-level-recommendation'>The Recommendation Vote</h4>
+<div class="section-content">
+<p>
+
+                        The <a href="#tlp-resolution">resolution</a> should be proposed on the general
+                        <a href="mailto:general@incubator.apache.org">
+                        incubator list</a> before a <code><a href="http://www.apache.org/foundation/voting.html">VOTE</a></code> 
+                        is started to allow feedback. Once a consensus has been reached, a <code>VOTE</code>
+                        should be started on the same general incubator list by a member of the <a href="ppmc.html">PPMC</a> proposing
+                        that the <a href="../incubation/Roles_and_Responsibilities.html#Incubator+Project+Management+Committee+%28PMC%29">IPMC</a>
+                        recommends the resolution to the <a href="../incubation/Roles_and_Responsibilities.html#board">Board</a>.
+
+                    </p>
+</div>
+<h4 id='top-level-board-proposal'>Submission of the Resolution to the Board</h4>
+<div class="section-content">
+<p>
+
+                        Top level projects are created by a <a href="#tlp-resolution">resolution</a> by the
+                        <a href="../incubation/Roles_and_Responsibilities.html#board">Board</a>.
+                        Once the <a href="#tlp-resolution">resolution</a> has been
+                        finalized and consensus reached, it should be
+                        submitted to the Board. For inclusion in the agenda
+                        for the next meeting, the resolution should be
+                        submitted at least 72 hours before that meeting. A
+                        calendar for meetings is <a href="http://www.apache.org/foundation/board/calendar.html">available</a>.
+
+                    </p>
+<p>
+
+                        Business for the <a href="../incubation/Roles_and_Responsibilities.html#board">Board</a> should be submitted by a post
+                        to the <code>board</code> mailing list. Posting from
+                        an Apache address is recommended. Mixing public and
+                        private lists on a post is not recommended.
+
+                    </p>
+<p>
+
+                        The <code>board</code> list is private. 
+                        The usual <a href="http://www.apache.org/foundation/how-it-works.html#management">netiquette</a>
+                        for Apache private lists should be observed. So, it is
+                        recommended that only the podling and <a href="../incubation/Roles_and_Responsibilities.html#Incubator+Project+Management+Committee+%28PMC%29">IPMC</a> 
+                        private
+                        lists are CC'd (rather than the general incubator
+                        list). Please treat responses with appropriate
+                        confidentiality.
+
+                    </p>
+<p>The submission should include:</p>
+<ul>
+                        <li>A clear subject (for example <em>Establish Foo TLP</em>)</li>
+                        <li>A brief introduction</li>
+                        <li>The name of proposed VP</li>
+                        <li>Links to the <code>VOTE</code> threads</li>
+                        <li>Summary of the <code>VOTE</code> results</li>
+                        <li>The <a href="#tlp-resolution">resolution</a> text</li>
+                    </ul>
+<p>For example:</p>
+<div class="note">
+<note><pre>
+--
+From: &lt;you _at_ apache dot org&gt;
+To: &lt;board _at_ apache dot org&gt;
+CC: &lt;&lt;project&gt;-private _at_ incubator dot apache dot org&gt;
+Subject: proposed resolution: establish &lt;project&gt; TLP
+
+Dear Apache Board,
+
+&lt;Project&gt; is ready for graduation out of the incubator. So, please
+consider the draft resolution below at your next meeting.
+
+&lt;thank you, best regards, personal note if you wish, etc etc&gt;
+
+&lt;your name&gt;
+
+--
+References:
+
+    Home: &lt;project home page&gt;
+    Vote by project: &lt;link to vote thread on project list&gt;
+    Vote by incubator: &lt;link to vote thread on general list&gt;
+
+Resolution draft:
+
+    &lt;&lt;resolution goes here, 72 characters wide,
+     indent with 4 spaces&gt;&gt;
+
+--
+&lt;your e-mail sig, if you have one&gt;
+</pre></note>
+</div>
+<p>
+
+                        Please try to keep the <code>board</code> list traffic low. Do not
+                        submit reminders or ask whether messages have been
+                        received on the list. <a href="http://www.apache.org/foundation/members.html">Apache
+                        Members</a> have access to the <a href="../incubation/Roles_and_Responsibilities.html#board">Board</a> 
+                        archives and may
+                        observe Board meetings. To follow the progress of a
+                        resolution, please ask a friendly Member or <a href="http://www.apache.org/foundation/board/">Director</a>.
+
+                    </p>
+</div>
+</div>
+<h3 id='subproject'>Graduating to a Subproject</h3>
+<div class="section-content">
+<p>
+
+                    Subprojects are accepted by a Project Management
+                    Committee. The <a href="../incubation/Roles_and_Responsibilities.html#Incubator+Project+Management+Committee+%28PMC%29">Incubator Project Management Committee</a>
+                    needs to approve the graduation of the podling to a
+                    subproject.
+
+                </p>
+<h4 id='sp-community-vote'>Community Graduation Vote</h4>
+<div class="section-content">
+<p>
+
+                        A community needs to be willing to govern itself
+                        before it can become a top level project. A good way
+                        to demonstrate this is through a free 
+                        <code><a href="http://www.apache.org/foundation/voting.html">VOTE</a></code>
+                        (by the community) on the graduation proposal.
+
+                    </p>
+<p>
+
+                        This <code>VOTE</code> is not a requirement but is recommended. It
+                        is unlikely that <a href="../incubation/Roles_and_Responsibilities.html#Incubator+Project+Management+Committee+%28PMC%29">IPMC</a>
+                        members will vote to approve graduation unless the <a href="../incubation/Roles_and_Responsibilities.html#Mentor">Mentors</a>
+                        and community positively express their readiness for
+                        graduation. It is wise to copy the <a href="lists.html#general+at+incubator.apache.org">incubator
+                        general list</a> and the <a href="../incubation/Roles_and_Responsibilities.html#Sponsor">sponsoring
+                        top level project</a> when the <code>VOTE</code>
+                        is proposed.
+
+                    </p>
+</div>
+<h4 id='subproject-acceptance'>Subproject Acceptance Vote</h4>
+<div class="section-content">
+<p>
+
+                         A formal <code><a href="http://www.apache.org/foundation/voting.html">VOTE</a></code> 
+                         by the Project <a href="http://www.apache.org/foundation/how-it-works.html#structure">PMC</a>
+                         to accept the podling as a subproject is a
+                         prerequisite. Sometimes, projects may feel that the
+                         podling has grown too big and would be better as a
+                         top level project. The Chair of the project is the
+                         right contact.
+
+                     </p>
+</div>
+<h4 id='subproject-graduation'>Graduation Approval Vote</h4>
+<div class="section-content">
+<p>
+
+                        To graduate as a subproject, the <a href="../incubation/Roles_and_Responsibilities.html#Mentor">Mentors</a> 
+                        should start a <code><a href="http://www.apache.org/foundation/voting.html">VOTE</a></code> 
+                        thread on the <a href="lists.html#general+at+incubator.apache.org">general
+                        list</a> proposing that the <a href="../incubation/Roles_and_Responsibilities.html#Incubator+Project+Management+Committee+%28PMC%29">
+                        IPMC</a> signs off the graduation of the podling as a
+                        subproject. This <code>VOTE</code>s should only be started once the
+                        project has <code>VOTE</code>d to accept the subproject.
+
+                    </p>
+</div>
+</div>
+</div>
+        <h2 id='life-after-graduation'><img src="../images/redarrow.gif" />Life After Graduation</h2>
+<div class="section-content">
+<h3 id='notes-on-hand-over'>Handover</h3>
+<div class="section-content">
+<p>
+
+                    This is the transfer of virtual resources from the care of
+                    the <a href="../incubation/Roles_and_Responsibilities.html#Incubator+Project+Management+Committee+%28PMC%29">IPMC</a> 
+                    to the care of either the new or existing top
+                    level project taking charge of the graduating community.
+
+                </p>
+<h4 id='existing-project-hand-over'>Graduating as Subproject</h4>
+<div class="section-content">
+<p>
+
+                        This is the simple case. The <a href="../incubation/Roles_and_Responsibilities.html#Chair+of+the+Incubator+PMC">IPMC
+                        Chair</a> and the Chair of the project accepting the
+                        graduating community organize the handover between
+                        themselves.
+
+                    </p>
+</div>
+<h4 id='new-project-hand-over'>Graduating as New Top Level Project</h4>
+<div class="section-content">
+<p>
+
+                        When graduating to a new project, the process is more
+                        complex. Creating a new project requires a <a href="http://www.apache.org/foundation/board/calendar.html">resolution</a>
+                        to be passed by the <a href="http://www.apache.org/foundation/board/">Board</a>.
+                        Usually once this happens, members of the Board will
+                        inform the appropriate chairs and <a href="http://www.apache.org/foundation/how-it-works.html#structure">PMCs</a>.
+                        Occasionally, this will be missed: if more than 72
+                        hours has passed since the Board meeting, it may be
+                        worth someone posting a polite reminder to their
+                        favorite director.
+
+                    </p>
+<p>
+
+                        The 
+                        <a href="#tlp-resolution">resolution</a> will appoint a Chair for the new
+                        project. The Chair will also be appointed an <a href="http://www.apache.org/foundation/">Officer</a>
+                        of the Apache Software Foundation. This allows them
+                        access to official resources of the foundation as well
+                        as granting power to act on behalf of Apache.
+
+                    </p>
+<p>
+                        Once appointed, the new Chair needs to:
+                    </p>
+<ul>
+
+                        <li>Subscribe to the <code>board</code> mailing list</li>
+                        <li>Subscribe to the <code>infrastructure</code> mailing list</li>
+                        <li>Ensure that they have been added to 
+				<a href="https://people.apache.org/phonebook.html?service=pmc-chairs">the PMC chairs group (pmc-chairs) in LDAP</a>.
+                            The ASF Secretary should do this without any action on the part
+                            of the new chair. As with above, if it has not happened within
+                            72 hours of the resolution passing, contact the secretary to
+                            remind them.
+                        </li>
+                        <li>Check out the <a href="https://svn.apache.org/repos/private/foundation/officers"><code>foundation/officers</code></a> folder from the private repository.
+                            Users with member or pmc-chairs karma can do this.
+                        </li>
+                        <li>Add yourself to the <code>foundation/officers/affiliations.txt</code> and the <code>foundation/officers/irs-disclosures.txt</code> files with the appropriate information.</li>
+                        <li>Add your details to the foundation web site Officer list at
+                            <a href="http://www.apache.org/foundation/index.html">http://www.apache.org/foundation/index.html</a>
+                            (in SVN at
+                            <a href="https://svn.apache.org/repos/asf/infrastructure/site/trunk/content/foundation/">https://svn.apache.org/repos/asf/infrastructure/site/trunk/content/foundation/</a>)
+                        </li>
+                        <li>Review appropriate documentation:
+                            <ul>
+                                <li>
+                                    <a href="http://www.apache.org/dev/pmc.html#chair">PMC Chair Duties</a>
+                                </li>
+                                <li>
+                                    PMC <a href="http://www.apache.org/dev/#pmc">documentation</a>
+                                </li>
+                                <li>
+                                    Jakarta <a href="http://wiki.apache.org/jakarta/RoleOfChair">Chair guide</a>
+                                </li>
+                                <li>
+                                    Incubator <a href="http://incubator.apache.org/guides/chair.html">Chair guide</a>
+                                </li>
+                                <li>
+                                    Reporting <a href="http://www.apache.org/foundation/board/calendar.html">calendar</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            Work out a reporting schedule with the <a href="../incubation/Roles_and_Responsibilities.html#board">Board</a>. For
+                            the first three months after graduation this will
+                            be monthly. After that, the project should slot
+                            into a quarterly reporting schedule. Now is a good time to remove
+                            the project from the Incubator reporting schedule.
+                        </li>
+                        <li>
+                            Work with the <a href="http://www.apache.org/dev/index.html#infra">Apache Infrastructure team</a> 
+                            to set up the top level project
+                            infrastructure. The various infrastructure tasks that are required
+                            (see <a href="#transfer">check list</a>)
+                            should be consolidated into a single issue (see <a href="https://issues.apache.org/jira/browse/INFRA-4069">this</a> 
+                            for example). This should be created in the category 
+                            <a href="https://issues.apache.org/jira/secure/IssueNavigator.jspa?reset=true&amp;mode=hide&amp;pid=10410&amp;sorter/order=DESC&amp;sorter/field=priority&amp;resolution=-1&amp;component=10858">TLP Admin</a>.
+                        </li>
+                        <li>Ensure the PMC is added to the committee-info.txt file at
+                            https://svn.apache.org/repos/private/committers/board/committee-info.txt<br />
+                            There are 3 sections which need to be updated; see instructions in the file.
+                            You may need to get a member to help with this.
+                        </li>
+                    </ul>
+<p>
+
+                        They should then be able to start assembling the new
+                        <a href="http://www.apache.org/foundation/how-it-works.html#structure">PMC</a>.
+                        The starting membership is listed in the 
+                        <a href="#tlp-resolution">resolution</a>. However, the Chair of the new project
+                        needs to ensure that private list is created and the
+                        membership subscribed.
+
+                    </p>
+<p>Members of the new PMC need to:</p>
+<ul>
+                        <li>Subscribe to the private mailing list for the project</li>
+                        <li>Review appropriate documentation:
+                            <ul>
+                                <li>
+                                    Apache <a href="http://www.apache.org/dev/pmc.html">PMC Guide</a>
+                                </li>
+                                <li>
+                                    Related <a href="http://www.apache.org/dev/#pmc">documentation</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+<p>
+
+                        Once all this is in place, resources can start to be
+                        handed over to the new project.
+
+                    </p>
+<p>
+
+                        Please continue to hang around the Incubator and help
+                        new podlings have an easier time than you did!
+
+                    </p>
+</div>
+</div>
+<h3 id='project-first-steps'>First Steps Outside the Incubator</h3>
+<div class="section-content">
+<p>
+
+                    Graduation is the first step in what is hopefully a long road.
+                    There are some issues which incubation may not cover.
+
+                </p>
+<h4 id='transfer'>Transferring Resources</h4>
+<div class="section-content">
+<p>
+
+                        When a project graduates, then the infrastructure
+                        resources (mailing lists, websites, source, etc.) need to
+                        be transferred from the Incubator to a project's new home.
+
+                    </p>
+<p>
+                      Although the below checklist is still generally useful, <b>the
+                      infrastructure process has been streamlined</b>, see
+                      <a href="http://www.apache.org/dev/infra-contact#requesting-graduation">
+                        http://www.apache.org/dev/infra-contact#requesting-graduation
+                      </a>.  You might also want to check JIRA checklist tickets for projects that graduated in the last month or two.
+                    </p>
+<p>Checklist:</p>
+<ol>
+                        <li id="records">Update the Incubator status records
+                            <ol>
+                                <li>
+                                  Like the rest of incubation, graduation is a process. Updating your
+                                  status records as you progress will enable others to assist.
+                                </li>
+                                <li>
+                                    Update the podling <a href="#notes-status">status page</a>.
+                                    All sections should now be filled in
+                                    including <em>EXIT</em>. Take some
+                                    time to read carefully since this page
+                                    forms the final public record for
+                                    graduation.
+                                </li>
+                                <li>
+                                    Update the Incubator
+                                    <a href="http://incubator.apache.org/projects/index.html">status
+                                    page</a> to denote the project as "graduating" when you commence,
+                                    then as "graduated" when you are finished.
+                                    The notes <a href="#unincubate">below</a> will assist.
+                                </li>
+                            </ol>
+                        </li>
+                        <li id="source">Source
+                            <ol>
+                                <li>
+
+                                    Post an announcement to the development list
+                                    telling everyone that the repository is about
+                                    to be moved
+
+                                </li>
+                                <li>
+
+                                    Post an announcement containing instructions
+                                    for developers describing how to <code>svn
+                                    switch</code> their workspaces
+
+                                </li>
+                                <li>
+
+                                    Update site, wikis, <code>pom.xml</code> and
+                                    other resources to point to the new repository
+                                    location.
+
+                                </li>
+                            </ol>
+                        </li>
+                        <li id="web">
+                            Websites
+                            <ol>
+                                <li>Transfer the podling website
+                                    <ol>
+                                        <li>
+
+                                            Load the website into its new home.
+                                            See <a href="http://www.apache.org/dev/#web">infra
+                                            notes</a>.
+
+                                        </li>
+                                        <li>
+
+                                            Update the <code>incubator/site-publish/.htaccess</code> entry to
+                                            redirect traffic from the old URLs to
+                                            the new.  (svn location is at <code>http://svn.apache.org/repos/asf/incubator/public/trunk/content/.htaccess</code>) - 
+                                            NOTE: new Top Level Projects will most likely get an automatic redirection of their website from the Incubator hostname
+                                            once the TLP's distribution repository is moved by INFRA.
+
+                                        </li>
+                                        <li>
+
+                                            Post an announcement to user and
+                                            development lists
+
+                                        </li>
+                                        <li>
+
+                                            When using Maven: update
+                                            <code>pom.xml</code> for the location
+                                            of the website, as well as the place
+                                            where the site plugin will deploy the
+                                            web site (when applicable).
+
+                                        </li>
+                                    </ol>
+                                </li>
+                                <li>
+                                  <em>(Top Level Projects Only)</em>
+                                  Add Project To
+                                  <a href="http://www.apache.org">
+                                    www.apache.org
+                                  </a>
+                                  <ol>
+                                    <li>
+                                      Check out
+                                      <code>
+                                        https://svn.apache.org/repos/asf/infrastructure/site/trunk
+                                      </code>
+                                    </li>
+                                    <li>
+                                      Patch
+                                      <code>
+                                        templates/blocks/projects.mdtext
+                                      </code>
+                                    </li>
+                                    <li>
+                                      Commit, and if you have karma then <a href="https://cms.apache.org/www/publish">publish</a> the updated www site
+                                    </li>
+                                  </ol>
+                                </li>
+                            </ol>
+                        </li>
+                        <li id="mail">Mailing lists
+                            <ol>
+                                <li>
+
+                                    When your mail lists have been moved by infrastructure,
+                                    post an announcement to your lists.
+
+                                </li>
+                                <li>
+
+                                    When using Maven: update <code>pom.xml</code> for
+                                    the new mailing list address(es). Also update any
+                                    documents on your website that show how to
+                                    subscribe to the lists and/or find archives.
+
+                                </li>
+                                <li>
+                        
+                                    Send notice to any mailing list archivers
+                                    that the
+                                    address has changed, and possibly the location of
+                                    your project (if it is listed there as being part of the
+                                    incubator).
+
+                                </li>
+                                <li>
+                                
+                                    Update website: replace links to old archives with 
+                                    links to new ones and add new links to historic 
+                                    archives from incubation.
+                                    
+                                </li>
+                                
+                                <li>
+                                    
+                                    Check project-private mailing list membership. 
+                                    Mentors should be allowed to remain if they wish to
+                                    do so. The subscriber list should otherwise match 
+                                    that on the resolution. See <a href="http://www.apache.org/dev/committers.html#mail-moderate">
+                                    this</a> and the <a href="http://www.ezmlm.org/">EZMLM</a> 
+                                    "Moderator's and Administrator's Manual".
+                                    
+                                </li>
+                                
+                                <li>
+                                    
+                                    Update mail addresses including:
+                                  
+                                      <ul>
+                                        <li>
+                                          confluence commit messages (see adminstration documentation)
+                                        </li>
+                                        
+                                        <li>
+                                          issue tracking messages (see administration documentation)
+                                        </li>
+                                      </ul>
+                                   The chair should have karma to perform these
+                                   tasks. 
+                                </li>
+                                <li>
+                                   Double-check that all of your lists have sufficient active
+                                   <a href="http://www.apache.org/dev/committers.html#mailing-list-moderators">moderators</a>.
+                                </li>
+                            </ol>
+                        </li>
+                        <li id="tracker">Issue Tracking
+                            <ol>
+                                <li>
+
+                                    Check that the issue tracking system used by the
+                                    podling reflects the project's new status.
+
+                                </li>
+                            </ol>
+                        </li>
+                        <li id="dist">Distribution mirrors
+                            <ol>
+                                <li>
+                                                                  After you have  a release at your new home
+                                           (<code>/dist/${project}/</code> area),
+                                           remove any distribution artefacts from your old
+                                           <code>/dist/incubator/${project}/</code>
+                                           area.
+                                           Remember from the mirror guidelines that everything is automatically added to archive.apache.org anyway.
+                                </li>
+                            </ol>
+                        </li>
+                    </ol>
+</div>
+<h4 id='unincubate'>Final Revision of Podling Incubation Records</h4>
+<div class="section-content">
+<p>
+              When a project has finished its graduation steps, then the incubator resources
+              need to be updated to indicate that the project is no
+              longer incubating. Here are a few of the items that need
+              to be done:
+            </p>
+<ul>
+              <li>
+                Update the svn
+                <code>incubator/trunk/content/projects/${project}.xml</code>
+                file to show the project's status.
+              </li>
+              <li>
+                Update the podling summary metadata file,
+                i.e. <code>incubator/trunk/content/podlings.xml</code> svn file.
+                See the content/podlings.dtd and follow examples of other recent graduates.
+                At the beginning of the process, add the "graduating" element.
+                When finished the graduation process, then:
+                Change the podling status to "graduated"; 
+                add the "enddate" attribute to document when the project graduated;
+                add the "resolution" element (see other project examples);
+                remove the "graduating" element.
+              </li>
+              <li>
+                After your project has finished reporting to the Incubator, then
+                remove the "reporting" element from that <code>podlings.xml</code> file.
+              </li>
+              <li>
+                Ensure that other svn resources for your project have moved to
+                your new home.
+              </li>
+              <li>
+                Review this whole graduation guide.
+              </li>
+              <li>
+                NOTE: Please edit this guide to add missing steps and clarifications.
+              </li>
+            </ul>
+</div>
+<h4 id='new-responsibilities'>New Responsibilities</h4>
+<div class="section-content">
+<h5 id='oversight'>Oversight</h5> 
+<div class="section-content">
+<p>
+                    During the stay in the Incubator, the
+                    <a href="../incubation/Roles_and_Responsibilities.html#Incubator+Project+Management+Committee+%28PMC%29">
+                      Incubator PMC (IPMC)
+                    </a>
+                    was responsible to the
+                    <a href="../incubation/Roles_and_Responsibilities.html#board">
+                      Board
+                    </a>
+                    for oversight. A graduated project must now take
+                    responsibility for its own oversight.
+                  </p>
+<p>
+                    A project needs to ensure that its code base is
+                    clean from an IP perspective. New committers need to
+                    recruited, educated and mentored. Quality releases
+                    need to be cut. Community spirit needs to be maintained
+                    and conflicts resolved positively. Board reports need
+                    to be accurate and prompt.
+                  </p>
+<p>
+                    Help is still available but the
+                    appropriate bodies (infrastructure, community, legal
+                    and so on) should now be approached directly.
+                  </p>
+</div>
+<h5 id='security'>Security</h5> 
+<div class="section-content">
+<p>
+
+                    Each project needs to be able to manage security issues
+                    discovered in their code. By their nature, these issues 
+                    need to be dealt with in private. These issues may either 
+                    be dealt with on a separate security list or on the 
+                    private list. Which list is suitable for security issues 
+                    should be noted.
+
+                  </p>
+<p>
+
+                    Volunteers need to be found from the
+                    <a href="http://www.apache.org/foundation/how-it-works.html#structure">
+                      PMC
+                    </a>
+                    to work with the Apache security team and act as
+                    first contacts on security matters. The new project 
+                    should make contact with the team soon after graduation
+                    and not wait for the first issue to be raised.
+
+                  </p>
+<p>
+                  
+                    Projects should adopt a positive attitude towards
+                    security issues. It is easy to gain a poor reputation
+                    by mishandling of these issues. There are many people
+                    at Apache with considerable experience in this area
+                    so ask first.
+                  
+                  </p>
+</div>
+</div>
+<h4 id='final'>Stay In Touch</h4>
+<div class="section-content">
+<p>
+                   Passing through the incubation process gives a very 
+                   valuable perspective. Please help to improve the process 
+                   by guiding new podlings and by developing improved policy
+                   and documentation on the <a href="lists.html#general+at+incubator.apache.org">general</a> list.
+                </p>
+</div>
+</div>
+</div>
+       </div>
+   </div>
+  
+   <div class="row"><div class="span16"><hr noshade="noshade" size="1"/></div></div>
+  <div class="row">
+   <div class="span16 footer">
+     Copyright &#169; 2009-2017 The Apache Software Foundation<br />
+     Licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License, Version 2.0</a>.<br/>
+     Apache Incubator, Apache, the Apache feather logo, and the Apache Incubator project logo are trademarks of The Apache Software Foundation.
+     
+     
+    </div>
+  </div>
+ </div> 
+ </body>
+</html>

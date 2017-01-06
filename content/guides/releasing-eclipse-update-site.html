@@ -1,0 +1,309 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+               "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--
+  Licensed to the Apache Software Foundation (ASF) under one
+  or more contributor license agreements.  See the NOTICE file
+  distributed with this work for additional information
+  regarding copyright ownership.  The ASF licenses this file
+  to you under the Apache License, Version 2.0 (the
+  "License"); you may not use this file except in compliance
+  with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing,
+  software distributed under the License is distributed on an
+  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  KIND, either express or implied.  See the License for the
+  specific language governing permissions and limitations
+  under the License. 
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" href="../style/bootstrap-1-3-0-min.css" type="text/css" />
+  <link rel="stylesheet" href="../style/style.css" type="text/css" />
+    <link rel="alternate" title="general@incubator.apache.org Archives" type="application/atom+xml" href="http://mail-archives.apache.org/mod_mbox/incubator-general/?format=atom" />
+    <title>Apache Incubator: Releasing Eclipse Update Sites (DRAFT) - Apache Incubator</title>
+  
+ </head>
+ <body>
+ <div class="container">
+  <div class="row">
+<div class="span12">
+  <a href="http://www.apache.org/"><img src="http://incubator.apache.org/images/asf_logo_wide_small.png" alt="The Apache Software Foundation" border="0" style="margin-top: 2px" width="62%"/></a>
+</div>
+<div class="span4">
+<a href="http://incubator.apache.org/"><img src="../images/egg-logo2.png" alt="Apache Incubator" border="0"/></a>
+</div>
+</div>
+  <div class="row"><div class="span16"><hr noshade="noshade" size="1"/></div></div>
+  
+  <div class="row">
+   <div class="span4">
+    <form action="http://www.google.com/search" method="get">
+     <input value="incubator.apache.org" name="sitesearch" type="hidden"/>
+     <input size="20" name="q" id="query" type="text" value="search..."
+      onclick="if(this.value == 'search...') {this.value = ''}"/>
+     <input name="Search" value="Go" type="submit"/>
+    </form>
+          <div class="menuheader">General</div>
+    <menu compact="compact">
+          <li><a href="../index.html">Welcome</a></li> 
+          <li><a href="../incubation/Process_Description.html">Incubation Overview</a></li> 
+          <li><a href="../incubation/Incubation_Policy.html">Incubation Policy</a></li> 
+          <li><a href="../guides/index.html">Incubation Guides</a></li> 
+          <li><a href="../incubation/Roles_and_Responsibilities.html">Roles and Responsibilities</a></li> 
+          <li><a href="../faq.html">General FAQ</a></li> 
+          <li><a href="http://wiki.apache.org/incubator">Incubator Wiki</a></li> 
+          <li><a href="../whoweare.html">Who We Are</a></li> 
+          <li><a href="../sitemap.html">Site Map</a></li> 
+            </menu>
+      <div class="menuheader">Status</div>
+    <menu compact="compact">
+          <li><a href="../projects/index.html">Project List</a></li> 
+          <li><a href="../clutch.html">Clutch Report</a></li> 
+          <li><a href="../ip-clearance/index.html">IP Clearance</a></li> 
+          <li><a href="../history/index.html">Incubator History</a></li> 
+            </menu>
+      <div class="menuheader">Entry Guides</div>
+    <menu compact="compact">
+          <li><a href="../guides/proposal.html">Proposal Guide</a></li> 
+            </menu>
+      <div class="menuheader">Podling Guides</div>
+    <menu compact="compact">
+          <li><a href="../guides/committer.html">Podling Committers</a></li> 
+          <li><a href="../guides/ppmc.html">Podling PMC (PPMC)</a></li> 
+          <li><a href="../guides/mentor.html">Podling Mentor</a></li> 
+          <li><a href="../guides/releasemanagement.html">Podling Releases</a></li> 
+          <li><a href="../guides/branding.html">Podling Branding/Publicity</a></li> 
+          <li><a href="../guides/sites.html">Podling Websites</a></li> 
+          <li><a href="../guides/graduation.html">Graduation</a></li> 
+          <li><a href="../guides/retirement.html">Retirement</a></li> 
+            </menu>
+      <div class="menuheader">Other Guides</div>
+    <menu compact="compact">
+          <li><a href="../guides/participation.html">Participation</a></li> 
+          <li><a href="../faq.html">General FAQ</a></li> 
+          <li><a href="../guides/pmc.html">Incubator PMC (IPMC)</a></li> 
+          <li><a href="../guides/chair.html">IPMC Chair</a></li> 
+          <li><a href="../guides/lists.html">Mailing Lists</a></li> 
+          <li><a href="../guides/website.html">Incubator Website</a></li> 
+            </menu>
+      <div class="menuheader">ASF</div>
+    <menu compact="compact">
+          <li><a href="http://www.apache.org/foundation/how-it-works.html">How Apache Works</a></li> 
+          <li><a href="http://www.apache.org/dev/">Developer Documentation</a></li> 
+          <li><a href="http://www.apache.org/foundation/">Foundation</a></li> 
+          <li><a href="http://www.apache.org/foundation/sponsorship.html">Sponsor Apache</a></li> 
+          <li><a href="http://www.apache.org/foundation/thanks.html">Thanks</a></li> 
+            </menu>
+    <!-- start Ads Server -->
+    <iframe src="http://www.apache.org/ads/buttonbar.html"
+     style="border-width:0; float: left" frameborder="0" scrolling="no"
+     width="135" height="265"></iframe>
+    <!-- end Ads Server -->
+   </div>
+   
+   <div class="span12">
+            <h2 id='intro'><img src="../images/redarrow.gif" />A Guide To Releasing Eclipse Update Sites during Incubation (DRAFT)</h2>
+<div class="section-content">
+<h3 id='TOC'>Contents</h3>
+<div class="section-content">
+<ul>
+<li><a href='#intro'>
+A Guide To Releasing Eclipse Update Sites during Incubation (DRAFT)
+ </a>
+ <ul>
+<li><a href='#TOC'>
+Contents
+ </a>
+</li>
+<li><a href='#status'>
+Status - DRAFT
+ </a>
+</li>
+<li><a href='#abstract'>
+Abstract
+ </a>
+</li>
+<li><a href='#setting-up-eclipse-mirroring'>
+Setting up Eclipse mirroring
+ </a>
+</li>
+<li><a href='#update-site-project'>
+Creating and maintaining an Eclipse update site project
+ </a>
+</li>
+<li><a href='#optimized-sites'>
+Optimized update sites
+ </a>
+</li>
+<li><a href='#sample-build-process'>
+Sample build process
+ </a>
+</li>
+<li><a href='#help-wanted'>
+Help Wanted!
+ </a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<h3 id='status'>Status - DRAFT</h3>
+<div class="section-content">
+<p>
+This document is under active <a href="#help-wanted">development</a>. This is a first 
+draft intended to allow public review. 
+        </p>
+</div>
+<h3 id='abstract'>Abstract</h3>
+<div class="section-content">
+<p> This document is descriptive, not normative. 
+          It aims to guide podlings through the process of 
+          releasing Eclipse update sites with proper mirroring.
+        </p>
+<p>
+          Podlings may distribute suitable artifacts through an 
+          <a href="http://www.eclipse.org">Eclipse</a> update site.
+          All artifacts distributed through the update site must satisfy the standard
+          <a href="#distribution-policy-overview">policy</a>. This implies that:
+          
+          <ul>
+            <li>The update site must be contained within the 
+            <a href="#glossary-podling-dist">podling distribution directory</a>.</li>
+            <li>All artifacts must be 
+            <a href="http://www.apache.org/dev/release-signing.html#keys-policy">signed and summed</a>.</li>
+            <li><a href="#distribution-mirroring">Mirroring</a> must be used.</li>
+          </ul>
+         </p>
+<p>
+          This guide describes a process for accomplishing this.
+        </p>
+</div>
+<h3 id='setting-up-eclipse-mirroring'>Setting up Eclipse mirroring</h3>
+<div class="section-content">
+<p>The Eclipse &lt;site&gt; information will contain a URL that Eclipse uses to get the
+        list of mirrors.  To set this up to use the automatic Apache mirroring system, 
+        make a pair of files in project website space, e.g. in a directory your-project-name/docs/mirrors-support
+          called something like: eclipse-update--xml.cgi and the same name
+          with the type ".html".</p>
+<p>In the .cgi version, put the following:
+<pre>#!/bin/sh
+# Wrapper script around mirrors.cgi script
+# (we must change to that directory in order for python to pick up the
+#  python includes correctly)
+cd /www/www.apache.org/dyn/mirrors
+/www/www.apache.org/dyn/mirrors/mirrors.cgi $*</pre>
+        </p>
+<p>In the .html version, put:
+<pre>&lt;mirrors&gt;
+&lt;mirror url="[preferred]/incubator/your-project-name/eclipse-update-site/"
+label="Recommended mirror: [preferred]"/&gt;
+[if-any http]
+  [for http]
+    &lt;mirror url="[http]/incubator/your-project-name/eclipse-update-site/"
+      label="[http]"/&gt;
+  [end]
+[end]
+[if-any backup]
+  [for backup]
+    &lt;mirror url="[backup]/incubator/your-project-name/eclipse-update-site/"
+      label="Backup mirror: [backup]"/&gt;
+  [end]
+[end]
+&lt;/mirrors&gt;</pre>
+        </p>
+<p>Doing this will return the list of mirrors to Eclipse, as generated by
+        the apache mirroring system</p>
+</div>
+<h3 id='update-site-project'>Creating and maintaining an Eclipse update site project</h3>
+<div class="section-content">
+<p>
+          Your project will be making many releases.  Some subset (or perhaps all) of the
+          releases will be available from the update site.  Overtime, the update site itself
+          will be updated to reflect new versions being added.  Plan your release process to 
+          allow for properly tagging the versions of the update site project that go with each
+          release.
+        </p>
+<p>
+          Your project may have several components; these may be on different release cycles.
+          A particular refresh of the update site might involve a subset of the components
+          being managed by the update site.  
+        </p>
+<p>
+          For those components that are being released, new Jars will be generated, signed, and added
+          to the update site.  In addition, you will be changing the site.xml file to reflect
+          these newly released components.  The generation process for the update site will need to
+          combine the newly release components, with the previously released things for previous
+          levels.  If the previous components are small, you can keep these in SVN; if they are large,
+          consider keeping them in www.apache.org/dist/incubator/your-project/eclipse-update-site
+          since they're there already.
+        </p>
+<p>The update site project is created with an Eclipse wizard.  You have to edit the
+        site.xml file.  Here's some tips:
+        <ul>
+          <li>If you are creating an optimized update site (see following section) include 
+            the pack200="true" attribute on the &lt;site&gt; tag, and set the 
+            digestURL attribute to refer to the directory containing the
+            digest.zip file.  You can use a relative directory (relative to the 
+            directory containing the site.xml file).  For example, if your
+            digest.zip was in the same directory as the site.xml, use "/"; if it 
+            was in a subdirectory of this called "digests", use "/digests".
+            </li>
+          <li><p>Set the <code>mirrorsURL</code> attribute to the location on your project's website where
+          the mirroring support cgi script is.  For instance, it might be something like this:
+          http://incubator.apache.org/your-project-name/mirrors-support/eclipse-update--xml.cgi</p>
+            
+            <p>This is the key to getting the mirroring to work with the Eclipse update process.</p>
+          </li>
+        </ul></p>
+</div>
+<h3 id='optimized-sites'>Optimized update sites</h3>
+<div class="section-content">
+<p>Starting with Eclipse 3.3, an optimized form of update sites is possible, through two
+        forms of optimization.  One is making use of the pack200 Jar optimizations, part of
+        Java 5 and beyond, and the other is having a compact form of the update site information
+        created and placed in a "digest.zip" file.  (Note: don't forget to have your signing 
+        process sign this zip.) See the <a href="http://wiki.eclipse.org/Update_Site_Optimization">
+          Update Site Optimization</a> article for details on creating optimized update sites.
+        </p>
+</div>
+<h3 id='sample-build-process'>Sample build process</h3>
+<div class="section-content">
+<p>A typical build script builds feature Jars from associated Eclipse feature projects,
+        copies (perhaps from Maven repositories to insure getting a particular release level)
+        jars for the plugins, runs the packer, and builds the digest.  Another script might
+          do signing and signature verification of the jar and zip artifacts.  For a sample
+          of scripts that do this, please refer to the SVN for 
+          <a href="http://svn.apache.org/viewvc/uima/uimaj/trunk/uimaj-eclipse-update-site/">
+            the UIMA project's update site</a> - in particular the build.xml and the 
+          signEclipseUpdateSite.sh script. 
+        </p>
+</div>
+<h3 id='help-wanted'>Help Wanted!</h3>
+<div class="section-content">
+<p>Help to improve the system by posting a patch for this document to the
+           <a href="https://issues.apache.org/jira/browse/INCUBATOR">incubator section</a> 
+           of JIRA or a comment to
+           <a href="lists.html#general+at+incubator.apache.org">general.AT.incubator.apache.org</a>.
+          </p>
+</div>
+</div>
+       </div>
+   </div>
+  
+   <div class="row"><div class="span16"><hr noshade="noshade" size="1"/></div></div>
+  <div class="row">
+   <div class="span16 footer">
+     Copyright &#169; 2009-2017 The Apache Software Foundation<br />
+     Licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License, Version 2.0</a>.<br/>
+     Apache Incubator, Apache, the Apache feather logo, and the Apache Incubator project logo are trademarks of The Apache Software Foundation.
+     
+     
+    </div>
+  </div>
+ </div> 
+ </body>
+</html>
