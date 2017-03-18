@@ -34,11 +34,8 @@
     </div>
     <div class="container">
       <div class="row">
-        <div class="col-md-10">
-          <a href="http://www.apache.org/"><img src="/images/asf_logo_wide_small.png" alt="The Apache Software Foundation" border="0" style="margin-top: 2px" width="62%"></a>
-        </div>
-        <div class="col-md-2">
-          <a href="http://incubator.apache.org/"><img src="/images/egg-logo2.png" alt="Apache Incubator" border="0"></a>
+        <div class="col-md-12">
+          <a href="http://incubator.apache.org/"><img src="/images/incubator_feather_egg_logo.png" height="120" alt="Apache Incubator" border="0"></a>
         </div>
       </div>
     </div>

@@ -5,7 +5,7 @@
 <div class="page-header">
     <h1>${content.title}</h1>
 </div>
-
+Days Between:
 ${content.body}
 <br />
 <br />
