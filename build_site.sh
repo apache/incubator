@@ -3,7 +3,7 @@
 rm -rf /tmp/incubator-site
 gradle jbake
 mkdir /tmp/incubator-site
-cp content/* /tmp/incubator-site
+cp -R content/* /tmp/incubator-site
 git checkout asf-site
 git clean -f -d
 git pull origin asf-site
