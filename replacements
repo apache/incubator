@@ -1,0 +1,2 @@
+Input: <a href=('|")(.+)('|")>(.+)</a>
+Output: link:$2[$4]

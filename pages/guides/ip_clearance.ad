@@ -1,0 +1,43 @@
+//Licensed under the Apache License, Version 2.0 (the "License");
+//you may not use this file except in compliance with the License.
+//You may obtain a copy of the License at
+//
+//http://www.apache.org/licenses/LICENSE-2.0
+//
+//Unless required by applicable law or agreed to in writing, software
+//distributed under the License is distributed on an "AS IS" BASIS,
+//WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+//See the License for the specific language governing permissions and
+//limitations under the License.
+= IP Clearance
+Apache Incubator PMC
+2002-10-16
+:jbake-type: guide
+:jbake-status: published
+:idprefix:
+:toc:
+:imagesdir: ../images/
+
+== Podling IP Clearance
+
+The board has charged the Incubator project with management of IP clearance for Apache.
+Instructions are link:http://incubator.apache.org/ip-clearance/index.html[here].
+
+These equally apply to podlings. The Incubator project is responsible for all podlings
+and so is the receiving PMC. So, when a podling requests IP clearance, the
+IPMC wears link:http://www.apache.org/foundation/how-it-works.html#hats[two hats].
+This may be a little confusing at first.
+
+The Incubator PMC must approve the clearance. This indicates that the project is
+happy to receive the code donated. When a new podling is created, this is done
+by the identification of existing codebases in the proposal. Otherwise, the
+IPMC delegates this decision to the PPMC.
+
+As usual, three binding votes are required. So, Mentors need to be involved in
+IP clearance for podlings. If too few binding VOTEs are posted on list,
+the VOTE will need to be posted to the general list for ratification.
+
+The second hat is technical IP clearance. Here, the IPMC needs to check that the
+paperwork is in order. Once the acceptance vote has been approved, an officer
+or member need to complete the process. For a podling, this will typically
+involve a Mentor.

@@ -1,4 +1,15 @@
-= Branding Guide
+//Licensed under the Apache License, Version 2.0 (the "License");
+//you may not use this file except in compliance with the License.
+//You may obtain a copy of the License at
+//
+//http://www.apache.org/licenses/LICENSE-2.0
+//
+//Unless required by applicable law or agreed to in writing, software
+//distributed under the License is distributed on an "AS IS" BASIS,
+//WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+//See the License for the specific language governing permissions and
+//limitations under the License.
+= Incubator Branding Guide
 Apache Incubator PMC
 2002-10-16
 :jbake-type: guide
@@ -7,12 +18,10 @@ Apache Incubator PMC
 :toc:
 :imagesdir: ../images/
 
-== Purpose of this document
 Podlings are, by definition, not yet fully accepted as part of the
 Apache Software Foundation. Therefore, they are subject to additional
 branding constraints, on top of the
-<a href="http://www.apache.org/foundation/marks/responsibility">branding
-guidelines for top-level projects</a>.
+link:http://www.apache.org/foundation/marks/responsibility[branding guidelines for top-level projects]
 
 == Publicity throughout the Incubation Process
 
@@ -22,15 +31,15 @@ on the types of publicity seeking that are permitted.  We refer to
 seeking publicity (seeding news stories, etc.).
 
 *Podling is in proposal/or pre-code-drop process*: No publicity
-seeking is permitted.  A podling is not allowed to be called <i>Apache
-&quot;Podling-Name&quot;</i> name until the podling is officially in
+seeking is permitted.  A podling is not allowed to be called Apache
+_Podling-Name_ name until the podling is officially in
 Incubation, public mailing lists are announced, and code has been
 submitted into our repositories.
 
 *Podling has been approved for incubation, podling has launched
 public mailing lists, and podling has dropped code into
-repository*: A podling *MUST* now be called _Apache
-&quot;Podling-Name&quot;_ (see link:#naming[Naming] below).
+repository*: A podling *MUST* now be called Apache
+_Podling-Name_ (see link:#Naming[Naming] below).
 A podling and affiliated persons can issue press releases that
 reference the podling, but cannot issue press releases with the
 specific intent of announcing the Podling.  Podling can conduct
@@ -51,16 +60,14 @@ joint press release with any other affiliated organizations or groups.
 == Naming
 
 After a podling has been approved, the lists are created, and the initial
-code drop has commenced, the podling _MUST_ be referred to as *Apache
-&quot;Podling-Name&quot;* _AND_ mention that the project is
-under Incubation.  Suitable mentions include:
+ code drop has commenced, the podling *MUST* be referred to as Apache
+ _Podling-Name_ *AND* mention that the project is
+ under Incubation.  Suitable mentions include:
 
-- Inclusion of the ++http://&quot;podling-name&quot;.incubator.apache.org/++  URL
-- *Apache &quot;Podling-Name&quot;* is currently undergoing Incubation at the Apache Software Foundation.
+- Inclusion of the http://_podling-name_.incubator.apache.org/ URL
+- Apache _Podling-Name_ is currently undergoing Incubation at the Apache Software Foundation.
 
-Other references may only be used upon prior approval by the
-Incubator PMC.  These statements only need to be disclosed upon the
-first reference in a document.
+Other references may only be used upon prior approval by the Incubator PMC.  These statements only need to be disclosed upon the first reference in a document.
 
 == Disclaimers
 
@@ -69,15 +76,18 @@ website and in all documentation (including releases) stating that
 they are in incubation. Podlings SHOULD use the following text for
 all disclaimers (replace the underlined phrases as appropriate):
 
-    Apache *Podling-Name* is an effort
-    undergoing incubation at The Apache Software Foundation (ASF),
-    sponsored by the *name of Apache TLP sponsor*. Incubation is required of all
-    newly accepted projects until a further review indicates that the
-    infrastructure, communications, and decision making process have
-    stabilized in a manner consistent with other successful ASF projects.
-    While incubation status is not necessarily a reflection of the
-    completeness or stability of the code, it does indicate that the
-    project has yet to be fully endorsed by the ASF.
+[quote]
+====
+Apache _Podling-Name_ is an effort
+undergoing incubation at The Apache Software Foundation (ASF),
+sponsored by the _name of Apache TLP sponsor_. Incubation is required of all
+newly accepted projects until a further review indicates that the
+infrastructure, communications, and decision making process have
+stabilized in a manner consistent with other successful ASF projects.
+While incubation status is not necessarily a reflection of the
+completeness or stability of the code, it does indicate that the
+project has yet to be fully endorsed by the ASF.
+====
 
 Podlings wishing to use a different disclaimer message MUST have the
 disclaimer approved by the Incubator PMC prior to use.
@@ -86,8 +96,7 @@ For releases, the text SHOULD be included in a separate DISCLAIMER file
 stored alongside the NOTICE and LICENSE files.
 
 == Incubator Logo
-Podlings websites SHOULD contain the Apache Incubator Project
-logo as sign of affiliation.
+Podlings websites should follow the logo description from link:press-kit.html[Press Kit for Podlings].
 
 == Publicity activities
 Podlings MUST coordinate with the Apache Public Relations Committee on

@@ -1,5 +1,16 @@
-= Committer Guide
-Apache Incubator PMC`
+//Licensed under the Apache License, Version 2.0 (the "License");
+//you may not use this file except in compliance with the License.
+//You may obtain a copy of the License at
+//
+//http://www.apache.org/licenses/LICENSE-2.0
+//
+//Unless required by applicable law or agreed to in writing, software
+//distributed under the License is distributed on an "AS IS" BASIS,
+//WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+//See the License for the specific language governing permissions and
+//limitations under the License.
+= Committers
+Apache Incubator PMC
 2002-10-16
 :jbake-type: guide
 :jbake-status: published
@@ -7,78 +18,69 @@ Apache Incubator PMC`
 :toc:
 :imagesdir: ../images/
 
-The link:http://incubator.apache.org/incubation/Roles_and_Responsibilities.html#Committers[Roles and Responsibilities] document describes the general role of a
-committer on an incubating project. This page provides links to
-more information to help new committers get started.
+The link:/policy/incubation.html#Committers[Roles and Responsibilities] document describes the general role of a
+committer on an incubating project. This page provides links to more information to help new committers get started.
 
 == Mailing Lists
-
 Everything -- but *everything*-- inside the Apache world
 occurs or is reflected in email. As some people say, 'If it isn't
 in my email, it didn't happen.' Decisions only get made on public
-Apache mail lists -- not anywhere off list, such as IRC, IM, or private 
+Apache mail lists -- not anywhere off list, such as IRC, IM, or private
 emails.
  Each project has a set of lists, which are typically called
-*project*-dev, *project*-user, and
-*project*-commits. A few link:http://www.apache.org/foundation/mailinglists.html[Apache-wide lists] cross all boundaries, including:
+dev@*project*, user@*project*, and
+commits@*project*. A few link:http://www.apache.org/foundation/mailinglists.html[Apache-wide lists] cross all boundaries, including:
 
-- _committers_: sends important messages to all Apache committers; it's not used for discussions;
-- _community_: where all Apache committers can discuss things that are about Apache;
-- _infrastructure_: where the roots and the infrastructure team discuss and work on the Apache infrastructure needs;
-- _legal-discuss_: where Apache committers can ask questions that have a legal aspect;
-- _repository_: discussions about the Apache artifact repository;
-- _party_: where people plan how to have fun. :-)
+- *committers*: sends important messages to all
+Apache committers; it's not used for discussions;
+- *community*: where all Apache committers can
+discuss things that are about Apache;
+- *infrastructure*: where the roots and the
+infrastructure team discuss and work on the Apache
+infrastructure needs;
+- *legal-discuss*: where Apache committers can
+ask questions that have a legal aspect;
+- *repository*: discussions about the Apache artifact repository;
+- *party*: where people plan how to have fun. :-)
 
-Action items for committers include:
+=== Action items for committers include:
 
-- Become familiar with Apache developer link:http://www.apache.org/dev/contrib-email-tips.html[Tipsfor email contributors].
-- Subscribe to the -user, -dev, and -commits lists for your project.
+-  Become familiar with Apache developer link:http://www.apache.org/dev/contrib-email-tips.html[Tips for email contributors].
+- Subscribe to the user, dev, and commits lists for your project.
 - Become aware of what else is going on in the Incubator by subscribing to the Incubator's general list.
-- Become aware of what else is going on at the ASF by subscribing to the
-link:http://www.apache.org/foundation/mailinglists.html#foundation-community[community],
-link:http://www.apache.org/foundation/mailinglists.html#foundation-infrastructure[infrastructure], 
-and link:http://www.apache.org/foundation/mailinglists.html#foundation-legal[legal-discuss] Apache-wide lists.
-
+- Become aware of what else is going on at the ASF by subscribing to the link:http://www.apache.org/foundation/mailinglists.html#foundation-community[community], link:http://www.apache.org/foundation/mailinglists.html#foundation-infrastructure[infrastructure], and link:http://www.apache.org/foundation/mailinglists.html#foundation-legal[legal-discuss] Apache-wide lists.
 
 Apache also has private lists. For example, your project will
-probably have a private mail list named *project*-private, 
-which your Podling PMC will use for sensitive discussions. Never 
-mix public and private mail lists in the same post -- see the 
+probably have a private mail list named private@*project*.incubator.apache.org,
+which your Podling PMC will use for sensitive discussions. Never
+mix public and private mail lists in the same post -- see the
 section titled link:http://www.apache.org/foundation/how-it-works.html#management[Balancing confidentiality and public discussion]
 in link:http://www.apache.org/foundation/how-it-works.html[How it Works]. For example, never include both your dev and private
 lists in the same post. Posting to the dev list is sufficient
 because each member of your Podling PMC will also be on that
-list. 
+list.
 
 == Project Web Site
-The Incubator link:sites.html[Podling Websites] guide documents how to get 
-your project web site going.
+The Incubator link:sites.html[Podling Websites] guide documents how to get your project web site going.
 
 == Committer Resources
 
-- The link:http://www.apache.org/dev/new-committers-guide.html[Guide for New Committers ]is a great place to start and
-points to additional committer-only resources.
+- The link:http://www.apache.org/dev/new-committers-guide.html[Guide for New Committers ]is a great place to start and points to additional committer-only resources.
+- Browse the pages at link:http://www.apache.org/dev[http://www.apache.org/dev/] often.
+- Subscribe to the link:http://www.apache.org/foundation/mailinglists.html#foundation-infrastructure[infrastructure] list, then raise awareness on your project on what goes on behind the scenes.
 
-- Browse the pages at http://www.apache.org/dev/ often.
-
-- Subscribe to the link:http://www.apache.org/foundation/mailinglists.html#foundation-infrastructure[infrastructure] list, then
-raise awareness on your project on what goes on behind the
-scenes.
-- Be proactive about responding to infrastructure issues on
-your project mailing lists. Does the web server seem to be
-down? Is Jira or Subversion down? Check the link:http://www.apache.org/dev/#status[status of servers]
-and explain the reason to your project lists (as you can
-see, no need to alert the ASF infrastructure people).
+Be proactive about responding to infrastructure issues on your project mailing lists. Does the web server seem to be down? Is Jira or Subversion down? Check the link:http://www.apache.org/dev/#status[status of servers]
+and explain the reason to your project lists (as you can see, no need to alert the ASF infrastructure people).
 
 
 == Podling PMC (PPMC)
-
-If you are a member of your PPMC, become familiar with the link:../incubation/Incubation_Policy.html[Incubation Policy]
-and see the link:ppmc.html[Podling PMC Guide]. 
+If you are a member of your PPMC, become familiar with the link:/policy/incubation.html[Incubation Policy] and see the link:ppmc.html[Podling PMC Guide].
 
 == Questions?
+If you have any questions, please ask on the Incubator's
+general mail list.
+Don't forget to check the information at:
 
-If you have any questions, please ask on the Incubator's general mail list. Don't forget to check the information at:
-
-- http://www.apache.org/dev/ -- it is one of the most current resources for committers.
+- link:http://www.apache.org/dev[http://www.apache.org/dev/]
+** it is one of the most current resources for committers.
 - link:general.html#FAQ[Incubator General FAQ]
