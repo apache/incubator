@@ -1,7 +1,7 @@
 #!/bin/bash
 
 rm -rf /tmp/incubator-site
-gradle jbake
+$JBAKE_HOME/bin/jbake -b
 mkdir /tmp/incubator-site
 cp -R build/jbake/* /tmp/incubator-site
 git checkout asf-site
