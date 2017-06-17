@@ -3,7 +3,7 @@
 WORKDIR=/tmp/incubator-site
 rm -rf $WORKDIR
 mkdir -p $WORKDIR
-$JBAKE_HOME/bin/jbake -b . $WORKDIR
+./bake.sh -b . $WORKDIR
 git checkout asf-site
 git clean -f -d
 git pull origin asf-site
