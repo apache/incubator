@@ -10,6 +10,7 @@
     <meta name="generator" content="JBake">
 
     <!-- Le styles -->
+    <link href="<%if (content.rootpath) {%>${content.rootpath}<% } else { %><% }%>css/incubator.css" rel="stylesheet">
     <link href="<%if (content.rootpath) {%>${content.rootpath}<% } else { %><% }%>css/bootstrap.css" rel="stylesheet">
     <link href="<%if (content.rootpath) {%>${content.rootpath}<% } else { %><% }%>css/asciidoctor.css" rel="stylesheet">
     <link href="<%if (content.rootpath) {%>${content.rootpath}<% } else { %><% }%>css/base.css" rel="stylesheet">

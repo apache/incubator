@@ -28,15 +28,25 @@
                 <%}%>
               </ul>
             </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">ASF <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="http://www.apache.org/foundation/how-it-works.html">How Apache Works</a></li>
+                <li><a href="http://www.apache.org/dev/">Developer Documentation</a></li>
+                <li><a href="http://www.apache.org/foundation/">Foundation</a></li>
+                <li><a href="http://www.apache.org/foundation/sponsorship.html">Sponsor Apache</a></li>
+                <li><a href="http://www.apache.org/foundation/thanks.html">Thanks</a></li>
+              </ul>
+            </li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
     </div>
     <div class="container">
       <div class="row">
-        <div class="col-md-12">
-          <a href="http://incubator.apache.org/"><img src="/images/incubator_feather_egg_logo.png" height="120" alt="Apache Incubator" border="0"></a>
-        </div>
+        <div class="col-md-4 vcenter"><a href="https://www.apache.org/"><img src="http://www.apache.org/img/asf_logo.png" alt="The Apache Software Foundation" border="0" style="margin-top: 2px" width="250"></a></div>
+          <div class="col-md-4 vcenter"><a href="/"><img src="https://incubator.apache.org/images/incubator_feather_egg_logo_sm.png" alt="The Apache Software Foundation Incubator" border="0" style="margin-top: 2px" height="100"></a></div>
+          <div class="col-md-4 vcenter"><a href="https://www.apache.org/foundation/contributing.html"><img src="https://www.apache.org/images/SupportApache-small.png" height="75" width="75"></a></div>
       </div>
     </div>
-    <div class="container">
+    <div class="top-container container">
