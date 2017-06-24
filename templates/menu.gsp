@@ -8,7 +8,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="<%if (content.rootpath) {%>${content.rootpath}<% } else { %><% }%>"><i class="icon-home"></i>Apache Incubator</a>
+          <a class="navbar-brand" href="${config.site_host}"><i class="icon-home"></i>Apache Incubator</a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
@@ -21,10 +21,27 @@
               </ul>
             </li>
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Guides <b class="caret"></b></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Proposals <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <%proposalGuides.each {guide -> %>
+                <li><a href="${config.site_host}/${guide.uri}">${guide.title}</a></li>
+                <%}%>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Podling Guides <b class="caret"></b></a>
               <ul class="dropdown-menu">
                 <%guides.each {guide -> %>
                   <li><a href="${config.site_host}/${guide.uri}">${guide.title}</a></li>
+                <%}%>
+                <li><a href="/clutch">Clutch Report</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">PMC Guides <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <%pmcGuides.each {guide -> %>
+                <li><a href="${config.site_host}/${guide.uri}">${guide.title}</a></li>
                 <%}%>
               </ul>
             </li>
