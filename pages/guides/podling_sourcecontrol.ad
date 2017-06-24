@@ -36,8 +36,7 @@ exists, incubator group members gain access without further work.  Once
 the podling graduates, a dedicated ldap group will be created to manage
 access and only those members will be given access.
 
-
-==== Set Up SVN Repository
+=== Set Up SVN Repository
 
 If the podling chooses svn, you must create the
 repository and give read/write access to the repository
@@ -83,7 +82,7 @@ link:#who-auth-karma[Authorization] karma is restricted. If no Mentor
 has this karma then post an email to IPMC private list requesting that this
 is actioned.
 
-=== Authorize Committers
+== Authorize Committers
 
 The process to add committers to the podling depends on whether
 the new committer is already an Apache committer and whether
@@ -106,3 +105,14 @@ link:#who-auth-karma[incubator authorization] is required.
 
 Perform one of the above procedures depending on whether the
 committer is already an Apache committer on another project.
+
+== Incubator Access Authorization
+
+Special karma is required to authorize incubator access for committers.
+This karma is limited to:
+
+- IPMC Members
+- Secretary
+- Infrastructure
+
+IPMC Members should use link:https://whimsy.apache.org/roster/committee/incubator[Whimsy's Roster Tool] to add existing commiters.

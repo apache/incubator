@@ -20,6 +20,57 @@ Apache Incubator PMC
 
 == Podling IP Clearance
 
+=== Background
+
+Existing codebases need to be imported through the standard IP clearance
+process. This means that a Software Grant Agreement
+(link:http://www.apache.org/licenses/#grants[SGA])
+or Contributor License Agreement
+(link:http://www.apache.org/licenses/#clas[CLA])
+need to be submitted
+for all copyright owners. This process may take a while so it is best to
+start as soon as the podling is accepted.
+
+The acceptance of the initial codebases is approved by the
+IPMC as part of the acceptance motion. So, no vote is required by the
+PPMC. Otherwise, follow the standard IP clearance process for podlings.
+
+=== Establishing Provenance
+
+Paperwork needs to be submitted to Apache that grants a legal license on the code
+to the Apache Software Foundation.
+As a rule of thumb, if all the material contributors to the code
+are joining the podling as initial contributors, then CLAs (individual or corporate)
+are all you need. The individuals must submit the 'individual' CLA (ICLA).
+If there are employers involved who might claim
+rights in the code, then corporate CLAs (CCLAs) are needed for those employers.
+
+If, on the other hand, there are material contributors who are <strong>
+not</strong> joining the podling as initial contributors, or if there
+are additional corporate entities who can claim rights in the code,
+then SGAs are required from those individuals or corporations.
+
+The foregoing is only a rule of thumb. Generally, the mentors of a new project
+will need to consult with general@incubator.apache.org or the Apache legal team
+about the particular circumstances.
+
+It may take some time to track down all contributors. It is not necessary to
+have paperwork on file for all contributions before the code is imported.
+It may be necessary to reverse some patches and rewrite areas of code if
+contributors cannot be found or at not happy about given Apache written
+permission to use their code.
+
+No releases are possible until the provenance of all the code to be release
+has been clearly established and the relevant paperwork filed with Apache. It is
+therefore important to keep the status updated.
+
+Receipts of ICLAs, CCLAs, and SGAs are recorded by the secretary in
+the private foundation repository. Reading is restricted to members and officers
+of the foundation. If there is no officer or member available then ask on the
+general list.
+
+=== IPMC Responsibility around IP Clearance
+
 The board has charged the Incubator project with management of IP clearance for Apache.
 Instructions are link:http://incubator.apache.org/ip-clearance/index.html[here].
 
