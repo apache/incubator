@@ -100,6 +100,8 @@
                 
                   <li><a href="https://incubator.apache.org/ngtest/guides/sites.html">Podling Websites</a></li>
                 
+                  <li><a href="https://incubator.apache.org/ngtest/guides/transitioning_asf.html">Initial Code Import</a></li>
+                
                 <li><a href="/clutch">Clutch Report</a></li>
               </ul>
             </li>
@@ -158,9 +160,11 @@ Estimated Reading Time: <span class="eta"></span>
 <li><a href="#set_up_podling_source_repository">Set Up Podling Source Repository</a>
 <ul class="sectlevel2">
 <li><a href="#set_up_git_repository">Set up GIT Repository</a></li>
-<li><a href="#authorize_committers">Authorize Committers</a></li>
+<li><a href="#set_up_svn_repository">Set Up SVN Repository</a></li>
 </ul>
 </li>
+<li><a href="#authorize_committers">Authorize Committers</a></li>
+<li><a href="#incubator_access_authorization">Incubator Access Authorization</a></li>
 </ul>
 </div>
 <div class="sect1">
@@ -185,8 +189,9 @@ exists, incubator group members gain access without further work.  Once
 the podling graduates, a dedicated ldap group will be created to manage
 access and only those members will be given access.</p>
 </div>
-<div class="sect3">
-<h4 id="set_up_svn_repository">Set Up SVN Repository</h4>
+</div>
+<div class="sect2">
+<h3 id="set_up_svn_repository">Set Up SVN Repository</h3>
 <div class="paragraph">
 <p>If the podling chooses svn, you must create the
 repository and give read/write access to the repository
@@ -245,8 +250,10 @@ is actioned.</p>
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="authorize_committers">Authorize Committers</h3>
+</div>
+<div class="sect1">
+<h2 id="authorize_committers">Authorize Committers</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>The process to add committers to the podling depends on whether
 the new committer is already an Apache committer and whether
@@ -290,6 +297,30 @@ podling proposal to the incubator and is already an Apache committer, only
 <p>Perform one of the above procedures depending on whether the
 committer is already an Apache committer on another project.</p>
 </div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="incubator_access_authorization">Incubator Access Authorization</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Special karma is required to authorize incubator access for committers.
+This karma is limited to:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>IPMC Members</p>
+</li>
+<li>
+<p>Secretary</p>
+</li>
+<li>
+<p>Infrastructure</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>IPMC Members should use <a href="https://whimsy.apache.org/roster/committee/incubator">Whimsy&#8217;s Roster Tool</a> to add existing commiters.</p>
 </div>
 </div>
 </div></p>
