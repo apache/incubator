@@ -30,6 +30,7 @@ This guide is a descriptive and at times
 discursive document. It describes established practices.
 It is informational not normative. Policy is laid down in the
 link:/incubation/Incubation_Policy.html[Incubation Policy].
+
 == Overview
 
 After the Podling has been accepted by the Incubator PMC, one of the mentors
@@ -106,6 +107,10 @@ The status page is a useful aid to workflow. Volunteers
 can use it to sign up to the various tasks and monitor their
 progress. Once the mailing lists are set up and prospective
 committers subscribe then these may be used for discussion.
+
+== Resources
+
+Resources should be requested in a particular order, and based on paperwork processed.  Do not request source repositories before SGAs are filed, for instance.
 
 === Request Required Resources
 
@@ -211,7 +216,7 @@ Request an issue tracker on the link:https://issues.apache.org/jira/servicedesk/
 
 Remember to post an email announcing that the issue tracker is available.
 
-=== [DRAFT] Podling Bootstrap
+== [DRAFT] Podling Bootstrap
 
 *NOTE* This section is a DRAFT under development.
 
@@ -232,7 +237,7 @@ the tasks:
 - link:#create-website[Create website] [*link:#who-committers[Prospective committers]*]
 -- Consider and plan link:#web-site-transition[web site transition]
 
-=== Mentors MUST be on the IPMC
+== Mentors MUST be on the IPMC
 
 Mentors link:/policy/incubation.html#Mentor[MUST] be on the IPMC.  This should be checked prior to beginning incubation.
 Any prospective Mentors who are not yet on the IPMC should ask to be added (by election).
@@ -243,7 +248,7 @@ Email the application to *private@incubator.apache.org*.
 This process may take a few days.
 ----
 
-=== CLA and CCLA Submission
+== CLA and CCLA Submission
 
 Prospective committers need to submit a Contributor License Agreement
 (link:http://www.apache.org/licenses/#clas[CLA]).
