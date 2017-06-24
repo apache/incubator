@@ -50,11 +50,13 @@
               <ul class="dropdown-menu">
                 <li><a href="http://www.apache.org/foundation/how-it-works.html">How Apache Works</a></li>
                 <li><a href="http://www.apache.org/dev/">Developer Documentation</a></li>
+                <li><a href="http://www.apache.org/legal/">Legal</a></li>
                 <li><a href="http://www.apache.org/foundation/">Foundation</a></li>
                 <li><a href="http://www.apache.org/foundation/sponsorship.html">Sponsor Apache</a></li>
                 <li><a href="http://www.apache.org/foundation/thanks.html">Thanks</a></li>
               </ul>
             </li>
+            <li><a href="${config.site_host}/faq.html">FAQs</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
