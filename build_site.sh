@@ -17,9 +17,9 @@ svn co $SVN_REPO $SVN_CO_DIR
 (
     cd $SVN_CO_DIR
     ant docs -Ddocs.dest=$SVN_BUILD_DIR
-    mv $SVN_CO_DIR/ip-clearance $WORKDIR
-    mv $SVN_CO_DIR/projects $WORKDIR
-    mv $SVN_CO_DIR/clutch $WORKDIR
+    mv $SVN_BUILD_DIR/ip-clearance $WORKDIR
+    mv $SVN_BUILD_DIR/projects $WORKDIR
+    mv $SVN_BUILD_DIR/clutch $WORKDIR
 )
 
 # push all of the results to asf-site
