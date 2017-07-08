@@ -1,9 +1,28 @@
 #!/bin/bash
 
 WORKDIR=/tmp/incubator-site
+SVN_CO_DIR=/tmp/incubator-site-content
+SVN_BUILD_DIR=/tmp/incubator-site-build
+SVN_REPO=http://svn.apache.org/repos/asf/incubator/public/trunk/
+
+# build the git bits
 rm -rf $WORKDIR
 mkdir -p $WORKDIR
 ./bake.sh -b . $WORKDIR
+
+# build the svn bits
+rm -rf $SVN_CO_DIR
+rm -rf $SVN_BUILD_DIR
+svn co $SVN_REPO $SVN_CO_DIR
+(
+    cd $SVN_CO_DIR
+    ant docs -Ddocs.dest=$SVN_BUILD_DIR
+    mv $SVN_CO_DIR/ip-clearance $WORKDIR
+    mv $SVN_CO_DIR/projects $WORKDIR
+    mv $SVN_CO_DIR/clutch $WORKDIR
+)
+
+# push all of the results to asf-site
 git checkout asf-site
 git clean -f -d
 git pull origin asf-site
