@@ -18,7 +18,7 @@ Our Current Podlings:
         <% rootNode.children().each { podling ->
             if (podling.@status == 'current') {
         %>
-        <div class="col-md-3"><a href="/projects/${podling.@resource}.html">${podling.@name}</a></div>
+        <div class="col-md-2"><a href="/projects/${podling.@resource}.html">${podling.@name}</a></div>
         <%
                     }
             } %>
