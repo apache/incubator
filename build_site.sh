@@ -29,5 +29,6 @@ git pull origin asf-site
 rm -rf *
 cp -a $WORKDIR/* .
 git add .
+git add .htaccess
 git commit -m "Automatic Site Publish by git-site-role"
 git push origin asf-site
