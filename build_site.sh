@@ -27,9 +27,9 @@ git checkout asf-site
 git clean -f -d
 git pull origin asf-site
 rm -rf *
-cp -a $WORKDIR/* .
-cp $WORKDIR/.htaccess .
+mkdir content
+cp -a $WORKDIR/* content
+cp -a $WORKDIR/.htaccess content
 git add .
-git add .htaccess
 git commit -m "Automatic Site Publish by git-site-role"
 git push origin asf-site
