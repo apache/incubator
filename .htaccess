@@ -44,6 +44,7 @@ Redirect Permanent /devicemap http://devicemap.apache.org
 Redirect Permanent /directmemory http://directmemory.apache.org
 Redirect Permanent /directory http://directory.apache.org
 Redirect Permanent /drill http://drill.apache.org
+Redirect Permanent /eagle http://eagle.apache.org
 Redirect Permanent /easyant http://ant.apache.org/easyant
 Redirect Permanent /empire-db http://empire-db.apache.org
 Redirect Permanent /esme http://esme.apache.org
@@ -150,17 +151,22 @@ Redirect Permanent /xmlbeans http://xmlbeans.apache.org
 
 # retired podlings
 # All URLs must be redirected to the status page as the original site as been dropped
+# N.B. This can only be done here for old-style URLs under i.a.o
 RedirectMatch Permanent ^/agila(/.*)?$ http://incubator.apache.org/projects/agila.html
 RedirectMatch Permanent ^/alois(/.*)?$ http://incubator.apache.org/projects/alois.html
 RedirectMatch Permanent ^/altrmi(/.*)?$ http://incubator.apache.org/projects/altrmi.html
 RedirectMatch Permanent ^/awf(/.*)?$ http://incubator.apache.org/projects/awf.html
 RedirectMatch Permanent ^/axion(/.*)?$ http://incubator.apache.org/projects/axion.html
 RedirectMatch Permanent ^/bluesky(/.*)?$ http://incubator.apache.org/projects/bluesky.html
+RedirectMatch Permanent ^/blur(/.*)?$ http://incubator.apache.org/projects/blur.html
 RedirectMatch Permanent ^/composer(/.*)?$ http://incubator.apache.org/projects/composer.html
+# https://svn.apache.org/repos/asf/incubator/concerted/site/.htaccess
 RedirectMatch Permanent ^/corinthia(/.*)?$ http://incubator.apache.org/projects/corinthia.html
+# https://svn.apache.org/repos/asf/incubator/cotton/site/publish/.htaccess
 RedirectMatch Permanent ^/depot(/.*)?$ http://incubator.apache.org/projects/depot.html
 RedirectMatch Permanent ^/droids(/.*)?$ http://incubator.apache.org/projects/droids.html
 RedirectMatch Permanent ^/graffito(/.*)?$ http://incubator.apache.org/projects/graffito.html
+# TODO http://hdt.incubator.apache.org/
 RedirectMatch Permanent ^/heraldry(/.*)?$ http://incubator.apache.org/projects/heraldry.html
 RedirectMatch Permanent ^/hise(/.*)?$ http://incubator.apache.org/projects/hise.html
 RedirectMatch Permanent ^/imperius(/.*)?$ http://incubator.apache.org/projects/imperius.html
@@ -172,11 +178,15 @@ RedirectMatch Permanent ^/kitty(/.*)?$ http://incubator.apache.org/projects/kitt
 RedirectMatch Permanent ^/lokahi(/.*)?$ http://incubator.apache.org/projects/lokahi.html
 RedirectMatch Permanent ^/lucene4c(/.*)?$ http://incubator.apache.org/projects/lucene4c.html
 RedirectMatch Permanent ^/nmaven(/.*)?$ http://incubator.apache.org/projects/nmaven.html
+RedirectMatch Permanent ^/npanday(/.*)?$ http://incubator.apache.org/projects/npanday.html
 RedirectMatch Permanent ^/olio(/.*)?$ http://incubator.apache.org/projects/olio.html
+# TODO http://openaz.incubator.apache.org/
 RedirectMatch Permanent ^/photark(/.*)?$ http://incubator.apache.org/projects/photark.html
+# TODO http://pirk.incubator.apache.org/
 RedirectMatch Permanent ^/provisionr(/.*)?$ http://incubator.apache.org/projects/provisionr.html
 RedirectMatch Permanent ^/rcf(/.*)?$ http://incubator.apache.org/projects/rcf.html
 RedirectMatch Permanent ^/ripple(/.*)?$ http://incubator.apache.org/projects/ripple.html
+RedirectMatch Permanent ^/s4(/.*)?$ http://incubator.apache.org/projects/s4.html
 RedirectMatch Permanent ^/socialsite(/.*)?$ http://incubator.apache.org/projects/socialsite.html
 RedirectMatch Permanent ^/stonehenge(/.*)?$ http://incubator.apache.org/projects/stonehenge.html
 RedirectMatch Permanent ^/tashi(/.*)?$ http://incubator.apache.org/projects/tashi.html
@@ -189,8 +199,14 @@ RedirectMatch Permanent ^/xmlbeanscxx(/.*)?$ http://incubator.apache.org/project
 RedirectMatch Permanent ^/yoko(/.*)?$ http://incubator.apache.org/projects/yoko.html
 RedirectMatch Permanent ^/zetacomponents(/.*)?$ http://incubator.apache.org/projects/zetacomponents.html
 
+# from the old webiste
+Redirect Permanent /incubation/Incubation_Policy.html /policy/incubation.html
+Redirect Permanent /incubation/Process_Description.html /policy/process.html
+Redirect Permanent /incubation/Roles_and_Responsibilities.html /policy/roles_and_responsibilities.html
+
 # other URLs
 RedirectMatch Permanent howtoparticipate.html /guides/participation.html
+RedirectMatch Permanent clutch.html /clutch/index.html
 Redirect Permanent /falcon http://falcon.apache.org
 Redirect Permanent /flink http://flink.apache.org
 Redirect Permanent /samza http://samza.apache.org
@@ -202,3 +218,4 @@ Redirect Permanent /calcite http://calcite.apache.org
 Redirect Permanent /brooklyn http://brooklyn.apache.org
 Redirect Permanent /reef http://reef.apache.org
 Redirect Permanent /kylin http://kylin.apache.org
+
