@@ -54,9 +54,9 @@
           <td>group-3</td>
           <td class="cool1">True</td>
           <td class="cool1"><a href="projects/ariatosca.html">True</a></td>
-          <td>2017-06-10</td>
+          <td>2017-07-11</td>
           <td></td>
-          <td>1,1,2</td>
+          <td>2,2,3</td>
           <td class="care">-</td>
           <td class="care number">0</td>
           <td class="care">False</td>
@@ -65,15 +65,15 @@
           <td class="cool1"><a href="http://mail-archives.apache.org/mod_mbox/ariatosca-commits/">True</a></td>
           <td class="cool1"><a href="http://ariatosca.incubator.apache.org/">True</a></td>
           <td class="cool1"><a href="http://www.apache.org/dyn/closer.cgi/incubator/ariatosca/">True</a></td>
-          <td class="care">False</td>
-          <td class="care">False</td>
+          <td class="cool1"><a href="http://www.apache.org/dist/incubator/ariatosca/KEYS">True</a></td>
+          <td class="cool1"><a href="http://www.apache.org/dyn/closer.cgi/incubator/ariatosca/">True</a></td>
         </tr>
         <tr id="batchee">
           <td>BatchEE</td>
           <td>Incubator</td>
           <td>2013-10-03</td>
           <td></td>
-          <td>False</td>
+          <td class="care">True</td>
           <td>group-1</td>
           <td class="cool1">True</td>
           <td class="cool1"><a href="projects/batchee.html">True</a></td>
@@ -96,7 +96,7 @@
           <td>Incubator</td>
           <td>2014-01-05</td>
           <td></td>
-          <td>False</td>
+          <td class="care">True</td>
           <td>group-1</td>
           <td class="cool1">True</td>
           <td class="cool1"><a href="projects/datafu.html">True</a></td>
@@ -169,9 +169,9 @@
           <td>group-1</td>
           <td class="cool1">True</td>
           <td class="cool1"><a href="projects/freemarker.html">True</a></td>
-          <td>2017-03-26</td>
+          <td>2017-07-17</td>
           <td></td>
-          <td>0,1,5</td>
+          <td>2,3,7</td>
           <td class="care">-</td>
           <td class="cool2 number">1</td>
           <td class="care">False</td>
@@ -217,7 +217,7 @@
           <td class="cool1"><a href="projects/gobblin.html">True</a></td>
           <td>2017-03-16</td>
           <td></td>
-          <td>0,2,3</td>
+          <td>0,0,3</td>
           <td class="care">-</td>
           <td class="care number">0</td>
           <td class="care">False</td>
@@ -307,9 +307,9 @@
           <td>group-1</td>
           <td class="cool1">True</td>
           <td class="cool1"><a href="projects/hawq.html">True</a></td>
-          <td>2017-03-02</td>
+          <td>2017-07-11</td>
           <td></td>
-          <td>0,0,4</td>
+          <td>1,1,5</td>
           <td class="cool1 number"><a href="https://people.apache.org/phonebook.html?podling=hawq">52</a></td>
           <td class="cool1 number">6</td>
           <td class="care">False</td>
@@ -327,18 +327,18 @@
           <td>2017-06-23</td>
           <td></td>
           <td class="care">True</td>
-          <td>group-3</td>
+          <td>group-2</td>
           <td class="cool1">True</td>
           <td class="cool1"><a href="projects/heron.html">True</a></td>
-          <td>2017-07-03</td>
+          <td>2017-07-11</td>
           <td></td>
-          <td>2,-,-</td>
+          <td>3,-,-</td>
           <td class="care">-</td>
           <td class="care number">0</td>
           <td class="care">False</td>
           <td class="cool1"><a href="https://issues.apache.org/jira/browse/HERON">True</a></td>
-          <td class="care">False</td>
-          <td class="care">False</td>
+          <td class="cool1"><a href="http://mail-archives.apache.org/mod_mbox/heron-dev/">True</a></td>
+          <td class="cool1"><a href="http://mail-archives.apache.org/mod_mbox/heron-commits/">True</a></td>
           <td class="care">False</td>
           <td class="care">False</td>
           <td class="care">False</td>
@@ -363,29 +363,6 @@
           <td class="cool1"><a href="http://mail-archives.apache.org/mod_mbox/hivemall-dev/">True</a></td>
           <td class="cool1"><a href="http://mail-archives.apache.org/mod_mbox/hivemall-commits/">True</a></td>
           <td class="cool1"><a href="http://hivemall.incubator.apache.org/">True</a></td>
-          <td class="care">False</td>
-          <td class="care">False</td>
-          <td class="care">False</td>
-        </tr>
-        <tr id="horn">
-          <td>HORN</td>
-          <td>Incubator</td>
-          <td>2015-09-04</td>
-          <td></td>
-          <td class="care">True</td>
-          <td>group-1</td>
-          <td class="cool1">True</td>
-          <td class="cool1"><a href="projects/horn.html">True</a></td>
-          <td>2017-02-06</td>
-          <td></td>
-          <td>0,0,3</td>
-          <td class="cool1 number"><a href="https://people.apache.org/phonebook.html?podling=horn">10</a></td>
-          <td class="cool1 number">2</td>
-          <td class="care">False</td>
-          <td class="cool1"><a href="https://issues.apache.org/jira/browse/HORN">True</a></td>
-          <td class="cool1"><a href="http://mail-archives.apache.org/mod_mbox/horn-dev/">True</a></td>
-          <td class="care">False</td>
-          <td class="cool1"><a href="http://horn.incubator.apache.org/">True</a></td>
           <td class="care">False</td>
           <td class="care">False</td>
           <td class="care">False</td>
@@ -422,9 +399,9 @@
           <td>group-2</td>
           <td class="cool1">True</td>
           <td class="cool1"><a href="projects/impala.html">True</a></td>
-          <td>2017-07-03</td>
+          <td>2017-07-17</td>
           <td></td>
-          <td>1,7,13</td>
+          <td>3,6,14</td>
           <td class="cool1 number"><a href="https://people.apache.org/phonebook.html?podling=impala">22</a></td>
           <td class="care number">0</td>
           <td class="care">False</td>
@@ -585,7 +562,7 @@
           <td class="cool1"><a href="projects/mnemonic.html">True</a></td>
           <td>2017-06-12</td>
           <td></td>
-          <td>5,10,12</td>
+          <td>5,9,12</td>
           <td class="care">-</td>
           <td class="care number">0</td>
           <td class="care">False</td>
@@ -619,4 +596,27 @@
           <td class="cool1"><a href="http://www.apache.org/dyn/closer.cgi/incubator/mrql/">True</a></td>
           <td class="cool1"><a href="http://www.apache.org/dist/incubator/mrql/KEYS">True</a></td>
           <td class="cool1"><a href="http://www.apache.org/dyn/closer.cgi/incubator/mrql/">True</a></td>
+        </tr>
+        <tr id="mxnet">
+          <td>MXNet</td>
+          <td>Incubator</td>
+          <td>2017-01-23</td>
+          <td></td>
+          <td>False</td>
+          <td>group-1</td>
+          <td class="cool1">True</td>
+          <td class="cool1"><a href="projects/mxnet.html">True</a></td>
+          <td>2017-07-14</td>
+          <td></td>
+          <td>3,4,13</td>
+          <td class="care">-</td>
+          <td class="care number">0</td>
+          <td class="care">False</td>
+          <td class="cool1"><a href="https://issues.apache.org/jira/browse/MXNET">True</a></td>
+          <td class="cool1"><a href="http://mail-archives.apache.org/mod_mbox/mxnet-dev/">True</a></td>
+          <td class="cool1"><a href="http://mail-archives.apache.org/mod_mbox/mxnet-commits/">True</a></td>
+          <td class="cool1"><a href="http://mxnet.io/">True</a></td>
+          <td class="care">False</td>
+          <td class="care">False</td>
+          <td class="care">False</td>
         </tr>
