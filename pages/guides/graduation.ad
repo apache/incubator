@@ -293,16 +293,12 @@ drawn up by the community advised by the
 link:/incubation/Roles_and_Responsibilities.html#Mentor[Mentors].
 Committers can access the podling template for
 resolutions in the 
-link:https://svn.apache.org/repos/private/committers/board/templates/podling-tlp-resolution.txt[committers svn repository]. Also, resolutions are included in
-the Board minutes, which are posted publicly 
-link:http://www.apache.org/foundation/board/calendar.html[here ] . These contain numerous examples. Good
-examples include:
+link:https://svn.apache.org/repos/private/committers/board/templates/podling-tlp-resolution.txt[committers svn repository].  Your link:https://whimsy.apache.org/roster/ppmc/[whimsy roster] also includes a feature to draft a resolution.  Also, resolutions are included in the Board minutes, which are posted publicly
+link:http://www.apache.org/foundation/board/calendar.html[here ] . These contain numerous examples. Good examples include:
 
 - Harmony (see section *E. Establish the Apache Harmony project* in the link:http://www.apache.org/foundation/records/minutes/2006/board_minutes_2006_10_25.txt[October 2006 Board minutes])
 - OFBiz (see section *B. Establish Apache Open for Business Project* in the link:http://www.apache.org/foundation/records/minutes/2006/board_minutes_2006_12_20.txt[December 2006 Board minutes])
 - Cayenne (see section *C. Establish Apache Cayenne Project* in the link:http://www.apache.org/foundation/records/minutes/2006/board_minutes_2006_12_20.txt[December 2006 Board minutes])
-
-link:/guides/graduation-template.txt[Click here for a template of this proposal to use.]
 
 The original proposal and the status document should
 be consulted when creating this document. Projects
@@ -339,7 +335,7 @@ recommends the resolution to the link:/incubation/Roles_and_Responsibilities.htm
 === Submission of the Resolution to the Board
 
 Top level projects are created by a link:#tlp-resolution[resolution] by the
-link:/incubation/Roles_and_Responsibilities.html#board[Board].
+link:/policy/roles_and_responsibilities.html#the_board[Board].
 Once the link:#tlp-resolution[resolution] has been
 finalized and consensus reached, it should be
 submitted to the Board. For inclusion in the agenda
@@ -347,7 +343,7 @@ for the next meeting, the resolution should be
 submitted at least 72 hours before that meeting. A
 calendar for meetings is link:http://www.apache.org/foundation/board/calendar.html[available].
 
-Business for the link:/incubation/Roles_and_Responsibilities.html#board[Board] should be submitted by a post
+Business for the link:/policy/roles_and_responsibilities.html#the_board[Board] should be submitted by a post
 to the *board* mailing list. Posting from
 an Apache address is recommended. Mixing public and
 private lists on a post is not recommended.
@@ -356,7 +352,7 @@ The *board* list is private.
 The usual link:http://www.apache.org/foundation/how-it-works.html#management[netiquette]
 for Apache private lists should be observed. So, it is
 recommended that only the podling and
-link:/incubation/Roles_and_Responsibilities.html#Incubator+Project+Management+Committee+%28PMC%29[IPMC]
+link:/policy/roles_and_responsibilities.html#incubator_project_management_committee_ipmc[IPMC]
 private lists are CC'd (rather than the general incubator
 list). Please treat responses with appropriate
 confidentiality.
@@ -375,7 +371,7 @@ For example:
 From: &lt;you _at_ apache dot org&gt;
 To: &lt;board _at_ apache dot org&gt;
 CC: &lt;&lt;project&gt;-private _at_ incubator dot apache dot org&gt;
-Subject: proposed resolution: establish &lt;project&gt; TLP
+Subject: Proposed Resolution: Establish &lt;project&gt; TLP
 
 Dear Apache Board,
 
@@ -407,7 +403,7 @@ submit reminders or ask whether messages have been
 received on the list. link:http://www.apache.org/foundation/members.html[Apache Members] have access to the link:/incubation/Roles_and_Responsibilities.html#board[Board]
 archives and may
 observe Board meetings. To follow the progress of a
-resolution, please ask a friendly Member or 
+resolution, please ask a friendly Mentor, Member or
 link:http://www.apache.org/foundation/board/[Director].
 
 === Press Releases for new TLPs
@@ -427,25 +423,9 @@ subproject.
 
 === Community Graduation Vote
 
-A community needs to be willing to govern itself
-before it can become a top level project. A good way
-to demonstrate this is through a free
-*link:http://www.apache.org/foundation/voting.html[VOTE]*
-(by the community) on the graduation proposal.
-
-This *VOTE* is not a requirement but is recommended. It
-is unlikely that 
-link:/incubation/Roles_and_Responsibilities.html#Incubator+Project+Management+Committee+%28PMC%29[IPMC]
-members will vote to approve graduation unless the 
-link:/incubation/Roles_and_Responsibilities.html#Mentor[Mentors]
-and community positively express their readiness for
-graduation. It is wise to copy the 
-link:lists.html#general+at+incubator.apache.org[incubator general list] and the 
-link:/incubation/Roles_and_Responsibilities.html#Sponsor[sponsoring top level project] when the *VOTE*
-is proposed.
+Becoming a subproject is a voluntary process, and should be accepted by the community becoming a sub-project.  It should be clear to the PPMC and committers for the podling what the make up of the new sub-project should be, e.g. who belongs on the receiving PMC, who will be a committer.  Due to this nature, it is important that the podling votes to become a sub-project.  This vote should happen on a public dev list.
 
 === Subproject Acceptance Vote
-
 
 A formal *link:http://www.apache.org/foundation/voting.html[VOTE]*
 by the Project link:http://www.apache.org/foundation/how-it-works.html#structure[PMC]
@@ -457,9 +437,5 @@ right contact.
 
 === Graduation Approval Vote
 
-To graduate as a subproject, the link:/incubation/Roles_and_Responsibilities.html#Mentor[Mentors] should start a *link:http://www.apache.org/foundation/voting.html[VOTE]*
-thread on the link:lists.html#general+at+incubator.apache.org[general list] proposing that the 
-link:/incubation/Roles_and_Responsibilities.html#Incubator+Project+Management+Committee+%28PMC%29[IPMC] signs off the graduation of the podling as a
-subproject. This *VOTE*s should only be started once the
-project has *VOTE*d to accept the subproject.
+Once the accepting TLP have voted to accept the podling and the podling has voted to become a subproject, noticed should be sent to the IPMC via `general AT incubator.a.o` email list indicating that the podling will become a subproject.  If after 72 hours no issues are raised, the podling may be considered a subproject of the accepting TLP.  Likewise, if any IPMC member raises an issue, that should be discussed.  If the issue is addressed, the member raising the issue should indicate they rescind their concerns or otherwise consider them resolved.
 
