@@ -29,7 +29,7 @@ incubator general list. It also describes some of
 the first steps that should be taken after
 graduation.
 
-*This is just a guide. Policy is stated link:https://incubator.apache.org/incubation/Incubation_Policy.html[here].*
+*This is just a guide. Policy is stated link:/policy/incubation.html[here].*
 
 Help to improve the system by posting a patch for
 this document to the incubator section of JIRA or a
@@ -65,9 +65,9 @@ to the link:lists.html#general+at+incubator.apache.org[general incubator list].
 
 Each proposal has a link:/incubation/Roles_and_Responsibilities.html#Sponsor[Sponsor].
 The identity of the Sponsor indicates the natural
-destination. For proposals sponsored by the link:/incubation/Roles_and_Responsibilities.html#board[Board] or by
+destination. For proposals sponsored by the link:/policy/roles_and_responsibilities.html#the_board[Board] or by
 the 
-link:/incubation/Roles_and_Responsibilities.html#Incubator+Project+Management+Committee+%28PMC%29[IncubatorPMC (IPMC)], this is a top level project. For others,
+link:/policy/roles_and_responsibilities.html#incubator_project_management_committee_ipmc[IncubatorPMC (IPMC)], this is a top level project. For others,
 this is as a subproject of the sponsoring project. However, the
 destination is fixed only on graduation, not entry. Projects
 grow and evolve during the graduation process. As
@@ -293,16 +293,12 @@ drawn up by the community advised by the
 link:/incubation/Roles_and_Responsibilities.html#Mentor[Mentors].
 Committers can access the podling template for
 resolutions in the 
-link:https://svn.apache.org/repos/private/committers/board/templates/podling-tlp-resolution.txt[committers svn repository]. Also, resolutions are included in
-the Board minutes, which are posted publicly 
-link:http://www.apache.org/foundation/board/calendar.html[here ] . These contain numerous examples. Good
-examples include:
+link:https://svn.apache.org/repos/private/committers/board/templates/podling-tlp-resolution.txt[committers svn repository].  Your link:https://whimsy.apache.org/roster/ppmc/[whimsy roster] also includes a feature to draft a resolution.  Also, resolutions are included in the Board minutes, which are posted publicly
+link:http://www.apache.org/foundation/board/calendar.html[here ] . These contain numerous examples. Good examples include:
 
 - Harmony (see section *E. Establish the Apache Harmony project* in the link:http://www.apache.org/foundation/records/minutes/2006/board_minutes_2006_10_25.txt[October 2006 Board minutes])
 - OFBiz (see section *B. Establish Apache Open for Business Project* in the link:http://www.apache.org/foundation/records/minutes/2006/board_minutes_2006_12_20.txt[December 2006 Board minutes])
 - Cayenne (see section *C. Establish Apache Cayenne Project* in the link:http://www.apache.org/foundation/records/minutes/2006/board_minutes_2006_12_20.txt[December 2006 Board minutes])
-
-link:/guides/graduation-template.txt[Click here for a template of this proposal to use.]
 
 The original proposal and the status document should
 be consulted when creating this document. Projects
@@ -339,7 +335,7 @@ recommends the resolution to the link:/incubation/Roles_and_Responsibilities.htm
 === Submission of the Resolution to the Board
 
 Top level projects are created by a link:#tlp-resolution[resolution] by the
-link:/incubation/Roles_and_Responsibilities.html#board[Board].
+link:/policy/roles_and_responsibilities.html#the_board[Board].
 Once the link:#tlp-resolution[resolution] has been
 finalized and consensus reached, it should be
 submitted to the Board. For inclusion in the agenda
@@ -347,7 +343,7 @@ for the next meeting, the resolution should be
 submitted at least 72 hours before that meeting. A
 calendar for meetings is link:http://www.apache.org/foundation/board/calendar.html[available].
 
-Business for the link:/incubation/Roles_and_Responsibilities.html#board[Board] should be submitted by a post
+Business for the link:/policy/roles_and_responsibilities.html#the_board[Board] should be submitted by a post
 to the *board* mailing list. Posting from
 an Apache address is recommended. Mixing public and
 private lists on a post is not recommended.
@@ -356,7 +352,7 @@ The *board* list is private.
 The usual link:http://www.apache.org/foundation/how-it-works.html#management[netiquette]
 for Apache private lists should be observed. So, it is
 recommended that only the podling and
-link:/incubation/Roles_and_Responsibilities.html#Incubator+Project+Management+Committee+%28PMC%29[IPMC]
+link:/policy/roles_and_responsibilities.html#incubator_project_management_committee_ipmc[IPMC]
 private lists are CC'd (rather than the general incubator
 list). Please treat responses with appropriate
 confidentiality.
@@ -375,7 +371,7 @@ For example:
 From: &lt;you _at_ apache dot org&gt;
 To: &lt;board _at_ apache dot org&gt;
 CC: &lt;&lt;project&gt;-private _at_ incubator dot apache dot org&gt;
-Subject: proposed resolution: establish &lt;project&gt; TLP
+Subject: Proposed Resolution: Establish &lt;project&gt; TLP
 
 Dear Apache Board,
 
@@ -407,7 +403,7 @@ submit reminders or ask whether messages have been
 received on the list. link:http://www.apache.org/foundation/members.html[Apache Members] have access to the link:/incubation/Roles_and_Responsibilities.html#board[Board]
 archives and may
 observe Board meetings. To follow the progress of a
-resolution, please ask a friendly Member or 
+resolution, please ask a friendly Mentor, Member or
 link:http://www.apache.org/foundation/board/[Director].
 
 === Press Releases for new TLPs
@@ -427,25 +423,9 @@ subproject.
 
 === Community Graduation Vote
 
-A community needs to be willing to govern itself
-before it can become a top level project. A good way
-to demonstrate this is through a free
-*link:http://www.apache.org/foundation/voting.html[VOTE]*
-(by the community) on the graduation proposal.
-
-This *VOTE* is not a requirement but is recommended. It
-is unlikely that 
-link:/incubation/Roles_and_Responsibilities.html#Incubator+Project+Management+Committee+%28PMC%29[IPMC]
-members will vote to approve graduation unless the 
-link:/incubation/Roles_and_Responsibilities.html#Mentor[Mentors]
-and community positively express their readiness for
-graduation. It is wise to copy the 
-link:lists.html#general+at+incubator.apache.org[incubator general list] and the 
-link:/incubation/Roles_and_Responsibilities.html#Sponsor[sponsoring top level project] when the *VOTE*
-is proposed.
+Becoming a subproject is a voluntary process, and should be accepted by the community becoming a sub-project.  It should be clear to the PPMC and committers for the podling what the make up of the new sub-project should be, e.g. who belongs on the receiving PMC, who will be a committer.  Due to this nature, it is important that the podling votes to become a sub-project.  This vote should happen on a public dev list.
 
 === Subproject Acceptance Vote
-
 
 A formal *link:http://www.apache.org/foundation/voting.html[VOTE]*
 by the Project link:http://www.apache.org/foundation/how-it-works.html#structure[PMC]
@@ -457,259 +437,5 @@ right contact.
 
 === Graduation Approval Vote
 
-To graduate as a subproject, the link:/incubation/Roles_and_Responsibilities.html#Mentor[Mentors] should start a *link:http://www.apache.org/foundation/voting.html[VOTE]*
-thread on the link:lists.html#general+at+incubator.apache.org[general list] proposing that the 
-link:/incubation/Roles_and_Responsibilities.html#Incubator+Project+Management+Committee+%28PMC%29[IPMC] signs off the graduation of the podling as a
-subproject. This *VOTE*s should only be started once the
-project has *VOTE*d to accept the subproject.
+Once the accepting TLP have voted to accept the podling and the podling has voted to become a subproject, noticed should be sent to the IPMC via `general AT incubator.a.o` email list indicating that the podling will become a subproject.  If after 72 hours no issues are raised, the podling may be considered a subproject of the accepting TLP.  Likewise, if any IPMC member raises an issue, that should be discussed.  If the issue is addressed, the member raising the issue should indicate they rescind their concerns or otherwise consider them resolved.
 
-== Life After Graduation
-
-=== Handover
-
-This is the transfer of virtual resources from the care of
-the link:/incubation/Roles_and_Responsibilities.html#Incubator+Project+Management+Committee+%28PMC%29[IPMC]
-to the care of either the new or existing top
-level project taking charge of the graduating community.
-
-==== Graduating as Subproject
-
-This is the simple case. The 
-link:/incubation/Roles_and_Responsibilities.html#Chair+of+the+Incubator+PMC[IPMC Chair] and the Chair of the project accepting the
-graduating community organize the handover between
-themselves.
-
-==== Graduating as New Top Level Project
-
-When graduating to a new project, the process is more
-complex. Creating a new project requires a 
-link:http://www.apache.org/foundation/board/calendar.html[resolution] 
-to be passed by the link:http://www.apache.org/foundation/board/[Board].
-Usually once this happens, members of the Board will
-inform the appropriate chairs and link:http://www.apache.org/foundation/how-it-works.html#structure[PMCs].
-Occasionally, this will be missed: if more than 72
-hours has passed since the Board meeting, it may be
-worth someone posting a polite reminder to their
-favorite director.
-
-The link:#tlp-resolution[resolution] will appoint a Chair for the new
-project. The Chair will also be appointed an 
-link:http://www.apache.org/foundation/[Officer]
-of the Apache Software Foundation. This allows them
-access to official resources of the foundation as well
-as granting power to act on behalf of Apache.
-
-Once appointed, the new Chair needs to:
-
-- Subscribe to the *board* mailing list
-- Subscribe to the *infrastructure* mailing list
-- Ensure that they have been added to 
-link:https://people.apache.org/phonebook.html?service=pmc-chairs[the PMC chairs group (pmc-chairs) in LDAP].
-The ASF Secretary should do this without any action on the part
-of the new chair. As with above, if it has not happened within
-72 hours of the resolution passing, contact the secretary to remind them.
-- Check out the link:https://svn.apache.org/repos/private/foundation/officers[*foundation/officers*] folder from the private repository.
-Users with member or pmc-chairs karma can do this.
-- Add yourself to the #foundation/officers/affiliations.txt# and the #foundation/officers/irs-disclosures.txt* files with the appropriate information.
-- Add your details to the foundation web site Officer list at link:http://www.apache.org/foundation/index.html[http://www.apache.org/foundation/index.html] (in SVN at link:https://svn.apache.org/repos/asf/infrastructure/site/trunk/content/foundation/[https://svn.apache.org/repos/asf/infrastructure/site/trunk/content/foundation/])
-- Review appropriate documentation:
-** link:http://www.apache.org/dev/pmc.html#chair[PMC Chair Duties]
-** PMC link:http://www.apache.org/dev/#pmc[documentation]
-** Jakarta link:http://wiki.apache.org/jakarta/RoleOfChair[Chair guide]
-** Incubator link:http://incubator.apache.org/guides/chair.html[Chair guide]
-** Reporting link:http://www.apache.org/foundation/board/calendar.html[calendar]
-- Work out a reporting schedule with the link:/incubation/Roles_and_Responsibilities.html#board[Board]. For
-the first three months after graduation this will
-be monthly. After that, the project should slot
-into a quarterly reporting schedule. Now is a good time to remove
-the project from the Incubator reporting schedule.
-- Work with the link:http://www.apache.org/dev/index.html#infra[Apache Infrastructure team]
-to set up the top level project
-infrastructure. The various infrastructure tasks that are required
-(see link:#transfer[check list])
-should be consolidated into a single issue (see link:https://issues.apache.org/jira/browse/INFRA-4069[this]
-for example). This should be created in the category
-link:https://issues.apache.org/jira/secure/IssueNavigator.jspa?reset=true&amp;mode=hide&amp;pid=10410&amp;sorter/order=DESC&amp;sorter/field=priority&amp;resolution=-1&amp;component=10858[TLP Admin].
-- Ensure the PMC is added to the committee-info.txt file at https://svn.apache.org/repos/private/committers/board/committee-info.txt
-There are 3 sections which need to be updated; see instructions in the file.
-You may need to get a member to help with this.
-
-They should then be able to start assembling the new
-link:http://www.apache.org/foundation/how-it-works.html#structure[PMC].
-The starting membership is listed in the
-link:#tlp-resolution[resolution]. However, the Chair of the new project
-needs to ensure that private list is created and the
-membership subscribed.
-
-Members of the new PMC need to:
-- Subscribe to the private mailing list for the project
-- Review appropriate documentation:
-** Apache link:http://www.apache.org/dev/pmc.html[PMC Guide]
-** Related link:http://www.apache.org/dev/#pmc[documentation]
-
-Once all this is in place, resources can start to be
-handed over to the new project.
-
-Please continue to hang around the Incubator and help
-new podlings have an easier time than you did!
-
-=== First Steps Outside the Incubator
-
-Graduation is the first step in what is hopefully a long road.
-There are some issues which incubation may not cover.
-
-==== Transferring Resources
-
-When a project graduates, then the infrastructure
-resources (mailing lists, websites, source, etc.) need to
-be transferred from the Incubator to a project's new home.
-
-Although the below checklist is still generally useful, *the infrastructure process has been streamlined*, see
-http://www.apache.org/dev/infra-contact#requesting-graduation .  You might also want to check JIRA checklist tickets for projects that graduated in the last month or two.
-
-Checklist:
-
-- Update the Incubator status records
-** Like the rest of incubation, graduation is a process. Updating your
-status records as you progress will enable others to assist.
-** Update the podling 
-link:#notes-status[status page].
-All sections should now be filled in
-including *EXIT*. Take some
-time to read carefully since this page
-forms the final public record for
-graduation.
-** Update the Incubator
-link:http://incubator.apache.org/projects/index.html[status page] to denote the project as "graduating" when you commence,
-then as "graduated" when you are finished.
-The notes link:#unincubate[below] will assist.
-* Source
-** Post an announcement to the development list
-telling everyone that the repository is about
-to be moved
-** Post an announcement containing instructions
-for developers describing how to #svn switch# their workspaces
-** Update site, wikis, *pom.xml* and
-other resources to point to the new repository
-location.
-* Websites
-** Transfer the podling website
-*** Load the website into its new home. See link:http://www.apache.org/dev/#web[infra notes].
-** Update the *incubator/site-publish/.htaccess* entry to
-redirect traffic from the old URLs to
-the new.  (svn location is at *http://svn.apache.org/repos/asf/incubator/public/trunk/content/.htaccess*) -
-NOTE: new Top Level Projects will most likely get an automatic redirection of their website from the Incubator hostname
-once the TLP's distribution repository is moved by INFRA.
-** Post an announcement to user and
-development lists
-** When using Maven: update *pom.xml* for the location
-of the website, as well as the place
-where the site plugin will deploy the
-web site (when applicable).
-* *(Top Level Projects Only)* Add Project To link:http://www.apache.org[www.apache.org]
-** Check out https://svn.apache.org/repos/asf/infrastructure/site/trunk
-** Patch #templates/blocks/projects.mdtext#
-** Commit, and if you have karma then link:https://cms.apache.org/www/publish[publish] the updated www site
-* Mailing lists
-** When your mail lists have been moved by infrastructure,
-post an announcement to your lists.
-** When using Maven: update *pom.xml* for
-the new mailing list address(es). Also update any
-documents on your website that show how to
-subscribe to the lists and/or find archives.
-** Send notice to any mailing list archivers
-that the
-address has changed, and possibly the location of
-your project (if it is listed there as being part of the
-incubator).
-** Update website: replace links to old archives with
-links to new ones and add new links to historic
-archives from incubation.
-** Check project-private mailing list membership.
-Mentors should be allowed to remain if they wish to
-do so. The subscriber list should otherwise match
-that on the resolution. See link:http://www.apache.org/dev/committers.html#mail-moderate[this] and 
-the link:http://www.ezmlm.org/[EZMLM]
-"Moderator's and Administrator's Manual".
-** Update mail addresses including:
-*** confluence commit messages (see adminstration documentation)
-*** issue tracking messages (see administration documentation)
-*** The chair should have karma to perform these tasks.
-** Double-check that all of your lists have sufficient active link:http://www.apache.org/dev/committers.html#mailing-list-moderators[moderators].
-* Issue Tracking
-** Check that the issue tracking system used by the podling reflects the project's new status.
-*Distribution mirrors
-** After you have  a release at your new home (#/dist/${project}/# area), remove any distribution artefacts from your old #/dist/incubator/${project}/#
-area. Remember from the mirror guidelines that everything is automatically added to archive.apache.org anyway.
-
-==== Final Revision of Podling Incubation Records
-
-When a project has finished its graduation steps, then the incubator resources
-need to be updated to indicate that the project is no
-longer incubating. Here are a few of the items that need
-to be done:
-* Update the svn *incubator/trunk/content/projects/${project}.xml* file to show the project's status.
-* Update the podling summary metadata file,
-i.e. *incubator/trunk/content/podlings.xml* svn file.
-See the content/podlings.dtd and follow examples of other recent graduates.
-At the beginning of the process, add the "graduating" element.
-When finished the graduation process, then:
-Change the podling status to "graduated";
-add the "enddate" attribute to document when the project graduated;
-add the "resolution" element (see other project examples);
-remove the "graduating" element.
-* After your project has finished reporting to the Incubator, then
-remove the "reporting" element from that *podlings.xml* file.
-* Ensure that other svn resources for your project have moved to your new home.
-* Review this whole graduation guide.
-* NOTE: Please edit this guide to add missing steps and clarifications.
-
-==== New Responsibilities
-===== Oversight
-
-During the stay in the Incubator, the
-link:/incubation/Roles_and_Responsibilities.html#Incubator+Project+Management+Committee+%28PMC%29[Incubator PMC (IPMC)]
-was responsible to the
-link:/incubation/Roles_and_Responsibilities.html#board[Board]
-for oversight. A graduated project must now take
-responsibility for its own oversight.
-
-A project needs to ensure that its code base is
-clean from an IP perspective. New committers need to
-recruited, educated and mentored. Quality releases
-need to be cut. Community spirit needs to be maintained
-and conflicts resolved positively. Board reports need
-to be accurate and prompt.
-
-Help is still available but the
-appropriate bodies (infrastructure, community, legal
-and so on) should now be approached directly.
-
-===== Security
-
-Each project needs to be able to manage security issues
-discovered in their code. By their nature, these issues
-need to be dealt with in private. These issues may either
-be dealt with on a separate security list or on the
-private list. Which list is suitable for security issues
-should be noted.
-
-Volunteers need to be found from the
-link:http://www.apache.org/foundation/how-it-works.html#structure[PMC]
-to work with the Apache security team and act as
-first contacts on security matters. The new project
-should make contact with the team soon after graduation
-and not wait for the first issue to be raised.
-
-Projects should adopt a positive attitude towards
-security issues. It is easy to gain a poor reputation
-by mishandling of these issues. There are many people
-at Apache with considerable experience in this area
-so ask first.
-
-===== Stay In Touch
-
-Passing through the incubation process gives a very
-valuable perspective. Please help to improve the process
-by guiding new podlings and by developing improved policy
-and documentation on the link:lists.html#general+at+incubator.apache.org[general] list.
