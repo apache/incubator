@@ -17,6 +17,7 @@ svn co $SVN_REPO $SVN_CO_DIR
 (
     cd $SVN_CO_DIR
     ant docs -Ddocs.dest=$SVN_BUILD_DIR
+    python3 clutch.py
     mv $SVN_BUILD_DIR/ip-clearance $WORKDIR
     mv $SVN_BUILD_DIR/projects $WORKDIR
     mv $SVN_BUILD_DIR/clutch $WORKDIR
