@@ -84,17 +84,18 @@ source repository.  This should contain something like the following:
 - If the podling has a DOAP referenced in the link:https://svn.apache.org/repos/asf/comdev/projects.apache.org/data/projects.xml[projects.xml] file used for generating link:http://projects.apache.org[projects.apache.org], remove the entry.
 - Open a "task" INFRA JIRA ticket entitled "Retire the ${podling} Incubator podling".  Open sub-tickets using "Create Sub-Task" as applicable:
 ** Close ${podling} mailing lists
-** (If copyright task completed) Make ${podling} version control read-only
-** (If copyright task *not* completed) Remove ${podling} version control
-** (If JIRA) Move ${podling} JIRA to "retired" and set read-only
-** (If Bugzilla) Close ${podling} Bugzilla
+** Make ${podling} version control read-only
+** Move ${podling} JIRA to "retired" and set read-only
 ** Make ${podling} wiki read-only
 ** Turn off ${podling} automatic builds
 ** Update ${podling} Incubator SVN
 *** Add entries to asf-mailer.conf and send mail to cvs at incubator.apache.org
 *** Remove entries from asf-authorizaton - this makes the directory rw to the Incubator PMC.
 - After Infra modifies the website SVN permissions, disable
-the podling website by installing an link:http://svn.apache.org/repos/asf/incubator/ripple/site/.htaccess[.htaccess]
+the podling website by installing an `.htaccess` like this
+----
+RedirectMatch Permanent ^(/.*)?$ http://incubator.apache.org/projects/{podling}.html
+----
 file at the root of the podling website dir which consists
 of only a redirect to the podling status page.
 - When all steps towards retirement are done, announce completeness on general@incubator.
