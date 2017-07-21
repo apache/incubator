@@ -98,6 +98,8 @@
                 
                   <li><a href="https://incubator.apache.org/guides/sites.html">Podling Websites</a></li>
                 
+                  <li><a href="https://incubator.apache.org/guides/transferring.html">Transferring Resources out of the Incubator</a></li>
+                
                   <li><a href="https://incubator.apache.org/guides/transitioning_asf.html">Initial Code Import</a></li>
                 
                 <li><a href="/clutch">Clutch Report</a></li>
@@ -284,16 +286,10 @@ source repository.  This should contain something like the following:</p>
 <p>Close ${podling} mailing lists</p>
 </li>
 <li>
-<p>(If copyright task completed) Make ${podling} version control read-only</p>
+<p>Make ${podling} version control read-only</p>
 </li>
 <li>
-<p>(If copyright task <strong>not</strong> completed) Remove ${podling} version control</p>
-</li>
-<li>
-<p>(If JIRA) Move ${podling} JIRA to "retired" and set read-only</p>
-</li>
-<li>
-<p>(If Bugzilla) Close ${podling} Bugzilla</p>
+<p>Move ${podling} JIRA to "retired" and set read-only</p>
 </li>
 <li>
 <p>Make ${podling} wiki read-only</p>
@@ -319,17 +315,20 @@ source repository.  This should contain something like the following:</p>
 </li>
 <li>
 <p>After Infra modifies the website SVN permissions, disable
-the podling website by installing an <a href="http://svn.apache.org/repos/asf/incubator/ripple/site/.htaccess">.htaccess</a>
-file at the root of the podling website dir which consists
-of only a redirect to the podling status page.</p>
-</li>
-<li>
-<p>When all steps towards retirement are done, announce completeness on general@incubator.</p>
-</li>
-<li>
-<p>Indicate that the podling is closed down in the next board report.</p>
+the podling website by installing an <code>.htaccess</code> like this</p>
 </li>
 </ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>RedirectMatch Permanent ^(/.*)?$ http://incubator.apache.org/projects/{podling}.html</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>file at the root of the podling website dir which consists
+of only a redirect to the podling status page.
+- When all steps towards retirement are done, announce completeness on general@incubator.
+- Indicate that the podling is closed down in the next board report.</p>
 </div>
 <div class="paragraph">
 <p>The user accounts of the projects committers do not need
