@@ -2,7 +2,8 @@
 
 ## Prerequisites
 
-The website is built using JBake and a Groovy template.  The builds for the website do require internet access.
+The website is built using JBake and a Groovy template.
+The builds for the website do require internet access.
 
 - Install JBake from http://jbake.org/download.html
 - Create an environment variable `JBAKE_HOME` pointing to your JBake installation
@@ -10,19 +11,27 @@ The website is built using JBake and a Groovy template.  The builds for the webs
 
 ## Building & Running the site
 
-There is a custom `bake.sh` file that is used to build the website.  You can call it with any of the [arguments you would pass to jbake](http://jbake.org/docs/2.5.1/#bake_command).
-The easiest way to use it is to run `./bake.sh -b -s` this will start up JBake in a watching mode as you make changes it will refresh after a short period of time.
-While working with it locally, you'll notice that the site URLs redirect to `incubator.apache.org`, to change this edit `jbake.properties` and uncomment the line referencing `localhost`
+There is a custom `bake.sh` file that is used to build the website.
+You can call it with any of the [arguments you would pass to jbake](http://jbake.org/docs/2.5.1/#bake_command).
+The easiest way to use it is to run `./bake.sh -b -s`
+This will start up JBake in a watching mode as you make changes it will refresh after a short period of time.
+While working with it locally, you'll notice that the site URLs redirect to `incubator.apache.org`;
+to change this edit `jbake.properties` and uncomment the line referencing `localhost`
 
 ## Jenkins Setup
 
-Commits to the `jbake-site` branch are automatically checked out and built using `build_site.sh`.  Once this goes live those commits will go against `master`.  The jenkins job can be found at [https://builds.apache.org/view/H-L/view/Incubator/job/Incubator%20Site/](https://builds.apache.org/view/H-L/view/Incubator/job/Incubator%20Site/)
+Commits to the `jbake-site` branch are automatically checked out and built using `build_site.sh`.
+Once this goes live those commits will go against `master`.
+The jenkins job can be found at [https://builds.apache.org/view/H-L/view/Incubator/job/Incubator%20Site/](https://builds.apache.org/view/H-L/view/Incubator/job/Incubator%20Site/)
 The result of the commits are pushed to the `asf-site` branch which are then published using `gitwcsub`
 
 ## Asciidoctor
 
-Most of the pages in the site are written using Asciidoctor.  While it is a form of asciidoc it does have some [syntax differences that are worth reviewing](http://asciidoctor.org/docs/asciidoc-syntax-quick-reference/)
+Most of the pages in the site are written using Asciidoctor.
+While it is a form of asciidoc it does have some [syntax differences that are worth reviewing](http://asciidoctor.org/docs/asciidoc-syntax-quick-reference/)
 
 ## Groovy Templates
 
-The site templates are written in groovy scripts.  Even though the files end with `.gsp` they are not GSP files and do not have access to tag libraries.  You can run custom code in them, similar to what is done in [homepage.gsp](templates/homepage.gsp)
+The site templates are written in groovy scripts.
+Even though the files end with `.gsp` they are not GSP files and do not have access to tag libraries.
+You can run custom code in them, similar to what is done in [homepage.gsp](templates/homepage.gsp)
