@@ -220,4 +220,4 @@ Redirect Permanent /reef http://reef.apache.org
 Redirect Permanent /kylin http://kylin.apache.org
 
 # Restore access to podlings.*
-RedirectMatch ^/(podlings.*)$ "/svn.apache.org/repos/asf/incubator/public/trunk/content/$1"
+RedirectMatch ^/(podlings.*)$ "//svn.apache.org/repos/asf/incubator/public/trunk/content/$1"
