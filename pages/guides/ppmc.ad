@@ -190,10 +190,10 @@ the vote result's message id of the following form:
 --
 To: private at incubator.apache.org
 CC: private at PODLING.incubator.apache.org
-Subject: [NOTICE] *Joe Bob* for Podling PPMC
+Subject: [NOTICE] Joe Bob for PODLING PPMC
 Body:
 
-Joe Bob has been voted as a new member of the Podling PPMC. the vote thread is at: *link to the vote thread*
+Joe Bob has been voted as a new member of the *PODLING* PPMC. the vote thread is at: *link to the vote thread*
 --
 
 *It should noted that there is a grace period of 72 hours from when the
@@ -201,6 +201,8 @@ above NOTICE is sent to the Incubator PMC to when the proposed member
 is formally invited. This is an important part of the overall
 process. Failure to do this can result in an embarassing situation
 for people involved.*
+
+In the email you send, replace *PODLING* with your podling's actual name, and replace Joe Bob with the prospect's actual name.
 
 After 72 hours, Joe Bob
 should be invited to join the PPMC, using a sample message like
