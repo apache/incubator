@@ -9,6 +9,11 @@ The builds for the website do require internet access.
 - Create an environment variable `JBAKE_HOME` pointing to your JBake installation
 - Ensure that you have a JVM locally, e.g. [OpenJDK](http://openjdk.java.net/install/)
 
+## Clone the Source code
+
+If you have write access to incubator, you should clone it from https://git-wip-us.apache.org/repos/asf/incubator.git
+otherwise you can fork from our github mirror https://github.com/apache/incubator and raise a pull request.
+
 ## Building & Running the site
 
 There is a custom `bake.sh` file that is used to build the website.
