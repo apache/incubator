@@ -28,7 +28,6 @@ git checkout asf-site
 git clean -f -d
 git pull origin asf-site
 rm -rf *
-rm -f .htaccess # obsolete
 mkdir content
 cp -a $WORKDIR/* content
 cp -a $WORKDIR/.htaccess content
