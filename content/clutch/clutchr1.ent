@@ -10,7 +10,7 @@
           <td class="cool1"><a href="projects/airflow.html">True</a></td>
           <td>2017-04-12</td>
           <td></td>
-          <td>0,2,3</td>
+          <td>0,0,3</td>
           <td class="care">-</td>
           <td class="care number">0</td>
           <td class="care">False</td>
@@ -56,7 +56,7 @@
           <td class="cool1"><a href="projects/ariatosca.html">True</a></td>
           <td>2017-07-11</td>
           <td></td>
-          <td>2,2,3</td>
+          <td>1,2,2</td>
           <td class="care">-</td>
           <td class="care number">0</td>
           <td class="care">False</td>
@@ -73,14 +73,14 @@
           <td>Incubator</td>
           <td>2013-10-03</td>
           <td></td>
-          <td class="care">True</td>
+          <td>False</td>
           <td>group-1</td>
           <td class="cool1">True</td>
           <td class="cool1"><a href="projects/batchee.html">True</a></td>
           <td>2015-01-06</td>
           <td></td>
           <td>0,0,0</td>
-          <td class="cool1 number"><a href="https://people.apache.org/phonebook.html?podling=batchee">8</a></td>
+          <td class="care">-</td>
           <td class="care number">0</td>
           <td class="cool1"><a href="https://svn.apache.org/repos/asf/incubator/batchee/">True</a></td>
           <td class="cool1"><a href="https://issues.apache.org/jira/browse/BATCHEE">True</a></td>
@@ -96,14 +96,14 @@
           <td>Incubator</td>
           <td>2014-01-05</td>
           <td></td>
-          <td class="care">True</td>
+          <td>False</td>
           <td>group-1</td>
           <td class="cool1">True</td>
           <td class="cool1"><a href="projects/datafu.html">True</a></td>
           <td>2017-04-20</td>
           <td></td>
-          <td>0,2,2</td>
-          <td class="cool1 number"><a href="https://people.apache.org/phonebook.html?podling=datafu">17</a></td>
+          <td>0,1,2</td>
+          <td class="care">-</td>
           <td class="cool1 number">4</td>
           <td class="cool1"><a href="https://svn.apache.org/repos/asf/incubator/datafu/">True</a></td>
           <td class="cool1"><a href="https://issues.apache.org/jira/browse/DATAFU">True</a></td>
@@ -125,8 +125,8 @@
           <td class="cool1"><a href="projects/edgent.html">True</a></td>
           <td>2017-05-22</td>
           <td></td>
-          <td>1,1,2</td>
-          <td class="cool1 number"><a href="https://people.apache.org/phonebook.html?podling=edgent">8</a></td>
+          <td>0,1,2</td>
+          <td class="care">-</td>
           <td class="care number">0</td>
           <td class="care">False</td>
           <td class="cool1"><a href="https://issues.apache.org/jira/browse/EDGENT">True</a></td>
@@ -148,7 +148,7 @@
           <td class="cool1"><a href="projects/freemarker.html">True</a></td>
           <td>2017-07-17</td>
           <td></td>
-          <td>2,3,7</td>
+          <td>2,2,7</td>
           <td class="care">-</td>
           <td class="cool2 number">1</td>
           <td class="care">False</td>
@@ -192,16 +192,16 @@
           <td>group-1</td>
           <td class="cool1">True</td>
           <td class="cool1"><a href="projects/gobblin.html">True</a></td>
-          <td>2017-03-16</td>
+          <td>2017-07-28</td>
           <td></td>
-          <td>0,0,3</td>
+          <td>1,1,4</td>
           <td class="care">-</td>
           <td class="care number">0</td>
           <td class="care">False</td>
           <td class="cool1"><a href="https://issues.apache.org/jira/browse/GOBBLIN">True</a></td>
           <td class="cool1"><a href="http://mail-archives.apache.org/mod_mbox/gobblin-dev/">True</a></td>
-          <td class="care">False</td>
-          <td class="care">False</td>
+          <td class="cool1"><a href="http://mail-archives.apache.org/mod_mbox/gobblin-commits/">True</a></td>
+          <td class="cool1"><a href="http://gobblin.incubator.apache.org/">True</a></td>
           <td class="care">False</td>
           <td class="care">False</td>
           <td class="care">False</td>
@@ -217,8 +217,8 @@
           <td class="cool1"><a href="projects/gossip.html">True</a></td>
           <td>2016-11-13</td>
           <td></td>
-          <td>0,0,2</td>
-          <td class="cool1 number"><a href="https://people.apache.org/phonebook.html?podling=gossip">6</a></td>
+          <td>0,0,0</td>
+          <td class="care">-</td>
           <td class="care number">0</td>
           <td class="care">False</td>
           <td class="cool1"><a href="https://issues.apache.org/jira/browse/GOSSIP">True</a></td>
@@ -240,8 +240,8 @@
           <td class="cool1"><a href="projects/griffin.html">True</a></td>
           <td>2017-03-29</td>
           <td></td>
-          <td>0,3,4</td>
-          <td class="cool1 number"><a href="https://people.apache.org/phonebook.html?podling=griffin">10</a></td>
+          <td>0,0,4</td>
+          <td class="care">-</td>
           <td class="care number">0</td>
           <td class="care">False</td>
           <td class="cool1"><a href="https://issues.apache.org/jira/browse/GRIFFIN">True</a></td>
@@ -261,9 +261,9 @@
           <td>group-2</td>
           <td class="cool1">True</td>
           <td class="cool1"><a href="projects/guacamole.html">True</a></td>
-          <td>2017-06-09</td>
+          <td>2017-08-02</td>
           <td></td>
-          <td>2,10,10</td>
+          <td>1,11,11</td>
           <td class="care">-</td>
           <td class="cool1 number">2</td>
           <td class="care">False</td>
@@ -287,7 +287,7 @@
           <td>2017-07-11</td>
           <td></td>
           <td>1,1,5</td>
-          <td class="cool1 number"><a href="https://people.apache.org/phonebook.html?podling=hawq">52</a></td>
+          <td class="care">-</td>
           <td class="cool1 number">6</td>
           <td class="care">False</td>
           <td class="cool1"><a href="https://issues.apache.org/jira/browse/HAWQ">True</a></td>
@@ -356,7 +356,7 @@
           <td>2016-10-05</td>
           <td></td>
           <td>0,0,0</td>
-          <td class="cool1 number"><a href="https://people.apache.org/phonebook.html?podling=htrace">13</a></td>
+          <td class="care">-</td>
           <td class="care number">0</td>
           <td class="cool1"><a href="https://svn.apache.org/repos/asf/incubator/htrace/">True</a></td>
           <td class="cool1"><a href="https://issues.apache.org/jira/browse/HTRACE">True</a></td>
@@ -378,8 +378,8 @@
           <td class="cool1"><a href="projects/impala.html">True</a></td>
           <td>2017-07-17</td>
           <td></td>
-          <td>3,6,14</td>
-          <td class="cool1 number"><a href="https://people.apache.org/phonebook.html?podling=impala">22</a></td>
+          <td>3,4,13</td>
+          <td class="care">-</td>
           <td class="care number">0</td>
           <td class="care">False</td>
           <td class="cool1"><a href="https://issues.apache.org/jira/browse/IMPALA  INFRA-12157">True</a></td>
@@ -424,8 +424,8 @@
           <td class="cool1"><a href="projects/joshua.html">True</a></td>
           <td>2017-04-19</td>
           <td></td>
-          <td>0,1,4</td>
-          <td class="cool1 number"><a href="https://people.apache.org/phonebook.html?podling=joshua">9</a></td>
+          <td>0,1,2</td>
+          <td class="care">-</td>
           <td class="care number">0</td>
           <td class="cool1"><a href="https://svn.apache.org/repos/asf/incubator/joshua/">True</a></td>
           <td class="cool1"><a href="https://issues.apache.org/jira/browse/joshua">True</a></td>
@@ -447,8 +447,8 @@
           <td class="cool1"><a href="projects/juneau.html">True</a></td>
           <td>2016-11-02</td>
           <td></td>
-          <td>0,0,1</td>
-          <td class="cool1 number"><a href="https://people.apache.org/phonebook.html?podling=juneau">5</a></td>
+          <td>0,0,0</td>
+          <td class="care">-</td>
           <td class="care number">0</td>
           <td class="care">False</td>
           <td class="cool1"><a href="https://issues.apache.org/jira/browse/JUNEAU">True</a></td>
@@ -470,15 +470,15 @@
           <td class="cool1"><a href="projects/livy.html">True</a></td>
           <td>2017-06-23</td>
           <td></td>
-          <td>3,-,-</td>
+          <td>2,3,-</td>
           <td class="care">-</td>
           <td class="care number">0</td>
           <td class="care">False</td>
           <td class="cool1"><a href="https://issues.apache.org/jira/browse/LIVY">True</a></td>
           <td class="cool1"><a href="http://mail-archives.apache.org/mod_mbox/livy-dev/">True</a></td>
           <td class="cool1"><a href="http://mail-archives.apache.org/mod_mbox/livy-commits/">True</a></td>
-          <td class="care">False</td>
-          <td class="care">False</td>
+          <td class="cool1"><a href="https://livy.incubator.apache.org/">True</a></td>
+          <td class="cool1"><a href="http://www.apache.org/dyn/closer.cgi/incubator/livy/">True</a></td>
           <td class="care">False</td>
           <td class="care">False</td>
         </tr>
@@ -514,9 +514,9 @@
           <td>group-3</td>
           <td class="cool1">True</td>
           <td class="cool1"><a href="projects/mnemonic.html">True</a></td>
-          <td>2017-06-12</td>
+          <td>2017-08-14</td>
           <td></td>
-          <td>5,9,12</td>
+          <td>1,9,12</td>
           <td class="care">-</td>
           <td class="care number">0</td>
           <td class="care">False</td>
@@ -540,7 +540,7 @@
           <td>2015-06-22</td>
           <td></td>
           <td>0,0,0</td>
-          <td class="cool1 number"><a href="https://people.apache.org/phonebook.html?podling=mrql">12</a></td>
+          <td class="care">-</td>
           <td class="care number">0</td>
           <td class="cool1"><a href="https://svn.apache.org/repos/asf/incubator/mrql/">True</a></td>
           <td class="cool1"><a href="https://issues.apache.org/jira/browse/mrql">True</a></td>
@@ -562,7 +562,7 @@
           <td class="cool1"><a href="projects/mxnet.html">True</a></td>
           <td>2017-07-14</td>
           <td></td>
-          <td>3,4,13</td>
+          <td>3,3,13</td>
           <td class="care">-</td>
           <td class="care number">0</td>
           <td class="care">False</td>
