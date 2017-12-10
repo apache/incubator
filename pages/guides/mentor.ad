@@ -110,18 +110,17 @@ committers subscribe then these may be used for discussion.
 
 == Resources
 
-Resources should be requested in a particular order, and based on paperwork processed.  Do not request source repositories before SGAs are filed, for instance.
-
-=== Request Required Resources
+Resources should be requested in a particular order, and based on paperwork processed.  Do not request source repositories before SGAs are filed, for instance, if the source code is not already Apache licensed or Category A licensed.
 
 The proposal should include a list of required resources. All of these will
 require active set up. Some are created by infrastructure after an appropriate
 request, others can be set up by any IPMC members (typically mentors).
 
-Mailing lists should be created first. Other resources typically
-post information to these lists.
+The first resources to be created are LDAP and DNS.  These should be requested via link:https://issues.apache.org/jira/servicedesk/customer/portal/1/group/22[Apache Infra JIRA -> New Podling Parent Request]
 
-==== Request Mailing Lists
+Once these items are requested, mailing lists should be created next. Other resources typically post information to these lists.
+
+=== Request Mailing Lists
 
 Apache mailing lists require volunteer moderators. New moderators can be
 link:http://www.apache.org/dev/committers.html#mailing-list-moderators[changed later]
@@ -141,16 +140,14 @@ For example:
 - commits@${podling}.incubator.apache.org
 - private@${podling}.incubator.apache.org
 
-For initial community building it is usually appropriate to only have
-a "dev" list, to keep the discussions focussed. Later add a "user" list
-if needed.
+For initial community building it is usually appropriate to only have a "dev" list, to keep the discussions focussed. Later add a "user" list if needed.  A podling that is already established and using an existing user interaction channel may want to keep those resources around until they feel they have transitioned to the ASF successfully.  You will want to discuss this on your existing development lists.
 
+Note:
 [NOTE]
 ----
-Commits under *http://svn.apache.org/repos/asf/incubator/_${podling}_*
-will be emailed to *commits@${podling}.incubator.apache.org*.
-Any deviation will
-require special configuration in the *asf-mailer.conf* file by the IPMC.
+If you are using SVN
+Commits under *http://svn.apache.org/repos/asf/incubator/_${podling}_* will be emailed to *commits@${podling}.incubator.apache.org*.
+Any deviation will require special configuration in the *asf-mailer.conf* file by the IPMC.
 ----
 
 Mailing lists creation is a task for the link:#who-infra[infrastructure team]. The
@@ -166,7 +163,7 @@ Once the *commits* list is created, the project MUST review
 the */incubator/${podling}* tree, since any commits made prior
 to the list's creation will have generated no email trail.
 
-===== Mail Archives
+==== Mail Archives
 
 Archives at link:http://mail-archives.apache.org[http://mail-archives.apache.org] for the public
 mailing lists will be setup as part of the mailing list creation process. No action is
@@ -188,14 +185,14 @@ Subscriptions to news-to-mailing-list bridges (for example, link:http://www.nabb
 must also be created manually. Subscribing helps accessibility and visibility but Nabble news
 users may not be aware that they are posting to a mailing list.
 
-===== Mailing List Administration
+==== Mailing List Administration
 
 Apache uses link:http://www.ezmlm.org/[ezmlm]. See the
 link:http://www.ezmlm.org/man/ezmlmman.html[manual] and
 committer link:http://www.apache.org/dev/committers.html#mail[mail FAQ]
 for more details.
 
-===== Mailing List Transition
+==== Mailing List Transition
 
 Independent mailing lists and groups are perfectly acceptable but development should
 happen on the official mailing lists at Apache. If a project has existing mailing lists,
@@ -210,11 +207,27 @@ to the new Incubator project mailing lists. Instead, a note should be posted to 
 old external mailing list asking them to subscribe to the new list. If possible, add
 a footer to the old mailing list with some instructions.
 
-===== Issue Tracking
+=== Self Service Requests
+
+Most of the resources you will request can be done via Self Service.  To do that, visit https://selfserve.apache.org/ and request the necessary resources.  This includes git, mailing lists, JIRA and Confluence.
+
+==== JIRA Issue Tracking
+
+To request JIRA, visit https://selfserve.apache.org/jira.html
+
+==== Other Issue Trackers
 
 Request an issue tracker on the link:https://issues.apache.org/jira/servicedesk/customer/portal/1/group/7[infra service desk]
 
 Remember to post an email announcing that the issue tracker is available.
+
+=== Git Migrations
+
+To request a git migration, please file a link:https://issues.apache.org/jira/servicedesk/customer/portal/1/create/8[New Git Repository] infra ticket, requesting to migrate from an existing organization to the Apache Organization
+
+=== Gitbox Requests
+
+To request gitbox repositories for a new podling, please first file a link:https://issues.apache.org/jira/servicedesk/customer/portal/1/create/65[GitBox Integration] infra ticket.  Once your podling has been added, you can use link:https://gitbox.apache.org/ to manage your gitbox repositories and user information.
 
 == [DRAFT] Podling Bootstrap
 
