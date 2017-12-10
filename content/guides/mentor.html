@@ -164,7 +164,10 @@ Estimated Reading Time: <span class="eta"></span>
 <li><a href="#initialize_podling_status_page">Initialize Podling Status Page</a></li>
 <li><a href="#resources">Resources</a>
 <ul class="sectlevel2">
-<li><a href="#request_required_resources">Request Required Resources</a></li>
+<li><a href="#request_mailing_lists">Request Mailing Lists</a></li>
+<li><a href="#self_service_requests">Self Service Requests</a></li>
+<li><a href="#git_migrations">Git Migrations</a></li>
+<li><a href="#gitbox_requests">Gitbox Requests</a></li>
 </ul>
 </li>
 <li><a href="#draft_podling_bootstrap">[DRAFT] Podling Bootstrap</a></li>
@@ -295,21 +298,21 @@ committers subscribe then these may be used for discussion.</p>
 <h2 id="resources">Resources</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Resources should be requested in a particular order, and based on paperwork processed.  Do not request source repositories before SGAs are filed, for instance.</p>
+<p>Resources should be requested in a particular order, and based on paperwork processed.  Do not request source repositories before SGAs are filed, for instance, if the source code is not already Apache licensed or Category A licensed.</p>
 </div>
-<div class="sect2">
-<h3 id="request_required_resources">Request Required Resources</h3>
 <div class="paragraph">
 <p>The proposal should include a list of required resources. All of these will
 require active set up. Some are created by infrastructure after an appropriate
 request, others can be set up by any IPMC members (typically mentors).</p>
 </div>
 <div class="paragraph">
-<p>Mailing lists should be created first. Other resources typically
-post information to these lists.</p>
+<p>The first resources to be created are LDAP and DNS.  These should be requested via <a href="https://issues.apache.org/jira/servicedesk/customer/portal/1/group/22">Apache Infra JIRA &#8594; New Podling Parent Request</a></p>
 </div>
-<div class="sect3">
-<h4 id="request_mailing_lists">Request Mailing Lists</h4>
+<div class="paragraph">
+<p>Once these items are requested, mailing lists should be created next. Other resources typically post information to these lists.</p>
+</div>
+<div class="sect2">
+<h3 id="request_mailing_lists">Request Mailing Lists</h3>
 <div class="paragraph">
 <p>Apache mailing lists require volunteer moderators. New moderators can be
 <a href="http://www.apache.org/dev/committers.html#mailing-list-moderators">changed later</a>
@@ -340,16 +343,16 @@ For example:</p>
 </ul>
 </div>
 <div class="paragraph">
-<p>For initial community building it is usually appropriate to only have
-a "dev" list, to keep the discussions focussed. Later add a "user" list
-if needed.</p>
+<p>For initial community building it is usually appropriate to only have a "dev" list, to keep the discussions focussed. Later add a "user" list if needed.  A podling that is already established and using an existing user interaction channel may want to keep those resources around until they feel they have transitioned to the ASF successfully.  You will want to discuss this on your existing development lists.</p>
+</div>
+<div class="paragraph">
+<p>Note:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre>Commits under *http://svn.apache.org/repos/asf/incubator/_${podling}_*
-will be emailed to *commits@${podling}.incubator.apache.org*.
-Any deviation will
-require special configuration in the *asf-mailer.conf* file by the IPMC.</pre>
+<pre>If you are using SVN
+Commits under *http://svn.apache.org/repos/asf/incubator/_${podling}_* will be emailed to *commits@${podling}.incubator.apache.org*.
+Any deviation will require special configuration in the *asf-mailer.conf* file by the IPMC.</pre>
 </div>
 </div>
 <div class="paragraph">
@@ -368,8 +371,8 @@ any existing mailing lists or forums previously used by the project.</p>
 the <strong>/incubator/${podling}</strong> tree, since any commits made prior
 to the list&#8217;s creation will have generated no email trail.</p>
 </div>
-<div class="sect4">
-<h5 id="mail_archives">Mail Archives</h5>
+<div class="sect3">
+<h4 id="mail_archives">Mail Archives</h4>
 <div class="paragraph">
 <p>Archives at <a href="http://mail-archives.apache.org">http://mail-archives.apache.org</a> for the public
 mailing lists will be setup as part of the mailing list creation process. No action is
@@ -395,8 +398,8 @@ must also be created manually. Subscribing helps accessibility and visibility bu
 users may not be aware that they are posting to a mailing list.</p>
 </div>
 </div>
-<div class="sect4">
-<h5 id="mailing_list_administration">Mailing List Administration</h5>
+<div class="sect3">
+<h4 id="mailing_list_administration">Mailing List Administration</h4>
 <div class="paragraph">
 <p>Apache uses <a href="http://www.ezmlm.org/">ezmlm</a>. See the
 <a href="http://www.ezmlm.org/man/ezmlmman.html">manual</a> and
@@ -404,8 +407,8 @@ committer <a href="http://www.apache.org/dev/committers.html#mail">mail FAQ</a>
 for more details.</p>
 </div>
 </div>
-<div class="sect4">
-<h5 id="mailing_list_transition">Mailing List Transition</h5>
+<div class="sect3">
+<h4 id="mailing_list_transition">Mailing List Transition</h4>
 <div class="paragraph">
 <p>Independent mailing lists and groups are perfectly acceptable but development should
 happen on the official mailing lists at Apache. If a project has existing mailing lists,
@@ -423,8 +426,20 @@ old external mailing list asking them to subscribe to the new list. If possible,
 a footer to the old mailing list with some instructions.</p>
 </div>
 </div>
-<div class="sect4">
-<h5 id="issue_tracking">Issue Tracking</h5>
+</div>
+<div class="sect2">
+<h3 id="self_service_requests">Self Service Requests</h3>
+<div class="paragraph">
+<p>Most of the resources you will request can be done via Self Service.  To do that, visit <a href="https://selfserve.apache.org/" class="bare">https://selfserve.apache.org/</a> and request the necessary resources.  This includes git, mailing lists, JIRA and Confluence.</p>
+</div>
+<div class="sect3">
+<h4 id="jira_issue_tracking">JIRA Issue Tracking</h4>
+<div class="paragraph">
+<p>To request JIRA, visit <a href="https://selfserve.apache.org/jira.html" class="bare">https://selfserve.apache.org/jira.html</a></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="other_issue_trackers">Other Issue Trackers</h4>
 <div class="paragraph">
 <p>Request an issue tracker on the <a href="https://issues.apache.org/jira/servicedesk/customer/portal/1/group/7">infra service desk</a></p>
 </div>
@@ -432,6 +447,17 @@ a footer to the old mailing list with some instructions.</p>
 <p>Remember to post an email announcing that the issue tracker is available.</p>
 </div>
 </div>
+</div>
+<div class="sect2">
+<h3 id="git_migrations">Git Migrations</h3>
+<div class="paragraph">
+<p>To request a git migration, please file a <a href="https://issues.apache.org/jira/servicedesk/customer/portal/1/create/8">New Git Repository</a> infra ticket, requesting to migrate from an existing organization to the Apache Organization</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="gitbox_requests">Gitbox Requests</h3>
+<div class="paragraph">
+<p>To request gitbox repositories for a new podling, please first file a <a href="https://issues.apache.org/jira/servicedesk/customer/portal/1/create/65">GitBox Integration</a> infra ticket.  Once your podling has been added, you can use link:https://gitbox.apache.org/ to manage your gitbox repositories and user information.</p>
 </div>
 </div>
 </div>
