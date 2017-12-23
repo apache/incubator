@@ -91,12 +91,35 @@
           <td class="care">False</td>
           <td class="care">False</td>
         </tr>
+        <tr id="plc4x">
+          <td>PLC4X</td>
+          <td>Incubator</td>
+          <td>2017-12-18</td>
+          <td></td>
+          <td class="care">True</td>
+          <td>group-1</td>
+          <td class="cool1">True</td>
+          <td class="cool1"><a href="projects/plc4x.html">True</a></td>
+          <td>2017-12-17</td>
+          <td></td>
+          <td>1,-,-</td>
+          <td class="care">-</td>
+          <td class="care number">0</td>
+          <td class="care">False</td>
+          <td class="cool1"><a href="https://issues.apache.org/jira/browse/PLC4X">True</a></td>
+          <td class="cool1"><a href="http://mail-archives.apache.org/mod_mbox/plc4x-dev/">True</a></td>
+          <td class="cool1"><a href="http://mail-archives.apache.org/mod_mbox/plc4x-commits/">True</a></td>
+          <td class="cool1"><a href="http://plc4x.incubator.apache.org/">True</a></td>
+          <td class="care">False</td>
+          <td class="care">False</td>
+          <td class="care">False</td>
+        </tr>
         <tr id="ponymail">
           <td>Pony Mail</td>
           <td>Incubator</td>
           <td>2016-05-27</td>
           <td></td>
-          <td>False</td>
+          <td class="care">True</td>
           <td>group-3</td>
           <td class="cool1">True</td>
           <td class="cool1"><a href="projects/ponymail.html">True</a></td>
@@ -263,7 +286,7 @@
           <td class="cool1"><a href="projects/sdap.html">True</a></td>
           <td>2017-10-26</td>
           <td></td>
-          <td>4,-,-</td>
+          <td>3,4,-</td>
           <td class="care">-</td>
           <td class="care number">0</td>
           <td class="care">False</td>
@@ -307,16 +330,16 @@
           <td>group-1</td>
           <td class="cool1">True</td>
           <td class="cool1"><a href="projects/servicecomb.html">True</a></td>
-          <td>2017-12-04</td>
+          <td>2017-12-22</td>
           <td></td>
-          <td>2,-,-</td>
+          <td>3,-,-</td>
           <td class="care">-</td>
           <td class="care number">0</td>
           <td class="care">False</td>
           <td class="cool1"><a href="https://issues.apache.org/jira/browse/SERVICECOMB">True</a></td>
-          <td class="care">False</td>
-          <td class="care">False</td>
-          <td class="care">False</td>
+          <td class="cool1"><a href="http://mail-archives.apache.org/mod_mbox/servicecomb-dev/">True</a></td>
+          <td class="cool1"><a href="http://mail-archives.apache.org/mod_mbox/servicecomb-commits/">True</a></td>
+          <td class="cool1"><a href="http://servicecomb.incubator.apache.org/">True</a></td>
           <td class="care">False</td>
           <td class="care">False</td>
           <td class="care">False</td>
@@ -353,15 +376,15 @@
           <td>group-3</td>
           <td class="cool1">True</td>
           <td class="cool1"><a href="projects/skywalking.html">True</a></td>
-          <td>2017-12-08</td>
+          <td>2017-12-15</td>
           <td></td>
-          <td>1,-,-</td>
+          <td>3,-,-</td>
           <td class="care">-</td>
           <td class="care number">0</td>
           <td class="care">False</td>
           <td class="cool1"><a href="https://issues.apache.org/jira/browse/SKYWALKING">True</a></td>
-          <td class="care">False</td>
-          <td class="care">False</td>
+          <td class="cool1"><a href="http://mail-archives.apache.org/mod_mbox/skywalking-dev/">True</a></td>
+          <td class="cool1"><a href="http://mail-archives.apache.org/mod_mbox/skywalking-commits/">True</a></td>
           <td class="care">False</td>
           <td class="care">False</td>
           <td class="care">False</td>
@@ -395,7 +418,7 @@
           <td>Incubator</td>
           <td>2016-09-23</td>
           <td></td>
-          <td>False</td>
+          <td class="care">True</td>
           <td>group-3</td>
           <td class="cool1">True</td>
           <td class="cool1"><a href="projects/spot.html">True</a></td>
@@ -539,7 +562,7 @@
           <td class="cool1"><a href="projects/trafficcontrol.html">True</a></td>
           <td>2017-11-28</td>
           <td></td>
-          <td>2,2,2</td>
+          <td>1,2,2</td>
           <td class="care">-</td>
           <td class="cool1 number">3</td>
           <td class="cool1"><a href="https://github.com/apache/incubator-trafficcontrol.git">True</a></td>
@@ -550,29 +573,6 @@
           <td class="cool1"><a href="http://www.apache.org/dyn/closer.cgi/incubator/trafficcontrol/">True</a></td>
           <td class="cool1"><a href="http://www.apache.org/dist/incubator/trafficcontrol/KEYS">True</a></td>
           <td class="cool1"><a href="http://www.apache.org/dyn/closer.cgi/incubator/trafficcontrol/">True</a></td>
-        </tr>
-        <tr id="trafodion">
-          <td>Trafodion</td>
-          <td>Incubator</td>
-          <td>2015-05-24</td>
-          <td></td>
-          <td>False</td>
-          <td>group-3</td>
-          <td class="cool1">True</td>
-          <td class="cool1"><a href="projects/trafodion.html">True</a></td>
-          <td>2017-05-01</td>
-          <td></td>
-          <td>0,0,1</td>
-          <td class="care">-</td>
-          <td class="cool1 number">10</td>
-          <td class="care">False</td>
-          <td class="cool1"><a href="https://issues.apache.org/jira/browse/TRAFODION">True</a></td>
-          <td class="cool1"><a href="http://mail-archives.apache.org/mod_mbox/trafodion-dev/">True</a></td>
-          <td class="cool1"><a href="http://mail-archives.apache.org/mod_mbox/trafodion-commits/">True</a></td>
-          <td class="cool1"><a href="http://trafodion.incubator.apache.org/">True</a></td>
-          <td class="cool1"><a href="http://www.apache.org/dyn/closer.cgi/incubator/trafodion/">True</a></td>
-          <td class="cool1"><a href="http://www.apache.org/dist/incubator/trafodion/KEYS">True</a></td>
-          <td class="cool1"><a href="http://www.apache.org/dyn/closer.cgi/incubator/trafodion/">True</a></td>
         </tr>
         <tr id="unomi">
           <td>Unomi</td>
@@ -602,7 +602,7 @@
           <td>Incubator</td>
           <td>2010-12-04</td>
           <td></td>
-          <td>False</td>
+          <td class="care">True</td>
           <td>group-3</td>
           <td class="cool1">True</td>
           <td class="cool1"><a href="projects/wave.html">True</a></td>
