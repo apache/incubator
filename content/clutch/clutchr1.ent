@@ -8,9 +8,9 @@
           <td>group-1</td>
           <td class="cool1">True</td>
           <td class="cool1"><a href="projects/airflow.html">True</a></td>
-          <td>2017-12-12</td>
+          <td>2018-02-27</td>
           <td></td>
-          <td>0,1,1</td>
+          <td>1,2,2</td>
           <td class="care">-</td>
           <td class="care number">0</td>
           <td class="care">False</td>
@@ -79,7 +79,7 @@
           <td class="cool1"><a href="projects/ariatosca.html">True</a></td>
           <td>2017-07-11</td>
           <td></td>
-          <td>0,0,2</td>
+          <td>0,0,1</td>
           <td class="care">-</td>
           <td class="care number">0</td>
           <td class="cool1"><a href="https://svn.apache.org/repos/asf/incubator/ariatosca/">True</a></td>
@@ -125,7 +125,7 @@
           <td class="cool1"><a href="projects/crail.html">True</a></td>
           <td>2018-01-03</td>
           <td></td>
-          <td>1,3,-</td>
+          <td>0,3,3</td>
           <td class="care">-</td>
           <td class="care number">0</td>
           <td class="care">False</td>
@@ -160,6 +160,29 @@
           <td class="care">False</td>
           <td class="care">False</td>
         </tr>
+        <tr id="druid">
+          <td>Druid</td>
+          <td>Incubator</td>
+          <td>2018-02-28</td>
+          <td></td>
+          <td class="care">True</td>
+          <td>group-3</td>
+          <td class="cool1">True</td>
+          <td class="cool1"><a href="projects/druid.html">True</a></td>
+          <td>2018-03-15</td>
+          <td></td>
+          <td>4,-,-</td>
+          <td class="care">-</td>
+          <td class="care number">0</td>
+          <td class="care">False</td>
+          <td class="cool1"><a href="https://issues.apache.org/jira/browse/DRUID">True</a></td>
+          <td class="cool1"><a href="http://mail-archives.apache.org/mod_mbox/druid-dev/">True</a></td>
+          <td class="care">False</td>
+          <td class="care">False</td>
+          <td class="care">False</td>
+          <td class="care">False</td>
+          <td class="care">False</td>
+        </tr>
         <tr id="dubbo">
           <td>Dubbo</td>
           <td>Incubator</td>
@@ -169,9 +192,9 @@
           <td>group-3</td>
           <td class="cool1">True</td>
           <td class="cool1"><a href="projects/dubbo.html">True</a></td>
-          <td>2018-02-26</td>
+          <td>2018-03-09</td>
           <td></td>
-          <td>2,-,-</td>
+          <td>5,-,-</td>
           <td class="care">-</td>
           <td class="care number">0</td>
           <td class="care">False</td>
@@ -194,7 +217,7 @@
           <td class="cool1"><a href="projects/echarts.html">True</a></td>
           <td>2018-02-22</td>
           <td></td>
-          <td>3,-,-</td>
+          <td>2,-,-</td>
           <td class="care">-</td>
           <td class="care number">0</td>
           <td class="care">False</td>
@@ -240,7 +263,7 @@
           <td class="cool1"><a href="projects/freemarker.html">True</a></td>
           <td>2018-02-19</td>
           <td></td>
-          <td>3,9,11</td>
+          <td>3,4,11</td>
           <td class="care">-</td>
           <td class="cool2 number">1</td>
           <td class="care">False</td>
@@ -257,7 +280,7 @@
           <td>Incubator</td>
           <td>2016-03-08</td>
           <td></td>
-          <td>False</td>
+          <td class="care">True</td>
           <td>group-3</td>
           <td class="cool1">True</td>
           <td class="cool1"><a href="projects/gearpump.html">True</a></td>
@@ -353,9 +376,9 @@
           <td>group-1</td>
           <td class="cool1">True</td>
           <td class="cool1"><a href="projects/hawq.html">True</a></td>
-          <td>2017-07-11</td>
+          <td>2018-03-06</td>
           <td></td>
-          <td>0,0,1</td>
+          <td>1,1,2</td>
           <td class="care">-</td>
           <td class="cool1 number">6</td>
           <td class="care">False</td>
@@ -395,7 +418,7 @@
           <td>Incubator</td>
           <td>2016-09-13</td>
           <td></td>
-          <td>False</td>
+          <td class="care">True</td>
           <td>group-3</td>
           <td class="cool1">True</td>
           <td class="cool1"><a href="projects/hivemall.html">True</a></td>
@@ -411,7 +434,7 @@
           <td class="cool1"><a href="http://hivemall.incubator.apache.org/">True</a></td>
           <td class="cool1"><a href="http://www.apache.org/dyn/closer.cgi/incubator/hivemall/">True</a></td>
           <td class="cool1"><a href="http://www.apache.org/dist/incubator/hivemall/KEYS">True</a></td>
-          <td class="care">False</td>
+          <td class="cool1"><a href="http://www.apache.org/dyn/closer.cgi/incubator/hivemall/">True</a></td>
         </tr>
         <tr id="htrace">
           <td>HTrace</td>
@@ -470,7 +493,7 @@
           <td class="cool1"><a href="projects/livy.html">True</a></td>
           <td>2017-06-23</td>
           <td></td>
-          <td>0,0,3</td>
+          <td>0,0,2</td>
           <td class="care">-</td>
           <td class="care number">0</td>
           <td class="care">False</td>
@@ -533,7 +556,7 @@
           <td>Incubator</td>
           <td>2015-03-01</td>
           <td></td>
-          <td class="care">True</td>
+          <td>False</td>
           <td>group-3</td>
           <td class="cool1">True</td>
           <td class="cool1"><a href="projects/myriad.html">True</a></td>
@@ -560,16 +583,16 @@
           <td>group-3</td>
           <td class="cool1">True</td>
           <td class="cool1"><a href="projects/nemo.html">True</a></td>
-          <td>2018-02-21</td>
+          <td>2018-03-01</td>
           <td></td>
-          <td>1,-,-</td>
+          <td>2,-,-</td>
           <td class="care">-</td>
           <td class="care number">0</td>
           <td class="care">False</td>
           <td class="cool1"><a href="https://issues.apache.org/jira/browse/NEMO">True</a></td>
           <td class="cool1"><a href="http://mail-archives.apache.org/mod_mbox/nemo-dev/">True</a></td>
           <td class="cool1"><a href="http://mail-archives.apache.org/mod_mbox/nemo-commits/">True</a></td>
-          <td class="care">False</td>
+          <td class="cool1"><a href="http://nemo.incubator.apache.org/">True</a></td>
           <td class="care">False</td>
           <td class="care">False</td>
           <td class="care">False</td>
