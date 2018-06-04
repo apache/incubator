@@ -25,10 +25,11 @@ to change this edit `jbake.properties` and uncomment the line referencing `local
 
 ## Jenkins Setup
 
-Commits to the `jbake-site` branch are automatically checked out and built using `build_site.sh`.
-Once this goes live those commits will go against `master`.
-The jenkins job can be found at [https://builds.apache.org/view/H-L/view/Incubator/job/Incubator%20Site/](https://builds.apache.org/view/H-L/view/Incubator/job/Incubator%20Site/)
-The result of the commits are pushed to the `asf-site` branch which are then published using `gitwcsub`
+Commits to the `master` branch are automatically checked out and built using `build_site.sh`.
+
+The corresponding jenkins job can be found at [https://builds.apache.org/view/H-L/view/Incubator/job/Incubator%20Site/](https://builds.apache.org/view/H-L/view/Incubator/job/Incubator%20Site/)
+
+The result of the website build are pushed to the `asf-site` branch which are then published automatically using `gitwcsub`
 
 ## Asciidoctor
 
