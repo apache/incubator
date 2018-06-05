@@ -40,4 +40,4 @@ While it is a form of asciidoc it does have some [syntax differences that are wo
 
 The site templates are written in groovy scripts.
 Even though the files end with `.gsp` they are not GSP files and do not have access to tag libraries.
-You can run custom code in them, similar to what is done in [homepage.gsp](templates/homepage.gsp)
+You can run custom code in them, similar to what is done in [homepage.gsp](templates/homepage.gsp) .
