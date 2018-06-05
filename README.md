@@ -23,7 +23,7 @@ This will start up JBake in a watching mode as you make changes it will refresh 
 While working with it locally, you'll notice that the site URLs redirect to `incubator.apache.org`;
 to change this edit `jbake.properties` and uncomment the line referencing `localhost`
 
-## Jenkins Setup
+## Automatic build and publishing - Jenkins Setup
 
 Commits to the `master` branch are automatically checked out and built using `build_site.sh`.
 
