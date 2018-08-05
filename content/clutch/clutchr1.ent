@@ -4,7 +4,7 @@
           <td>Incubator</td>
           <td>2016-03-31</td>
           <td></td>
-          <td>False</td>
+          <td class="care">True</td>
           <td>group-1</td>
           <td class="cool1">True</td>
           <td class="cool1"><a href="projects/airflow.html">True</a></td>
@@ -50,7 +50,7 @@
           <td>Incubator</td>
           <td>2016-08-30</td>
           <td></td>
-          <td>False</td>
+          <td class="care">True</td>
           <td>group-1</td>
           <td class="cool1">True</td>
           <td class="cool1"><a href="projects/annotator.html">True</a></td>
@@ -73,7 +73,7 @@
           <td>Incubator</td>
           <td>2013-10-03</td>
           <td></td>
-          <td>False</td>
+          <td class="care">True</td>
           <td>group-1</td>
           <td class="cool1">True</td>
           <td class="cool1"><a href="projects/batchee.html">True</a></td>
@@ -137,6 +137,29 @@
           <td class="cool1"><a href="http://www.apache.org/dist/incubator/daffodil/KEYS">True</a></td>
           <td class="cool1"><a href="http://www.apache.org/dyn/closer.cgi/incubator/daffodil/">True</a></td>
         </tr>
+        <tr id="doris">
+          <td>Doris</td>
+          <td>Incubator</td>
+          <td>2018-07-18</td>
+          <td></td>
+          <td class="care">True</td>
+          <td>group-2</td>
+          <td class="cool1">True</td>
+          <td class="cool1"><a href="projects/doris.html">True</a></td>
+          <td>2018-07-18</td>
+          <td></td>
+          <td>1,-,-</td>
+          <td class="care">-</td>
+          <td class="care number">0</td>
+          <td class="care">False</td>
+          <td class="cool1"><a href="https://github.com/baidu/palo/issues">True</a></td>
+          <td class="care">False</td>
+          <td class="care">False</td>
+          <td class="care">False</td>
+          <td class="care">False</td>
+          <td class="care">False</td>
+          <td class="care">False</td>
+        </tr>
         <tr id="druid">
           <td>Druid</td>
           <td>Incubator</td>
@@ -154,7 +177,7 @@
           <td class="care">False</td>
           <td class="cool1"><a href="https://issues.apache.org/jira/browse/DRUID">True</a></td>
           <td class="cool1"><a href="http://mail-archives.apache.org/mod_mbox/druid-dev/">True</a></td>
-          <td class="care">False</td>
+          <td class="cool1"><a href="http://mail-archives.apache.org/mod_mbox/druid-commits/">True</a></td>
           <td class="cool1"><a href="http://druid.incubator.apache.org/">True</a></td>
           <td class="care">False</td>
           <td class="care">False</td>
@@ -280,7 +303,7 @@
           <td>Incubator</td>
           <td>2016-04-28</td>
           <td></td>
-          <td>False</td>
+          <td class="care">True</td>
           <td>group-1</td>
           <td class="cool1">True</td>
           <td class="cool1"><a href="projects/gossip.html">True</a></td>
@@ -332,7 +355,7 @@
           <td class="cool1"><a href="projects/hawq.html">True</a></td>
           <td>2018-03-19</td>
           <td></td>
-          <td>0,1,2</td>
+          <td>0,0,2</td>
           <td class="care">-</td>
           <td class="cool1 number">6</td>
           <td class="care">False</td>
@@ -441,7 +464,7 @@
           <td>Incubator</td>
           <td>2015-12-21</td>
           <td></td>
-          <td>False</td>
+          <td class="care">True</td>
           <td>group-1</td>
           <td class="cool1">True</td>
           <td class="cool1"><a href="projects/milagro.html">True</a></td>
@@ -493,7 +516,7 @@
           <td class="cool1"><a href="projects/myriad.html">True</a></td>
           <td>2018-07-06</td>
           <td></td>
-          <td>2,2,2</td>
+          <td>1,2,2</td>
           <td class="care">-</td>
           <td class="cool1 number">3</td>
           <td class="care">False</td>
