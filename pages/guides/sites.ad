@@ -67,17 +67,17 @@ after incubation to a permanent place in the TLP home.
 The choice of tool used to generate the web site is left to
 the podling. If you already have a tool that you are comfortable
 with, you can continue to use it. If you do not, consider using
-the link:http://www.apache.org/dev/cmsref.html[Apache CMS].
+the Jekyll based link:http://www.apache.org/dev/cmsref.html[Apache website template].
 
 Regardless of which tool you use, the web site should be maintained
-in the svn repository, and include the site generation tool as a binary
+in the svn/git repository, and include the site generation tool as a binary
 file. This simplifies the process of site generation and enables changes
 to the site to be made by any committer. The generated site should also
-be checked into svn. This allows the generated site to be relocated
+be checked into svn/git. This allows the generated site to be relocated
 to any part of the Apache site after incubation is complete.
 
 Since the site is independent of the code, it should exist high in
-the svn repository, e.g. parallel to the trunk of the source tree.
+the svn/git repository, e.g. parallel to the trunk of the source tree.
 
 === Publishing Your Website
 
