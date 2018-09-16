@@ -90,7 +90,7 @@ source repository.  This should contain something like the following:
 ** Turn off ${podling} automatic builds
 ** Update ${podling} Incubator SVN
 *** Add entries to asf-mailer.conf and send mail to cvs at incubator.apache.org
-*** Remove entries from asf-authorizaton - this makes the directory rw to the Incubator PMC.
+*** Remove entries from asf-authorization - this makes the directory rw to the Incubator PMC.
 - After Infra modifies the website SVN permissions, disable
 the podling website by installing an `.htaccess` like this
 ----
