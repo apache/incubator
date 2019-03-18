@@ -19,11 +19,12 @@ body {
 /* Set the fixed height of the footer here */
 #push,
 #footer {
-  height: 60px;
+  height: 100px;
 }
 #footer {
   background-color: #f5f5f5;
   padding: 0;
+  margin: 0;
 }
 
 /* Lastly, apply responsive CSS fixes as necessary */
