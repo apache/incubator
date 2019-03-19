@@ -1,0 +1,379 @@
+= Incubator Clutch Status
+Apache Incubator PMC
+:jbake-type: simplepage
+:jbake-status: published
+:idprefix:
+:imagesdir: /images/
+
+[[current]]
+Clutch is a tool which gathers details about the projects (podlings) currently in incubation and re-generates the table below. A clutch analysis page
+is generated for each podling along with several data files. Its aim is to encourage and nurture, to provide an overview of the state of establishment of various resources,
+and to provide quick access to those resources. See link:#definitions[definitions] and link:#notes[notes] below regarding purpose, interpretation, and how to.
+
+[[clutch]]
+== Clutch
+
+include::_includes/clutcht.ad[]
+
+Current Board Report:
+include::_includes/clutchmy.ad[]
+
+=== Quick Notes
+
+* The [.care]#orange# items indicate where more care and attention is needed.
+* Anything [.issue]#vermilion# is an issue that should be addressed ASAP. Admittedly nothing can be done about elapsed time.
+* The [.cool1]#bluish-green# items indicate success.
+* The [.cool2]#yellow# items are okay.
+* Click on the column header link for link:#definitions[definitions].
+* Click on cells to go to available related resources.
+* Click on the podling name in the first column to go to the podling's clutch analysis page with deeper and more detailed information.
+
+[cols="2*<,18*^",options="header"]
+[%autowidth]
+|===
+|link:#h-project[Podling]
+|link:#h-sponsor[Sponsor]
+|link:#h-startdate[A]
+|link:#h-elapseddays[B]
+|link:#h-reportingmonthly[C]
+|link:#h-reportinggroup[D]
+|link:#h-hasstatusfile[E]
+|link:#h-statusupdatedate[F]
+|link:#h-statusage[G]
+|link:#h-statusupdatesounts[H]
+|link:#h-numbercommitters[I]
+|link:#h-numbernewcommitters[J]
+|link:#h-hasrepos[K]
+|link:#h-hastracker[L]
+|link:#h-hasdevlist[M]
+|link:#h-hascommitslist[N]
+|link:#h-haswebsite[O]
+|link:#h-hasdistributionarea[P]
+|link:#h-hassigningkeys[Q]
+|link:#h-hasrelease[R]
+
+include::_includes/clutchr.ad[]
+
+|===
+
+[[definitions]]
+=== Definitions, Notes, and References
+
+The [.care]#orange# and [.issue]#vermilion# items indicate where more care and attention is needed. The following
+notes for each column provide definitions and attempt to link directly to the relevant process documentation:
+
+[[h-project]]
+==== Podling
+
+The name of each podling is linked to a link:#podling_analysis_page[podling clutch analysis page].
+If your podling is in incubation, but is missing from the Clutch table, then it still needs to be added to the [.code]#content/podlings.xml# file.
+See the link:/guides/mentor.html#add_to_incubation_summary_file[mentor's guide]. The link:/projects/[Projects page] is also generated from [.code]#content/podlings.xml#.
+
+[[h-sponsor]]
+==== Sponsor
+
+Usually podlings are sponsored by the Incubator. Ocassionally podlings are sponsored by other Apache projects. The sponsor is chosen on the link:/guides/proposal.html[proposal].
+The value is set within the [.code]#content/podlings.xml# entry for the podling.
+
+[[h-startdate]]
+==== A: Start Date
+
+This is the date the podling started. Usually this is the date the podling proposal vote passed on the Incubator mailing list.
+This is set within the [.code]#content/podlings.xml# entry for the podling.
+
+[[h-elapseddays]]
+==== B: Elapsed Days
+
+This is the number of days since the start date. This is color coded according to the normal timeline of a podling.
+[.cool3]#<3#, [.cool2]#<12#, [.cool1]#<18#, [.cool3]#<24#, [.cool4]#>24# months. We may adjust these levels to better fit currently observed cycles.
+
+[[h-reportingmonthly]]
+==== C: Reporting Monthly
+
+For the first three months podlings report monthly. If the podling misses reports then they are moved to monthly until they report again.
+
+[[h-reportinggroup]]
+==== D: Reporting Group
+
+Which months the podling reports: 1 = January, April, July, October; 2 = February, May, August, November; 3 = March, June, September, December.
+Note that the report process for a month begins at the end of the prior month. The IPMC chair will send out the reporting schedule on a monthly basis along
+with reminders to each podling's dev list.
+
+[h-hasstatusfile]]
+==== E: Has Status File
+
+Each podling maintains a status file in [.code]#content/projects/(podling).xml# which is converted to a status page.
+Your mentor will setup the file and then the podling should maintain it. The key part to maintain is the "News" section where New Committers, PPMC Members, and Releases should
+be announced. For greater detail, please see: 
+
+* link:/guides/mentor.html#initialize_podling_status_page[Initializing Status]
+* link:/policy/incubation.html#ongoing_activities[Ongoing Activities]
+* link:/guides/website.html#maintaining_status_files[Status Maintenance]
+* link:/guides/ppmc.html#project_status_page[Podling Status Page]
+
+Click on the link in the cell to view the current status page.
+
+[[h-statusupdatedate]]
+==== F: Status Update Date
+
+The date status page was last updated. Keep the Status Page up to date with frequent news about:
+
+* New Committers
+* New PPMC Members
+* New Releases
+* New Repositories
+* New Resources
+
+[[h-statusage]]
+==== G: Status Age
+
+Days since the status page was last updated. The text is colored to warn when status is not being kept up to date.
+[.cool1]#<2#, [.cool2]#<4#, [.cool3]#<9#, [.cool4]#>9# months.
+
+[[h-statusupdatecounts]]
+==== H: Status Update Counts
+
+Cumulative number of commits to the podling status file in the previous 2, 4, and 9 months
+
+[[h-numbercommitters]]
+==== I: Number of Committers
+
+The total number of committers that have been established to date. Taken from Whimsy via
+https://whimsy.apache.org/public/public_ldap_projects.json[public project ldap].
+Maintained in Whimsy through https://whimsy.apache.org/roster/ppmc/[the roster pages].
+Click on the cell to view https://people.apache.org/phonebook.html[the public phone book].
+
+[[h-numbernewcommitters]]
+==== J: Number of New Committers
+
+The number of new committers added since establishment. This count is gathered from the Status page "News" section.
+See guides on voting in link:/guides/ppmc.html#adding_new_committers[new committers] and link:/guides/ppmc.html#voting_in_a_new_ppmc_member[new ppmc members].
+
+[[h-hasrepos]]
+==== K: Has a Code Repository
+
+A Gitbox or Subversion code repository has been created. Projects may have multiple Gitbox repositories.
+Click on the podling name in the first column to view all of the podling's repositories. A podling coming to the ASF may need to request a
+link:/guides/mentor.html#git_migrations[migration] or a link:/guides/mentor.html#gitbox_requests[new repository].
+The list of Gitbox repositories is retrieved from https://gitbox.apache.org/repositories.json[Gitbox json].
+
+[[h-hastracker]]
+==== L: Has Issue Tracker
+
+The podling has an Issue Tracker. If the status file has been updated to have an issue tracker link and the link is valid then there
+will be a link to the tracker in the cell.
+
+[[h-hasdevlist]]
+==== M: Has a Dev Mailing List
+
+The podling has established a dev mail list and archives. This is picked up from the status page and then confirmed for the usual naming pattern.
+If the list is available the cell will link to the http://mail-archives.apache.org/mod_mbox/[mailbox archive] podling dev list.
+
+[[h-hascommitslist]]
+==== N: Has a Commits Mailing List
+
+The podling has established a commits mail list and archives. This is picked up from the status page and then confirmed for the usual naming pattern.
+If available he cell will link to the http://mail-archives.apache.org/mod_mbox/[mailbox archive] podling commits list.
+Sometime a podling will start by directing code repository and issue tracker notification emails to their dev list. This will often obscur meaningful conversation.
+
+[[h-haswebsite]]
+==== O: Has a Web Site
+
+Podlings should maintain a website so that their users can find out information about the podling and The Apache Software Foundation.
+Here is the incubator's link:/guides/sites.html[website guide]. If the website is not provided in the status file then the usual naming patterns are tried.
+Assuming that the website exists the cell will provide a link to it. Whimsy provides a periodic scan of podling websites which you can view
+https://whimsy.apache.org/pods/[here]. The clutch process uses https://whimsy.apache.org/public/pods-scan.json[json] data to add notes about website issues
+to the podling's clutch analysis page under "Errata".
+
+[h-hasdistributionarea]]
+==== P: Has a Distribution Area
+
+The podling has a directory in the incubator's https://dist.apache.org/repos/dist/release/incubator/[release distribution directory].
+If this is present the cell provides a link.
+
+[[h-hassigningkeys]]
+==== Q: Has Release Signing Keys
+
+The podling has a PGP "[.code]#Signing KEYS#" file in their distribution area. If this is present then the cell provides a link.
+There is a facility that performs periodic checks on Apache releases and signatures - https://checker.apache.org/projs/incubator.html["release checker"].
+
+[[h-hasrelease]]
+==== R: Has a Release in the Distribution Area
+
+The podling has a release in their distribution area. Podlings are expected to comply with release and release distribution policies as modified by the Incubator.
+
+* link:/guides/releasemanagement.html[Incubator Release Management]
+* http://www.apache.org/dev/#releases[Software Product Releases]
+* http://www.apache.org/legal/release-policy.html[Apache Release Policy (legal)]
+* https://www.apache.org/dev/release-distribution.html[Apache Release Distribution Policy (infra)]
+
+If there is a podling release then the cell will provide a link to the podling's clutch analysis page's release section.
+
+[[h-graduate]]
+==== Graduating
+
+Once the Board has approved the podling's graduation resolution, update your podling metadata in the [.code]#content/podlings.xml#
+file as you progress through graduation. Do various tasks as listed in the documentation, such as a final tidy of the status page.
+See http://www.apache.org/dev/infra-contact#requesting-graduation[Infrastructure steps for graduation].
+
+[[h-retire]]
+==== Retirement
+
+Once the Incubator PMC has agreed to retirement, update the podling metadata and tidy the status page. If the podling is continuing development
+elsewhere then make sure that the new location is provided. When this occurs chances are someone on the IPMC will handle these duties ad hoc.
+
+include::_includes/clutcho1.ad[]
+
+[[steps]]
+== Assist with Incubation Steps
+
+Essentially Clutch is helping us all to follow the process from the "Acceptance" phase onwards.
+Any committer on a podling can help with these steps. Don't leave it to your mentors, although there are some steps that only they can do.
+
+[[mentors]]
+== Mentors
+
+This list is gathered from the link:/projects/[Projects in incubation] summary table.
+The link:/incubation/Roles_and_Responsibilities.html#Mentor[Mentors] are ASF members or individuals recognized by the IPMC who have chosen to assist these projects.
+The best way to find mentors for a new project, is during your Discuss and Proposal phases on the general@ mail list.
+
+include::_includes/clutchm.ad[]
+
+[[notes]]
+== Notes
+
+Any Incubator committer can run 'clutch'. In the top-level of the SVN repos [.code]#incubator/public/trunk# SVN, do: '[.code]#./clutch2.sh#' which will
+re-generate the link:#data[data files] and Asciidoctor files for the clutch. This is all a part of the normal build in GIT: https://github.com/apache/incubator[Incubator Git].
+See the Readme.
+
+Clutch reads the source file for the link:/projects/[projects currently in incubation] table (i.e. [.code]#content/podlings.xml#),
+ensures that each new project has an entry, adds some more attributes. Clutch then gathers some data from each project's Status page and
+validates that certain resources are established and steps are achieved.
+
+Clutch output includes link:#data[data files] 
+
+[[podling_analysis_page]]
+=== Podling Clutch Analysis Page
+
+The clutch analysis both fills the data included on this page and creates an analysis for each podling that can be linked to from the podling name in the clutch table.
+
+==== Description
+
+* The podling description from [.code]#content/podlings.xml#
+* The podling start date.
+* The date of the last update of project/status.xml.
+* The reporting cycle.
+* The number of committers and ppmc members. Indication if these are equal.
+* Mentor list including apache ids.
+
+==== News
+
+* Copies the news from the podling status page
+
+==== Resources
+
+Listing of various podling resources
+
+===== Project Website
+
+Link to podling's public website
+
+===== Mailing lists
+
+* Developer mailing list archive
+* Commits mailing list archive
+
+===== Issue Tracker
+
+Link to issue tracker
+
+===== Wiki
+
+Link to wiki
+
+===== Repositories
+
+* Detailed list of gitbox repos from infra's ground truth for the podling.
+* Link to any subversion repository.
+* For each gitbox repos:
+** Gitbox link
+** Github link
+** Description
+** Number of commits
+** Date of last commit
+
+==== Releases
+
+Information about the podling's release harvested by reviewing the distribution area's svn repository.
+
+===== Current
+
+Current releases:
+
+* Link to the signing key, if it exists.
+* Link to instructions on how to verify a release.
+* Release list is suppressed if there are no signing keys
+* For each release:
+** Download link using [.code]#closer.lua#
+** Signature link
+** Hash link
+** Size of the download file
+** Date that the release was added to the distribution area.
+** User who moved the release.
+** Revision in the svn repository.
+
+==== Errata
+
+Issues which may require further work.
+
+* Errata has a list of potential issues identified for the podling
+* Critical issues are in bold.
+* Links to pages on how to resolve the issue
+* Link to the https://whimsy.apache.org/pods/project[whimsy podling site scan]
+
+[[data]]
+== Data files
+
+Data files are also generated so that other tools can easily re-use the  metadata for the set of projects currently in incubation: 
+
+* link:/clutch/clutch.txt[[.code]#clutch.txt#] - list of projects, one per line. Comma-separated values (CSV).
+* [.code]#clutch.pkl# - a Python "pickle" file with various attributes (it is in the top-level of SVN incubator/public/trunk).
+* One text file for each Reporting group listing the dev mail address of the podlings due to report in that group.
+  (See link:/clutch/report_due_1.txt[[.code]#report_due_1.txt#],  link:/clutch/report_due_2.txt[[.code]#report_due_2.txt#], and
+   link:/clutch/report_due_3.txt[[.code]#report_due_3.txt#]) 
+  These are used by the IPMC to send monthly report alert reminders.
+* link:/clutch/podlings_graduated.txt[[.code]#podlings_graduated.txt#] - list of graduated podlings, one per line with start and end dates.
+* link:/clutch/podlings_retired.txt[[.code]#podlings_retired.txt#] - list of retired podlings, one per line with start and end dates.
+
+[[other]]
+== Other Issues
+
+Occasionally there are other issues, usually regarding podlings not cleaning up after their "graduation".
+
+include::_includes/clutcho2.ad[]
+
+[[notes-2]]
+== Further Notes
+
+The http://en.wikipedia.org/wiki/Clutch_(eggs)[clutch] is the set of eggs which have been laid. The mother hen (our Incubator PMC)
+needs to continually gather them, to ensure that none have rolled from the nest or moved to the outside, being forgotten or becoming cold.
+Clutch also means to grasp eagerly.
+
+So please interpret this table and the detailed pages from the point-of-view of encouragement and nurture.
+
+=== Origin
+
+The nest was becoming full, some podlings were forgotten, rolled into dark corners: a new tool "clutch" was created to assist oversight of all podlings
+(gmane link is now missing). The clutch was started 2008-10-19. (missing gmane link) There was prior list discussion. Also see
+https://issues.apache.org/jira/browse/INCUBATOR-78[INCUBATOR-78]
+
+=== Colour Scheme
+
+The colours for the table were specifically chosen to assist with colour-blindness and general accessibility.
+See the email discussion that led to this http://thread.gmane.org/gmane.comp.apache.incubator.general/20788/focus=20810[Re: Clutch color coding].
+2008-12-04 http://s.apache.org/clutch_colour?action=display[http://s.apache.org/clutch_colour] and see some testing
+http://people.apache.org/~crossley/cud/test.html[notes] and demonstrations.
+
+Thanks again to: "Color Universal Design (CUD) - How to make figures and presentations that are friendly to Colorblind people."
+Masataka Okabe and Kei Ito. (http://jfly.iam.u-tokyo.ac.jp/color/[http://jfly.iam.u-tokyo.ac.jp/color/]
+
