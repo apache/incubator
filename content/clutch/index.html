@@ -167,7 +167,7 @@ and to provide quick access to those resources. See <a href="#definitions">defin
 <h2 id="clutch">Clutch</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Clutch last gathered: Tue Mar 19 01:39:28 2019 UTC.</p>
+<p>Clutch last gathered: Tue Mar 19 18:58:57 2019 UTC.</p>
 </div>
 <div class="paragraph">
 <p>Number of podlings in incubation: 52</p>
@@ -1296,11 +1296,11 @@ and to provide quick access to those resources. See <a href="#definitions">defin
 <td class="tableblock halign-center valign-top"><p class="tableblock">2019-03-11</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/tvm.html"&gt;"><span class="cool1">8</span></a></p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">4,-,-</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://people.apache.org/phonebook.html?podling=tvm"><span class="cool1">8</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://people.apache.org/phonebook.html?podling=tvm"><span class="cool1">9</span></a></p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">0</span></p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">False</span></p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://issues.apache.org/jira/browse/TVM"><span class="cool1">True</span></a></p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">False</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/tvm-dev"><span class="cool1">True</span></a></p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">False</span></p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">False</span></p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">False</span></p></td>
@@ -1404,103 +1404,255 @@ and to provide quick access to those resources. See <a href="#definitions">defin
 <p>The <span class="care">orange</span> and <span class="issue">vermilion</span> items indicate where more care and attention is needed. The following
 notes for each column provide definitions and attempt to link directly to the relevant process documentation:</p>
 </div>
+<div class="sect3">
+<h4 id="h-project">Podling</h4>
+<div class="paragraph">
+<p>The name of each podling is linked to a <a href="#podling_analysis_page">podling clutch analysis page</a>.
+If your podling is in incubation, but is missing from the Clutch table, then it still needs to be added to the <span class="code">content/podlings.xml</span> file.
+See the <a href="/guides/mentor.html#add_to_incubation_summary_file">mentor&#8217;s guide</a>. The <a href="/projects/">Projects page</a> is also generated from <span class="code">content/podlings.xml</span>.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="h-sponsor">Sponsor</h4>
+<div class="paragraph">
+<p>Usually podlings are sponsored by the Incubator. Ocassionally podlings are sponsored by other Apache projects. The sponsor is chosen on the <a href="/guides/proposal.html">proposal</a>.
+The value is set within the <span class="code">content/podlings.xml</span> entry for the podling.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="h-startdate">A: Start Date</h4>
+<div class="paragraph">
+<p>This is the date the podling started. Usually this is the date the podling proposal vote passed on the Incubator mailing list.
+This is set within the <span class="code">content/podlings.xml</span> entry for the podling.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="h-elapseddays">B: Elapsed Days</h4>
+<div class="paragraph">
+<p>This is the number of days since the start date. This is color coded according to the normal timeline of a podling.
+<span class="cool3">&lt;3</span>, <span class="cool2">&lt;12</span>, <span class="cool1">&lt;18</span>, <span class="cool3">&lt;24</span>, <span class="cool4">&gt;24</span> months. We may adjust these levels to better fit currently observed cycles.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="h-reportingmonthly">C: Reporting Monthly</h4>
+<div class="paragraph">
+<p>For the first three months podlings report monthly. If the podling misses reports then they are moved to monthly until they report again.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="h-reportinggroup">D: Reporting Group</h4>
+<div class="paragraph">
+<p>Which months the podling reports: 1 = January, April, July, October; 2 = February, May, August, November; 3 = March, June, September, December.
+Note that the report process for a month begins at the end of the prior month. The IPMC chair will send out the reporting schedule on a monthly basis along
+with reminders to each podling&#8217;s dev list.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="e_has_status_file">E: Has Status File</h4>
+<div class="paragraph">
+<p>Each podling maintains a status file in <span class="code">content/projects/(podling).xml</span> which is converted to a status page.
+Your mentor will setup the file and then the podling should maintain it. The key part to maintain is the "News" section where New Committers, PPMC Members, and Releases should
+be announced. For greater detail, please see:</p>
+</div>
 <div class="ulist">
 <ul>
 <li>
-<p><a id="h-project"></a>Podling - If your podling is in incubation, but is missing from the Clutch table, then it still needs to be added to the <span class="code">content/podlings.xml</span> file.
-See the <a href="/guides/mentor.html#add_to_incubation_summary_file">mentor&#8217;s guide</a>. The <a href="/projects/">Projects page</a> is also generated from <span class="code">content/podlings.xml</span>.</p>
+<p><a href="/guides/mentor.html#initialize_podling_status_page">Initializing Status</a></p>
 </li>
 <li>
-<p><a id="h-sponsor"></a>Sponsor - usually podlings are sponsored by the Incubator. Ocassionally podlings are sponsored by other Apache projects.
-This is set within the <span class="code">content/podlings.xml</span> entry for the podling.</p>
+<p><a href="/policy/incubation.html#ongoing_activities">Ongoing Activities</a></p>
 </li>
 <li>
-<p><a id="h-startdate"></a>A: startDate - this is the date the podling started. Usually this is the date the podling proposal vote passed on the Incubator mailing list.
-This is set within the <span class="code">content/podlings.xml</span> entry for the podling.</p>
+<p><a href="/guides/website.html#maintaining_status_files">Status Maintenance</a></p>
 </li>
 <li>
-<p><a id="h-elapseddays"></a>B: elapsedDays - This is the number of days since the start date. This is color coded according to the normal timeline of a podling.
-<span class="cool3">&lt;3</span>, <span class="cool2">&lt;12</span>, <span class="cool1">&lt;18</span>, <span class="cool3">&lt;24</span>, <span class="cool4">&gt;24</span> months. We may adjust these levels to better fit currently observed cycles.</p>
+<p><a href="/guides/ppmc.html#project_status_page">Podling Status Page</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Click on the link in the cell to view the current status page.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="h-statusupdatedate">F: Status Update Date</h4>
+<div class="paragraph">
+<p>The date status page was last updated. Keep the Status Page up to date with frequent news about:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>New Committers</p>
 </li>
 <li>
-<p><a id="h-reportingmonthly"></a>C: reportingMonthly - for the first three months podlings report monthly. If the podling misses reports then they are moved to monthly until
-they report again.</p>
+<p>New PPMC Members</p>
 </li>
 <li>
-<p><a id="h-reportinggroup"></a>D: reportingGroup - which months the podling reports:
-1 = January, April, July, October; 2 = February, May, August, November; 3 = March, June, September, December.
-Note that the report process for a month begins at the end of the prior month. The IPMC chair will send out the reporting schedule on a monthly basis along
-with reminders to each podling&#8217;s dev list.</p>
+<p>New Releases</p>
 </li>
 <li>
-<p><a id="h-hasstatusfile"></a>E: hasStatusFile - each podling maintains a status file in <span class="code">content/projects/(podling).xml</span> which is converted to a status page.
-Your mentor will setup the file and then the podling should maintain it. The key part to maintain is the "News" section where New Committers, PPMC Members, and Releases should
-be announced. For greater detail, please see <a href="/policy/incubation.html#ongoing_activities">ongoing activities</a>,
-<a href="/guides/mentor.html#initialize_podling_status_page">initializing status</a>,
-<a href="/guides/website.html#maintaining_status_files">status maintenance</a>, and
-<a href="/guides/ppmc.html#project_status_page">podling status page</a>. Click on the link in the cell to view the current status page.</p>
+<p>New Repositories</p>
 </li>
 <li>
-<p><a id="h-statusupdatedate"></a>F: statusUpdateDate - the date status page was last updated. Keep this up to date with frequest news.</p>
+<p>New Resources</p>
 </li>
-<li>
-<p><a id="h-statusage"></a>G: statusAge - days since the status page was last updated. The text is colored to show when status is not being kept up to date.
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="h-statusage">G: Status Age</h4>
+<div class="paragraph">
+<p>Days since the status page was last updated. The text is colored to warn when status is not being kept up to date.
 <span class="cool1">&lt;2</span>, <span class="cool2">&lt;4</span>, <span class="cool3">&lt;9</span>, <span class="cool4">&gt;9</span> months.</p>
-</li>
-<li>
-<p><a id="h-statusupdatecounts"></a>H: statusUpdateCounts - cumulative number of commits to the status file in the previous 2, 4, and 9 months</p>
-</li>
-<li>
-<p><a id="h-numbercommitters"></a>I: numberCommitters - the total number of committers accounts that have been established to date. Taken from Whimsy via
+</div>
+</div>
+<div class="sect3">
+<h4 id="h-statusupdatecounts">H: Status Update Counts</h4>
+<div class="paragraph">
+<p>Cumulative number of commits to the podling status file in the previous 2, 4, and 9 months</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="h-numbercommitters">I: Number of Committers</h4>
+<div class="paragraph">
+<p>The total number of committers that have been established to date. Taken from Whimsy via
 <a href="https://whimsy.apache.org/public/public_ldap_projects.json">public project ldap</a>.
 Maintained in Whimsy through <a href="https://whimsy.apache.org/roster/ppmc/">the roster pages</a>.
 Click on the cell to view <a href="https://people.apache.org/phonebook.html">the public phone book</a>.</p>
-</li>
-<li>
-<p><a id="h-numbernewcommitters"></a>J: numberCommittersNew - new committers added since establishment. This count is gathered from the Status page "News" section.
+</div>
+</div>
+<div class="sect3">
+<h4 id="h-numbernewcommitters">J: Number of New Committers</h4>
+<div class="paragraph">
+<p>The number of new committers added since establishment. This count is gathered from the Status page "News" section.
 See guides on voting in <a href="/guides/ppmc.html#adding_new_committers">new committers</a> and <a href="/guides/ppmc.html#voting_in_a_new_ppmc_member">new ppmc members</a>.</p>
-</li>
-<li>
-<p><a id="h-hasrepos"></a>K: hasRepo - a Gitbox or Subversion code repository has been created. Projects may have multiple Gitbox repositories.
+</div>
+</div>
+<div class="sect3">
+<h4 id="h-hasrepos">K: Has a Code Repository</h4>
+<div class="paragraph">
+<p>A Gitbox or Subversion code repository has been created. Projects may have multiple Gitbox repositories.
 Click on the podling name in the first column to view all of the podling&#8217;s repositories. A podling coming to the ASF may need to request a
 <a href="/guides/mentor.html#git_migrations">migration</a> or a <a href="/guides/mentor.html#gitbox_requests">new repository</a>.
 The list of Gitbox repositories is retrieved from <a href="https://gitbox.apache.org/repositories.json">Gitbox json</a>.</p>
-</li>
-<li>
-<p><a id="h-hastracker"></a>L: hasTracker - has an Issue Tracker. If the status file has been updated to have an issue tracker link and the link is valid then there
+</div>
+</div>
+<div class="sect3">
+<h4 id="h-hastracker">L: Has Issue Tracker</h4>
+<div class="paragraph">
+<p>The podling has an Issue Tracker. If the status file has been updated to have an issue tracker link and the link is valid then there
 will be a link to the tracker in the cell.</p>
-</li>
-<li>
-<p><a id="h-hasdevlist"></a>M: hasMailListDev - has dev mail list and archives. This is picked up from the status page and then confirmed for the usual naming pattern.
-If available the cell will link to the <a href="http://mail-archives.apache.org/mod_mbox/">mailbox archive</a> podling dev list.</p>
-</li>
-<li>
-<p><a id="h-hascommitslist"></a>N: hasMailListCommits - has commits mail list and archives. This is picked up from the status page and then confirmed for the usual naming pattern.
-If available he cell will link to the <a href="http://mail-archives.apache.org/mod_mbox/">mailbox archive</a> podling commits list.</p>
-</li>
-<li>
-<p><a id="h-haswebsite"></a>O: hasWebSite - podling&#8217;s should maintain websites so that their users can find out information about the podling and The Apache Software Foundation.
+</div>
+</div>
+<div class="sect3">
+<h4 id="h-hasdevlist">M: Has a Dev Mailing List</h4>
+<div class="paragraph">
+<p>The podling has established a dev mail list and archives. This is picked up from the status page and then confirmed for the usual naming pattern.
+If the list is available the cell will link to the <a href="http://mail-archives.apache.org/mod_mbox/">mailbox archive</a> podling dev list.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="h-hascommitslist">N: Has a Commits Mailing List</h4>
+<div class="paragraph">
+<p>The podling has established a commits mail list and archives. This is picked up from the status page and then confirmed for the usual naming pattern.
+If available he cell will link to the <a href="http://mail-archives.apache.org/mod_mbox/">mailbox archive</a> podling commits list.
+Sometime a podling will start by directing code repository and issue tracker notification emails to their dev list. This will often obscur meaningful conversation.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="h-haswebsite">O: Has a Web Site</h4>
+<div class="paragraph">
+<p>Podlings should maintain a website so that their users can find out information about the podling and The Apache Software Foundation.
 Here is the incubator&#8217;s <a href="/guides/sites.html">website guide</a>. If the website is not provided in the status file then the usual naming patterns are tried.
 Assuming that the website exists the cell will provide a link to it. Whimsy provides a periodic scan of podling websites which you can view
 <a href="https://whimsy.apache.org/pods/">here</a>. The clutch process uses <a href="https://whimsy.apache.org/public/pods-scan.json">json</a> data to add notes about website issues
 to the podling&#8217;s clutch analysis page under "Errata".</p>
-</li>
-<li>
-<p><a id="h-hasdistributionarea"></a>P: hasDistributionArea - The podling has a directory in the incubator&#8217;s
-<a href="https://dist.apache.org/repos/dist/release/incubator/">release distribution directory</a>. If this is present the cell provides a link.</p>
-</li>
-<li>
-<p><a id="h-hassigningkeys"></a>Q: hasKeys - has a PGP "<span class="code">Signing KEYS</span>" file in their distribution area. If this is present then the cell provides a link.
+</div>
+</div>
+<div class="sect3">
+<h4 id="p_has_a_distribution_area">P: Has a Distribution Area</h4>
+<div class="paragraph">
+<p>The podling has a directory in the incubator&#8217;s <a href="https://dist.apache.org/repos/dist/release/incubator/">release distribution directory</a>.
+If this is present the cell provides a link.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="h-hassigningkeys">Q: Has Release Signing Keys</h4>
+<div class="paragraph">
+<p>The podling has a PGP "<span class="code">Signing KEYS</span>" file in their distribution area. If this is present then the cell provides a link.
 There is a facility that performs periodic checks on Apache releases and signatures - <a href="https://checker.apache.org/projs/incubator.html">"release checker"</a>.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="h-hasrelease">R: Has a Release in the Distribution Area</h4>
+<div class="paragraph">
+<p>The podling has a release in their distribution area. Podlings are expected to comply with release and release distribution policies as modified by the Incubator.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="/guides/releasemanagement.html">Incubator Release Management</a></p>
 </li>
 <li>
-<p><a id="h-hasrelease"></a>R: hasRelease - has a release in their distribution area. Podlings are expected to comply with release and release distribution policies
-as modified by the Incubator. <a href="/guides/releasemanagement.html">Incubator Release Management</a>, <a href="http://www.apache.org/dev/#releases">Software Product Releases</a>,
-<a href="http://www.apache.org/legal/release-policy.html">Apache Release Policy (legal)</a>, and
-<a href="https://www.apache.org/dev/release-distribution.html">Apache Release Distribution Policy (infra)</a>.
-If there is a podling release then the cell will provide a link to the podling&#8217;s clutch analysis page&#8217;s release section.</p>
+<p><a href="http://www.apache.org/dev/#releases">Software Product Releases</a></p>
+</li>
+<li>
+<p><a href="http://www.apache.org/legal/release-policy.html">Apache Release Policy (legal)</a></p>
+</li>
+<li>
+<p><a href="https://www.apache.org/dev/release-distribution.html">Apache Release Distribution Policy (infra)</a></p>
 </li>
 </ul>
+</div>
+<div class="paragraph">
+<p>If there is a podling release then the cell will provide a link to the podling&#8217;s clutch analysis page&#8217;s release section.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="h-graduate">Graduating</h4>
+<div class="paragraph">
+<p>Once the Board has approved the podling&#8217;s graduation resolution, update your podling metadata in the <span class="code">content/podlings.xml</span>
+file as you progress through graduation. Do various tasks as listed in the documentation, such as a final tidy of the status page.
+See <a href="http://www.apache.org/dev/infra-contact#requesting-graduation">Infrastructure steps for graduation</a>.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="h-retire">Retirement</h4>
+<div class="paragraph">
+<p>Once the Incubator PMC has agreed to retirement, update the podling metadata and tidy the status page. If the podling is continuing development
+elsewhere then make sure that the new location is provided. When this occurs chances are someone on the IPMC will handle these duties ad hoc.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="other_issues">Other Issues</h4>
+<div class="paragraph">
+<p>Sometimes other issues are found which are <a href="#other">listed</a> below for:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><span class="care">gearpump</span></p>
+</li>
+<li>
+<p><span class="care">joshua</span></p>
+</li>
+<li>
+<p><span class="care">toree</span></p>
+</li>
+<li>
+<p><span class="care">unomi</span></p>
+</li>
+<li>
+<p><span class="care">netbeans</span></p>
+</li>
+<li>
+<p><span class="care">senssoft</span></p>
+</li>
+<li>
+<p><span class="care">samoa</span></p>
+</li>
+</ul>
+</div>
 </div>
 </div>
 </div>
@@ -1525,283 +1677,283 @@ The best way to find mentors for a new project, is during your Discuss and Propo
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Alan Gates(gates): Omid, SAMOA, SINGA, Superset, Tephra</p>
+<p>Alan Gates (gates): Omid, SAMOA, SINGA, Superset, Tephra</p>
 </li>
 <li>
-<p>Andriy Redko(reta): Zipkin</p>
+<p>Andriy Redko (reta): Zipkin</p>
 </li>
 <li>
-<p>Ashutosh Chauhan(hashutosh): SAMOA, Superset</p>
+<p>Ashutosh Chauhan (hashutosh): SAMOA, Superset</p>
 </li>
 <li>
-<p>Ate Douma(ate): NetBeans</p>
+<p>Ate Douma (ate): NetBeans</p>
 </li>
 <li>
-<p>Atri Sharma(atri): SensSoft</p>
+<p>Atri Sharma (atri): SensSoft</p>
 </li>
 <li>
-<p>Benjamin Hindman(benh): Myriad, ShardingSphere</p>
+<p>Benjamin Hindman (benh): Myriad, ShardingSphere</p>
 </li>
 <li>
-<p>Bertrand Delacretaz(bdelacretaz): NetBeans, OpenWhisk</p>
+<p>Bertrand Delacretaz (bdelacretaz): NetBeans, OpenWhisk</p>
 </li>
 <li>
-<p>Bikas Saha(bikas): Livy</p>
+<p>Bikas Saha (bikas): Livy</p>
 </li>
 <li>
-<p>Billie Rinaldi(billie): Rya</p>
+<p>Billie Rinaldi (billie): Rya</p>
 </li>
 <li>
-<p>Bob Paulin(bob): MXNet</p>
+<p>Bob Paulin (bob): MXNet</p>
 </li>
 <li>
-<p>Brock Noland(brock): Livy</p>
+<p>Brock Noland (brock): Livy</p>
 </li>
 <li>
-<p>Byung-Gon Chun(bgchun): Nemo, TVM</p>
+<p>Byung-Gon Chun (bgchun): Nemo, TVM</p>
 </li>
 <li>
-<p>Carl Steinbach(cws): Iceberg</p>
+<p>Carl Steinbach (cws): Iceberg</p>
 </li>
 <li>
-<p>Chris Lambertus(cml): Warble</p>
+<p>Chris Lambertus (cml): Warble</p>
 </li>
 <li>
-<p>Christofer Dutz(cdutz): Daffodil, Edgent, IoTDB, Training</p>
+<p>Christofer Dutz (cdutz): Daffodil, Edgent, IoTDB, Training</p>
 </li>
 <li>
-<p>Craig Russell(clr): ShardingSphere, Training</p>
+<p>Craig Russell (clr): ShardingSphere, Training</p>
 </li>
 <li>
-<p>Daniel Dai(daijy): Hivemall</p>
+<p>Daniel Dai (daijy): Hivemall</p>
 </li>
 <li>
-<p>Daniel Gruno(humbedooh): NetBeans</p>
+<p>Daniel Gruno (humbedooh): NetBeans</p>
 </li>
 <li>
-<p>Daniel Takamori(pono): Warble</p>
+<p>Daniel Takamori (pono): Warble</p>
 </li>
 <li>
-<p>David Blevins(dblevins): Tamaya</p>
+<p>David Blevins (dblevins): Tamaya</p>
 </li>
 <li>
-<p>David Fisher(wave): Daffodil, Doris, Dubbo, ECharts, Heron</p>
+<p>David Fisher (wave): Daffodil, Doris, Dubbo, ECharts, Heron</p>
 </li>
 <li>
-<p>David Meikle(dmeikle): SensSoft</p>
+<p>David Meikle (dmeikle): SensSoft</p>
 </li>
 <li>
-<p>Davor Bonaci(davor): Amaterasu, Nemo</p>
+<p>Davor Bonaci (davor): Amaterasu, Nemo</p>
 </li>
 <li>
-<p>Devaraj Das(ddas): Ratis</p>
+<p>Devaraj Das (ddas): Ratis</p>
 </li>
 <li>
-<p>Felix Cheung(felixcheung): Pinot</p>
+<p>Felix Cheung (felixcheung): Pinot</p>
 </li>
 <li>
-<p>Furkan Kamaci(kamaci): TVM</p>
+<p>Furkan Kamaci (kamaci): TVM</p>
 </li>
 <li>
-<p>Greg Trasuk(gtrasuk): PLC4X</p>
+<p>Greg Trasuk (gtrasuk): PLC4X</p>
 </li>
 <li>
-<p>Henri Yandell(bayard): MXNet</p>
+<p>Henri Yandell (bayard): MXNet</p>
 </li>
 <li>
-<p>Henry Saputra(hsaputra): DLab, TVM</p>
+<p>Henry Saputra (hsaputra): DLab, TVM</p>
 </li>
 <li>
-<p>Hyunsik Choi(hyunsik): Nemo</p>
+<p>Hyunsik Choi (hyunsik): Nemo</p>
 </li>
 <li>
-<p>Ignasi Barrera(nacx): SkyWalking</p>
+<p>Ignasi Barrera (nacx): SkyWalking</p>
 </li>
 <li>
-<p>Jake Farrell(jfarrell): Heron</p>
+<p>Jake Farrell (jfarrell): Heron</p>
 </li>
 <li>
-<p>Jakob Homan(jghoman): Ratis</p>
+<p>Jakob Homan (jghoman): Ratis</p>
 </li>
 <li>
-<p>James Taylor(jamestaylor): Iceberg, Omid, Tephra</p>
+<p>James Taylor (jamestaylor): Iceberg, Omid, Tephra</p>
 </li>
 <li>
-<p>Jan Piotrowski(janpio): Weex</p>
+<p>Jan Piotrowski (janpio): Weex</p>
 </li>
 <li>
-<p>Jason Dai(jasondai): MXNet</p>
+<p>Jason Dai (jasondai): MXNet</p>
 </li>
 <li>
-<p>Jean-Baptiste Onofre(jbonofre): Amaterasu, BatchEE, BRPC, Gobblin, Livy, Nemo, Unomi</p>
+<p>Jean-Baptiste Onofre (jbonofre): Amaterasu, BatchEE, BRPC, Gobblin, Livy, Nemo, Unomi</p>
 </li>
 <li>
-<p>Jim Jagielski(jim): Gobblin, Marvin-AI, MXNet, Pinot</p>
+<p>Jim Jagielski (jim): Gobblin, Marvin-AI, MXNet, Pinot</p>
 </li>
 <li>
-<p>John D. Ament(johndament): ECharts, Pony Mail, Tamaya, Zipkin</p>
+<p>John D. Ament (johndament): ECharts, Pony Mail, Tamaya, Zipkin</p>
 </li>
 <li>
-<p>Josh Elser(elserj): Rya</p>
+<p>Josh Elser (elserj): Rya</p>
 </li>
 <li>
-<p>Jukka Zitting(jukka): PageSpeed</p>
+<p>Jukka Zitting (jukka): PageSpeed</p>
 </li>
 <li>
-<p>Julian Hyde(jhyde): Crail, Druid</p>
+<p>Julian Hyde (jhyde): Crail, Druid</p>
 </li>
 <li>
-<p>Julien Le Dem(julien): Heron, Iceberg, Toree</p>
+<p>Julien Le Dem (julien): Heron, Iceberg, Toree</p>
 </li>
 <li>
-<p>Jun Rao(junrao): Druid</p>
+<p>Jun Rao (junrao): Druid</p>
 </li>
 <li>
-<p>Justin Mclean(jmclean): Dubbo, Edgent, IoTDB, PLC4X, Training</p>
+<p>Justin Mclean (jmclean): Dubbo, Edgent, IoTDB, PLC4X, Training</p>
 </li>
 <li>
-<p>Jörn Rottmann(joern): SDAP</p>
+<p>Jörn Rottmann (joern): SDAP</p>
 </li>
 <li>
-<p>Kanchana Pradeepika Welagedara(kanchana): Tamaya</p>
+<p>Kanchana Pradeepika Welagedara (kanchana): Tamaya</p>
 </li>
 <li>
-<p>Kevin A. McGrail(kmcgrail): BRPC, ECharts, IoTDB</p>
+<p>Kevin A. McGrail (kmcgrail): BRPC, ECharts, IoTDB</p>
 </li>
 <li>
-<p>Kishore Gopalakrishna(kishoreg): Hudi, Pinot</p>
+<p>Kishore Gopalakrishna (kishoreg): Hudi, Pinot</p>
 </li>
 <li>
-<p>Koji Sekiguchi(koji): Hivemall</p>
+<p>Koji Sekiguchi (koji): Hivemall</p>
 </li>
 <li>
-<p>Konstantin I Boudnik(cos): DLab</p>
+<p>Konstantin I Boudnik (cos): DLab</p>
 </li>
 <li>
-<p>Krzysztof Sobkowiak(ksobkowiak): OpenWhisk</p>
+<p>Krzysztof Sobkowiak (ksobkowiak): OpenWhisk</p>
 </li>
 <li>
-<p>Lars Francke(larsfrancke): Training</p>
+<p>Lars Francke (larsfrancke): Training</p>
 </li>
 <li>
-<p>Leif Hedstrom(zwoop): PageSpeed</p>
+<p>Leif Hedstrom (zwoop): PageSpeed</p>
 </li>
 <li>
-<p>Lewis John McGibbney(lewismc): SensSoft</p>
+<p>Lewis John McGibbney (lewismc): SensSoft</p>
 </li>
 <li>
-<p>Luciano Resende(lresende): Crail, Edgent, Hudi, Livy, Marvin-AI, Toree</p>
+<p>Luciano Resende (lresende): Crail, Edgent, Hudi, Livy, Marvin-AI, Toree</p>
 </li>
 <li>
-<p>Mark Struberg(struberg): BatchEE, NetBeans</p>
+<p>Mark Struberg (struberg): BatchEE, NetBeans</p>
 </li>
 <li>
-<p>Mark Thomas(markt): Dubbo</p>
+<p>Mark Thomas (markt): Dubbo</p>
 </li>
 <li>
-<p>Markus Weimer(weimer): MXNet, Nemo</p>
+<p>Markus Weimer (weimer): MXNet, Nemo</p>
 </li>
 <li>
-<p>Marlon Pierce(mpierce): Taverna</p>
+<p>Marlon Pierce (mpierce): Taverna</p>
 </li>
 <li>
-<p>Matt Sicker(mattsicker): OpenWhisk</p>
+<p>Matt Sicker (mattsicker): OpenWhisk</p>
 </li>
 <li>
-<p>Michael Semb Wever(mck): SkyWalking, Zipkin</p>
+<p>Michael Semb Wever (mck): SkyWalking, Zipkin</p>
 </li>
 <li>
-<p>Michael Wall(mjwall): MXNet</p>
+<p>Michael Wall (mjwall): MXNet</p>
 </li>
 <li>
-<p>Myrle Krantz(myrle): Weex</p>
+<p>Myrle Krantz (myrle): Weex</p>
 </li>
 <li>
-<p>Nick Kew(niq): Annotator, Milagro, PageSpeed</p>
+<p>Nick Kew (niq): Annotator, Milagro, PageSpeed</p>
 </li>
 <li>
-<p>Olivier Lamy(olamy): Amaterasu, BatchEE, Gobblin, Pinot</p>
+<p>Olivier Lamy (olamy): Amaterasu, BatchEE, Gobblin, Pinot</p>
 </li>
 <li>
-<p>Owen O&#8217;Malley(omalley): Iceberg</p>
+<p>Owen O&#8217;Malley (omalley): Iceberg</p>
 </li>
 <li>
-<p>P. Taylor Goetz(ptgoetz): DLab, Druid, Heron</p>
+<p>P. Taylor Goetz (ptgoetz): DLab, Druid, Heron</p>
 </li>
 <li>
-<p>Phil Sorber(sorber): PageSpeed</p>
+<p>Phil Sorber (sorber): PageSpeed</p>
 </li>
 <li>
-<p>Roman Shaposhnik(rvs): Pinot</p>
+<p>Roman Shaposhnik (rvs): Pinot</p>
 </li>
 <li>
-<p>Ryan Blue(blue): Iceberg, Toree</p>
+<p>Ryan Blue (blue): Iceberg, Toree</p>
 </li>
 <li>
-<p>Sebastian Schelter(ssc): MXNet, TVM</p>
+<p>Sebastian Schelter (ssc): MXNet, TVM</p>
 </li>
 <li>
-<p>Sergio Fernández(wikier): S2Graph</p>
+<p>Sergio Fernández (wikier): S2Graph</p>
 </li>
 <li>
-<p>Shao Feng Shi(shaofengshi): Doris</p>
+<p>Shao Feng Shi (shaofengshi): Doris</p>
 </li>
 <li>
-<p>Sharan Foga(sharan): Pony Mail</p>
+<p>Sharan Foga (sharan): Pony Mail</p>
 </li>
 <li>
-<p>Sheng Wu(wusheng): Zipkin</p>
+<p>Sheng Wu (wusheng): Zipkin</p>
 </li>
 <li>
-<p>Stefan Bodewig(bodewig): PLC4X</p>
+<p>Stefan Bodewig (bodewig): PLC4X</p>
 </li>
 <li>
-<p>Steve Blackmon(sblackmon): Annotator</p>
+<p>Steve Blackmon (sblackmon): Annotator</p>
 </li>
 <li>
-<p>Stian Soiland-Reyes(stain): Taverna</p>
+<p>Stian Soiland-Reyes (stain): Taverna</p>
 </li>
 <li>
-<p>Suneel Marthi(smarthi): Hudi, SDAP</p>
+<p>Suneel Marthi (smarthi): Hudi, SDAP</p>
 </li>
 <li>
-<p>Suresh Srinivas(suresh): Taverna</p>
+<p>Suresh Srinivas (suresh): Taverna</p>
 </li>
 <li>
-<p>Ted Dunning(tdunning): Myriad, SINGA</p>
+<p>Ted Dunning (tdunning): Myriad, SINGA</p>
 </li>
 <li>
-<p>Ted Liu(tedliu): ECharts</p>
+<p>Ted Liu (tedliu): ECharts</p>
 </li>
 <li>
-<p>Thejas Nair(thejas): SINGA</p>
+<p>Thejas Nair (thejas): SINGA</p>
 </li>
 <li>
-<p>Thomas Weise(thw): Hudi</p>
+<p>Thomas Weise (thw): Hudi</p>
 </li>
 <li>
-<p>Timothy Chen(tnachen): TVM</p>
+<p>Timothy Chen (tnachen): TVM</p>
 </li>
 <li>
-<p>Tommaso Teofili(tommaso): Annotator</p>
+<p>Tommaso Teofili (tommaso): Annotator</p>
 </li>
 <li>
-<p>Uma Maheswara Rao G(umamahesh): Ratis, Spot</p>
+<p>Uma Maheswara Rao G (umamahesh): Ratis, Spot</p>
 </li>
 <li>
-<p>Von Gosling(vongosling): BRPC, ShardingSphere</p>
+<p>Von Gosling (vongosling): BRPC, ShardingSphere</p>
 </li>
 <li>
-<p>Willem Ning Jiang(ningjiang): Doris, IoTDB, ShardingSphere, SkyWalking, Weex, Zipkin</p>
+<p>Willem Ning Jiang (ningjiang): Doris, IoTDB, ShardingSphere, SkyWalking, Weex, Zipkin</p>
 </li>
 <li>
-<p>William Colen(colen): Marvin-AI</p>
+<p>William Colen (colen): Marvin-AI</p>
 </li>
 <li>
-<p>Woonsan Ko(woonsan): S2Graph</p>
+<p>Woonsan Ko (woonsan): S2Graph</p>
 </li>
 <li>
-<p>Xiangrui Meng(meng): Hivemall</p>
+<p>Xiangrui Meng (meng): Hivemall</p>
 </li>
 </ol>
 </div>
@@ -1820,91 +1972,232 @@ See the Readme.</p>
 ensures that each new project has an entry, adds some more attributes. Clutch then gathers some data from each project&#8217;s Status page and
 validates that certain resources are established and steps are achieved.</p>
 </div>
-<div class="ulist">
-<ul>
-<li>
+<div class="paragraph">
 <p>Clutch output includes <a href="#data">data files</a></p>
-</li>
-<li>
-<p><a id="h-graduate"></a> Graduating: once the Board has approved the podling&#8217;s graduation resolution, update your podling metadata in the <span class="code">content/podlings.xml</span>
-file as you progress through graduation. Do various tasks as listed in the documentation, such as a final tidy of the status page.
-See <a href="http://www.apache.org/dev/infra-contact#requesting-graduation">Infrastructure steps for graduation</a>.</p>
-</li>
-<li>
-<p><a id="h-retire"></a> Retirement: once the Incubator PMC has agreed to retirement, update the podling metadata and tidy the status page. If the podling is continuing development
-elsewhere then make sure that the new location is provided. When this occurs chances are someone on the IPMC will handle these duties ad hoc.</p>
-</li>
-<li>
-<p>other issues <a href="#other">listed</a> below for:</p>
+</div>
+<div class="sect2">
+<h3 id="podling_analysis_page">Podling Clutch Analysis Page</h3>
+<div class="paragraph">
+<p>The clutch analysis both fills the data included on this page and creates an analysis for each podling that can be linked to from the podling name in the clutch table.</p>
+</div>
+<div class="sect3">
+<h4 id="description">Description</h4>
 <div class="ulist">
 <ul>
 <li>
-<p><span class="care">gearpump</span></p>
+<p>The podling description from <span class="code">content/podlings.xml</span></p>
 </li>
 <li>
-<p><span class="care">joshua</span></p>
+<p>The podling start date.</p>
 </li>
 <li>
-<p><span class="care">netbeans</span></p>
+<p>The date of the last update of project/status.xml.</p>
 </li>
 <li>
-<p><span class="care">toree</span></p>
+<p>The reporting cycle.</p>
 </li>
 <li>
-<p><span class="care">senssoft</span></p>
+<p>The number of committers and ppmc members. Indication if these are equal.</p>
 </li>
 <li>
-<p><span class="care">unomi</span></p>
+<p>Mentor list including apache ids.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="news">News</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Copies the news from the podling status page</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="resources">Resources</h4>
+<div class="paragraph">
+<p>Listing of various podling resources</p>
+</div>
+<div class="sect4">
+<h5 id="project_website">Project Website</h5>
+<div class="paragraph">
+<p>Link to podling&#8217;s public website</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="mailing_lists">Mailing lists</h5>
+<div class="ulist">
+<ul>
+<li>
+<p>Developer mailing list archive</p>
 </li>
 <li>
-<p><span class="care">samoa</span></p>
+<p>Commits mailing list archive</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect4">
+<h5 id="issue_tracker">Issue Tracker</h5>
+<div class="paragraph">
+<p>Link to issue tracker</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="wiki">Wiki</h5>
+<div class="paragraph">
+<p>Link to wiki</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="repositories">Repositories</h5>
+<div class="ulist">
+<ul>
+<li>
+<p>Detailed list of gitbox repos from infra&#8217;s ground truth for the podling.</p>
+</li>
+<li>
+<p>Link to any subversion repository.</p>
+</li>
+<li>
+<p>For each gitbox repos:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Gitbox link</p>
+</li>
+<li>
+<p>Github link</p>
+</li>
+<li>
+<p>Description</p>
+</li>
+<li>
+<p>Number of commits</p>
+</li>
+<li>
+<p>Date of last commit</p>
 </li>
 </ul>
 </div>
 </li>
 </ul>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="releases">Releases</h4>
+<div class="paragraph">
+<p>Information about the podling&#8217;s release harvested by reviewing the distribution area&#8217;s svn repository.</p>
+</div>
+<div class="sect4">
+<h5 id="current_2">Current</h5>
+<div class="paragraph">
+<p>Current releases:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Link to the signing key, if it exists.</p>
+</li>
+<li>
+<p>Link to instructions on how to verify a release.</p>
+</li>
+<li>
+<p>Release list is suppressed if there are no signing keys</p>
+</li>
+<li>
+<p>For each release:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Download link using <span class="code">closer.lua</span></p>
+</li>
+<li>
+<p>Signature link</p>
+</li>
+<li>
+<p>Hash link</p>
+</li>
+<li>
+<p>Size of the download file</p>
+</li>
+<li>
+<p>Date that the release was added to the distribution area.</p>
+</li>
+<li>
+<p>User who moved the release.</p>
+</li>
+<li>
+<p>Revision in the svn repository.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="errata">Errata</h4>
+<div class="paragraph">
+<p>Issues which may require further work.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Errata has a list of potential issues identified for the podling</p>
+</li>
+<li>
+<p>Critical issues are in bold.</p>
+</li>
+<li>
+<p>Links to pages on how to resolve the issue</p>
+</li>
+<li>
+<p>Link to the <a href="https://whimsy.apache.org/pods/project">whimsy podling site scan</a></p>
+</li>
+</ul>
+</div>
+</div>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="notes-2">Further Notes</h2>
+<h2 id="data">Data files</h2>
 <div class="sectionbody">
-<div class="paragraph">
-<p>The <a href="http://en.wikipedia.org/wiki/Clutch_(eggs)">clutch</a> is the set of eggs which have been laid. The mother hen (our Incubator PMC)
-needs to continually gather them, to ensure that none have rolled from the nest or moved to the outside, being forgotten or becoming cold.
-Clutch also means to grasp eagerly.</p>
-</div>
-<div class="paragraph">
-<p>So please interpret this table and the detailed pages from the point-of-view of encouragement and nurture.</p>
-</div>
-<div class="sect2">
-<h3 id="data">Data files</h3>
 <div class="paragraph">
 <p>Data files are also generated so that other tools can easily re-use the  metadata for the set of projects currently in incubation:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p><span class="code">content/clutch/clutch.txt</span> - list of projects, one per line. Comma-separated values (CSV).</p>
+<p><a href="/clutch/clutch.txt"><span class="code">clutch.txt</span></a> - list of projects, one per line. Comma-separated values (CSV).</p>
 </li>
 <li>
 <p><span class="code">clutch.pkl</span> - a Python "pickle" file with various attributes (it is in the top-level of SVN incubator/public/trunk).</p>
 </li>
 <li>
 <p>One text file for each Reporting group listing the dev mail address of the podlings due to report in that group.
-(See <span class="code">content/clutch/report_due_[1-3].txt</span>) This is used by the IPMC to send monthly report alert reminders.</p>
+(See <a href="/clutch/report_due_1.txt"><span class="code">report_due_1.txt</span></a>,  <a href="/clutch/report_due_2.txt"><span class="code">report_due_2.txt</span></a>, and
+ <a href="/clutch/report_due_3.txt"><span class="code">report_due_3.txt</span></a>)
+These are used by the IPMC to send monthly report alert reminders.</p>
 </li>
 <li>
-<p><span class="code">content/clutch/podlings_graduated.txt</span> - list of graduated podlings, one per line with start and end dates.</p>
+<p><a href="/clutch/podlings_graduated.txt"><span class="code">podlings_graduated.txt</span></a> - list of graduated podlings, one per line with start and end dates.</p>
 </li>
 <li>
-<p><span class="code">content/clutch/podlings_retired.txt</span> - list of retired podlings, one per line with start and end dates.</p>
+<p><a href="/clutch/podlings_retired.txt"><span class="code">podlings_retired.txt</span></a> - list of retired podlings, one per line with start and end dates.</p>
 </li>
 </ul>
 </div>
 </div>
-<div class="sect2">
-<h3 id="other">Other Issues</h3>
+</div>
+<div class="sect1">
+<h2 id="other">Other Issues</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>Occasionally there are other issues, usually regarding podlings not cleaning up after their "graduation".</p>
 </div>
@@ -1933,6 +2226,18 @@ Clutch also means to grasp eagerly.</p>
 </li>
 </ul>
 </div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="notes-2">Further Notes</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The <a href="http://en.wikipedia.org/wiki/Clutch_(eggs)">clutch</a> is the set of eggs which have been laid. The mother hen (our Incubator PMC)
+needs to continually gather them, to ensure that none have rolled from the nest or moved to the outside, being forgotten or becoming cold.
+Clutch also means to grasp eagerly.</p>
+</div>
+<div class="paragraph">
+<p>So please interpret this table and the detailed pages from the point-of-view of encouragement and nurture.</p>
 </div>
 <div class="sect2">
 <h3 id="origin">Origin</h3>
