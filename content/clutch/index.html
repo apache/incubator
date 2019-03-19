@@ -1,0 +1,1977 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Incubator Clutch Status</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <meta name="generator" content="JBake">
+
+    <!-- Le styles -->
+    <link href="../css/incubator.css" rel="stylesheet">
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/asciidoctor.css" rel="stylesheet">
+    <link href="../css/base.css" rel="stylesheet">
+    <link href="../css/prettify.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <!--<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">-->
+    <link rel="shortcut icon" href="https://www.apache.org/favicon.ico">
+  </head>
+  <body onload="prettyPrint()">
+    <div id="wrap">
+   
+
+	<!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="https://incubator.apache.org"><i class="icon-home"></i>Apache Incubator</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Policies <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                
+                  <li><a href="https://incubator.apache.org/policy/incubation.html">Incubation Policy</a></li>
+                
+                  <li><a href="https://incubator.apache.org/policy/process.html">Incubation Process</a></li>
+                
+                  <li><a href="https://incubator.apache.org/policy/roles_and_responsibilities.html">Roles and Responsibilities</a></li>
+                
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Proposals <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                
+                <li><a href="https://incubator.apache.org/guides/proposal.html">A Guide To Proposal Creation</a></li>
+                
+                <li><a href="https://incubator.apache.org/guides/entry.html">Enter The Incubator</a></li>
+                
+                <li><a href="https://incubator.apache.org/podling-story.html">The Story of a Podling</a></li>
+                
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Podling Guides <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                
+                  <li><a href="https://incubator.apache.org/guides/branding.html">Incubator Branding Guide</a></li>
+                
+                  <li><a href="https://incubator.apache.org/guides/committer.html">Committers</a></li>
+                
+                  <li><a href="https://incubator.apache.org/guides/community.html">Guide to Successful Community Building</a></li>
+                
+                  <li><a href="https://incubator.apache.org/guides/graduation.html">Guide to Successful Graduation</a></li>
+                
+                  <li><a href="https://incubator.apache.org/guides/ip_clearance.html">IP Clearance</a></li>
+                
+                  <li><a href="https://incubator.apache.org/guides/names.html">Podling Name Search Guide</a></li>
+                
+                  <li><a href="https://incubator.apache.org/guides/podling_sourcecontrol.html">Podling Source Control</a></li>
+                
+                  <li><a href="https://incubator.apache.org/guides/ppmc.html">Podling Project Management Committee</a></li>
+                
+                  <li><a href="https://incubator.apache.org/guides/press-kit.html">Podling Press Kit</a></li>
+                
+                  <li><a href="https://incubator.apache.org/guides/publicity.html">Podling Publicity/Media Guidelines</a></li>
+                
+                  <li><a href="https://incubator.apache.org/guides/releasemanagement.html">Release Management</a></li>
+                
+                  <li><a href="https://incubator.apache.org/guides/retirement.html">Guide to Retirement</a></li>
+                
+                  <li><a href="https://incubator.apache.org/guides/sites.html">Podling Websites</a></li>
+                
+                  <li><a href="https://incubator.apache.org/guides/transferring.html">Transferring Resources out of the Incubator</a></li>
+                
+                  <li><a href="https://incubator.apache.org/guides/transitioning_asf.html">Initial Code Import</a></li>
+                
+                <li><a href="/clutch">Clutch Report</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">PMC Guides <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                
+                <li><a href="https://incubator.apache.org/guides/chair.html">Incubator Chair Guide</a></li>
+                
+                <li><a href="https://incubator.apache.org/guides/lists.html">Incubator Mailing Lists Guide</a></li>
+                
+                <li><a href="https://incubator.apache.org/guides/mentor.html">Mentors' Guide</a></li>
+                
+                <li><a href="https://incubator.apache.org/guides/participation.html">Guide to Participation</a></li>
+                
+                <li><a href="https://incubator.apache.org/guides/pmc.html">The Incubator PMC</a></li>
+                
+                <li><a href="https://incubator.apache.org/guides/website.html">Updating the top-level Incubator website</a></li>
+                
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">ASF <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="http://www.apache.org/foundation/how-it-works.html">How Apache Works</a></li>
+                <li><a href="http://www.apache.org/dev/">Developer Documentation</a></li>
+                <li><a href="http://www.apache.org/legal/">Legal</a></li>
+                <li><a href="http://www.apache.org/foundation/">Foundation</a></li>
+                <li><a href="http://www.apache.org/foundation/sponsorship.html">Sponsor Apache</a></li>
+                <li><a href="http://www.apache.org/foundation/thanks.html">Thanks</a></li>
+              </ul>
+            </li>
+            <li><a href="https://incubator.apache.org/faq.html">FAQs</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 vcenter"><a href="https://www.apache.org/"><img src="http://www.apache.org/img/asf_logo.png" alt="The Apache Software Foundation" border="0" style="margin-top: 2px" width="250"></a></div>
+          <div class="col-md-4 vcenter"><a href="/"><img src="https://incubator.apache.org/images/incubator_feather_egg_logo_sm.png" alt="The Apache Software Foundation Incubator" border="0" style="margin-top: 2px" height="100"></a></div>
+          <div class="col-md-4 vcenter"><a href="https://www.apache.org/foundation/contributing.html"><img src="https://www.apache.org/images/SupportApache-small.png" height="75" width="75"></a></div>
+      </div>
+    </div>
+    <div class="top-container container">
+
+<div class="incubator-page-header">
+    <h1>Incubator Clutch Status</h1>
+</div>
+
+<div id="preamble">
+<div class="sectionbody">
+<div id="current" class="paragraph">
+<p>Clutch is a tool which gathers details about the projects (podlings) currently in incubation and re-generates the table below. A clutch analysis page
+is generated for each podling along with several data files. Its aim is to encourage and nurture, to provide an overview of the state of establishment of various resources,
+and to provide quick access to those resources. See <a href="#definitions">definitions</a> and <a href="#notes">notes</a> below regarding purpose, interpretation, and how to.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="clutch">Clutch</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Clutch last gathered: Tue Mar 19 00:49:20 2019 UTC.</p>
+</div>
+<div class="paragraph">
+<p>Number of podlings in incubation: 52</p>
+</div>
+<div class="paragraph">
+<p>Current Board Report:
+<a href="http://wiki.apache.org/incubator/March2019">March2019</a></p>
+</div>
+<div class="sect2">
+<h3 id="quick_notes">Quick Notes</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>The <span class="care">orange</span> items indicate where more care and attention is needed.</p>
+</li>
+<li>
+<p>Anything <span class="issue">vermilion</span> is an issue that should be addressed ASAP. Admittedly nothing can be done about elapsed time.</p>
+</li>
+<li>
+<p>The <span class="cool1">bluish-green</span> items indicate success.</p>
+</li>
+<li>
+<p>The <span class="cool2">yellow</span> items are okay.</p>
+</li>
+<li>
+<p>Click on the column header link for <a href="#definitions">definitions</a>.</p>
+</li>
+<li>
+<p>Click on cells to go to available related resources.</p>
+</li>
+<li>
+<p>Click on the podling name in the first column to go to the podling&#8217;s clutch analysis page with deeper and more detailed information.</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top"><a href="#h-project">Podling</a></th>
+<th class="tableblock halign-left valign-top"><a href="#h-sponsor">Sponsor</a></th>
+<th class="tableblock halign-center valign-top"><a href="#h-startdate">A</a></th>
+<th class="tableblock halign-center valign-top"><a href="#h-elapseddays">B</a></th>
+<th class="tableblock halign-center valign-top"><a href="#h-reportingmonthly">C</a></th>
+<th class="tableblock halign-center valign-top"><a href="#h-reportinggroup">D</a></th>
+<th class="tableblock halign-center valign-top"><a href="#h-hasstatusfile">E</a></th>
+<th class="tableblock halign-center valign-top"><a href="#h-statusupdatedate">F</a></th>
+<th class="tableblock halign-center valign-top"><a href="#h-statusage">G</a></th>
+<th class="tableblock halign-center valign-top"><a href="#h-statusupdatesounts">H</a></th>
+<th class="tableblock halign-center valign-top"><a href="#h-numbercommitters">I</a></th>
+<th class="tableblock halign-center valign-top"><a href="#h-numbernewcommitters">J</a></th>
+<th class="tableblock halign-center valign-top"><a href="#h-hasrepos">K</a></th>
+<th class="tableblock halign-center valign-top"><a href="#h-hastracker">L</a></th>
+<th class="tableblock halign-center valign-top"><a href="#h-hasdevlist">M</a></th>
+<th class="tableblock halign-center valign-top"><a href="#h-hascommitslist">N</a></th>
+<th class="tableblock halign-center valign-top"><a href="#h-haswebsite">O</a></th>
+<th class="tableblock halign-center valign-top"><a href="#h-hasdistributionarea">P</a></th>
+<th class="tableblock halign-center valign-top"><a href="#h-hassigningkeys">Q</a></th>
+<th class="tableblock halign-center valign-top"><a href="#h-hasrelease">R</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="amaterasu.html">Amaterasu</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Incubator</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2017-09-07</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/amaterasu.html"&gt;"><span class="cool3">558</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">False</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/amaterasu.html"&gt;"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2017-09-25</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/amaterasu.html"&gt;"><span class="cool4">540</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">0,0,0</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://people.apache.org/phonebook.html?podling=amaterasu"><span class="cool1">7</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">0</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://gitbox.apache.org/repos/asf?p=incubator-amaterasu.git;a=tree;hb=HEAD"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://issues.apache.org/jira/browse/AMATERASU"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/amaterasu-dev"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/amaterasu-commits"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://amaterasu.incubator.apache.org"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://dist.apache.org/repos/dist/release/incubator/amaterasu"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://www.apache.org/dist/incubator/amaterasu/KEYS"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="amaterasu.html#releases"><span class="cool1">True</span></a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="annotator.html">Annotator</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Incubator</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2016-08-30</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/annotator.html"&gt;"><span class="cool4">931</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">False</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/annotator.html"&gt;"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2017-02-13</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/annotator.html"&gt;"><span class="cool4">764</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">0,0,0</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://people.apache.org/phonebook.html?podling=annotator"><span class="cool1">8</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">0</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://gitbox.apache.org/repos/asf?p=incubator-annotator.git;a=tree;hb=HEAD"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://issues.apache.org/jira/browse/ANNO"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/annotator-dev"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/annotator-commits"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://annotator.incubator.apache.org"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">False</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">False</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">False</span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="batchee.html">BatchEE</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Incubator</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2013-10-03</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/batchee.html"&gt;"><span class="cool4">1993</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">False</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/batchee.html"&gt;"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2015-01-06</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/batchee.html"&gt;"><span class="cool4">1533</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">0,0,0</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://people.apache.org/phonebook.html?podling=batchee"><span class="cool1">9</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">0</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://gitbox.apache.org/repos/asf?p=incubator-batchee.git;a=tree;hb=HEAD"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://issues.apache.org/jira/browse/BATCHEE"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/batchee-dev"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/batchee-commits"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://batchee.incubator.apache.org"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://dist.apache.org/repos/dist/release/incubator/batchee"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://www.apache.org/dist/incubator/batchee/KEYS"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="batchee.html#releases"><span class="cool1">True</span></a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="brpc.html">BRPC</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Incubator</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2018-11-13</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/brpc.html"&gt;"><span class="cool2">126</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">True</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/brpc.html"&gt;"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2018-11-23</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/brpc.html"&gt;"><span class="cool2">116</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">0,1,1</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://people.apache.org/phonebook.html?podling=brpc"><span class="cool1">9</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">0</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://gitbox.apache.org/repos/asf?p=incubator-brpc.git;a=tree;hb=HEAD"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">False</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/brpc-dev"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">False</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">False</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">False</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">False</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">False</span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="crail.html">Crail</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Incubator</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2017-11-01</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/crail.html"&gt;"><span class="cool1">503</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">False</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/crail.html"&gt;"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2018-01-03</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/crail.html"&gt;"><span class="cool4">440</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">0,0,0</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://people.apache.org/phonebook.html?podling=crail"><span class="cool1">9</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">0</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://gitbox.apache.org/repos/asf?p=incubator-crail.git;a=tree;hb=HEAD"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://issues.apache.org/jira/browse/CRAIL"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/crail-dev"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/crail-commits"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://crail.incubator.apache.org"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://dist.apache.org/repos/dist/release/incubator/crail"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://www.apache.org/dist/incubator/crail/KEYS"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="crail.html#releases"><span class="cool1">True</span></a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="daffodil.html">Daffodil</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Incubator</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2017-08-27</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/daffodil.html"&gt;"><span class="cool3">569</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">False</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/daffodil.html"&gt;"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2018-08-28</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/daffodil.html"&gt;"><span class="cool4">203</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">0,0,1</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://people.apache.org/phonebook.html?podling=daffodil"><span class="cool1">8</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">0</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://gitbox.apache.org/repos/asf?p=incubator-daffodil.git;a=tree;hb=HEAD"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://issues.apache.org/jira/projects/DAFFODIL"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/daffodil-dev"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/daffodil-commits"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://daffodil.incubator.apache.org"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://dist.apache.org/repos/dist/release/incubator/daffodil"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://www.apache.org/dist/incubator/daffodil/KEYS"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="daffodil.html#releases"><span class="cool1">True</span></a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="dlab.html">DLab</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Incubator</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2018-08-20</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/dlab.html"&gt;"><span class="cool2">211</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">False</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/dlab.html"&gt;"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2018-08-20</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/dlab.html"&gt;"><span class="cool4">211</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">0,0,1</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://people.apache.org/phonebook.html?podling=dlab"><span class="cool1">14</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">0</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://gitbox.apache.org/repos/asf?p=incubator-dlab.git;a=tree;hb=HEAD"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://issues.apache.org/jira/projects/DLAB"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/dlab-dev"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/dlab-commits"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">False</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">False</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">False</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">False</span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="doris.html">Doris</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Incubator</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2018-07-18</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/doris.html"&gt;"><span class="cool2">244</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">False</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/doris.html"&gt;"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2018-08-23</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/doris.html"&gt;"><span class="cool4">208</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">0,0,2</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://people.apache.org/phonebook.html?podling=doris"><span class="cool1">12</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">0</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://gitbox.apache.org/repos/asf?p=incubator-doris.git;a=tree;hb=HEAD"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://github.com/baidu/palo/issues"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/doris-dev"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/doris-commits"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://doris.incubator.apache.org"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://dist.apache.org/repos/dist/release/incubator/doris"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://www.apache.org/dist/incubator/doris/KEYS"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="doris.html#releases"><span class="cool1">True</span></a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="druid.html">Druid</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Incubator</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2018-02-28</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/druid.html"&gt;"><span class="cool1">384</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">False</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/druid.html"&gt;"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2018-05-03</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/druid.html"&gt;"><span class="cool4">320</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">0,0,0</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://people.apache.org/phonebook.html?podling=druid"><span class="cool1">29</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">0</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://gitbox.apache.org/repos/asf?p=incubator-druid.git;a=tree;hb=HEAD"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://issues.apache.org/jira/browse/DRUID"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/druid-dev"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/druid-commits"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://druid.incubator.apache.org"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://dist.apache.org/repos/dist/release/incubator/druid"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://www.apache.org/dist/incubator/druid/KEYS"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="druid.html#releases"><span class="cool1">True</span></a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="dubbo.html">Dubbo</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Incubator</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2018-02-16</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/dubbo.html"&gt;"><span class="cool1">396</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">False</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/dubbo.html"&gt;"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2019-03-13</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/dubbo.html"&gt;"><span class="cool1">6</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">6,8,11</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://people.apache.org/phonebook.html?podling=dubbo"><span class="cool1">34</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="cool1">17</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://gitbox.apache.org/repos/asf?p=incubator-dubbo.git;a=tree;hb=HEAD"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://github.com/apache/incubator-dubbo/issues"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/dubbo-dev"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/dubbo-commits"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://dubbo.incubator.apache.org"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://dist.apache.org/repos/dist/release/incubator/dubbo"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://www.apache.org/dist/incubator/dubbo/KEYS"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="dubbo.html#releases"><span class="cool1">True</span></a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="echarts.html">ECharts</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Incubator</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2018-01-18</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/echarts.html"&gt;"><span class="cool1">425</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">False</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/echarts.html"&gt;"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2018-02-22</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/echarts.html"&gt;"><span class="cool4">390</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">0,0,0</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://people.apache.org/phonebook.html?podling=echarts"><span class="cool1">13</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">0</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://gitbox.apache.org/repos/asf?p=incubator-echarts.git;a=tree;hb=HEAD"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">False</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/echarts-dev"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/echarts-commits"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://echarts.incubator.apache.org"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://dist.apache.org/repos/dist/release/incubator/echarts"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://www.apache.org/dist/incubator/echarts/KEYS"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="echarts.html#releases"><span class="cool1">True</span></a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="edgent.html">Edgent</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Incubator</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2016-02-29</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/edgent.html"&gt;"><span class="cool4">1114</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">False</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/edgent.html"&gt;"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2019-03-13</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/edgent.html"&gt;"><span class="cool1">6</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">1,1,1</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://people.apache.org/phonebook.html?podling=edgent"><span class="cool1">11</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">0</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://gitbox.apache.org/repos/asf?p=incubator-edgent.git;a=tree;hb=HEAD"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://issues.apache.org/jira/browse/EDGENT"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/edgent-dev"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/edgent-commits"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://edgent.incubator.apache.org"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://dist.apache.org/repos/dist/release/incubator/edgent"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://www.apache.org/dist/incubator/edgent/KEYS"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="edgent.html#releases"><span class="cool1">True</span></a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="gobblin.html">Gobblin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Incubator</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2017-02-23</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/gobblin.html"&gt;"><span class="cool4">754</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">False</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/gobblin.html"&gt;"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2017-07-28</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/gobblin.html"&gt;"><span class="cool4">599</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">0,0,0</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://people.apache.org/phonebook.html?podling=gobblin"><span class="cool1">9</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">0</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://gitbox.apache.org/repos/asf?p=incubator-gobblin.git;a=tree;hb=HEAD"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://issues.apache.org/jira/browse/GOBBLIN"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/gobblin-dev"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/gobblin-commits"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://gobblin.incubator.apache.org"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://dist.apache.org/repos/dist/release/incubator/gobblin"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://www.apache.org/dist/incubator/gobblin/KEYS"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="gobblin.html#releases"><span class="cool1">True</span></a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="heron.html">Heron</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Incubator</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2017-06-23</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/heron.html"&gt;"><span class="cool3">634</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">False</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/heron.html"&gt;"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2018-09-21</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/heron.html"&gt;"><span class="cool4">179</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">0,0,1</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://people.apache.org/phonebook.html?podling=heron"><span class="cool1">22</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">0</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://gitbox.apache.org/repos/asf?p=incubator-heron.git;a=tree;hb=HEAD"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">False</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/heron-dev"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/heron-commits"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://heron.incubator.apache.org"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://dist.apache.org/repos/dist/release/incubator/heron"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://www.apache.org/dist/incubator/heron/KEYS"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="heron.html#releases"><span class="cool1">True</span></a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="hivemall.html">Hivemall</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Incubator</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2016-09-13</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/hivemall.html"&gt;"><span class="cool4">917</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">False</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/hivemall.html"&gt;"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2017-02-03</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/hivemall.html"&gt;"><span class="cool4">774</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">0,0,0</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://people.apache.org/phonebook.html?podling=hivemall"><span class="cool1">10</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">0</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://gitbox.apache.org/repos/asf?p=incubator-hivemall.git;a=tree;hb=HEAD"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://issues.apache.org/jira/browse/HIVEMALL"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/hivemall-dev"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/hivemall-commits"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://hivemall.incubator.apache.org"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://dist.apache.org/repos/dist/release/incubator/hivemall"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://www.apache.org/dist/incubator/hivemall/KEYS"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="hivemall.html#releases"><span class="cool1">True</span></a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="hudi.html">Hudi</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">incubator</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2019-01-17</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/hudi.html"&gt;"><span class="cool3">61</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">True</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/hudi.html"&gt;"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2019-03-13</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/hudi.html"&gt;"><span class="cool1">6</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">11,11,-</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://people.apache.org/phonebook.html?podling=hudi"><span class="cool1">10</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">0</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://gitbox.apache.org/repos/asf?p=incubator-hudi.git;a=tree;hb=HEAD"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://issues.apache.org/jira/browse/Hudi"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/hudi-dev"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/hudi-commits"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://hudi.incubator.apache.org"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">False</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">False</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">False</span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="iceberg.html">Iceberg</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Incubator</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2018-11-16</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/iceberg.html"&gt;"><span class="cool2">123</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">True</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/iceberg.html"&gt;"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2018-11-19</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/iceberg.html"&gt;"><span class="cool2">120</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">0,2,3</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://people.apache.org/phonebook.html?podling=iceberg"><span class="cool1">6</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">0</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://gitbox.apache.org/repos/asf?p=incubator-iceberg.git;a=tree;hb=HEAD"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://github.com/apache/incubator-iceberg/issues"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/iceberg-dev"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/iceberg-commits"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://iceberg.incubator.apache.org"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">False</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">False</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">False</span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="iotdb.html">IoTDB</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Incubator</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2018-11-18</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/iotdb.html"&gt;"><span class="cool2">121</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">True</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/iotdb.html"&gt;"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2019-03-07</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/iotdb.html"&gt;"><span class="cool1">12</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">1,2,-</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://people.apache.org/phonebook.html?podling=iotdb"><span class="cool1">20</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">0</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://gitbox.apache.org/repos/asf?p=incubator-iotdb.git;a=tree;hb=HEAD"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">False</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/iotdb-dev"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/iotdb-commits"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://iotdb.incubator.apache.org"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">False</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">False</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">False</span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="livy.html">Livy</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Incubator</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2017-06-05</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/livy.html"&gt;"><span class="cool3">652</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">False</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/livy.html"&gt;"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2017-06-23</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/livy.html"&gt;"><span class="cool4">634</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">0,0,0</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://people.apache.org/phonebook.html?podling=livy"><span class="cool1">10</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">0</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://gitbox.apache.org/repos/asf?p=incubator-livy.git;a=tree;hb=HEAD"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">False</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/livy-dev"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/livy-commits"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://livy.incubator.apache.org"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://dist.apache.org/repos/dist/release/incubator/livy"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://www.apache.org/dist/incubator/livy/KEYS"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="livy.html#releases"><span class="cool1">True</span></a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="marvin-ai.html">Marvin-AI</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Incubator</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2018-08-21</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/marvin.html"&gt;"><span class="cool2">210</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">False</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/marvin.html"&gt;"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2018-11-08</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/marvin.html"&gt;"><span class="cool3">131</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">0,0,2</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://people.apache.org/phonebook.html?podling=marvin"><span class="cool1">14</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">0</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://gitbox.apache.org/repos/asf?p=incubator-marvin.git;a=tree;hb=HEAD"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://issues.apache.org/jira/browse/MARVIN"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/marvin-dev"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/marvin-commits"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://marvin.incubator.apache.org"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">False</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">False</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">False</span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="milagro.html">Milagro</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Incubator</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2015-12-21</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/milagro.html"&gt;"><span class="cool4">1184</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">False</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/milagro.html"&gt;"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2016-04-12</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/milagro.html"&gt;"><span class="cool4">1071</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">0,0,0</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://people.apache.org/phonebook.html?podling=milagro"><span class="cool1">7</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">0</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://gitbox.apache.org/repos/asf?p=incubator-milagro.git;a=tree;hb=HEAD"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">False</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/milagro-dev"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/milagro-commits"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://milagro.incubator.apache.org"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">False</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">False</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">False</span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="mxnet.html">MXNet</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Incubator</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2017-01-23</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/mxnet.html"&gt;"><span class="cool4">785</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">False</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/mxnet.html"&gt;"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2019-02-26</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/mxnet.html"&gt;"><span class="cool1">21</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">1,1,5</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://people.apache.org/phonebook.html?podling=mxnet"><span class="cool1">62</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">0</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://gitbox.apache.org/repos/asf?p=incubator-mxnet.git;a=tree;hb=HEAD"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://issues.apache.org/jira"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/mxnet-dev"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/mxnet-commits"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mxnet.incubator.apache.org"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://dist.apache.org/repos/dist/release/incubator/mxnet"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://www.apache.org/dist/incubator/mxnet/KEYS"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="mxnet.html#releases"><span class="cool1">True</span></a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="myriad.html">Myriad</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Incubator</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2015-03-01</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/myriad.html"&gt;"><span class="cool4">1479</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">False</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/myriad.html"&gt;"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2019-03-13</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/myriad.html"&gt;"><span class="cool1">6</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">3,4,7</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://people.apache.org/phonebook.html?podling=myriad"><span class="cool1">11</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="cool1">3</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://gitbox.apache.org/repos/asf?p=incubator-myriad.git;a=tree;hb=HEAD"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://issues.apache.org/jira/browse/MYRIAD"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/myriad-dev"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/myriad-commits"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://myriad.incubator.apache.org"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://dist.apache.org/repos/dist/release/incubator/myriad"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://www.apache.org/dist/incubator/myriad/KEYS"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="myriad.html#releases"><span class="cool1">True</span></a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="nemo.html">Nemo</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Incubator</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2018-02-04</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/nemo.html"&gt;"><span class="cool1">408</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">False</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/nemo.html"&gt;"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2019-03-13</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/nemo.html"&gt;"><span class="cool1">6</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">1,1,1</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://people.apache.org/phonebook.html?podling=nemo"><span class="cool1">17</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">0</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://gitbox.apache.org/repos/asf?p=incubator-nemo.git;a=tree;hb=HEAD"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://issues.apache.org/jira/browse/NEMO"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/nemo-dev"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/nemo-commits"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://nemo.incubator.apache.org"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://dist.apache.org/repos/dist/release/incubator/nemo"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://www.apache.org/dist/incubator/nemo/KEYS"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="nemo.html#releases"><span class="cool1">True</span></a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="netbeans.html">NetBeans</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Incubator</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2016-10-01</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/netbeans.html"&gt;"><span class="cool4">899</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">False</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/netbeans.html"&gt;"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2019-03-13</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/netbeans.html"&gt;"><span class="cool1">6</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">1,1,1</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://people.apache.org/phonebook.html?podling=netbeans"><span class="cool1">72</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">0</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://gitbox.apache.org/repos/asf?p=incubator-netbeans.git;a=tree;hb=HEAD"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://issues.apache.org/jira/browse/NETBEANS"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/netbeans-dev"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/netbeans-commits"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://netbeans.apache.org"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://dist.apache.org/repos/dist/release/incubator/netbeans"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://www.apache.org/dist/incubator/netbeans/KEYS"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="netbeans.html#releases"><span class="cool1">True</span></a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="omid.html">Omid</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Incubator</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2016-03-28</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/omid.html"&gt;"><span class="cool4">1086</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">False</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/omid.html"&gt;"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2018-09-19</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/omid.html"&gt;"><span class="cool4">181</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">0,0,1</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://people.apache.org/phonebook.html?podling=omid"><span class="care">2</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">0</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://gitbox.apache.org/repos/asf?p=incubator-omid.git;a=tree;hb=HEAD"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://issues.apache.org/jira/browse/Omid"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/omid-dev"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/omid-commits"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://omid.incubator.apache.org"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://dist.apache.org/repos/dist/release/incubator/omid"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://www.apache.org/dist/incubator/omid/KEYS"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="omid.html#releases"><span class="cool1">True</span></a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="openwhisk.html">OpenWhisk</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Incubator</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2016-11-23</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/openwhisk.html"&gt;"><span class="cool4">846</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">False</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/openwhisk.html"&gt;"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2019-03-14</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/openwhisk.html"&gt;"><span class="cool1">5</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">3,3,3</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://people.apache.org/phonebook.html?podling=openwhisk"><span class="cool1">39</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">0</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://gitbox.apache.org/repos/asf?p=incubator-openwhisk.git;a=tree;hb=HEAD"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">False</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/openwhisk-dev"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/openwhisk-commits"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://openwhisk.apache.org"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://dist.apache.org/repos/dist/release/incubator/openwhisk"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://www.apache.org/dist/incubator/openwhisk/KEYS"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="openwhisk.html#releases"><span class="cool1">True</span></a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="pagespeed.html">PageSpeed</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Incubator</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2017-09-30</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/pagespeed.html"&gt;"><span class="cool1">535</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">False</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/pagespeed.html"&gt;"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2017-10-02</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/pagespeed.html"&gt;"><span class="cool4">533</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">0,0,0</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://people.apache.org/phonebook.html?podling=pagespeed"><span class="cool1">10</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">0</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://gitbox.apache.org/repos/asf?p=incubator-pagespeed-cpanel.git;a=tree;hb=HEAD"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">False</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/pagespeed-dev"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/pagespeed-commits"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">False</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">False</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">False</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">False</span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="pinot.html">Pinot</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Incubator</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2018-10-17</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/pinot.html"&gt;"><span class="cool2">153</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">True</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/pinot.html"&gt;"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2018-10-25</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/pinot.html"&gt;"><span class="cool3">145</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">0,0,1</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://people.apache.org/phonebook.html?podling=pinot"><span class="cool1">23</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">0</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://gitbox.apache.org/repos/asf?p=incubator-pinot.git;a=tree;hb=HEAD"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://issues.apache.org/jira/browse/PINOT"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/pinot-dev"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/pinot-commits"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://pinot.incubator.apache.org"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://dist.apache.org/repos/dist/release/incubator/pinot"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://www.apache.org/dist/incubator/pinot/KEYS"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="pinot.html#releases"><span class="cool1">True</span></a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="plc4x.html">PLC4X</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Incubator</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2017-12-18</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/plc4x.html"&gt;"><span class="cool1">456</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">False</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/plc4x.html"&gt;"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2019-03-13</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/plc4x.html"&gt;"><span class="cool1">6</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2,2,2</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://people.apache.org/phonebook.html?podling=plc4x"><span class="cool1">15</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">0</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://gitbox.apache.org/repos/asf?p=incubator-plc4x.git;a=tree;hb=HEAD"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://issues.apache.org/jira/browse/PLC4X"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/plc4x-dev"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/plc4x-commits"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://plc4x.incubator.apache.org"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://dist.apache.org/repos/dist/release/incubator/plc4x"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://www.apache.org/dist/incubator/plc4x/KEYS"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="plc4x.html#releases"><span class="cool1">True</span></a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="ponymail.html">Pony Mail</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Incubator</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2016-05-27</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/ponymail.html"&gt;"><span class="cool4">1026</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">False</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/ponymail.html"&gt;"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2017-08-01</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/ponymail.html"&gt;"><span class="cool4">595</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">0,0,0</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://people.apache.org/phonebook.html?podling=ponymail"><span class="cool1">11</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">0</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://gitbox.apache.org/repos/asf?p=incubator-ponymail.git;a=tree;hb=HEAD"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://github.com/apache/incubator-ponymail/issues"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/ponymail-dev"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/ponymail-commits"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://ponymail.incubator.apache.org"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://dist.apache.org/repos/dist/release/incubator/ponymail"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://www.apache.org/dist/incubator/ponymail/KEYS"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="ponymail.html#releases"><span class="cool1">True</span></a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="ratis.html">Ratis</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Incubator</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2017-01-03</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/ratis.html"&gt;"><span class="cool4">805</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">False</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/ratis.html"&gt;"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2019-03-13</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/ratis.html"&gt;"><span class="cool1">6</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">1,1,1</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://people.apache.org/phonebook.html?podling=ratis"><span class="cool1">25</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">0</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://gitbox.apache.org/repos/asf?p=incubator-ratis.git;a=tree;hb=HEAD"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://issues.apache.org/jira/browse/ratis"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/ratis-dev"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/ratis-commits"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://ratis.incubator.apache.org"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://dist.apache.org/repos/dist/release/incubator/ratis"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://www.apache.org/dist/incubator/ratis/KEYS"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="ratis.html#releases"><span class="cool1">True</span></a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="rya.html">Rya</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Incubator</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2015-09-18</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/rya.html"&gt;"><span class="cool4">1278</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">False</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/rya.html"&gt;"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2019-03-13</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/rya.html"&gt;"><span class="cool1">6</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">1,2,6</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://people.apache.org/phonebook.html?podling=rya"><span class="cool1">12</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="cool1">2</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://gitbox.apache.org/repos/asf?p=incubator-rya.git;a=tree;hb=HEAD"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://issues.apache.org/jira/browse/RYA"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/rya-dev"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/rya-commits"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://rya.incubator.apache.org"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://dist.apache.org/repos/dist/release/incubator/rya"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://www.apache.org/dist/incubator/rya/KEYS"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="rya.html#releases"><span class="cool1">True</span></a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="s2graph.html">S2Graph</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Incubator</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2015-11-29</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/s2graph.html"&gt;"><span class="cool4">1206</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">False</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/s2graph.html"&gt;"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2019-03-13</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/s2graph.html"&gt;"><span class="cool1">6</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">1,1,1</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://people.apache.org/phonebook.html?podling=s2graph"><span class="cool1">13</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">0</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://gitbox.apache.org/repos/asf?p=incubator-s2graph.git;a=tree;hb=HEAD"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://issues.apache.org/jira/browse/S2GRAPH"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/s2graph-dev"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/s2graph-commits"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://s2graph.incubator.apache.org"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://dist.apache.org/repos/dist/release/incubator/s2graph"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://www.apache.org/dist/incubator/s2graph/KEYS"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="s2graph.html#releases"><span class="cool1">True</span></a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="samoa.html">SAMOA</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Incubator</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2014-12-15</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/samoa.html"&gt;"><span class="cool4">1555</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">False</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/samoa.html"&gt;"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2015-01-06</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/samoa.html"&gt;"><span class="cool4">1533</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">0,0,0</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://people.apache.org/phonebook.html?podling=samoa"><span class="cool1">11</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">0</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://gitbox.apache.org/repos/asf?p=incubator-samoa.git;a=tree;hb=HEAD"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://issues.apache.org/jira/browse/SAMOA"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/samoa-dev"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/samoa-commits"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://samoa.incubator.apache.org"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://dist.apache.org/repos/dist/release/incubator/samoa"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">False</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">False</span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="sdap.html">SDAP</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Incubator</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2017-10-22</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/sdap.html"&gt;"><span class="cool1">513</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">False</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/sdap.html"&gt;"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2019-03-13</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/sdap.html"&gt;"><span class="cool1">6</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">1,1,1</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://people.apache.org/phonebook.html?podling=sdap"><span class="cool1">15</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">0</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://gitbox.apache.org/repos/asf?p=incubator-sdap-doms.git;a=tree;hb=HEAD"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://issues.apache.org/jira/browse/sdap"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/sdap-dev"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/sdap-commits"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://sdap.incubator.apache.org"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">False</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">False</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">False</span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="senssoft.html">SensSoft</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Incubator</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2016-07-13</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/senssoft.html"&gt;"><span class="cool4">979</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">False</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/senssoft.html"&gt;"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2019-03-13</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/senssoft.html"&gt;"><span class="cool1">6</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">1,1,1</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://people.apache.org/phonebook.html?podling=senssoft"><span class="cool1">10</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">0</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://gitbox.apache.org/repos/asf?p=incubator-senssoft.git;a=tree;hb=HEAD"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://issues.apache.org/jira/browse/senssoft"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/senssoft-dev"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/senssoft-commits"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://senssoft.incubator.apache.org"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://dist.apache.org/repos/dist/release/incubator/senssoft"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://www.apache.org/dist/incubator/senssoft/KEYS"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="senssoft.html#releases"><span class="cool1">True</span></a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="shardingsphere.html">ShardingSphere</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Incubator</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2018-11-10</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/shardingsphere.html"&gt;"><span class="cool2">129</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">True</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/shardingsphere.html"&gt;"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2019-02-02</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/shardingsphere.html"&gt;"><span class="cool1">45</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">1,8,10</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://people.apache.org/phonebook.html?podling=shardingsphere"><span class="cool1">17</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">0</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://gitbox.apache.org/repos/asf?p=incubator-shardingsphere.git;a=tree;hb=HEAD"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">False</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/shardingsphere-dev"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">False</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://shardingsphere.incubator.apache.org"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://dist.apache.org/repos/dist/release/incubator/shardingsphere"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://www.apache.org/dist/incubator/shardingsphere/KEYS"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">False</span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="singa.html">SINGA</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Incubator</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2015-03-17</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/singa.html"&gt;"><span class="cool4">1463</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">False</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/singa.html"&gt;"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2019-02-21</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/singa.html"&gt;"><span class="cool1">26</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">1,1,1</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://people.apache.org/phonebook.html?podling=singa"><span class="cool1">11</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">0</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://gitbox.apache.org/repos/asf?p=incubator-singa.git;a=tree;hb=HEAD"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://issues.apache.org/jira/browse/singa"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/singa-dev"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/singa-commits"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://singa.incubator.apache.org"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://dist.apache.org/repos/dist/release/incubator/singa"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://www.apache.org/dist/incubator/singa/1.2.0/KEYS"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="singa.html#releases"><span class="cool1">True</span></a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="skywalking.html">SkyWalking</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Incubator</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2017-12-08</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/skywalking.html"&gt;"><span class="cool1">466</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">False</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/skywalking.html"&gt;"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2019-03-03</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/skywalking.html"&gt;"><span class="cool1">16</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">1,4,6</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://people.apache.org/phonebook.html?podling=skywalking"><span class="cool1">22</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">0</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://gitbox.apache.org/repos/asf?p=incubator-skywalking.git;a=tree;hb=HEAD"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://github.com/apache/incubator-skywalking/issues"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/skywalking-dev"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/skywalking-commits"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://skywalking.incubator.apache.org"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://dist.apache.org/repos/dist/release/incubator/skywalking"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://www.apache.org/dist/incubator/skywalking/KEYS"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="skywalking.html#releases"><span class="cool1">True</span></a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="spot.html">Spot</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Incubator</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2016-09-23</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/spot.html"&gt;"><span class="cool4">907</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">False</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/spot.html"&gt;"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2016-10-28</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/spot.html"&gt;"><span class="cool4">872</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">0,0,0</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://people.apache.org/phonebook.html?podling=spot"><span class="cool1">25</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">0</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://gitbox.apache.org/repos/asf?p=incubator-spot.git;a=tree;hb=HEAD"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://issues.apache.org/jira/browse/SPOT"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/spot-dev"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/spot-commits"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://spot.incubator.apache.org"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://dist.apache.org/repos/dist/release/incubator/spot"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://www.apache.org/dist/incubator/spot/KEYS"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="spot.html#releases"><span class="cool1">True</span></a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="superset.html">Superset</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Incubator</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2017-05-21</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/superset.html"&gt;"><span class="cool3">667</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">False</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/superset.html"&gt;"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2017-06-26</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/superset.html"&gt;"><span class="cool4">631</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">0,0,0</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://people.apache.org/phonebook.html?podling=superset"><span class="cool1">20</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">0</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://gitbox.apache.org/repos/asf?p=incubator-superset.git;a=tree;hb=HEAD"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://issues.apache.org/jira/browse/Superset"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/superset-dev"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/superset-commits"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://superset.incubator.apache.org"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">False</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">False</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">False</span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="tamaya.html">Tamaya</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Incubator</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2014-11-14</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/tamaya.html"&gt;"><span class="cool4">1586</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">True</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/tamaya.html"&gt;"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2015-08-31</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/tamaya.html"&gt;"><span class="cool4">1296</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">0,0,0</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://people.apache.org/phonebook.html?podling=tamaya"><span class="cool1">12</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="cool2">1</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://gitbox.apache.org/repos/asf?p=incubator-tamaya.git;a=tree;hb=HEAD"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://issues.apache.org/jira/browse/TAMAYA"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/tamaya-dev"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/tamaya-commits"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://tamaya.incubator.apache.org"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://dist.apache.org/repos/dist/release/incubator/tamaya"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://www.apache.org/dist/incubator/tamaya/0.3-incubating/extensions/KEYS"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="tamaya.html#releases"><span class="cool1">True</span></a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="taverna.html">Taverna</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Incubator</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2014-10-20</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/taverna.html"&gt;"><span class="cool4">1611</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">False</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/taverna.html"&gt;"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2019-03-13</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/taverna.html"&gt;"><span class="cool1">6</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">1,2,3</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://people.apache.org/phonebook.html?podling=taverna"><span class="cool1">17</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="cool1">4</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://gitbox.apache.org/repos/asf?p=incubator-taverna-commandline.git;a=tree;hb=HEAD"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://issues.apache.org/jira/browse/TAVERNA"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/taverna-dev"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/taverna-commits"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://taverna.incubator.apache.org"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://dist.apache.org/repos/dist/release/incubator/taverna"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://www.apache.org/dist/incubator/taverna/KEYS"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="taverna.html#releases"><span class="cool1">True</span></a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="tephra.html">Tephra</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Incubator</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2016-03-07</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/tephra.html"&gt;"><span class="cool4">1107</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">False</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/tephra.html"&gt;"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2016-11-17</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/tephra.html"&gt;"><span class="cool4">852</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">0,0,0</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://people.apache.org/phonebook.html?podling=tephra"><span class="cool1">8</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">0</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://svn.apache.org/repos/asf/incubator/tephra"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://issues.apache.org/jira/browse/TEPHRA"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/tephra-dev"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/tephra-commits"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://tephra.incubator.apache.org"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://dist.apache.org/repos/dist/release/incubator/tephra"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://www.apache.org/dist/incubator/tephra/KEYS"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="tephra.html#releases"><span class="cool1">True</span></a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="toree.html">Toree</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Incubator</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2015-12-02</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/toree.html"&gt;"><span class="cool4">1203</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">False</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/toree.html"&gt;"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2018-09-18</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/toree.html"&gt;"><span class="cool4">182</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">0,0,1</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://people.apache.org/phonebook.html?podling=toree"><span class="cool1">9</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">0</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://gitbox.apache.org/repos/asf?p=incubator-toree.git;a=tree;hb=HEAD"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://issues.apache.org/jira/projects/TOREE"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/toree-dev"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/toree-commits"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://toree.apache.org"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://dist.apache.org/repos/dist/release/incubator/toree"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://www.apache.org/dist/incubator/toree/KEYS"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="toree.html#releases"><span class="cool1">True</span></a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="training.html">Training</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Incubator</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2019-02-21</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/training.html"&gt;"><span class="cool3">26</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">True</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/training.html"&gt;"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2019-03-13</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/training.html"&gt;"><span class="cool1">6</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">6,-,-</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://people.apache.org/phonebook.html?podling=training"><span class="cool1">14</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">0</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://gitbox.apache.org/repos/asf?p=incubator-training.git;a=tree;hb=HEAD"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://issues.apache.org/jira/browse/TRAINING"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/training-dev"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/training-commits"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">False</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">False</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">False</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">False</span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="tvm.html">TVM</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Incubator</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2019-03-06</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/tvm.html"&gt;"><span class="cool3">13</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">True</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/tvm.html"&gt;"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2019-03-11</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/tvm.html"&gt;"><span class="cool1">8</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">4,-,-</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://people.apache.org/phonebook.html?podling=tvm"><span class="cool1">8</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">0</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">False</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://issues.apache.org/jira/browse/TVM"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">False</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">False</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">False</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">False</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">False</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">False</span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="unomi.html">Unomi</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Incubator</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2015-10-05</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/unomi.html"&gt;"><span class="cool4">1261</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">False</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/unomi.html"&gt;"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2015-11-05</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/unomi.html"&gt;"><span class="cool4">1230</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">0,0,0</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://people.apache.org/phonebook.html?podling=unomi"><span class="cool1">11</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">0</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://gitbox.apache.org/repos/asf?p=unomi.git;a=tree;hb=HEAD"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://issues.apache.org/jira/browse/UNOMI"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/unomi-dev"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/unomi-commits"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://unomi.incubator.apache.org"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://dist.apache.org/repos/dist/release/incubator/unomi"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://www.apache.org/dist/incubator/unomi/KEYS"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="unomi.html#releases"><span class="cool1">True</span></a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="warble.html">Warble</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Incubator</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2018-06-11</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/warble.html"&gt;"><span class="cool2">281</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">False</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/warble.html"&gt;"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2018-09-19</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/warble.html"&gt;"><span class="cool4">181</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">0,0,3</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://people.apache.org/phonebook.html?podling=warble"><span class="cool1">6</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">0</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://gitbox.apache.org/repos/asf?p=incubator-warble-node.git;a=tree;hb=HEAD"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">False</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/warble-dev"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/warble-commits"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://warble.incubator.apache.org"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">False</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">False</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">False</span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="weex.html">Weex</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Incubator</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2016-11-30</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/weex.html"&gt;"><span class="cool4">839</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">False</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/weex.html"&gt;"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2019-02-21</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/weex.html"&gt;"><span class="cool1">26</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2,2,2</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://people.apache.org/phonebook.html?podling=weex"><span class="cool1">21</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="cool1">9</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://gitbox.apache.org/repos/asf?p=incubator-weex.git;a=tree;hb=HEAD"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://github.com/apache/incubator-weex/issues"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/weex-dev"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/weex-commits"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://weex.incubator.apache.org"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://dist.apache.org/repos/dist/release/incubator/weex"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://www.apache.org/dist/incubator/weex/KEYS"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="weex.html#releases"><span class="cool1">True</span></a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="zipkin.html">Zipkin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Incubator</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2018-08-29</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/zipkin.html"&gt;"><span class="cool2">202</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">False</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/zipkin.html"&gt;"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2019-01-21</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="/projects/zipkin.html"&gt;"><span class="cool1">57</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2,4,10</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://people.apache.org/phonebook.html?podling=zipkin"><span class="cool1">17</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">0</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://gitbox.apache.org/repos/asf?p=incubator-zipkin-brave-cassandra.git;a=tree;hb=HEAD"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">False</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/zipkin-dev"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/zipkin-commits"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://zipkin.incubator.apache.org"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://dist.apache.org/repos/dist/release/incubator/zipkin"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://www.apache.org/dist/incubator/zipkin/KEYS"><span class="cool1">True</span></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="zipkin.html#releases"><span class="cool1">True</span></a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="definitions">Definitions, Notes, and References</h3>
+<div class="paragraph">
+<p>The <span class="care">orange</span> and <span class="issue">vermilion</span> items indicate where more care and attention is needed. The following
+notes for each column provide definitions and attempt to link directly to the relevant process documentation:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a id="h-project"></a>Podling - If your podling is in incubation, but is missing from the Clutch table, then it still needs to be added to the <span class="code">content/podlings.xml</span> file.
+See the <a href="/guides/mentor.html#add_to_incubation_summary_file">mentor&#8217;s guide</a>. The <a href="/projects/">Projects page</a> is also generated from <span class="code">content/podlings.xml</span>.</p>
+</li>
+<li>
+<p><a id="h-sponsor"></a>Sponsor - usually podlings are sponsored by the Incubator. Ocassionally podlings are sponsored by other Apache projects.
+This is set within the <span class="code">content/podlings.xml</span> entry for the podling.</p>
+</li>
+<li>
+<p><a id="h-startdate"></a>A: startDate - this is the date the podling started. Usually this is the date the podling proposal vote passed on the Incubator mailing list.
+This is set within the <span class="code">content/podlings.xml</span> entry for the podling.</p>
+</li>
+<li>
+<p><a id="h-elapseddays"></a>B: elapsedDays - This is the number of days since the start date. This is color coded according to the normal timeline of a podling.
+<span class="cool3">&lt;3</span>, <span class="cool2">&lt;12</span>, <span class="cool1">&lt;18</span>, <span class="cool3">&lt;24</span>, <span class="cool4">&gt;24</span> months. We may adjust these levels to better fit currently observed cycles.</p>
+</li>
+<li>
+<p><a id="h-reportingmonthly"></a>C: reportingMonthly - for the first three months podlings report monthly. If the podling misses reports then they are moved to monthly until
+they report again.</p>
+</li>
+<li>
+<p><a id="h-reportinggroup"></a>D: reportingGroup - which months the podling reports:
+1 = January, April, July, October; 2 = February, May, August, November; 3 = March, June, September, December.
+Note that the report process for a month begins at the end of the prior month. The IPMC chair will send out the reporting schedule on a monthly basis along
+with reminders to each podling&#8217;s dev list.</p>
+</li>
+<li>
+<p><a id="h-hasstatusfile"></a>E: hasStatusFile - each podling maintains a status file in <span class="code">content/projects/(podling).xml</span> which is converted to a status page.
+Your mentor will setup the file and then the podling should maintain it. The key part to maintain is the "News" section where New Committers, PPMC Members, and Releases should
+be announced. For greater detail, please see <a href="/policy/incubation.html#ongoing_activities">ongoing activities</a>,
+<a href="/guides/mentor.html#initialize_podling_status_page">initializing status</a>,
+<a href="/guides/website.html#maintaining_status_files">status maintenance</a>, and
+<a href="/guides/ppmc.html#project_status_page">podling status page</a>. Click on the link in the cell to view the current status page.</p>
+</li>
+<li>
+<p><a id="h-statusupdatedate"></a>F: statusUpdateDate - the date status page was last updated. Keep this up to date with frequest news.</p>
+</li>
+<li>
+<p><a id="h-statusage"></a>G: statusAge - days since the status page was last updated. The text is colored to show when status is not being kept up to date.
+<span class="cool1">&lt;2</span>, <span class="cool2">&lt;4</span>, <span class="cool3">&lt;9</span>, <span class="cool4">&gt;9</span> months.</p>
+</li>
+<li>
+<p><a id="h-statusupdatecounts"></a>H: statusUpdateCounts - cumulative number of commits to the status file in the previous 2, 4, and 9 months</p>
+</li>
+<li>
+<p><a id="h-numbercommitters"></a>I: numberCommitters - the total number of committers accounts that have been established to date. Taken from Whimsy via
+<a href="https://whimsy.apache.org/public/public_ldap_projects.json">public project ldap</a>.
+Maintained in Whimsy through <a href="https://whimsy.apache.org/roster/ppmc/">the roster pages</a>.
+Click on the cell to view <a href="https://people.apache.org/phonebook.html">the public phone book</a>.</p>
+</li>
+<li>
+<p><a id="h-numbernewcommitters"></a>J: numberCommittersNew - new committers added since establishment. This count is gathered from the Status page "News" section.
+See guides on voting in <a href="/guides/ppmc.html#adding_new_committers">new committers</a> and <a href="/guides/ppmc.html#voting_in_a_new_ppmc_member">new ppmc members</a>.</p>
+</li>
+<li>
+<p><a id="h-hasrepos"></a>K: hasRepo - a Gitbox or Subversion code repository has been created. Projects may have multiple Gitbox repositories.
+Click on the podling name in the first column to view all of the podling&#8217;s repositories. A podling coming to the ASF may need to request a
+<a href="/guides/mentor.html#git_migrations">migration</a> or a <a href="/guides/mentor.html#gitbox_requests">new repository</a>.
+The list of Gitbox repositories is retrieved from <a href="https://gitbox.apache.org/repositories.json">Gitbox json</a>.</p>
+</li>
+<li>
+<p><a id="h-hastracker"></a>L: hasTracker - has an Issue Tracker. If the status file has been updated to have an issue tracker link and the link is valid then there
+will be a link to the tracker in the cell.</p>
+</li>
+<li>
+<p><a id="h-hasdevlist"></a>M: hasMailListDev - has dev mail list and archives. This is picked up from the status page and then confirmed for the usual naming pattern.
+If available the cell will link to the <a href="http://mail-archives.apache.org/mod_mbox/">mailbox archive</a> podling dev list.</p>
+</li>
+<li>
+<p><a id="h-hascommitslist"></a>N: hasMailListCommits - has commits mail list and archives. This is picked up from the status page and then confirmed for the usual naming pattern.
+If available he cell will link to the <a href="http://mail-archives.apache.org/mod_mbox/">mailbox archive</a> podling commits list.</p>
+</li>
+<li>
+<p><a id="h-haswebsite"></a>O: hasWebSite - podling&#8217;s should maintain websites so that their users can find out information about the podling and The Apache Software Foundation.
+Here is the incubator&#8217;s <a href="/guides/sites.html">website guide</a>. If the website is not provided in the status file then the usual naming patterns are tried.
+Assuming that the website exists the cell will provide a link to it. Whimsy provides a periodic scan of podling websites which you can view
+<a href="https://whimsy.apache.org/pods/">here</a>. The clutch process uses <a href="https://whimsy.apache.org/public/pods-scan.json">json</a> data to add notes about website issues
+to the podling&#8217;s clutch analysis page under "Errata".</p>
+</li>
+<li>
+<p><a id="h-hasdistributionarea"></a>P: hasDistributionArea - The podling has a directory in the incubator&#8217;s
+<a href="https://dist.apache.org/repos/dist/release/incubator/">release distribution directory</a>. If this is present the cell provides a link.</p>
+</li>
+<li>
+<p><a id="h-hassigningkeys"></a>Q: hasKeys - has a PGP "<span class="code">Signing KEYS</span>" file in their distribution area. If this is present then the cell provides a link.
+There is a facility that performs periodic checks on Apache releases and signatures - <a href="https://checker.apache.org/projs/incubator.html">"release checker"</a>.</p>
+</li>
+<li>
+<p><a id="h-hasrelease"></a>R: hasRelease - has a release in their distribution area. Podlings are expected to comply with release and release distribution policies
+as modified by the Incubator. <a href="/guides/releasemanagement.html">Incubator Release Management</a>, <a href="http://www.apache.org/dev/#releases">Software Product Releases</a>,
+<a href="http://www.apache.org/legal/release-policy.html">Apache Release Policy (legal)</a>, and
+<a href="https://www.apache.org/dev/release-distribution.html">Apache Release Distribution Policy (infra)</a>.
+If there is a podling release then the cell will provide a link to the podling&#8217;s clutch analysis page&#8217;s release section.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="steps">Assist with Incubation Steps</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Essentially Clutch is helping us all to follow the process from the "Acceptance" phase onwards.
+Any committer on a podling can help with these steps. Don&#8217;t leave it to your mentors, although there are some steps that only they can do.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="mentors">Mentors</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This list is gathered from the <a href="/projects/">Projects in incubation</a> summary table.
+The <a href="/incubation/Roles_and_Responsibilities.html#Mentor">Mentors</a> are ASF members or individuals recognized by the IPMC who have chosen to assist these projects.
+The best way to find mentors for a new project, is during your Discuss and Proposal phases on the general@ mail list.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Alan Gates(gates): Omid, SAMOA, SINGA, Superset, Tephra</p>
+</li>
+<li>
+<p>Andriy Redko(reta): Zipkin</p>
+</li>
+<li>
+<p>Ashutosh Chauhan(hashutosh): SAMOA, Superset</p>
+</li>
+<li>
+<p>Ate Douma(ate): NetBeans</p>
+</li>
+<li>
+<p>Atri Sharma(atri): SensSoft</p>
+</li>
+<li>
+<p>Benjamin Hindman(benh): Myriad, ShardingSphere</p>
+</li>
+<li>
+<p>Bertrand Delacretaz(bdelacretaz): NetBeans, OpenWhisk</p>
+</li>
+<li>
+<p>Bikas Saha(bikas): Livy</p>
+</li>
+<li>
+<p>Billie Rinaldi(billie): Rya</p>
+</li>
+<li>
+<p>Bob Paulin(bob): MXNet</p>
+</li>
+<li>
+<p>Brock Noland(brock): Livy</p>
+</li>
+<li>
+<p>Byung-Gon Chun(bgchun): Nemo, TVM</p>
+</li>
+<li>
+<p>Carl Steinbach(cws): Iceberg</p>
+</li>
+<li>
+<p>Chris Lambertus(cml): Warble</p>
+</li>
+<li>
+<p>Christofer Dutz(cdutz): Daffodil, Edgent, IoTDB, Training</p>
+</li>
+<li>
+<p>Craig Russell(clr): ShardingSphere, Training</p>
+</li>
+<li>
+<p>Daniel Dai(daijy): Hivemall</p>
+</li>
+<li>
+<p>Daniel Gruno(humbedooh): NetBeans</p>
+</li>
+<li>
+<p>Daniel Takamori(pono): Warble</p>
+</li>
+<li>
+<p>David Blevins(dblevins): Tamaya</p>
+</li>
+<li>
+<p>David Fisher(wave): Daffodil, Doris, Dubbo, ECharts, Heron</p>
+</li>
+<li>
+<p>David Meikle(dmeikle): SensSoft</p>
+</li>
+<li>
+<p>Davor Bonaci(davor): Amaterasu, Nemo</p>
+</li>
+<li>
+<p>Devaraj Das(ddas): Ratis</p>
+</li>
+<li>
+<p>Felix Cheung(felixcheung): Pinot</p>
+</li>
+<li>
+<p>Furkan Kamaci(kamaci): TVM</p>
+</li>
+<li>
+<p>Greg Trasuk(gtrasuk): PLC4X</p>
+</li>
+<li>
+<p>Henri Yandell(bayard): MXNet</p>
+</li>
+<li>
+<p>Henry Saputra(hsaputra): DLab, TVM</p>
+</li>
+<li>
+<p>Hyunsik Choi(hyunsik): Nemo</p>
+</li>
+<li>
+<p>Ignasi Barrera(nacx): SkyWalking</p>
+</li>
+<li>
+<p>Jake Farrell(jfarrell): Heron</p>
+</li>
+<li>
+<p>Jakob Homan(jghoman): Ratis</p>
+</li>
+<li>
+<p>James Taylor(jamestaylor): Iceberg, Omid, Tephra</p>
+</li>
+<li>
+<p>Jan Piotrowski(janpio): Weex</p>
+</li>
+<li>
+<p>Jason Dai(jasondai): MXNet</p>
+</li>
+<li>
+<p>Jean-Baptiste Onofre(jbonofre): Amaterasu, BatchEE, BRPC, Gobblin, Livy, Nemo, Unomi</p>
+</li>
+<li>
+<p>Jim Jagielski(jim): Gobblin, Marvin-AI, MXNet, Pinot</p>
+</li>
+<li>
+<p>John D. Ament(johndament): ECharts, Pony Mail, Tamaya, Zipkin</p>
+</li>
+<li>
+<p>Josh Elser(elserj): Rya</p>
+</li>
+<li>
+<p>Jukka Zitting(jukka): PageSpeed</p>
+</li>
+<li>
+<p>Julian Hyde(jhyde): Crail, Druid</p>
+</li>
+<li>
+<p>Julien Le Dem(julien): Heron, Iceberg, Toree</p>
+</li>
+<li>
+<p>Jun Rao(junrao): Druid</p>
+</li>
+<li>
+<p>Justin Mclean(jmclean): Dubbo, Edgent, IoTDB, PLC4X, Training</p>
+</li>
+<li>
+<p>Jörn Rottmann(joern): SDAP</p>
+</li>
+<li>
+<p>Kanchana Pradeepika Welagedara(kanchana): Tamaya</p>
+</li>
+<li>
+<p>Kevin A. McGrail(kmcgrail): BRPC, ECharts, IoTDB</p>
+</li>
+<li>
+<p>Kishore Gopalakrishna(kishoreg): Hudi, Pinot</p>
+</li>
+<li>
+<p>Koji Sekiguchi(koji): Hivemall</p>
+</li>
+<li>
+<p>Konstantin I Boudnik(cos): DLab</p>
+</li>
+<li>
+<p>Krzysztof Sobkowiak(ksobkowiak): OpenWhisk</p>
+</li>
+<li>
+<p>Lars Francke(larsfrancke): Training</p>
+</li>
+<li>
+<p>Leif Hedstrom(zwoop): PageSpeed</p>
+</li>
+<li>
+<p>Lewis John McGibbney(lewismc): SensSoft</p>
+</li>
+<li>
+<p>Luciano Resende(lresende): Crail, Edgent, Hudi, Livy, Marvin-AI, Toree</p>
+</li>
+<li>
+<p>Mark Struberg(struberg): BatchEE, NetBeans</p>
+</li>
+<li>
+<p>Mark Thomas(markt): Dubbo</p>
+</li>
+<li>
+<p>Markus Weimer(weimer): MXNet, Nemo</p>
+</li>
+<li>
+<p>Marlon Pierce(mpierce): Taverna</p>
+</li>
+<li>
+<p>Matt Sicker(mattsicker): OpenWhisk</p>
+</li>
+<li>
+<p>Michael Semb Wever(mck): SkyWalking, Zipkin</p>
+</li>
+<li>
+<p>Michael Wall(mjwall): MXNet</p>
+</li>
+<li>
+<p>Myrle Krantz(myrle): Weex</p>
+</li>
+<li>
+<p>Nick Kew(niq): Annotator, Milagro, PageSpeed</p>
+</li>
+<li>
+<p>Olivier Lamy(olamy): Amaterasu, BatchEE, Gobblin, Pinot</p>
+</li>
+<li>
+<p>Owen O&#8217;Malley(omalley): Iceberg</p>
+</li>
+<li>
+<p>P. Taylor Goetz(ptgoetz): DLab, Druid, Heron</p>
+</li>
+<li>
+<p>Phil Sorber(sorber): PageSpeed</p>
+</li>
+<li>
+<p>Roman Shaposhnik(rvs): Pinot</p>
+</li>
+<li>
+<p>Ryan Blue(blue): Iceberg, Toree</p>
+</li>
+<li>
+<p>Sebastian Schelter(ssc): MXNet, TVM</p>
+</li>
+<li>
+<p>Sergio Fernández(wikier): S2Graph</p>
+</li>
+<li>
+<p>Shao Feng Shi(shaofengshi): Doris</p>
+</li>
+<li>
+<p>Sharan Foga(sharan): Pony Mail</p>
+</li>
+<li>
+<p>Sheng Wu(wusheng): Zipkin</p>
+</li>
+<li>
+<p>Stefan Bodewig(bodewig): PLC4X</p>
+</li>
+<li>
+<p>Steve Blackmon(sblackmon): Annotator</p>
+</li>
+<li>
+<p>Stian Soiland-Reyes(stain): Taverna</p>
+</li>
+<li>
+<p>Suneel Marthi(smarthi): Hudi, SDAP</p>
+</li>
+<li>
+<p>Suresh Srinivas(suresh): Taverna</p>
+</li>
+<li>
+<p>Ted Dunning(tdunning): Myriad, SINGA</p>
+</li>
+<li>
+<p>Ted Liu(tedliu): ECharts</p>
+</li>
+<li>
+<p>Thejas Nair(thejas): SINGA</p>
+</li>
+<li>
+<p>Thomas Weise(thw): Hudi</p>
+</li>
+<li>
+<p>Timothy Chen(tnachen): TVM</p>
+</li>
+<li>
+<p>Tommaso Teofili(tommaso): Annotator</p>
+</li>
+<li>
+<p>Uma Maheswara Rao G(umamahesh): Ratis, Spot</p>
+</li>
+<li>
+<p>Von Gosling(vongosling): BRPC, ShardingSphere</p>
+</li>
+<li>
+<p>Willem Ning Jiang(ningjiang): Doris, IoTDB, ShardingSphere, SkyWalking, Weex, Zipkin</p>
+</li>
+<li>
+<p>William Colen(colen): Marvin-AI</p>
+</li>
+<li>
+<p>Woonsan Ko(woonsan): S2Graph</p>
+</li>
+<li>
+<p>Xiangrui Meng(meng): Hivemall</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="notes">Notes</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Any Incubator committer can run 'clutch'. In the top-level of the SVN repos <span class="code">incubator/public/trunk</span> SVN, do: '<span class="code">./clutch2.sh</span>' which will
+re-generate the <a href="#data">data files</a> and Asciidoctor files for the clutch. This is all a part of the normal build in GIT: <a href="https://github.com/apache/incubator">Incubator Git</a>.
+See the Readme.</p>
+</div>
+<div class="paragraph">
+<p>Clutch reads the source file for the <a href="/projects/">projects currently in incubation</a> table (i.e. <span class="code">content/podlings.xml</span>),
+ensures that each new project has an entry, adds some more attributes. Clutch then gathers some data from each project&#8217;s Status page and
+validates that certain resources are established and steps are achieved.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Clutch output includes <a href="#data">data files</a></p>
+</li>
+<li>
+<p><a id="h-graduate"></a> Graduating: once the Board has approved the podling&#8217;s graduation resolution, update your podling metadata in the <span class="code">content/podlings.xml</span>
+file as you progress through graduation. Do various tasks as listed in the documentation, such as a final tidy of the status page.
+See <a href="http://www.apache.org/dev/infra-contact#requesting-graduation">Infrastructure steps for graduation</a>.</p>
+</li>
+<li>
+<p><a id="h-retire"></a> Retirement: once the Incubator PMC has agreed to retirement, update the podling metadata and tidy the status page. If the podling is continuing development
+elsewhere then make sure that the new location is provided. When this occurs chances are someone on the IPMC will handle these duties ad hoc.</p>
+</li>
+<li>
+<p>other issues <a href="#other">listed</a> below for:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><span class="care">gearpump</span></p>
+</li>
+<li>
+<p><span class="care">joshua</span></p>
+</li>
+<li>
+<p><span class="care">toree</span></p>
+</li>
+<li>
+<p><span class="care">unomi</span></p>
+</li>
+<li>
+<p><span class="care">netbeans</span></p>
+</li>
+<li>
+<p><span class="care">senssoft</span></p>
+</li>
+<li>
+<p><span class="care">samoa</span></p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="notes-2">Further Notes</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The <a href="http://en.wikipedia.org/wiki/Clutch_(eggs)">clutch</a> is the set of eggs which have been laid. The mother hen (our Incubator PMC)
+needs to continually gather them, to ensure that none have rolled from the nest or moved to the outside, being forgotten or becoming cold.
+Clutch also means to grasp eagerly.</p>
+</div>
+<div class="paragraph">
+<p>So please interpret this table and the detailed pages from the point-of-view of encouragement and nurture.</p>
+</div>
+<div class="sect2">
+<h3 id="data">Data files</h3>
+<div class="paragraph">
+<p>Data files are also generated so that other tools can easily re-use the  metadata for the set of projects currently in incubation:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><span class="code">content/clutch/clutch.txt</span> - list of projects, one per line. Comma-separated values (CSV).</p>
+</li>
+<li>
+<p><span class="code">clutch.pkl</span> - a Python "pickle" file with various attributes (it is in the top-level of SVN incubator/public/trunk).</p>
+</li>
+<li>
+<p>One text file for each Reporting group listing the dev mail address of the podlings due to report in that group.
+(See <span class="code">content/clutch/report_due_[1-3].txt</span>) This is used by the IPMC to send monthly report alert reminders.</p>
+</li>
+<li>
+<p><span class="code">content/clutch/podlings_graduated.txt</span> - list of graduated podlings, one per line with start and end dates.</p>
+</li>
+<li>
+<p><span class="code">content/clutch/podlings_retired.txt</span> - list of retired podlings, one per line with start and end dates.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="other">Other Issues</h3>
+<div class="paragraph">
+<p>Occasionally there are other issues, usually regarding podlings not cleaning up after their "graduation".</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>gearpump: retired project has remains on Incubator mirrors. See <a href="#h-retire">help</a>.</p>
+</li>
+<li>
+<p>joshua: Has graduated, but still has remains on Incubator distribution mirrors. See <a href="#h-graduate">help</a>.</p>
+</li>
+<li>
+<p>netbeans: Has a distribution filename missing the word "incubating/incubator". See <a href="#h-hasrelease">help</a>.</p>
+</li>
+<li>
+<p>samoa: Apache Releases cannot be validated without a KEYS file. Please add required KEYS!</p>
+</li>
+<li>
+<p>senssoft: Has a distribution filename missing the word "incubating/incubator". See <a href="#h-hasrelease">help</a>.</p>
+</li>
+<li>
+<p>toree: Has a distribution filename missing the word "incubating/incubator". See <a href="#h-hasrelease">help</a>.</p>
+</li>
+<li>
+<p>unomi: Has a distribution filename missing the word "incubating/incubator". See <a href="#h-hasrelease">help</a>.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="origin">Origin</h3>
+<div class="paragraph">
+<p>The nest was becoming full, some podlings were forgotten, rolled into dark corners: a new tool "clutch" was created to assist oversight of all podlings
+(gmane link is now missing). The clutch was started 2008-10-19. (missing gmane link) There was prior list discussion. Also see
+<a href="https://issues.apache.org/jira/browse/INCUBATOR-78">INCUBATOR-78</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="colour_scheme">Colour Scheme</h3>
+<div class="paragraph">
+<p>The colours for the table were specifically chosen to assist with colour-blindness and general accessibility.
+See the email discussion that led to this <a href="http://thread.gmane.org/gmane.comp.apache.incubator.general/20788/focus=20810">Re: Clutch color coding</a>.
+2008-12-04 <a href="http://s.apache.org/clutch_colour?action=display">http://s.apache.org/clutch_colour</a> and see some testing
+<a href="http://people.apache.org/~crossley/cud/test.html">notes</a> and demonstrations.</p>
+</div>
+<div class="paragraph">
+<p>Thanks again to: "Color Universal Design (CUD) - How to make figures and presentations that are friendly to Colorblind people."
+Masataka Okabe and Kei Ito. (<a href="http://jfly.iam.u-tokyo.ac.jp/color/">http://jfly.iam.u-tokyo.ac.jp/color/</a></p>
+</div>
+</div>
+</div>
+</div>
+
+		</div>
+		<div id="push"></div>
+    </div>
+
+    <div id="footer">
+      <div class="container">
+          <p class="muted credit">&copy; 2019 The Apache Software Foundation | Licensed under the Apache License, Version 2.0.<br/>
+          Apache Incubator, Apache, the Apache feather logo, and the Apache Incubator project logo are trademarks or registered trademarks of The Apache Software Foundation.</p>
+      </div>
+    </div>
+    <script src="../js/jquery-1.11.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/prettify.js"></script>
+    <script src="../js/readingTime.js"></script>
+    <script src="../js/incubator.js"></script>
+  </body>
+</html>

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Apache ECharts (Incubating)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <meta name="generator" content="JBake">
+
+    <!-- Le styles -->
+    <link href="../css/incubator.css" rel="stylesheet">
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/asciidoctor.css" rel="stylesheet">
+    <link href="../css/base.css" rel="stylesheet">
+    <link href="../css/prettify.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <!--<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">-->
+    <link rel="shortcut icon" href="https://www.apache.org/favicon.ico">
+  </head>
+  <body onload="prettyPrint()">
+    <div id="wrap">
+   
+
+	<!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="https://incubator.apache.org"><i class="icon-home"></i>Apache Incubator</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Policies <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                
+                  <li><a href="https://incubator.apache.org/policy/incubation.html">Incubation Policy</a></li>
+                
+                  <li><a href="https://incubator.apache.org/policy/process.html">Incubation Process</a></li>
+                
+                  <li><a href="https://incubator.apache.org/policy/roles_and_responsibilities.html">Roles and Responsibilities</a></li>
+                
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Proposals <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                
+                <li><a href="https://incubator.apache.org/guides/proposal.html">A Guide To Proposal Creation</a></li>
+                
+                <li><a href="https://incubator.apache.org/guides/entry.html">Enter The Incubator</a></li>
+                
+                <li><a href="https://incubator.apache.org/podling-story.html">The Story of a Podling</a></li>
+                
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Podling Guides <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                
+                  <li><a href="https://incubator.apache.org/guides/branding.html">Incubator Branding Guide</a></li>
+                
+                  <li><a href="https://incubator.apache.org/guides/committer.html">Committers</a></li>
+                
+                  <li><a href="https://incubator.apache.org/guides/community.html">Guide to Successful Community Building</a></li>
+                
+                  <li><a href="https://incubator.apache.org/guides/graduation.html">Guide to Successful Graduation</a></li>
+                
+                  <li><a href="https://incubator.apache.org/guides/ip_clearance.html">IP Clearance</a></li>
+                
+                  <li><a href="https://incubator.apache.org/guides/names.html">Podling Name Search Guide</a></li>
+                
+                  <li><a href="https://incubator.apache.org/guides/podling_sourcecontrol.html">Podling Source Control</a></li>
+                
+                  <li><a href="https://incubator.apache.org/guides/ppmc.html">Podling Project Management Committee</a></li>
+                
+                  <li><a href="https://incubator.apache.org/guides/press-kit.html">Podling Press Kit</a></li>
+                
+                  <li><a href="https://incubator.apache.org/guides/publicity.html">Podling Publicity/Media Guidelines</a></li>
+                
+                  <li><a href="https://incubator.apache.org/guides/releasemanagement.html">Release Management</a></li>
+                
+                  <li><a href="https://incubator.apache.org/guides/retirement.html">Guide to Retirement</a></li>
+                
+                  <li><a href="https://incubator.apache.org/guides/sites.html">Podling Websites</a></li>
+                
+                  <li><a href="https://incubator.apache.org/guides/transferring.html">Transferring Resources out of the Incubator</a></li>
+                
+                  <li><a href="https://incubator.apache.org/guides/transitioning_asf.html">Initial Code Import</a></li>
+                
+                <li><a href="/clutch">Clutch Report</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">PMC Guides <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                
+                <li><a href="https://incubator.apache.org/guides/chair.html">Incubator Chair Guide</a></li>
+                
+                <li><a href="https://incubator.apache.org/guides/lists.html">Incubator Mailing Lists Guide</a></li>
+                
+                <li><a href="https://incubator.apache.org/guides/mentor.html">Mentors' Guide</a></li>
+                
+                <li><a href="https://incubator.apache.org/guides/participation.html">Guide to Participation</a></li>
+                
+                <li><a href="https://incubator.apache.org/guides/pmc.html">The Incubator PMC</a></li>
+                
+                <li><a href="https://incubator.apache.org/guides/website.html">Updating the top-level Incubator website</a></li>
+                
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">ASF <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="http://www.apache.org/foundation/how-it-works.html">How Apache Works</a></li>
+                <li><a href="http://www.apache.org/dev/">Developer Documentation</a></li>
+                <li><a href="http://www.apache.org/legal/">Legal</a></li>
+                <li><a href="http://www.apache.org/foundation/">Foundation</a></li>
+                <li><a href="http://www.apache.org/foundation/sponsorship.html">Sponsor Apache</a></li>
+                <li><a href="http://www.apache.org/foundation/thanks.html">Thanks</a></li>
+              </ul>
+            </li>
+            <li><a href="https://incubator.apache.org/faq.html">FAQs</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 vcenter"><a href="https://www.apache.org/"><img src="http://www.apache.org/img/asf_logo.png" alt="The Apache Software Foundation" border="0" style="margin-top: 2px" width="250"></a></div>
+          <div class="col-md-4 vcenter"><a href="/"><img src="https://incubator.apache.org/images/incubator_feather_egg_logo_sm.png" alt="The Apache Software Foundation Incubator" border="0" style="margin-top: 2px" height="100"></a></div>
+          <div class="col-md-4 vcenter"><a href="https://www.apache.org/foundation/contributing.html"><img src="https://www.apache.org/images/SupportApache-small.png" height="75" width="75"></a></div>
+      </div>
+    </div>
+    <div class="top-container container">
+
+<div class="incubator-page-header">
+    <h1>Apache ECharts (Incubating)</h1>
+</div>
+
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>ECharts is a charting and data visualization library written in JavaScript.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Resources: echarts</p>
+</li>
+<li>
+<p>Started: 2018-01-18; Last Status Update: 2018-02-22</p>
+</li>
+<li>
+<p>Reporting: February, May, August, November</p>
+</li>
+<li>
+<p>Committers: 13</p>
+</li>
+<li>
+<p>PPMC members: 12</p>
+</li>
+<li>
+<p>Mentors: John D. Ament (johndament), Kevin A. McGrail (kmcgrail), Dave Fisher (wave), Ted Liu (tedliu)</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="news">News</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>2018-01-16 The Apache ECharts Project enters incubation!  See the &lt;a href="http://incubator.apache.org/projects/echarts.html" target="_blank"&gt;Proposal&lt;/a&gt; for more information.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="resources">Resources</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="project_website">Project Website</h3>
+<div class="paragraph">
+<p><a href="http://echarts.incubator.apache.org" class="bare">http://echarts.incubator.apache.org</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="mailing_lists">Mailing Lists</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Developer mailing list: <a href="http://mail-archives.apache.org/mod_mbox/echarts-dev" class="bare">http://mail-archives.apache.org/mod_mbox/echarts-dev</a></p>
+</li>
+<li>
+<p>Commits mailing list: <a href="http://mail-archives.apache.org/mod_mbox/echarts-commits" class="bare">http://mail-archives.apache.org/mod_mbox/echarts-commits</a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="repositories">Repositories</h3>
+<div class="sect3">
+<h4 id="1_incubator_echarts">1: incubator-echarts</h4>
+<div class="paragraph">
+<p>| <strong><a href="https://gitbox.apache.org/repos/asf?p=incubator-echarts.git;a=tree;hb=HEAD">Gitbox</a></strong> | <strong><a href="https://github.com/apache/incubator-echarts/">Github</a></strong> | ApacheECharts (Incubating)&#8201;&#8212;&#8201;Commits: 5728&#8201;&#8212;&#8201;Updated: 03/18/2019</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="2_incubator_echarts_website">2: incubator-echarts-website</h4>
+<div class="paragraph">
+<p>| <strong><a href="https://gitbox.apache.org/repos/asf?p=incubator-echarts-website.git;a=tree;hb=HEAD">Gitbox</a></strong> | <strong><a href="https://github.com/apache/incubator-echarts-website/">Github</a></strong> | Apache ECharts Website&#8201;&#8212;&#8201;Commits: 22&#8201;&#8212;&#8201;Updated: 02/09/2019</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="releases">Releases</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="current">Current</h3>
+<div class="paragraph">
+<p><strong><a href="https://www.apache.org/dist/incubator/echarts/KEYS">Signing Keys</a></strong></p>
+</div>
+<div class="paragraph">
+<p>It is essential that you verify the integrity of release downloads. See <a href="https://www.apache.org/dyn/closer.cgi#verify">instructions here</a></p>
+</div>
+<div class="sect3">
+<h4 id="1_apache_echarts_4_1_0_rc4_incubating_src_zip">1: apache-echarts-4.1.0.rc4-incubating-src.zip</h4>
+<div class="paragraph">
+<p>| <strong><a href="https://www.apache.org/dyn/closer.lua?filename=incubator/echarts/4.1.0/apache-echarts-4.1.0.rc4-incubating-src.zip&amp;action=download">Download</a></strong> | <strong><a href="https://www.apache.org/dist/incubator/echarts/4.1.0/apache-echarts-4.1.0.rc4-incubating-src.zip.asc">Signature</a></strong> | <strong><a href="https://www.apache.org/dist/incubator/echarts/4.1.0/apache-echarts-4.1.0.rc4-incubating-src.zip.sha512">Hash</a></strong> | apache-echarts-4.1.0.rc4-incubating-src.zip&#8201;&#8212;&#8201;Filesize: 847.07 KB&#8201;&#8212;&#8201;Released: 08/04/2018 by sushuang in r28560</p>
+</div>
+<div class="paragraph">
+<p>Total size of all downloads = 847.07 KB</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="errata">Errata</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Please investigate the following potential issues</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="/helper/resources.html#tracker">Has not provided an issue tracker link</a></p>
+</li>
+<li>
+<p><a href="/helper/resources.html#wiki">Has not provided a wiki link</a></p>
+</li>
+<li>
+<p><a href="/helper/website.html#events">ASF Events link is missing from website</a></p>
+</li>
+<li>
+<p><a href="/helper/website.html#license">Apache License link is missing from website</a></p>
+</li>
+<li>
+<p><a href="/helper/website.html#thanks">Apache Thanks link is missing from website</a></p>
+</li>
+<li>
+<p><a href="/helper/website.html#security">Apache Security link is missing from website</a></p>
+</li>
+<li>
+<p><a href="/helper/website.html#sponsorship">Apache Sponsorship link is missing from website</a></p>
+</li>
+<li>
+<p><a href="/helper/website.html#disclaimer">Disclaimer is missing from website</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+		</div>
+		<div id="push"></div>
+    </div>
+
+    <div id="footer">
+      <div class="container">
+          <p class="muted credit">&copy; 2019 The Apache Software Foundation | Licensed under the Apache License, Version 2.0.<br/>
+          Apache Incubator, Apache, the Apache feather logo, and the Apache Incubator project logo are trademarks or registered trademarks of The Apache Software Foundation.</p>
+      </div>
+    </div>
+    <script src="../js/jquery-1.11.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/prettify.js"></script>
+    <script src="../js/readingTime.js"></script>
+    <script src="../js/incubator.js"></script>
+  </body>
+</html>
