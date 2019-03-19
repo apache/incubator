@@ -11,9 +11,6 @@ rm -rf $WORKDIR
 mkdir -p $WORKDIR
 mkdir -p $WORKDIR/clutch
 
-# on Jenkins the directory has a space in the name
-echo $CURRENTDIR
-
 # build the svn bits
 rm -rf $SVN_CO_DIR
 rm -rf $SVN_BUILD_DIR
@@ -32,10 +29,11 @@ svn co $SVN_REPO $SVN_CO_DIR
     fi
     # these txt files are moved to output
     cp $SVN_CO_DIR/content/clutch/*.txt $WORKDIR/clutch/.
-    # the following files go to be baked
-    cp $SVN_CO_DIR/content/clutch/_includes/*.ad '${CURRENTDIR}'/pages/clutch/_includes/.
-    cp $SVN_CO_DIR/content/clutch/*.ad ${CURRENTDIR}/pages/clutch/.
 )
+
+# the following files go to be baked
+cp $SVN_CO_DIR/content/clutch/_includes/*.ad pages/clutch/_includes/.
+cp $SVN_CO_DIR/content/clutch/*.ad pages/clutch/.
 
 # now bake the site
 ./bake.sh -b . $WORKDIR
