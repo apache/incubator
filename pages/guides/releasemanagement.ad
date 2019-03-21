@@ -21,18 +21,26 @@ Apache Incubator PMC
 
 == What goes into a release
 
-A podling should begin to familiarize itself with ASF policies for releases.  Those policies can be found at link:http://www.apache.org/dev/#releases[http://www.apache.org/dev/#releases].
+One of the goals of incubation is to teach podling communities how to
+build ASF compliant releases.  As part of the learning process, the podling community needs to be
+fully engaged in the review process.  A podling community should begin to familiarize themselves
+with the ASF policies for releases.  Those policies can be found at
+link:http://www.apache.org/dev/#releases[http://www.apache.org/dev/#releases].
 
-It is well understood that one of the goals of incubation is to help a podling understand how to
-build link:http://www.apache.org/dev/#releases[ASF compliant releases]. This is why it's
-mandatory to have at least 3 {plusone} votes from
-link:/incubation/roles_and_responsibilities.html#incubator_project_management_committee_ipmc[IPMC members]
-review the releases (this should include your link:/incubation/roles_and_responsibilities.html#mentor[mentors] but is not mandatory)
-for accuracy in compliance with the ASF and link:/incubation/Incubation_Policy.html#Releases[Incubator policies].
-The podling community, of course, needs to be fully engaged in the review process as well. Anybody reviewing
-the releases will provide the release manager and IPMC members with information about what is wrong
-with the release. The severity of the issues and whether they are blocking or not may be discussed
-but the ultimate guidgance on where podling releases may get additional flexibility belongs to the mentors and IPMC members.
+ASF compliant releases are always produced by a PMC, and for podlings  this is the IPMC.  This is
+why it is mandatory to have at least 3 {plusone} votes from
+link:/incubation/roles_and_responsibilities.html#incubator_project_management_committee_ipmc[IPMC members].
+Usually your link:/incubation/roles_and_responsibilities.html#mentor[mentors] (who are also IPMC members)
+will vote on your releases.  Other IPMC members will as well.  IPMC members will check for
+compliance with the ASF policies and with link:/incubation/Incubation_Policy.html#Releases[Incubator policies].
+
+Anybody reviewing the releases will explain what they checked and what they found while reviewing
+the release.  They will also rate the severity of any issues they find.  Some issues may be blockers.
+Others issues may be resolved in later releases.  Those voting on the release will base their votes
+on this information.
+
+If you do not understand the feedback you receive, or if you believe that it is misguided,
+please say so!  We are all learning, and discussion is an important part of open source development.
 
 == Podling Constraints
 
