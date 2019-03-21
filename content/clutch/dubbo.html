@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Apache Dubbo (Incubating)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <meta name="generator" content="JBake">
+
+    <!-- Le styles -->
+    <link href="../css/incubator.css" rel="stylesheet">
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/asciidoctor.css" rel="stylesheet">
+    <link href="../css/base.css" rel="stylesheet">
+    <link href="../css/prettify.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <!--<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">-->
+    <link rel="shortcut icon" href="https://www.apache.org/favicon.ico">
+  </head>
+  <body onload="prettyPrint()">
+    <div id="wrap">
+   
+
+	<!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="https://incubator.apache.org"><i class="icon-home"></i>Apache Incubator</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Policies <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                
+                  <li><a href="https://incubator.apache.org/policy/incubation.html">Incubation Policy</a></li>
+                
+                  <li><a href="https://incubator.apache.org/policy/process.html">Incubation Process</a></li>
+                
+                  <li><a href="https://incubator.apache.org/policy/roles_and_responsibilities.html">Roles and Responsibilities</a></li>
+                
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Proposals <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                
+                <li><a href="https://incubator.apache.org/guides/proposal.html">A Guide To Proposal Creation</a></li>
+                
+                <li><a href="https://incubator.apache.org/guides/entry.html">Enter The Incubator</a></li>
+                
+                <li><a href="https://incubator.apache.org/podling-story.html">The Story of a Podling</a></li>
+                
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Podling Guides <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                
+                  <li><a href="https://incubator.apache.org/guides/branding.html">Incubator Branding Guide</a></li>
+                
+                  <li><a href="https://incubator.apache.org/guides/committer.html">Committers</a></li>
+                
+                  <li><a href="https://incubator.apache.org/guides/community.html">Guide to Successful Community Building</a></li>
+                
+                  <li><a href="https://incubator.apache.org/guides/graduation.html">Guide to Successful Graduation</a></li>
+                
+                  <li><a href="https://incubator.apache.org/guides/ip_clearance.html">IP Clearance</a></li>
+                
+                  <li><a href="https://incubator.apache.org/guides/names.html">Podling Name Search Guide</a></li>
+                
+                  <li><a href="https://incubator.apache.org/guides/podling_sourcecontrol.html">Podling Source Control</a></li>
+                
+                  <li><a href="https://incubator.apache.org/guides/ppmc.html">Podling Project Management Committee</a></li>
+                
+                  <li><a href="https://incubator.apache.org/guides/press-kit.html">Podling Press Kit</a></li>
+                
+                  <li><a href="https://incubator.apache.org/guides/publicity.html">Podling Publicity/Media Guidelines</a></li>
+                
+                  <li><a href="https://incubator.apache.org/guides/releasemanagement.html">Release Management</a></li>
+                
+                  <li><a href="https://incubator.apache.org/guides/retirement.html">Guide to Retirement</a></li>
+                
+                  <li><a href="https://incubator.apache.org/guides/sites.html">Podling Websites</a></li>
+                
+                  <li><a href="https://incubator.apache.org/guides/transferring.html">Transferring Resources out of the Incubator</a></li>
+                
+                  <li><a href="https://incubator.apache.org/guides/transitioning_asf.html">Initial Code Import</a></li>
+                
+                <li><a href="/clutch">Clutch Report</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">PMC Guides <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                
+                <li><a href="https://incubator.apache.org/guides/chair.html">Incubator Chair Guide</a></li>
+                
+                <li><a href="https://incubator.apache.org/guides/lists.html">Incubator Mailing Lists Guide</a></li>
+                
+                <li><a href="https://incubator.apache.org/guides/mentor.html">Mentors' Guide</a></li>
+                
+                <li><a href="https://incubator.apache.org/guides/participation.html">Guide to Participation</a></li>
+                
+                <li><a href="https://incubator.apache.org/guides/pmc.html">The Incubator PMC</a></li>
+                
+                <li><a href="https://incubator.apache.org/guides/website.html">Updating the top-level Incubator website</a></li>
+                
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">ASF <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="http://www.apache.org/foundation/how-it-works.html">How Apache Works</a></li>
+                <li><a href="http://www.apache.org/dev/">Developer Documentation</a></li>
+                <li><a href="http://www.apache.org/legal/">Legal</a></li>
+                <li><a href="http://www.apache.org/foundation/">Foundation</a></li>
+                <li><a href="http://www.apache.org/foundation/sponsorship.html">Sponsor Apache</a></li>
+                <li><a href="http://www.apache.org/foundation/thanks.html">Thanks</a></li>
+              </ul>
+            </li>
+            <li><a href="https://incubator.apache.org/faq.html">FAQs</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 vcenter"><a href="https://www.apache.org/"><img src="http://www.apache.org/img/asf_logo.png" alt="The Apache Software Foundation" border="0" style="margin-top: 2px" width="250"></a></div>
+          <div class="col-md-4 vcenter"><a href="/"><img src="https://incubator.apache.org/images/incubator_feather_egg_logo_sm.png" alt="The Apache Software Foundation Incubator" border="0" style="margin-top: 2px" height="100"></a></div>
+          <div class="col-md-4 vcenter"><a href="https://www.apache.org/foundation/contributing.html"><img src="https://www.apache.org/images/SupportApache-small.png" height="75" width="75"></a></div>
+      </div>
+    </div>
+    <div class="top-container container">
+
+<div class="incubator-page-header">
+    <h1>Apache Dubbo (Incubating)</h1>
+</div>
+
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Dubbo is a high-performance, lightweight, java based RPC framework.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Resources: dubbo</p>
+</li>
+<li>
+<p>Started: 2018-02-16; Last Status Update: 2019-03-21</p>
+</li>
+<li>
+<p>Reporting: March, June, September, December</p>
+</li>
+<li>
+<p>Committers: 34</p>
+</li>
+<li>
+<p>PPMC members: 19</p>
+</li>
+<li>
+<p>Mentors: Justin Mclean (jmclean), Mark Thomas (markt), Dave Fisher (wave)</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="news">News</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>2018-02-16 Dubbo enters incubation.</p>
+</li>
+<li>
+<p>2018-06-07 Dubbo 2.6.2 has been released.</p>
+</li>
+<li>
+<p>2018-06-07 New committer: Zonghai Shang(yiji).</p>
+</li>
+<li>
+<p>2018-07-10 New committer: YunKun Huang(htynkn)</p>
+</li>
+<li>
+<p>2018-08-09 New committer: Yong Zhu(diecui1202)</p>
+</li>
+<li>
+<p>2018-08-09 New committer: Kimm King(kimmking)</p>
+</li>
+<li>
+<p>2018-08-29 New committer: Yuhang Xiu(carryxyh)</p>
+</li>
+<li>
+<p>2018-09-11 Dubbo 2.6.3 has been released.</p>
+</li>
+<li>
+<p>2018-09-11 New committer: Minxuan Zhuang(min)</p>
+</li>
+<li>
+<p>2018-10-08 Dubbo 2.6.4 has been released.</p>
+</li>
+<li>
+<p>2018-10-31 New committer: Jinkai Ma(majinkai)</p>
+</li>
+<li>
+<p>2018-11-01 New PMC member: Zonghai Shang(yiji)</p>
+</li>
+<li>
+<p>2018-11-05 New committer: Zhenqiang Yi(manzhizhen)</p>
+</li>
+<li>
+<p>2018-11-09 New committer: Victory Cao(cvictory)</p>
+</li>
+<li>
+<p>2018-11-14 New committer: Liandong Chen(purple-force)</p>
+</li>
+<li>
+<p>2018-11-21 New committer: Jeff Lv(Jeff-Lv)</p>
+</li>
+<li>
+<p>2018-11-23 Dubbo 2.6.5 has been released.</p>
+</li>
+<li>
+<p>2018-12-03 New PMC member: Yong Zhu(diecui1202)</p>
+</li>
+<li>
+<p>2018-12-20 New PMC member: Yuhang Xiu(carryxyh)</p>
+</li>
+<li>
+<p>2019-01-23 New committer: Taosheng Wei(tswstarplanet)</p>
+</li>
+<li>
+<p>2019-01-25 New committer: Xianjun Ke(kexianjun)</p>
+</li>
+<li>
+<p>2019-01-27 Dubbo spring boot starter 0.2.1 and 0.1.2 has been released.</p>
+</li>
+<li>
+<p>2019-01-29 Dubbo 2.7.0 has been released.</p>
+</li>
+<li>
+<p>2019-01-30 New committer: Kun Song(satansk)</p>
+</li>
+<li>
+<p>2019-01-31 New committer: Xiaojie Li(lixiaojiee)</p>
+</li>
+<li>
+<p>2019-02-02 New committer: Yuhao Bi(biyuhao)</p>
+</li>
+<li>
+<p>2019-02-02 New PMC member: Minxuan Zhuang(min)</p>
+</li>
+<li>
+<p>2019-02-14 Dubbo spring boot starter 2.7.0 has been released.</p>
+</li>
+<li>
+<p>2019-02-15 Dubbo Ops 0.1 has been released.</p>
+</li>
+<li>
+<p>2019-02-18 New committer: Zhongming Hua(crazyhzm)</p>
+</li>
+<li>
+<p>2019-02-25 New PMC member: Yunkun Huang(htynkn)</p>
+</li>
+<li>
+<p>2019-03-05 New committer: Zhenxu Ke(kezhenxu94)</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="resources">Resources</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="project_website">Project Website</h3>
+<div class="paragraph">
+<p><a href="http://dubbo.incubator.apache.org" class="bare">http://dubbo.incubator.apache.org</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="mailing_lists">Mailing Lists</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Developer mailing list: <a href="http://mail-archives.apache.org/mod_mbox/dubbo-dev" class="bare">http://mail-archives.apache.org/mod_mbox/dubbo-dev</a></p>
+</li>
+<li>
+<p>Commits mailing list: <a href="http://mail-archives.apache.org/mod_mbox/dubbo-commits" class="bare">http://mail-archives.apache.org/mod_mbox/dubbo-commits</a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="issue_tracker">Issue Tracker</h3>
+<div class="paragraph">
+<p><a href="https://github.com/apache/incubator-dubbo/issues" class="bare">https://github.com/apache/incubator-dubbo/issues</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="wiki">Wiki</h3>
+<div class="paragraph">
+<p><a href="https://github.com/apache/incubator-dubbo/wiki" class="bare">https://github.com/apache/incubator-dubbo/wiki</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="repositories">Repositories</h3>
+<div class="sect3">
+<h4 id="1_incubator_dubbo">1: incubator-dubbo</h4>
+<div class="paragraph">
+<p>| <strong><a href="https://gitbox.apache.org/repos/asf?p=incubator-dubbo.git;a=tree;hb=HEAD">Gitbox</a></strong> | <strong><a href="https://github.com/apache/incubator-dubbo/">Github</a></strong> | Apache Dubbo (Incubating)&#8201;&#8212;&#8201;Commits: 8554&#8201;&#8212;&#8201;Updated: 03/20/2019</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="2_incubator_dubbo_admin">2: incubator-dubbo-admin</h4>
+<div class="paragraph">
+<p>| <strong><a href="https://gitbox.apache.org/repos/asf?p=incubator-dubbo-admin.git;a=tree;hb=HEAD">Gitbox</a></strong> | <strong><a href="https://github.com/apache/incubator-dubbo-admin/">Github</a></strong> | Apache Dubbo Ops (Incubating)&#8201;&#8212;&#8201;Commits: 746&#8201;&#8212;&#8201;Updated: 03/21/2019</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="3_incubator_dubbo_docs">3: incubator-dubbo-docs</h4>
+<div class="paragraph">
+<p>| <strong><a href="https://gitbox.apache.org/repos/asf?p=incubator-dubbo-docs.git;a=tree;hb=HEAD">Gitbox</a></strong> | <strong><a href="https://github.com/apache/incubator-dubbo-docs/">Github</a></strong> | Apache Dubbo Documentation (Incubating)&#8201;&#8212;&#8201;Commits: 143&#8201;&#8212;&#8201;Updated: 01/17/2019</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="4_incubator_dubbo_feature_test">4: incubator-dubbo-feature-test</h4>
+<div class="paragraph">
+<p>| <strong><a href="https://gitbox.apache.org/repos/asf?p=incubator-dubbo-feature-test.git;a=tree;hb=HEAD">Gitbox</a></strong> | <strong><a href="https://github.com/apache/incubator-dubbo-feature-test/">Github</a></strong> | Apache Dubbo Feature Test (Incubating)&#8201;&#8212;&#8201;Commits: 42&#8201;&#8212;&#8201;Updated: 11/27/2017</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="5_incubator_dubbo_rpc_jsonrpc">5: incubator-dubbo-rpc-jsonrpc</h4>
+<div class="paragraph">
+<p>| <strong><a href="https://gitbox.apache.org/repos/asf?p=incubator-dubbo-rpc-jsonrpc.git;a=tree;hb=HEAD">Gitbox</a></strong> | <strong><a href="https://github.com/apache/incubator-dubbo-rpc-jsonrpc/">Github</a></strong> | Apache Dubbo RPC JSON (Incubating)&#8201;&#8212;&#8201;Commits: 49&#8201;&#8212;&#8201;Updated: 09/03/2018</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="6_incubator_dubbo_samples">6: incubator-dubbo-samples</h4>
+<div class="paragraph">
+<p>| <strong><a href="https://gitbox.apache.org/repos/asf?p=incubator-dubbo-samples.git;a=tree;hb=HEAD">Gitbox</a></strong> | <strong><a href="https://github.com/apache/incubator-dubbo-samples/">Github</a></strong> | Apache Dubbo Samples (Incubating)&#8201;&#8212;&#8201;Commits: 349&#8201;&#8212;&#8201;Updated: 03/21/2019</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="7_incubator_dubbo_spring_boot_project">7: incubator-dubbo-spring-boot-project</h4>
+<div class="paragraph">
+<p>| <strong><a href="https://gitbox.apache.org/repos/asf?p=incubator-dubbo-spring-boot-project.git;a=tree;hb=HEAD">Gitbox</a></strong> | <strong><a href="https://github.com/apache/incubator-dubbo-spring-boot-project/">Github</a></strong> | Apache Dubbo Spring Boot (Incubating)&#8201;&#8212;&#8201;Commits: 463&#8201;&#8212;&#8201;Updated: 03/20/2019</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="8_incubator_dubbo_website">8: incubator-dubbo-website</h4>
+<div class="paragraph">
+<p>| <strong><a href="https://gitbox.apache.org/repos/asf?p=incubator-dubbo-website.git;a=tree;hb=HEAD">Gitbox</a></strong> | <strong><a href="https://github.com/apache/incubator-dubbo-website/">Github</a></strong> | Apache Dubbo Website (Incubating)&#8201;&#8212;&#8201;Commits: 1386&#8201;&#8212;&#8201;Updated: 03/20/2019</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="releases">Releases</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="current">Current</h3>
+<div class="paragraph">
+<p><strong><a href="https://www.apache.org/dist/incubator/dubbo/KEYS">Signing Keys</a></strong></p>
+</div>
+<div class="paragraph">
+<p>It is essential that you verify the integrity of release downloads. See <a href="https://www.apache.org/dyn/closer.cgi#verify">instructions here</a></p>
+</div>
+<div class="sect3">
+<h4 id="1_apache_dubbo_incubating_2_6_6_bin_release_zip">1: apache-dubbo-incubating-2.6.6-bin-release.zip</h4>
+<div class="paragraph">
+<p>| <strong><a href="https://www.apache.org/dyn/closer.lua?filename=incubator/dubbo/2.6.6/apache-dubbo-incubating-2.6.6-bin-release.zip&amp;action=download">Download</a></strong> | <strong><a href="https://www.apache.org/dist/incubator/dubbo/2.6.6/apache-dubbo-incubating-2.6.6-bin-release.zip.asc">Signature</a></strong> | <strong><a href="https://www.apache.org/dist/incubator/dubbo/2.6.6/apache-dubbo-incubating-2.6.6-bin-release.zip.sha512">Hash</a></strong> | apache-dubbo-incubating-2.6.6-bin-release.zip&#8201;&#8212;&#8201;Filesize: 3.16 MB&#8201;&#8212;&#8201;Released: 03/07/2019 by min in r32802</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="2_apache_dubbo_incubating_2_6_6_source_release_zip">2: apache-dubbo-incubating-2.6.6-source-release.zip</h4>
+<div class="paragraph">
+<p>| <strong><a href="https://www.apache.org/dyn/closer.lua?filename=incubator/dubbo/2.6.6/apache-dubbo-incubating-2.6.6-source-release.zip&amp;action=download">Download</a></strong> | <strong><a href="https://www.apache.org/dist/incubator/dubbo/2.6.6/apache-dubbo-incubating-2.6.6-source-release.zip.asc">Signature</a></strong> | <strong><a href="https://www.apache.org/dist/incubator/dubbo/2.6.6/apache-dubbo-incubating-2.6.6-source-release.zip.sha512">Hash</a></strong> | apache-dubbo-incubating-2.6.6-source-release.zip&#8201;&#8212;&#8201;Filesize: 2.65 MB&#8201;&#8212;&#8201;Released: 03/07/2019 by min in r32802</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="3_apache_dubbo_incubating_2_7_0_bin_release_zip">3: apache-dubbo-incubating-2.7.0-bin-release.zip</h4>
+<div class="paragraph">
+<p>| <strong><a href="https://www.apache.org/dyn/closer.lua?filename=incubator/dubbo/2.7.0/apache-dubbo-incubating-2.7.0-bin-release.zip&amp;action=download">Download</a></strong> | <strong><a href="https://www.apache.org/dist/incubator/dubbo/2.7.0/apache-dubbo-incubating-2.7.0-bin-release.zip.asc">Signature</a></strong> | <strong><a href="https://www.apache.org/dist/incubator/dubbo/2.7.0/apache-dubbo-incubating-2.7.0-bin-release.zip.sha512">Hash</a></strong> | apache-dubbo-incubating-2.7.0-bin-release.zip&#8201;&#8212;&#8201;Filesize: 3.49 MB&#8201;&#8212;&#8201;Released: 01/29/2019 by huxing in r32185</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="4_apache_dubbo_incubating_2_7_0_source_release_zip">4: apache-dubbo-incubating-2.7.0-source-release.zip</h4>
+<div class="paragraph">
+<p>| <strong><a href="https://www.apache.org/dyn/closer.lua?filename=incubator/dubbo/2.7.0/apache-dubbo-incubating-2.7.0-source-release.zip&amp;action=download">Download</a></strong> | <strong><a href="https://www.apache.org/dist/incubator/dubbo/2.7.0/apache-dubbo-incubating-2.7.0-source-release.zip.asc">Signature</a></strong> | <strong><a href="https://www.apache.org/dist/incubator/dubbo/2.7.0/apache-dubbo-incubating-2.7.0-source-release.zip.sha512">Hash</a></strong> | apache-dubbo-incubating-2.7.0-source-release.zip&#8201;&#8212;&#8201;Filesize: 3.03 MB&#8201;&#8212;&#8201;Released: 01/29/2019 by huxing in r32185</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="5_apache_dubbo_ops_incubating_0_1_source_release_zip">5: apache-dubbo-ops-incubating-0.1-source-release.zip</h4>
+<div class="paragraph">
+<p>| <strong><a href="https://www.apache.org/dyn/closer.lua?filename=incubator/dubbo/dubbo-ops/0.1/apache-dubbo-ops-incubating-0.1-source-release.zip&amp;action=download">Download</a></strong> | <strong><a href="https://www.apache.org/dist/incubator/dubbo/dubbo-ops/0.1/apache-dubbo-ops-incubating-0.1-source-release.zip.asc">Signature</a></strong> | <strong><a href="https://www.apache.org/dist/incubator/dubbo/dubbo-ops/0.1/apache-dubbo-ops-incubating-0.1-source-release.zip.sha512">Hash</a></strong> | apache-dubbo-ops-incubating-0.1-source-release.zip&#8201;&#8212;&#8201;Filesize: 766.70 KB&#8201;&#8212;&#8201;Released: 02/15/2019 by min in r32510</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="6_apache_dubbo_spring_boot_project_incubating_2_7_0_bin_release_zip">6: apache-dubbo-spring-boot-project-incubating-2.7.0-bin-release.zip</h4>
+<div class="paragraph">
+<p>| <strong><a href="https://www.apache.org/dyn/closer.lua?filename=incubator/dubbo/spring-boot-project/2.7.0/apache-dubbo-spring-boot-project-incubating-2.7.0-bin-release.zip&amp;action=download">Download</a></strong> | <strong><a href="https://www.apache.org/dist/incubator/dubbo/spring-boot-project/2.7.0/apache-dubbo-spring-boot-project-incubating-2.7.0-bin-release.zip.asc">Signature</a></strong> | <strong><a href="https://www.apache.org/dist/incubator/dubbo/spring-boot-project/2.7.0/apache-dubbo-spring-boot-project-incubating-2.7.0-bin-release.zip.sha512">Hash</a></strong> | apache-dubbo-spring-boot-project-incubating-2.7.0-bin-release.zip&#8201;&#8212;&#8201;Filesize: 85.86 KB&#8201;&#8212;&#8201;Released: 02/14/2019 by mercybli in r32489</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="7_apache_dubbo_spring_boot_project_incubating_2_7_0_source_release_zip">7: apache-dubbo-spring-boot-project-incubating-2.7.0-source-release.zip</h4>
+<div class="paragraph">
+<p>| <strong><a href="https://www.apache.org/dyn/closer.lua?filename=incubator/dubbo/spring-boot-project/2.7.0/apache-dubbo-spring-boot-project-incubating-2.7.0-source-release.zip&amp;action=download">Download</a></strong> | <strong><a href="https://www.apache.org/dist/incubator/dubbo/spring-boot-project/2.7.0/apache-dubbo-spring-boot-project-incubating-2.7.0-source-release.zip.asc">Signature</a></strong> | <strong><a href="https://www.apache.org/dist/incubator/dubbo/spring-boot-project/2.7.0/apache-dubbo-spring-boot-project-incubating-2.7.0-source-release.zip.sha512">Hash</a></strong> | apache-dubbo-spring-boot-project-incubating-2.7.0-source-release.zip&#8201;&#8212;&#8201;Filesize: 560.64 KB&#8201;&#8212;&#8201;Released: 02/14/2019 by mercybli in r32489</p>
+</div>
+<div class="paragraph">
+<p>Total size of all downloads = 13.71 MB</p>
+</div>
+<div class="paragraph">
+<p>The podling website scan does the best it can. Details are found <a href="https://whimsy.apache.org/pods/project/dubbo">here</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+		</div>
+		<div id="push"></div>
+    </div>
+
+    <div id="footer">
+      <div class="container">
+          <p class="muted credit">&copy; 2019 The Apache Software Foundation | Licensed under the Apache License, Version 2.0.<br/>
+          Apache Incubator, Apache, the Apache feather logo, and the Apache Incubator project logo are trademarks or registered trademarks of The Apache Software Foundation.</p>
+      </div>
+    </div>
+    <script src="../js/jquery-1.11.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/prettify.js"></script>
+    <script src="../js/readingTime.js"></script>
+    <script src="../js/incubator.js"></script>
+  </body>
+</html>
