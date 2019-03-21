@@ -8,8 +8,8 @@ The builds for the website do require internet access.
 - Install JBake from http://jbake.org/download.html
 -- Currently it looks like version 2.6.0 or greater is required.
 - Create an environment variable `JBAKE_HOME` pointing to your JBake installation.
--- `export JBAKE_HOME=/home/jenkins/tools/jbake/jbake-2.6.3`
--- `export JBAKE_HOME=/usr/local/Cellar/jbake/2.6.4`
+** `export JBAKE_HOME=/home/jenkins/tools/jbake/jbake-2.6.3`
+** `export JBAKE_HOME=/usr/local/Cellar/jbake/2.6.4`
 - Ensure that you have a JVM locally, e.g. [OpenJDK](http://openjdk.java.net/install/)
 
 ## Clone the Source code
