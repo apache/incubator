@@ -30,6 +30,7 @@ Our Current Podlings:
         <div class="col-lg-4 text-center"><a href="/projects/#current">List of Current Podlings</a></div>
         <div class="col-lg-4 text-center"><a href="/projects/#graduated">Graduated Projects</a></div>
         <div class="col-lg-4 text-center"><a href="/projects/#retired">Retired Podlings</a></div>
+        <div class="col-lg-4 text-center"><a href="/clutch/">Current Clutch Analysis</a></div>
     </div>
 </div>
 <br/><br/>
