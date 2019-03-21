@@ -11,8 +11,7 @@ The builds for the website do require internet access.
 
 ## Clone the Source code
 
-If you have write access to incubator, you should clone it from https://git-wip-us.apache.org/repos/asf/incubator.git
-otherwise you can fork from our github mirror https://github.com/apache/incubator and raise a pull request.
+You can fork from github https://github.com/apache/incubator and raise a pull request.
 
 ## Building & Running the site
 
