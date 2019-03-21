@@ -8,7 +8,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="${config.site_host}"><i class="icon-home"></i>Apache Incubator</a>
+          <a class="navbar-brand" href="/"><i class="icon-home"></i>Apache Incubator</a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
@@ -16,7 +16,7 @@
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Policies <b class="caret"></b></a>
               <ul class="dropdown-menu">
                 <%policys.each {policy -> %>
-                  <li><a href="${config.site_host}/${policy.uri}">${policy.title}</a></li>
+                  <li><a href="/${policy.uri}">${policy.title}</a></li>
                 <%}%>
               </ul>
             </li>
@@ -24,7 +24,7 @@
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Proposals <b class="caret"></b></a>
               <ul class="dropdown-menu">
                 <%proposalGuides.each {guide -> %>
-                <li><a href="${config.site_host}/${guide.uri}">${guide.title}</a></li>
+                <li><a href="/${guide.uri}">${guide.title}</a></li>
                 <%}%>
               </ul>
             </li>
@@ -32,28 +32,28 @@
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Podling Guides <b class="caret"></b></a>
               <ul class="dropdown-menu">
                 <%guides.each {guide -> %>
-                  <li><a href="${config.site_host}/${guide.uri}">${guide.title}</a></li>
+                  <li><a href="/${guide.uri}">${guide.title}</a></li>
                 <%}%>
-                <li><a href="/clutch">Clutch Report</a></li>
+                <li><a href="/clutch/">Clutch Report</a></li>
               </ul>
             </li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">PMC Guides <b class="caret"></b></a>
               <ul class="dropdown-menu">
                 <%pmcGuides.each {guide -> %>
-                <li><a href="${config.site_host}/${guide.uri}">${guide.title}</a></li>
+                <li><a href="/${guide.uri}">${guide.title}</a></li>
                 <%}%>
               </ul>
             </li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">ASF <b class="caret"></b></a>
               <ul class="dropdown-menu">
-                <li><a href="http://www.apache.org/foundation/how-it-works.html">How Apache Works</a></li>
-                <li><a href="http://www.apache.org/dev/">Developer Documentation</a></li>
-                <li><a href="http://www.apache.org/legal/">Legal</a></li>
-                <li><a href="http://www.apache.org/foundation/">Foundation</a></li>
-                <li><a href="http://www.apache.org/foundation/sponsorship.html">Sponsor Apache</a></li>
-                <li><a href="http://www.apache.org/foundation/thanks.html">Thanks</a></li>
+                <li><a href="https://www.apache.org/foundation/how-it-works.html">How Apache Works</a></li>
+                <li><a href="https://www.apache.org/dev/">Developer Documentation</a></li>
+                <li><a href="https://www.apache.org/legal/">Legal</a></li>
+                <li><a href="https://www.apache.org/foundation/">Foundation</a></li>
+                <li><a href="https://www.apache.org/foundation/sponsorship.html">Sponsor Apache</a></li>
+                <li><a href="https://www.apache.org/foundation/thanks.html">Thanks</a></li>
               </ul>
             </li>
             <li><a href="${config.site_host}/faq.html">FAQs</a></li>
@@ -63,7 +63,7 @@
     </div>
     <div class="container">
       <div class="row">
-        <div class="col-md-4 vcenter"><a href="https://www.apache.org/"><img src="http://www.apache.org/img/asf_logo.png" alt="The Apache Software Foundation" border="0" style="margin-top: 2px" width="250"></a></div>
+        <div class="col-md-4 vcenter"><a href="https://www.apache.org/"><img src="https://www.apache.org/img/asf_logo.png" alt="The Apache Software Foundation" border="0" style="margin-top: 2px" width="250"></a></div>
           <div class="col-md-4 vcenter"><a href="/"><img src="https://incubator.apache.org/images/incubator_feather_egg_logo_sm.png" alt="The Apache Software Foundation Incubator" border="0" style="margin-top: 2px" height="100"></a></div>
           <div class="col-md-4 vcenter"><a href="https://www.apache.org/foundation/contributing.html"><img src="https://www.apache.org/images/SupportApache-small.png" height="75" width="75"></a></div>
       </div>
