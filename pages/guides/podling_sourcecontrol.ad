@@ -60,20 +60,20 @@ Please follow the procedures in the link:https://cwiki.apache.org/confluence/dis
 Edit the file to add the podling repository in alphabetical order, e.g.
 
 [source]
-====
+----
 {podling}={mentor1},{mentor2}
-====
+----
 
 In the section listing all the projects (again in alphabetical order)
 add the podling directory and permissions, to enable the podling for its
 eventual website:
 
 [source]
-====
+----
 [/incubator/{podling}]
 @{podling} = rw
 ...
-====
+----
 
 This is a convenient time to add link:#Authorize+Committers[authorization] for committers
 who have accounts.

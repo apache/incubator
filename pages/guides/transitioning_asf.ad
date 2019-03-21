@@ -32,7 +32,7 @@ control system is tagged so that the imported version is precisely known.
 A public record MUST be made of the code imported. If the import is not
 attached to JIRA then it MUST be committed to version control.
 
-=== Importing History
+== Importing History
 
 The incoming code can either be committed as a snapshot or as a complete version
 control export including history (provided that the import is available in a format

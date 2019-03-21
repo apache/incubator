@@ -142,13 +142,12 @@ For example:
 
 For initial community building it is usually appropriate to only have a "dev" list, to keep the discussions focussed. Later add a "user" list if needed.  A podling that is already established and using an existing user interaction channel may want to keep those resources around until they feel they have transitioned to the ASF successfully.  You will want to discuss this on your existing development lists.
 
-Note:
 [NOTE]
-----
+====
 If you are using SVN
 Commits under *http://svn.apache.org/repos/asf/incubator/_${podling}_* will be emailed to *commits@${podling}.incubator.apache.org*.
 Any deviation will require special configuration in the *asf-mailer.conf* file by the IPMC.
-----
+====
 
 Mailing lists creation is a task for the link:#who-infra[infrastructure team]. The
 infrastructure team offers a tool that simplifies the creation of mailing lists.  You can access the
@@ -257,9 +256,9 @@ Any prospective Mentors who are not yet on the IPMC should ask to be added (by e
 Email the application to *private@incubator.apache.org*.
 
 [NOTE]
-----
+====
 This process may take a few days.
-----
+====
 
 == CLA and CCLA Submission
 
