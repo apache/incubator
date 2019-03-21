@@ -22,6 +22,7 @@
 <%
     def source = new java.net.URL("http://svn.apache.org/repos/asf/incubator/public/trunk/content/podlings.xml")
     def podlings = new groovy.util.XmlSlurper(false, false, true).parseText(source.text).children()
+    def sortedName = { a, b -> a.@name.text().toLowerCase() <=> b.@name.text().toLowerCase() } 
 %>
 <h3 id="current"><img src="/images/redarrow.gif">Current Podlings</h3>
 <div class="container-fluid">
@@ -34,7 +35,7 @@
 	   <th>Mentors</th>
 	   <th>Start&nbsp;Date&nbsp;</th>
 	</tr>
-        <% podlings.each { podling ->
+        <% podlings.toSorted(sortedName).each { podling ->
             if (podling.@status == 'current') {
         %>
         <tr id="${podling.@resource}">
@@ -72,7 +73,7 @@
 	   <th>Start&nbsp;Date&nbsp;</th>
 	   <th>End&nbsp;Date&nbsp;&nbsp;&nbsp;</th>
 	</tr>
-        <% podlings.each { podling ->
+        <% podlings.toSorted(sortedName).each { podling ->
             if (podling.@status == 'graduated') {
         %>
         <tr id="${podling.@resource}">
@@ -126,7 +127,7 @@
 	   <th>Start&nbsp;Date&nbsp;</th>
 	   <th>End&nbsp;Date&nbsp;&nbsp;&nbsp;</th>
 	</tr>
-        <% podlings.each { podling ->
+        <% podlings.toSorted(sortedName).each { podling ->
             if (podling.@status == 'retired') {
         %>
         <tr id="${podling.@resource}">
