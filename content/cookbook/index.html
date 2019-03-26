@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>The Apache Incubator Cookbook</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <meta name="generator" content="JBake">
+
+    <!-- Le styles -->
+    <link href="../css/incubator.css" rel="stylesheet">
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/asciidoctor.css" rel="stylesheet">
+    <link href="../css/base.css" rel="stylesheet">
+    <link href="../css/prettify.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <!--<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">-->
+    <link rel="shortcut icon" href="https://www.apache.org/favicon.ico">
+  </head>
+  <body onload="prettyPrint()">
+    <div id="wrap">
+   
+
+	<!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/"><i class="icon-home"></i>Apache Incubator</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Policies <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                
+                  <li><a href="/policy/incubation.html">Incubation Policy</a></li>
+                
+                  <li><a href="/policy/process.html">Incubation Process</a></li>
+                
+                  <li><a href="/policy/roles_and_responsibilities.html">Roles and Responsibilities</a></li>
+                
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Proposals <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                
+                <li><a href="/guides/proposal.html">A Guide To Proposal Creation</a></li>
+                
+                <li><a href="/guides/entry.html">Enter The Incubator</a></li>
+                
+                <li><a href="/podling-story.html">The Story of a Podling</a></li>
+                
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Podling Guides <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                
+                  <li><a href="/guides/branding.html">Incubator Branding Guide</a></li>
+                
+                  <li><a href="/guides/press-kit.html">Podling Press Kit</a></li>
+                
+                  <li><a href="/guides/committer.html">Committers</a></li>
+                
+                  <li><a href="/guides/publicity.html">Podling Publicity/Media Guidelines</a></li>
+                
+                  <li><a href="/guides/community.html">Guide to Successful Community Building</a></li>
+                
+                  <li><a href="/guides/releasemanagement.html">Release Management</a></li>
+                
+                  <li><a href="/guides/graduation.html">Guide to Successful Graduation</a></li>
+                
+                  <li><a href="/guides/retirement.html">Guide to Retirement</a></li>
+                
+                  <li><a href="/guides/ip_clearance.html">IP Clearance</a></li>
+                
+                  <li><a href="/guides/sites.html">Podling Websites</a></li>
+                
+                  <li><a href="/guides/names.html">Podling Name Search Guide</a></li>
+                
+                  <li><a href="/guides/transferring.html">Transferring Resources out of the Incubator</a></li>
+                
+                  <li><a href="/guides/podling_sourcecontrol.html">Podling Source Control</a></li>
+                
+                  <li><a href="/guides/transitioning_asf.html">Initial Code Import</a></li>
+                
+                  <li><a href="/guides/ppmc.html">Podling Project Management Committee</a></li>
+                
+                <li><hr/><a href="/projects/#current">Current Podlings</a></li>
+                <li><a href="/clutch/">Clutch Report</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">PMC Guides <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                
+                <li><a href="/guides/chair.html">Incubator Chair Guide</a></li>
+                
+                <li><a href="/guides/lists.html">Incubator Mailing Lists Guide</a></li>
+                
+                <li><a href="/guides/mentor.html">Mentors' Guide</a></li>
+                
+                <li><a href="/guides/participation.html">Guide to Participation</a></li>
+                
+                <li><a href="/guides/pmc.html">The Incubator PMC</a></li>
+                
+                <li><a href="/guides/website.html">Updating the top-level Incubator website</a></li>
+                
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">ASF <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="https://www.apache.org/foundation/how-it-works.html">How Apache Works</a></li>
+                <li><a href="https://www.apache.org/dev/">Developer Documentation</a></li>
+                <li><a href="https://www.apache.org/foundation/">Foundation</a></li>
+                <li><a href="https://www.apache.org/legal/">Legal</a></li>
+		<li><hr/><a href="https://www.apache.org/licenses/">License</a></li>
+		<li><a href="https://www.apache.org/security/">Security</a></li>
+                <li><a href="https://www.apache.org/foundation/sponsorship.html">Sponsorship</a></li>
+                <li><a href="https://www.apache.org/foundation/thanks.html">Thanks</a></li>
+		<li><a href="https://www.apache.org/events/current-event">Current Events</a></li>
+              </ul>
+            </li>
+            <li><a href="/faq.html">FAQs</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 vcenter"><a href="https://www.apache.org/"><img src="https://www.apache.org/img/asf_logo.png" alt="The Apache Software Foundation" border="0" style="margin-top: 2px" width="200"></a></div>
+          <div class="col-md-4 vcenter"><a href="/"><img src="https://incubator.apache.org/images/incubator_feather_egg_logo_sm.png" alt="The Apache Software Foundation Incubator" border="0" style="margin-top: 2px" width="256"></a></div>
+          <div class="col-md-4 vcenter"><a href="https://www.apache.org/foundation/contributing.html"><img src="https://www.apache.org/images/SupportApache-small.png" style="margin-left: 92px" height="64" width="64"></a></div>
+      </div>
+    </div>
+    <div class="top-container container">
+
+<div class="page-header">
+    <h1>The Apache Incubator Cookbook</h1>
+</div>
+
+<div class="article-body">
+
+Estimated Reading Time: <span class="eta"></span>
+
+<p><div class="listingblock">
+<div class="content">
+<pre>**DRAFT DRAFT DRAFT**
+This page is just a draft meant to describe the idea of the Incubator Cookbook: a single
+page of explanations and links that covers *all* phases of incubation and should become
+*the* reference for all questions related to incubation.
+
+For now, only the first few phases of incubation are described, mostly to show the style
+that we expect: short explanations with links to the details as needed, which are meant
+to be _friendly and helpful_ for podlings, in the sense of considering the Incubator as
+a service to podlings.</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>This cookbook, combined with our homepage, should provide all the basic information that you
+need to incubate a project at the ASF.</p>
+</div>
+<div class="paragraph">
+<p>It is organized in chronological order of the steps that lead from incubating project acceptance
+to graduation as a top-level project.</p>
+</div>
+<div class="paragraph">
+<p>TODO: generate a table of contents with links to this document&#8217;s sections</p>
+</div></p>
+
+<div class="cookbookIndex">
+ 
+        <div class="item">
+          <!-- no link on purpose <h2><a href="0100-is-my-project-fit.html">Does our project fit the Apache Incubator?</a></h2> -->
+          <h2>Does our project fit the Apache Incubator?</h2>
+          <div class="text">
+            <div class="paragraph">
+<p>The ASF does not have a technical strategy, on purpose, so the acceptance of
+your project is not linked to what it does.</p>
+</div>
+<div class="paragraph">
+<p>To give our "podlings" (incubating projects) the best chances of success, we
+usually ask them to enter the incubator with at least an embryo of a community
+built around some concrete code.</p>
+</div>
+          </div>
+          <!-- debug <blockquote>[date:Tue Mar 26 00:00:00 UTC 2019, localtime:16:50:09 UTC, tip-caption:Tip, filetype:html, appendix-caption:Appendix, asciidoctor-version:1.5.7.1, doctime:16:47:30 UTC, appendix-refsig:Appendix, type:cookbook, body:<div class="paragraph">
+<p>The ASF does not have a technical strategy, on purpose, so the acceptance of
+your project is not linked to what it does.</p>
+</div>
+<div class="paragraph">
+<p>To give our "podlings" (incubating projects) the best chances of success, we
+usually ask them to enter the incubator with at least an embryo of a community
+built around some concrete code.</p>
+</div>, safe-mode-secure:, localyear:2019, authorinitials:AIP, toc-title:Table of Contents, jbake-status:published, backend-html5-doctype-article:, docdate:2019-03-26, rootpath:../, basebackend-html:, stylesheet:, iconsdir:./images/icons, imagesdir:./images/, author:Apache Incubator PMC, docfilesuffix:.ad, localdate:2019-03-26, doctype-article:, warning-caption:Warning, figure-caption:Figure, lastname:PMC, sha1:9b5cffe5b31b78dfd80ca0bc50d95ccdd04390bb, attribute-missing:skip, section-refsig:Section, idprefix:, outfilesuffix:.html, basebackend-html-doctype-article:, rendered:true, sourceuri:cookbook/0100-is-my-project-fit.html, jbake-type:cookbook, docdir:, docname:0100-is-my-project-fit, localdatetime:2019-03-26 16:50:09 UTC, toc-placement:auto, webfonts:, docdatetime:2019-03-26 16:47:30 UTC, htmlsyntax:html, important-caption:Important, authors:Apache Incubator PMC, status:published, note-caption:Note, firstname:Apache, stylesdir:., untitled-label:Untitled, linkcss:, docfile:0100-is-my-project-fit.ad, title:Does our project fit the Apache Incubator?, max-include-depth:64, caution-caption:Caution, file:./pages/cookbook/0100-is-my-project-fit.ad, user-home:., filetype-html:, cached:true, max-attribute-value-size:4096, safe-mode-level:20, backend:html5, safe-mode-name:secure, notitle:, table-caption:Table, part-refsig:Part, authorcount:1, revdate:2019-03-26, example-caption:Example, embedded:, basebackend:html, prewrap:, version-label:Version, asciidoctor:, middlename:Incubator, last-update-label:Last updated, doctitle:Does our project fit the Apache Incubator?, uri:cookbook/0100-is-my-project-fit.html, doctype:article, docyear:2019, chapter-refsig:Chapter, backend-html5:, iconfont-remote:, sectids:, attribute-undefined:drop-line]</blockquote> -->
+        </div>
+       
+        <div class="item">
+          <!-- no link on purpose <h2><a href="0200-finding-a-champion-and-mentors.html">Finding a champion and mentors</a></h2> -->
+          <h2>Finding a champion and mentors</h2>
+          <div class="text">
+            <div class="paragraph">
+<p>To enter the incubation, your project needs a <em>champion</em> and at least two or three <em>mentors</em>.</p>
+</div>
+<div class="paragraph">
+<p>These people need to be part of the Incubator PMC, which ASF Members can join just by asking.</p>
+</div>
+<div class="paragraph">
+<p>The Champion helps the incoming podling in the process of creating their proposal and acts as
+a liaison between the podling and the Incubator PMC for the initial steps, at least until the
+podling&#8217;s proposal is accepted.</p>
+</div>
+<div class="paragraph">
+<p>The Mentors accompany the podling for all phases that lead to graduation as a top-level project.</p>
+</div>
+          </div>
+          <!-- debug <blockquote>[date:Tue Mar 26 00:00:00 UTC 2019, localtime:16:50:09 UTC, tip-caption:Tip, filetype:html, appendix-caption:Appendix, asciidoctor-version:1.5.7.1, doctime:16:47:30 UTC, appendix-refsig:Appendix, type:cookbook, body:<div class="paragraph">
+<p>To enter the incubation, your project needs a <em>champion</em> and at least two or three <em>mentors</em>.</p>
+</div>
+<div class="paragraph">
+<p>These people need to be part of the Incubator PMC, which ASF Members can join just by asking.</p>
+</div>
+<div class="paragraph">
+<p>The Champion helps the incoming podling in the process of creating their proposal and acts as
+a liaison between the podling and the Incubator PMC for the initial steps, at least until the
+podling&#8217;s proposal is accepted.</p>
+</div>
+<div class="paragraph">
+<p>The Mentors accompany the podling for all phases that lead to graduation as a top-level project.</p>
+</div>, safe-mode-secure:, localyear:2019, authorinitials:AIP, toc-title:Table of Contents, jbake-status:published, backend-html5-doctype-article:, docdate:2019-03-26, rootpath:../, basebackend-html:, stylesheet:, iconsdir:./images/icons, imagesdir:./images/, author:Apache Incubator PMC, docfilesuffix:.ad, localdate:2019-03-26, doctype-article:, warning-caption:Warning, figure-caption:Figure, lastname:PMC, sha1:f3355c4e7e9477bbd4bde68d13826991465ba8a2, attribute-missing:skip, section-refsig:Section, idprefix:, outfilesuffix:.html, basebackend-html-doctype-article:, rendered:true, sourceuri:cookbook/0200-finding-a-champion-and-mentors.html, jbake-type:cookbook, docdir:, docname:0200-finding-a-champion-and-mentors, localdatetime:2019-03-26 16:50:09 UTC, toc-placement:auto, webfonts:, docdatetime:2019-03-26 16:47:30 UTC, htmlsyntax:html, important-caption:Important, authors:Apache Incubator PMC, status:published, note-caption:Note, firstname:Apache, stylesdir:., untitled-label:Untitled, linkcss:, docfile:0200-finding-a-champion-and-mentors.ad, title:Finding a champion and mentors, max-include-depth:64, caution-caption:Caution, file:./pages/cookbook/0200-finding-a-champion-and-mentors.ad, user-home:., filetype-html:, cached:true, max-attribute-value-size:4096, safe-mode-level:20, backend:html5, safe-mode-name:secure, notitle:, table-caption:Table, part-refsig:Part, authorcount:1, revdate:2019-03-26, example-caption:Example, embedded:, basebackend:html, prewrap:, version-label:Version, asciidoctor:, middlename:Incubator, last-update-label:Last updated, doctitle:Finding a champion and mentors, uri:cookbook/0200-finding-a-champion-and-mentors.html, doctype:article, docyear:2019, chapter-refsig:Chapter, backend-html5:, iconfont-remote:, sectids:, attribute-undefined:drop-line]</blockquote> -->
+        </div>
+       
+        <div class="item">
+          <!-- no link on purpose <h2><a href="0300-creating-a-proposal.html">Creating an incubation proposal</a></h2> -->
+          <h2>Creating an incubation proposal</h2>
+          <div class="text">
+            <div class="paragraph">
+<p>The champion helps the podling prepare an incubation proposal, that describes the incoming
+project for the initial discussions with the Incubator PMC.</p>
+</div>
+<div class="paragraph">
+<p>The proposal needs to include a number of standard sections, see the <em>TODO template link</em>.</p>
+</div>
+<div class="paragraph">
+<p>Prior proposals are kept on the [Incubator wiki](<a href="https://wiki.apache.org/incubator/ProjectProposals" class="bare">https://wiki.apache.org/incubator/ProjectProposals</a>) and
+can be consulted as examples, keeping in mind that the proposal template mentioned above is
+the current reference for new proposals.</p>
+</div>
+          </div>
+          <!-- debug <blockquote>[date:Tue Mar 26 00:00:00 UTC 2019, localtime:16:50:09 UTC, tip-caption:Tip, filetype:html, appendix-caption:Appendix, asciidoctor-version:1.5.7.1, doctime:16:47:30 UTC, appendix-refsig:Appendix, type:cookbook, body:<div class="paragraph">
+<p>The champion helps the podling prepare an incubation proposal, that describes the incoming
+project for the initial discussions with the Incubator PMC.</p>
+</div>
+<div class="paragraph">
+<p>The proposal needs to include a number of standard sections, see the <em>TODO template link</em>.</p>
+</div>
+<div class="paragraph">
+<p>Prior proposals are kept on the [Incubator wiki](<a href="https://wiki.apache.org/incubator/ProjectProposals" class="bare">https://wiki.apache.org/incubator/ProjectProposals</a>) and
+can be consulted as examples, keeping in mind that the proposal template mentioned above is
+the current reference for new proposals.</p>
+</div>, safe-mode-secure:, localyear:2019, authorinitials:AIP, toc-title:Table of Contents, jbake-status:published, backend-html5-doctype-article:, docdate:2019-03-26, rootpath:../, basebackend-html:, stylesheet:, iconsdir:./images/icons, imagesdir:./images/, author:Apache Incubator PMC, docfilesuffix:.ad, localdate:2019-03-26, doctype-article:, warning-caption:Warning, figure-caption:Figure, lastname:PMC, sha1:bc6ad753b4732af649b9982bd51360c7a3f2143e, attribute-missing:skip, section-refsig:Section, idprefix:, outfilesuffix:.html, basebackend-html-doctype-article:, rendered:true, sourceuri:cookbook/0300-creating-a-proposal.html, jbake-type:cookbook, docdir:, docname:0300-creating-a-proposal, localdatetime:2019-03-26 16:50:09 UTC, toc-placement:auto, webfonts:, docdatetime:2019-03-26 16:47:30 UTC, htmlsyntax:html, important-caption:Important, authors:Apache Incubator PMC, status:published, note-caption:Note, firstname:Apache, stylesdir:., untitled-label:Untitled, linkcss:, docfile:0300-creating-a-proposal.ad, title:Creating an incubation proposal, max-include-depth:64, caution-caption:Caution, file:./pages/cookbook/0300-creating-a-proposal.ad, user-home:., filetype-html:, cached:true, max-attribute-value-size:4096, safe-mode-level:20, backend:html5, safe-mode-name:secure, notitle:, table-caption:Table, part-refsig:Part, authorcount:1, revdate:2019-03-26, example-caption:Example, embedded:, basebackend:html, prewrap:, version-label:Version, asciidoctor:, middlename:Incubator, last-update-label:Last updated, doctitle:Creating an incubation proposal, uri:cookbook/0300-creating-a-proposal.html, doctype:article, docyear:2019, chapter-refsig:Chapter, backend-html5:, iconfont-remote:, sectids:, attribute-undefined:drop-line]</blockquote> -->
+        </div>
+       
+        <div class="item">
+          <!-- no link on purpose <h2><a href="0400-proposal-discussion.html">Incubation proposal discussion</a></h2> -->
+          <h2>Incubation proposal discussion</h2>
+          <div class="text">
+            <div class="paragraph">
+<p>Once the proposal is ready, the podling representatives send it to the general@incubator.a.o list
+for discussions, with a subject line like</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>[DISCUSS] Foo Proposal</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>to raise the Incubator PMC&#8217;s attention.</p>
+</div>
+<div class="paragraph">
+<p>The discussion often leads to small or large changes to the proposal.</p>
+</div>
+<div class="paragraph">
+<p>There&#8217;s no set duration for this discussion phase, in general it lasts for a few days until
+the discussion dies down once all discussion points have been addressed.</p>
+</div>
+<div class="paragraph">
+<p>TODO add links to recent discussions threads.</p>
+</div>
+          </div>
+          <!-- debug <blockquote>[date:Tue Mar 26 00:00:00 UTC 2019, localtime:16:50:09 UTC, tip-caption:Tip, filetype:html, appendix-caption:Appendix, asciidoctor-version:1.5.7.1, doctime:16:47:30 UTC, appendix-refsig:Appendix, type:cookbook, body:<div class="paragraph">
+<p>Once the proposal is ready, the podling representatives send it to the general@incubator.a.o list
+for discussions, with a subject line like</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>[DISCUSS] Foo Proposal</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>to raise the Incubator PMC&#8217;s attention.</p>
+</div>
+<div class="paragraph">
+<p>The discussion often leads to small or large changes to the proposal.</p>
+</div>
+<div class="paragraph">
+<p>There&#8217;s no set duration for this discussion phase, in general it lasts for a few days until
+the discussion dies down once all discussion points have been addressed.</p>
+</div>
+<div class="paragraph">
+<p>TODO add links to recent discussions threads.</p>
+</div>, safe-mode-secure:, localyear:2019, authorinitials:AIP, toc-title:Table of Contents, jbake-status:published, backend-html5-doctype-article:, docdate:2019-03-26, rootpath:../, basebackend-html:, stylesheet:, iconsdir:./images/icons, imagesdir:./images/, author:Apache Incubator PMC, docfilesuffix:.ad, localdate:2019-03-26, doctype-article:, warning-caption:Warning, figure-caption:Figure, lastname:PMC, sha1:e97edf2e8355177b68e3c70abd67295185318c2a, attribute-missing:skip, section-refsig:Section, idprefix:, outfilesuffix:.html, basebackend-html-doctype-article:, rendered:true, sourceuri:cookbook/0400-proposal-discussion.html, jbake-type:cookbook, docdir:, docname:0400-proposal-discussion, localdatetime:2019-03-26 16:50:09 UTC, toc-placement:auto, webfonts:, docdatetime:2019-03-26 16:47:30 UTC, htmlsyntax:html, important-caption:Important, authors:Apache Incubator PMC, status:published, note-caption:Note, firstname:Apache, stylesdir:., untitled-label:Untitled, linkcss:, docfile:0400-proposal-discussion.ad, title:Incubation proposal discussion, max-include-depth:64, caution-caption:Caution, file:./pages/cookbook/0400-proposal-discussion.ad, user-home:., filetype-html:, cached:true, max-attribute-value-size:4096, safe-mode-level:20, backend:html5, safe-mode-name:secure, notitle:, table-caption:Table, part-refsig:Part, authorcount:1, revdate:2019-03-26, example-caption:Example, embedded:, basebackend:html, prewrap:, version-label:Version, asciidoctor:, middlename:Incubator, last-update-label:Last updated, doctitle:Incubation proposal discussion, uri:cookbook/0400-proposal-discussion.html, doctype:article, docyear:2019, chapter-refsig:Chapter, backend-html5:, iconfont-remote:, sectids:, attribute-undefined:drop-line]</blockquote> -->
+        </div>
+       
+        <div class="item">
+          <!-- no link on purpose <h2><a href="0500-proposal-vote.html">Voting on the Incubation Proposal</a></h2> -->
+          <h2>Voting on the Incubation Proposal</h2>
+          <div class="text">
+            <div class="paragraph">
+<p>Once the discussion phase is finished, the champion or a podling representative starts
+a [VOTE] thread on the general@incubator.a.o list.</p>
+</div>
+<div class="paragraph">
+<p>TODO describe the vote process, link to <a href="https://www.apache.org/foundation/voting" class="bare">https://www.apache.org/foundation/voting</a></p>
+</div>
+<div class="paragraph">
+<p>TODO link to recent votes as examples</p>
+</div>
+          </div>
+          <!-- debug <blockquote>[date:Tue Mar 26 00:00:00 UTC 2019, localtime:16:50:09 UTC, tip-caption:Tip, filetype:html, appendix-caption:Appendix, asciidoctor-version:1.5.7.1, doctime:16:47:30 UTC, appendix-refsig:Appendix, type:cookbook, body:<div class="paragraph">
+<p>Once the discussion phase is finished, the champion or a podling representative starts
+a [VOTE] thread on the general@incubator.a.o list.</p>
+</div>
+<div class="paragraph">
+<p>TODO describe the vote process, link to <a href="https://www.apache.org/foundation/voting" class="bare">https://www.apache.org/foundation/voting</a></p>
+</div>
+<div class="paragraph">
+<p>TODO link to recent votes as examples</p>
+</div>, safe-mode-secure:, localyear:2019, authorinitials:AIP, toc-title:Table of Contents, jbake-status:published, backend-html5-doctype-article:, docdate:2019-03-26, rootpath:../, basebackend-html:, stylesheet:, iconsdir:./images/icons, imagesdir:./images/, author:Apache Incubator PMC, docfilesuffix:.ad, localdate:2019-03-26, doctype-article:, warning-caption:Warning, figure-caption:Figure, lastname:PMC, sha1:1928705e4d50849483390d1d865dee94be1d6cac, attribute-missing:skip, section-refsig:Section, idprefix:, outfilesuffix:.html, basebackend-html-doctype-article:, rendered:true, sourceuri:cookbook/0500-proposal-vote.html, jbake-type:cookbook, docdir:, docname:0500-proposal-vote, localdatetime:2019-03-26 16:50:09 UTC, toc-placement:auto, webfonts:, docdatetime:2019-03-26 16:47:30 UTC, htmlsyntax:html, important-caption:Important, authors:Apache Incubator PMC, status:published, note-caption:Note, firstname:Apache, stylesdir:., untitled-label:Untitled, linkcss:, docfile:0500-proposal-vote.ad, title:Voting on the Incubation Proposal, max-include-depth:64, caution-caption:Caution, file:./pages/cookbook/0500-proposal-vote.ad, user-home:., filetype-html:, cached:true, max-attribute-value-size:4096, safe-mode-level:20, backend:html5, safe-mode-name:secure, notitle:, table-caption:Table, part-refsig:Part, authorcount:1, revdate:2019-03-26, example-caption:Example, embedded:, basebackend:html, prewrap:, version-label:Version, asciidoctor:, middlename:Incubator, last-update-label:Last updated, doctitle:Voting on the Incubation Proposal, uri:cookbook/0500-proposal-vote.html, doctype:article, docyear:2019, chapter-refsig:Chapter, backend-html5:, iconfont-remote:, sectids:, attribute-undefined:drop-line]</blockquote> -->
+        </div>
+      
+</div>
+
+<pre>....TODO complete this cookbook with the rest of the incubation phases, in the same style</pre>
+
+</div>
+
+		</div>
+		<div id="push"></div>
+    </div>
+
+    <div id="footer">
+      <div class="container">
+          <p class="muted credit">&copy; 2019 The Apache Software Foundation | Licensed under the Apache License, Version 2.0.<br/>
+          Apache Incubator, Apache, the Apache feather logo, and the Apache Incubator project logo are trademarks or registered trademarks of The Apache Software Foundation.</p>
+      </div>
+    </div>
+    <script src="../js/jquery-1.11.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/prettify.js"></script>
+    <script src="../js/readingTime.js"></script>
+    <script src="../js/incubator.js"></script>
+  </body>
+</html>
