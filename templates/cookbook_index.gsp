@@ -14,7 +14,7 @@ Estimated Reading Time: <span class="eta"></span>
 
 <div class="cookbookIndex">
 <% 
-all_content.sort({p -> p.docname}).each { p -> 
+all_content.sort({p -> p.sort_order}).each { p -> 
     if(p.type == "cookbook") {
       %> 
         <div class="item">
