@@ -30,8 +30,6 @@ all_content.sort({p -> p.sort_order}).each { p ->
 }%>
 </div>
 
-<pre>${content.bottom_note}</pre>
-
 </div>
 
 <%include "footer.gsp"%>
