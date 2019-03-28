@@ -1,0 +1,204 @@
+= Improvement Plans (PROPOSED / DRAFT)
+Apache Incubator PMC
+2019-03-26
+:jbake-type: simplepage
+:jbake-status: published
+:idprefix:
+:toc:
+:imagesdir: /images/
+
+PROPOSAL / DRAFT / PROPOSAL / DRAFT / PROPOSAL / DRAFT / PROPOSAL / DRAFT / PROPOSAL
+
+This page is for gathering together various improvement plans and prospective implementations for the Incubator.
+We will gather improvements by category, date, name, JIRA issue, email threads, and coordination required.
+
+== 1. Policies
+
+Edits to policy documents on the site. Changes to properly follow Foundation policy. Improvements to Incubator Policy.
+These are changes that will require discussion on general@ and be resolved by Consensus.
+
+[cols="5*<",options="header"]
+[%autowidth]
+|===
+|link:#h-date[Date,title=Date Entered]
+|link:#h-name[Name,title=Name of the Improvement]
+|link:#h-jira[JIRA Issue,title=Incubator JIRA issue link]
+|link:#h-date[Email Threads,title=Links to any email discussion threads. Use lists.apache.org]
+|link:#h-notes[Notes,title=Quick notes about this topic]
+
+|03/25/19
+|Clean Up Retired Podling Repositories
+|https://issues.apache.org/jira/browse/INCUBATOR-233[INCUBATOR-233]
+|https://lists.apache.org/thread.html/4a6980ee6ae55207b776c9c8cdab6afd7c64727fa4b8ce3638a9b1f0@%3Cgeneral.incubator.apache.org%3E[policy discussion]
+|Infra request. We should define when we should remove a retired repository and then make that change. Same rule needs to apply to distributions and archives.
+
+|02/03/15
+|Clarify whether incubator release announcement should include an incubation disclaimer
+|https://issues.apache.org/jira/browse/INCUBATOR-129[INCUBATOR-129]
+|
+|If we want to make this policy then we'll need to update the press policy and communicate the change.
+
+|02/10/07
+|Define roles and procedures for Incubator PPMC
+|https://issues.apache.org/jira/browse/INCUBATOR-54[INCUBATOR-54]
+|
+|Check if there is anything useful to learn from the topic.
+
+|07/19/06
+|Clarify Role of Champion And Consolidate Policy
+|https://issues.apache.org/jira/browse/INCUBATOR-33[INCUBATOR-33]
+|
+|There has been some discussion around this role and it might be worth focusing on this in the future.
+
+|01/07/06
+|Incubation_Policy.html should specify to use the Incubator PMC
+|https://issues.apache.org/jira/browse/INCUBATOR-10[INCUBATOR-10]
+|
+|This is about the Sponsor role. It will be worth discussing in the future the best way to rewrite the Sponsor role.
+
+|===
+
+== 2. Guides
+
+Guides that are missing. Guidance that is unclear. Leave a clear trail and we can review the completed change.
+
+[cols="5*<",options="header"]
+[%autowidth]
+|===
+|link:#h-date[Date,title=Date Entered]
+|link:#h-name[Name,title=Name of the Improvement]
+|link:#h-jira[JIRA Issue,title=Incubator JIRA issue link]
+|link:#h-date[Email Threads,title=Links to any email discussion threads. Use lists.apache.org]
+|link:#h-notes[Notes,title=Quick notes about this topic]
+
+|03/27/19
+|Incubator Cookbook
+|https://issues.apache.org/jira/browse/INCUBATOR-234[INCUBATOR-234]
+|https://lists.apache.org/thread.html/51fe5d659778bed5b6385c7c39bbdf688d02f1b1dbe02d595d514cbb@%3Cgeneral.incubator.apache.org%3E[Thread 03/26]
+|This effort is to rewrite the Incubator site as a friendly cookbook.
+
+|11/17/17
+|Transferring guide needs an editing pass
+|https://issues.apache.org/jira/browse/INCUBATOR-208[INCUBATOR-208]
+|
+|
+
+|06/26/17
+|Graduation steps guide enhancements
+|https://issues.apache.org/jira/browse/INCUBATOR-202[INCUBATOR-202]
+|
+|Discuss instructions with Infra
+
+|05/27/13
+|Sometimes its not clear that the who vets the podling name
+|https://issues.apache.org/jira/browse/INCUBATOR-126[INCUBATOR-126]
+|
+|Make only clarifying adjustments so it is clear that the podling does the search.
+
+|04/07/12
+|Instructions for updating main Incubator site post-graduation
+|https://issues.apache.org/jira/browse/INCUBATOR-124[INCUBATOR-124]
+|
+|Discuss instructions with Infra
+
+|11/18/07
+|Communication Guide
+|https://issues.apache.org/jira/browse/INCUBATOR-70[INCUBATOR-70]
+|
+|Some of these ideas are outdated, but some of these might be useful community building advice.
+
+|===
+
+== 3. Workflow
+
+This category is for more structural improvements like changing the build and updating IP record keeping.
+
+[cols="5*<",options="header"]
+[%autowidth]
+|===
+|link:#h-date[Date,title=Date Entered]
+|link:#h-name[Name,title=Name of the Improvement]
+|link:#h-jira[JIRA Issue,title=Incubator JIRA issue link]
+|link:#h-date[Email Threads,title=Links to any email discussion threads. Use lists.apache.org]
+|link:#h-notes[Notes,title=Quick notes about this topic]
+
+|03/05/19
+|Cleanup Git-generated Incubator website
+|https://issues.apache.org/jira/browse/INCUBATOR-231[INCUBATOR-231]
+|https://lists.apache.org/thread.html/2b12f80a960510985ef00f65fb3a7f007255be6c02733e86bf21cdc2@%3Cgeneral.incubator.apache.org%3E[Clutch2 Announce]
+|We now have new projects and clutch pages. The podling status pages are still in the old style. There are some open questions about the yml content that is managed from the podling roster page.
+
+|05/22/17
+|Extend podlings.xml to include old names and TLP parent
+|https://issues.apache.org/jira/browse/INCUBATOR-199[INCUBATOR-199]
+|
+|This is a proxy issue. The topic here is to improve the maintenance of our podling roster. I think we should work with the Whimsy PMC to improve maintenance of the podling roster.
+
+|04/23/08
+|IP Clearance Template is rubbish
+|https://issues.apache.org/jira/browse/INCUBATOR-74[INCUBATOR-74]
+|
+|This is meant to be provocative. I think we can work with the Whimsy PMC to improve how we keep and manage IP Clearances for TLPs.
+
+|===
+
+== 4. Operations
+
+This category is for cosmetic improvements, minor issues, and operational issues.
+
+[cols="5*<",options="header"]
+[%autowidth]
+|===
+|link:#h-date[Date,title=Date Entered]
+|link:#h-name[Name,title=Name of the Improvement]
+|link:#h-jira[JIRA Issue,title=Incubator JIRA issue link]
+|link:#h-email[Email Threads,title=Links to any email discussion threads. Use lists.apache.org]
+|link:#h-notes[Notes,title=Quick notes about this topic]
+
+|06/18/18
+|Incorrect bounce message for retired podling mailing lists
+|https://issues.apache.org/jira/browse/INFRA-18132[INFRA-18132]
+|
+|For example the link should be https://incubator.apache.org/projects/#slider - moved the issue to INFRA.
+
+|09/16/16
+|Missing archiver/archives for dev@incubator - is it needed?
+|https://issues.apache.org/jira/browse/INCUBATOR-201[INCUBATOR-201]
+|https://lists.apache.org/thread.html/f32f24c141a0f9aedaa660a5b6306280d6430089b00ac468b05e7c5e@%3Cgeneral.incubator.apache.org%3E[Thread 03/25/19]
+|Once we agree to remove these accidental mailing lists work with Infra.
+
+|04/04/17
+|clean up archive.a.o
+|https://issues.apache.org/jira/browse/INCUBATOR-198[INCUBATOR-198]
+|
+|Once we decide which retired podlings need cleanup then apply the same with the archive. Work with Infra if necessary.
+
+|===
+
+=== Column Notes
+
+[[h-date]]
+==== Date
+
+The date the JIRA issue was created or a thread was started about the improvement.
+
+[[h-name]]
+==== Name
+
+A descriptive name for the improvement. Should be similar to the original subject whether JIRA or Email.
+
+[[h-jira]]
+==== JIRA Issue
+
+A link to the JIRA issue. `https\://issues.apache.org/jira/projects/INCUBATOR/issues/INCUBATOR-231[INCUBATOR-231]`
+
+[[h-email]]
+==== Email Threads
+
+Permalinks to discussions. Please use lists.apache.org. Don't use nabble or gmane, we have guarantees about apache.org uris and none about third parties.
+There are a number of ten or more year old discussions that will be difficult to single out due to gmane changes.
+
+[[h-notes]]
+==== Topic Notes
+
+Questions for the team. Information about the change. There may be dependencies. Some changes will require working with others in the organization including INFRA, Whimsy, Legal, ...
