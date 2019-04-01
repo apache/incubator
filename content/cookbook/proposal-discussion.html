@@ -1,1 +1,0 @@
-TODO redirect to /cookbook here, these pages should not be visible individually.
