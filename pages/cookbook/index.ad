@@ -201,6 +201,43 @@ Incubation mentors can optionally indicate that their votes in the first phase c
 on to the Incubator PMC vote. If three mentors have voted this means the "three +1 votes" requirement is
 already fulfilled when that second vote starts, which can speed up things.
 
+== Podling, Top-level Project, what are the differences?
+
+Top-level projects (TLPs) are full-blown ASF projects, each governed by their own link:http://www.apache.org/foundation/governance/pmcs[PMC] and reporting to the
+ASF's link:https://www.apache.org/foundation/board/[Board of Directors].
+
+Podling are "TLPs in training" and most of what they do is the same as TLPs, especially
+as they progress in their incubation journey.
+
+The main differences are:
+
+  * As opposed to PMCs, podlings cannot make formal decisions on the ASF's behalf as they are not formally
+    part of the ASF's structure. They are not mentioned in the
+    link:https://www.apache.org/foundation/bylaws[the ASF's bylaws] for example. This means that
+    the Incubator PMC needs to act as a proxy for the podlings to formalize things like
+    ASF Releases and make them link:https://blogs.apache.org/foundation/entry/success-at-apache-the-apache1[Acts of the Foundation].
+  * As a consequence, a podling has a PPMC (Podling Project Management Committee) which operates
+    like the PMC of a top-level project but needs to delegate a few things, like final votes on
+    ASF Releases, to the Incubator PMC.
+  * The decision to elect people as committers or PPMC members, or both, is similar to TLPs. A podling can
+    decide that candidates are elected to the PPMC directly, or make them committers first and
+    wait a bit to "promote" the as PPMC members. In TLPs, the latter is safer as it's fairly
+    hard to remove someone from a PMC if they're causing problems. Committers, on the other hand,
+    have no formal decision power so a two-stage process is often preferred, but it's not a 
+    requirement. Read link:https://www.apache.org/foundation/how-it-works.html[How the ASF works] for
+    more information about this.
+  * TLPs report link:https://www.apache.org/foundation/board/reporting[to the ASF Board of Directors], 
+    whereas podlings report link:https://wiki.apache.org/incubator[to the Incubator PMC]. Both report
+    monthly initially, then quartely.
+  * Each TLP has a link:https://apache.org/dev/pmc.html[PMC Chair] who acts as a liaison between the TLP and the 
+    Board. PMC Chairs are _not_ project leaders, it's an administrative role even though they get a VP title 
+    due to the ASF's organization. Podlings do not have this role, incubation mentors are volunteer community
+    members act as the liaison between the podling and the Incubator PMC.
+    
+The ASF strongly encourages projects to grow and renew their roster regularly, to foster project
+sustainability. Both podlings and TLPs should be actively looking to elect new committers and PMC members by
+keeping an eye on who's active in their communities.
+
 == Graduation Readiness Assessment
 
 Once the podling community starts feeling ready to graduate, they should make a self-assessment
