@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Apache Taverna (Incubating)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <meta name="generator" content="JBake">
+
+    <!-- Le styles -->
+    <link href="../css/incubator.css" rel="stylesheet">
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/asciidoctor.css" rel="stylesheet">
+    <link href="../css/base.css" rel="stylesheet">
+    <link href="../css/prettify.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <!--<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">-->
+    <link rel="shortcut icon" href="https://www.apache.org/favicon.ico">
+  </head>
+  <body onload="prettyPrint()">
+    <div id="wrap">
+   
+
+	<!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/"><i class="icon-home"></i>Apache Incubator</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Policies <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                
+                  <li><a href="/policy/incubation.html">Incubation Policy</a></li>
+                
+                  <li><a href="/policy/process.html">Incubation Process</a></li>
+                
+                  <li><a href="/policy/roles_and_responsibilities.html">Roles and Responsibilities</a></li>
+                
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Proposals <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                
+                <li><a href="/guides/proposal.html">A Guide To Proposal Creation</a></li>
+                
+                <li><a href="/guides/entry.html">Enter The Incubator</a></li>
+                
+                <li><a href="/podling-story.html">The Story of a Podling</a></li>
+                
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Podling Guides <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                
+                  <li><a href="/guides/branding.html">Incubator Branding Guide</a></li>
+                
+                  <li><a href="/guides/press-kit.html">Podling Press Kit</a></li>
+                
+                  <li><a href="/guides/committer.html">Committers</a></li>
+                
+                  <li><a href="/guides/publicity.html">Podling Publicity/Media Guidelines</a></li>
+                
+                  <li><a href="/guides/community.html">Guide to Successful Community Building</a></li>
+                
+                  <li><a href="/guides/releasemanagement.html">Release Management</a></li>
+                
+                  <li><a href="/guides/graduation.html">Guide to Successful Graduation</a></li>
+                
+                  <li><a href="/guides/retirement.html">Guide to Retirement</a></li>
+                
+                  <li><a href="/guides/ip_clearance.html">Podling IP Clearance</a></li>
+                
+                  <li><a href="/guides/sites.html">Podling Websites</a></li>
+                
+                  <li><a href="/guides/names.html">Podling Name Search Guide</a></li>
+                
+                  <li><a href="/guides/transferring.html">Transferring Resources out of the Incubator</a></li>
+                
+                  <li><a href="/guides/podling_sourcecontrol.html">Podling Source Control</a></li>
+                
+                  <li><a href="/guides/transitioning_asf.html">Initial Code Import</a></li>
+                
+                  <li><a href="/guides/ppmc.html">Podling Project Management Committee</a></li>
+                
+                <li><hr/><a href="/projects/#current">Current Podlings</a></li>
+                <li><a href="/clutch/">Clutch Report</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">PMC Guides <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                
+                <li><a href="/guides/chair.html">Incubator Chair Guide</a></li>
+                
+                <li><a href="/guides/lists.html">Incubator Mailing Lists Guide</a></li>
+                
+                <li><a href="/guides/mentor.html">Mentors' Guide</a></li>
+                
+                <li><a href="/guides/participation.html">Guide to Participation</a></li>
+                
+                <li><a href="/guides/pmc.html">The Incubator PMC</a></li>
+                
+                <li><a href="/guides/website.html">Updating the top-level Incubator website</a></li>
+                
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">ASF <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="https://www.apache.org/foundation/how-it-works.html">How Apache Works</a></li>
+                <li><a href="https://www.apache.org/dev/">Developer Documentation</a></li>
+                <li><a href="https://www.apache.org/foundation/">Foundation</a></li>
+                <li><a href="https://www.apache.org/legal/">Legal</a></li>
+		<li><hr/><a href="https://www.apache.org/licenses/">License</a></li>
+		<li><a href="https://www.apache.org/security/">Security</a></li>
+                <li><a href="https://www.apache.org/foundation/sponsorship.html">Sponsorship</a></li>
+                <li><a href="https://www.apache.org/foundation/thanks.html">Thanks</a></li>
+		<li><a href="https://www.apache.org/events/current-event">Current Events</a></li>
+              </ul>
+            </li>
+            <li><a href="/faq.html">FAQs</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 vcenter"><a href="https://www.apache.org/"><img src="https://www.apache.org/img/asf_logo.png" alt="The Apache Software Foundation" border="0" style="margin-top: 2px" width="200"></a></div>
+          <div class="col-md-4 vcenter"><a href="/"><img src="https://incubator.apache.org/images/incubator_feather_egg_logo_sm.png" alt="The Apache Software Foundation Incubator" border="0" style="margin-top: 2px" width="256"></a></div>
+          <div class="col-md-4 vcenter"><a href="https://www.apache.org/foundation/contributing.html"><img src="https://www.apache.org/images/SupportApache-small.png" style="margin-left: 92px" height="64" width="64"></a></div>
+      </div>
+    </div>
+    <div class="top-container container">
+
+<div class="incubator-page-header">
+    <h1>Apache Taverna (Incubating)</h1>
+</div>
+
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Taverna is a domain-independent suite of tools used to design and execute data-driven workflows.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Resources: taverna</p>
+</li>
+<li>
+<p>Started: 2014-10-20; Last Status Update: 2018-12-05</p>
+</li>
+<li>
+<p>Reporting: Monthly</p>
+</li>
+<li>
+<p>Committers: 17</p>
+</li>
+<li>
+<p>PPMC members: 15</p>
+</li>
+<li>
+<p>Mentors: Marlon Pierce (mpierce), Stian Soiland-Reyes (stain), Suresh Srinivas (suresh)</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="news">News</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>2018-07-18 Retired 2 legacy git repos (INFRA-16698)</p>
+</li>
+<li>
+<p>2018-02-26 New PPMC member: Sagar</p>
+</li>
+<li>
+<p>2018-01-17 Release: taverna-server-3.1.0-incubating</p>
+</li>
+<li>
+<p>2016-12-01 New mentor: Stian Soiland-Reyes</p>
+</li>
+<li>
+<p>2016-10-20 New committer: Rajan Maurya</p>
+</li>
+<li>
+<p>2016-10-20 New committer: Sagar</p>
+</li>
+<li>
+<p>2016-09-20 New committer: Thilina Manamgoda</p>
+</li>
+<li>
+<p>2016-07-01 Release: taverna-engine-3.1.0-incubating, taverna-common-activities-2.1.0-incubating, taverna-commandline-3.1.0-incubating</p>
+</li>
+<li>
+<p>2016-03-11 Release: taverna-language-0.15.1-incubating, taverna-osgi-0.2.1-incubating</p>
+</li>
+<li>
+<p>2016-03-11 Release: taverna-language-0.15.1-incubating</p>
+</li>
+<li>
+<p>2016-03-01 Mentor swap: Chris Mattman ➝ Dan Debrunner</p>
+</li>
+<li>
+<p>2015-12-09 New PPMC member: Gale Naylor</p>
+</li>
+<li>
+<p>2015-12-01 New committer: Gale Naylor</p>
+</li>
+<li>
+<p>2015-08-11 First Apache Release: taverna-language-0.15.0-incubating</p>
+</li>
+<li>
+<p>2014-12-10 Website live</p>
+</li>
+<li>
+<p>2014-10-20 Project enters incubation.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="resources">Resources</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="project_website">Project Website</h3>
+<div class="paragraph">
+<p><a href="https://taverna.incubator.apache.org" class="bare">https://taverna.incubator.apache.org</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="mailing_lists">Mailing Lists</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Developer mailing list: <a href="http://mail-archives.apache.org/mod_mbox/taverna-dev" class="bare">http://mail-archives.apache.org/mod_mbox/taverna-dev</a></p>
+</li>
+<li>
+<p>Commits mailing list: <a href="http://mail-archives.apache.org/mod_mbox/taverna-commits" class="bare">http://mail-archives.apache.org/mod_mbox/taverna-commits</a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="issue_tracker">Issue Tracker</h3>
+<div class="paragraph">
+<p><a href="https://issues.apache.org/jira/browse/TAVERNA" class="bare">https://issues.apache.org/jira/browse/TAVERNA</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="wiki">Wiki</h3>
+<div class="paragraph">
+<p><a href="https://cwiki.apache.org/confluence/display/TAVERNADEV" class="bare">https://cwiki.apache.org/confluence/display/TAVERNADEV</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="repositories">Repositories</h3>
+<div class="sect3">
+<h4 id="1_incubator_taverna_commandline">1: incubator-taverna-commandline</h4>
+<div class="paragraph">
+<p>| <strong><a href="https://gitbox.apache.org/repos/asf?p=incubator-taverna-commandline.git;a=tree;hb=HEAD">Gitbox</a></strong> | <strong><a href="https://github.com/apache/incubator-taverna-commandline/">Github</a></strong> | Apache Taverna Commandline (incubating)&#8201;&#8212;&#8201;Commits: 672&#8201;&#8212;&#8201;Updated: 01/17/2019</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="2_incubator_taverna_common_activities">2: incubator-taverna-common-activities</h4>
+<div class="paragraph">
+<p>| <strong><a href="https://gitbox.apache.org/repos/asf?p=incubator-taverna-common-activities.git;a=tree;hb=HEAD">Gitbox</a></strong> | <strong><a href="https://github.com/apache/incubator-taverna-common-activities/">Github</a></strong> | Apache Taverna Common Activities (incubating)&#8201;&#8212;&#8201;Commits: 1223&#8201;&#8212;&#8201;Updated: 03/25/2019</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="3_incubator_taverna_databundle_viewer">3: incubator-taverna-databundle-viewer</h4>
+<div class="paragraph">
+<p>| <strong><a href="https://gitbox.apache.org/repos/asf?p=incubator-taverna-databundle-viewer.git;a=tree;hb=HEAD">Gitbox</a></strong> | <strong><a href="https://github.com/apache/incubator-taverna-databundle-viewer/">Github</a></strong> | Apache Taverna Databundle Viewer&#8201;&#8212;&#8201;Commits: 127&#8201;&#8212;&#8201;Updated: 01/17/2019</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="4_incubator_taverna_engine">4: incubator-taverna-engine</h4>
+<div class="paragraph">
+<p>| <strong><a href="https://gitbox.apache.org/repos/asf?p=incubator-taverna-engine.git;a=tree;hb=HEAD">Gitbox</a></strong> | <strong><a href="https://github.com/apache/incubator-taverna-engine/">Github</a></strong> | Apache Taverna Engine (incubating)&#8201;&#8212;&#8201;Commits: 2526&#8201;&#8212;&#8201;Updated: 03/25/2019</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="5_incubator_taverna_language">5: incubator-taverna-language</h4>
+<div class="paragraph">
+<p>| <strong><a href="https://gitbox.apache.org/repos/asf?p=incubator-taverna-language.git;a=tree;hb=HEAD">Gitbox</a></strong> | <strong><a href="https://github.com/apache/incubator-taverna-language/">Github</a></strong> | Apache Taverna Language (incubating)&#8201;&#8212;&#8201;Commits: 3766&#8201;&#8212;&#8201;Updated: 01/30/2019</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="6_incubator_taverna_maven_parent">6: incubator-taverna-maven-parent</h4>
+<div class="paragraph">
+<p>| <strong><a href="https://gitbox.apache.org/repos/asf?p=incubator-taverna-maven-parent.git;a=tree;hb=HEAD">Gitbox</a></strong> | <strong><a href="https://github.com/apache/incubator-taverna-maven-parent/">Github</a></strong> | Apache Taverna Maven Parent (incubating)&#8201;&#8212;&#8201;Commits: 365&#8201;&#8212;&#8201;Updated: 01/30/2019</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="7_incubator_taverna_mobile">7: incubator-taverna-mobile</h4>
+<div class="paragraph">
+<p>| <strong><a href="https://gitbox.apache.org/repos/asf?p=incubator-taverna-mobile.git;a=tree;hb=HEAD">Gitbox</a></strong> | <strong><a href="https://github.com/apache/incubator-taverna-mobile/">Github</a></strong> | Apache Taverna Mobile (Incubating)&#8201;&#8212;&#8201;Commits: 784&#8201;&#8212;&#8201;Updated: 04/02/2019</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="8_incubator_taverna_osgi">8: incubator-taverna-osgi</h4>
+<div class="paragraph">
+<p>| <strong><a href="https://gitbox.apache.org/repos/asf?p=incubator-taverna-osgi.git;a=tree;hb=HEAD">Gitbox</a></strong> | <strong><a href="https://github.com/apache/incubator-taverna-osgi/">Github</a></strong> | Apache Taverna Osgi (incubating)&#8201;&#8212;&#8201;Commits: 200&#8201;&#8212;&#8201;Updated: 03/26/2019</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="9_incubator_taverna_plugin_gis">9: incubator-taverna-plugin-gis</h4>
+<div class="paragraph">
+<p>| <strong><a href="https://gitbox.apache.org/repos/asf?p=incubator-taverna-plugin-gis.git;a=tree;hb=HEAD">Gitbox</a></strong> | <strong><a href="https://github.com/apache/incubator-taverna-plugin-gis/">Github</a></strong> | Apache Taverna Plugin GIS (Incubating)&#8201;&#8212;&#8201;Commits: 83&#8201;&#8212;&#8201;Updated: 03/25/2019</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="10_incubator_taverna_server">10: incubator-taverna-server</h4>
+<div class="paragraph">
+<p>| <strong><a href="https://gitbox.apache.org/repos/asf?p=incubator-taverna-server.git;a=tree;hb=HEAD">Gitbox</a></strong> | <strong><a href="https://github.com/apache/incubator-taverna-server/">Github</a></strong> | Apache Taverna Server (incubating)&#8201;&#8212;&#8201;Commits: 847&#8201;&#8212;&#8201;Updated: 01/17/2019</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="11_incubator_taverna_workbench">11: incubator-taverna-workbench</h4>
+<div class="paragraph">
+<p>| <strong><a href="https://gitbox.apache.org/repos/asf?p=incubator-taverna-workbench.git;a=tree;hb=HEAD">Gitbox</a></strong> | <strong><a href="https://github.com/apache/incubator-taverna-workbench/">Github</a></strong> | Apache Taverna Workbench (incubating)&#8201;&#8212;&#8201;Commits: 3120&#8201;&#8212;&#8201;Updated: 03/25/2019</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="12_incubator_taverna_workbench_common_activities">12: incubator-taverna-workbench-common-activities</h4>
+<div class="paragraph">
+<p>| <strong><a href="https://gitbox.apache.org/repos/asf?p=incubator-taverna-workbench-common-activities.git;a=tree;hb=HEAD">Gitbox</a></strong> | <strong><a href="https://github.com/apache/incubator-taverna-workbench-common-activities/">Github</a></strong> | Apache Taverna Workbench Common Activities (incubating)&#8201;&#8212;&#8201;Commits: 909&#8201;&#8212;&#8201;Updated: 03/25/2019</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="13_incubator_taverna_workbench_product">13: incubator-taverna-workbench-product</h4>
+<div class="paragraph">
+<p>| <strong><a href="https://gitbox.apache.org/repos/asf?p=incubator-taverna-workbench-product.git;a=tree;hb=HEAD">Gitbox</a></strong> | <strong><a href="https://github.com/apache/incubator-taverna-workbench-product/">Github</a></strong> | Apache Taverna Workbench Product (incubating)&#8201;&#8212;&#8201;Commits: 661&#8201;&#8212;&#8201;Updated: 01/27/2019</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="releases">Releases</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="current">Current</h3>
+<div class="paragraph">
+<p><strong>No PGP Signing Keys</strong></p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="errata">Errata</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Please investigate the following potential issues</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="/guides/sites.html#podling_website_requirements">ASF Events link is missing from website</a></p>
+</li>
+<li>
+<p><a href="/guides/sites.html#podling_website_requirements">Apache License link is missing from website</a></p>
+</li>
+<li>
+<p><a href="/guides/sites.html#podling_website_requirements">Apache Security link is missing from website</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The podling website scan does the best it can. Details are found <a href="https://whimsy.apache.org/pods/project/taverna">here</a></p>
+</div>
+</div>
+</div>
+
+		</div>
+		<div id="push"></div>
+    </div>
+
+    <div id="footer">
+      <div class="container">
+          <p class="muted credit">&copy; 2019 The Apache Software Foundation | Licensed under the Apache License, Version 2.0.<br/>
+          Apache Incubator, Apache, the Apache feather logo, and the Apache Incubator project logo are trademarks or registered trademarks of The Apache Software Foundation.</p>
+      </div>
+    </div>
+    <script src="../js/jquery-1.11.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/prettify.js"></script>
+    <script src="../js/readingTime.js"></script>
+    <script src="../js/incubator.js"></script>
+  </body>
+</html>
