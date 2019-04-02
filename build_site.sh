@@ -13,10 +13,15 @@ mkdir -p $WORKDIR
 git checkout asf-site
 git clean -f -d
 git pull origin asf-site
-rm -rf *
+rm -rf content
 mkdir content
 cp -a $WORKDIR/* content
 cp -a $WORKDIR/.htaccess content
+cp -a reserve/*.txt content/.
+cp -a reserve/*.json content/.
+cp -a reserve/clutch content/.
+cp -a reserve/projects content/.
+cp -a reserve/ip-clearance content/.
 git add .
 git commit -m "Automatic Site Publish by git-site-role"
 git push origin asf-site

@@ -3,6 +3,10 @@ CURRENTDIR=`pwd`
 SVN_CO_DIR=/tmp/incubator-site-content
 SVN_BUILD_DIR=/tmp/incubator-site-build
 SVN_REPO=http://svn.apache.org/repos/asf/incubator/public/trunk/
+WORKDIR=/tmp/incubator-site
+
+rm -rf $WORKDIR
+mkdir -p $WORKDIR
 # download the svn bits
 rm -rf $SVN_CO_DIR
 rm -rf $SVN_BUILD_DIR
@@ -40,13 +44,22 @@ cp $SVN_BUILD_DIR/projects/*.html assets/projects/.
 # these txt files are moved to assets
 cp $SVN_CO_DIR/content/clutch/*.txt assets/.
 cp $SVN_CO_DIR/content/clutch/*.json assets/.
-# add all of these assets. Assets are used in the baked site as is.
-git add assets/*
 # the following asciidoc clutch files go to be baked
 cp $SVN_CO_DIR/content/clutch/_includes/*.ad pages/clutch/_includes/.
 git add pages/clutch/_includes/*
 cp $SVN_CO_DIR/content/clutch/*.ad pages/clutch/.
-git add pages/clutch/*
-# commit and push the assets and pages to site master
-git commit -m "Automatic Clutch Publish by git-site-role"
-echo please git push as appropriate
+
+# now bake the site
+./bake.sh -b . $WORKDIR
+
+# push all of the results to asf-site
+git checkout asf-site
+git clean -f -d
+git pull origin asf-site
+
+rm -rf reserve
+mkdir reserve
+cp -a $WORKDIR/* reserve
+git add .
+git commit -m "Automatic Site Publish by git-site-role"
+git push origin asf-site
