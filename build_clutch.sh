@@ -49,4 +49,4 @@ cp $SVN_CO_DIR/content/clutch/*.ad pages/clutch/.
 git add pages/clutch/*
 # commit and push the assets and pages to site master
 git commit -m "Automatic Clutch Publish by git-site-role"
-git push origin
+echo please git push as appropriate
