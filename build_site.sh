@@ -22,6 +22,6 @@ cp -a reserve/*.json content/.
 cp -a reserve/clutch content/.
 cp -a reserve/projects content/.
 cp -a reserve/ip-clearance content/.
-git add .
+git add content
 git commit -m "Automatic Site Publish by git-site-role"
 git push origin asf-site

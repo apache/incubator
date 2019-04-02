@@ -46,7 +46,6 @@ cp $SVN_CO_DIR/content/clutch/*.txt assets/.
 cp $SVN_CO_DIR/content/clutch/*.json assets/.
 # the following asciidoc clutch files go to be baked
 cp $SVN_CO_DIR/content/clutch/_includes/*.ad pages/clutch/_includes/.
-git add pages/clutch/_includes/*
 cp $SVN_CO_DIR/content/clutch/*.ad pages/clutch/.
 
 # now bake the site
@@ -60,6 +59,6 @@ git pull origin asf-site
 rm -rf reserve
 mkdir reserve
 cp -a $WORKDIR/* reserve
-git add .
+git add reserve
 git commit -m "Automatic Site Publish by git-site-role"
 git push origin asf-site
