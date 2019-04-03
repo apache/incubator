@@ -1,8 +1,18 @@
 # Apache Incubator Website
 
-## Prerequisites
+This is the content and build scripts for http://incubator.apache.org/
 
-The website is built using JBake and a Groovy template.
+## Contributing to the website content
+
+You can fork from https://github.com/apache/incubator, test your changes as described below
+and raise a pull request.
+
+Use the [general@incubator.a.o](https://lists.apache.org/list.html?general@incubator.apache.org) mailing list to contact
+the Incubator PMC which manages this website.
+
+## Prerequisites for building the website locally
+
+The website is built using [JBake](https://jbake.org/) and Groovy templates.
 The builds for the website do require internet access.
 
 - Install JBake from http://jbake.org/download.html
@@ -12,32 +22,40 @@ The builds for the website do require internet access.
   - `export JBAKE_HOME=/usr/local/Cellar/jbake/2.6.4`
 - Ensure that you have a JVM locally, e.g. [OpenJDK](http://openjdk.java.net/install/)
 
-## Clone the Source code
+## Building & testing the site
 
-You can fork from github https://github.com/apache/incubator and raise a pull request.
+To test the site locally, use 
 
-## Building & Running the site
+    ./build_local.sh -b -s
+    
+This builds the site, serves it locally at  http://localhost:8820/ and rebuilds the content fairly
+quickly if any changes are made.
 
-There is a custom `bake.sh` file that is used to build the website.
-You can call it with any of the [arguments you would pass to jbake](http://jbake.org/docs/2.5.1/#bake_command).
-The easiest way to use it is to run `./bake.sh -b -s`.
-This will start up JBake in a watching mode as you make changes it will refresh after a short period of time.
+That script can be called with any of the [arguments you would pass to jbake](https://jbake.org/docs/2.6.4/#bake_command).
 
-While working with it locally, you'll notice that the site URLs redirect to `incubator.apache.org`;
+The `build_clutch.sh` script can be used to build the Clutch data, but that's updated automatically by the Jenkins builds
+mentioned below so it's not required unless you want to test that.
+
+### Local URLs
+> TODO: not sure
+> if this is still valid, JBake 2.6.4 replaces the _site.host_ variable automatically when running locally 
+> so everything should by fine provided all URLs are computed based on the `site.host` variable.
+
+By default the site URLs redirect to `incubator.apache.org`;
 to change this edit `jbake.properties` and uncomment the line referencing `localhost`.
-Alternatively you can rename `jbake-local.properties`
+Alternatively you can rename `jbake-local.properties` , but do not commit unwanted changes to that file!
 
-If you want to run the full site build locally including the clutch analysis and any other other content
-remaining in SVN then you can use `./build_local.sh`. Instead of publishing the site it finishes with JBake
-in watching mode.
+## Automated builds - website and Clutch data
 
-## Automatic build and publishing - Jenkins Setup
+Commits to the `master` branch are automatically checked out and built using `build_site.sh` by the 
+[Incubator GIT Site - part 2](https://builds.apache.org/view/H-L/view/Incubator/job/Incubator%20GIT%20Site%20-%20part%202/)
+Jenkins job. The results are pushed to the [`content` folder of the `asf-site` branch](https://github.com/apache/incubator/tree/asf-site/content)
+which is in turn published automatically to http://incubator.apache.org/ by the ASF's `gitwcsub` mechanism.
 
-Commits to the `master` branch are automatically checked out and built using `build_site.sh`.
-
-The corresponding jenkins job can be found at [https://builds.apache.org/view/H-L/view/Incubator/job/Incubator%20Site/](https://builds.apache.org/view/H-L/view/Incubator/job/Incubator%20Site/)
-
-The result of the website build are pushed to the `asf-site` branch which are then published automatically using `gitwcsub`
+The data for http://incubator.apache.org/clutch/ takes longer to build so it is handled by a separate
+https://builds.apache.org/view/H-L/view/Incubator/job/Incubator%20SVN%20Clutch%20Analysis%20-%20part%201/
+Jenkins job that runs the `build_clutch.sh` script that's scheduled to run regularly. The results are stored in the 
+[`reserve` folder of the `asf-site` branch](https://github.com/apache/incubator/tree/asf-site/reserve)
 
 ## Asciidoctor
 
