@@ -57,6 +57,9 @@ The data for http://incubator.apache.org/clutch/ takes longer to build so it is 
 Jenkins job that runs the `build_clutch.sh` script that's scheduled to run regularly. The results are stored in the 
 [`reserve` folder of the `asf-site` branch](https://github.com/apache/incubator/tree/asf-site/reserve)
 
+For now that Clutch data is still managed in svn, at http://svn.apache.org/repos/asf/incubator/public/trunk/ , see
+the build scripts for more info.
+
 Any build failures are reported to *[cvs@incubator.a.o](https://lists.apache.org/list.html?cvs@incubator.apache.org)*
 mailing list.
 
