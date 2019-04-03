@@ -57,6 +57,9 @@ https://builds.apache.org/view/H-L/view/Incubator/job/Incubator%20SVN%20Clutch%2
 Jenkins job that runs the `build_clutch.sh` script that's scheduled to run regularly. The results are stored in the 
 [`reserve` folder of the `asf-site` branch](https://github.com/apache/incubator/tree/asf-site/reserve)
 
+Any build failures are reported to *[cvs@incubator.a.o](https://lists.apache.org/list.html?cvs@incubator.apache.org)*
+mailing list.
+
 ## Asciidoctor
 
 Most of the pages in the site are written using Asciidoctor.
