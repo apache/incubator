@@ -33,11 +33,12 @@ quickly if any changes are made.
 
 That script can be called with any of the [arguments you would pass to jbake](https://jbake.org/docs/2.6.4/#bake_command).
 
-> TODO: version of `build_clutch.sh` for local builds. This would leave jBake serving content and not manipulate the
-> `reserve` folder of the `asf-site` branch
+### Clutch and Legacy SVN Content (careful)
 
-The `build_clutch.sh` script can be used to build the Clutch data, but that's updated automatically by the Jenkins builds
-mentioned below so it's not required unless you want to test that.
+The `build_local_clutch.sh` script can be used to build the Clutch data, but that's updated automatically by the Jenkins 
+builds as `build_clutch.sh` mentioned below so it's not required unless you want to test that.
+*Warning* if you do build the clutch then examine the script and be very careful not to commit any of the automatically
+built assets and pages to the git master branch.
 
 ## Automated builds - website and Clutch data
 
