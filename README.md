@@ -33,17 +33,11 @@ quickly if any changes are made.
 
 That script can be called with any of the [arguments you would pass to jbake](https://jbake.org/docs/2.6.4/#bake_command).
 
+> TODO: version of `build_clutch.sh` for local builds. This would leave jBake serving content and not manipulate the
+> `reserve` folder of the `asf-site` branch
+
 The `build_clutch.sh` script can be used to build the Clutch data, but that's updated automatically by the Jenkins builds
 mentioned below so it's not required unless you want to test that.
-
-### Local URLs
-> TODO: not sure
-> if this is still valid, JBake 2.6.4 replaces the _site.host_ variable automatically when running locally 
-> so everything should by fine provided all URLs are computed based on the `site.host` variable.
-
-By default the site URLs redirect to `incubator.apache.org`;
-to change this edit `jbake.properties` and uncomment the line referencing `localhost`.
-Alternatively you can rename `jbake-local.properties` , but do not commit unwanted changes to that file!
 
 ## Automated builds - website and Clutch data
 
@@ -58,7 +52,8 @@ Jenkins job that runs the `build_clutch.sh` script that's scheduled to run regul
 [`reserve` folder of the `asf-site` branch](https://github.com/apache/incubator/tree/asf-site/reserve)
 
 For now that Clutch data is still managed in svn, at http://svn.apache.org/repos/asf/incubator/public/trunk/ , see
-the build scripts for more info.
+the build scripts for more info. The projects folder (podling status pages) and the ip-clearance folders are also still in svn
+and the html is built using `ant docs` in the `build_clutch.sh` script.
 
 Any build failures are reported to *[cvs@incubator.a.o](https://lists.apache.org/list.html?cvs@incubator.apache.org)*
 mailing list.
