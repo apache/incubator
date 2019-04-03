@@ -76,8 +76,6 @@ In addition to the [clutch pages](https://incubator.apache.org/clutch/) several 
 
 * [clutch.json](https://incubator.apache.org/clutch.json) contains the latest clutch analysis for all current podlings.
 * [clutch.txt](https://incubator.apache.org/clutch.txt) contains a list of current podlings,
-* [podlings_graduated.txt](https://incubator.apache.org/podlings_graduated.txt) contains a list of graduated podlings.
-* [podlings_retired.txt](https://incubator.apache.org/podlings_retired.txt) contains a list of retired podlings.
 * [report_due_1.txt](https://incubator.apache.org/report_due_1.txt) dev mailing lists for podlings reporting in group 1.
 * [report_due_2.txt](https://incubator.apache.org/report_due_2.txt) dev mailing lists for podlings reporting in group 2.
 * [report_due_3.txt](https://incubator.apache.org/report_due_3.txt) dev mailing lists for podlings reporting in group 3.
