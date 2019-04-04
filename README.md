@@ -35,10 +35,12 @@ That script can be called with any of the [arguments you would pass to jbake](ht
 
 ### Clutch and Legacy SVN Content (careful)
 
+**Warning** do not run the clutch build scripts unless you are sure you understand them, and please be careful not to commit any of the resulting assets and pages to the git master branch. That content and data is only committed to the `asf-site` 
+branch's `reserve`folder as mentioned below.
+
 The `build_local_clutch.sh` script can be used to build the Clutch data, but that's updated automatically by the Jenkins 
 builds as `build_clutch.sh` mentioned below so it's not required unless you want to test that.
-*Warning* if you do build the clutch then examine the script and be very careful not to commit any of the automatically
-built assets and pages to the git master branch.
+
 
 ## Automated builds - website and Clutch data
 
