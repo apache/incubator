@@ -4,6 +4,7 @@ SVN_CO_DIR=/tmp/incubator-site-content
 SVN_BUILD_DIR=/tmp/incubator-site-build
 SVN_REPO=http://svn.apache.org/repos/asf/incubator/public/trunk/
 WORKDIR=/tmp/incubator-site
+ME=`basename $0`
 
 rm -rf $WORKDIR
 mkdir -p $WORKDIR
@@ -60,5 +61,5 @@ rm -rf reserve
 mkdir reserve
 cp -a $WORKDIR/* reserve
 git add reserve
-git commit -m "Automatic Site Publish by git-site-role"
+git commit -m "git-site-role commit from $ME"
 git push origin asf-site

@@ -2,6 +2,7 @@
 
 CURRENTDIR=`pwd`
 WORKDIR=/tmp/incubator-site
+ME=`basename $0`
 
 rm -rf $WORKDIR
 mkdir -p $WORKDIR
@@ -23,5 +24,5 @@ cp -a reserve/clutch content/.
 cp -a reserve/projects content/.
 cp -a reserve/ip-clearance content/.
 git add content
-git commit -m "Automatic Site Publish by git-site-role"
+git commit -m "git-site-role commit from $ME"
 git push origin asf-site
