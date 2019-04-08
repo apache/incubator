@@ -1,4 +1,5 @@
-= TL/DR
+
+# TL/DR
 
 1. More Whimsy UX to manage the Podling Lifecycle
 2. Consolidate podling status data
@@ -8,7 +9,7 @@
 6. We need to decide how to do reporting since MOIN wikis are going away.
    No recommendation is provided.
 
-= Podling Status Process
+# Podling Status Process
 
 Here is an analysis of the many ways podling status is tracked by the Incubator.
 Currently there are five components to podling status.
@@ -28,7 +29,7 @@ Currently there are five components to podling status.
 What follows is a description of each of these processes. This will be followed by some
 ideas about how we should proceed.
 
-== Podlings xml
+## Podlings xml
 
 The podling catalog is in this file: [`podling.xml`][0]
 
@@ -159,7 +160,7 @@ A podling that retired and moved development elsewhere:
     </podling>
 ```
 
-=== Current format for Podling Status Files
+### Current format for Podling Status Files
 
 More information is found on the project status page in xml wrapped html.
 For the most part this is descriptive text which has data embedded tagged with id attributes.
@@ -206,7 +207,7 @@ including the Clutch Analysis.
 
 The status pages are sporadically maintained by a majority of podlings after bootstrap.
 
-=== The Podling YML file
+### The Podling YML file
 
 In the [`podling yml file`][9] the following parameters have values:
 
@@ -233,7 +234,7 @@ This is intentional since the yml files are a replacement data store.
 
 The key values are `asfCopyright` and `distributionRights`
 
-=== Podling Report Template
+### Podling Report Template
 
 The initial report template is created by [`clutch2report.py`][10].
 Look for the `perproject` variable. The values `$name` and `$description` are taken indirectly from `podlings.xml`
@@ -250,7 +251,7 @@ The podling maturity section has checkboxes which parallel some of the work item
   [ ] Other:
 ```
 
-=== Clutch Analysis
+### Clutch Analysis
 
 Clutch analysis is performed using the [`clutch2.sh`][11] shell script. The key programs in the process
 are the [`clutch2.py`][12] python script which performs analysis pulling information from the following
@@ -269,7 +270,7 @@ The data is also written as a [`clutch2.json` file][21].
 
 This program was recently modernized and returned to relevancy.
 
-== An Improvement Plan
+## An Improvement Plan
 
 We have robust status information available for all the podlings, but have various gaps and incomplete
 transformations.
@@ -289,7 +290,7 @@ transformations.
 6. Many of the less usual processes like podling name changes are not well documented.
    Support for these can be improved.
    
-=== Podling data not in `podlings.xml`
+### Podling data not in `podlings.xml`
 
 We have to decide how best to handle the data that is in the Podlings Status page and the
 Podlings YML file. We should narrow this down to what is critical to keep and then decide
@@ -315,7 +316,7 @@ There are design choice here. Do we fold all of these additional pieces of infor
 `podlings.xml`, or do we normalize the Podling YML file to only include these fields.
 A third option is to replace the Podling YML with a data file in another format.
 
-=== Podling UX
+### Podling UX
 
 Eliminating the need to hand edit files without removing the ability is a goal. Let's discuss
 the actions that need to be recorded. Work was started in this direction in Whimsy and
@@ -334,7 +335,7 @@ this can be continued.
 4. Exit Incubation - a page that covers the several transitions a podling may make as it
    exits the Incubator by graduating or retiring.
 
-=== Incubator Site
+### Incubator Site
 
 The Incubator site can be simplified as follows:
 
@@ -344,16 +345,16 @@ The Incubator site can be simplified as follows:
 3. Change the site's `.htaccess` file to redirect project links to the anchor.
 4. Remove the clutch analysis pages since the information will be on the Whimsy page.
 
-=== Incubator SVN
+### Incubator SVN
 
 The Podling Status pages in [xml][3] will no longer be updated nor will they be shown.
 They can remain in svn for archival purposes.
 
-== Cookbook Checklists
+## Cookbook Checklists
 
 The checklists should be moved into the [Cookbook][22]
    
-=== Bootstrap 
+### Bootstrap 
 
 These tasks are done to setup infrastructure for the podling and prepare the team to develop
 in The Apache Way.
@@ -371,7 +372,7 @@ in The Apache Way.
 - Wiki
 - Issue Tracker
 
-=== IP / Copyright / Distribution Rights Checklist 
+### IP / Copyright / Distribution Rights Checklist 
 
 - SGA / Code transfer documents. 
 - Apache copyright added to donated code.
@@ -382,7 +383,7 @@ in The Apache Way.
   - Research Completed by podling
   - Brand Approval
 
-=== Incubation Watch List
+### Incubation Watch List
 
 - Collaborative Development
   - Are long term volunteers including non-coders being identified and
@@ -400,7 +401,7 @@ in The Apache Way.
   - Are any binary convenience releases fully license and notice compliant?
   - Are all releases distributed through required channels?
 	
-=== Graduation Checklist
+### Graduation Checklist
 
 - Has the podling discussed graduation on dev@?
 - Do the Mentors agree that the podling is ready?
