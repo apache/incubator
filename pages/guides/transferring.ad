@@ -17,6 +17,7 @@ Apache Incubator PMC
 :idprefix:
 :toc:
 :imagesdir: ../images/
+:icons: font 
 
 == Life After Graduation
 
@@ -38,34 +39,45 @@ themselves.
 
 ==== Graduating as New Top Level Project
 
+===== Board resolution and roster appointment
+
 When graduating to a new project, the process is more
 complex. Creating a new project requires a
-link:http://www.apache.org/foundation/board/calendar.html[resolution]
+link:graduation.html#preparing_a_charter[resolution]
 to be passed by the link:http://www.apache.org/foundation/board/[Board].
-Usually once this happens, the secretary will
+You may look at older minutes from the link:http://www.apache.org/foundation/board/calendar.html[calendar] and check for "Establish ProjectName"
+
+The passed will appoint Project Managnement Committees:
+
+- a Chair for the new project aka PMC Chair. The Chair will also be appointed an
+  link:http://www.apache.org/foundation/[Officer]
+  of the Apache Software Foundation. This allows them
+access to official resources of the foundation as well
+as granting power to act on behalf of Apache.
+
+WARNING: Usually once this happens, the secretary will
 inform the new chair.
 Occasionally, this will be missed: if more than 72
 hours has passed since the Board meeting, it may be
 worth pinging the board to request confirmation.
 
-The link:#tlp-resolution[resolution] will appoint a Chair for the new
-project. The Chair will also be appointed an
-link:http://www.apache.org/foundation/[Officer]
-of the Apache Software Foundation. This allows them
-access to official resources of the foundation as well
-as granting power to act on behalf of Apache.
+- the initial member of Project Managnement Committees aka PMC member.
+
+===== PMC Chair Todo List
 
 Once appointed, the new Chair needs to:
 
 - Subscribe to the *board* mailing list
 - Ensure that they have been added to
 link:https://people.apache.org/phonebook.html?service=pmc-chairs[the PMC chairs group (pmc-chairs) in LDAP].
-The ASF Secretary should do this without any action on the part
+
+WARNING: The ASF Secretary should do this without any action on the part
 of the new chair. As with above, if it has not happened within
 72 hours of the resolution passing, contact the secretary to remind them.
+
 - Check out the link:https://svn.apache.org/repos/private/foundation/officers[*foundation/officers*] folder from the private repository.
 Users with member or pmc-chairs karma can do this.
-- Add yourself to the #foundation/officers/affiliations.txt# and the #foundation/officers/irs-disclosures.txt* files with the appropriate information.
+- Add yourself to the #foundation/officers/affiliations.txt# and the #foundation/officers/irs-disclosures.txt# files with the appropriate information.
 - Add your details to the foundation web site Officer list at link:http://www.apache.org/foundation/index.html[http://www.apache.org/foundation/index.html] (in SVN at link:https://svn.apache.org/repos/asf/infrastructure/site/trunk/content/foundation/[https://svn.apache.org/repos/asf/infrastructure/site/trunk/content/foundation/])
 - Review appropriate documentation:
 ** link:http://www.apache.org/dev/pmc.html#chair[PMC Chair Duties]
@@ -73,34 +85,34 @@ Users with member or pmc-chairs karma can do this.
 ** Jakarta link:http://wiki.apache.org/jakarta/RoleOfChair[Chair guide]
 ** Incubator link:http://incubator.apache.org/guides/chair.html[Chair guide]
 ** Reporting link:http://www.apache.org/foundation/board/calendar.html[calendar]
-- Work out a reporting schedule with the link:/incubation/Roles_and_Responsibilities.html#board[Board]. For
+- Work out a reporting schedule with the link:/policy/roles_and_responsibilities.html#board[Board]. For
 the first three months after graduation this will
 be monthly. After that, the project should slot
 into a quarterly reporting schedule. Now is a good time to remove
 the project from the Incubator reporting schedule.
-- Work with the link:http://www.apache.org/dev/index.html#infra[Apache Infrastructure team]
-to set up the top level project infrastructure. Setting up the TLP request can be done by anyone on the new PMC, and should be done via link:https://issues.apache.org/jira/servicedesk/customer/portal/1/create/10[Infra Service Desk]
 - Ensure the PMC is added to the committee-info.txt file at https://svn.apache.org/repos/private/committers/board/committee-info.txt
 There are 3 sections which need to be updated; see instructions in the file, otherwise update it in link:https://whimsy.apache.org/roster/[Whimsy's Roster Tool]
 You may need to get a member to help with this, such as your mentors.
-
-They should then be able to start assembling the new
+- They should then be able to start assembling the new
 link:http://www.apache.org/foundation/how-it-works.html#structure[PMC].
 The starting membership is listed in the
-link:#tlp-resolution[resolution]. However, the Chair of the new project
+link:graduation.html#preparing_a_charter[resolution]. However, the Chair of the new project
 needs to ensure that private list is created and the
 membership subscribed.
 
-Members of the new PMC need to:
+===== PMC Todo List
+
+Once appointed, Members of the new PMC need to:
+
 - Subscribe to the private mailing list for the project, if they weren't already subscribed from their PPMC days
 - Review appropriate documentation:
 ** Apache link:http://www.apache.org/dev/pmc.html[PMC Guide]
 ** Related link:http://www.apache.org/dev/#pmc[documentation]
 
 Once all this is in place, resources can start to be
-handed over to the new project.
+handed over to the new project. See next section.
 
-Please continue to hang around the Incubator and help
+IMPORTANT: Please continue to hang around the Incubator and help
 new podlings have an easier time than you did!
 
 === First Steps Outside the Incubator
@@ -109,6 +121,8 @@ Graduation is the first step in what is hopefully a long road.
 There are some issues which incubation may not cover.
 
 ==== Transferring Resources
+
+IMPORTANT: Starting the following steps require that the resolution was passed by the board.
 
 When a project graduates, then the infrastructure
 resources (mailing lists, websites, source, etc.) need to
