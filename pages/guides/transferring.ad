@@ -176,7 +176,10 @@ subscribe to the lists and/or find archives.
 *** Do not forget to copy KEYS file from *release/incubator/${project}* location.
 *** You have two majors options then:
 **** you can *keep* incubating released artefacts at *release/incubator/${project}* and remove artefacts once your TLP project do their first release.
-**** you can *move* incubating released artefacts to your *release/${project}*, taking care that incubating stay in path (you will need to change website and mail for the new location).
++
+NOTE: File a JIRA under your newly JIRA *${project}* space to remind to remove */dist/incubator/${project}/* after the first release in */dist/${project}/*
++
+**** you can *move* the last incubating released artefacts to your *release/${project}*, taking care that incubating stay in path (you will need to change website and mail for the new location)
 
 ==== Final Revision of Podling Incubation Records
 
