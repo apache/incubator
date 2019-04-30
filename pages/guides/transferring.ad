@@ -174,7 +174,9 @@ subscribe to the lists and/or find archives.
 - Distribution mirrors
 ** Dist area (dist.apache.org) *release/${project}* and *dev/${project}* folders can be created by PMC members. 
 *** Do not forget to copy KEYS file from *release/incubator/${project}* location.
-*** Keep incubating released artefacts at *release/incubator/${project}* until your TLP project do their first release.
+*** You have two majors options then:
+**** you can *keep* incubating released artefacts at *release/incubator/${project}* and remove artefacts once your TLP project do their first release.
+**** you can *move* incubating released artefacts to your *release/${project}*, taking care that incubating stay in path (you will need to change website and mail for the new location).
 
 ==== Final Revision of Podling Incubation Records
 
