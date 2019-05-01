@@ -523,7 +523,39 @@ subscribe to the lists and/or find archives.</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Raise an infra ticket to create your dist area and move your Incubator dist area to the new location.</p>
+<p>Dist area (dist.apache.org) <strong>release/${project}</strong> and <strong>dev/${project}</strong> folders can be created by PMC members.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Do not forget to copy KEYS file from <strong>release/incubator/${project}</strong> location.</p>
+</li>
+<li>
+<p>You have two major options then:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>you can <strong>keep</strong> incubating released artefacts at <strong>release/incubator/${project}</strong> and remove artefacts once your TLP project does their first release.</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+File a JIRA under your newly JIRA <strong>${project}</strong> space to remind to remove <strong>/dist/incubator/${project}/</strong> after the first release in <strong>/dist/${project}/</strong>
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>you can <strong>move</strong> the last incubating released artefacts to your <strong>release/${project}</strong>, taking care that incubating stay in path (you will need to change website and mail for the new location)</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
 </li>
 </ul>
 </div>
