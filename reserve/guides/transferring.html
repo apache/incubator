@@ -198,25 +198,55 @@ themselves.</p>
 </div>
 <div class="sect3">
 <h4 id="graduating_as_new_top_level_project">Graduating as New Top Level Project</h4>
+<div class="sect4">
+<h5 id="board_resolution_and_roster_appointment">Board resolution and roster appointment</h5>
 <div class="paragraph">
 <p>When graduating to a new project, the process is more
 complex. Creating a new project requires a
-<a href="http://www.apache.org/foundation/board/calendar.html">resolution</a>
+<a href="graduation.html#preparing_a_charter">resolution</a>
 to be passed by the <a href="http://www.apache.org/foundation/board/">Board</a>.
+You may look at older minutes from the <a href="http://www.apache.org/foundation/board/calendar.html">calendar</a> and check for "Establish ProjectName"</p>
+</div>
+<div class="paragraph">
+<p>The Board votes on graduation resolutions at their monthly meeting.  If the Board votes to pass the resolution, that then appoints the listed Project Management Committee including:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>a Chair for the new project aka PMC Chair. The Chair will also be appointed an
+  <a href="http://www.apache.org/foundation/">Officer</a>
+  of the Apache Software Foundation. This allows them
+access to official resources of the foundation as well
+as granting power to act on behalf of Apache within the scope of their project&#8217;s activities.</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
 Usually once this happens, the secretary will
 inform the new chair.
 Occasionally, this will be missed: if more than 72
 hours has passed since the Board meeting, it may be
-worth pinging the board to request confirmation.</p>
+worth pinging the board to request confirmation.
+</td>
+</tr>
+</table>
 </div>
-<div class="paragraph">
-<p>The <a href="#tlp-resolution">resolution</a> will appoint a Chair for the new
-project. The Chair will also be appointed an
-<a href="http://www.apache.org/foundation/">Officer</a>
-of the Apache Software Foundation. This allows them
-access to official resources of the foundation as well
-as granting power to act on behalf of Apache.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>the initial member of Project Management Committees aka PMC member.</p>
+</li>
+</ul>
 </div>
+</div>
+<div class="sect4">
+<h5 id="pmc_chair_todo_list">PMC Chair Todo List</h5>
 <div class="paragraph">
 <p>Once appointed, the new Chair needs to:</p>
 </div>
@@ -227,17 +257,32 @@ as granting power to act on behalf of Apache.</p>
 </li>
 <li>
 <p>Ensure that they have been added to
-<a href="https://people.apache.org/phonebook.html?service=pmc-chairs">the PMC chairs group (pmc-chairs) in LDAP</a>.
+<a href="https://people.apache.org/phonebook.html?service=pmc-chairs">the PMC chairs group (pmc-chairs) in LDAP</a>.</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
 The ASF Secretary should do this without any action on the part
 of the new chair. As with above, if it has not happened within
-72 hours of the resolution passing, contact the secretary to remind them.</p>
-</li>
+72 hours of the resolution passing, contact the secretary to remind them.
+</td>
+</tr>
+</table>
+</div>
+<div class="ulist">
+<ul>
 <li>
 <p>Check out the <a href="https://svn.apache.org/repos/private/foundation/officers"><strong>foundation/officers</strong></a> folder from the private repository.
 Users with member or pmc-chairs karma can do this.</p>
 </li>
 <li>
-<p>Add yourself to the <mark>foundation/officers/affiliations.txt</mark> and the #foundation/officers/irs-disclosures.txt* files with the appropriate information.</p>
+<p>Add yourself to the <mark>foundation/officers/affiliations.txt</mark> and the <mark>foundation/officers/irs-disclosures.txt</mark> files with the appropriate information.</p>
 </li>
 <li>
 <p>Add your details to the foundation web site Officer list at <a href="http://www.apache.org/foundation/index.html">http://www.apache.org/foundation/index.html</a> (in SVN at <a href="https://svn.apache.org/repos/asf/infrastructure/site/trunk/content/foundation/">https://svn.apache.org/repos/asf/infrastructure/site/trunk/content/foundation/</a>)</p>
@@ -265,45 +310,70 @@ Users with member or pmc-chairs karma can do this.</p>
 </div>
 </li>
 <li>
-<p>Work out a reporting schedule with the <a href="/incubation/Roles_and_Responsibilities.html#board">Board</a>. For
+<p>Work out a reporting schedule with the <a href="/policy/roles_and_responsibilities.html#board">Board</a>. For
 the first three months after graduation this will
 be monthly. After that, the project should slot
 into a quarterly reporting schedule. Now is a good time to remove
 the project from the Incubator reporting schedule.</p>
 </li>
 <li>
-<p>Work with the <a href="http://www.apache.org/dev/index.html#infra">Apache Infrastructure team</a>
-to set up the top level project infrastructure. Setting up the TLP request can be done by anyone on the new PMC, and should be done via <a href="https://issues.apache.org/jira/servicedesk/customer/portal/1/create/10">Infra Service Desk</a></p>
-</li>
-<li>
 <p>Ensure the PMC is added to the committee-info.txt file at <a href="https://svn.apache.org/repos/private/committers/board/committee-info.txt" class="bare">https://svn.apache.org/repos/private/committers/board/committee-info.txt</a>
 There are 3 sections which need to be updated; see instructions in the file, otherwise update it in <a href="https://whimsy.apache.org/roster/">Whimsy&#8217;s Roster Tool</a>
 You may need to get a member to help with this, such as your mentors.</p>
 </li>
-</ul>
-</div>
-<div class="paragraph">
+<li>
 <p>They should then be able to start assembling the new
 <a href="http://www.apache.org/foundation/how-it-works.html#structure">PMC</a>.
 The starting membership is listed in the
-<a href="#tlp-resolution">resolution</a>. However, the Chair of the new project
+<a href="graduation.html#preparing_a_charter">resolution</a>. However, the Chair of the new project
 needs to ensure that private list is created and the
 membership subscribed.</p>
+</li>
+</ul>
 </div>
+</div>
+<div class="sect4">
+<h5 id="pmc_todo_list">PMC Todo List</h5>
 <div class="paragraph">
-<p>Members of the new PMC need to:
-- Subscribe to the private mailing list for the project, if they weren&#8217;t already subscribed from their PPMC days
-- Review appropriate documentation:
-<strong> Apache <a href="http://www.apache.org/dev/pmc.html">PMC Guide</a>
-</strong> Related <a href="http://www.apache.org/dev/#pmc">documentation</a></p>
+<p>Once appointed, Members of the new PMC need to:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Subscribe to the private mailing list for the project, if they weren&#8217;t already subscribed from their PPMC days</p>
+</li>
+<li>
+<p>Review appropriate documentation:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Apache <a href="http://www.apache.org/dev/pmc.html">PMC Guide</a></p>
+</li>
+<li>
+<p>Related <a href="http://www.apache.org/dev/#pmc">documentation</a></p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
 </div>
 <div class="paragraph">
 <p>Once all this is in place, resources can start to be
-handed over to the new project.</p>
+handed over to the new project. See next section.</p>
 </div>
-<div class="paragraph">
-<p>Please continue to hang around the Incubator and help
-new podlings have an easier time than you did!</p>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+Please continue to hang around the Incubator and help
+new podlings have an easier time than you did!
+</td>
+</tr>
+</table>
+</div>
 </div>
 </div>
 </div>
@@ -315,6 +385,18 @@ There are some issues which incubation may not cover.</p>
 </div>
 <div class="sect3">
 <h4 id="transferring_resources">Transferring Resources</h4>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+Starting the following steps require that the resolution was passed by the board.
+</td>
+</tr>
+</table>
+</div>
 <div class="paragraph">
 <p>When a project graduates, then the infrastructure
 resources (mailing lists, websites, source, etc.) need to
@@ -441,7 +523,39 @@ subscribe to the lists and/or find archives.</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Raise an infra ticket to create your dist area and move your Incubator dist area to the new location.</p>
+<p>Dist area (dist.apache.org) <strong>release/${project}</strong> and <strong>dev/${project}</strong> folders can be created by PMC members.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Do not forget to copy KEYS file from <strong>release/incubator/${project}</strong> location.</p>
+</li>
+<li>
+<p>You have two major options then:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>you can <strong>keep</strong> incubating released artefacts at <strong>release/incubator/${project}</strong> and remove artefacts once your TLP project does their first release.</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+File a JIRA under your newly JIRA <strong>${project}</strong> space to remind to remove <strong>/dist/incubator/${project}/</strong> after the first release in <strong>/dist/${project}/</strong>
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>you can <strong>move</strong> the last incubating released artefacts to your <strong>release/${project}</strong>, taking care that incubating stay in path (you will need to change website and mail for the new location)</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
 </li>
 </ul>
 </div>
