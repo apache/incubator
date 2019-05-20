@@ -14,107 +14,73 @@ To test this, make a change to this file and check the above
 URL which should be updated within 2-3 minutes.
 ---- TODO remove the above section in the preprocessor script? ---
 
-Incubator PMC report for May 2019
+TESTING WITH THIS CONTENT AS SUGGESTED BY JUSTIN:
 
-Trying an edit to check publishing time...
+https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=113709394
+
+Incubator PMC report for May 2019
 
 The Apache Incubator is the entry path into the ASF for projects and
 codebases wishing to become part of the Foundation's efforts.
 
-There are presently 50 podlings incubating. During the month of April, podlings executed 10 distinct releases. We added two new IPMC members and no IPMC members retired.
-
-We have no new podlings this month. Three projects graduated last month 
-namely PLC4X, SkyWalking and Netbeans and several other podlings are 
-heading towards graduation in the next few months.
-
-One of the podlings that failed to report last month, Milagro failed to
-report again this month and the IPMC will discuss what to do. This is the 
-not first time this project has failed to report and it may not have a
-working PPMC.
-
-Two podlings Milagro and Toree have not submitted reports and will be asked
-to report next month.
-
-There were two IP clearances.
-
-The new Podling clutch page is working well and documentation has been  created clearly explains what information is collected from where.
-
-The incubator is providing a new service to podlings to provide feedback on
-releases. So far no podlings have taken up this service. 
-
-Mentors are being actively encouraged to vote on their podling releases so
-that the VOTEs show up on the general@ list with 3 +1 IPMC votes. While a 
-couple of podlings have managed to do this, most still need extra votes by 
-IPMC members outside their projects. The IPMC will need to look further
-into this.
-
-In a couple of cases, podlings canceled vote too early and were encouraged
-to continue voting.
-
-Incubator wiki is being deprecated, and it's been migrated to confluence. 
-Some of the pages were missed in the transfer and infra are looking into 
-why.
-
-The new wiki space has been reorganised and the pages categorised for easier
-navigation. A few minor issues have been encountered e.g. confluence 
-ignoring formatting but have been addressed. A few people have had permission
-issues and because of this move mentor sign-off is a little lower than normal. 
-
-The reorganisation and cleanup of incubator web pages started last month 
-continues on.
+< narrative >
 
 * Community
 
 New IPMC members:
-  - Arpit Agarwal
-  - Kevin Ratnasekera 
+
+
+
 
 People who left the IPMC:
-  None
+
+
+
 
 * New Podlings
-  None
+
+
+
 
 * Podlings that failed to report, expected next month
-  - Milagro
-  - Toree
+
+
+
 
 * Graduations
-  - Netbeans
-  - PLC4X
-  - SkyWalking
 
 The board has motions for the following:
-  - Dubbo
+
+- Your podling here?
+- Your podling here?
 
 * Releases
 
 The following releases entered distribution during the month of
 April:
- - DLab 2.1
- - Druid 0.14.0
- - Dubbo Spring Boot 2.7.1
- - Livy 0.6.0
- - NetBeans 11.0 
- - OpenWhisk Client JS 3.19.0
- - OpenWhisk Composer 0.11.0 
- - Ratis 0.3.0 
- - ShardingSphere 4.0.0
- - Singa 2.0.0
+
 
 * IP Clearance
- - Sling Journal-based Content Distribution
- - IP clearance for SkyWalking RocketBot UI
+
+
+
 
 * Legal / Trademarks
-  None
+
+
+
 
 * Infrastructure
-  None, although it still unknown if infrastructure will allow
-  distribution of artefacts with IP or other serious issues.
+
+
+
 
 * Miscellaneous
-  - Discussion of use of stack overflow
+
+
+
+
+* Credits
 
 |----------------------------------------------------------------------
 Table of Contents
@@ -124,6 +90,7 @@ Doris
 ECharts
 Edgent
 Heron
+Milagro
 MXNet
 PageSpeed
 Pinot
@@ -131,33 +98,35 @@ Ratis
 S2Graph
 SDAP
 Tamaya
+Toree
 Training
 Tuweni
 TVM
 
-|------------------------------------------------------------------------------------------
+|----------------------------------------------------------------------
+
+--------------------
 
 brpc
 
-brpc is an industrial-grade RPC framework for building reliable and 
-high-performance services.
+brpc is an industrial-grade RPC framework for building reliable and high-performance services.
 
 brpc has been incubating since 2018-11-13.
 
 Three most important issues to address in the move towards graduation:
-  1. We begin to prepare an apache release, including prepare for unified  License/Copyright, clean dependencies.
-  2. We depend on npsr’ time, it is MPL/LGPL license, we need to find  another lib for it.
 
-Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be aware 
-of?
+    we begin to prepare an apache release, including prepare for unified License/Copyright, clean dependencies.
+    We depend on npsr’ time, it is MPL/LGPL license, we need to find another lib for it.
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be aware of?
 
   No
 
 How has the community developed since the last report?
 
-  Added two potential committers, they are huwenwei and wangweibing ,
-  they will participate in the work of first apache release , and take some 
-  tasks already.  .
+   Added two potential committers, they are huwenwei and wangweibing ,
+
+ they will participate in the work of first apache release , and take some tasks already.  .
 
 How has the project developed since the last report?
 
@@ -165,15 +134,20 @@ How has the project developed since the last report?
 
 How would you assess the podling's maturity?
 
-  Still in early stage
+    Still in early stage
 
 Please feel free to add your own commentary.
 
-  [ ] Initial setup
+  [] Initial setup
+
   [X] Working towards first release
+
   [X] Community building
+
   [ ] Nearing graduation
+
   [ ] Other:
+
 
 Date of last release:
 
@@ -181,92 +155,114 @@ Date of last release:
 
 When were the last committers or PPMC members elected?
 
-  2019/2. Jerrytan became a new member of PPMC
+   2019/2. Jerrytan became a new member of PPMC
 
-Have your mentors been helpful and responsive or are things falling through the cracks? In the latter case, please list any open issues that need to be addressed.
+
+Have your mentors been helpful and responsive or are things falling
+
+through the cracks? In the latter case, please list any open issues
+
+that need to be addressed.
+
 
 Signed-off-by:
 
-  [X](brpc) Kevin A. McGrail
-     Comments: Improving steadily.
-  [ ](brpc) Jean-Baptiste Onofré
-     Comments:
-  [X](brpc) Von Gosling
+
+  [ ](brpc) Kevin A. McGrail
+
      Comments:
 
+  [ ](brpc) Jean-Baptiste Onofré
+
+     Comments:
+
+  [ ](brpc) Von Gosling
+
+     Comments:
+
+
 IPMC/Shepherd notes:
-  Von Gosling: brpc community should pay more warm in the community building 
-  except the first release.
+
  
+
+
 
 --------------------
 DataSketches
 
-DataSketches is an open source, high-performance library of stochastic streaming algorithms commonly called "sketches" in the data sciences. Sketches are small, stateful programs that process massive data as a stream and can provide approximate answers, with mathematical guarantees, to computationally difficult queries orders-of-magnitude faster than traditional, exact  methods.
+DataSketches is an open source, high-performance library of stochastic
+streaming algorithms commonly called "sketches" in the data sciences. Sketches
+are small, stateful programs that process massive data as a stream and can
+provide approximate answers, with mathematical guarantees, to computationally
+difficult queries orders-of-magnitude faster than traditional, exact methods.
 
 DataSketches has been incubating since 2019-03-30.
 
 Three most important unfinished issues to address before graduating:
 
-  1. Finish IP Assignments
-  2. Code Migration
-  3. Perform a Release
+1. Finish IP Assignments
+2. Code Migration
+3. Perform a Release
 
 Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
 aware of?
 
-  No
+No
+
 
 How has the community developed since the last report?
 
-  We have the key committers signed up. We are all learning how
-  to navigate in the Apache environment and how to find things.
+We have the key committers signed up. We are all learning how
+to navigate in the Apache environment and how to find things.
 
 How has the project developed since the last report?
 
-  This is our first report.
+This is our first report.
 
 How would you assess the podling's maturity?
 Please feel free to add your own commentary.
 
-  [X] Initial setup
-  [ ] Working towards first release
-  [ ] Community building
-  [ ] Nearing graduation
-  [ ] Other:
+[X] Initial setup
+[ ] Working towards first release
+[ ] Community building
+[ ] Nearing graduation
+[ ] Other:
 
 Date of last release:
 
-  Our DataSketches.GitHub.io site is quite active as we are 
-  very active with new code and releases from this site.
-  For example, our latest release of sketches-core was yesterday,
-  25 April 2019.  
+Our DataSketches.GitHub.io site is quite active as we are 
+very active with new code and releases from this site.
+For example, our latest release of sketches-core was yesterday,
+25 April 2019.  
 
-  We are a long way from being able to release from the migrated
-  Apache code base as it doesn't yet exist.
+We are a long way from being able to release from the migrated
+Apache code base as it doesn't yet exist.
 
-  XXXX-XX-XX
+XXXX-XX-XX
 
 When were the last committers or PPMC members elected?
 
-  We have just signed up are initial list of committers.
+We have just signed up are initial list of committers.
 
 Have your mentors been helpful and responsive or are things falling
 through the cracks? In the latter case, please list any open issues
 that need to be addressed.
 
-  Kenneth Knowles has been extremely helpful! Thank you!
+Kenneth Knowles has been extremely helpful! Thank you!
 
 Signed-off-by:
 
-  [X](datasketches) Liang Chen
-  Comments:
-  [X](datasketches) Kenneth Knowles
-  Comments: Initial set up has been a bit slow; that's on me
-  [X](datasketches) Furkan Kamaci
-  Comments:
+[X](datasketches) Liang Chen
+Comments:
+[X](datasketches) Kenneth Knowles
+Comments: Initial set up has been a bit slow; that's on me
+[X](datasketches) Furkan Kamaci
+Comments:
 
 IPMC/Shepherd notes:
+
+
+
 
 --------------------
 Doris
@@ -278,10 +274,10 @@ Doris has been incubating since 2018-07-18.
 
 Three most important unfinished issues to address before graduating:
 
-  1. Hold a Meetup to communicate with developers and users.
-  2. Prepare for the second Apache Release.
-  3. Grow the community encouraging patches and recognizing sustained 
-  contributions by adding as Committers and PPMC members.
+1. Hold a Meetup to communicate with developers and users.
+2. Prepare for the second Apache Release.
+3. Grow the community encouraging patches and recognizing sustained 
+contributions by adding as Committers and PPMC members.
 
 Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
 aware of?
@@ -294,19 +290,17 @@ How has the community developed since the last report?
 
 How has the project developed since the last report?
 
-  Excluding merges, 12 authors have pushed 75 commits to master and 233 
-  commits to all branches. 
-  On master, 253 files have changed and there have been 14,050 additions and 
-  3,027 deletions.
+ Excluding merges, 12 authors have pushed 75 commits to master and 233 commits to all branches. 
+ On master, 253 files have changed and there have been 14,050 additions and 3,027 deletions.
 
 How would you assess the podling's maturity?
 Please feel free to add your own commentary.
 
-  [ ] Initial setup
-  [X] Working towards first release
-  [X] Community building
-  [ ] Nearing graduation
-  [ ] Other:
+[ ] Initial setup
+[X] Working towards first release
+[X] Community building
+[ ] Nearing graduation
+[ ] Other:
 
 Date of last release:
 
@@ -320,17 +314,1069 @@ Have your mentors been helpful and responsive or are things falling
 through the cracks? In the latter case, please list any open issues
 that need to be addressed.
 
-  Yes, our mentors have been helpful and responsive.
+ Yes, our mentors have been helpful and responsive.
 
 Signed-off-by:
 
-  [X](doris) Dave Fisher
-  Comments: Will need to start discussions about possible new committers.
-  [ ](doris) Willem Ning Jiang
-  Comments:
-  [ ](doris) Shao Feng Shi
-  Comments:
+[X](doris) Dave Fisher
+Comments: Will need to start discussions about possible new committers.
+[ ](doris) Willem Ning Jiang
+Comments:
+[ ](doris) Shao Feng Shi
+Comments:
 
 IPMC/Shepherd notes:
 
+
+
+
 --------------------
+ECharts
+
+ECharts is a charting and data visualization library written in JavaScript.
+
+ECharts has been incubating since 2018-01-18.
+
+Three most important unfinished issues to address before graduating:
+
+1. Apache domain name should be used for the Website. 
+echartsjs.com and echarts.baidu.com should redirect to echarts.apache.org. 
+Currently they are not redirecting due to slow loading time in China. 
+We are working on with a CDN to improve the loading time in China.
+2. Website Analytics information should be accessed by PPMC members.
+We are going to create an Analytics account that can be accessed by PPMC members.
+3. Develop more committers from the community.
+Currently there are some contributors in the community that have contributed
+continously and should be considered as new committers.
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+We haven't come to a conclusion whether we could use Baidu Tongji in the Website, 
+which is a product quiet similar to Google Analytics.
+We've consulted John Kinsella <jlkinsel@gmail.com> as our mentor suggested, but got
+no reply. See https://lists.apache.org/thread.html/efa62d1ace0cc27f7ee4e47df94c346e863b6419f1d1e3ea6fe32c10@%3Cdev.echarts.apache.org%3E
+My suggestion is to use bothe Baidu Tongji and Google Analytics. The reason is that
+Baitu Tongji has only Chinese UI, while Google Analytics may have the potential of
+losing some data in China since many Google products are not accessible in China.
+If IPMC and ASF Board are OK with it, we will start a vote for the plan.
+
+How has the community developed since the last report?
+We have announced our first new committer from the community.
+More people come to contribute in the community, in the forms of code changes, document
+mending, and so on.
+
+How has the project developed since the last report?
+We released v4.2.1.
+
+How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+[ ] Initial setup
+[ ] Working towards first release
+[x] Community building
+[ ] Nearing graduation
+[ ] Other:
+
+Date of last release:
+
+2019-03-21
+
+When were the last committers or PPMC members elected?
+
+2019-04-03
+
+Have your mentors been helpful and responsive or are things falling
+through the cracks? In the latter case, please list any open issues
+that need to be addressed.
+
+Yes.
+
+Signed-off-by:
+
+[ ](echarts) John D. Ament
+Comments:
+[ ](echarts) Kevin A. McGrail
+Comments:
+[X](echarts) Dave Fisher
+Comments: Thanks to Infra the issues blocking a full move to apache.org domains are being addressed.
+    The change is to build a one off CDN in China.
+[ ](echarts) Ted Liu
+Comments:
+
+IPMC/Shepherd notes:
+
+
+
+
+--------------------
+Edgent
+
+Edgent is a stream processing programming model and lightweight runtime to
+execute analytics at devices on the edge or at the gateway. (Formerly known as
+Quarks)
+
+Edgent has been incubating since 2016-02-29.
+
+Three most important unfinished issues to address before graduating:
+
+1.
+2.
+3.
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+
+
+
+How has the community developed since the last report?
+
+
+
+
+How has the project developed since the last report?
+
+
+How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+[ ] Initial setup
+[ ] Working towards first release
+[ ] Community building
+[ ] Nearing graduation
+[ ] Other:
+
+Date of last release:
+
+XXXX-XX-XX
+
+When were the last committers or PPMC members elected?
+
+
+Have your mentors been helpful and responsive or are things falling
+through the cracks? In the latter case, please list any open issues
+that need to be addressed.
+
+
+Signed-off-by:
+
+[ ](edgent) Luciano Resende
+Comments:
+[ ](edgent) Justin Mclean
+Comments:
+[ ](edgent) Christofer Dutz
+Comments:
+
+IPMC/Shepherd notes:
+
+
+
+
+--------------------
+Heron
+
+A real-time, distributed, fault-tolerant stream processing engine.
+
+Heron has been incubating since 2017-06-23.
+
+Three most important unfinished issues to address before graduating:
+
+1. Making a new release with artifacts (more review required).
+2. Making several Releases.
+3. Continuing to grow the community.
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+ None at this time.
+
+
+How has the community developed since the last report?
+
+The community has been growing. Monthly meetups have been regularly and successfully organized. 
+The April meetup was back in Twitter office and it was very successful. 
+Many discussions and works have been done by the community.
+
+
+How has the project developed since the last report?
+
+There have been bug fixes and feature improvements. Some to note are:
+
+    Set up new sub-project for Heron spouts by community
+    Bazel upgrade
+    Bug fixes in scripts of building artifacts
+    Review and improve packing algorithms
+    Fix memory leaks in binary components and add static/dynamic checks
+
+
+
+
+How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+[ ] Initial setup
+[X] Working towards first release
+[X] Community building
+[ ] Nearing graduation
+[ ] Other:
+
+Date of last release:
+
+XXXX-XX-XX
+
+When were the last committers or PPMC members elected?
+
+  4 new committers were elected and invited in Feb 2019.
+
+
+Have your mentors been helpful and responsive or are things falling
+through the cracks? In the latter case, please list any open issues
+that need to be addressed.
+
+Dave has been helpful on answering questions and voting for releases.
+
+
+Signed-off-by:
+
+[ ](heron) Jake Farrell
+Comments:
+[ ](heron) Julien Le Dem
+Comments:
+[ ](heron) P. Taylor Goetz
+Comments:
+[X](heron) Dave Fisher
+Comments:
+
+IPMC/Shepherd notes:
+
+
+
+
+--------------------
+Milagro
+
+Distributed Cryptography; M-Pin protocol for Identity and Trust
+
+Milagro has been incubating since 2015-12-21.
+
+Three most important unfinished issues to address before graduating:
+
+1.
+2.
+3.
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+
+
+
+How has the community developed since the last report?
+
+
+
+
+How has the project developed since the last report?
+
+
+How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+[ ] Initial setup
+[ ] Working towards first release
+[ ] Community building
+[ ] Nearing graduation
+[ ] Other:
+
+Date of last release:
+
+XXXX-XX-XX
+
+When were the last committers or PPMC members elected?
+
+
+Have your mentors been helpful and responsive or are things falling
+through the cracks? In the latter case, please list any open issues
+that need to be addressed.
+
+
+Signed-off-by:
+
+[ ](milagro) Nick Kew
+Comments:
+
+IPMC/Shepherd notes:
+
+
+
+
+--------------------
+MXNet
+
+A Flexible and Efficient Library for Deep Learning
+
+MXNet has been incubating since 2017-01-23.
+
+Three most important unfinished issues to address before graduating:
+
+1. Increase diversity in contributors, committers, and PMC members — NEAR COMPLETION.
+2. Identify remaining ICLAs or SGAs that need signing – NEAR COMPLETION.
+3. Revisit Apache Maturity Model Assessment — TODO
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+1. Community reached consensus on Gluon branding. In the context of the Gluon API in MXNet, it would be mentioned as MXNet Gluon. https://lists.apache.org/thread.html/af7dcb430e2cedf23d1531e79877e8bf2b40ec392e40853a2d7015da@%3Cdev.mxnet.apache.org%3E
+2. Community addressed the IP/licensing issues discovered during previous releases. Updated status can be found here: https://cwiki.apache.org/confluence/display/MXNET/MXNet+Source+Licenses 
+3. MXNet has significant user presence in China that are worth optimizing for in terms of infrastructure. Setting up CDN in China requires ICP filing.
+
+How has the community developed since the last report?
+* The number of GitHub contributors increased to currently 682 (2019-04-22; +4.4% since last report)
+* Active discussions on user forums
+  https://discuss.mxnet.io/ (English, 1.6K registered users and 5.6K posts)
+  https://discuss.gluon.ai/ (Chinese, 6K registered users and 19.2K posts)
+* Active blogs and social media presence
+  Medium (https://medium.com/apache-mxnet) w/ 1.3k followers (+30% since last report).
+  Twitter account (https://twitter.com/ApacheMXNet) w/ 2k followers on (+16% since last report)
+  Meetup group (https://www.meetup.com/pro/deep-learning-with-apache-mxnet/) w/ 10 groups in 8 countries, 1998 members (+65% since last report)
+  (in China) Zhihu w/ 7.5k followers, WeChat official account w/ 3k followers. (reported for the first time)
+* Active video channels
+  YouTube channel (https://www.youtube.com/apachemxnet) w/ 627 subscriber (+29% since last report)
+  Chinese YouTube channel (https://www.youtube.com/channel/UCjeLwTKPMlDt2segkZzw2ZQ) w/ 4.1k subscribers (reported for the first time)
+  (in China) bilibili space (https://space.bilibili.com/209599371) w/ 13k subscriber (reported for the first time)
+* Highlights in MXNet ecosystem
+  MXNet Gluon book (www.d2l.ai, Dive into Deep Learning/D2L) released v1.0.0-rc0 (https://github.com/d2l-ai/d2l-zh/releases/tag/v1.0.0-rc0) in Chinese and v0.6.0 (https://github.com/d2l-ai/d2l-en/releases/tag/v0.6.0) in English. Dive into Deep Learning has 47.5K 28-day active users, and has attracted 9.3K stars & 200+ contributors on GitHub. It has been adopted as a textbook or reference book by 15+ universities in U.S., China, Spain, and Australia, such as UC Berkeley.
+  GluonCV v0.4.0 release (https://github.com/dmlc/gluon-cv/releases/tag/v0.4.0)
+  GluonNLP v0.6.0 release (https://github.com/dmlc/gluon-nlp/releases/tag/v0.6.0)
+  MXNet Model Server v1.0.2 release (https://github.com/awslabs/mxnet-model-server/releases/tag/v1.0.2)
+  GluonFace (https://github.com/THUFutureLab/gluon-face)
+  DeepInsight (https://github.com/deepinsight/insightface)
+
+How has the project developed since the last report?
+1) Released v1.4.0: https://github.com/apache/incubator-mxnet/releases/tag/1.4.0; https://blogs.apache.org/mxnet/entry/apache-mxnet-1-4-is1
+2) Started v1.4.1 patch release https://lists.apache.org/thread.html/3bb49a1016fafd0840d14f099ce47c7a1822da45f7ca2187c0f03c64@%3Cdev.mxnet.apache.org%3E; Started roadmap discussion on short-term 1.5.0 release https://github.com/apache/incubator-mxnet/issues/14619; Started roadmap discussion on long-term 2.0 plan https://github.com/apache/incubator-mxnet/issues/9686;
+3) Code donation from dmlc/mshadow. Community expressed the desire to assimilate dmlc/mshadow code base into mxnet. https://lists.apache.org/thread.html/c1ba34330b0eb52ef3a3a30da6d34964a35a01c320e93067e94ed306@%3Cdev.mxnet.apache.org%3E. After discussion, DMLC reached agreement to donate dmlc/mshadow code to mxnet, which is its sole consumer.
+4) Many ongoing projects: numpy-compatbile deep learning: https://github.com/apache/incubator-mxnet/projects/14; CPU performance and quantization: https://github.com/apache/incubator-mxnet/projects/15; Mixed precision GPU training (AMP): https://github.com/apache/incubator-mxnet/pull/14173, etc.
+5) Github statistics of last month:
+* March 24, 2019 – April 24, 2019: Excluding merges, 53 authors have pushed 102 commits to master and 137 commits to all branches. On master, 495 files have changed and there have been 14,977 additions and 5,391 deletions.
+
+How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+[x] Initial setup
+[x] Working towards first release
+[x] Community building
+[x] Nearing graduation
+
+Date of last release:
+2019-03-04 MXNet 1.4.0
+
+When were the last committers or PPMC members elected?
+
+As recent as 2019-04-12.
+
+New committer since last report (+12):
+Iblis Lin, Da Zheng, Steffen Rochel, Lin Yuan, Nicolas Modrzyk, Jackie Wu, Aston Zhang, Ding Kuo, Patric Zhao, Kevin Qin, Jiajun Wu, Jeremie Desgagne-Bouchard
+
+New PPMC member (+1):
+Qing Lan
+
+
+
+Have your mentors been helpful and responsive or are things falling
+through the cracks? In the latter case, please list any open issues
+that need to be addressed.
+Mentors continue providing guidance and support.
+
+Signed-off-by:
+
+[ ](mxnet) Henri Yandell
+Comments:
+[ ](mxnet) Markus Weimer
+Comments:
+[x](mxnet) Michael Wall
+Comments:
+[ ](mxnet) Bob Paulin
+Comments:
+[ ](mxnet) Jason Dai
+Comments:
+
+IPMC/Shepherd notes:
+
+
+
+
+--------------------
+PageSpeed
+
+PageSpeed represents a series of open source technologies to help
+make the web faster by rewriting web pages to reduce latency and
+bandwidth.
+
+PageSpeed has been incubating since 2017-09-30.
+
+Three most important unfinished issues to address before graduating:
+
+  1. Get the project site in order
+  2. Start releasing
+  3. Engage more active developers, expanding the community
+
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+
+
+How has the community developed since the last report?
+
+The number of active developers is low, we are still working
+to follow up on the recommendation to create a release.
+
+How has the project developed since the last report?
+
+  - A first draft-release is being manually checked for policy compliance. We expect
+    to be able to raise a thread on general soon to discuss/vote.
+  - There has been some discussion how to get the project site in-order, and there's
+    a plan for that now (transfer modpagespeed.com to the AFS, duplicate contents to
+    pagespeed.incubator.apache.org). 
+
+How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+[ ] Initial setup
+[X] Working towards first release
+[X] Community building
+[ ] Nearing graduation
+[ ] Other:
+
+Date of last release:
+
+XXXX-XX-XX
+
+When were the last committers or PPMC members elected?
+
+  Feb 2 2018 (Huibao Lin, elected as both committer and PMC member)
+
+Have your mentors been helpful and responsive or are things falling
+through the cracks? In the latter case, please list any open issues
+that need to be addressed.
+
+  Mentors have been helpful.
+
+
+Signed-off-by:
+
+[ ](pagespeed) Jukka Zitting
+Comments:
+[ ](pagespeed) Leif Hedstrom
+Comments:
+[ ](pagespeed) Nick Kew
+Comments:
+[ ](pagespeed) Phil Sorber
+Comments:
+
+IPMC/Shepherd notes:
+
+
+
+
+--------------------
+Pinot
+
+Pinot is a distributed columnar storage engine that can ingest data in real-
+time and serve analytical queries at low latency.
+
+Pinot has been incubating since 2018-10-17.
+
+Three most important unfinished issues to address before graduating:
+
+1. Building community contribution
+2. Establish a successful release cadence
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+None
+
+How has the community developed since the last report?
+
+External contributors have made improvements to real-time segment split-commit algorithm to minimize controller access to segment store during segment commit phase. In addition they have also contributed towards other bug fixes, especially in the real-time area.
+
+How has the project developed since the last report?
+
+- We made our first release Apache Pinot 0.1.0
+- We have added and improved a lot more documentation
+
+How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+[ ] Initial setup
+[ ] Working towards first release
+[x] Community building
+[ ] Nearing graduation
+[ ] Other:
+
+Date of last release:
+
+2019-03-07
+
+When were the last committers or PPMC members elected?
+
+Committer Xiang Fu, who was already in the incubator proposal, was added.
+
+Have your mentors been helpful and responsive or are things falling
+through the cracks? In the latter case, please list any open issues
+that need to be addressed.
+
+Yes mentors have been helpful and responsive 
+
+Signed-off-by:
+
+[ ](pinot) Kishore Gopalakrishna
+Comments:
+[ ](pinot) Jim Jagielski
+Comments:
+[ ](pinot) Roman Shaposhnik
+Comments:
+[ ](pinot) Olivier Lamy
+Comments:
+[x](pinot) Felix Cheung
+Comments: great!
+
+IPMC/Shepherd notes:
+
+
+
+
+--------------------
+Ratis
+
+Ratis is a java implementation for RAFT consensus protocol
+
+Ratis has been incubating since 2017-01-03.
+
+Three most important unfinished issues to address before graduating:
+
+1. Establish a release cadence.
+2. Podling name search.
+3. Complete graduation template
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+None
+
+
+How has the community developed since the last report?
+
+1 new contributor has been added. Total 59 contributors currently.
+
+20 committers (non-PPMC) and 19 PPMC members.
+
+How has the project developed since the last report?
+32 commits, Released 0.3.0 version.
+
+
+How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+[X] Initial setup
+[X] Working towards first release
+[X] Community building
+[X] Nearing graduation
+[ ] Establish a release cadence
+
+Date of last release:
+2019-04-26
+
+When were the last committers or PPMC members elected?
+2018-12-05
+
+
+Have your mentors been helpful and responsive or are things falling
+through the cracks? In the latter case, please list any open issues
+that need to be addressed.
+
+Yes
+
+Signed-off-by:
+
+[ ](ratis) Jakob Homan
+Comments:
+[ ](ratis) Uma Maheswara Rao G
+Comments:
+[ ](ratis) Devaraj Das
+Comments:
+
+IPMC/Shepherd notes:
+
+
+
+
+--------------------
+S2Graph
+
+S2Graph is a distributed and scalable OLTP graph database built on Apache
+HBase to support fast traversal of extremely large graphs.
+
+S2Graph has been incubating since 2015-11-29.
+
+Three most important unfinished issues to address before graduating:
+
+1. Make the third release.
+2. Attract more users and contributors.
+3. Build the developer community in both size and diversity.
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+None
+
+
+How has the community developed since the last report?
+
+* There were some discussions on the documentation of the project.
+* There were some questions and answers from the community about the migration tool.
+
+
+How has the project developed since the last report?
+
+* Working on providing OpenAPI documentation for REST API.
+
+How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+[ ] Initial setup
+[ ] Working towards first release
+[X] Community building
+[ ] Nearing graduation
+[ ] Other:
+
+Date of last release:
+
+2017-08-26
+
+When were the last committers or PPMC members elected?
+
+
+Have your mentors been helpful and responsive or are things falling
+through the cracks? In the latter case, please list any open issues
+that need to be addressed.
+
+* Our mentor is very helpful and responsive.
+
+Signed-off-by:
+
+[ ](s2graph) Sergio Fernández
+Comments:
+[X](s2graph) Woonsan Ko
+Comments:
+
+IPMC/Shepherd notes:
+
+
+
+
+--------------------
+SDAP
+
+SDAP is an integrated data analytic center for Big Science problems.
+
+SDAP has been incubating since 2017-10-22.
+
+Three most important unfinished issues to address before graduating:
+
+1.
+2.
+3.
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+
+
+
+How has the community developed since the last report?
+
+
+
+
+How has the project developed since the last report?
+
+
+How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+[ ] Initial setup
+[ ] Working towards first release
+[ ] Community building
+[ ] Nearing graduation
+[ ] Other:
+
+Date of last release:
+
+XXXX-XX-XX
+
+When were the last committers or PPMC members elected?
+
+
+Have your mentors been helpful and responsive or are things falling
+through the cracks? In the latter case, please list any open issues
+that need to be addressed.
+
+
+Signed-off-by:
+
+[ ](sdap) Jörn Rottmann
+Comments:
+[ ](sdap) Trevor Grant
+Comments:
+
+IPMC/Shepherd notes:
+
+
+
+
+--------------------
+Tamaya Tamaya is a highly flexible configuration solution based on an modular, extensible and injectable key/value based design, which should provide a minimal but extendible modern and functional API leveraging SE, ME and EE environments. Tamaya has been incubating since 2014-11-14. Three most important unfinished issues to address before graduating: 1. Grow the PPMC from the existing community. 2. Make another Release 3. Blog about Tamaya Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be aware of? We'd like to graduate soon. How has the community developed since the last report? No new committers or contributors added, but some interaction via Github pull requests - thanks for the new possibilities. How has the project developed since the last report? Minor changes and SonarCloud integration, homepage improvements. How would you assess the podling's maturity? Please feel free to add your own commentary. [ ] Initial setup [ ] Working towards first release [X] Community building [X] Nearing graduation [ ] Other: Date of last release: 2017-05-28 0.3-incubating When were the last committers or PPMC members elected? * 2018-12: Aaron Coburn * 2018-12: William Lieurance Have your mentors been helpful and responsive or are things falling through the cracks? In the latter case, please list any open issues that need to be addressed. A new mentor was introduced but did not yet send anything to mailing lists.
+
+
+Signed-off-by:
+
+[ ](tamaya) John D. Ament
+Comments:
+[ ](tamaya) David Blevins
+Comments:
+[ ](tamaya) Kanchana Pradeepika Welagedara
+Comments:
+
+IPMC/Shepherd notes:
+
+
+
+
+--------------------
+Toree
+
+Toree provides applications with a mechanism to interactively and remotely
+access Apache Spark.
+
+Toree has been incubating since 2015-12-02.
+
+Three most important unfinished issues to address before graduating:
+
+1.
+2.
+3.
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+
+
+
+How has the community developed since the last report?
+
+
+
+
+How has the project developed since the last report?
+
+
+How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+[ ] Initial setup
+[ ] Working towards first release
+[ ] Community building
+[ ] Nearing graduation
+[ ] Other:
+
+Date of last release:
+
+XXXX-XX-XX
+
+When were the last committers or PPMC members elected?
+
+
+Have your mentors been helpful and responsive or are things falling
+through the cracks? In the latter case, please list any open issues
+that need to be addressed.
+
+
+Signed-off-by:
+
+[ ](toree) Luciano Resende
+Comments:
+[ ](toree) Julien Le Dem
+Comments:
+[ ](toree) Ryan Blue
+Comments:
+
+IPMC/Shepherd notes:
+
+
+
+
+--------------------
+Training
+
+The Training project aims to develop resources which can be used for training purposes in various media formats, languages and for various Apache and non-Apache target projects. 
+
+Training has been incubating since 2019-02-21.
+
+Three most important issues to address in the move towards graduation:
+
+  1. Agree upon underlying technology stack and architecture for training content
+  2. Develop first training topic contents
+  3. Set up our contribution process
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+- no critical issues at this point in time
+
+How has the community developed since the last report?
+
+- The project has been set up recently, so there is an initial activation/development towards a community.
+- The dev mailing list is active. The total number of posts in March was 160 and in April 140
+- Total number of subscribers is 32 (25 in March)
+
+How has the project developed since the last report?
+
+- The scope of the project deliverables and core procedures are still under discussion (e.g. what makes a release?)
+- We have had our first few commits. They were for infrastructure (e.g. website) and repository structure
+- We have been approached by a few more people wanting to donate content and we hope to be able to accept it soon
+- We actually have the first issue for an actual content donation (Apache Way, ZooKeeper and Git) and hope to have it included soon, the first ones will probably be slow while we work on processes and best practices
+
+How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+  [x] Initial setup
+  [] Working towards first release
+  [ ] Community building
+  [ ] Nearing graduation
+  [ ] Other:
+
+Date of last release:
+
+  n.a.
+
+When were the last committers or PPMC members elected?
+
+  n.a.
+
+Have your mentors been helpful and responsive or are things falling
+through the cracks? In the latter case, please list any open issues
+that need to be addressed.
+
+Signed-off-by:
+
+  [ ](training) Justin Mclean
+     Comments:
+  [x](training) Craig Russell
+     Comments:
+  [ ](training) Christofer Dutz
+     Comments:
+  [x](training) Lars Francke
+     Comments: Excited to finally discuss actual content!
+
+
+
+IPMC/Shepherd notes:
+
+
+
+
+--------------------
+
+Tuweni
+
+
+Apache Tuweni is a set of libraries and other tools to aid development of
+blockchain and other decentralised software in Java and other JVM languages.
+
+Apache Tuweni has been incubating since 2019-03-25.
+
+## Three most important unfinished issues to address before graduating:
+
+
+1. Grow the community;
+
+2. Have the works of the project comply with legal requirements of the ASF;
+
+3. Consistently releasing products;
+
+
+## Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+
+aware of?
+
+Currently there are no issues that require the involvement of either the
+Incubator PMC
+
+or the ASF board.
+
+
+## How has the community developed since the last report?
+
+As this is the first full month of the project incubating the development
+of the community
+
+has been low.
+
+The project started out with onboarding all parties showing interest
+
+at the pre-incubation discussions in general@incubator.a.o.
+
+The project consists of a healthy number of mentors and committers/PPMC
+Members.
+
+## How has the project developed since the last report?
+
+All required INFRA services have been put in play to have the community
+collaborate.
+
+The project is working on getting more body to the whole set of information
+pages
+
+(website, wiki, etc.)
+
+The project is working on getting its first release product vetted and
+released, and is also
+
+working on getting the Incubator clutch details up to date.
+
+
+## How would you assess the podling's maturity?
+
+
+[X] Initial setup
+
+[X] Working towards first release
+
+[X] Community building
+
+[ ] Nearing graduation
+
+[ ] Other:
+
+
+## Date of last release:
+
+Nothing has been released yet.
+
+
+## When were the last committers or PPMC members elected?
+
+No new committers and or PPMC members have been elected since bootstrapping
+
+the project.
+
+
+##Have your mentors been helpful and responsive or are things falling
+
+through the cracks?
+
+Our participating mentors have been very helpful sharing their insights in
+a timely manner. Kudos to them!
+
+
+
+Signed-off-by:
+
+[ ](tuweni) Jim Jagielski
+Comments:
+[X](tuweni) Dave Fisher
+Comments: Good start! Already reviewing release candidates
+[ ](tuweni) Kenneth Knowles
+Comments:
+[ ](tuweni) Jean-Baptiste Onofré
+Comments:
+[x](tuweni) Michael Wall
+Comments:
+[ ](tuweni) Furkan Kamaci
+Comments:
+
+IPMC/Shepherd notes:
+
+
+
+
+--------------------
+TVM
+
+TVM is a full stack open deep learning compiler stack for CPUs, GPUs, and
+specialized accelerators. It aims to close the gap between the productivity-
+focused deep learning frameworks, and the performance- or efficiency-oriented
+hardware backends.
+
+TVM has been incubating since 2019-03-06.
+
+Three most important unfinished issues to address before graduating:
+
+
+1.  Source code and website migration to ASF infra
+2.  Make the first Apache release
+3.  Continue to grow the community
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+
+How has the community developed since the last report?
+
+TVM community has welcomed one new committer in the past month
+
+How has the project developed since the last report?
+
+In the past month, 51 contributors have pushed 109 commits to master and 109 commits to all branches. 
+On master, 1,763 files have changed and there have been 44,070 additions and 13,852 deletions.
+See detailed monthly report
+- Mar: https://discuss.tvm.ai/t/tvm-monthly-march-2019/2083
+- April: https://discuss.tvm.ai/t/tvm-monthly-april-2019/2426
+
+How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+[x] Initial setup
+[x] Working towards first release
+[x] Community building
+[ ] Nearing graduation
+[ ] Other:
+
+Date of last release:
+
+not yet
+
+When were the last committers or PPMC members elected?
+
+2019 April 22
+
+
+Have your mentors been helpful and responsive or are things falling
+through the cracks? In the latter case, please list any open issues
+that need to be addressed.
+
+ Mentors are very helpful in helping to set up the podling and provide
+
+ helpful guidance.
+
+
+
+Signed-off-by:
+
+[X] (tvm) Markus Weimer
+Comments: 
+[ ](tvm) Byung-Gon Chun
+Comments:
+[ ](tvm) Sebastian Schelter
+Comments:
+[X](tvm) Henry Saputra
+Comments:
+[ ](tvm) Timothy Chen
+Comments:
+[X](tvm) Furkan Kamaci
+Comments:
+
+IPMC/Shepherd notes:
+
