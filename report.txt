@@ -1,0 +1,334 @@
+------------------------------------------------------------------
+This is the RAW Incubator Board report
+
+DO NOT USE THIS FOR REPORTS - it's just an experiment so far.
+
+Once/if we decide to use this mechanism, podlings will input their
+reports here. A script reformats it (see the build* scripts) and
+injects it in a <pre> section at 
+http://incubator.apache.org/report.html. The idea is that report
+authors can check that processed variant and tweak their report
+if anything was "eaten" by the processing.
+
+To test this, make a change to this file and check the above
+URL which should be updated within 2-3 minutes.
+---- TODO remove the above section in the preprocessor script? ---
+
+Incubator PMC report for May 2019
+
+The Apache Incubator is the entry path into the ASF for projects and
+codebases wishing to become part of the Foundation's efforts.
+
+There are presently 50 podlings incubating. During the month of April, podlings executed 10 distinct releases. We added two new IPMC members and no IPMC members retired.
+
+We have no new podlings this month. Three projects graduated last month 
+namely PLC4X, SkyWalking and Netbeans and several other podlings are 
+heading towards graduation in the next few months.
+
+One of the podlings that failed to report last month, Milagro failed to
+report again this month and the IPMC will discuss what to do. This is the 
+not first time this project has failed to report and it may not have a
+working PPMC.
+
+Two podlings Milagro and Toree have not submitted reports and will be asked
+to report next month.
+
+There were two IP clearances.
+
+The new Podling clutch page is working well and documentation has been  created clearly explains what information is collected from where.
+
+The incubator is providing a new service to podlings to provide feedback on
+releases. So far no podlings have taken up this service. 
+
+Mentors are being actively encouraged to vote on their podling releases so
+that the VOTEs show up on the general@ list with 3 +1 IPMC votes. While a 
+couple of podlings have managed to do this, most still need extra votes by 
+IPMC members outside their projects. The IPMC will need to look further
+into this.
+
+In a couple of cases, podlings canceled vote too early and were encouraged
+to continue voting.
+
+Incubator wiki is being deprecated, and it's been migrated to confluence. 
+Some of the pages were missed in the transfer and infra are looking into 
+why.
+
+The new wiki space has been reorganised and the pages categorised for easier
+navigation. A few minor issues have been encountered e.g. confluence 
+ignoring formatting but have been addressed. A few people have had permission
+issues and because of this move mentor sign-off is a little lower than normal. 
+
+The reorganisation and cleanup of incubator web pages started last month 
+continues on.
+
+* Community
+
+New IPMC members:
+  - Arpit Agarwal
+  - Kevin Ratnasekera 
+
+People who left the IPMC:
+  None
+
+* New Podlings
+  None
+
+* Podlings that failed to report, expected next month
+  - Milagro
+  - Toree
+
+* Graduations
+  - Netbeans
+  - PLC4X
+  - SkyWalking
+
+The board has motions for the following:
+  - Dubbo
+
+* Releases
+
+The following releases entered distribution during the month of
+April:
+ - DLab 2.1
+ - Druid 0.14.0
+ - Dubbo Spring Boot 2.7.1
+ - Livy 0.6.0
+ - NetBeans 11.0 
+ - OpenWhisk Client JS 3.19.0
+ - OpenWhisk Composer 0.11.0 
+ - Ratis 0.3.0 
+ - ShardingSphere 4.0.0
+ - Singa 2.0.0
+
+* IP Clearance
+ - Sling Journal-based Content Distribution
+ - IP clearance for SkyWalking RocketBot UI
+
+* Legal / Trademarks
+  None
+
+* Infrastructure
+  None, although it still unknown if infrastructure will allow
+  distribution of artefacts with IP or other serious issues.
+
+* Miscellaneous
+  - Discussion of use of stack overflow
+
+|----------------------------------------------------------------------
+Table of Contents
+brpc
+DataSketches
+Doris
+ECharts
+Edgent
+Heron
+MXNet
+PageSpeed
+Pinot
+Ratis
+S2Graph
+SDAP
+Tamaya
+Training
+Tuweni
+TVM
+
+|------------------------------------------------------------------------------------------
+
+brpc
+
+brpc is an industrial-grade RPC framework for building reliable and 
+high-performance services.
+
+brpc has been incubating since 2018-11-13.
+
+Three most important issues to address in the move towards graduation:
+  1. We begin to prepare an apache release, including prepare for unified  License/Copyright, clean dependencies.
+  2. We depend on npsr’ time, it is MPL/LGPL license, we need to find  another lib for it.
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be aware 
+of?
+
+  No
+
+How has the community developed since the last report?
+
+  Added two potential committers, they are huwenwei and wangweibing ,
+  they will participate in the work of first apache release , and take some 
+  tasks already.  .
+
+How has the project developed since the last report?
+
+  There are many bugfix into the trunk.
+
+How would you assess the podling's maturity?
+
+  Still in early stage
+
+Please feel free to add your own commentary.
+
+  [ ] Initial setup
+  [X] Working towards first release
+  [X] Community building
+  [ ] Nearing graduation
+  [ ] Other:
+
+Date of last release:
+
+  Still working on the first release 
+
+When were the last committers or PPMC members elected?
+
+  2019/2. Jerrytan became a new member of PPMC
+
+Have your mentors been helpful and responsive or are things falling through the cracks? In the latter case, please list any open issues that need to be addressed.
+
+Signed-off-by:
+
+  [X](brpc) Kevin A. McGrail
+     Comments: Improving steadily.
+  [ ](brpc) Jean-Baptiste Onofré
+     Comments:
+  [X](brpc) Von Gosling
+     Comments:
+
+IPMC/Shepherd notes:
+  Von Gosling: brpc community should pay more warm in the community building 
+  except the first release.
+ 
+
+--------------------
+DataSketches
+
+DataSketches is an open source, high-performance library of stochastic streaming algorithms commonly called "sketches" in the data sciences. Sketches are small, stateful programs that process massive data as a stream and can provide approximate answers, with mathematical guarantees, to computationally difficult queries orders-of-magnitude faster than traditional, exact  methods.
+
+DataSketches has been incubating since 2019-03-30.
+
+Three most important unfinished issues to address before graduating:
+
+  1. Finish IP Assignments
+  2. Code Migration
+  3. Perform a Release
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+  No
+
+How has the community developed since the last report?
+
+  We have the key committers signed up. We are all learning how
+  to navigate in the Apache environment and how to find things.
+
+How has the project developed since the last report?
+
+  This is our first report.
+
+How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+  [X] Initial setup
+  [ ] Working towards first release
+  [ ] Community building
+  [ ] Nearing graduation
+  [ ] Other:
+
+Date of last release:
+
+  Our DataSketches.GitHub.io site is quite active as we are 
+  very active with new code and releases from this site.
+  For example, our latest release of sketches-core was yesterday,
+  25 April 2019.  
+
+  We are a long way from being able to release from the migrated
+  Apache code base as it doesn't yet exist.
+
+  XXXX-XX-XX
+
+When were the last committers or PPMC members elected?
+
+  We have just signed up are initial list of committers.
+
+Have your mentors been helpful and responsive or are things falling
+through the cracks? In the latter case, please list any open issues
+that need to be addressed.
+
+  Kenneth Knowles has been extremely helpful! Thank you!
+
+Signed-off-by:
+
+  [X](datasketches) Liang Chen
+  Comments:
+  [X](datasketches) Kenneth Knowles
+  Comments: Initial set up has been a bit slow; that's on me
+  [X](datasketches) Furkan Kamaci
+  Comments:
+
+IPMC/Shepherd notes:
+
+--------------------
+Doris
+
+Doris is a MPP-based interactive SQL data warehousing for reporting and
+analysis.
+
+Doris has been incubating since 2018-07-18.
+
+Three most important unfinished issues to address before graduating:
+
+  1. Hold a Meetup to communicate with developers and users.
+  2. Prepare for the second Apache Release.
+  3. Grow the community encouraging patches and recognizing sustained 
+  contributions by adding as Committers and PPMC members.
+
+Any issues that the Incubator PMC (IPMC) or ASF Board wish/need to be
+aware of?
+
+  None.
+
+How has the community developed since the last report?
+
+  There are 29 contributors now.
+
+How has the project developed since the last report?
+
+  Excluding merges, 12 authors have pushed 75 commits to master and 233 
+  commits to all branches. 
+  On master, 253 files have changed and there have been 14,050 additions and 
+  3,027 deletions.
+
+How would you assess the podling's maturity?
+Please feel free to add your own commentary.
+
+  [ ] Initial setup
+  [X] Working towards first release
+  [X] Community building
+  [ ] Nearing graduation
+  [ ] Other:
+
+Date of last release:
+
+  2019-02-21
+
+When were the last committers or PPMC members elected?
+
+  N/A.
+
+Have your mentors been helpful and responsive or are things falling
+through the cracks? In the latter case, please list any open issues
+that need to be addressed.
+
+  Yes, our mentors have been helpful and responsive.
+
+Signed-off-by:
+
+  [X](doris) Dave Fisher
+  Comments: Will need to start discussions about possible new committers.
+  [ ](doris) Willem Ning Jiang
+  Comments:
+  [ ](doris) Shao Feng Shi
+  Comments:
+
+IPMC/Shepherd notes:
+
+--------------------
