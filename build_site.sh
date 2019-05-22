@@ -7,8 +7,6 @@ ME=`basename $0`
 rm -rf $WORKDIR
 mkdir -p $WORKDIR
 
-./preprocess_content.sh
-
 # now bake the site
 ./bake.sh -b . $WORKDIR
 
