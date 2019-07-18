@@ -31,6 +31,7 @@
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Podling Guides <b class="caret"></b></a>
               <ul class="dropdown-menu">
+                <li><a href="/cookbook">Cookbook</a></li>
                 <%guides.each {guide -> %>
                   <li><a href="/${guide.uri}">${guide.title}</a></li>
                 <%}%>
