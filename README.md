@@ -10,39 +10,7 @@ and raise a pull request.
 Use the [general@incubator.a.o](https://lists.apache.org/list.html?general@incubator.apache.org) mailing list to contact
 the Incubator PMC which manages this website.
 
-## Prerequisites for building the website locally
-
-The website is built using [JBake](https://jbake.org/) and Groovy templates.
-The builds for the website do require internet access.
-
-- Install JBake from http://jbake.org/download.html
-  - Currently it looks like version 2.6.0 or greater is required.
-- Create an environment variable `JBAKE_HOME` pointing to your JBake installation.
-  - `export JBAKE_HOME=/home/jenkins/tools/jbake/jbake-2.6.3`
-  - `export JBAKE_HOME=/usr/local/Cellar/jbake/2.6.4`
-- Ensure that you have a JVM locally, e.g. [OpenJDK](http://openjdk.java.net/install/)
-
-## Building & testing the site
-
-To test the site locally, use 
-
-    ./build_local.sh -b -s
-    
-This builds the site, serves it locally at  http://localhost:8820/ and rebuilds the content fairly
-quickly if any changes are made.
-
-That script can be called with any of the [arguments you would pass to jbake](https://jbake.org/docs/2.6.4/#bake_command).
-
-### Clutch and Legacy SVN Content (careful)
-
-**Warning** do not run the clutch build scripts unless you are sure you understand them, and please be careful not to commit any of the resulting assets and pages to the git master branch. That content and data is only committed to the `asf-site` 
-branch's `reserve`folder as mentioned below.
-
-The `build_local_clutch.sh` script can be used to build the Clutch data, but that's updated automatically by the Jenkins 
-builds as `build_clutch.sh` mentioned below so it's not required unless you want to test that.
-
-
-## Automated builds - website and Clutch data
+## Automated publishing - Website and Clutch data
 
 Commits to the `master` branch are automatically checked out and built using `build_site.sh` by the 
 [Incubator GIT Site - part 2](https://builds.apache.org/view/H-L/view/Incubator/job/Incubator%20GIT%20Site%20-%20part%202/)
@@ -60,6 +28,37 @@ and the html is built using `ant docs` in the `build_clutch.sh` script.
 
 Any build failures are reported to *[cvs@incubator.a.o](https://lists.apache.org/list.html?cvs@incubator.apache.org)*
 mailing list.
+
+## Prerequisites for building the website locally
+
+The website is built using [JBake](https://jbake.org/) and Groovy templates.
+The builds for the website do require internet access.
+
+- Install JBake from http://jbake.org/download.html
+  - Currently it looks like version 2.6.0 or greater is required.
+- Create an environment variable `JBAKE_HOME` pointing to your JBake installation.
+  - `export JBAKE_HOME=/home/jenkins/tools/jbake/jbake-2.6.3`
+  - `export JBAKE_HOME=/usr/local/Cellar/jbake/2.6.4`
+- Ensure that you have a JVM locally, e.g. [OpenJDK](http://openjdk.java.net/install/)
+
+## Building & testing the site locally
+
+To test the site locally, use 
+
+    ./build_local.sh -b -s
+    
+This builds the site, serves it locally at  http://localhost:8820/ and rebuilds the content fairly
+quickly if any changes are made.
+
+That script can be called with any of the [arguments you would pass to jbake](https://jbake.org/docs/2.6.4/#bake_command).
+
+### Building the Clutch and Legacy SVN Content (if you know what you're doing)
+
+**Warning** do not run the clutch build scripts unless you are sure you understand them, and please be careful not to commit any of the resulting assets and pages to the git master branch. That content and data is only committed to the `asf-site` 
+branch's `reserve`folder as mentioned below.
+
+The `build_local_clutch.sh` script can be used to build the Clutch data, but that's updated automatically by the Jenkins 
+builds as `build_clutch.sh` mentioned below so it's not required unless you want to test that.
 
 ## Asciidoctor
 
