@@ -286,7 +286,7 @@
         {
           "description": "Apache BatchEE",
           "last_update_int": 1559400686,
-          "last_update_txt": "7 weeks ago"
+          "last_update_txt": "8 weeks ago"
         }
       ]
     ],
@@ -384,14 +384,14 @@
     "rawReportingGroup": "group-3",
     "releases": [],
     "reportingGroup": "March, June, September, December",
-    "reportingMonthly": true,
+    "reportingMonthly": false,
     "repositories": [
       [
         "incubator-brpc",
         {
           "description": "Apache BRPC (Incubating)",
           "last_update_int": 1563766842,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
+          "last_update_txt": "3 days ago"
         }
       ]
     ],
@@ -685,7 +685,7 @@
         {
           "description": "Apache daffodil (Incubating)",
           "last_update_int": 1563293907,
-          "last_update_txt": "7 days ago"
+          "last_update_txt": "8 days ago"
         }
       ],
       [
@@ -777,7 +777,7 @@
     "rawReportingGroup": "group-2",
     "releases": {},
     "reportingGroup": "February, May, August, November",
-    "reportingMonthly": true,
+    "reportingMonthly": false,
     "repositories": [
       [
         "incubator-datasketches",
@@ -800,7 +800,7 @@
         {
           "description": "Apache Datasketches cpp",
           "last_update_int": 1563920996,
-          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
         }
       ],
       [
@@ -808,7 +808,7 @@
         {
           "description": "Apache datasketches",
           "last_update_int": 1563584150,
-          "last_update_txt": "4 days ago"
+          "last_update_txt": "5 days ago"
         }
       ],
       [
@@ -824,7 +824,7 @@
         {
           "description": "Apache Datasketches memory",
           "last_update_int": 1563919586,
-          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
         }
       ],
       [
@@ -832,7 +832,7 @@
         {
           "description": "Apache Datasketches pig",
           "last_update_int": 1563584215,
-          "last_update_txt": "4 days ago"
+          "last_update_txt": "5 days ago"
         }
       ],
       [
@@ -840,7 +840,7 @@
         {
           "description": "Apache Datasketches postgresql",
           "last_update_int": 1562183727,
-          "last_update_txt": "20 days ago"
+          "last_update_txt": "21 days ago"
         }
       ],
       [
@@ -848,7 +848,7 @@
         {
           "description": "Apache Datasketches vector",
           "last_update_int": 1563584243,
-          "last_update_txt": "4 days ago"
+          "last_update_txt": "5 days ago"
         }
       ],
       [
@@ -856,7 +856,7 @@
         {
           "description": "Apache datasketches generated website",
           "last_update_int": 1562120750,
-          "last_update_txt": "21 days ago"
+          "last_update_txt": "22 days ago"
         }
       ]
     ],
@@ -926,6 +926,7 @@
         "dmysakovets",
         "hsaputra",
         "ioleksandr",
+        "kamaci",
         "moskovych",
         "nbarabash",
         "ochaparin",
@@ -938,10 +939,10 @@
         "vvitanska",
         "yandrew"
       ],
-      "numberCommitters": 18,
+      "numberCommitters": 19,
       "numberCommittersNew": 0,
       "numberPMCEquals": false,
-      "numberPMCMembers": 15,
+      "numberPMCMembers": 16,
       "owners": [
         "ankovalyshyn",
         "bhliva",
@@ -949,6 +950,7 @@
         "dliaskovskyi",
         "hsaputra",
         "ioleksandr",
+        "kamaci",
         "moskovych",
         "nbarabash",
         "ochaparin",
@@ -972,6 +974,10 @@
       [
         "Konstantin I Boudnik",
         "cos"
+      ],
+      [
+        "Furkan Kamaci",
+        "kamaci"
       ]
     ],
     "news": [
@@ -990,14 +996,14 @@
       }
     },
     "reportingGroup": "March, June, September, December",
-    "reportingMonthly": true,
+    "reportingMonthly": false,
     "repositories": [
       [
         "incubator-dlab",
         {
           "description": "Apache DLab",
-          "last_update_int": 1563890482,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_int": 1563980976,
+          "last_update_txt": "<span style='color: #070;'>&lt;1 hour ago</span>"
         }
       ]
     ],
@@ -1145,8 +1151,8 @@
         "incubator-doris",
         {
           "description": "Apache Doris (Incubating)",
-          "last_update_int": 1563889370,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_int": 1563977880,
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
         }
       ],
       [
@@ -1348,8 +1354,8 @@
         "incubator-druid",
         {
           "description": "Apache Druid (Incubating)",
-          "last_update_int": 1563930565,
-          "last_update_txt": "<span style='color: #070;'>&lt;15 minutes ago</span>"
+          "last_update_int": 1563982154,
+          "last_update_txt": "<span style='color: #070;'>&lt;30 minutes ago</span>"
         }
       ],
       [
@@ -1357,7 +1363,7 @@
         {
           "description": "Apache Druid Website Incubating",
           "last_update_int": 1562862874,
-          "last_update_txt": "12 days ago"
+          "last_update_txt": "13 days ago"
         }
       ],
       [
@@ -1365,7 +1371,7 @@
         {
           "description": "Apache druid",
           "last_update_int": 1563225478,
-          "last_update_txt": "8 days ago"
+          "last_update_txt": "9 days ago"
         }
       ]
     ],
@@ -1479,8 +1485,8 @@
         "incubator-echarts",
         {
           "description": "ApacheECharts (Incubating)",
-          "last_update_int": 1563163079,
-          "last_update_txt": "9 days ago"
+          "last_update_int": 1563935147,
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
         }
       ],
       [
@@ -1488,7 +1494,7 @@
         {
           "description": "Apache Echarts Doc",
           "last_update_int": 1563867544,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
         }
       ],
       [
@@ -1702,7 +1708,6 @@
     "ldap": {
       "members": [
         "aford",
-        "atri",
         "cgimenez",
         "dmeikle",
         "lewismc",
@@ -1713,13 +1718,12 @@
         "rf",
         "tallison"
       ],
-      "numberCommitters": 11,
+      "numberCommitters": 10,
       "numberCommittersNew": 0,
       "numberPMCEquals": true,
-      "numberPMCMembers": 11,
+      "numberPMCMembers": 10,
       "owners": [
         "aford",
-        "atri",
         "cgimenez",
         "dmeikle",
         "lewismc",
@@ -1857,7 +1861,7 @@
         {
           "description": "Apache senssoft (Incubating) parent project repos",
           "last_update_int": 1563075497,
-          "last_update_txt": "10 days ago"
+          "last_update_txt": "11 days ago"
         }
       ],
       [
@@ -1905,7 +1909,7 @@
         {
           "description": "Apache SensSoft User Ale JS (Incubating)",
           "last_update_int": 1562202760,
-          "last_update_txt": "20 days ago"
+          "last_update_txt": "21 days ago"
         }
       ]
     ],
@@ -2050,7 +2054,7 @@
         {
           "description": "Apache gobblin (Incubating)",
           "last_update_int": 1554003261,
-          "last_update_txt": "16 weeks ago"
+          "last_update_txt": "17 weeks ago"
         }
       ]
     ],
@@ -2183,7 +2187,7 @@
         {
           "description": "Apache Heron (Incubating)",
           "last_update_int": 1563859737,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
         }
       ]
     ],
@@ -2425,7 +2429,7 @@
         {
           "description": "Apache Hivemall (incubating) Website",
           "last_update_int": 1561741138,
-          "last_update_txt": "25 days ago"
+          "last_update_txt": "26 days ago"
         }
       ]
     ],
@@ -2540,7 +2544,7 @@
         {
           "description": "Apache Hudi",
           "last_update_int": 1563565113,
-          "last_update_txt": "4 days ago"
+          "last_update_txt": "5 days ago"
         }
       ]
     ],
@@ -2642,14 +2646,14 @@
     "rawReportingGroup": "group-3",
     "releases": [],
     "reportingGroup": "March, June, September, December",
-    "reportingMonthly": true,
+    "reportingMonthly": false,
     "repositories": [
       [
         "incubator-iceberg",
         {
           "description": "Apache Iceberg",
           "last_update_int": 1563567182,
-          "last_update_txt": "4 days ago"
+          "last_update_txt": "5 days ago"
         }
       ]
     ],
@@ -2796,8 +2800,8 @@
         "incubator-iotdb",
         {
           "description": "Apache iotdb",
-          "last_update_int": 1563895026,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_int": 1563975555,
+          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
         }
       ],
       [
@@ -2805,7 +2809,7 @@
         {
           "description": "Apache iotdb",
           "last_update_int": 1563780258,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
+          "last_update_txt": "2 days ago"
         }
       ]
     ],
@@ -2989,7 +2993,7 @@
         {
           "description": "Apache livy (Incubating)",
           "last_update_int": 1563790542,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
+          "last_update_txt": "2 days ago"
         }
       ],
       [
@@ -3201,7 +3205,7 @@
         {
           "description": "Apache Milagro (Incubating)",
           "last_update_int": 1562081212,
-          "last_update_txt": "21 days ago"
+          "last_update_txt": "22 days ago"
         }
       ],
       [
@@ -3217,7 +3221,7 @@
         {
           "description": "Apache milagro (Incubating)",
           "last_update_int": 1561843739,
-          "last_update_txt": "24 days ago"
+          "last_update_txt": "25 days ago"
         }
       ],
       [
@@ -3241,7 +3245,7 @@
         {
           "description": "Apache Milagro Decentralized Trust Authority",
           "last_update_int": 1562080637,
-          "last_update_txt": "21 days ago"
+          "last_update_txt": "22 days ago"
         }
       ],
       [
@@ -3582,7 +3586,7 @@
         "incubator-mxnet",
         {
           "description": "Apache MXNet  (Incubating)",
-          "last_update_int": 1563897997,
+          "last_update_int": 1563945525,
           "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
         }
       ],
@@ -3590,8 +3594,8 @@
         "incubator-mxnet-site",
         {
           "description": "Apache MXNet Site",
-          "last_update_int": 1563931063,
-          "last_update_txt": "<span style='color: #070;'>&lt;15 minutes ago</span>"
+          "last_update_int": 1563974895,
+          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
         }
       ],
       [
@@ -4170,7 +4174,7 @@
         {
           "description": "Apache module for rewriting web pages to reduce latency and b...",
           "last_update_int": 1563878994,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
         }
       ],
       [
@@ -4202,7 +4206,7 @@
         {
           "description": "gypified zlib for PageSpeed",
           "last_update_int": 1515854940,
-          "last_update_txt": "79 weeks ago"
+          "last_update_txt": "80 weeks ago"
         }
       ]
     ],
@@ -4374,8 +4378,8 @@
         "incubator-pinot",
         {
           "description": "Apache Pinot",
-          "last_update_int": 1563930947,
-          "last_update_txt": "<span style='color: #070;'>&lt;15 minutes ago</span>"
+          "last_update_int": 1563940528,
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
         }
       ],
       [
@@ -4506,7 +4510,7 @@
         {
           "description": "Apache Pony Mail (Incubating) Site",
           "last_update_int": 1555777352,
-          "last_update_txt": "13 weeks ago"
+          "last_update_txt": "14 weeks ago"
         }
       ]
     ],
@@ -4788,7 +4792,7 @@
         {
           "description": "Apache Rya (Incubating)",
           "last_update_int": 1563285794,
-          "last_update_txt": "7 days ago"
+          "last_update_txt": "8 days ago"
         }
       ],
       [
@@ -5162,7 +5166,7 @@
         {
           "description": "Apache sdap (Incubating)",
           "last_update_int": 1563214311,
-          "last_update_txt": "8 days ago"
+          "last_update_txt": "9 days ago"
         }
       ],
       [
@@ -5339,8 +5343,8 @@
         "incubator-shardingsphere",
         {
           "description": "Apache Shardingsphere (Incubating)",
-          "last_update_int": 1563896759,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_int": 1563977877,
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
         }
       ],
       [
@@ -5348,7 +5352,7 @@
         {
           "description": "Apache Shardingsphere (Incubating) doc",
           "last_update_int": 1563410647,
-          "last_update_txt": "6 days ago"
+          "last_update_txt": "7 days ago"
         }
       ],
       [
@@ -5506,7 +5510,7 @@
         {
           "description": "Apache Singa (Incubating)",
           "last_update_int": 1563771498,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
+          "last_update_txt": "2 days ago"
         }
       ],
       [
@@ -5514,7 +5518,7 @@
         {
           "description": "Apache singa site",
           "last_update_int": 1562789627,
-          "last_update_txt": "13 days ago"
+          "last_update_txt": "14 days ago"
         }
       ]
     ],
@@ -5752,7 +5756,7 @@
         "incubator-superset",
         {
           "description": "Apache Superset (Incubating)",
-          "last_update_int": 1563909250,
+          "last_update_int": 1563945532,
           "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
         }
       ],
@@ -5761,7 +5765,7 @@
         {
           "description": "Apache Superset Site (Incubating)",
           "last_update_int": 1562539122,
-          "last_update_txt": "16 days ago"
+          "last_update_txt": "17 days ago"
         }
       ]
     ],
@@ -5955,7 +5959,7 @@
         {
           "description": "Apache Tamaya",
           "last_update_int": 1561760361,
-          "last_update_txt": "25 days ago"
+          "last_update_txt": "26 days ago"
         }
       ],
       [
@@ -5963,7 +5967,7 @@
         {
           "description": "Apache Tamaya (incubating) Extensions",
           "last_update_int": 1561754288,
-          "last_update_txt": "25 days ago"
+          "last_update_txt": "26 days ago"
         }
       ],
       [
@@ -6390,7 +6394,7 @@
         {
           "description": "Apache Tephra (Incubating)",
           "last_update_int": 1563477585,
-          "last_update_txt": "5 days ago"
+          "last_update_txt": "6 days ago"
         }
       ]
     ],
@@ -6704,7 +6708,7 @@
         {
           "description": "Apache training",
           "last_update_int": 1562514649,
-          "last_update_txt": "16 days ago"
+          "last_update_txt": "17 days ago"
         }
       ]
     ],
@@ -6861,14 +6865,14 @@
       }
     },
     "reportingGroup": "February, May, August, November",
-    "reportingMonthly": true,
+    "reportingMonthly": false,
     "repositories": [
       [
         "incubator-tuweni",
         {
           "description": "Apache Tuweni",
-          "last_update_int": 1563474550,
-          "last_update_txt": "5 days ago"
+          "last_update_int": 1563935374,
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
         }
       ],
       [
@@ -6876,7 +6880,7 @@
         {
           "description": "Apache tuweni website",
           "last_update_int": 1562089495,
-          "last_update_txt": "21 days ago"
+          "last_update_txt": "22 days ago"
         }
       ]
     ],
@@ -7076,7 +7080,7 @@
         {
           "description": "Apache Warble incubating Monitoring Node Package",
           "last_update_int": 1530370438,
-          "last_update_txt": "55 weeks ago"
+          "last_update_txt": "56 weeks ago"
         }
       ],
       [
@@ -7224,7 +7228,7 @@
         {
           "description": "Apache Weex (Incubating)",
           "last_update_int": 1563885019,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
         }
       ],
       [
@@ -7232,7 +7236,7 @@
         {
           "description": "Playground for Apache Weex, demo purpose only",
           "last_update_int": 1563788574,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
+          "last_update_txt": "2 days ago"
         }
       ],
       [
@@ -7240,7 +7244,7 @@
         {
           "description": "Apache Weex Site",
           "last_update_int": 1563875742,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
         }
       ]
     ],
