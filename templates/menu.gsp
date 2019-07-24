@@ -18,6 +18,7 @@
                 <%policys.each {policy -> %>
                   <li><a href="/${policy.uri}">${policy.title}</a></li>
                 <%}%>
+                <li><a href="/ip-clearance/">Intellectual Property Clearance</a></li>
               </ul>
             </li>
             <li class="dropdown">
