@@ -15,9 +15,7 @@
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Policies <b class="caret"></b></a>
               <ul class="dropdown-menu">
-                <%policys.each {policy -> %>
-                  <li><a href="/${policy.uri}">${policy.title}</a></li>
-                <%}%>
+                <li><a href="/policy/incubation.html">Incubation Policy</a></li>
                 <li><a href="/ip-clearance/">Intellectual Property Clearance</a></li>
               </ul>
             </li>
