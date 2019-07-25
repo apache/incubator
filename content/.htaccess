@@ -211,7 +211,8 @@ RedirectMatch Permanent ^/zetacomponents(/.*)?$ http://incubator.apache.org/proj
 # from the old webiste
 Redirect Permanent /incubation/Incubation_Policy.html /policy/incubation.html
 Redirect Permanent /incubation/Process_Description.html /policy/process.html
-Redirect Permanent /incubation/Roles_and_Responsibilities.html /policy/roles_and_responsibilities.html
+Redirect Permanent /incubation/Roles_and_Responsibilities.html /guides/roles_and_responsibilities.html
+Redirect Permanent /policy/Roles_and_Responsibilities.html /guides/roles_and_responsibilities.html
 
 # other URLs
 RedirectMatch Permanent howtoparticipate.html /guides/participation.html
