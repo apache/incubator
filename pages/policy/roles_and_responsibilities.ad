@@ -13,8 +13,7 @@ This document describes the roles (including Sponsor, Contributor, Mentor) and p
 
 The link:http://www.apache.org/foundation/board/[Board Of Directors] of the
 link:http://www.apache.org/foundation/[Apache Software Foundation]
-manages
-the organizational affairs of the Foundation.
+manages the organizational affairs of the Foundation.
 The board is elected by the
 link:http://www.apache.org/foundation/members.html[Apache Members].
 
@@ -22,8 +21,7 @@ The Board delegates responsibility for incubation to the
 link:#Incubator+Project+Management+Committee+%28PMC%29[IPMC].
 
 link:http://www.apache.org/foundation/board/[Directors]
-are often active in the
-Incubator.
+are often active in the Incubator.
 link:http://www.apache.org/foundation/how-it-works.html#hats[Conventionally],
 unless indicated otherwise, individuals speak personally. So, a Director speaking
 without their Board hat is not stating policy but expressing a personal opinion.
@@ -35,7 +33,7 @@ See also: link:http://www.apache.org/foundation/how-it-works.html#management[How
 The Incubator PMC [link:https://whimsy.apache.org/board/minutes/Incubator.html#minutes_2002_10_16[resolution]] is responsible for:
 
 * acceptance and oversight of candidate projects submitted or proposed to become part of the Foundation;
-* providing guidance and ensuring that sub-projects under it's purview develop products according to the Foundation's philosophy and guidelines for collaborative development;
+* providing guidance and ensuring that podlings under it's purview develop products according to the Foundation's philosophy and guidelines for collaborative development;
 * providing a repository for the storage of incubation history and information;
 * assisting a Podling's Mentor in discharging her/his duties;
 * regularly evaluating projects under its purview for the purposes of recommending to the Sponsor whether the project should:
@@ -56,15 +54,12 @@ role of reviewing the status of a project under incubation.
 Finally, the Incubator PMC is the ASF body with the greatest level of
 expertise and experience in the Incubation process. They provide a
 store of knowledge that can be called on by the Mentor or a Podling
-during (or even after) the incubation process. In cases where an
-Incubation is particularly large, or where the Incubator PMC
-otherwise feels the Mentor needs additional assistance, the Incubator
-PMC may choose to provide an experienced Mentor to assist the main
-Mentor in discharging their duty.
+during (or even after) the incubation process.
 
 Individuals may be nominated to join the IPMC after a vote which
-passes with more than 3/4 of those voting. Additionally, any Member of the
-Apache Software Foundation may join the IPMC by request.
+passes.
+Additionally, any Member of the Apache Software Foundation may join
+the IPMC by request.
 
 See also: link:http://www.apache.org/foundation/how-it-works.html#management[How Apache Works]
 
@@ -93,9 +88,8 @@ by the Champion to the Sponsor for acceptance as a Podling.
 Acceptance of a candidate shall be subject to the formal voting
 method of the Sponsor. Should that vote be accepted, the Sponsor will
 request that the Incubator PMC accept the candidate as a Podling
-under incubation. The Sponsor shall assign a Mentor, who shall be
-granted membership of the Incubator PMC for the duration of the
-incubation process.
+under incubation. The Sponsor shall assign several Mentors, who must
+Incubator PMC members.
 
 == Champion
 
@@ -128,15 +122,15 @@ process.
 
 A Sponsor will be one of:
 
-* A Top Level Project within the ASF. In this case, the project in question has agreed that the candidate is a good fit for their project, and will take on the candidate as a sub-project upon successful completion of Incubation.
+* A Top Level Project within the ASF. In this case, the project in question has agreed that the
+candidate is a good fit for their project, and will take on the candidate as a sub-project upon
+successful completion of Incubation.
 * The Incubator PMC. In this case, the Incubator PMC agrees that the
 project in question will make a good addition to the ASF, but there
 is no clear "owner" of the candidate should it successfully complete
-incubation. An incubation exit requirement for such candidates will
-be the identification (and successfully lobbying) of an "owner" entity
-* either the link:#board[Board] (and the candidate will be a TLP) or another
-project. In most cases, the Incubator PMC is the correct Sponsor (Candidates should discuss this
-with their Champion).
+incubation.
+In most cases, the Incubator PMC is the correct Sponsor (Candidates should
+discuss this with their Champion).
 
 [NOTE]
 ====
@@ -161,7 +155,7 @@ expected to remedy the situation.
 ====
 
 == Responsibilities of the Sponsor
-- to provide initial approval for a Canidate to be accepted as a Podling
+- to provide initial approval for a Candidate to be accepted as a Podling
 - to nominate Mentors for the incubation process
 
 == Mentor
@@ -180,33 +174,29 @@ a timely manner and ensure that decisions or resolutions affecting
 the Podling are communicated promptly and expeditiously;
 - to represent the interests of the Podling on the Incubator PMC;
 - to liaise between the ASF Secretary and the Podling on matters
-concerning CLA submission and acknowledgments;
+concerning CLA submission and acknowledgements;
 - to liaise between the ASF Infrastructure team and the Podling on
-matters concerning infrastructure support (mailing lists, CVS
+matters concerning infrastructure support (mailing lists, version control
 establishment, account establishment, etc.);
 - to assist the Podling on matters concerning the resolution of license
 transfers, copyright assignments, and/or software grants where
 applicable; and
 - to provide where and as appropriate, guidance on matters concerning
-Apache policies and practices - including the establishment of its
-internal steering committee.
+Apache policies and practices.
 
 === Responsibilities toward the Incubator PMC
 
 - monitoring the Podling through the incubation process;
-- evaluating the compliance of the Podling with Incubator PMC policies
+- evaluating the compliance of the Podling with Incubator and ASF policies
 and procedures;
 - assessment of the Podling status with respect to continuation/exit
 strategy;
-- to notify the Incubator PMC and Sponsor of the completion of
-administrative actions; and
 - to provide updates to the Incubator PMC and Sponsor on the status of
 license grants (where and as appropriate) and other relevant legal
 information pertaining to the Podling.
 
 === Responsibilities toward the Sponsor
-- provide status to the Sponsor as to the progress
-of the podling
+- provide status to the Sponsor as to the progress of the podling
 
 == Committers
 
@@ -215,11 +205,7 @@ All committers on podlings should be familiar with link:http://www.apache.org/de
 The candidate shall declare an initial set of committers. On
 acceptance of a candidate project, the assigned Mentors shall be given
 access to the Podling's repository for the duration of the
-incubation process. This is to allow the Mentors to perform their
-incubation duties, and is for administrative purposes only. To be
-given full committer privileges, such as the right to add new code to
-the repository, the Mentors must earn them as would any other
-potential new committer. In some cases, the Mentors may be part of the
+incubation process. In some cases, the Mentors may be part of the
 initial set of declared committers, but this is not a requirement of
 the Incubation process.
 
@@ -248,8 +234,6 @@ During the incubation, the committers will be expected to show how,
 as a group, they are upholding the ideals of the Apache community. In
 particular, as the Podling evolves it is anticipated that the Podling
 will establish procedures for the introduction of new committers
-through a process consistent with established Apache practices. If
-you are aiming for TLP status you may also want to start on drafting
-the policy and procedures you aim to put in place once accepted.
+through a process consistent with established Apache practices.
 
 
