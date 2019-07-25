@@ -33,10 +33,8 @@ the Incubator PMC.
 - The published site for each podling must conform to the guidelines in link:/guides/branding.html[Podling Branding/Publicity].
 - Podlings should review link:https://www.apache.org/foundation/marks/linking[Corporate Recognition Best Practices], link:https://www.apache.org/foundation/marks/resources[Apache trademark information], and must aim to be in compliance with link:https://www.apache.org/foundation/marks/pmcs[Apache Project Website Branding Policy]
 - The sources for every podling site sources should be maintained in the podling's site SVN or git directory
-- The published site for each podling should conform to this URL space: #http://podlingname.incubator.apache.org/#
-- The staging site (if using CMS) for each podling should conform to this URL space: #http://podlingname.staging.apache.org/#
-- Every podling should maintain an incubation status file under: #http://incubator.apache.org/projects/podlingname.html#
-- Eventual extra incubation documents should be filed under: #http://incubator.apache.org/projects/podlingname/**#
+- The published site for each podling should conform to this URL space: #http://podlingname.incubator.apache.org/# or #http://podlingname.apache.org/#
+- Every podling should maintain an incubation status file under: #http://incubator.apache.org/projects/podlingname.html# (this is generated)
 
 == Creating the Podling Website
 === Creating A Good Podling Site
@@ -55,9 +53,7 @@ after incubation to a permanent place in the TLP home.
 - Committers: a list of current committers on the project.
 - Mailing Lists: there are several mailing lists that the community might be interested in, and this page contains mailto: links that allow easy subscription (and unsubscription) to any of them.
 - FAQ: frequently asked questions are answered here.
-- Road Map: if the project has a vision of future community or development activities, the road map is published here.
 - Source Code: links to the browsable source repository and git or svn commands to check out the sources.
-- Coding Standards: the coding standards for submitted code by the community, along with a description of how strict the project intends to be.
 - Issue Tracking: links to the JIRA or other issue tracking tool, possibly including frequently used filters for issue lists.
 - Dependencies: other projects that this project depends on.
 - favicon: the project's icon in a format suitable for a browser's address bar. If absent, an Apache Feather will be displayed.
@@ -70,25 +66,20 @@ with, you can continue to use it. If you do not, consider using
 the Jekyll based link:http://www.apache.org/dev/cmsref.html[Apache website template].
 
 Regardless of which tool you use, the web site should be maintained
-in the svn/git repository, and include the site generation tool as a binary
-file. This simplifies the process of site generation and enables changes
+in the svn/git repository, and include the site generation tool.
+This simplifies the process of site generation and enables changes
 to the site to be made by any committer. The generated site should also
-be checked into svn/git. This allows the generated site to be relocated
-to any part of the Apache site after incubation is complete.
-
-Since the site is independent of the code, it should exist high in
-the svn/git repository, e.g. parallel to the trunk of the source tree.
+be checked into svn/git.
 
 === Publishing Your Website
 
-Managing a podling's website is now the same as a top-level project.  Review the link:http://www.apache.org/dev/project-site.html[Infra Documentation on Project Websites]
+Managing a podling's website is the same as a top-level project.
+Review the link:http://www.apache.org/dev/project-site.html[Infra Documentation on Project Websites]
 
 === Using A Wiki To Create Documentation
 
 Podlings may use a wiki to create documentation (including the website) providing that follow the
-link:http://cwiki.apache.org/[guidelines]. In particular, care must be taken to
-ensure that access to the wiki used to create documentation that may be included in the project
-release is restricted to only those with filed link:http://www.apache.org/licenses/[individual CLAs].  The PPMC MUST review all changes and ensure that trust is not abused.
+link:http://cwiki.apache.org/[guidelines].
 
 === Web Site Transition
 
