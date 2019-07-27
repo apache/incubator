@@ -11,45 +11,51 @@ In October 2002 the Board of Directors of the Apache Software Foundation passed 
 
 See the October 2002 link:https://www.apache.org/foundation/board/calendar-1999-2004.html#2002 [Board report] for the resolution.
 
-The Incubator was tasked with the following responsibilities:
-
-- the acceptance and oversight of new products submitted or proposed to become part of the Foundation;
-- providing guidance and ensuring that podlings under its purview develop products according to the Foundation's philosophy and guidelines for collaborative development; and
-- regularly evaluating products under its purview and making the de/guides/roles_and_responsibilities in each case of whether the product should be abandoned, continue to receive guidance and support, or proposed to the board for promotion to full project status as part of an existing or new Foundation PMC; and be it further.
+The Incubator has the following responsibilities:
+- Welcoming new Podlings to become part of the Apache Software Foundation.
+- Guiding Podlings to grow their communities according to the ASF's philosophy and guidelines for collaborative development (called the *Apache Way*).
+- Report monthly to the board on Podlings progress.
+- Graduating Podlings to top level Apache Software Foundation projects.
+- When needed retiring Podlings.
+- Accepting IP donations
 
 == About this Document
 
-This document is the normative reference for the policies and procedures put in place by the Incubator PMC for the Incubation process, which is used by the Incubator PMC to discharge their duties as described above. It contains the minimum requirements that all new products and projects must meet before they will be fully accepted into the Apache Software Foundation.  The document makes use of the terms MUST, MUST NOT, REQUIRED, SHALL, SHALL NOT, SHOULD, SHOULD NOT, RECOMMENDED, MAY and OPTIONAL. Where capitalised, these terms are to be used as per the definitions found in link:http://www.ietf.org/rfc/rfc2119.txt[RFC 2119].
+This document is the reference for the policies and procedures put in place by the Incubator PMC for the incubation process. 
+
+The document makes use of the terms MUST, MUST NOT, REQUIRED, SHALL, SHALL NOT, SHOULD, SHOULD NOT, RECOMMENDED, MAY and OPTIONAL. Where capitalized, these terms are used as defined in link:http://www.ietf.org/rfc/rfc2119.txt[RFC 2119].
 
 == Scope
-This document contains the minimum requirements and processes that must be met by products and projects wishing to become part of the Apache Software Foundation.
+This document contains the minimum requirements and processes that MUST be met by Podlings undergoing incubation.
 
-This document does not apply outside the process of Incubation. Policies and processes that need to be met by products under incubation are not mandated (by this document) for other projects and sub-projects within the ASF.
+This document does not apply outside the process of incubation.
 
 == Relationship to Other Documents
-This document is the normative set of requirements for Incubation. Where other documents are in conflict, this document should be taken as correct.
+This document is the set of requirements for incubation. Where other documents say something different, this document is correct.
 
 == Changing this Document
-The contents of this document are formally approved by the Incubator PMC. All changes must be authorised by the Incubator PMC.
+The Incubator PMC approves the content of this document. Any changes MUST be authorized by the Incubator PMC.
 
 == Podling Reporting
-Each Podling in Incubation SHALL undergo a regular review of progress by the Incubator PMC. Podling SHALL report monthly for their first 3 months, after that such reviews SHALL occur at least quarterly. The Incubator PMC MAY, at their discretion, choose to review individual Podlings with greater frequency. The Incubator PMC SHALL inform Podlings of review dates at least 4 weeks in advance.  At least one week prior to each review, the Mentor MUST produce a report for the Incubator PMC detailing overall progress with a focus on the preceding review period. It is RECOMMENDED that the report be based on the "project status" document for the Podling.  After each review, the Incubator PMC SHALL produce an Assessment of the project. The Assessment SHALL contain one of three recommendations:
-
-- that the Podling be Terminated;
-- that the Podling continue in Incubation; or
-- that the Podling be Graduated from Incubation.
+Each Podling in Incubation MUST report to the Incubator PMC. Podlings SHALL report monthly for their first three months, after that quarterly. The Incubator PMC MAY, at their discretion, ask a Podlings to report more frequently. The PPMC with the mentor(s) help, MUST produce a report for the Incubator PMC detailing the overall progress toward graduation and any issues encountered.
 
 == Podling Constraints
 While in Incubation, Podlings are constrained in the actions they can undertake.
 
 === Website
-Please consult the guide to link:/guides/sites.html[Podling Websites] for the current policies for websites.
+There are restrictions on where Podlings sites are hosted and branding on web sites.
+
+Please consult the link:/guides/sites.html[Podling Websites Guide] for the current policies on Podling websites.
 
 === Branding
-Please consult the guide to link:/guides/branding.html[Podling Branding].
+There are restrictions about how Podlings can use their own and other ASF brands and names.
+
+Please consult the link:/guides/branding.html[Podling Branding Guide] for details.
 
 === Publicity
-Please consult the guide to link:/guides/publicity.html[Podling Publicity].
+There are some restrictions about how Podlings can advertise themselves, especially around press releases related to Podlings.
+
+Please consult the link:/guides/publicity.html[Podling Publicity Guide] for details.
 
 === Disclaimers
 
@@ -72,25 +78,27 @@ project has yet to be fully endorsed by the ASF.
 ____
 
 Podlings wishing to use a different disclaimer message MUST have the
-disclaimer approved by the Incubator PMC prior to use.
+disclaimer approved by the Incubator PMC before use.
 
 For releases, the text SHOULD be included in a separate DISCLAIMER file
 stored alongside the NOTICE and LICENSE files.
 
 === Releases
 
-See the guidelines for link:/guides/releasemanagement.html[Podling releases] in conjunction with this policy. Podlings are not yet fully accepted as part of the Apache Software Foundation. No release made by a Podling will be endorsed by the ASF.  Unendorsed releases may be made by Podlings subject to the following policy. Podlings in Incubation SHALL NOT perform any releases of software without the explicit approval of the Incubator PMC. Such approval SHALL be given only after the Incubator PMC has followed the process detailed in these guidelines, and SHALL NOT occur until all source has been legally transferred to the ASF. Therefore, should a Podling decide it wishes to perform a release, the Podling SHALL hold a vote on the Podling's public dev list. At least three +1 votes are required (see the http://www.apache.org/foundation/voting.html[Apache Voting Process] page). If the majority of all votes is positive, then the Podling SHALL send a summary of that vote to the Incubator's link:/howtoparticipate.html#Mailing+lists[general] list and formally request the Incubator PMC approve such a release. Three +1 Incubator PMC votes are required. Below is an example showing how an incubating project managed this process:
+See the guidelines for link:/guides/releasemanagement.html[Podling releases] for good practices on making releases.
 
-- link:++http://mail-archives.apache.org/mod_mbox/incubator-stdcxx-dev/200601.mbox/%3c43C1C0A0.7040401@roguewave.com%3e++[Post to the Podling dev list calling the vote.]
-- link:++http://mail-archives.apache.org/mod_mbox/incubator-general/200601.mbox/%3c43D7AC9E.30205@roguewave.com%3e++[Post to the Incubator's general list requesting approval from the Incubator PMC.]
+Podlings are not fully accepted as part of the Apache Software Foundation. Podlings MUST NOT perform any releases of software without the approval of the Incubator PMC. When a Podling decide it wants to make an release, the Podling MUST hold a vote on their public dev list. At least three +1 votes are required (see the http://www.apache.org/foundation/voting.html[Apache Voting Process] page) and more +1 votes than -1 votes. If the vote passes the Podling MUST send a summary of that vote to the Incubator's link:/howtoparticipate.html#Mailing+lists[general] list and request that the Incubator PMC approve the release. Three +1 Incubator PMC votes are required to approve a release. Below is an example showing how an incubating project managed this process:
 
-Should the Incubator PMC, in accordance with these guidelines vote to approve the request, the Podling MAY perform the release under the following constraints:
+- link:++https://lists.apache.org/thread.html/7e9c475d07c0e12f813226aa123f54969ebb21a2277b32e9bd366d96@%3Cdev.plc4x.apache.org%3E++[Post to the Podling dev list calling the vote.]
+- link:++https://lists.apache.org/thread.html/06655226ba08c16a8cb273f9b45e0b0a15ebaed0d06783fdd06a03f6@%3Cgeneral.incubator.apache.org%3E++[Post to the Incubator's general list requesting approval from the Incubator PMC.]
 
-- the release archive MUST contain the word "incubating" in the filename; and
-- the release archive MUST contain an Incubation disclaimer (as described in the previous section), which SHOULD be placed in a DISCLAIMER file.
+Should the Incubator PMC vote to approve a release, the Podling MAY make that release available to the public, only if:
 
-Releases for *podling* MUST be distributed through *++http://www.apache.org/dist/incubator/++_podling_* In addition, the Podling MAY choose to distribute approved releases through other channels like the central Maven repository.
+- The release archive(s) MUST include the word "incubating" in the filename.
+- The release archive(s) MUST contain a disclaimer (see above), which SHOULD be placed in a DISCLAIMER file.
+
+Releases for *Podling* MUST be distributed through *++http://www.apache.org/dist/incubator/++_Podling_* Also the Podling MAY choose to distribute approved releases through other channels like the central Maven repository.
 
 == Termination
-The Incubator PMC MAY consider the termination of a project for violation of these policies.
+The Incubator PMC SHOULD notice a podling of any policy violations. It MAY consider the termination of a Podling if violations are not corrected. 
 
