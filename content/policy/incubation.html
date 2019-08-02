@@ -173,7 +173,6 @@
 <li><a href="#releases">Releases</a></li>
 </ul>
 </li>
-<li><a href="#adding_ppmc_members">Adding PPMC members</a></li>
 <li><a href="#termination">Termination</a></li>
 </ul>
 </div>
@@ -314,8 +313,20 @@ provides more concrete information on the incubation process.</p>
 <div class="paragraph">
 <p>Podling web sites MUST include a clear disclaimer on their
 website and in all documentation, releases and release announcements
-stating that they are in incubation. Podlings SHOULD use the following
-text for all disclaimers (replace the underlined phrases as appropriate):</p>
+stating that they are in incubation.</p>
+</div>
+<div class="paragraph">
+<p>Podling has a choice of two disclaimers a standard disclaimer or a work in progress disclaimer.</p>
+</div>
+<div class="paragraph">
+<p>Podlings wishing to use a different disclaimer message MUST have the
+disclaimer approved by the Incubator PMC before use.</p>
+</div>
+<div class="sect3">
+<h4 id="standard_disclaimer">Standard Disclaimer</h4>
+<div class="paragraph">
+<p>Podlings wanting to follow all ASF policy on releases SHOULD use the following
+text for all disclaimers (replace the underlined text where needed):</p>
 </div>
 <div class="quoteblock">
 <blockquote>
@@ -333,12 +344,51 @@ project has yet to be fully endorsed by the ASF.</p>
 </blockquote>
 </div>
 <div class="paragraph">
-<p>Podlings wishing to use a different disclaimer message MUST have the
-disclaimer approved by the Incubator PMC before use.</p>
-</div>
-<div class="paragraph">
 <p>For releases, the text SHOULD be included in a separate DISCLAIMER file
 stored alongside the NOTICE and LICENSE files.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="work_in_progress_disclaimer">Work In Progress Disclaimer</h4>
+<div class="paragraph">
+<p>Podling wishing to make releases that may not follow all ASF policy SHOULD use the
+following disclaimer (replace the underlined text where needed):</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Apache <span class="underline">Podling-Name</span> is an effort
+undergoing incubation at The Apache Software Foundation (ASF),
+sponsored by the <span class="underline">name of Apache TLP sponsor</span>. Incubation is required of all
+newly accepted projects until a further review indicates that the
+infrastructure, communications, and decision making process have
+stabilized in a manner consistent with other successful ASF projects.
+While incubation status is not necessarily a reflection of the
+completeness or stability of the code, it does indicate that the
+project has yet to be fully endorsed by the ASF.</p>
+</div>
+<div class="paragraph">
+<p>Some of the incubating project&#8217;s releases may not be fully compliant
+with ASF policy. For example, releases may have incomplete or
+un-reviewed licensing conditions. What follows is a list of known
+issues the project is currently aware of (note that this list, by
+definition, is likely to be incomplete):
+<span class="underline">List of known issues go here</span></p>
+</div>
+<div class="paragraph">
+<p>If you are planning to incorporate this work into your
+product/project, please be aware that you will need to conduct a
+thorough licensing review to determine the overall implications of
+including this work. For the current status of this project through the Apache
+Incubator visit:
+<a href="http://incubator.apache.org/project/" class="bare">http://incubator.apache.org/project/</a><span class="underline">[Apache Podling-Name]</span>.html</p>
+</div>
+</blockquote>
+</div>
+<div class="paragraph">
+<p>For releases, the text SHOULD be included in a separate DISCLAIMER-WIP file
+stored alongside the NOTICE and LICENSE files.</p>
+</div>
 </div>
 </div>
 <div class="sect2">
@@ -369,21 +419,19 @@ stored alongside the NOTICE and LICENSE files.</p>
 <p>The release archive(s) MUST include the word "incubating" in the filename.</p>
 </li>
 <li>
-<p>The release archive(s) MUST contain a disclaimer (see above), which SHOULD be placed in a DISCLAIMER file.</p>
+<p>The release archive(s) MUST contain a disclaimer (see above), which SHOULD be placed in a DISCLAIMER or DISCLAIMER-WIP file.</p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
 <p>Releases for the <strong>Podling</strong> MUST be distributed through <strong>http://www.apache.org/dist/incubator/<em>Podling</em></strong> Also the Podling MAY choose to distribute approved releases through other channels like the central Maven repository.</p>
 </div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="adding_ppmc_members">Adding PPMC members</h2>
-<div class="sectionbody">
+<div class="sect3">
+<h4 id="adding_ppmc_members">Adding PPMC members</h4>
 <div class="paragraph">
-<p>After voting someone into the PPMC on the PPMC private list, a NOTICE email MUST be sent incubator private list. The PPMC MUST wait for 72 hours before inviting the new PPMC member to join the PPMC. See <a href="https://incubator.apache.org/guides/ppmc.html#voting_in_a_new_ppmc_member">Voting in a new PPMC member</a></p>
+<p>After voting someone into the PPMC on the PPMC private list, a NOTICE email MUST be sent incubator private list. The PPMC MUST wait for 72 hours before inviting the new PPMC member to join the PPMC. See <a href="https://incubator.apache.org/guides/ppmc.html#voting_in_a_new_ppmc_member">Voting in a new PPMC member</a>.</p>
+</div>
+</div>
 </div>
 </div>
 </div>
