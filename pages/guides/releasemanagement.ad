@@ -27,11 +27,11 @@ fully engaged in the review process.  A podling community should begin to famili
 with the ASF policies for releases.  Those policies can be found at
 link:http://www.apache.org/dev/#releases[http://www.apache.org/dev/#releases].
 
-ASF compliant releases are always produced by an Apache PMC.  For podlings this is the IPMC.  This is
+Releases are always produced by an Apache PMC, and for podlings, this PMC is the IPMC.  This is
 why it is mandatory to have at least 3 {plusone} votes from
 link:/incubation/roles_and_responsibilities.html#incubator_project_management_committee_ipmc[IPMC members].
-Usually your link:/incubation/roles_and_responsibilities.html#mentor[mentors] (who are also IPMC members)
-will vote on your releases.  Other IPMC members will as well.  IPMC members will check for
+Usually, your link:/incubation/roles_and_responsibilities.html#mentor[mentors] (who are also IPMC members) will 
+vote on your releases, but if needed, other IPMC members will as well.  IPMC members will check for
 compliance with the ASF policies and with link:/incubation/Incubation_Policy.html#Releases[Incubator policies].
 
 Anybody reviewing your releases will explain what they checked and what they found.  They will also
@@ -44,12 +44,12 @@ please say so! We are all learning, and discussion is an important part of open 
 
 == Requesting feedback on interim non-ASF releases
 
-When active existing communities enter the ASF via incubation, they may already have an established
+When existing active communities enter the ASF via incubation, they may already have an established
 release rhythm.  It may not be possible to conform to ASF release policies quickly enough to
-maintain that release rhythm.  We want to welcome projects with active communities.  In order
-to smooth this process, projects may need to make a few non-ASF releases after incubation begins.
+maintain that release rhythm.  We want to welcome projects with active communities.  To smooth this process,
+projects may need to make a few non-ASF releases after incubation begins.
 
-A non-ASF release may or may not be staged on ASF infrastructure for the purposes of a vote, but it
+A non-ASF release may or may not be staged on ASF infrastructure for a vote, but it
 is distributed via non-ASF infrastructure, *and* is either not linked from a podling's website, or is
 linked but clearly marked as a non-ASF release.
 
@@ -70,11 +70,12 @@ services that the Apache Incubator offers our podling communities.
 
 == Podling Constraints
 
-The link:/incubation/Incubation_Policy.html#Releases[Incubator policies] apply two additional constraints to podlings for their releases.  They are repeated here for clarity only.
+The link:/incubation/Incubation_Policy.html#Releases[Incubator policies] applys two additional constraints 
+to podlings for their releases.  They are repeated here for clarity only.
 - Release artifacts must include #incubating# in the final file name
-- Release artifacts must include a link:/guides/branding.html#disclaimers[disclaimer] as noted
+- Release artifacts must include one of two link:/guides/branding.html#disclaimers[disclaimers]
 
-In order for a podling to receive full permission from the IPMC to execute the release, the release
+For a podling to receive full permission from the IPMC to execute the release, the release
 vote must be held on the link:/guides/lists.html#general+at+incubator.apache.org[incubator general list]
 and pass based on the link:http://apache.org/foundation/voting.html#ReleaseVotes[standard Package Release voting rules].
 Only Incubator PMC votes are binding, but everyone is encouraged to vote.
@@ -82,3 +83,38 @@ Only Incubator PMC votes are binding, but everyone is encouraged to vote.
 The Incubator PMC expects the source releases to be staged on
 #https://dist.apache.org/repos/dist/dev/incubator/$podlingName# so that they can easily be moved
 to the release location via #svn mv#.
+
+== Choice of Disclaimers
+
+When making a release, a podling has a choice of using one of two link:/policy/incubation.html#disclaimers[disclaimers],
+the standard disclaimer and the work in progress disclaimer.
+
+If it is your first release, it is recommended that you use the work in progress DISCLAIMER. This disclaimer
+allows you to list any non-compliance with ASF policy and IPMC member still be able to give your release a +1
+votes. Think of it as training wheels for your release.
+
+Here is a minimal set of requirements, when using the work in progress disclaimer, a podlings release must abide by:
+- Include the word incubating in the release file name.
+- Include an ASF LICENSE and NOTICE file.
+- Have valid checksums or signatures.
+- Be placed in the correct place on the ASF's infrastructure.
+- Have a KEYS file to validate the release.
+
+Other issues, such as:
+- Missing ASF headers.
+- Missing license information.
+- Included unexpected binary code.
+- Including code of unknown origin.
+
+Will be allowed if the issue is listed in the disclaimer or added to the disclaimer shortly after the release is made.
+
+Any releases using the work in progress disclaimer must still be legal and follow the terms of any 3rd party licenses,
+even if they are not compatible with the Apache license. 
+
+Please carefully read this link:https://issues.apache.org/jira/browse/LEGAL-469[Legal JIRA] for more details on 
+what the IPMC and legal expectations are.
+
+By the time you graduate all issues listed in the disclaimer need to have been corrected,
+and you must use the standard disclaimer text.
+
+If a podling chooses uses the standards disclaimer, then the release must comply with all ASF policies.
