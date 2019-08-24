@@ -93,18 +93,20 @@ If it is your first release, it is recommended that you use the work in progress
 allows you to list any non-compliance with ASF policy and IPMC members are still be able to give your release
 a {plusone} vote. Think of it as training wheels for your release.
 
-Here is a minimal set of requirements, when using the work in progress disclaimer, a podlings release must abide by:  
-- Include the word incubating in the release file name.  
-- Include an ASF LICENSE and NOTICE file.  
-- Have valid checksums or signatures.  
-- Be placed in the correct place on the ASF's infrastructure.  
-- Have a KEYS file to validate the release.  
+Here is a minimal set of requirements, when using the work in progress disclaimer, a podlings release must abide by:
 
-Other issues, such as:  
-- Missing ASF headers.  
-- Missing license information.  
-- Included unexpected binary code.  
-- Including code of unknown origin.  
+* Include the word incubating in the release file name.
+* Include an ASF LICENSE and NOTICE file.
+* Have valid checksums or signatures.
+* Be placed in the correct place on the ASF's infrastructure.
+* Have a KEYS file to validate the release.
+
+Other issues, such as:
+
+* Missing ASF headers.
+* Missing license information.
+* Included unexpected binary code.
+* Including code of unknown origin.
 
 Will be allowed if the issue is listed in the disclaimer or added to the disclaimer shortly after the release is made.
 
