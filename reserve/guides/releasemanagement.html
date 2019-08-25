@@ -147,6 +147,7 @@ Estimated Reading Time: <span class="eta"></span>
 <li><a href="#what_goes_into_an_asf_release">What goes into an ASF release</a></li>
 <li><a href="#requesting_feedback_on_interim_non_asf_releases">Requesting feedback on interim non-ASF releases</a></li>
 <li><a href="#podling_constraints">Podling Constraints</a></li>
+<li><a href="#choice_of_disclaimers">Choice of Disclaimers</a></li>
 </ul>
 </div>
 <div class="sect1">
@@ -160,11 +161,11 @@ with the ASF policies for releases.  Those policies can be found at
 <a href="http://www.apache.org/dev/#releases">http://www.apache.org/dev/#releases</a>.</p>
 </div>
 <div class="paragraph">
-<p>ASF compliant releases are always produced by an Apache PMC.  For podlings this is the IPMC.  This is
+<p>Releases are always produced by an Apache PMC, and for podlings, this PMC is the IPMC.  This is
 why it is mandatory to have at least 3 +1 votes from
 <a href="/incubation/roles_and_responsibilities.html#incubator_project_management_committee_ipmc">IPMC members</a>.
-Usually your <a href="/incubation/roles_and_responsibilities.html#mentor">mentors</a> (who are also IPMC members)
-will vote on your releases.  Other IPMC members will as well.  IPMC members will check for
+Usually, your <a href="/incubation/roles_and_responsibilities.html#mentor">mentors</a> (who are also IPMC members) will
+vote on your releases, but if needed, other IPMC members will as well.  IPMC members will check for
 compliance with the ASF policies and with <a href="/incubation/Incubation_Policy.html#Releases">Incubator policies</a>.</p>
 </div>
 <div class="paragraph">
@@ -183,13 +184,13 @@ please say so! We are all learning, and discussion is an important part of open 
 <h2 id="requesting_feedback_on_interim_non_asf_releases">Requesting feedback on interim non-ASF releases</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>When active existing communities enter the ASF via incubation, they may already have an established
+<p>When existing active communities enter the ASF via incubation, they may already have an established
 release rhythm.  It may not be possible to conform to ASF release policies quickly enough to
-maintain that release rhythm.  We want to welcome projects with active communities.  In order
-to smooth this process, projects may need to make a few non-ASF releases after incubation begins.</p>
+maintain that release rhythm.  We want to welcome projects with active communities.  To smooth this process,
+projects may need to make a few non-ASF releases after incubation begins.</p>
 </div>
 <div class="paragraph">
-<p>A non-ASF release may or may not be staged on ASF infrastructure for the purposes of a vote, but it
+<p>A non-ASF release may or may not be staged on ASF infrastructure for a vote, but it
 is distributed via non-ASF infrastructure, <strong>and</strong> is either not linked from a podling&#8217;s website, or is
 linked but clearly marked as a non-ASF release.</p>
 </div>
@@ -217,12 +218,13 @@ services that the Apache Incubator offers our podling communities.</p>
 <h2 id="podling_constraints">Podling Constraints</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>The <a href="/incubation/Incubation_Policy.html#Releases">Incubator policies</a> apply two additional constraints to podlings for their releases.  They are repeated here for clarity only.
+<p>The <a href="/incubation/Incubation_Policy.html#Releases">Incubator policies</a> applys two additional constraints
+to podlings for their releases.  They are repeated here for clarity only.
 - Release artifacts must include <mark>incubating</mark> in the final file name
-- Release artifacts must include a <a href="/guides/branding.html#disclaimers">disclaimer</a> as noted</p>
+- Release artifacts must include one of two <a href="/guides/branding.html#disclaimers">disclaimers</a></p>
 </div>
 <div class="paragraph">
-<p>In order for a podling to receive full permission from the IPMC to execute the release, the release
+<p>For a podling to receive full permission from the IPMC to execute the release, the release
 vote must be held on the <a href="/guides/lists.html#general+at+incubator.apache.org">incubator general list</a>
 and pass based on the <a href="http://apache.org/foundation/voting.html#ReleaseVotes">standard Package Release voting rules</a>.
 Only Incubator PMC votes are binding, but everyone is encouraged to vote.</p>
@@ -231,6 +233,79 @@ Only Incubator PMC votes are binding, but everyone is encouraged to vote.</p>
 <p>The Incubator PMC expects the source releases to be staged on
 <mark><a href="https://dist.apache.org/repos/dist/dev/incubator/$podlingName" class="bare">https://dist.apache.org/repos/dist/dev/incubator/$podlingName</a></mark> so that they can easily be moved
 to the release location via <mark>svn mv</mark>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="choice_of_disclaimers">Choice of Disclaimers</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>When making a release, a podling has a choice of using one of two <a href="/policy/incubation.html#disclaimers">disclaimers</a>,
+the standard disclaimer or the work in progress disclaimer.</p>
+</div>
+<div class="paragraph">
+<p>If it is your first release, it is recommended that you use the work in progress DISCLAIMER. This disclaimer
+allows you to list any non-compliance with ASF policy and IPMC members are still be able to give your release
+a +1 vote. Think of it as training wheels for your release.</p>
+</div>
+<div class="paragraph">
+<p>Here is a minimal set of requirements, when using the work in progress disclaimer, a podlings release must abide by:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Include the word incubating in the release file name.</p>
+</li>
+<li>
+<p>Include an ASF LICENSE and NOTICE file.</p>
+</li>
+<li>
+<p>Have valid checksums or signatures.</p>
+</li>
+<li>
+<p>Be placed in the correct place on the ASF&#8217;s infrastructure.</p>
+</li>
+<li>
+<p>Have a KEYS file to validate the release.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Other issues, such as:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Missing ASF headers.</p>
+</li>
+<li>
+<p>Missing license information.</p>
+</li>
+<li>
+<p>Included unexpected binary code.</p>
+</li>
+<li>
+<p>Including code of unknown origin.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Will be allowed if the issue is listed in the disclaimer or added to the disclaimer shortly after the release is made.</p>
+</div>
+<div class="paragraph">
+<p>Any releases using the work in progress disclaimer must still be legal and follow the terms of any 3rd party licenses,
+even if they are not compatible with the Apache license.</p>
+</div>
+<div class="paragraph">
+<p>Please carefully read this <a href="https://issues.apache.org/jira/browse/LEGAL-469">Legal JIRA</a> for more details on
+what the IPMC and legal expectations are.</p>
+</div>
+<div class="paragraph">
+<p>By the time you graduate all issues listed in the disclaimer need to have been corrected,
+and you must use the standard disclaimer text.</p>
+</div>
+<div class="paragraph">
+<p>If a podling chooses uses the standards disclaimer, then the release must comply with all ASF policies.</p>
 </div>
 </div>
 </div></p>
