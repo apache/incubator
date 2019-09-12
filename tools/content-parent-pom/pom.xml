@@ -31,12 +31,12 @@
     </parent>
 
     <groupId>org.apache.training</groupId>
-    <artifactId>presentation-template</artifactId>
+    <artifactId>content-master-pom</artifactId>
     <version>1.0.0-SNAPSHOT</version>
-    <packaging>war</packaging>
+    <packaging>pom</packaging>
 
-    <name>Training: Tools: Slide Template: Asciidoc to reveal.js Maven example</name>
-    <description>An example project that demonstrates how to integrate convert Asciidoc to a reveal.js presentation with the Asciidoctor Maven plugin.</description>
+    <name>Training: Tools: Content Master Pom</name>
+    <description>Parent pom containing all the configuration for building presentations with the training template.</description>
 
     <properties>
         <project.main.contentfile>index</project.main.contentfile>
@@ -196,12 +196,72 @@
                                     <filtering>true</filtering>
                                     <targetPath>${project.slides.directory}/reveal.js-${revealjs.version}/css/theme</targetPath>
                                 </resource>
-                                <!-- Patch one of the "slim" files as the 'docinfo' integration doesn't seem to work -->
-                                <resource>
-                                    <directory>libs/docinfo-hack</directory>
-                                    <targetPath>${project.build.directory}/asciidoctor-reveal.js-${asciidoctor-revealjs.version}/templates</targetPath>
-                                </resource>
                             </resources>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <version>3.1.1</version>
+                <executions>
+                    <execution>
+                        <id>copy-training-asciidoc-resources</id>
+                        <phase>generate-resources</phase>
+                        <goals>
+                            <goal>unpack</goal>
+                        </goals>
+                        <configuration>
+                            <artifactItems>
+                                <artifactItem>
+                                    <groupId>org.apache.training</groupId>
+                                    <artifactId>content-master-resources</artifactId>
+                                    <version>1.0.0-SNAPSHOT</version>
+                                    <type>jar</type>
+                                    <overWrite>true</overWrite>
+                                    <outputDirectory>${project.build.directory}/asciidoctor-reveal.js-${asciidoctor-revealjs.version}/templates</outputDirectory>
+                                    <includes>*.slim</includes>
+                                </artifactItem>
+                            </artifactItems>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>copy-training-presentation-themes</id>
+                        <phase>generate-resources</phase>
+                        <goals>
+                            <goal>unpack</goal>
+                        </goals>
+                        <configuration>
+                            <artifactItems>
+                                <artifactItem>
+                                    <groupId>org.apache.training</groupId>
+                                    <artifactId>content-master-resources</artifactId>
+                                    <version>1.0.0-SNAPSHOT</version>
+                                    <type>jar</type>
+                                    <outputDirectory>${project.slides.directory}/reveal.js-${revealjs.version}/css/theme</outputDirectory>
+                                    <includes>*.css</includes>
+                                </artifactItem>
+                            </artifactItems>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>copy-training-presentation-resources</id>
+                        <phase>generate-resources</phase>
+                        <goals>
+                            <goal>unpack</goal>
+                        </goals>
+                        <configuration>
+                            <artifactItems>
+                                <artifactItem>
+                                    <groupId>org.apache.training</groupId>
+                                    <artifactId>content-master-resources</artifactId>
+                                    <version>1.0.0-SNAPSHOT</version>
+                                    <type>jar</type>
+                                    <outputDirectory>${project.slides.directory}/images</outputDirectory>
+                                    <excludes>*.slim,*.css,META-INF/**</excludes>
+                                </artifactItem>
+                            </artifactItems>
                         </configuration>
                     </execution>
                 </executions>
@@ -272,20 +332,6 @@
                         <version>${asciidoctorj.diagram.version}</version>
                     </dependency>
                 </dependencies>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-war-plugin</artifactId>
-                <version>${maven-war-plugin.version}</version>
-                <configuration>
-                    <failOnMissingWebXml>false</failOnMissingWebXml>
-                    <warSourceDirectory>${project.build.directory}/generated-slides</warSourceDirectory>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.eclipse.jetty</groupId>
-                <artifactId>jetty-maven-plugin</artifactId>
-                <version>${jetty-maven-plugin.version}</version>
             </plugin>
             <plugin>
                 <groupId>com.coderplus.maven.plugins</groupId>

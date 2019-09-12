@@ -131,7 +131,7 @@ Nest lists, by duplicating the list-char
 [source,java]
 .Java code from project
 ----
-include::{sourcedir}/example/StringUtils.java[tags=contains,indent=0]
+include::{sourcedir}/${packageInPathFormat}/StringUtils.java[tags=contains,indent=0]
 ----
 
 == Two columns
@@ -442,12 +442,11 @@ gantt
 
 [svgbob,svgbob-circuit-diagram-test,svg]
 ....
-+10-15V           ___0,047R
+     +10-15V           ___0,047R
       *------o------o-|___|-o--o---------o----o-------.
              |      |       |  |         |    |       |
             ---     |       | .+.        |    |       |
-      470uF ###     |       | | | 2k2    |    |       |
-             | +    |       | | |        |    |      .+.
+      470uF  | +    |       | | |        |    |      .+.
       *------o      '--.    | '+'       .+.   |      '-'
              |         |6   |7 |8    1k | |   |       |
             GND      .-+----+--+--.     | |   |       |
@@ -464,7 +463,7 @@ gantt
                      |            |2                  |     |    |
                      |            |--o                C|    |    |
                      |            | GND         30uH  C|    |   --- 470
-                     |            |3      1nF         C|    |   ###  uF
+                     |            |3      1nF         C|    |
                      |            |-------||--.       |     |    | +
                      '-----+----+-'           |      GND    |   GND
                           5|   4|             |             |
