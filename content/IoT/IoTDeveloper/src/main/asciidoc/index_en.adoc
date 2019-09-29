@@ -1,0 +1,364 @@
+////
+
+  Licensed to the Apache Software Foundation (ASF) under one or more
+  contributor license agreements.  See the NOTICE file distributed with
+  this work for additional information regarding copyright ownership.
+  The ASF licenses this file to You under the Apache License, Version 2.0
+  (the "License"); you may not use this file except in compliance with
+  the License.  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+
+////
+
+== !
+:description: 45-minute talk on how to be an IoT Developer
+:keywords: IoT
+:authors: Your name here
+:email: Your email here
+image::ApacheLogo.png[]
+
+== How to Become an IoT Developer (and Have Fun!)
+{authors}
+
+== Who am I?
+* Freelance Developer - programming for 25 years
+* Current VP/chair of the Incubator and Apache Mynewt
+* Mentor for several Apache incubating projects
+* Run IoT workshops
+* Founded the IoT meetup in Sydney Australia
+
+== How I Got Here
+* Been coding since the 80s started on low-level machine code and C programming
+* Worked on a few early “IoT” projects
+* Internet come along
+* Open Source Hardware come along
+* Started IoT Sydney Meetup
+* Few years back working on hardware and coding in C again
+
+== Things Have Changed
+* Access to low cost easy to program hardware
+* Constrained hardware has more memory and speed
+* “Modern” development tools and IDEs
+* Some standardisation
+* Open Source hardware community
+* Open Source libraries
+
+== Hardware is Hard
+* Can’t revert changes quickly or make changes once deployed
+* People underestimate the time taken of developing firmware
+* It harder to debug and find errors
+* Hard to update firmware (OTA)
+
+[.notes]
+--
+Security and Power Issues
+--
+
+== So you want to become an IoT developer?
+
+== One Name Different Jobs
+* You can be an IoT developer without touching the hardware
+* You can be an IoT developer by developing on software that communicate with IoT devices
+* I’m focussing on the embedded / hardware side but from a software point of view
+
+== Play with Toys
+* Get yourself an Arduino or Raspberry Pi or similar
+* Create a project that interests you
+** simple as blinking LEDs
+** or monitoring your garden climate
+** or displaying sport scores
+** or logging your beer brewing
+
+== Arduino
+image:arduino.jpg[width=80%]
+
+== Arduino IDE
+image:arduinoIDE.png[width=90%]
+
+== Play with your Phone
+* Lots of IoT devices and boards use Bluetooth LE
+* NFC can be used for many things is cheap and easy to play with
+* Can get cheap NFC stickers, business cards, keychain fobs, plastic cards etc. etc.
+
+== Create a Simple Circuit
+* Get a beadboard and wires and make a simple circuit
+* Try and create your prototype
+* A multimeter may help here
+* Depending on your style it may not look pretty
+
+== Breadboard
+image:breadboard.jpg[width=60%]
+
+== Use Breakout Boards
+* Can get a lot of pre-assembled boards
+* Easy to wire up to a breadboard
+* Often use standard interfaces like I2C or SPI
+* Think of them as lego blocks
+
+== Breakout Board
+image:breakout.jpg[width=40%]
+
+== Breakout Boards
+image:breakouts.jpg[width=60%]
+
+== Learn how to Solder
+* It’s easier than you think
+* Use the right tip and solder
+* Use a flux pen
+* Learn how to correct mistakes - solder braid
+* Start with large through-hole items
+* Use sockets for ICs
+
+== Prototype
+image:prototype.jpg[width=60%]
+
+== Learn a New Language
+* If you don’t know it, learn C
+* Other languages exist on embedded platforms but C is most common
+* May need to forget some of what you know
+* C is not as complicated as you may think
+* Modern C style is a little different
+
+== Forget What You Know
+[source,C]
+--
+int LED = 10;
+
+void setup() {
+  pinMode(LED, OUTPUT);
+}
+
+void loop() {
+  digitalWrite(LED, LOW);
+  delay(500);
+  digitalWrite(LED, HIGH);
+  delay(500);
+}
+--
+
+== Read the Classics
+image:k&rc.jpg[width=40%]
+
+== Or a More Modern Book
+image:cmodern.jpg[width=40%]
+
+=== C has Improved
+* K&R C, C89, C99, C11
+* Well perhaps only a little :-)
+* Some useful C99 features:
+** bool and int types
+** auto-sizing of arrays
+** floating-point numbers (IEEE 754)
+** inline functions
+
+=== Optimise Your Code Later
+* Compiler is good at optimising code
+* Only optimise if you need to
+* Better to keep code simple and readable
+* Refresh yourself on operator order
+
+=== Code Carefully
+* Maybe best to avoid dynamic allocation of memory
+* Use pointers sensibly
+* Break it up - can always inline later
+* Encapsulate the hard bits
+* Used appropriate sized ints
+* Take care with strings
+
+== Size Matters
+* You can do a lot in a small amount of code
+* An Arduino web server is about 20 lines of code and compiles down to 2K
+
+== Generative Formula
+[source,C]
+--
+byte gen(t int)
+{
+  return t * ((t >> shift 1 | t >> shift2) & mask & t >> shift3);
+}
+--
+
+[.notes]
+--
+You can do a lot with a small amount of code.
+--
+
+
+== Know Some Electronic Basics
+* Focus on digital logic 5V or 3.3V = 1 and 0V = 0
+* Current limiting leds
+* Transistors for switching
+* Filtering caps
+* Pull up / pull down resistors
+* Voltage divider
+
+== Make a PCB
+* Why? Making physical stuff is fun!
+* Start with basic PCB layout program like Fritzing
+* It has breadboard/circuit and PCB layout
+* Don’t cross the tracks
+* Use vias where needed
+* Copper and ground fill
+
+== Read the Data Sheets
+* Learn to look for important values
+* Don’t worry if you don’t understand all of it
+* Often contain sample circuits - bonus!
+* Can provide timing information
+* Can vary a lot in quality
+
+== Learn to Read a Circuit Diagram
+* Know the basic symbols
+* Know how to match up pins on ICs
+
+== Schematic
+image:schematic.png[]
+
+== Fritzing
+* http://fritzing.org/home/
+* Very easy to use
+* Easy export of files
+* Handles surface mount and through-hole components 
+* Comes with a decent library of footprints
+* Breadboard view not compact
+
+== Breadboard View
+image:fritzingbb.png[width=80%]
+
+== PCB View
+image:fritzingpcb.png[width=80%]
+
+== Boards
+image:board.jpg[]
+
+== Not Just Basic Boards
+image:fritzingcomplex.jpg[]
+
+== It Works!
+image:itworks.jpg[width=60%]
+
+== Don’t Go Small Too Quickly
+* Temptation to use small cheap surface mount components 
+* Keeps the cost down but means the device may be hard to debug
+* Increases time (or makes it impossible) to make modifications to the board
+* Boards may have higher defect rates
+* Physical copy and paste errors
+
+== Test the Hardware
+* Have some way of testing the hardware - usually custom program or part of the startup sequence
+* Have physical test points on the board
+* Make a testing rig if you need to test several boards
+
+== Don’t Use the Hardware
+* Compile and test your code locally
+* Standard C will work just about everywhere
+* Some platforms (like Apache Mynewt) have simulators
+* Stub out things that are hardware dependant
+
+[.notes]
+--
+Can be a much faster workflow to work this
+Can run unit tests easily
+--
+
+== Test on the Hardware
+* You need to test on real hardware
+* Most modern platforms you can debug, set breakpoints, step line by line etc. etc.
+* Make sure you test release builds as well as debug ones
+
+== Watch your Memory
+* While 32K or 128K sounds like a lot you may run out off memory
+* Avoid dynamically allocating memory if possible
+* Tools / RTOS generally have a way of showing memory usage
+* Perform a burn-in test
+* Make sure memory doesn’t climb over time
+
+== Software is Always at Fault
+* If something doesn’t work it’s likely to be the software, not the hardware
+* If you can’t find the bug it still likely to be the software
+* It likely to be in your code not in the 3rd party library used by 1000’s of people
+
+[.notes]
+--
+No changing libraries will not fix it. Yes, the bug is in your code.
+--
+
+== Except When it’s the Hardware
+* Hardware works except when it doesn’t 
+* If you lucky it will be DOA and do nothing or have a short and consume all the power
+* If you are unlucky it will mostly work.   Examples I’ve seen:
+** unmarked GPS antennas passive not active
+** crystals rotated 90 deg
+** incorrect accelerometer circuit
+
+== Log all the Things
+* Often hard to know what hardware is doing at any point of time
+* Log what going on when debugging
+* Have some way of viewing the logs (especially when the debugger is connected)
+* Remove most of the logging (but not all) in production
+
+== Blinky Lghts
+* Use indicator LEDs to indicate status
+* But don’t be annoying
+
+[.notes]
+--
+Blink version number
+--
+
+== Code on Bare Metal
+* All the memory and speed is yours!
+* Nothing else gets in the way
+* All the bugs are yours!
+* Some things can be more complex
+* May have to write more code
+
+== Use an RTOS
+* Usually have some form of simple threading or tasks
+* Breaking program up into tasks can simplify code
+* Take care with shared resources
+* May provide other benefits e.g. power consumption
+* Be careful of vendor lock-in
+* Can be more abstract/complex in some cases
+
+== The Not So Fun Bits :-(
+* OTA Updates
+* Security
+* Power
+
+=== OTA Updates
+* How do you update your device?
+* Might be a lot harder than you think
+* Bootloader
+* Check and download new images
+* Where do you store them? How do you verify them?
+* Use an RTOS that supports all of this
+
+=== Security
+* Can be hard on constrained devices
+* May not be able to do TLS due to memory or speed constraints
+* Select platforms that have built-in crypto or can offload crypto to another chip
+
+=== Power
+* Power may be a limiting factor
+* Need to sleep / deep sleep / turn off all devices
+* Time to wake up
+* RTOS may help here
+
+== My Journey
+* I’ve learnt lots of new skills
+* Met a lot of nice people
+* Been involved in several communities
+* Had a lot of fun along the way
+* I hope your journey will be the same
+
+== Questions?
+Ask now, see me during the conference,
+or email me at {email}
