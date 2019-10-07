@@ -16,34 +16,31 @@
 :toc:
 :imagesdir: ../images/
 
-This document provides guidance only. Policy is found link:/incubation/Incubation_Policy.html[here].
+This document provides guidance only. The policy is found link:/incubation/Incubation_Policy.html[here].
 
 == Abstract
 
-This document is descriptive, not normative. It describes approaches to drawing up a proposal for submission. It is not an inflexible standard but represents a consensus condensed from discussions on the link:lists.html#general+at+incubator.apache.org[general mailing list].
+This document describes approaches to drawing up a proposal for submission. It is not an inflexible standard but represents a consensus condensed from discussions on the link:lists.html#general+at+incubator.apache.org[general mailing list]. Feel free to modify the template when submitting your proposal.
 
 === Background
 link:entry.html[Entry] to the incubator is a process decided by a vote.
-The proposal is the document upon which the  link:/incubation/Roles_and_Responsibilities.html#Sponsor[Sponsor] votes.
-So, though it's neither necessary nor sufficient to have a good proposal, a good proposal increases the chances of a positive result.
+The proposal is the document upon which the link:/incubation/Roles_and_Responsibilities.html#Sponsor[Sponsor] (usually the incubator) votes.
+It's not required to have a good proposal, but having a good proposal will increase the chances of a positive outcome.
 
-Proposals to the incubator generate attention. The  link:lists.html#general+at+incubator.apache.org[general mailing list] is open, widely discussed and well indexed. It is a very public space.
-The proposal is a manifesto. 
-A good proposal should target also the wider audience and not just the link:/incubation/Roles_and_Responsibilities.html#Incubator+Project+Management+Committee+%28PMC%29[jury].
+Proposals to the incubator generate attention. The link:lists.html#general+at+incubator.apache.org[general mailing list] is open, widely discussed, and well indexed. It is a very public space.
+A good proposal should target the wider audience and not just the link:/incubation/Roles_and_Responsibilities.html#Incubator+Project+Management+Committee+%28PMC%29[IPMC].
 Use this time to engage and inform potential link:participation.html#developer[developers] and link:participation.html#user[users]. 
 
-Much of the information will be reused in the link:sites.html[Podling website]. 
-A good proposal should shape the future evolution of the project but each proposal captures only the particular instant at birth. 
-It is understood that projects change and evolve. 
+A good proposal should shape the future evolution of the project. Still, each proposal only captures the particular details at birth. It is understood that projects change and evolve. 
 
 === Continuous Improvement
-The ncubation process is continuously evolving.
-Hopefully this will help newer projects to be even stronger and more successful then existing ones. 
-One consequence of this approach is that precedence is not always a reliable guide.
+The incubation process is continuously evolving.
+Hopefully, this will help newer projects to be even stronger and more successful than existing ones. 
+One consequence of this approach is that what previous podlings have done, even those that are now TLP,  may not be a reliable guide.
 Another is that documentation may be a little outdated.
 
 === Help Wanted!
-Help to improve the system by posting a patch for this document to the link:https://issues.apache.org/jira/browse/INCUBATOR[incubator section] of link:http://issues.apache.org/jira[JIRA]  or a comment to the link:lists.html#general+at+incubator.apache.org[general list].
+Help to improve the system by posting a patch for this document to the link:https://issues.apache.org/jira/browse/INCUBATOR[incubator section] of link:http://issues.apache.org/jira[JIRA] or a comment to the link:lists.html#general+at+incubator.apache.org[general list] or raise a pull request at the link:https://github.com/apache/incubator[incubator site repository].
 
 == Formulating A Proposal
 === Preparation
@@ -53,62 +50,59 @@ Read the link:http://www.apache.org[Apache] link:http://www.apache.org/foundatio
 
 link:lists.html[Subscribe] to the link:lists.html#general+at+incubator.apache.org[general mailing list]. 
 Spend some time reviewing the link:https://lists.apache.org/list.html?general@incubator.apache.org[mailing lists archives]. 
-The mailing lists are the canonical form of link:http://www.apache.org/foundation/how-it-works.html#communication[communication] and link:http://www.apache.org/foundation/how-it-works.html#decision-making[decision making] at Apache. Documentation is an attempt to codify the consensus formed and record the decisions taken on list.
+The mailing lists are the standard way of link:http://www.apache.org/foundation/how-it-works.html#communication[communication] and link:http://www.apache.org/foundation/how-it-works.html#decision-making[decision making] at Apache.
 
 Before starting on the formal proposal, recruit a link:/incubation/Roles_and_Responsibilities.html#Champion[Champion]. The Champion understands
-Apache and should be able to help navigate the process.
+Apache and should be able to help navigate the process and put your proposal together.
 
-Review link:https://cwiki.apache.org/confluence/display/INCUBATOR/Proposals[recent proposals] and how they have been link:https://lists.apache.org/list.html?general@incubator.apache.org[received].
+Review link:https://cwiki.apache.org/confluence/display/INCUBATOR/Proposals[recent proposals] and how they have been link:https://lists.apache.org/list.html?general@incubator.apache.org[received]. Check to see which podlings have become top level projects and which have not. link:https://cwiki.apache.org/confluence/display/INCUBATOR/Incubating+Issues[Read up] on some of the issues a podling may face while in incubation.
 
 The incoming community needs to work together before presenting this proposal to the incubator. Think about and discuss future goals and the reasons for coming to Apache.
-Feel free to ask questions link:lists.html#general+at+incubator.apache.org[on list].
+Feel free to ask questions link:lists.html#general+at+incubator.apache.org[on the list].
 
 Every proposal is different. There will always be some aspects which do not seem to fit well into the link:#proposal-template[template]. 
-Use the template as a guide but do not feel constrained by it. Adopt what works and change what doesn't. That's fine - in fact, it's expected. 
+Use the template as a guide but do not feel constrained by it. Adopt what works and change what doesn't. It is fine to do that.
 
-Be sure to add your proposal to link:https://cwiki.apache.org/confluence/display/INCUBATOR/Proposals[this list].
+Be sure to add your proposal to link:https://cwiki.apache.org/confluence/display/INCUBATOR/Proposals[this list]. You can copy the link:https://cwiki.apache.org/confluence/display/INCUBATOR/New+Podling+Proposal[existing template] for you new proposal.
 
 === Project Name
-While it is important to ensure a link:graduation.html#notes-names[suitable project name] and product names sometime during incubation, it is not necessary to do this prior to entering incubation. In fact, be careful not to disrupt your proposal and entry process.
+While it is important to come up with a link:graduation.html#notes-names[suitable project name] and product names during incubation, it is a requirement to do this before entering incubation. Be careful not to disrupt your proposal and entry process. But also be aware that changing your name may be required at some point, and that could be disruptive to your community.
 
 === Presentation
 
-Once the preparatory work is done, the proposal should be presented to the incubator.
-Post the proposal in plain text in an email to the link:lists.html#general+at+incubator.apache.org[mailing list] whose subject is prefixed with _[PROPOSAL]_.  You should be clear that you want to discuss your proposal when submitting this mail.
+Once you have a draft proposal, it should be presented to the incubator.
+Post the proposal in plain text in an email to the link:lists.html#general+at+incubator.apache.org[mailing list] with a subject line prefixed with _[PROPOSAL]_. You should be clear that you want to discuss your proposal when submitting this mail.
 
 If there is interest in the proposal, expect a lively debate to begin.
-Approval is an open and link:http://www.apache.org/foundation/voting.html[democratic] link:entry.html#understanding[process].
+Approval is an open and follows a link:http://www.apache.org/foundation/voting.html[voting] link:entry.html#understanding[process].
 Discussion is an important part of opinion formation. A proposal will require development if it is to gain the maximum level of support from the
-link:/whoweare.html[electorate].
+link:/whoweare.html[incubator].
 
 === Developing The Proposal
 
 Expect to work on improving the proposal on the list after presenting it.
-No preparation can cover every question. It is usual for unexpected and novel questions to be asked. This is often a sign of interest. So (though it may sometimes feel like an ordeal) approach these questions as a positive opportunity.
+No preparation can cover every question. It is usual for unexpected and novel questions to be asked. These questions are often a sign of interest. So (though it may sometimes feel like an ordeal) approach these questions as a real opportunity to engage with the incubator.
 
-The link:http://wiki.apache.org/incubator/[wiki] is a good development tool. Consider creating a wiki page containing the evolving proposal 
-content. Those who are interested should add themselves to the watch list for the page so they can receive change notifications.
+The link:https://cwiki.apache.org/confluence/display/INCUBATOR/Proposals[wiki] is a useful development tool. Consider creating a wiki page containing the evolving proposal content. Those who are interested should add themselves to the watch list for the page so they can receive change notifications.
 
-Developing the proposal on the wiki allows easy collaboration. This has disadvantages as well as advantages. The wiki is just a tool to assist the easy development of the final proposal (the one that will be voted upon).
-Not every change improves a proposal and there is no requirement that every change is accepted by the proposers.
-Note that the incubator asks all participants to abide by appropriate link:participation.html[netiquette].
+Developing the proposal on the wiki allows for easy collaboration. The wiki is just a tool to assist the development of the final proposal (the one that will be voted upon).
 
-Effective management of this development is an exercise in community building.
-The wiki is not an appropriate forum for debating changes. Discussion should be gently moved onto the appropriate link:lists.html#general+at+incubator.apache.org[mailing list]. 
+Effective management of this development process is a good exercise in community building.
+The wiki is not an appropriate forum for debating changes. Discussions should be gently moved onto the appropriate link:lists.html#general+at+incubator.apache.org[mailing list]. 
 
 === The Vote
 
-When the proposal seems finished and some sort of consensus has emerged, the proposal should be put to a vote.
+When the proposal seems finished, and some form of consensus has emerged, the proposal should be put to the vote.
 
-If the wiki is used to develop the proposal, please ensure that the wiki matches the final proposal then add a notice to the wiki that development of the document is now complete.
+If the wiki is used to develop the proposal, please ensure that the wiki matches the final proposal then add a notice to the wiki that development of the document is now complete. Change the wiki page to be read-only so that no further changes can be made.
 
-Embed the final proposal text or a link to a specific revision number of the wiki proposal page in the email which kicks off the VOTE thread.  If a change is required after the vote has been called then the vote must be cancelled, the change made, and the vote restarted.  Alternatively, Mentors will advise on how to make the change once the proposal has been accepted if this is appropriate.  Do not edit the wiki proposal unless you cancel the vote thread.
+Embed the final proposal text or include the final version number of the wiki proposal page in the email which starts the VOTE thread. If a change is required after the vote has been called then the vote must be cancelled, the change made, and the vote restarted. Alternatively, Mentors will advise on how to make the change once the proposal has been accepted. Do not edit the wiki proposal unless you cancel the vote thread.
 
 == Proposal Template
 
 The aim of presenting a template with examples and comments is educational. Proposals are not required to adopt this format. 
-Every proposal is different. There may be sections which don't seem to be useful. It's fine to miss them out and to add new ones that the proposal seems to need. Best practice evolves. Innovation is acceptable.
+Every proposal is different. There may be sections which don't seem to be useful. It's fine to miss them out and to add new ones that the proposal appears to need.
 
 The format is less important than the content.
 
-Each section is broken down into a commentary/explanation and examples. The link:https://cwiki.apache.org/confluence/display/INCUBATOR/New+Podling+Proposal[proposal template] page can be copy to a new page under link:https://cwiki.apache.org/confluence/display/INCUBATOR/Proposals[proposals] on the Incubator Wiki to speed up creation.  Please remove excess commentary and examples sections.
+Each section is broken down into a commentary/explanation and examples. The link:https://cwiki.apache.org/confluence/display/INCUBATOR/New+Podling+Proposal[proposal template] page can be copied to a new page under link:https://cwiki.apache.org/confluence/display/INCUBATOR/Proposals[proposals] on the Incubator Wiki to speed up creation. Please remove excess commentary and examples sections.
