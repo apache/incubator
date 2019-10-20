@@ -62,7 +62,6 @@
                 <li><a href="/guides/participation.html">Guide to Participation</a></li>
                 <li><a href="/guides/lists.html">Incubator Mailing Lists Guide</a></li>
 
-                <li><hr><a href="/guides/pmc.html">The Incubator PMC</a></li>
                 <li><a href="/guides/chair.html">Incubator Chair Guide</a></li>  
                 <li><a href="/guides/mentor.html">Mentors' Guide</a></li>
 
