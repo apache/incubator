@@ -1,0 +1,393 @@
+////
+
+  Licensed to the Apache Software Foundation (ASF) under one or more
+  contributor license agreements.  See the NOTICE file distributed with
+  this work for additional information regarding copyright ownership.
+  The ASF licenses this file to You under the Apache License, Version 2.0
+  (the "License"); you may not use this file except in compliance with
+  the License.  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+
+////
+
+== !
+:description: 45-minute talk on Apache Mynewt
+:keywords: Apache Mynewt
+:authors: Your name here
+:email: Your email here
+image::ApacheLogo.png[]
+
+== Apache Mynewt +
+ASF's Embedded OS Project
+{authors}
+
+== Who am I?
+* TODO fill in your own details here
+
+== !
+image:mynewt.png[width=50%]
+
+== Overview
+* Real-time operating system (RTOS) for low powered 32 bit embedded systems
+* Think of it as "Linux for systems that can't run Linux"
+* Permissive open source license
+* Cross-platform / easy to move between platforms
+* Security built-in / considered first
+* Simple programming model
+
+== Apache Licensed
+* Licensed under the Apache License (ALv2)
+* Included 3rd party software have permissive licenses (MIT/BSD)
+* Can be used in commercial and open source application 
+* Free to use
+
+[.notes]
+--
+Mynewt project got several venders to relicense under more permissive licenses
+--
+
+== Why ASF?
+* Permissive license
+* Strong licensing and IP policy
+* Meritocracy - anyone is free to contribute
+* Has many other successful projects
+* Not under one companies control and can't buy board seats
+* 501(c)(3) non-profit for the public good
+
+== Project incubation
+* Ensure donations comply with the Apache 2.0 license
+* Follows the ASF structure of contributors, committers and PMC members
+* Grants more responsibility via meritocracy
+* Ensure that decision making is done in the open
+* People act as individuals, not companies
+* Follows the Apache Way
+
+== History at ASF
+* Donated / proposed by Runtime
+* Enters incubation November 2015
+* Voted in TLP June 2017
+* Apache Mynewt 1.1, 1.2, 1.3, 1.4 and 1.5
+* Apache Mynewt 1.7 / Apache NimBLE 1.2 Aug 2019
+
+[.notes]
+--
+Split Core OS and BLE
+--
+
+== Project Stats
+image:stats.jpg[]
+
+== Mynewt RTOS
+* Multitasking RTOS
+* Power management
+* Watchdog
+* Secure boot loader and image update
+* Stats and logging
+* Flash filesystem
+* Build and package management
+
+== Blinky
+[source,C]
+--
+void main()
+{
+    sysinit();
+
+    g_led_pin = LED_BLINK_PIN;
+    hal_gpio_init_out(g_led_pin, 1);
+
+    while (1) {
+        /* Wait one second */
+        os_time_delay(OS_TICKS_PER_SEC);
+
+        /* Toggle the LED */
+        hal_gpio_toggle(g_led_pin);
+    }
+}
+--
+
+== Multitasking
+* Tasks priority based scheduling (250+ levels)
+* High priority runs until sleep
+* Tasks communicate/wake up via event queues 
+* Most typically will be sleeping
+* Tasks can wake up on messages, timer, I/O, network or watchdog
+* Tasks and event queues have debug info
+
+== Multitasking
+[source,C]
+--
+#define MY_TASK_PRI         (OS_TASK_PRI_HIGHEST)
+#define MY_STACK_SIZE       (64)
+struct os_task my_task;
+os_stack_t my_task_stack[MY_STACK_SIZE];
+
+void my_task_func(void *arg) {
+    hal_gpio_init_out(LED_BLINK_PIN, 1);
+
+    while (1) {
+        os_time_delay(1000);
+        hal_gpio_toggle(LED_BLINK_PIN);
+    }
+}
+--
+
+== Multitasking
+[source,C]
+--
+void main()
+{
+    sysinit();
+
+    os_task_init(&my_task, "my_task", my_task_func, NULL, MY_TASK_PRIO,
+                 OS_WAIT_FOREVER, my_task_stack, MY_STACK_SIZE);
+
+    while (1) {
+       os_eventq_run(os_eventq_dflt_get());
+    }
+}
+--
+
+== HAL
+* Hardware abstraction layer
+* Implemented for each MCU, so all low-level features work
+* Drivers sit on top of HAL
+* Drivers support power management
+* Sensor framework sits on top of drivers
+
+== Supported boards
+* Cortex M0-M4 + M7 micro controllers
+* MIPS
+* RISC-V
+
+[.notes]
+--
+STM NUCLEO and others, Adafruit Feather nRF Nordic Semiconductor, RuuviTag
+High-end Arduino, Raspberry Pi, BBS micro
+--
+
+== Bluetooth
+* Bluetooth Low Energy supports 4.2 and 5
+* Full stack, host only, or controller only
+* Up to 32 connections! 2Mbps throughput 
+* Configurable features to tune size
+* Portable can swap chips
+
+== Bluetooth
+[source,C]
+--
+static void ble_app_set_addr(void)
+{
+    ble_addr_t addr;
+    int rc;
+
+    rc = ble_hs_id_gen_rnd(1, &addr);
+
+    rc = ble_hs_id_set_rnd(addr.val);
+}
+--
+
+== BLuetooth
+[source,C]
+--
+static void ble_app_advertise(void)
+{
+    struct ble_gap_adv_params adv_params;
+    uint8_t uuid128[16];
+    int rc;
+
+    /* Arbitrarily set the UUID to a string of 0x11 bytes. */
+    memset(uuid128, 0x11, sizeof uuid128);
+
+    /* Major version=2; minor version=10. */
+    rc = ble_ibeacon_set_adv_data(uuid128, 2, 10);
+
+    /* Begin advertising. */
+    adv_params = (struct ble_gap_adv_params){ 0 };
+    rc = ble_gap_adv_start(BLE_OWN_ADDR_RANDOM, NULL, BLE_HS_FOREVER,
+                           &adv_params, NULL, NULL);
+}
+--
+
+== WiFi
+* Native support for TCP/IP and UDP
+* Currently mostly low speed (MKR1000)
+* Supports CoAP and 6LoWPAN
+
+== FileSystem
+* Newtron Flash File system (nffs)
+* Minimal ram usage
+* Work still needs to be done on encryption and compression
+
+== Sensors
+* Sensor framework
+* Sit on top of drivers and HAL
+
+== Sensors
+[source,C]
+--
+int bno055_init(struct os_dev *dev, void *arg)
+{
+    struct bno055 *bno055;
+    struct sensor *sensor;
+    int rc;
+
+    bno055 = (struct bno055 *) dev;
+
+    rc = bno055_default_cfg(&bno055->cfg);
+
+    sensor = &bno055->sensor;
+
+    rc = sensor_init(sensor, dev);
+
+    /* Add the accelerometer/magnetometer driver */
+    rc = sensor_set_driver(sensor, SENSOR_TYPE_ACCELEROMETER         |
+            SENSOR_TYPE_MAGNETIC_FIELD | SENSOR_TYPE_GYROSCOPE       |
+            SENSOR_TYPE_TEMPERATURE    | SENSOR_TYPE_ROTATION_VECTOR |
+            SENSOR_TYPE_GRAVITY        | SENSOR_TYPE_LINEAR_ACCEL    |
+            SENSOR_TYPE_EULER, (struct sensor_driver *) &g_bno055_sensor_driver);
+
+    rc = sensor_set_interface(sensor, arg);
+    rc = sensor_mgr_register(sensor);
+    
+    return rc;
+}
+--
+
+== Projects and Packages
+* Projects are a collection of packages
+* Projects are released and versioned in repositories
+* Packages defined dependencies and build settings
+
+== Packages
+* Maintain and reuse package across multiple projects
+* Pick and choose what you need
+* Manage debug and production build setups
+* Know what versions you are using
+* Supports external and internal packages
+* Easy to find 3rd party packages
+* Doesn't use make (yet)
+
+== Project Config
+[source]
+--
+project.name: "my_project"
+
+project.repositories:
+    - apache-mynewt-core
+
+# Use github's distribution mechanism for core ASF libraries.
+# This provides mirroring automatically for us.
+#
+repository.apache-mynewt-core:
+    type: github
+    vers: 1-latest
+    user: apache
+    repo: mynewt-core
+--
+
+== Package Config
+[source]
+--
+pkg.name: apps/blinky
+pkg.type: app
+pkg.description: Basic example application which blinks an LED.
+pkg.author: "Apache Mynewt <dev@mynewt.apache.org>"
+pkg.homepage: "http://mynewt.apache.org/"
+pkg.keywords:
+
+pkg.deps:
+    - "@apache-mynewt-core/libs/os"
+    - "@apache-mynewt-core/hw/hal"
+    - "@apache-mynewt-core/libs/console/full 
+--
+
+== Internal and External
+- Not all packages have compatible licensing
+- Make your own packages
+- Runtime has several GitHub packages
+https://github.com/runtimeco/mynewt_nordic
+https://github.com/runtimeco/mynewt_arduino_zero
+https://github.com/runtimeco/mynewt_stm32f3
+- mcuboot
+
+== Bootloader
+* Can be in ROM or Flash
+* Performs check and swaps between images
+* Each image has SHA-256 and RSA signature
+
+== Software upgrade
+* newt tool has targets
+* newt can generate bootimage and image / flash map
+* images are signed
+* dual blank or in place firmware upgrades
+* works over bluetooth, wifi and serial
+
+== Power management
+* Deep sleep and wakeup
+* Tickless idle task
+* Networking sleep management
+
+== Debugging
+* Logging and statistics - can be compiled out
+* Can be written to ram or flash
+* Flash circular buffer
+* Core dumps can be written flash or spare image slot
+* Stack guards and memory tracking
+* Unit test framework
+
+== Simulator
+* Can run on Mac and Linux
+* Develop code off hardware
+* Unit test run
+
+== Code Size
+* Core 1KB RAM 6KB flash
+* BLE 5KB-15KB RAM and 70-100KB code (depending on features selected)
+
+== Security
+* Unique device identification API
+* Generate certificates
+* Secure boot loader
+* Communicates via OIC image checksums
+* Supports TLS via mbedTLS
+* Supports Bluetooth security
+
+== What’s New(ish)?
+* Bluetooth 5 support / Bluetooth mesh
+* LoRa and LoRaWAN (class A and C) support
+* Sensor framework
+* Cortex M7 and other board support
+* Encrypted flash
+* Battery sensor
+* TRNG
+
+== What's New?
+* More boards and more processors
+* Generic bus driver
+* Crypto framework
+* Taskpools
+* Generic data streaming interface
+* BT 5.0 certification
+
+== More Information
+* https://mynewt.apache.org
+* Documentation +
+https://github.com/apache/mynewt-documentation
+* Download +
+https://mynewt.apache.org/download/
+* Githib mirrors +
+https://github.com/apache/mynewt-core/tree/master
+* Subscribe dev@mynewt.apache.org
+* Slack https://mynewt.slack.com
+
+== Questions?
+Ask now, see me after the session,
+or email me at {email}.
