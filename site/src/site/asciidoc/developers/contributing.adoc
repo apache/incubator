@@ -54,7 +54,9 @@ However as with all other things, please do reach out to us on the mailing list 
 - https://lab.github.com/[Github Learning Lab]
 
 ==== Review Process
-The Training project follows a review-then-commit workflow, which basically means that no commit should be made to the repository that has not been reviewed and approved by the required number of persons.
+The Training project follows a review-then-commit (RTC) workflow for core modules such as the presentation framework, themes and stuff used by presentations, and a commit-then-review (CTR) model for content modules. 
+
+Review-then-commit means that no commit should be made to the repository that has not been reviewed and approved by the required number of persons. Where as, commit-then-review model allows for faster and simpler contribution of content to training project. CTR also applies if no one objects to a PR for first 72 hours.
 
 For reviews we distinguish between _content_ commits that add content to training decks and _functional_ commits like code changes to tools or similar things.
 
