@@ -36,7 +36,7 @@ body {
 }
 
 .reveal {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 34px;
   font-weight: normal;
   color: #222;
@@ -381,9 +381,9 @@ body {
   position: absolute;
   left: 20px;
   bottom: 5px;
-  width: 40px;
-  height: 80px;
-  background-image: url(../../../images/small-feather.png);
+  width: 129px;
+  height: 40px;
+  background-image: url(../../../images/ApacheConEurope.png);
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -394,4 +394,79 @@ body {
   bottom: 20px;
   text-align: center;
   width: 100%;
+}
+
+/* custom styles */
+.big {
+  font-size: 150%
+}
+.small {
+  font-size: 75%
+}
+
+.columns {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+}
+
+/* title slides */
+.fade {
+  position: fixed;
+  height: 100vh;
+  width: 75vw;
+  background: rgba(0, 0, 0, 0.28);
+}
+
+.conferenceName {
+  position: absolute;
+  right: 0;
+  bottom: 30px;
+  background: rgba(218, 112, 214, 0.69);
+  color: rgba(217, 217, 217, 0.86);
+  text-align: left;
+  font-size: 50%;
+  width: 40%;
+  padding: 0px 0px 0px 2em;
+}
+
+.year {
+  position: absolute;
+  right: 0.5em;
+  bottom: 0.1em;
+  color: rgba(217, 217, 217, 0.86);
+  font-size: 200%;
+}
+
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 32, 96, 1.0);
+  color: rgba(230, 230, 230, 1.0);
+  padding: 20px;
+}
+
+.leftlogo {
+  position: fixed;
+  left: -200px;
+  top: 40px;
+}
+
+.righttitle {
+  position: fixed;
+  right: 0;
+  bottom: 200px;
+  color: rgba(230, 230, 230, 1.0);
+  padding: 20px;
+  text-align: left;
+}
+
+.title {
+  font-size: 200%;
+}
+
+.present {
+  height: 100%
 }
