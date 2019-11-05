@@ -214,7 +214,7 @@
                 <version>3.2.2</version>
                 <configuration>
                     <failOnMissingWebXml>false</failOnMissingWebXml>
-                    <warSourceDirectory>src/target/generated-slides</warSourceDirectory>
+                    <warSourceDirectory>${project.slides.directory}</warSourceDirectory>
                 </configuration>
             </plugin>
             <plugin>
