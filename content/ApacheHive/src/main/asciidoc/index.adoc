@@ -1,0 +1,119 @@
+////
+
+  Licensed to the Apache Software Foundation (ASF) under one or more
+  contributor license agreements.  See the NOTICE file distributed with
+  this work for additional information regarding copyright ownership.
+  The ASF licenses this file to You under the Apache License, Version 2.0
+  (the "License"); you may not use this file except in compliance with
+  the License.  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+
+////
+:revealjs_progress: true
+:revealjs_slidenumber: true
+:sourcedir: ../java
+
+== What is Apache Hive?
+Apache Hive is a data warehouse software. It is used for accessing and writing large datasets stored in a distributed storage by using SQL.
+
+Two components
+
+- Command Line Tool
+- JDBC driver to connect users with Hive
+
+== Important Features
+
+Some of the salient features of Apache Hive are:
+
+- It provides HQL a query language similar to SQL
+- It is fast and scalable solution
+- It works well for OLAP - Online Analytical Processing
+- It uses HDFS for storage and schema definition
+
+== Hive Data Types
+Hive supports following kinds of data types:
+
+- Column Type
+- Literal
+- Null Value
+- Complex Type
+
+== Hive Column Type
+
+Column Data Types in Hive are:
+
+- Integral Types: TINYINT, SMALLINT, INT, BIGINT
+- String Types: CHAR, VARCHAR
+- Timestamp
+- Date
+- Decimal: It is similar to BigDecimal in Java.
+- Union Type
+
+== Hive Complex Type
+
+Complex Data Types in Hive are:
+
+- Arrays: These are similar to arrays in Java language.
+Syntax: ARRAY<data_type>
+- Maps: Hive Maps are similar to maps in Java language.
+Syntax: MAP<primitive_type, data_type>
+- Structs: This is a complex data type.
+Syntax: STRUCT<col_name : data_type [COMMENT col_comment], ...>
+
+== Hive Database Commands
+Hive has following database commands:
+
+- Create Database: To create a new database.
+CREATE DATABASE [IF NOT EXISTS] <database name>
+- Create Schema: Create a new schema.
+CREATE SCHEMA [IF NOT EXISTS] <schema name>
+- Drop Database: To drop a database.
+DROP DATABASE StatementDROP (DATABASE|SCHEMA) [IF EXISTS] database_name 
+[RESTRICT|CASCADE]
+- Drop Schema: To drop a schema
+DROP SCHEMA <schema name>
+
+
+== Hive Table level Commands
+Hive has following table commands:
+
+- Create Table
+CREATE [TEMPORARY] [EXTERNAL] TABLE [IF NOT EXISTS] [db_name.] table_name
+- Alter Table
+ALTER TABLE table_name RENAME TO new_name
+- Drop Table
+DROP TABLE [IF EXISTS] table_name
+
+== HiveQl
+Hive Query Language (HiveQL) is a SQL like language to query data from datastore.
+
+The main statement in HiveQL is SELECT statement. It is used to retrieve data from a table in Hive.
+
+SELECT statement has support for WHERE clause to specify the conditions for getting data from the table.
+
+E.g. SELECT name FROM employee WHERE salary > 100000
+
+== HiveQl Query Types
+Some of the main query types in HiveQL are:
+
+- SELECT ... FROM ... WHERE ...
+- SELECT ... FROM ... WHERE ... Order By
+- SELECT ... FROM ... WHERE ... Group By
+
+== HiveQl Joins
+HiveQL also supports JOIN type queries that are used to retrieve data from more than 1 table. 
+
+JOIN statement can fetch data from multiple tables by using a common key between them.
+
+E.g. SELECT name, dept_name 
+FROM employee, department 
+WHERE employee.dept_id = department.id
+
+
