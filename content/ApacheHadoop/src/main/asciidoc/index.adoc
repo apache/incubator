@@ -33,6 +33,7 @@ Two major layers
 Hadoop MapReduce is a software framework for easily writing applications which process vast amounts of data (multi-terabyte data-sets) in-parallel on large clusters (thousands of nodes) of commodity hardware in a reliable, fault-tolerant manner. 
 
 The MapReduce framework consists of:
+
 - single master ResourceManager
 - one worker NodeManager per cluster-node
 - MRAppMaster per application 
@@ -73,8 +74,10 @@ New features and improvements are regularly implemented in HDFS. The following i
 
 
 == HDFS Special Nodes
+
 - Secondary NameNode: performs periodic checkpoints of the namespace and helps keep the size of file containing log of HDFS modifications within certain limits at the NameNode.
 - Checkpoint node: performs periodic checkpoints of the namespace and helps minimize the size of the log stored at the NameNode containing changes to the HDFS. Replaces the role previously filled by the Secondary NameNode, though is not yet battle hardened. The NameNode allows multiple Checkpoint nodes simultaneously, as long as there are no Backup nodes registered with the system.
 - Backup node: An extension to the Checkpoint node. In addition to checkpointing it also receives a stream of edits from the NameNode and maintains its own in-memory copy of the namespace, which is always in sync with the active NameNode namespace state. Only one Backup node may be registered with the NameNode at once.
 
 
+== HDFS Commands
