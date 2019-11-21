@@ -21,9 +21,10 @@
 :sourcedir: ../java
 
 == What is Apache Hadoop?
+
 Apache Hadoop is a framework that allows for the distributed processing of large data sets across clusters of computers using simple programming models.
 
-Two major layers
+Two main layers:
 
 - Processing layer (MapReduce)
 - Storage layer (Hadoop Distributed File System)
@@ -39,6 +40,7 @@ The MapReduce framework consists of:
 - MRAppMaster per application 
 
 == Hadoop Distributed File System
+
 Hadoop Distributed File System (HDFS) is a distributed file system designed to run on commodity hardware. 
 
 - similar to other distributed file systems
@@ -54,14 +56,19 @@ The key and value classes have to be serializable by the framework and hence nee
 
 Input and Output types of a MapReduce job:
 
-(input) <k1, v1> -> map -> <k2, v2> -> combine -> <k2, v2> -> reduce -> <k3, v3> (output)
+(input) <k1, v1> -> map -> <k2, v2> ->
+combine -> <k2, v2> ->
+reduce -> <k3, v3> (output)
 
 == HDFS Architecture
+
 HDFS has a master/slave architecture. An HDFS cluster consists of:
+
 - single NameNode, a master server that manages the file system namespace and regulates access to files by clients
 - one of more of DataNodes used for storage and serving read and write requests from the file system’s clients
 
-== HDFS New Features
+== HDFS Useful Features
+
 New features and improvements are regularly implemented in HDFS. The following is a subset of useful features in HDFS:
 
 - File permissions and authentication.
@@ -75,9 +82,30 @@ New features and improvements are regularly implemented in HDFS. The following i
 
 == HDFS Special Nodes
 
-- Secondary NameNode: performs periodic checkpoints of the namespace and helps keep the size of file containing log of HDFS modifications within certain limits at the NameNode.
-- Checkpoint node: performs periodic checkpoints of the namespace and helps minimize the size of the log stored at the NameNode containing changes to the HDFS. Replaces the role previously filled by the Secondary NameNode, though is not yet battle hardened. The NameNode allows multiple Checkpoint nodes simultaneously, as long as there are no Backup nodes registered with the system.
-- Backup node: An extension to the Checkpoint node. In addition to checkpointing it also receives a stream of edits from the NameNode and maintains its own in-memory copy of the namespace, which is always in sync with the active NameNode namespace state. Only one Backup node may be registered with the NameNode at once.
+Main nodes in HDFS are as follows:
 
+- Secondary NameNode
+- Checkpoint node
+- Backup node
+
+== HDFS Secondary NameNode
+
+Secondary NameNode performs periodic checkpoints of the namespace.
+It helps keep the size of file containing log of HDFS modifications within certain limits at the NameNode.
+
+== HDFS Checkpoint node
+
+Checkpoint node performs periodic checkpoints of the namespace.
+It helps minimize the size of the log stored at the NameNode containing changes to the HDFS.
+It replaces the role previously filled by the Secondary NameNode.
+The NameNode allows multiple Checkpoint nodes simultaneously, as long as there are no Backup nodes registered with the system.
+
+
+== HDFS Backup node
+
+Backup node is an extension to the Checkpoint node.
+In addition to checkpointing it also receives a stream of edits from the NameNode.
+It maintains its own in-memory copy of the namespace, which is always in sync with the active NameNode namespace state.
+Only one Backup node may be registered with the NameNode at once.
 
 == HDFS Commands
