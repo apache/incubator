@@ -8,7 +8,7 @@
 
 ${content.body}
 
-Our Current Podlings:
+<b>Our Current Podlings:</b>
 <%
     def source = new java.net.URL("http://svn.apache.org/repos/asf/incubator/public/trunk/content/podlings.xml")
     def rootNode = new groovy.util.XmlSlurper(false, false, true).parseText(source.text)
@@ -27,10 +27,10 @@ Our Current Podlings:
 <br/><br/>
 <div class="container-fluid">
     <div class="row">
-        <div class="col-lg-4 text-center"><a href="/projects/#current">List of Current Podlings</a></div>
-        <div class="col-lg-4 text-center"><a href="/projects/#graduated">Graduated Projects</a></div>
-        <div class="col-lg-4 text-center"><a href="/projects/#retired">Retired Podlings</a></div>
-        <div class="col-lg-4 text-center"><a href="/clutch/">Current Clutch Analysis</a></div>
+        <div class="col-lg-3 text-center"><a href="/projects/#current">List of Current Podlings</a></div>
+        <div class="col-lg-3 text-center"><a href="/projects/#graduated">Graduated Projects</a></div>
+        <div class="col-lg-3 text-center"><a href="/projects/#retired">Retired Podlings</a></div>
+        <div class="col-lg-3 text-center"><a href="/clutch/">Current Clutch Analysis</a></div>
     </div>
 </div>
 <br/><br/>
