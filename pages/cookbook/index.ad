@@ -144,16 +144,28 @@ Expanding and especially renewing project communities is an essential part of th
 
 == Podling Releases
 
-A podling is expected to make several software releases during incubation, that gradually progress towards being fully conformant to the link:http://www.apache.org/legal/release-policy.html[ASF Release Policy].
+A podling is expected to make **several software releases** during incubation, that gradually progress towards being fully conformant to the link:http://www.apache.org/legal/release-policy.html[ASF Release Policy]. Fully conformant releases are a condition for graduation.
 
-In addition to following that policy, podling releases must include the word "incubating" in any release file names and a link:https://incubator.apache.org/policy/incubation.html#disclaimers[DISCLAIMER] to avoid any confusion as to the project's status. As podlings are not "real" ASFprojects yet, it is crucial to set expectations right.
+Podling releases must also include the word "incubating" in any release file names and include a DISCLAIMER or DISCLAIMER-WIP as per the
+https://incubator.apache.org/guides/releasemanagement.html#choice_of_disclaimers[Incubator Releases Guide],
+to prevent any confusion as to the project’s status. As podlings are not yet "real" ASF projects, it is important to set expectations right.
 
-Also, voting on podling releases happens in two phases:
+== Two-phase vote on Podling Releases
 
- * First, the podling votes on the release on their dev mailing list, with PPMC members votes being "binding" and others being welcome to cast consultative votes. The main goal of this vote is for the podling community to practice and learn how to vote on releases.
- * Then, if that first vote is successful, an Incubator PMC vote is held on the Incubator general mailing list. This vote is required to make the release an Act of the Foundation.
- 
-Incubation mentors can optionally indicate that their votes in the first phase can be carried on to the Incubator PMC vote. If three mentors have voted this means the "three +1 votes" requirement is already fulfilled when that second vote starts, which can speed up things.
+Voting on podling releases happens in two phases:
+
+ * First, the podling votes on the release on their dev mailing list. The main goal of this vote is for the podling community
+   to practice and learn voting on releases. The vote is successful if there are at least three +1 votes from PPMC members,
+   and more +1 than -1 votes from PPMC members.
+ * Then, if that first vote is successful, an Incubator PMC vote is held on the Incubator General mailing list. This is required
+   to make the vote an Act of the Foundation, as for all ASF releases.
+
+Votes from the podling dev list should be carried over to the Incubator PMC vote, by explicitly mentioning the podling vote result
+and including a link:http://lists.apache.org[lists.apache.org] link to the podling vote tally, in the Incubator PMC [VOTE] message. This
+allows votes from mentors and other Incubator PMC members to be binding in the Incubator PMC vote, without people having to vote twice.
+
+Both the podling and Incubator votes follow the standard link:https://www.apache.org/foundation/voting[ASF voting principles]: they
+are majority votes that last at least 72 hours and if people vote several times only their last vote counts.
 
 == Podling, Top-level Project, what are the differences?
 
@@ -168,6 +180,7 @@ The main differences are:
  * The decision to elect people as committers or PPMC members, or both, is similar to TLPs. A podling can decide that candidates are elected to the PPMC directly, or make them committers first and wait a bit to "promote" the as PPMC members. Committers, on the other hand, have no formal decision power, so a two-stage process is often preferred, but it's not a requirement. Read link:https://www.apache.org/foundation/how-it-works.html[How the ASF works] for more information about this.
  * TLPs report link:https://www.apache.org/foundation/board/reporting[to the ASF Board of Directors], whereas podlings report link:https://cwiki.apache.org/confluence/display/INCUBATOR/Reports[to the Incubator PMC]. Both report monthly initially, then quarterly.
  * Each TLP has a link:https://apache.org/dev/pmc.html[PMC Chair] who acts as a liaison between the TLP and the Board. PMC Chairs are _not_ project leaders. It's an administrative role even though they get a VP title due to the ASF's organization. Podlings do not have this role, incubation mentors are volunteer community members act as the liaison between the podling and the Incubator PMC.
+ * Podling releases require a two-phase vote as described elsewhere in this cookbook.
  
 The ASF strongly encourages projects to grow and renew their roster regularly, to foster project sustainability. Both podlings and TLPs should be actively looking to elect new committers and PMC members by keeping an eye on who's active in their communities.
 
@@ -194,7 +207,8 @@ TODO link to details
 
 Once the discussion dies down on the graduation proposal, a [VOTE] is started on the Incubator general mailing list, in which Incubator PMC Members cast their votes to accept recommending graduation to the ASF's Board of Directors.
 
-This vote follows the standard link:https://www.apache.org/foundation/voting[ASF voting principles], it's a majority vote that lasts at least 72 hours.
+This vote follows the standard link:https://www.apache.org/foundation/voting[ASF voting principles], it's a majority vote that lasts at least 72 hours and if people
+vote several times only their last vote counts.
 
 == ASF Board Resolution
 
