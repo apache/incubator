@@ -150,6 +150,10 @@ Podling releases must also include the word "incubating" in any release file nam
 https://incubator.apache.org/guides/releasemanagement.html#choice_of_disclaimers[Incubator Releases Guide],
 to prevent any confusion as to the project’s status. As podlings are not yet "real" ASF projects, it is important to set expectations right.
 
+Note that Apache Releases consist of source code only. However it is common for our projects to also distribute
+link:http://www.apache.org/legal/release-policy.html#compiled-packages[compiled packages] along with their releases. The focus is on the actual
+source code releases and all distributed compiled packages are based on those "official" releases.
+
 == Two-phase vote on Podling Releases
 
 Voting on podling releases happens in two phases:
