@@ -136,6 +136,9 @@
 
             <!-- Output of the profiler maven extension -->
             <exclude>**/.profiler/**</exclude>
+
+            <!-- Exclude the binary presentation stuff -->
+            <exclude>src/site/resources/topics/**</exclude>
           </excludes>
         </configuration>
       </plugin>
