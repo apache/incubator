@@ -115,11 +115,13 @@
                 </configuration>
             </plugin>
 
+            <!-- Download all the tools needed to generate the output -->
             <plugin>
                 <groupId>com.googlecode.maven-download-plugin</groupId>
                 <artifactId>download-maven-plugin</artifactId>
                 <version>${download-maven-plugin.version}</version>
                 <executions>
+                    <!-- Get the asciidoctor revealjs module -->
                     <execution>
                         <id>install-asciidoctor-revealjs</id>
                         <phase>generate-resources</phase>
@@ -133,6 +135,7 @@
                             <outputDirectory>${project.build.directory}</outputDirectory>
                         </configuration>
                     </execution>
+                    <!-- Get the reveal js sources -->
                     <execution>
                         <id>install-revealjs</id>
                         <phase>generate-resources</phase>
@@ -146,6 +149,7 @@
                             <outputDirectory>${project.slides.directory}</outputDirectory>
                         </configuration>
                     </execution>
+                    <!-- Download the C3 and D3 libraries -->
                     <execution>
                         <id>download-c3-css</id>
                         <phase>generate-resources</phase>
@@ -181,6 +185,11 @@
                     </execution>
                 </executions>
             </plugin>
+
+            <!--
+                Make sure the filtered resources are output to the slides directory and
+                theme content is output to the themes directory of reveal js.
+            -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-resources-plugin</artifactId>
@@ -211,6 +220,8 @@
                     </execution>
                 </executions>
             </plugin>
+
+            <!-- Get some static Apache resources shared throughout all presentations -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-dependency-plugin</artifactId>
@@ -276,6 +287,8 @@
                     </execution>
                 </executions>
             </plugin>
+
+            <!-- Configure the asciidoctor generation -->
             <plugin>
                 <groupId>org.asciidoctor</groupId>
                 <artifactId>asciidoctor-maven-plugin</artifactId>
@@ -342,6 +355,17 @@
                         <version>${asciidoctorj.diagram.version}</version>
                     </dependency>
                 </dependencies>
+            </plugin>
+
+            <!-- If the packaging is se to "war", pack the slides into a war file -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>3.2.2</version>
+                <configuration>
+                    <failOnMissingWebXml>false</failOnMissingWebXml>
+                    <warSourceDirectory>${project.slides.directory}</warSourceDirectory>
+                </configuration>
             </plugin>
         </plugins>
     </build>

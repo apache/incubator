@@ -31,6 +31,7 @@
 
     <groupId>${groupId}</groupId>
     <version>${version}</version>
+    <packaging>war</packaging>
 
     <name>Training: Tools: Slide Template: Asciidoc to reveal.js Maven ${package}</name>
     <description>An ${package} project that demonstrates how to integrate convert Asciidoc to a reveal.js presentation with the Asciidoctor Maven plugin.</description>
