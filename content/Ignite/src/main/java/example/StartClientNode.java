@@ -24,8 +24,11 @@ import org.apache.ignite.configuration.IgniteConfiguration;
 
 import java.io.IOException;
 
+/**
+ * (Think) client exmaple. Requires server node to be up and running.
+ */
 public class StartClientNode {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         // tag::contains[]
         IgniteConfiguration cfg = new IgniteConfiguration();
         cfg.setClientMode(true);

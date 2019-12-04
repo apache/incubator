@@ -1,0 +1,268 @@
+////
+
+  Licensed to the Apache Software Foundation (ASF) under one or more
+  contributor license agreements.  See the NOTICE file distributed with
+  this work for additional information regarding copyright ownership.
+  The ASF licenses this file to You under the Apache License, Version 2.0
+  (the "License"); you may not use this file except in compliance with
+  the License.  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+
+////
+
+== !
+:description: 45 minute talk on Apache Training
+:keywords: Apache Mynewt
+:authors: Your name here
+:email: Your email here
+image::ApacheLogo.png[]
+
+== Apache Training Contributing More Than Just Code
+{authors}
+
+== Who am I?
+* TODO fill in your own details here
+
+== !
+image:training.png[width=50%]
+
+== Apache Training
+* New incubating project
+* Open source training material
+* Create shared resources
+* Slides, workshops and labs
+
+== Why Apache Training?
+* Duplicated effort
+* Wisdom of the crowd
+* IP approved resources
+* Review of material
+* Free to reuse or re-purpose under the ALv2
+
+== What it is Not 
+* A repo for all protects material
+* A place to create "official" material
+* To provide certifications
+
+== Issues to Sort Out
+* Content and releases
+* Ownership?
+* Licensing is more complex
+* Is ALv2 the best license for content?
+
+[.notes]
+--
+many people may work on slides - CLAs
+Fonts, stock images, slide templates, graphics
+--
+
+== Another issue
+* Slide file formats
+* They do have advantages and neat features
+* ...but lots of disadvantages
+
+== Text vs Other formats
+* Easy to edit
+* Easy to translate
+* Real version control
+* Searchable
+
+== AsciiDoctor
+* Simple markdown style markup
+* OS license (MIT license)
+* Multiple outputs
+* Looks nice by default
+* https://github.com/asciidoctor/asciidoctor
+
+== AsciiDoctor Reveal.js
+* HTML / CSS
+* Reveal.js
+* Ruby, Node, Maven
+
+== Slide Features
+* Speaker notes / timer
+* Keyboard navigation
+* Vertical slides
+* Simple markup
+* Styled via CSS
+* PDF generation
+
+== Presenting
+* HTML in browser
+* Self hosted web server
+
+== Steps to Convert
+* Copy text
+* Markup
+* Convert assets
+* ...
+* Profit!
+
+== Text
+[code]
+----
+Put your text here
+----
+
+== Titles
+
+[code]
+----
+== !
+No title
+----
+
+[code]
+----
+== Slide One
+
+== Slide Two
+
+== Slide Three
+
+----
+
+== Images
+[.columns]
+--
+[code]
+----
+image::cat.jpg[Cat, width=50%]
+----
+
+image::cat.jpg[Cat, width=200%]
+--
+
+== Video
+[.columns]
+--
+[code]
+----
+video::sydney.mp4[width=640, start=30, end=60, options=autoplay]
+video::dQw4w9WgXcQ[youtube]
+video::148751763[vimeo]
+----
+
+video::sydney.mp4[width=640, options=autoplay]
+--
+
+sydney.mp4
+
+== Background images
+image::stars.jpg[background, size=cover]
+[code]
+----
+image::stars.jpg[background, size=cover]
+----
+
+== Background Video
+[code]
+----
+[background-video="sydney.mp4",background-video-loop=true]
+----
+
+== Bullet Lists
+[.columns]
+--
+[code]
+----
+* one
+* two
+* three
+----
+
+* one
+* two
+* three
+--
+
+== Bullet Lists
+[.columns]
+--
+[code]
+----
+* one
+* two
+** one
+** two
+----
+
+* one
+* two
+** one
+** two
+--
+
+== Speaker Notes
+
+[code]
+----
+[.notes]
+--
+* your notes go here
+--
+----
+
+== Speaker View
+image:speakernotes.jpg[]
+
+
+== Other Features
+* HTML pass through
+* Layout Flex / grid 
+* ASCII to diagrams
+
+== Vertical Slides
+[code]
+----
+=== Next Slide
+----
+
+=== Next slide
+This is the next slide
+
+== Conditional slides
+[code]
+----
+:IANAL: I am not a lawyer
+
+ifdef::IANAL[]
+== I am not a Lawyer
+* I’m not a lawyer, and nothing on these sides is legal advice
+endif::[]
+----
+
+== Generating content
+[code, python]
+----
+with urllib.request.urlopen("https://whimsy.apache.org/public/public_ldap_people.json") as url:
+    data = json.loads(url.read().decode())
+    people = data["people"]
+    print(":committers: " + str(len(people)))
+----
+
+[.note]
+--
+ Uses highlight.js
+--
+
+== Progress so far
+* Made one release (Incubator set of slide)
+* Several other donations in progress 
+
+== You can help!
+* Did you speak at this conference?
+* Have some internal training material?
+* Have slide desks from other conference?
+* Consider donating
+
+== Questions?
+Ask now, see me after the session,
+or email me at {email}.
