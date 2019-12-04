@@ -57,6 +57,16 @@
         <maven-war-plugin.version>3.2.2</maven-war-plugin.version>
     </properties>
 
+    <dependencies>
+        <!-- Just to ensure this is built first as we need this to exist in order to unpack it -->
+        <dependency>
+            <groupId>org.apache.training</groupId>
+            <artifactId>content-master-resources</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+
     <build>
         <plugins>
             <!-- Check if all source files have the required apache license headers -->
