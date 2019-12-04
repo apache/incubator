@@ -48,10 +48,10 @@
         <asciidoctorj.diagram.version>1.5.18</asciidoctorj.diagram.version>
         <asciidoctorj.extensions-lab.version>1.0.0</asciidoctorj.extensions-lab.version>
         <revealjs.version>3.8.0</revealjs.version>
-        <asciidoctor-revealjs.version>2.0.0</asciidoctor-revealjs.version>
+        <asciidoctor-revealjs.version>2.0.1</asciidoctor-revealjs.version>
 
-        <copy-rename-maven-plugin.version>1.0</copy-rename-maven-plugin.version>
-        <download-maven-plugin.version>1.4.1</download-maven-plugin.version>
+        <copy-rename-maven-plugin.version>1.0.1</copy-rename-maven-plugin.version>
+        <download-maven-plugin.version>1.4.2</download-maven-plugin.version>
         <jetty-maven-plugin.version>9.4.14.v20181114</jetty-maven-plugin.version>
         <maven-resources-plugin.version>3.1.0</maven-resources-plugin.version>
         <maven-war-plugin.version>3.2.2</maven-war-plugin.version>
@@ -75,7 +75,7 @@
                 <configuration>
                     <consoleOutput>true</consoleOutput>
                     <excludes>
-                        <!-- TODO: This is a mofified version of an asciidoctor file ... nor sure we can stick an Apache Header on it -->
+                        <!-- TODO: This is a modified version of an asciidoctor file ... nor sure we can stick an Apache Header on it -->
                         <exclude>libs/docinfo-hack/document.html.slim</exclude>
                         <!-- Exclude everything downloaded by the install-deps scripts -->
                         <exclude>libs/third-party/**</exclude>
@@ -333,24 +333,44 @@
                     </dependency>
                 </dependencies>
             </plugin>
-            <plugin>
-                <groupId>com.coderplus.maven.plugins</groupId>
-                <artifactId>copy-rename-maven-plugin</artifactId>
-                <version>${copy-rename-maven-plugin.version}</version>
-                <executions>
-                    <execution>
-                        <id>rename-slide-file</id>
-                        <phase>process-resources</phase>
-                        <goals>
-                            <goal>rename</goal>
-                        </goals>
-                        <configuration>
-                            <sourceFile>${project.slides.directory}/${project.main.contentfile}.revealjs</sourceFile>
-                            <destinationFile>${project.slides.directory}/${project.main.contentfile}.html</destinationFile>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
         </plugins>
     </build>
+
+    <!--
+        This plugin fails the build if there is no index.adoc file,
+        so only run it if there is input for generating slide output.
+    -->
+    <profiles>
+        <profile>
+            <id>rename-output</id>
+            <activation>
+                <file>
+                    <exists>src/main/asciidoc/index.adoc</exists>
+                </file>
+            </activation>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>com.coderplus.maven.plugins</groupId>
+                        <artifactId>copy-rename-maven-plugin</artifactId>
+                        <version>${copy-rename-maven-plugin.version}</version>
+                        <executions>
+                            <execution>
+                                <id>rename-slide-file</id>
+                                <phase>process-resources</phase>
+                                <goals>
+                                    <goal>rename</goal>
+                                </goals>
+                                <configuration>
+                                    <sourceFile>${project.slides.directory}/${project.main.contentfile}.revealjs</sourceFile>
+                                    <destinationFile>${project.slides.directory}/${project.main.contentfile}.html</destinationFile>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+
 </project>
