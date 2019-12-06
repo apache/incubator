@@ -109,3 +109,18 @@ It maintains its own in-memory copy of the namespace, which is always in sync wi
 Only one Backup node may be registered with the NameNode at once.
 
 == HDFS Commands
+
+All HDFS commands are invoked by the bin/hdfs script.
+Running the hdfs script without any arguments prints the description for all commands.
+
+Usage: hdfs [SHELL_OPTIONS] COMMAND [GENERIC_OPTIONS] [COMMAND_OPTIONS]
+
+
+== Common HDFS Commands
+
+Some of the common HDFS commands are as follows:
+
+- dfs : Runs a filesystem command on file system supported in Hadoop.
+- envvars: This command displays the Hadoop environment variables.
+- fsck: Runs the HDFS file system checking utility.
+- getconf: Gets the configuration information from the config directory.
