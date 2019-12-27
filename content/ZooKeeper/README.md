@@ -30,9 +30,11 @@ By running the following command, you can generate the presentation:
    
 ## Running the presentation
 
-In order to start a local web server serving the presentation, execute the following command:
+In order to start a local web server serving the presentation (English translation), execute the following command:
 
     mvn jetty:run-exploded
+
+(The selected language is configurable in the `<configuration><war>` element of the `jetty` plugin in `pom.xml`.)
     
 As soon as that's done, just point your browser to:
 
