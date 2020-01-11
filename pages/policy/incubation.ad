@@ -73,7 +73,7 @@ There are some restrictions about how Podlings can advertise themselves, especia
 
 Please consult the link:/guides/publicity.html[Podling Publicity Guide] for details.
 
-=== Disclaimers
+== Disclaimers
 
 Podling web sites MUST include a clear disclaimer on their
 website and in all documentation, releases and release announcements
@@ -139,7 +139,7 @@ ____
 For releases, the text SHOULD be included in a separate DISCLAIMER-WIP file
 stored alongside the NOTICE and LICENSE files.
 
-=== Releases
+== Releases
 
 See the guidelines for link:/guides/releasemanagement.html[Podling releases] for good practices on making releases.
 link:guides/releasemanagement.html#requesting_feedback_on_interim_non_asf_releases[Non ASF releases] can be made while incubating as long as the podling is moving towards making ASF releases.
@@ -156,8 +156,11 @@ Should the Incubator PMC vote to approve a release, the Podling MAY make that re
 
 Releases for the *Podling* MUST be distributed through *++http://www.apache.org/dist/incubator/++_Podling_* Also the Podling MAY choose to distribute approved releases through other channels like the central Maven repository.
 
-==== Adding PPMC members
+== Adding PPMC members
 After voting someone into the PPMC on the PPMC private list, a NOTICE email MUST be sent incubator private list. The PPMC MUST wait for 72 hours before inviting the new PPMC member to join the PPMC. See link:https://incubator.apache.org/guides/ppmc.html#voting_in_a_new_ppmc_member[Voting in a new PPMC member].
+
+== Joining the IPMC
+Just like other PMC new PMC members are voted on the Incubator private list. After a vote has finished a notice email MUST be sent to the board and the IPMC wait for 72 hours before inviting them. Any ASF member can ask to be an IPMC member, without a vote, but notice to the board MUST still be given.
 
 == Termination
 The Incubator PMC SHOULD notify a podling of any policy violations. It MAY consider the termination of a Podling if violations are not corrected. 
