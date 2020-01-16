@@ -35,7 +35,9 @@ IP Clearance is still maintained in SVN, and you should continue to maintain the
 
 == Building
 
-The website is built on link:https://builds.apache.org/view/H-L/view/Incubator/job/Incubator%20Site/[Jenkins], if you have karma you can trigger a build yourself.
+The website metadata is built by this link:https://builds.apache.org/job/Incubator%20SVN%20Clutch%20Analysis%20-%20part%201/[Clutch Jenkins job],
+where the website is built by this link:https://builds.apache.org/view/All/job/Incubator%20GIT%20Site%20-%20part%202//[Website Jenkins job],
+if you have karma you can trigger a build yourself.
 Commits to the git repo trigger builds automatically, and the website builds daily for other changes after midnight UTC.
 
 == Help Wanted!
