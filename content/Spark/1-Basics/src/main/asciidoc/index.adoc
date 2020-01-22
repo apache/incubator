@@ -1,0 +1,197 @@
+////
+
+  Licensed to the Apache Software Foundation (ASF) under one or more
+  contributor license agreements.  See the NOTICE file distributed with
+  this work for additional information regarding copyright ownership.
+  The ASF licenses this file to You under the Apache License, Version 2.0
+  (the "License"); you may not use this file except in compliance with
+  the License.  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+
+////
+
+include::_settings.adoc[]
+:presenter_name: Some Cool Person
+:presenter_company: Apache Software Foundation
+
+== Apache Spark Training +
+
+Basics
+
+== Contents of this module
+
+. Spark Overview
+. Use Cases
+
+== Big Data Platforms
+
+. *too much data* for one machine
+. *processing speed*
+. *scaling out* vs. *scaling up*
+
+[NOTE.speaker]
+--
+BIG DATA: Google, Facebook, Amazon, eBay, Twitter
+big data: internet providers, e-commerce platforms, Last.fm, manufacturing
+everywhere: log files
+
+data might not fit on one machine
+new data is constantly being produced & needs to be processed at least as fast
+real-time constraints
+internet scale:
+yahoo: 4500 node cluster, 8 cores + 4TB storage each
+facebook: log data (clicks), user profiles, ... for analytics & ML
+>1000 node cluster, 8 cores + 12TB storage each
+google/yahoo: websites (indexes), user profiles & histories (f. personalized search), maps
+internet providers: click logs
+manufacturing: machine-generated logs
+energy, industry: sensor-data, internet-of-things
+mortals: convert, sort, filter, search, explore
+
+explain scalout vs scale-up (linear vs non-linear), maximum hardware size fixed
+
+Scale up: add resources to computer
+Scale out: add computers ☺
+--
+
+== Why Apache Spark?
+
+* next generation big data processing engine
+* large community
+* production ready since 05/14
+* used by
+** Amazon
+** SAP
+** IBM
+
+image::spark.png[scaledwidth=75%]
+
+////
+TODO: Position the spark logo
+////
+
+== Spark history
+
+* Apache Hadoop started in 2006
+* Spark incepted by Matei Zaharia at UC Berkeley's AMPLab in 2009
+** In the same Year: Project Stratosphere started (later becoming Apache Flink)
+* 2010 open sourced under a BSD license
+* 2013 donated to the Apache Software Foundation
+* 2014 Databricks established
+* May 2014: Spark 1.0
+* 2016: Spark 2.0: Datasets
+* 2017: Spark 2.2: Structured Streaming
+* 2018: Spark 2.4
+
+////
+TODO: Doesn't fit to page
+////
+
+== Apache Spark - Unified Framework
+
+[.west]
+* Scala, Java, Python, R
+* ease of use:
+* 80 high level operators
+* Batch Processing
+* Stream Analytics
+* Machine Learning
+* Interactive SQL
+
+[.east]
+DIAGRAM HERE
+
+////
+TODO: Block framework diagram for Spark
+////
+
+[NOTE.speaker]
+--
+Data Integration and ETL
+High performance batch computation
+Near Real-time stream processing
+Machine Learning
+Interactive analytics
+--
+
+== Benefits of a unified platform
+
+[.west]
+* Single consistent set of APIs
+* Shared Abstraction: RDDs or DataFrames, Dstreams
+* Pipelines: Combine different types of processing in the same application
+* Performance: Only one-time initialization, data sharing in memory
+
+[.east]
+DIAGRAM HERE
+
+////
+TODO: Block diagram for Spark
+Input Streams of Events
+Spark Streaming
+Machine Learning
+Spark SQL
+NoSQL DB
+////
+
+== Storage
+
+* Spark does not have its own Storage
+* can use
+** HDFS (Hadoop)
+** Local file system
+** NoSQL (HBase, Cassandra)
+** Cloud (Amazon S3)
+
+== Spark Use Cases
+
+[cols="3*", options="header"]
+|===
+| Use case | Description | Users
+
+| Data Integration and ETL
+| Cleansing and combining data from diverse sources
+| Palantir: Data analytics platform
+
+| Interactive analytics
+| Gain insight from massive data sets in ad hoc investigations or regularly planned dashboards
+| Goldman Sachs: Analytics platform +
+Huawei: Query platform in the telecom sector
+
+| High performance batch computation
+| Run complex algorithms against large scale data
+| Novartis: Genomic Research +
+MyFitnessPal: Process food data
+
+| Machine Learning
+| Predict outcomes to make decisions based on input data
+| Alibaba: Marketplace Analysis +
+Spotify: Music Recommendation
+
+| Real-time stream processing
+| Capturing and processing data continuously with low latency and high reliability
+| Netflix: Recommendation Engine +
+British Gas: Connected Homes
+|===
+
+////
+TODO: Doesn't fit to page
+////
+
+== Short summary
+
+* Spark introduction, history and benefits
+** Next generation big data processing engine
+** Production-ready since 05/2014
+** Spark’s fast engine – 3 x faster with 10 x fewer recourses than Hadoop [Daytona-GreySort]
+* Overview of Spark components
+** Spark SQL, Spark Streaming, Spark ML, GraphX on top of Spark Core Engine
+* Several storage options i.e. HDFS, Cassandra
+* Suitable for different use cases
