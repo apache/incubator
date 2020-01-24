@@ -27,9 +27,12 @@ Requirements:
 - Java 8 or newer
 - Maven 3.3 or newer
 
+Until we have released the tooling, you will need to build it locally first or the archetype plugin will fail to run.
+Please read the following chapter on how to do this.
+
 In order to create an empty presentation to start with, please execute the following command:
 
-    mvn -Dmaven.repo.remote=https://repository.apache.org/content/repositories/snapshots org.apache.maven.plugins:maven-archetype-plugin:3.1.2:generate -DarchetypeGroupId=org.apache.training -DarchetypeArtifactId=content-archetype -DarchetypeVersion=1.0.0-SNAPSHOT
+    mvn archetype:generate -DarchetypeGroupId=org.apache.training -DarchetypeArtifactId=content-archetype -DarchetypeVersion=1.0.0-SNAPSHOT
 
 After choosing `groupId`, `artifactId`, `version` and `package` there should be a new directory that matches the `artifactId` that you selected.
 
@@ -40,3 +43,19 @@ Change into this directory and run the following command to build the presentati
 After that, there should be a directory `target/generated-slides`.
 
 If you open the `index.html` in that directory your presentation should open in the browser.
+
+== Building the Apache Training Tooling
+
+Additional requirements:
+
+- Git
+
+In order to build Apache Training Tooling, please checkout the git repo from:
+
+    git clone https://gitbox.apache.org/repos/asf/incubator-training.git
+    cd incubator-training
+    mvn install
+
+Then execute the following command:
+
+    mvn clean install
