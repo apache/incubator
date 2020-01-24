@@ -19,9 +19,10 @@
 :revealjs_progress: true
 :revealjs_slidenumber: true
 :sourcedir: ../java
+:imagesdir: images
 
 == What is Apache Ignite?
-Ignite™ is a memory-centric distributed database, caching, and processing platform.
+Apache Ignite™ is a memory-centric distributed database, caching, and processing platform.
 
 2 major use-cases
 
@@ -33,7 +34,7 @@ IMDG = Stores data (data grid) + Processes data (compute grid)
 
 - Stores entries in-memory
 - Data is distributed among nodes
-- Needs external store
+- May need external data source (DB, REST, other)
 - Collocated Processing = code goes to data
 
 == In-Memory Database
@@ -81,6 +82,31 @@ Maven
 </dependency>
 ----
 
+== Download full dirstibution
+Go to Ignite Project site
+https://ignite.apache.org/[https://ignite.apache.org/] -> Downloads -> Binaries
+
+Download latest binary release from the table https://ignite.apache.org/download.cgi#binaries[here]
+
+Unzip to any folder.
+
+\bin\ignite.sh / ignite.bat will start server node
+
+== Java Requirements
+JDK 8 and later
+
+Start script will auto-detect version of Java
+
+https://apacheignite.readme.io/docs/getting-started#section-running-ignite-with-java-9-10-11[Running using Java 9+]
+from IDE requires additional parameters
+
+[.small]`--add-exports=java.base/jdk.internal.misc=ALL-UNNAMED
+--add-exports=java.base/sun.nio.ch=ALL-UNNAMED
+--add-exports=java.management/com.sun.jmx.mbeanserver=ALL-UNNAMED
+--add-exports=jdk.internal.jvmstat/sun.jvmstat.monitor=ALL-UNNAMED
+--add-exports=java.base/sun.reflect.generics.reflectiveObjects=ALL-UNNAMED
+--illegal-access=permit`
+
 == Starting a server node
 By default, Ignite starts server node
 [source,java]
@@ -99,3 +125,192 @@ Both server and client nodes will log
 `Topology snapshot [ver=2, locNode=b5fc314f, servers=1, clients=1, state=ACTIVE, CPUs=12, offheap=3.2GB, heap=7.1GB]`
 
 This means nodes detected each other
+
+== Save data into Grid
+Ignite supports JCache JSR 107 API,
+`IgniteCache<K,V> extends javax.cache.Cache<K,V>`
+
+[source,java]
+----
+include::{sourcedir}/example/PutGetExample.java[tags=contains,indent=0]
+----
+
+== Dynamic Cache
+----
+ignite.getOrCreateCache(CacheConfiguration cfg)
+----
+
+Creates an instance of the cache on the fly
+
+----
+ignite.createCache(CacheConfiguration cfg)
+----
+
+Creates cache instance
+
+Ignite will create and deploy the cache across all server cluster members
+
+Cache will be deployed to any new joined node
+
+Limitation - not possible to create new cache in transaction
+
+== Static cache
+Accessed using method
+----
+ignite.cache(String name)
+----
+Will return existing cache or null
+
+- No cache creation under running transaction
+
+- User has to provide configuration before node startup
+
+== Application and cache
+Applications are usually made up of multiple caches
+
+- one for each data type to be stored
+
+-- This is a best practice
+
+-- If you have two classes, Card and Client, you should have two caches
+
+== Replicated and partitioned
+
+image::replicated_vs_partitioned.png[]
+
+Replicated - Cache A
+Partitioned - Cache B & C
+Replicated, use case:
+rare write, often - read, e.g. dictionary
+
+== Partitioned Caches
+Most common usage of cache
+
+.Defaults
+
+. 1024 partitions
+. No redundancy
+. In-memory - volatile
+
+WARNING: Configure backups for fault tolerance
+
+For most cases: 1 backup is enough
+
+== Cache Atomicity Mode
+ATOMIC
+
+- distributed transactions not supported; distributed locking not supported
+- higher performance and throughput ratios
+
+TRANSACTIONAL
+
+- ACID Compliant
+- Transaction over several caches requires all caches to be transactional
+
+TRANSACTIONAL_SNAPSHOT
+
+- ACID for SQL Queries
+
+== Non SQL query Scan query
+Provides iteration over cache data
+
+May have additional filter
+
+Filter is sent to server
+
+Iterator over cache uses scan query
+
+== Scan query example
+[source,java]
+----
+include::{sourcedir}/example/SqlExample.java[tags=scan,indent=0]
+----
+
+== SQL support
+Provides full ANSI SQL-99 support including
+
+- aggregations
+- distributed joins
+
+Drivers
+
+- JDBC
+- ODBC
+
+DML: SELECT, UPDATE, INSERT, and DELETE queries
+& subset of DDL
+
+== SQL in Apache Ignite
+H2 In memory SQL database part of Ignite process
+
+- parse/execute query
+- not storage
+
+Additional module 'ignite-indexing' is required in the classpath of all Ignite nodes.
+
+== Adding indexing module
+Gradle
+[source,groovy]
+----
+compile group: 'org.apache.ignite', name: 'ignite-indexing', version: '2.7.5'
+----
+
+Maven
+[source,xml]
+----
+<dependency>
+  <groupId>org.apache.ignite</groupId>
+  <artifactId>ignite-indexing</artifactId>
+  <version>2.7.5</version>
+</dependency>
+----
+
+== Declare cache visible as table
+[source,java]
+----
+include::{sourcedir}/example/SqlExample.java[tags=entity,indent=0]
+----
+Otherwise:
+----
+IgniteSQLException: Failed to find SQL table for type: Client
+----
+
+== Declare visible entity fields
+[source,java]
+----
+include::{sourcedir}/example/SqlExample.java[tags=field,indent=0]
+----
+
+email is declared to be visible by SQL engine
+
+phoneNumber is declared as visible and index build is required
+
+== SqlQuery
+Result is a number of Java objects (entries)
+
+Only filter condition is specified by user
+
+"Select * from Customer" is always added automatically
+
+Table name based on entry class name
+
+== SqlQuery Example
+[source,java]
+----
+include::{sourcedir}/example/SqlExample.java[tags=query,indent=0]
+----
+
+== SqlFieldsQuery
+"Projection" of entry
+
+Result is List<?> - fields
+
+Subset/specific fields
+
+Full SQL statement is required
+
+== SqlFieldsQuery Example
+[source,java]
+----
+include::{sourcedir}/example/SqlExample.java[tags=fields,indent=0]
+----

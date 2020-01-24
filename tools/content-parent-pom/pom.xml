@@ -24,19 +24,19 @@
     <parent>
         <groupId>org.apache</groupId>
         <artifactId>apache</artifactId>
-        <version>21</version>
+        <version>22</version>
 
         <!-- Required in our case as per http://maven.apache.org/ref/3.0.3/maven-model/maven.html#class_parent -->
         <relativePath></relativePath>
     </parent>
 
     <groupId>org.apache.training</groupId>
-    <artifactId>presentation-template</artifactId>
+    <artifactId>content-master-pom</artifactId>
     <version>1.0.0-SNAPSHOT</version>
-    <packaging>war</packaging>
+    <packaging>pom</packaging>
 
-    <name>Training: Tools: Slide Template: Asciidoc to reveal.js Maven example</name>
-    <description>An example project that demonstrates how to integrate convert Asciidoc to a reveal.js presentation with the Asciidoctor Maven plugin.</description>
+    <name>Training: Tools: Content Master Pom</name>
+    <description>Parent pom containing all the configuration for building presentations with the training template.</description>
 
     <properties>
         <project.main.contentfile>index</project.main.contentfile>
@@ -44,18 +44,28 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
         <asciidoctor.maven.plugin.version>2.0.0-RC.1</asciidoctor.maven.plugin.version>
-        <asciidoctorj.version>2.1.0</asciidoctorj.version>
-        <asciidoctorj.diagram.version>1.5.18</asciidoctorj.diagram.version>
+        <asciidoctorj.version>2.2.0</asciidoctorj.version>
+        <asciidoctorj.diagram.version>2.0.0</asciidoctorj.diagram.version>
         <asciidoctorj.extensions-lab.version>1.0.0</asciidoctorj.extensions-lab.version>
         <revealjs.version>3.8.0</revealjs.version>
-        <asciidoctor-revealjs.version>2.0.0</asciidoctor-revealjs.version>
+        <asciidoctor-revealjs.version>3.0.0</asciidoctor-revealjs.version>
 
-        <copy-rename-maven-plugin.version>1.0</copy-rename-maven-plugin.version>
-        <download-maven-plugin.version>1.4.1</download-maven-plugin.version>
+        <copy-rename-maven-plugin.version>1.0.1</copy-rename-maven-plugin.version>
+        <download-maven-plugin.version>1.4.2</download-maven-plugin.version>
         <jetty-maven-plugin.version>9.4.14.v20181114</jetty-maven-plugin.version>
         <maven-resources-plugin.version>3.1.0</maven-resources-plugin.version>
         <maven-war-plugin.version>3.2.2</maven-war-plugin.version>
     </properties>
+
+    <dependencies>
+        <!-- Just to ensure this is built first as we need this to exist in order to unpack it -->
+        <dependency>
+            <groupId>org.apache.training</groupId>
+            <artifactId>content-master-resources</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
 
     <build>
         <plugins>
@@ -75,7 +85,7 @@
                 <configuration>
                     <consoleOutput>true</consoleOutput>
                     <excludes>
-                        <!-- TODO: This is a mofified version of an asciidoctor file ... nor sure we can stick an Apache Header on it -->
+                        <!-- TODO: This is a modified version of an asciidoctor file ... nor sure we can stick an Apache Header on it -->
                         <exclude>libs/docinfo-hack/document.html.slim</exclude>
                         <!-- Exclude everything downloaded by the install-deps scripts -->
                         <exclude>libs/third-party/**</exclude>
@@ -105,11 +115,13 @@
                 </configuration>
             </plugin>
 
+            <!-- Download all the tools needed to generate the output -->
             <plugin>
                 <groupId>com.googlecode.maven-download-plugin</groupId>
                 <artifactId>download-maven-plugin</artifactId>
                 <version>${download-maven-plugin.version}</version>
                 <executions>
+                    <!-- Get the asciidoctor revealjs module -->
                     <execution>
                         <id>install-asciidoctor-revealjs</id>
                         <phase>generate-resources</phase>
@@ -123,6 +135,7 @@
                             <outputDirectory>${project.build.directory}</outputDirectory>
                         </configuration>
                     </execution>
+                    <!-- Get the reveal js sources -->
                     <execution>
                         <id>install-revealjs</id>
                         <phase>generate-resources</phase>
@@ -136,6 +149,7 @@
                             <outputDirectory>${project.slides.directory}</outputDirectory>
                         </configuration>
                     </execution>
+                    <!-- Download the C3 and D3 libraries -->
                     <execution>
                         <id>download-c3-css</id>
                         <phase>generate-resources</phase>
@@ -171,6 +185,11 @@
                     </execution>
                 </executions>
             </plugin>
+
+            <!--
+                Make sure the filtered resources are output to the slides directory and
+                theme content is output to the themes directory of reveal js.
+            -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-resources-plugin</artifactId>
@@ -196,16 +215,80 @@
                                     <filtering>true</filtering>
                                     <targetPath>${project.slides.directory}/reveal.js-${revealjs.version}/css/theme</targetPath>
                                 </resource>
-                                <!-- Patch one of the "slim" files as the 'docinfo' integration doesn't seem to work -->
-                                <resource>
-                                    <directory>libs/docinfo-hack</directory>
-                                    <targetPath>${project.build.directory}/asciidoctor-reveal.js-${asciidoctor-revealjs.version}/templates</targetPath>
-                                </resource>
                             </resources>
                         </configuration>
                     </execution>
                 </executions>
             </plugin>
+
+            <!-- Get some static Apache resources shared throughout all presentations -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <version>3.1.1</version>
+                <executions>
+                    <execution>
+                        <id>copy-training-asciidoc-resources</id>
+                        <phase>generate-resources</phase>
+                        <goals>
+                            <goal>unpack</goal>
+                        </goals>
+                        <configuration>
+                            <artifactItems>
+                                <artifactItem>
+                                    <groupId>org.apache.training</groupId>
+                                    <artifactId>content-master-resources</artifactId>
+                                    <version>1.0.0-SNAPSHOT</version>
+                                    <type>jar</type>
+                                    <overWrite>true</overWrite>
+                                    <outputDirectory>${project.build.directory}/asciidoctor-reveal.js-${asciidoctor-revealjs.version}/templates</outputDirectory>
+                                    <includes>*.slim</includes>
+                                </artifactItem>
+                            </artifactItems>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>copy-training-presentation-themes</id>
+                        <phase>generate-resources</phase>
+                        <goals>
+                            <goal>unpack</goal>
+                        </goals>
+                        <configuration>
+                            <artifactItems>
+                                <artifactItem>
+                                    <groupId>org.apache.training</groupId>
+                                    <artifactId>content-master-resources</artifactId>
+                                    <version>1.0.0-SNAPSHOT</version>
+                                    <type>jar</type>
+                                    <outputDirectory>${project.slides.directory}/reveal.js-${revealjs.version}/css/theme</outputDirectory>
+                                    <includes>*.css</includes>
+                                </artifactItem>
+                            </artifactItems>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>copy-training-presentation-resources</id>
+                        <phase>generate-resources</phase>
+                        <goals>
+                            <goal>unpack</goal>
+                        </goals>
+                        <configuration>
+                            <artifactItems>
+                                <artifactItem>
+                                    <groupId>org.apache.training</groupId>
+                                    <artifactId>content-master-resources</artifactId>
+                                    <version>1.0.0-SNAPSHOT</version>
+                                    <type>jar</type>
+                                    <outputDirectory>${project.slides.directory}/images</outputDirectory>
+                                    <excludes>*.slim,*.css,META-INF/**</excludes>
+                                </artifactItem>
+                            </artifactItems>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <!-- Configure the asciidoctor generation -->
             <plugin>
                 <groupId>org.asciidoctor</groupId>
                 <artifactId>asciidoctor-maven-plugin</artifactId>
@@ -273,38 +356,55 @@
                     </dependency>
                 </dependencies>
             </plugin>
+
+            <!-- If the packaging is se to "war", pack the slides into a war file -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
-                <version>${maven-war-plugin.version}</version>
+                <version>3.2.2</version>
                 <configuration>
                     <failOnMissingWebXml>false</failOnMissingWebXml>
-                    <warSourceDirectory>${project.build.directory}/generated-slides</warSourceDirectory>
+                    <warSourceDirectory>${project.slides.directory}</warSourceDirectory>
                 </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.eclipse.jetty</groupId>
-                <artifactId>jetty-maven-plugin</artifactId>
-                <version>${jetty-maven-plugin.version}</version>
-            </plugin>
-            <plugin>
-                <groupId>com.coderplus.maven.plugins</groupId>
-                <artifactId>copy-rename-maven-plugin</artifactId>
-                <version>${copy-rename-maven-plugin.version}</version>
-                <executions>
-                    <execution>
-                        <id>rename-slide-file</id>
-                        <phase>process-resources</phase>
-                        <goals>
-                            <goal>rename</goal>
-                        </goals>
-                        <configuration>
-                            <sourceFile>${project.slides.directory}/${project.main.contentfile}.revealjs</sourceFile>
-                            <destinationFile>${project.slides.directory}/${project.main.contentfile}.html</destinationFile>
-                        </configuration>
-                    </execution>
-                </executions>
             </plugin>
         </plugins>
     </build>
+
+    <!--
+        This plugin fails the build if there is no index.adoc file,
+        so only run it if there is input for generating slide output.
+    -->
+    <profiles>
+        <profile>
+            <id>rename-output</id>
+            <activation>
+                <file>
+                    <exists>src/main/asciidoc/index.adoc</exists>
+                </file>
+            </activation>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>com.coderplus.maven.plugins</groupId>
+                        <artifactId>copy-rename-maven-plugin</artifactId>
+                        <version>${copy-rename-maven-plugin.version}</version>
+                        <executions>
+                            <execution>
+                                <id>rename-slide-file</id>
+                                <phase>process-resources</phase>
+                                <goals>
+                                    <goal>rename</goal>
+                                </goals>
+                                <configuration>
+                                    <sourceFile>${project.slides.directory}/${project.main.contentfile}.revealjs</sourceFile>
+                                    <destinationFile>${project.slides.directory}/${project.main.contentfile}.html</destinationFile>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+
 </project>

@@ -31,28 +31,30 @@
     </parent>
 
     <groupId>org.apache.training</groupId>
-    <artifactId>apache-zookeeper</artifactId>
+    <artifactId>Apache-Spark-Basics</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>war</packaging>
 
-    <name>Training: Apache ZooKeeper</name>
+    <name>Apache Spark Basics</name>
+    <description>An example project that demonstrates how to integrate convert Asciidoc to a reveal.js presentation with the Asciidoctor Maven plugin.</description>
 
     <properties>
-        <project.slides.common-directory>${project.build.directory}/generated-slides/common</project.slides.common-directory>
-        <project.slides.language-directory>${project.build.directory}/generated-slides/language</project.slides.language-directory>
+        <project.main.contentfile>index</project.main.contentfile>
+        <project.slides.directory>${project.build.directory}/generated-slides</project.slides.directory>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
         <asciidoctor.maven.plugin.version>2.0.0-RC.1</asciidoctor.maven.plugin.version>
-        <asciidoctorj.version>2.0.0-RC.2</asciidoctorj.version>
-        <asciidoctorj.diagram.version>1.5.16</asciidoctorj.diagram.version>
+        <asciidoctorj.version>2.1.0</asciidoctorj.version>
+        <asciidoctorj.diagram.version>1.5.18</asciidoctorj.diagram.version>
         <asciidoctorj.extensions-lab.version>1.0.0</asciidoctorj.extensions-lab.version>
-        <revealjs.version>3.7.0</revealjs.version>
+        <revealjs.version>3.8.0</revealjs.version>
         <asciidoctor-revealjs.version>2.0.0</asciidoctor-revealjs.version>
 
+        <copy-rename-maven-plugin.version>1.0</copy-rename-maven-plugin.version>
         <download-maven-plugin.version>1.4.1</download-maven-plugin.version>
+        <jetty-maven-plugin.version>9.4.14.v20181114</jetty-maven-plugin.version>
         <maven-resources-plugin.version>3.1.0</maven-resources-plugin.version>
         <maven-war-plugin.version>3.2.2</maven-war-plugin.version>
-        <jetty-maven-plugin.version>9.4.14.v20181114</jetty-maven-plugin.version>
     </properties>
 
     <build>
@@ -131,7 +133,7 @@
                             <url>https://github.com/hakimel/reveal.js/archive/${revealjs.version}.zip</url>
                             <unpack>true</unpack>
                             <outputFileName>reveal.js-${revealjs.version}.zip</outputFileName>
-                            <outputDirectory>${project.slides.common-directory}</outputDirectory>
+                            <outputDirectory>${project.slides.directory}</outputDirectory>
                         </configuration>
                     </execution>
                     <execution>
@@ -142,7 +144,7 @@
                         </goals>
                         <configuration>
                             <url>https://cdnjs.cloudflare.com/ajax/libs/c3/0.6.12/c3.min.css</url>
-                            <outputDirectory>${project.slides.common-directory}/css</outputDirectory>
+                            <outputDirectory>${project.slides.directory}/css</outputDirectory>
                         </configuration>
                     </execution>
                     <execution>
@@ -153,7 +155,7 @@
                         </goals>
                         <configuration>
                             <url>https://cdnjs.cloudflare.com/ajax/libs/c3/0.6.12/c3.min.js</url>
-                            <outputDirectory>${project.slides.common-directory}/js</outputDirectory>
+                            <outputDirectory>${project.slides.directory}/js</outputDirectory>
                         </configuration>
                     </execution>
                     <execution>
@@ -164,7 +166,7 @@
                         </goals>
                         <configuration>
                             <url>https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js</url>
-                            <outputDirectory>${project.slides.common-directory}/js</outputDirectory>
+                            <outputDirectory>${project.slides.directory}/js</outputDirectory>
                         </configuration>
                     </execution>
                 </executions>
@@ -186,13 +188,13 @@
                                 <!-- Copy the normal resources into the root of the slides directory -->
                                 <resource>
                                     <directory>src/main/resources</directory>
-                                    <targetPath>${project.slides.common-directory}</targetPath>
+                                    <targetPath>${project.slides.directory}</targetPath>
                                 </resource>
                                 <!-- Copy our css-theme to the reveal.js theme directory -->
                                 <resource>
                                     <directory>src/main/theme</directory>
                                     <filtering>true</filtering>
-                                    <targetPath>${project.slides.common-directory}/reveal.js-${revealjs.version}/css/theme</targetPath>
+                                    <targetPath>${project.slides.directory}/reveal.js-${revealjs.version}/css/theme</targetPath>
                                 </resource>
                                 <!-- Patch one of the "slim" files as the 'docinfo' integration doesn't seem to work -->
                                 <resource>
@@ -210,67 +212,54 @@
                 <version>${asciidoctor.maven.plugin.version}</version>
                 <executions>
                     <execution>
-                        <id>generate-slides-en</id>
+                        <id>generate-slides</id>
                         <phase>process-resources</phase>
                         <goals>
                             <goal>process-asciidoc</goal>
                         </goals>
                         <configuration>
-                            <sourceDocumentName>index_en.adoc</sourceDocumentName>
-                            <outputDirectory>${project.slides.language-directory}/en</outputDirectory>
-                        </configuration>
-                    </execution>
-                    <execution>
-                        <id>generate-slides-de</id>
-                        <phase>process-resources</phase>
-                        <goals>
-                            <goal>process-asciidoc</goal>
-                        </goals>
-                        <configuration>
-                            <sourceDocumentName>index_de.adoc</sourceDocumentName>
-                            <outputDirectory>${project.slides.language-directory}/de</outputDirectory>
+                            <!-- Tell asciidoctor to use the reveal.js backend and not the default html -->
+                            <backend>revealjs</backend>
+                            <!-- Configure where are all the asciidoc source files located -->
+                            <sourceDirectory>src/main/asciidoc</sourceDirectory>
+                            <!-- Configure the target director to where will the output be generated -->
+                            <outputDirectory>${project.slides.directory}</outputDirectory>
+                            <!-- Enable optional modules for generating diagrams and charts -->
+                            <requires>
+                                <require>asciidoctor-diagram</require>
+                                <!--require>chart-block-macro</require-->
+                            </requires>
+                            <!-- This has to point to the asciidoctor-revealjs directory which contains all the "slim" files -->
+                            <templateDir>${project.build.directory}/asciidoctor-reveal.js-${asciidoctor-revealjs.version}/templates</templateDir>
+                            <attributes>
+                                <!--imagesdir></imagesdir-->
+                                <!--
+                                    Tell the system the relative path to the reveal.js files
+                                    inside the generated-slides directory.
+                                -->
+                                <revealjsdir>reveal.js-${revealjs.version}</revealjsdir>
+                                <!--
+                                    Use our custom theme, which is defined by src/main/theme/apache.css
+                                    and copied inside the reveal.js installation by the resources plugin a few lines
+                                    up inside this pom.
+                                -->
+                                <revealjs_theme>apache</revealjs_theme>
+                                <!-- Some basic settings -->
+                                <revealjs_transition>linear</revealjs_transition>
+                                <project-version>${project.version}</project-version>
+                                <source-highlighter>highlightjs</source-highlighter>
+                                <!--highlightjs-theme>https://raw.githubusercontent.com/isagalaev/highlight.js/master/src/styles/arduino-light.css</highlightjs-theme-->
+                                <erd>${basedir}/libs/third-party/erd/.stack-work/dist/x86_64-osx/Cabal-2.2.0.1/build/erd/erd</erd>
+                                <!--convert>${basedir}/libs/third-party/ImageMagick-7.0.8/bin/convert</convert>
+                                <identify>${basedir}/libs/third-party/ImageMagick-7.0.8/bin/identify</identify-->
+                                <mermaid>${basedir}/libs/third-party/node_modules/.bin/mmdc</mermaid>
+                                <phantomjs>${basedir}/libs/third-party/phantomjs-2.1.1-macosx/bin/phantomjs</phantomjs>
+                                <svgbob>${basedir}/libs/third-party/svgbob/bin/svgbob</svgbob>
+                                <vg2svg>${basedir}/libs/third-party/node_modules/.bin/vg2svg</vg2svg>
+                            </attributes>
                         </configuration>
                     </execution>
                 </executions>
-                <!-- Common configuration -->
-                <configuration>
-                    <!-- Tell asciidoctor to use the reveal.js backend and not the default html -->
-                    <backend>revealjs</backend>
-                    <!-- Configure where are all the asciidoc source files located -->
-                    <sourceDirectory>src/main/asciidoc</sourceDirectory>
-                    <!-- output file-->
-                    <outputFile>index.html</outputFile>
-                    <!-- Enable optional modules for generating diagrams and charts -->
-                    <requires>
-                        <require>asciidoctor-diagram</require>
-                        <!--require>chart-block-macro</require-->
-                    </requires>
-                    <!-- This has to point to the asciidoctor-revealjs directory which contains all the "slim" files -->
-                    <templateDir>${project.build.directory}/asciidoctor-reveal.js-${asciidoctor-revealjs.version}/templates</templateDir>
-                    <attributes>
-                        <!--imagesdir></imagesdir-->
-                        <!--
-                            Tell the system the relative path to the reveal.js files
-                            inside the generated-slides directory.
-                        -->
-                        <revealjsdir>reveal.js-${revealjs.version}</revealjsdir>
-                        <!--
-                            Use our custom theme, which is defined by src/main/theme/apache.css
-                            and copied inside the reveal.js installation by the resources plugin a few lines
-                            up inside this pom.
-                        -->
-                        <revealjs_theme>apache</revealjs_theme>
-                        <!-- Some basic settings -->
-                        <revealjs_transition>linear</revealjs_transition>
-                        <project-version>${project.version}</project-version>
-                        <source-highlighter>highlightjs</source-highlighter>
-                        <erd>${basedir}/libs/third-party/erd/.stack-work/dist/x86_64-osx/Cabal-2.2.0.1/build/erd/erd</erd>
-                        <mermaid>${basedir}/libs/third-party/node_modules/.bin/mmdc</mermaid>
-                        <phantomjs>${basedir}/libs/third-party/phantomjs-2.1.1-macosx/bin/phantomjs</phantomjs>
-                        <svgbob>${basedir}/libs/third-party/svgbob/bin/svgbob</svgbob>
-                        <vg2svg>${basedir}/libs/third-party/node_modules/.bin/vg2svg</vg2svg>
-                    </attributes>
-                </configuration>
                 <dependencies>
                     <dependency>
                         <groupId>org.asciidoctor</groupId>
@@ -288,52 +277,33 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
                 <version>${maven-war-plugin.version}</version>
-                <executions>
-                    <execution>
-                        <id>default-war</id>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>war</goal>
-                        </goals>
-                        <configuration>
-                            <webResources>
-                                <resource>
-                                    <directory>${project.slides.language-directory}/en</directory>
-                                </resource>
-                            </webResources>
-                            <webappDirectory>${project.build.directory}/${project.artifactId}-${project.version}-en</webappDirectory>
-                            <classifier>en</classifier>
-                        </configuration>
-                    </execution>
-                    <execution>
-                        <id>default-war-de</id>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>war</goal>
-                        </goals>
-                        <configuration>
-                            <webResources>
-                                <resource>
-                                    <directory>${project.slides.language-directory}/de</directory>
-                                </resource>
-                            </webResources>
-                            <webappDirectory>${project.build.directory}/${project.artifactId}-${project.version}-de</webappDirectory>
-                            <classifier>de</classifier>
-                        </configuration>
-                    </execution>
-                </executions>
                 <configuration>
                     <failOnMissingWebXml>false</failOnMissingWebXml>
-                    <warSourceDirectory>${project.build.directory}/generated-slides/common</warSourceDirectory>
+                    <warSourceDirectory>${project.build.directory}/generated-slides</warSourceDirectory>
                 </configuration>
             </plugin>
             <plugin>
                 <groupId>org.eclipse.jetty</groupId>
                 <artifactId>jetty-maven-plugin</artifactId>
                 <version>${jetty-maven-plugin.version}</version>
-                <configuration>
-                    <war>${project.build.directory}/${project.artifactId}-${project.version}-en.war</war>
-                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>com.coderplus.maven.plugins</groupId>
+                <artifactId>copy-rename-maven-plugin</artifactId>
+                <version>${copy-rename-maven-plugin.version}</version>
+                <executions>
+                    <execution>
+                        <id>rename-slide-file</id>
+                        <phase>process-resources</phase>
+                        <goals>
+                            <goal>rename</goal>
+                        </goals>
+                        <configuration>
+                            <sourceFile>${project.slides.directory}/${project.main.contentfile}.revealjs</sourceFile>
+                            <destinationFile>${project.slides.directory}/${project.main.contentfile}.html</destinationFile>
+                        </configuration>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>

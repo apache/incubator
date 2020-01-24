@@ -131,7 +131,7 @@ Nest lists, by duplicating the list-char
 [source,java]
 .Java code from project
 ----
-include::{sourcedir}/example/StringUtils.java[tags=contains,indent=0]
+include::{sourcedir}/${packageInPathFormat}/StringUtils.java[tags=contains,indent=0]
 ----
 
 == Two columns
@@ -211,7 +211,7 @@ digraph g {
 }
 ----
 
-=== Seqdag Diagram
+=== Seqdiag Diagram
 
 [seqdiag,s7-communication,svg]
 ....
@@ -442,12 +442,11 @@ gantt
 
 [svgbob,svgbob-circuit-diagram-test,svg]
 ....
-+10-15V           ___0,047R
+     +10-15V           ___0,047R
       *------o------o-|___|-o--o---------o----o-------.
              |      |       |  |         |    |       |
             ---     |       | .+.        |    |       |
-      470uF ###     |       | | | 2k2    |    |       |
-             | +    |       | | |        |    |      .+.
+      470uF  | +    |       | | |        |    |      .+.
       *------o      '--.    | '+'       .+.   |      '-'
              |         |6   |7 |8    1k | |   |       |
             GND      .-+----+--+--.     | |   |       |
@@ -464,7 +463,7 @@ gantt
                      |            |2                  |     |    |
                      |            |--o                C|    |    |
                      |            | GND         30uH  C|    |   --- 470
-                     |            |3      1nF         C|    |   ###  uF
+                     |            |3      1nF         C|    |
                      |            |-------||--.       |     |    | +
                      '-----+----+-'           |      GND    |   GND
                           5|   4|             |             |
@@ -528,145 +527,65 @@ validity</panel_attributes><additional_attributes>transparentSelection=false</ad
 
 === Vega
 
-[vega,vega-test, svg]
+[vega,vega-test,svg]
 ....
 {
-  "$schema": "https://vega.github.io/schema/vega/v4.json",
-  "width": 500,
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "width": 1000,
+  "height": 500,
   "padding": 5,
-
-  "config": {
-    "axisBand": {
-      "bandPosition": 1,
-      "tickExtra": true,
-      "tickOffset": 0
-    }
-  },
-
-  "signals": [
-    { "name": "fields",
-      "value": ["petalWidth", "petalLength", "sepalWidth", "sepalLength"] },
-    { "name": "plotWidth", "value": 60 },
-    { "name": "height", "update": "(plotWidth + 10) * length(fields)"}
-  ],
 
   "data": [
     {
-      "name": "iris",
-      "url": "data/iris.json",
-      "transform": [
-        {
-          "type": "fold",
-          "fields": {"signal": "fields"},
-          "as": ["organ", "value"]
-        }
+      "name": "iot-riskks1",
+      "values": [
+        {"cheese": "Security", "amount": 43},
+        {"cheese": "IT/OT Integration", "amount": 30},
+        {"cheese": "Unclear ROI", "amount": 28},
+        {"cheese": "Technical Expertise", "amount": 26},
+        {"cheese": "Interoperability", "amount": 26},
+        {"cheese": "Data Portability", "amount": 24},
+        {"cheese": "Vendor Risk", "amount": 22},
+        {"cheese": "Transition Risk", "amount": 22},
+        {"cheese": "Legal/regulatory issues", "amount": 22},
+        {"cheese": "Network constraints", "amount": 21},
+        {"cheese": "Vendor lock-in", "amount": 18}
       ]
     }
   ],
 
   "scales": [
     {
-      "name": "layout",
+      "name": "xscale",
       "type": "band",
-      "range": "height",
-      "domain": {"data": "iris", "field": "organ"}
+      "domain": {"data": "iot-riskks1", "field": "cheese"},
+      "range": "width",
+      "padding": 0.05,
+      "round": true
     },
     {
-      "name": "xscale",
-      "type": "linear",
-      "range": "width", "round": true,
-      "domain": {"data": "iris", "field": "value"},
-      "zero": true, "nice": true
+      "name": "yscale",
+      "domain": {"data": "iot-riskks1", "field": "amount"},
+      "nice": true,
+      "range": "height"
     }
-  ],
-
-  "axes": [
-    {"orient": "bottom", "scale": "xscale", "zindex": 1},
-    {"orient": "left", "scale": "layout", "tickCount": 5, "zindex": 1}
   ],
 
   "marks": [
     {
-      "type": "group",
-      "from": {
-        "facet": {
-          "data": "iris",
-          "name": "organs",
-          "groupby": "organ"
-        }
-      },
-
+      "type": "rect",
+      "from": {"data":"iot-riskks1"},
       "encode": {
         "enter": {
-          "yc": {"scale": "layout", "field": "organ", "band": 0.5},
-          "height": {"signal": "plotWidth"},
-          "width": {"signal": "width"}
-        }
-      },
-
-      "data": [
-        {
-          "name": "summary",
-          "source": "organs",
-          "transform": [
-            {
-              "type": "aggregate",
-              "fields": ["value", "value", "value", "value", "value"],
-              "ops": ["min", "q1", "median", "q3", "max"],
-              "as": ["min", "q1", "median", "q3", "max"]
-            }
-          ]
-        }
-      ],
-
-      "marks": [
-        {
-          "type": "rect",
-          "from": {"data": "summary"},
-          "encode": {
-            "enter": {
-              "fill": {"value": "black"},
-              "height": {"value": 1}
-            },
-            "update": {
-              "yc": {"signal": "plotWidth / 2", "offset": -0.5},
-              "x": {"scale": "xscale", "field": "min"},
-              "x2": {"scale": "xscale", "field": "max"}
-            }
-          }
+          "x": {"scale": "xscale", "field": "cheese"},
+          "width": {"scale": "xscale", "band": 1},
+          "y": {"scale": "yscale", "field": "amount"},
+          "y2": {"scale": "yscale", "value": 0}
         },
-        {
-          "type": "rect",
-          "from": {"data": "summary"},
-          "encode": {
-            "enter": {
-              "fill": {"value": "steelblue"},
-              "cornerRadius": {"value": 4}
-            },
-            "update": {
-              "yc": {"signal": "plotWidth / 2"},
-              "height": {"signal": "plotWidth / 2"},
-              "x": {"scale": "xscale", "field": "q1"},
-              "x2": {"scale": "xscale", "field": "q3"}
-            }
-          }
-        },
-        {
-          "type": "rect",
-          "from": {"data": "summary"},
-          "encode": {
-            "enter": {
-              "fill": {"value": "aliceblue"},
-              "width": {"value": 2}
-            },
-            "update": {
-              "yc": {"signal": "plotWidth / 2"},
-              "height": {"signal": "plotWidth / 2"},
-              "x": {"scale": "xscale", "field": "median"}
-            }
-          }
+        "update": {
+          "fill": {"value": "steelblue"}
         }
-      ]
+      }
     }
   ]
 }
@@ -700,93 +619,3 @@ c3.generate({
 });
 </script>
 ++++
-
-== Going crazy (Click in the middle of the screen)
-
-++++
-
-<style>
-.fade {
-  position: relative;
-  width: 100%;
-  min-height: 60vh;
-  top: -25px;
-  background-image: linear-gradient(0deg, transparent, black 75%);
-  z-index: 1;
-}
-
-.star-wars {
-  display: flex;
-  justify-content: center;
-  position: relative;
-  height: 800px;
-  color: #feda4a;
-  font-family: 'Pathway Gothic One', sans-serif;
-  font-size: 500%;
-  font-weight: 600;
-  letter-spacing: 6px;
-  line-height: 150%;
-  perspective: 600px;
-  text-align: justify;
-}
-
-.crawl {
-  position: relative;
-  top: 9999px;
-  transform-origin: 50% 100%;
-  animation: crawl 120s linear;
-}
-
-.crawl > .title {
-  font-size: 90%;
-  text-align: center;
-}
-
-.crawl > .title h1 {
-  margin: 0 0 100px;
-  text-transform: uppercase;
-}
-
-.hide {
-  display: none;
-}
-
-@keyframes crawl {
-  0% {
-    top: 0;
-    transform: rotateX(20deg)  translateZ(0);
-  }
-  100% {
-    top: -6000px;
-    transform: rotateX(25deg) translateZ(-2500px);
-  }
-}
-</style>
-
-<script type="text/javascript">
-  function start(){
-    document.getElementById('animation').className ='crawl';
-  }
-</script>
-
-<section class="star-wars" onclick="start()">
-  <div id="animation" class="hide">
-
-    <div class="title">
-      <p>Episode IV</p>
-      <h1>A New Hope</h1>
-      <h3>Industry 4.0 done our way</h3>
-    </div>
-
-    <p>It is a period of technological change. Rebel Industry 4.0 open-source software solutions, striking from hidden bases, have won their first victories against the evil proprietary Industrial Empire.</p>
-    <p>During the battle, Rebel spies managed to reverse engineer secret industrial protocols to the Empire’s ultimate weapons, the industrial Programmable Logic Controllers, almost unprotected pieces of hardware with enough power to destroy an entire planet.</p>
-    <p>Pursued by the Empire’s sinister agents, Christofer races to Las Vegas aboard his intercontinental shuttle, custodian of his plans to revolutionize the way we are building Industry 4.0 applications, that can free all companies and restore freedom to the industry …</p>
-
-  </div>
-
-</section>
-++++
-
-
-
-
