@@ -29,7 +29,7 @@ Requirements:
 
 In order to create an empty presentation to start with, please execute the following command:
 
-    mvn archetype:generate -DarchetypeGroupId=org.apache.training -DarchetypeArtifactId=content-archetype -DarchetypeVersion=1.0.0-SNAPSHOT
+    mvn -Dmaven.repo.remote=https://repository.apache.org/content/repositories/snapshots org.apache.maven.plugins:maven-archetype-plugin:3.1.2:generate -DarchetypeGroupId=org.apache.training -DarchetypeArtifactId=content-archetype -DarchetypeVersion=1.0.0-SNAPSHOT
 
 After choosing `groupId`, `artifactId`, `version` and `package` there should be a new directory that matches the `artifactId` that you selected.
 
