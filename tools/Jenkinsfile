@@ -81,7 +81,7 @@ pipeline {
         }
     }
 
-    // Send out notifications on unsuccessful builds.
+/*    // Send out notifications on unsuccessful builds.
     post {
         // If this build failed, send an email to the list.
         failure {
@@ -136,6 +136,6 @@ Is back to normal.
                 }
             }
         }
-    }
+    }*/
 
 }
