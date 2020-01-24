@@ -76,7 +76,7 @@ pipeline {
             }
             steps {
                 echo 'Building'
-                sh 'mvn -f tools/pom.xml package'
+                sh 'mvn -f tools/pom.xml deploy'
             }
         }
     }
