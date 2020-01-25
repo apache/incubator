@@ -357,6 +357,45 @@
                 </dependencies>
             </plugin>
 
+            <!--
+                As it's the "revealjs" output, asciidoctor will name the file with an ending "revealjs".
+                Here we rename that file back to "html".
+            -->
+            <plugin>
+                <groupId>org.codehaus.gmaven</groupId>
+                <artifactId>groovy-maven-plugin</artifactId>
+                <version>2.1.1</version>
+                <executions>
+                    <!-- Set some dynamic variables which are useful for the site generation -->
+                    <execution>
+                        <id>rename-revealjs-files</id>
+                        <phase>prepare-package</phase>
+                        <goals>
+                            <goal>execute</goal>
+                        </goals>
+                        <configuration>
+                            <source>
+                                import static groovy.io.FileType.FILES
+                                println "\nRenaming output files:"
+                                def baseDirectory = project.model.pomFile.parent
+                                def slideOutputDirectory = new File(baseDirectory, "target/generated-slides")
+                                if(slideOutputDirectory.exists()) {
+                                    slideOutputDirectory.eachFileRecurse(FILES) {
+                                        if(it.name.endsWith('.revealjs')) {
+                                            def oldFileName = it.name
+                                            def newFileName = oldFileName.substring(0, oldFileName.lastIndexOf(".")) + ".html"
+                                            it.renameTo(new File(it.parent, newFileName))
+                                            println "Renaming " + oldFileName + " to " + newFileName
+                                        }
+                                    }
+                                    println ""
+                                }
+                            </source>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
             <!-- If the packaging is se to "war", pack the slides into a war file -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -369,42 +408,5 @@
             </plugin>
         </plugins>
     </build>
-
-    <!--
-        This plugin fails the build if there is no index.adoc file,
-        so only run it if there is input for generating slide output.
-    -->
-    <profiles>
-        <profile>
-            <id>rename-output</id>
-            <activation>
-                <file>
-                    <exists>src/main/asciidoc/index.adoc</exists>
-                </file>
-            </activation>
-            <build>
-                <plugins>
-                    <plugin>
-                        <groupId>com.coderplus.maven.plugins</groupId>
-                        <artifactId>copy-rename-maven-plugin</artifactId>
-                        <version>${copy-rename-maven-plugin.version}</version>
-                        <executions>
-                            <execution>
-                                <id>rename-slide-file</id>
-                                <phase>process-resources</phase>
-                                <goals>
-                                    <goal>rename</goal>
-                                </goals>
-                                <configuration>
-                                    <sourceFile>${project.slides.directory}/${project.main.contentfile}.revealjs</sourceFile>
-                                    <destinationFile>${project.slides.directory}/${project.main.contentfile}.html</destinationFile>
-                                </configuration>
-                            </execution>
-                        </executions>
-                    </plugin>
-                </plugins>
-            </build>
-        </profile>
-    </profiles>
 
 </project>
