@@ -21,55 +21,18 @@
 :keywords: keywords
 :author: Your name
 :talk: This is where your talk title goes
-:conference: APACHECON EUROPE
-:dates: Oct. 22nd - 24th
-:year: 2019
+:conference: APACHECON
+:conference_eu: APACHECON EU
+:conference_na: APACHECON NA
+:dates: Spt. 28th - Oct. 2nd
+:year: 2020
 
 ++++
 <link rel="stylesheet" href="css/apache.css">
 ++++
 
 == !
-image::berlin1.jpg[canvas,size=contain]
-
-[.centered]
---
-{talk}
-
-'''
-
-{author}
---
-
-
-[.conferenceName]
-{conference} +
-{dates}
-
-[.year]
-{year}
-
-== !
-image::berlin2.jpg[canvas,size=contain]
-
-[.centered]
---
-{talk}
-
-'''
-
-{author}
---
-
-[.conferenceName]
-{conference} +
-{dates}
-
-[.year]
-{year}
-
-== !
-image::apachecon_eu.jpg[canvas,size=contain]
+image::ApacheCon_bg.jpg[canvas,size=contain]
 
 [.leftlogo]
 image:ApacheConEULogo.png[width=50%]
@@ -83,7 +46,288 @@ image:ApacheConEULogo.png[width=50%]
 
 
 [.conferenceName]
+{conference_eu} +
+{dates}
+
+[.year]
+{year}
+
+== !
+image::ApacheCon_bg.jpg[canvas,size=contain]
+
+[.leftlogo]
+image:ApacheConNALogo.png[width=50%]
+
+[.righttitle]
+--
+{talk}
+
+{author}
+--
+
+
+[.conferenceName]
+{conference_eu} +
+{dates}
+
+[.year]
+{year}
+
+== !
+image::Austin.jpg[canvas]
+
+[.centered]
+--
+{talk}
+
+'''
+
+{author}
+--
+
+
+[.conferenceName]
+{conference_na} +
+{dates}
+
+[.year]
+{year}
+
+== !
+image::Berlin.jpg[canvas]
+
+[.centered]
+--
+{talk}
+
+'''
+
+{author}
+--
+
+
+[.conferenceName]
+{conference_eu} +
+{dates}
+
+[.year]
+{year}
+
+== !
+image::Budapest.jpg[canvas]
+
+[.centered]
+--
+{talk}
+
+'''
+
+{author}
+--
+
+
+[.conferenceName]
+{conference_eu} +
+{dates}
+
+[.year]
+{year}
+
+== !
+image::Denver.jpg[canvas]
+
+[.centered]
+--
+{talk}
+
+'''
+
+{author}
+--
+
+
+[.conferenceName]
+{conference_na} +
+{dates}
+
+[.year]
+{year}
+
+== !
+image::LasVegas.jpg[canvas]
+
+[.centered]
+--
+{talk}
+
+'''
+
+{author}
+--
+
+
+[.conferenceName]
+{conference_na} +
+{dates}
+
+[.year]
+{year}
+
+== !
+image::Miami.jpg[canvas]
+
+[.centered]
+--
+{talk}
+
+'''
+
+{author}
+--
+
+
+[.conferenceName]
+{conference_na} +
+{dates}
+
+[.year]
+{year}
+
+== !
+image::Montreal.jpg[canvas]
+
+[.centered]
+--
+{talk}
+
+'''
+
+{author}
+--
+
+
+[.conferenceName]
+{conference_na} +
+{dates}
+
+[.year]
+{year}
+
+== !
+image::NewOrleans.jpg[canvas]
+
+[.centered]
+--
+{talk}
+
+'''
+
+{author}
+--
+
+
+[.conferenceName]
+{conference_na} +
+{dates}
+
+[.year]
+{year}
+
+== !
+image::Portland.jpg[canvas]
+
+[.centered]
+--
+{talk}
+
+'''
+
+{author}
+--
+
+
+[.conferenceName]
+{conference_na} +
+{dates}
+
+[.year]
+{year}
+
+== !
+image::Seville.jpg[canvas]
+
+[.centered]
+--
+{talk}
+
+'''
+
+{author}
+--
+
+
+[.conferenceName]
+{conference_eu} +
+{dates}
+
+[.year]
+{year}
+
+== !
+image::Sydney.jpg[canvas]
+
+[.centered]
+--
+{talk}
+
+'''
+
+{author}
+--
+
+
+[.conferenceName]
 {conference} +
+{dates}
+
+[.year]
+{year}
+
+== !
+image::Vancouver.jpg[canvas]
+
+[.centered]
+--
+{talk}
+
+'''
+
+{author}
+--
+
+
+[.conferenceName]
+{conference_na} +
+{dates}
+
+[.year]
+{year}
+
+== !
+image::Washington.jpg[canvas]
+
+[.centered]
+--
+{talk}
+
+'''
+
+{author}
+--
+
+
+[.conferenceName]
+{conference_na} +
 {dates}
 
 [.year]
