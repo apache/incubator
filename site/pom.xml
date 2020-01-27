@@ -25,7 +25,7 @@
   <parent>
     <groupId>org.apache</groupId>
     <artifactId>apache</artifactId>
-    <version>22</version>
+    <version>23</version>
     <!-- Otherwise maven complains about the pom upstairs having different coordinates. -->
     <relativePath></relativePath>
   </parent>
@@ -180,20 +180,6 @@
         This causes the generated output not to rely on external resources. Therefore we have to
         manually take care of fetching and packaging these external resources with the generated site.
       -->
-
-      <!-- TODO: This is only required till the release of apache-parent 23 and can be removed after updating to that -->
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-scm-publish-plugin</artifactId>
-        <version>3.0.0</version>
-        <dependencies>
-          <dependency>
-            <groupId>org.apache.maven.scm</groupId>
-            <artifactId>maven-scm-provider-gitexe</artifactId>
-            <version>1.10.0</version>
-          </dependency>
-        </dependencies>
-      </plugin>
 
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
