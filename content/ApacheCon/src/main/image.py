@@ -24,7 +24,7 @@ import shutil, sys
 
 api_key = '563492ad6f91700001000001ba50a6850efa433e8b2324e5edb0df3d'
 no_images = 20
-city = "Sydney"
+city = "New Orleans"
 
 py_pexels = PyPexels(api_key=api_key)
 
