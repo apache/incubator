@@ -31,11 +31,12 @@
 <link rel="stylesheet" href="css/apache.css">
 ++++
 
+// ! means no title
 == !
 image::ApacheCon_bg.jpg[canvas,size=contain]
 
 [.leftlogo]
-image:ApacheConEULogo.png[width=50%]
+image:ApacheConNALogo.png[width=50%]
 
 [.righttitle]
 --
@@ -44,19 +45,168 @@ image:ApacheConEULogo.png[width=50%]
 {author}
 --
 
-
 [.conferenceName]
-{conference_eu} +
+{conference_na} +
 {dates}
 
 [.year]
 {year}
 
 == !
+image::NewOrleans.jpg[canvas]
+
+[.centered]
+--
+{talk}
+
+'''
+
+{author}
+--
+
+[.conferenceName]
+{conference_na} +
+{dates}
+
+[.year]
+{year}
+
+== !
+image::NewOrleansII.jpg[canvas]
+
+[.centered]
+--
+{talk}
+
+'''
+
+{author}
+--
+
+[.conferenceName]
+{conference_na} +
+{dates}
+
+[.year]
+{year}
+
+== !
+image::NewOrleansIII.jpg[canvas]
+
+[.centered]
+--
+{talk}
+
+'''
+
+{author}
+--
+
+[.conferenceName]
+{conference_na} +
+{dates}
+
+[.year]
+{year}
+
+== !
+image::NewOrleansIV.jpg[canvas]
+
+[.centered]
+--
+{talk}
+
+'''
+
+{author}
+--
+
+[.conferenceName]
+{conference_na} +
+{dates}
+
+[.year]
+{year}
+
+== Simple Slide
+* one
+* two
+* three
+
+[.notes]
+--
+Speaker notes go here
+--
+
+== Sub Points
+* one
+** and this
+** and more
+* two
+* three
+
+
+== Styles and Custom Styles
+Text can be **bold**, __italic__, [.big]#big# or [.small]#small#
+
+== Image
+image::ApacheConNA.jpg[]
+
+== Two Columns
+[.twocolumns]
+--
+* one
+* two
+* three
+
+image::ApacheConNA.jpg[]
+--
+
+== Command Line
+monospace text - find and copy all the images! +
+`find . -name "*.jpg" -exec cp {} images \;`
+
+== Java Code
+
+[source,java]
+----
+public class HelloWorld {
+
+    public static void main(String[] args) {
+        System.out.println("Hello, World");
+    }
+}
+----
+
+
+== Optional Slides
+Press down arrow to see the optional slide.
+
+=== Optional Slide
+This is an optional slide.
+
+== Quote
+[quote, Albert Einstein]
+A person who never made a mistake never tried anything new.
+
+== Passthrough
+Anything in a passthrough  is passed to the output unprocessed so you can include raw HTML and Javascript.
+
+++++
+<p>This is a <b>HTML</b> paragraph</p>
+++++
+
+
+== Apache Training Project
+
+These slides are part of the Apache Training project.
+https://training.apache.org
+
+== !
 image::ApacheCon_bg.jpg[canvas,size=contain]
 
 [.leftlogo]
-image:ApacheConNALogo.png[width=50%]
+image:ApacheConEULogo.png[width=50%]
 
 [.righttitle]
 --
@@ -214,26 +364,6 @@ image::Montreal.jpg[canvas]
 {year}
 
 == !
-image::NewOrleans.jpg[canvas]
-
-[.centered]
---
-{talk}
-
-'''
-
-{author}
---
-
-
-[.conferenceName]
-{conference_na} +
-{dates}
-
-[.year]
-{year}
-
-== !
 image::Portland.jpg[canvas]
 
 [.centered]
@@ -332,13 +462,3 @@ image::Washington.jpg[canvas]
 
 [.year]
 {year}
-
-== Slide Title
-* one
-* two
-* three
-
-== Apache Training Project
-
-These slides are part of the Apache Training project.
-https://training.apache.org
