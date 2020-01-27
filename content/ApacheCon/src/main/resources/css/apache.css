@@ -470,3 +470,16 @@ body {
 .present {
   height: 100%
 }
+
+.big {
+  font-size: 150%
+}
+.small {
+  font-size: 75%
+}
+
+.twocolumns {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+}
