@@ -418,8 +418,8 @@ body {
   position: absolute;
   right: 0;
   bottom: 30px;
-  background: rgba(218, 112, 214, 0.69);
-  color: rgba(217, 217, 217, 0.86);
+  background: rgba(218, 112, 214, 0.9);
+  color: rgba(217, 217, 217, 1.0);
   text-align: left;
   font-size: 50%;
   width: 40%;
@@ -430,7 +430,7 @@ body {
   position: absolute;
   right: 0.5em;
   bottom: 0.1em;
-  color: rgba(217, 217, 217, 0.86);
+  color: rgba(217, 217, 217, 1.0);
   font-size: 200%;
 }
 
@@ -439,7 +439,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: rgba(0, 32, 96, 1.0);
+  background: rgba(0, 32, 96, 0.9);
   color: rgba(230, 230, 230, 1.0);
   padding: 20px;
 }
