@@ -1,0 +1,16 @@
+{
+  "name": "ApacheCon",
+  "version": "1.0.0",
+  "description": "Slides for ApacheCon",
+  "main": "reveal.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@asciidoctor/reveal.js": "^3.1.0",
+    "asciidoctor": "^2.1.0"
+  }
+}

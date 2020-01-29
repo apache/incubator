@@ -18,21 +18,21 @@ Then run:
 `mvn clean compile`
 
 
-## How to Build with Ruby
+## How to Build with Ruby or Node (minimal support)
 
-It possisble t
+It possisble to genrate the slides with other technologies, please see instructions at https://asciidoctor.org/docs/asciidoctor-revealjs/.
 
-## How to Build with Ruby
+For node install the dependacies:
 
-To install the needed dependencies on OSX run:
+`npm i --save asciidoctor@^2.0 @asciidoctor/reveal.js`
 
-`install-deps.sh`
+And generate the slides via:
 
-Then run:
+`node convert-slides.js`
 
-`mvn clean compile`
+Some of the assets will need to be moved and the apachecon.css theme included in the HTML.
 
-## How to View the Slides
+## How to View the Slides (Maven)
 
 Once built, the generated slides can be found at:
 
@@ -47,6 +47,8 @@ Some features require the slides to be viewed via a http/https url you can do th
 And goto `http://127.0.0.1:8080/index_en.html` in a browser to view.
 
 If you add ?print-pdf at the end of the URL, you can then print the slide deck into a PDF document.
+
+## Helpful Key Shortcuts
 
 Some key shortcuts that may help you give a presentation:
 
