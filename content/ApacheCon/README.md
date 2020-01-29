@@ -7,7 +7,22 @@ Slides for ApacheCon
 
 The slides are generated from [asciidoctor](https://asciidoctor.org) markup and displayed with [reveal.js](https://asciidoctor.org/docs/asciidoctor-revealjs/). This means the content can be kept under version control and exported to a number of formats other than HTML.
 
-## How to Build
+## How to Build with Maven (recommended)
+
+To install the needed dependencies on OSX run:
+
+`install-deps.sh`
+
+Then run:
+
+`mvn clean compile`
+
+
+## How to Build with Ruby
+
+It possisble t
+
+## How to Build with Ruby
 
 To install the needed dependencies on OSX run:
 
