@@ -1600,7 +1600,7 @@
         {
           "description": "Apache Echarts Doc",
           "last_update_int": 1588248541,
-          "last_update_txt": "<span style='color: #070;'>&lt;30 minutes ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt;1 hour ago</span>"
         }
       ],
       [
@@ -2955,7 +2955,7 @@
         {
           "description": "Apache iotdb",
           "last_update_int": 1588249950,
-          "last_update_txt": "<span style='color: #070;'>&lt;15 minutes ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt;30 minutes ago</span>"
         }
       ],
       [
@@ -3782,8 +3782,8 @@
         "incubator-mxnet-site",
         {
           "description": "Apache MXNet Site",
-          "last_update_int": 1588230568,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_int": 1588250623,
+          "last_update_txt": "<span style='color: #070;'>&lt;5 minutes ago</span>"
         }
       ],
       [
@@ -4256,7 +4256,7 @@
         {
           "description": "Apache nuttx",
           "last_update_int": 1588249052,
-          "last_update_txt": "<span style='color: #070;'>&lt;30 minutes ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt;1 hour ago</span>"
         }
       ],
       [
@@ -6154,252 +6154,6 @@
       [
         "18",
         "Has not provided a wiki link"
-      ]
-    ]
-  },
-  "tamaya": {
-    "description": "Tamaya is a highly flexible configuration solution based on an modular, extensible and injectable key/value based design, which should provide a minimal but extendible modern and functional API leveraging SE, ME and EE environments.",
-    "fullName": "Tamaya",
-    "hasMailListCommits": "http://mail-archives.apache.org/mod_mbox/tamaya-commits",
-    "hasMailListDev": "http://mail-archives.apache.org/mod_mbox/tamaya-dev",
-    "ldap": {
-      "members": [
-        "acoburn",
-        "anatole",
-        "dblevins",
-        "jfeinauer",
-        "johndament",
-        "otaviojava",
-        "plexus",
-        "pottlinger",
-        "rsandtner",
-        "wkeil",
-        "wlieurance"
-      ],
-      "numberCommitters": 11,
-      "numberCommittersNew": 1,
-      "numberPMCEquals": false,
-      "numberPMCMembers": 9,
-      "owners": [
-        "anatole",
-        "dblevins",
-        "jfeinauer",
-        "johndament",
-        "otaviojava",
-        "plexus",
-        "pottlinger",
-        "rsandtner",
-        "wkeil"
-      ]
-    },
-    "mentors": [
-      [
-        "John D. Ament",
-        "johndament"
-      ],
-      [
-        "David Blevins",
-        "dblevins"
-      ],
-      [
-        "Julian Feinauer",
-        "jfeinauer"
-      ]
-    ],
-    "news": [
-      "2015-08-22 Apache Tamaya 0.1-incubating has been released.",
-      "2015-01-25 New committer Reinhard Sandtner.",
-      "2014-11-14 Project enters incubation."
-    ],
-    "podlingName": "Tamaya",
-    "rawReportingGroup": "group-2",
-    "releases": {
-      "apache-tamaya-distribution-0.3-incubating-src.tar.gz": {
-        "dtm": "08/01/2017",
-        "folder": "0.3-incubating/apiandcore",
-        "hash": "sha512",
-        "revision": "r20706",
-        "size": "125252",
-        "user": "plexus"
-      },
-      "apache-tamaya-distribution-0.3-incubating-src.zip": {
-        "dtm": "08/02/2017",
-        "folder": "0.3-incubating/apiandcore",
-        "hash": "sha512",
-        "revision": "r20719",
-        "size": "326670",
-        "user": "plexus"
-      },
-      "apache-tamaya-distribution-0.4-incubating-src.tar.gz": {
-        "dtm": "11/11/2019",
-        "folder": "0.4-incubating/apiandcore",
-        "hash": "sha512",
-        "revision": "r36700",
-        "size": "191910",
-        "user": "anatole"
-      },
-      "apache-tamaya-distribution-0.4-incubating-src.zip": {
-        "dtm": "11/11/2019",
-        "folder": "0.4-incubating/apiandcore",
-        "hash": "sha512",
-        "revision": "r36700",
-        "size": "499818",
-        "user": "anatole"
-      },
-      "apache-tamaya-extension-distribution-0.3-incubating-src.tar.gz": {
-        "dtm": "07/11/2017",
-        "folder": "0.3-incubating/extensions",
-        "hash": "sha512",
-        "revision": "r20415",
-        "size": "229990",
-        "user": "plexus"
-      },
-      "apache-tamaya-extension-distribution-0.3-incubating-src.zip": {
-        "dtm": "07/11/2017",
-        "folder": "0.3-incubating/extensions",
-        "hash": "sha512",
-        "revision": "r20415",
-        "size": "701036",
-        "user": "plexus"
-      },
-      "apache-tamaya-extension-distribution-0.4-incubating-src.tar.gz": {
-        "dtm": "11/11/2019",
-        "folder": "0.4-incubating/extensions",
-        "hash": "sha512",
-        "revision": "r36700",
-        "size": "349488",
-        "user": "anatole"
-      },
-      "apache-tamaya-extension-distribution-0.4-incubating-src.zip": {
-        "dtm": "11/11/2019",
-        "folder": "0.4-incubating/extensions",
-        "hash": "sha512",
-        "revision": "r36700",
-        "size": "1140107",
-        "user": "anatole"
-      },
-      "tamaya-distribution-0.1-incubating-distribution-bin.tar.gz": {
-        "dtm": "08/22/2015",
-        "folder": "0.1-incubating",
-        "hash": "sha1",
-        "revision": "r10268",
-        "size": "3850541",
-        "user": "anatole"
-      },
-      "tamaya-distribution-0.1-incubating-distribution-bin.zip": {
-        "dtm": "08/22/2015",
-        "folder": "0.1-incubating",
-        "hash": "sha1",
-        "revision": "r10268",
-        "size": "4404673",
-        "user": "anatole"
-      },
-      "tamaya-distribution-0.1-incubating-distribution-src.tar.gz": {
-        "dtm": "08/22/2015",
-        "folder": "0.1-incubating",
-        "hash": "sha1",
-        "revision": "r10268",
-        "size": "313607",
-        "user": "anatole"
-      },
-      "tamaya-distribution-0.1-incubating-distribution-src.zip": {
-        "dtm": "08/22/2015",
-        "folder": "0.1-incubating",
-        "hash": "sha1",
-        "revision": "r10268",
-        "size": "832545",
-        "user": "anatole"
-      },
-      "tamaya-distribution-0.2-incubating-distribution-bin.tar.gz": {
-        "dtm": "04/16/2016",
-        "folder": "0.2-incubating",
-        "hash": "sha1",
-        "revision": "r13275",
-        "size": "19682400",
-        "user": "anatole"
-      },
-      "tamaya-distribution-0.2-incubating-distribution-bin.zip": {
-        "dtm": "04/16/2016",
-        "folder": "0.2-incubating",
-        "hash": "sha1",
-        "revision": "r13275",
-        "size": "20932986",
-        "user": "anatole"
-      },
-      "tamaya-distribution-0.2-incubating-distribution-src.tar.gz": {
-        "dtm": "04/16/2016",
-        "folder": "0.2-incubating",
-        "hash": "sha1",
-        "revision": "r13275",
-        "size": "564395",
-        "user": "anatole"
-      },
-      "tamaya-distribution-0.2-incubating-distribution-src.zip": {
-        "dtm": "04/16/2016",
-        "folder": "0.2-incubating",
-        "hash": "sha1",
-        "revision": "r13275",
-        "size": "1443176",
-        "user": "anatole"
-      }
-    },
-    "reportingGroup": "February, May, August, November",
-    "reportingMonthly": false,
-    "repositories": [
-      [
-        "incubator-tamaya",
-        {
-          "description": "Apache Tamaya",
-          "last_update_int": 1573591960,
-          "last_update_txt": "24 weeks ago"
-        }
-      ],
-      [
-        "incubator-tamaya-extensions",
-        {
-          "description": "Apache Tamaya (incubating) Extensions",
-          "last_update_int": 1573592488,
-          "last_update_txt": "24 weeks ago"
-        }
-      ],
-      [
-        "incubator-tamaya-sandbox",
-        {
-          "description": "Apache Tamaya (incubating) Sandbox",
-          "last_update_int": 1577904479,
-          "last_update_txt": "17 weeks ago"
-        }
-      ],
-      [
-        "incubator-tamaya-site",
-        {
-          "description": "Apache incubator Tamaya Website",
-          "last_update_int": 1574627445,
-          "last_update_txt": "23 weeks ago"
-        }
-      ]
-    ],
-    "resource": "tamaya",
-    "sponsor": "Incubator",
-    "startDate": "2014-11-14",
-    "statusAge": 230,
-    "statusLastUpdated": "2019-09-13",
-    "urls": {
-      "git": "https://gitbox.apache.org/repos/asf?p=incubator-tamaya.git;a=tree;hb=HEAD",
-      "keys": "https://downloads.apache.org/incubator/tamaya/0.4-incubating/keys/KEYS",
-      "svn": "",
-      "tracker": "https://issues.apache.org/jira/browse/TAMAYA",
-      "wiki": "",
-      "www": "http://tamaya.incubator.apache.org"
-    },
-    "zFixMeList": [
-      [
-        "18",
-        "Has not provided a wiki link"
-      ],
-      [
-        "45",
-        "16 is a large number of release distributions. Non-current releases should be removed"
       ]
     ]
   },
