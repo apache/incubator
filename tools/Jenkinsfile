@@ -42,7 +42,7 @@ pipeline {
     stages {
         stage('Initialization') {
             when {
-                changeset "tools/maven-revealjs-asciidoctor-template/**"
+                changeset "tools/**"
             }
             steps {
                 echo 'Building Branch: ' + env.BRANCH_NAME
@@ -52,7 +52,7 @@ pipeline {
 
         stage('Cleanup') {
             when {
-                changeset "tools/maven-revealjs-asciidoctor-template/**"
+                changeset "tools/**"
             }
             steps {
                 echo 'Cleaning up the workspace'
@@ -62,7 +62,7 @@ pipeline {
 
         stage('Checkout') {
             when {
-                changeset "tools/maven-revealjs-asciidoctor-template/**"
+                changeset "tools/**"
             }
             steps {
                 echo 'Checking out branch ' + env.BRANCH_NAME
@@ -72,29 +72,29 @@ pipeline {
 
         stage('Build') {
             when {
-                changeset "tools/maven-revealjs-asciidoctor-template/**"
+                changeset "tools/**"
             }
             steps {
                 echo 'Building'
-                sh 'mvn -f tools/maven-revealjs-asciidoctor-template/pom.xml package'
+                sh 'mvn -f tools/pom.xml deploy'
             }
         }
     }
 
-    // Send out notifications on unsuccessful builds.
+/*    // Send out notifications on unsuccessful builds.
     post {
         // If this build failed, send an email to the list.
         failure {
             script {
                 if(env.BRANCH_NAME == "master") {
                     emailext(
-                        subject: "[Template][BUILD-FAILURE]: Job '${env.JOB_NAME} [${env.BRANCH_NAME}] [${env.BUILD_NUMBER}]'",
-                        body: """
+                            subject: "[Template][BUILD-FAILURE]: Job '${env.JOB_NAME} [${env.BRANCH_NAME}] [${env.BUILD_NUMBER}]'",
+                            body: """
 BUILD-FAILURE: Job '${env.JOB_NAME} [${env.BRANCH_NAME}] [${env.BUILD_NUMBER}]':
 
 Check console output at "<a href="${env.BUILD_URL}">${env.JOB_NAME} [${env.BRANCH_NAME}] [${env.BUILD_NUMBER}]</a>"
 """,
-                        to: "dev@training.apache.org"
+                            to: "dev@training.apache.org"
                     )
                 }
             }
@@ -105,13 +105,13 @@ Check console output at "<a href="${env.BUILD_URL}">${env.JOB_NAME} [${env.BRANC
             script {
                 if(env.BRANCH_NAME == "master") {
                     emailext(
-                        subject: "[Template][BUILD-UNSTABLE]: Job '${env.JOB_NAME} [${env.BRANCH_NAME}] [${env.BUILD_NUMBER}]'",
-                        body: """
+                            subject: "[Template][BUILD-UNSTABLE]: Job '${env.JOB_NAME} [${env.BRANCH_NAME}] [${env.BUILD_NUMBER}]'",
+                            body: """
 BUILD-UNSTABLE: Job '${env.JOB_NAME} [${env.BRANCH_NAME}] [${env.BUILD_NUMBER}]':
 
 Check console output at "<a href="${env.BUILD_URL}">${env.JOB_NAME} [${env.BRANCH_NAME}] [${env.BUILD_NUMBER}]</a>"
 """,
-                        to: "dev@training.apache.org"
+                            to: "dev@training.apache.org"
                     )
                 }
             }
@@ -125,17 +125,17 @@ Check console output at "<a href="${env.BUILD_URL}">${env.JOB_NAME} [${env.BRANC
             script {
                 if ((env.BRANCH_NAME == "master") && (currentBuild.previousBuild != null) && (currentBuild.previousBuild.result != 'SUCCESS')) {
                     emailext (
-                        subject: "[Template][BUILD-STABLE]: Job '${env.JOB_NAME} [${env.BRANCH_NAME}] [${env.BUILD_NUMBER}]'",
-                        body: """
+                            subject: "[Template][BUILD-STABLE]: Job '${env.JOB_NAME} [${env.BRANCH_NAME}] [${env.BUILD_NUMBER}]'",
+                            body: """
 BUILD-STABLE: Job '${env.JOB_NAME} [${env.BRANCH_NAME}] [${env.BUILD_NUMBER}]':
 
 Is back to normal.
 """,
-                        to: "dev@training.apache.org"
+                            to: "dev@training.apache.org"
                     )
                 }
             }
         }
-    }
+    }*/
 
 }
