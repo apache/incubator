@@ -64,12 +64,6 @@ Hadoop Distributed File System (HDFS) is a distributed file system designed to r
 * *Moving Computation is Cheaper than Moving Data*: HDFS provides interfaces for applications to move themselves closer to where the data is located.
 * *Portability Across Heterogeneous Hardware and Software Platforms*: HDFS has been designed to be easily portable from one platform to another.
 
-== MOre
-- similar to other distributed file systems
-- highly fault-tolerant
-- designed to be deployed on low-cost hardware
-- provides high throughput access to application data
-
 == HDFS Architecture Diagram
 
 image::https://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-hdfs/images/hdfsarchitecture.png[]
@@ -127,7 +121,7 @@ Main nodes in HDFS are as follows:
 All HDFS commands are invoked by the bin/hdfs script.
 Running the hdfs script without any arguments prints the description for all commands.
 
-*Usage*: hdfs [SHELL_OPTIONS] COMMAND [GENERIC_OPTIONS] [COMMAND_OPTIONS]
+* *Usage*: hdfs [SHELL_OPTIONS] COMMAND [GENERIC_OPTIONS] [COMMAND_OPTIONS]
 
 
 == Common HDFS Commands
@@ -140,9 +134,10 @@ Some of the common HDFS commands are as follows:
 - *getconf*: Gets the configuration information from the config directory.
 
 == Apache Hadoop YARN
-The fundamental idea of YARN is to split up the functionalities of resource management and job scheduling/monitoring into separate daemons. The idea is to have a global ResourceManager (RM) and per-application ApplicationMaster (AM). An application is either a single job or a DAG of jobs.
-
-The ResourceManager and the NodeManager form the data-computation framework. The ResourceManager is the ultimate authority that arbitrates resources among all the applications in the system. The NodeManager is the per-machine framework agent who is responsible for containers, monitoring their resource usage (cpu, memory, disk, network) and reporting the same to the ResourceManager/Scheduler.
+* The fundamental idea of YARN is to split up the functionalities of resource management and job scheduling/monitoring into separate daemons.
+* The idea is to have a global ResourceManager (RM) and per-application ApplicationMaster (AM). An application is either a single job or a DAG of jobs.
+* The ResourceManager and the NodeManager form the data-computation framework. The ResourceManager is the ultimate authority that arbitrates resources among all the applications in the system.
+* The NodeManager is the per-machine framework agent who is responsible for containers, monitoring their resource usage (cpu, memory, disk, network) and reporting the same to the ResourceManager/Scheduler.
 
 == Apache Hadoop YARN Architecture Diagram
 
