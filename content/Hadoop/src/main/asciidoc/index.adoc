@@ -1,0 +1,168 @@
+////
+
+  Licensed to the Apache Software Foundation (ASF) under one or more
+  contributor license agreements.  See the NOTICE file distributed with
+  this work for additional information regarding copyright ownership.
+  The ASF licenses this file to You under the Apache License, Version 2.0
+  (the "License"); you may not use this file except in compliance with
+  the License.  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+
+////
+:revealjs_progress: true
+:revealjs_slidenumber: true
+:sourcedir: ../java
+
+== What is Apache Hadoop?
+
+The Apache Hadoop software library is a framework that allows for the distributed processing of large data sets across clusters of computers using simple programming models. It is designed to scale up from single servers to thousands of machines, each offering local computation and storage. Rather than rely on hardware to deliver high-availability, the library itself is designed to detect and handle failures at the application layer, so delivering a highly-available service on top of a cluster of computers, each of which may be prone to failures.
+
+== What are the main modules in Apache Hadoop?
+
+The base Apache Hadoop framework is composed of the following modules:
+
+* *Hadoop MapReduce* – an implementation of the MapReduce programming model for large-scale data processing.
+* *Hadoop Distributed File System (HDFS)* – a distributed file-system that stores data on commodity machines, providing very high aggregate bandwidth across the cluster.
+* *Hadoop YARN* – (introduced in 2012) a platform responsible for managing computing resources in clusters and using them for scheduling users' applications.
+* *Hadoop Common* – contains libraries and utilities needed by other Hadoop modules.
+
+== MapReduce
+
+Hadoop MapReduce is a software framework for easily writing applications which process vast amounts of data (multi-terabyte data-sets) in-parallel on large clusters (thousands of nodes) of commodity hardware in a reliable, fault-tolerant manner. 
+
+A MapReduce job usually splits the input data-set into independent chunks which are processed by the map tasks in a completely parallel manner. The framework sorts the outputs of the maps, which are then input to the reduce tasks. Typically both the input and the output of the job are stored in a file-system. The framework takes care of scheduling tasks, monitoring them and re-executes the failed tasks.
+
+
+== MapReduce Inputs and Outputs
+
+The MapReduce framework operates exclusively on <key, value> pairs, that is, the framework views the input to the job as a set of <key, value> pairs and produces a set of <key, value> pairs as the output of the job, conceivably of different types.
+
+* The key and value classes have to be serializable by the framework and hence need to implement the Writable interface.
+* Additionally, the key classes have to implement the WritableComparable interface to facilitate sorting by the framework.
+* Input and Output types of a MapReduce job:
+
+(_input_) <k1, v1> ->
+*map* -> <k2, v2> ->
+*combine* -> <k2, v2> ->
+*reduce* -> <k3, v3> (_output_)
+
+== Hadoop Distributed File System
+
+Hadoop Distributed File System (HDFS) is a distributed file system designed to run on commodity hardware. Its goals are:
+
+* *Automatic Recovery*: Detection of faults and quick, automatic recovery from them is a core architectural goal of HDFS.
+* *Streaming Data Access*: HDFS is designed more for batch processing rather than interactive use by users. The emphasis is on high throughput of data access rather than low latency of data access.
+* *Large Data Sets*: A typical file in HDFS is gigabytes to terabytes in size. Thus, HDFS is tuned to support large files.
+* *Simple Coherency Model*: HDFS applications need a write-once-read-many access model for files. A file once created, written, and closed need not be changed except for appends and truncates.
+* *Moving Computation is Cheaper than Moving Data*: HDFS provides interfaces for applications to move themselves closer to where the data is located.
+* *Portability Across Heterogeneous Hardware and Software Platforms*: HDFS has been designed to be easily portable from one platform to another.
+
+== HDFS Architecture Diagram
+
+image::https://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-hdfs/images/hdfsarchitecture.png[]
+
+== HDFS Architecture
+
+HDFS has a master/slave architecture. An HDFS cluster consists of:
+
+* *NameNode*: Single NameNode, a master server that manages the file system namespace and regulates access to files by clients.
+* *DataNode*: There can be one or more DataNodes used for storage and serving read and write requests from the file system’s clients.
+
+== HDFS Useful Features
+
+New features and improvements are regularly implemented in HDFS. The following is a subset of useful features in HDFS:
+
+- *Authentication*: File permissions and authentication.
+- *Rack awareness*: To take a node’s physical location into account while scheduling tasks and allocating storage.
+- *Safemode*: An administrative mode for maintenance.
+- *fsck*: A utility to diagnose health of the file system, to find missing files or blocks.
+- *fetchdt*: A utility to fetch DelegationToken and store it in a file on the local system.
+- *Balancer*: A tool to balance the cluster when the data is unevenly distributed among DataNodes.
+- *Upgrade and rollback*: After a software upgrade, it is possible to rollback to HDFS’ state before the upgrade in case of unexpected problems.
+
+
+== HDFS Special Nodes
+
+Main nodes in HDFS are as follows:
+
+- Secondary NameNode
+- Checkpoint node
+- Backup node
+
+== HDFS Secondary NameNode
+
+* Secondary NameNode performs periodic checkpoints of the namespace.
+* It helps keep the size of file containing log of HDFS modifications within certain limits at the NameNode.
+
+== HDFS Checkpoint node
+
+* Checkpoint node performs periodic checkpoints of the namespace.
+* It helps minimize the size of the log stored at the NameNode containing changes to the HDFS.
+* It replaces the role previously filled by the Secondary NameNode.
+* The NameNode allows multiple Checkpoint nodes simultaneously, as long as there are no Backup nodes registered with the system.
+
+
+== HDFS Backup node
+
+* Backup node is an extension to the Checkpoint node.
+* In addition to checkpointing it also receives a stream of edits from the NameNode.
+* It maintains its own in-memory copy of the namespace, which is always in sync with the active NameNode namespace state.
+* Only one Backup node may be registered with the NameNode at once.
+
+== HDFS Commands
+
+All HDFS commands are invoked by the bin/hdfs script.
+Running the hdfs script without any arguments prints the description for all commands.
+
+* *Usage*: hdfs [SHELL_OPTIONS] COMMAND [GENERIC_OPTIONS] [COMMAND_OPTIONS]
+
+
+== Common HDFS Commands
+
+Some of the common HDFS commands are as follows:
+
+- *dfs*: Runs a filesystem command on file system supported in Hadoop.
+- *envvars*: This command displays the Hadoop environment variables.
+- *fsck*: Runs the HDFS file system checking utility.
+- *getconf*: Gets the configuration information from the config directory.
+
+== Apache Hadoop YARN
+* The fundamental idea of YARN is to split up the functionalities of resource management and job scheduling/monitoring into separate daemons.
+* The idea is to have a global ResourceManager (RM) and per-application ApplicationMaster (AM). An application is either a single job or a DAG of jobs.
+* The ResourceManager and the NodeManager form the data-computation framework. The ResourceManager is the ultimate authority that arbitrates resources among all the applications in the system.
+* The NodeManager is the per-machine framework agent who is responsible for containers, monitoring their resource usage (cpu, memory, disk, network) and reporting the same to the ResourceManager/Scheduler.
+
+== Apache Hadoop YARN Architecture Diagram
+
+image::https://hadoop.apache.org/docs/current/hadoop-yarn/hadoop-yarn-site/yarn_architecture.gif[]
+
+== Apache YARN Components
+* *ResourceManager*: The ResourceManager is the ultimate authority that arbitrates resources among all the applications in the system.
+* *NodeManager*: The NodeManager is the per-machine framework agent who is responsible for containers, monitoring their resource usage (cpu, memory, disk, network) and reporting the same to the ResourceManager/Scheduler.
+
+
+== Apache YARN ResourceManager
+The ResourceManager has two main components:
+* *Scheduler*: The Scheduler is responsible for allocating resources to the various running applications subject to familiar constraints of capacities, queues etc.
+* *ApplicationsManager*: The ApplicationsManager is responsible for accepting job-submissions, negotiating the first container for executing the application specific ApplicationMaster.
+
+== Common YARN Commands
+
+Some of the common YARN commands are as follows:
+
+- *daemonlog*: Get/Set the log level for a Log identified by a qualified class name in the daemon dynamically.
+- *nodemanager*: Start the NodeManager.
+- *resourcemanager*: Start the ResourceManager.
+- *schedulerconf*: Updates scheduler configuration.
+- *timelineserver*: Start the TimeLineServer.
+
+== Further Sources
+
+Refer official Hadoop Documentation at: https://hadoop.apache.org
