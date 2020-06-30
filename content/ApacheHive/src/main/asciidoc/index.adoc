@@ -1,0 +1,129 @@
+////
+
+  Licensed to the Apache Software Foundation (ASF) under one or more
+  contributor license agreements.  See the NOTICE file distributed with
+  this work for additional information regarding copyright ownership.
+  The ASF licenses this file to You under the Apache License, Version 2.0
+  (the "License"); you may not use this file except in compliance with
+  the License.  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+
+////
+:revealjs_progress: true
+:revealjs_slidenumber: true
+:sourcedir: ../java
+
+== What is Apache Hive?
+The Apache Hive ™ data warehouse software facilitates reading, writing, and managing large datasets residing in distributed storage using SQL.
+It helps in projecting structure on data already present in a storage.
+
+== Data Types supported in Apache Hive
+Apache Hive supports following data types:
+
+* *Numeric Types*: TINYINT, SMALLINT, INT, BIGINT, FLOAT
+* *Date/Time Types*: TIMESTAMP, DATE, INTERVAL
+* *String Types*: STRING, VARCHAR, CHAR
+* *Misc Types*: BOOLEAN, BINARY
+* *Complex Types*: arrays, maps, structs, union
+
+== Numeric Types in Apache Hive
+Numeric Types in Apache Hive are:
+
+* *TINYINT*: (1-byte signed integer, from -128 to 127)
+* *SMALLINT*: (2-byte signed integer, from -32,768 to 32,767)
+* *INT/INTEGER*: (4-byte signed integer, from -2,147,483,648 to 2,147,483,647)
+* *BIGINT*: (8-byte signed integer, from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807)
+
+
+== Float Types in Apache Hive
+Float Types in Apache Hive are:
+
+* *FLOAT* (4-byte single precision floating point number)
+* *DOUBLE* (8-byte double precision floating point number)
+* *DOUBLE PRECISION* (alias for DOUBLE, only available starting with Hive 2.2.0)
+* *DECIMAL* Introduced in Hive 0.11.0 with a precision of 38 digits
+* *NUMERIC* (same as DECIMAL, starting with Hive 3.0.0)
+
+== Date/Time Types in Apache Hive
+Date/Time Types in Apache Hive are:
+
+* *TIMESTAMP*: Only available starting with Hive 0.8.0
+* *DATE*: Only available starting with Hive 0.12.0
+* *INTERVAL*: Only available starting with Hive 1.2.0
+
+== String Types in Apache Hive
+String Types in Apache Hive are:
+
+* *STRING*
+* *VARCHAR*: Only available starting with Hive 0.12.0
+* *CHAR*: Only available starting with Hive 0.13.0
+
+== Misc Types in Apache Hive
+Misc Types in Apache Hive are:
+
+* *BOOLEAN*
+* *BINARY*: Only available starting with Hive 0.8.0
+
+== Complex Types in Apache Hive
+Complex Types in Apache Hive are:
+
+* *arrays*: ARRAY<data_type> (Note: negative values and non-constant expressions are allowed as of Hive 0.14.)
+* *maps*: MAP<primitive_type, data_type> (Note: negative values and non-constant expressions are allowed as of Hive 0.14.)
+* *structs*: STRUCT<col_name : data_type [COMMENT col_comment], ...>
+* *union*: UNIONTYPE<data_type, data_type, ...> (Note: Only available starting with Hive 0.7.0.)
+
+== Hive Data Definition Language (DDL) Statements
+HiveQL DDL statements are as follows:
+
+* CREATE DATABASE/SCHEMA, TABLE, VIEW, FUNCTION, INDEX
+* DROP DATABASE/SCHEMA, TABLE, VIEW, INDEX
+* TRUNCATE TABLE
+* ALTER DATABASE/SCHEMA, TABLE, VIEW
+
+== Hive Data Definition Language (DDL) Statements contd.
+HiveQL DDL statements are as follows:
+
+* MSCK REPAIR TABLE (or ALTER TABLE RECOVER PARTITIONS)
+* SHOW DATABASES/SCHEMAS, TABLES, TBLPROPERTIES, VIEWS, PARTITIONS, FUNCTIONS, INDEX[ES], COLUMNS, CREATE TABLE
+* DESCRIBE DATABASE/SCHEMA, table_name, view_name, materialized_view_name
+
+== Hive Data Manipulation Language (DML)
+Hive supports following DML statements:
+
+* LOAD
+* INSERT
+* UPDATE
+* DELETE
+* MERGE
+
+== Hive Data Retrieval
+A SELECT statement can be part of a union query or a subquery of another query.
+
+* table_reference indicates the input to the query.
+* It can be a regular table, a view, a join construct or a subquery.
+* Table names and column names are case insensitive.
+
+== Hive SELECT query options
+Hive supports following in SELECT query:
+
+* GROUP BY
+* SORT/ORDER/CLUSTER/DISTRIBUTE BY
+* JOIN
+* UNION
+* TABLESAMPLE
+* Subqueries
+* Virtual Columns
+
+== Further Sources
+Refer official documents on Apache Hive here:
+
+* *Hive Documentation*: https://hive.apache.org
+* *Language Manual*: https://cwiki.apache.org/confluence/display/Hive/LanguageManual
+
