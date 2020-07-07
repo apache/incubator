@@ -24,7 +24,7 @@
 Apache Flink is a framework and distributed processing engine for stateful computations over unbounded and bounded data streams.
 Flink has been designed to run in all common cluster environments, perform computations at in-memory speed and at any scale.
 
-image::https://flink.apache.org/img/flink-header-logo.svg[]
+image::https://flink.apache.org/img/flink-header-logo.svg[width=50%]
 
 == Unbounded and Bounded Streams
 Apache Flink supports both unbounded and bounded streams:
@@ -101,13 +101,13 @@ Flink features several libraries for common data processing use cases. The libra
 * The Table API and SQL leverage Apache Calcite for parsing, validation, and query optimization.
 
 == Run Flink Applications 24X7
-Flink provides a several features to ensure that applications keep running and remain consistent:
+Flink provides following features to ensure that applications keep running, and remain consistent:
 
-* *Consistent Checkpoints*
-* *Efficient Checkpoints*
-* *End-to-End Exactly-Once*
-* *Integration with Cluster Managers*
-* *High-Availability Setup*
+* Consistent Checkpoints
+* Efficient Checkpoints
+* End-to-End Exactly-Once
+* Integration with Cluster Managers
+* High-Availability Setup
 
 == Consistent Checkpoints
 
@@ -117,8 +117,8 @@ Flink provides a several features to ensure that applications keep running and r
 
 == Efficient Checkpoints
 * Checkpointing the state of an application can be quite expensive if the application maintains terabytes of state.
-* Flink’s can perform asynchronous and incremental checkpoints.
-* In order to keep the impact of checkpoints on the application’s latency SLAs very small.
+* Flink can perform asynchronous and incremental checkpoints.
+* It can keep the impact of checkpoints on the application’s latency SLAs very small.
 
 == End-to-End Exactly-Once
 * Flink features transactional sinks for specific storage systems that guarantee that data is only written out exactly once, even in case of failures.
@@ -128,7 +128,7 @@ Flink provides a several features to ensure that applications keep running and r
 * When a process fails, a new process is automatically started to take over its work.
 
 == High-Availability Setup
-* Flink feature a high-availability mode that eliminates all single-points-of-failure.
+* Flink features a high-availability mode that eliminates all single-points-of-failure.
 * The HA-mode is based on Apache ZooKeeper, a battle-proven service for reliable distributed coordination.
 
 == Savepoints in Flink
@@ -138,21 +138,21 @@ Flink provides a several features to ensure that applications keep running and r
 * Savepoint is very similar to a checkpoint.
 * Savepoint needs to be manually triggered and is not automatically removed when an application is stopped.
 
-== Savepoints Benefits
+== Benefits of Savepoints
 
-Savepoints enable the following features:
+Savepoints enable following features:
 
-* *Application Evolution*
-* *Cluster Migration*
-* *Flink Version Updates*
-* *Application Scaling*
-* *A/B Tests and What-If Scenarios*
-* *Pause and Resume*
-* *Archiving*
+* Application Evolution
+* Cluster Migration
+* Flink Version Updates
+* Application Scaling
+* A/B Tests and What-If Scenarios
+* Pause and Resume
+* Archiving
 
 == Flink Monitoring
 
-Flink integrates nicely with many common logging and monitoring services and provides a REST API to control applications and query information.
+Flink integrates nicely with many common logging and monitoring services, and provides a REST API to control applications and query information.
 
 * Web UI
 * Logging
