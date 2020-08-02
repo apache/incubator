@@ -1,0 +1,203 @@
+////
+
+  Licensed to the Apache Software Foundation (ASF) under one or more
+  contributor license agreements.  See the NOTICE file distributed with
+  this work for additional information regarding copyright ownership.
+  The ASF licenses this file to You under the Apache License, Version 2.0
+  (the "License"); you may not use this file except in compliance with
+  the License.  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+
+////
+
+:description: description
+:keywords: keywords
+:author: Your name
+:talk: This is where your talk title goes
+:conference: APACHECON @Home
+:conference_eu: APACHECON EU
+:conference_na: APACHECON NA
+:conference_home: APACHECON @Home
+:dates: Spt. 29th - Oct. 1st
+:year: 2020
+
+[%notitle]
+== {talk}
+
+[.leftlogo]
+image:ApacheConAtHome.png[width=50%]
+
+[.righttitle]
+--
+{talk}
+
+{author}
+--
+
+[.conferenceName]
+{conference_home} +
+{dates}
+
+[.year]
+{year}
+
+[%notitle]
+== {talk}
+image::AtHomeSpiceRack.jpg[canvas]
+
+[.centered]
+--
+{talk}
+
+'''
+
+{author}
+--
+
+[.conferenceName]
+{conference_home} +
+{dates}
+
+[.year]
+{year}
+
+[%notitle]
+== {talk}
+image::AtHomeDesktop.jpg[canvas]
+
+[.centered]
+--
+{talk}
+
+'''
+
+{author}
+--
+
+[.conferenceName]
+{conference_home} +
+{dates}
+
+[.year]
+{year}
+
+[%notitle]
+== {talk}
+image::AtHomeDesktopII.jpg[canvas]
+
+[.centered]
+--
+{talk}
+
+'''
+
+{author}
+--
+
+[.conferenceName]
+{conference_home} +
+{dates}
+
+[.year]
+{year}
+
+[%notitle]
+== {talk}
+image::AtHomeOutside.jpg[canvas]
+
+[.centered]
+--
+{talk}
+
+'''
+
+{author}
+--
+
+[.conferenceName]
+{conference_home} +
+{dates}
+
+[.year]
+{year}
+
+== Simple Slide
+* one
+* two
+* three
+
+[.notes]
+--
+Speaker notes go here
+--
+
+== Sub Points
+* one
+** and this
+** and more
+* two
+* three
+
+
+== Styles and Custom Styles
+Text can be **bold**, __italic__, [.big]#big# or [.small]#small#
+
+== Image
+image::ApacheConAtHome.png[]
+
+== Two Columns
+[.twocolumns]
+--
+* one
+* two
+* three
+
+image::ApacheConAtHome.png[]
+--
+
+== Command Line
+monospace text - find and copy all the images! +
+`find . -name "*.jpg" -exec cp {} images \;`
+
+== Java Code
+
+[source,java]
+----
+public class HelloWorld {
+
+    public static void main(String[] args) {
+        System.out.println("Hello, World");
+    }
+}
+----
+
+
+== Optional Slides
+Press down arrow to see the optional slide.
+
+=== Optional Slide
+This is an optional slide.
+
+== Quote
+[quote, Albert Einstein]
+A person who never made a mistake never tried anything new.
+
+== Passthrough
+Anything in a passthrough  is passed to the output unprocessed so you can include raw HTML and Javascript.
+
+++++
+<p>This is a <b>HTML</b> paragraph</p>
+++++
+
+
+== Apache Training Project
+
+These slides are part of the Apache Training project.
+https://training.apache.org
