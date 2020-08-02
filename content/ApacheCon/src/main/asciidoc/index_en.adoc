@@ -21,18 +21,18 @@
 :keywords: keywords
 :author: Your name
 :talk: This is where your talk title goes
-:conference: APACHECON
+:conference: APACHECON @Home
 :conference_eu: APACHECON EU
 :conference_na: APACHECON NA
-:dates: Spt. 28th - Oct. 2nd
+:conference_home: APACHECON @Home
+:dates: Spt. 29th - Oct. 1st
 :year: 2020
 
 [%notitle]
 == {talk}
-image::ApacheCon_bg.jpg[canvas,size=contain]
 
 [.leftlogo]
-image:ApacheConNALogo.png[width=50%]
+image:ApacheConAtHome.png[width=50%]
 
 [.righttitle]
 --
@@ -42,7 +42,7 @@ image:ApacheConNALogo.png[width=50%]
 --
 
 [.conferenceName]
-{conference_na} +
+{conference_home} +
 {dates}
 
 [.year]
@@ -50,7 +50,7 @@ image:ApacheConNALogo.png[width=50%]
 
 [%notitle]
 == {talk}
-image::NewOrleans.jpg[canvas]
+image::AtHomeSpiceRack.jpg[canvas]
 
 [.centered]
 --
@@ -62,7 +62,7 @@ image::NewOrleans.jpg[canvas]
 --
 
 [.conferenceName]
-{conference_na} +
+{conference_home} +
 {dates}
 
 [.year]
@@ -70,7 +70,7 @@ image::NewOrleans.jpg[canvas]
 
 [%notitle]
 == {talk}
-image::NewOrleansII.jpg[canvas]
+image::AtHomeDesktop.jpg[canvas]
 
 [.centered]
 --
@@ -82,7 +82,7 @@ image::NewOrleansII.jpg[canvas]
 --
 
 [.conferenceName]
-{conference_na} +
+{conference_home} +
 {dates}
 
 [.year]
@@ -90,7 +90,7 @@ image::NewOrleansII.jpg[canvas]
 
 [%notitle]
 == {talk}
-image::NewOrleansIII.jpg[canvas]
+image::AtHomeDesktopII.jpg[canvas]
 
 [.centered]
 --
@@ -102,7 +102,7 @@ image::NewOrleansIII.jpg[canvas]
 --
 
 [.conferenceName]
-{conference_na} +
+{conference_home} +
 {dates}
 
 [.year]
@@ -110,7 +110,7 @@ image::NewOrleansIII.jpg[canvas]
 
 [%notitle]
 == {talk}
-image::NewOrleansIV.jpg[canvas]
+image::AtHomeOutside.jpg[canvas]
 
 [.centered]
 --
@@ -122,7 +122,7 @@ image::NewOrleansIV.jpg[canvas]
 --
 
 [.conferenceName]
-{conference_na} +
+{conference_home} +
 {dates}
 
 [.year]
@@ -150,7 +150,7 @@ Speaker notes go here
 Text can be **bold**, __italic__, [.big]#big# or [.small]#small#
 
 == Image
-image::ApacheConNA.jpg[]
+image::ApacheConAtHome.png[]
 
 == Two Columns
 [.twocolumns]
@@ -159,7 +159,7 @@ image::ApacheConNA.jpg[]
 * two
 * three
 
-image::ApacheConNA.jpg[]
+image::ApacheConAtHome.png[]
 --
 
 == Command Line
