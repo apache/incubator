@@ -1,0 +1,167 @@
+////
+
+  Licensed to the Apache Software Foundation (ASF) under one or more
+  contributor license agreements.  See the NOTICE file distributed with
+  this work for additional information regarding copyright ownership.
+  The ASF licenses this file to You under the Apache License, Version 2.0
+  (the "License"); you may not use this file except in compliance with
+  the License.  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+
+////
+:revealjs_progress: true
+:revealjs_slidenumber: true
+:sourcedir: ../java
+
+== What is Apache Flink?
+Apache Flink is a framework and distributed processing engine for stateful computations over unbounded and bounded data streams.
+Flink has been designed to run in all common cluster environments, perform computations at in-memory speed and at any scale.
+
+image::https://flink.apache.org/img/flink-header-logo.svg[width=50%]
+
+== Unbounded and Bounded Streams
+Apache Flink supports both unbounded and bounded streams:
+
+* *Unbounded streams* have a start but no defined end. They do not terminate and provide data as it is generated.
+* *Bounded streams* have a defined start and end. Bounded streams can be processed by ingesting all data before performing any computations. Processing of bounded streams is also known as batch processing.
+
+image::https://flink.apache.org/img/bounded-unbounded.png[]
+
+== Deploy Applications Anywhere
+
+* Apache Flink is a distributed system and requires compute resources in order to execute applications.
+* Flink integrates with all common cluster resource managers such as Hadoop YARN, Apache Mesos, and Kubernetes.
+* It can also be setup to run as a stand-alone cluster.
+
+
+== Run Applications at any Scale
+
+* Flink is designed to run stateful streaming applications at any scale.
+* Applications are parallelized into possibly thousands of tasks that are distributed and concurrently executed in a cluster.
+* A Flink application can leverage virtually unlimited amounts of CPUs, main memory, disk and network IO.
+
+
+== Leverage In-Memory Performance
+
+* Stateful Flink applications are optimized for local state access.
+* Task state is always maintained in memory.
+* If the state size exceeds the available memory, it is maintained in access-efficient on-disk data structures.
+
+image::https://flink.apache.org/img/local-state.png[]
+
+== Layered APIs in Apache Flink
+Flink provides three layered APIs. Each API offers a different trade-off between conciseness and expressiveness and targets different use cases.
+
+image::https://flink.apache.org/img/api-stack.png[]
+
+== Libraries in Apache Flink
+Flink features several libraries for common data processing use cases. The libraries are typically embedded in an API and not fully self-contained. Hence, they can benefit from all features of the API and be integrated with other libraries.
+
+* *Complex Event Processing (CEP)*: Flink’s CEP library provides an API to specify patterns of events.
+* *DataSet API*: The DataSet API is Flink’s core API for batch processing applications.
+* *Gelly*: Gelly is a library for scalable graph processing and analysis.
+
+
+== Complex Event Processing (CEP)
+
+* Pattern detection is a very common use case for event stream processing.
+* Flink’s CEP library provides an API to specify patterns of events (think of regular expressions or state machines).
+* The CEP library is integrated with Flink’s DataStream API, such that patterns are evaluated on DataStreams.
+* Applications for the CEP library include network intrusion detection, business process monitoring, and fraud detection.
+
+
+== DataSet API
+* The DataSet API is Flink’s core API for batch processing applications.
+* The primitives of the DataSet API include map, reduce, (outer) join, co-group, and iterate.
+* All operations are backed by algorithms and data structures that operate on serialized data in memory.
+* These operations spill to disk if the data size exceed the memory budget.
+* Algorithms of Flink’s DataSet API are based on database operators, like hybrid hash-join or external merge-sort.
+
+
+==  Gelly Library
+* Gelly is a library for scalable graph processing and analysis.
+* Gelly is implemented on top of and integrated with the DataSet API.
+* Gelly benefits from its scalable and robust operators.
+* Gelly features built-in algorithms, such as label propagation, triangle enumeration, and page ran.
+* Gelly provides a Graph API that eases the implementation of custom graph algorithms.
+
+
+== SQL & Table API
+
+* Flink features two relational APIs, the Table API and SQL.
+* Both APIs are unified APIs for batch and stream processing.
+* Queries are executed with the same semantics on unbounded, real-time streams or bounded, recorded streams and produce the same results.
+* The Table API and SQL leverage Apache Calcite for parsing, validation, and query optimization.
+
+== Run Flink Applications 24X7
+Flink provides following features to ensure that applications keep running, and remain consistent:
+
+* Consistent Checkpoints
+* Efficient Checkpoints
+* End-to-End Exactly-Once
+* Integration with Cluster Managers
+* High-Availability Setup
+
+== Consistent Checkpoints
+
+* Flink’s recovery mechanism is based on consistent checkpoints of an application’s state.
+* In case of a failure, the application is restarted and its state is loaded from the latest checkpoint.
+* In combination with resettable stream sources, this feature can guarantee exactly-once state consistency.
+
+== Efficient Checkpoints
+* Checkpointing the state of an application can be quite expensive if the application maintains terabytes of state.
+* Flink can perform asynchronous and incremental checkpoints.
+* It can keep the impact of checkpoints on the application’s latency SLAs very small.
+
+== End-to-End Exactly-Once
+* Flink features transactional sinks for specific storage systems that guarantee that data is only written out exactly once, even in case of failures.
+
+== Integration with Cluster Managers
+* Flink is tightly integrated with cluster managers, such as Hadoop YARN, Mesos, or Kubernetes.
+* When a process fails, a new process is automatically started to take over its work.
+
+== High-Availability Setup
+* Flink features a high-availability mode that eliminates all single-points-of-failure.
+* The HA-mode is based on Apache ZooKeeper, a battle-proven service for reliable distributed coordination.
+
+== Savepoints in Flink
+
+* Savepoint solves the issue of updating stateful applications and many other challenges.
+* A savepoint is a consistent snapshot of an application’s state.
+* Savepoint is very similar to a checkpoint.
+* Savepoint needs to be manually triggered and is not automatically removed when an application is stopped.
+
+== Benefits of Savepoints
+
+Savepoints enable following features:
+
+* Application Evolution
+* Cluster Migration
+* Flink Version Updates
+* Application Scaling
+* A/B Tests and What-If Scenarios
+* Pause and Resume
+* Archiving
+
+== Flink Monitoring
+
+Flink integrates nicely with many common logging and monitoring services, and provides a REST API to control applications and query information.
+
+* Web UI
+* Logging
+* Metrics
+* REST API
+
+== Further Sources
+Refer official documents on Apache Flink here:
+
+* *Flink Documentation*: https://flink.apache.org/
+* *Flink Blog*: https://flink.apache.org/blog/
+
