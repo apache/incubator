@@ -31,7 +31,7 @@
   </parent>
 
   <groupId>org.apache.training</groupId>
-  <artifactId>content-master-pom</artifactId>
+  <artifactId>content-parent-pom</artifactId>
   <version>1.0.0-SNAPSHOT</version>
   <packaging>pom</packaging>
 
@@ -45,6 +45,8 @@
     <project.main.theme>apache</project.main.theme>
     <project.slides.directory>${project.build.directory}/generated-slides</project.slides.directory>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+    <java.version>1.8</java.version>
 
     <asciidoctor.maven.plugin.version>2.0.0-RC.1</asciidoctor.maven.plugin.version>
     <asciidoctorj.version>2.2.0</asciidoctorj.version>
@@ -114,6 +116,9 @@
 
             <!-- Output of the profiler maven extension -->
             <exclude>**/.profiler/**</exclude>
+
+            <exclude>licenses/**</exclude>
+            <exclude>README.md</exclude>
           </excludes>
         </configuration>
       </plugin>
@@ -415,6 +420,21 @@
         </configuration>
       </plugin>
     </plugins>
+
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <configuration>
+            <source>${java.version}</source>
+            <target>${java.version}</target>
+            <testSource>${java.version}</testSource>
+            <testTarget>${java.version}</testTarget>
+          </configuration>
+        </plugin>
+      </plugins>
+    </pluginManagement>
   </build>
 
 </project>

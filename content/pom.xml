@@ -17,23 +17,37 @@
   limitations under the License.
 
 -->
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
 
-    <parent>
-        <groupId>org.apache.training</groupId>
-        <artifactId>content-parent-pom</artifactId>
-        <version>1.0.0-SNAPSHOT</version>
-        <relativePath/>
-    </parent>
+  <modelVersion>4.0.0</modelVersion>
 
+  <parent>
     <groupId>org.apache.training</groupId>
-    <artifactId>apache-hadoop</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
-    <packaging>war</packaging>
+    <artifactId>training</artifactId>
+    <version>0.4.0-SNAPSHOT</version>
+  </parent>
 
-    <name>Apache Hadoop Slides</name>
-    <description></description>
+  <artifactId>training-content</artifactId>
+  <version>0.4.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+
+  <name>Training: Content</name>
+
+  <modules>
+    <module>ApacheCon</module>
+    <module>ApacheFlink</module>
+    <module>ApacheHive</module>
+    <module>ApacheWay</module>
+    <module>ComDev</module>
+    <module>Hadoop</module>
+    <module>Ignite</module>
+    <module>Incubator</module>
+    <module>IoT</module>
+    <module>MyNewt</module>
+    <module>Spark</module>
+    <module>Training</module>
+    <module>ZooKeeper</module>
+  </modules>
 
 </project>
