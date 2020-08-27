@@ -13,12 +13,12 @@ the Incubator PMC which manages this website.
 ## Automated publishing - Website and Clutch data
 
 Commits to the `master` branch are automatically checked out and built using `build_site.sh` by the 
-[Incubator GIT Site - part 2](https://builds.apache.org/view/H-L/view/Incubator/job/Incubator%20GIT%20Site%20-%20part%202/)
+[Incubator GIT Site - part 2](https://ci-builds.apache.org/job/Incubator/job/Incubator-GIT-Site-part-2/)
 Jenkins job. The results are pushed to the [`content` folder of the `asf-site` branch](https://github.com/apache/incubator/tree/asf-site/content)
 which is in turn published automatically to http://incubator.apache.org/ by the ASF's `gitwcsub` mechanism.
 
 The data for http://incubator.apache.org/clutch/ takes longer to build so it is handled by a separate
-[SVN Clutch Analysis - part 1](https://builds.apache.org/view/H-L/view/Incubator/job/Incubator%20SVN%20Clutch%20Analysis%20-%20part%201/)
+[SVN Clutch Analysis - part 1](https://ci-builds.apache.org/job/Incubator/job/Incubator-SVN-Clutch-Analysis-part-1/)
 Jenkins job that runs the `build_clutch.sh` script that's scheduled to run regularly. The results are stored in the 
 [`reserve` folder of the `asf-site` branch](https://github.com/apache/incubator/tree/asf-site/reserve)
 
