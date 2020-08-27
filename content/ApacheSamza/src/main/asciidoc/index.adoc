@@ -1,0 +1,184 @@
+////
+
+  Licensed to the Apache Software Foundation (ASF) under one or more
+  contributor license agreements.  See the NOTICE file distributed with
+  this work for additional information regarding copyright ownership.
+  The ASF licenses this file to You under the Apache License, Version 2.0
+  (the "License"); you may not use this file except in compliance with
+  the License.  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+
+////
+:revealjs_progress: true
+:revealjs_slidenumber: true
+:sourcedir: ../java
+
+== What is Apache Samza?
+Apache Samza is a distributed stream processing framework.
+Samza allows to build stateful applications that process data in real-time from multiple sources including Apache Kafka.
+Samza is battle-tested at scale, it supports flexible deployment options to run on YARN or as a standalone library.
+
+image::http://samza.apache.org/img/samza-logo@2x.png[width=50%]
+
+== Samza High Level Architecture
+
+image::http://samza.apache.org/img/latest/learn/documentation/api/samza-arch4.png[width=90%]
+
+== Samza Features
+Apache Samza provides following features:
+
+* Unified API
+* Pluggability at every level
+* Samza as an embedded library
+* Write once, Run anywhere
+* Samza as a managed service
+* Fault-tolerance
+* Massive scale
+
+== Samza: Unified API
+
+* Samza provides a simple API to describe the application-logic in a manner independent of the data-source.
+* The same API can process both batch and streaming data.
+
+== Samza: Pluggability at every level
+
+* Samza can be used to process and transform data from any source.
+* Samza offers built-in integrations with Apache Kafka, AWS Kinesis, Azure EventHubs, ElasticSearch and Apache Hadoop.
+* It’s quite easy to integrate with various data sources.
+
+== Samza: An embedded library
+
+* Samza can integrate effortlessly with an existing application to eliminate the need to spin up and operate a separate cluster for stream processing.
+* Samza can be used as a light-weight client-library embedded in Java/Scala applications.
+
+== Samza: Write once, Run anywhere
+
+* Samza supports flexible deployment options to run applications anywhere.
+* It can be deployed on public clouds as well as on containerized environments and bare-metal hardware.
+
+== Samza: As a managed service
+
+* Samza can be run for stream-processing as a managed service.
+* Samza integrates with popular cluster-managers including Apache YARN.
+
+== Samza: Fault-tolerance
+
+* Samza transparently migrates tasks along with their associated state in the event of failures.
+* Samza supports host-affinity and incremental checkpointing to enable fast recovery from failures.
+
+== Samza: Massive scale
+
+* Samza is battle-tested on applications that use several terabytes of state and run on thousands of cores.
+* Samza powers multiple large companies including LinkedIn, Uber, TripAdvisor, Slack etc.
+
+== Samza: Streams
+
+* Samza processes the data in the form of streams.
+* A stream is a collection of immutable messages, usually of the same type or category.
+* Each message in a stream is modelled as a key-value pair.
+
+image::http://samza.apache.org/img/latest/learn/documentation/core-concepts/streams-partitions.png[]
+
+== Samza: Partitions
+
+* A Samza stream is sharded into multiple partitions for scaling how its data is processed.
+* Each partition is an ordered, replayable sequence of records.
+* When a message is written to a stream, it ends up in one of its partitions.
+* Each message in a partition is uniquely identified by an offset.
+
+
+== Samza State vs. Stateless
+
+* Samza supports both *stateless and stateful* stream processing.
+* *Stateless processing*, as the name implies, does not retain any state associated with the current message after it has been processed.
+* *Stateful processing* records some state about a message even after processing it. Samza offers a fault-tolerant, scalable state-store for this purpose.
+
+== Samza Processing Time
+
+* All built-in Samza operators use processing time.
+* In processing time, the timestamp of a message is determined by when it is processed by the system.
+* In event time, the timestamp of an event is determined by when it actually occurred at the source.
+* Samza provides event-time based processing by its integration with Apache BEAM.
+
+==  Samza Processing guarantee
+
+* Samza supports *at-least once* processing.
+* Each message in the input stream is processed by the system at-least once.
+* This guarantees no data-loss even when there are failures.
+
+== Samza Task Execution
+
+* Samza scales an application by logically breaking it down into multiple tasks.
+* A task is the unit of parallelism for an application.
+* Each task consumes data from one partition of input streams.
+* The assignment of partitions to tasks never changes.
+* If a task is on a machine that fails, the task is restarted elsewhere, still consuming the same stream partitions.
+* Since there is no ordering of messages across partitions, it allows tasks to execute entirely independent of each other without sharing any state.
+
+== Samza Task Execution Diagram
+
+image::http://samza.apache.org/img/latest/learn/documentation/architecture/task-assignment.png[]
+
+== Samza Container
+
+* Just like a task is the logical unit of parallelism for an application, a container is the physical unit.
+* Each worker is a JVM process, which runs one or more tasks.
+* An application typically has multiple containers distributed across hosts.
+
+== Samza Container Diagram
+
+image::http://samza.apache.org/img/latest/learn/documentation/architecture/distributed-execution.png[]
+
+== Samza Coordinator
+
+* Each Samza application has a coordinator which manages the assignment of tasks across the individual containers.
+* The coordinator monitors the liveness of individual containers and redistributes the tasks among the remaining ones during a failure.
+* The coordinator itself is pluggable, enabling Samza to support multiple deployment options.
+
+== Samza Incremental Checkpointing
+
+* Samza guarantees that messages won’t be lost, even if a job crashes, if a machine dies, if there is a network fault, or something else goes wrong. To achieve this property, each task periodically persists the last processed offsets for its input stream partitions.
+* If a task needs to be restarted on a different worker due to a failure, it resumes processing from its latest checkpoint.
+* Samza’s checkpointing mechanism ensures each task also stores the contents of its state-store consistently with its last processed offsets. Checkpoints are flushed incrementally ie., the state-store only flushes the delta since the previous checkpoint instead of flushing its entire state.
+
+== Samza Incremental Checkpointing Diagram
+
+image::http://samza.apache.org/img/latest/learn/documentation/architecture/incremental-checkpointing.png[]
+
+== Samza State Management
+
+* Samza offers scalable, high-performance storage to build stateful stream-processing applications. This is implemented by associating each Samza task with its own instance of a local database (aka. a state-store).
+* The state-store associated with a particular task only stores data corresponding to the partitions processed by that task.
+* Samza transparently migrates the tasks from one machine to another. By giving each task its own state, tasks can be relocated without affecting the overall application.
+
+== Samza State Management Diagram
+
+image::http://samza.apache.org/img/latest/learn/documentation/architecture/state-store.png[]
+
+== Samza Programming API
+Samza provides multiple programming APIs to fit a use case:
+
+* *Java APIs*: Samza’s provides two Java programming APIs that are ideal for building advanced Stream Processing applications.
+* *Samza SQL*: Samza SQL provides a declarative query language for describing the stream processing logic. It lets a user manipulate streams using SQL predicates and UDFs instead of working with the physical implementation details.
+* *Apache Beam API*: Samza also provides a Apache Beam runner to run applications written using the Apache Beam API. This is considered as an extension to the operators supported by the High Level Streams API in Samza.
+
+== Samza Java API
+
+Samza provides two Java programming APIs that are ideal for building advanced Stream Processing applications.
+
+* *High Level Streams API*: Samza’s flexible High Level Streams API can describe a complex stream processing pipeline in the form of a Directional Acyclic Graph (DAG) of operations on message streams. It provides a rich set of built-in operators that simplify common stream processing operations such as filtering, projection, repartitioning, joins, and windows.
+* *Low Level Task API*: Samza’s powerful Low Level Task API can be used to write an application in terms of processing logic for each incoming message.
+
+== Further Sources
+Refer official documents on Apache Samza here:
+
+* *Samza Documentation*: https://samza.apache.org/
+* *Samza Blog*: https://samza.apache.org/blog/
+
