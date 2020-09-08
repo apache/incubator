@@ -1,7 +1,5 @@
 REMARKS:
 
-
-
 the file: src/main/resources/document.html.slim contains a copy oif the original version of the file in the asciidoctor-reveal.js-{version}/templates directory.
 
 However we add two sets of divs in order to position logos.
