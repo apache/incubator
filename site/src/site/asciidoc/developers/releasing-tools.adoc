@@ -1,0 +1,52 @@
+//
+//  Licensed to the Apache Software Foundation (ASF) under one or more
+//  contributor license agreements.  See the NOTICE file distributed with
+//  this work for additional information regarding copyright ownership.
+//  The ASF licenses this file to You under the Apache License, Version 2.0
+//  (the "License"); you may not use this file except in compliance with
+//  the License.  You may obtain a copy of the License at
+//
+//      http://www.apache.org/licenses/LICENSE-2.0
+//
+//  Unless required by applicable law or agreed to in writing, software
+//  distributed under the License is distributed on an "AS IS" BASIS,
+//  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+//  See the License for the specific language governing permissions and
+//  limitations under the License.
+//
+
+== Releasing the tools
+
+The tools contain all the parts we need to actually build our presentations.
+
+They currently consist of 3 parts:
+
+1. The `content-parent-resources` which contain all the static resources we need to build the presentations.
+2. The `content-parent-pom` which is pom, when used as parent for a presentation, will make sure all is configured correcty, dramatically reducing the amount of configuration needed.
+3. The `content-archetype` which is a maven archetype which can be used to generate a new presentation module based on the current `content-parent-pom`.
+
+As the parts listed later on in this module listing require the previous ones in the build, we can't release them all in one go, but have to release them one after the other.
+
+This makes releasing this a little trickier, but in the end it's a lot simpler for our users.
+
+=== Creating a release branch
+
+Normally we would use the maven release plugin to create these, however this would create 3 independent release branchees, which is sort of silly.
+So we'll create it manually.
+
+   git checkout -b releases/tools/1.0.0
+
+So as soon as that's done, we should go back to the `develop` branch and update the poms to new versions.
+
+As in this example we're releasing version `1.0.0`, we will edit them to `1.1.0-SNAPSHOT`.
+
+Currently, the following files need updating:
+
+- tools/content-parent-resources/pom.xml (Line 35)
+- tools/content-parent-pom/pom.xml (Line 35, Line 70)
+- tools/content-archetype/pom.xml (Line 35)
+- tools/content-archetype/src/main/resources/archetype-resources/pom.xml (Line 25)
+
+=== Releasing `content-parent-resources`
+
+
