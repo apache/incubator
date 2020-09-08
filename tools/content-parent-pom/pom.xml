@@ -39,6 +39,13 @@
   <description>Parent pom containing all the configuration for building presentations with the training template.
   </description>
 
+  <scm>
+    <connection>scm:git:https://gitbox.apache.org/repos/asf/incubator-training.git</connection>
+    <developerConnection>scm:git:https://gitbox.apache.org/repos/asf/incubator-training.git</developerConnection>
+    <url>https://github.com/apache/incubator-training</url>
+    <tag>releases/tools/1.0.0</tag>
+  </scm>
+
   <properties>
     <project.main.contentfile>index</project.main.contentfile>
     <!-- Put your custom theme files in src/main/theme and reference the name (without ".css") here. -->
