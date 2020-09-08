@@ -23,11 +23,11 @@
   <parent>
     <groupId>org.apache.training</groupId>
     <artifactId>training-tools</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1-SNAPSHOT</version>
   </parent>
 
   <artifactId>content-parent-pom</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <name>Training: Tools: Content Master Pom</name>
@@ -64,7 +64,7 @@
     <dependency>
       <groupId>org.apache.training</groupId>
       <artifactId>content-parent-resources</artifactId>
-      <version>1.0.0</version>
+      <version>1.0.1-SNAPSHOT</version>
       <scope>provided</scope>
     </dependency>
   </dependencies>
