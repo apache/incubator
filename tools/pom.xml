@@ -60,7 +60,43 @@
           <autoVersionSubmodules>true</autoVersionSubmodules>
         </configuration>
       </plugin>
+      <!-- Generate the legally required text files in the jars -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-remote-resources-plugin</artifactId>
+        <version>1.7.0</version>
+        <executions>
+          <execution>
+            <id>process-resource-bundles</id>
+            <goals>
+              <goal>process</goal>
+            </goals>
+            <configuration>
+              <resourceBundles>
+                <!-- Will generate META-INF/{DEPENDENCIES,LICENSE,NOTICE} -->
+                <resourceBundle>org.apache:apache-jar-resource-bundle:1.4</resourceBundle>
+                <!-- Will generate META-INF/DISCLAIMER  -->
+                <resourceBundle>org.apache:apache-incubator-disclaimer-resource-bundle:1.1</resourceBundle>
+              </resourceBundles>
+              <!-- Content in this directory will be appended to generated resources -->
+              <appendedResourcesDirectory>${basedir}/src/remote-resources</appendedResourcesDirectory>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
     </plugins>
+
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-assembly-plugin</artifactId>
+          <configuration>
+            <finalName>apache-training-incubating-tools-${project.version}</finalName>
+          </configuration>
+        </plugin>
+      </plugins>
+    </pluginManagement>
   </build>
 
 </project>
