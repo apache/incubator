@@ -95,6 +95,28 @@
             <finalName>apache-training-incubating-tools-${project.version}</finalName>
           </configuration>
         </plugin>
+        <!--
+          As we renamed the default output name in the plugin above, we also
+          have to tell the checksum plugin where the new file is
+        -->
+        <plugin>
+          <groupId>net.nicoulaj.maven.plugins</groupId>
+          <artifactId>checksum-maven-plugin</artifactId>
+          <configuration>
+            <algorithms>
+              <algorithm>SHA-512</algorithm>
+            </algorithms>
+            <csvSummary>false</csvSummary>
+            <fileSets>
+              <fileSet>
+                <directory>${project.build.directory}</directory>
+                <includes>
+                  <include>apache-training-incubating-tools-${project.version}-source-release.zip</include>
+                </includes>
+              </fileSet>
+            </fileSets>
+          </configuration>
+        </plugin>
       </plugins>
     </pluginManagement>
   </build>
