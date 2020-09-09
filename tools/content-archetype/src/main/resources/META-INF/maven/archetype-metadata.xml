@@ -17,9 +17,15 @@
   limitations under the License.
 
 -->
-<archetype-descriptor xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0 http://maven.apache.org/xsd/archetype-descriptor-1.0.0.xsd" name="presentation-template"
+<archetype-descriptor xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0 http://maven.apache.org/xsd/archetype-descriptor-1.0.0.xsd"
+                      name="apache-training-presentation-template"
     xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <requiredProperties>
+    <requiredProperty key="apacheTrainingToolsVersion">
+      <defaultValue>APACHE_TRAINING_TOOLS_VERSION</defaultValue>
+    </requiredProperty>
+  </requiredProperties>
   <fileSets>
     <fileSet filtered="true" packaged="true" encoding="UTF-8">
       <directory>src/main/java</directory>
@@ -45,6 +51,7 @@
       <includes>
         <include>install-deps-centos.sh</include>
         <include>install-deps-mac.sh</include>
+        <include>pom.xml</include>
         <include>README.md</include>
       </includes>
     </fileSet>
