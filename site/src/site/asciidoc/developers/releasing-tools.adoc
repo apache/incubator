@@ -31,22 +31,135 @@ This makes releasing this a little trickier, but in the end it's a lot simpler f
 
 === Creating a release branch
 
-Normally we would use the maven release plugin to create these, however this would create 3 independent release branchees, which is sort of silly.
-So we'll create it manually.
+First we need to create a release branch.
 
-   git checkout -b releases/tools/1.0.0
+Do this the following way:
 
-So as soon as that's done, we should go back to the `develop` branch and update the poms to new versions.
+  mvn release:branch -DbranchName=releases/tools/1.0
 
-As in this example we're releasing version `1.0.0`, we will edit them to `1.1.0-SNAPSHOT`.
+NOTE: We're not using the full version here, as this branch should also contain the bugfix releases and the tags will have the name using the full version. If we used that for the branch itself we would get name collisions during the release.
 
-Currently, the following files need updating:
+After this command is done, we will still be on the `develop` branch.
+In order to actually start the release, we need to switch to the release branch which was previously created.
 
-- tools/content-parent-resources/pom.xml (Line 35)
-- tools/content-parent-pom/pom.xml (Line 35, Line 70)
-- tools/content-archetype/pom.xml (Line 35)
-- tools/content-archetype/src/main/resources/archetype-resources/pom.xml (Line 25)
+  git checkout releases/tools/1.0
 
-=== Releasing `content-parent-resources`
+=== Doing the release
+
+The release itself is done via the `maven-release-plugin`.
+
+  mvn release:prepare
+
+The plugin will ask some questions.
+
+- For the new-release version, just hit `[Enter]` and use the default.
+- For the release tag use: releases/tools/1.0.0 (Or the version used in the question before)
+- For the next development version, again just hit `[Enter]` and use the default.
+
+The plugin will now:
+
+- Check if there are any uncommitted files in the release and abort if it finds any.
+- Then it will update the versions of all artifacts in the reactor to the release version.
+- Then check if now any SNAPSHOT version is used and ask to resolve them to release versions if it finds any (If it finds any, this should be addressed as it should not happen)
+- Then it does a build including tests in order to see if it builds with the new version.
+- If this build is ok, it commits the changed poms with the new versions.
+- Then it tags this version
+- Then it changes the versions to the next version
+- Then it commits these changes too
+- Then it pushes the changes
+
+The next step now uses the release tag created in the previous step and builds the release artifacts.
+
+  mvn release:perform
+
+This now will:
+
+- Checkout the tag into the "target/checkout" directory
+- Run a `mvn deploy` build in this clean checkout with enabled `apache-release` profile
+- In this build - due to the `apache-release` profile - will also build `source` jars, `javadoc` jars, create a source distribution
+- Create md5 hashes for all artifacts
+- Sign all artifacts with your GPG Keys
+- Deploy everything to the `Apache Nexus` Staging repository
+
+Last thing you need to do after a successful execution of the release:perform step, is:
+
+- To log in to Apache's Nexus at: https://repository.apache.org/#welcome (using your apache credentials)
+- Select `Staging Repositories` in the `Build Promotion` menu on the left-hand side (If you can't see it, you've probably not logged in)
+- Use the search box of the `Staging Repositories` tab and search for "training" (It will probably have only one)
+- Select the entry.
+- Click on the `Close` button.
+- Enter a meaningful message and click `Confirm`
+- Hit the `Refresh` button in the tab untill the column `Status` changes from `open` to `closed`
+- Copy the `URL` displayed in the details tab for the selected staging repo (In my case: https://repository.apache.org/content/repositories/orgapachetraining-1000)
+
+We're now done with the preparation of the RC from a Maven perspective.
+
+Next we need to stage the source bundle we will be voting on.
+
+=== Staging the Release Candidate
+
+What we've staged in Nexus is the `convenience binaries` part of the release, the official release will be the source bundle located in SVN.
+
+These will be located under:
+https://dist.apache.org/repos/dist/dev/incubator/training/
+
+In our case the tools will be located in a sub-directory `tools`, so the final path to the `RC1` of version `1.0.0` will be: https://dist.apache.org/repos/dist/dev/incubator/training/tools/1.0.0/rc1
+
+I usually prepare a local directory containing all parts and then just import them into SVN in one go.
+
+The local structure for this is then:
+
+  /tools/1.0.0/rc1/training-tools-1.0.0-source-release.zip
+  /tools/1.0.0/rc1/training-tools-1.0.0-source-release.zip.asc
+  /tools/1.0.0/rc1/training-tools-1.0.0-source-release.zip.sha512
+
+NOTE: Be sure to not take the files form the `target` directory directly, but that you use the `target/checkout/tools/target` versions instead!
+
+Then I just import the 1.0.0 directory using the following command
+
+  svn import tools/1.0.0 https://dist.apache.org/repos/dist/dev/incubator/training/tools/1.0.0 -m"Staged RC1 of version 1.0.0 Apache Training tools"
+
+If this is the first time you are releasing something for the Apache Training (incubating) project, be sure to add your PGP key to the `KEYS` file at: https://dist.apache.org/repos/dist/dev/incubator/training/KEYS
+
+=== Sending out the VOTE email
+
+Next step is to actually start the vote by sending out the VOTE email.
+
+Here a template for that:
+
+---
+E-Mail Topic:
+[VOTE] Apache Training (Incubating) Tools {release-version} RC{rc-number}
+
+Message:
+Apache Training (Incubating) Tools {release-version} RC{rc-number} has been staged under [2]
+and it’s time to vote on accepting it for release.
+
+All Maven artifacts are available under [1]. Voting will be open for 72hr.
+
+A minimum of 3 binding +1 votes and more binding +1 than binding -1
+are required to pass.
+
+Repository: https://gitbox.apache.org/repos/asf/incubator-training.git
+Release tag: releases/tools/{release-version}
+Hash for the release tag: {replacethiswiththerealgitcommittag}
+
+Per [3] "Before voting +1 PMC members are required to download
+the signed source code package, compile it as provided, and test
+the resulting executable on their own platform, along with also
+verifying that the package meets the requirements of the ASF policy
+on releases."
+
+You can achieve the above by following [4].
+
+[ ]  +1 accept (indicate what you validated - e.g. performed the non-RM items in [4])
+[ ]  -1 reject (explanation required)
 
 
+[1] https://repository.apache.org/content/repositories/orgapachetraining-{somefourdigitnumber}
+[2] https://dist.apache.org/repos/dist/dev/incubator/training/tools/{release-version}/rc{rc-number}/
+[3] https://www.apache.org/dev/release/validation.html#approving-a-release
+[4] https://plc4x.apache.org/developers/release/validation.html
+---
+
+=== TO BE CONTINUED ...
