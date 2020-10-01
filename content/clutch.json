@@ -1010,7 +1010,9 @@
         "kamaci"
       ]
     ],
-    "news": [],
+    "news": [
+      "2018-08-20 Project enters incubation."
+    ],
     "podlingName": "DataLab",
     "rawReportingGroup": "group-1",
     "releases": {
@@ -1063,33 +1065,16 @@
     "sponsor": "Incubator",
     "startDate": "2018-08-20",
     "statusAge": 0,
-    "statusLastUpdated": "",
+    "statusLastUpdated": "2020-10-01",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-datalab.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/datalab/KEYS",
       "svn": "",
-      "tracker": "",
-      "wiki": "",
-      "www": ""
+      "tracker": "https://issues.apache.org/jira/projects/DLAB",
+      "wiki": "https://cwiki.apache.org/confluence/display/DLAB",
+      "www": "http://dlab.incubator.apache.org"
     },
-    "zFixMeList": [
-      [
-        "07",
-        "Status file is missing"
-      ],
-      [
-        "10",
-        "Has not provided an issue tracker link"
-      ],
-      [
-        "18",
-        "Has not provided a wiki link"
-      ],
-      [
-        "11",
-        "Website is missing"
-      ]
-    ]
+    "zFixMeList": []
   },
   "datasketches": {
     "description": "DataSketches is an open source, high-performance library of stochastic streaming algorithms commonly called \"sketches\" in the data sciences. Sketches are small, stateful programs that process massive data as a stream and can provide approximate answers, with mathematical guarantees, to computationally difficult queries orders-of-magnitude faster than traditional, exact methods.",
@@ -1945,7 +1930,7 @@
         {
           "description": "Apache echarts",
           "last_update_int": 1598852888,
-          "last_update_txt": "4 weeks ago"
+          "last_update_txt": "5 weeks ago"
         }
       ],
       [
@@ -4418,8 +4403,8 @@
         "incubator-nlpcraft-website",
         {
           "description": "Apache nlpcraft",
-          "last_update_int": 1601496840,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_int": 1601574865,
+          "last_update_txt": "<span style='color: #070;'>&lt;15 minutes ago</span>"
         }
       ]
     ],
@@ -5112,7 +5097,7 @@
         {
           "description": "Apache Pinot",
           "last_update_int": 1601572848,
-          "last_update_txt": "<span style='color: #070;'>&lt;30 minutes ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt;1 hour ago</span>"
         }
       ],
       [
@@ -7972,7 +7957,7 @@
         {
           "description": "Apache TVM",
           "last_update_int": 1601570924,
-          "last_update_txt": "<span style='color: #070;'>&lt;1 hour ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
         }
       ],
       [
