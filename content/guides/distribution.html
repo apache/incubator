@@ -162,7 +162,7 @@ Go to start of metadata</p>
 <p>Guidelines to help you comply with the ASF distribution policies</p>
 </div>
 <div class="paragraph">
-<p>One of the goals of incubation is to teach podling communities how to build and distribute ASF-compliant releases. A podling community should begin to familiarise themselves with the ASF policies for distribution. Those policies can be found at <a href="https://infra.apache.org/release-distribution" class="bare">https://infra.apache.org/release-distribution</a>. The following will help you comply with current policy.</p>
+<p>One of the goals of incubation is to teach podling communities how to build and distribute ASF-compliant releases. A podling community should begin to familiarise themselves with the ASF policies for distribution. Those policies can be found at <a href="https://infra.apache.org/release-distribution">https://infra.apache.org/release-distribution</a>. The following will help you comply with current policy.</p>
 </div>
 </div>
 </div>
@@ -179,20 +179,50 @@ At the same time binary artifacts on distribution platforms are important to our
 <h2 id="release_platforms">Release Platforms</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>In addition to the Apache mirror system incubating projects may distribute artifacts on other platforms as long as they follow these general guidelines:
-* Releases must be placed in the Apache mirror system.
-* Source releases and convenience binaries need to be made from IPMC and PPMC approved ASF releases.
-* Where possible it should be pointed out that Apache project make source releases and convenience binaries are just a convenience for end user.
-* Convenience binaries need to follow licensing policy and not include any category X licensed software.
-* Convenience binaries should be signed and have hashes to verify their contents.
-* Release candidates, nightlys and snapshots must not be advertised to the general public.
-* Apache project branding and naming needs to be respected.
-* It should be clear that the artifacts are under the ALv2 license.
-* An incubating disclaimer must be clearly displayed where the artifacts are made available.
-* All PPMC members must have access to administer the platform and the credentials recorded where any PPMC member can access them.
-* Where possible these artifacts should not be referred to as releases.
-* Where possible use platforms officially supported by Infra.
-All of the above SHOULD be followed. The podling can ask the IPMC for permission to do otherwise.</p>
+<p>In addition to the Apache mirror system incubating projects may distribute artifacts on other platforms as long as they follow these general guidelines:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Releases must be placed in the Apache mirror system.</p>
+</li>
+<li>
+<p>Source releases and convenience binaries need to be made from IPMC and PPMC approved ASF releases.</p>
+</li>
+<li>
+<p>Where possible it should be pointed out that Apache project make source releases and convenience binaries are just a convenience for end user.</p>
+</li>
+<li>
+<p>Convenience binaries need to follow licensing policy and not include any category X licensed software.</p>
+</li>
+<li>
+<p>Convenience binaries should be signed and have hashes to verify their contents.</p>
+</li>
+<li>
+<p>Release candidates, nightlys and snapshots must not be advertised to the general public.</p>
+</li>
+<li>
+<p>Apache project branding and naming needs to be respected.</p>
+</li>
+<li>
+<p>It should be clear that the artifacts are under the ALv2 license.</p>
+</li>
+<li>
+<p>An incubating disclaimer must be clearly displayed where the artifacts are made available.</p>
+</li>
+<li>
+<p>All PPMC members must have access to administer the platform and the credentials recorded where any PPMC member can access them.</p>
+</li>
+<li>
+<p>Where possible these artifacts should not be referred to as releases.</p>
+</li>
+<li>
+<p>Where possible use platforms officially supported by Infra.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>All of the above SHOULD be followed. The podling can ask the IPMC for permission to do otherwise.</p>
 </div>
 <div class="paragraph">
 <p><strong>Currently only Github, Dockerhub, and Maven are officially supported by Infra.</strong></p>
@@ -203,13 +233,29 @@ All of the above SHOULD be followed. The podling can ask the IPMC for permission
 <h2 id="maven_distribution">Maven distribution</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>To comply with ASF release and distributions please ensure the following:
-* The project description should include the incubator disclaimer.
-* Artifacts should be under the groupId of org.apache.&lt;project&gt;.
-* The official release artifacts should not contain unapproved code.
-* Release candidates, nightlys or snapshots need to be clearly marked by adding suffix in its version, like <code>org.apache.&lt;project&gt;.&lt;component&gt;:0.1-SNAPSHOT</code>
-* The POM file should set the ALv2 license as its license, Apache &lt;project&gt; as its developer name, and proper source control information.
-* Additional guidelines and process for releasing Maven components can be found <a href="https://infra.apache.org/publishing-maven-artifacts.html">on this infra page</a>.</p>
+<p>To comply with ASF release and distributions please ensure the following:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The project description should include the incubator disclaimer.</p>
+</li>
+<li>
+<p>Artifacts should be under the groupId of org.apache.&lt;project&gt;.</p>
+</li>
+<li>
+<p>The official release artifacts should not contain unapproved code.</p>
+</li>
+<li>
+<p>Release candidates, nightlys or snapshots need to be clearly marked by adding suffix in its version, like <code>org.apache.&lt;project&gt;.&lt;component&gt;:0.1-SNAPSHOT</code></p>
+</li>
+<li>
+<p>The POM file should set the ALv2 license as its license, Apache &lt;project&gt; as its developer name, and proper source control information.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Additional guidelines and process for releasing Maven components can be found <a href="https://infra.apache.org/publishing-maven-artifacts.html">on this infra page</a>.</p>
 </div>
 </div>
 </div>
@@ -218,11 +264,23 @@ All of the above SHOULD be followed. The podling can ask the IPMC for permission
 <div class="sectionbody">
 <div class="paragraph">
 <p>Artifacts show up on <a href="https://github.com/apache/incubator-&lt;project&gt;/releases" class="bare">https://github.com/apache/incubator-&lt;project&gt;/releases</a>.
-To comply with ASF release and distributions please ensure the following:
-* Any releases need to include the text of the incubation disclaimer.
-* The release page must not contain release candidates, nightly or snapshots releases that have not been tagged as prereleases. (Ignoring that GitHub also displays tags on the release page.)
-* Any releases that exist before coming into incubation need to be clearly described on the release page and tagged as such on <a href="https://github.com/apache/incubator-&lt;project&gt;/tags" class="bare">https://github.com/apache/incubator-&lt;project&gt;/tags</a>.
-* Release candidates, nightlys or snapshots releases can be tagged and appear on <a href="https://github.com/apache/incubator-&lt;project&gt;/tags" class="bare">https://github.com/apache/incubator-&lt;project&gt;/tags</a>.</p>
+To comply with ASF release and distributions please ensure the following:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Any releases need to include the text of the incubation disclaimer.</p>
+</li>
+<li>
+<p>The release page must not contain release candidates, nightly or snapshots releases that have not been tagged as prereleases. (Ignoring that GitHub also displays tags on the release page.)</p>
+</li>
+<li>
+<p>Any releases that exist before coming into incubation need to be clearly described on the release page and tagged as such on <a href="https://github.com/apache/incubator-&lt;project&gt;/tags" class="bare">https://github.com/apache/incubator-&lt;project&gt;/tags</a>.</p>
+</li>
+<li>
+<p>Release candidates, nightlys or snapshots releases can be tagged and appear on <a href="https://github.com/apache/incubator-&lt;project&gt;/tags" class="bare">https://github.com/apache/incubator-&lt;project&gt;/tags</a>.</p>
+</li>
+</ul>
 </div>
 </div>
 </div>
@@ -231,13 +289,29 @@ To comply with ASF release and distributions please ensure the following:
 <div class="sectionbody">
 <div class="paragraph">
 <p>Artifacts need to be placed in <a href="https://hub.docker.com/r/apache/&lt;project&gt" class="bare">https://hub.docker.com/r/apache/&lt;project&gt</a>; or <a href="https://hub.docker.com/u/apache&lt;project&gt;/&lt;project&gt" class="bare">https://hub.docker.com/u/apache&lt;project&gt;/&lt;project&gt</a>;.
-To comply with ASF release and distributions please ensure the following:
-* The overview should include the incubator disclaimer.
-* The docker file (if it exists) should include an ASF header.
-* The docker file (if it exists) should include the incubator disclaimer.
-* docker pull apache/&lt;project&gt; should not install an artifact containing unapproved code.
-* Release candidates, nightlys or snapshots need to be clearly tagged.
-* The latest tag should not point to an artifact containing unapproved code e.g. to master or dev branches or to a RC or snapshot.</p>
+To comply with ASF release and distributions please ensure the following:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The overview should include the incubator disclaimer.</p>
+</li>
+<li>
+<p>The docker file (if it exists) should include an ASF header.</p>
+</li>
+<li>
+<p>The docker file (if it exists) should include the incubator disclaimer.</p>
+</li>
+<li>
+<p>docker pull apache/&lt;project&gt; should not install an artifact containing unapproved code.</p>
+</li>
+<li>
+<p>Release candidates, nightlys or snapshots need to be clearly tagged.</p>
+</li>
+<li>
+<p>The latest tag should not point to an artifact containing unapproved code e.g. to master or dev branches or to a RC or snapshot.</p>
+</li>
+</ul>
 </div>
 </div>
 </div>
@@ -245,27 +319,41 @@ To comply with ASF release and distributions please ensure the following:
 <h2 id="npm">NPM</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Artifacts show up on <a href="https://www.npmjs.com/package/apache-&lt;project&gt" class="bare">https://www.npmjs.com/package/apache-&lt;project&gt</a>; version page.
-* To comply with ASF release and distributions please ensure the following:
-* The readme tab needs to include the text of the incubation disclaimer.
-* npm install apache&lt;project&gt; should not install an artifact containing unapproved code.
-* The latest release should not point to an artifact containing unapproved code e.g. a release candidate or snapshot.
-* Release candidates, nightlys or snapshots need to be clearly tagged.
-* The license field should display the ALv2 license.</p>
+<p>Artifacts show up on <a href="https://www.npmjs.com/package/apache-&lt;project&gt" class="bare">https://www.npmjs.com/package/apache-&lt;project&gt</a>; version page.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>To comply with ASF release and distributions please ensure the following:</p>
+</li>
+<li>
+<p>The readme tab needs to include the text of the incubation disclaimer.</p>
+</li>
+<li>
+<p>npm install apache&lt;project&gt; should not install an artifact containing unapproved code.</p>
+</li>
+<li>
+<p>The latest release should not point to an artifact containing unapproved code e.g. a release candidate or snapshot.</p>
+</li>
+<li>
+<p>Release candidates, nightlys or snapshots need to be clearly tagged.</p>
+</li>
+<li>
+<p>The license field should display the ALv2 license.</p>
+</li>
+</ul>
 </div>
 </div>
 </div>
 <div class="sect1">
 <h2 id="pypi">PyPI</h2>
 <div class="sectionbody">
+<div class="paragraph">
+<p>Artifacts need to be placed in <a href="https://pypi.org/project/apache-&lt;project&gt" class="bare">https://pypi.org/project/apache-&lt;project&gt</a>;.
+To comply with ASF release and distributions please ensure the following:</p>
+</div>
 <div class="ulist">
 <ul>
-<li>
-<p>Artifacts need to be placed in <a href="https://pypi.org/project/apache-&lt;project&gt" class="bare">https://pypi.org/project/apache-&lt;project&gt</a>;.</p>
-</li>
-<li>
-<p>To comply with ASF release and distributions please ensure the following:</p>
-</li>
 <li>
 <p>The project description should include the incubator disclaimer.</p>
 </li>
