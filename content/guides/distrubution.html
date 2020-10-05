@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8"/>
-    <title>Podling IP Clearance</title>
+    <title>Distribution Guidelines</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -132,7 +132,7 @@
     <div class="top-container container">
 
 <div class="page-header">
-    <h1>Guide :: Podling IP Clearance</h1>
+    <h1>Guide :: Distribution Guidelines</h1>
 </div>
 
 <div class="article-body">
@@ -142,106 +142,146 @@ Estimated Reading Time: <span class="eta"></span>
 <p><div id="toc" class="toc">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
-<li><a href="#podling_ip_clearance">Podling IP Clearance</a>
-<ul class="sectlevel2">
-<li><a href="#background">Background</a></li>
-<li><a href="#establishing_provenance">Establishing Provenance</a></li>
-<li><a href="#ipmc_responsibility_around_ip_clearance">IPMC Responsibility around IP Clearance</a></li>
+<li><a href="#motivation">Motivation</a></li>
+<li><a href="#release_platforms">Release Platforms</a></li>
+<li><a href="#maven_distribution">Maven distribution</a></li>
+<li><a href="#github">GitHub</a></li>
+<li><a href="#docker">Docker</a></li>
+<li><a href="#npm">NPM</a></li>
+<li><a href="#pypi">PyPI</a></li>
 </ul>
-</li>
-</ul>
+</div>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Skip to end of metadata
+Created by ASF Infrabot, last modified by Justin Mclean on Jul 14, 2020
+Go to start of metadata</p>
+</div>
+<div class="paragraph">
+<p>Guidelines to help you comply with the ASF distribution policies</p>
+</div>
+<div class="paragraph">
+<p>One of the goals of incubation is to teach podling communities how to build and distribute ASF-compliant releases. A podling community should begin to familiarise themselves with the ASF policies for distribution. Those policies can be found at <a href="https://infra.apache.org/release-distribution" class="bare">https://infra.apache.org/release-distribution</a>. The following will help you comply with current policy.</p>
+</div>
+</div>
 </div>
 <div class="sect1">
-<h2 id="podling_ip_clearance">Podling IP Clearance</h2>
+<h2 id="motivation">Motivation</h2>
 <div class="sectionbody">
-<div class="sect2">
-<h3 id="background">Background</h3>
 <div class="paragraph">
-<p>Existing codebases need to be imported through the standard IP clearance
-process. This means that a Software Grant Agreement
-(<a href="http://www.apache.org/licenses/#grants">SGA</a>)
-or Contributor License Agreement
-(<a href="http://www.apache.org/licenses/#clas">CLA</a>)
-needs to be submitted
-for all copyright owners. This process may take a while so it is best to
-start as soon as the podling is accepted.</p>
-</div>
-<div class="paragraph">
-<p>The acceptance of the initial codebases is approved by the
-IPMC as part of the acceptance motion. So, no vote is required by the
-PPMC. Otherwise, follow the standard IP clearance process for podlings.</p>
+<p>The ASF is responsible for providing software which can be used in accordance with our license. Code or artifacts built from code without clean IP can mean that code that doesn&#8217;t belong to us slips into users projects. This would expose our users and the ASF to the risk of lawsuit. One purpose of the incubating process and its release process is to ensure that our users can trust our projects. Releasing artifacts built from code that hasn&#8217;t been approved by the IPMC circumvents this process. It robs the PPMC of learning opportunities. It increases the likelihood that we might accidentally betray the trust of our users.
+At the same time binary artifacts on distribution platforms are important to our users for a wide variety of reasons. This document is intended to balance these priorities. If you believe you have a case in which this document is inadequate to your situation please bring this to our attention by mailing either <a href="mailto:general@incubator.apache.org">general@incubator.apache.org</a> or <a href="mailto:private@incubator.apache.org">private@incubator.apache.org</a></p>
 </div>
 </div>
-<div class="sect2">
-<h3 id="establishing_provenance">Establishing Provenance</h3>
+</div>
+<div class="sect1">
+<h2 id="release_platforms">Release Platforms</h2>
+<div class="sectionbody">
 <div class="paragraph">
-<p>Paperwork needs to be submitted to Apache that grants a legal license on the code
-to the Apache Software Foundation.
-As a rule of thumb, if all the material contributors to the code
-are joining the podling as initial contributors, then CLAs (individual or corporate)
-are all you need. The individuals must submit the 'individual' CLA (ICLA).
-If there are employers involved who might claim
-rights in the code, then corporate CLAs (CCLAs) are needed for those employers.</p>
+<p>In addition to the Apache mirror system incubating projects may distribute artifacts on other platforms as long as they follow these general guidelines:
+* Releases must be placed in the Apache mirror system.
+* Source releases and convenience binaries need to be made from IPMC and PPMC approved ASF releases.
+* Where possible it should be pointed out that Apache project make source releases and convenience binaries are just a convenience for end user.
+* Convenience binaries need to follow licensing policy and not include any category X licensed software.
+* Convenience binaries should be signed and have hashes to verify their contents.
+* Release candidates, nightlys and snapshots must not be advertised to the general public.
+* Apache project branding and naming needs to be respected.
+* It should be clear that the artifacts are under the ALv2 license.
+* An incubating disclaimer must be clearly displayed where the artifacts are made available.
+* All PPMC members must have access to administer the platform and the credentials recorded where any PPMC member can access them.
+* Where possible these artifacts should not be referred to as releases.
+* Where possible use platforms officially supported by Infra.
+All of the above SHOULD be followed. The podling can ask the IPMC for permission to do otherwise.</p>
 </div>
 <div class="paragraph">
-<p>If, on the other hand, there are material contributors who are <strong>not</strong>
-joining the podling as initial contributors, or if there
-are additional corporate entities who can claim rights in the code,
-then SGAs are required from those individuals or corporations.</p>
+<p><strong>Currently only Github, Dockerhub, and Maven are officially supported by Infra.</strong></p>
 </div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="maven_distribution">Maven distribution</h2>
+<div class="sectionbody">
 <div class="paragraph">
-<p>The foregoing is only a rule of thumb. Generally, the mentors of a new project
-will need to consult with <a href="mailto:general@incubator.apache.org">general@incubator.apache.org</a> or the Apache legal team
-about the particular circumstances.</p>
+<p>To comply with ASF release and distributions please ensure the following:
+* The project description should include the incubator disclaimer.
+* Artifacts should be under the groupId of org.apache.&lt;project&gt;.
+* The official release artifacts should not contain unapproved code.
+* Release candidates, nightlys or snapshots need to be clearly marked by adding suffix in its version, like <code>org.apache.&lt;project&gt;.&lt;component&gt;:0.1-SNAPSHOT</code>
+* The POM file should set the ALv2 license as its license, Apache &lt;project&gt; as its developer name, and proper source control information.
+* Additional guidelines and process for releasing Maven components can be found <a href="https://infra.apache.org/publishing-maven-artifacts.html">on this infra page</a>.</p>
 </div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="github">GitHub</h2>
+<div class="sectionbody">
 <div class="paragraph">
-<p>It may take some time to track down all contributors. It is not necessary to
-have paperwork on file for all contributions before the code is imported.
-It may be necessary to reverse some patches and rewrite areas of code if
-contributors cannot be found or at not happy about given Apache written
-permission to use their code.</p>
+<p>Artifacts show up on <a href="https://github.com/apache/incubator-&lt;project&gt;/releases" class="bare">https://github.com/apache/incubator-&lt;project&gt;/releases</a>.
+To comply with ASF release and distributions please ensure the following:
+* Any releases need to include the text of the incubation disclaimer.
+* The release page must not contain release candidates, nightly or snapshots releases that have not been tagged as prereleases. (Ignoring that GitHub also displays tags on the release page.)
+* Any releases that exist before coming into incubation need to be clearly described on the release page and tagged as such on <a href="https://github.com/apache/incubator-&lt;project&gt;/tags" class="bare">https://github.com/apache/incubator-&lt;project&gt;/tags</a>.
+* Release candidates, nightlys or snapshots releases can be tagged and appear on <a href="https://github.com/apache/incubator-&lt;project&gt;/tags" class="bare">https://github.com/apache/incubator-&lt;project&gt;/tags</a>.</p>
 </div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="docker">Docker</h2>
+<div class="sectionbody">
 <div class="paragraph">
-<p>No releases are possible until the provenance of all the code to be release
-has been clearly established and the relevant paperwork filed with Apache. It is
-therefore important to keep the status updated.</p>
+<p>Artifacts need to be placed in <a href="https://hub.docker.com/r/apache/&lt;project&gt" class="bare">https://hub.docker.com/r/apache/&lt;project&gt</a>; or <a href="https://hub.docker.com/u/apache&lt;project&gt;/&lt;project&gt" class="bare">https://hub.docker.com/u/apache&lt;project&gt;/&lt;project&gt</a>;.
+To comply with ASF release and distributions please ensure the following:
+* The overview should include the incubator disclaimer.
+* The docker file (if it exists) should include an ASF header.
+* The docker file (if it exists) should include the incubator disclaimer.
+* docker pull apache/&lt;project&gt; should not install an artifact containing unapproved code.
+* Release candidates, nightlys or snapshots need to be clearly tagged.
+* The latest tag should not point to an artifact containing unapproved code e.g. to master or dev branches or to a RC or snapshot.</p>
 </div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="npm">NPM</h2>
+<div class="sectionbody">
 <div class="paragraph">
-<p>Receipts of ICLAs, CCLAs, and SGAs are recorded by the secretary in
-the private foundation repository. Reading is restricted to members and officers
-of the foundation. If there is no officer or member available then ask on the
-general list.</p>
+<p>Artifacts show up on <a href="https://www.npmjs.com/package/apache-&lt;project&gt" class="bare">https://www.npmjs.com/package/apache-&lt;project&gt</a>; version page.
+* To comply with ASF release and distributions please ensure the following:
+* The readme tab needs to include the text of the incubation disclaimer.
+* npm install apache&lt;project&gt; should not install an artifact containing unapproved code.
+* The latest release should not point to an artifact containing unapproved code e.g. a release candidate or snapshot.
+* Release candidates, nightlys or snapshots need to be clearly tagged.
+* The license field should display the ALv2 license.</p>
 </div>
 </div>
-<div class="sect2">
-<h3 id="ipmc_responsibility_around_ip_clearance">IPMC Responsibility around IP Clearance</h3>
-<div class="paragraph">
-<p>The board has charged the Incubator project with management of IP clearance for Apache.
-Instructions are <a href="http://incubator.apache.org/ip-clearance/index.html">here</a>.</p>
 </div>
-<div class="paragraph">
-<p>These equally apply to podlings. The Incubator project is responsible for all podlings
-and so is the receiving PMC. So, when a podling requests IP clearance, the
-IPMC wears <a href="http://www.apache.org/foundation/how-it-works.html#hats">two hats</a>.
-This may be a little confusing at first.</p>
-</div>
-<div class="paragraph">
-<p>The Incubator PMC must approve the clearance. This indicates that the project is
-happy to receive the code donated. When a new podling is created, this is done
-by the identification of existing codebases in the proposal. Otherwise, the
-IPMC delegates this decision to the PPMC.</p>
-</div>
-<div class="paragraph">
-<p>As usual, three binding votes are required. So, Mentors need to be involved in
-IP clearance for podlings. If too few binding VOTEs are posted on list,
-the VOTE will need to be posted to the general list for ratification.</p>
-</div>
-<div class="paragraph">
-<p>The second hat is technical IP clearance. Here, the IPMC needs to check that the
-paperwork is in order. Once the acceptance vote has been approved, an officer
-or member need to complete the process. For a podling, this will typically
-involve a Mentor.</p>
-</div>
+<div class="sect1">
+<h2 id="pypi">PyPI</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Artifacts need to be placed in <a href="https://pypi.org/project/apache-&lt;project&gt" class="bare">https://pypi.org/project/apache-&lt;project&gt</a>;.</p>
+</li>
+<li>
+<p>To comply with ASF release and distributions please ensure the following:</p>
+</li>
+<li>
+<p>The project description should include the incubator disclaimer.</p>
+</li>
+<li>
+<p>pip install apache&lt;project&gt; should not install an artifact containing unapproved code.</p>
+</li>
+<li>
+<p>Release candidates, nightlys or snapshots need to be clearly tagged as pre-release on <a href="https://pypi.org/project/apache-&lt;project&gt;/#history" class="bare">https://pypi.org/project/apache-&lt;project&gt;/#history</a></p>
+</li>
+<li>
+<p>The latest version should not point to an artifact containing unapproved code e.g. to a release candidate or snapshot</p>
+</li>
+<li>
+<p>The meta license field should display the ALv2 license.</p>
+</li>
+</ul>
 </div>
 </div>
 </div></p>
