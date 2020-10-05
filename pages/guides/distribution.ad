@@ -55,24 +55,24 @@ All of the above SHOULD be followed. The podling can ask the IPMC for permission
 To comply with ASF release and distributions please ensure the following:
 
 * The project description should include the incubator disclaimer.
-* Artifacts should be under the groupId of org.apache.<project>.
+* Artifacts should be under the groupId of **org.apache.<project>**.
 * The official release artifacts should not contain unapproved code.
-* Release candidates, nightlys or snapshots need to be clearly marked by adding suffix in its version, like `org.apache.<project>.<component>:0.1-SNAPSHOT`
+* Release candidates, nightlys or snapshots need to be clearly marked by adding suffix in its version, like **org.apache.<project>.<component>:0.1-SNAPSHOT**
 * The POM file should set the ALv2 license as its license, Apache <project> as its developer name, and proper source control information.
 
 Additional guidelines and process for releasing Maven components can be found link:https://infra.apache.org/publishing-maven-artifacts.html[on this infra page].
 
 == GitHub
-Artifacts show up on https://github.com/apache/incubator-<project>/releases.
+Artifacts show up on **https://github.com/apache/incubator-<project>/releases**.
 To comply with ASF release and distributions please ensure the following:
 
 * Any releases need to include the text of the incubation disclaimer.
 * The release page must not contain release candidates, nightly or snapshots releases that have not been tagged as prereleases. (Ignoring that GitHub also displays tags on the release page.)
-* Any releases that exist before coming into incubation need to be clearly described on the release page and tagged as such on https://github.com/apache/incubator-<project>/tags.
-* Release candidates, nightlys or snapshots releases can be tagged and appear on https://github.com/apache/incubator-<project>/tags.
+* Any releases that exist before coming into incubation need to be clearly described on the release page and tagged as such on **https://github.com/apache/incubator-<project>/tags**.
+* Release candidates, nightlys or snapshots releases can be tagged and appear on **https://github.com/apache/incubator-<project>/tags**.
 
 == Docker
-Artifacts need to be placed in https://hub.docker.com/r/apache/<project> or https://hub.docker.com/u/apache<project>/<project>.
+Artifacts need to be placed in **https://hub.docker.com/r/apache/<project>** or **https://hub.docker.com/u/apache<project>/<project>**.
 To comply with ASF release and distributions please ensure the following:
 
 * The overview should include the incubator disclaimer.
@@ -84,7 +84,7 @@ To comply with ASF release and distributions please ensure the following:
 
 
 == NPM
-Artifacts show up on https://www.npmjs.com/package/apache-<project> version page.
+Artifacts show up on **https://www.npmjs.com/package/apache-<project>** version page.
 
 * To comply with ASF release and distributions please ensure the following:
 * The readme tab needs to include the text of the incubation disclaimer.
@@ -95,11 +95,11 @@ Artifacts show up on https://www.npmjs.com/package/apache-<project> version page
 
 
 == PyPI
-Artifacts need to be placed in https://pypi.org/project/apache-<project>.
+Artifacts need to be placed in **https://pypi.org/project/apache-<project>**.
 To comply with ASF release and distributions please ensure the following:
 
 * The project description should include the incubator disclaimer.
 * pip install apache<project> should not install an artifact containing unapproved code.
-* Release candidates, nightlys or snapshots need to be clearly tagged as pre-release on https://pypi.org/project/apache-<project>/#history
+* Release candidates, nightlys or snapshots need to be clearly tagged as pre-release on **https://pypi.org/project/apache-<project>/#history**
 * The latest version should not point to an artifact containing unapproved code e.g. to a release candidate or snapshot
 * The meta license field should display the ALv2 license.
