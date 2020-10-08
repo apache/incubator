@@ -18,25 +18,20 @@ Apache Incubator PMC
 :toc:
 :imagesdir: ../images/
 
-
-Skip to end of metadata
-Created by ASF Infrabot, last modified by Justin Mclean on Jul 14, 2020
-Go to start of metadata
-
 Guidelines to help you comply with the ASF distribution policies
 
 One of the goals of incubation is to teach podling communities how to build and distribute ASF-compliant releases. A podling community should begin to familiarise themselves with the ASF policies for distribution. Those policies can be found at link:https://infra.apache.org/release-distribution[https://infra.apache.org/release-distribution]. The following will help you comply with current policy.
 
 == Motivation
-The ASF is responsible for providing software which can be used in accordance with our license. Code or artifacts built from code without clean IP can mean that code that doesn't belong to us slips into users projects. This would expose our users and the ASF to the risk of lawsuit. One purpose of the incubating process and its release process is to ensure that our users can trust our projects. Releasing artifacts built from code that hasn't been approved by the IPMC circumvents this process. It robs the PPMC of learning opportunities. It increases the likelihood that we might accidentally betray the trust of our users.
+The ASF is responsible for providing software which can be used in accordance with our license. Code or artifacts built from code without clean intellectual property can mean that code that doesn't belong to us slips into users projects. This would expose our users and the ASF to the risk of lawsuit. One purpose of the incubating process and its release process is to ensure that our users can trust our projects. Releasing artifacts built from code that hasn't been approved by the IPMC circumvents this process. It robs the PPMC of learning opportunities. It increases the likelihood that we might accidentally betray the trust of our users.
 At the same time binary artifacts on distribution platforms are important to our users for a wide variety of reasons. This document is intended to balance these priorities. If you believe you have a case in which this document is inadequate to your situation please bring this to our attention by mailing either general@incubator.apache.org or private@incubator.apache.org
 
 == Release Platforms
 In addition to the Apache mirror system incubating projects may distribute artifacts on other platforms as long as they follow these general guidelines:
 
-* Releases must be placed in the Apache mirror system.
-* Source releases and convenience binaries need to be made from IPMC and PPMC approved ASF releases.
-* Where possible it should be pointed out that Apache project make source releases and convenience binaries are just a convenience for end user.
+* Source releases must be placed in the Apache mirror system.
+* Apache projects are always released in source form, but additionally can make convenience binaries for end users.
+* Convenience binaries must be made from IPMC approved ASF releases.
 * Convenience binaries need to follow licensing policy and not include any category X licensed software.
 * Convenience binaries should be signed and have hashes to verify their contents.
 * Release candidates, nightlys and snapshots must not be advertised to the general public.
