@@ -26,7 +26,7 @@ Apache Pulsar is a cloud-native, distributed messaging and streaming platform. P
 image::https://pulsar.apache.org/img/pulsar.svg[width=50%]
 
 == Pulsar Features
-Apache Pulsar provides following features:
+Apache Pulsar provides the following features:
 
 * Native support for multiple clusters in a Pulsar instance, with seamless geo-replication of messages across clusters.
 * Very low publish and end-to-end latency.
@@ -115,7 +115,7 @@ They are also the administrative unit at which storage quotas, message TTL, and 
 == Pulsar: Authentication and Authorization
 
 Pulsar supports a pluggable authentication mechanism.
-It can be configured at broker and it also supports authorization to identify client and its access rights on topics and tenants.
+It can be configured at the broker. It also supports authorization to identify clients and its access rights on topics and tenants.
 
 == Pulsar: Topic Compaction
 
