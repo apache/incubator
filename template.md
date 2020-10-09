@@ -308,8 +308,8 @@ Example (OpenJPA):
 #### Git Repositories:
 It is conventional to use all lower case, dash-separated (-) repository names. The repository should be prefixed with incubator and later renamed assuming the project is promoted to a TLP.
 
-Example (Blur):
-> https://git-wip-us.apache.org/repos/asf/incubator-blur.git
+Example (BlueMarlin):
+> https://gitbox.apache.org/repos/asf/incubator-bluemarlin.git
 
 #### Issue Tracking:
 

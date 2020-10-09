@@ -52,28 +52,7 @@ incubator svn repository. Podlings are given their own subdirectory
 of the incubator svn repository. To create the podling subdirectory,
 the mentor executes the svn command to create a remote directory: `svn mkdir https://svn.apache.org/repos/asf/incubator/{podling}`
 
-Create the workspace authorization in asf-authorization-template.
-This requires commit access to `infrastructure-puppet` to modify the file
-`https://git-wip-us.apache.org/repos/asf?p=infrastructure-puppet.git;a=blob;f=modules/subversion_server/files/authorization/asf-authorization-template`.
-Please follow the procedures in the link:https://cwiki.apache.org/confluence/display/INFRA/Git+workflow+for+infrastructure-puppet+repo[infrastructure puppet workflow] document.
-
-Edit the file to add the podling repository in alphabetical order, e.g.
-
-[source]
-----
-{podling}={mentor1},{mentor2}
-----
-
-In the section listing all the projects (again in alphabetical order)
-add the podling directory and permissions, to enable the podling for its
-eventual website:
-
-[source]
-----
-[/incubator/{podling}]
-@{podling} = rw
-...
-----
+Raise an INFRA JIRA to get the SVN auth file updated.
 
 This is a convenient time to add link:#Authorize+Committers[authorization] for committers
 who have accounts.
