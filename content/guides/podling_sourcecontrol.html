@@ -195,30 +195,7 @@ of the incubator svn repository. To create the podling subdirectory,
 the mentor executes the svn command to create a remote directory: <code>svn mkdir <a href="https://svn.apache.org/repos/asf/incubator/{podling}" class="bare">https://svn.apache.org/repos/asf/incubator/{podling}</a></code></p>
 </div>
 <div class="paragraph">
-<p>Create the workspace authorization in asf-authorization-template.
-This requires commit access to <code>infrastructure-puppet</code> to modify the file
-<code><a href="https://git-wip-us.apache.org/repos/asf?p=infrastructure-puppet.git;a=blob;f=modules/subversion_server/files/authorization/asf-authorization-template" class="bare">https://git-wip-us.apache.org/repos/asf?p=infrastructure-puppet.git;a=blob;f=modules/subversion_server/files/authorization/asf-authorization-template</a></code>.
-Please follow the procedures in the <a href="https://cwiki.apache.org/confluence/display/INFRA/Git+workflow+for+infrastructure-puppet+repo">infrastructure puppet workflow</a> document.</p>
-</div>
-<div class="paragraph">
-<p>Edit the file to add the podling repository in alphabetical order, e.g.</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="prettyprint highlight"><code>{podling}={mentor1},{mentor2}</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>In the section listing all the projects (again in alphabetical order)
-add the podling directory and permissions, to enable the podling for its
-eventual website:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="prettyprint highlight"><code>[/incubator/{podling}]
-@{podling} = rw
-...</code></pre>
-</div>
+<p>Raise an INFRA JIRA to get the SVN auth file updated.</p>
 </div>
 <div class="paragraph">
 <p>This is a convenient time to add <a href="#Authorize+Committers">authorization</a> for committers
