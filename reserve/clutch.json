@@ -64,7 +64,7 @@
         {
           "description": "Apache age",
           "last_update_int": 1601686430,
-          "last_update_txt": "6 days ago"
+          "last_update_txt": "7 days ago"
         }
       ],
       [
@@ -179,8 +179,8 @@
     "resource": "annotator",
     "sponsor": "Incubator",
     "startDate": "2016-08-30",
-    "statusAge": 1334,
-    "statusLastUpdated": "2017-02-13",
+    "statusAge": 0,
+    "statusLastUpdated": "2020-10-09",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-annotator.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/annotator/KEYS",
@@ -545,8 +545,8 @@
     "resource": "crail",
     "sponsor": "Incubator",
     "startDate": "2017-11-01",
-    "statusAge": 1,
-    "statusLastUpdated": "2020-10-08",
+    "statusAge": 0,
+    "statusLastUpdated": "2020-10-09",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-crail.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/crail/KEYS",
@@ -648,7 +648,7 @@
         "hash": "sha512",
         "revision": "r40225",
         "size": "30797824",
-        "user": "mbeckerle"
+        "user": "mbeckerl"
       },
       "apache-daffodil-2.7.0-incubating-bin.tgz": {
         "dtm": "06/29/2020",
@@ -656,7 +656,7 @@
         "hash": "sha512",
         "revision": "r40225",
         "size": "29334693",
-        "user": "mbeckerle"
+        "user": "mbeckerl"
       },
       "apache-daffodil-2.7.0-incubating-bin.zip": {
         "dtm": "06/29/2020",
@@ -664,7 +664,7 @@
         "hash": "sha512",
         "revision": "r40225",
         "size": "29371756",
-        "user": "mbeckerle"
+        "user": "mbeckerl"
       },
       "apache-daffodil-2.7.0-incubating-src.zip": {
         "dtm": "06/29/2020",
@@ -672,7 +672,7 @@
         "hash": "sha512",
         "revision": "r40225",
         "size": "3460584",
-        "user": "mbeckerle"
+        "user": "mbeckerl"
       },
       "apache-daffodil-2.7.0.incubating-1.noarch.rpm": {
         "dtm": "06/29/2020",
@@ -680,7 +680,7 @@
         "hash": "sha512",
         "revision": "r40225",
         "size": "29123960",
-        "user": "mbeckerle"
+        "user": "mbeckerl"
       }
     },
     "reportingGroup": "March, June, September, December",
@@ -691,7 +691,7 @@
         {
           "description": "Apache daffodil (Incubating)",
           "last_update_int": 1602245948,
-          "last_update_txt": "<span style='color: #070;'>&lt;30 minutes ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
         }
       ],
       [
@@ -847,8 +847,8 @@
         "incubator-datalab",
         {
           "description": "Incubator Datalab",
-          "last_update_int": 1602245225,
-          "last_update_txt": "<span style='color: #070;'>&lt;30 minutes ago</span>"
+          "last_update_int": 1602256110,
+          "last_update_txt": "<span style='color: #070;'>&lt;1 hour ago</span>"
         }
       ]
     ],
@@ -862,15 +862,10 @@
       "keys": "https://downloads.apache.org/incubator/datalab/KEYS",
       "svn": "",
       "tracker": "https://issues.apache.org/jira/projects/DATALAB",
-      "wiki": "",
+      "wiki": "https://cwiki.apache.org/confluence/display/DATALAB",
       "www": "http://datalab.incubator.apache.org"
     },
-    "zFixMeList": [
-      [
-        "18",
-        "Has not provided a wiki link"
-      ]
-    ]
+    "zFixMeList": []
   },
   "datasketches": {
     "description": "DataSketches is an open source, high-performance library of stochastic streaming algorithms commonly called \"sketches\" in the data sciences. Sketches are small, stateful programs that process massive data as a stream and can provide approximate answers, with mathematical guarantees, to computationally difficult queries orders-of-magnitude faster than traditional, exact methods.",
@@ -1024,7 +1019,7 @@
         {
           "description": "Apache Datasketches cpp",
           "last_update_int": 1602213834,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
         }
       ],
       [
@@ -1285,7 +1280,7 @@
         "hash": "sha512",
         "revision": "r40932",
         "size": "384741",
-        "user": "gaojun2048"
+        "user": "gaojun20"
       },
       "apache-dolphinscheduler-maven-plugin-incubating-1.0.0-src.zip": {
         "dtm": "08/10/2020",
@@ -1293,7 +1288,7 @@
         "hash": "sha512",
         "revision": "r40932",
         "size": "62510",
-        "user": "gaojun2048"
+        "user": "gaojun20"
       }
     },
     "reportingGroup": "February, May, August, November",
@@ -1303,7 +1298,7 @@
         "incubator-dolphinscheduler",
         {
           "description": "Apache DolphinScheduler",
-          "last_update_int": 1602237586,
+          "last_update_int": 1602248413,
           "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
         }
       ],
@@ -1319,8 +1314,8 @@
         "incubator-dolphinscheduler-website",
         {
           "description": "Apache DolphinScheduler website",
-          "last_update_int": 1601476419,
-          "last_update_txt": "9 days ago"
+          "last_update_int": 1602255657,
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
         }
       ]
     ],
@@ -1456,12 +1451,12 @@
     "rawReportingGroup": "group-2",
     "releases": {
       "apache-doris-0.10.0-incubating-src.tar.gz": {
-        "dtm": "07/02/2019",
+        "dtm": "07/01/2019",
         "folder": "0.10.0-incubating",
         "hash": "sha512",
         "revision": "r34721",
         "size": "14313148",
-        "user": "morningman"
+        "user": "morningm"
       },
       "apache-doris-0.11.0-incubating-src.tar.gz": {
         "dtm": "10/29/2019",
@@ -1477,7 +1472,7 @@
         "hash": "sha512",
         "revision": "r39076",
         "size": "23222400",
-        "user": "lichaoyong"
+        "user": "lichaoyo"
       },
       "apache-doris-0.9.0-incubating-src.tar.gz": {
         "dtm": "02/15/2019",
@@ -1719,8 +1714,8 @@
         "incubator-echarts",
         {
           "description": "ApacheECharts (Incubating)",
-          "last_update_int": 1602242299,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
+          "last_update_int": 1602248202,
+          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
         }
       ],
       [
@@ -1736,7 +1731,7 @@
         {
           "description": "Apache Echarts Doc",
           "last_update_int": 1602212622,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
         }
       ],
       [
@@ -2284,8 +2279,8 @@
     "resource": "gobblin",
     "sponsor": "Incubator",
     "startDate": "2017-02-23",
-    "statusAge": 122,
-    "statusLastUpdated": "2020-06-09",
+    "statusAge": 0,
+    "statusLastUpdated": "2020-10-09",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-gobblin.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/gobblin/KEYS",
@@ -2424,8 +2419,8 @@
     "resource": "heron",
     "sponsor": "Incubator",
     "startDate": "2017-06-23",
-    "statusAge": 749,
-    "statusLastUpdated": "2018-09-21",
+    "statusAge": 0,
+    "statusLastUpdated": "2020-10-09",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-heron.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/heron/KEYS",
@@ -2652,8 +2647,8 @@
     "resource": "hivemall",
     "sponsor": "Incubator",
     "startDate": "2016-09-13",
-    "statusAge": 1344,
-    "statusLastUpdated": "2017-02-03",
+    "statusAge": 0,
+    "statusLastUpdated": "2020-10-09",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-hivemall.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/hivemall/KEYS",
@@ -2896,8 +2891,8 @@
         "iotdb",
         {
           "description": "Apache iotdb",
-          "last_update_int": 1602245604,
-          "last_update_txt": "<span style='color: #070;'>&lt;30 minutes ago</span>"
+          "last_update_int": 1602252843,
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
         }
       ],
       [
@@ -3185,7 +3180,7 @@
         "hash": "sha512",
         "revision": "r24450",
         "size": "74117432",
-        "user": "ajbozarth"
+        "user": "ajbozart"
       },
       "livy-0.5.0-incubating-src.zip": {
         "dtm": "01/25/2018",
@@ -3193,7 +3188,7 @@
         "hash": "sha512",
         "revision": "r24450",
         "size": "995368",
-        "user": "ajbozarth"
+        "user": "ajbozart"
       }
     },
     "reportingGroup": "January, April, July, October",
@@ -3307,8 +3302,8 @@
         "incubator-marvin",
         {
           "description": "Apache Marvin-AI",
-          "last_update_int": 1601717867,
-          "last_update_txt": "6 days ago"
+          "last_update_int": 1602253655,
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
         }
       ],
       [
@@ -3869,8 +3864,8 @@
         "incubator-mxnet",
         {
           "description": "Apache MXNet  (Incubating)",
-          "last_update_int": 1602205231,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_int": 1602257080,
+          "last_update_txt": "<span style='color: #070;'>&lt;1 hour ago</span>"
         }
       ],
       [
@@ -3893,8 +3888,8 @@
         "incubator-mxnet-site",
         {
           "description": "Apache MXNet Site",
-          "last_update_int": 1602225885,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_int": 1602247488,
+          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
         }
       ],
       [
@@ -4185,7 +4180,7 @@
         "hash": "sha256",
         "revision": "r39212",
         "size": "67951952",
-        "user": "aradzinski"
+        "user": "aradzins"
       },
       "apache-nlpcraft-incubating-0.6.2.zip": {
         "dtm": "07/19/2020",
@@ -4193,7 +4188,7 @@
         "hash": "sha256",
         "revision": "r40551",
         "size": "65880357",
-        "user": "aradzinski"
+        "user": "aradzins"
       },
       "apache-nlpcraft-incubating-0.7.0.zip": {
         "dtm": "10/07/2020",
@@ -4201,7 +4196,7 @@
         "hash": "sha256",
         "revision": "r41747",
         "size": "24064755",
-        "user": "aradzinski"
+        "user": "aradzins"
       }
     },
     "reportingGroup": "February, May, August, November",
@@ -4212,7 +4207,7 @@
         {
           "description": "Apache nlpcraft main repository",
           "last_update_int": 1602232951,
-          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
         }
       ],
       [
@@ -4236,7 +4231,7 @@
         {
           "description": "Apache nlpcraft",
           "last_update_int": 1602233628,
-          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
         }
       ]
     ],
@@ -4384,8 +4379,8 @@
         "incubator-nuttx",
         {
           "description": "Apache nuttx",
-          "last_update_int": 1602141285,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
+          "last_update_int": 1602254210,
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
         }
       ],
       [
@@ -4711,7 +4706,7 @@
         {
           "description": "Apache Pegasus",
           "last_update_int": 1602214633,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
         }
       ],
       [
@@ -4719,7 +4714,7 @@
         {
           "description": "Apache pegasus website",
           "last_update_int": 1602162273,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
         }
       ]
     ],
@@ -5073,7 +5068,7 @@
         "hash": "sha256",
         "revision": "r25139",
         "size": "902660",
-        "user": "humbedooh"
+        "user": "humbedoo"
       },
       "apache-pony-mail-0.11-incubating.tar.gz": {
         "dtm": "03/25/2019",
@@ -5081,7 +5076,7 @@
         "hash": "sha256",
         "revision": "r33191",
         "size": "1055853",
-        "user": "humbedooh"
+        "user": "humbedoo"
       }
     },
     "reportingGroup": "January, April, July, October",
@@ -5123,8 +5118,8 @@
     "resource": "ponymail",
     "sponsor": "Incubator",
     "startDate": "2016-05-27",
-    "statusAge": 1165,
-    "statusLastUpdated": "2017-08-01",
+    "statusAge": 0,
+    "statusLastUpdated": "2020-10-09",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-ponymail.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/ponymail/KEYS",
@@ -5377,7 +5372,7 @@
         {
           "description": "Apache Ratis (Incubating)",
           "last_update_int": 1601945160,
-          "last_update_txt": "3 days ago"
+          "last_update_txt": "4 days ago"
         }
       ],
       [
@@ -5474,7 +5469,7 @@
         "hash": "sha1",
         "revision": "r16733",
         "size": "250339",
-        "user": "steamshon"
+        "user": "steamsho"
       },
       "apache-s2graph-0.2.0-incubating-src.tgz": {
         "dtm": "08/23/2017",
@@ -5482,7 +5477,7 @@
         "hash": "sha1",
         "revision": "r21273",
         "size": "303764",
-        "user": "steamshon"
+        "user": "steamsho"
       }
     },
     "reportingGroup": "February, May, August, November",
@@ -5500,8 +5495,8 @@
     "resource": "s2graph",
     "sponsor": "Incubator",
     "startDate": "2015-11-29",
-    "statusAge": 1613,
-    "statusLastUpdated": "2016-05-10",
+    "statusAge": 0,
+    "statusLastUpdated": "2020-10-09",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-s2graph.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/s2graph/KEYS",
@@ -5598,7 +5593,7 @@
         "hash": "sha1",
         "revision": "r15490",
         "size": "658470",
-        "user": "nkourtellis"
+        "user": "nkourtel"
       },
       "samoa-0.4.0-incubating.pom": {
         "dtm": "09/22/2016",
@@ -5606,7 +5601,7 @@
         "hash": "sha1",
         "revision": "r15490",
         "size": "11571",
-        "user": "nkourtellis"
+        "user": "nkourtel"
       },
       "samoa-0.5.0-incubating-source-release.zip": {
         "dtm": "04/22/2020",
@@ -5614,7 +5609,7 @@
         "hash": "sha512",
         "revision": "r39061",
         "size": "782751",
-        "user": "csterling"
+        "user": "csterlin"
       },
       "samoa-0.5.0-incubating.pom": {
         "dtm": "04/22/2020",
@@ -5622,7 +5617,7 @@
         "hash": "sha512",
         "revision": "r39061",
         "size": "11829",
-        "user": "csterling"
+        "user": "csterlin"
       }
     },
     "reportingGroup": "March, June, September, December",
@@ -5640,8 +5635,8 @@
     "resource": "samoa",
     "sponsor": "Incubator",
     "startDate": "2014-12-15",
-    "statusAge": 2103,
-    "statusLastUpdated": "2015-01-06",
+    "statusAge": 0,
+    "statusLastUpdated": "2020-10-09",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-samoa.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/samoa/KEYS",
@@ -5819,8 +5814,8 @@
     "resource": "sdap",
     "sponsor": "Incubator",
     "startDate": "2017-10-22",
-    "statusAge": 1079,
-    "statusLastUpdated": "2017-10-26",
+    "statusAge": 0,
+    "statusLastUpdated": "2020-10-09",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-sdap-doms.git;a=tree;hb=HEAD",
       "keys": "",
@@ -6054,15 +6049,15 @@
         {
           "description": "Apache Spot",
           "last_update_int": 1599790538,
-          "last_update_txt": "28 days ago"
+          "last_update_txt": "29 days ago"
         }
       ]
     ],
     "resource": "spot",
     "sponsor": "Incubator",
     "startDate": "2016-09-23",
-    "statusAge": 1442,
-    "statusLastUpdated": "2016-10-28",
+    "statusAge": 0,
+    "statusLastUpdated": "2020-10-09",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-spot.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/spot/KEYS",
@@ -6340,7 +6335,7 @@
         "hash": "sha512",
         "revision": "r35412",
         "size": "26444191",
-        "user": "maximebeauchemin"
+        "user": "maximebe"
       },
       "apache-superset-incubating-0.34.1-source.tar.gz": {
         "dtm": "10/10/2019",
@@ -6414,8 +6409,8 @@
         "incubator-superset",
         {
           "description": "Apache Superset (Incubating)",
-          "last_update_int": 1602211919,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_int": 1602259440,
+          "last_update_txt": "<span style='color: #070;'>&lt;1 minute ago</span>"
         }
       ],
       [
@@ -6423,7 +6418,7 @@
         {
           "description": "Apache Superset Site (Incubating)",
           "last_update_int": 1601956308,
-          "last_update_txt": "3 days ago"
+          "last_update_txt": "4 days ago"
         }
       ]
     ],
@@ -6641,7 +6636,7 @@
         "hash": "sha",
         "revision": "r18366",
         "size": "23915125",
-        "user": "chipsenkbeil"
+        "user": "chipsenk"
       },
       "apache-toree-0.1.0-incubating-source-release.tar.gz": {
         "dtm": "02/16/2017",
@@ -6649,7 +6644,7 @@
         "hash": "sha",
         "revision": "r18366",
         "size": "270640",
-        "user": "chipsenkbeil"
+        "user": "chipsenk"
       },
       "apache-toree-0.1.0.tar.gz": {
         "dtm": "02/16/2017",
@@ -6657,7 +6652,7 @@
         "hash": "sha",
         "revision": "r18366",
         "size": "23935917",
-        "user": "chipsenkbeil"
+        "user": "chipsenk"
       },
       "toree-0.2.0-incubating-bin.tar.gz": {
         "dtm": "07/27/2018",
@@ -7008,7 +7003,7 @@
         "hash": "sha512",
         "revision": "r40653",
         "size": "1069845",
-        "user": "gosonzhang"
+        "user": "gosonzha"
       },
       "apache-tubemq-client-0.5.0-incubating-bin.tar.gz": {
         "dtm": "07/23/2020",
@@ -7016,7 +7011,7 @@
         "hash": "sha512",
         "revision": "r40653",
         "size": "3632101",
-        "user": "gosonzhang"
+        "user": "gosonzha"
       },
       "apache-tubemq-server-0.5.0-incubating-bin.tar.gz": {
         "dtm": "07/23/2020",
@@ -7024,7 +7019,7 @@
         "hash": "sha512",
         "revision": "r40653",
         "size": "18171917",
-        "user": "gosonzhang"
+        "user": "gosonzha"
       }
     },
     "reportingGroup": "January, April, July, October",
@@ -7035,7 +7030,7 @@
         {
           "description": "Apache TubeMQ",
           "last_update_int": 1602239365,
-          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
         }
       ],
       [
@@ -7611,7 +7606,7 @@
         {
           "description": "Apache Tuweni",
           "last_update_int": 1600832573,
-          "last_update_txt": "16 days ago"
+          "last_update_txt": "17 days ago"
         }
       ],
       [
@@ -7786,7 +7781,7 @@
         {
           "description": "test repo for tvm",
           "last_update_int": 1602205189,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
         }
       ],
       [
@@ -8197,7 +8192,7 @@
         {
           "description": "Apache incubator-yunikorn-k8shim - incuating",
           "last_update_int": 1602162341,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
         }
       ],
       [
@@ -8205,7 +8200,7 @@
         {
           "description": "Apache yunikorn",
           "last_update_int": 1602161975,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
         }
       ],
       [
