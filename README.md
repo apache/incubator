@@ -19,8 +19,9 @@ which is in turn published automatically to http://incubator.apache.org/ by the 
 
 The data for http://incubator.apache.org/clutch/ takes longer to build so it is handled by a separate
 [SVN Clutch Analysis - part 1](https://ci-builds.apache.org/job/Incubator/job/Incubator-SVN-Clutch-Analysis-part-1/)
-Jenkins job that runs the `build_clutch.sh` script that's scheduled to run regularly. The results are stored in the 
-[`reserve` folder of the `asf-site` branch](https://github.com/apache/incubator/tree/asf-site/reserve)
+Jenkins job that runs the `build_clutch.sh` script that's scheduled to run daily and is also triggered by svn changes using
+the [Trigger-Clutch-Analysis-on-SVN-Change](https://ci-builds.apache.org/job/Incubator/job/Trigger-Clutch-Analysis-on-SVN-Change/)
+Jenkins job. The results are stored in the [`reserve` folder of the `asf-site` branch](https://github.com/apache/incubator/tree/asf-site/reserve)
 
 For now that Clutch data is still managed in svn, at http://svn.apache.org/repos/asf/incubator/public/trunk/ , see
 the build scripts for more info. The projects folder (podling status pages) and the ip-clearance folders are also still in svn
