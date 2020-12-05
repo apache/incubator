@@ -181,7 +181,7 @@ NOTE: File a JIRA under your newly JIRA *${project}* space to remind to remove *
 +
 **** you can *move* the last incubating released artefacts to your *release/${project}*, taking care that incubating stay in path (you will need to change website and mail for the new location)
 
-==== Final Revision of Podling Incubation Records
+=== Final Revision of Podling Incubation Records
 
 When a project has finished its graduation steps, then the incubator resources
 need to be updated to indicate that the project is no
@@ -192,11 +192,11 @@ to be done:
 
 - Update the podling summary metadata file, *incubator/trunk/content/podlings.xml* svn file.  See the content/podlings.dtd and follow examples of other recent graduates.  At the beginning of the process, add the "graduating" element.
 
-- When finished the graduation process, then:
+- When finished with the graduation process, then:
 ** Change the podling status to "graduated";
 ** add the "enddate" attribute to document when the project graduated;
 ** add the "resolution" element (see other project examples);
-** remove the "graduating" element.
+** remove the "reporting" element.
 
 - After your project has finished reporting to the Incubator, then remove the "reporting" element from that *podlings.xml* file.
 - Ensure that other svn resources for your project have moved to your new home.
@@ -204,8 +204,8 @@ to be done:
 
 *NOTE: Please edit this guide to add missing steps and clarifications.*
 
-==== New Responsibilities
-===== Oversight
+=== New Responsibilities
+==== Oversight
 
 During the stay in the Incubator, the
 link:/guides/roles_and_responsibilities.html#incubator_project_management_committee_ipmc[Incubator PMC (IPMC)]
@@ -225,7 +225,7 @@ Help is still available but the
 appropriate bodies (infrastructure, community, legal
 and so on) should now be approached directly.
 
-===== Security
+==== Security
 
 Each project needs to be able to manage security issues
 discovered in their code. By their nature, these issues
@@ -247,7 +247,7 @@ by mishandling of these issues. There are many people
 at Apache with considerable experience in this area
 so ask first.
 
-===== Stay In Touch
+==== Stay In Touch
 
 Passing through the incubation process gives a very
 valuable perspective. Please help to improve the process
