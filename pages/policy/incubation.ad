@@ -36,13 +36,13 @@ The Incubator has the following responsibilities:
 
 This document is the reference for the policies and procedures put in place by the Incubator PMC for the incubation process. 
 
-The document makes use of the terms MUST, MUST NOT, REQUIRED, SHALL, SHALL NOT, SHOULD, SHOULD NOT, RECOMMENDED, MAY and OPTIONAL. Where capitalized, these terms are used as defined in link:http://www.ietf.org/rfc/rfc2119.txt[RFC 2119].
+The document makes use of the terms MUST, MUST NOT, REQUIRED, SHALL, SHALL NOT, SHOULD, SHOULD NOT, RECOMMENDED, MAY and OPTIONAL. Where capitalized, we use these terms as defined in link:http://www.ietf.org/rfc/rfc2119.txt[RFC 2119].
 
-Like many policy documents this is not the most fun thing to read. Our link:/cookbook[Cookbook] 
+Like many policy documents, this is not the most fun thing to read. Our link:/cookbook[Cookbook] 
 provides more concrete information on the incubation process.
 
 == Scope
-This document contains the minimum requirements and processes that MUST be met by Podlings undergoing incubation.
+This document contains the minimum requirements and processes that Podlings undergoing incubation MUST meet.
 
 This document does not apply outside the process of incubation.
 
@@ -50,28 +50,28 @@ This document does not apply outside the process of incubation.
 This document is the set of requirements for incubation. Where other documents say something different, this document is correct.
 
 == Changing this Document
-The Incubator PMC approves the content of this document. Any changes MUST be authorized by the Incubator PMC.
+The Incubator PMC MUST approve changes to the content of this document.
 
 == Podling Reporting
-Each Podling in Incubation MUST report to the Incubator PMC. Podlings SHALL report monthly for their first three months, after that quarterly. The Incubator PMC MAY, at their discretion, ask a Podlings to report more frequently. The PPMC with the mentor(s) help, MUST produce a report for the Incubator PMC detailing the overall progress toward graduation and any issues encountered.
+Each Podling in Incubation MUST report to the Incubator PMC. Podlings SHALL report monthly for their first three months, after that quarterly. The Incubator PMC MAY, at their discretion, ask a Podlings to report more frequently. The PPMC with the mentor(s) help, MUST produce a report for the Incubator PMC detailing overall progress toward graduation and any issues the Podling has encountered.
 
 == Podling Constraints
 While in Incubation, Podlings are constrained in the actions they can undertake.
 
 === Website
-There are restrictions on where Podlings sites are hosted and branding on web sites.
+There are restrictions on where Podlings can host their websites and what branding they can use on them.
 
-Please consult the link:/guides/sites.html[Podling Websites Guide] for the current policies on Podling websites.
+Consult the link:/guides/sites.html[Podling Websites Guide] for the current policies on Podling websites.
 
 === Branding
 There are restrictions about how Podlings can use their own and other ASF brands and names.
 
-Please consult the link:/guides/branding.html[Podling Branding Guide] for details.
+Consult the link:/guides/branding.html[Podling Branding Guide] for details.
 
 === Publicity
-There are some restrictions about how Podlings can advertise themselves, especially around press releases related to Podlings.
+There are some restrictions about how Podlings can advertise themselves, especially in press releases related to Podlings.
 
-Please consult the link:/guides/publicity.html[Podling Publicity Guide] for details.
+Consult the link:/guides/publicity.html[Podling Publicity Guide] for details.
 
 == Disclaimers
 
@@ -79,15 +79,14 @@ Podling web sites MUST include a clear disclaimer on their
 website and in all documentation, releases and release announcements
 stating that they are in incubation.
 
-Podling has a choice of two disclaimers a standard disclaimer or a work in progress disclaimer.
+A Podling has a choice of two disclaimers: a standard disclaimer or a work-in-progress disclaimer.
 
-Podlings wishing to use a different disclaimer message MUST have the
-disclaimer approved by the Incubator PMC before use.
+Podlings wishing to use a different disclaimer message MUST have the Incubator PMC approve it before use.
 
 ==== Standard Disclaimer
 
 Podlings wanting to follow all ASF policy on releases SHOULD use the following 
-text for all disclaimers (replace the underlined text where needed):
+text for all disclaimers (replace the underlined text as appropriate):
 
 [quote]
 ____
@@ -115,7 +114,7 @@ Apache [.underline]#Podling-Name# is an effort
 undergoing incubation at The Apache Software Foundation (ASF),
 sponsored by the [.underline]#name of Apache TLP sponsor#. Incubation is required of all
 newly accepted projects until a further review indicates that the
-infrastructure, communications, and decision making process have
+infrastructure, communications, and decision-making process have
 stabilized in a manner consistent with other successful ASF projects.
 While incubation status is not necessarily a reflection of the
 completeness or stability of the code, it does indicate that the
@@ -123,16 +122,15 @@ project has yet to be fully endorsed by the ASF.
 
 Some of the incubating project's releases may not be fully compliant
 with ASF policy. For example, releases may have incomplete or
-un-reviewed licensing conditions. What follows is a list of known
-issues the project is currently aware of (note that this list, by
-definition, is likely to be incomplete): 
-[.underline]#List of known issues go here#
+un-reviewed licensing conditions. What follows is a list of
+issues the project is currently aware of (this list is likely to be incomplete): 
+[.underline]#List of known issues goes here#
 
 If you are planning to incorporate this work into your
 product/project, please be aware that you will need to conduct a
 thorough licensing review to determine the overall implications of
 including this work. For the current status of this project through the Apache
-Incubator visit: 
+Incubator, visit: 
 https://incubator.apache.org/projects/[.underline]#Apache Podling-Name#.html
 ____
 
@@ -141,27 +139,26 @@ stored alongside the NOTICE and LICENSE files.
 
 == Releases
 
-See the guidelines for link:/guides/releasemanagement.html[Podling releases] for good practices on making releases.
-link:guides/releasemanagement.html#requesting_feedback_on_interim_non_asf_releases[Non ASF releases] can be made while incubating as long as the podling is moving towards making ASF releases.
+See the guidelines for link:/guides/releasemanagement.html[Podling releases] for good practices for making releases. The Podling can make
+link:guides/releasemanagement.html#requesting_feedback_on_interim_non_asf_releases[non-ASF releases] while incubating as long as it is moving towards making ASF releases.
 
-Podlings are not fully accepted as official projects within the Apache Software Foundation. Podlings MUST NOT perform any ASF releases of software without the approval of the Incubator PMC. When a Podling decides it wants to make an ASF release, the Podling MUST hold a vote on their public dev list. At least three +1 votes are required (see the http://www.apache.org/foundation/voting.html[Apache Voting Process] page) and more +1 votes than -1 votes. If the vote passes the Podling MUST send a summary of that vote to the Incubator's link:/howtoparticipate.html#Mailing+lists[general] list and request that the Incubator PMC approve the release. Three +1 Incubator PMC votes are required to approve a release. Below is an example showing how an incubating project managed this process:
+Podlings are not yet fully accepted as official projects within the Apache Software Foundation. Podlings MUST NOT perform any ASF releases of software without the approval of the Incubator PMC. When a Podling decides it wants to make an ASF release, the Podling MUST hold a vote on their public dev list. At least three +1 votes are required (see the http://www.apache.org/foundation/voting.html[Apache Voting Process] page) and more +1 votes than -1 votes. If the vote passes, the Podling MUST send a summary of that vote to the Incubator's link:/howtoparticipate.html#Mailing+lists[general] list and request that the Incubator PMC approve the release. Three +1 Incubator PMC votes are required to approve a release. Below is an example showing how an incubating project managed this process:
 
 - link:++https://lists.apache.org/thread.html/7e9c475d07c0e12f813226aa123f54969ebb21a2277b32e9bd366d96@%3Cdev.plc4x.apache.org%3E++[Post to the Podling dev list calling the vote.]
 - link:++https://lists.apache.org/thread.html/06655226ba08c16a8cb273f9b45e0b0a15ebaed0d06783fdd06a03f6@%3Cgeneral.incubator.apache.org%3E++[Post to the Incubator's general list requesting approval from the Incubator PMC.]
 
-Should the Incubator PMC vote to approve a release, the Podling MAY make that release available to the public, only if:
+Should the Incubator PMC vote to approve a release, the Podling MAY make that release available to the public under these conditions:
 
 - The release archive(s) MUST include the word "incubating" in the filename.
 - The release archive(s) MUST contain a disclaimer (see above), which SHOULD be placed in a DISCLAIMER or DISCLAIMER-WIP file.
 
-Releases for the *Podling* MUST be distributed through *++http://www.apache.org/dist/incubator/++_Podling_* Also, the Podling MAY choose to distribute approved releases through other channels by following the link:https://incubator.apache.org/guides/distribution.html[guidelines here].
+Releases for the *Podling* MUST be distributed through *++http://www.apache.org/dist/incubator/++_Podling_* The Podling MAY choose to distribute approved releases through other channels by following the link:https://incubator.apache.org/guides/distribution.html[guidelines here].
 
 == Adding PPMC members
-After voting someone into the PPMC on the PPMC private list, a NOTICE email MUST be sent incubator private list. The PPMC MUST wait for 72 hours before inviting the new PPMC member to join the PPMC. See link:https://incubator.apache.org/guides/ppmc.html#voting_in_a_new_ppmc_member[Voting in a new PPMC member].
+After voting someone into the PPMC on the PPMC private list, the Podling MUST send a NOTICE email to the private@incubator list. The PPMC MUST wait for 72 hours before inviting the new PPMC member to join the PPMC. See link:https://incubator.apache.org/guides/ppmc.html#voting_in_a_new_ppmc_member[Voting in a new PPMC member].
 
 == Joining the IPMC
-Just like other PMC new PMC members are voted on the Incubator private list. After a vote has finished a notice email MUST be sent to the board and the IPMC wait for 72 hours before inviting them. Any ASF member can ask to be an IPMC member, without a vote, but notice to the board MUST still be given.
+As with all PMCs, new the IPMC votes on proposed members on the private@incubator list. After a vote has finished, the IPMC MUST send a NOTICE email to the board and then wait for 72 hours before inviting the proposed member. Any ASF member can ask to be an IPMC member, without a vote, but the IPMC MUST still give notice to the board.
 
 == Termination
-The Incubator PMC SHOULD notify a podling of any policy violations. It MAY consider the termination of a Podling if violations are not corrected. 
-
+The Incubator PMC SHOULD notify a Podling of any policy violations. It MAY consider termination of a Podling that does not correct such violations. 
