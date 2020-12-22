@@ -158,8 +158,7 @@ Estimated Reading Time: <span class="eta"></span>
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>For corporate contributions, the SGA or CCLA MUST be completed, submitted
-and received before the code is imported.</p>
+<p>For corporate contributions, you MUST complete and submit the SGA or CCLA, and Apache must receive it, before you import code.</p>
 </div>
 <div class="paragraph">
 <p>For contributions composed of patches from individual contributors,
@@ -167,13 +166,11 @@ it is safe to import the code once the major contributors (by volume)
 have completed ICLAs or SGAs.</p>
 </div>
 <div class="paragraph">
-<p>In either case, the code to be imported should be attached to a JIRA
-and then imported. It is recommended that the previous version
-control system is tagged so that the imported version is precisely known.</p>
+<p>In either case, attach the code to be imported to a JIRA ticket and then import it. We recommend that you tag the previous version
+control system so we know the precise version you are importing.</p>
 </div>
 <div class="paragraph">
-<p>A public record MUST be made of the code imported. If the import is not
-attached to JIRA then it MUST be committed to version control.</p>
+<p>You MUST make a public record of the code you import. If you do not attach the import to a JIRA ticket, you MUST committed it to version control.</p>
 </div>
 </div>
 </div>
@@ -181,21 +178,13 @@ attached to JIRA then it MUST be committed to version control.</p>
 <h2 id="importing_history">Importing History</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>The incoming code can either be committed as a snapshot or as a complete version
-control export including history (provided that the import is available in a format
-readable by subversion).
-Importing with history allows existing open source projects who want to maintain
-older versions at Apache to easily perform source diffs and so on. Import just the
+<p>You can commit the incoming code as a snapshot or as a complete version
+control export, including history (provided that the import is available in a format
+readable by Github or Subversion, depending on where the new repository is).
+Importing with history allows existing open source projects that want to maintain
+older versions at Apache to easily perform source diffs and so on. Importing just the
 latest code allows a clean break to be made with the past. The choice is left to
 the community of the incoming project.</p>
-</div>
-<div class="paragraph">
-<p>The infrastructure team will perform the import including
-mapping IDs but it is an operation that requires skill, time and care. In this case,
-please ask the infrastructure team politely.</p>
-</div>
-<div class="paragraph">
-<p>If you are importing from a github repository, you&#8217;ll need to add one of our infra staff members as an admin to perform a move.</p>
 </div>
 </div>
 </div>
@@ -203,7 +192,7 @@ please ask the infrastructure team politely.</p>
 <h2 id="audit_cryptography">Audit Cryptography</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Before the code base is committed into an Apache repository, the contribution
+<p>Before you commit the code base into an Apache repository, the contribution
 <a href="http://www.apache.org/dev/crypto.html">MUST</a> be checked
 and any restricted cryptography reported appropriately. Read and follow
 <a href="http://www.apache.org/dev/crypto.html">this guide</a>.</p>
@@ -214,28 +203,27 @@ and any restricted cryptography reported appropriately. Read and follow
 <h2 id="initial_clean_up">Initial Clean Up</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Once a JIRA has been created, the source should be cleaned up.</p>
+<p>Once you have created a JIRA ticket, it is time to clean up the source code.</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>Ensure source files use the standard Apache boilerplates. This may mean replacing existing license headers. The tools in <a href="https://svn.apache.org/repos/private/committers/tools">private/committers/tools</a> and <a href="https://svn.apache.org/repos/private/committers/relicense">private/committers/relicense</a> may be useful.</p>
+<p>Ensure source files use the standard Apache boilerplate headers. This may mean replacing existing license headers. The tools in <a href="https://svn.apache.org/repos/private/committers/tools">private/committers/tools</a> and <a href="https://svn.apache.org/repos/private/committers/relicense">private/committers/relicense</a> may be useful.</p>
 </li>
 <li>
 <p>Ensure that NOTICE and LICENSE documents are present and correct.  Mentors should assist with this.</p>
 </li>
 <li>
-<p>Add any required notices. Consider moving copyright attributions from source documents to the NOTICE. Read <a href="http://www.apache.org/legal/src-headers.html">Apache policy on headers</a>.</p>
+<p>Add any required notices. Consider moving copyright attributions from source documents to the NOTICE file. Read the <a href="http://www.apache.org/legal/src-headers.html">Apache policy on headers</a>.</p>
 </li>
 <li>
-<p>Audit the source for any potential licensing issues. Any which are found should either resolved immediately (when required) or noted in the status document for later.</p>
+<p>Audit the source for any potential licensing issues. Resolve any issues you find immediately or note them in the status document for later attention.</p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
-<p>It is recommended that the initial clean up be is started
-before the code is committed. It MUST be completed before any
-releases are cut.</p>
+<p>We recommend that you start the initial cleanup before you commit the code. You MUST complete it before creating any
+releases.</p>
 </div>
 </div>
 </div>
@@ -243,39 +231,34 @@ releases are cut.</p>
 <h2 id="clean_up_best_practice">Clean Up Best Practice</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>It is recommended that version control is used to create a
-public record of the process. This will assist anyone
-auditing the code provenance (now or in the future) to
-easily perform due diligence without contacting the people
-who performed the clean up. The clean up process should
+<p>We recommend that you use version control to create a
+public record of the cleanup process. This will assist anyone
+auditing code provenance (now or in the future) to
+easily perform due diligence without having to contact the people
+who performed the cleanup. The cleanup process should
 therefore clearly document (using version control) the
 evolution of the IP licensing.</p>
 </div>
 <div class="paragraph">
-<p>Particular care needs to be taken with commit messages
-during clean up. The intended audience needs to include
+<p>Take particular care with commit messages
+during cleanup. The intended audience needs to include
 lawyers and code auditors. Members of the public need to be
 able to follow and understand the process from these
 messages alone.</p>
 </div>
 <div class="paragraph">
-<p>It is therefore recommended that the initial source is
-(after being expanded from the archive) checked in as is
-into a special directory (<strong>${project}/trunk/import</strong> is suggested). The original packaging, copyright statements
-and license notices should be preserved. A standard Apache
-LICENSE and appropriate NOTICE should be added at the top
+<p>We therefore recommend that, after you expand the initial source from the archive) you check it into a special directory (we suggest <strong>${project}/trunk/import</strong>) as is. This will preserve the original packaging, copyright statements
+and license notices. Add the standard Apache
+LICENSE and an appropriate NOTICE at the top
 for the copyright for the collective work (see <a href="http://www.apache.org/legal/src-headers.html">policy</a>). Take particular care with this commit message. As with
 any patch that contains code which is not the original work
-of the committer, the JIRA url (for the artifact imported)
-needs to be included together with notes about the original
-copyright owner and any associated paperwork. The fact that
-this is a exact import including original headers should be
-noted to stop any queries about these foreign headers.</p>
+of the committer, you need to include the url of the Jira ticket (for the artifact imported), together with notes about the original
+copyright owner and any associated paperwork. Note that this is an exact import including original headers, to stop any queries about these foreign headers.</p>
 </div>
 <div class="paragraph">
 <p>The cleanup should then proceed in a number of commits. If
-the source provenance is complex, break the process up into
-a number of logical steps committing each in turn with a
+the source provenance is complex, break the process into
+a number of logical steps, committing each in turn with a
 good message.</p>
 </div>
 <div class="paragraph">
@@ -285,8 +268,7 @@ directory: consider moving each copyright owner individually
 so that it is easier to audit. (See <a href="http://www.apache.org/legal/src-headers.html#notice">policy</a>.)</p>
 </div>
 <div class="paragraph">
-<p>Once a section of code has been cleaned up
-(and <a href="#repackaging">repackaged</a>, if necessary) normal development can begin.</p>
+<p>Once you have cleaned up (and <a href="#repackaging">repackaged</a>, if necessary) a section of code, normal development on it can begin.</p>
 </div>
 </div>
 </div>
@@ -294,13 +276,13 @@ so that it is easier to audit. (See <a href="http://www.apache.org/legal/src-hea
 <h2 id="on_repackaging">On Repackaging</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>It is recommended - but not mandated - that source is repackaged
+<p>We recommend - but do not require - that you repackage source code
 under the Apache namespace. There is no need to use the incubator
-namespace. For example, Java source might be repackaged to
+namespace. For example, you might repackage Java source code to
 <strong>org.apache.foo.Bar</strong> or a DTD to <strong><a href="http://podling.apache.org/foo/bar" class="bare">http://podling.apache.org/foo/bar</a></strong>.</p>
 </div>
 <div class="paragraph">
-<p>Existing open source projects moving to Apache may well need to consider
+<p>Existing open source projects moving to Apache may need to consider
 carefully how they will approach this transition.</p>
 </div>
 </div>
@@ -313,33 +295,56 @@ carefully how they will approach this transition.</p>
 with references to Apache.</p>
 </div>
 <div class="paragraph">
-<p>Read
-<a href="http://incubator.apache.org/guides/branding.html">Branding Guide</a>.
-Ensure that appropriate disclaimers are added to the appropriate documentation.
+<p>Read the Apache <a href="http://incubator.apache.org/guides/branding.html">Branding Guide</a>.
+Add appropriate disclaimers to the appropriate documentation.
 Consider adding a <strong>DISCLAIMER</strong> text document.</p>
 </div>
 <div class="sect2">
 <h3 id="update_build">Update Build</h3>
 <div class="paragraph">
-<p>If the project uses <a href="http://maven.apache.org">Apache Maven</a>, the pom will
-need to be updated to reflect that the project is now at Apache. In particular:
-- Update <strong>mailingLists</strong>
-- Update <strong>organization</strong>
-- Update <strong>url</strong>
-- Update <strong>issueManagement</strong>
-- Check <strong>licenses</strong>
-- Update <strong>scm</strong>
-- Update <strong>groupId</strong>
-- Update <strong>manifestEntries</strong>. It is recommended that the
-standard Apache settings are used
-- Update <strong>developers</strong> to use apache IDs (when known)
-- Update <strong>distributionManagement</strong>
-- Consider specifying a <a href="http://maven.apache.org/pom.html#relocation">relocation</a></p>
+<p>If the project uses <a href="http://maven.apache.org">Apache Maven</a>, you need to update the pom to reflect that the project is now at Apache. In particular:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Update <strong>mailingLists</strong></p>
+</li>
+<li>
+<p>Update <strong>organization</strong></p>
+</li>
+<li>
+<p>Update <strong>url</strong></p>
+</li>
+<li>
+<p>Update <strong>issueManagement</strong></p>
+</li>
+<li>
+<p>Check <strong>licenses</strong></p>
+</li>
+<li>
+<p>Update <strong>scm</strong></p>
+</li>
+<li>
+<p>Update <strong>groupId</strong></p>
+</li>
+<li>
+<p>Update <strong>manifestEntries</strong>. We recommend that you use the standard Apache settings</p>
+</li>
+<li>
+<p>Update <strong>developers</strong> to use apache IDs (when known)</p>
+</li>
+<li>
+<p>Update <strong>distributionManagement</strong></p>
+</li>
+<li>
+<p>Consider specifying a <a href="http://maven.apache.org/pom.html#relocation">relocation</a></p>
+</li>
+</ul>
 </div>
 <div class="paragraph">
 <p>If the project uses <a href="http://ant.apache.org">Apache Ant</a>, the build script
 will probably need to be updated. In particular:
-- Ensure any MANIFESTs generated refer to Apache. It is recommended that the standard Apache settings are used.
+- Ensure any MANIFESTs generated refer to Apache. We recommend that you use the standard Apache settings.
 - Check that <strong>LICENSE</strong>, <strong>NOTICE</strong> and - if appropriate - <strong>DISCLAIMER</strong> documents are copied into binary artifacts</p>
 </div>
 </div>
@@ -349,10 +354,9 @@ will probably need to be updated. In particular:
 <h2 id="issue_tracking_transition">Issue Tracking Transition</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Issues for Apache projects should be tracked on Apache hardware. Some projects arrive
-with existing issues tracking. So, in the end these need to be replaced (for new development
-at least) by the Apache issues tracker. Options need to be discussed publicly on list
-and a consensus reached about the best transition strategy.</p>
+<p>We track issues for Apache projects on Apache hardware. Some projects arrive
+with existing issue tracking systems. The project needs to move, for new development
+at least, to an Apache issue tracker. Discuss options and reach a consensus on the public dev@ email list about the best transition strategy.</p>
 </div>
 </div>
 </div></p>
