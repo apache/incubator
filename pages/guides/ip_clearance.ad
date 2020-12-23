@@ -22,51 +22,46 @@ Apache Incubator PMC
 
 === Background
 
-Existing codebases need to be imported through the standard IP clearance
-process. This means that a Software Grant Agreement
+Podlings need to import existing codebases through the standard IP clearance
+process. This means that all copyright owners need to submit a Software Grant Agreement
 (link:http://www.apache.org/licenses/#grants[SGA])
 or Contributor License Agreement
-(link:http://www.apache.org/licenses/#clas[CLA])
-needs to be submitted
-for all copyright owners. This process may take a while so it is best to
-start as soon as the podling is accepted.
+(link:http://www.apache.org/licenses/#clas[CLA]). This process may take a while so it is best to
+start as soon as the Incubator accepts the podling.
 
-The acceptance of the initial codebases is approved by the
-IPMC as part of the acceptance motion. So, no vote is required by the
+The IPMC (Incubator Product Management Committee) approves the initial codebase as part of the acceptance motion. So, no vote is required by the
 PPMC. Otherwise, follow the standard IP clearance process for podlings.
 
 === Establishing Provenance
 
-Paperwork needs to be submitted to Apache that grants a legal license on the code
+The podling needs to submit paperwork to Apache that grants a legal license on the code
 to the Apache Software Foundation.
-As a rule of thumb, if all the material contributors to the code
+Generally, if all the material contributors to the code
 are joining the podling as initial contributors, then CLAs (individual or corporate)
 are all you need. The individuals must submit the 'individual' CLA (ICLA).
 If there are employers involved who might claim
-rights in the code, then corporate CLAs (CCLAs) are needed for those employers.
+rights in the code, they need to provide corporate CLAs (CCLAs).
 
 If, on the other hand, there are material contributors who are *not*
 joining the podling as initial contributors, or if there
 are additional corporate entities who can claim rights in the code,
-then SGAs are required from those individuals or corporations.
+the podling must obtain SGAs from those individuals or corporations.
 
-The foregoing is only a rule of thumb. Generally, the mentors of a new project
+The foregoing is only a summary. The mentors of a new project
 will need to consult with general@incubator.apache.org or the Apache legal team
-about the particular circumstances.
+about the circumstances of a specific podling.
 
 It may take some time to track down all contributors. It is not necessary to
-have paperwork on file for all contributions before the code is imported.
-It may be necessary to reverse some patches and rewrite areas of code if
-contributors cannot be found or at not happy about given Apache written
+have paperwork on file for all contributions before importing the code.
+It may be necessary to reverse some patches and rewrite areas of code if you cannot find copyright owners, or they are not happy about giving Apache written
 permission to use their code.
 
-No releases are possible until the provenance of all the code to be release
-has been clearly established and the relevant paperwork filed with Apache. It is
+No releases are possible until the podling has clearly established the provenance of all the code to be released and the relevant paperwork ahs been filed with Apache. It is
 therefore important to keep the status updated.
 
-Receipts of ICLAs, CCLAs, and SGAs are recorded by the secretary in
+The ASF Secretary records receipt of ICLAs, CCLAs, and SGAs in
 the private foundation repository. Reading is restricted to members and officers
-of the foundation. If there is no officer or member available then ask on the
+of the foundation. If there is no officer or member available to check whether the secretary has received all relevant documents, ask for help on the
 general list.
 
 === IPMC Responsibility around IP Clearance
@@ -74,21 +69,20 @@ general list.
 The board has charged the Incubator project with management of IP clearance for Apache.
 Instructions are link:http://incubator.apache.org/ip-clearance/index.html[here].
 
-These equally apply to podlings. The Incubator project is responsible for all podlings
+These instructions also apply to podlings. The Incubator project is responsible for all podlings
 and so is the receiving PMC. So, when a podling requests IP clearance, the
 IPMC wears link:http://www.apache.org/foundation/how-it-works.html#hats[two hats].
 This may be a little confusing at first.
 
 The Incubator PMC must approve the clearance. This indicates that the project is
-happy to receive the code donated. When a new podling is created, this is done
-by the identification of existing codebases in the proposal. Otherwise, the
+happy to receive the code donated. When a new podling is created, the IPMC approves the clearance of existing codebases identified in the proposal. Otherwise, the
 IPMC delegates this decision to the PPMC.
 
-As usual, three binding votes are required. So, Mentors need to be involved in
-IP clearance for podlings. If too few binding VOTEs are posted on list,
+As usual, three binding votes are required. Mentors need to be involved in
+IP clearance for podlings. If too few binding VOTEs are posted on the list,
 the VOTE will need to be posted to the general list for ratification.
 
 The second hat is technical IP clearance. Here, the IPMC needs to check that the
-paperwork is in order. Once the acceptance vote has been approved, an officer
+paperwork is in order. Once the IPMC approves the acceptance vote, an officer
 or member need to complete the process. For a podling, this will typically
 involve a Mentor.
