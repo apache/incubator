@@ -7,38 +7,36 @@ Apache Incubator PMC
 :toc:
 :imagesdir: ./images/
 
-This cookbook, combined with our link:http://incubator.apache.org[homepage], is meant to provide all the essential information that you need to incubate a project at the ASF.
+This cookbook, combined with our link:http://incubator.apache.org[homepage], provides the information that you need to incubate a project at the ASF.
 
-It is meant to be *the* central point for all questions related to incubation, providing an overview of the incubation goals and process, and linking to more detailed information.
+It is *the* central point for all questions related to incubation. It provides an overview of the incubation goals and process, and links to more detailed information.
 
-It is organized in chronological order of the steps that lead from incubating project acceptance to graduation as a top-level project.
+It is organized in chronological order of the steps that lead from incubating project acceptance to graduation as a Top-Level Project (TLP).
 
-The style that we expect here is short explanations with links to the details as needed, written in a friendly and helpful tone.
-
-Feedback about this is welcome, either on the link:++https://lists.apache.org/list.html?general@incubator.apache.org++[general@incubator.a.o] mailing list
-or in the link:https://issues.apache.org/jira/browse/INCUBATOR-234[INCUBATOR-234] ticket.  Pull requests to this repository are also welcome.
+We welcome feedback about the cookbook, either through the link:++https://lists.apache.org/list.html?general@incubator.apache.org++[general@incubator.a.o] email list
+or in the link:https://issues.apache.org/jira/browse/INCUBATOR-234[INCUBATOR-234] ticket. You can also submit patches to link:https://github.com/apache/incubator/tree/master/pages/cookbook[this repository].
 
 == Does our project fit the Apache Incubator?
 
 The Apache Software Foundation (ASF) _provides software for the public good_, as explained in our link:https://blogs.apache.org/foundation/entry/the-apache-software-foundation-2018[vision statement] from 2018.
 
-Our projects operate according to The Apache Way, a set of principles and best practices that are described link:http://www.apache.org/theapacheway/index.html[on the Foundation's website]. 
+Our projects operate according to link:http://www.apache.org/theapacheway/index.html[The Apache Way], a set of principles and best practices. 
 
-We put a strong emphasis on _Community Over Code_, _fierce independence_ from companies and organizations and _openness_ in all aspects of our work.
+We put a strong emphasis on _Community Over Code_, _fierce independence_ from companies and organizations, and _openness_ in all aspects of our work.
 
-Donating your project to the ASF means giving up control of it, and its trademarks if any. You'll be very welcome to participate in the project but without a special status beyond being part of its Project Management Committee (PMC). The good news is that your project can then take a life of its own, with a potentially much broader reach, due to the ASF's independence and emphasis on project sustainability.
+Donating your project to the ASF means giving up control of it, and its trademarks if any. You'll be very welcome to participate in the project, but without a special status beyond being part of its Project Management Committee (PMC). The good news is that your project can then take a life of its own, with potentially a much broader reach, due to the ASF's independence and emphasis on project sustainability.
 
-Assuming your project fits this mindset, the acceptance of your project is not linked to what it does, as the ASF on purpose does not have a technical strategy. If it's very similar to link:https://projects.apache.org/[one of our existing projects], we will probably ask you to consider joining it. Still, some of our projects exist for similar purposes, and that's not necessarily a problem.
+Assuming your project fits this mindset, we do not link acceptance of your project to what it does, as the ASF on purpose does not have a technical strategy. If it's very similar to link:https://projects.apache.org/[one of our existing projects], we will probably ask you to consider joining that project. Still, some of our projects exist for similar purposes, and that's not necessarily a problem.
 
 To give our "podlings" (incubating projects) the best chances of success, we usually ask them to enter the Incubator with at least the start of a community built around an existing codebase.
 
-== What are the steps to becoming an Apache Software Foundation Top-Level project?
+== What are the steps to becoming an Apache Software Foundation Top-Level Project?
 
-The goal of incubation is to become an Apache Software Foundation (ASF) Top-Level project.
+The goal of incubation is to become an Apache Software Foundation (ASF) Top-Level Project (TLP).
 
 See the link:https://www.apache.org/foundation/how-it-works.html[How the ASF works] page for what this means and what the various roles (committers, PMC members etc.) mean.
 
-To achieve this, an incoming project ("podling") goes through the following steps.
+To achieve this, an incoming project ("podling") goes through the following steps:
 
  * Find a champion and incubation mentors and discuss and prepare an incubation proposal
  * Decide to incubate at the ASF
@@ -46,18 +44,18 @@ To achieve this, an incoming project ("podling") goes through the following step
  * If needed, refine the list of initial committers and mentors in the proposal
  * if needed, refine the proposal based on Incubator PMC feedback
  * Let the Incubator PMC vote on the proposal
- * Setup the podling's infrastructure
+ * Set up the podling's infrastructure
  * Start building a community around the podling's code
  * Invite new committers and PPMC members
- * Make podling releases and document and refine the release process
- * When ready to graduate, assess the podling's readiness with the incubation mentors 
- * If applicable prepare the transfer of existing trademarks to the ASF
+ * Make podling releases and document and refine both the code and the release process
+ * When you feel ready to graduate, assess the podling's readiness with the incubation mentors 
+ * If applicable, prepare the transfer of existing trademarks to the ASF
  * Discuss graduation with the Incubator PMC
- * Start the graduation vote with the Incubator PMC, leading to an ASF Board resolution to establish the top-level project.
+ * Start the graduation vote with the Incubator PMC, leading to an ASF Board resolution to establish the TLP
  
-Described above is the "happy case", things might happen in a slightly different order, but it gives an overview of the typical incubation process.
+Described above is the "happy case". Things might happen in a slightly different order, but it gives an overview of the typical incubation process.
 
-These steps are described in more detail below.
+Here are more details about these steps:
 
 == Communicating with the Incubator
 
@@ -73,7 +71,7 @@ These people need to be part of the Incubator PMC, which ASF Members can join ju
 
 The Champion helps the incoming podling in the process of creating their proposal and acts as a liaison between the podling and the Incubator PMC for the initial steps, at least until the podling's proposal is accepted. They may stay on to act as a mentor after that.
 
-The Mentors accompany the podling for all phases that lead to graduation as a top-level project.
+The Mentors accompany the podling through all phases that lead to graduation as a top-level project.
 
 The starting point is usually to find a Champion. For that you might write to the general@incubator.a.o list 
 with a brief description of your project, with relevant links, mentioning that you are looking for a Champion and
@@ -88,9 +86,9 @@ The proposal needs to include several standard sections, see the link:https://cw
 
 Prior proposals are kept on the link:https://cwiki.apache.org/confluence/display/INCUBATOR/Proposals[Incubator wiki]. They can be consulted as examples, keeping in mind that the proposal template mentioned above is the current reference for new proposals.
 
-== Incubation proposal discussion
+== Discussing the Incubation proposal
 
-Once the proposal is ready, the podling representatives send it to the general@incubator.a.o list for discussions, with a subject line like
+Once the proposal is ready, the podling representatives send it to the general@incubator.a.o list for discussion, with a subject line like
 
  [DISCUSS] Foo Proposal
  
@@ -98,7 +96,7 @@ to raise the Incubator PMC's attention.
 
 The discussion often leads to small or large changes to the proposal.
 
-There's no set duration for this discussion phase, it lasts for a few days until the discussion dies down once all discussion points have been addressed.
+There's no set duration for this discussion phase. It usually lasts for a few days until the discussion dies down and all discussion points have been addressed.
 
 For recent discussions threads see:
 
@@ -112,7 +110,7 @@ For recent discussions threads see:
 
 Once the discussion phase is finished, the Champion or a podling representative starts a [VOTE] thread on the general@incubator.a.o list.
 
-The vote happens according to the link:https://www.apache.org/foundation/voting[ASF voting rules]. In short, it's held on the Incubator mailing list, lasts at least 72 hours and is a majority vote by the Incubator PMC members, with others being welcome to cast votes.
+The vote happens according to the link:https://www.apache.org/foundation/voting[ASF voting rules]. In short, it takes place on the Incubator email list, lasts at least 72 hours, and is a majority vote by the Incubator PMC members, with others being welcome to cast votes.
 
 TODO link to recent votes as examples
 
@@ -122,20 +120,18 @@ Once the Incubator PMC votes to establish the podling, its infrastructure can be
 
 Usually, the Champion or incubation mentors drive this process. However, it can also be driven by podling community members if they know how to proceed.
 
-TODO link to detailed instructions, do we have an up-to-date JIRA template for that?
+See link:https://infra.apache.org/infra-incubator.html[Infra and the Incubator] for detailed instructions.
 
 == Publicity and Announcements
 
-Publicity is _not_ permitted before the Incubator PMC accepts the podling.
+Project can _not_ issue press releases or other public statements about joining the ASF before the Incubator PMC accepts the podling.
 
-There are also some restrictions about how podlings can advertise themselves and  especially around press releases related to podlings.
-
-The link:http://incubator.apache.org/guides/branding.html[Incubator Branding Guide] and https://incubator.apache.org/guides/publicity.html[Apache Podling Publicity/Media Guidelines] have more details.
+There are also some restrictions about how podlings can advertise themselves and  especially around press releases related to podlings. The link:http://incubator.apache.org/guides/branding.html[Incubator Branding Guide] and https://incubator.apache.org/guides/publicity.html[Apache Podling Publicity/Media Guidelines] have more details.
 
 == Importing the Initial Code
 
 A specific process exists do donate code to the ASF, which podlings also
-need to follow, based on link:https://www.apache.org/licenses/software-grant.txt[Software Grants] and/or link:https://www.apache.org/licenses/cla-corporate.txt[CCLAs]
+need to follow, based on link:https://www.apache.org/licenses/software-grant.txt[Software Grants] and/or link:https://www.apache.org/licenses/cla-corporate.txt[CCLAs].
 
 The link:http://incubator.apache.org/guides/transitioning_asf.html[Initial Code Import] guide has more details about this.
 
@@ -143,21 +139,21 @@ The link:http://incubator.apache.org/guides/transitioning_asf.html[Initial Code 
 
 During incubation, the podling is expected to build and expand its community, which includes voting in new committers and PPMC members.
 
-Discussions of candidates and votes happen on the podling's private PPMC mailing list, that's one of the few uses of that list as generally, all discussions happen in the open.
+Discussions of candidates and votes happen on the podling's private PPMC mailing list. That's one of the few uses of that list as, generally, all discussions happen in the open.
 
-Expanding and especially renewing project communities is an essential part of the ASF's governance, as it fosters project durability.
+Expanding and especially renewing project communities are essential parts of the ASF's governance, as it fosters project durability.
 
 == Podling Releases
 
-A podling is expected to make **several software releases** during incubation, that gradually progress towards being fully conformant to the link:http://www.apache.org/legal/release-policy.html[ASF Release Policy]. Fully conformant releases are a condition for graduation.
+During incubation, we expect a podling to make **several software releases** that gradually progress towards being fully conformant to the link:http://www.apache.org/legal/release-policy.html[ASF Release Policy]. Producing fully-conformant releases is a condition for graduation.
 
 Podling releases must also include the word "incubating" in any release file names and include a DISCLAIMER or DISCLAIMER-WIP as per the
-https://incubator.apache.org/guides/releasemanagement.html#choice_of_disclaimers[Incubator Releases Guide],
-to prevent any confusion as to the project’s status. As podlings are not yet "real" ASF projects, it is important to set expectations right.
+link:https://incubator.apache.org/guides/releasemanagement.html#choice_of_disclaimers[Incubator Releases Guide],
+to prevent any confusion as to the project’s status. As podlings are not yet "real" ASF projects, it is important to set expectations appropriately.
 
-Note that Apache Releases consist of source code only. However it is common for our projects to also distribute
-link:http://www.apache.org/legal/release-policy.html#compiled-packages[compiled packages] along with their releases. The focus is on the actual
-source code releases and all distributed compiled packages are based on those "official" releases.
+Note that Apache Releases consist of source code only. However, it is common for our projects to also distribute
+link:http://www.apache.org/legal/release-policy.html#compiled-packages[compiled packages] along with their releases, as a convenience to users of the application. The focus is on the actual
+source code releases, and all distributed compiled packages are based on those "official" releases.
 
 == Two-phase vote on Podling Releases
 
@@ -166,29 +162,29 @@ Voting on podling releases happens in two phases:
  * First, the podling votes on the release on their dev mailing list. The main goal of this vote is for the podling community
    to practice and learn voting on releases. The vote is successful if there are at least three +1 votes from PPMC members,
    and more +1 than -1 votes from PPMC members.
- * Then, if that first vote is successful, an Incubator PMC vote is held on the Incubator General mailing list. This is required
+ * Then, if that first vote is successful, the Incubator PMC holds a vote on the Incubator general mailing list. This is required
    to make the vote an Act of the Foundation, as for all ASF releases.
 
-Votes from the podling dev list should be carried over to the Incubator PMC vote, by explicitly mentioning the podling vote result
-and including a link:http://lists.apache.org[lists.apache.org] link to the podling vote tally, in the Incubator PMC [VOTE] message. This
+Report votes from the podling dev list to the Incubator PMC vote in the Incubator PMC [VOTE] message, by explicitly mentioning the podling vote result
+and including a link:http://lists.apache.org[lists.apache.org] link to the podling vote tally. This
 allows votes from mentors and other Incubator PMC members to be binding in the Incubator PMC vote, without people having to vote twice.
 
 Both the podling and Incubator votes follow the standard link:https://www.apache.org/foundation/voting[ASF voting principles]: they
-are majority votes that last at least 72 hours and if people vote several times only their last vote counts.
+are majority votes that last at least 72 hours, and if people vote several times only their last vote counts.
 
-== Podling, Top-level Project, what are the differences?
+== Podling, Top-level Project: what are the differences?
 
 Top-level projects (TLPs) are full-blown ASF projects, each governed by their own link:http://www.apache.org/foundation/governance/pmcs[PMC] and reporting to the ASF's link:https://www.apache.org/foundation/board/[Board of Directors].
 
-Podling are "TLPs in training", and most of what they do is the same as TLPs, especially as they progress in their incubation journey.
+Podling are "TLPs in training". Most of what they do is the same as TLPs, especially as they progress in their incubation journey.
 
 The main differences are:
 
- * As opposed to PMCs, podlings cannot make formal decisions on the ASF's behalf as they are not formally part of the ASF's structure. They are not mentioned in the link:https://www.apache.org/foundation/bylaws[the ASF's bylaws] for example. This means that the Incubator PMC needs to act as a proxy for the podlings to formalize things like ASF Releases and make them link:https://blogs.apache.org/foundation/entry/success-at-apache-the-apache1[Acts of the Foundation].
+ * As opposed to PMCs, podlings cannot make formal decisions on the ASF's behalf as they are not formally part of the ASF's structure. They are not mentioned in the link:https://www.apache.org/foundation/bylaws[the ASF's bylaws] for example. This means that the Incubator PMC needs to act as a proxy for the podlings to formalize things like ASF releases and make them link:https://blogs.apache.org/foundation/entry/success-at-apache-the-apache1[Acts of the Foundation].
  * As a consequence, a podling has a PPMC (Podling Project Management Committee) which operates like the PMC of a top-level project but needs to delegate a few things, like final votes on ASF Releases, to the Incubator PMC.
- * The decision to elect people as committers or PPMC members, or both, is similar to TLPs. A podling can decide that candidates are elected to the PPMC directly, or make them committers first and wait a bit to "promote" the as PPMC members. Committers, on the other hand, have no formal decision power, so a two-stage process is often preferred, but it's not a requirement. Read link:https://www.apache.org/foundation/how-it-works.html[How the ASF works] for more information about this.
- * TLPs report link:https://www.apache.org/foundation/board/reporting[to the ASF Board of Directors], whereas podlings report link:https://cwiki.apache.org/confluence/display/INCUBATOR/Reports[to the Incubator PMC]. Both report monthly initially, then quarterly.
- * Each TLP has a link:https://apache.org/dev/pmc.html[PMC Chair] who acts as a liaison between the TLP and the Board. PMC Chairs are _not_ project leaders. It's an administrative role even though they get a VP title due to the ASF's organization. Podlings do not have this role, incubation mentors are volunteer community members act as the liaison between the podling and the Incubator PMC.
+ * The decision to elect people as committers or PPMC members, or both, is similar to what TLPs do. A podling can decide that candidates are elected to the PPMC directly, or make them committers first and wait a bit to "promote" them as PPMC members. Committers have no formal decision power, so a two-stage process is often preferred, but it's not a requirement. Read link:https://www.apache.org/foundation/how-it-works.html[How the ASF works] for more information about this.
+ * TLPs report to the link:https://www.apache.org/foundation/board/reporting[ASF Board of Directors], whereas podlings report to the  link:https://cwiki.apache.org/confluence/display/INCUBATOR/Reports[Incubator PMC]. Both report monthly initially, then quarterly.
+ * Each TLP has a link:https://apache.org/dev/pmc.html[PMC Chair] who acts as a liaison between the TLP and the Board. PMC Chairs are _not_ project leaders. It's an administrative role even though they get a VP title due to the ASF's organizational structure. Podlings do not have this role: incubation mentors are volunteer community members  who act as the liaison between the podling and the Incubator PMC.
  * Podling releases require a two-phase vote as described elsewhere in this cookbook.
  
 The ASF strongly encourages projects to grow and renew their roster regularly, to foster project sustainability. Both podlings and TLPs should be actively looking to elect new committers and PMC members by keeping an eye on who's active in their communities.
@@ -201,31 +197,30 @@ The link:https://community.apache.org/apache-way/apache-project-maturity-model.h
 
 == Graduation discussion
 
-Once the community and its incubation mentors feel that the podling is ready to graduate, based on their readiness self-assessment, a [DISCUSS] thread is started on the Incubator general mailing list, proposing graduation and asking the Incubator PMC to review the podling.
+Once the community and its incubation mentors feel that the podling is ready to graduate, based on their readiness self-assessment, a mentor or a member of the PPMC starts a [DISCUSS] thread on the Incubator general email list, proposing graduation and asking the Incubator PMC to review the podling.
 
 It's best to include the graduation resolution in this discussion, to be ready for the vote that follows.
 
 == Transfering Trademarks to the ASF
 
-If the people or organizations who donated the podling code to the ASF own trademarks that the podling needs, they must be
-transferred to the ASF before graduation.
+If the people or organizations that donated the podling code to the ASF own trademarks that the podling needs, they must transfer the trademarks to the ASF before the podling can graduate.
 
 TODO link to details
 
 == Graduation vote
 
-Once the discussion dies down on the graduation proposal, a [VOTE] is started on the Incubator general mailing list, in which Incubator PMC Members cast their votes to accept recommending graduation to the ASF's Board of Directors.
+Once the discussion dies down on the graduation proposal, a mentor or a member of the PPMC starts a [VOTE] thread on the Incubator general mailing list, in which Incubator PMC Members cast their votes whether to recommend graduation to the ASF's Board of Directors.
 
-This vote follows the standard link:https://www.apache.org/foundation/voting[ASF voting principles], it's a majority vote that lasts at least 72 hours and if people
+This vote follows the standard link:https://www.apache.org/foundation/voting[ASF voting principles]. It's a majority vote that lasts at least 72 hours, and if people
 vote several times only their last vote counts.
 
 == ASF Board Resolution
 
-Once the Incubator PMC votes to graduate the podling, it sends the Board Resolution that was created for the vote to the ASF's Board of Directors.
+Once the Incubator PMC votes to graduate a podling, the IPMC sends the Board Resolution that was created for the vote to the ASF's Board of Directors.
 
-The Board currently meets every third Wednesday of the month and votes on such resolutions.
+The Board currently meets every third Wednesday of the month and votes on such resolutions during a regular meeting.
 
-The Board vote is effective immediately, although the link:https://www.apache.org/foundation/board/calendar.html[public minutes] of the Board meeting are published later, usually within a month.
+The Board vote is effective immediately, although the link:https://www.apache.org/foundation/board/calendar.html[public minutes] of the Board meeting appear later, usually within a month.
 
 == Post-graduation tasks
 
