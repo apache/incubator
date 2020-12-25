@@ -139,11 +139,11 @@
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
 <li><a href="#does_our_project_fit_the_apache_incubator">Does our project fit the Apache Incubator?</a></li>
-<li><a href="#what_are_the_steps_to_becoming_an_apache_software_foundation_top_level_project">What are the steps to becoming an Apache Software Foundation Top-Level project?</a></li>
+<li><a href="#what_are_the_steps_to_becoming_an_apache_software_foundation_top_level_project">What are the steps to becoming an Apache Software Foundation Top-Level Project?</a></li>
 <li><a href="#communicating_with_the_incubator">Communicating with the Incubator</a></li>
 <li><a href="#finding_a_champion_and_mentors">Finding a champion and mentors</a></li>
 <li><a href="#creating_an_incubation_proposal">Creating an incubation proposal</a></li>
-<li><a href="#incubation_proposal_discussion">Incubation proposal discussion</a></li>
+<li><a href="#discussing_the_incubation_proposal">Discussing the Incubation proposal</a></li>
 <li><a href="#voting_on_the_incubation_proposal">Voting on the Incubation Proposal</a></li>
 <li><a href="#podling_infrastructure_setup">Podling Infrastructure Setup</a></li>
 <li><a href="#publicity_and_announcements">Publicity and Announcements</a></li>
@@ -151,7 +151,7 @@
 <li><a href="#community_building">Community building</a></li>
 <li><a href="#podling_releases">Podling Releases</a></li>
 <li><a href="#two_phase_vote_on_podling_releases">Two-phase vote on Podling Releases</a></li>
-<li><a href="#podling_top_level_project_what_are_the_differences">Podling, Top-level Project, what are the differences?</a></li>
+<li><a href="#podling_top_level_project_what_are_the_differences">Podling, Top-level Project: what are the differences?</a></li>
 <li><a href="#graduation_readiness_assessment">Graduation Readiness Assessment</a></li>
 <li><a href="#graduation_discussion">Graduation discussion</a></li>
 <li><a href="#transfering_trademarks_to_the_asf">Transfering Trademarks to the ASF</a></li>
@@ -163,20 +163,17 @@
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>This cookbook, combined with our <a href="http://incubator.apache.org">homepage</a>, is meant to provide all the essential information that you need to incubate a project at the ASF.</p>
+<p>This cookbook, combined with our <a href="http://incubator.apache.org">homepage</a>, provides the information that you need to incubate a project at the ASF.</p>
 </div>
 <div class="paragraph">
-<p>It is meant to be <strong>the</strong> central point for all questions related to incubation, providing an overview of the incubation goals and process, and linking to more detailed information.</p>
+<p>It is <strong>the</strong> central point for all questions related to incubation. It provides an overview of the incubation goals and process, and links to more detailed information.</p>
 </div>
 <div class="paragraph">
-<p>It is organized in chronological order of the steps that lead from incubating project acceptance to graduation as a top-level project.</p>
+<p>It is organized in chronological order of the steps that lead from incubating project acceptance to graduation as a Top-Level Project (TLP).</p>
 </div>
 <div class="paragraph">
-<p>The style that we expect here is short explanations with links to the details as needed, written in a friendly and helpful tone.</p>
-</div>
-<div class="paragraph">
-<p>Feedback about this is welcome, either on the <a href="https://lists.apache.org/list.html?general@incubator.apache.org">general@incubator.a.o</a> mailing list
-or in the <a href="https://issues.apache.org/jira/browse/INCUBATOR-234">INCUBATOR-234</a> ticket.  Pull requests to this repository are also welcome.</p>
+<p>We welcome feedback about the cookbook, either through the <a href="https://lists.apache.org/list.html?general@incubator.apache.org">general@incubator.a.o</a> email list
+or in the <a href="https://issues.apache.org/jira/browse/INCUBATOR-234">INCUBATOR-234</a> ticket. You can also submit patches to <a href="https://github.com/apache/incubator/tree/master/pages/cookbook">this repository</a>.</p>
 </div>
 </div>
 </div>
@@ -187,16 +184,16 @@ or in the <a href="https://issues.apache.org/jira/browse/INCUBATOR-234">INCUBATO
 <p>The Apache Software Foundation (ASF) <em>provides software for the public good</em>, as explained in our <a href="https://blogs.apache.org/foundation/entry/the-apache-software-foundation-2018">vision statement</a> from 2018.</p>
 </div>
 <div class="paragraph">
-<p>Our projects operate according to The Apache Way, a set of principles and best practices that are described <a href="http://www.apache.org/theapacheway/index.html">on the Foundation&#8217;s website</a>.</p>
+<p>Our projects operate according to <a href="http://www.apache.org/theapacheway/index.html">The Apache Way</a>, a set of principles and best practices.</p>
 </div>
 <div class="paragraph">
-<p>We put a strong emphasis on <em>Community Over Code</em>, <em>fierce independence</em> from companies and organizations and <em>openness</em> in all aspects of our work.</p>
+<p>We put a strong emphasis on <em>Community Over Code</em>, <em>fierce independence</em> from companies and organizations, and <em>openness</em> in all aspects of our work.</p>
 </div>
 <div class="paragraph">
-<p>Donating your project to the ASF means giving up control of it, and its trademarks if any. You&#8217;ll be very welcome to participate in the project but without a special status beyond being part of its Project Management Committee (PMC). The good news is that your project can then take a life of its own, with a potentially much broader reach, due to the ASF&#8217;s independence and emphasis on project sustainability.</p>
+<p>Donating your project to the ASF means giving up control of it, and its trademarks if any. You&#8217;ll be very welcome to participate in the project, but without a special status beyond being part of its Project Management Committee (PMC). The good news is that your project can then take a life of its own, with potentially a much broader reach, due to the ASF&#8217;s independence and emphasis on project sustainability.</p>
 </div>
 <div class="paragraph">
-<p>Assuming your project fits this mindset, the acceptance of your project is not linked to what it does, as the ASF on purpose does not have a technical strategy. If it&#8217;s very similar to <a href="https://projects.apache.org/">one of our existing projects</a>, we will probably ask you to consider joining it. Still, some of our projects exist for similar purposes, and that&#8217;s not necessarily a problem.</p>
+<p>Assuming your project fits this mindset, we do not link acceptance of your project to what it does, as the ASF on purpose does not have a technical strategy. If it&#8217;s very similar to <a href="https://projects.apache.org/">one of our existing projects</a>, we will probably ask you to consider joining that project. Still, some of our projects exist for similar purposes, and that&#8217;s not necessarily a problem.</p>
 </div>
 <div class="paragraph">
 <p>To give our "podlings" (incubating projects) the best chances of success, we usually ask them to enter the Incubator with at least the start of a community built around an existing codebase.</p>
@@ -204,16 +201,16 @@ or in the <a href="https://issues.apache.org/jira/browse/INCUBATOR-234">INCUBATO
 </div>
 </div>
 <div class="sect1">
-<h2 id="what_are_the_steps_to_becoming_an_apache_software_foundation_top_level_project">What are the steps to becoming an Apache Software Foundation Top-Level project?</h2>
+<h2 id="what_are_the_steps_to_becoming_an_apache_software_foundation_top_level_project">What are the steps to becoming an Apache Software Foundation Top-Level Project?</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>The goal of incubation is to become an Apache Software Foundation (ASF) Top-Level project.</p>
+<p>The goal of incubation is to become an Apache Software Foundation (ASF) Top-Level Project (TLP).</p>
 </div>
 <div class="paragraph">
 <p>See the <a href="https://www.apache.org/foundation/how-it-works.html">How the ASF works</a> page for what this means and what the various roles (committers, PMC members etc.) mean.</p>
 </div>
 <div class="paragraph">
-<p>To achieve this, an incoming project ("podling") goes through the following steps.</p>
+<p>To achieve this, an incoming project ("podling") goes through the following steps:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -236,7 +233,7 @@ or in the <a href="https://issues.apache.org/jira/browse/INCUBATOR-234">INCUBATO
 <p>Let the Incubator PMC vote on the proposal</p>
 </li>
 <li>
-<p>Setup the podling&#8217;s infrastructure</p>
+<p>Set up the podling&#8217;s infrastructure</p>
 </li>
 <li>
 <p>Start building a community around the podling&#8217;s code</p>
@@ -245,27 +242,27 @@ or in the <a href="https://issues.apache.org/jira/browse/INCUBATOR-234">INCUBATO
 <p>Invite new committers and PPMC members</p>
 </li>
 <li>
-<p>Make podling releases and document and refine the release process</p>
+<p>Make podling releases and document and refine both the code and the release process</p>
 </li>
 <li>
-<p>When ready to graduate, assess the podling&#8217;s readiness with the incubation mentors</p>
+<p>When you feel ready to graduate, assess the podling&#8217;s readiness with the incubation mentors</p>
 </li>
 <li>
-<p>If applicable prepare the transfer of existing trademarks to the ASF</p>
+<p>If applicable, prepare the transfer of existing trademarks to the ASF</p>
 </li>
 <li>
 <p>Discuss graduation with the Incubator PMC</p>
 </li>
 <li>
-<p>Start the graduation vote with the Incubator PMC, leading to an ASF Board resolution to establish the top-level project.</p>
+<p>Start the graduation vote with the Incubator PMC, leading to an ASF Board resolution to establish the TLP</p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
-<p>Described above is the "happy case", things might happen in a slightly different order, but it gives an overview of the typical incubation process.</p>
+<p>Described above is the "happy case". Things might happen in a slightly different order, but it gives an overview of the typical incubation process.</p>
 </div>
 <div class="paragraph">
-<p>These steps are described in more detail below.</p>
+<p>Here are more details about these steps:</p>
 </div>
 </div>
 </div>
@@ -293,7 +290,7 @@ or in the <a href="https://issues.apache.org/jira/browse/INCUBATOR-234">INCUBATO
 <p>The Champion helps the incoming podling in the process of creating their proposal and acts as a liaison between the podling and the Incubator PMC for the initial steps, at least until the podling&#8217;s proposal is accepted. They may stay on to act as a mentor after that.</p>
 </div>
 <div class="paragraph">
-<p>The Mentors accompany the podling for all phases that lead to graduation as a top-level project.</p>
+<p>The Mentors accompany the podling through all phases that lead to graduation as a top-level project.</p>
 </div>
 <div class="paragraph">
 <p>The starting point is usually to find a Champion. For that you might write to the general@incubator.a.o list
@@ -318,10 +315,10 @@ would be willing to help.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="incubation_proposal_discussion">Incubation proposal discussion</h2>
+<h2 id="discussing_the_incubation_proposal">Discussing the Incubation proposal</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Once the proposal is ready, the podling representatives send it to the general@incubator.a.o list for discussions, with a subject line like</p>
+<p>Once the proposal is ready, the podling representatives send it to the general@incubator.a.o list for discussion, with a subject line like</p>
 </div>
 <div class="literalblock">
 <div class="content">
@@ -335,7 +332,7 @@ would be willing to help.</p>
 <p>The discussion often leads to small or large changes to the proposal.</p>
 </div>
 <div class="paragraph">
-<p>There&#8217;s no set duration for this discussion phase, it lasts for a few days until the discussion dies down once all discussion points have been addressed.</p>
+<p>There&#8217;s no set duration for this discussion phase. It usually lasts for a few days until the discussion dies down and all discussion points have been addressed.</p>
 </div>
 <div class="paragraph">
 <p>For recent discussions threads see:</p>
@@ -368,7 +365,7 @@ would be willing to help.</p>
 <p>Once the discussion phase is finished, the Champion or a podling representative starts a [VOTE] thread on the general@incubator.a.o list.</p>
 </div>
 <div class="paragraph">
-<p>The vote happens according to the <a href="https://www.apache.org/foundation/voting">ASF voting rules</a>. In short, it&#8217;s held on the Incubator mailing list, lasts at least 72 hours and is a majority vote by the Incubator PMC members, with others being welcome to cast votes.</p>
+<p>The vote happens according to the <a href="https://www.apache.org/foundation/voting">ASF voting rules</a>. In short, it takes place on the Incubator email list, lasts at least 72 hours, and is a majority vote by the Incubator PMC members, with others being welcome to cast votes.</p>
 </div>
 <div class="paragraph">
 <p>TODO link to recent votes as examples</p>
@@ -385,7 +382,7 @@ would be willing to help.</p>
 <p>Usually, the Champion or incubation mentors drive this process. However, it can also be driven by podling community members if they know how to proceed.</p>
 </div>
 <div class="paragraph">
-<p>TODO link to detailed instructions, do we have an up-to-date JIRA template for that?</p>
+<p>See <a href="https://infra.apache.org/infra-incubator.html">Infra and the Incubator</a> for detailed instructions.</p>
 </div>
 </div>
 </div>
@@ -393,13 +390,10 @@ would be willing to help.</p>
 <h2 id="publicity_and_announcements">Publicity and Announcements</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Publicity is <em>not</em> permitted before the Incubator PMC accepts the podling.</p>
+<p>Project can <em>not</em> issue press releases or other public statements about joining the ASF before the Incubator PMC accepts the podling.</p>
 </div>
 <div class="paragraph">
-<p>There are also some restrictions about how podlings can advertise themselves and  especially around press releases related to podlings.</p>
-</div>
-<div class="paragraph">
-<p>The <a href="http://incubator.apache.org/guides/branding.html">Incubator Branding Guide</a> and <a href="https://incubator.apache.org/guides/publicity.html">Apache Podling Publicity/Media Guidelines</a> have more details.</p>
+<p>There are also some restrictions about how podlings can advertise themselves and  especially around press releases related to podlings. The <a href="http://incubator.apache.org/guides/branding.html">Incubator Branding Guide</a> and <a href="https://incubator.apache.org/guides/publicity.html">Apache Podling Publicity/Media Guidelines</a> have more details.</p>
 </div>
 </div>
 </div>
@@ -408,7 +402,7 @@ would be willing to help.</p>
 <div class="sectionbody">
 <div class="paragraph">
 <p>A specific process exists do donate code to the ASF, which podlings also
-need to follow, based on <a href="https://www.apache.org/licenses/software-grant.txt">Software Grants</a> and/or <a href="https://www.apache.org/licenses/cla-corporate.txt">CCLAs</a></p>
+need to follow, based on <a href="https://www.apache.org/licenses/software-grant.txt">Software Grants</a> and/or <a href="https://www.apache.org/licenses/cla-corporate.txt">CCLAs</a>.</p>
 </div>
 <div class="paragraph">
 <p>The <a href="http://incubator.apache.org/guides/transitioning_asf.html">Initial Code Import</a> guide has more details about this.</p>
@@ -422,10 +416,10 @@ need to follow, based on <a href="https://www.apache.org/licenses/software-grant
 <p>During incubation, the podling is expected to build and expand its community, which includes voting in new committers and PPMC members.</p>
 </div>
 <div class="paragraph">
-<p>Discussions of candidates and votes happen on the podling&#8217;s private PPMC mailing list, that&#8217;s one of the few uses of that list as generally, all discussions happen in the open.</p>
+<p>Discussions of candidates and votes happen on the podling&#8217;s private PPMC mailing list. That&#8217;s one of the few uses of that list as, generally, all discussions happen in the open.</p>
 </div>
 <div class="paragraph">
-<p>Expanding and especially renewing project communities is an essential part of the ASF&#8217;s governance, as it fosters project durability.</p>
+<p>Expanding and especially renewing project communities are essential parts of the ASF&#8217;s governance, as it fosters project durability.</p>
 </div>
 </div>
 </div>
@@ -433,17 +427,17 @@ need to follow, based on <a href="https://www.apache.org/licenses/software-grant
 <h2 id="podling_releases">Podling Releases</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>A podling is expected to make <strong>several software releases</strong> during incubation, that gradually progress towards being fully conformant to the <a href="http://www.apache.org/legal/release-policy.html">ASF Release Policy</a>. Fully conformant releases are a condition for graduation.</p>
+<p>During incubation, we expect a podling to make <strong>several software releases</strong> that gradually progress towards being fully conformant to the <a href="http://www.apache.org/legal/release-policy.html">ASF Release Policy</a>. Producing fully-conformant releases is a condition for graduation.</p>
 </div>
 <div class="paragraph">
 <p>Podling releases must also include the word "incubating" in any release file names and include a DISCLAIMER or DISCLAIMER-WIP as per the
 <a href="https://incubator.apache.org/guides/releasemanagement.html#choice_of_disclaimers">Incubator Releases Guide</a>,
-to prevent any confusion as to the project’s status. As podlings are not yet "real" ASF projects, it is important to set expectations right.</p>
+to prevent any confusion as to the project’s status. As podlings are not yet "real" ASF projects, it is important to set expectations appropriately.</p>
 </div>
 <div class="paragraph">
-<p>Note that Apache Releases consist of source code only. However it is common for our projects to also distribute
-<a href="http://www.apache.org/legal/release-policy.html#compiled-packages">compiled packages</a> along with their releases. The focus is on the actual
-source code releases and all distributed compiled packages are based on those "official" releases.</p>
+<p>Note that Apache Releases consist of source code only. However, it is common for our projects to also distribute
+<a href="http://www.apache.org/legal/release-policy.html#compiled-packages">compiled packages</a> along with their releases, as a convenience to users of the application. The focus is on the actual
+source code releases, and all distributed compiled packages are based on those "official" releases.</p>
 </div>
 </div>
 </div>
@@ -461,30 +455,30 @@ to practice and learn voting on releases. The vote is successful if there are at
 and more +1 than -1 votes from PPMC members.</p>
 </li>
 <li>
-<p>Then, if that first vote is successful, an Incubator PMC vote is held on the Incubator General mailing list. This is required
+<p>Then, if that first vote is successful, the Incubator PMC holds a vote on the Incubator general mailing list. This is required
 to make the vote an Act of the Foundation, as for all ASF releases.</p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
-<p>Votes from the podling dev list should be carried over to the Incubator PMC vote, by explicitly mentioning the podling vote result
-and including a <a href="http://lists.apache.org">lists.apache.org</a> link to the podling vote tally, in the Incubator PMC [VOTE] message. This
+<p>Report votes from the podling dev list to the Incubator PMC vote in the Incubator PMC [VOTE] message, by explicitly mentioning the podling vote result
+and including a <a href="http://lists.apache.org">lists.apache.org</a> link to the podling vote tally. This
 allows votes from mentors and other Incubator PMC members to be binding in the Incubator PMC vote, without people having to vote twice.</p>
 </div>
 <div class="paragraph">
 <p>Both the podling and Incubator votes follow the standard <a href="https://www.apache.org/foundation/voting">ASF voting principles</a>: they
-are majority votes that last at least 72 hours and if people vote several times only their last vote counts.</p>
+are majority votes that last at least 72 hours, and if people vote several times only their last vote counts.</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="podling_top_level_project_what_are_the_differences">Podling, Top-level Project, what are the differences?</h2>
+<h2 id="podling_top_level_project_what_are_the_differences">Podling, Top-level Project: what are the differences?</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Top-level projects (TLPs) are full-blown ASF projects, each governed by their own <a href="http://www.apache.org/foundation/governance/pmcs">PMC</a> and reporting to the ASF&#8217;s <a href="https://www.apache.org/foundation/board/">Board of Directors</a>.</p>
 </div>
 <div class="paragraph">
-<p>Podling are "TLPs in training", and most of what they do is the same as TLPs, especially as they progress in their incubation journey.</p>
+<p>Podling are "TLPs in training". Most of what they do is the same as TLPs, especially as they progress in their incubation journey.</p>
 </div>
 <div class="paragraph">
 <p>The main differences are:</p>
@@ -492,19 +486,19 @@ are majority votes that last at least 72 hours and if people vote several times 
 <div class="ulist">
 <ul>
 <li>
-<p>As opposed to PMCs, podlings cannot make formal decisions on the ASF&#8217;s behalf as they are not formally part of the ASF&#8217;s structure. They are not mentioned in the <a href="https://www.apache.org/foundation/bylaws">the ASF&#8217;s bylaws</a> for example. This means that the Incubator PMC needs to act as a proxy for the podlings to formalize things like ASF Releases and make them <a href="https://blogs.apache.org/foundation/entry/success-at-apache-the-apache1">Acts of the Foundation</a>.</p>
+<p>As opposed to PMCs, podlings cannot make formal decisions on the ASF&#8217;s behalf as they are not formally part of the ASF&#8217;s structure. They are not mentioned in the <a href="https://www.apache.org/foundation/bylaws">the ASF&#8217;s bylaws</a> for example. This means that the Incubator PMC needs to act as a proxy for the podlings to formalize things like ASF releases and make them <a href="https://blogs.apache.org/foundation/entry/success-at-apache-the-apache1">Acts of the Foundation</a>.</p>
 </li>
 <li>
 <p>As a consequence, a podling has a PPMC (Podling Project Management Committee) which operates like the PMC of a top-level project but needs to delegate a few things, like final votes on ASF Releases, to the Incubator PMC.</p>
 </li>
 <li>
-<p>The decision to elect people as committers or PPMC members, or both, is similar to TLPs. A podling can decide that candidates are elected to the PPMC directly, or make them committers first and wait a bit to "promote" the as PPMC members. Committers, on the other hand, have no formal decision power, so a two-stage process is often preferred, but it&#8217;s not a requirement. Read <a href="https://www.apache.org/foundation/how-it-works.html">How the ASF works</a> for more information about this.</p>
+<p>The decision to elect people as committers or PPMC members, or both, is similar to what TLPs do. A podling can decide that candidates are elected to the PPMC directly, or make them committers first and wait a bit to "promote" them as PPMC members. Committers have no formal decision power, so a two-stage process is often preferred, but it&#8217;s not a requirement. Read <a href="https://www.apache.org/foundation/how-it-works.html">How the ASF works</a> for more information about this.</p>
 </li>
 <li>
-<p>TLPs report <a href="https://www.apache.org/foundation/board/reporting">to the ASF Board of Directors</a>, whereas podlings report <a href="https://cwiki.apache.org/confluence/display/INCUBATOR/Reports">to the Incubator PMC</a>. Both report monthly initially, then quarterly.</p>
+<p>TLPs report to the <a href="https://www.apache.org/foundation/board/reporting">ASF Board of Directors</a>, whereas podlings report to the  <a href="https://cwiki.apache.org/confluence/display/INCUBATOR/Reports">Incubator PMC</a>. Both report monthly initially, then quarterly.</p>
 </li>
 <li>
-<p>Each TLP has a <a href="https://apache.org/dev/pmc.html">PMC Chair</a> who acts as a liaison between the TLP and the Board. PMC Chairs are <em>not</em> project leaders. It&#8217;s an administrative role even though they get a VP title due to the ASF&#8217;s organization. Podlings do not have this role, incubation mentors are volunteer community members act as the liaison between the podling and the Incubator PMC.</p>
+<p>Each TLP has a <a href="https://apache.org/dev/pmc.html">PMC Chair</a> who acts as a liaison between the TLP and the Board. PMC Chairs are <em>not</em> project leaders. It&#8217;s an administrative role even though they get a VP title due to the ASF&#8217;s organizational structure. Podlings do not have this role: incubation mentors are volunteer community members  who act as the liaison between the podling and the Incubator PMC.</p>
 </li>
 <li>
 <p>Podling releases require a two-phase vote as described elsewhere in this cookbook.</p>
@@ -531,7 +525,7 @@ are majority votes that last at least 72 hours and if people vote several times 
 <h2 id="graduation_discussion">Graduation discussion</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Once the community and its incubation mentors feel that the podling is ready to graduate, based on their readiness self-assessment, a [DISCUSS] thread is started on the Incubator general mailing list, proposing graduation and asking the Incubator PMC to review the podling.</p>
+<p>Once the community and its incubation mentors feel that the podling is ready to graduate, based on their readiness self-assessment, a mentor or a member of the PPMC starts a [DISCUSS] thread on the Incubator general email list, proposing graduation and asking the Incubator PMC to review the podling.</p>
 </div>
 <div class="paragraph">
 <p>It&#8217;s best to include the graduation resolution in this discussion, to be ready for the vote that follows.</p>
@@ -542,8 +536,7 @@ are majority votes that last at least 72 hours and if people vote several times 
 <h2 id="transfering_trademarks_to_the_asf">Transfering Trademarks to the ASF</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>If the people or organizations who donated the podling code to the ASF own trademarks that the podling needs, they must be
-transferred to the ASF before graduation.</p>
+<p>If the people or organizations that donated the podling code to the ASF own trademarks that the podling needs, they must transfer the trademarks to the ASF before the podling can graduate.</p>
 </div>
 <div class="paragraph">
 <p>TODO link to details</p>
@@ -554,10 +547,10 @@ transferred to the ASF before graduation.</p>
 <h2 id="graduation_vote">Graduation vote</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Once the discussion dies down on the graduation proposal, a [VOTE] is started on the Incubator general mailing list, in which Incubator PMC Members cast their votes to accept recommending graduation to the ASF&#8217;s Board of Directors.</p>
+<p>Once the discussion dies down on the graduation proposal, a mentor or a member of the PPMC starts a [VOTE] thread on the Incubator general mailing list, in which Incubator PMC Members cast their votes whether to recommend graduation to the ASF&#8217;s Board of Directors.</p>
 </div>
 <div class="paragraph">
-<p>This vote follows the standard <a href="https://www.apache.org/foundation/voting">ASF voting principles</a>, it&#8217;s a majority vote that lasts at least 72 hours and if people
+<p>This vote follows the standard <a href="https://www.apache.org/foundation/voting">ASF voting principles</a>. It&#8217;s a majority vote that lasts at least 72 hours, and if people
 vote several times only their last vote counts.</p>
 </div>
 </div>
@@ -566,13 +559,13 @@ vote several times only their last vote counts.</p>
 <h2 id="asf_board_resolution">ASF Board Resolution</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Once the Incubator PMC votes to graduate the podling, it sends the Board Resolution that was created for the vote to the ASF&#8217;s Board of Directors.</p>
+<p>Once the Incubator PMC votes to graduate a podling, the IPMC sends the Board Resolution that was created for the vote to the ASF&#8217;s Board of Directors.</p>
 </div>
 <div class="paragraph">
-<p>The Board currently meets every third Wednesday of the month and votes on such resolutions.</p>
+<p>The Board currently meets every third Wednesday of the month and votes on such resolutions during a regular meeting.</p>
 </div>
 <div class="paragraph">
-<p>The Board vote is effective immediately, although the <a href="https://www.apache.org/foundation/board/calendar.html">public minutes</a> of the Board meeting are published later, usually within a month.</p>
+<p>The Board vote is effective immediately, although the <a href="https://www.apache.org/foundation/board/calendar.html">public minutes</a> of the Board meeting appear later, usually within a month.</p>
 </div>
 </div>
 </div>
