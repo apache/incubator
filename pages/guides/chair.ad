@@ -18,11 +18,11 @@ Apache Incubator PMC
 :toc:
 :imagesdir: ../images/
 
-== This guide is for the Incubator Chair and PMC
+== This guide is for the Incubator Chair and IPMC
 
-This page is guidance for the Incubator Chair and PMC. Guidance for podlings is found at link:/guides/ppmc.html[Podling Guide].
+This page is guidance for the Incubator Chair and IPMC. Guidance for podlings is at link:/guides/ppmc.html[Podling Guide].
 
-== Adding New Incubator PMC Members
+== Adding Incubator PMC Members
 
 For a new PMC member being voted in, follow the link:http://www.apache.org/dev/pmc.html#newpmc[standard procedure].
 
@@ -38,60 +38,59 @@ Body:
 Apache Member *Jane Doe* has requested to join the Incubator PMC.
 --
 
-After the NOTICE period expires, a welcome message should be sent to the new IPMC member.
+After the NOTICE period expires, send a welcome message to the new IPMC member.
 
 [literal]
 --
 Welcome to the Apache Incubator Project.
 
-Here is some information to get you started as a PMC member.
+Here is some information to get you started as an IPMC member.
 
-please subscribe to the incubator mailing lists:
+Please subscribe to the incubator email lists:
 - general-subscribe at incubator.apache.org
 - private-subscribe at incubator.apache.org
 - cvs-subscribe at incubator.apache.org
 
 You may find it useful to use https://whimsy.apache.org/committers/subscribe to manage your subscriptions.
 
-- the base incubator SVN URL is https://svn.apache.org/repos/asf/incubator
+- the base incubator SVN URL is https://svn.apache.org/repos/asf/incubator.
 
-- all the public information, rules and policies about the
+- all public information, rules and policies about the
 Apache Incubator is in https://github.com/apache/incubator,
-and  published on https://incubator.apache.org/
+and is published on https://incubator.apache.org/.
 
 - https://home.apache.org/phonebook.html?ctte=incubator
-lists all PMC members.
+lists all IPMC members.
 
-- the Incubator website is maintained and published according to the
-instructions at http://incubator.apache.org/guides/website.html
+- We maintain and publish the Incubator website according to the
+instructions at http://incubator.apache.org/guides/website.html.
 
-- all committers on all incubating projects have access to
+- All committers on all incubating projects have access to
 the 'incubator/public' repository, so they can
-participate in the general Incubator Project as committers
+participate in the general Incubator Project as committers.
 
-- please read our work documents; they are
-published under https://incubator.apache.org/policy/incubation.html
+- Please read our work documents; we publish them at https://incubator.apache.org/policy/incubation.html
 
 Thanks for helping us!
 --
 
 == Board Report
 
-The Incubator link:http://www.apache.org/foundation/board/reporting[reports] monthly to the Apache link:http://www.apache.org/foundation/board[Board of Directors]. The report itself is the collaborative effort of many Incubator contributors, but the Chair is ultimately responsible for ensuring that it is submitted on time.
+The Incubator PMC link:http://www.apache.org/foundation/board/reporting[reports] monthly to the Apache link:http://www.apache.org/foundation/board[Board of Directors]. The report itself is the collaborative effort of many Incubator contributors, but the Chair is ultimately responsible for submitting it on time.
 
-The Board appreciates receiving the IPMC report to be:
+The Board appreciates receiving the IPMC report:
 - on time
 - in a consistent format
-- an accurate summary of the state of the reporting podlings
-- include multiple Mentor signoff on each report
+- as an accurate summary of the state of the reporting podlings
+- with multiple Mentor signoffs on each report
 
-The "runbook" for managing the preparation of the report is implemented as a script which prints out documentation, instructions, literal commands, due dates, etc. in link:https://svn.apache.org/repos/asf/incubator/public/trunk/report_runbook.py[report_runbook.py]
+The "runbook" for managing preparation of the report is a script which prints out documentation, instructions, literal commands, due dates, etc. in link:https://svn.apache.org/repos/asf/incubator/public/trunk/report_runbook.py[report_runbook.py].
 
-Many of the tasks documented in the runbook may be run by either the Chair or a delegate Report Manager. However, it's the Chair who is accountable for overseeing the process.
+Either the Chair or a delegated Report Manager can run many of the tasks documented in the runbook. However, the Chair is accountable for overseeing the process.
 
-The report draft is worked on the link:https://cwiki.apache.org/confluence/display/INCUBATOR/Reports[Incubator wiki]. 
+Work on the report draft on the link:https://cwiki.apache.org/confluence/display/INCUBATOR/Reports[Incubator wiki]. 
 
-Incubator board reports are organised by year and month. To create a new report, copy the MonthYear template and correctly rename it. Add and link the new temple to the list of reports on the front page.
-Currently, members of the IPMC and Podling PMCs have permission to edit pages in the Reports section of the wiki. The permissions to that section will need to be updated when new podlings are added or retired. 
-When submitting a final report to the board, make sure to mark the report as read-only and mark it as submitted at the top of the page, so that future accidental edits are mot missing from the board report.
+Incubator board reports are organised by year and month. To create a new report, copy the MonthYear template and correctly rename it. Add and link the new report to the list of reports on the front page.
+Currently, members of the IPMC and Podling PMCs have permission to edit pages in the Reports section of the wiki. We need to update the permissions for that section when we add or retire podlings. 
+When submitting a final report to the board, make sure to mark the report as read-only and mark it as submitted at the top of the page, so that future accidental edits do not change the submitted report.
 The draft reports may vary a little from the final Board report. The published Incubator Board reports can be found here.
