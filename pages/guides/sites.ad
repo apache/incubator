@@ -31,7 +31,7 @@ Graduation, unless you obtain prior approval from the Incubator PMC.
 
 - The published site for each podling must conform to the guidelines in link:/guides/branding.html[Podling Branding/Publicity].
 - Podlings should review link:https://www.apache.org/foundation/marks/linking[Corporate Recognition Best Practices], link:https://www.apache.org/foundation/marks/resources[Apache trademark information], and must aim to comply with the link:https://www.apache.org/foundation/marks/pmcs[Apache Project Website Branding Policy].
-- You should maintain the sources for the podling website in the podling's site SVN or Git directory.
+- You should maintain the sources for the podling website in the podling's SVN or Git repository.
 - The published site for each podling should conform to this URL space: #http://podlingname.incubator.apache.org/# or #http://podlingname.apache.org/#
 - Every podling should maintain an incubation status file under: #http://incubator.apache.org/projects/podlingname.html# (this is generated).
 
@@ -39,8 +39,7 @@ Graduation, unless you obtain prior approval from the Incubator PMC.
 === Creating a Good Podling Site
 
 Apache Project Web Sites typically include several standard pages.
-Each page has a navigation bar on the left and a project
-standard header that includes the Incubator graphic.
+Each page has a navigation bar and a project standard header that includes the Incubator graphic.
 
 You can establish the website during incubation, and migrate it
 after incubation to a permanent place in the TLP (Top Level Project) home.
@@ -64,8 +63,7 @@ with, you can probably continue to use it. If you do not, consider using
 the Jekyll based link:https://github.com/apache/apache-website-template[Apache website template].
 
 Regardless of which tool you use, maintain the web site in the podling's svn/git repository, and include instructions for using the site generation tool.
-This simplifies the process of site generation and lets any podling committer make changes
-to the siter. Check the generated site into svn/git.
+This simplifies the process of site generation and lets any podling committer make changes to the site. Check the generated site into svn/git.
 
 === Publishing Your Website
 
