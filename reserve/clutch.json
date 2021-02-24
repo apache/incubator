@@ -94,11 +94,15 @@
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-age.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/age/KEYS",
       "svn": "",
-      "tracker": "https://issues.apache.org/jira/browse/ageold",
+      "tracker": "",
       "wiki": "",
       "www": "http://age.incubator.apache.org"
     },
     "zFixMeList": [
+      [
+        "10",
+        "Has not provided an issue tracker link"
+      ],
       [
         "18",
         "Has not provided a wiki link"
@@ -210,11 +214,16 @@
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-annotator.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/annotator/KEYS",
       "svn": "",
-      "tracker": "https://issues.apache.org/jira/browse/ANNO",
+      "tracker": "",
       "wiki": "https://cwiki.apache.org/confluence/display/ANNO",
       "www": "http://annotator.incubator.apache.org"
     },
-    "zFixMeList": []
+    "zFixMeList": [
+      [
+        "10",
+        "Has not provided an issue tracker link"
+      ]
+    ]
   },
   "bluemarlin": {
     "description": "BlueMarlin will develop a web service to add intelligence functionality to a plain ad system.",
@@ -578,11 +587,15 @@
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-crail.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/crail/KEYS",
       "svn": "",
-      "tracker": "https://issues.apache.org/jira/browse/CRAIL",
+      "tracker": "",
       "wiki": "",
       "www": "http://crail.incubator.apache.org"
     },
     "zFixMeList": [
+      [
+        "10",
+        "Has not provided an issue tracker link"
+      ],
       [
         "18",
         "Has not provided a wiki link"
@@ -774,11 +787,16 @@
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-datalab.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/datalab/KEYS",
       "svn": "",
-      "tracker": "https://issues.apache.org/jira/projects/DATALAB",
+      "tracker": "",
       "wiki": "https://cwiki.apache.org/confluence/display/DATALAB",
       "www": "http://datalab.incubator.apache.org"
     },
-    "zFixMeList": []
+    "zFixMeList": [
+      [
+        "10",
+        "Has not provided an issue tracker link"
+      ]
+    ]
   },
   "dolphinscheduler": {
     "description": "DolphinScheduler is a distributed ETL scheduling engine with powerful DAG visualization interface..",
@@ -1221,7 +1239,7 @@
       "git": "",
       "keys": "",
       "svn": "",
-      "tracker": "https://issues.apache.org/jira/projects/eventmesh",
+      "tracker": "",
       "wiki": "",
       "www": ""
     },
@@ -1229,6 +1247,10 @@
       [
         "01",
         "No project LDAP"
+      ],
+      [
+        "10",
+        "Has not provided an issue tracker link"
       ],
       [
         "18",
@@ -1558,7 +1580,7 @@
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-flagon.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/flagon/KEYS",
       "svn": "",
-      "tracker": "https://issues.apache.org/jira/browse/flagon",
+      "tracker": "",
       "wiki": "https://cwiki.apache.org/confluence/display/flagon",
       "www": "http://flagon.incubator.apache.org"
     },
@@ -1578,6 +1600,10 @@
       [
         "42",
         "Distribution is missing incubator/incubating in file name apache-senssoft-useralejs-1.0.0-src.zip.asc"
+      ],
+      [
+        "10",
+        "Has not provided an issue tracker link"
       ],
       [
         "45",
@@ -1950,11 +1976,15 @@
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-hivemall.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/hivemall/KEYS",
       "svn": "",
-      "tracker": "https://issues.apache.org/jira/browse/HIVEMALL",
+      "tracker": "",
       "wiki": "https://cwiki.apache.org/confluence/display/HIVEMALL",
       "www": "http://hivemall.incubator.apache.org"
     },
     "zFixMeList": [
+      [
+        "10",
+        "Has not provided an issue tracker link"
+      ],
       [
         "31",
         "ASF Foundation link is missing form website"
@@ -2102,11 +2132,15 @@
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-hop.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/hop/KEYS",
       "svn": "",
-      "tracker": "https://issues.apache.org/jira/projects/HOP/issues",
+      "tracker": "",
       "wiki": "",
       "www": "https://hop.incubator.apache.org"
     },
     "zFixMeList": [
+      [
+        "10",
+        "Has not provided an issue tracker link"
+      ],
       [
         "18",
         "Has not provided a wiki link"
@@ -2545,11 +2579,15 @@
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-marvin.git;a=tree;hb=HEAD",
       "keys": "",
       "svn": "",
-      "tracker": "https://issues.apache.org/jira/browse/MARVIN",
+      "tracker": "",
       "wiki": "",
       "www": "http://marvin.incubator.apache.org"
     },
     "zFixMeList": [
+      [
+        "10",
+        "Has not provided an issue tracker link"
+      ],
       [
         "18",
         "Has not provided a wiki link"
@@ -3088,7 +3126,7 @@
         {
           "description": "Apache MXNet  (Incubating)",
           "last_update_int": 1614113775,
-          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
         }
       ],
       [
@@ -3119,8 +3157,8 @@
         "incubator-mxnet-site",
         {
           "description": "Apache MXNet Site",
-          "last_update_int": 1614111006,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_int": 1614127534,
+          "last_update_txt": "<span style='color: #070;'>&lt;30 minutes ago</span>"
         }
       ],
       [
@@ -3141,11 +3179,15 @@
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-mxnet.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/mxnet/KEYS",
       "svn": "",
-      "tracker": "https://issues.apache.org/jira",
+      "tracker": "",
       "wiki": "",
       "www": "http://mxnet.incubator.apache.org"
     },
     "zFixMeList": [
+      [
+        "10",
+        "Has not provided an issue tracker link"
+      ],
       [
         "18",
         "Has not provided a wiki link"
@@ -3301,11 +3343,15 @@
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-nemo.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/nemo/KEYS",
       "svn": "",
-      "tracker": "https://issues.apache.org/jira/browse/NEMO",
+      "tracker": "",
       "wiki": "http://cwiki.apache.org/confluence/display/NEMO",
       "www": "http://nemo.incubator.apache.org"
     },
     "zFixMeList": [
+      [
+        "10",
+        "Has not provided an issue tracker link"
+      ],
       [
         "31",
         "ASF Foundation link is missing form website"
@@ -3731,8 +3777,8 @@
         "incubator-nuttx-website",
         {
           "description": "Apache NuttX Website",
-          "last_update_int": 1614041245,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_int": 1614127721,
+          "last_update_txt": "<span style='color: #070;'>&lt;15 minutes ago</span>"
         }
       ]
     ],
@@ -4069,11 +4115,15 @@
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-pegasus.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/pegasus/KEYS",
       "svn": "",
-      "tracker": "https://issues.apache.org/jira/projects/PEGASUS",
+      "tracker": "",
       "wiki": "https://cwiki.apache.org/confluence/display/pegasus",
       "www": "http://pegasus.incubator.apache.org"
     },
     "zFixMeList": [
+      [
+        "10",
+        "Has not provided an issue tracker link"
+      ],
       [
         "32",
         "ASF Events link is missing from website"
@@ -4125,6 +4175,7 @@
         "mcvsubbu",
         "nehapawar",
         "olamy",
+        "omalley",
         "siddteotia",
         "snlee",
         "sunithabeeram",
@@ -4132,10 +4183,10 @@
         "xhsun",
         "xiangfu"
       ],
-      "numberCommitters": 24,
+      "numberCommitters": 25,
       "numberCommittersNew": 0,
       "numberPMCEquals": false,
-      "numberPMCMembers": 10,
+      "numberPMCMembers": 11,
       "owners": [
         "felixcheung",
         "jackie",
@@ -4145,6 +4196,7 @@
         "mcvsubbu",
         "nehapawar",
         "olamy",
+        "omalley",
         "snlee",
         "xiangfu"
       ]
@@ -4165,10 +4217,6 @@
       [
         "Felix Cheung",
         "felixcheung"
-      ],
-      [
-        "Owen O'Malley",
-        "omalley"
       ]
     ],
     "news": [
@@ -4282,7 +4330,7 @@
         {
           "description": "Apache Pinot",
           "last_update_int": 1614120845,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
         }
       ],
       [
@@ -4319,11 +4367,15 @@
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-pinot.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/pinot/KEYS",
       "svn": "",
-      "tracker": "https://issues.apache.org/jira/browse/PINOT",
+      "tracker": "",
       "wiki": "",
       "www": "http://pinot.incubator.apache.org"
     },
     "zFixMeList": [
+      [
+        "10",
+        "Has not provided an issue tracker link"
+      ],
       [
         "18",
         "Has not provided a wiki link"
@@ -4749,7 +4801,7 @@
         {
           "description": "Apache Ratis Thirdparty",
           "last_update_int": 1611665814,
-          "last_update_txt": "28 days ago"
+          "last_update_txt": "29 days ago"
         }
       ]
     ],
@@ -4762,11 +4814,15 @@
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-ratis.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/ratis/KEYS",
       "svn": "",
-      "tracker": "https://issues.apache.org/jira/browse/ratis",
+      "tracker": "",
       "wiki": "https://cwiki.apache.org/confluence/display/RATIS",
       "www": "http://ratis.incubator.apache.org"
     },
     "zFixMeList": [
+      [
+        "10",
+        "Has not provided an issue tracker link"
+      ],
       [
         "32",
         "ASF Events link is missing from website"
@@ -4886,11 +4942,15 @@
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-samoa.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/samoa/KEYS",
       "svn": "",
-      "tracker": "https://issues.apache.org/jira/browse/SAMOA",
+      "tracker": "",
       "wiki": "",
       "www": "http://samoa.incubator.apache.org"
     },
     "zFixMeList": [
+      [
+        "10",
+        "Has not provided an issue tracker link"
+      ],
       [
         "18",
         "Has not provided a wiki link"
@@ -5065,11 +5125,15 @@
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-sdap-doms.git;a=tree;hb=HEAD",
       "keys": "",
       "svn": "",
-      "tracker": "https://issues.apache.org/jira/browse/sdap",
+      "tracker": "",
       "wiki": "https://cwiki.apache.org/confluence/display/sdap",
       "www": "http://sdap.incubator.apache.org"
     },
     "zFixMeList": [
+      [
+        "10",
+        "Has not provided an issue tracker link"
+      ],
       [
         "31",
         "ASF Foundation link is missing form website"
@@ -5175,16 +5239,16 @@
         "incubator-sedona",
         {
           "description": "Apache Sedona (incubating)",
-          "last_update_int": 1614114585,
-          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
+          "last_update_int": 1614127487,
+          "last_update_txt": "<span style='color: #070;'>&lt;30 minutes ago</span>"
         }
       ],
       [
         "incubator-sedona-website",
         {
           "description": "Apache Sedona Website",
-          "last_update_int": 1613347150,
-          "last_update_txt": "9 days ago"
+          "last_update_int": 1614127549,
+          "last_update_txt": "<span style='color: #070;'>&lt;30 minutes ago</span>"
         }
       ]
     ],
@@ -5197,11 +5261,15 @@
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-sedona.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/sedona/KEYS",
       "svn": "",
-      "tracker": "https://issues.apache.org/jira/projects/SEDONA/issues",
+      "tracker": "",
       "wiki": "",
       "www": "http://sedona.apache.org"
     },
     "zFixMeList": [
+      [
+        "10",
+        "Has not provided an issue tracker link"
+      ],
       [
         "18",
         "Has not provided a wiki link"
@@ -5304,11 +5372,15 @@
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-spot.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/spot/KEYS",
       "svn": "",
-      "tracker": "https://issues.apache.org/jira/browse/SPOT",
+      "tracker": "",
       "wiki": "",
       "www": "http://spot.incubator.apache.org"
     },
     "zFixMeList": [
+      [
+        "10",
+        "Has not provided an issue tracker link"
+      ],
       [
         "18",
         "Has not provided a wiki link"
@@ -5432,7 +5504,7 @@
         {
           "description": "Apache Streampipes",
           "last_update_int": 1614113596,
-          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
         }
       ],
       [
@@ -5477,11 +5549,16 @@
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-streampipes.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/streampipes/KEYS",
       "svn": "",
-      "tracker": "https://issues.apache.org/jira/browse/STREAMPIPES",
+      "tracker": "",
       "wiki": "https://cwiki.apache.org/confluence/display/STREAMPIPES",
       "www": "https://streampipes.incubator.apache.org"
     },
-    "zFixMeList": []
+    "zFixMeList": [
+      [
+        "10",
+        "Has not provided an issue tracker link"
+      ]
+    ]
   },
   "teaclave": {
     "description": "Teaclave is a universal secure computing platform.",
@@ -5601,11 +5678,15 @@
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-teaclave.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/teaclave/KEYS",
       "svn": "",
-      "tracker": "https://issues.apache.org/jira/browse/XXX",
+      "tracker": "",
       "wiki": "",
       "www": "https://teaclave.incubator.apache.org"
     },
     "zFixMeList": [
+      [
+        "10",
+        "Has not provided an issue tracker link"
+      ],
       [
         "18",
         "Has not provided a wiki link"
@@ -5799,7 +5880,7 @@
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-toree.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/toree/KEYS",
       "svn": "",
-      "tracker": "https://issues.apache.org/jira/projects/TOREE",
+      "tracker": "",
       "wiki": "",
       "www": "https://toree.apache.org"
     },
@@ -5819,6 +5900,10 @@
       [
         "42",
         "Distribution is missing incubator/incubating in file name toree-0.4.0.tar.gz.asc"
+      ],
+      [
+        "10",
+        "Has not provided an issue tracker link"
       ],
       [
         "18",
@@ -5939,11 +6024,15 @@
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-training.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/training/KEYS",
       "svn": "",
-      "tracker": "https://issues.apache.org/jira/browse/TRAINING",
+      "tracker": "",
       "wiki": "http://cwiki.apache.org/confluence/display/TRAINING",
       "www": "http://training.incubator.apache.org"
     },
     "zFixMeList": [
+      [
+        "10",
+        "Has not provided an issue tracker link"
+      ],
       [
         "32",
         "ASF Events link is missing from website"
@@ -6731,11 +6820,15 @@
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-tuweni.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/tuweni/KEYS",
       "svn": "",
-      "tracker": "https://issues.apache.org/jira/browse/TUWENI",
+      "tracker": "",
       "wiki": "http://cwiki.apache.org/confluence/display/TUWENI",
       "www": "http://tuweni.apache.org"
     },
     "zFixMeList": [
+      [
+        "10",
+        "Has not provided an issue tracker link"
+      ],
       [
         "32",
         "ASF Events link is missing from website"
@@ -7210,11 +7303,15 @@
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-yunikorn-core.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/yunikorn/KEYS",
       "svn": "",
-      "tracker": "https://issues.apache.org/jira/projects/YUNIKORN/issues",
+      "tracker": "",
       "wiki": "",
       "www": "http://yunikorn.apache.org"
     },
     "zFixMeList": [
+      [
+        "10",
+        "Has not provided an issue tracker link"
+      ],
       [
         "18",
         "Has not provided a wiki link"
