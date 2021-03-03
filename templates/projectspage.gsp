@@ -72,6 +72,7 @@
 	   <th>Description</th>
 	   <th>Apache Sponsor</th>
 	   <th>Mentors</th>
+	   <th>Aliases</th>
 	   <th>Start&nbsp;Date&nbsp;</th>
 	   <th>End&nbsp;Date&nbsp;&nbsp;&nbsp;</th>
 	</tr>
@@ -108,6 +109,7 @@
 		     	sep=", "
 		} %>
 	   </td>
+	   <td>${podling.@resourceAliases}</td>
 	   <td>${podling.@startdate}</td>
 	   <td>${podling.@enddate}</td>
 	</tr>
@@ -126,6 +128,7 @@
 	   <th>Description</th>
 	   <th>Apache Sponsor</th>
 	   <th>Mentors</th>
+	   <th>Aliases</th>
 	   <th>Start&nbsp;Date&nbsp;</th>
 	   <th>End&nbsp;Date&nbsp;&nbsp;&nbsp;</th>
 	</tr>
@@ -159,6 +162,7 @@
 		     	sep=", "
 		} %>
 	   </td>
+	   <td>${podling.@resourceAliases}</td>
 	   <td>${podling.@startdate}</td>
 	   <td>${podling.@enddate}</td>
 	</tr>
