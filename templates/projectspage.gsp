@@ -33,6 +33,7 @@
 	   <th>Description</th>
 	   <th>Sponsor (Champion)</th>
 	   <th>Mentors</th>
+	   <th>Aliases</th>
 	   <th>Start&nbsp;Date&nbsp;</th>
 	</tr>
         <% podlings.toSorted(sortedName).each { podling ->
@@ -53,6 +54,7 @@
 		     	sep=", "
 		} %>
 	   </td>
+	   <td>${podling.@resourceAliases}</td>
 	   <td>${podling.@startdate}</td>
 	</tr>
         <%
