@@ -149,10 +149,10 @@ Estimated Reading Time: <span class="eta"></span>
 <p><div id="toc" class="toc">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
-<li><a href="#set_up_podling_source_repository">Set Up Podling Source Repository</a>
+<li><a href="#set_up_a_podling_source_repository">Set up a Podling Source Repository</a>
 <ul class="sectlevel2">
-<li><a href="#set_up_git_repository">Set up GIT Repository</a></li>
-<li><a href="#set_up_svn_repository">Set Up SVN Repository</a></li>
+<li><a href="#set_up_a_git_repository">Set up a Git Repository</a></li>
+<li><a href="#set_up_an_svn_repository">Set up an SVN Repository</a></li>
 </ul>
 </li>
 <li><a href="#authorize_committers">Authorize Committers</a></li>
@@ -160,32 +160,32 @@ Estimated Reading Time: <span class="eta"></span>
 </ul>
 </div>
 <div class="sect1">
-<h2 id="set_up_podling_source_repository">Set Up Podling Source Repository</h2>
+<h2 id="set_up_a_podling_source_repository">Set up a Podling Source Repository</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>The most important responsibility for mentors is to set up the
-podling source repository. Podlings can choose between svn and
-git for source control.  For git, podlings may use repositories hosted at Apache, or within GitHub in the Apache organization.</p>
+podling source repository. Podlings can choose between Subversion and
+Git for source control.  For Git, podlings may use repositories hosted at Apache, or within GitHub in the Apache organization.</p>
 </div>
 <div class="sect2">
-<h3 id="set_up_git_repository">Set up GIT Repository</h3>
+<h3 id="set_up_a_git_repository">Set up a Git Repository</h3>
 <div class="paragraph">
-<p>Requests for new git repos are done via <a href="https://selfserve.apache.org/">selfserve.apache.org</a>.
-This service will initialize a new repository, setup github mirrors and enable integrations for that repository.</p>
+<p>Request a new git repository via <a href="https://selfserve.apache.org/">selfserve.apache.org</a>.
+This service will initialize a new repository, set up github mirrors and enable integrations for that repository.</p>
 </div>
 <div class="paragraph">
 <p>Historically, the Foundation&#8217;s policy
 is to grant access to git repositories broadly to the incubator group,
 not narrowly podling-by-podling. So, once the repository
-exists, incubator group members gain access without further work.  Once
+exists, incubator group members gain access without further work. Once
 the podling graduates, a dedicated ldap group will be created to manage
-access and only those members will be given access.</p>
+access and only those members will have access.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="set_up_svn_repository">Set Up SVN Repository</h3>
+<h3 id="set_up_an_svn_repository">Set up an SVN Repository</h3>
 <div class="paragraph">
-<p>If the podling chooses svn, you must create the
+<p>If the podling chooses SVN, you must create the
 repository and give read/write access to the repository
 to all the committers for the podling. This involves requesting
 new committer accounts and granting access to mentors and existing
@@ -193,16 +193,16 @@ Apache committers.</p>
 </div>
 <div class="paragraph">
 <p>Setting up a podling subversion repository has two steps: Creating the SVN space
-and configuring the authorization (in both svn and git).</p>
+and configuring the authorization (in both SVN and Git).</p>
 </div>
 <div class="paragraph">
-<p>Create the workspace in svn. This requires commit access to the
-incubator svn repository. Podlings are given their own subdirectory
-of the incubator svn repository. To create the podling subdirectory,
-the mentor executes the svn command to create a remote directory: <code>svn mkdir <a href="https://svn.apache.org/repos/asf/incubator/{podling}" class="bare">https://svn.apache.org/repos/asf/incubator/{podling}</a></code></p>
+<p>Create the workspace in SVN. This requires commit access to the
+incubator SVN repository. Each podling has its own subdirectory
+of the incubator SVN repository. To create the podling subdirectory,
+the mentor executes the SVN command to create a remote directory: <code>svn mkdir <a href="https://svn.apache.org/repos/asf/incubator/{podling}" class="bare">https://svn.apache.org/repos/asf/incubator/{podling}</a></code>.</p>
 </div>
 <div class="paragraph">
-<p>Raise an INFRA JIRA to get the SVN auth file updated.</p>
+<p>Raise an INFRA Jira ticket to get the SVN auth file updated.</p>
 </div>
 <div class="paragraph">
 <p>This is a convenient time to add <a href="#Authorize+Committers">authorization</a> for committers
@@ -210,8 +210,7 @@ who have accounts.</p>
 </div>
 <div class="paragraph">
 <p><a href="#who-auth-karma">Authorization</a> karma is restricted. If no Mentor
-has this karma then post an email to IPMC private list requesting that this
-is actioned.</p>
+has this karma, post an email to IPMC private list requesting it.</p>
 </div>
 </div>
 </div>
@@ -233,23 +232,23 @@ committer:</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Ask developers to send their ICLA to <a href="mailto:secretary@apache.org">secretary@apache.org</a> according to
-<a href="http://apache.org/licenses/#submitting">standard procedure.</a>
-Note that ICLA forms must be signed, either by hand or by digital signature.</p>
+<p>Ask developers to send their ICLAs to <code>secretary@apache.org</code> according to
+<a href="http://apache.org/licenses/#submitting">standard procedure</a>.
+Note that you must sign ICLA forms, either by hand or by digital signature.</p>
 </li>
 <li>
-<p>Developers should choose an Apache id that is not already listed
-<a href="http://people.apache.org/committer-index.html">here.</a></p>
+<p>Developers should choose an Apache ID that is not already listed
+<a href="http://people.apache.org/committer-index.html">here</a>.</p>
 </li>
 <li>
-<p>Developers should enter their preferred Apache id on the ICLA
+<p>Developers should enter their preferred Apache ID on the ICLA
 and enter the podling name in the "notify" field of the ICLA.</p>
 </li>
 </ul>
 </div>
 </li>
 <li>
-<p>The committer is in the list of original committers in the
+<p>If the committer is in the list of original committers in the
 podling proposal to the incubator and is already an Apache committer, only
 <a href="#who-auth-karma">incubator authorization</a> is required.</p>
 </li>
