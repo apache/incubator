@@ -27,6 +27,7 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">-->
     <link rel="shortcut icon" href="https://www.apache.org/favicon.ico">
+    <script src="https://www.apachecon.com/event-images/snippet.js"></script>
   </head>
   <body onload="prettyPrint()">
     <div id="wrap">
