@@ -92,8 +92,11 @@
       <div class="row">
         <div class="col-md-4 vcenter"><a href="https://www.apache.org/"><img src="https://www.apache.org/img/asf_logo.png" alt="The Apache Software Foundation" border="0" style="margin-top: 2px" width="200"></a></div>
         <div class="col-md-4 vcenter"><a href="/"><img src="https://incubator.apache.org/images/incubator_feather_egg_logo_sm.png" alt="The Apache Software Foundation Incubator" border="0" style="margin-top: 2px" width="256"></a></div>
-        <div class="col-md-4 vcenter"><a href="https://www.apache.org/foundation/contributing.html"><img src="https://www.apache.org/images/SupportApache-small.png" style="margin-left: 92px" height="64" width="64"></a></div>
-	<div class="col-md-4 vcenter"><a class="acevent" data-format="square"></a><a class="acevent" data-format="square" data-mode="light" data-event="acasia2021"></a></div>
+        <div class="col-md-4 vcenter">
+	    <a href="https://www.apache.org/foundation/contributing.html"><img src="https://www.apache.org/images/SupportApache-small.png" style="margin-left: 92px" height="64" width="64">
+	    &nbsp;<a class="acevent" data-format="square"></a>
+	    &nbsp;<a class="acevent" data-format="square" data-mode="light" data-event="acasia2021"></a>
+	</div>
       </div>
     </div>
     <div class="top-container container">
