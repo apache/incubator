@@ -18,48 +18,47 @@ Apache Incubator PMC
 :toc:
 :imagesdir: ../images/
 
-== Set Up Podling Source Repository
+== Set up a Podling Source Repository
 
 The most important responsibility for mentors is to set up the
-podling source repository. Podlings can choose between svn and
-git for source control.  For git, podlings may use repositories hosted at Apache, or within GitHub in the Apache organization.
+podling source repository. Podlings can choose between Subversion and
+Git for source control.  For Git, podlings may use repositories hosted at Apache, or within GitHub in the Apache organization.
 
-=== Set up GIT Repository
+=== Set up a Git Repository
 
-Requests for new git repos are done via link:https://selfserve.apache.org/[selfserve.apache.org].
-This service will initialize a new repository, setup github mirrors and enable integrations for that repository.
+Request a new git repository via link:https://selfserve.apache.org/[selfserve.apache.org].
+This service will initialize a new repository, set up github mirrors and enable integrations for that repository.
 
 Historically, the Foundation's policy
 is to grant access to git repositories broadly to the incubator group,
 not narrowly podling-by-podling. So, once the repository
-exists, incubator group members gain access without further work.  Once
+exists, incubator group members gain access without further work. Once
 the podling graduates, a dedicated ldap group will be created to manage
-access and only those members will be given access.
+access and only those members will have access.
 
-=== Set Up SVN Repository
+=== Set up an SVN Repository
 
-If the podling chooses svn, you must create the
+If the podling chooses SVN, you must create the
 repository and give read/write access to the repository
 to all the committers for the podling. This involves requesting
 new committer accounts and granting access to mentors and existing
 Apache committers.
 
 Setting up a podling subversion repository has two steps: Creating the SVN space
-and configuring the authorization (in both svn and git).
+and configuring the authorization (in both SVN and Git).
 
-Create the workspace in svn. This requires commit access to the
-incubator svn repository. Podlings are given their own subdirectory
-of the incubator svn repository. To create the podling subdirectory,
-the mentor executes the svn command to create a remote directory: `svn mkdir https://svn.apache.org/repos/asf/incubator/{podling}`
+Create the workspace in SVN. This requires commit access to the
+incubator SVN repository. Each podling has its own subdirectory
+of the incubator SVN repository. To create the podling subdirectory,
+the mentor executes the SVN command to create a remote directory: `svn mkdir https://svn.apache.org/repos/asf/incubator/{podling}`.
 
-Raise an INFRA JIRA to get the SVN auth file updated.
+Raise an INFRA Jira ticket to get the SVN auth file updated.
 
 This is a convenient time to add link:#Authorize+Committers[authorization] for committers
 who have accounts.
 
 link:#who-auth-karma[Authorization] karma is restricted. If no Mentor
-has this karma then post an email to IPMC private list requesting that this
-is actioned.
+has this karma, post an email to IPMC private list requesting it.
 
 == Authorize Committers
 
@@ -70,14 +69,14 @@ the new committer is in the list of original committers:
 - The committer is in the list of original committers in the
 podling proposal to the incubator and is not already an Apache
 committer:
-** Ask developers to send their ICLA to secretary@apache.org according to
-link:http://apache.org/licenses/#submitting[standard procedure.]
-Note that ICLA forms must be signed, either by hand or by digital signature.
-** Developers should choose an Apache id that is not already listed
-link:http://people.apache.org/committer-index.html[here.]
-** Developers should enter their preferred Apache id on the ICLA
+** Ask developers to send their ICLAs to `secretary@apache.org` according to
+link:http://apache.org/licenses/#submitting[standard procedure].
+Note that you must sign ICLA forms, either by hand or by digital signature.
+** Developers should choose an Apache ID that is not already listed
+link:http://people.apache.org/committer-index.html[here].
+** Developers should enter their preferred Apache ID on the ICLA
 and enter the podling name in the "notify" field of the ICLA.
-- The committer is in the list of original committers in the
+- If the committer is in the list of original committers in the
 podling proposal to the incubator and is already an Apache committer, only
 link:#who-auth-karma[incubator authorization] is required.
 - The committer was voted by the PPMC and approved by the incubator PMC:
