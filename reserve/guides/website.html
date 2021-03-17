@@ -27,10 +27,12 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">-->
     <link rel="shortcut icon" href="https://www.apache.org/favicon.ico">
+    <script src="https://www.apachecon.com/event-images/snippet.js"></script>
   </head>
   <body onload="prettyPrint()">
     <div id="wrap">
    
+
 
 	<!-- Fixed navbar -->
     <div class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -125,11 +127,16 @@
     <div class="container">
       <div class="row">
         <div class="col-md-4 vcenter"><a href="https://www.apache.org/"><img src="https://www.apache.org/img/asf_logo.png" alt="The Apache Software Foundation" border="0" style="margin-top: 2px" width="200"></a></div>
-          <div class="col-md-4 vcenter"><a href="/"><img src="https://incubator.apache.org/images/incubator_feather_egg_logo_sm.png" alt="The Apache Software Foundation Incubator" border="0" style="margin-top: 2px" width="256"></a></div>
-          <div class="col-md-4 vcenter"><a href="https://www.apache.org/foundation/contributing.html"><img src="https://www.apache.org/images/SupportApache-small.png" style="margin-left: 92px" height="64" width="64"></a></div>
+        <div class="col-md-4 vcenter"><a href="/"><img src="https://incubator.apache.org/images/incubator_feather_egg_logo_sm.png" alt="The Apache Software Foundation Incubator" border="0" style="margin-top: 2px" width="256"></a></div>
+        <div class="col-md-4 vcenter">
+	    <a href="https://www.apache.org/foundation/contributing.html"><img src="https://www.apache.org/images/SupportApache-small.png" height="64" width="64">
+	    &nbsp;<a class="acevent" data-format="square" data-width="100"></a>
+	    &nbsp;<a class="acevent" data-format="square" data-mode="light" data-event="acasia2021" data-width="100"></a>
+	</div>
       </div>
     </div>
     <div class="top-container container">
+
 
 <div class="page-header">
     <h1>Guide :: Updating the top-level Incubator website</h1>
@@ -153,11 +160,11 @@ Estimated Reading Time: <span class="eta"></span>
 <h2 id="repository">Repository</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>The Incubator website is generated from the content at <a href="https://github.com/apache/incubator" class="bare">https://github.com/apache/incubator</a> , see instructions
+<p>The Incubator website is generated from the content <a href="https://github.com/apache/incubator">here</a>. See instructions
 there for how to edit and publish the website.</p>
 </div>
 <div class="paragraph">
-<p>Website build failures are reported to <strong>cvs AT incubator.apache.org</strong></p>
+<p>The system reports website build failures to <strong>cvs AT incubator.apache.org</strong>.</p>
 </div>
 </div>
 </div>
@@ -165,13 +172,13 @@ there for how to edit and publish the website.</p>
 <h2 id="maintaining_status_files">Maintaining Status files</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Podling status files are maintained in SVN, and you should continue to maintain them at <a href="https://svn.apache.org/repos/asf/incubator/public/trunk/content/projects/" class="bare">https://svn.apache.org/repos/asf/incubator/public/trunk/content/projects/</a></p>
+<p>Podling status files are in SVN, and you should continue to maintain them at <a href="https://svn.apache.org/repos/asf/incubator/public/trunk/content/projects/" class="bare">https://svn.apache.org/repos/asf/incubator/public/trunk/content/projects/</a> .</p>
 </div>
 <div class="paragraph">
 <p>Podling status files are in a particular XML format which the Clutch Analysis expects.</p>
 </div>
 <div class="paragraph">
-<p>Extra podling yaml files that communicate with Whimsy are also maintained in SVN, and you should maintain them at <a href="https://svn.apache.org/repos/asf/incubator/public/trunk/content/podlings/" class="bare">https://svn.apache.org/repos/asf/incubator/public/trunk/content/podlings/</a></p>
+<p>Extra podling yaml files that communicate with Whimsy are also in SVN, and you should maintain them at <a href="https://svn.apache.org/repos/asf/incubator/public/trunk/content/podlings/" class="bare">https://svn.apache.org/repos/asf/incubator/public/trunk/content/podlings/</a> .</p>
 </div>
 </div>
 </div>
@@ -179,7 +186,7 @@ there for how to edit and publish the website.</p>
 <h2 id="ip_clearance">IP Clearance</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>IP Clearance is still maintained in SVN, and you should continue to maintain them at <a href="https://svn.apache.org/repos/asf/incubator/public/trunk/content/ip-clearance/" class="bare">https://svn.apache.org/repos/asf/incubator/public/trunk/content/ip-clearance/</a></p>
+<p>IP Clearance is in SVN, and you should continue to maintain it at <a href="https://svn.apache.org/repos/asf/incubator/public/trunk/content/ip-clearance/" class="bare">https://svn.apache.org/repos/asf/incubator/public/trunk/content/ip-clearance/</a> .</p>
 </div>
 </div>
 </div>
@@ -188,10 +195,10 @@ there for how to edit and publish the website.</p>
 <div class="sectionbody">
 <div class="paragraph">
 <p>The website metadata is built by this <a href="https://ci-builds.apache.org/job/Incubator/job/Incubator-SVN-Clutch-Analysis-part-1/">Clutch Jenkins job</a>,
-where the website is built by this <a href="https://ci-builds.apache.org/job/Incubator/job/Incubator-GIT-Site-part-2/">Website Jenkins job</a>,
-if you have karma you can trigger a build yourself.
+and the website is built by this <a href="https://ci-builds.apache.org/job/Incubator/job/Incubator-GIT-Site-part-2/">Website Jenkins job</a>.
+If you have karma you can trigger a build yourself.
 Commits to the git repo trigger builds automatically, and the website builds daily for other changes after midnight UTC.
-Commits to the svn repo trigger builds automatically as well using this <a href="https://ci-builds.apache.org/job/Incubator/job/Trigger-Clutch-Analysis-on-SVN-Change/">SVN Trigger Jenkins job</a>,</p>
+Commits to the svn repo trigger builds automatically as well using this <a href="https://ci-builds.apache.org/job/Incubator/job/Trigger-Clutch-Analysis-on-SVN-Change/">SVN Trigger Jenkins job</a>.</p>
 </div>
 </div>
 </div>
@@ -199,12 +206,12 @@ Commits to the svn repo trigger builds automatically as well using this <a href=
 <h2 id="help_wanted">Help Wanted!</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>People with commit access to the "incubator" git repository can edit the source
-documents in the "content" directory. That is any ASF Member and
-any committer on a current podling in incubation. So you can all help to
-keep your project&#8217;s Status page up-to-date, and if you find problems with
-the "guidelines" docs then can immediately fix them.
-If unsure, then discuss changes on the general mailing list.
+<p>People with commit access to the "incubator" git repository (any ASF Member and
+any committer to a current podling in incubation) can edit the source
+documents in the "content" directory. So you can all help to
+keep your project&#8217;s Status page up-to-date. If you find problems with
+the "guidelines" docs, you can immediately fix them.
+If you are unsure, discuss your proposed changes on the general mailing list.
 Note that the "policy" documents need special treatment and discussion on the general mailing list.</p>
 </div>
 <div class="paragraph">
