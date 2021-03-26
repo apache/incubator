@@ -88,8 +88,8 @@
     "resource": "age",
     "sponsor": "Incubator",
     "startDate": "2020-04-29",
-    "statusAge": 23,
-    "statusLastUpdated": "2021-03-03",
+    "statusAge": 0,
+    "statusLastUpdated": "2021-03-26",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-age.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/age/KEYS",
@@ -210,11 +210,16 @@
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-annotator.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/annotator/KEYS",
       "svn": "",
-      "tracker": "https://issues.apache.org/jira/browse/ANNO",
+      "tracker": "",
       "wiki": "https://cwiki.apache.org/confluence/display/ANNO",
       "www": "http://annotator.incubator.apache.org"
     },
-    "zFixMeList": []
+    "zFixMeList": [
+      [
+        "10",
+        "Has not provided an issue tracker link"
+      ]
+    ]
   },
   "bluemarlin": {
     "description": "BlueMarlin will develop a web service to add intelligence functionality to a plain ad system.",
@@ -953,8 +958,8 @@
         "incubator-dolphinscheduler",
         {
           "description": "Apache DolphinScheduler",
-          "last_update_int": 1616688413,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_int": 1616724814,
+          "last_update_txt": "<span style='color: #070;'>&lt;1 hour ago</span>"
         }
       ],
       [
@@ -1110,16 +1115,16 @@
         "incubator-doris",
         {
           "description": "Apache Doris (Incubating)",
-          "last_update_int": 1616722481,
-          "last_update_txt": "<span style='color: #070;'>&lt;5 minutes ago</span>"
+          "last_update_int": 1616723640,
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
         }
       ],
       [
         "incubator-doris-website",
         {
           "description": "Apache Doris Website Incubating",
-          "last_update_int": 1616636409,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_int": 1616723093,
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
         }
       ]
     ],
@@ -1556,7 +1561,7 @@
         {
           "description": "Apache SensSoft User Ale JS (Incubating)",
           "last_update_int": 1616554267,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
+          "last_update_txt": "2 days ago"
         }
       ]
     ],
@@ -3742,16 +3747,16 @@
         "incubator-nuttx",
         {
           "description": "Apache nuttx",
-          "last_update_int": 1616710493,
-          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
+          "last_update_int": 1616726675,
+          "last_update_txt": "<span style='color: #070;'>&lt;30 minutes ago</span>"
         }
       ],
       [
         "incubator-nuttx-apps",
         {
           "description": "Apache nuttx",
-          "last_update_int": 1616667225,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_int": 1616726755,
+          "last_update_txt": "<span style='color: #070;'>&lt;30 minutes ago</span>"
         }
       ],
       [
@@ -3885,7 +3890,7 @@
         {
           "description": "(Expiremental) Proper Debian packaging",
           "last_update_int": 1532960447,
-          "last_update_txt": "138 weeks ago"
+          "last_update_txt": "139 weeks ago"
         }
       ],
       [
@@ -3917,7 +3922,7 @@
         {
           "description": "Automatic PageSpeed optimization module for Nginx",
           "last_update_int": 1596465301,
-          "last_update_txt": "33 weeks ago"
+          "last_update_txt": "34 weeks ago"
         }
       ],
       [
@@ -4082,8 +4087,8 @@
         "incubator-pegasus",
         {
           "description": "Apache Pegasus",
-          "last_update_int": 1616576648,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
+          "last_update_int": 1616727663,
+          "last_update_txt": "<span style='color: #070;'>&lt;15 minutes ago</span>"
         }
       ],
       [
@@ -4809,7 +4814,7 @@
         {
           "description": "Apache Sedona (incubating)",
           "last_update_int": 1616720191,
-          "last_update_txt": "<span style='color: #070;'>&lt;1 hour ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
         }
       ],
       [
@@ -5089,7 +5094,7 @@
         {
           "description": "Apache Streampipes Installer",
           "last_update_int": 1615644881,
-          "last_update_txt": "12 days ago"
+          "last_update_txt": "13 days ago"
         }
       ],
       [
@@ -5213,7 +5218,7 @@
         {
           "description": "Apache MesaTee",
           "last_update_int": 1616717836,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
         }
       ],
       [
@@ -5733,7 +5738,7 @@
         {
           "description": "Apache TubeMQ",
           "last_update_int": 1616636312,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
         }
       ],
       [
@@ -6831,8 +6836,8 @@
         "incubator-yunikorn-release",
         {
           "description": "Apache yunikorn",
-          "last_update_int": 1612589505,
-          "last_update_txt": "7 weeks ago"
+          "last_update_int": 1616727285,
+          "last_update_txt": "<span style='color: #070;'>&lt;15 minutes ago</span>"
         }
       ],
       [
@@ -6840,7 +6845,7 @@
         {
           "description": "Apache incubator-yunikorn-scheduler-interface - incubating",
           "last_update_int": 1616639390,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
         }
       ],
       [
