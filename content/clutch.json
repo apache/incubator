@@ -188,8 +188,8 @@
         "incubator-annotator",
         {
           "description": "Apache Annotator",
-          "last_update_int": 1616980823,
-          "last_update_txt": "<span style='color: #070;'>&lt;30 minutes ago</span>"
+          "last_update_int": 1616987186,
+          "last_update_txt": "<span style='color: #070;'>&lt;15 minutes ago</span>"
         }
       ],
       [
@@ -953,8 +953,8 @@
         "incubator-dolphinscheduler",
         {
           "description": "Apache DolphinScheduler",
-          "last_update_int": 1616748144,
-          "last_update_txt": "3 days ago"
+          "last_update_int": 1616987266,
+          "last_update_txt": "<span style='color: #070;'>&lt;15 minutes ago</span>"
         }
       ],
       [
@@ -1104,7 +1104,7 @@
       }
     },
     "reportingGroup": "February, May, August, November",
-    "reportingMonthly": true,
+    "reportingMonthly": false,
     "repositories": [
       [
         "incubator-doris",
@@ -1933,7 +1933,7 @@
       }
     },
     "reportingGroup": "March, June, September, December",
-    "reportingMonthly": false,
+    "reportingMonthly": true,
     "repositories": [
       [
         "incubator-hivemall",
@@ -2689,7 +2689,7 @@
         {
           "description": "Apache Milagro MPC Multi-Party Computation",
           "last_update_int": 1611238592,
-          "last_update_txt": "9 weeks ago"
+          "last_update_txt": "10 weeks ago"
         }
       ],
       [
@@ -3144,8 +3144,8 @@
         "incubator-mxnet-site",
         {
           "description": "Apache MXNet Site",
-          "last_update_int": 1616964225,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_int": 1616986196,
+          "last_update_txt": "<span style='color: #070;'>&lt;30 minutes ago</span>"
         }
       ],
       [
@@ -3742,8 +3742,8 @@
         "incubator-nuttx",
         {
           "description": "Apache nuttx",
-          "last_update_int": 1616963695,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_int": 1616984648,
+          "last_update_txt": "<span style='color: #070;'>&lt;1 hour ago</span>"
         }
       ],
       [
@@ -3893,7 +3893,7 @@
         {
           "description": "Automatically exported from code.google.com/p/domain-registry...",
           "last_update_int": 1595512444,
-          "last_update_txt": "35 weeks ago"
+          "last_update_txt": "36 weeks ago"
         }
       ],
       [
@@ -4487,7 +4487,7 @@
       }
     },
     "reportingGroup": "January, April, July, October",
-    "reportingMonthly": true,
+    "reportingMonthly": false,
     "repositories": [
       [
         "incubator-ponymail",
@@ -4809,7 +4809,7 @@
         {
           "description": "Apache Sedona (incubating)",
           "last_update_int": 1616976886,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
         }
       ],
       [
@@ -4917,7 +4917,7 @@
       }
     },
     "reportingGroup": "March, June, September, December",
-    "reportingMonthly": false,
+    "reportingMonthly": true,
     "repositories": [
       [
         "incubator-spot",
@@ -5089,7 +5089,7 @@
         {
           "description": "Apache Streampipes Installer",
           "last_update_int": 1615644881,
-          "last_update_txt": "15 days ago"
+          "last_update_txt": "16 days ago"
         }
       ],
       [
@@ -5258,15 +5258,11 @@
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-teaclave.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/teaclave/KEYS",
       "svn": "",
-      "tracker": "",
+      "tracker": "https://issues.apache.org/jira/browse/XXX",
       "wiki": "",
       "www": "https://teaclave.incubator.apache.org"
     },
     "zFixMeList": [
-      [
-        "10",
-        "Has not provided an issue tracker link"
-      ],
       [
         "18",
         "Has not provided a wiki link"
@@ -6478,7 +6474,7 @@
     "rawReportingGroup": "group-3",
     "releases": [],
     "reportingGroup": "March, June, September, December",
-    "reportingMonthly": true,
+    "reportingMonthly": false,
     "repositories": [
       [
         "incubator-wayang",
