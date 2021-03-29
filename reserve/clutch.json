@@ -81,7 +81,7 @@
         {
           "description": "Apache age",
           "last_update_int": 1616426467,
-          "last_update_txt": "6 days ago"
+          "last_update_txt": "7 days ago"
         }
       ]
     ],
@@ -189,7 +189,7 @@
         {
           "description": "Apache Annotator",
           "last_update_int": 1616987186,
-          "last_update_txt": "<span style='color: #070;'>&lt;15 minutes ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt;30 minutes ago</span>"
         }
       ],
       [
@@ -210,11 +210,16 @@
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-annotator.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/annotator/KEYS",
       "svn": "",
-      "tracker": "https://issues.apache.org/jira/browse/ANNO",
+      "tracker": "",
       "wiki": "https://cwiki.apache.org/confluence/display/ANNO",
       "www": "http://annotator.incubator.apache.org"
     },
-    "zFixMeList": []
+    "zFixMeList": [
+      [
+        "10",
+        "Has not provided an issue tracker link"
+      ]
+    ]
   },
   "bluemarlin": {
     "description": "BlueMarlin will develop a web service to add intelligence functionality to a plain ad system.",
@@ -780,212 +785,6 @@
       "tracker": "https://issues.apache.org/jira/projects/DATALAB",
       "wiki": "https://cwiki.apache.org/confluence/display/DATALAB",
       "www": "http://datalab.incubator.apache.org"
-    },
-    "zFixMeList": []
-  },
-  "dolphinscheduler": {
-    "description": "DolphinScheduler is a distributed ETL scheduling engine with powerful DAG visualization interface..",
-    "fullName": "DolphinScheduler",
-    "hasMailListCommits": "http://mail-archives.apache.org/mod_mbox/dolphinscheduler-commits",
-    "hasMailListDev": "http://mail-archives.apache.org/mod_mbox/dolphinscheduler-dev",
-    "ldap": {
-      "members": [
-        "baoqiwu",
-        "break60",
-        "chenliang613",
-        "chenxingchun",
-        "chongchongzi",
-        "clay4megtr",
-        "djkevincr",
-        "eights",
-        "gabrywu",
-        "gaojun2048",
-        "guowei",
-        "jave",
-        "journey",
-        "kamaci",
-        "kirs",
-        "leonbao",
-        "lfyee",
-        "lgcareer",
-        "lidongdai",
-        "lilin",
-        "liuxiaochun",
-        "liwenhe",
-        "millionfor",
-        "shaofengshi",
-        "technoboy",
-        "wenhemin",
-        "wusheng",
-        "yangyichao",
-        "zhangboyi",
-        "zhukai"
-      ],
-      "numberCommitters": 30,
-      "numberCommittersNew": 16,
-      "numberPMCEquals": false,
-      "numberPMCMembers": 15,
-      "owners": [
-        "baoqiwu",
-        "chenliang613",
-        "djkevincr",
-        "gaojun2048",
-        "guowei",
-        "journey",
-        "kamaci",
-        "leonbao",
-        "lgcareer",
-        "lidongdai",
-        "liuxiaochun",
-        "millionfor",
-        "shaofengshi",
-        "technoboy",
-        "wusheng"
-      ]
-    },
-    "mentors": [
-      [
-        "Sheng Wu",
-        "wusheng"
-      ],
-      [
-        "ShaoFeng Shi",
-        "shaofengshi"
-      ],
-      [
-        "Liang Chen",
-        "chenliang613"
-      ],
-      [
-        "Furkan KAMACI",
-        "kamaci"
-      ],
-      [
-        "Kevin Ratnasekera",
-        "djkevincr"
-      ]
-    ],
-    "news": [
-      "2020-12-31 DolphinScheduler 1.3.4 released",
-      "2020-11-09 DolphinScheduler 1.3.3 released",
-      "2020-09-01 DolphinScheduler 1.3.2 released",
-      "2020-08-26 DolphinScheduler Maven Plugin 1.0.0 released",
-      "2020-07-13 DolphinScheduler 1.3.1 released",
-      "2020-06-28 DolphinScheduler 1.3.0 released",
-      "2020-10-27 New committer: Qiang Guo",
-      "2020-10-27 New committer: Yichao Yang",
-      "2020-05-19 New committer: Hemin Wen",
-      "2020-05-18 New committer: Shaojie Wu",
-      "2020-05-13 New committer: Shang Lou",
-      "2020-04-28 New ppmc: Xiaochun Liu",
-      "2020-04-28 New ppmc: Guo Jiwei",
-      "2020-04-23 New committer: Kai Zhu",
-      "2020-04-23 New committer: Wenhe Li",
-      "2020-02-24 DolphinScheduler 1.2.1 released",
-      "2020-02-15 New committer: Caibiao Xiang",
-      "2020-02-07 New committer: Xingchun Chen",
-      "2020-02-03 New committer: Kejia Chen",
-      "2020-02-03 New committer: Lin Li",
-      "2020-02-03 New committer: Cong Huang",
-      "2020-02-03 New committer: Li Huang",
-      "2020-02-03 New committer: Zongyao Zhang",
-      "2020-01-02 DolphinScheduler 1.2.0 released",
-      "2019-11-12 New committer: Guo Jiwei",
-      "2019-11-12 New committer: Xiaochun Liu",
-      "2019-08-29 Project enters incubation."
-    ],
-    "podlingName": "DolphinScheduler",
-    "rawReportingGroup": "group-2",
-    "releases": {
-      "apache-dolphinscheduler-incubating-1.3.3-dolphinscheduler-bin.tar.gz": {
-        "dtm": "10/29/2020",
-        "folder": "1.3.3",
-        "hash": "sha512",
-        "revision": "r42110",
-        "size": "129432529",
-        "user": "lgcareer"
-      },
-      "apache-dolphinscheduler-incubating-1.3.3-src.zip": {
-        "dtm": "10/29/2020",
-        "folder": "1.3.3",
-        "hash": "sha512",
-        "revision": "r42110",
-        "size": "3718816",
-        "user": "lgcareer"
-      },
-      "apache-dolphinscheduler-incubating-1.3.4-dolphinscheduler-bin.tar.gz": {
-        "dtm": "12/16/2020",
-        "folder": "1.3.4",
-        "hash": "sha512",
-        "revision": "r44987",
-        "size": "129475739",
-        "user": "lidongda"
-      },
-      "apache-dolphinscheduler-incubating-1.3.4-src.zip": {
-        "dtm": "12/16/2020",
-        "folder": "1.3.4",
-        "hash": "sha512",
-        "revision": "r44987",
-        "size": "3738472",
-        "user": "lidongda"
-      },
-      "apache-dolphinscheduler-incubating-1.3.5-dolphinscheduler-bin.tar.gz": {
-        "dtm": "02/07/2021",
-        "folder": "1.3.5",
-        "hash": "sha512",
-        "revision": "r45872",
-        "size": "129506127",
-        "user": "kirs"
-      },
-      "apache-dolphinscheduler-incubating-1.3.5-src.zip": {
-        "dtm": "02/07/2021",
-        "folder": "1.3.5",
-        "hash": "sha512",
-        "revision": "r45872",
-        "size": "3747599",
-        "user": "kirs"
-      }
-    },
-    "reportingGroup": "February, May, August, November",
-    "reportingMonthly": false,
-    "repositories": [
-      [
-        "incubator-dolphinscheduler",
-        {
-          "description": "Apache DolphinScheduler",
-          "last_update_int": 1616987266,
-          "last_update_txt": "<span style='color: #070;'>&lt;15 minutes ago</span>"
-        }
-      ],
-      [
-        "incubator-dolphinscheduler-maven-plugin",
-        {
-          "description": "Apache dolphinscheduler",
-          "last_update_int": 1597041513,
-          "last_update_txt": "33 weeks ago"
-        }
-      ],
-      [
-        "incubator-dolphinscheduler-website",
-        {
-          "description": "Apache DolphinScheduler website",
-          "last_update_int": 1616224375,
-          "last_update_txt": "9 days ago"
-        }
-      ]
-    ],
-    "resource": "dolphinscheduler",
-    "sponsor": "Incubator",
-    "startDate": "2019-08-29",
-    "statusAge": 76,
-    "statusLastUpdated": "2021-01-12",
-    "urls": {
-      "git": "https://gitbox.apache.org/repos/asf?p=incubator-dolphinscheduler.git;a=tree;hb=HEAD",
-      "keys": "https://downloads.apache.org/incubator/dolphinscheduler/KEYS",
-      "svn": "",
-      "tracker": "https://github.com/apache/incubator-dolphinscheduler/issues",
-      "wiki": "https://cwiki.apache.org/confluence/display/DOLPHINSCHEDULER",
-      "www": "http://dolphinscheduler.incubator.apache.org"
     },
     "zFixMeList": []
   },
@@ -3145,7 +2944,7 @@
         {
           "description": "Apache MXNet Site",
           "last_update_int": 1616986196,
-          "last_update_txt": "<span style='color: #070;'>&lt;30 minutes ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt;1 hour ago</span>"
         }
       ],
       [
@@ -3743,7 +3542,7 @@
         {
           "description": "Apache nuttx",
           "last_update_int": 1616984648,
-          "last_update_txt": "<span style='color: #070;'>&lt;1 hour ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
         }
       ],
       [
@@ -5258,11 +5057,15 @@
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-teaclave.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/teaclave/KEYS",
       "svn": "",
-      "tracker": "https://issues.apache.org/jira/browse/XXX",
+      "tracker": "",
       "wiki": "",
       "www": "https://teaclave.incubator.apache.org"
     },
     "zFixMeList": [
+      [
+        "10",
+        "Has not provided an issue tracker link"
+      ],
       [
         "18",
         "Has not provided a wiki link"
