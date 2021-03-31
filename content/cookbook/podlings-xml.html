@@ -145,13 +145,13 @@
 <div id="toc" class="toc">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
-<li><a href="#a_current_podling">A current podling:</a></li>
-<li><a href="#a_new_podling_reporting_monthly">A new podling reporting monthly:</a></li>
-<li><a href="#a_podling_graduated_to_an_apache_tlp">A podling graduated to an Apache TLP:</a></li>
-<li><a href="#a_podling_sponsored_by_a_pmc_that_graduated_into_the_pmc">A podling sponsored by a PMC that graduated into the PMC:</a></li>
-<li><a href="#a_podling_that_graduated_with_a_name_change">A podling that graduated with a name change:</a></li>
-<li><a href="#a_podling_that_retired">A podling that retired:</a></li>
-<li><a href="#a_podling_that_retired_and_moved_development_elsewhere">A podling that retired and moved development elsewhere:</a></li>
+<li><a href="#current">Current</a></li>
+<li><a href="#new_reporting_monthly">New reporting monthly</a></li>
+<li><a href="#graduated_as_an_apache_tlp">Graduated as an Apache TLP</a></li>
+<li><a href="#graduated_into_the_pmc_that_sponsored_it">Graduated into the PMC that sponsored it</a></li>
+<li><a href="#graduated_as_an_apache_tlp_with_a_name_change">Graduated as an Apache TLP with a name change</a></li>
+<li><a href="#retired">Retired</a></li>
+<li><a href="#retired_and_moved_development">Retired and moved development</a></li>
 </ul>
 </div>
 <div id="preamble">
@@ -159,15 +159,26 @@
 <div class="paragraph">
 <p>The <a href="https://svn.apache.org/repos/asf/incubator/public/trunk/content/podlings.xml">podlings.xml</a> file is the master record
 for the status of Incubator podlings. This page will define different podlings by example. Once a podling is defined in podlings.xml
-there are two ways to edit its record.
-- Commit changes to <a href="https://svn.apache.org/repos/asf/incubator/public/trunk/content/podlings.xml">podlings.xml</a>
-- Use <a href="https://whimsy.apache.org/roster/ppmc/">Apache Whimsy Roster tools</a></p>
+there are two ways to edit its record.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Commit changes to <a href="https://svn.apache.org/repos/asf/incubator/public/trunk/content/podlings.xml">podlings.xml</a></p>
+</li>
+<li>
+<p>Use <a href="https://whimsy.apache.org/roster/ppmc/">Apache Whimsy Roster tools</a></p>
+</li>
+</ul>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="a_current_podling">A current podling:</h2>
+<h2 id="current">Current</h2>
 <div class="sectionbody">
+<div class="paragraph">
+<p>This is the state of an active podling undergoing incubation.</p>
+</div>
 <div class="listingblock">
 <div class="content">
 <pre class="prettyprint highlight"><code>    &lt;podling name="Crail" status="current" resource="crail" sponsor="Incubator" startdate="2017-11-01"&gt;
@@ -184,8 +195,12 @@ there are two ways to edit its record.
 </div>
 </div>
 <div class="sect1">
-<h2 id="a_new_podling_reporting_monthly">A new podling reporting monthly:</h2>
+<h2 id="new_reporting_monthly">New reporting monthly</h2>
 <div class="sectionbody">
+<div class="paragraph">
+<p>This is a new podling that is reporting monthly. When a mentor creates the podling entry in <mark>podlings.xml</mark> this is the desired state.
+Note that the reporting group will vary according the the month started.</p>
+</div>
 <div class="listingblock">
 <div class="content">
 <pre class="prettyprint highlight"><code>    &lt;podling name="DataSketches" status="current" resource="datasketches" sponsor="Incubator" startdate="2019-03-30"&gt;
@@ -203,8 +218,11 @@ there are two ways to edit its record.
 </div>
 </div>
 <div class="sect1">
-<h2 id="a_podling_graduated_to_an_apache_tlp">A podling graduated to an Apache TLP:</h2>
+<h2 id="graduated_as_an_apache_tlp">Graduated as an Apache TLP</h2>
 <div class="sectionbody">
+<div class="paragraph">
+<p>This is a podling that graduated to a TLP in the usual way.</p>
+</div>
 <div class="listingblock">
 <div class="content">
 <pre class="prettyprint highlight"><code>    &lt;podling name="CXF" status="graduated" resource="cxf" sponsor="Incubator" startdate="2006-08-15" enddate="2008-04-16"&gt;
@@ -220,8 +238,11 @@ there are two ways to edit its record.
 </div>
 </div>
 <div class="sect1">
-<h2 id="a_podling_sponsored_by_a_pmc_that_graduated_into_the_pmc">A podling sponsored by a PMC that graduated into the PMC:</h2>
+<h2 id="graduated_into_the_pmc_that_sponsored_it">Graduated into the PMC that sponsored it</h2>
 <div class="sectionbody">
+<div class="paragraph">
+<p>Occasionally a PMC other than the Incubator will sponsor incubation. In that case (and others) the podling graduates as a sub-project into an existing PMC.</p>
+</div>
 <div class="listingblock">
 <div class="content">
 <pre class="prettyprint highlight"><code>    &lt;podling name="Derby" status="graduated" resource="derby" sponsor="DB" startdate="2004-08-15" enddate="2005-07-18"&gt;
@@ -236,8 +257,11 @@ there are two ways to edit its record.
 </div>
 </div>
 <div class="sect1">
-<h2 id="a_podling_that_graduated_with_a_name_change">A podling that graduated with a name change:</h2>
+<h2 id="graduated_as_an_apache_tlp_with_a_name_change">Graduated as an Apache TLP with a name change</h2>
 <div class="sectionbody">
+<div class="paragraph">
+<p>Sometimes a project will graduate and change their name as they become a TLP</p>
+</div>
 <div class="listingblock">
 <div class="content">
 <pre class="prettyprint highlight"><code>    &lt;podling name="OpenOffice.org" status="graduated" resource="openofficeorg" resourceAliases="ooo" sponsor="Incubator" startdate="2011-06-13" enddate="2012-10-17"&gt;
@@ -259,8 +283,11 @@ there are two ways to edit its record.
 </div>
 </div>
 <div class="sect1">
-<h2 id="a_podling_that_retired">A podling that retired:</h2>
+<h2 id="retired">Retired</h2>
 <div class="sectionbody">
+<div class="paragraph">
+<p>When a podling retires it will often mean that there is no longer a community.</p>
+</div>
 <div class="listingblock">
 <div class="content">
 <pre class="prettyprint highlight"><code>    &lt;podling name="Provisionr" status="retired" resource="provisionr" sponsor="Incubator" startdate="2013-03-07" enddate="2013-11-22"&gt;
@@ -278,8 +305,11 @@ there are two ways to edit its record.
 </div>
 </div>
 <div class="sect1">
-<h2 id="a_podling_that_retired_and_moved_development_elsewhere">A podling that retired and moved development elsewhere:</h2>
+<h2 id="retired_and_moved_development">Retired and moved development</h2>
 <div class="sectionbody">
+<div class="paragraph">
+<p>Sometimes a project community will decide that the Apache Software Foundation is not for them and they will move development elsewhere.</p>
+</div>
 <div class="listingblock">
 <div class="content">
 <pre class="prettyprint highlight"><code>    &lt;podling name="Heraldry" status="retired" resource="heraldry" sponsor="Incubator" startdate="2005-07-14" enddate="2007-06-09"&gt;
