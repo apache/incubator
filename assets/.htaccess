@@ -19,8 +19,10 @@ Redirect Permanent /beam https://beam.apache.org
 Redirect Permanent /beehive http://beehive.apache.org
 Redirect Permanent /bigtop http://bigtop.apache.org
 Redirect Permanent /bloodhound http://bloodhound.apache.org
+Redirect Permanent /brooklyn http://brooklyn.apache.org
 Redirect Permanent /buildr http://buildr.apache.org
 Redirect Permanent /bval http://bval.apache.org
+Redirect Permanent /calcite http://calcite.apache.org
 Redirect Permanent /callback http://cordova.apache.org
 Redirect Permanent /cassandra http://cassandra.apache.org
 Redirect Permanent /cayenne http://cayenne.apache.org
@@ -49,8 +51,10 @@ Redirect Permanent /easyant http://ant.apache.org/easyant
 Redirect Permanent /empire-db http://empire-db.apache.org
 Redirect Permanent /esme http://esme.apache.org
 Redirect Permanent /etch http://etch.apache.org
+Redirect Permanent /falcon http://falcon.apache.org
 Redirect Permanent /felix http://felix.apache.org
 Redirect Permanent /flex http://flex.apache.org
+Redirect Permanent /flink http://flink.apache.org
 Redirect Permanent /flume http://flume.apache.org
 Redirect Permanent /ftpserver http://mina.apache.org/ftpserver
 Redirect Permanent /geode http://geode.apache.org
@@ -64,6 +68,7 @@ Redirect Permanent /helix http://helix.incubator.apache.org/
 Redirect Permanent /hermes http://ws.apache.org/pubscribe
 ##httpd-cli - where did that go?
 Redirect Permanent /ibatis http://ibatis.apache.org
+Redirect Permanent /ignite http://ignite.apache.org
 Redirect Permanent /ivy http://ant.apache.org/ivy
 Redirect Permanent /jackrabbit http://jackrabbit.apache.org
 Redirect Permanent /jaxme http://ws.apache.org/jaxme
@@ -73,6 +78,8 @@ Redirect Permanent /jena http://jena.apache.org
 Redirect Permanent /jspwiki http://jspwiki.apache.org
 Redirect Permanent /juddi http://juddi.apache.org
 Redirect Permanent /knox http://knox.apache.org
+Redirect Permanent /kylin http://kylin.apache.org
+Redirect Permanent /lens http://lens.apache.org
 Redirect Permanent /lenya http://lenya.apache.org
 Redirect Permanent /libcloud http://libcloud.apache.org
 Redirect Permanent /log4cxx http://logging.apache.org/log4cxx
@@ -102,6 +109,7 @@ Redirect Permanent /openmeetings http://openmeetings.apache.org
 Redirect Permanent /opennlp http://opennlp.apache.org
 Redirect Permanent /openofficeorg http://openoffice.apache.org
 Redirect Permanent /openwebbeans http://openwebbeans.apache.org
+Redirect Permanent /parquet http://parquet.apache.org
 Redirect Permanent /pdfbox http://pdfbox.apache.org
 Redirect Permanent /phoenix http://phoenix.apache.org
 Redirect Permanent /pig http://hadoop.apache.org/pig
@@ -110,9 +118,11 @@ Redirect Permanent /pluto http://portals.apache.org/pluto
 Redirect Permanent /qpid http://qpid.apache.org
 Redirect Permanent /rat http://creadur.apache.org
 Redirect Permanent /rave http://rave.apache.org
+Redirect Permanent /reef http://reef.apache.org
 Redirect Permanent /ripple http://ripple.incubator.apache.org
 Redirect Permanent /river http://river.apache.org
 Redirect Permanent /roller http://roller.apache.org
+Redirect Permanent /samza http://samza.apache.org
 Redirect Permanent /sanselan http://commons.apache.org/sanselan
 Redirect Permanent /sentry http://sentry.apache.org
 Redirect Permanent /servicemix http://servicemix.apache.org
@@ -141,6 +151,7 @@ Redirect Permanent /trinidad http://myfaces.apache.org/trinidad
 Redirect Permanent /tuscany http://tuscany.apache.org
 Redirect Permanent /vxquery http://vxquery.apache.org
 Redirect Permanent /uima http://uima.apache.org
+Redirect Permanent /usergrid http://usergrid.apache.org
 Redirect Permanent /webwork2 http://struts.apache.org
 Redirect Permanent /whirr http://whirr.apache.org
 Redirect Permanent /wicket http://wicket.apache.org
@@ -214,20 +225,9 @@ Redirect Permanent /incubation/Process_Description.html /policy/process.html
 Redirect Permanent /incubation/Roles_and_Responsibilities.html /guides/roles_and_responsibilities.html
 Redirect Permanent /policy/Roles_and_Responsibilities.html /guides/roles_and_responsibilities.html
 
-# other URLs
+# other URLs - NOT graduated podlings, which belong in a previous section
 RedirectMatch Permanent howtoparticipate.html /guides/participation.html
 RedirectMatch Permanent clutch.html /clutch/index.html
-Redirect Permanent /falcon http://falcon.apache.org
-Redirect Permanent /flink http://flink.apache.org
-Redirect Permanent /samza http://samza.apache.org
-Redirect Permanent /parquet http://parquet.apache.org
-Redirect Permanent /ignite http://ignite.apache.org
-Redirect Permanent /lens http://lens.apache.org
-Redirect Permanent /usergrid http://usergrid.apache.org
-Redirect Permanent /calcite http://calcite.apache.org
-Redirect Permanent /brooklyn http://brooklyn.apache.org
-Redirect Permanent /reef http://reef.apache.org
-Redirect Permanent /kylin http://kylin.apache.org
 
 # Restore access to podlings.*
 RedirectMatch ^/(podlings.*)$ "https://svn.apache.org/repos/asf/incubator/public/trunk/content/$1"
