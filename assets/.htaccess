@@ -197,9 +197,9 @@ RedirectMatch Permanent ^/lucene4c(/.*)?$ http://incubator.apache.org/projects/l
 RedirectMatch Permanent ^/nmaven(/.*)?$ http://incubator.apache.org/projects/nmaven.html
 RedirectMatch Permanent ^/npanday(/.*)?$ http://incubator.apache.org/projects/npanday.html
 RedirectMatch Permanent ^/olio(/.*)?$ http://incubator.apache.org/projects/olio.html
-# TODO http://openaz.incubator.apache.org/
+# https://gitbox.apache.org/repos/asf?p=incubator-retired-openaz-site.git;a=blob_plain;f=.htaccess;hb=refs/heads/asf-site
 RedirectMatch Permanent ^/photark(/.*)?$ http://incubator.apache.org/projects/photark.html
-# TODO http://pirk.incubator.apache.org/
+# https://gitbox.apache.org/repos/asf?p=incubator-retired-pirk.git;a=blob;f=.htaccess;hb=refs/heads/asf-site
 RedirectMatch Permanent ^/provisionr(/.*)?$ http://incubator.apache.org/projects/provisionr.html
 RedirectMatch Permanent ^/rcf(/.*)?$ http://incubator.apache.org/projects/rcf.html
 RedirectMatch Permanent ^/ripple(/.*)?$ http://incubator.apache.org/projects/ripple.html
