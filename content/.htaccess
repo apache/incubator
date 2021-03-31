@@ -127,7 +127,6 @@ Redirect Permanent /sentry http://sentry.apache.org
 Redirect Permanent /servicemix http://servicemix.apache.org
 Redirect Permanent /shindig http://shindig.apache.org
 Redirect Permanent /shiro http://shiro.apache.org
-Redirect Permanent /sirona http://sirona.incubator.apache.org
 Redirect Permanent /sis http://sis.apache.org
 Redirect Permanent /sling http://sling.apache.org
 Redirect Permanent /solr http://lucene.apache.org/solr
@@ -205,6 +204,7 @@ RedirectMatch Permanent ^/provisionr(/.*)?$ http://incubator.apache.org/projects
 RedirectMatch Permanent ^/rcf(/.*)?$ http://incubator.apache.org/projects/rcf.html
 RedirectMatch Permanent ^/ripple(/.*)?$ http://incubator.apache.org/projects/ripple.html
 RedirectMatch Permanent ^/s4(/.*)?$ http://incubator.apache.org/projects/s4.html
+# https://svn.apache.org/repos/asf/incubator/sirona/site/.htaccess
 RedirectMatch Permanent ^/socialsite(/.*)?$ http://incubator.apache.org/projects/socialsite.html
 RedirectMatch Permanent ^/stonehenge(/.*)?$ http://incubator.apache.org/projects/stonehenge.html
 RedirectMatch Permanent ^/tashi(/.*)?$ http://incubator.apache.org/projects/tashi.html
