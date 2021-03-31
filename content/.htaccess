@@ -229,4 +229,4 @@ RedirectMatch Permanent howtoparticipate.html /guides/participation.html
 RedirectMatch Permanent clutch.html /clutch/index.html
 
 # Restore access to podlings.*
-RedirectMatch ^/(podlings.*)$ "https://svn.apache.org/repos/asf/incubator/public/trunk/content/$1"
+RedirectMatch ^/(podlings\..*)$ "https://svn.apache.org/repos/asf/incubator/public/trunk/content/$1"
