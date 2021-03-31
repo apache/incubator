@@ -10,10 +10,14 @@ Apache Incubator PMC
 The link:https://svn.apache.org/repos/asf/incubator/public/trunk/content/podlings.xml[podlings.xml] file is the master record
 for the status of Incubator podlings. This page will define different podlings by example. Once a podling is defined in podlings.xml
 there are two ways to edit its record.
+
 - Commit changes to link:https://svn.apache.org/repos/asf/incubator/public/trunk/content/podlings.xml[podlings.xml]
 - Use link:https://whimsy.apache.org/roster/ppmc/[Apache Whimsy Roster tools]
 
-== A current podling:
+== Current
+
+This is the state of an active podling undergoing incubation.
+
 ```
     <podling name="Crail" status="current" resource="crail" sponsor="Incubator" startdate="2017-11-01">
         <description>Crail is a storage platform for sharing performance critical data in distributed data processing jobs at very high speed.</description>
@@ -26,7 +30,11 @@ there are two ways to edit its record.
     </podling>
 ```
 
-== A new podling reporting monthly:
+== New reporting monthly
+
+This is a new podling that is reporting monthly. When a mentor creates the podling entry in #podlings.xml# this is the desired state.
+Note that the reporting group will vary according the the month started.
+
 ```
     <podling name="DataSketches" status="current" resource="datasketches" sponsor="Incubator" startdate="2019-03-30">
         <description>DataSketches is an open source, high-performance library of stochastic streaming algorithms commonly called "sketches" in the data sciences. Sketches are small, stateful programs that process massive data as a stream and can provide approximate answers, with mathematical guarantees, to computationally difficult queries orders-of-magnitude faster than traditional, exact methods.</description>
@@ -40,7 +48,10 @@ there are two ways to edit its record.
     </podling>
 ```
 
-== A podling graduated to an Apache TLP:
+== Graduated as an Apache TLP
+
+This is a podling that graduated to a TLP in the usual way.
+
 ```
     <podling name="CXF" status="graduated" resource="cxf" sponsor="Incubator" startdate="2006-08-15" enddate="2008-04-16">
         <description>The CXF project will create a SOA services framework by merges the ObjectWeb Celtix project and the Codehaus XFire project.</description>
@@ -52,7 +63,10 @@ there are two ways to edit its record.
     </podling>
 ```
 
-== A podling sponsored by a PMC that graduated into the PMC:
+== Graduated into the PMC that sponsored it
+
+Occasionally a PMC other than the Incubator will sponsor incubation. In that case (and others) the podling graduates as a sub-project into an existing PMC.
+
 ```
     <podling name="Derby" status="graduated" resource="derby" sponsor="DB" startdate="2004-08-15" enddate="2005-07-18">
         <description>Java relational database</description>
@@ -63,7 +77,10 @@ there are two ways to edit its record.
     </podling>
 ```
 
-== A podling that graduated with a name change:
+== Graduated as an Apache TLP with a name change
+
+Sometimes a project will graduate and change their name as they become a TLP
+
 ```
     <podling name="OpenOffice.org" status="graduated" resource="openofficeorg" resourceAliases="ooo" sponsor="Incubator" startdate="2011-06-13" enddate="2012-10-17">
         <description>OpenOffice.org is comprised of six personal productivity applications: a word processor (and its web-authoring component), spreadsheet, presentation graphics, drawing, equation editor, and database.</description>
@@ -81,7 +98,10 @@ there are two ways to edit its record.
     </podling>
 ```
 
-== A podling that retired:
+== Retired
+
+When a podling retires it will often mean that there is no longer a community.
+
 ```
     <podling name="Provisionr" status="retired" resource="provisionr" sponsor="Incubator" startdate="2013-03-07" enddate="2013-11-22">
         <description>Provisionr provides a service to manage pools of virtual machines on multiple clouds.</description>
@@ -95,7 +115,10 @@ there are two ways to edit its record.
     </podling>
 ```
 
-== A podling that retired and moved development elsewhere:
+== Retired and moved development
+
+Sometimes a project community will decide that the Apache Software Foundation is not for them and they will move development elsewhere.
+
 ```
     <podling name="Heraldry" status="retired" resource="heraldry" sponsor="Incubator" startdate="2005-07-14" enddate="2007-06-09">
         <description>Identity for the rest of us.</description>
