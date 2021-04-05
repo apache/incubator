@@ -54,9 +54,13 @@
 		     	sep=", "
 		} %>
 	   </td>
-	   <td><%
-	   	aliases=podling.@resourceAliases.text().replaceAll(/,/,", ")
-		%>${aliases}
+	   <td><% if ( podling.resourceAliases != "" ) {
+	   		sep=""
+			podling.resourceAliases.children().each { alias ->
+			%>${sep}${alias}<%
+				sep=", "
+			} 
+		} %>
 	   </td>
 	   <td>${podling.@startdate}</td>
 	</tr>
@@ -112,9 +116,13 @@
 		     	sep=", "
 		} %>
 	   </td>
-	   <td><%
-	   	aliases=podling.@resourceAliases.text().replaceAll(/,/,", ")
-		%>${aliases}
+	   <td><% if ( podling.resourceAliases != "" ) {
+	   		sep=""
+			podling.resourceAliases.children().each { alias ->
+			%>${sep}${alias}<%
+				sep=", "
+			} 
+		} %>
 	   </td>
 	   <td>${podling.@startdate}</td>
 	   <td>${podling.@enddate}</td>
@@ -168,9 +176,13 @@
 		     	sep=", "
 		} %>
 	   </td>
-	   <td><%
-	   	aliases=podling.@resourceAliases.text().replaceAll(/,/,", ")
-		%>${aliases}
+	   <td><% if ( podling.resourceAliases != "" ) {
+	   		sep=""
+			podling.resourceAliases.children().each { alias ->
+			%>${sep}${alias}<%
+				sep=", "
+			} 
+		} %>
 	   </td>
 	   <td>${podling.@startdate}</td>
 	   <td>${podling.@enddate}</td>
