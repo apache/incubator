@@ -37,6 +37,8 @@ link:/guides/roles_and_responsibilities.html#chair_of_the_incubator_pmc[IPMC Cha
 graduating community organize the handover between
 themselves.
 
+You do need to update the Incubator's podlings file. See link:/cookbook/podlings-xml.html#graduated_into_the_pmc_that_sponsored_it[Podling XML Examples].
+
 ==== Graduating as New Top Level Project
 
 ===== Board resolution and roster appointment
@@ -89,7 +91,7 @@ Users with member or pmc-chairs karma can do this.
 the first three months after graduation this will
 be monthly. After that, the project should slot
 into a quarterly reporting schedule. Now is a good time to remove
-the project from the Incubator reporting schedule by updating the podlings.xml file. See link:/cookbook/podlings-xml.html[Podling XML Examples].
+the project from the Incubator reporting schedule by updating the podlings.xml file. See link:/cookbook/podlings-xml.html#graduated_as_an_apache_tlp[Podling XML Examples].
 - Ensure the PMC is added to the committee-info.txt file at https://svn.apache.org/repos/private/committers/board/committee-info.txt
 There are 3 sections which need to be updated; see instructions in the file, otherwise update it in link:https://whimsy.apache.org/roster/[Whimsy's Roster Tool]
 You may need to get a member to help with this, such as your mentors.
@@ -194,7 +196,7 @@ to be done:
 
 - Update the podling summary metadata file, *incubator/trunk/content/podlings.xml* svn file.  See the content/podlings.dtd and follow examples of other recent graduates.  At the beginning of the process, add the "graduating" element.
 
-- When finished with the graduation process, see link:/cookbook/podlings-xml.html[Podling XML Examples]:
+- When finished with the graduation process, see link:/cookbook/podlings-xml.html#graduated_as_an_apache_tlp[Podling XML Examples]:
 ** Change the podling status to "graduated"; (The only acceptable status are "current", "graduated", and "retired". "graduating" will make your podling disappear from several incubator pages.)
 ** add the "enddate" attribute to document when the project graduated;
 ** add the "resolution" element (see other project examples);
