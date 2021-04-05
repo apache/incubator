@@ -54,7 +54,7 @@
 		     	sep=", "
 		} %>
 	   </td>
-	   <td>${podling.@resourceAliases}</td>
+	   <td>${podling.@resourceAliases.replaceAll(",",", ")}</td>
 	   <td>${podling.@startdate}</td>
 	</tr>
         <%
@@ -109,7 +109,7 @@
 		     	sep=", "
 		} %>
 	   </td>
-	   <td>${podling.@resourceAliases}</td>
+	   <td>${podling.@resourceAliases.replaceAll(",",", ")}</td>
 	   <td>${podling.@startdate}</td>
 	   <td>${podling.@enddate}</td>
 	</tr>
@@ -162,7 +162,7 @@
 		     	sep=", "
 		} %>
 	   </td>
-	   <td>${podling.@resourceAliases}</td>
+	   <td>${podling.@resourceAliases.replaceAll(",",", ")}</td>
 	   <td>${podling.@startdate}</td>
 	   <td>${podling.@enddate}</td>
 	</tr>
