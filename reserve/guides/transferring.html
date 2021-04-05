@@ -163,7 +163,8 @@ Estimated Reading Time: <span class="eta"></span>
 <h2 id="life_after_graduation">Life After Graduation</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Once a project has been established by the board, or a sub-project consumed by a TLP, this guide should be followed to migrate the podling from the Incubator to their own TLP.</p>
+<p>Once a project has been established by the board, or a sub-project consumed by a TLP, this guide should be followed to migrate
+the podling from the Incubator to their own TLP.</p>
 </div>
 <div class="sect2">
 <h3 id="handover">Handover</h3>
@@ -181,6 +182,9 @@ level project taking charge of the graduating community.</p>
 graduating community organize the handover between
 themselves.</p>
 </div>
+<div class="paragraph">
+<p>You do need to update the Incubator&#8217;s podlings file. See <a href="/cookbook/podlings-xml.html#graduated_into_the_pmc_that_sponsored_it">Podling XML Examples</a>.</p>
+</div>
 </div>
 <div class="sect3">
 <h4 id="graduating_as_new_top_level_project">Graduating as New Top Level Project</h4>
@@ -191,10 +195,12 @@ themselves.</p>
 complex. Creating a new project requires a
 <a href="graduation.html#preparing_a_charter">resolution</a>
 to be passed by the <a href="http://www.apache.org/foundation/board/">Board</a>.
-You may look at older minutes from the <a href="http://www.apache.org/foundation/board/calendar.html">calendar</a> and check for "Establish ProjectName"</p>
+You may look at older minutes from the <a href="http://www.apache.org/foundation/board/calendar.html">calendar</a> and check for "Establish ProjectName".
+<a href="https://whimsy.apache.org/board/agenda/">Board Agenda Tool</a> has an "Add Item" button that can be used to add the Graduation Resolution to the Board Agenda.</p>
 </div>
 <div class="paragraph">
-<p>The Board votes on graduation resolutions at their monthly meeting.  If the Board votes to pass the resolution, that then appoints the listed Project Management Committee including:</p>
+<p>The Board votes on graduation resolutions at their monthly meeting.  If the Board votes to pass the resolution, that then appoints
+the listed Project Management Committee including:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -226,7 +232,7 @@ worth pinging the board to request confirmation.
 <div class="ulist">
 <ul>
 <li>
-<p>the initial member of Project Management Committees aka PMC member.</p>
+<p>the initial members of Project Management Committee aka PMC members.</p>
 </li>
 </ul>
 </div>
@@ -271,7 +277,8 @@ Users with member or pmc-chairs karma can do this.</p>
 <p>Add yourself to the <mark>foundation/officers/affiliations.txt</mark> file with the appropriate information.</p>
 </li>
 <li>
-<p>Add your details to the foundation web site Officer list at <a href="http://www.apache.org/foundation/index.html">http://www.apache.org/foundation/index.html</a> (in SVN at <a href="https://svn.apache.org/repos/asf/infrastructure/site/trunk/content/foundation/">https://svn.apache.org/repos/asf/infrastructure/site/trunk/content/foundation/</a>)</p>
+<p>Add your details to the foundation web site Officer list at <a href="http://www.apache.org/foundation/index.html">http://www.apache.org/foundation/index.html</a>
+(in SVN at <a href="https://svn.apache.org/repos/asf/infrastructure/site/trunk/content/foundation/">https://svn.apache.org/repos/asf/infrastructure/site/trunk/content/foundation/</a>)</p>
 </li>
 <li>
 <p>Review appropriate documentation:</p>
@@ -284,9 +291,6 @@ Users with member or pmc-chairs karma can do this.</p>
 <p>PMC <a href="http://www.apache.org/dev/#pmc">documentation</a></p>
 </li>
 <li>
-<p>Jakarta <a href="http://cwiki.apache.org/jakarta/RoleOfChair">Chair guide</a></p>
-</li>
-<li>
 <p>Incubator <a href="http://incubator.apache.org/guides/chair.html">Chair guide</a></p>
 </li>
 <li>
@@ -296,11 +300,11 @@ Users with member or pmc-chairs karma can do this.</p>
 </div>
 </li>
 <li>
-<p>Work out a reporting schedule with the <a href="/guides/roles_and_responsibilities.html#board">Board</a>. For
+<p>Understand the reporting schedule with the <a href="/guides/roles_and_responsibilities.html#board">Board</a>. For
 the first three months after graduation this will
 be monthly. After that, the project should slot
 into a quarterly reporting schedule. Now is a good time to remove
-the project from the Incubator reporting schedule.</p>
+the project from the Incubator reporting schedule by updating the podlings.xml file. See <a href="/cookbook/podlings-xml.html#graduated_as_an_apache_tlp">Podling XML Examples</a>.</p>
 </li>
 <li>
 <p>Ensure the PMC is added to the committee-info.txt file at <a href="https://svn.apache.org/repos/private/committers/board/committee-info.txt" class="bare">https://svn.apache.org/repos/private/committers/board/committee-info.txt</a>
@@ -326,7 +330,7 @@ membership subscribed.</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Subscribe to the private mailing list for the project, if they weren&#8217;t already subscribed from their PPMC days</p>
+<p>Subscribe to the private mailing list for the project, if they aren&#8217;t already subscribed from their PPMC membership.</p>
 </li>
 <li>
 <p>Review appropriate documentation:</p>
@@ -390,7 +394,8 @@ be transferred from the Incubator to a project&#8217;s new home.</p>
 </div>
 <div class="paragraph">
 <p>Although the below checklist is still generally useful, <strong>the infrastructure process has been streamlined</strong>, see
-<a href="http://www.apache.org/dev/infra-contact#requesting-graduation">requesting graduation</a>.  You might also want to check JIRA checklist tickets for projects that graduated in the last month or two.  This process is known as "TLP Parent Request"</p>
+<a href="http://www.apache.org/dev/infra-contact#requesting-graduation">requesting graduation</a>.
+You might also want to check JIRA checklist tickets for projects that graduated in the last month or two.  This process is known as "TLP Parent Request"</p>
 </div>
 <div class="paragraph">
 <p>Checklist:</p>
@@ -405,15 +410,11 @@ be transferred from the Incubator to a project&#8217;s new home.</p>
 <p>Like the rest of incubation, graduation is a process. Updating your status records as you progress will enable others to assist.</p>
 </li>
 <li>
-<p>Update the podling <a href="#notes-status">status page</a>.  All sections should now be filled in
+<p>Update the podling status page.  All sections should now be filled in
 including <strong>EXIT</strong>. Take some
 time to read carefully since this page
 forms the final public record for
 graduation.</p>
-</li>
-<li>
-<p>Update the Incubator <a href="http://incubator.apache.org/projects/index.html">status page</a> to denote the project as "graduating" when you commence,
-then as "graduated" when you are finished. The notes <a href="#unincubate">below</a> will assist.</p>
 </li>
 </ul>
 </div>
@@ -423,7 +424,8 @@ then as "graduated" when you are finished. The notes <a href="#unincubate">below
 <div class="ulist">
 <ul>
 <li>
-<p>Git repositories will be renamed to drop the <code>incubator-</code> prefix, please ensure that developers change their remotes.  After you&#8217;ve created the TLP request, request the rename.</p>
+<p>Git repositories will be renamed to drop the <code>incubator-</code> prefix, please ensure that developers change their remotes.
+After you&#8217;ve created the TLP request, request the rename.</p>
 </li>
 <li>
 <p>SVN repositories will be moved from the incubator to other locations, if you need the move done please raise an infra ticket after the TLP Parent Request.</p>
@@ -450,6 +452,9 @@ then as "graduated" when you are finished. The notes <a href="#unincubate">below
 <li>
 <p>Once graduated, your website will automatically redirect to remove the <strong>incubator</strong> subdomain</p>
 </li>
+<li>
+<p>If you have any fully qualified links to your <strong>podling.incubator.apache.org</strong> on your website change them</p>
+</li>
 </ul>
 </div>
 </li>
@@ -461,7 +466,7 @@ then as "graduated" when you are finished. The notes <a href="#unincubate">below
 <p>Mailing lists no longer need to get moved, since podlings are given standard domains.</p>
 </li>
 <li>
-<p>If you are using <strong>podling.incubator.apache.org</strong> format email addresses, please</p>
+<p>If you use <strong>podling.incubator.apache.org</strong> format email addresses, please start using <strong>podling.apache.org</strong></p>
 </li>
 <li>
 <p>When using Maven: update <strong>pom.xml</strong> for
@@ -470,7 +475,8 @@ documents on your website that show how to
 subscribe to the lists and/or find archives.</p>
 </li>
 <li>
-<p>Check project-private mailing list membership.  Mentors should be allowed to remain if they wish to do so. The subscriber list should otherwise match that on the resolution. See <a href="http://www.apache.org/dev/committers.html#mail-moderate">this</a> and the <a href="http://www.ezmlm.org/">EZMLM</a> "Moderator&#8217;s and Administrator&#8217;s Manual".</p>
+<p>Check project-private mailing list membership.  Mentors should be allowed to remain if they wish to do so.
+The subscriber list should otherwise match that on the resolution. See <a href="http://www.apache.org/dev/committers.html#mail-moderate">this</a> and the <a href="http://www.ezmlm.org/">EZMLM</a> "Moderator&#8217;s and Administrator&#8217;s Manual".</p>
 </li>
 <li>
 <p>Update mail addresses including:</p>
@@ -520,7 +526,7 @@ subscribe to the lists and/or find archives.</p>
 <div class="ulist">
 <ul>
 <li>
-<p>you can <strong>keep</strong> incubating released artefacts at <strong>release/incubator/${project}</strong> and remove artefacts once your TLP project does their first release.</p>
+<p>you can <strong>keep</strong> incubating released artifacts at <strong>release/incubator/${project}</strong> and remove artifacts once your TLP project does their first release.</p>
 <div class="admonitionblock note">
 <table>
 <tr>
@@ -535,7 +541,8 @@ File a JIRA under your newly JIRA <strong>${project}</strong> space to remind to
 </div>
 </li>
 <li>
-<p>you can <strong>move</strong> the last incubating released artefacts to your <strong>release/${project}</strong>, taking care that incubating stay in path (you will need to change website and mail for the new location)</p>
+<p>you can <strong>move</strong> the last incubating released artifacts to your <strong>release/${project}</strong>, taking care that incubating stay in path (you will need to
+change website and mail for the new location)</p>
 </li>
 </ul>
 </div>
@@ -564,14 +571,12 @@ to be done:</p>
 <p>Update the svn <strong>incubator/trunk/content/projects/${project}.xml</strong> file to show the project&#8217;s status.</p>
 </li>
 <li>
-<p>Update the podling summary metadata file, <strong>incubator/trunk/content/podlings.xml</strong> svn file.  See the content/podlings.dtd and follow examples of other recent graduates.  At the beginning of the process, add the "graduating" element.</p>
-</li>
-<li>
-<p>When finished with the graduation process, then:</p>
+<p>Update the podling summary metadata file, <strong>incubator/trunk/content/podlings.xml</strong> svn file.  See the content/podlings.dtd and follow
+<a href="/cookbook/podlings-xml.html#graduated_as_an_apache_tlp">Podling XML Examples</a>:</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Change the podling status to "graduated";</p>
+<p>Change the podling status to "graduated"; (The only acceptable status are "current", "graduated", and "retired". "graduating" will make your podling disappear from several incubator pages.)</p>
 </li>
 <li>
 <p>add the "enddate" attribute to document when the project graduated;</p>
