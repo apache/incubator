@@ -45,7 +45,8 @@ When graduating to a new project, the process is more
 complex. Creating a new project requires a
 link:graduation.html#preparing_a_charter[resolution]
 to be passed by the link:http://www.apache.org/foundation/board/[Board].
-You may look at older minutes from the link:http://www.apache.org/foundation/board/calendar.html[calendar] and check for "Establish ProjectName"
+You may look at older minutes from the link:http://www.apache.org/foundation/board/calendar.html[calendar] and check for "Establish ProjectName".
+link:https://whimsy.apache.org/board/agenda/[Board Agenda Tool] has an "Add Item" button that can be used to add the Graduation Resolution to the Board Agenda.
 
 The Board votes on graduation resolutions at their monthly meeting.  If the Board votes to pass the resolution, that then appoints the listed Project Management Committee including:
 
@@ -61,7 +62,7 @@ Occasionally, this will be missed: if more than 72
 hours has passed since the Board meeting, it may be
 worth pinging the board to request confirmation.
 
-- the initial member of Project Management Committees aka PMC member.
+- the initial members of Project Management Committee aka PMC members.
 
 ===== PMC Chair Todo List
 
@@ -82,14 +83,13 @@ Users with member or pmc-chairs karma can do this.
 - Review appropriate documentation:
 ** link:http://www.apache.org/dev/pmc.html#chair[PMC Chair Duties]
 ** PMC link:http://www.apache.org/dev/#pmc[documentation]
-** Jakarta link:http://cwiki.apache.org/jakarta/RoleOfChair[Chair guide]
 ** Incubator link:http://incubator.apache.org/guides/chair.html[Chair guide]
 ** Reporting link:http://www.apache.org/foundation/board/calendar.html[calendar]
-- Work out a reporting schedule with the link:/guides/roles_and_responsibilities.html#board[Board]. For
+- Understand the reporting schedule with the link:/guides/roles_and_responsibilities.html#board[Board]. For
 the first three months after graduation this will
 be monthly. After that, the project should slot
 into a quarterly reporting schedule. Now is a good time to remove
-the project from the Incubator reporting schedule.
+the project from the Incubator reporting schedule by updating the podlings.xml file. See link:/cookbook/podling-xml.html[Podling XML Examples].
 - Ensure the PMC is added to the committee-info.txt file at https://svn.apache.org/repos/private/committers/board/committee-info.txt
 There are 3 sections which need to be updated; see instructions in the file, otherwise update it in link:https://whimsy.apache.org/roster/[Whimsy's Roster Tool]
 You may need to get a member to help with this, such as your mentors.
@@ -104,7 +104,7 @@ membership subscribed.
 
 Once appointed, Members of the new PMC need to:
 
-- Subscribe to the private mailing list for the project, if they weren't already subscribed from their PPMC days
+- Subscribe to the private mailing list for the project, if they aren't already subscribed from their PPMC membership.
 - Review appropriate documentation:
 ** Apache link:http://www.apache.org/dev/pmc.html[PMC Guide]
 ** Related link:http://www.apache.org/dev/#pmc[documentation]
@@ -129,7 +129,8 @@ resources (mailing lists, websites, source, etc.) need to
 be transferred from the Incubator to a project's new home.
 
 Although the below checklist is still generally useful, *the infrastructure process has been streamlined*, see
-link:http://www.apache.org/dev/infra-contact#requesting-graduation[requesting graduation].  You might also want to check JIRA checklist tickets for projects that graduated in the last month or two.  This process is known as "TLP Parent Request"
+link:http://www.apache.org/dev/infra-contact#requesting-graduation[requesting graduation].
+You might also want to check JIRA checklist tickets for projects that graduated in the last month or two.  This process is known as "TLP Parent Request"
 
 Checklist:
 
@@ -153,10 +154,11 @@ then as "graduated" when you are finished. The notes link:#unincubate[below] wil
 - Websites
 ** Since podlings receive standard domains, no changes are required
 ** Once graduated, your website will automatically redirect to remove the *incubator* subdomain
+** If you have any fully qualified links to your *podling.incubator.apache.org* on your website change them
 
 - Mailing lists
 ** Mailing lists no longer need to get moved, since podlings are given standard domains.
-** If you are using *podling.incubator.apache.org* format email addresses, please
+** If you use *podling.incubator.apache.org* format email addresses, please start using *podling.apache.org*
 ** When using Maven: update *pom.xml* for
 the new mailing list address(es). Also update any
 documents on your website that show how to
@@ -175,11 +177,11 @@ subscribe to the lists and/or find archives.
 ** Dist area (dist.apache.org) *release/${project}* and *dev/${project}* folders can be created by PMC members. 
 *** Do not forget to copy KEYS file from *release/incubator/${project}* location.
 *** You have two major options then:
-**** you can *keep* incubating released artefacts at *release/incubator/${project}* and remove artefacts once your TLP project does their first release.
+**** you can *keep* incubating released artifacts at *release/incubator/${project}* and remove artifacts once your TLP project does their first release.
 +
 NOTE: File a JIRA under your newly JIRA *${project}* space to remind to remove */dist/incubator/${project}/* after the first release in */dist/${project}/*
 +
-**** you can *move* the last incubating released artefacts to your *release/${project}*, taking care that incubating stay in path (you will need to change website and mail for the new location)
+**** you can *move* the last incubating released artifacts to your *release/${project}*, taking care that incubating stay in path (you will need to change website and mail for the new location)
 
 === Final Revision of Podling Incubation Records
 
@@ -192,8 +194,8 @@ to be done:
 
 - Update the podling summary metadata file, *incubator/trunk/content/podlings.xml* svn file.  See the content/podlings.dtd and follow examples of other recent graduates.  At the beginning of the process, add the "graduating" element.
 
-- When finished with the graduation process, then:
-** Change the podling status to "graduated";
+- When finished with the graduation process, see link:/cookbook/podling-xml.html[Podling XML Examples]:
+** Change the podling status to "graduated"; (The only acceptable status are "current", "graduated", and "retired". "graduating" will make your podling disappear from several incubator pages.)
 ** add the "enddate" attribute to document when the project graduated;
 ** add the "resolution" element (see other project examples);
 ** remove the "reporting" element.
