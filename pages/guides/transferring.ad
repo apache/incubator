@@ -21,7 +21,8 @@ Apache Incubator PMC
 
 == Life After Graduation
 
-Once a project has been established by the board, or a sub-project consumed by a TLP, this guide should be followed to migrate the podling from the Incubator to their own TLP.
+Once a project has been established by the board, or a sub-project consumed by a TLP, this guide should be followed to migrate
+the podling from the Incubator to their own TLP.
 
 === Handover
 
@@ -50,7 +51,8 @@ to be passed by the link:http://www.apache.org/foundation/board/[Board].
 You may look at older minutes from the link:http://www.apache.org/foundation/board/calendar.html[calendar] and check for "Establish ProjectName".
 link:https://whimsy.apache.org/board/agenda/[Board Agenda Tool] has an "Add Item" button that can be used to add the Graduation Resolution to the Board Agenda.
 
-The Board votes on graduation resolutions at their monthly meeting.  If the Board votes to pass the resolution, that then appoints the listed Project Management Committee including:
+The Board votes on graduation resolutions at their monthly meeting.  If the Board votes to pass the resolution, that then appoints
+the listed Project Management Committee including:
 
 - a Chair for the new project aka PMC Chair. The Chair will also be appointed an
   link:http://www.apache.org/foundation/[Officer]
@@ -81,7 +83,8 @@ of the new chair. As with above, if it has not happened within
 - Check out the link:https://svn.apache.org/repos/private/foundation/officers[*foundation/officers*] folder from the private repository.
 Users with member or pmc-chairs karma can do this.
 - Add yourself to the #foundation/officers/affiliations.txt# file with the appropriate information.
-- Add your details to the foundation web site Officer list at link:http://www.apache.org/foundation/index.html[http://www.apache.org/foundation/index.html] (in SVN at link:https://svn.apache.org/repos/asf/infrastructure/site/trunk/content/foundation/[https://svn.apache.org/repos/asf/infrastructure/site/trunk/content/foundation/])
+- Add your details to the foundation web site Officer list at link:http://www.apache.org/foundation/index.html[http://www.apache.org/foundation/index.html]
+(in SVN at link:https://svn.apache.org/repos/asf/infrastructure/site/trunk/content/foundation/[https://svn.apache.org/repos/asf/infrastructure/site/trunk/content/foundation/])
 - Review appropriate documentation:
 ** link:http://www.apache.org/dev/pmc.html#chair[PMC Chair Duties]
 ** PMC link:http://www.apache.org/dev/#pmc[documentation]
@@ -145,7 +148,8 @@ forms the final public record for
 graduation.
 
 - Source
-** Git repositories will be renamed to drop the `incubator-` prefix, please ensure that developers change their remotes.  After you've created the TLP request, request the rename.
+** Git repositories will be renamed to drop the `incubator-` prefix, please ensure that developers change their remotes.
+After you've created the TLP request, request the rename.
 ** SVN repositories will be moved from the incubator to other locations, if you need the move done please raise an infra ticket after the TLP Parent Request.
 ** Post an announcement to the development list telling everyone that the repository is about to be moved
 ** Post an announcement containing instructions for developers describing how to #svn switch# their workspaces
@@ -163,7 +167,8 @@ graduation.
 the new mailing list address(es). Also update any
 documents on your website that show how to
 subscribe to the lists and/or find archives.
-** Check project-private mailing list membership.  Mentors should be allowed to remain if they wish to do so. The subscriber list should otherwise match that on the resolution. See link:http://www.apache.org/dev/committers.html#mail-moderate[this] and the link:http://www.ezmlm.org/[EZMLM] "Moderator's and Administrator's Manual".
+** Check project-private mailing list membership.  Mentors should be allowed to remain if they wish to do so.
+The subscriber list should otherwise match that on the resolution. See link:http://www.apache.org/dev/committers.html#mail-moderate[this] and the link:http://www.ezmlm.org/[EZMLM] "Moderator's and Administrator's Manual".
 ** Update mail addresses including:
 *** confluence commit messages (see adminstration documentation)
 *** issue tracking messages (see administration documentation)
@@ -181,7 +186,8 @@ subscribe to the lists and/or find archives.
 +
 NOTE: File a JIRA under your newly JIRA *${project}* space to remind to remove */dist/incubator/${project}/* after the first release in */dist/${project}/*
 +
-**** you can *move* the last incubating released artifacts to your *release/${project}*, taking care that incubating stay in path (you will need to change website and mail for the new location)
+**** you can *move* the last incubating released artifacts to your *release/${project}*, taking care that incubating stay in path (you will need to
+change website and mail for the new location)
 
 === Final Revision of Podling Incubation Records
 
@@ -192,9 +198,8 @@ to be done:
 
 - Update the svn *incubator/trunk/content/projects/${project}.xml* file to show the project's status.
 
-- Update the podling summary metadata file, *incubator/trunk/content/podlings.xml* svn file.  See the content/podlings.dtd and follow examples of other recent graduates.  At the beginning of the process, add the "graduating" element.
-
-- When finished with the graduation process, see link:/cookbook/podlings-xml.html#graduated_as_an_apache_tlp[Podling XML Examples]:
+- Update the podling summary metadata file, *incubator/trunk/content/podlings.xml* svn file.  See the content/podlings.dtd and follow 
+link:/cookbook/podlings-xml.html#graduated_as_an_apache_tlp[Podling XML Examples]:
 ** Change the podling status to "graduated"; (The only acceptable status are "current", "graduated", and "retired". "graduating" will make your podling disappear from several incubator pages.)
 ** add the "enddate" attribute to document when the project graduated;
 ** add the "resolution" element (see other project examples);
