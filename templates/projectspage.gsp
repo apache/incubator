@@ -30,10 +30,10 @@
       <table class="colortable">
 	<tr>
 	   <th>Project</th>
+	   <th>Aliases</th>
 	   <th>Description</th>
 	   <th>Sponsor (Champion)</th>
 	   <th>Mentors</th>
-	   <th>Aliases</th>
 	   <th>Start&nbsp;Date&nbsp;</th>
 	</tr>
         <% podlings.toSorted(sortedName).each { podling ->
@@ -41,6 +41,7 @@
         %>
         <tr id="${podling.@resource}">
 	   <td><a href="/projects/${podling.@resource}.html">${podling.@name}</a></td>
+	   <td>${podling.@resourceAliases}</td>
 	   <td>${podling.description}</td>
 	   <td>${podling.@sponsor}
 		<% if ( podling.champion != "" ) { %>
@@ -52,14 +53,6 @@
 		podling.mentors.children().each { mentor ->
 		%>${sep}${mentor}<%
 		     	sep=", "
-		} %>
-	   </td>
-	   <td><% if ( podling.resourceAliases != "" ) {
-	   		sep=""
-			podling.resourceAliases.children().each { alias ->
-			%>${sep}${alias}<%
-				sep=", "
-			} 
 		} %>
 	   </td>
 	   <td>${podling.@startdate}</td>
@@ -76,10 +69,10 @@
       <table class="colortable">
 	<tr>
 	   <th>Project</th>
+	   <th>Aliases</th>
 	   <th>Description</th>
 	   <th>Apache Sponsor</th>
 	   <th>Mentors</th>
-	   <th>Aliases</th>
 	   <th>Start&nbsp;Date&nbsp;</th>
 	   <th>End&nbsp;Date&nbsp;&nbsp;&nbsp;</th>
 	</tr>
@@ -98,6 +91,7 @@
 			%>${podling.resolution.@link}</a><% } else { %>${podling.@name} <% }
 		} %>
 	   </td>
+	   <td>${podling.@resourceAliases}</td>
 	   <td>${podling.description}
 		<% if ( podling.resolution != "" ) { %>
 		<hr>
@@ -114,14 +108,6 @@
 		podling.mentors.children().each { mentor ->
 		%>${sep}${mentor}<%
 		     	sep=", "
-		} %>
-	   </td>
-	   <td><% if ( podling.resourceAliases != "" ) {
-	   		sep=""
-			podling.resourceAliases.children().each { alias ->
-			%>${sep}${alias}<%
-				sep=", "
-			} 
 		} %>
 	   </td>
 	   <td>${podling.@startdate}</td>
@@ -139,10 +125,10 @@
       <table class="colortable">
 	<tr>
 	   <th>Project</th>
+	   <th>Aliases</th>
 	   <th>Description</th>
 	   <th>Apache Sponsor</th>
 	   <th>Mentors</th>
-	   <th>Aliases</th>
 	   <th>Start&nbsp;Date&nbsp;</th>
 	   <th>End&nbsp;Date&nbsp;&nbsp;&nbsp;</th>
 	</tr>
@@ -158,6 +144,7 @@
 			%>${podling.resolution.@link}</a><% } else { %>${podling.@name} <% }
 		} %>
 	   </td>
+	   <td>${podling.@resourceAliases}</td>
 	   <td>${podling.description}
 		<% if ( podling.resolution != "" ) { %>
 		<hr>
@@ -174,14 +161,6 @@
 		podling.mentors.children().each { mentor ->
 		%>${sep}${mentor}<%
 		     	sep=", "
-		} %>
-	   </td>
-	   <td><% if ( podling.resourceAliases != "" ) {
-	   		sep=""
-			podling.resourceAliases.children().each { alias ->
-			%>${sep}${alias}<%
-				sep=", "
-			} 
 		} %>
 	   </td>
 	   <td>${podling.@startdate}</td>
