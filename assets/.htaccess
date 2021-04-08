@@ -210,6 +210,8 @@ RedirectMatch Permanent ^/olio(/.*)?$ http://incubator.apache.org/projects/olio.
 RedirectMatch Permanent ^/photark(/.*)?$ http://incubator.apache.org/projects/photark.html
 # https://gitbox.apache.org/repos/asf?p=incubator-retired-pirk.git;a=blob;f=.htaccess;hb=refs/heads/asf-site
 RedirectMatch Permanent ^/provisionr(/.*)?$ http://incubator.apache.org/projects/provisionr.html
+# quarks was renamed edgent and then edgent retired
+RedirectMatch Permanent ^/projects/quarks.html$ http://incubator.apache.org/projects/edgent.html
 RedirectMatch Permanent ^/rcf(/.*)?$ http://incubator.apache.org/projects/rcf.html
 RedirectMatch Permanent ^/ripple(/.*)?$ http://incubator.apache.org/projects/ripple.html
 RedirectMatch Permanent ^/s4(/.*)?$ http://incubator.apache.org/projects/s4.html
