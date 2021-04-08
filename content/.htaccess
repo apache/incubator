@@ -160,14 +160,23 @@ Redirect Permanent /xmlbeans http://xmlbeans.apache.org
 
 # retired podlings
 # All URLs must be redirected to the status page as the original site as been dropped
-# N.B. This can only be done here for old-style URLs under i.a.o
+# N.B. This can only be done here for old-style URLs under i.a.o, e.g.
+# http://incubator.apache.org/agila/...
+#
+# For podling website URLs of the form
+# http://<podling>.apache.org/ or http://<podling>.incubator.apache.org/
+# the simplest solution is to create a directory under retired/, see for example:
+# https://github.com/apache/incubator/tree/master/assets/retired/amaterasu
+#
+# Prior to the introduction of the retired/ directory, it was necessary to set up the
+# appropriate .htaccess file, as follows
+#
 # For svnpubsub sites, set up the .htaccess file under:
 # https://svn.apache.org/repos/asf/incubator/<podling>/site/[publish|etc]
 #
 # For podling.incubator.apache.org URLs using gitpubsub:
 # Something like the following:
 # https://gitbox.apache.org/repos/asf/incubator-retired-<podling>-site.git
-# However this appears to be read-only
 #
 RedirectMatch Permanent ^/agila(/.*)?$ http://incubator.apache.org/projects/agila.html
 RedirectMatch Permanent ^/alois(/.*)?$ http://incubator.apache.org/projects/alois.html
