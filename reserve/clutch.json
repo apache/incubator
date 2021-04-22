@@ -75,8 +75,8 @@
         "incubator-age",
         {
           "description": "Apache age",
-          "last_update_int": 1619023084,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_int": 1619055606,
+          "last_update_txt": "<span style='color: #070;'>&lt;15 minutes ago</span>"
         }
       ],
       [
@@ -185,7 +185,7 @@
       }
     },
     "reportingGroup": "January, April, July, October",
-    "reportingMonthly": false,
+    "reportingMonthly": true,
     "repositories": [
       [
         "incubator-annotator",
@@ -213,11 +213,16 @@
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-annotator.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/annotator/KEYS",
       "svn": "",
-      "tracker": "https://issues.apache.org/jira/browse/ANNO",
+      "tracker": "",
       "wiki": "https://cwiki.apache.org/confluence/display/ANNO",
       "www": "http://annotator.incubator.apache.org"
     },
-    "zFixMeList": []
+    "zFixMeList": [
+      [
+        "10",
+        "Has not provided an issue tracker link"
+      ]
+    ]
   },
   "bluemarlin": {
     "description": "BlueMarlin will develop a web service to add intelligence functionality to a plain ad system.",
@@ -1814,7 +1819,7 @@
       }
     },
     "reportingGroup": "March, June, September, December",
-    "reportingMonthly": true,
+    "reportingMonthly": false,
     "repositories": [
       [
         "incubator-hivemall",
@@ -3007,7 +3012,7 @@
         {
           "description": "Apache MXNet  (Incubating)",
           "last_update_int": 1619054998,
-          "last_update_txt": "<span style='color: #070;'>&lt;15 minutes ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt;30 minutes ago</span>"
         }
       ],
       [
@@ -3408,7 +3413,7 @@
       }
     },
     "reportingGroup": "February, May, August, November",
-    "reportingMonthly": true,
+    "reportingMonthly": false,
     "repositories": [
       [
         "incubator-nlpcraft",
@@ -4225,7 +4230,7 @@
         {
           "description": "Apache Pinot",
           "last_update_int": 1619054017,
-          "last_update_txt": "<span style='color: #070;'>&lt;30 minutes ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt;1 hour ago</span>"
         }
       ],
       [
@@ -5329,7 +5334,7 @@
       }
     },
     "reportingGroup": "February, May, August, November",
-    "reportingMonthly": true,
+    "reportingMonthly": false,
     "repositories": [
       [
         "incubator-toree",
