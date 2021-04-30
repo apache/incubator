@@ -213,16 +213,11 @@
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-annotator.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/annotator/KEYS",
       "svn": "",
-      "tracker": "",
+      "tracker": "https://issues.apache.org/jira/browse/ANNO",
       "wiki": "https://cwiki.apache.org/confluence/display/ANNO",
       "www": "http://annotator.incubator.apache.org"
     },
-    "zFixMeList": [
-      [
-        "10",
-        "Has not provided an issue tracker link"
-      ]
-    ]
+    "zFixMeList": []
   },
   "bluemarlin": {
     "description": "BlueMarlin will develop a web service to add intelligence functionality to a plain ad system.",
@@ -3870,7 +3865,7 @@
         "yupeng"
       ],
       "numberCommitters": 26,
-      "numberCommittersNew": 0,
+      "numberCommittersNew": 6,
       "numberPMCEquals": false,
       "numberPMCMembers": 10,
       "owners": [
@@ -3905,7 +3900,13 @@
       ]
     ],
     "news": [
-      "2018-10-21 Project enters incubation."
+      "2018-10-21 Project enters incubation.",
+      "2020-04-09 New committer added - Haibo Wang. ",
+      "2020-07-22 New committer added - Kartik Khare. ",
+      "2020-07-22 New committer added - Ting Chen. ",
+      "2020-09-20 New committer added - Harley Jackson. ",
+      "2021-02-01 New committer added - Yupeng Fu. ",
+      "2020-02-01 New committer added - Chinmay Soman. "
     ],
     "podlingName": "Pinot",
     "rawReportingGroup": "group-2",
@@ -4062,8 +4063,8 @@
     "resource": "pinot",
     "sponsor": "Incubator",
     "startDate": "2018-10-17",
-    "statusAge": 65,
-    "statusLastUpdated": "2021-02-24",
+    "statusAge": 0,
+    "statusLastUpdated": "2021-04-30",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-pinot.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/pinot/KEYS",
@@ -4929,15 +4930,11 @@
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-teaclave.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/teaclave/KEYS",
       "svn": "",
-      "tracker": "",
+      "tracker": "https://issues.apache.org/jira/browse/XXX",
       "wiki": "",
       "www": "https://teaclave.incubator.apache.org"
     },
     "zFixMeList": [
-      [
-        "10",
-        "Has not provided an issue tracker link"
-      ],
       [
         "18",
         "Has not provided a wiki link"
