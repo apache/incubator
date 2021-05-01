@@ -213,11 +213,16 @@
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-annotator.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/annotator/KEYS",
       "svn": "",
-      "tracker": "https://issues.apache.org/jira/browse/ANNO",
+      "tracker": "",
       "wiki": "https://cwiki.apache.org/confluence/display/ANNO",
       "www": "http://annotator.incubator.apache.org"
     },
-    "zFixMeList": []
+    "zFixMeList": [
+      [
+        "10",
+        "Has not provided an issue tracker link"
+      ]
+    ]
   },
   "bluemarlin": {
     "description": "BlueMarlin will develop a web service to add intelligence functionality to a plain ad system.",
@@ -3882,8 +3887,8 @@
     "resource": "pinot",
     "sponsor": "Incubator",
     "startDate": "2018-10-17",
-    "statusAge": 1,
-    "statusLastUpdated": "2021-04-30",
+    "statusAge": 0,
+    "statusLastUpdated": "2021-05-01",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-pinot.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/pinot/KEYS",
@@ -4749,11 +4754,15 @@
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-teaclave.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/teaclave/KEYS",
       "svn": "",
-      "tracker": "https://issues.apache.org/jira/browse/XXX",
+      "tracker": "",
       "wiki": "",
       "www": "https://teaclave.incubator.apache.org"
     },
     "zFixMeList": [
+      [
+        "10",
+        "Has not provided an issue tracker link"
+      ],
       [
         "18",
         "Has not provided a wiki link"
