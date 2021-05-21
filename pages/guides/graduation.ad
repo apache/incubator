@@ -147,22 +147,29 @@ ____
 Release Early, Release Often
 ____
 
-Projects need to cut releases. Apache projects need to
-understand how to cut Apache releases. Therefore it is an
-important step during your stay in the incubator to
-demonstrate the ability to create an Apache Release.
+There are two distinct parts to making releases:
 
-Podlings do not need to actually *publish* a
-release to demonstrate that they understand how to
-accomplish such a feat. However, creating a release that
-is approved by the link:/incubation/Roles_and_Responsibilities.html#Incubator_Project_Management_Committee_IPMC[incubator project management committee] is usually the
-simplest way to do this.
+1. "Preparing a release" is something that is done by a release manager. Some documentation
+refers to this as "cutting" a release. Preparing a release means following the project-specific
+instructions for creating the release artifacts and putting them in a repository that is a
+staging area for voting and subsequent publishing the release.
 
-If you are going to cut a release (which is highly
-recommended), then please read the link:releasemanagement.html[Incubator Release Management Guide] for hints, tips and guidelines for cutting a
-release that will get approved by the
-link:/incubation/Roles_and_Responsibilities.html#Incubator_Project_Management_Committee_IPMC[IPMC]
-without problems.
+2. "Publishing a release" is done after the podling and then the IPMC approve the release
+that has been prepared, using a formal [VOTE] process. If the vote fails, the release manager
+can prepare an improved release. Publishing means that the release artifacts are moved to the
+official distribution area where they are picked up by the mirror system.
+
+It is an important step during your stay in the incubator to demonstrate the ability
+to prepare and publish an Apache Release. That means graduating podling:
+
+- Knows the licensing requirements of what code is going into your *source release*
+- Knows where to stage the source release
+- Knows how to conduct votes on the releases
+- Knows how to archive old releases
+
+Please read the link:releasemanagement.html[Incubator Release Management Guide] for hints, tips and guidelines
+for making a release that will get approved by the
+link:/incubation/Roles_and_Responsibilities.html#Incubator_Project_Management_Committee_IPMC[IPMC] without problems.
 
 == Creating an Open and Diverse community
 
