@@ -194,7 +194,7 @@
       }
     },
     "reportingGroup": "January, April, July, October",
-    "reportingMonthly": true,
+    "reportingMonthly": false,
     "repositories": [
       [
         "incubator-annotator",
@@ -222,16 +222,11 @@
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-annotator.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/annotator/KEYS",
       "svn": "",
-      "tracker": "",
+      "tracker": "https://issues.apache.org/jira/browse/ANNO",
       "wiki": "https://cwiki.apache.org/confluence/display/ANNO",
       "www": "http://annotator.incubator.apache.org"
     },
-    "zFixMeList": [
-      [
-        "10",
-        "Has not provided an issue tracker link"
-      ]
-    ]
+    "zFixMeList": []
   },
   "bluemarlin": {
     "description": "BlueMarlin will develop a web service to add intelligence functionality to a plain ad system.",
@@ -868,16 +863,16 @@
         "incubator-doris",
         {
           "description": "Apache Doris (Incubating)",
-          "last_update_int": 1622599191,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_int": 1622685705,
+          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
         }
       ],
       [
         "incubator-doris-website",
         {
           "description": "Apache Doris Website Incubating",
-          "last_update_int": 1622599761,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_int": 1622686371,
+          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
         }
       ]
     ],
@@ -1695,7 +1690,7 @@
         {
           "description": "Apache Hop Website",
           "last_update_int": 1622642670,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
         }
       ]
     ],
@@ -2897,7 +2892,7 @@
         {
           "description": "Apache MXNet  (Incubating)",
           "last_update_int": 1622681213,
-          "last_update_txt": "<span style='color: #070;'>&lt;1 hour ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
         }
       ],
       [
@@ -2928,8 +2923,8 @@
         "incubator-mxnet-site",
         {
           "description": "Apache MXNet Site",
-          "last_update_int": 1622666870,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_int": 1622688689,
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
         }
       ],
       [
@@ -3465,8 +3460,8 @@
         "incubator-nuttx",
         {
           "description": "Apache NuttX is a mature, real-time embedded operating system...",
-          "last_update_int": 1622676454,
-          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
+          "last_update_int": 1622690000,
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
         }
       ],
       [
@@ -3489,8 +3484,8 @@
         "incubator-nuttx-website",
         {
           "description": "Apache NuttX Website",
-          "last_update_int": 1622599504,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_int": 1622684722,
+          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
         }
       ]
     ],
@@ -3588,7 +3583,7 @@
       }
     },
     "reportingGroup": "February, May, August, November",
-    "reportingMonthly": true,
+    "reportingMonthly": false,
     "repositories": [
       [
         "incubator-pagespeed-cpanel",
@@ -3651,7 +3646,7 @@
         {
           "description": "Apache pagespeed website",
           "last_update_int": 1596379946,
-          "last_update_txt": "43 weeks ago"
+          "last_update_txt": "44 weeks ago"
         }
       ],
       [
@@ -4049,14 +4044,14 @@
       }
     },
     "reportingGroup": "February, May, August, November",
-    "reportingMonthly": false,
+    "reportingMonthly": true,
     "repositories": [
       [
         "incubator-pinot",
         {
           "description": "Apache Pinot",
-          "last_update_int": 1622678885,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
+          "last_update_int": 1622692183,
+          "last_update_txt": "<span style='color: #070;'>&lt;1 hour ago</span>"
         }
       ],
       [
@@ -4188,7 +4183,7 @@
         {
           "description": "Apache Pony Mail (Incubating) - Email for Ponies & People",
           "last_update_int": 1622046340,
-          "last_update_txt": "7 days ago"
+          "last_update_txt": "8 days ago"
         }
       ],
       [
@@ -4212,7 +4207,7 @@
         {
           "description": "Apache Pony Mail Unit Tests",
           "last_update_int": 1622675598,
-          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
         }
       ]
     ],
@@ -4519,7 +4514,7 @@
         {
           "description": "A cluster computing framework for processing large-scale geos...",
           "last_update_int": 1622677953,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
         }
       ],
       [
@@ -4630,10 +4625,10 @@
       "2021-05-03 Project enters incubation."
     ],
     "podlingName": "ShenYu",
-    "rawReportingGroup": "month",
+    "rawReportingGroup": "group-1",
     "releases": [],
-    "reportingGroup": "Monthly",
-    "reportingMonthly": false,
+    "reportingGroup": "January, April, July, October",
+    "reportingMonthly": true,
     "repositories": "",
     "resource": "shenyu",
     "sponsor": "Incubator",
@@ -4649,10 +4644,6 @@
       "www": ""
     },
     "zFixMeList": [
-      [
-        "05",
-        "Reporting group is either missing or a multiple"
-      ],
       [
         "10",
         "Has not provided an issue tracker link"
@@ -4747,7 +4738,7 @@
       }
     },
     "reportingGroup": "March, June, September, December",
-    "reportingMonthly": true,
+    "reportingMonthly": false,
     "repositories": [
       [
         "incubator-spot",
@@ -5091,15 +5082,11 @@
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-teaclave.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/teaclave/KEYS",
       "svn": "",
-      "tracker": "",
+      "tracker": "https://issues.apache.org/jira/browse/XXX",
       "wiki": "",
       "www": "https://teaclave.incubator.apache.org"
     },
     "zFixMeList": [
-      [
-        "10",
-        "Has not provided an issue tracker link"
-      ],
       [
         "18",
         "Has not provided a wiki link"
@@ -5332,7 +5319,7 @@
         {
           "description": "Apache training",
           "last_update_int": 1620488725,
-          "last_update_txt": "25 days ago"
+          "last_update_txt": "26 days ago"
         }
       ]
     ],
@@ -5733,7 +5720,7 @@
         {
           "description": "Apache YuniKorn K8shim",
           "last_update_int": 1622678731,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
         }
       ],
       [
@@ -5749,7 +5736,7 @@
         {
           "description": "Apache incubator-yunikorn-scheduler-interface - incubating",
           "last_update_int": 1622678327,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
         }
       ],
       [
@@ -5757,7 +5744,7 @@
         {
           "description": "Apache Yunikorn website - see the master branch for instructions",
           "last_update_int": 1622648514,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
         }
       ],
       [
