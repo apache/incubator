@@ -291,7 +291,10 @@ source repository.  This should contain something like the following:</p>
 <p>Turn off ${podling} automatic builds</p>
 </li>
 <li>
-<p>Update ${podling} Incubator SVN</p>
+<p>Remove LDAP entry of ${podling}</p>
+</li>
+<li>
+<p>Update ${podling} Incubator SVN if the podling uses SVN repo.</p>
 <div class="ulist">
 <ul>
 <li>
@@ -307,21 +310,16 @@ source repository.  This should contain something like the following:</p>
 </div>
 </li>
 <li>
-<p>After Infra modifies the website SVN permissions, disable
-the podling website by installing an <code>.htaccess</code> like this</p>
+<p>Adding an empty index.html into the ${podling} directory as the other retired project does in <a href="https://github.com/apache/incubator/tree/master/assets/retired" class="bare">https://github.com/apache/incubator/tree/master/assets/retired</a>.
+The web server that hosts all the podling websites checks for a directory matching the host name, and redirects to the podling status file if it is present.</p>
+</li>
+<li>
+<p>When all steps towards retirement are done, announce completeness on general@incubator.</p>
+</li>
+<li>
+<p>Indicate that the podling is closed down in the next board report.</p>
 </li>
 </ul>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre>RedirectMatch Permanent ^(/.*)?$ http://incubator.apache.org/projects/{podling}.html</pre>
-</div>
-</div>
-<div class="paragraph">
-<p>file at the root of the podling website dir which consists
-of only a redirect to the podling status page.
-- When all steps towards retirement are done, announce completeness on general@incubator.
-- Indicate that the podling is closed down in the next board report.</p>
 </div>
 <div class="paragraph">
 <p>The user accounts of the projects committers do not need
