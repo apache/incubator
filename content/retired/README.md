@@ -12,7 +12,7 @@ so create a bare index.html file. (There's nothing to see, so no point in genera
 Once the Incubator website has been deployed, the website
 http://abcd.apache.org/
 will redirect to 
-https://incubator.apache.org/projects/abcd.html which is the standard status page for podling "abdc" and
+https://incubator.apache.org/projects/abcd.html which is the standard status page for podling "abcd" and
 should mention the "retired" status of the podling.
 
 Note: older podlings with websites of the form 
