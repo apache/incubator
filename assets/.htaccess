@@ -178,6 +178,8 @@ Redirect Permanent /xmlbeans http://xmlbeans.apache.org
 # Something like the following:
 # https://gitbox.apache.org/repos/asf/incubator-retired-<podling>-site.git
 #
+# adffaces was renamed
+RedirectMatch Permanent ^/adffaces(/.*)?$ http://incubator.apache.org/projects/trinidad.html
 RedirectMatch Permanent ^/agila(/.*)?$ http://incubator.apache.org/projects/agila.html
 RedirectMatch Permanent ^/alois(/.*)?$ http://incubator.apache.org/projects/alois.html
 RedirectMatch Permanent ^/altrmi(/.*)?$ http://incubator.apache.org/projects/altrmi.html
