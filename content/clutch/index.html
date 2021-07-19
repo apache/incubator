@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Incubator Clutch Status</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <meta name="generator" content="JBake">
+
+    <!-- Le styles -->
+    <link href="../css/incubator.css" rel="stylesheet">
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/asciidoctor.css" rel="stylesheet">
+    <link href="../css/base.css" rel="stylesheet">
+    <link href="../css/prettify.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <!--<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">-->
+    <link rel="shortcut icon" href="https://www.apache.org/favicon.ico">
+    <script src="https://www.apachecon.com/event-images/snippet.js"></script>
+  </head>
+  <body onload="prettyPrint()">
+    <div id="wrap">
+   
+
+
+	<!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/"><i class="icon-home"></i>Apache Incubator</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Policies <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="/policy/incubation.html">Incubation Policy</a></li>
+                <li><a href="/ip-clearance/">Intellectual Property Clearance</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Proposals <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="/guides/proposal.html">A Guide To Proposal Creation</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Podling Guides <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="/cookbook">Cookbook</a></li>
+              
+                <li><hr><a href="/guides/roles_and_responsibilities.html">Roles and Responsibilities</a></li>
+                <li><a href="/guides/committer.html">Committers</a></li>
+                <li><a href="/guides/ppmc.html">Podling Project Management Committee</a></li>
+                <li><a href="/guides/community.html">Guide to Successful Community Building</a></li>
+
+                <li><hr><a href="/guides/branding.html">Incubator Branding Guide</a></li>
+                <li><a href="/guides/publicity.html">Podling Publicity/Media Guidelines</a></li>
+                <li><a href="/guides/press-kit.html">Podling Press Kit</a></li>
+              
+                <li><hr><a href="/guides/transitioning_asf.html">Initial Code Import</a></li>
+                <li><a href="/guides/names.html">Podling Name Search Guide</a></li>
+                <li><a href="/guides/ip_clearance.html">Podling IP Clearance</a></li>
+
+                <li><hr><a href="/guides/sites.html">Podling Websites</a></li>
+                <li><a href="/guides/podling_sourcecontrol.html">Podling Source Control</a></li>
+
+                <li><hr><a href="/guides/releasemanagement.html">Release Management</a></li>
+                <li><a href="/guides/distribution.html">Release Distribution</a></li>
+              
+                <li><hr><a href="/guides/graduation.html">Guide to Successful Graduation</a></li>
+                <li><a href="/guides/retirement.html">Guide to Retirement</a></li>
+                <li><a href="/guides/transferring.html">Transferring Resources out of the Incubator</a></li>
+
+                <li><hr><a href="/projects/#current">Current Podlings</a></li>
+                <li><a href="/clutch/">Clutch Report</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">PMC Guides <b class="caret"></b></a>
+              <ul class="dropdown-menu">     
+                <li><a href="/guides/participation.html">Guide to Participation</a></li>
+                <li><a href="/guides/lists.html">Incubator Mailing Lists Guide</a></li>
+
+                <li><a href="/guides/chair.html">Incubator Chair Guide</a></li>  
+                <li><a href="/guides/mentor.html">Mentors' Guide</a></li>
+
+                <li><hr><a href="/guides/website.html">Updating the top-level Incubator website</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">ASF <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="https://www.apache.org/foundation/how-it-works.html">How Apache Works</a></li>
+                <li><a href="https://www.apache.org/dev/">Developer Documentation</a></li>
+                <li><a href="https://www.apache.org/foundation/">Foundation</a></li>
+                <li><a href="https://www.apache.org/legal/">Legal</a></li>
+		            <li><hr><a href="https://www.apache.org/licenses/">License</a></li>
+		            <li><a href="https://www.apache.org/security/">Security</a></li>
+                <li><a href="https://www.apache.org/foundation/sponsorship.html">Sponsorship</a></li>
+                <li><a href="https://www.apache.org/foundation/thanks.html">Thanks</a></li>
+		            <li><a href="https://www.apache.org/events/current-event">Current Events</a></li>
+              </ul>
+            </li>
+            <li><a href="/faq.html">FAQs</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 vcenter"><a href="https://www.apache.org/"><img src="https://www.apache.org/img/asf_logo.png" alt="The Apache Software Foundation" border="0" style="margin-top: 2px" width="200"></a></div>
+        <div class="col-md-4 vcenter"><a href="/"><img src="https://incubator.apache.org/images/incubator_feather_egg_logo_sm.png" alt="The Apache Software Foundation Incubator" border="0" style="margin-top: 2px" width="256"></a></div>
+        <div class="col-md-4 vcenter">
+	    <a href="https://www.apache.org/foundation/contributing.html"><img src="https://www.apache.org/images/SupportApache-small.png" height="64" width="64"></a>
+	    &nbsp;&nbsp;&nbsp;&nbsp;
+	    <a class="acevent" data-format="square" data-width="100" data-mode="light" data-event="random"></a>
+	</div>
+      </div>
+    </div>
+    <div class="top-container container">
+
+
+<div class="incubator-page-header">
+    <h1>Incubator Clutch Status</h1>
+</div>
+
+<div id="preamble">
+<div class="sectionbody">
+<div id="current" class="paragraph">
+<p>Clutch is a tool which gathers details about the projects (podlings) currently in incubation and generates the table below. Clutch also generates an analysis page
+for each podling, along with several data files. Its aim is to encourage and nurture podlings; and to provide an overview of the state of establishment of various resources,
+and quick access to thems. See <a href="#definitions">definitions</a> and <a href="#notes">notes</a> below regarding purpose, interpretation, and how-to.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="clutch">Clutch</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Unresolved directive in &lt;stdin&gt; - include::_includes/clutcht.ad[]</p>
+</div>
+<div class="paragraph">
+<p>Current Board Report:
+Unresolved directive in &lt;stdin&gt; - include::_includes/clutchmy.ad[]</p>
+</div>
+<div class="sect2">
+<h3 id="quick_notes">Quick Notes</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>The <span class="care">orange</span> items indicate where the podling needs to take more care and attention.</p>
+</li>
+<li>
+<p>Anything <span class="issue">vermilion</span> is an issue that the podling should address ASAP. Admittedly nothing can be done about elapsed time.</p>
+</li>
+<li>
+<p>The <span class="cool1">bluish-green</span> items indicate success.</p>
+</li>
+<li>
+<p>The <span class="cool2">yellow</span> items are okay.</p>
+</li>
+<li>
+<p>Click the column header link for <a href="#definitions">definitions</a>.</p>
+</li>
+<li>
+<p>Click cells to go to available related resources.</p>
+</li>
+<li>
+<p>Click the podling name in the first column to go to the podling&#8217;s clutch analysis page, which has deeper and more detailed information.</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all fit-content">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top"><a href="#h-project">Podling</a></th>
+<th class="tableblock halign-left valign-top"><a href="#h-sponsor">Sponsor</a></th>
+<th class="tableblock halign-center valign-top"><a href="#h-startdate" title="Start Date">A</a></th>
+<th class="tableblock halign-center valign-top"><a href="#h-elapseddays" title="Elapsed Days">B</a></th>
+<th class="tableblock halign-center valign-top"><a href="#h-reportingmonthly" title="Reporting Monthly?">C</a></th>
+<th class="tableblock halign-center valign-top"><a href="#h-reportinggroup" title="Reporting Group">D</a></th>
+<th class="tableblock halign-center valign-top"><a href="#h-hasstatusfile" title="Has status file">E</a></th>
+<th class="tableblock halign-center valign-top"><a href="#h-statusupdatedate" title="Status updated">F</a></th>
+<th class="tableblock halign-center valign-top"><a href="#h-statusage" title="Status Age">G</a></th>
+<th class="tableblock halign-center valign-top"><a href="#h-statusupdatecounts" title="Status Update Counts">H</a></th>
+<th class="tableblock halign-center valign-top"><a href="#h-numbercommitters" title="Number of Committers">I</a></th>
+<th class="tableblock halign-center valign-top"><a href="#h-numbernewcommitters" title="Number of New Committers">J</a></th>
+<th class="tableblock halign-center valign-top"><a href="#h-hasrepos" title="Has a Code Repository">K</a></th>
+<th class="tableblock halign-center valign-top"><a href="#h-hastracker" title="Has Issue Tracker">L</a></th>
+<th class="tableblock halign-center valign-top"><a href="#h-hasdevlist" title="Has dev@ List">M</a></th>
+<th class="tableblock halign-center valign-top"><a href="#h-hascommitslist" title="Has commits@ list">N</a></th>
+<th class="tableblock halign-center valign-top"><a href="#h-haswebsite" title="Has Website">O</a></th>
+<th class="tableblock halign-center valign-top"><a href="#h-hasdistributionarea" title="Has a Distribution Area">P</a></th>
+<th class="tableblock halign-center valign-top"><a href="#h-hassigningkeys" title="Has Release Signing Keys">Q</a></th>
+<th class="tableblock halign-center valign-top"><a href="#h-hasrelease" title="Has a Release in the Distribution Area">R</a>
+
+Unresolved directive in &lt;stdin&gt; - include::_includes/clutchr.ad[]</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#h-project">Podling</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#h-sponsor">Sponsor</a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="#h-startdate" title="Start Date">A</a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="#h-elapseddays" title="Elapsed Days">B</a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="#h-reportingmonthly" title="Reporting Monthly?">C</a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="#h-reportinggroup" title="Reporting Group">D</a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="#h-hasstatusfile" title="Has status file">E</a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="#h-statusupdatedate" title="Status updated">F</a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="#h-statusage" title="Status Age">G</a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="#h-statusupdatecounts" title="Status Update Counts">H</a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="#h-numbercommitters" title="Number of Committers">I</a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="#h-numbernewcommitters" title="Number of New Committers">J</a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="#h-hasrepos" title="Has a Code Repository">K</a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="#h-hastracker" title="Has Issue Tracker">L</a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="#h-hasdevlist" title="Has dev@ List">M</a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="#h-hascommitslist" title="Has commits@ list">N</a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="#h-haswebsite" title="Has Website">O</a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="#h-hasdistributionarea" title="Has a Distribution Area">P</a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="#h-hassigningkeys" title="Has Release Signing Keys">Q</a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="#h-hasrelease" title="Has a Release in the Distribution Area">R</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="definitions">Definitions, Notes, and References</h3>
+<div class="paragraph">
+<p>The <span class="care">orange</span> and <span class="issue">vermilion</span> items indicate where more care and attention is needed. The following
+notes for each column provide definitions and attempt to link directly to the relevant process documentation:</p>
+</div>
+<div class="sect3">
+<h4 id="h-project">Podling</h4>
+<div class="paragraph">
+<p>The name of each podling is linked to a <a href="#podling_analysis_page">podling clutch analysis page</a>.
+If your podling is in incubation, but is missing from the Clutch table, then it still needs to be added to the <span class="code">content/podlings.xml</span> file.
+See the <a href="/guides/mentor.html#add_to_incubation_summary_file">mentor&#8217;s guide</a>. Clutch also generates the <a href="/projects/">Projects page</a> from <span class="code">content/podlings.xml</span>.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="h-sponsor">Sponsor</h4>
+<div class="paragraph">
+<p>Usually the Incubator sponsors podlings. Occasionally Apache Top Level Projects (TLPs) sponsor podlings. The sponsor is chosen on the <a href="/guides/proposal.html">proposal</a>.
+Set the value in the <span class="code">content/podlings.xml</span> entry for the podling.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="h-startdate">A: Start Date</h4>
+<div class="paragraph">
+<p>This is the date the podling started. Usually this is the date the podling proposal vote passed on the Incubator mailing list.
+Set this in the <span class="code">content/podlings.xml</span> entry for the podling.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="h-elapseddays">B: Elapsed Days</h4>
+<div class="paragraph">
+<p>This is the number of days since the start date. This is color coded according to the normal timeline of a podling.
+<span class="cool3">&lt;3</span>, <span class="cool2">&lt;12</span>, <span class="cool1">&lt;18</span>, <span class="cool3">&lt;24</span>, <span class="cool4">&gt;24</span> months. We may adjust these levels to better fit currently-observed cycles.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="h-reportingmonthly">C: Reporting Monthly</h4>
+<div class="paragraph">
+<p>For the first three months podlings report monthly. If the podling misses a report, it returns to the monthly-reporting requirement until it reports again.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="h-reportinggroup">D: Reporting Group</h4>
+<div class="paragraph">
+<p>Which months the podling reports: 1 = January, April, July, October; 2 = February, May, August, November; 3 = March, June, September, December.
+Note that the report process for a month begins at the end of the prior month. The IPMC chair sends out the reporting schedule on a monthly basis, and reminders to each podling&#8217;s dev list.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="e_has_status_file">E: Has Status File</h4>
+<div class="paragraph">
+<p>Each podling maintains a status file in <span class="code">content/projects/(podling).xml</span> which Clutch converts to a status page.
+Your mentor sets up the file and then the podling maintains it. The key part to maintain is the "News" section, where you announce New Committers, PPMC Members, and Releases. For greater detail, please see:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="/guides/mentor.html#initialize_podling_status_page">Initializing Status</a></p>
+</li>
+<li>
+<p><a href="/policy/incubation.html#ongoing_activities">Ongoing Activities</a></p>
+</li>
+<li>
+<p><a href="/guides/website.html#maintaining_status_files">Status Maintenance</a></p>
+</li>
+<li>
+<p><a href="/guides/ppmc.html#project_status_page">Podling Status Page</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Click the link in the cell to view the current status page.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="h-statusupdatedate">F: Status Update Date</h4>
+<div class="paragraph">
+<p>The date the status page was last updated. Keep the Status Page up to date with frequent news about:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>New Committers</p>
+</li>
+<li>
+<p>New PPMC Members</p>
+</li>
+<li>
+<p>New Releases</p>
+</li>
+<li>
+<p>New Repositories</p>
+</li>
+<li>
+<p>New Resources</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="h-statusage">G: Status Age</h4>
+<div class="paragraph">
+<p>Days since the status page was last updated. The text color indicates when a podling is not keeping its status up to date.
+<span class="cool1">&lt;2</span>, <span class="cool2">&lt;4</span>, <span class="cool3">&lt;9</span>, <span class="cool4">&gt;9</span> months.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="h-statusupdatecounts">H: Status Update Counts</h4>
+<div class="paragraph">
+<p>Cumulative number of commits to the podling status file in the previous 2, 4, and 9 months</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="h-numbercommitters">I: Number of Committers</h4>
+<div class="paragraph">
+<p>The number of committers who have been approved to date. Taken from Whimsy via
+<a href="https://whimsy.apache.org/public/public_ldap_projects.json">public project ldap</a>.
+Maintained in Whimsy through <a href="https://whimsy.apache.org/roster/ppmc/">the roster pages</a>.
+Click the cell to view <a href="https://people.apache.org/phonebook.html">the public phone book</a>.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="h-numbernewcommitters">J: Number of New Committers</h4>
+<div class="paragraph">
+<p>The number of committers added since establishment. This count comes from the Status page "News" section.
+See guides on voting in <a href="/guides/ppmc.html#adding_new_committers">new committers</a> and <a href="/guides/ppmc.html#voting_in_a_new_ppmc_member">new ppmc members</a>.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="h-hasrepos">K: Has a Code Repository</h4>
+<div class="paragraph">
+<p>Indicates whether the podling has created a Gitbox or Subversion code repository. Projects may have multiple Gitbox repositories.
+Click the podling name in the first column to view all of the podling&#8217;s repositories. A podling coming to the ASF may need to request a
+<a href="/guides/mentor.html#git_migrations">migration</a> or a <a href="/guides/mentor.html#gitbox_requests">new repository</a>.
+The list of Gitbox repositories comes from <a href="https://gitbox.apache.org/repositories.json">Gitbox json</a>.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="h-hastracker">L: Has Issue Tracker</h4>
+<div class="paragraph">
+<p>Indicates whether the podling has an Issue Tracker. If the status file has an issue tracker link and the link is valid, there
+is a link to the tracker in the cell.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="h-hasdevlist">M: Has a Dev Mailing List</h4>
+<div class="paragraph">
+<p>Indicates whether the podling has established a dev email list and archives. This comes from the status page, and Clutch confirms that it matches the usual naming pattern.
+If the list is available, the cell has a link to the <a href="http://mail-archives.apache.org/mod_mbox/">mailbox archive</a> podling dev list.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="h-hascommitslist">N: Has a Commits Mailing List</h4>
+<div class="paragraph">
+<p>Indicates whether the podling has established a commits email list and archives. This comes from the status page, and Clutch confirms that it matches the usual naming pattern.
+If the list is available, the cell has a link to the <a href="http://mail-archives.apache.org/mod_mbox/">mailbox archive</a> podling commits list.
+Sometimes a podling will start by directing code repository and issue tracker notification emails to their dev list. This will often obscur meaningful conversation.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="h-haswebsite">O: Has a Web Site</h4>
+<div class="paragraph">
+<p>Podlings should maintain a website so the user community can find out information about the podling and The Apache Software Foundation.
+Here is the incubator&#8217;s <a href="/guides/sites.html">website guide</a>. If the website is not provided in the status file, Clutch tries to find it using the usual naming patterns.</p>
+</div>
+<div class="paragraph">
+<p>If the website exists, the cell provides a link to it. Whimsy provides a periodic scan of podling websites which you can view
+<a href="https://whimsy.apache.org/pods/">here</a>. The clutch process uses <a href="https://whimsy.apache.org/public/pods-scan.json">json</a> data to add notes about website issues
+to the podling&#8217;s clutch analysis page under "Errata".</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="p_has_a_distribution_area">P: Has a Distribution Area</h4>
+<div class="paragraph">
+<p>Indicates whether the podling has a directory in the incubator&#8217;s <a href="https://dist.apache.org/repos/dist/release/incubator/">release distribution directory</a>.
+If this exists, the cell provides a link.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="h-hassigningkeys">Q: Has Release Signing Keys</h4>
+<div class="paragraph">
+<p>Indicates whether the podling has a PGP "<span class="code">Signing KEYS</span>" file in its distribution area. If this is present, the cell provides a link.
+There is a facility that performs periodic checks on Apache releases and signatures - <a href="https://checker.apache.org/projs/incubator.html">"release checker"</a>.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="h-hasrelease">R: Has a Release in the Distribution Area</h4>
+<div class="paragraph">
+<p>Indicates whether the podling has a release in their distribution area. Podlings must comply with Apache release and release distribution policies as modified by the Incubator.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="/guides/releasemanagement.html">Incubator Release Management</a></p>
+</li>
+<li>
+<p><a href="http://www.apache.org/dev/#releases">Software Product Releases</a></p>
+</li>
+<li>
+<p><a href="http://www.apache.org/legal/release-policy.html">Apache Release Policy (legal)</a></p>
+</li>
+<li>
+<p><a href="https://www.apache.org/dev/release-distribution.html">Apache Release Distribution Policy (infra)</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>If there is a podling release, the cell provides a link to the podling&#8217;s clutch analysis page&#8217;s release section.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="h-graduate">Graduating</h4>
+<div class="paragraph">
+<p>Once the Board has approved the podling&#8217;s graduation resolution, update your podling metadata in the <span class="code">content/podlings.xml</span>
+file as you progress through graduation. Complete the tasks listed in the documentation, such as a final tidy of the status page.
+See <a href="https://infra.apache.org/infra-contact#requesting-graduation">Infrastructure steps for graduation</a>.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="h-retire">Retirement</h4>
+<div class="paragraph">
+<p>Once the Incubator PMC has agreed to a podling&#8217;s retirement, update the podling metadata and tidy the status page. If the podling is continuing development
+elsewhere, make sure to provide the new location. When this occurs chances are someone on the IPMC will handle these duties ad hoc.</p>
+</div>
+<div class="paragraph">
+<p>Unresolved directive in &lt;stdin&gt; - include::_includes/clutcho1.ad[]</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="steps">Assist with Incubation Steps</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Clutch helps us all follow the process from the "Acceptance" phase onwards.
+Any committer to a podling can help with these steps. Don&#8217;t leave it all to your mentors, although there are some steps that only they can do.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="mentors">Mentors</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This list comes from the <a href="/projects/">Projects in incubation</a> summary table.
+The <a href="/incubation/Roles_and_Responsibilities.html#Mentor">Mentors</a> are ASF members or individuals recognized by the IPMC who have chosen to assist these projects.
+The best way to find mentors for a new project is during your Discuss and Proposal phases on the general@ mail list.</p>
+</div>
+<div class="paragraph">
+<p>Unresolved directive in &lt;stdin&gt; - include::_includes/clutchm.ad[]</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="notes">Notes</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Any Incubator committer can run 'clutch'. In the top-level of the SVN repos <span class="code">incubator/public/trunk</span> SVN, do: '<span class="code">./clutch2.sh</span>' to
+re-generate the <a href="#data">data files</a> and Asciidoctor files for the clutch. This is all a part of the normal build in GIT: <a href="https://github.com/apache/incubator">Incubator Git</a>.
+See the Readme.</p>
+</div>
+<div class="paragraph">
+<p>Clutch reads the source file for the <a href="/projects/">projects currently in incubation</a> table (i.e. <span class="code">content/podlings.xml</span>),
+ensures that each new project has an entry, and adds some more attributes. Clutch then gathers some data from each project&#8217;s Status page and
+validates that certain resources are established and steps have been achieved.</p>
+</div>
+<div class="paragraph">
+<p>Clutch output includes <a href="#data">data files</a></p>
+</div>
+<div class="sect2">
+<h3 id="podling_analysis_page">Podling Clutch Analysis Page</h3>
+<div class="paragraph">
+<p>The clutch analysis fills the data included on this page and creates an analysis for each podling that can be linked to from the podling name in the clutch table.</p>
+</div>
+<div class="sect3">
+<h4 id="description">Description</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>The podling description from <span class="code">content/podlings.xml</span></p>
+</li>
+<li>
+<p>The podling start date.</p>
+</li>
+<li>
+<p>The date of the last update of project/status.xml.</p>
+</li>
+<li>
+<p>The reporting cycle.</p>
+</li>
+<li>
+<p>The number of committers and ppmc members. Indication if these are equal.</p>
+</li>
+<li>
+<p>Mentor list including apache ids.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="news">News</h4>
+<div class="paragraph">
+<p>Copies the news from the podling status page</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="resources">Resources</h4>
+<div class="paragraph">
+<p>Listing of various podling resources</p>
+</div>
+<div class="sect4">
+<h5 id="project_website">Project Website</h5>
+<div class="paragraph">
+<p>Link to podling&#8217;s public website</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="mailing_lists">Mailing lists</h5>
+<div class="ulist">
+<ul>
+<li>
+<p>Developer mailing list archive</p>
+</li>
+<li>
+<p>Commits mailing list archive</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect4">
+<h5 id="issue_tracker">Issue Tracker</h5>
+<div class="paragraph">
+<p>Link to issue tracker</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="wiki">Wiki</h5>
+<div class="paragraph">
+<p>Link to wiki</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="repositories">Repositories</h5>
+<div class="ulist">
+<ul>
+<li>
+<p>Detailed list of gitbox repos from infra&#8217;s ground truth for the podling.</p>
+</li>
+<li>
+<p>Link to any subversion repository.</p>
+</li>
+<li>
+<p>For each gitbox repos:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Gitbox link</p>
+</li>
+<li>
+<p>Github link</p>
+</li>
+<li>
+<p>Description</p>
+</li>
+<li>
+<p>Number of commits</p>
+</li>
+<li>
+<p>Date of last commit</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="releases">Releases</h4>
+<div class="paragraph">
+<p>Information about the podling&#8217;s release, harvested from the distribution area&#8217;s svn repository.</p>
+</div>
+<div class="sect4">
+<h5 id="current_2">Current</h5>
+<div class="paragraph">
+<p>Current releases:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Link to the signing key, if it exists.</p>
+</li>
+<li>
+<p>Link to instructions on how to verify a release.</p>
+</li>
+<li>
+<p>Release list is suppressed if there are no signing keys</p>
+</li>
+<li>
+<p>For each release:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Download link using <span class="code">closer.lua</span></p>
+</li>
+<li>
+<p>Signature link</p>
+</li>
+<li>
+<p>Hash link</p>
+</li>
+<li>
+<p>Size of the download file</p>
+</li>
+<li>
+<p>Date that the release was added to the distribution area.</p>
+</li>
+<li>
+<p>User who moved the release.</p>
+</li>
+<li>
+<p>Revision in the svn repository.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="errata">Errata</h4>
+<div class="paragraph">
+<p>Issues which may require further work.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Errata has a list of potential issues identified for the podling.</p>
+</li>
+<li>
+<p>Critical issues are in bold.</p>
+</li>
+<li>
+<p>Links to pages on how to resolve the issue.</p>
+</li>
+<li>
+<p>Link to the <a href="https://whimsy.apache.org/pods/project">whimsy podling site scan</a>/</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="data">Data files</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Data files are also generated so that other tools can easily re-use the  metadata for the set of projects currently in incubation:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="/clutch/clutch.txt"><span class="code">clutch.txt</span></a> - list of projects, one per line. Comma-separated values (CSV).</p>
+</li>
+<li>
+<p><span class="code">clutch.pkl</span> - a Python "pickle" file with various attributes (it is in the top-level of SVN incubator/public/trunk).</p>
+</li>
+<li>
+<p>One text file for each Reporting group listing the dev mail address of the podlings due to report in that group.
+(See <a href="/clutch/report_due_1.txt"><span class="code">report_due_1.txt</span></a>,  <a href="/clutch/report_due_2.txt"><span class="code">report_due_2.txt</span></a>, and
+ <a href="/clutch/report_due_3.txt"><span class="code">report_due_3.txt</span></a>)
+These are used by the IPMC to send monthly report alert reminders.</p>
+</li>
+<li>
+<p><a href="/clutch/podlings_graduated.txt"><span class="code">podlings_graduated.txt</span></a> - list of graduated podlings, one per line with start and end dates.</p>
+</li>
+<li>
+<p><a href="/clutch/podlings_retired.txt"><span class="code">podlings_retired.txt</span></a> - list of retired podlings, one per line with start and end dates.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="other">Other Issues</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Occasionally there are other issues, usually regarding podlings not cleaning up after their "graduation".</p>
+</div>
+<div class="paragraph">
+<p>Unresolved directive in &lt;stdin&gt; - include::_includes/clutcho2.ad[]</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="notes-2">Further Notes</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The <a href="http://en.wikipedia.org/wiki/Clutch_(eggs)">clutch</a> is the set of eggs which have been laid. The mother hen (our Incubator PMC)
+needs to continually gather them, to ensure that none have rolled from the nest or moved to the outside, being forgotten or becoming cold.
+Clutch also means to grasp eagerly.</p>
+</div>
+<div class="paragraph">
+<p>So please interpret this table and the detailed pages from the point-of-view of encouragement and nurture.</p>
+</div>
+<div class="sect2">
+<h3 id="origin">Origin</h3>
+<div class="paragraph">
+<p>The nest was becoming full. Some podlings were forgotten, rolled into dark corners. We created a new tool, "clutch", to assist with oversight of all podlings
+(gmane link is now missing). The clutch started 2008-10-19. (missing gmane link) There was prior list discussion. Also see
+<a href="https://issues.apache.org/jira/browse/INCUBATOR-78">INCUBATOR-78</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="colour_scheme">Colour Scheme</h3>
+<div class="paragraph">
+<p>The colours for the table were specifically chosen to take into account colour-blindness and general accessibility.
+See the email discussion that led to this: <a href="http://thread.gmane.org/gmane.comp.apache.incubator.general/20788/focus=20810">Re: Clutch color coding</a>.
+2008-12-04 <a href="http://s.apache.org/clutch_colour?action=display">http://s.apache.org/clutch_colour</a> and see some testing
+<a href="http://people.apache.org/~crossley/cud/test.html">notes</a> and demonstrations.</p>
+</div>
+<div class="paragraph">
+<p>Thanks again to: "Color Universal Design (CUD) - How to make figures and presentations that are friendly to Colorblind people."
+Masataka Okabe and Kei Ito. (<a href="http://jfly.iam.u-tokyo.ac.jp/color/">http://jfly.iam.u-tokyo.ac.jp/color/</a></p>
+</div>
+</div>
+</div>
+</div>
+
+		</div>
+		<div id="push"></div>
+    </div>
+
+    <div id="footer">
+      <div class="container">
+          <p class="muted credit">&copy; 2021 The Apache Software Foundation | Licensed under the Apache License, Version 2.0.<br/>
+          Apache Incubator, Apache, the Apache feather logo, and the Apache Incubator project logo are trademarks or registered trademarks of The Apache Software Foundation.</p>
+      </div>
+    </div>
+    <script src="../js/jquery-1.11.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/prettify.js"></script>
+    <script src="../js/readingTime.js"></script>
+    <script src="../js/incubator.js"></script>
+  </body>
+</html>
