@@ -1,14 +1,19 @@
 #!/bin/bash
 
 CURRENTDIR=`pwd`
-WORKDIR=/tmp/incubator-site
+export WORKDIR=/tmp/incubator-site
 ME=`basename $0`
+
+function fatal() {
+    echo $* >&2
+    exit 1
+}
 
 rm -rf $WORKDIR
 mkdir -p $WORKDIR
 
 # now bake the site
-./bake.sh -b . $WORKDIR
+./bake.sh -b . $WORKDIR || fatal "Build failed, exiting"
 
 # push all of the results to asf-site
 git checkout asf-site
