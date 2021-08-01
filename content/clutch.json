@@ -234,11 +234,16 @@
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-annotator.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/annotator/KEYS",
       "svn": "",
-      "tracker": "https://issues.apache.org/jira/browse/ANNO",
+      "tracker": "",
       "wiki": "https://cwiki.apache.org/confluence/display/ANNO",
       "www": "http://annotator.incubator.apache.org"
     },
-    "zFixMeList": []
+    "zFixMeList": [
+      [
+        "10",
+        "Has not provided an issue tracker link"
+      ]
+    ]
   },
   "bluemarlin": {
     "description": "BlueMarlin will develop a web service to add intelligence functionality to a plain ad system.",
@@ -2952,7 +2957,7 @@
         {
           "description": "Apache MXNet Site",
           "last_update_int": 1627786663,
-          "last_update_txt": "<span style='color: #070;'>&lt;1 hour ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
         }
       ],
       [
@@ -5160,7 +5165,7 @@
         {
           "description": "Apache Toree (Incubating)",
           "last_update_int": 1623254298,
-          "last_update_txt": "7 weeks ago"
+          "last_update_txt": "8 weeks ago"
         }
       ],
       [
