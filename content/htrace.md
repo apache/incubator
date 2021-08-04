@@ -1,167 +1,76 @@
-Title: Incubation Status Template
-<link href="http://purl.org/DC/elements/1.0/" rel="schema.DC"></link>
-
-This page tracks the project status, incubator-wise. For more general project status, look on the project website.
+Title: HTrace Codebase Intellectual Property (IP) Clearance Status
 
 
-HTrace is a tracing framework intended for use with distributed systems written in java.
-
-
-<span class="retired">The HTrace podling retired on 2018-04-11</span>
+HTrace is a tracing framework for use with distributed systems written in java. HTrace is currently in a repository on the Cloudera public github at htrace.org. This clearance is for HTrace at https://github.com/cloudera/htrace as of commit 22c4fac69eef035d8cc2819febdc4ac14c1fb99a .
 
 
 
-- 2018-04-11 The HTrace podling retired on 2018-04-11
-
-- 2016-10-05 PPMC: Mike Drob
-
-- 2016-03-08 GSoC Mentor: Colin McCabe
-
-- 2016-03-04 Apache HTrace 4.1.0 release
-
-- 2015-09-26 Apache HTrace 4.0.1 release
-
-- 2015-09-14 Apache HTrace 4.0.0 release
-
-- 2015-06-03 Apache HTrace 3.2.0 release
-
-- 2015-02-11 PPMC: Abraham Elmahrek
-
-- 2014-11-11 Project enters incubation.
-
-| item | type | reference |
-|------|------|-----------|
-| Website | www | Original: [http://htrace.org/](http://htrace.org/) Podling: [http://htrace.incubator.apache.org/](http://htrace.incubator.apache.org/)  |
-| . | wiki | . |
-| Mailing list | dev |  `dev`  `@`  `htrace.incubator.apache.org`  |
-| . | issues |  `issues`  `@`  `htrace.incubator.apache.org`  |
-| . | commits |  `commits`  `@`  `htrace.incubator.apache.org`  |
-| . | private |  `private`  `@`  `htrace.incubator.apache.org`  |
-| Bug tracking | . |  [https://issues.apache.org/jira/browse/HTRACE](https://issues.apache.org/jira/browse/HTRACE)  |
-| Source code | Git |  [https://gitbox.apache.org/repos/asf?p=incubator-htrace.git](https://gitbox.apache.org/repos/asf?p=incubator-htrace.git)  |
-| Mentors | rvs | Roman Shaposhnik |
-| . | jfarrell | Jake Farrell |
-| . | todd | Todd Lipcon |
-| . | lewismc | Lewis John McGibbney |
-| . | billie | Billie Rinaldi |
-| . | stack | Michael Stack |
-| Committers | . | . |
-| . | cmccabe | Colin McCabe |
-| . | eclark | Elliott Clark |
-| . | leavitt | Jonathan Leavitt |
-| . | iwasakims | Masatake Iwasaki |
-| . | stack | Michael Stack |
-| . | ndimiduk | Nick Dimiduk |
-| . | todd | Todd Lipcon |
-| Extra | . | . |
+- Which PMC will be responsible for the code: HTrace (incubating) PMC
 
 
-- none yet
-
-# Project Setup {#Project+Setup}
-
-This is the first phase on incubation, needed to start the project at Apache.
+- Into which existing project/module: HTrace (incubating)
 
 
- _Item assignment is shown by the Apache id._  _Completed tasks are shown by the completion date (YYYY-MM-dd)._ 
+- Officer or member managing donation: Michael Stack (stack)
+
+ _Completed tasks are shown by the completion date (YYYY-MM-dd)._ 
 
 
-## Identify the project to be incubated {#Identify+the+project+to+be+incubated}
+# Identify the codebase {#Identify+the+codebase}
 
 | date | item |
 |------|------|
-| 2014-11-11 | Make sure that the requested project name does not already exist. [Please follow the guide to ensure a suitable project/product name.](http://www.apache.org/foundation/marks/naming.html) DONE |
-| 2014-11-11 | If request from an existing Apache project to adopt an external package, then ask the Apache project for the SVN module and mail address names: N/A. |
-| 2014-11-11 | If request from outside Apache to enter an existing Apache project, then post a message to that project for them to decide on acceptance: N/A. |
-| 2014-11-11 | If request from anywhere to become a stand-alone PMC, then assess the fit with the ASF, and create the lists and modules under the incubator address/module names if accepted. DONE |
-
-## Infrastructure {#Infrastructure}
-
-| date | item |
-|------|------|
-| 2014-11-11 | Ask infrastructure to create source repository modules and grant the committers karma. DONE by Jake Farrell in [INFRA-8608](https://issues.apache.org/jira/browse/INFRA-8608)  |
-| 2014-11-11 | Ask infrastructure to set up and archive mailing lists. DONE by Jake Farrell in [INFRA-8608](https://issues.apache.org/jira/browse/INFRA-8608)  |
-| 2014-11-11 | Ask infrastructure to set up issue tracker (JIRA, Bugzilla). DONE by Jake Farrell in [INFRA-8608](https://issues.apache.org/jira/browse/INFRA-8608)  |
-| 2014-11-11 | Ask infrastructure to set up wiki (Confluence, Moin). NONE asked for. |
-| 2014-12-10 | Project src migrated to Apache. Software grant email, [[IP CLEARANCE] Software grant for htrace (incubating), a tracing framework for use with distributed systems written in java](https://mail-archives.apache.org/mod_mbox/incubator-general/201412.mbox/%3CCADcMMgFEWeSS9PdaNh94ahgZaW%2BrtK19EX4rNqSagSj%3DmuzaBQ%40mail.gmail.com%3E) . |
-
-## Mentor-related responsibility/oversight {#Interim+responsibility}
-
-| date | item |
-|------|------|
-| 2014-11-11 | Subscribe all Mentors on the pmc and general lists. DONE by Jake Farrell |
-| ....-..-.. | Give all Mentors access to the incubator SVN repository. (to be done by the Incubator PMC chair or an Incubator PMC Member wih karma for the authorizations file) |
-| ....-..-.. | Tell Mentors to track progress in the file 'incubator/projects/{project.name}.html' DONE by Jake Farrell |
+| 2014-11-11 | https://github.com/cloudera/htrace as of commit 22c4fac69eef035d8cc2819febdc4ac14c1fb99a or see tarball at https://issues.apache.org/jira/secure/attachment/12680909/htrace.22c4fac69eef035d8cc2819febdc4ac14c1fb99a.tgz Its md5 is ed8901e64ff35e93fb78ebd1c9056385 |
 
 ## Copyright {#Copyright}
 
 | date | item |
 |------|------|
-| 2014-12-02 | Check and make sure that the papers that transfer rights to the ASF been received. It is only necessary to transfer rights for the package, the core code, and any new code produced by the project. DONE: See [[IP CLEARANCE] Software grant for htrace (incubating), a tracing framework for use with distributed systems written in java](https://mail-archives.apache.org/mod_mbox/incubator-general/201412.mbox/%3CCADcMMgFEWeSS9PdaNh94ahgZaW%2BrtK19EX4rNqSagSj%3DmuzaBQ%40mail.gmail.com%3E)  |
-| 2014-12-02 | Check and make sure that the files that have been donated have been updated to reflect the new ASF copyright. DONE. Migraged src runs RAT check as part of build. |
+| 2014-11-11 | Software Grant of HTrace project mailed to secretary@apache. Had to be resent 2014-11-26 signed by a VP of Cloudera, Inc. (Peter Cooper Ellis). |
+| 2014-11-27 | Grant ack'd by secretary@apache `To: Peter Cooper Ellis &lt;stack@apache.org&gt;
+                    Cc: secretary@apache.org
+                    Message-ID: &lt;5477bcd888b9c_1d8dc1e0f8608b9@whimsy-vm.mail&gt;
+                    Subject: Your Grant sent to Apache Secretary
+                    Mime-Version: 1.0
+                    Content-Type: text/plain;
+                     charset=UTF-8
+                     Content-Transfer-Encoding: 7bit
+
+                     Dear Peter Cooper Ellis,
+
+                     This message acknowledges receipt of the following document, which has been filed in the Apache Software Foundation records:
+
+                       Grant from Cloudera, Inc.
+
+                       -- Craig L Russell
+                       Secretary, Apache Software Foundation`  |
+| N/A | Check and make sure that the files that have been donated have been updated to reflect the new ASF copyright. _The project was already licensed Apache 2.0_ . |
+
+Identify name recorded for software grant: _Cloudera, Inc., file cloudera-htrace.pdf, for htrace_ 
+
 
 ## Verify distribution rights {#Verify+distribution+rights}
 
+Corporations and individuals holding existing distribution rights:
+
+
+
+- Cloudera, Inc.
+
 | date | item |
 |------|------|
-| ....-..-.. | Check and make sure that for all code included with the distribution that is not under the Apache license, we have the right to combine with Apache-licensed code and redistribute. ONGOING |
-| ....-..-.. | Check and make sure that all source code distributed by the project is covered by one or more of the following approved licenses: Apache, BSD, Artistic, MIT/X, MIT/W3C, MPL 1.1, or something with essentially the same terms. ONGOING |
+| 2014-11-11 | All active committers have a signed CLA on record. |
+| 2014-11-11 | Remind active committers that they are responsible for ensuring that a Corporate CLA is recorded if such is required to authorize their contributions under their individual CLA. |
+| 2014-11-11 | Check and make sure that for all items included with the distribution that is not under the Apache license, we have the right to combine with Apache-licensed code and redistribute. |
+| 2014-11-11 | Check and make sure that all items depended upon by the project is covered by one or more of the following approved licenses: Apache, BSD, Artistic, MIT/X, MIT/W3C, MPL 1.1, or something with essentially the same terms. |
 
-## Establish a list of active committers {#Establish+a+list+of+active+committers}
-
-| date | item |
-|------|------|
-| ....-..-.. | Check that all active committers have submitted a contributors agreement. ONGOING. All but Mastake have filed icla or already have an apache id. |
-| ....-..-.. | Add all active committers in the STATUS file. TODO |
-| ....-..-.. | Ask root for the creation of committers' accounts on people.apache.org. DONE except for Masatake. Waiting on icla. |
-
-## Project specific {#Project+specific}
-
- _Add project specific tasks here._ 
+Generally, the result of checking off these items will be a Software Grant, CLA, and Corporate CLA for ASF licensed code, which must have no dependencies upon items whose licenses that are incompatible with the Apache License.
 
 
-# Incubation {#Incubation}
+# Organizational acceptance of responsibility for the project {#Organizational+acceptance+of+responsibility+for+the+project}
 
-These action items have to be checked for during the whole incubation process.
-
-
- _These items are not to be signed as done during incubation, as they may change during incubation._  _They are to be looked into and described in the status reports and completed in the request for incubation signoff._ 
+Related VOTEs:
 
 
-## Collaborative Development {#Collaborative+Development}
 
-
-- Have all of the active long-term volunteers been identified and acknowledged as committers on the project?
-
-- Are there three or more independent committers? (The legal definition of independent is long and boring, but basically it means that there is no binding relationship between the individuals, such as a shared employer, that is capable of overriding their free will as individuals, directly or indirectly.)
-
-- Are project decisions being made in public by the committers?
-
-- Are the decision-making guidelines published and agreed to by all of the committers?
-
-## Licensing awareness {#Licensing+awareness}
-
-
-- Are all licensing, trademark, credit issues being taken care of and acknowleged by all committers?
-
-## Project Specific {#Project+Specific}
-
- _Add project specific tasks here._ 
-
-
-# Exit {#Exit}
-
- _Things to check for before voting the project out._ 
-
-
-## Organizational acceptance of responsibility for the project {#Organizational+acceptance+of+responsibility+for+the+project}
-
-
-- If graduating to an existing PMC, has the PMC voted to accept it?
-
-- If graduating to a new PMC, has the board voted to accept it?
-
-## Incubator sign-off {#Incubator+sign-off}
-
-
-- Has the Incubator decided that the project has accomplished all of the above tasks?
+- The VOTE thread accepting the donation is up on the dev mailing list for htrace: http://mail-archives.apache.org/mod_mbox/incubator-htrace-dev/201411.mbox/browser
