@@ -226,7 +226,6 @@ If this exists, the cell provides a link.
 ==== Q: Has Release Signing Keys
 
 Indicates whether the podling has a PGP "[.code]#Signing KEYS#" file in its distribution area. If this is present, the cell provides a link.
-There is a facility that performs periodic checks on Apache releases and signatures - https://checker.apache.org/projs/incubator.html["release checker"].
 
 [[h-hasrelease]]
 ==== R: Has a Release in the Distribution Area
