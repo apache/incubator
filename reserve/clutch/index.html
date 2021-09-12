@@ -155,7 +155,7 @@ and quick access to thems. See <a href="#definitions">definitions</a> and <a hre
 <h2 id="clutch">Clutch</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Clutch last gathered: Sun Sep 12 01:38:49 2021 UTC.</p>
+<p>Clutch last gathered: Sun Sep 12 23:06:55 2021 UTC.</p>
 </div>
 <div class="paragraph">
 <p>Number of podlings in incubation: 37</p>
@@ -233,7 +233,7 @@ and quick access to thems. See <a href="#definitions">definitions</a> and <a hre
 <th class="tableblock halign-center valign-top"><a href="#h-hasdevlist" title="Has dev@ List">M</a></th>
 <th class="tableblock halign-center valign-top"><a href="#h-hascommitslist" title="Has commits@ list">N</a></th>
 <th class="tableblock halign-center valign-top"><a href="#h-haswebsite" title="Has Website">O</a></th>
-<th class="tableblock halign-center valign-top"><a href="#h-hasdistributionarea" title="Has a Distribution Area">P</a></th>
+<th class="tableblock halign-center valign-top"><a href="#p_has_a_distribution_area" title="Has a Distribution Area">P</a></th>
 <th class="tableblock halign-center valign-top"><a href="#h-hassigningkeys" title="Has Release Signing Keys">Q</a></th>
 <th class="tableblock halign-center valign-top"><a href="#h-hasrelease" title="Has a Release in the Distribution Area">R</a></th>
 </tr>
@@ -275,7 +275,7 @@ and quick access to thems. See <a href="#definitions">definitions</a> and <a hre
 <td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://people.apache.org/phonebook.html?podling=annotator"><span class="cool1">7</span></a></p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">0</span></p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://gitbox.apache.org/repos/asf?p=incubator-annotator.git;a=tree;hb=HEAD"><span class="cool1">True</span></a></p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">False</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://issues.apache.org/jira/browse/ANNO"><span class="cool1">True</span></a></p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/annotator-dev"><span class="cool1">True</span></a></p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/annotator-commits"><span class="cool1">True</span></a></p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://annotator.incubator.apache.org"><span class="cool1">True</span></a></p></td>
@@ -935,7 +935,7 @@ and quick access to thems. See <a href="#definitions">definitions</a> and <a hre
 <td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://people.apache.org/phonebook.html?podling=teaclave"><span class="cool1">17</span></a></p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">0</span></p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://gitbox.apache.org/repos/asf?p=incubator-teaclave.git;a=tree;hb=HEAD"><span class="cool1">True</span></a></p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="care">False</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://issues.apache.org/jira/browse/XXX"><span class="cool1">True</span></a></p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/teaclave-dev"><span class="cool1">True</span></a></p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock"><a href="http://mail-archives.apache.org/mod_mbox/teaclave-commits"><span class="cool1">True</span></a></p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://teaclave.incubator.apache.org"><span class="cool1">True</span></a></p></td>
@@ -1071,7 +1071,7 @@ and quick access to thems. See <a href="#definitions">definitions</a> and <a hre
 <td class="tableblock halign-center valign-top"><p class="tableblock"><a href="#h-hasdevlist" title="Has dev@ List">M</a></p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock"><a href="#h-hascommitslist" title="Has commits@ list">N</a></p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock"><a href="#h-haswebsite" title="Has Website">O</a></p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="#h-hasdistributionarea" title="Has a Distribution Area">P</a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="#p_has_a_distribution_area" title="Has a Distribution Area">P</a></p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock"><a href="#h-hassigningkeys" title="Has Release Signing Keys">Q</a></p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock"><a href="#h-hasrelease" title="Has a Release in the Distribution Area">R</a></p></td>
 </tr>
@@ -1259,8 +1259,7 @@ If this exists, the cell provides a link.</p>
 <div class="sect3">
 <h4 id="h-hassigningkeys">Q: Has Release Signing Keys</h4>
 <div class="paragraph">
-<p>Indicates whether the podling has a PGP "<span class="code">Signing KEYS</span>" file in its distribution area. If this is present, the cell provides a link.
-There is a facility that performs periodic checks on Apache releases and signatures - <a href="https://checker.apache.org/projs/incubator.html">"release checker"</a>.</p>
+<p>Indicates whether the podling has a PGP "<span class="code">Signing KEYS</span>" file in its distribution area. If this is present, the cell provides a link.</p>
 </div>
 </div>
 <div class="sect3">
