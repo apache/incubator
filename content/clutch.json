@@ -20,7 +20,7 @@
         "vongosling"
       ],
       "numberCommitters": 12,
-      "numberCommittersNew": 1,
+      "numberCommittersNew": 2,
       "numberPMCEquals": false,
       "numberPMCMembers": 11,
       "owners": [
@@ -68,7 +68,8 @@
       "2021/03/19 New Committer, Dehowe Feng",
       "2021-02-19 First Apache AGE release v0.3.0.",
       "2021-05-03 Apache AGE release v0.4.0.",
-      "2021/08/03 Apache AGE release v0.5.0."
+      "2021/08/03 Apache AGE release v0.5.0.",
+      "2021/09/13 New Committer, Alex Kwak"
     ],
     "podlingName": "AGE",
     "rawReportingGroup": "group-3",
@@ -106,7 +107,7 @@
         {
           "description": "Graph database optimized for fast analysis and real-time data...",
           "last_update_int": 1631227829,
-          "last_update_txt": "3 days ago"
+          "last_update_txt": "4 days ago"
         }
       ],
       [
@@ -114,7 +115,7 @@
         {
           "description": "Graph database optimized for fast analysis and real-time data...",
           "last_update_int": 1630686842,
-          "last_update_txt": "9 days ago"
+          "last_update_txt": "10 days ago"
         }
       ],
       [
@@ -122,15 +123,15 @@
         {
           "description": "Apache age",
           "last_update_int": 1630076288,
-          "last_update_txt": "16 days ago"
+          "last_update_txt": "17 days ago"
         }
       ]
     ],
     "resource": "age",
     "sponsor": "Incubator",
     "startDate": "2020-04-29",
-    "statusAge": 10,
-    "statusLastUpdated": "2021-09-03",
+    "statusAge": 0,
+    "statusLastUpdated": "2021-09-13",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-age.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/age/KEYS",
@@ -238,7 +239,7 @@
         {
           "description": "Apache Annotator provides annotation enabling code for browse...",
           "last_update_int": 1631048304,
-          "last_update_txt": "5 days ago"
+          "last_update_txt": "6 days ago"
         }
       ],
       [
@@ -339,7 +340,7 @@
         {
           "description": "Apache BlueMarlin",
           "last_update_int": 1631054143,
-          "last_update_txt": "5 days ago"
+          "last_update_txt": "6 days ago"
         }
       ]
     ],
@@ -441,7 +442,16 @@
     ],
     "podlingName": "brpc",
     "rawReportingGroup": "group-3",
-    "releases": [],
+    "releases": {
+      "apache-brpc-1.0.0-rc02-incubating-src.tar.gz": {
+        "dtm": "09/13/2021",
+        "folder": "1.0.0-rc02",
+        "hash": "sha512",
+        "revision": "r49904",
+        "size": "18021712",
+        "user": "lorinlee"
+      }
+    },
     "reportingGroup": "March, June, September, December",
     "reportingMonthly": false,
     "repositories": [
@@ -450,7 +460,7 @@
         {
           "description": "Industrial-grade RPC framework used throughout Baidu, with 1,...",
           "last_update_int": 1631234618,
-          "last_update_txt": "3 days ago"
+          "last_update_txt": "4 days ago"
         }
       ],
       [
@@ -469,7 +479,7 @@
     "statusLastUpdated": "2020-10-08",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-brpc.git;a=tree;hb=HEAD",
-      "keys": "",
+      "keys": "https://downloads.apache.org/incubator/brpc/KEYS",
       "svn": "",
       "tracker": "",
       "wiki": "",
@@ -495,10 +505,6 @@
       [
         "35",
         "Apache Security link is missing from website"
-      ],
-      [
-        "12",
-        "Release distribution area is not setup"
       ],
       [
         "16",
@@ -586,7 +592,7 @@
         {
           "description": "Apache crail (Incubating)",
           "last_update_int": 1624543465,
-          "last_update_txt": "11 weeks ago"
+          "last_update_txt": "12 weeks ago"
         }
       ],
       [
@@ -886,16 +892,16 @@
         "incubator-doris",
         {
           "description": "Apache Doris (Incubating)",
-          "last_update_int": 1631412457,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_int": 1631511596,
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
         }
       ],
       [
         "incubator-doris-website",
         {
           "description": "Apache Doris Website Incubating",
-          "last_update_int": 1631240346,
-          "last_update_txt": "3 days ago"
+          "last_update_int": 1631512715,
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
         }
       ]
     ],
@@ -1253,8 +1259,8 @@
         "incubator-flagon-useralejs",
         {
           "description": "Apache Flagon UserALE.js is a comprehensive, thin-client beha...",
-          "last_update_int": 1630911881,
-          "last_update_txt": "7 days ago"
+          "last_update_int": 1631516662,
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
         }
       ]
     ],
@@ -1437,7 +1443,7 @@
         {
           "description": "Apache Heron (Incubating) is a realtime, distributed, fault-t...",
           "last_update_int": 1631476424,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
         }
       ]
     ],
@@ -1718,8 +1724,8 @@
         "incubator-hop",
         {
           "description": "Hop Orchestration Platform",
-          "last_update_int": 1631362419,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
+          "last_update_int": 1631523137,
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
         }
       ],
       [
@@ -1734,8 +1740,8 @@
         "incubator-hop-website",
         {
           "description": "Apache Hop Website",
-          "last_update_int": 1631364765,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
+          "last_update_int": 1631515083,
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
         }
       ]
     ],
@@ -1846,13 +1852,13 @@
     "podlingName": "InLong",
     "rawReportingGroup": "group-1",
     "releases": {
-      "apache-inlong-0.9.0-incubating-src.tar.gz": {
-        "dtm": "07/15/2021",
-        "folder": "0.9.0-incubating",
+      "apache-inlong-0.10.0-incubating-src.tar.gz": {
+        "dtm": "09/03/2021",
+        "folder": "0.10.0-incubating",
         "hash": "sha512",
-        "revision": "r48842",
-        "size": "2111189",
-        "user": "gxcheng"
+        "revision": "r49734",
+        "size": "2225125",
+        "user": "dockerzh"
       }
     },
     "reportingGroup": "January, April, July, October",
@@ -1862,8 +1868,8 @@
         "incubator-inlong",
         {
           "description": "Apache InLong - a one-stop data streaming platform",
-          "last_update_int": 1631356111,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
+          "last_update_int": 1631536253,
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
         }
       ],
       [
@@ -2003,8 +2009,8 @@
         "incubator-kyuubi",
         {
           "description": "Apache Kyuubi is a distributed multi-tenant JDBC server for l...",
-          "last_update_int": 1631457814,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_int": 1631536892,
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
         }
       ],
       [
@@ -2012,7 +2018,7 @@
         {
           "description": "Apache Kyuubi Site",
           "last_update_int": 1630285100,
-          "last_update_txt": "14 days ago"
+          "last_update_txt": "15 days ago"
         }
       ]
     ],
@@ -2241,13 +2247,17 @@
       ],
       "numberCommitters": 9,
       "numberCommittersNew": 0,
-      "numberPMCEquals": false,
-      "numberPMCMembers": 5,
+      "numberPMCEquals": true,
+      "numberPMCMembers": 9,
       "owners": [
         "jshao",
         "junping_du",
         "lidongdai",
+        "peacewong",
         "shaofengshi",
+        "shuaidi",
+        "wangxiaogang",
+        "wangzhen",
         "zhangduo"
       ]
     },
@@ -2777,7 +2787,7 @@
         {
           "description": "[DEPRECATED] - Apache Milagro MFA JS Client (archived)",
           "last_update_int": 1549569160,
-          "last_update_txt": "135 weeks ago"
+          "last_update_txt": "136 weeks ago"
         }
       ],
       [
@@ -2785,7 +2795,7 @@
         {
           "description": "[DEPRECATED] - Apache Milagro MFA JS Lib (archived)",
           "last_update_int": 1549569164,
-          "last_update_txt": "135 weeks ago"
+          "last_update_txt": "136 weeks ago"
         }
       ],
       [
@@ -2793,7 +2803,7 @@
         {
           "description": "[DEPRECATED] - Apache Milagro MFA SDK Android (archived)",
           "last_update_int": 1549569168,
-          "last_update_txt": "135 weeks ago"
+          "last_update_txt": "136 weeks ago"
         }
       ],
       [
@@ -2801,7 +2811,7 @@
         {
           "description": "[DEPRECATED] - Apache Milagro MFA SDK Core (archived)",
           "last_update_int": 1549569175,
-          "last_update_txt": "135 weeks ago"
+          "last_update_txt": "136 weeks ago"
         }
       ],
       [
@@ -2809,7 +2819,7 @@
         {
           "description": "[DEPRECATED] - Apache Milagro MFA SDK ios (archived)",
           "last_update_int": 1549569179,
-          "last_update_txt": "135 weeks ago"
+          "last_update_txt": "136 weeks ago"
         }
       ],
       [
@@ -2817,7 +2827,7 @@
         {
           "description": "[DEPRECATED] - Apache Milagro MFA SDK wp (archived)",
           "last_update_int": 1549569184,
-          "last_update_txt": "135 weeks ago"
+          "last_update_txt": "136 weeks ago"
         }
       ],
       [
@@ -2833,7 +2843,7 @@
         {
           "description": "[DEPRECATED] - Apache Milagro TLS (archived)",
           "last_update_int": 1549569194,
-          "last_update_txt": "135 weeks ago"
+          "last_update_txt": "136 weeks ago"
         }
       ]
     ],
@@ -3087,8 +3097,8 @@
         "incubator-mxnet",
         {
           "description": "Apache MXNet  (Incubating)",
-          "last_update_int": 1631237661,
-          "last_update_txt": "3 days ago"
+          "last_update_int": 1631539818,
+          "last_update_txt": "<span style='color: #070;'>&lt;1 hour ago</span>"
         }
       ],
       [
@@ -3120,7 +3130,7 @@
         {
           "description": "Apache MXNet Site",
           "last_update_int": 1631487239,
-          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
         }
       ],
       [
@@ -3468,7 +3478,7 @@
         {
           "description": "Apache NLPCraft - API to convert natural language into actions.",
           "last_update_int": 1631472699,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
         }
       ],
       [
@@ -3660,8 +3670,8 @@
         "incubator-nuttx",
         {
           "description": "Apache NuttX is a mature, real-time embedded operating system...",
-          "last_update_int": 1631494708,
-          "last_update_txt": "<span style='color: #070;'>&lt;1 hour ago</span>"
+          "last_update_int": 1631515142,
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
         }
       ],
       [
@@ -3669,7 +3679,7 @@
         {
           "description": "Apache NuttX Apps is a collection of tools, shells, network u...",
           "last_update_int": 1631494825,
-          "last_update_txt": "<span style='color: #070;'>&lt;1 hour ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
         }
       ],
       [
@@ -3806,7 +3816,7 @@
         {
           "description": "Automatically exported from code.google.com/p/domain-registry...",
           "last_update_int": 1595512444,
-          "last_update_txt": "59 weeks ago"
+          "last_update_txt": "60 weeks ago"
         }
       ],
       [
@@ -3822,7 +3832,7 @@
         {
           "description": "Apache module for rewriting web pages to reduce latency and b...",
           "last_update_int": 1629295687,
-          "last_update_txt": "25 days ago"
+          "last_update_txt": "26 days ago"
         }
       ],
       [
@@ -4151,7 +4161,7 @@
         {
           "description": "Apache Pony Mail Foal (Next Generation Suite)",
           "last_update_int": 1631478180,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
         }
       ],
       [
@@ -4167,7 +4177,7 @@
         {
           "description": "Apache Pony Mail Unit Tests",
           "last_update_int": 1622737220,
-          "last_update_txt": "14 weeks ago"
+          "last_update_txt": "15 weeks ago"
         }
       ]
     ],
@@ -4286,7 +4296,7 @@
         {
           "description": "Software for ingesting data into SDAP NEXUS",
           "last_update_int": 1631146033,
-          "last_update_txt": "4 days ago"
+          "last_update_txt": "5 days ago"
         }
       ],
       [
@@ -4302,7 +4312,7 @@
         {
           "description": "Apache sdap (Incubating)",
           "last_update_int": 1631140477,
-          "last_update_txt": "4 days ago"
+          "last_update_txt": "5 days ago"
         }
       ],
       [
@@ -4318,7 +4328,7 @@
         {
           "description": "Java batch job used to ingest datasets into SDAP NEXUS",
           "last_update_int": 1584657414,
-          "last_update_txt": "77 weeks ago"
+          "last_update_txt": "78 weeks ago"
         }
       ],
       [
@@ -4326,7 +4336,7 @@
         {
           "description": "Python module exposing an HTTP interface that can be used to ...",
           "last_update_int": 1584653670,
-          "last_update_txt": "77 weeks ago"
+          "last_update_txt": "78 weeks ago"
         }
       ],
       [
@@ -4473,8 +4483,8 @@
         "incubator-sedona",
         {
           "description": "A cluster computing framework for processing large-scale geos...",
-          "last_update_int": 1631208488,
-          "last_update_txt": "3 days ago"
+          "last_update_int": 1631520312,
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
         }
       ],
       [
@@ -4482,7 +4492,7 @@
         {
           "description": "Apache Sedona Website",
           "last_update_int": 1622167039,
-          "last_update_txt": "15 weeks ago"
+          "last_update_txt": "16 weeks ago"
         }
       ]
     ],
@@ -4639,8 +4649,8 @@
         "incubator-shenyu",
         {
           "description": "ShenYu is High-Performance Java API Gateway.",
-          "last_update_int": 1631353276,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
+          "last_update_int": 1631523221,
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
         }
       ],
       [
@@ -4655,8 +4665,8 @@
         "incubator-shenyu-website",
         {
           "description": "Apache ShenYu Website",
-          "last_update_int": 1631432350,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_int": 1631538207,
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
         }
       ]
     ],
@@ -4763,7 +4773,7 @@
         {
           "description": "Apache Spot",
           "last_update_int": 1599790538,
-          "last_update_txt": "52 weeks ago"
+          "last_update_txt": "53 weeks ago"
         }
       ]
     ],
@@ -4908,8 +4918,8 @@
         "incubator-streampipes",
         {
           "description": "Apache StreamPipes - A self-service (Industrial) IoT toolbox ...",
-          "last_update_int": 1631397514,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
+          "last_update_int": 1631523345,
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
         }
       ],
       [
@@ -4917,7 +4927,7 @@
         {
           "description": "Apache Streampipes Examples",
           "last_update_int": 1630877782,
-          "last_update_txt": "7 days ago"
+          "last_update_txt": "8 days ago"
         }
       ],
       [
@@ -4925,7 +4935,7 @@
         {
           "description": "Apache StreamPipes - A self-service (Industrial) IoT toolbox ...",
           "last_update_int": 1631217571,
-          "last_update_txt": "3 days ago"
+          "last_update_txt": "4 days ago"
         }
       ],
       [
@@ -5080,7 +5090,7 @@
         {
           "description": "Apache Teaclave (incubating) is an open source universal secu...",
           "last_update_int": 1629828900,
-          "last_update_txt": "19 days ago"
+          "last_update_txt": "20 days ago"
         }
       ],
       [
@@ -5088,7 +5098,7 @@
         {
           "description": "Apache Mesatee SGX (Incubating)",
           "last_update_int": 1631453193,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
         }
       ],
       [
@@ -5096,7 +5106,7 @@
         {
           "description": "Teaclave TrustZone SDK enables safe, functional, and ergonomi...",
           "last_update_int": 1631132052,
-          "last_update_txt": "4 days ago"
+          "last_update_txt": "5 days ago"
         }
       ],
       [
@@ -5112,7 +5122,7 @@
         {
           "description": "Apache Teaclave Website",
           "last_update_int": 1630430838,
-          "last_update_txt": "12 days ago"
+          "last_update_txt": "13 days ago"
         }
       ]
     ],
@@ -5125,15 +5135,11 @@
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-teaclave.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/teaclave/KEYS",
       "svn": "",
-      "tracker": "",
+      "tracker": "https://issues.apache.org/jira/browse/XXX",
       "wiki": "",
       "www": "https://teaclave.incubator.apache.org"
     },
     "zFixMeList": [
-      [
-        "10",
-        "Has not provided an issue tracker link"
-      ],
       [
         "18",
         "Has not provided a wiki link"
@@ -5650,7 +5656,7 @@
         {
           "description": "Apache Wayang is an Cross-Platform processing system",
           "last_update_int": 1631024049,
-          "last_update_txt": "5 days ago"
+          "last_update_txt": "6 days ago"
         }
       ]
     ],
@@ -5787,7 +5793,7 @@
         {
           "description": "Apache YuniKorn Core",
           "last_update_int": 1630357652,
-          "last_update_txt": "13 days ago"
+          "last_update_txt": "14 days ago"
         }
       ],
       [
@@ -5819,7 +5825,7 @@
         {
           "description": "Apache Yunikorn website - see the master branch for instructions",
           "last_update_int": 1631110643,
-          "last_update_txt": "4 days ago"
+          "last_update_txt": "5 days ago"
         }
       ],
       [
