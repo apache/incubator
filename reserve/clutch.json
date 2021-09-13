@@ -8,6 +8,7 @@
       "members": [
         "dehowef",
         "djkevincr",
+        "emotionbug",
         "eya",
         "felixcheung",
         "jasper",
@@ -19,7 +20,7 @@
         "smarthi",
         "vongosling"
       ],
-      "numberCommitters": 12,
+      "numberCommitters": 13,
       "numberCommittersNew": 2,
       "numberPMCEquals": false,
       "numberPMCMembers": 11,
@@ -260,16 +261,11 @@
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-annotator.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/annotator/KEYS",
       "svn": "",
-      "tracker": "",
+      "tracker": "https://issues.apache.org/jira/browse/ANNO",
       "wiki": "https://cwiki.apache.org/confluence/display/ANNO",
       "www": "http://annotator.incubator.apache.org"
     },
-    "zFixMeList": [
-      [
-        "10",
-        "Has not provided an issue tracker link"
-      ]
-    ]
+    "zFixMeList": []
   },
   "bluemarlin": {
     "description": "BlueMarlin will develop a web service to add intelligence functionality to a plain ad system.",
@@ -1848,7 +1844,9 @@
         "jbonofre"
       ]
     ],
-    "news": [],
+    "news": [
+      "2019-11-03 Project enters incubation."
+    ],
     "podlingName": "InLong",
     "rawReportingGroup": "group-1",
     "releases": {
@@ -1869,7 +1867,7 @@
         {
           "description": "Apache InLong - a one-stop data streaming platform",
           "last_update_int": 1631536253,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
         }
       ],
       [
@@ -1885,20 +1883,16 @@
     "sponsor": "Incubator",
     "startDate": "2019-11-03",
     "statusAge": 0,
-    "statusLastUpdated": "",
+    "statusLastUpdated": "2021-09-13",
     "urls": {
-      "git": "https://gitbox.apache.org/repos/asf?p=incubator-inlong.git;a=tree;hb=HEAD",
+      "git": "",
       "keys": "https://downloads.apache.org/incubator/inlong/KEYS",
-      "svn": "",
+      "svn": "https://svn.apache.org/repos/asf/incubator/tubemq",
       "tracker": "",
       "wiki": "",
-      "www": "http://inlong.incubator.apache.org"
+      "www": "http://tubemq.incubator.apache.org"
     },
     "zFixMeList": [
-      [
-        "07",
-        "Status file is missing"
-      ],
       [
         "10",
         "Has not provided an issue tracker link"
@@ -2010,7 +2004,7 @@
         {
           "description": "Apache Kyuubi is a distributed multi-tenant JDBC server for l...",
           "last_update_int": 1631536892,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
         }
       ],
       [
@@ -3098,7 +3092,7 @@
         {
           "description": "Apache MXNet  (Incubating)",
           "last_update_int": 1631539818,
-          "last_update_txt": "<span style='color: #070;'>&lt;1 hour ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
         }
       ],
       [
@@ -3670,8 +3664,8 @@
         "incubator-nuttx",
         {
           "description": "Apache NuttX is a mature, real-time embedded operating system...",
-          "last_update_int": 1631515142,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_int": 1631544246,
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
         }
       ],
       [
@@ -4021,7 +4015,7 @@
         {
           "description": "Apache Pegasus",
           "last_update_int": 1630982362,
-          "last_update_txt": "6 days ago"
+          "last_update_txt": "7 days ago"
         }
       ],
       [
@@ -4666,7 +4660,7 @@
         {
           "description": "Apache ShenYu Website",
           "last_update_int": 1631538207,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
         }
       ]
     ],
@@ -5097,8 +5091,8 @@
         "incubator-teaclave-sgx-sdk",
         {
           "description": "Apache Mesatee SGX (Incubating)",
-          "last_update_int": 1631453193,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
+          "last_update_int": 1631545207,
+          "last_update_txt": "<span style='color: #070;'>&lt;1 hour ago</span>"
         }
       ],
       [
@@ -5244,7 +5238,7 @@
         {
           "description": "Apache Toree (Incubating)",
           "last_update_int": 1630986879,
-          "last_update_txt": "6 days ago"
+          "last_update_txt": "7 days ago"
         }
       ],
       [
@@ -5801,7 +5795,7 @@
         {
           "description": "Apache YuniKorn K8shim",
           "last_update_int": 1630120931,
-          "last_update_txt": "16 days ago"
+          "last_update_txt": "17 days ago"
         }
       ],
       [
@@ -5817,7 +5811,7 @@
         {
           "description": "Apache incubator-yunikorn-scheduler-interface - incubating",
           "last_update_int": 1630120945,
-          "last_update_txt": "16 days ago"
+          "last_update_txt": "17 days ago"
         }
       ],
       [
