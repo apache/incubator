@@ -1,0 +1,1535 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+               "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--
+  Licensed to the Apache Software Foundation (ASF) under one
+  or more contributor license agreements.  See the NOTICE file
+  distributed with this work for additional information
+  regarding copyright ownership.  The ASF licenses this file
+  to you under the Apache License, Version 2.0 (the
+  "License"); you may not use this file except in compliance
+  with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing,
+  software distributed under the License is distributed on an
+  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  KIND, either express or implied.  See the License for the
+  specific language governing permissions and limitations
+  under the License. 
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" href="../style/bootstrap-1-3-0-min.css" type="text/css" />
+  <link rel="stylesheet" href="../style/style.css" type="text/css" />
+  <script src="https://www.apachecon.com/event-images/snippet.js"></script>
+        <title>Daffodil-VSCode Codebase Intellectual Property (IP) Clearance Status - Apache Incubator</title>
+  
+ </head>
+ <body>
+ <div class="container">
+  <div class="row"><div class="span6"><a href="https://www.apache.org/"><img src="http://www.apache.org/img/asf_logo.png" alt="The Apache Software Foundation" border="0" style="margin-top: 2px" height="88"/></a></div>
+<div class="span7"><a href="/"><img src="https://incubator.apache.org/images/incubator_feather_egg_logo_sm.png" alt="The Apache Software Foundation Incubator" border="0" style="margin-top: 2px" height="88"/></a></div>
+<div class="span2"><a href="https://www.apache.org/foundation/contributing.html"><img src="https://www.apache.org/images/SupportApache-small.png" height="100" width="100"/></a></div>
+</div>
+  <div class="row"><div class="span16"><hr noshade="noshade" size="1"/></div></div>
+  <div class="row">
+   <div class="span4">
+    <form action="http://www.google.com/search" method="get">
+     <input value="incubator.apache.org" name="sitesearch" type="hidden"/>
+     <input size="20" name="q" id="query" type="text" value="search..."
+      onclick="if(this.value == 'search...') {this.value = ''}"/>
+     <input name="Search" value="Go" type="submit"/>
+    </form>
+          <div class="menuheader">General</div>
+    <menu compact="compact">
+          <li><a href="../index.html">Welcome</a></li> 
+          <li><a href="../cookbook/">Incubator Cookbook</a></li> 
+          <li><a href="../policy/incubation.html">Incubation Policy</a></li> 
+          <li><a href="../guides/roles_and_responsibilities.html">Roles and Responsibilities</a></li> 
+          <li><a href="../faq.html">General FAQ</a></li> 
+          <li><a href="http://wiki.apache.org/incubator">Incubator Wiki</a></li> 
+          <li><a href="../whoweare.html">Who We Are</a></li> 
+            </menu>
+      <div class="menuheader">Status</div>
+    <menu compact="compact">
+          <li><a href="../projects">Project List</a></li> 
+          <li><a href="../clutch">Clutch Report</a></li> 
+          <li><a href="../ip-clearance">IP Clearance</a></li> 
+            </menu>
+      <div class="menuheader">Entry Guides</div>
+    <menu compact="compact">
+          <li><a href="../guides/proposal.html">Proposal Guide</a></li> 
+            </menu>
+      <div class="menuheader">Podling Guides</div>
+    <menu compact="compact">
+          <li><a href="../guides/committer.html">Podling Committers</a></li> 
+          <li><a href="../guides/ppmc.html">Podling PMC (PPMC)</a></li> 
+          <li><a href="../guides/mentor.html">Podling Mentor</a></li> 
+          <li><a href="../guides/releasemanagement.html">Podling Releases</a></li> 
+          <li><a href="../guides/branding.html">Podling Branding/Publicity</a></li> 
+          <li><a href="../guides/sites.html">Podling Websites</a></li> 
+          <li><a href="../guides/graduation.html">Graduation</a></li> 
+          <li><a href="../guides/retirement.html">Retirement</a></li> 
+            </menu>
+      <div class="menuheader">Other Guides</div>
+    <menu compact="compact">
+          <li><a href="../guides/participation.html">Participation</a></li> 
+          <li><a href="../faq.html">General FAQ</a></li> 
+          <li><a href="../guides/chair.html">IPMC Chair</a></li> 
+          <li><a href="../guides/lists.html">Mailing Lists</a></li> 
+          <li><a href="../guides/website.html">Incubator Website</a></li> 
+            </menu>
+      <div class="menuheader">ASF</div>
+    <menu compact="compact">
+          <li><a href="http://www.apache.org/foundation/how-it-works.html">How Apache Works</a></li> 
+          <li><a href="http://www.apache.org/dev/">Developer Documentation</a></li> 
+          <li><a href="http://www.apache.org/foundation/">Foundation</a></li> 
+          <li><a href="http://www.apache.org/foundation/sponsorship.html">Sponsor Apache</a></li> 
+          <li><a href="http://www.apache.org/foundation/thanks.html">Thanks</a></li> 
+            </menu>
+    <div id="menuheader">
+      <a class="acevent" data-format="square" data-width="135" data-mode="light" data-event="random"></a>
+    </div>
+   </div>
+   
+   <div class="span12">
+            <h2 id='Codebase+IP+Clearance+TEMPLATE'><img src="../images/redarrow.gif" />Daffodil VSCode IP Clearance</h2>
+<div class="section-content">
+</div>
+        <h2 id='XYZ+Codebase+Intellectual+Property+%28IP%29+Clearance+Status'><img src="../images/redarrow.gif" />Daffodil VSCode Codebase Intellectual Property (IP) Clearance Status</h2>
+<div class="section-content">
+</div>
+        <h2 id='Description'><img src="../images/redarrow.gif" />Description</h2>
+<div class="section-content">
+<p>An interactive graphical environment for debugging and/or authoring of DFDL schemas using Apache Daffodil. This environment is based on the VSCode framework.</p>
+</div>
+        <h2 id='Project+info'><img src="../images/redarrow.gif" />Project info</h2>
+<div class="section-content">
+<ul>
+        <li>The Daffodil PMC has responsibility for this code.</li>
+      </ul>
+<ul>
+        <li>This is a new module with a separate git repository.</li>
+      </ul>
+<ul>
+        <li>Donation managed by Mike Beckerle, Daffodil PMC Chair</li>
+      </ul>
+<p>
+        <em>Completed tasks are shown by the completion date (YYYY-MM-dd).</em>
+      </p>
+<h3 id='Identify+the+codebase'>Identify the codebase</h3>
+<div class="section-content">
+<table class="colortable" width="100%">
+          <tr>
+            <th>date</th>
+            <th>item</th>
+          </tr>
+          <tr>
+            <td>2021-09-17</td>
+            <td>The example-daffodil-vscode contained in the github repository 
+   https://github.com/jw3/example-daffodil-vscode as of 
+git hash 091ad2314af18a81633ef66be996871e20d68a9a  </td>
+          </tr>
+        </table>
+<h4 id='Copyright'>Copyright</h4>
+<div class="section-content">
+<table class="colortable" width="100%">
+            <tr>
+              <th>date</th>
+              <th>item</th>
+            </tr>
+            <tr>
+              <td>....-..-..</td>
+              <td>In process: Check and make sure that the papers that transfer rights to
+                  the ASF been received. It is only necessary to transfer
+                  rights for the package, the core code, and any new code
+                  produced by the project.</td>
+            </tr>
+            <tr>
+              <td>2021-09-17</td>
+              <td>Check and make sure that the files that have been donated
+                  have been updated to reflect the new ASF copyright.</td>
+            </tr>
+          </table>
+<p>
+TBD: Identify name recorded for software grant: <em>the name of the grant as recorded
+in the foundation/officers area, in either grants.txt or cclas.txt, so that the 
+grant can be easily identified. If recorded in the grants.txt document, use the 
+"for" or title. If recorded in the cclas.txt document, use the company name
+(field 2 without submitter name) and the "form on file" name (field 4, without 
+any people's names).</em>
+          </p>
+</div>
+<h4 id='Verify+distribution+rights'>Verify distribution rights</h4>
+<div class="section-content">
+<p>
+Corporations and individuals holding existing distribution rights: 
+<pre>
+Corporations: Concurrent Technologies Corporation, Nteligen LLC
+Individuals: John Wass, Adam Rosien, Shane Dell, Regis Thomas, James Mangus
+</pre>
+            </p>
+<table class="colortable" width="100%">
+            <tr>
+              <th>date</th>
+              <th>item</th>
+            </tr>
+            <tr>
+              <td>....-..-..</td>
+              <td>Check that all active committers have a signed CLA on
+                  record.</td>
+            </tr>
+            <tr>
+              <td>....-..-..</td>
+              <td>Remind active committers that they are responsible for
+                  ensuring that a Corporate CLA is recorded if such is
+                  required to authorize their contributions under their
+                  individual CLA.</td>
+            </tr>
+            <tr>
+              <td>2021-09-17</td>
+              <td>Check and make sure that for all items included with the
+                  distribution that is not under the Apache license, we have
+                  the right to combine with Apache-licensed code and
+                  redistribute. (Only included items are CC0 and MIT-License, and are specified in LICENSE file)</td>
+            </tr>
+            <tr>
+              <td>2021-09-20</td>
+              <td><p>Check and make sure that all items depended upon by the
+                  project are covered by one or more of the following approved
+                  licenses: Apache, BSD, Artistic, MIT/X, MIT/W3C, MPL 1.1, or
+                  something with essentially the same terms.</p>
+                 <p>See section at end of this document for list of all dependencies and their licenses.</p>
+              </td>
+            </tr>
+          </table>
+<p>Generally, the result of checking off these items will be a
+             Software Grant, CLA, and Corporate CLA for ASF licensed code,
+             which must have no dependencies upon items whose licenses that
+             are incompatible with the Apache License.</p>
+</div>
+</div>
+<h3 id='Organizational+acceptance+of+responsibility+for+the+project'>Organizational acceptance of responsibility for the project
+</h3>
+<div class="section-content">
+<p>
+Related VOTEs:
+        </p>
+<ul>
+          <li><em>The VOTE thread accepting the donation may happen either
+before or after IP clearance. Adoption by lazy concensus is acceptable but
+not recommended.</em></li>
+        </ul>
+</div>
+</div>
+        <h2 id='License Verification for Dependencies'><img src="../images/redarrow.gif" />License Verification for Dependencies</h2>
+<div class="section-content">
+<pre>
+Dependencies from Scala/Java code:
+
+Apache 2.0
+    org.typelevel:simulacrum-scalafix-annotations_2.12:0.5.4
+    org.apache.daffodil:daffodil-core_2.12:3.1.0
+    org.apache.daffodil:daffodil-sapi_2.12:3.1.0
+    org.apache.daffodil:daffodil-runtime1-unparser_2.12:3.1.0
+    org.apache.daffodil:daffodil-runtime1_2.12:3.1.0
+    org.apache.daffodil:daffodil-io_2.12:3.1.0
+    org.apache.daffodil:daffodil-udf_2.12:3.1.0
+    org.apache.daffodil:daffodil-lib_2.12:3.1.0
+    com.typesafe:config:1.4.1
+    org.scala-lang.modules:scala-xml_2.12:1.3.0
+    org.typelevel:log4cats-slf4j_2.12:2.1.0
+    org.typelevel:log4cats-core_2.12:2.1.0
+    org.scala-lang.modules:scala-parser-combinators_2.12:1.1.2
+    org.typelevel:cats-effect_2.12:3.1.1
+    org.typelevel:cats-effect-kernel_2.12:3.1.1
+    com.monovore:decline_2.12:2.1.0
+    org.typelevel:cats-effect-std_2.12:3.1.1
+    com.monovore:decline-effect_2.12:2.1.0
+    com.comcast:ip4s-core_2.12:3.0.3
+    org.typelevel:literally_2.12:1.0.2
+    com.fasterxml.woodstox:woodstox-core:6.2.6
+    xml-apis:xml-apis:1.4.01
+    xerces:xercesImpl:2.12.1
+    com.fasterxml.jackson.core:jackson-core:2.12.3
+    io.reactivex.rxjava2:rxjava:2.1.1
+    commons-io:commons-io:2.8.0
+    com.google.code.gson:gson:2.7
+    org.apache.commons:commons-lang3:3.6
+    xml-resolver:xml-resolver:1.2
+
+Similar to Apache License but with the acknowledgment clause removed
+    org.jdom:jdom2:2.0.6
+
+BSD-3-Clause
+    org.scodec:scodec-bits_2.12:1.1.27
+    org.codehaus.woodstox:stax2-api:4.2.1
+
+CC0
+    org.reactivestreams:reactive-streams:1.0.0
+
+MIT
+    org.typelevel:cats-core_2.12:2.6.1
+    co.fs2:fs2-io_2.12:3.0.4
+    com.lihaoyi:os-lib_2.12:0.7.6
+    com.lihaoyi:geny_2.12:0.6.9
+    org.typelevel:cats-kernel_2.12:2.6.1
+    co.fs2:fs2-core_2.12:3.0.4
+    org.slf4j:slf4j-api:1.7.30
+    
+Unicode/ICU License
+    com.ibm.icu:icu4j:69.1
+
+Eclipse Public License - v1.0
+    com.microsoft.java:com.microsoft.java.debug.core:0.31.1
+    ch.qos.logback:logback-classic:1.2.3
+    ch.qos.logback:logback-core:1.2.3
+
+Dependencies from Typescript code:
+
+0BSD tslib@1.14.1 
+0BSD tslib@1.14.1 
+0BSD tslib@2.3.1 
+0BSD tslib@2.3.1 
+Apache-2.0 doctrine@3.0.0 
+Apache-2.0 doctrine@3.0.0 
+Apache-2.0 eslint-visitor-keys@1.3.0 
+Apache-2.0 eslint-visitor-keys@1.3.0 
+Apache-2.0 eslint-visitor-keys@2.1.0 
+Apache-2.0 eslint-visitor-keys@2.1.0 
+Apache-2.0 humanwhocodes/config-array@0.5.0 
+Apache-2.0 humanwhocodes/config-array@0.5.0 
+Apache-2.0 spdx-correct@3.1.1 
+Apache-2.0 spdx-correct@3.1.1 
+Apache-2.0 typescript@4.4.3 
+Apache-2.0 typescript@4.4.3 
+Apache-2.0 validate-npm-package-license@3.0.4 
+Apache-2.0 validate-npm-package-license@3.0.4 
+Apache-2.0 workerpool@6.1.0 
+Apache-2.0 workerpool@6.1.0 
+Apache-2.0 xtuc/long@4.2.2 
+Apache-2.0 xtuc/long@4.2.2 
+BSD-2-Clause cheerio-select@1.5.0 
+BSD-2-Clause cheerio-select@1.5.0 
+BSD-2-Clause css-select@4.1.3 
+BSD-2-Clause css-select@4.1.3 
+BSD-2-Clause css-what@5.0.1 
+BSD-2-Clause css-what@5.0.1 
+BSD-2-Clause domelementtype@2.2.0 
+BSD-2-Clause domelementtype@2.2.0 
+BSD-2-Clause domhandler@4.2.2 
+BSD-2-Clause domhandler@4.2.2 
+BSD-2-Clause domutils@2.8.0 
+BSD-2-Clause domutils@2.8.0 
+BSD-2-Clause entities@2.0.3 
+BSD-2-Clause entities@2.0.3 
+BSD-2-Clause entities@2.2.0 
+BSD-2-Clause entities@2.2.0 
+BSD-2-Clause eslint-scope@4.0.3 
+BSD-2-Clause eslint-scope@4.0.3 
+BSD-2-Clause eslint-scope@5.1.1 
+BSD-2-Clause eslint-scope@5.1.1 
+BSD-2-Clause espree@7.3.1 
+BSD-2-Clause espree@7.3.1 
+BSD-2-Clause esprima@4.0.1 
+BSD-2-Clause esprima@4.0.1 
+BSD-2-Clause esrecurse@4.3.0 
+BSD-2-Clause esrecurse@4.3.0 
+BSD-2-Clause estraverse@4.3.0 
+BSD-2-Clause estraverse@4.3.0 
+BSD-2-Clause estraverse@5.2.0 
+BSD-2-Clause estraverse@5.2.0 
+BSD-2-Clause esutils@2.0.3 
+BSD-2-Clause esutils@2.0.3 
+BSD-2-Clause mississippi@3.0.0 
+BSD-2-Clause mississippi@3.0.0 
+BSD-2-Clause normalize-package-data@2.5.0 
+BSD-2-Clause normalize-package-data@2.5.0 
+BSD-2-Clause nth-check@2.0.1 
+BSD-2-Clause nth-check@2.0.1 
+BSD-2-Clause terser@4.8.0 
+BSD-2-Clause terser@4.8.0 
+BSD-2-Clause typescript-eslint/parser@4.31.1 
+BSD-2-Clause typescript-eslint/parser@4.31.1 
+BSD-2-Clause typescript-eslint/typescript-estree@4.31.1 
+BSD-2-Clause typescript-eslint/typescript-estree@4.31.1 
+BSD-2-Clause uri-js@4.4.1 
+BSD-2-Clause uri-js@4.4.1 
+BSD-3-Clause diff@5.0.0 
+BSD-3-Clause diff@5.0.0 
+BSD-3-Clause esquery@1.4.0 
+BSD-3-Clause esquery@1.4.0 
+BSD-3-Clause flat@5.0.2 
+BSD-3-Clause flat@5.0.2 
+BSD-3-Clause humanwhocodes/object-schema@1.2.0 
+BSD-3-Clause humanwhocodes/object-schema@1.2.0 
+BSD-3-Clause ieee754@1.2.1 
+BSD-3-Clause ieee754@1.2.1 
+BSD-3-Clause license-checker@25.0.1 
+BSD-3-Clause license-checker@25.0.1 
+BSD-3-Clause qs@6.10.1 
+BSD-3-Clause qs@6.10.1 
+BSD-3-Clause serialize-javascript@4.0.0 
+BSD-3-Clause serialize-javascript@4.0.0 
+BSD-3-Clause serialize-javascript@5.0.1 
+BSD-3-Clause serialize-javascript@5.0.1 
+BSD-3-Clause source-map@0.5.7 
+BSD-3-Clause source-map@0.5.7 
+BSD-3-Clause source-map@0.6.1 
+BSD-3-Clause source-map@0.6.1 
+BSD-3-Clause sprintf-js@1.0.3 
+BSD-3-Clause sprintf-js@1.0.3 
+BSD-3-Clause table@6.7.1 
+BSD-3-Clause table@6.7.1 
+BSD-3-Clause xtuc/ieee754@1.2.0 
+BSD-3-Clause xtuc/ieee754@1.2.0 
+CC0-1.0 spdx-license-ids@3.0.10 
+CC0-1.0 spdx-license-ids@3.0.10 
+CC-BY-3.0 spdx-exceptions@2.3.0 
+CC-BY-3.0 spdx-exceptions@2.3.0 
+Custom: http://github.com/substack/node-bufferlist buffers@0.1.1 
+Custom: http://github.com/substack/node-bufferlist buffers@0.1.1 
+ISC abbrev@1.1.1 
+ISC abbrev@1.1.1 
+ISC anymatch@2.0.0 
+ISC anymatch@2.0.0 
+ISC anymatch@3.1.2 
+ISC anymatch@3.1.2 
+ISC aproba@1.2.0 
+ISC aproba@1.2.0 
+ISC await-notify@1.0.1 
+ISC await-notify@1.0.1 
+ISC boolbase@1.0.0 
+ISC boolbase@1.0.0 
+ISC browserify-sign@4.2.1 
+ISC browserify-sign@4.2.1 
+ISC browser-stdout@1.3.1 
+ISC browser-stdout@1.3.1 
+ISC cacache@12.0.4 
+ISC cacache@12.0.4 
+ISC child_process@1.0.2 
+ISC child_process@1.0.2 
+ISC chownr@1.1.4 
+ISC chownr@1.1.4 
+ISC cliui@5.0.0 
+ISC cliui@5.0.0 
+ISC cliui@7.0.4 
+ISC cliui@7.0.4 
+ISC copy-concurrently@1.0.5 
+ISC copy-concurrently@1.0.5 
+ISC dezalgo@1.0.3 
+ISC dezalgo@1.0.3 
+ISC fastq@1.13.0 
+ISC fastq@1.13.0 
+ISC figgy-pudding@3.5.2 
+ISC figgy-pudding@3.5.2 
+ISC flatted@3.2.2 
+ISC flatted@3.2.2 
+ISC fs.realpath@1.0.0 
+ISC fs.realpath@1.0.0 
+ISC fs-write-stream-atomic@1.0.10 
+ISC fs-write-stream-atomic@1.0.10 
+ISC get-caller-file@2.0.5 
+ISC get-caller-file@2.0.5 
+ISC glob@7.1.6 
+ISC glob@7.1.6 
+ISC glob@7.1.7 
+ISC glob@7.1.7 
+ISC glob-parent@3.1.0 
+ISC glob-parent@3.1.0 
+ISC glob-parent@5.1.2 
+ISC glob-parent@5.1.2 
+ISC graceful-fs@4.2.8 
+ISC graceful-fs@4.2.8 
+ISC hosted-git-info@2.8.9 
+ISC hosted-git-info@2.8.9 
+ISC hosted-git-info@4.0.2 
+ISC hosted-git-info@4.0.2 
+ISC infer-owner@1.0.4 
+ISC infer-owner@1.0.4 
+ISC inflight@1.0.6 
+ISC inflight@1.0.6 
+ISC inherits@2.0.1 
+ISC inherits@2.0.1 
+ISC inherits@2.0.3 
+ISC inherits@2.0.3 
+ISC inherits@2.0.4 
+ISC inherits@2.0.4 
+ISC ini@1.3.8 
+ISC ini@1.3.8 
+ISC isexe@2.0.0 
+ISC isexe@2.0.0 
+ISC lru-cache@5.1.1 
+ISC lru-cache@5.1.1 
+ISC lru-cache@6.0.0 
+ISC lru-cache@6.0.0 
+ISC minimalistic-assert@1.0.1 
+ISC minimalistic-assert@1.0.1 
+ISC minimatch@3.0.4 
+ISC minimatch@3.0.4 
+ISC move-concurrently@1.0.1 
+ISC move-concurrently@1.0.1 
+ISC mute-stream@0.0.8 
+ISC mute-stream@0.0.8 
+ISC nopt@4.0.3 
+ISC nopt@4.0.3 
+ISC npm-normalize-package-bin@1.0.1 
+ISC npm-normalize-package-bin@1.0.1 
+ISC once@1.4.0 
+ISC once@1.4.0 
+ISC osenv@0.1.5 
+ISC osenv@0.1.5 
+ISC parse-asn1@5.1.6 
+ISC parse-asn1@5.1.6 
+ISC promise-inflight@1.0.1 
+ISC promise-inflight@1.0.1 
+ISC read@1.0.7 
+ISC read@1.0.7 
+ISC readdir-scoped-modules@1.1.0 
+ISC readdir-scoped-modules@1.1.0 
+ISC read-installed@4.0.3 
+ISC read-installed@4.0.3 
+ISC read-package-json@2.1.2 
+ISC read-package-json@2.1.2 
+ISC remove-trailing-separator@1.1.0 
+ISC remove-trailing-separator@1.1.0 
+ISC require-main-filename@2.0.0 
+ISC require-main-filename@2.0.0 
+ISC rimraf@2.7.1 
+ISC rimraf@2.7.1 
+ISC rimraf@3.0.2 
+ISC rimraf@3.0.2 
+ISC run-queue@1.0.3 
+ISC run-queue@1.0.3 
+ISC sax@1.2.4 
+ISC sax@1.2.4 
+ISC semver@5.7.1 
+ISC semver@5.7.1 
+ISC semver@7.3.5 
+ISC semver@7.3.5 
+ISC set-blocking@2.0.0 
+ISC set-blocking@2.0.0 
+ISC slide@1.1.6 
+ISC slide@1.1.6 
+ISC ssri@6.0.2 
+ISC ssri@6.0.2 
+ISC ungap/promise-all-settled@1.1.2 
+ISC ungap/promise-all-settled@1.1.2 
+ISC unique-filename@1.1.1 
+ISC unique-filename@1.1.1 
+ISC unique-slug@2.0.2 
+ISC unique-slug@2.0.2 
+ISC webassemblyjs/helper-fsm@1.9.0 
+ISC webassemblyjs/helper-fsm@1.9.0 
+ISC which@1.3.1 
+ISC which@1.3.1 
+ISC which@2.0.2 
+ISC which@2.0.2 
+ISC which-module@2.0.0 
+ISC which-module@2.0.0 
+ISC wide-align@1.1.3 
+ISC wide-align@1.1.3 
+ISC wrappy@1.0.2 
+ISC wrappy@1.0.2 
+ISC y18n@4.0.3 
+ISC y18n@4.0.3 
+ISC y18n@5.0.8 
+ISC y18n@5.0.8 
+ISC yallist@3.1.1 
+ISC yallist@3.1.1 
+ISC yallist@4.0.0 
+ISC yallist@4.0.0 
+ISC yargs-parser@13.1.2 
+ISC yargs-parser@13.1.2 
+ISC yargs-parser@20.2.4 
+ISC yargs-parser@20.2.4 
+ISC yargs-parser@20.2.9 
+ISC yargs-parser@20.2.9 
+MIT acorn@6.4.2 
+MIT acorn@6.4.2 
+MIT acorn@7.4.1 
+MIT acorn@7.4.1 
+MIT acorn-jsx@5.3.2 
+MIT acorn-jsx@5.3.2 
+MIT ajv@6.12.6 
+MIT ajv@6.12.6 
+MIT ajv@8.6.3 
+MIT ajv@8.6.3 
+MIT ajv-errors@1.0.1 
+MIT ajv-errors@1.0.1 
+MIT ajv-keywords@3.5.2 
+MIT ajv-keywords@3.5.2 
+(MIT AND BSD-3-Clause) sha.js@2.4.11 
+(MIT AND BSD-3-Clause) sha.js@2.4.11 
+(MIT AND CC-BY-3.0) spdx-ranges@2.1.1 
+(MIT AND CC-BY-3.0) spdx-ranges@2.1.1 
+(MIT AND Zlib) pako@1.0.11 
+(MIT AND Zlib) pako@1.0.11 
+MIT ansi-colors@4.1.1 
+MIT ansi-colors@4.1.1 
+MIT ansi-regex@3.0.0 
+MIT ansi-regex@3.0.0 
+MIT ansi-regex@4.1.0 
+MIT ansi-regex@4.1.0 
+MIT ansi-regex@5.0.1 
+MIT ansi-regex@5.0.1 
+MIT ansi-styles@3.2.1 
+MIT ansi-styles@3.2.1 
+MIT ansi-styles@4.3.0 
+MIT ansi-styles@4.3.0 
+MIT argparse@1.0.10 
+MIT argparse@1.0.10 
+MIT array-find-index@1.0.2 
+MIT array-find-index@1.0.2 
+MIT array-union@2.1.0 
+MIT array-union@2.1.0 
+MIT array-unique@0.3.2 
+MIT array-unique@0.3.2 
+MIT arr-diff@4.0.0 
+MIT arr-diff@4.0.0 
+MIT arr-flatten@1.1.0 
+MIT arr-flatten@1.1.0 
+MIT arr-union@3.1.0 
+MIT arr-union@3.1.0 
+MIT asap@2.0.6 
+MIT asap@2.0.6 
+MIT asn1.js@5.4.1 
+MIT asn1.js@5.4.1 
+MIT assert@1.5.0 
+MIT assert@1.5.0 
+MIT assign-symbols@1.0.0 
+MIT assign-symbols@1.0.0 
+MIT astral-regex@2.0.0 
+MIT astral-regex@2.0.0 
+MIT async-each@1.0.3 
+MIT async-each@1.0.3 
+MIT azure-devops-node-api@11.0.1 
+MIT azure-devops-node-api@11.0.1 
+MIT babel/code-frame@7.12.11 
+MIT babel/code-frame@7.12.11 
+MIT babel/helper-validator-identifier@7.14.9 
+MIT babel/helper-validator-identifier@7.14.9 
+MIT babel/highlight@7.14.5 
+MIT babel/highlight@7.14.5 
+MIT balanced-match@1.0.2 
+MIT balanced-match@1.0.2 
+MIT base@0.11.2 
+MIT base@0.11.2 
+MIT base64-js@1.5.1 
+MIT base64-js@1.5.1 
+MIT big.js@5.2.2 
+MIT big.js@5.2.2 
+MIT binary@0.3.0 
+MIT binary@0.3.0 
+MIT binary-extensions@1.13.1 
+MIT binary-extensions@1.13.1 
+MIT binary-extensions@2.2.0 
+MIT binary-extensions@2.2.0 
+MIT bluebird@3.7.2 
+MIT bluebird@3.7.2 
+MIT bn.js@4.12.0 
+MIT bn.js@4.12.0 
+MIT bn.js@5.2.0 
+MIT bn.js@5.2.0 
+MIT brace-expansion@1.1.11 
+MIT brace-expansion@1.1.11 
+MIT braces@2.3.2 
+MIT braces@2.3.2 
+MIT braces@3.0.2 
+MIT braces@3.0.2 
+MIT brorand@1.1.0 
+MIT brorand@1.1.0 
+MIT browserify-aes@1.2.0 
+MIT browserify-aes@1.2.0 
+MIT browserify-cipher@1.0.1 
+MIT browserify-cipher@1.0.1 
+MIT browserify-des@1.0.2 
+MIT browserify-des@1.0.2 
+MIT browserify-rsa@4.1.0 
+MIT browserify-rsa@4.1.0 
+MIT browserify-zlib@0.2.0 
+MIT browserify-zlib@0.2.0 
+MIT buffer@4.9.2 
+MIT buffer@4.9.2 
+MIT buffer-crc32@0.2.13 
+MIT buffer-crc32@0.2.13 
+MIT buffer-from@1.1.2 
+MIT buffer-from@1.1.2 
+MIT buffer-xor@1.0.3 
+MIT buffer-xor@1.0.3 
+MIT builtin-status-codes@3.0.0 
+MIT builtin-status-codes@3.0.0 
+MIT cache-base@1.0.1 
+MIT cache-base@1.0.1 
+MIT call-bind@1.0.2 
+MIT call-bind@1.0.2 
+MIT callsites@3.1.0 
+MIT callsites@3.1.0 
+MIT camelcase@5.3.1 
+MIT camelcase@5.3.1 
+MIT camelcase@6.2.0 
+MIT camelcase@6.2.0 
+MIT* chainsaw@0.1.0 
+MIT* chainsaw@0.1.0 
+MIT chalk@2.4.2 
+MIT chalk@2.4.2 
+MIT chalk@4.1.2 
+MIT chalk@4.1.2 
+MIT cheerio@1.0.0-rc.10 
+MIT cheerio@1.0.0-rc.10 
+MIT chokidar@2.1.8 
+MIT chokidar@2.1.8 
+MIT chokidar@3.5.1 
+MIT chokidar@3.5.1 
+MIT chokidar@3.5.2 
+MIT chokidar@3.5.2 
+MIT chrome-trace-event@1.0.3 
+MIT chrome-trace-event@1.0.3 
+MIT cipher-base@1.0.4 
+MIT cipher-base@1.0.4 
+MIT class-utils@0.3.6 
+MIT class-utils@0.3.6 
+MIT collection-visit@1.0.0 
+MIT collection-visit@1.0.0 
+MIT color-convert@1.9.3 
+MIT color-convert@1.9.3 
+MIT color-convert@2.0.1 
+MIT color-convert@2.0.1 
+MIT color-name@1.1.3 
+MIT color-name@1.1.3 
+MIT color-name@1.1.4 
+MIT color-name@1.1.4 
+MIT commander@2.20.3 
+MIT commander@2.20.3 
+MIT commander@6.2.1 
+MIT commander@6.2.1 
+MIT commondir@1.0.1 
+MIT commondir@1.0.1 
+MIT component-emitter@1.3.0 
+MIT component-emitter@1.3.0 
+MIT concat-map@0.0.1 
+MIT concat-map@0.0.1 
+MIT concat-stream@1.6.2 
+MIT concat-stream@1.6.2 
+MIT console-browserify@1.2.0 
+MIT console-browserify@1.2.0 
+MIT constants-browserify@1.0.0 
+MIT constants-browserify@1.0.0 
+MIT copy-descriptor@0.1.1 
+MIT copy-descriptor@0.1.1 
+MIT core-util-is@1.0.3 
+MIT core-util-is@1.0.3 
+MIT create-ecdh@4.0.4 
+MIT create-ecdh@4.0.4 
+MIT create-hash@1.2.0 
+MIT create-hash@1.2.0 
+MIT create-hmac@1.1.7 
+MIT create-hmac@1.1.7 
+MIT cross-spawn@6.0.5 
+MIT cross-spawn@6.0.5 
+MIT cross-spawn@7.0.3 
+MIT cross-spawn@7.0.3 
+MIT crypto-browserify@3.12.0 
+MIT crypto-browserify@3.12.0 
+MIT cyclist@1.0.1 
+MIT cyclist@1.0.1 
+MIT debug@2.6.9 
+MIT debug@2.6.9 
+MIT debug@3.2.7 
+MIT debug@3.2.7 
+MIT debug@4.3.1 
+MIT debug@4.3.1 
+MIT debug@4.3.2 
+MIT debug@4.3.2 
+MIT debuglog@1.0.1 
+MIT debuglog@1.0.1 
+MIT decamelize@1.2.0 
+MIT decamelize@1.2.0 
+MIT decamelize@4.0.0 
+MIT decamelize@4.0.0 
+MIT decode-uri-component@0.2.0 
+MIT decode-uri-component@0.2.0 
+MIT deep-is@0.1.4 
+MIT deep-is@0.1.4 
+MIT define-property@0.2.5 
+MIT define-property@0.2.5 
+MIT define-property@1.0.0 
+MIT define-property@1.0.0 
+MIT define-property@2.0.2 
+MIT define-property@2.0.2 
+MIT denodeify@1.2.1 
+MIT denodeify@1.2.1 
+MIT des.js@1.0.1 
+MIT des.js@1.0.1 
+MIT detect-file@1.0.0 
+MIT detect-file@1.0.0 
+MIT diffie-hellman@5.0.3 
+MIT diffie-hellman@5.0.3 
+MIT dir-glob@3.0.1 
+MIT dir-glob@3.0.1 
+MIT domain-browser@1.2.0 
+MIT domain-browser@1.2.0 
+MIT dom-serializer@1.3.2 
+MIT dom-serializer@1.3.2 
+MIT duplexify@3.7.1 
+MIT duplexify@3.7.1 
+MIT elliptic@6.5.4 
+MIT elliptic@6.5.4 
+MIT emoji-regex@7.0.3 
+MIT emoji-regex@7.0.3 
+MIT emoji-regex@8.0.0 
+MIT emoji-regex@8.0.0 
+MIT emojis-list@3.0.0 
+MIT emojis-list@3.0.0 
+MIT end-of-stream@1.4.4 
+MIT end-of-stream@1.4.4 
+MIT enhanced-resolve@4.5.0 
+MIT enhanced-resolve@4.5.0 
+MIT enquirer@2.3.6 
+MIT enquirer@2.3.6 
+MIT errno@0.1.8 
+MIT errno@0.1.8 
+MIT escalade@3.1.1 
+MIT escalade@3.1.1 
+MIT escape-string-regexp@1.0.5 
+MIT escape-string-regexp@1.0.5 
+MIT escape-string-regexp@4.0.0 
+MIT escape-string-regexp@4.0.0 
+MIT eslint@7.32.0 
+MIT eslint@7.32.0 
+MIT eslint-config-prettier@8.3.0 
+MIT eslint-config-prettier@8.3.0 
+MIT eslint/eslintrc@0.4.3 
+MIT eslint/eslintrc@0.4.3 
+MIT eslint-utils@2.1.0 
+MIT eslint-utils@2.1.0 
+MIT eslint-utils@3.0.0 
+MIT eslint-utils@3.0.0 
+MIT events@3.3.0 
+MIT events@3.3.0 
+MIT evp_bytestokey@1.0.3 
+MIT evp_bytestokey@1.0.3 
+MIT expand-brackets@2.1.4 
+MIT expand-brackets@2.1.4 
+MIT expand-tilde@2.0.2 
+MIT expand-tilde@2.0.2 
+MIT extend-shallow@2.0.1 
+MIT extend-shallow@2.0.1 
+MIT extend-shallow@3.0.2 
+MIT extend-shallow@3.0.2 
+MIT extglob@2.0.4 
+MIT extglob@2.0.4 
+MIT fast-deep-equal@3.1.3 
+MIT fast-deep-equal@3.1.3 
+MIT fast-glob@3.2.7 
+MIT fast-glob@3.2.7 
+MIT fast-json-stable-stringify@2.1.0 
+MIT fast-json-stable-stringify@2.1.0 
+MIT fast-levenshtein@2.0.6 
+MIT fast-levenshtein@2.0.6 
+MIT fd-slicer@1.1.0 
+MIT fd-slicer@1.1.0 
+MIT file-entry-cache@6.0.1 
+MIT file-entry-cache@6.0.1 
+MIT fill-range@4.0.0 
+MIT fill-range@4.0.0 
+MIT fill-range@7.0.1 
+MIT fill-range@7.0.1 
+MIT find-cache-dir@2.1.0 
+MIT find-cache-dir@2.1.0 
+MIT find-up@3.0.0 
+MIT find-up@3.0.0 
+MIT find-up@5.0.0 
+MIT find-up@5.0.0 
+MIT findup-sync@3.0.0 
+MIT findup-sync@3.0.0 
+MIT flat-cache@3.0.4 
+MIT flat-cache@3.0.4 
+MIT flush-write-stream@1.1.1 
+MIT flush-write-stream@1.1.1 
+MIT for-in@1.0.2 
+MIT for-in@1.0.2 
+MIT fragment-cache@0.2.1 
+MIT fragment-cache@0.2.1 
+MIT from2@2.3.0 
+MIT from2@2.3.0 
+MIT functional-red-black-tree@1.0.1 
+MIT functional-red-black-tree@1.0.1 
+MIT function-bind@1.1.1 
+MIT function-bind@1.1.1 
+MIT get-intrinsic@1.1.1 
+MIT get-intrinsic@1.1.1 
+MIT get-value@2.0.6 
+MIT get-value@2.0.6 
+MIT global-modules@1.0.0 
+MIT global-modules@1.0.0 
+MIT global-modules@2.0.0 
+MIT global-modules@2.0.0 
+MIT global-prefix@1.0.2 
+MIT global-prefix@1.0.2 
+MIT global-prefix@3.0.0 
+MIT global-prefix@3.0.0 
+MIT globals@13.11.0 
+MIT globals@13.11.0 
+MIT globby@11.0.4 
+MIT globby@11.0.4 
+MIT growl@1.10.5 
+MIT growl@1.10.5 
+MIT has@1.0.3 
+MIT has@1.0.3 
+MIT has-flag@3.0.0 
+MIT has-flag@3.0.0 
+MIT has-flag@4.0.0 
+MIT has-flag@4.0.0 
+MIT hash-base@3.1.0 
+MIT hash-base@3.1.0 
+MIT hash.js@1.1.7 
+MIT hash.js@1.1.7 
+MIT has-symbols@1.0.2 
+MIT has-symbols@1.0.2 
+MIT has-value@0.3.1 
+MIT has-value@0.3.1 
+MIT has-value@1.0.0 
+MIT has-value@1.0.0 
+MIT has-values@0.1.4 
+MIT has-values@0.1.4 
+MIT has-values@1.0.0 
+MIT has-values@1.0.0 
+MIT he@1.2.0 
+MIT he@1.2.0 
+MIT hexy@0.3.2 
+MIT hexy@0.3.2 
+MIT hmac-drbg@1.0.1 
+MIT hmac-drbg@1.0.1 
+MIT homedir-polyfill@1.0.3 
+MIT homedir-polyfill@1.0.3 
+MIT htmlparser2@6.1.0 
+MIT htmlparser2@6.1.0 
+MIT https-browserify@1.0.0 
+MIT https-browserify@1.0.0 
+MIT iferr@0.1.5 
+MIT iferr@0.1.5 
+MIT ignore@4.0.6 
+MIT ignore@4.0.6 
+MIT ignore@5.1.8 
+MIT ignore@5.1.8 
+MIT import-fresh@3.3.0 
+MIT import-fresh@3.3.0 
+MIT import-local@2.0.0 
+MIT import-local@2.0.0 
+MIT imurmurhash@0.1.4 
+MIT imurmurhash@0.1.4 
+MIT interpret@1.4.0 
+MIT interpret@1.4.0 
+MIT is-accessor-descriptor@0.1.6 
+MIT is-accessor-descriptor@0.1.6 
+MIT is-accessor-descriptor@1.0.0 
+MIT is-accessor-descriptor@1.0.0 
+MIT isarray@1.0.0 
+MIT isarray@1.0.0 
+MIT is-binary-path@1.0.1 
+MIT is-binary-path@1.0.1 
+MIT is-binary-path@2.1.0 
+MIT is-binary-path@2.1.0 
+MIT is-buffer@1.1.6 
+MIT is-buffer@1.1.6 
+MIT is-core-module@2.6.0 
+MIT is-core-module@2.6.0 
+MIT is-data-descriptor@0.1.4 
+MIT is-data-descriptor@0.1.4 
+MIT is-data-descriptor@1.0.0 
+MIT is-data-descriptor@1.0.0 
+MIT is-descriptor@0.1.6 
+MIT is-descriptor@0.1.6 
+MIT is-descriptor@1.0.2 
+MIT is-descriptor@1.0.2 
+MIT is-extendable@0.1.1 
+MIT is-extendable@0.1.1 
+MIT is-extendable@1.0.1 
+MIT is-extendable@1.0.1 
+MIT is-extglob@2.1.1 
+MIT is-extglob@2.1.1 
+MIT is-fullwidth-code-point@2.0.0 
+MIT is-fullwidth-code-point@2.0.0 
+MIT is-fullwidth-code-point@3.0.0 
+MIT is-fullwidth-code-point@3.0.0 
+MIT is-glob@3.1.0 
+MIT is-glob@3.1.0 
+MIT is-glob@4.0.1 
+MIT is-glob@4.0.1 
+MIT is-number@3.0.0 
+MIT is-number@3.0.0 
+MIT is-number@7.0.0 
+MIT is-number@7.0.0 
+MIT isobject@2.1.0 
+MIT isobject@2.1.0 
+MIT isobject@3.0.1 
+MIT isobject@3.0.1 
+MIT is-plain-obj@2.1.0 
+MIT is-plain-obj@2.1.0 
+MIT is-plain-object@2.0.4 
+MIT is-plain-object@2.0.4 
+MIT is-windows@1.0.2 
+MIT is-windows@1.0.2 
+MIT is-wsl@1.1.0 
+MIT is-wsl@1.1.0 
+MIT json5@1.0.1 
+MIT json5@1.0.1 
+MIT json5@2.2.0 
+MIT json5@2.2.0 
+MIT json-parse-better-errors@1.0.2 
+MIT json-parse-better-errors@1.0.2 
+MIT json-parse-even-better-errors@2.3.1 
+MIT json-parse-even-better-errors@2.3.1 
+MIT json-schema-traverse@0.4.1 
+MIT json-schema-traverse@0.4.1 
+MIT json-schema-traverse@1.0.0 
+MIT json-schema-traverse@1.0.0 
+MIT json-stable-stringify-without-jsonify@1.0.1 
+MIT json-stable-stringify-without-jsonify@1.0.1 
+MIT js-tokens@4.0.0 
+MIT js-tokens@4.0.0 
+MIT js-yaml@3.14.1 
+MIT js-yaml@3.14.1 
+MIT js-yaml@4.0.0 
+MIT js-yaml@4.0.0 
+MIT kind-of@3.2.2 
+MIT kind-of@3.2.2 
+MIT kind-of@4.0.0 
+MIT kind-of@4.0.0 
+MIT kind-of@5.1.0 
+MIT kind-of@5.1.0 
+MIT kind-of@6.0.3 
+MIT kind-of@6.0.3 
+MIT leven@3.1.0 
+MIT leven@3.1.0 
+MIT levn@0.4.1 
+MIT levn@0.4.1 
+MIT linkify-it@2.2.0 
+MIT linkify-it@2.2.0 
+MIT loader-runner@2.4.0 
+MIT loader-runner@2.4.0 
+MIT loader-utils@1.4.0 
+MIT loader-utils@1.4.0 
+MIT loader-utils@2.0.0 
+MIT loader-utils@2.0.0 
+MIT locate-path@3.0.0 
+MIT locate-path@3.0.0 
+MIT locate-path@6.0.0 
+MIT locate-path@6.0.0 
+MIT lodash@4.17.21 
+MIT lodash@4.17.21 
+MIT lodash.clonedeep@4.5.0 
+MIT lodash.clonedeep@4.5.0 
+MIT lodash.merge@4.6.2 
+MIT lodash.merge@4.6.2 
+MIT lodash.truncate@4.4.2 
+MIT lodash.truncate@4.4.2 
+MIT log-symbols@4.0.0 
+MIT log-symbols@4.0.0 
+MIT make-dir@2.1.0 
+MIT make-dir@2.1.0 
+MIT map-cache@0.2.2 
+MIT map-cache@0.2.2 
+MIT map-visit@1.0.0 
+MIT map-visit@1.0.0 
+MIT markdown-it@10.0.0 
+MIT markdown-it@10.0.0 
+MIT md5.js@1.3.5 
+MIT md5.js@1.3.5 
+MIT mdurl@1.0.1 
+MIT mdurl@1.0.1 
+MIT memory-fs@0.4.1 
+MIT memory-fs@0.4.1 
+MIT memory-fs@0.5.0 
+MIT memory-fs@0.5.0 
+MIT merge2@1.4.1 
+MIT merge2@1.4.1 
+MIT micromatch@3.1.10 
+MIT micromatch@3.1.10 
+MIT micromatch@4.0.4 
+MIT micromatch@4.0.4 
+MIT miller-rabin@4.0.1 
+MIT miller-rabin@4.0.1 
+MIT mime@1.6.0 
+MIT mime@1.6.0 
+MIT minimalistic-crypto-utils@1.0.1 
+MIT minimalistic-crypto-utils@1.0.1 
+MIT minimist@1.2.5 
+MIT minimist@1.2.5 
+MIT mixin-deep@1.3.2 
+MIT mixin-deep@1.3.2 
+MIT mkdirp@0.5.5 
+MIT mkdirp@0.5.5 
+MIT mkdirp@1.0.4 
+MIT mkdirp@1.0.4 
+MIT mocha@8.4.0 
+MIT mocha@8.4.0 
+MIT ms@2.0.0 
+MIT ms@2.0.0 
+MIT ms@2.1.2 
+MIT ms@2.1.2 
+MIT ms@2.1.3 
+MIT ms@2.1.3 
+MIT nanoid@3.1.20 
+MIT nanoid@3.1.20 
+MIT nanomatch@1.2.13 
+MIT nanomatch@1.2.13 
+MIT natural-compare@1.4.0 
+MIT natural-compare@1.4.0 
+MIT neo-async@2.6.2 
+MIT neo-async@2.6.2 
+MIT nice-try@1.0.5 
+MIT nice-try@1.0.5 
+MIT nodelib/fs.scandir@2.1.5 
+MIT nodelib/fs.scandir@2.1.5 
+MIT nodelib/fs.stat@2.0.5 
+MIT nodelib/fs.stat@2.0.5 
+MIT nodelib/fs.walk@1.2.8 
+MIT nodelib/fs.walk@1.2.8 
+MIT node-libs-browser@2.2.1 
+MIT node-libs-browser@2.2.1 
+MIT normalize-path@2.1.1 
+MIT normalize-path@2.1.1 
+MIT normalize-path@3.0.0 
+MIT normalize-path@3.0.0 
+MIT object-assign@4.1.1 
+MIT object-assign@4.1.1 
+MIT object-copy@0.1.0 
+MIT object-copy@0.1.0 
+MIT object-inspect@1.11.0 
+MIT object-inspect@1.11.0 
+MIT object.pick@1.3.0 
+MIT object.pick@1.3.0 
+MIT object-visit@1.0.1 
+MIT object-visit@1.0.1 
+MIT optionator@0.9.1 
+MIT optionator@0.9.1 
+(MIT OR Apache-2.0) atob@2.1.2 
+(MIT OR Apache-2.0) atob@2.1.2 
+(MIT OR CC0-1.0) type-fest@0.20.2 
+(MIT OR CC0-1.0) type-fest@0.20.2 
+MIT os-browserify@0.3.0 
+MIT os-browserify@0.3.0 
+MIT os-homedir@1.0.2 
+MIT os-homedir@1.0.2 
+MIT os-paths@6.9.0 
+MIT os-paths@6.9.0 
+MIT os-tmpdir@1.0.2 
+MIT os-tmpdir@1.0.2 
+MIT parallel-transform@1.2.0 
+MIT parallel-transform@1.2.0 
+MIT parent-module@1.0.1 
+MIT parent-module@1.0.1 
+MIT parse5@6.0.1 
+MIT parse5@6.0.1 
+MIT parse5-htmlparser2-tree-adapter@6.0.1 
+MIT parse5-htmlparser2-tree-adapter@6.0.1 
+MIT parse-passwd@1.0.0 
+MIT parse-passwd@1.0.0 
+MIT parse-semver@1.1.1 
+MIT parse-semver@1.1.1 
+MIT pascalcase@0.1.1 
+MIT pascalcase@0.1.1 
+MIT path-browserify@0.0.1 
+MIT path-browserify@0.0.1 
+MIT path-dirname@1.0.2 
+MIT path-dirname@1.0.2 
+MIT path-exists@3.0.0 
+MIT path-exists@3.0.0 
+MIT path-exists@4.0.0 
+MIT path-exists@4.0.0 
+MIT path-is-absolute@1.0.1 
+MIT path-is-absolute@1.0.1 
+MIT path-key@2.0.1 
+MIT path-key@2.0.1 
+MIT path-key@3.1.1 
+MIT path-key@3.1.1 
+MIT path-parse@1.0.7 
+MIT path-parse@1.0.7 
+MIT path-type@4.0.0 
+MIT path-type@4.0.0 
+MIT pbkdf2@3.1.2 
+MIT pbkdf2@3.1.2 
+MIT pend@1.2.0 
+MIT pend@1.2.0 
+MIT picomatch@2.3.0 
+MIT picomatch@2.3.0 
+MIT pify@4.0.1 
+MIT pify@4.0.1 
+MIT pkg-dir@3.0.0 
+MIT pkg-dir@3.0.0 
+MIT p-limit@2.3.0 
+MIT p-limit@2.3.0 
+MIT p-limit@3.1.0 
+MIT p-limit@3.1.0 
+MIT p-locate@3.0.0 
+MIT p-locate@3.0.0 
+MIT p-locate@5.0.0 
+MIT p-locate@5.0.0 
+MIT posix-character-classes@0.1.1 
+MIT posix-character-classes@0.1.1 
+MIT prelude-ls@1.2.1 
+MIT prelude-ls@1.2.1 
+MIT prettier@2.4.1 
+MIT prettier@2.4.1 
+MIT process@0.11.10 
+MIT process@0.11.10 
+MIT process-nextick-args@2.0.1 
+MIT process-nextick-args@2.0.1 
+MIT progress@2.0.3 
+MIT progress@2.0.3 
+MIT prr@1.0.1 
+MIT prr@1.0.1 
+MIT p-try@2.2.0 
+MIT p-try@2.2.0 
+MIT public-encrypt@4.0.3 
+MIT public-encrypt@4.0.3 
+MIT pump@2.0.1 
+MIT pump@2.0.1 
+MIT pump@3.0.0 
+MIT pump@3.0.0 
+MIT pumpify@1.5.1 
+MIT pumpify@1.5.1 
+MIT punycode@1.3.2 
+MIT punycode@1.3.2 
+MIT punycode@1.4.1 
+MIT punycode@1.4.1 
+MIT punycode@2.1.1 
+MIT punycode@2.1.1 
+MIT querystring@0.2.0 
+MIT querystring@0.2.0 
+MIT querystring-es3@0.2.1 
+MIT querystring-es3@0.2.1 
+MIT queue-microtask@1.2.3 
+MIT queue-microtask@1.2.3 
+MIT randombytes@2.1.0 
+MIT randombytes@2.1.0 
+MIT randomfill@1.0.4 
+MIT randomfill@1.0.4 
+MIT readable-stream@2.3.7 
+MIT readable-stream@2.3.7 
+MIT readable-stream@3.6.0 
+MIT readable-stream@3.6.0 
+MIT readdirp@2.2.1 
+MIT readdirp@2.2.1 
+MIT readdirp@3.5.0 
+MIT readdirp@3.5.0 
+MIT readdirp@3.6.0 
+MIT readdirp@3.6.0 
+MIT regex-not@1.0.2 
+MIT regex-not@1.0.2 
+MIT regexpp@3.2.0 
+MIT regexpp@3.2.0 
+MIT repeat-element@1.1.4 
+MIT repeat-element@1.1.4 
+MIT repeat-string@1.6.1 
+MIT repeat-string@1.6.1 
+MIT require-directory@2.1.1 
+MIT require-directory@2.1.1 
+MIT require-from-string@2.0.2 
+MIT require-from-string@2.0.2 
+MIT resolve@1.20.0 
+MIT resolve@1.20.0 
+MIT resolve-cwd@2.0.0 
+MIT resolve-cwd@2.0.0 
+MIT resolve-dir@1.0.1 
+MIT resolve-dir@1.0.1 
+MIT resolve-from@3.0.0 
+MIT resolve-from@3.0.0 
+MIT resolve-from@4.0.0 
+MIT resolve-from@4.0.0 
+MIT resolve-url@0.2.1 
+MIT resolve-url@0.2.1 
+MIT ret@0.1.15 
+MIT ret@0.1.15 
+MIT reusify@1.0.4 
+MIT reusify@1.0.4 
+MIT ripemd160@2.0.2 
+MIT ripemd160@2.0.2 
+MIT run-parallel@1.2.0 
+MIT run-parallel@1.2.0 
+MIT safe-buffer@5.1.2 
+MIT safe-buffer@5.1.2 
+MIT safe-buffer@5.2.1 
+MIT safe-buffer@5.2.1 
+MIT safer-buffer@2.1.2 
+MIT safer-buffer@2.1.2 
+MIT safe-regex@1.1.0 
+MIT safe-regex@1.1.0 
+MIT schema-utils@1.0.0 
+MIT schema-utils@1.0.0 
+MIT setimmediate@1.0.5 
+MIT setimmediate@1.0.5 
+MIT set-value@2.0.1 
+MIT set-value@2.0.1 
+MIT shebang-command@1.2.0 
+MIT shebang-command@1.2.0 
+MIT shebang-command@2.0.0 
+MIT shebang-command@2.0.0 
+MIT shebang-regex@1.0.0 
+MIT shebang-regex@1.0.0 
+MIT shebang-regex@3.0.0 
+MIT shebang-regex@3.0.0 
+MIT side-channel@1.0.4 
+MIT side-channel@1.0.4 
+MIT slash@3.0.0 
+MIT slash@3.0.0 
+MIT slice-ansi@4.0.0 
+MIT slice-ansi@4.0.0 
+MIT snapdragon@0.8.2 
+MIT snapdragon@0.8.2 
+MIT snapdragon-node@2.1.1 
+MIT snapdragon-node@2.1.1 
+MIT snapdragon-util@3.0.1 
+MIT snapdragon-util@3.0.1 
+MIT source-list-map@2.0.1 
+MIT source-list-map@2.0.1 
+MIT source-map-resolve@0.5.3 
+MIT source-map-resolve@0.5.3 
+MIT source-map-support@0.5.20 
+MIT source-map-support@0.5.20 
+MIT source-map-url@0.4.1 
+MIT source-map-url@0.4.1 
+MIT spdx-compare@1.0.0 
+MIT spdx-compare@1.0.0 
+MIT spdx-expression-parse@3.0.1 
+MIT spdx-expression-parse@3.0.1 
+MIT spdx-satisfies@4.0.1 
+MIT spdx-satisfies@4.0.1 
+MIT split-string@3.1.0 
+MIT split-string@3.1.0 
+MIT static-extend@0.1.2 
+MIT static-extend@0.1.2 
+MIT stream-browserify@2.0.2 
+MIT stream-browserify@2.0.2 
+MIT stream-each@1.2.3 
+MIT stream-each@1.2.3 
+MIT stream-http@2.8.3 
+MIT stream-http@2.8.3 
+MIT stream-shift@1.0.1 
+MIT stream-shift@1.0.1 
+MIT string_decoder@1.1.1 
+MIT string_decoder@1.1.1 
+MIT string_decoder@1.3.0 
+MIT string_decoder@1.3.0 
+MIT string-width@2.1.1 
+MIT string-width@2.1.1 
+MIT string-width@3.1.0 
+MIT string-width@3.1.0 
+MIT string-width@4.2.2 
+MIT string-width@4.2.2 
+MIT strip-ansi@4.0.0 
+MIT strip-ansi@4.0.0 
+MIT strip-ansi@5.2.0 
+MIT strip-ansi@5.2.0 
+MIT strip-ansi@6.0.0 
+MIT strip-ansi@6.0.0 
+MIT strip-json-comments@3.1.1 
+MIT strip-json-comments@3.1.1 
+MIT supports-color@5.5.0 
+MIT supports-color@5.5.0 
+MIT supports-color@6.1.0 
+MIT supports-color@6.1.0 
+MIT supports-color@7.2.0 
+MIT supports-color@7.2.0 
+MIT supports-color@8.1.1 
+MIT supports-color@8.1.1 
+MIT tapable@1.1.3 
+MIT tapable@1.1.3 
+MIT terser-webpack-plugin@1.4.5 
+MIT terser-webpack-plugin@1.4.5 
+MIT text-table@0.2.0 
+MIT text-table@0.2.0 
+MIT through2@2.0.5 
+MIT through2@2.0.5 
+MIT timers-browserify@2.0.12 
+MIT timers-browserify@2.0.12 
+MIT tmp@0.2.1 
+MIT tmp@0.2.1 
+MIT to-arraybuffer@1.0.1 
+MIT to-arraybuffer@1.0.1 
+MIT to-object-path@0.3.0 
+MIT to-object-path@0.3.0 
+MIT to-regex@3.0.2 
+MIT to-regex@3.0.2 
+MIT to-regex-range@2.1.1 
+MIT to-regex-range@2.1.1 
+MIT to-regex-range@5.0.1 
+MIT to-regex-range@5.0.1 
+MIT traverse@0.3.9 
+MIT traverse@0.3.9 
+MIT treeify@1.1.0 
+MIT treeify@1.1.0 
+MIT ts-loader@8.3.0 
+MIT ts-loader@8.3.0 
+MIT tsutils@3.21.0 
+MIT tsutils@3.21.0 
+MIT tty-browserify@0.0.0 
+MIT tty-browserify@0.0.0 
+MIT tunnel@0.0.6 
+MIT tunnel@0.0.6 
+MIT type-check@0.4.0 
+MIT type-check@0.4.0 
+MIT typedarray@0.0.6 
+MIT typedarray@0.0.6 
+MIT typed-rest-client@1.8.6 
+MIT typed-rest-client@1.8.6 
+MIT typescript-eslint/eslint-plugin@4.31.1 
+MIT typescript-eslint/eslint-plugin@4.31.1 
+MIT typescript-eslint/experimental-utils@4.31.1 
+MIT typescript-eslint/experimental-utils@4.31.1 
+MIT typescript-eslint/scope-manager@4.31.1 
+MIT typescript-eslint/scope-manager@4.31.1 
+MIT typescript-eslint/types@4.31.1 
+MIT typescript-eslint/types@4.31.1 
+MIT typescript-eslint/visitor-keys@4.31.1 
+MIT typescript-eslint/visitor-keys@4.31.1 
+MIT types/glob@7.1.4 
+MIT types/glob@7.1.4 
+MIT types/json-schema@7.0.9 
+MIT types/json-schema@7.0.9 
+MIT types/minimatch@3.0.5 
+MIT types/minimatch@3.0.5 
+MIT types/mocha@8.2.3 
+MIT types/mocha@8.2.3 
+MIT types/node@14.17.17 
+MIT types/node@14.17.17 
+MIT types/node@16.9.2 
+MIT types/node@16.9.2 
+MIT types/vscode@1.60.0 
+MIT types/vscode@1.60.0 
+MIT uc.micro@1.0.6 
+MIT uc.micro@1.0.6 
+MIT underscore@1.13.1 
+MIT underscore@1.13.1 
+MIT union-value@1.0.1 
+MIT union-value@1.0.1 
+MIT unset-value@1.0.0 
+MIT unset-value@1.0.0 
+MIT unzip-stream@0.3.1 
+MIT unzip-stream@0.3.1 
+MIT upath@1.2.0 
+MIT upath@1.2.0 
+MIT urix@0.1.0 
+MIT urix@0.1.0 
+MIT url@0.11.0 
+MIT url@0.11.0 
+MIT url-join@1.1.0 
+MIT url-join@1.1.0 
+MIT use@3.1.1 
+MIT use@3.1.1 
+MIT util@0.10.3 
+MIT util@0.10.3 
+MIT util@0.11.1 
+MIT util@0.11.1 
+MIT util-deprecate@1.0.2 
+MIT util-deprecate@1.0.2 
+MIT util-extend@1.0.3 
+MIT util-extend@1.0.3 
+MIT v8-compile-cache@2.3.0 
+MIT v8-compile-cache@2.3.0 
+MIT vm-browserify@1.1.2 
+MIT vm-browserify@1.1.2 
+MIT vsce@1.99.0 
+MIT vsce@1.99.0 
+MIT vscode-debugadapter@1.49.0 
+MIT vscode-debugadapter@1.49.0 
+MIT vscode-debugadapter-testsupport@1.49.0 
+MIT vscode-debugadapter-testsupport@1.49.0 
+MIT vscode-debugprotocol@1.49.0 
+MIT vscode-debugprotocol@1.49.0 
+MIT watchpack-chokidar2@2.0.1 
+MIT watchpack-chokidar2@2.0.1 
+MIT webassemblyjs/ast@1.9.0 
+MIT webassemblyjs/ast@1.9.0 
+MIT webassemblyjs/floating-point-hex-parser@1.9.0 
+MIT webassemblyjs/floating-point-hex-parser@1.9.0 
+MIT webassemblyjs/helper-api-error@1.9.0 
+MIT webassemblyjs/helper-api-error@1.9.0 
+MIT webassemblyjs/helper-buffer@1.9.0 
+MIT webassemblyjs/helper-buffer@1.9.0 
+MIT webassemblyjs/helper-code-frame@1.9.0 
+MIT webassemblyjs/helper-code-frame@1.9.0 
+MIT webassemblyjs/helper-module-context@1.9.0 
+MIT webassemblyjs/helper-module-context@1.9.0 
+MIT webassemblyjs/helper-wasm-bytecode@1.9.0 
+MIT webassemblyjs/helper-wasm-bytecode@1.9.0 
+MIT webassemblyjs/helper-wasm-section@1.9.0 
+MIT webassemblyjs/helper-wasm-section@1.9.0 
+MIT webassemblyjs/ieee754@1.9.0 
+MIT webassemblyjs/ieee754@1.9.0 
+MIT webassemblyjs/leb128@1.9.0 
+MIT webassemblyjs/leb128@1.9.0 
+MIT webassemblyjs/utf8@1.9.0 
+MIT webassemblyjs/utf8@1.9.0 
+MIT webassemblyjs/wasm-edit@1.9.0 
+MIT webassemblyjs/wasm-edit@1.9.0 
+MIT webassemblyjs/wasm-gen@1.9.0 
+MIT webassemblyjs/wasm-gen@1.9.0 
+MIT webassemblyjs/wasm-opt@1.9.0 
+MIT webassemblyjs/wasm-opt@1.9.0 
+MIT webassemblyjs/wasm-parser@1.9.0 
+MIT webassemblyjs/wasm-parser@1.9.0 
+MIT webassemblyjs/wast-parser@1.9.0 
+MIT webassemblyjs/wast-parser@1.9.0 
+MIT webassemblyjs/wast-printer@1.9.0 
+MIT webassemblyjs/wast-printer@1.9.0 
+MIT webpack@4.46.0 
+MIT webpack@4.46.0 
+MIT webpack-cli@3.3.12 
+MIT webpack-cli@3.3.12 
+MIT webpack-sources@1.4.3 
+MIT webpack-sources@1.4.3 
+MIT word-wrap@1.2.3 
+MIT word-wrap@1.2.3 
+MIT worker-farm@1.7.0 
+MIT worker-farm@1.7.0 
+MIT wrap-ansi@5.1.0 
+MIT wrap-ansi@5.1.0 
+MIT wrap-ansi@7.0.0 
+MIT wrap-ansi@7.0.0 
+MIT xdg-app-paths@7.3.0 
+MIT xdg-app-paths@7.3.0 
+MIT xdg-portable@9.4.0 
+MIT xdg-portable@9.4.0 
+MIT xml2js@0.4.23 
+MIT xml2js@0.4.23 
+MIT xmlbuilder@11.0.1 
+MIT xmlbuilder@11.0.1 
+MIT xtend@4.0.2 
+MIT xtend@4.0.2 
+MIT yargs@13.3.2 
+MIT yargs@13.3.2 
+MIT yargs@16.2.0 
+MIT yargs@16.2.0 
+MIT yargs-unparser@2.0.0 
+MIT yargs-unparser@2.0.0 
+MIT yauzl@2.10.0 
+MIT yauzl@2.10.0 
+MIT yazl@2.5.1 
+MIT yazl@2.5.1 
+MIT yocto-queue@0.1.0 
+MIT yocto-queue@0.1.0 
+Python-2.0 argparse@2.0.1 
+Python-2.0 argparse@2.0.1 
+</pre>
+</div>
+       </div>
+   </div>
+  
+   <div class="row"><div class="span16"><hr noshade="noshade" size="1"/></div></div>
+  <div class="row">
+   <div class="span16 footer">
+     Copyright &#169; 2009-2021 The Apache Software Foundation<br />
+     Licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License, Version 2.0</a>.<br/>
+     Apache Incubator, Apache, the Apache feather logo, and the Apache Incubator project logo are trademarks of The Apache Software Foundation.
+     
+     
+    </div>
+  </div>
+ </div> 
+ </body>
+</html>
