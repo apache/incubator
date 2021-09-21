@@ -108,7 +108,7 @@
         {
           "description": "Graph database optimized for fast analysis and real-time data...",
           "last_update_int": 1632184259,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
         }
       ],
       [
@@ -124,7 +124,7 @@
         {
           "description": "Apache age",
           "last_update_int": 1630076288,
-          "last_update_txt": "24 days ago"
+          "last_update_txt": "25 days ago"
         }
       ]
     ],
@@ -261,16 +261,11 @@
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-annotator.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/annotator/KEYS",
       "svn": "",
-      "tracker": "",
+      "tracker": "https://issues.apache.org/jira/browse/ANNO",
       "wiki": "https://cwiki.apache.org/confluence/display/ANNO",
       "www": "http://annotator.incubator.apache.org"
     },
-    "zFixMeList": [
-      [
-        "10",
-        "Has not provided an issue tracker link"
-      ]
-    ]
+    "zFixMeList": []
   },
   "bluemarlin": {
     "description": "BlueMarlin will develop a web service to add intelligence functionality to a plain ad system.",
@@ -609,7 +604,7 @@
         {
           "description": "Apache crail website (Incubating)",
           "last_update_int": 1632145285,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
         }
       ]
     ],
@@ -787,7 +782,7 @@
         {
           "description": "Incubator Datalab",
           "last_update_int": 1632148743,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
         }
       ]
     ],
@@ -1718,7 +1713,7 @@
         {
           "description": "Hop Orchestration Platform",
           "last_update_int": 1631887380,
-          "last_update_txt": "3 days ago"
+          "last_update_txt": "4 days ago"
         }
       ],
       [
@@ -1734,7 +1729,7 @@
         {
           "description": "Apache Hop Website",
           "last_update_int": 1631887821,
-          "last_update_txt": "3 days ago"
+          "last_update_txt": "4 days ago"
         }
       ]
     ],
@@ -1864,7 +1859,7 @@
         {
           "description": "Apache InLong - a one-stop data streaming platform",
           "last_update_int": 1632103081,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
         }
       ],
       [
@@ -2026,7 +2021,7 @@
         {
           "description": "Apache Kyuubi Site",
           "last_update_int": 1632108138,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
         }
       ]
     ],
@@ -2729,7 +2724,7 @@
         {
           "description": "Apache Milagro MPC Multi-Party Computation",
           "last_update_int": 1619186079,
-          "last_update_txt": "21 weeks ago"
+          "last_update_txt": "22 weeks ago"
         }
       ],
       [
@@ -3693,7 +3688,7 @@
         {
           "description": "Apache NuttX Website",
           "last_update_int": 1632183042,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
         }
       ]
     ],
@@ -5133,15 +5128,11 @@
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-teaclave.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/teaclave/KEYS",
       "svn": "",
-      "tracker": "",
+      "tracker": "https://issues.apache.org/jira/browse/XXX",
       "wiki": "",
       "www": "https://teaclave.incubator.apache.org"
     },
     "zFixMeList": [
-      [
-        "10",
-        "Has not provided an issue tracker link"
-      ],
       [
         "18",
         "Has not provided a wiki link"
@@ -5626,7 +5617,7 @@
         {
           "description": "Apache Wayang is an Cross-Platform processing system",
           "last_update_int": 1631024049,
-          "last_update_txt": "13 days ago"
+          "last_update_txt": "14 days ago"
         }
       ]
     ],
@@ -5688,7 +5679,7 @@
         "wwei"
       ],
       "numberCommitters": 21,
-      "numberCommittersNew": 4,
+      "numberCommittersNew": 5,
       "numberPMCEquals": false,
       "numberPMCMembers": 18,
       "owners": [
@@ -5731,6 +5722,8 @@
       ]
     ],
     "news": [
+      "2021-08-27 Apache YuniKorn v0.11.0 released.",
+      "2021-08-26 New Committer, Chenya Zhang",
       "2021-07-07 New Committer, Manikandan R",
       "2021-07-07 New PPMC member, Kinga Marton",
       "2021-04-09 Apache YuniKorn v0.10.0 released.",
@@ -5795,7 +5788,7 @@
         {
           "description": "Apache Yunikorn website - see the master branch for instructions",
           "last_update_int": 1632019590,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
+          "last_update_txt": "2 days ago"
         }
       ],
       [
@@ -5810,8 +5803,8 @@
     "resource": "yunikorn",
     "sponsor": "Incubator",
     "startDate": "2020-01-21",
-    "statusAge": 70,
-    "statusLastUpdated": "2021-07-13",
+    "statusAge": 0,
+    "statusLastUpdated": "2021-09-21",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-yunikorn-core.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/yunikorn/KEYS",
