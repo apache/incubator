@@ -256,16 +256,11 @@
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-annotator.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/annotator/KEYS",
       "svn": "",
-      "tracker": "",
+      "tracker": "https://issues.apache.org/jira/browse/ANNO",
       "wiki": "https://cwiki.apache.org/confluence/display/ANNO",
       "www": "http://annotator.incubator.apache.org"
     },
-    "zFixMeList": [
-      [
-        "10",
-        "Has not provided an issue tracker link"
-      ]
-    ]
+    "zFixMeList": []
   },
   "bluemarlin": {
     "description": "BlueMarlin will develop a web service to add intelligence functionality to a plain ad system.",
@@ -1554,7 +1549,7 @@
         {
           "description": "Apache Hivemall (incubating)",
           "last_update_int": 1638072504,
-          "last_update_txt": "11 days ago"
+          "last_update_txt": "12 days ago"
         }
       ],
       [
@@ -4494,9 +4489,9 @@
       "2021-12-09 Project enters incubation."
     ],
     "podlingName": "SeaTunnel",
-    "rawReportingGroup": "group-2",
+    "rawReportingGroup": "group-1",
     "releases": [],
-    "reportingGroup": "February, May, August, November",
+    "reportingGroup": "January, April, July, October",
     "reportingMonthly": false,
     "repositories": "",
     "resource": "seatunnel",
