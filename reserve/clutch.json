@@ -136,7 +136,7 @@
         {
           "description": "Graph database optimized for fast analysis and real-time data...",
           "last_update_int": 1644192036,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
         }
       ],
       [
@@ -624,7 +624,7 @@
         {
           "description": "Apache crail (Incubating)",
           "last_update_int": 1624543465,
-          "last_update_txt": "32 weeks ago"
+          "last_update_txt": "33 weeks ago"
         }
       ],
       [
@@ -828,7 +828,7 @@
         {
           "description": "Incubator Datalab",
           "last_update_int": 1643987418,
-          "last_update_txt": "2 days ago"
+          "last_update_txt": "3 days ago"
         }
       ]
     ],
@@ -859,8 +859,8 @@
   "doris": {
     "description": "Doris is a MPP-based interactive SQL data warehousing for reporting and analysis.",
     "fullName": "Doris",
-    "hasMailListCommits": "",
-    "hasMailListDev": "",
+    "hasMailListCommits": "http://mail-archives.apache.org/mod_mbox/doris-commits",
+    "hasMailListDev": "http://mail-archives.apache.org/mod_mbox/doris-dev",
     "ldap": {
       "members": [
         "caiconghui",
@@ -894,7 +894,7 @@
         "zshao"
       ],
       "numberCommitters": 29,
-      "numberCommittersNew": 0,
+      "numberCommittersNew": 8,
       "numberPMCEquals": false,
       "numberPMCMembers": 21,
       "owners": [
@@ -936,7 +936,31 @@
       ]
     ],
     "news": [
-      "2018-07-18 Project enters incubation."
+      "2018/07/18 Project enters incubation.",
+      "2019/02/08 Apach Doris(incubating) release 0.9.0",
+      "2019/05/30 New Committer, Yingchun Lai",
+      "2019/07/02 Apach Doris(incubating) release 0.10.0",
+      "2019/08/27 New PPMC, Liao Miao",
+      "2020/09/20 New PPMC, Kaisen Kang",
+      "2019/10/29 Apach Doris(incubating) release 0.11.0",
+      "2020/01/15 New PPMC, Hangyuan Liu",
+      "2020/02/28 New Committer, Kangping Huang",
+      "2020/04/24 Apach Doris(incubating) release 0.12.0",
+      "2020/05/05 New PPMC, Dayue Gao",
+      "2020/06/18 New PPMC, Zhengguo Yang",
+      "2020/07/07 New Committer, Wei Huang",
+      "2020/08/04 New Committer, Yunfeng Wu",
+      "2020/08/17 New PPMC, Conghui Cai",
+      "2020/10/26 New PPMC, Bo Wang",
+      "2020/10/27 Apach Doris(incubating) release 0.13.0",
+      "2021/05/26 Apach Doris(incubating) release 0.14.0",
+      "2021/06/22 New Committer, Lijia Liu",
+      "2021/06/30 New Committer, Zuo Wei",
+      "2021/07/06 New Committer, Xixu Wang",
+      "2021/09/17 New PPMC, Jiafeng Zhang",
+      "2021/09/20 New Committer, Yang Xu",
+      "2021/09/30 New PPMC, Haopeng Li",
+      "2021/11/29 Apach Doris(incubating) release 0.15.0"
     ],
     "podlingName": "Doris",
     "rawReportingGroup": "group-2",
@@ -965,36 +989,28 @@
         "incubator-doris-website",
         {
           "description": "Apache Doris Website Incubating",
-          "last_update_int": 1644112219,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_int": 1644198856,
+          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
         }
       ]
     ],
     "resource": "doris",
     "sponsor": "Incubator",
     "startDate": "2018-07-18",
-    "statusAge": 1,
-    "statusLastUpdated": "2022-02-06",
+    "statusAge": 0,
+    "statusLastUpdated": "2022-02-07",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-doris.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/doris/KEYS",
       "svn": "",
       "tracker": "https://github.com/apache/incubator-doris/issues",
       "wiki": "",
-      "www": "http://doris.incubator.apache.org"
+      "www": "http://doris.incubator.apache.org/installing/compilation.html"
     },
     "zFixMeList": [
       [
         "18",
         "Has not provided a wiki link"
-      ],
-      [
-        "15",
-        "Project does not have 'dev' mailing list"
-      ],
-      [
-        "16",
-        "Project does not have 'commits' mailing list"
       ]
     ]
   },
@@ -2371,8 +2387,8 @@
         "incubator-linkis",
         {
           "description": "Linkis helps easily connect to various back-end computation/s...",
-          "last_update_int": 1643527436,
-          "last_update_txt": "8 days ago"
+          "last_update_int": 1644205550,
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
         }
       ],
       [
@@ -3247,7 +3263,7 @@
         {
           "description": "Apache MXNet Site",
           "last_update_int": 1644193550,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
         }
       ],
       [
@@ -3821,8 +3837,8 @@
         "incubator-nuttx",
         {
           "description": "Apache NuttX is a mature, real-time embedded operating system...",
-          "last_update_int": 1644172924,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_int": 1644206750,
+          "last_update_txt": "<span style='color: #070;'>&lt;1 hour ago</span>"
         }
       ],
       [
@@ -3846,7 +3862,7 @@
         {
           "description": "Apache NuttX Website",
           "last_update_int": 1644192718,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
         }
       ]
     ],
@@ -3976,7 +3992,7 @@
         {
           "description": "Automatically exported from code.google.com/p/domain-registry...",
           "last_update_int": 1595512444,
-          "last_update_txt": "80 weeks ago"
+          "last_update_txt": "81 weeks ago"
         }
       ],
       [
@@ -4674,8 +4690,8 @@
         "incubator-seatunnel",
         {
           "description": "SeaTunnel is a distributed, high-performance data integration...",
-          "last_update_int": 1644078544,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
+          "last_update_int": 1644207129,
+          "last_update_txt": "<span style='color: #070;'>&lt;1 hour ago</span>"
         }
       ],
       [
@@ -4843,7 +4859,7 @@
         {
           "description": "A cluster computing framework for processing large-scale geos...",
           "last_update_int": 1644191299,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
         }
       ],
       [
@@ -5307,7 +5323,7 @@
         {
           "description": "Apache Streampipes Examples",
           "last_update_int": 1636646487,
-          "last_update_txt": "12 weeks ago"
+          "last_update_txt": "13 weeks ago"
         }
       ],
       [
@@ -5479,8 +5495,8 @@
         "incubator-teaclave-sgx-sdk",
         {
           "description": "Apache Teaclave (incubating) SGX SDK helps developers to writ...",
-          "last_update_int": 1640926496,
-          "last_update_txt": "5 weeks ago"
+          "last_update_int": 1644199739,
+          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
         }
       ],
       [
