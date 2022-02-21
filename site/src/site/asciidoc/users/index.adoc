@@ -32,7 +32,11 @@ Please read the following chapter on how to do this.
 
 In order to create an empty presentation to start with, please execute the following command:
 
-    mvn archetype:generate -DarchetypeGroupId=org.apache.training -DarchetypeArtifactId=content-archetype -DarchetypeVersion=1.0.0-SNAPSHOT
+    mvn archetype:generate -DarchetypeGroupId=org.apache.training -DarchetypeArtifactId=content-archetype -DarchetypeVersion=1.1.0-SNAPSHOT
+
+For Windows, you need to wrap every argument in double-quotes:
+
+    mvn archetype:generate "-DarchetypeGroupId=org.apache.training" "-DarchetypeArtifactId=content-archetype" "-DarchetypeVersion=1.1.0-SNAPSHOT"
 
 After choosing `groupId`, `artifactId`, `version` and `package` there should be a new directory that matches the `artifactId` that you selected.
 
