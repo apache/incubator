@@ -2913,8 +2913,8 @@
   "mxnet": {
     "description": "A Flexible and Efficient Library for Deep Learning",
     "fullName": "MXNet",
-    "hasMailListCommits": "",
-    "hasMailListDev": "",
+    "hasMailListCommits": "http://mail-archives.apache.org/mod_mbox/mxnet-commits",
+    "hasMailListDev": "http://mail-archives.apache.org/mod_mbox/mxnet-dev",
     "ldap": {
       "members": [
         "aaronmarkham",
@@ -3084,7 +3084,8 @@
       ]
     ],
     "news": [
-      "2017-01-23 Project enters incubation."
+      "2017-01-23 Project enters incubation.",
+      "2022-04-06 Update mentors, PPMC and committers. Fix format of mailing lists."
     ],
     "podlingName": "MXNet",
     "rawReportingGroup": "group-1",
@@ -3199,14 +3200,6 @@
       [
         "36",
         "Apache Sponsorship link is missing from website"
-      ],
-      [
-        "15",
-        "Project does not have 'dev' mailing list"
-      ],
-      [
-        "16",
-        "Project does not have 'commits' mailing list"
       ]
     ]
   },
@@ -3502,7 +3495,7 @@
         {
           "description": "Apache NLPCraft - API to convert natural language into actions.",
           "last_update_int": 1649274347,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
         }
       ],
       [
