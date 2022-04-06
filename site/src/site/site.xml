@@ -88,9 +88,13 @@
       <!-- Use JQuery to manipulate the final output of the page, which is a lot simpler than adjusting the templates for site generation. -->
       <![CDATA[
         <script>
+          var apache_events_script = document.createElement('script');
+          apache_events_script.setAttribute('src','https://www.apachecon.com/event-images/snippet.js');
+          document.head.appendChild(apache_events_script);
+
           document.addEventListener("DOMContentLoaded", function(event) {
             /* Add an image for promoting Apache events below the right banner */
-            $("#bannerRight").append('<p id="apacheEvents"><a href="//www.apache.org/events/current-event.html"><img src="//www.apache.org/events/current-event-234x60.png"/></a></p>');
+            $("#bannerRight").append('<a class="acevent" data-format="wide" data-mode="light" data-event="random" style="width:240px;height:60px;"></a>');
             /* Append the trademarks info to the copyright section */
             $(".copyright").append('<p>Apache Training, Apache, the Apache feather logo, and the Apache Training project logo are either registered trademarks or trademarks of The Apache Software Foundation in the United States and other countries. All other marks mentioned may be trademarks or registered trademarks of their respective owners.</p>');
           });
