@@ -41,9 +41,9 @@ pipeline {
 
     stages {
         stage('Initialization') {
-            when {
+/*            when {
                 changeset "tools/**"
-            }
+            }*/
             steps {
                 echo 'Building Branch: ' + env.BRANCH_NAME
                 echo 'Using PATH = ' + env.PATH
@@ -51,9 +51,9 @@ pipeline {
         }
 
         stage('Cleanup') {
-            when {
+/*            when {
                 changeset "tools/**"
-            }
+            }*/
             steps {
                 echo 'Cleaning up the workspace'
                 deleteDir()
@@ -61,9 +61,9 @@ pipeline {
         }
 
         stage('Checkout') {
-            when {
+/*            when {
                 changeset "tools/**"
-            }
+            }*/
             steps {
                 echo 'Checking out branch ' + env.BRANCH_NAME
                 checkout scm
@@ -72,7 +72,8 @@ pipeline {
 
         stage('Build') {
             when {
-                changeset "tools/**"
+                //changeset "tools/**"
+                branch 'develop'
             }
             steps {
                 echo 'Building'
