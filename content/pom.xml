@@ -28,30 +28,16 @@
     <version>0.4.0-SNAPSHOT</version>
   </parent>
 
+  <groupId>org.apache.training.content</groupId>
   <artifactId>training-content</artifactId>
-  <version>0.4.0-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <name>Training: Content</name>
 
   <modules>
-    <module>ApacheAirflow</module>
-    <module>ApacheCon</module>
-    <module>ApacheDruid</module>
-    <module>ApacheFlink</module>
-    <module>ApacheHive</module>
-    <module>ApachePulsar</module>
-    <module>ApacheSamza</module>
-    <module>ApacheWay</module>
-    <module>ComDev</module>
-    <module>Hadoop</module>
-    <module>Ignite</module>
-    <module>Incubator</module>
+    <module>Apache</module>
+    <module>Conferences</module>
     <module>IoT</module>
-    <module>MyNewt</module>
-    <module>Spark</module>
-    <module>Training</module>
-    <module>ZooKeeper</module>
   </modules>
 
 </project>
