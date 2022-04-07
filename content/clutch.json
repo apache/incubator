@@ -230,15 +230,11 @@
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-annotator.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/annotator/KEYS",
       "svn": "",
-      "tracker": "",
+      "tracker": "https://issues.apache.org/jira/browse/ANNO",
       "wiki": "https://cwiki.apache.org/confluence/display/ANNO",
       "www": "http://annotator.incubator.apache.org"
     },
     "zFixMeList": [
-      [
-        "10",
-        "Has not provided an issue tracker link"
-      ],
       [
         "15",
         "Project does not have 'dev' mailing list"
@@ -333,7 +329,7 @@
         {
           "description": "Industrial-grade RPC framework used throughout Baidu, with 1,...",
           "last_update_int": 1649295072,
-          "last_update_txt": "<span style='color: #070;'>&lt;15 minutes ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
         }
       ],
       [
@@ -683,7 +679,7 @@
         {
           "description": "Incubator Datalab",
           "last_update_int": 1649255853,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
         }
       ]
     ],
@@ -893,7 +889,7 @@
         {
           "description": "Apache Doris(Incubating) is an MPP-based interactive SQL data...",
           "last_update_int": 1649291909,
-          "last_update_txt": "<span style='color: #070;'>&lt;1 hour ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
         }
       ],
       [
@@ -909,7 +905,7 @@
         {
           "description": "Cluster manager for Apache Doris(Incubating)",
           "last_update_int": 1649294426,
-          "last_update_txt": "<span style='color: #070;'>&lt;30 minutes ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
         }
       ],
       [
@@ -924,16 +920,16 @@
         "incubator-doris-website",
         {
           "description": "Apache Doris Website Incubating",
-          "last_update_int": 1649209955,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_int": 1649296374,
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
         }
       ]
     ],
     "resource": "doris",
     "sponsor": "Incubator",
     "startDate": "2018-07-18",
-    "statusAge": 9,
-    "statusLastUpdated": "2022-03-29",
+    "statusAge": 0,
+    "statusLastUpdated": "2022-04-07",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-doris.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/doris/KEYS",
@@ -1426,7 +1422,7 @@
         {
           "description": "Apache Heron (Incubating) is a realtime, distributed, fault-t...",
           "last_update_int": 1649294071,
-          "last_update_txt": "<span style='color: #070;'>&lt;30 minutes ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
         }
       ]
     ],
@@ -1837,8 +1833,8 @@
         "incubator-inlong",
         {
           "description": "Apache InLong - a one-stop integration framework for massive ...",
-          "last_update_int": 1649295417,
-          "last_update_txt": "<span style='color: #070;'>&lt;2 minutes ago</span>"
+          "last_update_int": 1649295658,
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
         }
       ],
       [
@@ -1975,8 +1971,8 @@
         "incubator-kyuubi",
         {
           "description": "Apache Kyuubi is a distributed multi-tenant JDBC server for l...",
-          "last_update_int": 1649245480,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_int": 1649296644,
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
         }
       ],
       [
@@ -2283,7 +2279,7 @@
         {
           "description": "Linkis helps easily connect to various back-end computation/s...",
           "last_update_int": 1649212606,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
         }
       ],
       [
@@ -3715,7 +3711,7 @@
         {
           "description": "Apache NuttX is a mature, real-time embedded operating system...",
           "last_update_int": 1649256526,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
         }
       ],
       [
@@ -3739,7 +3735,7 @@
         {
           "description": "Apache NuttX Website",
           "last_update_int": 1649290383,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
         }
       ]
     ],
@@ -4399,7 +4395,7 @@
         {
           "description": "Apache sdap (Incubating)",
           "last_update_int": 1649283507,
-          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
         }
       ],
       [
@@ -4499,11 +4495,12 @@
         "rickyhuo",
         "ridxiong",
         "tedliu",
+        "wenjun",
         "wuchunfu",
         "yangxiang",
         "zhongjiajie"
       ],
-      "numberCommitters": 16,
+      "numberCommitters": 17,
       "numberCommittersNew": 0,
       "numberPMCEquals": false,
       "numberPMCMembers": 12,
@@ -4586,8 +4583,8 @@
         "incubator-seatunnel-website",
         {
           "description": "Apache SeaTunnel documents",
-          "last_update_int": 1649249809,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_int": 1649301037,
+          "last_update_txt": "<span style='color: #070;'>&lt;2 minutes ago</span>"
         }
       ]
     ],
@@ -6070,7 +6067,7 @@
         {
           "description": "Apache YuniKorn K8shim",
           "last_update_int": 1649284742,
-          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
         }
       ],
       [
@@ -6086,15 +6083,15 @@
         {
           "description": "Apache incubator-yunikorn-scheduler-interface - incubating",
           "last_update_int": 1648215695,
-          "last_update_txt": "12 days ago"
+          "last_update_txt": "13 days ago"
         }
       ],
       [
         "yunikorn-site",
         {
           "description": "Apache Yunikorn website - see the master branch for instructions",
-          "last_update_int": 1649295324,
-          "last_update_txt": "<span style='color: #070;'>&lt;5 minutes ago</span>"
+          "last_update_int": 1649295598,
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
         }
       ],
       [
@@ -6102,7 +6099,7 @@
         {
           "description": "Apache incubator-yunikorn-web - incubating",
           "last_update_int": 1648217219,
-          "last_update_txt": "12 days ago"
+          "last_update_txt": "13 days ago"
         }
       ]
     ],
