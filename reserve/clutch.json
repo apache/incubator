@@ -124,7 +124,7 @@
         {
           "description": "Apache age",
           "last_update_int": 1649339728,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
         }
       ]
     ],
@@ -233,11 +233,15 @@
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-annotator.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/annotator/KEYS",
       "svn": "",
-      "tracker": "https://issues.apache.org/jira/browse/ANNO",
+      "tracker": "",
       "wiki": "https://cwiki.apache.org/confluence/display/ANNO",
       "www": "http://annotator.incubator.apache.org"
     },
     "zFixMeList": [
+      [
+        "10",
+        "Has not provided an issue tracker link"
+      ],
       [
         "15",
         "Project does not have 'dev' mailing list"
@@ -891,8 +895,8 @@
         "incubator-doris",
         {
           "description": "Apache Doris(Incubating) is an MPP-based interactive SQL data...",
-          "last_update_int": 1649381213,
-          "last_update_txt": "<span style='color: #070;'>&lt;15 minutes ago</span>"
+          "last_update_int": 1649388589,
+          "last_update_txt": "<span style='color: #070;'>&lt;30 minutes ago</span>"
         }
       ],
       [
@@ -900,15 +904,15 @@
         {
           "description": "Flink Connector for Apache Doris(incubating)",
           "last_update_int": 1649381380,
-          "last_update_txt": "<span style='color: #070;'>&lt;15 minutes ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
         }
       ],
       [
         "incubator-doris-manager",
         {
           "description": "Cluster manager for Apache Doris(Incubating)",
-          "last_update_int": 1649322544,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_int": 1649385606,
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
         }
       ],
       [
@@ -924,7 +928,7 @@
         {
           "description": "Apache Doris Website Incubating",
           "last_update_int": 1649296374,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
         }
       ]
     ],
@@ -1836,8 +1840,8 @@
         "incubator-inlong",
         {
           "description": "Apache InLong - a one-stop integration framework for massive ...",
-          "last_update_int": 1649336034,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_int": 1649388048,
+          "last_update_txt": "<span style='color: #070;'>&lt;1 hour ago</span>"
         }
       ],
       [
@@ -1974,8 +1978,8 @@
         "incubator-kyuubi",
         {
           "description": "Apache Kyuubi is a distributed multi-tenant JDBC server for l...",
-          "last_update_int": 1649311138,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_int": 1649384171,
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
         }
       ],
       [
@@ -2282,7 +2286,7 @@
         {
           "description": "Linkis helps easily connect to various back-end computation/s...",
           "last_update_int": 1649342114,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
         }
       ],
       [
@@ -3118,8 +3122,8 @@
         "incubator-mxnet",
         {
           "description": "Apache MXNet  (Incubating)",
-          "last_update_int": 1649372251,
-          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
+          "last_update_int": 1649389283,
+          "last_update_txt": "<span style='color: #070;'>&lt;15 minutes ago</span>"
         }
       ],
       [
@@ -3150,8 +3154,8 @@
         "incubator-mxnet-site",
         {
           "description": "Apache MXNet Site",
-          "last_update_int": 1649379583,
-          "last_update_txt": "<span style='color: #070;'>&lt;1 hour ago</span>"
+          "last_update_int": 1649382720,
+          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
         }
       ],
       [
@@ -3738,7 +3742,7 @@
         {
           "description": "Apache NuttX Website",
           "last_update_int": 1649376765,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
         }
       ]
     ],
@@ -3860,7 +3864,7 @@
         {
           "description": "(Expiremental) Proper Debian packaging",
           "last_update_int": 1532960445,
-          "last_update_txt": "192 weeks ago"
+          "last_update_txt": "193 weeks ago"
         }
       ],
       [
@@ -4578,8 +4582,8 @@
         "incubator-seatunnel",
         {
           "description": "SeaTunnel is a distributed, high-performance data integration...",
-          "last_update_int": 1649334570,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_int": 1649385622,
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
         }
       ],
       [
@@ -5325,7 +5329,7 @@
         {
           "description": "Apache Teaclave (incubating) SGX SDK helps developers to writ...",
           "last_update_int": 1649376356,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
         }
       ],
       [
@@ -5362,11 +5366,15 @@
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-teaclave.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/teaclave/KEYS",
       "svn": "",
-      "tracker": "https://issues.apache.org/jira/browse/XXX",
+      "tracker": "",
       "wiki": "",
       "www": "https://teaclave.incubator.apache.org"
     },
     "zFixMeList": [
+      [
+        "10",
+        "Has not provided an issue tracker link"
+      ],
       [
         "18",
         "Has not provided a wiki link"
@@ -6074,7 +6082,7 @@
         {
           "description": "Apache yunikorn",
           "last_update_int": 1648739627,
-          "last_update_txt": "7 days ago"
+          "last_update_txt": "8 days ago"
         }
       ],
       [
@@ -6082,7 +6090,7 @@
         {
           "description": "Apache incubator-yunikorn-scheduler-interface - incubating",
           "last_update_int": 1648215695,
-          "last_update_txt": "13 days ago"
+          "last_update_txt": "14 days ago"
         }
       ],
       [
@@ -6090,7 +6098,7 @@
         {
           "description": "Apache Yunikorn website - see the master branch for instructions",
           "last_update_int": 1649295598,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
         }
       ],
       [
@@ -6098,7 +6106,7 @@
         {
           "description": "Apache incubator-yunikorn-web - incubating",
           "last_update_int": 1648217219,
-          "last_update_txt": "13 days ago"
+          "last_update_txt": "14 days ago"
         }
       ]
     ],
