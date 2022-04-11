@@ -1,0 +1,85 @@
+//
+//  Licensed to the Apache Software Foundation (ASF) under one or more
+//  contributor license agreements.  See the NOTICE file distributed with
+//  this work for additional information regarding copyright ownership.
+//  The ASF licenses this file to You under the Apache License, Version 2.0
+//  (the "License"); you may not use this file except in compliance with
+//  the License.  You may obtain a copy of the License at
+//
+//      http://www.apache.org/licenses/LICENSE-2.0
+//
+//  Unless required by applicable law or agreed to in writing, software
+//  distributed under the License is distributed on an "AS IS" BASIS,
+//  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+//  See the License for the specific language governing permissions and
+//  limitations under the License.
+//
+:imagesdir: ../images/
+
+== Creating Presentation with Apache Training
+
+Currently the setup uses https://asciidoctor.org/[Asciidoctor] to write content and builds the presentation using https://maven.apache.org/[Apache Maven] and https://revealjs.com/#/[Reveal.JS].
+
+We have prepared everything that it should be pretty simple to get started with creating a new presentation.
+
+Requirements:
+
+- Java 8 or newer
+- Maven 3.3 or newer
+
+Until we have released the tooling, you will need to build it locally first or the archetype plugin will fail to run.
+Please read the following chapter on how to do this.
+
+In order to create an empty presentation to start with, please execute the following command:
+
+    mvn archetype:generate -DarchetypeGroupId=org.apache.training -DarchetypeArtifactId=content-archetype -DarchetypeVersion=1.0.0
+
+For Windows, you need to wrap every argument in double-quotes:
+
+    mvn archetype:generate "-DarchetypeGroupId=org.apache.training" "-DarchetypeArtifactId=content-archetype" "-DarchetypeVersion=1.0.0"
+
+After choosing `groupId`, `artifactId`, `version` and `package` there should be a new directory that matches the `artifactId` that you selected.
+
+Change into this directory and run the following command to build the presentation:
+
+    mvn package
+
+After that, there should be a directory `target/generated-slides`.
+
+If you open the `index.html` in that directory your presentation should open in the browser.
+
+== Using the latest development version
+
+If you want to use the latest development version of the Apache Training tooling, please still use the latest released archetype. Otherwise, the archetype plugin will not be able to find the `SNAPSHOT` version of the archetype. As generally most changes apply to the parent being used in the slides module, you can update to the latest version by:
+
+Adding the following section to the generated `pom.xml`:
+
+```
+  <!-- Make Snapshots of Apache projects available -->
+  <repositories>
+    <repository>
+      <id>apache-snapshots</id>
+      <url>https://repository.apache.org/content/repositories/snapshots</url>
+      <releases>
+        <enabled>false</enabled>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+    </repository>
+  </repositories>
+```
+
+After adding this you can update the parent version to the latest `SNAPSHOT` version and Maven should be able to find it.
+
+== Building the Apache Training Tooling
+
+Additional requirements:
+
+- Git
+
+In order to build Apache Training Tooling, please checkout the git repo from:
+
+    git clone https://gitbox.apache.org/repos/asf/incubator-training.git
+    cd incubator-training
+    mvn install

@@ -1,0 +1,93 @@
+//
+//  Licensed to the Apache Software Foundation (ASF) under one or more
+//  contributor license agreements.  See the NOTICE file distributed with
+//  this work for additional information regarding copyright ownership.
+//  The ASF licenses this file to You under the Apache License, Version 2.0
+//  (the "License"); you may not use this file except in compliance with
+//  the License.  You may obtain a copy of the License at
+//
+//      http://www.apache.org/licenses/LICENSE-2.0
+//
+//  Unless required by applicable law or agreed to in writing, software
+//  distributed under the License is distributed on an "AS IS" BASIS,
+//  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+//  See the License for the specific language governing permissions and
+//  limitations under the License.
+//
+:imagesdir: ../images/
+
+== Contributing
+
+=== Forms of contribution
+
+The Apache Training (Incubating) project welcomes contributions in all forms, sizes, and shapes.
+Below you can find a small list of possible ways that you can contribute if you have some spare time and want to get involved.
+
+This list is by no means finite. There are without doubt dozens of other useful ways that you can pick, please do not let this limit your creativity!
+
+- Adding to the webpage
+- Filing Bug-Reports
+- Converting donated materials
+- Active communication on our mailing lists
+- Promoting the project (articles, blog posts, talks at conferences)
+- Writing documentation
+
+=== Finding a Project
+If you want to get involved, but do not have a specific project in mind please feel free to check our issue tracker for https://issues.apache.org/jira/issues/?jql=project%20%3D%20TRAINING%20AND%20labels%20%3D%20beginner%20AND%20assignee%20in%20(EMPTY)[unassigned issues with the _beginner_ label]. These should be good candidates to get your feet wet and gather some experience before tackling larger issues.
+
+If nothing catches your eye and you come up with something that you want to work on by yourself, please do share your intent by either posting on the mailing list or creating an issue, as this allows us to limit duplication of effort as much as possible.
+
+=== Code Contributions
+Many of the actions listed above will take the form of contributions to the git repository, for which we have defined a few basic guidelines to ensure we can all collaborate effectively.
+Code contributions can take two forms, you can either create a pull request on GitHub or directly attach patch files to a Jira issue for review.
+
+A Jira ticket and a pull request are not mutually exclusive, and we encourage people to create both, first a Jira to discuss the issue, task, improvement in general and later on a pull request for actual implementation discussions.
+If you follow this process, please prefix the name of your pull request with the Jira issue number, this will ensure that they automatically get linked.
+If, for example, you open a pull request to fix issue TRAINING-123, then your PR title could read "_TRAINING-123: Fix stuff_".
+
+If you are not familiar with git, how to create pull requests and similar workflows, below is a list of useful links that should help you get started.
+However as with all other things, please do reach out to us on the mailing list if anything is unclear and you need help, we are more than happy to help!
+
+- https://help.github.com/en/articles/fork-a-repo[Forking a repository]
+- https://help.github.com/en/articles/about-branches[About branches]
+- https://help.github.com/en/articles/about-pull-requests[About pull requests]
+- https://lab.github.com/[Github Learning Lab]
+
+==== Review Process
+The Training project follows a review-then-commit (RTC) workflow for core modules such as the presentation framework, themes and stuff used by presentations, and a commit-then-review (CTR) model for content modules. 
+
+Review-then-commit means that no commit should be made to the repository that has not been reviewed and approved by the required number of persons. Where as, commit-then-review model allows for faster and simpler contribution of content to training project. CTR also applies if no one objects to a PR for first 72 hours.
+
+For reviews we distinguish between _content_ commits that add content to training decks and _functional_ commits like code changes to tools or similar things.
+
+*Code Commits* require one approving review.
+This review has to be done by a committer if the pull request was created by a non-committer. If a committer creates a pull request and explicitly requests a review from a non-committer, then this review is sufficient.
+
+*Content Commits* require one or more approving reviews. As we do not expect to initially have committers that are also experts in all fields for which we host content there may be a need for two reviews in this case: one for form by a committer and one for content by someone who considers themselves a subject matter expert.
+If the committer considers themselves to be an expert on the material one review is sufficient, just like for code commits.
+
+*Trivial Changes*
+Committers can, at their discretion, decide that a change is trivial and does not need to be explicitly approved.
+In this case, the pull request or Jira issue should be marked accordingly and left open for review for at least 72 hours.
+After this period has passed it can be merged without review.
+
+=== Issue Reports
+
+We use https://issues.apache.org/jira/projects/TRAINING[JIRA] as our Issue Tracker.
+
+Feel free to submit `feature requests`, `bug reports`, `patches`, `comment on issues`, ...
+
+In order to be able to do so, you need to create an account first.
+
+Currently, Apache has a separate login system for JIRA and all other services, this might change in the future, but right now it's the way things are.
+
+So if you are considering to contribute more than just a one-time-patch, please choose a username that hasn't been used by an existing http://people.apache.org/committer-index.html[Apache committer] as this will simplify things if we invite you to become part of the team.
+
+If you want to be assigned to an issue because you want to work on it, please request to be added to the JIRA groups on our http://training.apache.org/mailing-lists.html[developers mailing list]
+
+=== Documentation
+
+As our documentation and website are generated as a side-product of our build, contributing to this technically is the same as contributing to the code.
+
+All our content is written in Asciidoctor and is located in `src/site/asciidoc` directories. For a reference of the Asciidoctor syntax please have a look at the https://asciidoctor.org/docs/user-manual/#introduction-to-asciidoctor[Asciidoctor documentation].
+
