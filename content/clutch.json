@@ -110,7 +110,7 @@
         {
           "description": "Apache age",
           "last_update_int": 1650668751,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
         }
       ]
     ],
@@ -219,15 +219,11 @@
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-annotator.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/annotator/KEYS",
       "svn": "",
-      "tracker": "",
+      "tracker": "https://issues.apache.org/jira/browse/ANNO",
       "wiki": "https://cwiki.apache.org/confluence/display/ANNO",
       "www": "http://annotator.incubator.apache.org"
     },
     "zFixMeList": [
-      [
-        "10",
-        "Has not provided an issue tracker link"
-      ],
       [
         "15",
         "Project does not have 'dev' mailing list"
@@ -470,7 +466,7 @@
         {
           "description": "Apache crail (Incubating)",
           "last_update_int": 1649800861,
-          "last_update_txt": "10 days ago"
+          "last_update_txt": "11 days ago"
         }
       ],
       [
@@ -922,7 +918,7 @@
         {
           "description": "Cluster manager for Apache Doris(Incubating)",
           "last_update_int": 1650619663,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
         }
       ],
       [
@@ -1076,7 +1072,7 @@
         {
           "description": "Apache EventMesh (Incubating) Website",
           "last_update_int": 1650150834,
-          "last_update_txt": "6 days ago"
+          "last_update_txt": "7 days ago"
         }
       ]
     ],
@@ -1562,7 +1558,7 @@
         {
           "description": "Apache Hivemall (incubating)",
           "last_update_int": 1649800877,
-          "last_update_txt": "10 days ago"
+          "last_update_txt": "11 days ago"
         }
       ],
       [
@@ -1689,7 +1685,7 @@
         {
           "description": "Apache HugeGraph (incubating)",
           "last_update_int": 1650538796,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
+          "last_update_txt": "2 days ago"
         }
       ],
       [
@@ -1713,7 +1709,7 @@
         {
           "description": "Apache HugeGraph (incubating)",
           "last_update_int": 1650623587,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
         }
       ],
       [
@@ -1729,7 +1725,7 @@
         {
           "description": "Apache HugeGraph (incubating) (archived)",
           "last_update_int": 1649800563,
-          "last_update_txt": "10 days ago"
+          "last_update_txt": "11 days ago"
         }
       ]
     ],
@@ -1900,8 +1896,8 @@
         "incubator-inlong",
         {
           "description": "Apache InLong - a one-stop integration framework for massive ...",
-          "last_update_int": 1650681116,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_int": 1650713963,
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
         }
       ],
       [
@@ -1934,6 +1930,83 @@
       [
         "16",
         "Project does not have 'commits' mailing list"
+      ]
+    ]
+  },
+  "kvrocks": {
+    "description": "Kvrocks is a distributed key-value NoSQL database, supporting the rich data structure",
+    "fullName": "Kvrocks",
+    "hasMailListCommits": "http://mail-archives.apache.org/mod_mbox/kvrocks-commits",
+    "hasMailListDev": "http://mail-archives.apache.org/mod_mbox/kvrocks-dev",
+    "ldap": {},
+    "mentors": [
+      [
+        "Jean-Baptiste Onofre",
+        "jbonofre"
+      ],
+      [
+        "Xiaoqiao He",
+        "hexiaoqiao"
+      ],
+      [
+        "tison",
+        "tison"
+      ],
+      [
+        "Von Gosling",
+        "vongosling"
+      ],
+      [
+        "Liang Chen",
+        "chenliang613"
+      ]
+    ],
+    "news": [
+      "2022-04-23 Project enters incubation."
+    ],
+    "podlingName": "Kvrocks",
+    "rawReportingGroup": "group-1",
+    "releases": [],
+    "reportingGroup": "January, April, July, October",
+    "reportingMonthly": true,
+    "repositories": "",
+    "resource": "kvrocks",
+    "sponsor": "Incubator",
+    "startDate": "2022-04-23",
+    "statusAge": 0,
+    "statusLastUpdated": "2022-04-23",
+    "urls": {
+      "git": "",
+      "keys": "",
+      "svn": "",
+      "tracker": "",
+      "wiki": "",
+      "www": ""
+    },
+    "zFixMeList": [
+      [
+        "01",
+        "No project LDAP"
+      ],
+      [
+        "10",
+        "Has not provided an issue tracker link"
+      ],
+      [
+        "18",
+        "Has not provided a wiki link"
+      ],
+      [
+        "11",
+        "Website is missing"
+      ],
+      [
+        "12",
+        "Release distribution area is not setup"
+      ],
+      [
+        "17",
+        "No source code repository"
       ]
     ]
   },
@@ -2550,7 +2623,7 @@
         {
           "description": "Apache livy (Incubating)",
           "last_update_int": 1649800780,
-          "last_update_txt": "10 days ago"
+          "last_update_txt": "11 days ago"
         }
       ],
       [
@@ -3232,8 +3305,8 @@
         "incubator-mxnet-site",
         {
           "description": "Apache MXNet Site",
-          "last_update_int": 1650619746,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_int": 1650705949,
+          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
         }
       ],
       [
@@ -3771,7 +3844,7 @@
         {
           "description": "Apache NuttX is a mature, real-time embedded operating system...",
           "last_update_int": 1650702353,
-          "last_update_txt": "<span style='color: #070;'>&lt;1 hour ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
         }
       ],
       [
@@ -3795,7 +3868,7 @@
         {
           "description": "Apache NuttX Website",
           "last_update_int": 1650672766,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
         }
       ]
     ],
@@ -4283,8 +4356,8 @@
         "incubator-ponymail-foal",
         {
           "description": "Apache Pony Mail Foal (Next Generation Suite)",
-          "last_update_int": 1648324017,
-          "last_update_txt": "28 days ago"
+          "last_update_int": 1650709642,
+          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
         }
       ],
       [
@@ -4632,8 +4705,8 @@
         "incubator-seatunnel",
         {
           "description": "SeaTunnel is a distributed, high-performance data integration...",
-          "last_update_int": 1650698205,
-          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
+          "last_update_int": 1650713194,
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
         }
       ],
       [
@@ -4767,7 +4840,7 @@
         {
           "description": "A cluster computing framework for processing large-scale geos...",
           "last_update_int": 1650702140,
-          "last_update_txt": "<span style='color: #070;'>&lt;1 hour ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
         }
       ],
       [
@@ -5023,8 +5096,8 @@
         "incubator-shenyu-website",
         {
           "description": "ShenYu is High-Performance Java API Gateway.",
-          "last_update_int": 1650606580,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
+          "last_update_int": 1650709263,
+          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
         }
       ]
     ],
@@ -5272,7 +5345,7 @@
         {
           "description": "Apache StreamPipes - A self-service (Industrial) IoT toolbox ...",
           "last_update_int": 1650700357,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
         }
       ],
       [
@@ -5304,7 +5377,7 @@
         {
           "description": "Apache StreamPipes Website",
           "last_update_int": 1649715350,
-          "last_update_txt": "11 days ago"
+          "last_update_txt": "12 days ago"
         }
       ]
     ],
@@ -5490,15 +5563,11 @@
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-teaclave.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/teaclave/KEYS",
       "svn": "",
-      "tracker": "",
+      "tracker": "https://issues.apache.org/jira/browse/XXX",
       "wiki": "",
       "www": "https://teaclave.incubator.apache.org"
     },
     "zFixMeList": [
-      [
-        "10",
-        "Has not provided an issue tracker link"
-      ],
       [
         "18",
         "Has not provided a wiki link"
