@@ -712,6 +712,95 @@
     },
     "zFixMeList": []
   },
+  "devlake": {
+    "description": "DevLake is a development data platform, providing the data infrastructure for developer teams to analyze and improve their engineering productivity.",
+    "fullName": "DevLake",
+    "hasMailListCommits": "",
+    "hasMailListDev": "",
+    "ldap": {},
+    "mentors": [
+      [
+        "Felix Cheung",
+        "felixcheung"
+      ],
+      [
+        "Liang Zhang",
+        "zhangliang"
+      ],
+      [
+        "Lidong Dai",
+        "lidongdai"
+      ],
+      [
+        "Sijie Guo",
+        "sijie"
+      ],
+      [
+        "Jean-Baptiste Onofré",
+        "jbonofre"
+      ]
+    ],
+    "news": [
+      "2022-04-29 Project enters incubation."
+    ],
+    "podlingName": "DevLake",
+    "rawReportingGroup": "month",
+    "releases": [],
+    "reportingGroup": "Monthly",
+    "reportingMonthly": false,
+    "repositories": "",
+    "resource": "devlake",
+    "sponsor": "Incubator",
+    "startDate": "2022-04-29",
+    "statusAge": 0,
+    "statusLastUpdated": "2022-05-01",
+    "urls": {
+      "git": "https://github.com/apache/incubator-devlake",
+      "keys": "",
+      "svn": "",
+      "tracker": "",
+      "wiki": "",
+      "www": ""
+    },
+    "zFixMeList": [
+      [
+        "01",
+        "No project LDAP"
+      ],
+      [
+        "05",
+        "Reporting group is either missing or a multiple"
+      ],
+      [
+        "10",
+        "Has not provided an issue tracker link"
+      ],
+      [
+        "18",
+        "Has not provided a wiki link"
+      ],
+      [
+        "11",
+        "Website is missing"
+      ],
+      [
+        "12",
+        "Release distribution area is not setup"
+      ],
+      [
+        "15",
+        "Project does not have 'dev' mailing list"
+      ],
+      [
+        "16",
+        "Project does not have 'commits' mailing list"
+      ],
+      [
+        "17",
+        "No source code repository. Declared but nonexistent"
+      ]
+    ]
+  },
   "doris": {
     "description": "Doris is a MPP-based interactive SQL data warehousing for reporting and analysis.",
     "fullName": "Doris",
@@ -919,7 +1008,7 @@
         {
           "description": "Apache Doris(Incubating) is an MPP-based interactive SQL data...",
           "last_update_int": 1651400816,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
         }
       ],
       [
@@ -2296,8 +2385,8 @@
         "incubator-liminal",
         {
           "description": "Apache Liminals goal is to operationalise the machine learnin...",
-          "last_update_int": 1651407227,
-          "last_update_txt": "<span style='color: #070;'>&lt;5 minutes ago</span>"
+          "last_update_int": 1651407965,
+          "last_update_txt": "<span style='color: #070;'>&lt;2 minutes ago</span>"
         }
       ],
       [
