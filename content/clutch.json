@@ -1889,8 +1889,8 @@
   "inlong": {
     "description": "InLong is a one-stop data integration framework that provides automatic, secure, and reliable data transmission capabilities. InLong supports both batch and stream data processing at the same time, which offers great power to build data analysis, modeling, and other real-time applications based on streaming data.",
     "fullName": "InLong",
-    "hasMailListCommits": "",
-    "hasMailListDev": "",
+    "hasMailListCommits": "http://mail-archives.apache.org/mod_mbox/inlong-commits",
+    "hasMailListDev": "http://mail-archives.apache.org/mod_mbox/inlong-dev",
     "ldap": {
       "members": [
         "alfredlu",
@@ -2031,7 +2031,7 @@
         {
           "description": "Apache InLong - a one-stop integration framework for massive ...",
           "last_update_int": 1652163326,
-          "last_update_txt": "<span style='color: #070;'>&lt;1 minute ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt;15 minutes ago</span>"
         }
       ],
       [
@@ -2056,16 +2056,7 @@
       "wiki": "https://github.com/apache/incubator-inlong/wiki",
       "www": "http://inlong.incubator.apache.org"
     },
-    "zFixMeList": [
-      [
-        "15",
-        "Project does not have 'dev' mailing list"
-      ],
-      [
-        "16",
-        "Project does not have 'commits' mailing list"
-      ]
-    ]
+    "zFixMeList": []
   },
   "kvrocks": {
     "description": "Kvrocks is a distributed key-value NoSQL database, supporting the rich data structure",
