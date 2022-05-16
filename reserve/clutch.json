@@ -236,11 +236,15 @@
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-annotator.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/annotator/KEYS",
       "svn": "",
-      "tracker": "https://issues.apache.org/jira/browse/ANNO",
+      "tracker": "",
       "wiki": "https://cwiki.apache.org/confluence/display/ANNO",
       "www": "http://annotator.incubator.apache.org"
     },
     "zFixMeList": [
+      [
+        "10",
+        "Has not provided an issue tracker link"
+      ],
       [
         "15",
         "Project does not have 'dev' mailing list"
@@ -336,8 +340,8 @@
         "incubator-brpc",
         {
           "description": "Industrial-grade RPC framework used throughout Baidu, with 1,...",
-          "last_update_int": 1652061214,
-          "last_update_txt": "7 days ago"
+          "last_update_int": 1652669895,
+          "last_update_txt": "<span style='color: #070;'>&lt;1 hour ago</span>"
         }
       ],
       [
@@ -1038,8 +1042,8 @@
         "incubator-doris-website",
         {
           "description": "Apache Doris Website Incubating",
-          "last_update_int": 1652579356,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_int": 1652666227,
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
         }
       ]
     ],
@@ -1168,8 +1172,8 @@
         "incubator-eventmesh",
         {
           "description": "EventMesh is a dynamic event-driven application runtime used ...",
-          "last_update_int": 1652406503,
-          "last_update_txt": "3 days ago"
+          "last_update_int": 1652669282,
+          "last_update_txt": "<span style='color: #070;'>&lt;1 hour ago</span>"
         }
       ],
       [
@@ -1830,7 +1834,7 @@
         {
           "description": "HugeGraph toolchain - include a series useful graph modules",
           "last_update_int": 1652627061,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
         }
       ],
       [
@@ -2020,8 +2024,8 @@
         "incubator-inlong",
         {
           "description": "Apache InLong - a one-stop integration framework for massive ...",
-          "last_update_int": 1652617055,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_int": 1652666689,
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
         }
       ],
       [
@@ -2287,8 +2291,8 @@
         "incubator-kyuubi",
         {
           "description": "Apache Kyuubi is a distributed multi-tenant JDBC server for l...",
-          "last_update_int": 1652592132,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_int": 1652667065,
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
         }
       ],
       [
@@ -2607,8 +2611,8 @@
         "incubator-linkis-website",
         {
           "description": "Apache Linkis documents",
-          "last_update_int": 1652414301,
-          "last_update_txt": "3 days ago"
+          "last_update_int": 1652671685,
+          "last_update_txt": "<span style='color: #070;'>&lt;5 minutes ago</span>"
         }
       ]
     ],
@@ -4019,7 +4023,7 @@
         {
           "description": "Apache NuttX Website",
           "last_update_int": 1652660140,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
         }
       ]
     ],
@@ -4147,7 +4151,7 @@
         {
           "description": "Automatically exported from code.google.com/p/domain-registry...",
           "last_update_int": 1595512420,
-          "last_update_txt": "94 weeks ago"
+          "last_update_txt": "95 weeks ago"
         }
       ],
       [
@@ -4871,8 +4875,8 @@
         "incubator-seatunnel",
         {
           "description": "SeaTunnel is a distributed, high-performance data integration...",
-          "last_update_int": 1652615763,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_int": 1652671034,
+          "last_update_txt": "<span style='color: #070;'>&lt;15 minutes ago</span>"
         }
       ],
       [
@@ -5086,7 +5090,7 @@
         "zjntgao"
       ],
       "numberCommitters": 35,
-      "numberCommittersNew": 10,
+      "numberCommittersNew": 11,
       "numberPMCEquals": false,
       "numberPMCMembers": 27,
       "owners": [
@@ -5163,7 +5167,9 @@
       "2022-04-06 New PPMC, Invite committer Kunshuai Zhu to PPMC",
       "2022-04-14 New PPMC, Invite committer Congqi Zhu to PPMC",
       "2022-04-17 Apach ShenYu (incubating) release 2.4.3",
-      "2022-04-20 New Committer, Zicheng Zhang"
+      "2022-04-20 New Committer, Zicheng Zhang",
+      "2022-05-13 New Committer, Taishi Hu",
+      "2022-05-16 New PPMC, Invite committer Siying Zheng to PPMC"
     ],
     "podlingName": "ShenYu",
     "rawReportingGroup": "group-1",
@@ -5288,8 +5294,8 @@
     "resource": "shenyu",
     "sponsor": "Incubator",
     "startDate": "2021-05-03",
-    "statusAge": 8,
-    "statusLastUpdated": "2022-05-08",
+    "statusAge": 0,
+    "statusLastUpdated": "2022-05-16",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-shenyu.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/shenyu/KEYS",
@@ -5748,11 +5754,15 @@
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-teaclave.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/teaclave/KEYS",
       "svn": "",
-      "tracker": "https://issues.apache.org/jira/browse/XXX",
+      "tracker": "",
       "wiki": "",
       "www": "https://teaclave.incubator.apache.org"
     },
     "zFixMeList": [
+      [
+        "10",
+        "Has not provided an issue tracker link"
+      ],
       [
         "18",
         "Has not provided a wiki link"
