@@ -628,7 +628,7 @@
         "incubator-devlake",
         {
           "description": "Apache DevLake is an open-source dev data platform that inges...",
-          "last_update_int": 1653281809,
+          "last_update_int": 1653283581,
           "last_update_txt": "<span style='color: #070;'>&lt;30 minutes ago</span>"
         }
       ],
@@ -881,8 +881,8 @@
         "incubator-doris",
         {
           "description": "Apache Doris(Incubating) is an MPP-based interactive SQL data...",
-          "last_update_int": 1653279061,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
+          "last_update_int": 1653283987,
+          "last_update_txt": "<span style='color: #070;'>&lt;30 minutes ago</span>"
         }
       ],
       [
@@ -2645,7 +2645,7 @@
       }
     },
     "reportingGroup": "January, April, July, October",
-    "reportingMonthly": false,
+    "reportingMonthly": true,
     "repositories": [
       [
         "incubator-livy",
@@ -2776,7 +2776,7 @@
         {
           "description": "Apache marvin",
           "last_update_int": 1584034312,
-          "last_update_txt": "114 weeks ago"
+          "last_update_txt": "115 weeks ago"
         }
       ]
     ],
@@ -4469,8 +4469,8 @@
       ],
       "numberCommitters": 15,
       "numberCommittersNew": 0,
-      "numberPMCEquals": false,
-      "numberPMCMembers": 14,
+      "numberPMCEquals": true,
+      "numberPMCMembers": 15,
       "owners": [
         "eamonford",
         "earmstro",
@@ -4484,6 +4484,7 @@
         "maya",
         "nchung",
         "rawkintrevo",
+        "skperez",
         "tcram",
         "tloubrieu"
       ]
