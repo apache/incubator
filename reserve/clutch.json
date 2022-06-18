@@ -530,7 +530,7 @@
         {
           "description": "Incubator Datalab",
           "last_update_int": 1655540532,
-          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
         }
       ]
     ],
@@ -1473,184 +1473,6 @@
       ]
     ]
   },
-  "inlong": {
-    "description": "InLong is a one-stop data integration framework that provides automatic, secure, and reliable data transmission capabilities. InLong supports both batch and stream data processing at the same time, which offers great power to build data analysis, modeling, and other real-time applications based on streaming data.",
-    "fullName": "InLong",
-    "hasMailListCommits": "http://mail-archives.apache.org/mod_mbox/inlong-commits",
-    "hasMailListDev": "http://mail-archives.apache.org/mod_mbox/inlong-dev",
-    "ldap": {
-      "members": [
-        "alfredlu",
-        "aloyszhang",
-        "charleli",
-        "dockerzhang",
-        "ehomeliu",
-        "gosonzhang",
-        "gxcheng",
-        "healchow",
-        "jbonofre",
-        "jiyuanhao",
-        "jmclean",
-        "jshao",
-        "junjie",
-        "junping_du",
-        "kaynewu",
-        "ke4qqq",
-        "lamberliu",
-        "leezng",
-        "luchunliang",
-        "lzwang",
-        "osgooli",
-        "pengchen",
-        "seraph",
-        "sijie",
-        "technoboy",
-        "tison",
-        "xiangli",
-        "yihengw",
-        "yuanbo",
-        "zakwu",
-        "zeus",
-        "zirui",
-        "zjshen"
-      ],
-      "numberCommitters": 33,
-      "numberCommittersNew": 11,
-      "numberPMCEquals": false,
-      "numberPMCMembers": 24,
-      "owners": [
-        "alfredlu",
-        "aloyszhang",
-        "charleli",
-        "dockerzhang",
-        "gosonzhang",
-        "gxcheng",
-        "healchow",
-        "jbonofre",
-        "jiyuanhao",
-        "jmclean",
-        "jshao",
-        "junping_du",
-        "kaynewu",
-        "lamberliu",
-        "leezng",
-        "lzwang",
-        "osgooli",
-        "pengchen",
-        "seraph",
-        "technoboy",
-        "tison",
-        "yuanbo",
-        "zakwu",
-        "zirui"
-      ]
-    },
-    "mentors": [
-      [
-        "Junping Du",
-        "junping_du"
-      ],
-      [
-        "Justin Mclean",
-        "jmclean"
-      ],
-      [
-        "Sijie Guo",
-        "sijie"
-      ],
-      [
-        "Zhijie Shen",
-        "zjshen"
-      ],
-      [
-        "Jean-Baptiste Onofré",
-        "jbonofre"
-      ]
-    ],
-    "news": [
-      "2019-11-03 Project enters incubation.",
-      "2020-04-21 New Committer: Technoboy-",
-      "2020-05-30 First Apache TubeMQ release v0.3.0.",
-      "2020-07-13 New Committer: dockerzhang",
-      "2020-08-03 Apache TubeMQ release v0.5.0.",
-      "2020-10-06 New Committer: charlely",
-      "2020-10-20 Apache TubeMQ release v0.6.0.",
-      "2020-12-04 Apache TubeMQ release v0.7.0.",
-      "2020-12-10 New Committer: yuanboliu",
-      "2020-12-14 New PPMC: dockerzhang",
-      "2021-03-04 Apache TubeMQ release v0.8.0.",
-      "2021-04-11 Project renamed from TubeMQ to InLong.",
-      "2021-07-24 First Apache InLong release v0.9.0 after the rename.",
-      "2021-09-14 Apache InLong release v0.10.0.",
-      "2021-11-05 Apache InLong release v0.11.0.",
-      "2021-11-09 New Committer: TszKitLo40",
-      "2021-11-25 New PPMC: aloyszhang",
-      "2021-11-26 New Committer: healchow",
-      "2021-12-22 Apache InLong release v0.12.0.",
-      "2022-01-21 New Committer: zirui",
-      "2021-02-17 Apache InLong release v1.0.0.",
-      "2022-03-01 New Committer: leezng",
-      "2022-04-01 New Committer: Shink",
-      "2022-04-02 New PPMC: healchow",
-      "2022-04-24 Apache InLong release v1.1.0.",
-      "2022-05-14 New Committer: lzwang",
-      "2022-05-23 New Committer: luchunliang"
-    ],
-    "podlingName": "InLong",
-    "rawReportingGroup": "group-1",
-    "releases": {
-      "apache-inlong-1.1.0-incubating-bin.tar.gz": {
-        "dtm": "04/24/2022",
-        "folder": "1.1.0-incubating",
-        "hash": "sha512",
-        "revision": "r54042",
-        "size": "896639593",
-        "user": "dockerzh"
-      },
-      "apache-inlong-1.1.0-incubating-src.tar.gz": {
-        "dtm": "04/24/2022",
-        "folder": "1.1.0-incubating",
-        "hash": "sha512",
-        "revision": "r54042",
-        "size": "4652945",
-        "user": "dockerzh"
-      }
-    },
-    "reportingGroup": "January, April, July, October",
-    "reportingMonthly": false,
-    "repositories": [
-      [
-        "incubator-inlong",
-        {
-          "description": "Apache InLong - a one-stop integration framework for massive ...",
-          "last_update_int": 1655525865,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
-        }
-      ],
-      [
-        "incubator-inlong-website",
-        {
-          "description": "Apache InLong - a one-stop integration framework for massive ...",
-          "last_update_int": 1655546890,
-          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
-        }
-      ]
-    ],
-    "resource": "inlong",
-    "sponsor": "Incubator",
-    "startDate": "2019-11-03",
-    "statusAge": 0,
-    "statusLastUpdated": "2022-06-18",
-    "urls": {
-      "git": "https://gitbox.apache.org/repos/asf?p=incubator-inlong.git;a=tree;hb=HEAD",
-      "keys": "https://downloads.apache.org/incubator/inlong/KEYS",
-      "svn": "",
-      "tracker": "https://github.com/apache/incubator-inlong/issues",
-      "wiki": "https://github.com/apache/incubator-inlong/wiki",
-      "www": "http://inlong.incubator.apache.org"
-    },
-    "zFixMeList": []
-  },
   "kvrocks": {
     "description": "Kvrocks is a distributed key-value NoSQL database, supporting the rich data structure",
     "fullName": "Kvrocks",
@@ -2218,8 +2040,8 @@
         "incubator-linkis",
         {
           "description": "Linkis helps easily connect to various back-end computation/s...",
-          "last_update_int": 1655471615,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_int": 1655555270,
+          "last_update_txt": "<span style='color: #070;'>&lt;15 minutes ago</span>"
         }
       ],
       [
