@@ -84,11 +84,15 @@
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-annotator.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/annotator/KEYS",
       "svn": "",
-      "tracker": "https://issues.apache.org/jira/browse/ANNO",
+      "tracker": "",
       "wiki": "https://cwiki.apache.org/confluence/display/ANNO",
       "www": "http://annotator.incubator.apache.org"
     },
     "zFixMeList": [
+      [
+        "10",
+        "Has not provided an issue tracker link"
+      ],
       [
         "15",
         "Project does not have 'dev' mailing list"
@@ -530,8 +534,8 @@
         "incubator-datalab",
         {
           "description": "Incubator Datalab",
-          "last_update_int": 1656430290,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_int": 1656494327,
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
         }
       ]
     ],
@@ -630,8 +634,8 @@
         "incubator-devlake",
         {
           "description": "Apache DevLake is an open-source dev data platform that inges...",
-          "last_update_int": 1656485173,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
+          "last_update_int": 1656491037,
+          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
         }
       ],
       [
@@ -639,7 +643,7 @@
         {
           "description": "Apache Devlake Website",
           "last_update_int": 1656482236,
-          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
         }
       ]
     ],
@@ -1551,7 +1555,7 @@
         {
           "description": "Kvrocks is a distributed key value NoSQL database that uses R...",
           "last_update_int": 1656488449,
-          "last_update_txt": "<span style='color: #070;'>&lt;1 hour ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
         }
       ],
       [
@@ -1723,7 +1727,7 @@
         {
           "description": "Apache Kyuubi is a distributed multi-tenant JDBC server for l...",
           "last_update_int": 1656486117,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
         }
       ],
       [
@@ -1839,7 +1843,7 @@
         {
           "description": "Apache Liminals goal is to operationalise the machine learnin...",
           "last_update_int": 1654812004,
-          "last_update_txt": "19 days ago"
+          "last_update_txt": "20 days ago"
         }
       ],
       [
@@ -2508,7 +2512,7 @@
         {
           "description": "Apache Milagro Crypto Library - Rust Version",
           "last_update_int": 1654551845,
-          "last_update_txt": "22 days ago"
+          "last_update_txt": "23 days ago"
         }
       ],
       [
@@ -2862,8 +2866,8 @@
         "incubator-mxnet",
         {
           "description": "Apache MXNet  (Incubating)",
-          "last_update_int": 1656431585,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_int": 1656491683,
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
         }
       ],
       [
@@ -3447,8 +3451,8 @@
         "incubator-nuttx",
         {
           "description": "Apache NuttX is a mature, real-time embedded operating system...",
-          "last_update_int": 1656482817,
-          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
+          "last_update_int": 1656497814,
+          "last_update_txt": "<span style='color: #070;'>&lt;15 minutes ago</span>"
         }
       ],
       [
@@ -3818,8 +3822,8 @@
         "incubator-pegasus",
         {
           "description": "Apache Pegasus",
-          "last_update_int": 1656401993,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
+          "last_update_int": 1656496871,
+          "last_update_txt": "<span style='color: #070;'>&lt;30 minutes ago</span>"
         }
       ],
       [
@@ -4134,7 +4138,7 @@
         {
           "description": "Google Protobuf definition of a SDAP NEXUS Tile with bindings...",
           "last_update_int": 1655504349,
-          "last_update_txt": "11 days ago"
+          "last_update_txt": "12 days ago"
         }
       ],
       [
@@ -4341,8 +4345,8 @@
         "incubator-seatunnel",
         {
           "description": "SeaTunnel is a distributed, high-performance data integration...",
-          "last_update_int": 1656474834,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_int": 1656493343,
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
         }
       ],
       [
@@ -4350,7 +4354,7 @@
         {
           "description": "Apache SeaTunnel documents",
           "last_update_int": 1656479727,
-          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
         }
       ]
     ],
@@ -4705,8 +4709,8 @@
         "incubator-shenyu",
         {
           "description": "Apache ShenYu is a Java native API Gateway for service proxy,...",
-          "last_update_int": 1656487324,
-          "last_update_txt": "<span style='color: #070;'>&lt;1 hour ago</span>"
+          "last_update_int": 1656491405,
+          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
         }
       ],
       [
@@ -5006,7 +5010,7 @@
         {
           "description": "Apache StreamPipes - A self-service (Industrial) IoT toolbox ...",
           "last_update_int": 1656488979,
-          "last_update_txt": "<span style='color: #070;'>&lt;30 minutes ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
         }
       ],
       [
@@ -5204,7 +5208,7 @@
         {
           "description": "Teaclave specification and proofs.",
           "last_update_int": 1643487149,
-          "last_update_txt": "21 weeks ago"
+          "last_update_txt": "22 weeks ago"
         }
       ],
       [
