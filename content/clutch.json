@@ -540,15 +540,11 @@
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-devlake.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/devlake/KEYS",
       "svn": "",
-      "tracker": "",
+      "tracker": "https://github.com/apache/incubator-devlake/issues",
       "wiki": "",
       "www": "https://devlake.incubator.apache.org"
     },
     "zFixMeList": [
-      [
-        "10",
-        "Has not provided an issue tracker link"
-      ],
       [
         "18",
         "Has not provided a wiki link"
@@ -690,7 +686,7 @@
         {
           "description": "EventMesh is a dynamic event-driven application runtime used ...",
           "last_update_int": 1662106778,
-          "last_update_txt": "<span style='color: #070;'>&lt;30 minutes ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt;1 hour ago</span>"
         }
       ],
       [
@@ -1236,15 +1232,11 @@
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-hugegraph.git;a=tree;hb=HEAD",
       "keys": "",
       "svn": "",
-      "tracker": "",
+      "tracker": "https://github.com/apache/hugegraph/issues",
       "wiki": "",
       "www": "http://hugegraph.apache.org"
     },
     "zFixMeList": [
-      [
-        "10",
-        "Has not provided an issue tracker link"
-      ],
       [
         "18",
         "Has not provided a wiki link"
@@ -1882,15 +1874,11 @@
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-linkis.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/linkis/KEYS",
       "svn": "",
-      "tracker": "",
+      "tracker": "https://github.com/apache/incubator-linkis/issues",
       "wiki": "",
       "www": "https://linkis.incubator.apache.org"
     },
     "zFixMeList": [
-      [
-        "10",
-        "Has not provided an issue tracker link"
-      ],
       [
         "18",
         "Has not provided a wiki link"
@@ -3307,15 +3295,11 @@
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-nuttx.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/nuttx/KEYS",
       "svn": "",
-      "tracker": "",
+      "tracker": "https://github.com/apache/incubator-nuttx/issues",
       "wiki": "https://cwiki.apache.org/confluence/display/NUTTX/Nuttx",
       "www": "http://nuttx.incubator.apache.org"
     },
     "zFixMeList": [
-      [
-        "10",
-        "Has not provided an issue tracker link"
-      ],
       [
         "45",
         "10 is a large number of release distributions. Non-current releases should be removed"
@@ -3813,15 +3797,11 @@
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-ponymail.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/ponymail/KEYS",
       "svn": "",
-      "tracker": "",
+      "tracker": "https://github.com/apache/incubator-ponymail/issues",
       "wiki": "",
       "www": "http://ponymail.incubator.apache.org"
     },
     "zFixMeList": [
-      [
-        "10",
-        "Has not provided an issue tracker link"
-      ],
       [
         "18",
         "Has not provided a wiki link"
@@ -4215,15 +4195,11 @@
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-seatunnel.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/seatunnel/KEYS",
       "svn": "",
-      "tracker": "",
+      "tracker": "https://github.com/apache/incubator-seatunnel/issues",
       "wiki": "",
       "www": "https://seatunnel.apache.org"
     },
     "zFixMeList": [
-      [
-        "10",
-        "Has not provided an issue tracker link"
-      ],
       [
         "18",
         "Has not provided a wiki link"
@@ -4488,8 +4464,8 @@
   "streampark": {
     "description": "StreamPark is a streaming application development platform.",
     "fullName": "StreamPark",
-    "hasMailListCommits": "",
-    "hasMailListDev": "",
+    "hasMailListCommits": "http://mail-archives.apache.org/mod_mbox/streampark-commits",
+    "hasMailListDev": "http://mail-archives.apache.org/mod_mbox/streampark-dev",
     "ldap": {},
     "mentors": [
       [
@@ -4513,7 +4489,9 @@
         "zhangduo"
       ]
     ],
-    "news": [],
+    "news": [
+      "2022-09-01 Project enters incubation."
+    ],
     "podlingName": "StreamPark",
     "rawReportingGroup": "group-2",
     "releases": [],
@@ -4524,7 +4502,7 @@
     "sponsor": "Incubator",
     "startDate": "2022-09-01",
     "statusAge": 0,
-    "statusLastUpdated": "",
+    "statusLastUpdated": "2022-09-02",
     "urls": {
       "git": "",
       "keys": "",
@@ -4537,10 +4515,6 @@
       [
         "01",
         "No project LDAP"
-      ],
-      [
-        "07",
-        "Status file is missing"
       ],
       [
         "10",
@@ -4557,14 +4531,6 @@
       [
         "12",
         "Release distribution area is not setup"
-      ],
-      [
-        "15",
-        "Project does not have 'dev' mailing list"
-      ],
-      [
-        "16",
-        "Project does not have 'commits' mailing list"
       ],
       [
         "17",
