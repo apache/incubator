@@ -8,7 +8,7 @@
   (the "License"); you may not use this file except in compliance with
   the License.  You may obtain a copy of the License at
 
-      http://www.apache.org/licenses/LICENSE-2.0
+      https://www.apache.org/licenses/LICENSE-2.0
 
   Unless required by applicable law or agreed to in writing, software
   distributed under the License is distributed on an "AS IS" BASIS,
@@ -24,8 +24,8 @@
     <parent>
         <groupId>org.apache.training</groupId>
         <artifactId>content-parent-pom</artifactId>
-        <version>1.0.0</version>
-        <relativePath/>
+        <version>1.1.0-SNAPSHOT</version>
+        <relativePath>../../../tools/content-parent-pom/pom.xml</relativePath>
     </parent>
 
     <groupId>org.apache.training.content</groupId>
@@ -34,6 +34,6 @@
     <packaging>war</packaging>
 
     <name>Training: Content: IoT: IoT Developer Talk</name>
-    <description>How to be an IoT develper (and have fun!)</description>
+    <description>How to be an IoT developer (and have fun!)</description>
 
 </project>

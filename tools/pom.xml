@@ -8,7 +8,7 @@
   (the "License"); you may not use this file except in compliance with
   the License.  You may obtain a copy of the License at
 
-      http://www.apache.org/licenses/LICENSE-2.0
+      https://www.apache.org/licenses/LICENSE-2.0
 
   Unless required by applicable law or agreed to in writing, software
   distributed under the License is distributed on an "AS IS" BASIS,
@@ -24,7 +24,7 @@
   <parent>
     <groupId>org.apache</groupId>
     <artifactId>apache</artifactId>
-    <version>25</version>
+    <version>27</version>
 
     <!-- Required in our case as per http://maven.apache.org/ref/3.0.3/maven-model/maven.html#class_parent -->
     <relativePath />
@@ -64,7 +64,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-remote-resources-plugin</artifactId>
-        <version>1.7.0</version>
+        <version>3.0.0</version>
         <executions>
           <execution>
             <id>process-resource-bundles</id>
@@ -91,6 +91,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-assembly-plugin</artifactId>
+          <version>3.4.2</version>
           <configuration>
             <finalName>apache-training-incubating-tools-${project.version}</finalName>
           </configuration>
@@ -102,6 +103,7 @@
         <plugin>
           <groupId>net.nicoulaj.maven.plugins</groupId>
           <artifactId>checksum-maven-plugin</artifactId>
+          <version>1.11</version>
           <configuration>
             <algorithms>
               <algorithm>SHA-512</algorithm>
