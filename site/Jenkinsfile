@@ -102,7 +102,7 @@ pipeline {
             steps {
                 echo 'Staging Site'
                 // Build a directory containing the aggregated website.
-                sh 'mvn -f site/pom.xml site:stage'
+                sh 'mvn -f site/pom.xml -Pdeploy-site scm-publish:publish-scm'
 
                 /* Enable this as soon as we have multiple modules
                 // Make sure the script is executable.
