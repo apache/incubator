@@ -75,6 +75,16 @@ pipeline {
             }
         }
 
+        stage('Build presentations') {
+/*            when {
+                changeset "site/**"
+            }*/
+            steps {
+                echo 'Building Presentations'
+                sh 'mvn -f content/pom.xml install'
+            }
+        }
+
         stage('Build site') {
 /*            when {
                 changeset "site/**"
