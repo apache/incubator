@@ -17,7 +17,9 @@
  limitations under the License.
  
  -->
-<project name="Training">
+<project name="Training" xmlns="http://maven.apache.org/DECORATION/1.6.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/DECORATION/1.6.0 http://maven.apache.org/xsd/decoration-1.6.0.xsd">
 
   <skin>
     <groupId>io.github.devacfr.maven.skins</groupId>
@@ -107,30 +109,30 @@
       <item name="Getting Started" href="users/index.html"/>
     </menu>
     <menu name="Presentations">
-      <item name="Apache Airflow" href="presentations/airflow/index.html"/>
+      <item name="Apache Airflow" href="presentations/airflow/index.html" target="_blank"/>
       <item name="Apache ComDev">
-        <item name="Intro" href="presentations/comdev/comdev-intro/index.html"/>
+        <item name="Intro" href="presentations/comdev/comdev-intro/index.html" target="_blank"/>
       </item>
-      <item name="Apache Druid" href="presentations/druid/index.html"/>
-      <item name="Apache Flink" href="presentations/flink/index.html"/>
-      <item name="Apache Hadoop" href="presentations/hadoop/index.html"/>
-      <item name="Apache Hive" href="presentations/hive/index.html"/>
-      <item name="Apache Ignite" href="presentations/ignite/index.html"/>
+      <item name="Apache Druid" href="presentations/druid/index.html" target="_blank"/>
+      <item name="Apache Flink" href="presentations/flink/index.html" target="_blank"/>
+      <item name="Apache Hadoop" href="presentations/hadoop/index.html" target="_blank"/>
+      <item name="Apache Hive" href="presentations/hive/index.html" target="_blank"/>
+      <item name="Apache Ignite" href="presentations/ignite/index.html" target="_blank"/>
       <item name="Apache Incubator">
-        <item name="Incubator Releases" href="presentations/incubator/incubator-releases/index.html"/>
-        <item name="Navigating ASF Incubator" href="presentations/incubator/navigating-asf-incubation/index.html"/>
-        <item name="Release Checklist" href="presentations/incubator/release-checklist/index.html"/>
+        <item name="Incubator Releases" href="presentations/incubator/incubator-releases/index.html" target="_blank"/>
+        <item name="Navigating ASF Incubator" href="presentations/incubator/navigating-asf-incubation/index.html" target="_blank"/>
+        <item name="Release Checklist" href="presentations/incubator/release-checklist/index.html" target="_blank"/>
       </item>
-      <item name="Apache MyNewt" href="presentations/mynewt/index.html"/>
-      <item name="Apache Pulsar" href="presentations/pulsar/index.html"/>
-      <item name="Apache Samza" href="presentations/samza/index.html"/>
+      <item name="Apache MyNewt" href="presentations/mynewt/index.html" target="_blank"/>
+      <item name="Apache Pulsar" href="presentations/pulsar/index.html" target="_blank"/>
+      <item name="Apache Samza" href="presentations/samza/index.html" target="_blank"/>
       <item name="Apache Spark">
-        <item name="Basics" href="presentations/spark/basics/index.html"/>
+        <item name="Basics" href="presentations/spark/basics/index.html" target="_blank"/>
       </item>
       <item name="Apache Training">
-        <item name="Presentation" href="presentations/training/presentation/index_en.html"/>
+        <item name="Presentation" href="presentations/training/presentation/index_en.html" target="_blank"/>
       </item>
-      <item name="Apache Zookeeper" href="presentations/zokeeper/index.html"/>
+      <item name="Apache Zookeeper" href="presentations/zokeeper/index.html" target="_blank"/>
     </menu>
     <menu name="Developers">
       <item name="Bug &amp; Issue Tracker" href="developers/issues.html"/>

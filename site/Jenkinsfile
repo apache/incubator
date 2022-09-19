@@ -95,12 +95,12 @@ pipeline {
             }
         }
 
-        stage('Stage site') {
+        stage('Deploy site') {
 /*            when {
                 changeset "site/**"
             }*/
             steps {
-                echo 'Staging Site'
+                echo 'Deploying Site'
                 // Build a directory containing the aggregated website.
                 sh 'mvn -f site/pom.xml -Pdeploy-site scm-publish:publish-scm'
 
@@ -110,19 +110,6 @@ pipeline {
                 // Remove some redundant resources, which shouldn't be required.
                 sh 'tools/clean-site.sh'
                 */
-            }
-        }
-
-        stage('Deploy site') {
-            when {
-                //changeset "site/**"
-                //branch 'master'
-                branch 'develop'
-            }
-            steps {
-                echo 'Deploying Site'
-                // Publish the site with the scm-publish plugin.
-                sh 'mvn -f site/pom.xml scm-publish:publish-scm'
             }
         }
     }
