@@ -8,7 +8,7 @@
   (the "License"); you may not use this file except in compliance with
   the License.  You may obtain a copy of the License at
 
-      http://www.apache.org/licenses/LICENSE-2.0
+      https://www.apache.org/licenses/LICENSE-2.0
 
   Unless required by applicable law or agreed to in writing, software
   distributed under the License is distributed on an "AS IS" BASIS,
@@ -25,9 +25,9 @@
   <parent>
     <groupId>org.apache</groupId>
     <artifactId>apache</artifactId>
-    <version>23</version>
+    <version>27</version>
     <!-- Otherwise maven complains about the pom upstairs having different coordinates. -->
-    <relativePath></relativePath>
+    <relativePath/>
   </parent>
 
   <groupId>org.apache.training</groupId>
@@ -36,9 +36,7 @@
   <packaging>pom</packaging>
 
   <name>Training: Website</name>
-  <description>
-   Website for the Apache Training project
-  </description>
+  <description>Website for the Apache Training project</description>
   <url>https://training.apache.org</url>
   <inceptionYear>2019</inceptionYear>
 
@@ -85,8 +83,8 @@
     <project.reporting.outputencoding>UTF-8</project.reporting.outputencoding>
 
     <!-- Site properties -->
-    <reflow.skin.version>1.5.0</reflow.skin.version>
-    <fontawesome.version>5.2.0</fontawesome.version>
+    <reflow.skin.version>2.3.0</reflow.skin.version>
+    <fontawesome.version>6.2.0</fontawesome.version>
   </properties>
 
   <modules>
@@ -98,6 +96,7 @@
       <plugin>
         <groupId>org.apache.rat</groupId>
         <artifactId>apache-rat-plugin</artifactId>
+        <version>0.15</version>
         <executions>
           <execution>
             <id>license-check</id>
@@ -147,9 +146,11 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-remote-resources-plugin</artifactId>
+        <version>3.0.0</version>
         <executions>
           <execution>
             <id>process-resource-bundles</id>
+            <phase>generate-resources</phase>
             <goals>
               <goal>process</goal>
             </goals>
@@ -184,11 +185,10 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-dependency-plugin</artifactId>
+        <version>3.3.0</version>
         <executions>
           <execution>
             <id>unpack</id>
-            <!-- Only execute this for the parent module -->
-            <inherited>false</inherited>
             <phase>pre-site</phase>
             <goals>
               <goal>unpack</goal>
@@ -213,6 +213,129 @@
               <outputDirectory>${project.build.directory}/site</outputDirectory>
             </configuration>
           </execution>
+          <execution>
+            <id>copy-presentations</id>
+            <phase>pre-site</phase>
+            <goals>
+              <goal>unpack</goal>
+            </goals>
+            <configuration>
+              <artifactItems>
+                <artifactItem>
+                  <groupId>org.apache.training.content</groupId>
+                  <artifactId>training-content-apache-airflow</artifactId>
+                  <version>1.0.0-SNAPSHOT</version>
+                  <type>war</type>
+                  <outputDirectory>${project.build.directory}/site/presentations/airflow</outputDirectory>
+                </artifactItem>
+                <artifactItem>
+                  <groupId>org.apache.training.content</groupId>
+                  <artifactId>training-content-apache-comdev-comdev-intro</artifactId>
+                  <version>1.0.0.SNAPSHOT</version>
+                  <type>war</type>
+                  <outputDirectory>${project.build.directory}/site/presentations/comdev/comdev-intro</outputDirectory>
+                </artifactItem>
+                <artifactItem>
+                  <groupId>org.apache.training.content</groupId>
+                  <artifactId>training-content-apache-druid</artifactId>
+                  <version>1.0.0-SNAPSHOT</version>
+                  <type>war</type>
+                  <outputDirectory>${project.build.directory}/site/presentations/druid</outputDirectory>
+                </artifactItem>
+                <artifactItem>
+                  <groupId>org.apache.training.content</groupId>
+                  <artifactId>training-content-apache-flink</artifactId>
+                  <version>1.0.0-SNAPSHOT</version>
+                  <type>war</type>
+                  <outputDirectory>${project.build.directory}/site/presentations/flink</outputDirectory>
+                </artifactItem>
+                <artifactItem>
+                  <groupId>org.apache.training.content</groupId>
+                  <artifactId>training-content-apache-hadoop</artifactId>
+                  <version>1.0.0-SNAPSHOT</version>
+                  <type>war</type>
+                  <outputDirectory>${project.build.directory}/site/presentations/hadoop</outputDirectory>
+                </artifactItem>
+                <artifactItem>
+                  <groupId>org.apache.training.content</groupId>
+                  <artifactId>training-content-apache-hive</artifactId>
+                  <version>1.0.0-SNAPSHOT</version>
+                  <type>war</type>
+                  <outputDirectory>${project.build.directory}/site/presentations/hive</outputDirectory>
+                </artifactItem>
+                <artifactItem>
+                  <groupId>org.apache.training.content</groupId>
+                  <artifactId>training-content-apache-ignite</artifactId>
+                  <version>1.0.0-SNAPSHOT</version>
+                  <type>war</type>
+                  <outputDirectory>${project.build.directory}/site/presentations/ignite</outputDirectory>
+                </artifactItem>
+                <artifactItem>
+                  <groupId>org.apache.training.content</groupId>
+                  <artifactId>training-content-apache-incubator-incubator-releases</artifactId>
+                  <version>1.0.0-SNAPSHOT</version>
+                  <type>war</type>
+                  <outputDirectory>${project.build.directory}/site/presentations/incubator/incubator-releases</outputDirectory>
+                </artifactItem>
+                <artifactItem>
+                  <groupId>org.apache.training.content</groupId>
+                  <artifactId>training-content-apache-incubator-navigating-asf-incubation</artifactId>
+                  <version>1.0.0-SNAPSHOT</version>
+                  <type>war</type>
+                  <outputDirectory>${project.build.directory}/site/presentations/incubator/navigating-asf-incubation</outputDirectory>
+                </artifactItem>
+                <artifactItem>
+                  <groupId>org.apache.training.content</groupId>
+                  <artifactId>training-content-apache-incubator-incubator-release-checklist</artifactId>
+                  <version>1.0.0-SNAPSHOT</version>
+                  <type>war</type>
+                  <outputDirectory>${project.build.directory}/site/presentations/incubator/release-checklist</outputDirectory>
+                </artifactItem>
+                <artifactItem>
+                  <groupId>org.apache.training.content</groupId>
+                  <artifactId>training-content-apache-mynewt</artifactId>
+                  <version>1.0.0-SNAPSHOT</version>
+                  <type>war</type>
+                  <outputDirectory>${project.build.directory}/site/presentations/mynewt</outputDirectory>
+                </artifactItem>
+                <artifactItem>
+                  <groupId>org.apache.training.content</groupId>
+                  <artifactId>training-content-apache-pulsar</artifactId>
+                  <version>1.0.0-SNAPSHOT</version>
+                  <type>war</type>
+                  <outputDirectory>${project.build.directory}/site/presentations/pulsar</outputDirectory>
+                </artifactItem>
+                <artifactItem>
+                  <groupId>org.apache.training.content</groupId>
+                  <artifactId>training-content-apache-samza</artifactId>
+                  <version>1.0.0-SNAPSHOT</version>
+                  <type>war</type>
+                  <outputDirectory>${project.build.directory}/site/presentations/samza</outputDirectory>
+                </artifactItem>
+                <artifactItem>
+                  <groupId>org.apache.training.content</groupId>
+                  <artifactId>training-content-apache-spark-basics</artifactId>
+                  <version>1.0.0-SNAPSHOT</version>
+                  <type>war</type>
+                  <outputDirectory>${project.build.directory}/site/presentations/spark/basics</outputDirectory>
+                </artifactItem>
+                <artifactItem>
+                  <groupId>org.apache.training.content</groupId>
+                  <artifactId>training-content-apache-training-presentation</artifactId>
+                  <version>1.0.0-SNAPSHOT</version>
+                  <type>war</type>
+                  <outputDirectory>${project.build.directory}/site/presentations/training/presentation</outputDirectory>
+                </artifactItem>
+                <artifactItem>
+                  <groupId>org.apache.training.content</groupId>
+                  <artifactId>training-content-apache-zookeeper</artifactId>
+                  <version>1.0.0-SNAPSHOT</version>
+                  <type>war</type>
+                  <outputDirectory>${project.build.directory}/site/presentations/zookeeper</outputDirectory>
+                </artifactItem>
+              </artifactItems>
+            </configuration>
+          </execution>
         </executions>
       </plugin>
 
@@ -222,7 +345,7 @@
       <plugin>
         <groupId>com.googlecode.maven-download-plugin</groupId>
         <artifactId>download-maven-plugin</artifactId>
-        <version>1.4.1</version>
+        <version>1.6.8</version>
         <executions>
           <execution>
             <id>get-fontawesome</id>
@@ -244,6 +367,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-resources-plugin</artifactId>
+        <version>3.3.0</version>
         <executions>
           <execution>
             <id>copy-site-resources</id>
@@ -346,7 +470,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-site-plugin</artifactId>
-          <version>3.7.1</version>
+          <version>3.12.0</version>
           <configuration>
             <!--templateFile>${session.executionRootDirectory}/src/site/template/site.vm</templateFile-->
             <generateReports>true</generateReports>
@@ -381,43 +505,43 @@
             <dependency>
               <groupId>org.apache.maven.wagon</groupId>
               <artifactId>wagon-scm</artifactId>
-              <version>2.12</version>
+              <version>3.5.2</version>
             </dependency>
             <dependency>
               <groupId>org.apache.maven.scm</groupId>
               <artifactId>maven-scm-api</artifactId>
-              <version>1.9.5</version>
+              <version>1.13.0</version>
             </dependency>
             <dependency>
               <groupId>org.apache.maven.scm</groupId>
               <artifactId>maven-scm-manager-plexus</artifactId>
-              <version>1.9.5</version>
+              <version>1.13.0</version>
             </dependency>
             <dependency>
               <groupId>org.apache.maven.scm</groupId>
               <artifactId>maven-scm-provider-gitexe</artifactId>
-              <version>1.9.5</version>
+              <version>1.13.0</version>
             </dependency>
             <!-- Add support for asciidoctor -->
             <dependency>
               <groupId>org.asciidoctor</groupId>
               <artifactId>asciidoctor-maven-plugin</artifactId>
-              <version>1.5.7.1</version>
+              <version>2.2.2</version>
             </dependency>
             <dependency>
               <groupId>org.jruby</groupId>
               <artifactId>jruby-complete</artifactId>
-              <version>9.1.13.0</version>
+              <version>9.3.8.0</version>
             </dependency>
             <dependency>
               <groupId>org.asciidoctor</groupId>
               <artifactId>asciidoctorj</artifactId>
-              <version>1.5.6</version>
+              <version>2.5.5</version>
             </dependency>
             <dependency>
               <groupId>org.asciidoctor</groupId>
               <artifactId>asciidoctorj-diagram</artifactId>
-              <version>1.5.4.1</version>
+              <version>2.2.3</version>
             </dependency>
           </dependencies>
         </plugin>
@@ -425,10 +549,104 @@
     </pluginManagement>
   </build>
 
-  <reporting>
-    <plugins>
-    </plugins>
-  </reporting>
+  <dependencies>
+    <dependency>
+      <groupId>org.apache.training.content</groupId>
+      <artifactId>training-content-apache-airflow</artifactId>
+      <version>1.0.0-SNAPSHOT</version>
+      <type>war</type>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.training.content</groupId>
+      <artifactId>training-content-apache-comdev-comdev-intro</artifactId>
+      <version>1.0.0.SNAPSHOT</version>
+      <type>war</type>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.training.content</groupId>
+      <artifactId>training-content-apache-druid</artifactId>
+      <version>1.0.0-SNAPSHOT</version>
+      <type>war</type>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.training.content</groupId>
+      <artifactId>training-content-apache-flink</artifactId>
+      <version>1.0.0-SNAPSHOT</version>
+      <type>war</type>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.training.content</groupId>
+      <artifactId>training-content-apache-hadoop</artifactId>
+      <version>1.0.0-SNAPSHOT</version>
+      <type>war</type>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.training.content</groupId>
+      <artifactId>training-content-apache-hive</artifactId>
+      <version>1.0.0-SNAPSHOT</version>
+      <type>war</type>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.training.content</groupId>
+      <artifactId>training-content-apache-ignite</artifactId>
+      <version>1.0.0-SNAPSHOT</version>
+      <type>war</type>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.training.content</groupId>
+      <artifactId>training-content-apache-incubator-incubator-releases</artifactId>
+      <version>1.0.0-SNAPSHOT</version>
+      <type>war</type>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.training.content</groupId>
+      <artifactId>training-content-apache-incubator-navigating-asf-incubation</artifactId>
+      <version>1.0.0-SNAPSHOT</version>
+      <type>war</type>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.training.content</groupId>
+      <artifactId>training-content-apache-incubator-incubator-release-checklist</artifactId>
+      <version>1.0.0-SNAPSHOT</version>
+      <type>war</type>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.training.content</groupId>
+      <artifactId>training-content-apache-mynewt</artifactId>
+      <version>1.0.0-SNAPSHOT</version>
+      <type>war</type>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.training.content</groupId>
+      <artifactId>training-content-apache-pulsar</artifactId>
+      <version>1.0.0-SNAPSHOT</version>
+      <type>war</type>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.training.content</groupId>
+      <artifactId>training-content-apache-samza</artifactId>
+      <version>1.0.0-SNAPSHOT</version>
+      <type>war</type>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.training.content</groupId>
+      <artifactId>training-content-apache-spark-basics</artifactId>
+      <version>1.0.0-SNAPSHOT</version>
+      <type>war</type>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.training.content</groupId>
+      <artifactId>training-content-apache-training-presentation</artifactId>
+      <version>1.0.0-SNAPSHOT</version>
+      <type>war</type>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.training.content</groupId>
+      <artifactId>training-content-apache-zookeeper</artifactId>
+      <version>1.0.0-SNAPSHOT</version>
+      <type>war</type>
+    </dependency>
+  </dependencies>
 
   <!-- Make Snapshots of Apache projects available -->
   <repositories>
@@ -445,6 +663,39 @@
   </repositories>
 
   <profiles>
+    <profile>
+      <id>deploy-site</id>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-scm-publish-plugin</artifactId>
+            <configuration>
+              <!-- mono-module doesn't require site:stage -->
+              <content>${project.build.directory}/site</content>
+              <!-- branch where to deploy -->
+              <scmBranch>asf-site</scmBranch>
+            </configuration>
+          </plugin>
+        </plugins>
+        <pluginManagement>
+          <plugins>
+            <plugin>
+              <groupId>org.apache.maven.plugins</groupId>
+              <artifactId>maven-scm-publish-plugin</artifactId>
+              <dependencies>
+                <dependency>
+                  <groupId>org.apache.maven.scm</groupId>
+                  <artifactId>maven-scm-provider-gitexe</artifactId>
+                  <version>1.13.0</version>
+                </dependency>
+              </dependencies>
+            </plugin>
+          </plugins>
+        </pluginManagement>
+      </build>
+    </profile>
+
     <profile>
       <id>only-eclipse</id>
       <activation>
@@ -503,7 +754,7 @@
           <plugin>
             <groupId>net.nicoulaj.maven.plugins</groupId>
             <artifactId>checksum-maven-plugin</artifactId>
-            <version>1.8</version>
+            <version>1.11</version>
             <executions>
               <execution>
                 <goals>

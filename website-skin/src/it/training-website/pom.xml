@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed to the Apache Software Foundation (ASF) under one
+  or more contributor license agreements.  See the NOTICE file
+  distributed with this work for additional information
+  regarding copyright ownership.  The ASF licenses this file
+  to you under the Apache License, Version 2.0 (the
+  "License"); you may not use this file except in compliance
+  with the License.  You may obtain a copy of the License at
+
+      https://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing,
+  software distributed under the License is distributed on an
+  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  KIND, either express or implied.  See the License for the
+  specific language governing permissions and limitations
+  under the License.
+  -->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>org.apache</groupId>
+    <artifactId>apache</artifactId>
+    <version>27</version>
+    <relativePath/>
+  </parent>
+
+  <groupId>org.apache.maven.skins.its</groupId>
+  <artifactId>test-training-website</artifactId>
+  <version>1.0-SNAPSHOT</version>
+
+  <name>@project.artifactId@ IT</name>
+  <description>Some description</description>
+  <url>https://training.apache.org</url>
+  <inceptionYear>2019</inceptionYear>
+  <organization>
+    <name>The Apache Software Foundation</name>
+    <url>https://www.apache.org/</url>
+  </organization>
+
+  <scm>
+    <connection>scm:git:https://gitbox.apache.org/repos/asf/incubator-training.git</connection>
+    <developerConnection>scm:git:https://gitbox.apache.org/repos/asf/incubator-training.git</developerConnection>
+    <url>https://github.com/apache/incubator-training</url>
+    <tag>HEAD</tag>
+  </scm>
+
+  <!-- Only configure the site distribution as the rest is handled by the apache parent -->
+  <distributionManagement>
+    <site>
+      <id>apache.website</id>
+      <url>scm:git:https://gitbox.apache.org/repos/asf/incubator-training.git</url>
+    </site>
+  </distributionManagement>
+
+  <issueManagement>
+    <system>Jira</system>
+    <url>https://issues.apache.org/jira/browse/TRAINING</url>
+  </issueManagement>
+
+  <mailingLists>
+    <mailingList>
+      <name>Apache Training (incubating) Developer List</name>
+      <subscribe>mailto:dev-subscribe@training.apache.org</subscribe>
+      <unsubscribe>mailto:dev-unsubscribe@training.apache.org</unsubscribe>
+      <post>mailto:dev@training.apache.org</post>
+      <archive>http://mail-archives.apache.org/mod_mbox/training-dev/</archive>
+    </mailingList>
+    <mailingList>
+      <name>Apache Training (incubating) Commits List</name>
+      <subscribe>mailto:commit-subscribe@training.apache.org</subscribe>
+      <unsubscribe>mailto:commits-unsubscribe@training.apache.org</unsubscribe>
+      <post>mailto:commits@training.apache.org</post>
+      <archive>http://mail-archives.apache.org/mod_mbox/training-commits/</archive>
+    </mailingList>
+    <mailingList>
+      <name>Apache Training (incubating) Jira Notifications List</name>
+      <subscribe>mailto:issues-subscribe@training.apache.org</subscribe>
+      <unsubscribe>mailto:issues-unsubscribe@training.apache.org</unsubscribe>
+      <post>mailto:issues@training.apache.org</post>
+      <archive>http://mail-archives.apache.org/mod_mbox/training-issues/</archive>
+    </mailingList>
+  </mailingLists>
+
+  <properties>
+    <skinName>@project.name@</skinName>
+    <skinGroupId>@project.groupId@</skinGroupId>
+    <skinArtifactId>@project.artifactId@</skinArtifactId>
+    <skinVersion>@project.version@</skinVersion>
+    <!--
+      At least 3.3.3 required for camel-package-maven-plugin
+    -->
+    <maven.version>3.3.3</maven.version>
+    <java.version>1.8</java.version>
+
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputencoding>UTF-8</project.reporting.outputencoding>
+  </properties>
+
+  <build>
+    <plugins>
+      <!-- Configure the Site generation -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-site-plugin</artifactId>
+        <version>3.9.1</version>
+        <configuration>
+          <!--templateFile>${session.executionRootDirectory}/src/site/template/site.vm</templateFile-->
+          <generateReports>true</generateReports>
+          <generateSitemap>true</generateSitemap>
+          <relativizeDecorationLinks>false</relativizeDecorationLinks>
+          <locales>en</locales>
+          <inputEncoding>${project.build.sourceEncoding}</inputEncoding>
+          <outputEncoding>${project.reporting.outputencoding}</outputEncoding>
+          <!--
+            IntelliJ can't find the asciidoc config option in the site plugin, which is correct.
+            However, this config section is used by the asciidoctor site plugin extension. So plead
+            ignore this error, it's actually ok.
+          -->
+          <asciidoc>
+            <attributes>
+              <source-highlighter>prettify</source-highlighter>
+              <imagesoutdir>${project.build.directory}/site/images</imagesoutdir>
+              <pom-adoc>${project.build.directory}/pom.adoc</pom-adoc>
+            </attributes>
+            <requires>
+              <require>asciidoctor-diagram</require>
+            </requires>
+          </asciidoc>
+        </configuration>
+        <dependencies>
+          <!-- Add support for asciidoctor -->
+          <dependency>
+            <groupId>org.asciidoctor</groupId>
+            <artifactId>asciidoctor-maven-plugin</artifactId>
+            <version>2.2.1</version>
+          </dependency>
+          <dependency>
+            <groupId>org.asciidoctor</groupId>
+            <artifactId>asciidoctorj</artifactId>
+            <version>2.5.3</version>
+          </dependency>
+          <dependency>
+            <groupId>org.asciidoctor</groupId>
+            <artifactId>asciidoctorj-diagram</artifactId>
+            <version>2.2.1</version>
+          </dependency>
+        </dependencies>
+      </plugin>
+    </plugins>
+  </build>
+
+  <!-- Make Snapshots of Apache projects available -->
+  <repositories>
+    <repository>
+      <id>apache-snapshots</id>
+      <url>https://repository.apache.org/content/repositories/snapshots</url>
+      <releases>
+        <enabled>false</enabled>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+    </repository>
+  </repositories>
+
+  <!-- Make Snapshots of Apache plugins available -->
+  <pluginRepositories>
+    <pluginRepository>
+      <id>apache-snapshots</id>
+      <url>https://repository.apache.org/content/repositories/snapshots</url>
+      <releases>
+        <enabled>false</enabled>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+    </pluginRepository>
+  </pluginRepositories>
+
+</project>

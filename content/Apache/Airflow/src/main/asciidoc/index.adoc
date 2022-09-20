@@ -1,0 +1,111 @@
+////
+  Licensed to the Apache Software Foundation (ASF) under one or more
+  contributor license agreements.  See the NOTICE file distributed with
+  this work for additional information regarding copyright ownership.
+  The ASF licenses this file to You under the Apache License, Version 2.0
+  (the "License"); you may not use this file except in compliance with
+  the License.  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+
+////
+:revealjs_progress: true
+:revealjs_slidenumber: true
+:sourcedir: ../java
+
+== What is Apache Airflow?
+Airflow is a platform to programmatically author, schedule and monitor workflows.
+
+== Airflow Principles
+
+Airflow is built on following principles:
+
+* Scalable
+* Dynamic
+* Extensible
+* Elegant
+
+== Airflow Principle: Scalable
+
+Airflow has a modular architecture and uses a message queue to orchestrate an arbitrary number of workers. Airflow is ready to scale to infinity.
+
+== Airflow Principle: Dynamic
+
+Airflow pipelines are defined in Python, allowing for dynamic pipeline generation. This allows for writing code that instantiates pipelines dynamically.
+
+== Airflow Principle: Extensible
+
+Easily define your own operators and extend libraries to fit the level of abstraction that suits your environment.
+
+== Airflow Principle: Elegant
+
+Airflow pipelines are lean and explicit. Parametrization is built into its core using the powerful Jinja templating engine.
+
+== Airflow Features
+Apache Airflow provides following features:
+
+* Pure Python
+* Useful UI
+* Robust Integrations
+* Easy to Use
+* Open Source
+
+== Airflow Feature: Pure Python
+
+No more command-line or XML black-magic! Use standard Python features to create your workflows, including date time formats for scheduling and loops to dynamically generate tasks. This allows you to maintain full flexibility when building your workflows.
+
+== Airflow Feature: Useful UI
+
+Monitor, schedule and manage your workflows via a robust and modern web application. No need to learn old, cron-like interfaces. You always have full insight into the status and logs of completed and ongoing tasks.
+
+== Airflow Feature: Robust Integrations
+
+Airflow provides many plug-and-play operators that are ready to execute your tasks on Google Cloud Platform, Amazon Web Services, Microsoft Azure and many other third-party services. This makes Airflow easy to apply to current infrastructure and extend to next-gen technologies.
+
+== Airflow Feature: Easy to Use
+
+Anyone with Python knowledge can deploy a workflow. Apache Airflow does not limit the scope of your pipelines; you can use it to build ML models, transfer data, manage your infrastructure, and more.
+
+== Airflow Feature: Open Source
+
+Wherever you want to share your improvement you can do this by opening a PR. It’s simple as that, no barriers, no prolonged procedures. Airflow has many active users who willingly share their experiences. Have any questions? Check out our buzzing slack.
+
+
+
+== Airflow Integrations
+Airflow supports following main integrations:
+
+* Apache Sqoop
+* Google Cloud Pub/Sub
+* Amazon CloudWatch Logs
+* Google Kubernetes Engine
+* Google Machine learning
+* Amazon Athena
+
+
+== Airflow Providers packages
+Airflow has providers packages include integrations with third party integrations. They are updated independently of the Apache Airflow core. Some of these are:
+
+* Airbyte
+* Amazon
+* Apache Beam
+* Apache Cassandra
+* JIRA
+
+
+== Airflow Docker stack
+Airflow has an official Dockerfile and Docker image published in DockerHub as a convenience package for installation. You can extend and customize the image according to your requirements and use it in your own deployments.
+
+
+== Further Sources
+Refer official documents on Apache Airflow here:
+
+* *Airflow Documentation*: https://airflow.apache.org/docs/
+* *Airflow Usecases*: https://airflow.apache.org/use-cases/
+

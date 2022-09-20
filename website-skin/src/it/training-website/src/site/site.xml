@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+ 
+ Licensed to the Apache Software Foundation (ASF) under one or more
+ contributor license agreements.  See the NOTICE file distributed with
+ this work for additional information regarding copyright ownership.
+ The ASF licenses this file to You under the Apache License, Version 2.0
+ (the "License"); you may not use this file except in compliance with
+ the License.  You may obtain a copy of the License at
+ 
+ https://www.apache.org/licenses/LICENSE-2.0
+ 
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+ 
+ -->
+<project name="Training">
+
+  <skin>
+    <groupId>${skinGroupId}</groupId>
+    <artifactId>${skinArtifactId}</artifactId>
+    <version>${skinVersion}</version>
+  </skin>
+
+  <!-- Hide the publish-date as this will cause changes on every generated page every day -->
+  <publishDate position="none"/>
+  <!-- Hide the version as we are usually deploying the develop-version -->
+  <version position="none" />
+
+  <custom>
+  </custom>
+
+  <bannerLeft>
+    <name>Apache Training (incubating)</name>
+    <src>/images/training-logo.svg</src>
+    <href>https://training.apache.org/</href>
+  </bannerLeft>
+
+  <bannerRight>
+    <name>Apache Incubator</name>
+    <src>https://incubator.apache.org/images/incubator_feather_egg_logo_sm.png</src>
+    <href>http://incubator.apache.org/</href>
+  </bannerRight>
+
+  <body>
+    <menu name="Users">
+      <!-- The skin automatically looks for a "users/index.html" when clicking on the "Users" section -->
+      <item name="Downloads" href="users/downloads.html"/>
+    </menu>
+    <menu name="Developers">
+      <!-- The skin automatically looks for a "developers/index.html" when clicking on the "Developers" section -->
+      <item name="Bug &amp; Issue Tracker" href="developers/issues.html"/>
+      <item name="Building Training Website" href="developers/building-website.html"/>
+      <item name="Continuous Integration" href="developers/ci.html"/>
+      <item name="Contributing" href="developers/contributing.html"/>
+      <item name="Decision Making" href="developers/decisions.html"/>
+      <!--item name="Maturity" href="developers/maturity.html"/>
+      <item name="Releasing" href="developers/release.html"/-->
+      <item name="Releasing (tools)" href="developers/releasing-tools.html"/>
+      <item name="Team" href="developers/team.html"/>
+      <item name="Website" href="developers/website.html"/>
+      <item name="Wiki" href="developers/wiki.html"/>
+    </menu>
+    <menu name="Apache" inherit="bottom">
+      <!-- The skin automatically looks for a "apache/index.html" when clicking on the "Apache" section -->
+      <item name="Apache Software Foundation" href="https://www.apache.org/"/>
+      <item name="How Apache Works" href="https://www.apache.org/foundation/how-it-works.html"/>
+      <item name="License" href="https://www.apache.org/licenses/"/>
+      <item name="Sponsoring Apache" href="https://www.apache.org/foundation/sponsorship.html"/>
+      <item name="Thanks" href="https://www.apache.org/foundation/thanks.html"/>
+    </menu>
+  </body>
+
+</project>

@@ -1,0 +1,136 @@
+////
+
+  Licensed to the Apache Software Foundation (ASF) under one or more
+  contributor license agreements.  See the NOTICE file distributed with
+  this work for additional information regarding copyright ownership.
+  The ASF licenses this file to You under the Apache License, Version 2.0
+  (the "License"); you may not use this file except in compliance with
+  the License.  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+
+////
+:revealjs_progress: true
+:revealjs_slidenumber: true
+:sourcedir: ../java
+:description: Short Talk on Apache Pulsar
+:keywords: Pulsar, Apache Pulsar
+:talk: Introduction to Apache Pulsar
+
+== What is Apache Pulsar?
+Apache Pulsar is a cloud-native, distributed messaging and streaming platform. Pulsar is a multi-tenant, high-performance solution for server-to-server messaging. It was originally created at Yahoo!
+
+image::https://pulsar.apache.org/img/pulsar.svg[width=50%]
+
+== Pulsar Features
+Apache Pulsar provides the following features:
+
+* Native support for multiple clusters in a Pulsar instance, with seamless geo-replication of messages across clusters.
+* Very low publish and end-to-end latency.
+* Seamless scalability to over a million topics.
+* A simple client API with bindings for Java, Go, Python and C++.
+* Multiple subscription modes (exclusive, shared, and failover) for topics.
+
+
+== Pulsar Features contd.
+
+* Guaranteed message delivery with persistent message storage provided by Apache BookKeeper.
+* A serverless light-weight computing framework Pulsar Functions offers the capability for stream-native data processing.
+* A serverless connector framework Pulsar IO, which is built on Pulsar Functions, makes it easier to move data in and out of Apache Pulsar.
+* Tiered Storage offloads data from hot/warm storage to cold/longterm storage (such as S3 and GCS) when the data is aging out.
+
+== Pulsar High Level Architecture
+
+image::https://pulsar.apache.org/docs/assets/pulsar-system-architecture.png[width=90%]
+
+== Pulsar: Messaging
+Pulsar is built on the publish-subscribe pattern (short for pub-sub). In this pattern, producers publish messages to topics. Consumers subscribe to those topics, process incoming messages, and send an acknowledgement when processing is complete.
+
+When a subscription is created, Pulsar retains all messages, even if the consumer is disconnected. Retained messages are discarded only when a consumer acknowledges that those messages are processed successfully.
+
+== Pulsar: Messages
+Messages are the basic "unit" of Pulsar. The following table lists the components of messages.
+
+* Value / data payload
+* Key
+* Properties
+* Producer name
+* Sequence ID
+* Publish time
+* Event time
+* TypedMessageBuilder
+
+== Pulsar: Producers
+
+A producer is a process that attaches to a topic and publishes messages to a Pulsar broker. The Pulsar broker process the messages.
+
+Producers send messages to brokers synchronously (sync) or asynchronously (async).
+
+== Pulsar: Send Modes
+
+* *Sync send:* The producer waits for an acknowledgement from the broker after sending every message. If the acknowledgment is not received, the producer treats the sending operation as a failure.
+* *Async send:* The producer puts a message in a blocking queue and returns immediately. The client library sends the message to the broker in the background. If the queue is full (you can configure the maximum size), the producer is blocked or fails immediately when calling the API, depending on arguments passed to the producer.
+
+== Pulsar: Compression
+
+Pulsar can compress messages published by producers during transportation. Pulsar currently supports the following types of compression:
+
+* LZ4
+* ZLIB
+* ZSTD
+* SNAPPY
+
+== Pulsar: Cluster
+
+A Pulsar instance is composed of one or more Pulsar clusters. Clusters within an instance can replicate data amongst themselves. In a Pulsar cluster:
+
+* One or more brokers handles and load balances incoming messages from producers, dispatches messages to consumers, communicates with the Pulsar configuration store to handle various coordination tasks, stores messages in BookKeeper instances (aka bookies), relies on a cluster-specific ZooKeeper cluster for certain tasks, and more.
+* A BookKeeper cluster consisting of one or more bookies handles persistent storage of messages.
+* A ZooKeeper cluster specific to that cluster handles coordination tasks between Pulsar clusters.
+
+== Pulsar: Broker
+
+The Pulsar message broker is a stateless component responsible for running two other components:
+
+* An HTTP server that exposes a REST API for both administrative tasks and topic lookup for producers and consumers
+* A dispatcher, which is an asynchronous TCP server over a custom binary protocol used for all data transfers
+
+
+== Pulsar: Geo Replication
+
+Pulsar enables messages to be produced and consumed in different geo-locations.
+For instance, an application publishing data in one region or market can also process it for consumption in other regions or markets.
+Geo-replication in Pulsar enables this.
+
+== Pulsar: Multi Tenancy
+
+Pulsar was created from the ground up as a multi-tenant system. To support multi-tenancy, Pulsar has a concept of tenants.
+Tenants can be spread across clusters and can each have their own authentication and authorization scheme applied to them.
+They are also the administrative unit at which storage quotas, message TTL, and isolation policies can be managed.
+
+
+== Pulsar: Authentication and Authorization
+
+Pulsar supports a pluggable authentication mechanism.
+It can be configured at the broker. It also supports authorization to identify clients and their access rights on topics and tenants.
+
+== Pulsar: Topic Compaction
+
+* Allows for faster "rewind" through topic logs
+* Applies only to persistent topics
+* Triggered automatically when the backlog reaches a certain size
+* Can be triggered manually via the command line
+* Distinct from retention and expiry. Topic compaction respects retention
+
+== Further Sources
+Refer official documents on Apache Pulsar here:
+
+* *Pulsar Documentation*: https://pulsar.apache.org/en/
+* *Pulsar Blog*: https://pulsar.apache.org/blog/
+

@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+#*
+  Licensed to the Apache Software Foundation (ASF) under one
+  or more contributor license agreements.  See the NOTICE file
+  distributed with this work for additional information
+  regarding copyright ownership.  The ASF licenses this file
+  to you under the Apache License, Version 2.0 (the
+  "License"); you may not use this file except in compliance
+  with the License.  You may obtain a copy of the License at
+
+      https://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing,
+  software distributed under the License is distributed on an
+  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  KIND, either express or implied.  See the License for the
+  specific language governing permissions and limitations
+  under the License.
+*#
+    #parse( "site-macros.vm" )
+<html xmlns="http://www.w3.org/1999/xhtml"#if ( $locale ) xml:lang="$locale.language" lang="$locale.language"#end>
+<head>
+    #set( $showMenu = false )
+    ## Calculate the currently selected section of the website.
+    ## Cut off all leading "../" segments, so we'll have the url start with the main section name.
+    #set ( $sectionName = $alignedFileName.replaceAll( '\.\./', '') )
+    ## If the remaining par doesn't contain a "/" we're in the root section, which we call "home".
+    #if ( !$sectionName.contains('/'))
+        #set ( $sectionName = "home" )
+    #else
+        #set ( $sectionName = $sectionName.substring(0, $sectionName.indexOf('/')) )
+    #end
+    <meta http-equiv="Content-Type" content="text/html; charset=${outputEncoding}"/>
+    <title>$title</title>
+    <script src="$relativePath/js/jquery.slim.min.js" type="text/javascript"></script>
+    <!--script src="$relativePath/js/popper.min.js" type="javascript"></script-->
+    <script src="$relativePath/js/bootstrap.bundle.min.js" type="text/javascript"></script>
+    <!-- The tooling for adding images and links to Apache events -->
+    <script src="https://www.apachecon.com/event-images/snippet.js" type="text/javascript"></script>
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="$relativePath/css/all.min.css" type="text/css"/>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="$relativePath/css/bootstrap.min.css" type="text/css"/>
+    <!-- Some Maven Site defaults -->
+    <link rel="stylesheet" href="$relativePath/css/maven-base.css" type="text/css"/>
+    <link rel="stylesheet" href="$relativePath/css/maven-theme.css" type="text/css"/>
+    <!-- The PLC4X version of a bootstrap theme -->
+    <link rel="stylesheet" href="$relativePath/css/themes/plc4x.css" type="text/css" id="pagestyle"/>
+    <!-- A custom style for printing content -->
+    <link rel="stylesheet" href="$relativePath/css/print.css" type="text/css" media="print"/>
+
+    #if ( $locale )
+        <meta http-equiv="Content-Language" content="$locale.language"/>
+    #end
+    #if( $decoration.body.head )
+        $render.eval( $decoration.body.head )
+    #end
+    $headContent
+</head>
+<body class="composite">
+<nav class="navbar navbar-light navbar-expand-md bg-faded justify-content-center border-bottom">
+    <!--a href="/" class="navbar-brand d-flex w-50 mr-auto">Navbar 3</a-->
+    #banner( $decoration.bannerLeft "bannerLeft" "navbar-brand")
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
+        <ul class="navbar-nav w-100 justify-content-center">
+            #if ($sectionName == "home" )
+            <li class="nav-item active">
+            #else
+            <li class="nav-item">
+            #end
+                <a class="nav-link" href="$relativePath/index.html">Home</a>
+            </li>
+            ## Output only navigation options for the highest level menus
+            ## The convention is that if a name is "Hurz", that there is a directory called "hurz"
+            ## in the site and this contains an index.html
+            #foreach( $menu in $decoration.body.menus )
+                #if ($sectionName == $menu.name.toLowerCase())
+                <li class="nav-item active">
+                #else
+                <li class="nav-item">
+                #end
+                    <a class="nav-link" href="$relativePath/$menu.name.toLowerCase()/index.html">$menu.name</a>
+                </li>
+            #end
+        </ul>
+        <ul class="nav navbar-nav ml-auto justify-content-end">
+            <li class="nav-item row valign-middle">
+                <a class="acevent" data-format="wide" data-mode="light" data-event="random" style="width:240px;height:60px;"></a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="container-fluid">
+    <div class="row h-100">
+        #filteredMainMenu( $decoration.body.menus )
+        ## If the menu is shown, set the body width to only a part of the foll width,
+        ## if it is not shown, display it with 100$ width.
+        #if ($showMenu)
+            #set ( $mainStyles = "col-sm-pull col-md-9 col-lg-10 h-100")
+        #else
+            #set ( $mainStyles = "w-100 h-100")
+        #end
+        <main role="main" class="ml-sm-auto px-4 $mainStyles">
+            $bodyContent
+        </main>
+        <footer class="pt-4 my-md-5 pt-md-5 w-100 border-top">
+            <div class="row justify-content-md-center" style="font-size: 13px">
+                <div class="col col-6 text-center">
+                #if( $decoration.body.footer )
+                    $render.eval( $decoration.body.footer )
+                #else
+                    Copyright &#169;#copyright()All rights reserved.<br/>
+                    Apache PLC4X, PLC4X, Apache, the Apache feather logo, and the Apache PLC4X project logo are either registered trademarks or trademarks of The Apache Software Foundation in the United States and other countries. All other marks mentioned may be trademarks or registered trademarks of their respective owners.
+                    #publishDate("bottom" $decoration.publishDate $decoration.version )
+                    <br/><div style="text-align:center;">Home screen image taken from <a
+                        href="https://flic.kr/p/chEftd">Flickr</a>, "Tesla Robot Dance" by Steve Jurvetson, licensed
+                    under <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0 Generic</a>, image cropped
+                    and blur effect added.</div>
+                #end
+                </div>
+            </div>
+        </footer>
+    </div>
+</div>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="$relativePath/js/jquery.slim.min.js"></script>
+<script src="$relativePath/js/popper.min.js"></script>
+<script src="$relativePath/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+    $('.carousel .carousel-item').each(function(){
+        var next = $(this).next();
+        if (!next.length) {
+            next = $(this).siblings(':first');
+        }
+        next.children(':first-child').clone().appendTo($(this));
+
+        for (let i = 0; i < 3; i++) {
+            next=next.next();
+            if (!next.length) {
+                next = $(this).siblings(':first');
+            }
+            next.children(':first-child').clone().appendTo($(this));
+        }
+    });
+</script>
+</body>
+</html>

@@ -8,7 +8,7 @@
  (the "License"); you may not use this file except in compliance with
  the License.  You may obtain a copy of the License at
  
- http://www.apache.org/licenses/LICENSE-2.0
+ https://www.apache.org/licenses/LICENSE-2.0
  
  Unless required by applicable law or agreed to in writing, software
  distributed under the License is distributed on an "AS IS" BASIS,
@@ -17,7 +17,9 @@
  limitations under the License.
  
  -->
-<project name="Training">
+<project name="Training" xmlns="http://maven.apache.org/DECORATION/1.6.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/DECORATION/1.6.0 http://maven.apache.org/xsd/decoration-1.6.0.xsd">
 
   <skin>
     <groupId>io.github.devacfr.maven.skins</groupId>
@@ -88,9 +90,13 @@
       <!-- Use JQuery to manipulate the final output of the page, which is a lot simpler than adjusting the templates for site generation. -->
       <![CDATA[
         <script>
+          var apache_events_script = document.createElement('script');
+          apache_events_script.setAttribute('src','https://www.apachecon.com/event-images/snippet.js');
+          document.head.appendChild(apache_events_script);
+
           document.addEventListener("DOMContentLoaded", function(event) {
             /* Add an image for promoting Apache events below the right banner */
-            $("#bannerRight").append('<p id="apacheEvents"><a href="//www.apache.org/events/current-event.html"><img src="//www.apache.org/events/current-event-234x60.png"/></a></p>');
+            $("#bannerRight").append('<a class="acevent" data-format="wide" data-mode="light" data-event="random" style="width:240px;height:60px;"></a>');
             /* Append the trademarks info to the copyright section */
             $(".copyright").append('<p>Apache Training, Apache, the Apache feather logo, and the Apache Training project logo are either registered trademarks or trademarks of The Apache Software Foundation in the United States and other countries. All other marks mentioned may be trademarks or registered trademarks of their respective owners.</p>');
           });
@@ -102,9 +108,35 @@
       <item name="Downloads" href="downloads.html"/>
       <item name="Getting Started" href="users/index.html"/>
     </menu>
+    <menu name="Presentations">
+      <item name="Apache Airflow" href="presentations/airflow/index.html" target="_blank"/>
+      <item name="Apache ComDev">
+        <item name="Intro" href="presentations/comdev/comdev-intro/index.html" target="_blank"/>
+      </item>
+      <item name="Apache Druid" href="presentations/druid/index.html" target="_blank"/>
+      <item name="Apache Flink" href="presentations/flink/index.html" target="_blank"/>
+      <item name="Apache Hadoop" href="presentations/hadoop/index.html" target="_blank"/>
+      <item name="Apache Hive" href="presentations/hive/index.html" target="_blank"/>
+      <item name="Apache Ignite" href="presentations/ignite/index.html" target="_blank"/>
+      <item name="Apache Incubator">
+        <item name="Incubator Releases" href="presentations/incubator/incubator-releases/index.html" target="_blank"/>
+        <item name="Navigating ASF Incubator" href="presentations/incubator/navigating-asf-incubation/index.html" target="_blank"/>
+        <item name="Release Checklist" href="presentations/incubator/release-checklist/index.html" target="_blank"/>
+      </item>
+      <item name="Apache MyNewt" href="presentations/mynewt/index_en.html" target="_blank"/>
+      <item name="Apache Pulsar" href="presentations/pulsar/index.html" target="_blank"/>
+      <item name="Apache Samza" href="presentations/samza/index.html" target="_blank"/>
+      <item name="Apache Spark">
+        <item name="Basics" href="presentations/spark/basics/index.html" target="_blank"/>
+      </item>
+      <item name="Apache Training">
+        <item name="Presentation" href="presentations/training/presentation/index_en.html" target="_blank"/>
+      </item>
+      <item name="Apache Zookeeper" href="presentations/zookeeper/index_en.html" target="_blank"/>
+    </menu>
     <menu name="Developers">
       <item name="Bug &amp; Issue Tracker" href="developers/issues.html"/>
-      <item name="Building Training" href="developers/building.html"/>
+      <item name="Building Training Website" href="developers/building-website.html"/>
       <item name="Continuous Integration" href="developers/ci.html"/>
       <item name="Contributing" href="developers/contributing.html"/>
       <item name="Decision Making" href="developers/decisions.html"/>

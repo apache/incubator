@@ -1,0 +1,125 @@
+////
+  Licensed to the Apache Software Foundation (ASF) under one or more
+  contributor license agreements.  See the NOTICE file distributed with
+  this work for additional information regarding copyright ownership.
+  The ASF licenses this file to You under the Apache License, Version 2.0
+  (the "License"); you may not use this file except in compliance with
+  the License.  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+
+////
+:revealjs_progress: true
+:revealjs_slidenumber: true
+:sourcedir: ../java
+
+== What is Apache Druid?
+Apache Druid is a fast and modern analytics database.
+Druid is designed for workflows where fast ad-hoc analytics, instant data visibility, or supporting high concurrency is important.
+As such, Druid is often used to power UIs where an interactive, consistent user experience is desired.
+
+== Druid High Level Architecture
+
+Druid’s core design combines ideas from data warehouses, timeseries databases, and search systems to create a high performance real-time analytics database for a broad range of use cases. Druid merges key characteristics of each of the 3 systems into its ingestion layer, storage format, querying layer, and core architecture.
+
+image::http://druid.apache.org/img/diagram-2.png[width=40%]
+
+== Druid Features
+Apache Druid provides following features:
+
+* Column Oriented Storage
+* Streaming and batch ingest
+* Native search indexes
+* Flexible schemas
+* Time-optimized partitioning
+* SQL support
+* Horizontal scalability
+
+== Druid: Integration
+
+Druid is complementary to many open source data technologies in the Apache Software Foundation including Apache Kafka, Apache Hadoop, Apache Flink, and more.
+
+Druid typically sits between a storage or processing layer and the end user, and acts as a query layer to serve analytic workloads.
+
+image::http://druid.apache.org/img/diagram-3.png[width=60%]
+
+== Druid: Ingestion
+
+Druid supports both streaming and batch ingestion. Druid connects to a source of raw data, typically a message bus such as Apache Kafka (for streaming data loads), or a distributed filesystem such as HDFS (for batch data loads).
+
+Druid converts raw data stored in a source to a more read-optimized format (called a Druid “segment”) in a process calling “indexing”.
+
+image::http://druid.apache.org/img/diagram-4.png[width=60%]
+
+
+== Druid: Storage
+
+Like many analytic data stores, Druid stores data in columns. Depending on the type of column (string, number, etc), different compression and encoding methods are applied. Druid also builds different types of indexes based on the column type.
+
+Similar to search systems, Druid builds inverted indexes for string columns for fast search and filter.
+
+== Druid: Pre-aggregation
+
+Unlike many traditional systems, Druid can optionally pre-aggregate data as it is ingested.
+This pre-aggregation step is known as rollup, and can lead to dramatic storage savings.
+
+image::http://druid.apache.org/img/diagram-5.png[width=60%]
+
+== Druid: Querying
+
+Druid supports querying data through JSON-over-HTTP and SQL. In addition to standard SQL operators, Druid supports unique operators that leverage its suite of approximate algorithms to provide rapid counting, ranking, and quantiles.
+
+image::http://druid.apache.org/img/diagram-6.png[width=60%]
+
+== Druid: High Level Architecture Diagram
+
+image::http://druid.apache.org/img/diagram-7.png[]
+
+== Druid: Architecure
+
+Druid has a microservice-based architecture can be thought of as a disassembled database. Each core service in Druid (ingestion, querying, and coordination) can be separately or jointly deployed on commodity hardware.
+
+Druid explicitly names every main service to allow the operator to fine tune each service based on the use case and workload.
+
+== Druid: Operations
+
+Druid is designed to power applications that need to be up 24 hours a day, 7 days a week. Druid possesses several features to ensure uptime and no data loss.
+
+* *Data replication*
+* *Independent services*
+* *Automatic data backup*
+* *Rolling updates*
+
+== Druid Operations : Data replication
+
+*Data replication*
+All data in Druid is replicated a configurable number of times so single server failures have no impact on queries.
+
+== Druid Operations : Independent services
+
+*Independent services*
+Druid explicitly names all of its main services and each service can be fine tuned based on use case. Services can independently fail without impacting other services. For example, if the ingestion services fails, no new data is loaded in the system, but existing data remains queryable.
+
+== Druid Operations : Automatic data backup
+
+*Automatic data backup*
+Druid automatically backs up all indexed data to a filesystem such as HDFS. You can lose your entire Druid cluster and quickly restore it from this backed up data.
+
+== Druid Operations : Rolling updates
+
+*Rolling updates*
+You can update a Druid cluster with no downtime and no impact to end users through rolling updates. All Druid releases are backwards compatible with the previous version.
+
+
+== Further Sources
+Refer official documents on Apache Druid here:
+
+* *Druid Documentation*: http://druid.apache.org/
+* *Druid Technology*: http://druid.apache.org/technology
+
