@@ -86,15 +86,11 @@
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-annotator.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/annotator/KEYS",
       "svn": "",
-      "tracker": "",
+      "tracker": "https://issues.apache.org/jira/browse/ANNO",
       "wiki": "https://cwiki.apache.org/confluence/display/ANNO",
       "www": "http://annotator.incubator.apache.org"
     },
     "zFixMeList": [
-      [
-        "10",
-        "Has not provided an issue tracker link"
-      ],
       [
         "15",
         "Project does not have 'dev' mailing list"
@@ -112,16 +108,20 @@
     "hasMailListDev": "",
     "ldap": {
       "members": [
+        "bchapuis",
         "jhyde",
+        "joshfischer",
         "kirs",
         "percivall"
       ],
-      "numberCommitters": 3,
+      "numberCommitters": 5,
       "numberCommittersNew": 0,
       "numberPMCEquals": true,
-      "numberPMCMembers": 3,
+      "numberPMCMembers": 5,
       "owners": [
+        "bchapuis",
         "jhyde",
+        "joshfischer",
         "kirs",
         "percivall"
       ]
@@ -138,6 +138,10 @@
       [
         "Calvin Kirs",
         "kirs"
+      ],
+      [
+        "Bertrand Delacretaz",
+        "bdelacretaz"
       ]
     ],
     "news": [],
@@ -311,8 +315,8 @@
         "incubator-brpc",
         {
           "description": "brpc is an Industrial-grade RPC framework using C++ Language,...",
-          "last_update_int": 1665493905,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_int": 1665544227,
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
         }
       ],
       [
@@ -512,7 +516,7 @@
         {
           "description": "Incubator Datalab",
           "last_update_int": 1665500436,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
         }
       ]
     ],
@@ -623,16 +627,16 @@
         "incubator-devlake",
         {
           "description": "Apache DevLake is an open-source dev data platform to ingest,...",
-          "last_update_int": 1665486976,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_int": 1665549188,
+          "last_update_txt": "<span style='color: #070;'>&lt;30 minutes ago</span>"
         }
       ],
       [
         "incubator-devlake-website",
         {
           "description": "Apache Devlake Website",
-          "last_update_int": 1665474893,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_int": 1665544862,
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
         }
       ]
     ],
@@ -1447,16 +1451,16 @@
         "incubator-kvrocks",
         {
           "description": "Kvrocks is a distributed key value NoSQL database that uses R...",
-          "last_update_int": 1665482997,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_int": 1665539991,
+          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
         }
       ],
       [
         "incubator-kvrocks-website",
         {
           "description": "Apache Kvrocks Website",
-          "last_update_int": 1663850414,
-          "last_update_txt": "20 days ago"
+          "last_update_int": 1665538856,
+          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
         }
       ]
     ],
@@ -1624,7 +1628,7 @@
         {
           "description": "Apache Kyuubi is a distributed multi-tenant JDBC server for l...",
           "last_update_int": 1665453290,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
         }
       ],
       [
@@ -1956,8 +1960,8 @@
         "incubator-linkis",
         {
           "description": "Linkis helps easily connect to various back-end computation/s...",
-          "last_update_int": 1665501207,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_int": 1665539890,
+          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
         }
       ],
       [
@@ -2388,7 +2392,7 @@
         {
           "description": "Apache Milagro (Incubating)",
           "last_update_int": 1663084298,
-          "last_update_txt": "28 days ago"
+          "last_update_txt": "29 days ago"
         }
       ],
       [
@@ -2808,8 +2812,8 @@
         "incubator-mxnet-site",
         {
           "description": "Apache MXNet Site",
-          "last_update_int": 1665456200,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_int": 1665542585,
+          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
         }
       ],
       [
@@ -3363,8 +3367,8 @@
         "incubator-nuttx",
         {
           "description": "Apache NuttX is a mature, real-time embedded operating system...",
-          "last_update_int": 1665511046,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_int": 1665546950,
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
         }
       ],
       [
@@ -3388,7 +3392,7 @@
         {
           "description": "Apache NuttX Website",
           "last_update_int": 1665533947,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
         }
       ]
     ],
@@ -3568,7 +3572,7 @@
         {
           "description": "gypified zlib for PageSpeed",
           "last_update_int": 1515854936,
-          "last_update_txt": "247 weeks ago"
+          "last_update_txt": "248 weeks ago"
         }
       ]
     ],
@@ -4676,7 +4680,7 @@
         {
           "description": "StreamPark, Make stream processing easier! easy-to-use stream...",
           "last_update_int": 1665538008,
-          "last_update_txt": "<span style='color: #070;'>&lt;15 minutes ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
         }
       ],
       [
@@ -5603,8 +5607,8 @@
         "incubator-uniffle",
         {
           "description": "Uniffle is a high performance, general purpose Remote Shuffle...",
-          "last_update_int": 1665469445,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_int": 1665540655,
+          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
         }
       ],
       [
