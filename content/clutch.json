@@ -86,11 +86,15 @@
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-annotator.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/annotator/KEYS",
       "svn": "",
-      "tracker": "https://issues.apache.org/jira/browse/ANNO",
+      "tracker": "",
       "wiki": "https://cwiki.apache.org/confluence/display/ANNO",
       "www": "http://annotator.incubator.apache.org"
     },
     "zFixMeList": [
+      [
+        "10",
+        "Has not provided an issue tracker link"
+      ],
       [
         "15",
         "Project does not have 'dev' mailing list"
@@ -377,8 +381,8 @@
   "celeborn": {
     "description": "Celeborn is an intermediate data service for big data computing engines to boost performance, stability, and flexibility.",
     "fullName": "Celeborn",
-    "hasMailListCommits": "",
-    "hasMailListDev": "",
+    "hasMailListCommits": "http://mail-archives.apache.org/mod_mbox/celeborn-commits",
+    "hasMailListDev": "http://mail-archives.apache.org/mod_mbox/celeborn-dev",
     "ldap": {},
     "mentors": [
       [
@@ -398,7 +402,9 @@
         "zhangduo"
       ]
     ],
-    "news": [],
+    "news": [
+      "2022-10-18 Project enters incubation."
+    ],
     "podlingName": "Celeborn",
     "rawReportingGroup": "group-2",
     "releases": [],
@@ -409,7 +415,7 @@
     "sponsor": "Incubator",
     "startDate": "2022-10-18",
     "statusAge": 0,
-    "statusLastUpdated": "",
+    "statusLastUpdated": "2022-10-20",
     "urls": {
       "git": "",
       "keys": "",
@@ -422,10 +428,6 @@
       [
         "01",
         "No project LDAP"
-      ],
-      [
-        "07",
-        "Status file is missing"
       ],
       [
         "10",
@@ -442,14 +444,6 @@
       [
         "12",
         "Release distribution area is not setup"
-      ],
-      [
-        "15",
-        "Project does not have 'dev' mailing list"
-      ],
-      [
-        "16",
-        "Project does not have 'commits' mailing list"
       ],
       [
         "17",
@@ -597,7 +591,7 @@
         {
           "description": "Incubator Datalab",
           "last_update_int": 1666259251,
-          "last_update_txt": "<span style='color: #070;'>&lt;15 minutes ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt;1 hour ago</span>"
         }
       ]
     ],
@@ -709,7 +703,7 @@
         {
           "description": "Apache DevLake is an open-source dev data platform to ingest,...",
           "last_update_int": 1666257525,
-          "last_update_txt": "<span style='color: #070;'>&lt;1 hour ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
         }
       ],
       [
@@ -730,15 +724,11 @@
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-devlake.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/devlake/KEYS",
       "svn": "",
-      "tracker": "",
+      "tracker": "https://github.com/apache/incubator-devlake/issues",
       "wiki": "",
       "www": "https://devlake.incubator.apache.org"
     },
     "zFixMeList": [
-      [
-        "10",
-        "Has not provided an issue tracker link"
-      ],
       [
         "18",
         "Has not provided a wiki link"
@@ -883,7 +873,7 @@
         {
           "description": "EventMesh is a dynamic event-driven application runtime used ...",
           "last_update_int": 1666259517,
-          "last_update_txt": "<span style='color: #070;'>&lt;5 minutes ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt;1 hour ago</span>"
         }
       ],
       [
@@ -1492,7 +1482,7 @@
         {
           "description": "HugeGraph toolchain - include a series useful graph modules",
           "last_update_int": 1666259573,
-          "last_update_txt": "<span style='color: #070;'>&lt;2 minutes ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt;30 minutes ago</span>"
         }
       ],
       [
@@ -1798,7 +1788,7 @@
         {
           "description": "Apache Kyuubi is a distributed and multi-tenant gateway to pr...",
           "last_update_int": 1666258251,
-          "last_update_txt": "<span style='color: #070;'>&lt;30 minutes ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt;1 hour ago</span>"
         }
       ],
       [
@@ -1914,7 +1904,7 @@
         {
           "description": "Apache Liminals goal is to operationalise the machine learnin...",
           "last_update_int": 1665180711,
-          "last_update_txt": "12 days ago"
+          "last_update_txt": "13 days ago"
         }
       ],
       [
@@ -3328,7 +3318,7 @@
         {
           "description": "Apache NLPCraft - API to convert natural language into actions.",
           "last_update_int": 1666245547,
-          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
         }
       ]
     ],
@@ -3556,7 +3546,7 @@
         {
           "description": "Apache NuttX is a mature, real-time embedded operating system...",
           "last_update_int": 1666259062,
-          "last_update_txt": "<span style='color: #070;'>&lt;15 minutes ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt;1 hour ago</span>"
         }
       ],
       [
@@ -3927,8 +3917,8 @@
         "incubator-pegasus",
         {
           "description": "Apache Pegasus - A horizontally scalable, strongly consistent...",
-          "last_update_int": 1666084759,
-          "last_update_txt": "2 days ago"
+          "last_update_int": 1666261138,
+          "last_update_txt": "<span style='color: #070;'>&lt;5 minutes ago</span>"
         }
       ],
       [
@@ -4500,7 +4490,7 @@
         {
           "description": "SeaTunnel is a distributed, high-performance data integration...",
           "last_update_int": 1666259067,
-          "last_update_txt": "<span style='color: #070;'>&lt;15 minutes ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt;1 hour ago</span>"
         }
       ],
       [
@@ -5026,7 +5016,7 @@
         {
           "description": "Apache StreamPipes - A self-service (Industrial) IoT toolbox ...",
           "last_update_int": 1666259396,
-          "last_update_txt": "<span style='color: #070;'>&lt;5 minutes ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt;1 hour ago</span>"
         }
       ],
       [
@@ -5248,11 +5238,15 @@
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-teaclave.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/teaclave/KEYS",
       "svn": "",
-      "tracker": "https://issues.apache.org/jira/browse/XXX",
+      "tracker": "",
       "wiki": "",
       "www": "https://teaclave.incubator.apache.org"
     },
     "zFixMeList": [
+      [
+        "10",
+        "Has not provided an issue tracker link"
+      ],
       [
         "18",
         "Has not provided a wiki link"
