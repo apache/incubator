@@ -86,11 +86,15 @@
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-annotator.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/annotator/KEYS",
       "svn": "",
-      "tracker": "https://issues.apache.org/jira/browse/ANNO",
+      "tracker": "",
       "wiki": "https://cwiki.apache.org/confluence/display/ANNO",
       "www": "http://annotator.incubator.apache.org"
     },
     "zFixMeList": [
+      [
+        "10",
+        "Has not provided an issue tracker link"
+      ],
       [
         "15",
         "Project does not have 'dev' mailing list"
@@ -204,8 +208,8 @@
   "brpc": {
     "description": "brpc is an industrial-grade RPC framework for building reliable and high-performance services.",
     "fullName": "brpc",
-    "hasMailListCommits": "",
-    "hasMailListDev": "",
+    "hasMailListCommits": "http://mail-archives.apache.org/mod_mbox/brpc-commits",
+    "hasMailListDev": "http://mail-archives.apache.org/mod_mbox/brpc-dev",
     "ldap": {
       "members": [
         "caidj",
@@ -335,7 +339,7 @@
         {
           "description": "Apache bRPC Documents",
           "last_update_int": 1666854848,
-          "last_update_txt": "<span style='color: #070;'>&lt;1 hour ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
         }
       ]
     ],
@@ -352,16 +356,7 @@
       "wiki": "https://github.com/apache/incubator-brpc/wiki",
       "www": "http://brpc.incubator.apache.org"
     },
-    "zFixMeList": [
-      [
-        "15",
-        "Project does not have 'dev' mailing list"
-      ],
-      [
-        "16",
-        "Project does not have 'commits' mailing list"
-      ]
-    ]
+    "zFixMeList": []
   },
   "celeborn": {
     "description": "Celeborn is an intermediate data service for big data computing engines to boost performance, stability, and flexibility.",
@@ -716,8 +711,8 @@
         "incubator-devlake-website",
         {
           "description": "Apache Devlake Website",
-          "last_update_int": 1666856287,
-          "last_update_txt": "<span style='color: #070;'>&lt;30 minutes ago</span>"
+          "last_update_int": 1666862352,
+          "last_update_txt": "<span style='color: #070;'>&lt;1 minute ago</span>"
         }
       ]
     ],
@@ -878,8 +873,8 @@
         "incubator-eventmesh",
         {
           "description": "EventMesh is a dynamic event-driven application runtime used ...",
-          "last_update_int": 1666857327,
-          "last_update_txt": "<span style='color: #070;'>&lt;15 minutes ago</span>"
+          "last_update_int": 1666861270,
+          "last_update_txt": "<span style='color: #070;'>&lt;30 minutes ago</span>"
         }
       ],
       [
@@ -887,7 +882,7 @@
         {
           "description": "Apache EventMesh (Incubating) Website",
           "last_update_int": 1666686982,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
+          "last_update_txt": "2 days ago"
         }
       ]
     ],
@@ -1619,7 +1614,7 @@
         {
           "description": "Kvrocks is a distributed key value NoSQL database that uses R...",
           "last_update_int": 1666846159,
-          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
         }
       ],
       [
@@ -1803,7 +1798,7 @@
         {
           "description": "Apache Kyuubi Site",
           "last_update_int": 1666856889,
-          "last_update_txt": "<span style='color: #070;'>&lt;15 minutes ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
         }
       ]
     ],
@@ -2146,7 +2141,7 @@
         {
           "description": "Apache Linkis documents",
           "last_update_int": 1666852766,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
         }
       ]
     ],
@@ -3066,7 +3061,7 @@
         {
           "description": "Apache NLPCraft - API to convert natural language into actions.",
           "last_update_int": 1666855335,
-          "last_update_txt": "<span style='color: #070;'>&lt;1 hour ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
         }
       ]
     ],
@@ -3665,8 +3660,8 @@
         "incubator-pegasus",
         {
           "description": "Apache Pegasus - A horizontally scalable, strongly consistent...",
-          "last_update_int": 1666754308,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
+          "last_update_int": 1666860123,
+          "last_update_txt": "<span style='color: #070;'>&lt;1 hour ago</span>"
         }
       ],
       [
@@ -3737,13 +3732,14 @@
         "fanningpj",
         "jbonofre",
         "jmclean",
+        "jzb",
         "rskraba",
         "rvs",
         "wusheng"
       ],
-      "numberCommitters": 7,
+      "numberCommitters": 8,
       "numberCommittersNew": 0,
-      "numberPMCEquals": true,
+      "numberPMCEquals": false,
       "numberPMCMembers": 7,
       "owners": [
         "claude",
@@ -3926,7 +3922,7 @@
         {
           "description": "Apache Pony Mail (Incubating) Site",
           "last_update_int": 1666642839,
-          "last_update_txt": "2 days ago"
+          "last_update_txt": "3 days ago"
         }
       ],
       [
@@ -4370,7 +4366,7 @@
         {
           "description": "Apache SeaTunnel documents",
           "last_update_int": 1666847821,
-          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
         }
       ]
     ],
@@ -4733,8 +4729,8 @@
         "incubator-streampark",
         {
           "description": "StreamPark, Make stream processing easier! easy-to-use stream...",
-          "last_update_int": 1666840988,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_int": 1666859417,
+          "last_update_txt": "<span style='color: #070;'>&lt;1 hour ago</span>"
         }
       ],
       [
@@ -4882,8 +4878,8 @@
         "incubator-streampipes",
         {
           "description": "Apache StreamPipes - A self-service (Industrial) IoT toolbox ...",
-          "last_update_int": 1666798293,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_int": 1666862216,
+          "last_update_txt": "<span style='color: #070;'>&lt;5 minutes ago</span>"
         }
       ],
       [
@@ -5105,11 +5101,15 @@
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-teaclave.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/teaclave/KEYS",
       "svn": "",
-      "tracker": "https://issues.apache.org/jira/browse/XXX",
+      "tracker": "",
       "wiki": "",
       "www": "https://teaclave.incubator.apache.org"
     },
     "zFixMeList": [
+      [
+        "10",
+        "Has not provided an issue tracker link"
+      ],
       [
         "18",
         "Has not provided a wiki link"
@@ -5268,7 +5268,7 @@
         {
           "description": "Apache Toree website (Incubating)",
           "last_update_int": 1598215469,
-          "last_update_txt": "113 weeks ago"
+          "last_update_txt": "114 weeks ago"
         }
       ]
     ],
@@ -5553,7 +5553,7 @@
         {
           "description": "Apache tuweni website",
           "last_update_int": 1665262471,
-          "last_update_txt": "18 days ago"
+          "last_update_txt": "19 days ago"
         }
       ]
     ],
@@ -5678,7 +5678,7 @@
         {
           "description": "Uniffle is a high performance, general purpose Remote Shuffle...",
           "last_update_int": 1666852127,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
         }
       ],
       [
@@ -5686,7 +5686,7 @@
         {
           "description": "Apache Uniffle(Incubating) Website",
           "last_update_int": 1666774222,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
         }
       ]
     ],
@@ -5802,7 +5802,7 @@
         {
           "description": "Apache Wayang is an Cross-Platform processing system",
           "last_update_int": 1665088596,
-          "last_update_txt": "20 days ago"
+          "last_update_txt": "21 days ago"
         }
       ]
     ],
