@@ -155,10 +155,10 @@ Should the Incubator PMC vote to approve a release, the Podling MAY make that re
 Releases for the *Podling* MUST be distributed through *++http://www.apache.org/dist/incubator/++_Podling_* The Podling MAY choose to distribute approved releases through other channels by following the link:https://incubator.apache.org/guides/distribution.html[guidelines here].
 
 == Adding PPMC members
-After voting someone into the PPMC on the PPMC private list, the Podling MUST send a NOTICE email to the private@incubator list. The PPMC MUST wait for 72 hours before inviting the new PPMC member to join the PPMC. See link:https://incubator.apache.org/guides/ppmc.html#voting_in_a_new_ppmc_member[Voting in a new PPMC member].
+After voting someone into the PPMC on the PPMC private list, the Podling MUST send a NOTICE email to the private@incubator list. Only after the NOTICE has been sent can the PPMC invite the new PPMC member to join the PPMC. See link:https://incubator.apache.org/guides/ppmc.html#voting_in_a_new_ppmc_member[Voting in a new PPMC member].
 
 == Joining the IPMC
-As with all PMCs, new the IPMC votes on proposed members on the private@incubator list. After a vote has finished, the IPMC MUST send a NOTICE email to the board and then wait for 72 hours before inviting the proposed member. Any ASF member can ask to be an IPMC member, without a vote, but the IPMC MUST still give notice to the board.
+As with all PMCs, new the IPMC votes on proposed members on the private@incubator list. After a vote has finished, the IPMC MUST send a NOTICE email to the board before inviting the proposed member. Any ASF member can ask to be an IPMC member, without a vote, but the IPMC MUST still give notice to the board.
 
 == Termination
 The Incubator PMC SHOULD notify a Podling of any policy violations. It MAY consider termination of a Podling that does not correct such violations. 
