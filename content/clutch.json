@@ -86,11 +86,15 @@
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-annotator.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/annotator/KEYS",
       "svn": "",
-      "tracker": "https://issues.apache.org/jira/browse/ANNO",
+      "tracker": "",
       "wiki": "https://cwiki.apache.org/confluence/display/ANNO",
       "www": "http://annotator.incubator.apache.org"
     },
     "zFixMeList": [
+      [
+        "10",
+        "Has not provided an issue tracker link"
+      ],
       [
         "15",
         "Project does not have 'dev' mailing list"
@@ -228,7 +232,7 @@
         "zychen"
       ],
       "numberCommitters": 18,
-      "numberCommittersNew": 8,
+      "numberCommittersNew": 9,
       "numberPMCEquals": false,
       "numberPMCMembers": 13,
       "owners": [
@@ -281,7 +285,8 @@
       "2022-07-07 New Committer, Wang Xiaofeng",
       "2022-07-11 Apache bRPC(incubating) release 1.2.0",
       "2022-07-11 New Committer, Xiguo Hu",
-      "2022-10-25 Apache bRPC(incubating) release 1.3.0"
+      "2022-10-25 Apache bRPC(incubating) release 1.3.0",
+      "2022-10-30 New Committer, Chen Guangming (vote passed, id creating)"
     ],
     "podlingName": "brpc",
     "rawReportingGroup": "group-3",
@@ -342,8 +347,8 @@
     "resource": "brpc",
     "sponsor": "Incubator",
     "startDate": "2018-11-13",
-    "statusAge": 5,
-    "statusLastUpdated": "2022-10-27",
+    "statusAge": 0,
+    "statusLastUpdated": "2022-11-01",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-brpc.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/brpc/KEYS",
@@ -1334,7 +1339,7 @@
         {
           "description": "Apache Heron (Incubating) is a realtime, distributed, fault-t...",
           "last_update_int": 1666534329,
-          "last_update_txt": "8 days ago"
+          "last_update_txt": "9 days ago"
         }
       ]
     ],
@@ -1481,7 +1486,7 @@
         {
           "description": "HugeGraph Website and Doc",
           "last_update_int": 1666705227,
-          "last_update_txt": "6 days ago"
+          "last_update_txt": "7 days ago"
         }
       ],
       [
@@ -3308,7 +3313,7 @@
         {
           "description": "Apache NuttX is a mature, real-time embedded operating system...",
           "last_update_int": 1667265731,
-          "last_update_txt": "<span style='color: #070;'>&lt;30 minutes ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt;1 hour ago</span>"
         }
       ],
       [
@@ -3316,7 +3321,7 @@
         {
           "description": "Apache NuttX Apps is a collection of tools, shells, network u...",
           "last_update_int": 1667263868,
-          "last_update_txt": "<span style='color: #070;'>&lt;1 hour ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
         }
       ],
       [
@@ -3817,7 +3822,7 @@
         {
           "description": "Build highly concurrent, distributed, and resilient message-d...",
           "last_update_int": 1667225472,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
         }
       ],
       [
@@ -3825,7 +3830,7 @@
         {
           "description": "Apache pekko",
           "last_update_int": 1667225662,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
         }
       ],
       [
@@ -3833,7 +3838,7 @@
         {
           "description": "Apache pekko",
           "last_update_int": 1667225698,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
         }
       ],
       [
@@ -3849,7 +3854,7 @@
         {
           "description": "The Streaming-first HTTP server/module of Apache Pekko",
           "last_update_int": 1667225540,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
         }
       ],
       [
@@ -3857,7 +3862,7 @@
         {
           "description": "Apache Pekko Management is a suite of tools for operating Pek...",
           "last_update_int": 1667225208,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
         }
       ],
       [
@@ -4506,8 +4511,8 @@
         "incubator-seatunnel-website",
         {
           "description": "Apache SeaTunnel documents",
-          "last_update_int": 1667230002,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_int": 1667268902,
+          "last_update_txt": "<span style='color: #070;'>&lt;2 minutes ago</span>"
         }
       ]
     ],
@@ -5805,7 +5810,7 @@
         {
           "description": "Uniffle is a high performance, general purpose Remote Shuffle...",
           "last_update_int": 1667225090,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
         }
       ],
       [
