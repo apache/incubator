@@ -80,7 +80,7 @@
     "resource": "annotator",
     "sponsor": "Incubator",
     "startDate": "2016-08-30",
-    "statusAge": 761,
+    "statusAge": 762,
     "statusLastUpdated": "2020-10-09",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-annotator.git;a=tree;hb=HEAD",
@@ -108,25 +108,33 @@
     "hasMailListDev": "http://mail-archives.apache.org/mod_mbox/baremaps-dev",
     "ldap": {
       "members": [
+        "adrabble",
         "bchapuis",
         "bdelacretaz",
+        "danduk82",
         "desruisseaux",
         "jhyde",
         "joshfischer",
+        "jsmith",
         "kirs",
+        "lbesseau",
         "percivall"
       ],
-      "numberCommitters": 7,
+      "numberCommitters": 11,
       "numberCommittersNew": 0,
       "numberPMCEquals": true,
-      "numberPMCMembers": 7,
+      "numberPMCMembers": 11,
       "owners": [
+        "adrabble",
         "bchapuis",
         "bdelacretaz",
+        "danduk82",
         "desruisseaux",
         "jhyde",
         "joshfischer",
+        "jsmith",
         "kirs",
+        "lbesseau",
         "percivall"
       ]
     },
@@ -164,25 +172,30 @@
     "releases": [],
     "reportingGroup": "March, June, September, December",
     "reportingMonthly": true,
-    "repositories": "",
+    "repositories": [
+      [
+        "incubator-baremaps",
+        {
+          "description": "Apache Baremaps -- Incubating",
+          "last_update_int": 1667980699,
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+        }
+      ]
+    ],
     "resource": "baremaps",
     "sponsor": "Incubator",
     "startDate": "2022-10-10",
-    "statusAge": 20,
+    "statusAge": 21,
     "statusLastUpdated": "2022-10-20",
     "urls": {
-      "git": "https://gitbox.apache.org/repos/asf/baremaps.git",
+      "git": "https://gitbox.apache.org/repos/asf?p=incubator-baremaps.git;a=tree;hb=HEAD",
       "keys": "",
       "svn": "",
-      "tracker": "",
+      "tracker": "https://github.com/apache/baremaps/issues",
       "wiki": "",
       "www": ""
     },
     "zFixMeList": [
-      [
-        "10",
-        "Has not provided an issue tracker link"
-      ],
       [
         "18",
         "Has not provided a wiki link"
@@ -194,10 +207,6 @@
       [
         "12",
         "Release distribution area is not setup"
-      ],
-      [
-        "17",
-        "No source code repository. Declared but nonexistent"
       ]
     ]
   },
@@ -328,15 +337,15 @@
         "incubator-brpc",
         {
           "description": "brpc is an Industrial-grade RPC framework using C++ Language,...",
-          "last_update_int": 1667915541,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_int": 1667969613,
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
         }
       ],
       [
         "incubator-brpc-website",
         {
           "description": "Apache bRPC Website",
-          "last_update_int": 1667872911,
+          "last_update_int": 1667971658,
           "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
         }
       ]
@@ -344,7 +353,7 @@
     "resource": "brpc",
     "sponsor": "Incubator",
     "startDate": "2018-11-13",
-    "statusAge": 2,
+    "statusAge": 3,
     "statusLastUpdated": "2022-11-07",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-brpc.git;a=tree;hb=HEAD",
@@ -421,25 +430,30 @@
     "releases": [],
     "reportingGroup": "February, May, August, November",
     "reportingMonthly": true,
-    "repositories": "",
+    "repositories": [
+      [
+        "incubator-celeborn",
+        {
+          "description": "Apache celeborn",
+          "last_update_int": 0,
+          "last_update_txt": "<span style='color: #777; font-style: italic;'>No commits</span>"
+        }
+      ]
+    ],
     "resource": "celeborn",
     "sponsor": "Incubator",
     "startDate": "2022-10-18",
-    "statusAge": 6,
+    "statusAge": 7,
     "statusLastUpdated": "2022-11-03",
     "urls": {
-      "git": "",
+      "git": "https://gitbox.apache.org/repos/asf?p=incubator-celeborn.git;a=tree;hb=HEAD",
       "keys": "",
       "svn": "",
-      "tracker": "",
+      "tracker": "https://github.com/apache/incubator-celeborn/issues",
       "wiki": "",
       "www": ""
     },
     "zFixMeList": [
-      [
-        "10",
-        "Has not provided an issue tracker link"
-      ],
       [
         "18",
         "Has not provided a wiki link"
@@ -451,10 +465,6 @@
       [
         "12",
         "Release distribution area is not setup"
-      ],
-      [
-        "17",
-        "No source code repository"
       ]
     ]
   },
@@ -597,15 +607,15 @@
         "incubator-datalab",
         {
           "description": "Incubator Datalab",
-          "last_update_int": 1667909476,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_int": 1668029587,
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
         }
       ]
     ],
     "resource": "datalab",
     "sponsor": "Incubator",
     "startDate": "2018-08-20",
-    "statusAge": 8,
+    "statusAge": 9,
     "statusLastUpdated": "2022-11-01",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-datalab.git;a=tree;hb=HEAD",
@@ -709,7 +719,7 @@
         "incubator-devlake",
         {
           "description": "Apache DevLake is an open-source dev data platform to ingest,...",
-          "last_update_int": 1667903697,
+          "last_update_int": 1667997535,
           "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
         }
       ],
@@ -718,14 +728,14 @@
         {
           "description": "Apache DevLake Helm Chart",
           "last_update_int": 1667550788,
-          "last_update_txt": "5 days ago"
+          "last_update_txt": "6 days ago"
         }
       ],
       [
         "incubator-devlake-website",
         {
           "description": "Apache Devlake Website",
-          "last_update_int": 1667910774,
+          "last_update_int": 1667983335,
           "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
         }
       ]
@@ -733,7 +743,7 @@
     "resource": "devlake",
     "sponsor": "Incubator",
     "startDate": "2022-04-29",
-    "statusAge": 181,
+    "statusAge": 182,
     "statusLastUpdated": "2022-05-12",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-devlake.git;a=tree;hb=HEAD",
@@ -887,8 +897,8 @@
         "incubator-eventmesh",
         {
           "description": "EventMesh is a dynamic event-driven application runtime used ...",
-          "last_update_int": 1667912440,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_int": 1668001817,
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
         }
       ],
       [
@@ -896,14 +906,14 @@
         {
           "description": "Apache EventMesh (Incubating) Website",
           "last_update_int": 1667893787,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
         }
       ]
     ],
     "resource": "eventmesh",
     "sponsor": "Incubator",
     "startDate": "2021-02-18",
-    "statusAge": 623,
+    "statusAge": 624,
     "statusLastUpdated": "2021-02-24",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-eventmesh.git;a=tree;hb=HEAD",
@@ -1069,7 +1079,7 @@
         {
           "description": "Apache SensSoft Tap (Incubating) -- Archived (archived)",
           "last_update_int": 1613294185,
-          "last_update_txt": "90 weeks ago"
+          "last_update_txt": "91 weeks ago"
         }
       ],
       [
@@ -1077,7 +1087,7 @@
         {
           "description": "Apache SensSoft User Ale (Incubating) -- Archived (archived)",
           "last_update_int": 1613277714,
-          "last_update_txt": "90 weeks ago"
+          "last_update_txt": "91 weeks ago"
         }
       ],
       [
@@ -1085,22 +1095,22 @@
         {
           "description": "Apache SensSoft User Ale PyQT5 (Incubating) -- Archived (arch...",
           "last_update_int": 1613276575,
-          "last_update_txt": "90 weeks ago"
+          "last_update_txt": "91 weeks ago"
         }
       ],
       [
         "incubator-flagon-useralejs",
         {
           "description": "Apache Flagon UserALE.js is a comprehensive, thin-client beha...",
-          "last_update_int": 1667804804,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
+          "last_update_int": 1667965592,
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
         }
       ]
     ],
     "resource": "flagon",
     "sponsor": "Incubator",
     "startDate": "2016-07-13",
-    "statusAge": 524,
+    "statusAge": 525,
     "statusLastUpdated": "2021-06-03",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-flagon.git;a=tree;hb=HEAD",
@@ -1336,14 +1346,14 @@
         {
           "description": "Apache Heron (Incubating) is a realtime, distributed, fault-t...",
           "last_update_int": 1666534329,
-          "last_update_txt": "16 days ago"
+          "last_update_txt": "17 days ago"
         }
       ]
     ],
     "resource": "heron",
     "sponsor": "Incubator",
     "startDate": "2017-06-23",
-    "statusAge": 761,
+    "statusAge": 762,
     "statusLastUpdated": "2020-10-09",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-heron.git;a=tree;hb=HEAD",
@@ -1458,24 +1468,24 @@
         "incubator-hugegraph",
         {
           "description": "A graph database that supports more than 100+ billion data, h...",
-          "last_update_int": 1667925932,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_int": 1668000339,
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
         }
       ],
       [
         "incubator-hugegraph-commons",
         {
           "description": "HugeGraph Commons - include common library & RPC module",
-          "last_update_int": 1667913225,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_int": 1668002298,
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
         }
       ],
       [
         "incubator-hugegraph-computer",
         {
           "description": "HugeGraph Computer - A distributed graph processing system fo...",
-          "last_update_int": 1667835953,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
+          "last_update_int": 1667984322,
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
         }
       ],
       [
@@ -1483,14 +1493,14 @@
         {
           "description": "HugeGraph Website and Doc",
           "last_update_int": 1666705227,
-          "last_update_txt": "14 days ago"
+          "last_update_txt": "15 days ago"
         }
       ],
       [
         "incubator-hugegraph-toolchain",
         {
           "description": "HugeGraph toolchain - include a series useful graph modules",
-          "last_update_int": 1667932027,
+          "last_update_int": 1668002292,
           "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
         }
       ],
@@ -1506,7 +1516,7 @@
     "resource": "hugegraph",
     "sponsor": "Incubator",
     "startDate": "2022-01-23",
-    "statusAge": 205,
+    "statusAge": 206,
     "statusLastUpdated": "2022-04-18",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-hugegraph.git;a=tree;hb=HEAD",
@@ -1621,23 +1631,23 @@
         "incubator-kvrocks",
         {
           "description": "Kvrocks is a distributed key value NoSQL database that uses R...",
-          "last_update_int": 1667702375,
-          "last_update_txt": "3 days ago"
+          "last_update_int": 1667984728,
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
         }
       ],
       [
         "incubator-kvrocks-website",
         {
           "description": "Apache Kvrocks Website",
-          "last_update_int": 1665633442,
-          "last_update_txt": "27 days ago"
+          "last_update_int": 1667999710,
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
         }
       ]
     ],
     "resource": "kvrocks",
     "sponsor": "Incubator",
     "startDate": "2022-04-23",
-    "statusAge": 200,
+    "statusAge": 201,
     "statusLastUpdated": "2022-04-23",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-kvrocks.git;a=tree;hb=HEAD",
@@ -1797,7 +1807,7 @@
         "incubator-kyuubi",
         {
           "description": "Apache Kyuubi is a distributed and multi-tenant gateway to pr...",
-          "last_update_int": 1667909322,
+          "last_update_int": 1667983123,
           "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
         }
       ],
@@ -1806,14 +1816,14 @@
         {
           "description": "Apache Kyuubi Site",
           "last_update_int": 1667186616,
-          "last_update_txt": "9 days ago"
+          "last_update_txt": "10 days ago"
         }
       ]
     ],
     "resource": "kyuubi",
     "sponsor": "Incubator",
     "startDate": "2021-06-21",
-    "statusAge": 15,
+    "statusAge": 16,
     "statusLastUpdated": "2022-10-25",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-kyuubi.git;a=tree;hb=HEAD",
@@ -1925,7 +1935,7 @@
     "resource": "liminal",
     "sponsor": "Incubator",
     "startDate": "2020-05-23",
-    "statusAge": 762,
+    "statusAge": 763,
     "statusLastUpdated": "2020-10-08",
     "urls": {
       "git": "",
@@ -2142,7 +2152,7 @@
         {
           "description": "Linkis helps easily connect to various back-end computation/s...",
           "last_update_int": 1667892938,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
         }
       ],
       [
@@ -2150,14 +2160,14 @@
         {
           "description": "Apache Linkis documents",
           "last_update_int": 1667952169,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
         }
       ]
     ],
     "resource": "linkis",
     "sponsor": "Incubator",
     "startDate": "2021-08-02",
-    "statusAge": 14,
+    "statusAge": 15,
     "statusLastUpdated": "2022-10-26",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-linkis.git;a=tree;hb=HEAD",
@@ -2333,8 +2343,8 @@
         "incubator-livy",
         {
           "description": "Apache livy (Incubating)",
-          "last_update_int": 1667955814,
-          "last_update_txt": "<span style='color: #070;'>&lt;1 hour ago</span>"
+          "last_update_int": 1667988251,
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
         }
       ],
       [
@@ -2349,7 +2359,7 @@
     "resource": "livy",
     "sponsor": "Incubator",
     "startDate": "2017-06-05",
-    "statusAge": 1965,
+    "statusAge": 1966,
     "statusLastUpdated": "2017-06-23",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-livy.git;a=tree;hb=HEAD",
@@ -2465,7 +2475,7 @@
     "resource": "marvin",
     "sponsor": "Incubator",
     "startDate": "2018-08-21",
-    "statusAge": 762,
+    "statusAge": 763,
     "statusLastUpdated": "2020-10-08",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-marvin.git;a=tree;hb=HEAD",
@@ -2719,7 +2729,7 @@
     "resource": "milagro",
     "sponsor": "Incubator",
     "startDate": "2015-12-21",
-    "statusAge": 1256,
+    "statusAge": 1257,
     "statusLastUpdated": "2019-06-02",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-milagro.git;a=tree;hb=HEAD",
@@ -2868,7 +2878,7 @@
         {
           "description": "Apache Nemo Incubating",
           "last_update_int": 1667874487,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
         }
       ],
       [
@@ -2876,14 +2886,14 @@
         {
           "description": "Apache nemo",
           "last_update_int": 1667923501,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
         }
       ]
     ],
     "resource": "nemo",
     "sponsor": "Incubator",
     "startDate": "2018-02-04",
-    "statusAge": 1714,
+    "statusAge": 1715,
     "statusLastUpdated": "2018-03-01",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-nemo.git;a=tree;hb=HEAD",
@@ -3034,7 +3044,7 @@
         "incubator-nlpcraft",
         {
           "description": "Apache NLPCraft - API to convert natural language into actions.",
-          "last_update_int": 1667919557,
+          "last_update_int": 1668018325,
           "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
         }
       ],
@@ -3051,22 +3061,22 @@
         {
           "description": "Management UI for Apache NLPcraft",
           "last_update_int": 1587905637,
-          "last_update_txt": "132 weeks ago"
+          "last_update_txt": "133 weeks ago"
         }
       ],
       [
         "incubator-nlpcraft-website",
         {
           "description": "Apache NLPCraft - API to convert natural language into actions.",
-          "last_update_int": 1667478747,
-          "last_update_txt": "6 days ago"
+          "last_update_int": 1667999191,
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
         }
       ]
     ],
     "resource": "nlpcraft",
     "sponsor": "Incubator",
     "startDate": "2020-02-13",
-    "statusAge": 762,
+    "statusAge": 763,
     "statusLastUpdated": "2020-10-08",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-nlpcraft.git;a=tree;hb=HEAD",
@@ -3286,7 +3296,7 @@
         "incubator-nuttx",
         {
           "description": "Apache NuttX is a mature, real-time embedded operating system...",
-          "last_update_int": 1667942650,
+          "last_update_int": 1668026290,
           "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
         }
       ],
@@ -3294,8 +3304,8 @@
         "incubator-nuttx-apps",
         {
           "description": "Apache NuttX Apps is a collection of tools, shells, network u...",
-          "last_update_int": 1667853501,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
+          "last_update_int": 1668019138,
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
         }
       ],
       [
@@ -3311,14 +3321,14 @@
         {
           "description": "Apache NuttX Website",
           "last_update_int": 1666743256,
-          "last_update_txt": "14 days ago"
+          "last_update_txt": "15 days ago"
         }
       ]
     ],
     "resource": "nuttx",
     "sponsor": "Incubator",
     "startDate": "2019-12-09",
-    "statusAge": 762,
+    "statusAge": 763,
     "statusLastUpdated": "2020-10-08",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-nuttx.git;a=tree;hb=HEAD",
@@ -3459,7 +3469,7 @@
         {
           "description": "Apache module for rewriting web pages to reduce latency and b...",
           "last_update_int": 1667750791,
-          "last_update_txt": "2 days ago"
+          "last_update_txt": "3 days ago"
         }
       ],
       [
@@ -3491,14 +3501,14 @@
         {
           "description": "gypified zlib for PageSpeed",
           "last_update_int": 1515854936,
-          "last_update_txt": "251 weeks ago"
+          "last_update_txt": "252 weeks ago"
         }
       ]
     ],
     "resource": "pagespeed",
     "sponsor": "Incubator",
     "startDate": "2017-09-30",
-    "statusAge": 762,
+    "statusAge": 763,
     "statusLastUpdated": "2020-10-08",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-pagespeed-cpanel.git;a=tree;hb=HEAD",
@@ -3643,7 +3653,7 @@
         {
           "description": "Apache Pegasus - A horizontally scalable, strongly consistent...",
           "last_update_int": 1667922636,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
         }
       ],
       [
@@ -3658,7 +3668,7 @@
     "resource": "pegasus",
     "sponsor": "Incubator",
     "startDate": "2020-06-28",
-    "statusAge": 762,
+    "statusAge": 763,
     "statusLastUpdated": "2020-10-08",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-pegasus.git;a=tree;hb=HEAD",
@@ -3806,15 +3816,15 @@
         {
           "description": "Build highly concurrent, distributed, and resilient message-d...",
           "last_update_int": 1667915696,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
         }
       ],
       [
         "incubator-pekko-connectors",
         {
           "description": "Apache Pekko Connectors is a Reactive Enterprise Integration ...",
-          "last_update_int": 1667946479,
-          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
+          "last_update_int": 1668001830,
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
         }
       ],
       [
@@ -3822,15 +3832,15 @@
         {
           "description": "Apache Pekko Kafka connector - Pekko-Connectors is a Reactive...",
           "last_update_int": 1667419378,
-          "last_update_txt": "6 days ago"
+          "last_update_txt": "7 days ago"
         }
       ],
       [
         "incubator-pekko-grpc",
         {
           "description": "Apache Pekko gRPC",
-          "last_update_int": 1667210419,
-          "last_update_txt": "9 days ago"
+          "last_update_int": 1667981744,
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
         }
       ],
       [
@@ -3838,7 +3848,7 @@
         {
           "description": "The Streaming-first HTTP server/module of Apache Pekko",
           "last_update_int": 1667909715,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
         }
       ],
       [
@@ -3846,7 +3856,7 @@
         {
           "description": "Apache Pekko Management is a suite of tools for operating Pek...",
           "last_update_int": 1667225208,
-          "last_update_txt": "8 days ago"
+          "last_update_txt": "9 days ago"
         }
       ],
       [
@@ -3854,7 +3864,7 @@
         {
           "description": "A replicated Apache Pekko Persistence journal backed by Apach...",
           "last_update_int": 1667227496,
-          "last_update_txt": "8 days ago"
+          "last_update_txt": "9 days ago"
         }
       ],
       [
@@ -3862,7 +3872,7 @@
         {
           "description": "DynamoDBJournal for Apache Pekko Persistence",
           "last_update_int": 1667227571,
-          "last_update_txt": "8 days ago"
+          "last_update_txt": "9 days ago"
         }
       ],
       [
@@ -3870,7 +3880,7 @@
         {
           "description": "Asynchronously writes journal and snapshot entries to configu...",
           "last_update_int": 1667227858,
-          "last_update_txt": "8 days ago"
+          "last_update_txt": "9 days ago"
         }
       ],
       [
@@ -3878,7 +3888,7 @@
         {
           "description": "Asynchronously writes journal and snapshot entries to configu...",
           "last_update_int": 1667227992,
-          "last_update_txt": "8 days ago"
+          "last_update_txt": "9 days ago"
         }
       ],
       [
@@ -3886,7 +3896,7 @@
         {
           "description": "Examples how to implement Microservices using Apache Pekko",
           "last_update_int": 1667432070,
-          "last_update_txt": "6 days ago"
+          "last_update_txt": "7 days ago"
         }
       ],
       [
@@ -3894,7 +3904,7 @@
         {
           "description": "Apache Pekko Projections is intended for building systems wit...",
           "last_update_int": 1667418728,
-          "last_update_txt": "6 days ago"
+          "last_update_txt": "7 days ago"
         }
       ],
       [
@@ -3902,7 +3912,7 @@
         {
           "description": "Apache Pekko Sample Projects",
           "last_update_int": 1667418838,
-          "last_update_txt": "6 days ago"
+          "last_update_txt": "7 days ago"
         }
       ]
     ],
@@ -4036,7 +4046,7 @@
         {
           "description": "Apache Pony Mail (Incubating) Site",
           "last_update_int": 1666642839,
-          "last_update_txt": "15 days ago"
+          "last_update_txt": "16 days ago"
         }
       ],
       [
@@ -4051,7 +4061,7 @@
     "resource": "ponymail",
     "sponsor": "Incubator",
     "startDate": "2016-05-27",
-    "statusAge": 761,
+    "statusAge": 762,
     "statusLastUpdated": "2020-10-09",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-ponymail.git;a=tree;hb=HEAD",
@@ -4195,7 +4205,7 @@
         {
           "description": "Apache sdap (Incubating)",
           "last_update_int": 1666114413,
-          "last_update_txt": "21 days ago"
+          "last_update_txt": "22 days ago"
         }
       ],
       [
@@ -4203,7 +4213,7 @@
         {
           "description": "Apache sdap (Incubating)",
           "last_update_int": 1666891311,
-          "last_update_txt": "12 days ago"
+          "last_update_txt": "13 days ago"
         }
       ],
       [
@@ -4242,7 +4252,7 @@
     "resource": "sdap",
     "sponsor": "Incubator",
     "startDate": "2017-10-22",
-    "statusAge": 761,
+    "statusAge": 762,
     "statusLastUpdated": "2020-10-09",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-sdap-doms.git;a=tree;hb=HEAD",
@@ -4479,8 +4489,8 @@
         "incubator-seatunnel",
         {
           "description": "SeaTunnel is a distributed, high-performance data integration...",
-          "last_update_int": 1667911687,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_int": 1668003984,
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
         }
       ],
       [
@@ -4488,22 +4498,22 @@
         {
           "description": "SeaTunnel is a distributed, high-performance data integration...",
           "last_update_int": 1667898313,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
         }
       ],
       [
         "incubator-seatunnel-website",
         {
           "description": "Apache SeaTunnel documents",
-          "last_update_int": 1667956134,
-          "last_update_txt": "<span style='color: #070;'>&lt;30 minutes ago</span>"
+          "last_update_int": 1667971151,
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
         }
       ]
     ],
     "resource": "seatunnel",
     "sponsor": "Incubator",
     "startDate": "2021-12-09",
-    "statusAge": 314,
+    "statusAge": 315,
     "statusLastUpdated": "2021-12-30",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-seatunnel.git;a=tree;hb=HEAD",
@@ -4640,7 +4650,7 @@
         {
           "description": "A cluster computing framework for processing large-scale geos...",
           "last_update_int": 1667636555,
-          "last_update_txt": "4 days ago"
+          "last_update_txt": "5 days ago"
         }
       ],
       [
@@ -4655,7 +4665,7 @@
     "resource": "sedona",
     "sponsor": "Incubator",
     "startDate": "2020-07-19",
-    "statusAge": 121,
+    "statusAge": 122,
     "statusLastUpdated": "2022-07-11",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-sedona.git;a=tree;hb=HEAD",
@@ -4754,7 +4764,7 @@
     "resource": "spot",
     "sponsor": "Incubator",
     "startDate": "2016-09-23",
-    "statusAge": 761,
+    "statusAge": 762,
     "statusLastUpdated": "2020-10-09",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-spot.git;a=tree;hb=HEAD",
@@ -4859,8 +4869,8 @@
         "incubator-streampark",
         {
           "description": "StreamPark, Make stream processing easier! easy-to-use stream...",
-          "last_update_int": 1667951121,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
+          "last_update_int": 1668008709,
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
         }
       ],
       [
@@ -4868,14 +4878,14 @@
         {
           "description": "Apache streampark Website",
           "last_update_int": 1667889094,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
         }
       ]
     ],
     "resource": "streampark",
     "sponsor": "Incubator",
     "startDate": "2022-09-01",
-    "statusAge": 68,
+    "statusAge": 69,
     "statusLastUpdated": "2022-09-02",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-streampark.git;a=tree;hb=HEAD",
@@ -5008,8 +5018,8 @@
         "incubator-streampipes",
         {
           "description": "Apache StreamPipes - A self-service (Industrial) IoT toolbox ...",
-          "last_update_int": 1667948109,
-          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
+          "last_update_int": 1668029077,
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
         }
       ],
       [
@@ -5041,14 +5051,14 @@
         {
           "description": "Apache StreamPipes Website",
           "last_update_int": 1667843697,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
+          "last_update_txt": "2 days ago"
         }
       ]
     ],
     "resource": "streampipes",
     "sponsor": "Incubator",
     "startDate": "2019-11-11",
-    "statusAge": 19,
+    "statusAge": 20,
     "statusLastUpdated": "2022-10-21",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-streampipes.git;a=tree;hb=HEAD",
@@ -5080,6 +5090,8 @@
         "qinkun",
         "rduan",
         "rundongzhou",
+        "sanhongli",
+        "shaojunwang",
         "uraj",
         "ya0guang",
         "yjing",
@@ -5090,7 +5102,7 @@
         "ziyilin",
         "zjshen"
       ],
-      "numberCommitters": 22,
+      "numberCommitters": 24,
       "numberCommittersNew": 0,
       "numberPMCEquals": false,
       "numberPMCMembers": 17,
@@ -5188,7 +5200,7 @@
         {
           "description": "Apache Teaclave (incubating) is an open source universal secu...",
           "last_update_int": 1667255186,
-          "last_update_txt": "8 days ago"
+          "last_update_txt": "9 days ago"
         }
       ],
       [
@@ -5204,7 +5216,7 @@
         {
           "description": "Apache Teaclave (incubating) SGX SDK helps developers to writ...",
           "last_update_int": 1667657779,
-          "last_update_txt": "3 days ago"
+          "last_update_txt": "4 days ago"
         }
       ],
       [
@@ -5220,7 +5232,7 @@
         {
           "description": "Teaclave specification and proofs.",
           "last_update_int": 1643487149,
-          "last_update_txt": "40 weeks ago"
+          "last_update_txt": "41 weeks ago"
         }
       ],
       [
@@ -5228,14 +5240,14 @@
         {
           "description": "Apache Teaclave Website",
           "last_update_int": 1667936538,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
         }
       ]
     ],
     "resource": "teaclave",
     "sponsor": "Incubator",
     "startDate": "2019-08-20",
-    "statusAge": 86,
+    "statusAge": 87,
     "statusLastUpdated": "2022-08-15",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-teaclave.git;a=tree;hb=HEAD",
@@ -5401,7 +5413,7 @@
     "resource": "toree",
     "sponsor": "Incubator",
     "startDate": "2015-12-02",
-    "statusAge": 843,
+    "statusAge": 844,
     "statusLastUpdated": "2020-07-19",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-toree.git;a=tree;hb=HEAD",
@@ -5541,7 +5553,7 @@
     "resource": "training",
     "sponsor": "Incubator",
     "startDate": "2019-02-21",
-    "statusAge": 1350,
+    "statusAge": 1351,
     "statusLastUpdated": "2019-02-28",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-training.git;a=tree;hb=HEAD",
@@ -5671,7 +5683,7 @@
         {
           "description": "Apache Tuweni is a set of libraries and other tools to aid de...",
           "last_update_int": 1665964615,
-          "last_update_txt": "23 days ago"
+          "last_update_txt": "24 days ago"
         }
       ],
       [
@@ -5679,14 +5691,14 @@
         {
           "description": "Apache tuweni website",
           "last_update_int": 1665262471,
-          "last_update_txt": "4 weeks ago"
+          "last_update_txt": "5 weeks ago"
         }
       ]
     ],
     "resource": "tuweni",
     "sponsor": "Incubator",
     "startDate": "2019-03-25",
-    "statusAge": 762,
+    "statusAge": 763,
     "statusLastUpdated": "2020-10-08",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-tuweni.git;a=tree;hb=HEAD",
@@ -5804,22 +5816,22 @@
         {
           "description": "Uniffle is a high performance, general purpose Remote Shuffle...",
           "last_update_int": 1667793587,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
+          "last_update_txt": "3 days ago"
         }
       ],
       [
         "incubator-uniffle-website",
         {
           "description": "Apache Uniffle(Incubating) Website",
-          "last_update_int": 1666774222,
-          "last_update_txt": "14 days ago"
+          "last_update_int": 1668006595,
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
         }
       ]
     ],
     "resource": "uniffle",
     "sponsor": "Incubator",
     "startDate": "2022-06-06",
-    "statusAge": 16,
+    "statusAge": 17,
     "statusLastUpdated": "2022-10-24",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-uniffle.git;a=tree;hb=HEAD",
@@ -5935,7 +5947,7 @@
     "resource": "wayang",
     "sponsor": "Incubator",
     "startDate": "2020-12-16",
-    "statusAge": 656,
+    "statusAge": 657,
     "statusLastUpdated": "2021-01-22",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-wayang.git;a=tree;hb=HEAD",
