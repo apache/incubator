@@ -86,11 +86,15 @@
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-annotator.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/annotator/KEYS",
       "svn": "",
-      "tracker": "https://issues.apache.org/jira/browse/ANNO",
+      "tracker": "",
       "wiki": "https://cwiki.apache.org/confluence/display/ANNO",
       "www": "http://annotator.incubator.apache.org"
     },
     "zFixMeList": [
+      [
+        "10",
+        "Has not provided an issue tracker link"
+      ],
       [
         "15",
         "Project does not have 'dev' mailing list"
@@ -177,8 +181,8 @@
         "incubator-baremaps",
         {
           "description": "Create custom vector tiles from OpenStreetMap and other data ...",
-          "last_update_int": 1669813990,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_int": 1669885783,
+          "last_update_txt": "<span style='color: #070;'>&lt;15 minutes ago</span>"
         }
       ],
       [
@@ -378,7 +382,7 @@
         {
           "description": "brpc is an Industrial-grade RPC framework using C++ Language,...",
           "last_update_int": 1669817815,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
         }
       ],
       [
@@ -476,8 +480,8 @@
         "incubator-celeborn",
         {
           "description": "Apache Celeborn is an elastic and high-performance service fo...",
-          "last_update_int": 1669809836,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_int": 1669868204,
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
         }
       ],
       [
@@ -633,6 +637,7 @@
       ]
     ],
     "news": [
+      "2022-11-30 New Release Apache (incubating) version 2.6.0",
       "2022-08-22 New Committer, Oleksandr Polishchuk",
       "2022-06-01 New Committer, Tetiana Polyvana",
       "2022-03-15 New PPMC member, Alina Ignatiuk",
@@ -692,8 +697,8 @@
     "resource": "datalab",
     "sponsor": "Incubator",
     "startDate": "2018-08-20",
-    "statusAge": 30,
-    "statusLastUpdated": "2022-11-01",
+    "statusAge": 0,
+    "statusLastUpdated": "2022-12-01",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-datalab.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/datalab/KEYS",
@@ -797,8 +802,8 @@
         "incubator-devlake",
         {
           "description": "Apache DevLake is an open-source dev data platform to ingest,...",
-          "last_update_int": 1669812385,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_int": 1669880059,
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
         }
       ],
       [
@@ -813,8 +818,8 @@
         "incubator-devlake-website",
         {
           "description": "Apache Devlake Website",
-          "last_update_int": 1669388684,
-          "last_update_txt": "5 days ago"
+          "last_update_int": 1669885441,
+          "last_update_txt": "<span style='color: #070;'>&lt;30 minutes ago</span>"
         }
       ]
     ],
@@ -1012,8 +1017,8 @@
         "incubator-eventmesh",
         {
           "description": "EventMesh is a dynamic event-driven application runtime used ...",
-          "last_update_int": 1669820685,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_int": 1669886094,
+          "last_update_txt": "<span style='color: #070;'>&lt;15 minutes ago</span>"
         }
       ],
       [
@@ -1021,7 +1026,7 @@
         {
           "description": "Apache EventMesh (Incubating) Website",
           "last_update_int": 1669790832,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
         }
       ]
     ],
@@ -1452,7 +1457,7 @@
         {
           "description": "Apache Heron (Incubating) is a realtime, distributed, fault-t...",
           "last_update_int": 1666534329,
-          "last_update_txt": "5 weeks ago"
+          "last_update_txt": "6 weeks ago"
         }
       ]
     ],
@@ -1574,8 +1579,8 @@
         "incubator-hugegraph",
         {
           "description": "A graph database that supports more than 100+ billion data, h...",
-          "last_update_int": 1669775329,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_int": 1669882725,
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
         }
       ],
       [
@@ -1583,7 +1588,7 @@
         {
           "description": "HugeGraph Commons - include common library & RPC module",
           "last_update_int": 1669794316,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
         }
       ],
       [
@@ -1591,7 +1596,7 @@
         {
           "description": "HugeGraph Computer - A distributed graph processing system fo...",
           "last_update_int": 1669824573,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
         }
       ],
       [
@@ -1607,7 +1612,7 @@
         {
           "description": "HugeGraph toolchain - include a series useful graph modules",
           "last_update_int": 1669829505,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
         }
       ],
       [
@@ -1746,7 +1751,7 @@
         {
           "description": "Kvrocks is a distributed key value NoSQL database that uses R...",
           "last_update_int": 1669478281,
-          "last_update_txt": "4 days ago"
+          "last_update_txt": "5 days ago"
         }
       ],
       [
@@ -1923,7 +1928,7 @@
         {
           "description": "Apache Kyuubi is a distributed and multi-tenant gateway to pr...",
           "last_update_int": 1669818888,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
         }
       ],
       [
@@ -2267,8 +2272,8 @@
         "incubator-linkis",
         {
           "description": "Apache Linkis builds a computation middleware layer to facili...",
-          "last_update_int": 1669819917,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_int": 1669880832,
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
         }
       ],
       [
@@ -2579,7 +2584,7 @@
         {
           "description": "Apache Marvin-AI",
           "last_update_int": 1668785272,
-          "last_update_txt": "12 days ago"
+          "last_update_txt": "13 days ago"
         }
       ],
       [
@@ -3007,7 +3012,7 @@
         {
           "description": "Apache nemo",
           "last_update_int": 1667923501,
-          "last_update_txt": "22 days ago"
+          "last_update_txt": "23 days ago"
         }
       ]
     ],
@@ -3166,7 +3171,7 @@
         {
           "description": "Apache NLPCraft - API to convert natural language into actions.",
           "last_update_int": 1669298369,
-          "last_update_txt": "6 days ago"
+          "last_update_txt": "7 days ago"
         }
       ],
       [
@@ -3417,8 +3422,8 @@
         "nuttx",
         {
           "description": "Apache NuttX is a mature, real-time embedded operating system...",
-          "last_update_int": 1669830676,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_int": 1669878483,
+          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
         }
       ],
       [
@@ -3426,7 +3431,7 @@
         {
           "description": "Apache NuttX Apps is a collection of tools, shells, network u...",
           "last_update_int": 1669668860,
-          "last_update_txt": "2 days ago"
+          "last_update_txt": "3 days ago"
         }
       ],
       [
@@ -3442,7 +3447,7 @@
         {
           "description": "Apache NuttX Website",
           "last_update_int": 1669853650,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
         }
       ]
     ],
@@ -3594,7 +3599,7 @@
         {
           "description": "Apache module for rewriting web pages to reduce latency and b...",
           "last_update_int": 1667750791,
-          "last_update_txt": "24 days ago"
+          "last_update_txt": "25 days ago"
         }
       ],
       [
@@ -3777,7 +3782,7 @@
         "incubator-pegasus",
         {
           "description": "Apache Pegasus - A horizontally scalable, strongly consistent...",
-          "last_update_int": 1669818593,
+          "last_update_int": 1669861324,
           "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
         }
       ],
@@ -3943,7 +3948,7 @@
         {
           "description": "Build highly concurrent, distributed, and resilient message-d...",
           "last_update_int": 1669830203,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
         }
       ],
       [
@@ -3951,7 +3956,7 @@
         {
           "description": "Apache Pekko Connectors is a Reactive Enterprise Integration ...",
           "last_update_int": 1669054743,
-          "last_update_txt": "9 days ago"
+          "last_update_txt": "10 days ago"
         }
       ],
       [
@@ -3967,7 +3972,7 @@
         {
           "description": "Apache Pekko gRPC",
           "last_update_int": 1668540880,
-          "last_update_txt": "15 days ago"
+          "last_update_txt": "16 days ago"
         }
       ],
       [
@@ -4007,7 +4012,7 @@
         {
           "description": "Asynchronously writes journal and snapshot entries to configu...",
           "last_update_int": 1668458044,
-          "last_update_txt": "16 days ago"
+          "last_update_txt": "17 days ago"
         }
       ],
       [
@@ -4039,7 +4044,7 @@
         {
           "description": "Apache Pekko Sample Projects",
           "last_update_int": 1667418838,
-          "last_update_txt": "28 days ago"
+          "last_update_txt": "29 days ago"
         }
       ]
     ],
@@ -4326,7 +4331,7 @@
         {
           "description": "Software for ingesting data into SDAP NEXUS",
           "last_update_int": 1669829701,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
         }
       ],
       [
@@ -4342,7 +4347,7 @@
         {
           "description": "Apache sdap (Incubating)",
           "last_update_int": 1669850160,
-          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
         }
       ],
       [
@@ -4350,7 +4355,7 @@
         {
           "description": "Google Protobuf definition of a SDAP NEXUS Tile with bindings...",
           "last_update_int": 1669140343,
-          "last_update_txt": "8 days ago"
+          "last_update_txt": "9 days ago"
         }
       ],
       [
@@ -4460,10 +4465,11 @@
       "numberCommitters": 27,
       "numberCommittersNew": 0,
       "numberPMCEquals": false,
-      "numberPMCMembers": 16,
+      "numberPMCMembers": 17,
       "owners": [
         "djkevincr",
         "fanjia",
+        "gaojun2048",
         "gaoyingju",
         "guowei",
         "jbonofre",
@@ -4620,8 +4626,8 @@
         "incubator-seatunnel",
         {
           "description": "SeaTunnel is a distributed, high-performance data integration...",
-          "last_update_int": 1669857888,
-          "last_update_txt": "<span style='color: #070;'>&lt;15 minutes ago</span>"
+          "last_update_int": 1669877464,
+          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
         }
       ],
       [
@@ -4636,8 +4642,8 @@
         "incubator-seatunnel-website",
         {
           "description": "Apache SeaTunnel documents",
-          "last_update_int": 1669785003,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_int": 1669871369,
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
         }
       ]
     ],
@@ -4789,7 +4795,7 @@
         {
           "description": "Apache Sedona Website",
           "last_update_int": 1668627859,
-          "last_update_txt": "14 days ago"
+          "last_update_txt": "15 days ago"
         }
       ]
     ],
@@ -5001,8 +5007,8 @@
         "incubator-streampark",
         {
           "description": "StreamPark, Make stream processing easier! easy-to-use stream...",
-          "last_update_int": 1669817427,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_int": 1669873497,
+          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
         }
       ],
       [
@@ -5176,7 +5182,7 @@
         {
           "description": "Apache Teaclave (incubating) Java TEE SDK is an open source u...",
           "last_update_int": 1669787853,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
         }
       ],
       [
@@ -5184,7 +5190,7 @@
         {
           "description": "Apache Teaclave (incubating) SGX SDK helps developers to writ...",
           "last_update_int": 1669795231,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
         }
       ],
       [
@@ -5374,7 +5380,7 @@
         {
           "description": "Apache Toree website (Incubating)",
           "last_update_int": 1598215469,
-          "last_update_txt": "118 weeks ago"
+          "last_update_txt": "119 weeks ago"
         }
       ]
     ],
@@ -5651,7 +5657,7 @@
         {
           "description": "Apache Tuweni is a set of libraries and other tools to aid de...",
           "last_update_int": 1669697145,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
+          "last_update_txt": "2 days ago"
         }
       ],
       [
