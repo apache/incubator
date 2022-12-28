@@ -86,15 +86,11 @@
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-annotator.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/annotator/KEYS",
       "svn": "",
-      "tracker": "",
+      "tracker": "https://issues.apache.org/jira/browse/ANNO",
       "wiki": "https://cwiki.apache.org/confluence/display/ANNO",
       "www": "http://annotator.incubator.apache.org"
     },
     "zFixMeList": [
-      [
-        "10",
-        "Has not provided an issue tracker link"
-      ],
       [
         "15",
         "Project does not have 'dev' mailing list"
@@ -2052,169 +2048,6 @@
       [
         "16",
         "Project does not have 'commits' mailing list"
-      ]
-    ]
-  },
-  "linkis": {
-    "description": "Apache Linkis builds a computation middleware layer to facilitate connection, governance and orchestration between the upper applications and the underlying data engines.",
-    "fullName": "Linkis",
-    "hasMailListCommits": "http://mail-archives.apache.org/mod_mbox/linkis-commits",
-    "hasMailListDev": "http://mail-archives.apache.org/mod_mbox/linkis-dev",
-    "ldap": {
-      "members": [
-        "aaronoops",
-        "alexkun",
-        "allenlliu",
-        "brianrongzhang",
-        "casion",
-        "cooperyang",
-        "davidhua",
-        "dlimeng",
-        "enjoyyin",
-        "fanningpj",
-        "jackxu2011",
-        "jackyxie",
-        "jshao",
-        "junping_du",
-        "kirkzhou",
-        "leebai",
-        "legendtkl",
-        "leojie",
-        "liangqilang",
-        "lidongdai",
-        "luxiaolong",
-        "peacewong",
-        "seayi",
-        "shaofengshi",
-        "shuaidi",
-        "suns",
-        "wangxiaogang",
-        "wangzhen",
-        "xujie",
-        "yangbao",
-        "zhangduo",
-        "zhanghuajin",
-        "zhiqiangtao"
-      ],
-      "numberCommitters": 33,
-      "numberCommittersNew": 13,
-      "numberPMCEquals": false,
-      "numberPMCMembers": 23,
-      "owners": [
-        "alexkun",
-        "brianrongzhang",
-        "cooperyang",
-        "davidhua",
-        "enjoyyin",
-        "jackxu2011",
-        "jackyxie",
-        "jshao",
-        "junping_du",
-        "kirkzhou",
-        "leebai",
-        "legendtkl",
-        "leojie",
-        "liangqilang",
-        "lidongdai",
-        "peacewong",
-        "seayi",
-        "shaofengshi",
-        "shuaidi",
-        "wangxiaogang",
-        "wangzhen",
-        "zhangduo",
-        "zhanghuajin"
-      ]
-    },
-    "mentors": [
-      [
-        "Duo Zhang",
-        "zhangduo"
-      ],
-      [
-        "Lidong Dai",
-        "lidongdai"
-      ],
-      [
-        "Shaofeng Shi",
-        "shaofengshi"
-      ],
-      [
-        "Saisai Shao",
-        "jshao"
-      ],
-      [
-        "Junping Du",
-        "junping_du"
-      ]
-    ],
-    "news": [
-      "2022-10-27 New Committer: PJ Fanning",
-      "2022-10-26 Apache Linkis (Incubating) release v1.3.0",
-      "2022-10-22 New PPMC: Ling Xu",
-      "2022-10-22 New PPMC: HuaJin Zhang",
-      "2022-10-14 New Committer: Zhiqiang Tao",
-      "2022-10-12 New Committer: Meng Li",
-      "2022-09-27 New Committer: Lin Wukang",
-      "2022-09-16 New Committer: Yang Bao",
-      "2022-09-16 New PPMC: Longping Jie",
-      "2022-09-06 Apache Linkis (Incubating) release v1.2.0",
-      "2022-08-13 New PPMC: Kelu Tao",
-      "2022-08-10 New Committer: Shun Sun",
-      "2022-08-10 New Committer: Ling Xu",
-      "2022-08-01 Apache Linkis (Incubating) release v1.1.3",
-      "2022-07-04 Apache Linkis (Incubating) release v1.1.2",
-      "2022-06-17 New Committer: Jie Xu",
-      "2022-06-17 New Committer: Xiaolong Lu",
-      "2022-06-16 New Committer: Huajin Zhang",
-      "2022-06-15 New Committer: Longping Jie",
-      "2022-06-15 New Committer: Kelu Tao",
-      "2022-05-13 First non DISCLAIMER-WIP Apache Linkis (Incubating) release v1.1.1",
-      "2022-04-15 Apache Linkis (Incubating) release v1.1.0",
-      "2022-02-24 New Committer: Chen Xia",
-      "2022-01-29 First Apache Linkis (Incubating) release v1.0.3",
-      "2021-08-02 Project enters incubation."
-    ],
-    "podlingName": "Linkis",
-    "rawReportingGroup": "group-2",
-    "releases": [],
-    "reportingGroup": "February, May, August, November",
-    "reportingMonthly": false,
-    "repositories": [
-      [
-        "linkis",
-        {
-          "description": "Apache Linkis builds a computation middleware layer to facili...",
-          "last_update_int": 1672232213,
-          "last_update_txt": "<span style='color: #070;'>&lt;15 minutes ago</span>"
-        }
-      ],
-      [
-        "linkis-website",
-        {
-          "description": "Apache Linkis documents",
-          "last_update_int": 1672229179,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
-        }
-      ]
-    ],
-    "resource": "linkis",
-    "sponsor": "Incubator",
-    "startDate": "2021-08-02",
-    "statusAge": 33,
-    "statusLastUpdated": "2022-11-25",
-    "urls": {
-      "git": "https://gitbox.apache.org/repos/asf?p=linkis.git;a=tree;hb=HEAD",
-      "keys": "",
-      "svn": "",
-      "tracker": "https://github.com/apache/incubator-linkis/issues",
-      "wiki": "https://cwiki.apache.org/confluence/display/Linkis",
-      "www": "https://linkis.incubator.apache.org"
-    },
-    "zFixMeList": [
-      [
-        "12",
-        "Release distribution area is not setup"
       ]
     ]
   },
@@ -5113,15 +4946,11 @@
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-teaclave.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/teaclave/KEYS",
       "svn": "",
-      "tracker": "",
+      "tracker": "https://issues.apache.org/jira/browse/XXX",
       "wiki": "",
       "www": "https://teaclave.incubator.apache.org"
     },
     "zFixMeList": [
-      [
-        "10",
-        "Has not provided an issue tracker link"
-      ],
       [
         "18",
         "Has not provided a wiki link"
