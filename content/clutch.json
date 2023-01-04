@@ -86,15 +86,11 @@
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-annotator.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/annotator/KEYS",
       "svn": "",
-      "tracker": "",
+      "tracker": "https://issues.apache.org/jira/browse/ANNO",
       "wiki": "https://cwiki.apache.org/confluence/display/ANNO",
       "www": "http://annotator.incubator.apache.org"
     },
     "zFixMeList": [
-      [
-        "10",
-        "Has not provided an issue tracker link"
-      ],
       [
         "15",
         "Project does not have 'dev' mailing list"
@@ -382,7 +378,7 @@
         {
           "description": "brpc is an Industrial-grade RPC framework using C++ Language,...",
           "last_update_int": 1672713900,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
         }
       ],
       [
@@ -773,8 +769,8 @@
         "incubator-devlake",
         {
           "description": "Apache DevLake is an open-source dev data platform to ingest,...",
-          "last_update_int": 1672751527,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_int": 1672797508,
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
         }
       ],
       [
@@ -790,7 +786,7 @@
         {
           "description": "Apache Devlake Website",
           "last_update_int": 1672755419,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
         }
       ]
     ],
@@ -1202,7 +1198,7 @@
         {
           "description": "Apache Flagon UserALE.js is a comprehensive, thin-client beha...",
           "last_update_int": 1672757591,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
         }
       ]
     ],
@@ -1567,8 +1563,8 @@
         "incubator-hugegraph",
         {
           "description": "A graph database that supports more than 100+ billion data, h...",
-          "last_update_int": 1672795006,
-          "last_update_txt": "<span style='color: #070;'>&lt;30 minutes ago</span>"
+          "last_update_int": 1672798636,
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
         }
       ],
       [
@@ -1863,8 +1859,8 @@
         "kyuubi",
         {
           "description": "Apache Kyuubi is a distributed and multi-tenant gateway to pr...",
-          "last_update_int": 1672749075,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_int": 1672796600,
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
         }
       ],
       [
@@ -2494,7 +2490,7 @@
         {
           "description": "Apache Milagro (Incubating)",
           "last_update_int": 1671198976,
-          "last_update_txt": "18 days ago"
+          "last_update_txt": "19 days ago"
         }
       ],
       [
@@ -3131,7 +3127,7 @@
         {
           "description": "gypified zlib for PageSpeed",
           "last_update_int": 1515854936,
-          "last_update_txt": "259 weeks ago"
+          "last_update_txt": "260 weeks ago"
         }
       ]
     ],
@@ -3832,7 +3828,7 @@
         {
           "description": "Software for ingesting data into SDAP NEXUS",
           "last_update_int": 1672783843,
-          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
         }
       ],
       [
@@ -3848,7 +3844,7 @@
         {
           "description": "Apache sdap (Incubating)",
           "last_update_int": 1672783397,
-          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
         }
       ],
       [
@@ -4144,8 +4140,8 @@
         "incubator-seatunnel",
         {
           "description": "SeaTunnel is a distributed, high-performance data integration...",
-          "last_update_int": 1672738983,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_int": 1672800615,
+          "last_update_txt": "<span style='color: #070;'>&lt;1 hour ago</span>"
         }
       ],
       [
@@ -4168,8 +4164,8 @@
         "incubator-seatunnel-website",
         {
           "description": "Apache SeaTunnel documents",
-          "last_update_int": 1672751229,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_int": 1672800210,
+          "last_update_txt": "<span style='color: #070;'>&lt;1 hour ago</span>"
         }
       ]
     ],
@@ -4379,13 +4375,13 @@
     "rawReportingGroup": "group-2",
     "releases": {},
     "reportingGroup": "February, May, August, November",
-    "reportingMonthly": true,
+    "reportingMonthly": false,
     "repositories": [
       [
         "incubator-streampark",
         {
           "description": "StreamPark, Make stream processing easier! easy-to-use stream...",
-          "last_update_int": 1672759901,
+          "last_update_int": 1672760384,
           "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
         }
       ],
@@ -4394,7 +4390,7 @@
         {
           "description": "Apache streampark Website",
           "last_update_int": 1672717084,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
         }
       ]
     ],
@@ -4613,15 +4609,11 @@
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-teaclave.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/teaclave/KEYS",
       "svn": "",
-      "tracker": "",
+      "tracker": "https://issues.apache.org/jira/browse/XXX",
       "wiki": "",
       "www": "https://teaclave.incubator.apache.org"
     },
     "zFixMeList": [
-      [
-        "10",
-        "Has not provided an issue tracker link"
-      ],
       [
         "18",
         "Has not provided a wiki link"
@@ -5053,8 +5045,8 @@
         "incubator-tuweni",
         {
           "description": "Apache Tuweni is a set of libraries and other tools to aid de...",
-          "last_update_int": 1672733653,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_int": 1672798706,
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
         }
       ],
       [
