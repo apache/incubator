@@ -86,15 +86,11 @@
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-annotator.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/annotator/KEYS",
       "svn": "",
-      "tracker": "",
+      "tracker": "https://issues.apache.org/jira/browse/ANNO",
       "wiki": "https://cwiki.apache.org/confluence/display/ANNO",
       "www": "http://annotator.incubator.apache.org"
     },
     "zFixMeList": [
-      [
-        "10",
-        "Has not provided an issue tracker link"
-      ],
       [
         "15",
         "Project does not have 'dev' mailing list"
@@ -634,8 +630,8 @@
         "incubator-devlake-website",
         {
           "description": "Apache Devlake Website",
-          "last_update_int": 1673968441,
-          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
+          "last_update_int": 1673981075,
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
         }
       ]
     ],
@@ -1052,7 +1048,7 @@
         {
           "description": "Apache Flagon UserALE.js is a comprehensive, thin-client beha...",
           "last_update_int": 1673247885,
-          "last_update_txt": "8 days ago"
+          "last_update_txt": "9 days ago"
         }
       ]
     ],
@@ -1442,7 +1438,7 @@
         {
           "description": "HugeGraph Website and Doc",
           "last_update_int": 1673898783,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
         }
       ],
       [
@@ -1487,6 +1483,85 @@
       [
         "16",
         "Project does not have 'commits' mailing list"
+      ]
+    ]
+  },
+  "kie": {
+    "description": "KIE (Knowledge is Everything) is a community of solutions and supporting tooling for knowledge engineering and process automation, focusing on events, rules, and workflows.",
+    "fullName": "KIE",
+    "hasMailListCommits": "",
+    "hasMailListDev": "",
+    "ldap": {},
+    "mentors": [
+      [
+        "Brian Proffitt",
+        "bkp"
+      ],
+      [
+        "Claus Ibsen",
+        "davsclaus"
+      ],
+      [
+        "Andrea Cosentino",
+        "acosentino"
+      ]
+    ],
+    "news": [],
+    "podlingName": "KIE",
+    "rawReportingGroup": "group-3",
+    "releases": [],
+    "reportingGroup": "March, June, September, December",
+    "reportingMonthly": false,
+    "repositories": "",
+    "resource": "kie",
+    "sponsor": "Incubator",
+    "startDate": "2023-01-13",
+    "statusAge": 0,
+    "statusLastUpdated": "",
+    "urls": {
+      "git": "",
+      "keys": "",
+      "svn": "",
+      "tracker": "",
+      "wiki": "",
+      "www": ""
+    },
+    "zFixMeList": [
+      [
+        "01",
+        "No project LDAP"
+      ],
+      [
+        "07",
+        "Status file is missing"
+      ],
+      [
+        "10",
+        "Has not provided an issue tracker link"
+      ],
+      [
+        "18",
+        "Has not provided a wiki link"
+      ],
+      [
+        "11",
+        "Website is missing"
+      ],
+      [
+        "12",
+        "Release distribution area is not setup"
+      ],
+      [
+        "15",
+        "Project does not have 'dev' mailing list"
+      ],
+      [
+        "16",
+        "Project does not have 'commits' mailing list"
+      ],
+      [
+        "17",
+        "No source code repository"
       ]
     ]
   },
@@ -1586,7 +1661,7 @@
         {
           "description": "Kvrocks is a distributed key value NoSQL database that uses R...",
           "last_update_int": 1673939184,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
         }
       ],
       [
@@ -2212,7 +2287,7 @@
         {
           "description": "Apache Milagro (Incubating)",
           "last_update_int": 1673246838,
-          "last_update_txt": "8 days ago"
+          "last_update_txt": "9 days ago"
         }
       ],
       [
@@ -3169,7 +3244,7 @@
         {
           "description": "Build highly concurrent, distributed, and resilient message-d...",
           "last_update_int": 1673975920,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
         }
       ],
       [
@@ -3225,7 +3300,7 @@
         {
           "description": "DynamoDBJournal for Apache Pekko Persistence",
           "last_update_int": 1673976059,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
         }
       ],
       [
@@ -3865,7 +3940,7 @@
         {
           "description": "SeaTunnel is a distributed, high-performance data integration...",
           "last_update_int": 1673970847,
-          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
         }
       ],
       [
@@ -4289,7 +4364,7 @@
         {
           "description": "Apache teaclave",
           "last_update_int": 1671778027,
-          "last_update_txt": "25 days ago"
+          "last_update_txt": "26 days ago"
         }
       ],
       [
