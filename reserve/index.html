@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>The Apache Incubator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <meta name="generator" content="JBake">
+
+    <!-- Le styles -->
+    <link href="css/incubator.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/asciidoctor.css" rel="stylesheet">
+    <link href="css/base.css" rel="stylesheet">
+    <link href="css/prettify.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <!--<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">-->
+    <link rel="shortcut icon" href="https://www.apache.org/favicon.ico">
+    <script src="https://www.apachecon.com/event-images/snippet.js"></script>
+  </head>
+  <body onload="prettyPrint()">
+    <div id="wrap">
+   
+
+
+	<!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/"><i class="icon-home"></i>Apache Incubator</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Policies <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="/policy/incubation.html">Incubation Policy</a></li>
+                <li><a href="/ip-clearance/">Intellectual Property Clearance</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Proposals <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="/guides/proposal.html">A Guide To Proposal Creation</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Podling Guides <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="/cookbook">Cookbook</a></li>
+              
+                <li><hr><a href="/guides/roles_and_responsibilities.html">Roles and Responsibilities</a></li>
+                <li><a href="/guides/committer.html">Committers</a></li>
+                <li><a href="/guides/ppmc.html">Podling Project Management Committee</a></li>
+                <li><a href="/guides/community.html">Guide to Successful Community Building</a></li>
+
+                <li><hr><a href="/guides/branding.html">Incubator Branding Guide</a></li>
+                <li><a href="/guides/publicity.html">Podling Publicity/Media Guidelines</a></li>
+                <li><a href="/guides/press-kit.html">Podling Press Kit</a></li>
+              
+                <li><hr><a href="/guides/transitioning_asf.html">Initial Code Import</a></li>
+                <li><a href="/guides/names.html">Podling Name Search Guide</a></li>
+                <li><a href="/guides/ip_clearance.html">Podling IP Clearance</a></li>
+
+                <li><hr><a href="/guides/sites.html">Podling Websites</a></li>
+                <li><a href="/guides/podling_sourcecontrol.html">Podling Source Control</a></li>
+
+                <li><hr><a href="/guides/releasemanagement.html">Release Management</a></li>
+                <li><a href="/guides/distribution.html">Release Distribution</a></li>
+              
+                <li><hr><a href="/guides/graduation.html">Guide to Successful Graduation</a></li>
+                <li><a href="/guides/retirement.html">Guide to Retirement</a></li>
+                <li><a href="/guides/transferring.html">Transferring Resources out of the Incubator</a></li>
+
+                <li><hr><a href="/projects/#current">Current Podlings</a></li>
+                <li><a href="/clutch/">Clutch Report</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">PMC Guides <b class="caret"></b></a>
+              <ul class="dropdown-menu">     
+                <li><a href="/guides/participation.html">Guide to Participation</a></li>
+                <li><a href="/guides/lists.html">Incubator Mailing Lists Guide</a></li>
+
+                <li><a href="/guides/chair.html">Incubator Chair Guide</a></li>  
+                <li><a href="/guides/mentor.html">Mentors' Guide</a></li>
+
+                <li><hr><a href="/guides/website.html">Updating the top-level Incubator website</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">ASF <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="https://www.apache.org/foundation/how-it-works.html">How Apache Works</a></li>
+                <li><a href="https://www.apache.org/dev/">Developer Documentation</a></li>
+                <li><a href="https://www.apache.org/foundation/">Foundation</a></li>
+                <li><a href="https://www.apache.org/legal/">Legal</a></li>
+		            <li><hr><a href="https://www.apache.org/licenses/">License</a></li>
+		            <li><a href="https://www.apache.org/security/">Security</a></li>
+                <li><a href="https://www.apache.org/foundation/sponsorship.html">Sponsorship</a></li>
+                <li><a href="https://www.apache.org/foundation/thanks.html">Thanks</a></li>
+		            <li><a href="https://www.apache.org/events/current-event">Current Events</a></li>
+              </ul>
+            </li>
+            <li><a href="/faq.html">FAQs</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 vcenter"><a href="https://www.apache.org/"><img src="https://www.apache.org/img/asf_logo.png" alt="The Apache Software Foundation" border="0" style="margin-top: 2px" width="200"></a></div>
+        <div class="col-md-4 vcenter"><a href="/"><img src="https://incubator.apache.org/images/incubator_feather_egg_logo_sm.png" alt="The Apache Software Foundation Incubator" border="0" style="margin-top: 2px" width="256"></a></div>
+        <div class="col-md-4 vcenter">
+	    <a href="https://www.apache.org/foundation/contributing.html"><img src="https://www.apache.org/images/SupportApache-small.png" height="64" width="64"></a>
+	    &nbsp;&nbsp;&nbsp;&nbsp;
+	    <a class="acevent" data-format="square" data-width="100" data-mode="light" data-event="random"></a>
+	</div>
+      </div>
+    </div>
+    <div class="top-container container">
+
+
+<div class="incubator-page-header">
+    <h1>The Apache Incubator</h1>
+</div>
+
+<div class="sect1">
+<h2 id="about_the_incubator">About The Incubator</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The Apache Incubator provides services to projects which want to enter the Apache Software Foundation (ASF).</p>
+</div>
+<div class="paragraph">
+<p>It helps those incoming projects (called "podlings") adopt the Apache <a href="http://apache.org/theapacheway/">style of governance and operation</a> and guides them to the ASF services available to our projects so they can become top-level ASF projects ("TLPs").</p>
+</div>
+<div class="paragraph">
+<p>The Incubator delegates a few mentors for each podling to act as liaisons with the various ASF teams: <a href="http://incubator.apache.org/whoweare.html#the_incubator_project_management_commitee_pmc">Incubator PMC</a>, <a href="https://selfserve.apache.org/">Infrastructure team</a>, etc., and facilitate the podling&#8217;s growth and operations.</p>
+</div>
+<div class="sect2">
+<h3 id="incubator_history">Incubator History</h3>
+<div class="paragraph">
+<p>The Incubator was created <a href="https://www.apache.org/foundation/records/minutes/2002/board_minutes_2002_10_16.txt"> in 2002</a>.  As of November 2019 it has helped 315 podlings, of which more than 200 have graduated. More than 300 mentors have guided and supported podlings. There are around 45 or 50 podlings in incubation at any one time, and incubation typically takes 1 1/2 years.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="incubator_cookbook">Incubator Cookbook</h3>
+<div class="paragraph">
+<p>Our <a href="http://incubator.apache.org/cookbook/">cookbook</a> helps potential podlings decide whether the ASF is a good fit for them and guides them through the steps required to become an ASF podling.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="incubator_talks">Incubator Talks</h3>
+<div class="paragraph">
+<p>There have been many Incubator talks at many conferences over the years. Here are a few of them.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>See a keynote <a href="https://www.youtube.com/watch?v=TQwrH0PlpZg">The Apache Way</a>, by Rich Bowen at MesosCon Europe in 2017 for a  good background of how the ASF operates and what its values are.</p>
+</li>
+<li>
+<p>For guidance on releases see <a href="https://www.youtube.com/watch?v=I0-lp1t9ee0">How to get your release through the Incubator</a> presented at ApacheCon North America 2017 and this <a href="http://training.apache.org/topics/ApacheWay/NavigatingASFIncubator/index.html">slide deck</a>, presented at ApacheCon North America 2019.</p>
+</li>
+<li>
+<p>A more general talk on <a href="https://www.youtube.com/watch?v=hpAv54KIgK8">Effective open source management</a> by Shane Curcuru, from ApacheCon North America 2017.</p>
+</li>
+<li>
+<p>For how to get out of the Incubator and become a successful TLP see John D. Ament talk <a href="https://www.youtube.com/watch?v=yWurOHvm5WM">Navigating the Incubator Trenches</a> from ApacheCon North America 2017.</p>
+</li>
+<li>
+<p><a href="https://www.youtube.com/watch?v=SCDv2hUgOjU">Apache Incubator: the gateway into the Apache Way</a> by Roman Shaposhnik and Suresh Marru at ApacheCon North America 2014.</p>
+</li>
+<li>
+<p>See also the <a href="http://www.youtube.com/watch?v=KopPbWS87fw">Life In The Apache Incubator video</a>, in which former Incubator PMC chair Jukka Zitting presents the Incubator, from ApacheCon Europe 2012.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="about_the_apache_software_foundation">About The Apache Software Foundation</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The Apache Software Foundation provides organizational, legal, and financial support for a broad range of open source software projects.</p>
+</div>
+<div class="paragraph">
+<p>The Foundation provides an established framework for intellectual property and financial contributions that simultaneously limits potential legal exposure for the contributors.</p>
+</div>
+<div class="paragraph">
+<p>Through a collaborative and meritocratic development process known as "<a href="http://apache.org/theapacheway/">the Apache Way</a>", Apache projects deliver enterprise-grade, freely-available software products that attract large communities of users.</p>
+</div>
+<div class="paragraph">
+<p>The pragmatic and business-friendly <a href="http://apache.org/licenses/LICENSE-2.0">Apache License</a> makes it easy for all users, commercial and individual, to deploy Apache products. <a href="http://www.apache.org/foundation/">Learn more about the ASF</a> as a whole, or engage with the <a href="https://community.apache.org/">Apache Community Development</a> project with your general questions about the ASF.</p>
+</div>
+</div>
+</div>
+
+<b>Our Current Podlings:</b>
+
+<div class="container-fluid">
+    <div class="row">
+        
+        <div class="col-md-2"><a href="/projects/annotator.html">Annotator</a></div>
+        
+        <div class="col-md-2"><a href="/projects/baremaps.html">Baremaps</a></div>
+        
+        <div class="col-md-2"><a href="/projects/celeborn.html">Celeborn</a></div>
+        
+        <div class="col-md-2"><a href="/projects/datalab.html">DataLab</a></div>
+        
+        <div class="col-md-2"><a href="/projects/devlake.html">DevLake</a></div>
+        
+        <div class="col-md-2"><a href="/projects/eventmesh.html">EventMesh</a></div>
+        
+        <div class="col-md-2"><a href="/projects/flagon.html">Flagon</a></div>
+        
+        <div class="col-md-2"><a href="/projects/heron.html">Heron</a></div>
+        
+        <div class="col-md-2"><a href="/projects/hugegraph.html">HugeGraph</a></div>
+        
+        <div class="col-md-2"><a href="/projects/kie.html">KIE</a></div>
+        
+        <div class="col-md-2"><a href="/projects/kvrocks.html">Kvrocks</a></div>
+        
+        <div class="col-md-2"><a href="/projects/liminal.html">Liminal</a></div>
+        
+        <div class="col-md-2"><a href="/projects/livy.html">Livy</a></div>
+        
+        <div class="col-md-2"><a href="/projects/marvin.html">Marvin-AI</a></div>
+        
+        <div class="col-md-2"><a href="/projects/teaclave.html">Teaclave</a></div>
+        
+        <div class="col-md-2"><a href="/projects/milagro.html">Milagro</a></div>
+        
+        <div class="col-md-2"><a href="/projects/nemo.html">Nemo</a></div>
+        
+        <div class="col-md-2"><a href="/projects/nlpcraft.html">NLPCraft</a></div>
+        
+        <div class="col-md-2"><a href="/projects/pagespeed.html">PageSpeed</a></div>
+        
+        <div class="col-md-2"><a href="/projects/pegasus.html">Pegasus</a></div>
+        
+        <div class="col-md-2"><a href="/projects/pekko.html">Pekko</a></div>
+        
+        <div class="col-md-2"><a href="/projects/ponymail.html">Pony Mail</a></div>
+        
+        <div class="col-md-2"><a href="/projects/sdap.html">SDAP</a></div>
+        
+        <div class="col-md-2"><a href="/projects/seatunnel.html">SeaTunnel</a></div>
+        
+        <div class="col-md-2"><a href="/projects/spot.html">Spot</a></div>
+        
+        <div class="col-md-2"><a href="/projects/streampark.html">StreamPark</a></div>
+        
+        <div class="col-md-2"><a href="/projects/training.html">Training</a></div>
+        
+        <div class="col-md-2"><a href="/projects/toree.html">Toree</a></div>
+        
+        <div class="col-md-2"><a href="/projects/tuweni.html">Tuweni</a></div>
+        
+        <div class="col-md-2"><a href="/projects/uniffle.html">Uniffle</a></div>
+        
+        <div class="col-md-2"><a href="/projects/wayang.html">Wayang</a></div>
+        
+    </div>
+</div>
+<br/><br/>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-3 text-center"><a href="/projects/#current">List of Current Podlings</a></div>
+        <div class="col-lg-3 text-center"><a href="/projects/#graduated">Graduated Projects</a></div>
+        <div class="col-lg-3 text-center"><a href="/projects/#retired">Retired Podlings</a></div>
+        <div class="col-lg-3 text-center"><a href="/clutch/">Current Clutch Analysis</a></div>
+    </div>
+</div>
+<br/><br/>
+		</div>
+		<div id="push"></div>
+    </div>
+
+    <div id="footer">
+      <div class="container">
+          <p class="muted credit">&copy; 2023 The Apache Software Foundation | Licensed under the Apache License, Version 2.0.<br/>
+          Apache Incubator, Apache, the Apache feather logo, and the Apache Incubator project logo are trademarks or registered trademarks of The Apache Software Foundation.</p>
+      </div>
+    </div>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/prettify.js"></script>
+    <script src="js/readingTime.js"></script>
+    <script src="js/incubator.js"></script>
+  </body>
+</html>

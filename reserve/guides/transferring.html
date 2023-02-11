@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Transferring Resources out of the Incubator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <meta name="generator" content="JBake">
+
+    <!-- Le styles -->
+    <link href="../css/incubator.css" rel="stylesheet">
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/asciidoctor.css" rel="stylesheet">
+    <link href="../css/base.css" rel="stylesheet">
+    <link href="../css/prettify.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <!--<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">-->
+    <link rel="shortcut icon" href="https://www.apache.org/favicon.ico">
+    <script src="https://www.apachecon.com/event-images/snippet.js"></script>
+  </head>
+  <body onload="prettyPrint()">
+    <div id="wrap">
+   
+
+
+	<!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/"><i class="icon-home"></i>Apache Incubator</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Policies <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="/policy/incubation.html">Incubation Policy</a></li>
+                <li><a href="/ip-clearance/">Intellectual Property Clearance</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Proposals <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="/guides/proposal.html">A Guide To Proposal Creation</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Podling Guides <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="/cookbook">Cookbook</a></li>
+              
+                <li><hr><a href="/guides/roles_and_responsibilities.html">Roles and Responsibilities</a></li>
+                <li><a href="/guides/committer.html">Committers</a></li>
+                <li><a href="/guides/ppmc.html">Podling Project Management Committee</a></li>
+                <li><a href="/guides/community.html">Guide to Successful Community Building</a></li>
+
+                <li><hr><a href="/guides/branding.html">Incubator Branding Guide</a></li>
+                <li><a href="/guides/publicity.html">Podling Publicity/Media Guidelines</a></li>
+                <li><a href="/guides/press-kit.html">Podling Press Kit</a></li>
+              
+                <li><hr><a href="/guides/transitioning_asf.html">Initial Code Import</a></li>
+                <li><a href="/guides/names.html">Podling Name Search Guide</a></li>
+                <li><a href="/guides/ip_clearance.html">Podling IP Clearance</a></li>
+
+                <li><hr><a href="/guides/sites.html">Podling Websites</a></li>
+                <li><a href="/guides/podling_sourcecontrol.html">Podling Source Control</a></li>
+
+                <li><hr><a href="/guides/releasemanagement.html">Release Management</a></li>
+                <li><a href="/guides/distribution.html">Release Distribution</a></li>
+              
+                <li><hr><a href="/guides/graduation.html">Guide to Successful Graduation</a></li>
+                <li><a href="/guides/retirement.html">Guide to Retirement</a></li>
+                <li><a href="/guides/transferring.html">Transferring Resources out of the Incubator</a></li>
+
+                <li><hr><a href="/projects/#current">Current Podlings</a></li>
+                <li><a href="/clutch/">Clutch Report</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">PMC Guides <b class="caret"></b></a>
+              <ul class="dropdown-menu">     
+                <li><a href="/guides/participation.html">Guide to Participation</a></li>
+                <li><a href="/guides/lists.html">Incubator Mailing Lists Guide</a></li>
+
+                <li><a href="/guides/chair.html">Incubator Chair Guide</a></li>  
+                <li><a href="/guides/mentor.html">Mentors' Guide</a></li>
+
+                <li><hr><a href="/guides/website.html">Updating the top-level Incubator website</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">ASF <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="https://www.apache.org/foundation/how-it-works.html">How Apache Works</a></li>
+                <li><a href="https://www.apache.org/dev/">Developer Documentation</a></li>
+                <li><a href="https://www.apache.org/foundation/">Foundation</a></li>
+                <li><a href="https://www.apache.org/legal/">Legal</a></li>
+		            <li><hr><a href="https://www.apache.org/licenses/">License</a></li>
+		            <li><a href="https://www.apache.org/security/">Security</a></li>
+                <li><a href="https://www.apache.org/foundation/sponsorship.html">Sponsorship</a></li>
+                <li><a href="https://www.apache.org/foundation/thanks.html">Thanks</a></li>
+		            <li><a href="https://www.apache.org/events/current-event">Current Events</a></li>
+              </ul>
+            </li>
+            <li><a href="/faq.html">FAQs</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 vcenter"><a href="https://www.apache.org/"><img src="https://www.apache.org/img/asf_logo.png" alt="The Apache Software Foundation" border="0" style="margin-top: 2px" width="200"></a></div>
+        <div class="col-md-4 vcenter"><a href="/"><img src="https://incubator.apache.org/images/incubator_feather_egg_logo_sm.png" alt="The Apache Software Foundation Incubator" border="0" style="margin-top: 2px" width="256"></a></div>
+        <div class="col-md-4 vcenter">
+	    <a href="https://www.apache.org/foundation/contributing.html"><img src="https://www.apache.org/images/SupportApache-small.png" height="64" width="64"></a>
+	    &nbsp;&nbsp;&nbsp;&nbsp;
+	    <a class="acevent" data-format="square" data-width="100" data-mode="light" data-event="random"></a>
+	</div>
+      </div>
+    </div>
+    <div class="top-container container">
+
+
+<div class="page-header">
+    <h1>Guide :: Transferring Resources out of the Incubator</h1>
+</div>
+
+<div class="article-body">
+
+Estimated Reading Time: <span class="eta"></span>
+
+<p><div id="toc" class="toc">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#life_after_graduation">Life After Graduation</a>
+<ul class="sectlevel2">
+<li><a href="#handover">Handover</a></li>
+<li><a href="#first_steps_outside_the_incubator">First Steps Outside the Incubator</a></li>
+<li><a href="#final_revision_of_podling_incubation_records">Final Revision of Podling Incubation Records</a></li>
+<li><a href="#new_responsibilities">New Responsibilities</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="life_after_graduation">Life After Graduation</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Once a project has been established by the board, or a sub-project consumed by a TLP, this guide should be followed to migrate
+the podling from the Incubator to their own TLP.</p>
+</div>
+<div class="sect2">
+<h3 id="handover">Handover</h3>
+<div class="paragraph">
+<p>This is the transfer of virtual resources from the care of
+the <a href="/guides/roles_and_responsibilities.html#incubator_project_management_committee_ipmc">IPMC</a>
+to the care of either the new or existing top
+level project taking charge of the graduating community.</p>
+</div>
+<div class="sect3">
+<h4 id="graduating_as_subproject">Graduating as Subproject</h4>
+<div class="paragraph">
+<p>This is the simple case. The
+<a href="/guides/roles_and_responsibilities.html#chair_of_the_incubator_pmc">IPMC Chair</a> and the Chair of the project accepting the
+graduating community organize the handover between
+themselves.</p>
+</div>
+<div class="paragraph">
+<p>You do need to update the Incubator&#8217;s podlings file. See <a href="/cookbook/podlings-xml.html#graduated_into_the_pmc_that_sponsored_it">Podling XML Examples</a>.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="graduating_as_new_top_level_project">Graduating as New Top Level Project</h4>
+<div class="sect4">
+<h5 id="board_resolution_and_roster_appointment">Board resolution and roster appointment</h5>
+<div class="paragraph">
+<p>When graduating to a new project, the process is more
+complex. Creating a new project requires a
+<a href="graduation.html#preparing_a_charter">resolution</a>
+to be passed by the <a href="http://www.apache.org/foundation/board/">Board</a>.
+You may look at older minutes from the <a href="http://www.apache.org/foundation/board/calendar.html">calendar</a> and check for "Establish ProjectName".
+<a href="https://whimsy.apache.org/board/agenda/">Board Agenda Tool</a> has an "Add Item" button that can be used to add the Graduation Resolution to the Board Agenda.</p>
+</div>
+<div class="paragraph">
+<p>The Board votes on graduation resolutions at their monthly meeting.  If the Board votes to pass the resolution, that then appoints
+the listed Project Management Committee including:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>a Chair for the new project aka PMC Chair. The Chair will also be appointed an
+  <a href="http://www.apache.org/foundation/">Officer</a>
+  of the Apache Software Foundation. This allows them
+access to official resources of the foundation as well
+as granting power to act on behalf of Apache within the scope of their project&#8217;s activities.</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+Usually once this happens, the secretary will
+inform the new chair.
+Occasionally, this will be missed: if more than 72
+hours has passed since the Board meeting, it may be
+worth pinging the board to request confirmation.
+</td>
+</tr>
+</table>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>the initial members of Project Management Committee aka PMC members.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect4">
+<h5 id="pmc_chair_todo_list">PMC Chair Todo List</h5>
+<div class="paragraph">
+<p>Once appointed, the new Chair needs to:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Subscribe to the <strong>board</strong> mailing list</p>
+</li>
+<li>
+<p>Ensure that they have been added to
+<a href="https://people.apache.org/phonebook.html?service=pmc-chairs">the PMC chairs group (pmc-chairs) in LDAP</a>.</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+The ASF Secretary should do this without any action on the part
+of the new chair. As with above, if it has not happened within
+72 hours of the resolution passing, contact the secretary to remind them.
+</td>
+</tr>
+</table>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Check out the <a href="https://svn.apache.org/repos/private/foundation/officers"><strong>foundation/officers</strong></a> folder from the private repository.
+Users with member or pmc-chairs karma can do this.</p>
+</li>
+<li>
+<p>Add yourself to the <mark>foundation/officers/affiliations.txt</mark> file with the appropriate information.</p>
+</li>
+<li>
+<p>Add your details to the foundation web site Officer list at <a href="http://www.apache.org/foundation/index.html">http://www.apache.org/foundation/index.html</a>
+(in SVN at <a href="https://svn.apache.org/repos/asf/infrastructure/site/trunk/content/foundation/">https://svn.apache.org/repos/asf/infrastructure/site/trunk/content/foundation/</a>)</p>
+</li>
+<li>
+<p>Review appropriate documentation:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="http://www.apache.org/dev/pmc.html#chair">PMC Chair Duties</a></p>
+</li>
+<li>
+<p>PMC <a href="http://www.apache.org/dev/#pmc">documentation</a></p>
+</li>
+<li>
+<p>Incubator <a href="http://incubator.apache.org/guides/chair.html">Chair guide</a></p>
+</li>
+<li>
+<p>Reporting <a href="http://www.apache.org/foundation/board/calendar.html">calendar</a></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Understand the reporting schedule with the <a href="/guides/roles_and_responsibilities.html#board">Board</a>. For
+the first three months after graduation this will
+be monthly. After that, the project should slot
+into a quarterly reporting schedule. Now is a good time to remove
+the project from the Incubator reporting schedule by updating the podlings.xml file. See <a href="/cookbook/podlings-xml.html#graduated_as_an_apache_tlp">Podling XML Examples</a>.</p>
+</li>
+<li>
+<p>Ensure the PMC is added to the committee-info.txt file at <a href="https://svn.apache.org/repos/private/committers/board/committee-info.txt" class="bare">https://svn.apache.org/repos/private/committers/board/committee-info.txt</a>
+There are 3 sections which need to be updated; see instructions in the file, otherwise update it in <a href="https://whimsy.apache.org/roster/">Whimsy&#8217;s Roster Tool</a>
+You may need to get a member to help with this, such as your mentors.</p>
+</li>
+<li>
+<p>They should then be able to start assembling the new
+<a href="http://www.apache.org/foundation/how-it-works.html#structure">PMC</a>.
+The starting membership is listed in the
+<a href="graduation.html#preparing_a_charter">resolution</a>. However, the Chair of the new project
+needs to ensure that private list is created and the
+membership subscribed.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect4">
+<h5 id="pmc_todo_list">PMC Todo List</h5>
+<div class="paragraph">
+<p>Once appointed, Members of the new PMC need to:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Subscribe to the private mailing list for the project, if they aren&#8217;t already subscribed from their PPMC membership.</p>
+</li>
+<li>
+<p>Review appropriate documentation:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Apache <a href="http://www.apache.org/dev/pmc.html">PMC Guide</a></p>
+</li>
+<li>
+<p>Related <a href="http://www.apache.org/dev/#pmc">documentation</a></p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Once all this is in place, resources can start to be
+handed over to the new project. See next section.</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+Please continue to hang around the Incubator and help
+new podlings have an easier time than you did!
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="first_steps_outside_the_incubator">First Steps Outside the Incubator</h3>
+<div class="paragraph">
+<p>Graduation is the first step in what is hopefully a long road.
+There are some issues which incubation may not cover.</p>
+</div>
+<div class="sect3">
+<h4 id="transferring_resources">Transferring Resources</h4>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+Starting the following steps require that the resolution was passed by the board.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>When a project graduates, then the infrastructure
+resources (mailing lists, websites, source, etc.) need to
+be transferred from the Incubator to a project&#8217;s new home.</p>
+</div>
+<div class="paragraph">
+<p>Although the below checklist is still generally useful, <strong>the infrastructure process has been streamlined</strong>, see
+<a href="http://www.apache.org/dev/infra-contact#requesting-graduation">requesting graduation</a>.
+You might also want to check JIRA checklist tickets for projects that graduated in the last month or two.  This process is known as "TLP Parent Request"</p>
+</div>
+<div class="paragraph">
+<p>Checklist:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Update the Incubator status records</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Like the rest of incubation, graduation is a process. Updating your status records as you progress will enable others to assist.</p>
+</li>
+<li>
+<p>Update the podling status page.  All sections should now be filled in
+including <strong>EXIT</strong>. Take some
+time to read carefully since this page
+forms the final public record for
+graduation.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Source</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Git repositories will be renamed to drop the <code>incubator-</code> prefix, please ensure that developers change their remotes.
+After you&#8217;ve created the TLP request, request the rename.</p>
+</li>
+<li>
+<p>SVN repositories will be moved from the incubator to other locations, if you need the move done please raise an infra ticket after the TLP Parent Request.</p>
+</li>
+<li>
+<p>Post an announcement to the development list telling everyone that the repository is about to be moved</p>
+</li>
+<li>
+<p>Post an announcement containing instructions for developers describing how to <mark>svn switch</mark> their workspaces</p>
+</li>
+<li>
+<p>Update site, jenkins, wikis, <strong>pom.xml</strong> and other resources to point to the new repository location.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Websites</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Since podlings receive standard domains, no changes are required</p>
+</li>
+<li>
+<p>Once graduated, your website will automatically redirect to remove the <strong>incubator</strong> subdomain</p>
+</li>
+<li>
+<p>If you have any fully qualified links to your <strong>podling.incubator.apache.org</strong> on your website change them</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Mailing lists</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Mailing lists no longer need to get moved, since podlings are given standard domains.</p>
+</li>
+<li>
+<p>If you use <strong>podling.incubator.apache.org</strong> format email addresses, please start using <strong>podling.apache.org</strong></p>
+</li>
+<li>
+<p>When using Maven: update <strong>pom.xml</strong> for
+the new mailing list address(es). Also update any
+documents on your website that show how to
+subscribe to the lists and/or find archives.</p>
+</li>
+<li>
+<p>Check project-private mailing list membership.  Mentors should be allowed to remain if they wish to do so.
+The subscriber list should otherwise match that on the resolution. See <a href="http://www.apache.org/dev/committers.html#mail-moderate">this</a> and the <a href="http://www.ezmlm.org/">EZMLM</a> "Moderator&#8217;s and Administrator&#8217;s Manual".</p>
+</li>
+<li>
+<p>Update mail addresses including:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>confluence commit messages (see adminstration documentation)</p>
+</li>
+<li>
+<p>issue tracking messages (see administration documentation)</p>
+</li>
+<li>
+<p>The chair should have karma to perform these tasks.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Double-check that all of your lists have sufficient active <a href="http://www.apache.org/dev/committers.html#mailing-list-moderators">moderators</a>.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Issue Tracking</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Ask infra to move the podling to its own top level category in JIRA, if using JIRA</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Distribution mirrors</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Dist area (dist.apache.org) <strong>release/${project}</strong> and <strong>dev/${project}</strong> folders can be created by PMC members.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Do not forget to copy KEYS file from <strong>release/incubator/${project}</strong> location.</p>
+</li>
+<li>
+<p>You have two major options then:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>you can <strong>keep</strong> incubating released artifacts at <strong>release/incubator/${project}</strong> and remove artifacts once your TLP project does their first release.</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+File a JIRA under your newly JIRA <strong>${project}</strong> space to remind to remove <strong>/dist/incubator/${project}/</strong> after the first release in <strong>/dist/${project}/</strong>
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>you can <strong>move</strong> the last incubating released artifacts to your <strong>release/${project}</strong>, taking care that incubating stay in path (you will need to
+change website and mail for the new location)</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="final_revision_of_podling_incubation_records">Final Revision of Podling Incubation Records</h3>
+<div class="paragraph">
+<p>When a project has finished its graduation steps, then the incubator resources
+need to be updated to indicate that the project is no
+longer incubating. Here are a few of the items that need
+to be done:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Update the svn <strong>incubator/trunk/content/projects/${project}.xml</strong> file to show the project&#8217;s status.</p>
+</li>
+<li>
+<p>Update the podling summary metadata file, <strong>incubator/trunk/content/podlings.xml</strong> svn file.  See the content/podlings.dtd and follow
+<a href="/cookbook/podlings-xml.html#graduated_as_an_apache_tlp">Podling XML Examples</a>:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Change the podling status to "graduated"; (The only acceptable status are "current", "graduated", and "retired". "graduating" will make your podling disappear from several incubator pages.)</p>
+</li>
+<li>
+<p>add the "enddate" attribute to document when the project graduated;</p>
+</li>
+<li>
+<p>add the "resolution" element (see other project examples);</p>
+</li>
+<li>
+<p>remove the "reporting" element.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>After your project has finished reporting to the Incubator, then remove the "reporting" element from that <strong>podlings.xml</strong> file.</p>
+</li>
+<li>
+<p>Ensure that other svn resources for your project have moved to your new home.</p>
+</li>
+<li>
+<p>Review this whole graduation guide.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>NOTE: Please edit this guide to add missing steps and clarifications.</strong></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="new_responsibilities">New Responsibilities</h3>
+<div class="sect3">
+<h4 id="oversight">Oversight</h4>
+<div class="paragraph">
+<p>During the stay in the Incubator, the
+<a href="/guides/roles_and_responsibilities.html#incubator_project_management_committee_ipmc">Incubator PMC (IPMC)</a>
+was responsible to the
+<a href="/guides/roles_and_responsibilities.html#the_board">Board</a>
+for oversight. A graduated project must now take
+responsibility for its own oversight.</p>
+</div>
+<div class="paragraph">
+<p>A project needs to ensure that its code base is
+clean from an IP perspective. New committers need to
+recruited, educated and mentored. Quality releases
+need to be cut. Community spirit needs to be maintained
+and conflicts resolved positively. Board reports need
+to be accurate and prompt.</p>
+</div>
+<div class="paragraph">
+<p>Help is still available but the
+appropriate bodies (infrastructure, community, legal
+and so on) should now be approached directly.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="security">Security</h4>
+<div class="paragraph">
+<p>Each project needs to be able to manage security issues
+discovered in their code. By their nature, these issues
+need to be dealt with in private. These issues may either
+be dealt with on a separate security list or on the
+private list. Which list is suitable for security issues
+should be noted.</p>
+</div>
+<div class="paragraph">
+<p>Volunteers need to be found from the
+<a href="http://www.apache.org/foundation/how-it-works.html#structure">PMC</a>
+to work with the <a href="https://www.apache.org/security/committers.html">Apache security team</a> and act as
+first contacts on security matters. The new project
+should make contact with the team soon after graduation
+and not wait for the first issue to be raised.</p>
+</div>
+<div class="paragraph">
+<p>Projects should adopt a positive attitude towards
+security issues. It is easy to gain a poor reputation
+by mishandling of these issues. There are many people
+at Apache with considerable experience in this area
+so ask first.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="stay_in_touch">Stay In Touch</h4>
+<div class="paragraph">
+<p>Passing through the incubation process gives a very
+valuable perspective. Please help to improve the process
+by guiding new podlings and by developing improved policy
+and documentation on the <a href="lists.html#general+at+incubator.apache.org">general</a> list.</p>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+
+</div>
+
+		</div>
+		<div id="push"></div>
+    </div>
+
+    <div id="footer">
+      <div class="container">
+          <p class="muted credit">&copy; 2023 The Apache Software Foundation | Licensed under the Apache License, Version 2.0.<br/>
+          Apache Incubator, Apache, the Apache feather logo, and the Apache Incubator project logo are trademarks or registered trademarks of The Apache Software Foundation.</p>
+      </div>
+    </div>
+    <script src="../js/jquery-1.11.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/prettify.js"></script>
+    <script src="../js/readingTime.js"></script>
+    <script src="../js/incubator.js"></script>
+  </body>
+</html>

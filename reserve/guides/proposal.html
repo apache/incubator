@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>A Guide To Proposal Creation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <meta name="generator" content="JBake">
+
+    <!-- Le styles -->
+    <link href="../css/incubator.css" rel="stylesheet">
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/asciidoctor.css" rel="stylesheet">
+    <link href="../css/base.css" rel="stylesheet">
+    <link href="../css/prettify.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <!--<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">-->
+    <link rel="shortcut icon" href="https://www.apache.org/favicon.ico">
+    <script src="https://www.apachecon.com/event-images/snippet.js"></script>
+  </head>
+  <body onload="prettyPrint()">
+    <div id="wrap">
+   
+
+
+	<!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/"><i class="icon-home"></i>Apache Incubator</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Policies <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="/policy/incubation.html">Incubation Policy</a></li>
+                <li><a href="/ip-clearance/">Intellectual Property Clearance</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Proposals <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="/guides/proposal.html">A Guide To Proposal Creation</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Podling Guides <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="/cookbook">Cookbook</a></li>
+              
+                <li><hr><a href="/guides/roles_and_responsibilities.html">Roles and Responsibilities</a></li>
+                <li><a href="/guides/committer.html">Committers</a></li>
+                <li><a href="/guides/ppmc.html">Podling Project Management Committee</a></li>
+                <li><a href="/guides/community.html">Guide to Successful Community Building</a></li>
+
+                <li><hr><a href="/guides/branding.html">Incubator Branding Guide</a></li>
+                <li><a href="/guides/publicity.html">Podling Publicity/Media Guidelines</a></li>
+                <li><a href="/guides/press-kit.html">Podling Press Kit</a></li>
+              
+                <li><hr><a href="/guides/transitioning_asf.html">Initial Code Import</a></li>
+                <li><a href="/guides/names.html">Podling Name Search Guide</a></li>
+                <li><a href="/guides/ip_clearance.html">Podling IP Clearance</a></li>
+
+                <li><hr><a href="/guides/sites.html">Podling Websites</a></li>
+                <li><a href="/guides/podling_sourcecontrol.html">Podling Source Control</a></li>
+
+                <li><hr><a href="/guides/releasemanagement.html">Release Management</a></li>
+                <li><a href="/guides/distribution.html">Release Distribution</a></li>
+              
+                <li><hr><a href="/guides/graduation.html">Guide to Successful Graduation</a></li>
+                <li><a href="/guides/retirement.html">Guide to Retirement</a></li>
+                <li><a href="/guides/transferring.html">Transferring Resources out of the Incubator</a></li>
+
+                <li><hr><a href="/projects/#current">Current Podlings</a></li>
+                <li><a href="/clutch/">Clutch Report</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">PMC Guides <b class="caret"></b></a>
+              <ul class="dropdown-menu">     
+                <li><a href="/guides/participation.html">Guide to Participation</a></li>
+                <li><a href="/guides/lists.html">Incubator Mailing Lists Guide</a></li>
+
+                <li><a href="/guides/chair.html">Incubator Chair Guide</a></li>  
+                <li><a href="/guides/mentor.html">Mentors' Guide</a></li>
+
+                <li><hr><a href="/guides/website.html">Updating the top-level Incubator website</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">ASF <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="https://www.apache.org/foundation/how-it-works.html">How Apache Works</a></li>
+                <li><a href="https://www.apache.org/dev/">Developer Documentation</a></li>
+                <li><a href="https://www.apache.org/foundation/">Foundation</a></li>
+                <li><a href="https://www.apache.org/legal/">Legal</a></li>
+		            <li><hr><a href="https://www.apache.org/licenses/">License</a></li>
+		            <li><a href="https://www.apache.org/security/">Security</a></li>
+                <li><a href="https://www.apache.org/foundation/sponsorship.html">Sponsorship</a></li>
+                <li><a href="https://www.apache.org/foundation/thanks.html">Thanks</a></li>
+		            <li><a href="https://www.apache.org/events/current-event">Current Events</a></li>
+              </ul>
+            </li>
+            <li><a href="/faq.html">FAQs</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 vcenter"><a href="https://www.apache.org/"><img src="https://www.apache.org/img/asf_logo.png" alt="The Apache Software Foundation" border="0" style="margin-top: 2px" width="200"></a></div>
+        <div class="col-md-4 vcenter"><a href="/"><img src="https://incubator.apache.org/images/incubator_feather_egg_logo_sm.png" alt="The Apache Software Foundation Incubator" border="0" style="margin-top: 2px" width="256"></a></div>
+        <div class="col-md-4 vcenter">
+	    <a href="https://www.apache.org/foundation/contributing.html"><img src="https://www.apache.org/images/SupportApache-small.png" height="64" width="64"></a>
+	    &nbsp;&nbsp;&nbsp;&nbsp;
+	    <a class="acevent" data-format="square" data-width="100" data-mode="light" data-event="random"></a>
+	</div>
+      </div>
+    </div>
+    <div class="top-container container">
+
+
+<div class="page-header">
+    <h1>Guide :: A Guide To Proposal Creation</h1>
+</div>
+
+<div class="article-body">
+
+Estimated Reading Time: <span class="eta"></span>
+
+<p><div id="toc" class="toc">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#abstract">Abstract</a>
+<ul class="sectlevel2">
+<li><a href="#background">Background</a></li>
+<li><a href="#continuous_improvement">Continuous Improvement</a></li>
+<li><a href="#help_wanted">Help Wanted!</a></li>
+</ul>
+</li>
+<li><a href="#formulating_a_proposal">Formulating A Proposal</a>
+<ul class="sectlevel2">
+<li><a href="#preparation">Preparation</a></li>
+<li><a href="#project_name">Project Name</a></li>
+<li><a href="#presentation">Presentation</a></li>
+<li><a href="#developing_the_proposal">Developing The Proposal</a></li>
+<li><a href="#the_vote">The Vote</a></li>
+</ul>
+</li>
+<li><a href="#proposal_template">Proposal Template</a></li>
+</ul>
+</div>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>This document provides guidance only. The policy is <a href="/incubation/Incubation_Policy.html">here</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="abstract">Abstract</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This document describes approaches to drawing up a proposal for submission to the Incubator. It is not an inflexible standard, but represents a consensus condensed from discussions on the <a href="lists.html#general+at+incubator.apache.org">general mailing list</a>. Feel free to modify the template when submitting your proposal.</p>
+</div>
+<div class="sect2">
+<h3 id="background">Background</h3>
+<div class="paragraph">
+<p>Entry to the incubator is a process decided by a vote.
+The proposal is the document upon which the <a href="/incubation/Roles_and_Responsibilities.html#Sponsor">Sponsor</a> (usually the incubator) votes.
+Having a good proposal increases the chances of a positive outcome.</p>
+</div>
+<div class="paragraph">
+<p>Proposals to the incubator generate attention. The <a href="lists.html#general+at+incubator.apache.org">general mailing list</a> is open, widely discussed, and well indexed. It is a very public space.
+A good proposal should target the wider audience and not just the <a href="/incubation/Roles_and_Responsibilities.html#Incubator+Project+Management+Committee+%28PMC%29">IPMC</a>.
+Use this time to engage and inform potential <a href="participation.html#developer">developers</a> and <a href="participation.html#user">users</a>.</p>
+</div>
+<div class="paragraph">
+<p>A good proposal should shape the future evolution of the project. Still, each proposal only captures the particular details of the project at its birth. We understand that projects change and evolve.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="continuous_improvement">Continuous Improvement</h3>
+<div class="paragraph">
+<p>The incubation process is continuously evolving.
+We hope this will help newer projects to be even stronger and more successful than existing ones.
+One consequence of this approach is that what previous podlings have done, even those that are now TLPs,  may not be a reliable guide.
+Another is that documentation may be a little outdated.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="help_wanted">Help Wanted!</h3>
+<div class="paragraph">
+<p>Help  improve the system by posting a patch for this document to the <a href="https://issues.apache.org/jira/browse/INCUBATOR">incubator section</a> of <a href="http://issues.apache.org/jira">Jira</a> or a comment to the <a href="lists.html#general+at+incubator.apache.org">general list</a>, or raise a pull request at the <a href="https://github.com/apache/incubator">incubator site repository</a>.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="formulating_a_proposal">Formulating A Proposal</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="preparation">Preparation</h3>
+<div class="paragraph">
+<p>Start with research. The <a href="/cookbook">Cookbook</a> is a good place to start.
+Read the <a href="http://www.apache.org">Apache</a> <a href="http://www.apache.org/foundation">documentation</a>.</p>
+</div>
+<div class="paragraph">
+<p><a href="lists.html">Subscribe</a> to the <a href="lists.html#general+at+incubator.apache.org">general mailing list</a>.
+Spend some time reviewing the <a href="https://lists.apache.org/list.html?general@incubator.apache.org">email lists archives</a>.
+The email lists are the standard forum for <a href="http://www.apache.org/foundation/how-it-works.html#communication">communication</a> and <a href="http://www.apache.org/foundation/how-it-works.html#decision-making">decision-making</a> at Apache.</p>
+</div>
+<div class="paragraph">
+<p>Before starting on the formal proposal, recruit a <a href="/incubation/Roles_and_Responsibilities.html#Champion">Champion</a>. The Champion understands
+Apache and should be able to help you navigate the process and put your proposal together.</p>
+</div>
+<div class="paragraph">
+<p>Review <a href="https://cwiki.apache.org/confluence/display/INCUBATOR/Proposals">recent proposals</a> and how they have been <a href="https://lists.apache.org/list.html?general@incubator.apache.org">received</a>. Check to see which podlings have become Top Level Projects (TLPs) and which have not. <a href="https://cwiki.apache.org/confluence/display/INCUBATOR/Incubating+Issues">Read up</a> on some of the issues a podling may face while in incubation.</p>
+</div>
+<div class="paragraph">
+<p>The incoming community needs to work together before presenting this proposal to the Incubator. Think about and discuss future goals, and the reasons the project is wants to come to Apache.
+Feel free to ask questions on the <a href="lists.html#general+at+incubator.apache.org">Incubator general@ list</a>.</p>
+</div>
+<div class="paragraph">
+<p>Every proposal is different. There will always be some aspects of a project which do not seem to fit well into the <a href="#proposal-template">template</a>.
+Use the template as a guide but do not feel constrained by it. Adopt what works and change what doesn&#8217;t. It is fine to do that.</p>
+</div>
+<div class="paragraph">
+<p>Be sure to add your proposal to <a href="https://cwiki.apache.org/confluence/display/INCUBATOR/Proposals">this list</a>. You can copy the <a href="https://cwiki.apache.org/confluence/display/INCUBATOR/New+Podling+Proposal">existing template</a> for your new proposal.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="project_name">Project Name</h3>
+<div class="paragraph">
+<p>You must come up with a <a href="graduation.html#notes-names">suitable project name</a> and product names before entering incubation. Be careful not to disrupt your proposal and entry process. But also be aware that changing your name may be required at some point, and that could be disruptive to your community.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="presentation">Presentation</h3>
+<div class="paragraph">
+<p>Once you have a draft proposal, present it to the incubator.
+Post the proposal in plain text in an email to the <a href="lists.html#general+at+incubator.apache.org">email list</a> with a subject line prefixed with <em>[PROPOSAL]</em>. You should be clear that you want to discuss your proposal when submitting this email.</p>
+</div>
+<div class="paragraph">
+<p>If there is interest in the proposal, expect a lively debate to begin.
+Approval follows a <a href="http://www.apache.org/foundation/voting.html">vote</a> to enter the incubator.
+Discussion is an important part of opinion formation. Most proposals require some rework and development to gain the maximum level of support from the
+<a href="/whoweare.html">Incubator</a>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="developing_the_proposal">Developing The Proposal</h3>
+<div class="paragraph">
+<p>Expect to work on improving the proposal on the list after presenting it.
+No preparation can cover every question. It is usual for interested parties to pose unexpected and novel questions. So (though it may sometimes feel like an ordeal) approach these questions as a real opportunity to engage with the Incubator.</p>
+</div>
+<div class="paragraph">
+<p>The <a href="https://cwiki.apache.org/confluence/display/INCUBATOR/Proposals">wiki</a> is a useful development tool. Consider creating a wiki page containing the evolving proposal content. Those who are interested should add themselves to the watch list for the page so they can receive change notifications.</p>
+</div>
+<div class="paragraph">
+<p>Developing the proposal on the wiki allows for easy collaboration. The wiki is just a tool to assist the development of the final proposal (the one that the PPMC will vote on). However, the wiki is not an appropriate forum for debating changes. Gently move discussion onto the appropriate <a href="lists.html#general+at+incubator.apache.org">email list</a>.</p>
+</div>
+<div class="paragraph">
+<p>Effective management of this development process is a good exercise in community building.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="the_vote">The Vote</h3>
+<div class="paragraph">
+<p>When the proposal seems finished, and some form of consensus has emerged, you can put the proposal to the vote.</p>
+</div>
+<div class="paragraph">
+<p>If you use the wiki to develop the proposal, please ensure that the wiki page content matches the content of the final proposal then add a notice on the wiki page that development of the document is now complete. Change the wiki page to be read-only so nobody can make further changes.</p>
+</div>
+<div class="paragraph">
+<p>Embed the final proposal text or include the final version number of the wiki proposal page in the email which starts the VOTE thread. If a change is required after the vote has been called then you must cancel the vote, make the change, and then start a new vote. Alternatively, Mentors will advise on how to make the change once the proposal has been accepted. Do not edit the wiki proposal page unless you have canceled the vote thread.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="proposal_template">Proposal Template</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The aim of presenting a template with examples and comments is educational. Proposals are not required to adopt this format.
+Every proposal is different. There may be sections which don&#8217;t seem to be useful. It&#8217;s fine to miss them out and to add new ones that the proposal appears to need.</p>
+</div>
+<div class="paragraph">
+<p>The format is less important than the content.</p>
+</div>
+<div class="paragraph">
+<p>Each section has both commentary/explanation and examples. You can copy the <a href="https://cwiki.apache.org/confluence/display/INCUBATOR/New+Podling+Proposal">proposal template</a> to a new page under <a href="https://cwiki.apache.org/confluence/display/INCUBATOR/Proposals">proposals</a> on the Incubator Wiki to speed up proposal creation. Please remove commentary and examples sections once your proposal text is complete.</p>
+</div>
+</div>
+</div></p>
+
+</div>
+
+		</div>
+		<div id="push"></div>
+    </div>
+
+    <div id="footer">
+      <div class="container">
+          <p class="muted credit">&copy; 2023 The Apache Software Foundation | Licensed under the Apache License, Version 2.0.<br/>
+          Apache Incubator, Apache, the Apache feather logo, and the Apache Incubator project logo are trademarks or registered trademarks of The Apache Software Foundation.</p>
+      </div>
+    </div>
+    <script src="../js/jquery-1.11.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/prettify.js"></script>
+    <script src="../js/readingTime.js"></script>
+    <script src="../js/incubator.js"></script>
+  </body>
+</html>

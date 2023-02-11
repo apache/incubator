@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>The Apache Incubator Cookbook - podlings.xml</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <meta name="generator" content="JBake">
+
+    <!-- Le styles -->
+    <link href="../css/incubator.css" rel="stylesheet">
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/asciidoctor.css" rel="stylesheet">
+    <link href="../css/base.css" rel="stylesheet">
+    <link href="../css/prettify.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <!--<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">-->
+    <link rel="shortcut icon" href="https://www.apache.org/favicon.ico">
+    <script src="https://www.apachecon.com/event-images/snippet.js"></script>
+  </head>
+  <body onload="prettyPrint()">
+    <div id="wrap">
+   
+
+
+	<!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/"><i class="icon-home"></i>Apache Incubator</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Policies <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="/policy/incubation.html">Incubation Policy</a></li>
+                <li><a href="/ip-clearance/">Intellectual Property Clearance</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Proposals <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="/guides/proposal.html">A Guide To Proposal Creation</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Podling Guides <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="/cookbook">Cookbook</a></li>
+              
+                <li><hr><a href="/guides/roles_and_responsibilities.html">Roles and Responsibilities</a></li>
+                <li><a href="/guides/committer.html">Committers</a></li>
+                <li><a href="/guides/ppmc.html">Podling Project Management Committee</a></li>
+                <li><a href="/guides/community.html">Guide to Successful Community Building</a></li>
+
+                <li><hr><a href="/guides/branding.html">Incubator Branding Guide</a></li>
+                <li><a href="/guides/publicity.html">Podling Publicity/Media Guidelines</a></li>
+                <li><a href="/guides/press-kit.html">Podling Press Kit</a></li>
+              
+                <li><hr><a href="/guides/transitioning_asf.html">Initial Code Import</a></li>
+                <li><a href="/guides/names.html">Podling Name Search Guide</a></li>
+                <li><a href="/guides/ip_clearance.html">Podling IP Clearance</a></li>
+
+                <li><hr><a href="/guides/sites.html">Podling Websites</a></li>
+                <li><a href="/guides/podling_sourcecontrol.html">Podling Source Control</a></li>
+
+                <li><hr><a href="/guides/releasemanagement.html">Release Management</a></li>
+                <li><a href="/guides/distribution.html">Release Distribution</a></li>
+              
+                <li><hr><a href="/guides/graduation.html">Guide to Successful Graduation</a></li>
+                <li><a href="/guides/retirement.html">Guide to Retirement</a></li>
+                <li><a href="/guides/transferring.html">Transferring Resources out of the Incubator</a></li>
+
+                <li><hr><a href="/projects/#current">Current Podlings</a></li>
+                <li><a href="/clutch/">Clutch Report</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">PMC Guides <b class="caret"></b></a>
+              <ul class="dropdown-menu">     
+                <li><a href="/guides/participation.html">Guide to Participation</a></li>
+                <li><a href="/guides/lists.html">Incubator Mailing Lists Guide</a></li>
+
+                <li><a href="/guides/chair.html">Incubator Chair Guide</a></li>  
+                <li><a href="/guides/mentor.html">Mentors' Guide</a></li>
+
+                <li><hr><a href="/guides/website.html">Updating the top-level Incubator website</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">ASF <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="https://www.apache.org/foundation/how-it-works.html">How Apache Works</a></li>
+                <li><a href="https://www.apache.org/dev/">Developer Documentation</a></li>
+                <li><a href="https://www.apache.org/foundation/">Foundation</a></li>
+                <li><a href="https://www.apache.org/legal/">Legal</a></li>
+		            <li><hr><a href="https://www.apache.org/licenses/">License</a></li>
+		            <li><a href="https://www.apache.org/security/">Security</a></li>
+                <li><a href="https://www.apache.org/foundation/sponsorship.html">Sponsorship</a></li>
+                <li><a href="https://www.apache.org/foundation/thanks.html">Thanks</a></li>
+		            <li><a href="https://www.apache.org/events/current-event">Current Events</a></li>
+              </ul>
+            </li>
+            <li><a href="/faq.html">FAQs</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 vcenter"><a href="https://www.apache.org/"><img src="https://www.apache.org/img/asf_logo.png" alt="The Apache Software Foundation" border="0" style="margin-top: 2px" width="200"></a></div>
+        <div class="col-md-4 vcenter"><a href="/"><img src="https://incubator.apache.org/images/incubator_feather_egg_logo_sm.png" alt="The Apache Software Foundation Incubator" border="0" style="margin-top: 2px" width="256"></a></div>
+        <div class="col-md-4 vcenter">
+	    <a href="https://www.apache.org/foundation/contributing.html"><img src="https://www.apache.org/images/SupportApache-small.png" height="64" width="64"></a>
+	    &nbsp;&nbsp;&nbsp;&nbsp;
+	    <a class="acevent" data-format="square" data-width="100" data-mode="light" data-event="random"></a>
+	</div>
+      </div>
+    </div>
+    <div class="top-container container">
+
+
+<div class="incubator-page-header">
+    <h1>The Apache Incubator Cookbook - podlings.xml</h1>
+</div>
+
+<div id="toc" class="toc">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#current">Current</a></li>
+<li><a href="#new_reporting_monthly">New reporting monthly</a></li>
+<li><a href="#graduated_as_an_apache_tlp">Graduated as an Apache TLP</a></li>
+<li><a href="#graduated_into_the_pmc_that_sponsored_it">Graduated into the PMC that sponsored it</a></li>
+<li><a href="#graduated_as_an_apache_tlp_with_a_name_change">Graduated as an Apache TLP with a name change</a></li>
+<li><a href="#retired">Retired</a></li>
+<li><a href="#retired_and_moved_development">Retired and moved development</a></li>
+</ul>
+</div>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>The <a href="https://svn.apache.org/repos/asf/incubator/public/trunk/content/podlings.xml">podlings.xml</a> file is the master record
+for the status of Incubator podlings. This page will define different podlings by example. Once a podling is defined in podlings.xml
+there are two ways to edit its record.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Commit changes to <a href="https://svn.apache.org/repos/asf/incubator/public/trunk/content/podlings.xml">podlings.xml</a></p>
+</li>
+<li>
+<p>Use <a href="https://whimsy.apache.org/roster/ppmc/">Apache Whimsy Roster tools</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="current">Current</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This is the state of an active podling undergoing incubation.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code>    &lt;podling name="Crail" status="current" resource="crail" sponsor="Incubator" startdate="2017-11-01"&gt;
+        &lt;description&gt;Crail is a storage platform for sharing performance critical data in distributed data processing jobs at very high speed.&lt;/description&gt;
+        &lt;reporting group="3"/&gt;
+        &lt;champion availid="lresende"&gt;Luciano Resende&lt;/champion&gt;
+        &lt;mentors&gt;
+            &lt;mentor username="jhyde"&gt;Julian Hyde&lt;/mentor&gt;
+            &lt;mentor username="lresende"&gt;Luciano Resende&lt;/mentor&gt;
+        &lt;/mentors&gt;
+    &lt;/podling&gt;</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="new_reporting_monthly">New reporting monthly</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This is a new podling that is reporting monthly. When a mentor creates the podling entry in <mark>podlings.xml</mark> this is the desired state.
+Note that the reporting group will vary according the the month started.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code>    &lt;podling name="DataSketches" status="current" resource="datasketches" sponsor="Incubator" startdate="2019-03-30"&gt;
+        &lt;description&gt;DataSketches is an open source, high-performance library of stochastic streaming algorithms commonly called "sketches" in the data sciences. Sketches are small, stateful programs that process massive data as a stream and can provide approximate answers, with mathematical guarantees, to computationally difficult queries orders-of-magnitude faster than traditional, exact methods.&lt;/description&gt;
+        &lt;reporting group="2" monthly="true"&gt;May, June, July&lt;/reporting&gt;
+        &lt;champion availid="jbonofre"&gt;Jean-Baptiste Onofré&lt;/champion&gt;
+        &lt;mentors&gt;
+            &lt;mentor username="chenliang613"&gt;Liang Chen&lt;/mentor&gt;
+            &lt;mentor username="kenn"&gt;Kenneth Knowles&lt;/mentor&gt;
+            &lt;mentor username="kamaci"&gt;Furkan Kamaci&lt;/mentor&gt;
+        &lt;/mentors&gt;
+    &lt;/podling&gt;</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="graduated_as_an_apache_tlp">Graduated as an Apache TLP</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This is a podling that graduated to a TLP in the usual way.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code>    &lt;podling name="CXF" status="graduated" resource="cxf" sponsor="Incubator" startdate="2006-08-15" enddate="2008-04-16"&gt;
+        &lt;description&gt;The CXF project will create a SOA services framework by merges the ObjectWeb Celtix project and the Codehaus XFire project.&lt;/description&gt;
+        &lt;resolution tlp="true"/&gt;
+        &lt;mentors&gt;
+            &lt;mentor username="jim"&gt;Jim Jagielski&lt;/mentor&gt;
+            &lt;mentor username="jstrachan"&gt;James Strachan&lt;/mentor&gt;
+        &lt;/mentors&gt;
+    &lt;/podling&gt;</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="graduated_into_the_pmc_that_sponsored_it">Graduated into the PMC that sponsored it</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Occasionally a PMC other than the Incubator will sponsor incubation. In that case (and others) the podling graduates as a sub-project into an existing PMC.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code>    &lt;podling name="Derby" status="graduated" resource="derby" sponsor="DB" startdate="2004-08-15" enddate="2005-07-18"&gt;
+        &lt;description&gt;Java relational database&lt;/description&gt;
+        &lt;resolution link="DB Derby" url="http://db.apache.org/derby/"/&gt;
+        &lt;mentors&gt;
+            &lt;mentor username="coar"&gt;Ken Coar&lt;/mentor&gt;
+        &lt;/mentors&gt;
+    &lt;/podling&gt;</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="graduated_as_an_apache_tlp_with_a_name_change">Graduated as an Apache TLP with a name change</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Sometimes a project will graduate and change their name as they become a TLP</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code>    &lt;podling name="OpenOffice.org" status="graduated" resource="openofficeorg" resourceAliases="ooo" sponsor="Incubator" startdate="2011-06-13" enddate="2012-10-17"&gt;
+        &lt;description&gt;OpenOffice.org is comprised of six personal productivity applications: a word processor (and its web-authoring component), spreadsheet, presentation graphics, drawing, equation editor, and database.&lt;/description&gt;
+        &lt;resolution link="OpenOffice" url="https://openoffice.apache.org/"/&gt;
+        &lt;mentors&gt;
+            &lt;mentor username="jim"&gt;Jim Jagielski&lt;/mentor&gt;
+            &lt;mentor username="rubys"&gt;Sam Ruby&lt;/mentor&gt;
+            &lt;mentor username="danese"&gt;Danese Cooper&lt;/mentor&gt;
+            &lt;mentor username="curcuru"&gt;Shane Curcuru&lt;/mentor&gt;
+            &lt;mentor username="noirin"&gt;Noirin Plunkett&lt;/mentor&gt;
+            &lt;mentor username="joes"&gt;Joe Schaefer&lt;/mentor&gt;
+            &lt;mentor username="grobmeier"&gt;Christian Grobmeier&lt;/mentor&gt;
+            &lt;mentor username="rgardler"&gt;Ross Gardler&lt;/mentor&gt;
+        &lt;/mentors&gt;
+    &lt;/podling&gt;</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="retired">Retired</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>When a podling retires it will often mean that there is no longer a community.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code>    &lt;podling name="Provisionr" status="retired" resource="provisionr" sponsor="Incubator" startdate="2013-03-07" enddate="2013-11-22"&gt;
+        &lt;description&gt;Provisionr provides a service to manage pools of virtual machines on multiple clouds.&lt;/description&gt;
+        &lt;resolution&gt;Failed to grow a community. Retired at request of PPMC.&lt;/resolution&gt;
+        &lt;champion availid="tomwhite"&gt;Tom White&lt;/champion&gt;
+        &lt;mentors&gt;
+            &lt;mentor username="rvs"&gt;Roman Shaposhnik&lt;/mentor&gt;
+            &lt;mentor username="tomwhite"&gt;Tom White&lt;/mentor&gt;
+            &lt;mentor username="mnour"&gt;Mohammad Nour El-Din&lt;/mentor&gt;
+        &lt;/mentors&gt;
+    &lt;/podling&gt;</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="retired_and_moved_development">Retired and moved development</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Sometimes a project community will decide that the Apache Software Foundation is not for them and they will move development elsewhere.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code>    &lt;podling name="Heraldry" status="retired" resource="heraldry" sponsor="Incubator" startdate="2005-07-14" enddate="2007-06-09"&gt;
+        &lt;description&gt;Identity for the rest of us.&lt;/description&gt;
+        &lt;resolution link="OpenID.net" url="http://openid.net/"&gt;Project retired. Some activity moved to OpenID.net&lt;/resolution&gt;
+        &lt;mentors&gt;
+            &lt;mentor username="ben"&gt;Ben Laurie&lt;/mentor&gt;
+            &lt;mentor username="pquerna"&gt;Paul Querna&lt;/mentor&gt;
+            &lt;mentor username="twl"&gt;Ted Leung&lt;/mentor&gt;
+            &lt;mentor username="farra"&gt;J. Aaron Farr&lt;/mentor&gt;
+            &lt;mentor username="wrowe"&gt;William Rowe&lt;/mentor&gt;
+        &lt;/mentors&gt;
+    &lt;/podling&gt;</code></pre>
+</div>
+</div>
+</div>
+</div>
+
+		</div>
+		<div id="push"></div>
+    </div>
+
+    <div id="footer">
+      <div class="container">
+          <p class="muted credit">&copy; 2023 The Apache Software Foundation | Licensed under the Apache License, Version 2.0.<br/>
+          Apache Incubator, Apache, the Apache feather logo, and the Apache Incubator project logo are trademarks or registered trademarks of The Apache Software Foundation.</p>
+      </div>
+    </div>
+    <script src="../js/jquery-1.11.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/prettify.js"></script>
+    <script src="../js/readingTime.js"></script>
+    <script src="../js/incubator.js"></script>
+  </body>
+</html>

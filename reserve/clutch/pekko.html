@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Apache Pekko (Incubating)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <meta name="generator" content="JBake">
+
+    <!-- Le styles -->
+    <link href="../css/incubator.css" rel="stylesheet">
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/asciidoctor.css" rel="stylesheet">
+    <link href="../css/base.css" rel="stylesheet">
+    <link href="../css/prettify.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <!--<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">-->
+    <link rel="shortcut icon" href="https://www.apache.org/favicon.ico">
+    <script src="https://www.apachecon.com/event-images/snippet.js"></script>
+  </head>
+  <body onload="prettyPrint()">
+    <div id="wrap">
+   
+
+
+	<!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/"><i class="icon-home"></i>Apache Incubator</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Policies <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="/policy/incubation.html">Incubation Policy</a></li>
+                <li><a href="/ip-clearance/">Intellectual Property Clearance</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Proposals <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="/guides/proposal.html">A Guide To Proposal Creation</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Podling Guides <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="/cookbook">Cookbook</a></li>
+              
+                <li><hr><a href="/guides/roles_and_responsibilities.html">Roles and Responsibilities</a></li>
+                <li><a href="/guides/committer.html">Committers</a></li>
+                <li><a href="/guides/ppmc.html">Podling Project Management Committee</a></li>
+                <li><a href="/guides/community.html">Guide to Successful Community Building</a></li>
+
+                <li><hr><a href="/guides/branding.html">Incubator Branding Guide</a></li>
+                <li><a href="/guides/publicity.html">Podling Publicity/Media Guidelines</a></li>
+                <li><a href="/guides/press-kit.html">Podling Press Kit</a></li>
+              
+                <li><hr><a href="/guides/transitioning_asf.html">Initial Code Import</a></li>
+                <li><a href="/guides/names.html">Podling Name Search Guide</a></li>
+                <li><a href="/guides/ip_clearance.html">Podling IP Clearance</a></li>
+
+                <li><hr><a href="/guides/sites.html">Podling Websites</a></li>
+                <li><a href="/guides/podling_sourcecontrol.html">Podling Source Control</a></li>
+
+                <li><hr><a href="/guides/releasemanagement.html">Release Management</a></li>
+                <li><a href="/guides/distribution.html">Release Distribution</a></li>
+              
+                <li><hr><a href="/guides/graduation.html">Guide to Successful Graduation</a></li>
+                <li><a href="/guides/retirement.html">Guide to Retirement</a></li>
+                <li><a href="/guides/transferring.html">Transferring Resources out of the Incubator</a></li>
+
+                <li><hr><a href="/projects/#current">Current Podlings</a></li>
+                <li><a href="/clutch/">Clutch Report</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">PMC Guides <b class="caret"></b></a>
+              <ul class="dropdown-menu">     
+                <li><a href="/guides/participation.html">Guide to Participation</a></li>
+                <li><a href="/guides/lists.html">Incubator Mailing Lists Guide</a></li>
+
+                <li><a href="/guides/chair.html">Incubator Chair Guide</a></li>  
+                <li><a href="/guides/mentor.html">Mentors' Guide</a></li>
+
+                <li><hr><a href="/guides/website.html">Updating the top-level Incubator website</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">ASF <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="https://www.apache.org/foundation/how-it-works.html">How Apache Works</a></li>
+                <li><a href="https://www.apache.org/dev/">Developer Documentation</a></li>
+                <li><a href="https://www.apache.org/foundation/">Foundation</a></li>
+                <li><a href="https://www.apache.org/legal/">Legal</a></li>
+		            <li><hr><a href="https://www.apache.org/licenses/">License</a></li>
+		            <li><a href="https://www.apache.org/security/">Security</a></li>
+                <li><a href="https://www.apache.org/foundation/sponsorship.html">Sponsorship</a></li>
+                <li><a href="https://www.apache.org/foundation/thanks.html">Thanks</a></li>
+		            <li><a href="https://www.apache.org/events/current-event">Current Events</a></li>
+              </ul>
+            </li>
+            <li><a href="/faq.html">FAQs</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 vcenter"><a href="https://www.apache.org/"><img src="https://www.apache.org/img/asf_logo.png" alt="The Apache Software Foundation" border="0" style="margin-top: 2px" width="200"></a></div>
+        <div class="col-md-4 vcenter"><a href="/"><img src="https://incubator.apache.org/images/incubator_feather_egg_logo_sm.png" alt="The Apache Software Foundation Incubator" border="0" style="margin-top: 2px" width="256"></a></div>
+        <div class="col-md-4 vcenter">
+	    <a href="https://www.apache.org/foundation/contributing.html"><img src="https://www.apache.org/images/SupportApache-small.png" height="64" width="64"></a>
+	    &nbsp;&nbsp;&nbsp;&nbsp;
+	    <a class="acevent" data-format="square" data-width="100" data-mode="light" data-event="random"></a>
+	</div>
+      </div>
+    </div>
+    <div class="top-container container">
+
+
+<div class="incubator-page-header">
+    <h1>Apache Pekko (Incubating)</h1>
+</div>
+
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Pekko is a toolkit and an ecosystem for building highly concurrent, distributed, reactive and resilient applications for Java and Scala.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Resources: pekko</p>
+</li>
+<li>
+<p>Started: 2022-10-24; Last Status Update: 2023-02-02</p>
+</li>
+<li>
+<p>Reporting: January, April, July, October</p>
+</li>
+<li>
+<p>Committers: 24</p>
+</li>
+<li>
+<p>All Committers are PPMC members</p>
+</li>
+<li>
+<p>Mentors: PJ Fanning (fanningpj), Justin McLean (jmclean), Roman Shaposhnik (rvs), Wu Sheng (wusheng), Ryan Skraba (rskraba), JB Onofré (jbonofre), Claude Warren (claude)</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="news">News</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>2022-10-24 Project enters incubation.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="resources">Resources</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="project_website">Project Website</h3>
+<div class="paragraph">
+<p><a href="https://pekko.apache.org" class="bare">https://pekko.apache.org</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="mailing_lists">Mailing Lists</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Developer mailing list: <a href="http://mail-archives.apache.org/mod_mbox/pekko-dev" class="bare">http://mail-archives.apache.org/mod_mbox/pekko-dev</a></p>
+</li>
+<li>
+<p>Commits mailing list: <a href="http://mail-archives.apache.org/mod_mbox/pekko-commits" class="bare">http://mail-archives.apache.org/mod_mbox/pekko-commits</a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="issue_tracker">Issue Tracker</h3>
+<div class="paragraph">
+<p><a href="https://github.com/apache/incubator-pekko/issues" class="bare">https://github.com/apache/incubator-pekko/issues</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="wiki">Wiki</h3>
+<div class="paragraph">
+<p><a href="https://cwiki.apache.org/confluence/display/Pekko" class="bare">https://cwiki.apache.org/confluence/display/Pekko</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="repositories">Repositories</h3>
+<div class="sect3">
+<h4 id="1_incubator_pekko">1: incubator-pekko</h4>
+<div class="paragraph">
+<p>| <strong><a href="https://gitbox.apache.org/repos/asf?p=incubator-pekko.git;a=tree;hb=HEAD">Gitbox</a></strong> | <strong><a href="https://github.com/apache/incubator-pekko/">Github</a></strong> | Build highly concurrent, distributed, and resilient message-d&#8230;&#8203;&#8201;&#8212;&#8201;Updated: 02/10/2023</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="2_incubator_pekko_connectors">2: incubator-pekko-connectors</h4>
+<div class="paragraph">
+<p>| <strong><a href="https://gitbox.apache.org/repos/asf?p=incubator-pekko-connectors.git;a=tree;hb=HEAD">Gitbox</a></strong> | <strong><a href="https://github.com/apache/incubator-pekko-connectors/">Github</a></strong> | Apache Pekko Connectors is a Reactive Enterprise Integration &#8230;&#8203;&#8201;&#8212;&#8201;Updated: 02/06/2023</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="3_incubator_pekko_connectors_kafka">3: incubator-pekko-connectors-kafka</h4>
+<div class="paragraph">
+<p>| <strong><a href="https://gitbox.apache.org/repos/asf?p=incubator-pekko-connectors-kafka.git;a=tree;hb=HEAD">Gitbox</a></strong> | <strong><a href="https://github.com/apache/incubator-pekko-connectors-kafka/">Github</a></strong> | Apache Pekko Kafka Connector - Pekko-Connectors is a Reactive&#8230;&#8203;&#8201;&#8212;&#8201;Updated: 02/09/2023</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="4_incubator_pekko_grpc">4: incubator-pekko-grpc</h4>
+<div class="paragraph">
+<p>| <strong><a href="https://gitbox.apache.org/repos/asf?p=incubator-pekko-grpc.git;a=tree;hb=HEAD">Gitbox</a></strong> | <strong><a href="https://github.com/apache/incubator-pekko-grpc/">Github</a></strong> | Apache Pekko gRPC&#8201;&#8212;&#8201;Updated: 01/28/2023</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="5_incubator_pekko_http">5: incubator-pekko-http</h4>
+<div class="paragraph">
+<p>| <strong><a href="https://gitbox.apache.org/repos/asf?p=incubator-pekko-http.git;a=tree;hb=HEAD">Gitbox</a></strong> | <strong><a href="https://github.com/apache/incubator-pekko-http/">Github</a></strong> | The Streaming-first HTTP server/module of Apache Pekko&#8201;&#8212;&#8201;Updated: 02/10/2023</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="6_incubator_pekko_management">6: incubator-pekko-management</h4>
+<div class="paragraph">
+<p>| <strong><a href="https://gitbox.apache.org/repos/asf?p=incubator-pekko-management.git;a=tree;hb=HEAD">Gitbox</a></strong> | <strong><a href="https://github.com/apache/incubator-pekko-management/">Github</a></strong> | Apache Pekko Management is a suite of tools for operating Pek&#8230;&#8203;&#8201;&#8212;&#8201;Updated: 01/17/2023</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="7_incubator_pekko_persistence_cassandra">7: incubator-pekko-persistence-cassandra</h4>
+<div class="paragraph">
+<p>| <strong><a href="https://gitbox.apache.org/repos/asf?p=incubator-pekko-persistence-cassandra.git;a=tree;hb=HEAD">Gitbox</a></strong> | <strong><a href="https://github.com/apache/incubator-pekko-persistence-cassandra/">Github</a></strong> | A replicated Apache Pekko Persistence journal backed by Apach&#8230;&#8203;&#8201;&#8212;&#8201;Updated: 01/18/2023</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="8_incubator_pekko_persistence_dynamodb">8: incubator-pekko-persistence-dynamodb</h4>
+<div class="paragraph">
+<p>| <strong><a href="https://gitbox.apache.org/repos/asf?p=incubator-pekko-persistence-dynamodb.git;a=tree;hb=HEAD">Gitbox</a></strong> | <strong><a href="https://github.com/apache/incubator-pekko-persistence-dynamodb/">Github</a></strong> | DynamoDBJournal for Apache Pekko Persistence&#8201;&#8212;&#8201;Updated: 01/17/2023</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="9_incubator_pekko_persistence_jdbc">9: incubator-pekko-persistence-jdbc</h4>
+<div class="paragraph">
+<p>| <strong><a href="https://gitbox.apache.org/repos/asf?p=incubator-pekko-persistence-jdbc.git;a=tree;hb=HEAD">Gitbox</a></strong> | <strong><a href="https://github.com/apache/incubator-pekko-persistence-jdbc/">Github</a></strong> | Asynchronously writes journal and snapshot entries to configu&#8230;&#8203;&#8201;&#8212;&#8201;Updated: 01/17/2023</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="10_incubator_pekko_persistence_r2dbc">10: incubator-pekko-persistence-r2dbc</h4>
+<div class="paragraph">
+<p>| <strong><a href="https://gitbox.apache.org/repos/asf?p=incubator-pekko-persistence-r2dbc.git;a=tree;hb=HEAD">Gitbox</a></strong> | <strong><a href="https://github.com/apache/incubator-pekko-persistence-r2dbc/">Github</a></strong> | Asynchronously writes journal and snapshot entries to configu&#8230;&#8203;&#8201;&#8212;&#8201;Updated: 01/18/2023</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="11_incubator_pekko_platform_guide">11: incubator-pekko-platform-guide</h4>
+<div class="paragraph">
+<p>| <strong><a href="https://gitbox.apache.org/repos/asf?p=incubator-pekko-platform-guide.git;a=tree;hb=HEAD">Gitbox</a></strong> | <strong><a href="https://github.com/apache/incubator-pekko-platform-guide/">Github</a></strong> | Examples how to implement Microservices using Apache Pekko&#8201;&#8212;&#8201;Updated: 01/09/2023</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="12_incubator_pekko_projection">12: incubator-pekko-projection</h4>
+<div class="paragraph">
+<p>| <strong><a href="https://gitbox.apache.org/repos/asf?p=incubator-pekko-projection.git;a=tree;hb=HEAD">Gitbox</a></strong> | <strong><a href="https://github.com/apache/incubator-pekko-projection/">Github</a></strong> | Apache Pekko Projections is intended for building systems wit&#8230;&#8203;&#8201;&#8212;&#8201;Updated: 01/25/2023</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="13_incubator_pekko_samples">13: incubator-pekko-samples</h4>
+<div class="paragraph">
+<p>| <strong><a href="https://gitbox.apache.org/repos/asf?p=incubator-pekko-samples.git;a=tree;hb=HEAD">Gitbox</a></strong> | <strong><a href="https://github.com/apache/incubator-pekko-samples/">Github</a></strong> | Apache Pekko Sample Projects&#8201;&#8212;&#8201;Updated: 11/02/2022</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="14_incubator_pekko_sbt_paradox">14: incubator-pekko-sbt-paradox</h4>
+<div class="paragraph">
+<p>| <strong><a href="https://gitbox.apache.org/repos/asf?p=incubator-pekko-sbt-paradox.git;a=tree;hb=HEAD">Gitbox</a></strong> | <strong><a href="https://github.com/apache/incubator-pekko-sbt-paradox/">Github</a></strong> | Theme and sbt-paradox settings used by Pekko projects&#8201;&#8212;&#8201;Updated: 02/10/2023</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="15_incubator_pekko_site">15: incubator-pekko-site</h4>
+<div class="paragraph">
+<p>| <strong><a href="https://gitbox.apache.org/repos/asf?p=incubator-pekko-site.git;a=tree;hb=HEAD">Gitbox</a></strong> | <strong><a href="https://github.com/apache/incubator-pekko-site/">Github</a></strong> | Apache pekko&#8201;&#8212;&#8201;Updated: 02/10/2023</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="releases">Releases</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="current">Current</h3>
+<div class="paragraph">
+<p><strong>No PGP Signing Keys</strong></p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="errata">Errata</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Please investigate the following potential issues</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="/guides/sites.html#podling_website_requirements">ASF Foundation link is missing from website</a></p>
+</li>
+<li>
+<p><a href="/guides/sites.html#podling_website_requirements">ASF Events link is missing from website</a></p>
+</li>
+<li>
+<p><a href="/guides/sites.html#podling_website_requirements">Apache License link is missing from website</a></p>
+</li>
+<li>
+<p><a href="/guides/sites.html#podling_website_requirements">Apache Thanks link is missing from website</a></p>
+</li>
+<li>
+<p><a href="/guides/sites.html#podling_website_requirements">Apache Security link is missing from website</a></p>
+</li>
+<li>
+<p><a href="/guides/sites.html#podling_website_requirements">Apache Sponsorship link is missing from website</a></p>
+</li>
+<li>
+<p><a href="/guides/sites.html#podling_website_requirements">Trademarks are missing from website</a></p>
+</li>
+<li>
+<p><a href="/guides/sites.html#podling_website_requirements">Copyright is missing from website</a></p>
+</li>
+<li>
+<p><a href="/guides/branding.html#disclaimers">Disclaimer is missing from website</a></p>
+</li>
+<li>
+<p><a href="/guides/releasemanagement.html#what_goes_into_a_release">Release distribution area is not setup</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The podling website scan does the best it can. Details are found <a href="https://whimsy.apache.org/pods/project/pekko">here</a></p>
+</div>
+</div>
+</div>
+
+		</div>
+		<div id="push"></div>
+    </div>
+
+    <div id="footer">
+      <div class="container">
+          <p class="muted credit">&copy; 2023 The Apache Software Foundation | Licensed under the Apache License, Version 2.0.<br/>
+          Apache Incubator, Apache, the Apache feather logo, and the Apache Incubator project logo are trademarks or registered trademarks of The Apache Software Foundation.</p>
+      </div>
+    </div>
+    <script src="../js/jquery-1.11.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/prettify.js"></script>
+    <script src="../js/readingTime.js"></script>
+    <script src="../js/incubator.js"></script>
+  </body>
+</html>
