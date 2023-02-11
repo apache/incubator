@@ -1,0 +1,5198 @@
+{
+  "annotator": {
+    "description": "Annotator provides annotation enabling code for browsers, servers, and humans.",
+    "fullName": "Annotator",
+    "hasMailListCommits": "",
+    "hasMailListDev": "",
+    "ldap": {
+      "members": [
+        "bigbluehat",
+        "gerben",
+        "niq",
+        "randall",
+        "rec",
+        "robcast",
+        "tbdinesh",
+        "tommaso"
+      ],
+      "numberCommitters": 8,
+      "numberCommittersNew": 0,
+      "numberPMCEquals": false,
+      "numberPMCMembers": 6,
+      "owners": [
+        "bigbluehat",
+        "gerben",
+        "niq",
+        "randall",
+        "rec",
+        "tommaso"
+      ]
+    },
+    "mentors": [
+      [
+        "Nick Kew",
+        "niq"
+      ],
+      [
+        "Tommaso Teofili",
+        "tommaso"
+      ],
+      [
+        "Benjamin Young",
+        "bigbluehat"
+      ]
+    ],
+    "news": [
+      "2016-08-30 Project enters incubation."
+    ],
+    "podlingName": "Annotator",
+    "rawReportingGroup": "group-1",
+    "releases": {
+      "apache-annotator-0.2.0-incubating.tar.gz": {
+        "dtm": "09/01/2021",
+        "folder": "source/0.2.0",
+        "hash": "sha512",
+        "revision": "r49715",
+        "size": "486834",
+        "user": "gerben"
+      }
+    },
+    "reportingGroup": "January, April, July, October",
+    "reportingMonthly": true,
+    "repositories": [
+      [
+        "incubator-annotator",
+        {
+          "description": "Apache Annotator provides annotation enabling code for browse...",
+          "last_update_int": 1670692888,
+          "last_update_txt": "9 weeks ago"
+        }
+      ],
+      [
+        "incubator-annotator-website",
+        {
+          "description": "Apache Annotator Site",
+          "last_update_int": 1674784015,
+          "last_update_txt": "15 days ago"
+        }
+      ]
+    ],
+    "resource": "annotator",
+    "sponsor": "Incubator",
+    "startDate": "2016-08-30",
+    "statusAge": 855,
+    "statusLastUpdated": "2020-10-09",
+    "urls": {
+      "git": "https://gitbox.apache.org/repos/asf?p=incubator-annotator.git;a=tree;hb=HEAD",
+      "keys": "https://downloads.apache.org/incubator/annotator/KEYS",
+      "svn": "",
+      "tracker": "https://issues.apache.org/jira/browse/ANNO",
+      "wiki": "https://cwiki.apache.org/confluence/display/ANNO",
+      "www": "http://annotator.incubator.apache.org"
+    },
+    "zFixMeList": [
+      [
+        "15",
+        "Project does not have 'dev' mailing list"
+      ],
+      [
+        "16",
+        "Project does not have 'commits' mailing list"
+      ]
+    ]
+  },
+  "baremaps": {
+    "description": "Apache Baremaps is a toolkit and a set of infrastructure components for creating, publishing, and operating online maps.",
+    "fullName": "Baremaps",
+    "hasMailListCommits": "http://mail-archives.apache.org/mod_mbox/baremaps-commits",
+    "hasMailListDev": "http://mail-archives.apache.org/mod_mbox/baremaps-dev",
+    "ldap": {
+      "members": [
+        "adrabble",
+        "bchapuis",
+        "bdelacretaz",
+        "danduk82",
+        "desruisseaux",
+        "jhyde",
+        "joshfischer",
+        "jsmith",
+        "kirs",
+        "lbesseau",
+        "percivall"
+      ],
+      "numberCommitters": 11,
+      "numberCommittersNew": 0,
+      "numberPMCEquals": true,
+      "numberPMCMembers": 11,
+      "owners": [
+        "adrabble",
+        "bchapuis",
+        "bdelacretaz",
+        "danduk82",
+        "desruisseaux",
+        "jhyde",
+        "joshfischer",
+        "jsmith",
+        "kirs",
+        "lbesseau",
+        "percivall"
+      ]
+    },
+    "mentors": [
+      [
+        "Bertrand Delacretaz",
+        "bdelacretaz"
+      ],
+      [
+        "Martin Desruisseaux",
+        "desruisseaux"
+      ],
+      [
+        "Julian Hyde",
+        "jhyde"
+      ],
+      [
+        "Calvin Kirs",
+        "kirs"
+      ],
+      [
+        "George Percivall",
+        "percivall"
+      ],
+      [
+        "Martin Desruisseaux",
+        "desruisseaux"
+      ]
+    ],
+    "news": [
+      "2022-10-10 Baremaps enters incubation."
+    ],
+    "podlingName": "Baremaps",
+    "rawReportingGroup": "group-3",
+    "releases": [],
+    "reportingGroup": "March, June, September, December",
+    "reportingMonthly": false,
+    "repositories": [
+      [
+        "incubator-baremaps",
+        {
+          "description": "Create custom vector tiles from OpenStreetMap and other data ...",
+          "last_update_int": 1675899133,
+          "last_update_txt": "2 days ago"
+        }
+      ],
+      [
+        "incubator-baremaps-site",
+        {
+          "description": "Apache Baremaps is a toolkit and a set of infrastructure comp...",
+          "last_update_int": 1675550723,
+          "last_update_txt": "6 days ago"
+        }
+      ]
+    ],
+    "resource": "baremaps",
+    "sponsor": "Incubator",
+    "startDate": "2022-10-10",
+    "statusAge": 114,
+    "statusLastUpdated": "2022-10-20",
+    "urls": {
+      "git": "https://gitbox.apache.org/repos/asf?p=incubator-baremaps.git;a=tree;hb=HEAD",
+      "keys": "",
+      "svn": "",
+      "tracker": "https://github.com/apache/baremaps/issues",
+      "wiki": "",
+      "www": "https://baremaps.apache.org"
+    },
+    "zFixMeList": [
+      [
+        "18",
+        "Has not provided a wiki link"
+      ],
+      [
+        "31",
+        "ASF Foundation link is missing from website"
+      ],
+      [
+        "32",
+        "ASF Events link is missing from website"
+      ],
+      [
+        "33",
+        "Apache License link is missing from website"
+      ],
+      [
+        "34",
+        "Apache Thanks link is missing from website"
+      ],
+      [
+        "35",
+        "Apache Security link is missing from website"
+      ],
+      [
+        "36",
+        "Apache Sponsorship link is missing from website"
+      ],
+      [
+        "37",
+        "Trademarks are missing from website"
+      ],
+      [
+        "38",
+        "Copyright is missing from website"
+      ],
+      [
+        "39",
+        "Disclaimer is missing from website"
+      ],
+      [
+        "12",
+        "Release distribution area is not setup"
+      ]
+    ]
+  },
+  "celeborn": {
+    "description": "Celeborn is an intermediate data service for big data computing engines to boost performance, stability, and flexibility.",
+    "fullName": "Celeborn",
+    "hasMailListCommits": "http://mail-archives.apache.org/mod_mbox/celeborn-commits",
+    "hasMailListDev": "http://mail-archives.apache.org/mod_mbox/celeborn-dev",
+    "ldap": {
+      "members": [
+        "angerszhuuuu",
+        "chengpan",
+        "ethanfeng",
+        "jqin",
+        "kerwinzhang",
+        "lidongdai",
+        "liyu",
+        "nafiyaix",
+        "ningjiang",
+        "powerwu",
+        "zhangduo",
+        "zhouky"
+      ],
+      "numberCommitters": 12,
+      "numberCommittersNew": 1,
+      "numberPMCEquals": false,
+      "numberPMCMembers": 11,
+      "owners": [
+        "angerszhuuuu",
+        "chengpan",
+        "ethanfeng",
+        "jqin",
+        "kerwinzhang",
+        "lidongdai",
+        "liyu",
+        "ningjiang",
+        "powerwu",
+        "zhangduo",
+        "zhouky"
+      ]
+    },
+    "mentors": [
+      [
+        "Becket Qin",
+        "jqin"
+      ],
+      [
+        "Lidong Dai",
+        "lidongdai"
+      ],
+      [
+        "Willem Ning Jiang",
+        "ningjiang"
+      ],
+      [
+        "Duo Zhang",
+        "zhangduo"
+      ],
+      [
+        "Yu Li",
+        "liyu"
+      ]
+    ],
+    "news": [
+      "2022-12-02 New Committer: Xia Yifan",
+      "2022-10-18 Project enters incubation."
+    ],
+    "podlingName": "Celeborn",
+    "rawReportingGroup": "group-2",
+    "releases": {},
+    "reportingGroup": "February, May, August, November",
+    "reportingMonthly": false,
+    "repositories": [
+      [
+        "incubator-celeborn",
+        {
+          "description": "Apache Celeborn is an elastic and high-performance service fo...",
+          "last_update_int": 1676012376,
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+        }
+      ],
+      [
+        "incubator-celeborn-website",
+        {
+          "description": "Apache Celeborn Site",
+          "last_update_int": 1671596482,
+          "last_update_txt": "7 weeks ago"
+        }
+      ]
+    ],
+    "resource": "celeborn",
+    "sponsor": "Incubator",
+    "startDate": "2022-10-18",
+    "statusAge": 58,
+    "statusLastUpdated": "2022-12-15",
+    "urls": {
+      "git": "https://gitbox.apache.org/repos/asf?p=incubator-celeborn.git;a=tree;hb=HEAD",
+      "keys": "https://downloads.apache.org/incubator/celeborn/KEYS",
+      "svn": "",
+      "tracker": "https://issues.apache.org/jira/projects/CELEBORN",
+      "wiki": "",
+      "www": "http://celeborn.apache.org"
+    },
+    "zFixMeList": [
+      [
+        "18",
+        "Has not provided a wiki link"
+      ],
+      [
+        "41",
+        "PGP KEYS file available without a distribution"
+      ]
+    ]
+  },
+  "datalab": {
+    "description": "DataLab is a platform for creating self-service, exploratory data science environments in the cloud using best-of-breed data science tools.",
+    "fullName": "DataLab",
+    "hasMailListCommits": "http://mail-archives.apache.org/mod_mbox/datalab-commits",
+    "hasMailListDev": "http://mail-archives.apache.org/mod_mbox/datalab-dev",
+    "ldap": {
+      "members": [
+        "adamsd",
+        "ankovalyshyn",
+        "bhliva",
+        "dgnatyshyn",
+        "dliaskovskyi",
+        "dmysakovets",
+        "dyankiv",
+        "hsaputra",
+        "hshpak",
+        "ignatiuk",
+        "ioleksandr",
+        "iredko",
+        "kamaci",
+        "lfrolov",
+        "mhladun",
+        "moskovych",
+        "mykolabodnar",
+        "nbarabash",
+        "ochaparin",
+        "ofuks",
+        "oleggrinets",
+        "olehmykolaishyn",
+        "omartushevskyi",
+        "opolishchuk",
+        "orlann",
+        "ppapou",
+        "ptgoetz",
+        "rkulynych",
+        "shliakhov",
+        "tpolyvana",
+        "vadymkuznetsov",
+        "vveres",
+        "vvitanska",
+        "yandrew",
+        "ykinash",
+        "ytykhun"
+      ],
+      "numberCommitters": 36,
+      "numberCommittersNew": 18,
+      "numberPMCEquals": false,
+      "numberPMCMembers": 22,
+      "owners": [
+        "ankovalyshyn",
+        "bhliva",
+        "dliaskovskyi",
+        "hsaputra",
+        "ignatiuk",
+        "ioleksandr",
+        "kamaci",
+        "lfrolov",
+        "moskovych",
+        "mykolabodnar",
+        "nbarabash",
+        "ochaparin",
+        "ofuks",
+        "oleggrinets",
+        "omartushevskyi",
+        "ptgoetz",
+        "rkulynych",
+        "shliakhov",
+        "vadymkuznetsov",
+        "vveres",
+        "vvitanska",
+        "ykinash"
+      ]
+    },
+    "mentors": [
+      [
+        "P. Taylor Goetz",
+        "ptgoetz"
+      ],
+      [
+        "Henry Saputra",
+        "hsaputra"
+      ],
+      [
+        "Furkan Kamaci",
+        "kamaci"
+      ]
+    ],
+    "news": [
+      "2022-11-30 New Release Apache (incubating) version 2.6.0",
+      "2022-08-22 New Committer, Oleksandr Polishchuk",
+      "2022-06-01 New Committer, Tetiana Polyvana",
+      "2022-03-15 New PPMC member, Alina Ignatiuk",
+      "2022-02-01 New PPMC member, Ruslan Kulynych",
+      "2022-01-27 New Release Apache (incubating) version 2.5.1",
+      "2022-01-19 New Committer, Alina Ignatiuk",
+      "2022-01-19 New Committer, Denys Yankiv",
+      "2021-12-22 New Committer, Ruslan Kulynych",
+      "2021-11-16 New Committer, Marian Hladun",
+      "2021-11-08 New Committer, Oleh Mykolaishyn",
+      "2021-08-09 New Release Apache (incubating) version 2.5.0",
+      "2021-06-22 New Committer, Iana Redko",
+      "2021-02-26 New PPMC member, Yurii Kinash",
+      "2021-02-19 New Committer, Yurii Tykhun",
+      "2021-02-19 New PPMC member, Leonid Frolov",
+      "2021-02-15 New PPMC member, Mykola Bodnar",
+      "2020-10 Renamed from DLab",
+      "2020-09-17 New Release Apache (incubating) version 2.4.0",
+      "2020-08-31 New Committer, Pavel Papou",
+      "2020-07-20 New Committer &amp; PPMC member, Oleg Fuks",
+      "2020-04-24 New Release Apache (incubating) version 2.3.0",
+      "2019-12-03 New Release Apache (incubating) version 2.2.0",
+      "2019-12-02 New Committer, Dmytro Gnatyshyn",
+      "2019-08-20 New Committer, Adams Disturber",
+      "2019-07-05 New Committer, Andrew Yatskovets",
+      "2019-04-18 New Committer, Anna Orlovska",
+      "2019-04-18 New Committer, Demian Mysakovets",
+      "2019-04-04 New Committer &amp; PPMC member, Oleksandr Isniuk",
+      "2019-04-02 New Release Apache (incubating) version 2.1.0",
+      "2019-02-12 New Committer, Mykola Bodnar",
+      "2018-08-20 Project enters incubation"
+    ],
+    "podlingName": "DataLab",
+    "rawReportingGroup": "group-1",
+    "releases": {
+      "apache-datalab-2.6.0-incubating.tar.gz": {
+        "dtm": "11/30/2022",
+        "folder": "2.6.0",
+        "hash": "sha512",
+        "revision": "r58356",
+        "size": "28528640",
+        "user": "lfrolov"
+      }
+    },
+    "reportingGroup": "January, April, July, October",
+    "reportingMonthly": false,
+    "repositories": [
+      [
+        "incubator-datalab",
+        {
+          "description": "Incubator Datalab",
+          "last_update_int": 1675931622,
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
+        }
+      ]
+    ],
+    "resource": "datalab",
+    "sponsor": "Incubator",
+    "startDate": "2018-08-20",
+    "statusAge": 72,
+    "statusLastUpdated": "2022-12-01",
+    "urls": {
+      "git": "https://gitbox.apache.org/repos/asf?p=incubator-datalab.git;a=tree;hb=HEAD",
+      "keys": "https://downloads.apache.org/incubator/datalab/KEYS",
+      "svn": "",
+      "tracker": "https://issues.apache.org/jira/projects/DATALAB",
+      "wiki": "https://cwiki.apache.org/confluence/display/DATALAB",
+      "www": "http://datalab.incubator.apache.org"
+    },
+    "zFixMeList": []
+  },
+  "devlake": {
+    "description": "DevLake is a development data platform, providing the data infrastructure for developer teams to analyze and improve their engineering productivity.",
+    "fullName": "DevLake",
+    "hasMailListCommits": "http://mail-archives.apache.org/mod_mbox/devlake-commits",
+    "hasMailListDev": "http://mail-archives.apache.org/mod_mbox/devlake-dev",
+    "ldap": {
+      "members": [
+        "abeizn",
+        "e2corporation",
+        "felixcheung",
+        "hez",
+        "jbonofre",
+        "jibin",
+        "jinglei",
+        "klesh",
+        "lidongdai",
+        "likyh",
+        "mappjzc",
+        "ningjiang",
+        "shiminan",
+        "sijie",
+        "warren",
+        "yumeng",
+        "zhangliang",
+        "zhangliang2022",
+        "zky"
+      ],
+      "numberCommitters": 19,
+      "numberCommittersNew": 0,
+      "numberPMCEquals": false,
+      "numberPMCMembers": 11,
+      "owners": [
+        "e2corporation",
+        "felixcheung",
+        "hez",
+        "jbonofre",
+        "klesh",
+        "lidongdai",
+        "ningjiang",
+        "sijie",
+        "warren",
+        "zhangliang",
+        "zhangliang2022"
+      ]
+    },
+    "mentors": [
+      [
+        "Felix Cheung",
+        "felixcheung"
+      ],
+      [
+        "Liang Zhang",
+        "zhangliang"
+      ],
+      [
+        "Lidong Dai",
+        "lidongdai"
+      ],
+      [
+        "Sijie Guo",
+        "sijie"
+      ],
+      [
+        "Jean-Baptiste Onofré",
+        "jbonofre"
+      ],
+      [
+        "Willem Ning Jiang",
+        "ningjiang"
+      ]
+    ],
+    "news": [
+      "2022-04-29 Project enters incubation."
+    ],
+    "podlingName": "DevLake",
+    "rawReportingGroup": "group-2",
+    "releases": {
+      "apache-devlake-0.14.0-incubating-src.tar.gz": {
+        "dtm": "09/30/2022",
+        "folder": "0.14.0-incubating",
+        "hash": "sha512",
+        "revision": "r57113",
+        "size": "3819379",
+        "user": "zhanglia"
+      }
+    },
+    "reportingGroup": "February, May, August, November",
+    "reportingMonthly": false,
+    "repositories": [
+      [
+        "incubator-devlake",
+        {
+          "description": "Apache DevLake is an open-source dev data platform to ingest,...",
+          "last_update_int": 1676037725,
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+        }
+      ],
+      [
+        "incubator-devlake-helm-chart",
+        {
+          "description": "Apache DevLake Helm Chart",
+          "last_update_int": 1675826250,
+          "last_update_txt": "3 days ago"
+        }
+      ],
+      [
+        "incubator-devlake-website",
+        {
+          "description": "Apache Devlake Website",
+          "last_update_int": 1676046401,
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+        }
+      ]
+    ],
+    "resource": "devlake",
+    "sponsor": "Incubator",
+    "startDate": "2022-04-29",
+    "statusAge": 275,
+    "statusLastUpdated": "2022-05-12",
+    "urls": {
+      "git": "https://gitbox.apache.org/repos/asf?p=incubator-devlake.git;a=tree;hb=HEAD",
+      "keys": "https://downloads.apache.org/incubator/devlake/KEYS",
+      "svn": "",
+      "tracker": "https://github.com/apache/incubator-devlake/issues",
+      "wiki": "",
+      "www": "https://devlake.incubator.apache.org"
+    },
+    "zFixMeList": [
+      [
+        "18",
+        "Has not provided a wiki link"
+      ]
+    ]
+  },
+  "eventmesh": {
+    "description": "EventMesh is a dynamic cloud-native basic service runtime used to decouple the application and middleware layer.",
+    "fullName": "EventMesh",
+    "hasMailListCommits": "http://mail-archives.apache.org/mod_mbox/eventmesh-commits",
+    "hasMailListDev": "http://mail-archives.apache.org/mod_mbox/eventmesh-dev",
+    "ldap": {
+      "members": [
+        "alexluo",
+        "bingyan",
+        "chenguangsheng",
+        "chenzhou",
+        "dinglei",
+        "duhengforever",
+        "fengyongshe",
+        "fpapon",
+        "huyuanxin",
+        "jbonofre",
+        "jellybo",
+        "jie",
+        "jmclean",
+        "jonyang",
+        "junping_du",
+        "kfliu",
+        "lihuansice",
+        "lixiaoshuang",
+        "lrhkobe",
+        "majorhe",
+        "markli",
+        "mikexue",
+        "mytang0",
+        "nanoxiong",
+        "nicolchen",
+        "pchengma",
+        "qingshanpeng",
+        "sanchen",
+        "slsjl",
+        "surilli",
+        "timcross",
+        "vnbear",
+        "vongosling",
+        "walleliu",
+        "walterzywei",
+        "wenjun",
+        "wqliang",
+        "xiaoyang",
+        "xwbx",
+        "zhongyanqing"
+      ],
+      "numberCommitters": 40,
+      "numberCommittersNew": 22,
+      "numberPMCEquals": false,
+      "numberPMCMembers": 14,
+      "owners": [
+        "alexluo",
+        "chenguangsheng",
+        "dinglei",
+        "duhengforever",
+        "fpapon",
+        "jbonofre",
+        "jmclean",
+        "junping_du",
+        "lixiaoshuang",
+        "mikexue",
+        "vongosling",
+        "walterzywei",
+        "wenjun",
+        "wqliang"
+      ]
+    },
+    "mentors": [
+      [
+        "Francois Papon",
+        "fpapon"
+      ],
+      [
+        "Junping Du",
+        "junping_du"
+      ],
+      [
+        "Jean-Baptiste Onofré",
+        "jbonofre"
+      ],
+      [
+        "Justin Mclean",
+        "jmclean"
+      ],
+      [
+        "Von Gosling",
+        "vongosling"
+      ]
+    ],
+    "news": [
+      "2023-01-30 Apache EventMesh (Incubating) release v1.8.0",
+      "2023-01-16 New PPMC: Yuwei Zhu",
+      "2023-01-16 New PPMC: Alex Luo",
+      "2023-01-14 New Committer: Kaifeng Liu",
+      "2023-01-13 New Committer: Jialin Sun",
+      "2023-01-13 New Committer: Yixiang Zhao",
+      "2023-01-12 New Committer: Hu Wei",
+      "2022-12-05 Apache EventMesh (Incubating) release v1.7.0",
+      "2022-11-18 New PPMC: Wenjun Ruan",
+      "2022-11-18 New PPMC: Xiaoshuang Li",
+      "2022-11-18 New Committer: Wentong Shi",
+      "2022-11-18 New Committer: Pengcheng Ma",
+      "2022-11-18 New Committer: Shanpeng (Mroccyen) Qing",
+      "2022-11-18 New Committer: Haohai (Mark) Li",
+      "2022-11-18 New Committer: Wei Liu",
+      "2022-11-18 New Committer: Yongshe Feng",
+      "2022-11-18 New Committer: Mengyang(Jacob) Tang",
+      "2022-11-18 New Committer: Yuwei Zhu",
+      "2022-11-18 New Committer: Zhou Chen(horoc)",
+      "2022-11-18 New Committer: Wei(VNBear) Zou",
+      "2022-11-18 New Committer: Mengyang(Jacob) Tang",
+      "2022-09-13 New Committer: Jie Hu",
+      "2022-09-13 New Committer: Yuanxin Hu",
+      "2022-09-13 New Committer: Jianbo Mai",
+      "2022-08-31 Apache EventMesh (Incubating) release v1.6.0",
+      "2022-07-08 New Committer: Xiaoshuang Li",
+      "2022-07-03 Apache EventMesh (Incubating) release v1.5.0",
+      "2022-04-11 New PPMC: Weiqiang Liang",
+      "2022-04-11 New Committer: Jingrong(Alex) Luo",
+      "2022-04-11 New Committer: Xiaoyang Liu",
+      "2022-03-19 Apache EventMesh (Incubating) release v1.4.0",
+      "2022-01-11 New Committer: Wenjun Ruan",
+      "2021-12-27 Apache EventMesh (Incubating) release v1.3.0",
+      "2021-08-10 Apache EventMesh (Incubating) release v1.2.0",
+      "2021-02-18 Project enters incubation."
+    ],
+    "podlingName": "EventMesh",
+    "rawReportingGroup": "group-1",
+    "releases": {
+      "apache-eventmesh-1.8.0-incubating-bin.tar.gz": {
+        "dtm": "01/29/2023",
+        "folder": "1.8.0-incubating",
+        "hash": "sha512",
+        "revision": "r59643",
+        "size": "215969911",
+        "user": "mikexue"
+      },
+      "apache-eventmesh-1.8.0-incubating-source.tar.gz": {
+        "dtm": "01/29/2023",
+        "folder": "1.8.0-incubating",
+        "hash": "sha512",
+        "revision": "r59643",
+        "size": "9324146",
+        "user": "mikexue"
+      }
+    },
+    "reportingGroup": "January, April, July, October",
+    "reportingMonthly": false,
+    "repositories": [
+      [
+        "incubator-eventmesh",
+        {
+          "description": "EventMesh is a fully serverless platform used to build distri...",
+          "last_update_int": 1676035715,
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+        }
+      ],
+      [
+        "incubator-eventmesh-site",
+        {
+          "description": "Apache EventMesh (Incubating) Website",
+          "last_update_int": 1675848751,
+          "last_update_txt": "3 days ago"
+        }
+      ]
+    ],
+    "resource": "eventmesh",
+    "sponsor": "Incubator",
+    "startDate": "2021-02-18",
+    "statusAge": 11,
+    "statusLastUpdated": "2023-01-31",
+    "urls": {
+      "git": "https://gitbox.apache.org/repos/asf?p=incubator-eventmesh.git;a=tree;hb=HEAD",
+      "keys": "https://downloads.apache.org/incubator/eventmesh/KEYS",
+      "svn": "",
+      "tracker": "https://issues.apache.org/jira/projects/EVENTMESH",
+      "wiki": "https://cwiki.apache.org/confluence/display/EVENTMESH",
+      "www": "http://eventmesh.incubator.apache.org"
+    },
+    "zFixMeList": []
+  },
+  "flagon": {
+    "description": "Flagon is a software tool usability testing platform",
+    "fullName": "Flagon",
+    "hasMailListCommits": "",
+    "hasMailListDev": "",
+    "ldap": {
+      "members": [
+        "aford",
+        "aghaemi",
+        "arthivez",
+        "austin",
+        "cgimenez",
+        "dmeikle",
+        "kamaci",
+        "krassmann",
+        "lewismc",
+        "lmariano",
+        "msbeard",
+        "poorejc",
+        "pykors",
+        "rf",
+        "tallison",
+        "unclegedd"
+      ],
+      "numberCommitters": 16,
+      "numberCommittersNew": 0,
+      "numberPMCEquals": false,
+      "numberPMCMembers": 14,
+      "owners": [
+        "aford",
+        "arthivez",
+        "austin",
+        "cgimenez",
+        "dmeikle",
+        "kamaci",
+        "lewismc",
+        "lmariano",
+        "msbeard",
+        "poorejc",
+        "pykors",
+        "rf",
+        "tallison",
+        "unclegedd"
+      ]
+    },
+    "mentors": [
+      [
+        "Lewis John McGibbney",
+        "lewismc"
+      ],
+      [
+        "David Meikle",
+        "dmeikle"
+      ],
+      [
+        "Tim Allison",
+        "tallison"
+      ],
+      [
+        "Furkan Kamaci",
+        "kamaci"
+      ]
+    ],
+    "news": [
+      "2021-05-28 Gedd Johnson (unclegedd) joins as PPMC",
+      "2021-04-16 PPMC releases apache-flagon-useralejs-incubating-2.1.1",
+      "2020-03-20 PPMC releases apache-flagon-useralejs-incubating-2.1.0",
+      "2019-09-01 PPMC releases apache-flagon-useralejs-incubating-2.0.2",
+      "2019-07-17 Furkan Kamaci (kamaci) joins as Mentor",
+      "2019-07-17 Tim Allison (tallison) joins as Mentor",
+      "2019-07-02 PPMC releases apache-flagon-useralejs-incubating-2.0.0",
+      "2019-06-28 PPMC releases apache-flagon-useralejs-incubating-1.0.0",
+      "2019-03-21 Project changes name to Apache Flagon (Incubating)",
+      "2018-05-04 PPMC releases apache-senssoft-useralejs-1.0.0",
+      "2017-01-24 Arthi Vezhavendan (arthivez) joins the PPMC",
+      "2016-07-13 Project enters incubation as Apacher SensSoft (Incubating)"
+    ],
+    "podlingName": "Flagon",
+    "rawReportingGroup": "group-1",
+    "releases": {
+      "apache-flagon-useralejs-incubating-2.3.0-bin.tar.gz": {
+        "dtm": "05/26/2022",
+        "folder": "apache-flagon-useralejs-incubating-2.3.0",
+        "hash": "sha512",
+        "revision": "r54732",
+        "size": "36627",
+        "user": "poorejc"
+      },
+      "apache-flagon-useralejs-incubating-2.3.0-bin.zip": {
+        "dtm": "05/26/2022",
+        "folder": "apache-flagon-useralejs-incubating-2.3.0",
+        "hash": "sha512",
+        "revision": "r54732",
+        "size": "45559",
+        "user": "poorejc"
+      },
+      "apache-flagon-useralejs-incubating-2.3.0-src.tar.gz": {
+        "dtm": "05/26/2022",
+        "folder": "apache-flagon-useralejs-incubating-2.3.0",
+        "hash": "sha512",
+        "revision": "r54732",
+        "size": "568560",
+        "user": "poorejc"
+      },
+      "apache-flagon-useralejs-incubating-2.3.0-src.zip": {
+        "dtm": "05/26/2022",
+        "folder": "apache-flagon-useralejs-incubating-2.3.0",
+        "hash": "sha512",
+        "revision": "r54732",
+        "size": "620274",
+        "user": "poorejc"
+      }
+    },
+    "reportingGroup": "January, April, July, October",
+    "reportingMonthly": false,
+    "repositories": [
+      [
+        "incubator-flagon",
+        {
+          "description": "Apache Flagon is a suite of comprehensive, thin-client behavi...",
+          "last_update_int": 1665010124,
+          "last_update_txt": "18 weeks ago"
+        }
+      ],
+      [
+        "incubator-flagon-distill",
+        {
+          "description": "Apache Flagon Distill is a python package to support and anal...",
+          "last_update_int": 1672156379,
+          "last_update_txt": "6 weeks ago"
+        }
+      ],
+      [
+        "incubator-flagon-stout",
+        {
+          "description": "Apache SensSoft Stout (Incubating) -- Archived (archived)",
+          "last_update_int": 1653599294,
+          "last_update_txt": "37 weeks ago"
+        }
+      ],
+      [
+        "incubator-flagon-tap",
+        {
+          "description": "Apache SensSoft Tap (Incubating) -- Archived (archived)",
+          "last_update_int": 1613294185,
+          "last_update_txt": "104 weeks ago"
+        }
+      ],
+      [
+        "incubator-flagon-user-ale",
+        {
+          "description": "Apache SensSoft User Ale (Incubating) -- Archived (archived)",
+          "last_update_int": 1613277714,
+          "last_update_txt": "104 weeks ago"
+        }
+      ],
+      [
+        "incubator-flagon-userale-pyqt5",
+        {
+          "description": "Apache SensSoft User Ale PyQT5 (Incubating) -- Archived (arch...",
+          "last_update_int": 1613276575,
+          "last_update_txt": "104 weeks ago"
+        }
+      ],
+      [
+        "incubator-flagon-useralejs",
+        {
+          "description": "Apache Flagon UserALE.js is a comprehensive, thin-client beha...",
+          "last_update_int": 1675483790,
+          "last_update_txt": "7 days ago"
+        }
+      ]
+    ],
+    "resource": "flagon",
+    "sponsor": "Incubator",
+    "startDate": "2016-07-13",
+    "statusAge": 618,
+    "statusLastUpdated": "2021-06-03",
+    "urls": {
+      "git": "https://gitbox.apache.org/repos/asf?p=incubator-flagon.git;a=tree;hb=HEAD",
+      "keys": "https://downloads.apache.org/incubator/flagon/KEYS",
+      "svn": "",
+      "tracker": "https://issues.apache.org/jira/browse/flagon",
+      "wiki": "https://cwiki.apache.org/confluence/display/flagon",
+      "www": "http://flagon.incubator.apache.org"
+    },
+    "zFixMeList": [
+      [
+        "15",
+        "Project does not have 'dev' mailing list"
+      ],
+      [
+        "16",
+        "Project does not have 'commits' mailing list"
+      ]
+    ]
+  },
+  "heron": {
+    "description": "A real-time, distributed, fault-tolerant stream processing engine.",
+    "fullName": "Heron",
+    "hasMailListCommits": "",
+    "hasMailListDev": "",
+    "ldap": {
+      "members": [
+        "aahmed",
+        "ashvin",
+        "avflor",
+        "billgraham",
+        "cckellogg",
+        "djkevincr",
+        "dnrusakov",
+        "eren",
+        "huijun",
+        "jerrypeng",
+        "jfarrell",
+        "joshfischer",
+        "karthikz",
+        "maosongfu",
+        "nicknezis",
+        "nlu90",
+        "nwang",
+        "objmagic",
+        "obristow",
+        "ptgoetz",
+        "saadurrahman",
+        "simingweng",
+        "sreev",
+        "supun",
+        "thinker0",
+        "wave",
+        "wenming",
+        "wwong",
+        "xiaoyao",
+        "yaliang",
+        "yaoli"
+      ],
+      "numberCommitters": 31,
+      "numberCommittersNew": 0,
+      "numberPMCEquals": false,
+      "numberPMCMembers": 20,
+      "owners": [
+        "ashvin",
+        "avflor",
+        "billgraham",
+        "cckellogg",
+        "djkevincr",
+        "huijun",
+        "jfarrell",
+        "joshfischer",
+        "karthikz",
+        "maosongfu",
+        "nicknezis",
+        "nlu90",
+        "nwang",
+        "objmagic",
+        "ptgoetz",
+        "sreev",
+        "supun",
+        "wave",
+        "wenming",
+        "yaliang"
+      ]
+    },
+    "mentors": [
+      [
+        "Jake Farrell",
+        "jfarrell"
+      ],
+      [
+        "P. Taylor Goetz",
+        "ptgoetz"
+      ],
+      [
+        "Dave Fisher",
+        "wave"
+      ],
+      [
+        "Ming Wen",
+        "wenming"
+      ],
+      [
+        "Kevin Ratnasekera",
+        "djkevincr"
+      ]
+    ],
+    "news": [
+      "2017-06-23 Project enters incubation."
+    ],
+    "podlingName": "Heron",
+    "rawReportingGroup": "group-2",
+    "releases": {
+      "heron-0.20.4-incubating-debian10.tar.gz": {
+        "dtm": "05/23/2021",
+        "folder": "heron-0.20.4-incubating",
+        "hash": "sha512",
+        "revision": "r47871",
+        "size": "734490059",
+        "user": "joshfisc"
+      },
+      "heron-0.20.4-incubating-src.tar.gz": {
+        "dtm": "05/23/2021",
+        "folder": "heron-0.20.4-incubating",
+        "hash": "sha512",
+        "revision": "r47871",
+        "size": "3247596",
+        "user": "joshfisc"
+      },
+      "heron-0.20.5-incubating-src.tar.gz": {
+        "dtm": "07/09/2022",
+        "folder": "heron-0.20.5-incubating",
+        "hash": "sha512",
+        "revision": "r55649",
+        "size": "13123391",
+        "user": "nicknezi"
+      },
+      "heron-0.20.5-incubating.tgz": {
+        "dtm": "07/09/2022",
+        "folder": "heron-0.20.5-incubating/helm",
+        "hash": "sha512",
+        "revision": "r55649",
+        "size": "12354",
+        "user": "nicknezi"
+      },
+      "heron-artifacts-0.20.5-incubating.tar.gz": {
+        "dtm": "07/09/2022",
+        "folder": "heron-0.20.5-incubating/maven",
+        "hash": "sha512",
+        "revision": "r55649",
+        "size": "20975641",
+        "user": "nicknezi"
+      },
+      "heron-install-0.20.4-incubating-centos7.sh": {
+        "dtm": "05/23/2021",
+        "folder": "heron-0.20.4-incubating",
+        "hash": "sha512",
+        "revision": "r47871",
+        "size": "732584114",
+        "user": "joshfisc"
+      },
+      "heron-install-0.20.4-incubating-debian10.sh": {
+        "dtm": "05/23/2021",
+        "folder": "heron-0.20.4-incubating",
+        "hash": "sha512",
+        "revision": "r47871",
+        "size": "734604396",
+        "user": "joshfisc"
+      },
+      "heron-install-0.20.4-incubating-ubuntu18.04.sh": {
+        "dtm": "05/23/2021",
+        "folder": "heron-0.20.4-incubating",
+        "hash": "sha512",
+        "revision": "r47871",
+        "size": "733829654",
+        "user": "joshfisc"
+      },
+      "heron-install-0.20.5-incubating-centos7.sh.tar.gz": {
+        "dtm": "07/09/2022",
+        "folder": "heron-0.20.5-incubating",
+        "hash": "sha512",
+        "revision": "r55650",
+        "size": "923432875",
+        "user": "nicknezi"
+      },
+      "heron-install-0.20.5-incubating-darwin.sh.tar.gz": {
+        "dtm": "07/09/2022",
+        "folder": "heron-0.20.5-incubating",
+        "hash": "sha512",
+        "revision": "r55651",
+        "size": "891051419",
+        "user": "nicknezi"
+      },
+      "heron-install-0.20.5-incubating-debian11.sh.tar.gz": {
+        "dtm": "07/09/2022",
+        "folder": "heron-0.20.5-incubating",
+        "hash": "sha512",
+        "revision": "r55652",
+        "size": "921788902",
+        "user": "nicknezi"
+      },
+      "heron-install-0.20.5-incubating-ubuntu22.04.sh.tar.gz": {
+        "dtm": "07/09/2022",
+        "folder": "heron-0.20.5-incubating",
+        "hash": "sha512",
+        "revision": "r55653",
+        "size": "911913019",
+        "user": "nicknezi"
+      },
+      "heronpy-0.20.5rc4-py3-none-any.whl": {
+        "dtm": "07/09/2022",
+        "folder": "heron-0.20.5-incubating/heronpy",
+        "hash": "sha512",
+        "revision": "r55649",
+        "size": "123330",
+        "user": "nicknezi"
+      },
+      "heronpy-0.20.5rc4.tar.gz": {
+        "dtm": "07/09/2022",
+        "folder": "heron-0.20.5-incubating/heronpy",
+        "hash": "sha512",
+        "revision": "r55649",
+        "size": "65561",
+        "user": "nicknezi"
+      }
+    },
+    "reportingGroup": "February, May, August, November",
+    "reportingMonthly": false,
+    "repositories": [
+      [
+        "incubator-heron",
+        {
+          "description": "Apache Heron (Incubating) is a realtime, distributed, fault-t...",
+          "last_update_int": 1673489303,
+          "last_update_txt": "30 days ago"
+        }
+      ]
+    ],
+    "resource": "heron",
+    "sponsor": "Incubator",
+    "startDate": "2017-06-23",
+    "statusAge": 855,
+    "statusLastUpdated": "2020-10-09",
+    "urls": {
+      "git": "https://gitbox.apache.org/repos/asf?p=incubator-heron.git;a=tree;hb=HEAD",
+      "keys": "https://downloads.apache.org/incubator/heron/KEYS",
+      "svn": "",
+      "tracker": "",
+      "wiki": "",
+      "www": "http://heron.incubator.apache.org"
+    },
+    "zFixMeList": [
+      [
+        "42",
+        "Distribution is missing incubator/incubating in file name heronpy-0.20.5rc4-py3-none-any.whl.asc"
+      ],
+      [
+        "42",
+        "Distribution is missing incubator/incubating in file name heronpy-0.20.5rc4.tar.gz.asc"
+      ],
+      [
+        "10",
+        "Has not provided an issue tracker link"
+      ],
+      [
+        "18",
+        "Has not provided a wiki link"
+      ],
+      [
+        "45",
+        "14 is a large number of release distributions. Non-current releases should be removed"
+      ],
+      [
+        "15",
+        "Project does not have 'dev' mailing list"
+      ],
+      [
+        "16",
+        "Project does not have 'commits' mailing list"
+      ]
+    ]
+  },
+  "hugegraph": {
+    "description": "A large-scale and easy-to-use graph database",
+    "fullName": "HugeGraph",
+    "hasMailListCommits": "",
+    "hasMailListDev": "http://mail-archives.apache.org/mod_mbox/hugegraph-dev",
+    "ldap": {
+      "members": [
+        "guoshoujing",
+        "hxd",
+        "jermy",
+        "jin",
+        "lidongdai",
+        "linary",
+        "liyu",
+        "ningjiang",
+        "panjuan",
+        "vaughn",
+        "zhangyi89817",
+        "zhaocong"
+      ],
+      "numberCommitters": 12,
+      "numberCommittersNew": 0,
+      "numberPMCEquals": true,
+      "numberPMCMembers": 12,
+      "owners": [
+        "guoshoujing",
+        "hxd",
+        "jermy",
+        "jin",
+        "lidongdai",
+        "linary",
+        "liyu",
+        "ningjiang",
+        "panjuan",
+        "vaughn",
+        "zhangyi89817",
+        "zhaocong"
+      ]
+    },
+    "mentors": [
+      [
+        "Lidong Dai",
+        "lidongdai"
+      ],
+      [
+        "Trista Pan",
+        "panjuan"
+      ],
+      [
+        "Xiangdong Huang",
+        "hxd"
+      ],
+      [
+        "Yu Li",
+        "liyu"
+      ],
+      [
+        "Willem Ning Jiang",
+        "ningjiang"
+      ]
+    ],
+    "news": [
+      "2022-01-23 Project enters incubation."
+    ],
+    "podlingName": "HugeGraph",
+    "rawReportingGroup": "group-1",
+    "releases": {},
+    "reportingGroup": "January, April, July, October",
+    "reportingMonthly": false,
+    "repositories": [
+      [
+        "incubator-hugegraph",
+        {
+          "description": "A graph database that supports more than 100+ billion data, h...",
+          "last_update_int": 1676014588,
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+        }
+      ],
+      [
+        "incubator-hugegraph-commons",
+        {
+          "description": "HugeGraph Commons - include common library & RPC module",
+          "last_update_int": 1676011608,
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+        }
+      ],
+      [
+        "incubator-hugegraph-computer",
+        {
+          "description": "HugeGraph Computer - A distributed graph processing system fo...",
+          "last_update_int": 1676023185,
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+        }
+      ],
+      [
+        "incubator-hugegraph-doc",
+        {
+          "description": "HugeGraph Website and Doc",
+          "last_update_int": 1676042607,
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+        }
+      ],
+      [
+        "incubator-hugegraph-toolchain",
+        {
+          "description": "HugeGraph toolchain - include a series useful graph modules",
+          "last_update_int": 1676011588,
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+        }
+      ],
+      [
+        "incubator-hugegraph-tools",
+        {
+          "description": "Apache HugeGraph (incubating) (archived)",
+          "last_update_int": 1649800563,
+          "last_update_txt": "43 weeks ago"
+        }
+      ]
+    ],
+    "resource": "hugegraph",
+    "sponsor": "Incubator",
+    "startDate": "2022-01-23",
+    "statusAge": 299,
+    "statusLastUpdated": "2022-04-18",
+    "urls": {
+      "git": "https://gitbox.apache.org/repos/asf?p=incubator-hugegraph.git;a=tree;hb=HEAD",
+      "keys": "https://downloads.apache.org/incubator/hugegraph/KEYS",
+      "svn": "",
+      "tracker": "https://github.com/apache/hugegraph/issues",
+      "wiki": "",
+      "www": "http://hugegraph.apache.org"
+    },
+    "zFixMeList": [
+      [
+        "18",
+        "Has not provided a wiki link"
+      ],
+      [
+        "41",
+        "PGP KEYS file available without a distribution"
+      ],
+      [
+        "16",
+        "Project does not have 'commits' mailing list"
+      ]
+    ]
+  },
+  "kie": {
+    "description": "KIE (Knowledge is Everything) is a community of solutions and supporting tooling for knowledge engineering and process automation, focusing on events, rules, and workflows.",
+    "fullName": "KIE",
+    "hasMailListCommits": "",
+    "hasMailListDev": "",
+    "ldap": {
+      "members": [
+        "acosentino",
+        "afalhambra",
+        "bkp",
+        "caponetto",
+        "corybai",
+        "davsclaus",
+        "desmax74",
+        "ederign",
+        "egonzalez",
+        "fantonangeli",
+        "fjtiradosarti",
+        "gmunozfe",
+        "hbelmiro",
+        "jomarko",
+        "kmarlis",
+        "lampajr",
+        "lightguardjp",
+        "mariofusco",
+        "mmortari",
+        "mweiler",
+        "paulovmr",
+        "pefernan",
+        "radtriste",
+        "rgdoliveira",
+        "ricardozanini",
+        "ruben",
+        "tiagodolphine",
+        "tkobayas",
+        "wmedvedeo",
+        "xianjingfeng",
+        "yamer"
+      ],
+      "numberCommitters": 31,
+      "numberCommittersNew": 0,
+      "numberPMCEquals": false,
+      "numberPMCMembers": 3,
+      "owners": [
+        "acosentino",
+        "bkp",
+        "davsclaus"
+      ]
+    },
+    "mentors": [
+      [
+        "Brian Proffitt",
+        "bkp"
+      ],
+      [
+        "Claus Ibsen",
+        "davsclaus"
+      ],
+      [
+        "Andrea Cosentino",
+        "acosentino"
+      ]
+    ],
+    "news": [],
+    "podlingName": "KIE",
+    "rawReportingGroup": "group-3",
+    "releases": [],
+    "reportingGroup": "March, June, September, December",
+    "reportingMonthly": false,
+    "repositories": "",
+    "resource": "kie",
+    "sponsor": "Incubator",
+    "startDate": "2023-01-13",
+    "statusAge": 0,
+    "statusLastUpdated": "",
+    "urls": {
+      "git": "",
+      "keys": "",
+      "svn": "",
+      "tracker": "",
+      "wiki": "",
+      "www": ""
+    },
+    "zFixMeList": [
+      [
+        "07",
+        "Status file is missing"
+      ],
+      [
+        "10",
+        "Has not provided an issue tracker link"
+      ],
+      [
+        "18",
+        "Has not provided a wiki link"
+      ],
+      [
+        "11",
+        "Website is missing"
+      ],
+      [
+        "12",
+        "Release distribution area is not setup"
+      ],
+      [
+        "15",
+        "Project does not have 'dev' mailing list"
+      ],
+      [
+        "16",
+        "Project does not have 'commits' mailing list"
+      ],
+      [
+        "17",
+        "No source code repository"
+      ]
+    ]
+  },
+  "kvrocks": {
+    "description": "Kvrocks is a distributed key-value NoSQL database, supporting the rich data structure",
+    "fullName": "Kvrocks",
+    "hasMailListCommits": "http://mail-archives.apache.org/mod_mbox/kvrocks-commits",
+    "hasMailListDev": "http://mail-archives.apache.org/mod_mbox/kvrocks-dev",
+    "ldap": {
+      "members": [
+        "alfejik",
+        "bradlee",
+        "caipengbo",
+        "chenliang613",
+        "chriszou",
+        "colinchamber",
+        "hexiaoqiao",
+        "hulk",
+        "jbonofre",
+        "jeanbone",
+        "karelrooted",
+        "shang",
+        "tanruixiang",
+        "tison",
+        "torwig",
+        "twice",
+        "vongosling",
+        "wangyuan",
+        "xiaobiao"
+      ],
+      "numberCommitters": 19,
+      "numberCommittersNew": 0,
+      "numberPMCEquals": false,
+      "numberPMCMembers": 9,
+      "owners": [
+        "alfejik",
+        "chenliang613",
+        "hexiaoqiao",
+        "hulk",
+        "jbonofre",
+        "tison",
+        "twice",
+        "vongosling",
+        "wangyuan"
+      ]
+    },
+    "mentors": [
+      [
+        "Jean-Baptiste Onofre",
+        "jbonofre"
+      ],
+      [
+        "Xiaoqiao He",
+        "hexiaoqiao"
+      ],
+      [
+        "tison",
+        "tison"
+      ],
+      [
+        "Von Gosling",
+        "vongosling"
+      ],
+      [
+        "Liang Chen",
+        "chenliang613"
+      ]
+    ],
+    "news": [
+      "2022-04-23 Project enters incubation."
+    ],
+    "podlingName": "Kvrocks",
+    "rawReportingGroup": "group-2",
+    "releases": {
+      "apache-kvrocks-2.1.0-incubating-src.tar.gz": {
+        "dtm": "08/03/2022",
+        "folder": "2.1.0",
+        "hash": "sha512",
+        "revision": "r56103",
+        "size": "620980",
+        "user": "hulk"
+      },
+      "apache-kvrocks-2.2.0-incubating-src.tar.gz": {
+        "dtm": "11/10/2022",
+        "folder": "2.2.0",
+        "hash": "sha512",
+        "revision": "r57948",
+        "size": "636059",
+        "user": "twice"
+      }
+    },
+    "reportingGroup": "February, May, August, November",
+    "reportingMonthly": false,
+    "repositories": [
+      [
+        "incubator-kvrocks",
+        {
+          "description": "Kvrocks is a distributed key value NoSQL database that uses R...",
+          "last_update_int": 1676035329,
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+        }
+      ],
+      [
+        "incubator-kvrocks-website",
+        {
+          "description": "Apache Kvrocks Website",
+          "last_update_int": 1676049463,
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+        }
+      ]
+    ],
+    "resource": "kvrocks",
+    "sponsor": "Incubator",
+    "startDate": "2022-04-23",
+    "statusAge": 294,
+    "statusLastUpdated": "2022-04-23",
+    "urls": {
+      "git": "https://gitbox.apache.org/repos/asf?p=incubator-kvrocks.git;a=tree;hb=HEAD",
+      "keys": "https://downloads.apache.org/incubator/kvrocks/KEYS",
+      "svn": "",
+      "tracker": "https://github.com/apache/incubator-kvrocks/issues",
+      "wiki": "",
+      "www": "http://kvrocks.apache.org"
+    },
+    "zFixMeList": [
+      [
+        "18",
+        "Has not provided a wiki link"
+      ]
+    ]
+  },
+  "liminal": {
+    "description": "Apache Liminal is an end-to-end platform for data engineers and scientists, allowing them to build, train and deploy machine learning models in a robust and agile way.",
+    "fullName": "Liminal",
+    "hasMailListCommits": "",
+    "hasMailListDev": "",
+    "ldap": {
+      "members": [
+        "amihayz",
+        "assafpinhasi",
+        "aviemzur",
+        "chenliang613",
+        "davor",
+        "hsaputra",
+        "jbonofre",
+        "lior",
+        "naturalett",
+        "umamahesh",
+        "zionrubin"
+      ],
+      "numberCommitters": 11,
+      "numberCommittersNew": 0,
+      "numberPMCEquals": false,
+      "numberPMCMembers": 9,
+      "owners": [
+        "amihayz",
+        "assafpinhasi",
+        "aviemzur",
+        "chenliang613",
+        "davor",
+        "hsaputra",
+        "jbonofre",
+        "lior",
+        "umamahesh"
+      ]
+    },
+    "mentors": [
+      [
+        "Jean-Baptiste Onofré",
+        "jbonofre"
+      ],
+      [
+        "Henry Saputra",
+        "hsaputra"
+      ],
+      [
+        "Uma Maheswara Rao G",
+        "umamahesh"
+      ],
+      [
+        "Davor Bonaci",
+        "davor"
+      ],
+      [
+        "Liang Chen",
+        "chenliang613"
+      ]
+    ],
+    "news": [
+      "YYYY-MM-DD Project enters incubation."
+    ],
+    "podlingName": "Liminal",
+    "rawReportingGroup": "group-1",
+    "releases": {
+      "apache-liminal-0.0.4-incubating-source.tar.gz": {
+        "dtm": "03/06/2022",
+        "folder": "0.0.4-INCUBATING",
+        "hash": "sha512",
+        "revision": "r52889",
+        "size": "4916287",
+        "user": "lior"
+      },
+      "apache-liminal-0.0.5-INCUBATING-source.tar.gz": {
+        "dtm": "01/25/2023",
+        "folder": "0.0.5-INCUBATING",
+        "hash": "sha512",
+        "revision": "r59577",
+        "size": "4923896",
+        "user": "naturale"
+      }
+    },
+    "reportingGroup": "January, April, July, October",
+    "reportingMonthly": false,
+    "repositories": [
+      [
+        "incubator-liminal",
+        {
+          "description": "Apache Liminals goal is to operationalise the machine learnin...",
+          "last_update_int": 1674375210,
+          "last_update_txt": "20 days ago"
+        }
+      ],
+      [
+        "incubator-liminal-site",
+        {
+          "description": "Apache Liminal Website",
+          "last_update_int": 1611656137,
+          "last_update_txt": "107 weeks ago"
+        }
+      ]
+    ],
+    "resource": "liminal",
+    "sponsor": "Incubator",
+    "startDate": "2020-05-23",
+    "statusAge": 856,
+    "statusLastUpdated": "2020-10-08",
+    "urls": {
+      "git": "",
+      "keys": "https://downloads.apache.org/incubator/liminal/KEYS",
+      "svn": "https://svn.apache.org/repos/asf/incubator/liminal",
+      "tracker": "",
+      "wiki": "",
+      "www": "http://liminal.incubator.apache.org"
+    },
+    "zFixMeList": [
+      [
+        "10",
+        "Has not provided an issue tracker link"
+      ],
+      [
+        "18",
+        "Has not provided a wiki link"
+      ],
+      [
+        "31",
+        "ASF Foundation link is missing from website"
+      ],
+      [
+        "32",
+        "ASF Events link is missing from website"
+      ],
+      [
+        "33",
+        "Apache License link is missing from website"
+      ],
+      [
+        "34",
+        "Apache Thanks link is missing from website"
+      ],
+      [
+        "35",
+        "Apache Security link is missing from website"
+      ],
+      [
+        "36",
+        "Apache Sponsorship link is missing from website"
+      ],
+      [
+        "37",
+        "Trademarks are missing from website"
+      ],
+      [
+        "39",
+        "Disclaimer is missing from website"
+      ],
+      [
+        "15",
+        "Project does not have 'dev' mailing list"
+      ],
+      [
+        "16",
+        "Project does not have 'commits' mailing list"
+      ]
+    ]
+  },
+  "livy": {
+    "description": "Livy is web service that exposes a REST interface for managing long running Apache Spark contexts in your cluster. With Livy, new applications can be built on top of Apache Spark that require fine grained interaction with many Spark contexts.",
+    "fullName": "Livy",
+    "hasMailListCommits": "",
+    "hasMailListDev": "",
+    "ldap": {
+      "members": [
+        "ajbozarth",
+        "bikas",
+        "brahma",
+        "dacort",
+        "ggal",
+        "irashid",
+        "jbonofre",
+        "jianzhenwu",
+        "jshao",
+        "kostas",
+        "ksumit",
+        "leesf",
+        "lmccay",
+        "lresende",
+        "madhawa",
+        "mgaido",
+        "pralabhkumar",
+        "shrprasa",
+        "vanzin",
+        "vinodkv",
+        "wypoon",
+        "xilangyan",
+        "zjffdu"
+      ],
+      "numberCommitters": 23,
+      "numberCommittersNew": 0,
+      "numberPMCEquals": false,
+      "numberPMCMembers": 19,
+      "owners": [
+        "ajbozarth",
+        "bikas",
+        "brahma",
+        "dacort",
+        "ggal",
+        "irashid",
+        "jbonofre",
+        "jianzhenwu",
+        "ksumit",
+        "leesf",
+        "lmccay",
+        "lresende",
+        "madhawa",
+        "mgaido",
+        "pralabhkumar",
+        "shrprasa",
+        "vinodkv",
+        "wypoon",
+        "xilangyan"
+      ]
+    },
+    "mentors": [
+      [
+        "Bikas Saha",
+        "bikas"
+      ],
+      [
+        "Luciano Resende",
+        "lresende"
+      ],
+      [
+        "Jean-Baptiste Onofré",
+        "jbonofre"
+      ],
+      [
+        "Madhawa Kasun Gunasekara",
+        "madhawa"
+      ]
+    ],
+    "news": [
+      "2017-06-05 Project enters incubation."
+    ],
+    "podlingName": "Livy",
+    "rawReportingGroup": "group-1",
+    "releases": {
+      "apache-livy-0.6.0-incubating-bin.zip": {
+        "dtm": "03/19/2019",
+        "folder": "0.6.0-incubating",
+        "hash": "sha512",
+        "revision": "r33080",
+        "size": "96137660",
+        "user": "vanzin"
+      },
+      "apache-livy-0.6.0-incubating-src.zip": {
+        "dtm": "03/19/2019",
+        "folder": "0.6.0-incubating",
+        "hash": "sha512",
+        "revision": "r33080",
+        "size": "1130526",
+        "user": "vanzin"
+      },
+      "apache-livy-0.7.0-incubating-bin.zip": {
+        "dtm": "01/07/2020",
+        "folder": "0.7.0-incubating",
+        "hash": "sha512",
+        "revision": "r37499",
+        "size": "92791460",
+        "user": "jshao"
+      },
+      "apache-livy-0.7.0-incubating-src.zip": {
+        "dtm": "01/07/2020",
+        "folder": "0.7.0-incubating",
+        "hash": "sha512",
+        "revision": "r37499",
+        "size": "1180275",
+        "user": "jshao"
+      },
+      "apache-livy-0.7.1-incubating-bin.zip": {
+        "dtm": "02/04/2021",
+        "folder": "0.7.1-incubating",
+        "hash": "sha512",
+        "revision": "r45798",
+        "size": "92791356",
+        "user": "jshao"
+      },
+      "apache-livy-0.7.1-incubating-src.zip": {
+        "dtm": "02/04/2021",
+        "folder": "0.7.1-incubating",
+        "hash": "sha512",
+        "revision": "r45798",
+        "size": "1180340",
+        "user": "jshao"
+      },
+      "livy-0.4.0-incubating-bin.zip": {
+        "dtm": "08/30/2017",
+        "folder": "0.4.0-incubating",
+        "hash": "sha512",
+        "revision": "r21356",
+        "size": "71578490",
+        "user": "jshao"
+      },
+      "livy-0.4.0-incubating-src.zip": {
+        "dtm": "08/30/2017",
+        "folder": "0.4.0-incubating",
+        "hash": "sha512",
+        "revision": "r21356",
+        "size": "986021",
+        "user": "jshao"
+      },
+      "livy-0.5.0-incubating-bin.zip": {
+        "dtm": "01/25/2018",
+        "folder": "0.5.0-incubating",
+        "hash": "sha512",
+        "revision": "r24450",
+        "size": "74117432",
+        "user": "ajbozart"
+      },
+      "livy-0.5.0-incubating-src.zip": {
+        "dtm": "01/25/2018",
+        "folder": "0.5.0-incubating",
+        "hash": "sha512",
+        "revision": "r24450",
+        "size": "995368",
+        "user": "ajbozart"
+      }
+    },
+    "reportingGroup": "January, April, July, October",
+    "reportingMonthly": false,
+    "repositories": [
+      [
+        "incubator-livy",
+        {
+          "description": "Apache Livy is an open source REST interface for interacting ...",
+          "last_update_int": 1676045551,
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+        }
+      ],
+      [
+        "incubator-livy-website",
+        {
+          "description": "Apache livy (Incubating)",
+          "last_update_int": 1622581556,
+          "last_update_txt": "88 weeks ago"
+        }
+      ]
+    ],
+    "resource": "livy",
+    "sponsor": "Incubator",
+    "startDate": "2017-06-05",
+    "statusAge": 2059,
+    "statusLastUpdated": "2017-06-23",
+    "urls": {
+      "git": "https://gitbox.apache.org/repos/asf?p=incubator-livy.git;a=tree;hb=HEAD",
+      "keys": "https://downloads.apache.org/incubator/livy/KEYS",
+      "svn": "",
+      "tracker": "",
+      "wiki": "",
+      "www": "https://livy.incubator.apache.org"
+    },
+    "zFixMeList": [
+      [
+        "10",
+        "Has not provided an issue tracker link"
+      ],
+      [
+        "18",
+        "Has not provided a wiki link"
+      ],
+      [
+        "32",
+        "ASF Events link is missing from website"
+      ],
+      [
+        "45",
+        "10 is a large number of release distributions. Non-current releases should be removed"
+      ],
+      [
+        "15",
+        "Project does not have 'dev' mailing list"
+      ],
+      [
+        "16",
+        "Project does not have 'commits' mailing list"
+      ]
+    ]
+  },
+  "marvin-ai": {
+    "description": "Marvin-AI is an open-source artificial intelligence (AI) platform that helps data scientists, prototype and productionalize complex solutions with a scalable, low-latency, language-agnostic, and standardized architecture while simplifies the process of exploration and modeling.",
+    "fullName": "Marvin-AI",
+    "hasMailListCommits": "",
+    "hasMailListDev": "",
+    "ldap": {
+      "members": [
+        "brunitto",
+        "colen",
+        "danilons",
+        "hwang123",
+        "jelster",
+        "jumpi",
+        "lresende",
+        "lucasbm88",
+        "rafaelnovello",
+        "taka",
+        "weichen",
+        "willianleite",
+        "yifeizhang"
+      ],
+      "numberCommitters": 13,
+      "numberCommittersNew": 0,
+      "numberPMCEquals": false,
+      "numberPMCMembers": 12,
+      "owners": [
+        "brunitto",
+        "colen",
+        "danilons",
+        "hwang123",
+        "jelster",
+        "jumpi",
+        "lresende",
+        "lucasbm88",
+        "rafaelnovello",
+        "taka",
+        "willianleite",
+        "yifeizhang"
+      ]
+    },
+    "mentors": [
+      [
+        "Luciano Resende",
+        "lresende"
+      ],
+      [
+        "William Colen",
+        "colen"
+      ]
+    ],
+    "news": [
+      "2018-08-27 Project enters incubation."
+    ],
+    "podlingName": "Marvin-AI",
+    "rawReportingGroup": "group-3",
+    "releases": [],
+    "reportingGroup": "March, June, September, December",
+    "reportingMonthly": true,
+    "repositories": [
+      [
+        "incubator-marvin",
+        {
+          "description": "Apache Marvin-AI",
+          "last_update_int": 1668785272,
+          "last_update_txt": "12 weeks ago"
+        }
+      ],
+      [
+        "incubator-marvin-website",
+        {
+          "description": "Apache marvin",
+          "last_update_int": 1584034312,
+          "last_update_txt": "152 weeks ago"
+        }
+      ]
+    ],
+    "resource": "marvin",
+    "sponsor": "Incubator",
+    "startDate": "2018-08-21",
+    "statusAge": 856,
+    "statusLastUpdated": "2020-10-08",
+    "urls": {
+      "git": "https://gitbox.apache.org/repos/asf?p=incubator-marvin.git;a=tree;hb=HEAD",
+      "keys": "",
+      "svn": "",
+      "tracker": "https://issues.apache.org/jira/browse/MARVIN",
+      "wiki": "",
+      "www": "http://marvin.incubator.apache.org"
+    },
+    "zFixMeList": [
+      [
+        "18",
+        "Has not provided a wiki link"
+      ],
+      [
+        "32",
+        "ASF Events link is missing from website"
+      ],
+      [
+        "33",
+        "Apache License link is missing from website"
+      ],
+      [
+        "35",
+        "Apache Security link is missing from website"
+      ],
+      [
+        "12",
+        "Release distribution area is not setup"
+      ],
+      [
+        "15",
+        "Project does not have 'dev' mailing list"
+      ],
+      [
+        "16",
+        "Project does not have 'commits' mailing list"
+      ]
+    ]
+  },
+  "milagro": {
+    "description": "Milagro is core security infrastructure and crypto libraries for decentralized networks and distributed systems.",
+    "fullName": "Milagro",
+    "hasMailListCommits": "",
+    "hasMailListDev": "",
+    "ldap": {
+      "members": [
+        "a_budroni",
+        "brianspector",
+        "cmorris",
+        "giorgio",
+        "go",
+        "jfclere",
+        "johnmcw",
+        "kittohoward",
+        "kmccusker",
+        "niq",
+        "pahilt",
+        "riccardo",
+        "sandreoli",
+        "smihaylov"
+      ],
+      "numberCommitters": 14,
+      "numberCommittersNew": 0,
+      "numberPMCEquals": false,
+      "numberPMCMembers": 10,
+      "owners": [
+        "brianspector",
+        "giorgio",
+        "go",
+        "jfclere",
+        "johnmcw",
+        "kmccusker",
+        "niq",
+        "pahilt",
+        "riccardo",
+        "smihaylov"
+      ]
+    },
+    "mentors": [
+      [
+        "Nick Kew",
+        "niq"
+      ],
+      [
+        "Jean-Frederic Clere",
+        "jfclere"
+      ]
+    ],
+    "news": [
+      "2015-12-21 Project enters incubation"
+    ],
+    "podlingName": "Milagro",
+    "rawReportingGroup": "group-1",
+    "releases": {
+      "apache-milagro-crypto-c-2.0.1-incubating-src.tar.gz": {
+        "dtm": "01/31/2020",
+        "folder": "apache-milagro-crypto-c-2.0.1-incubating",
+        "hash": "sha512",
+        "revision": "r37816",
+        "size": "11785712",
+        "user": "johnmcw"
+      },
+      "apache-milagro-crypto-js-1.0.0-incubating-src.tar.gz": {
+        "dtm": "08/27/2019",
+        "folder": "apache-milagro-crypto-js-1.0.0-incubating",
+        "hash": "sha512",
+        "revision": "r35400",
+        "size": "3312653",
+        "user": "johnmcw"
+      },
+      "apache-milagro-dta-0.1.0-incubating-src.tar.gz": {
+        "dtm": "10/03/2019",
+        "folder": "apache-milagro-dta-0.1.0-incubating",
+        "hash": "sha512",
+        "revision": "r36176",
+        "size": "137390",
+        "user": "johnmcw"
+      },
+      "apache-milagro-mpc-0.1-incubating-src.tar.gz": {
+        "dtm": "11/04/2022",
+        "folder": "apache-milagro-mpc-0.1-incubating",
+        "hash": "sha512",
+        "revision": "r57798",
+        "size": "1565845",
+        "user": "johnmcw"
+      }
+    },
+    "reportingGroup": "January, April, July, October",
+    "reportingMonthly": false,
+    "repositories": [
+      [
+        "incubator-milagro",
+        {
+          "description": "Apache Milagro (Incubating)",
+          "last_update_int": 1673246838,
+          "last_update_txt": "5 weeks ago"
+        }
+      ],
+      [
+        "incubator-milagro-crypto",
+        {
+          "description": "[DEPRECATED] - Apache Milagro Crypto (archived)",
+          "last_update_int": 1560526475,
+          "last_update_txt": "191 weeks ago"
+        }
+      ],
+      [
+        "incubator-milagro-crypto-c",
+        {
+          "description": "Apache milagro (Incubating)",
+          "last_update_int": 1613391628,
+          "last_update_txt": "104 weeks ago"
+        }
+      ],
+      [
+        "incubator-milagro-crypto-js",
+        {
+          "description": "Apache milagro",
+          "last_update_int": 1570014019,
+          "last_update_txt": "175 weeks ago"
+        }
+      ],
+      [
+        "incubator-milagro-crypto-rust",
+        {
+          "description": "Apache Milagro Crypto Library - Rust Version",
+          "last_update_int": 1674254334,
+          "last_update_txt": "21 days ago"
+        }
+      ],
+      [
+        "incubator-milagro-dta",
+        {
+          "description": "Apache Milagro Decentralized Trust Authority",
+          "last_update_int": 1652728461,
+          "last_update_txt": "39 weeks ago"
+        }
+      ],
+      [
+        "incubator-milagro-java",
+        {
+          "description": "[DEPRECATED] - Apache milagro (archived)",
+          "last_update_int": 1541641212,
+          "last_update_txt": "222 weeks ago"
+        }
+      ],
+      [
+        "incubator-milagro-mfa-js-client",
+        {
+          "description": "[DEPRECATED] - Apache Milagro MFA JS Client (archived)",
+          "last_update_int": 1480423459,
+          "last_update_txt": "324 weeks ago"
+        }
+      ],
+      [
+        "incubator-milagro-mfa-js-lib",
+        {
+          "description": "[DEPRECATED] - Apache Milagro MFA JS Lib (archived)",
+          "last_update_int": 1488448708,
+          "last_update_txt": "310 weeks ago"
+        }
+      ],
+      [
+        "incubator-milagro-mfa-sdk-android",
+        {
+          "description": "[DEPRECATED] - Apache Milagro MFA SDK Android (archived)",
+          "last_update_int": 1524112375,
+          "last_update_txt": "251 weeks ago"
+        }
+      ],
+      [
+        "incubator-milagro-mfa-sdk-core",
+        {
+          "description": "[DEPRECATED] - Apache Milagro MFA SDK Core (archived)",
+          "last_update_int": 1496317149,
+          "last_update_txt": "297 weeks ago"
+        }
+      ],
+      [
+        "incubator-milagro-mfa-sdk-ios",
+        {
+          "description": "[DEPRECATED] - Apache Milagro MFA SDK ios (archived)",
+          "last_update_int": 1538735504,
+          "last_update_txt": "227 weeks ago"
+        }
+      ],
+      [
+        "incubator-milagro-mfa-sdk-wp",
+        {
+          "description": "[DEPRECATED] - Apache Milagro MFA SDK wp (archived)",
+          "last_update_int": 1469463593,
+          "last_update_txt": "342 weeks ago"
+        }
+      ],
+      [
+        "incubator-milagro-mfa-server",
+        {
+          "description": "Apache Milagro MFA Server",
+          "last_update_int": 1559207065,
+          "last_update_txt": "193 weeks ago"
+        }
+      ],
+      [
+        "incubator-milagro-tls",
+        {
+          "description": "[DEPRECATED] - Apache Milagro TLS (archived)",
+          "last_update_int": 1463427187,
+          "last_update_txt": "352 weeks ago"
+        }
+      ]
+    ],
+    "resource": "milagro",
+    "sponsor": "Incubator",
+    "startDate": "2015-12-21",
+    "statusAge": 1350,
+    "statusLastUpdated": "2019-06-02",
+    "urls": {
+      "git": "https://gitbox.apache.org/repos/asf?p=incubator-milagro.git;a=tree;hb=HEAD",
+      "keys": "https://downloads.apache.org/incubator/milagro/KEYS",
+      "svn": "",
+      "tracker": "",
+      "wiki": "https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=115529045",
+      "www": "http://milagro.incubator.apache.org"
+    },
+    "zFixMeList": [
+      [
+        "10",
+        "Has not provided an issue tracker link"
+      ],
+      [
+        "31",
+        "ASF Foundation link is missing from website"
+      ],
+      [
+        "32",
+        "ASF Events link is missing from website"
+      ],
+      [
+        "33",
+        "Apache License link is missing from website"
+      ],
+      [
+        "34",
+        "Apache Thanks link is missing from website"
+      ],
+      [
+        "35",
+        "Apache Security link is missing from website"
+      ],
+      [
+        "36",
+        "Apache Sponsorship link is missing from website"
+      ],
+      [
+        "39",
+        "Disclaimer is missing from website"
+      ],
+      [
+        "15",
+        "Project does not have 'dev' mailing list"
+      ],
+      [
+        "16",
+        "Project does not have 'commits' mailing list"
+      ]
+    ]
+  },
+  "nemo": {
+    "description": "Nemo is a data processing system to flexibly control the runtime behaviors of a job to adapt to varying deployment characteristics.",
+    "fullName": "Nemo",
+    "hasMailListCommits": "http://mail-archives.apache.org/mod_mbox/nemo-commits",
+    "hasMailListDev": "http://mail-archives.apache.org/mod_mbox/nemo-dev",
+    "ldap": {
+      "members": [
+        "bgchun",
+        "gwkim",
+        "gwlee",
+        "haeyoon",
+        "hwarim",
+        "hyunsik",
+        "jangho",
+        "jbonofre",
+        "jeongyoon",
+        "jglee",
+        "johnyangk",
+        "jooykim",
+        "sanha",
+        "taegeonum",
+        "weimer",
+        "wonook",
+        "wylee",
+        "yunseong"
+      ],
+      "numberCommitters": 18,
+      "numberCommittersNew": 0,
+      "numberPMCEquals": false,
+      "numberPMCMembers": 16,
+      "owners": [
+        "bgchun",
+        "gwkim",
+        "gwlee",
+        "hyunsik",
+        "jangho",
+        "jbonofre",
+        "jeongyoon",
+        "jglee",
+        "johnyangk",
+        "jooykim",
+        "sanha",
+        "taegeonum",
+        "weimer",
+        "wonook",
+        "wylee",
+        "yunseong"
+      ]
+    },
+    "mentors": [
+      [
+        "Hyunsik Choi",
+        "hyunsik"
+      ],
+      [
+        "Byung-Gon Chun",
+        "bgchun"
+      ],
+      [
+        "Jean-Baptiste Onofré",
+        "jbonofre"
+      ],
+      [
+        "Markus Weimer",
+        "weimer"
+      ]
+    ],
+    "news": [
+      "2018-02-04 Nemo enters incubation."
+    ],
+    "podlingName": "Nemo",
+    "rawReportingGroup": "group-3",
+    "releases": {
+      "apache-nemo-0.4-incubating-rc1.tar.gz": {
+        "dtm": "09/05/2022",
+        "folder": "0.4-incubating",
+        "hash": "sha512",
+        "revision": "r56672",
+        "size": "1434579",
+        "user": "wonook"
+      }
+    },
+    "reportingGroup": "March, June, September, December",
+    "reportingMonthly": false,
+    "repositories": [
+      [
+        "incubator-nemo",
+        {
+          "description": "Apache Nemo Incubating",
+          "last_update_int": 1675380090,
+          "last_update_txt": "8 days ago"
+        }
+      ],
+      [
+        "incubator-nemo-website",
+        {
+          "description": "Apache nemo",
+          "last_update_int": 1675138821,
+          "last_update_txt": "11 days ago"
+        }
+      ]
+    ],
+    "resource": "nemo",
+    "sponsor": "Incubator",
+    "startDate": "2018-02-04",
+    "statusAge": 1808,
+    "statusLastUpdated": "2018-03-01",
+    "urls": {
+      "git": "https://gitbox.apache.org/repos/asf?p=incubator-nemo.git;a=tree;hb=HEAD",
+      "keys": "https://downloads.apache.org/incubator/nemo/KEYS",
+      "svn": "",
+      "tracker": "https://issues.apache.org/jira/browse/NEMO",
+      "wiki": "http://cwiki.apache.org/confluence/display/NEMO",
+      "www": "http://nemo.incubator.apache.org"
+    },
+    "zFixMeList": []
+  },
+  "nlpcraft": {
+    "description": "A Java API for NLU applications",
+    "fullName": "NLPCraft",
+    "hasMailListCommits": "",
+    "hasMailListDev": "",
+    "ldap": {
+      "members": [
+        "aradzinski",
+        "cos",
+        "dmonakhov",
+        "evansye",
+        "ifropc",
+        "kamaci",
+        "nivanov",
+        "paulk",
+        "sergeykamov",
+        "smakov",
+        "wave"
+      ],
+      "numberCommitters": 11,
+      "numberCommittersNew": 1,
+      "numberPMCEquals": false,
+      "numberPMCMembers": 10,
+      "owners": [
+        "aradzinski",
+        "cos",
+        "dmonakhov",
+        "evansye",
+        "kamaci",
+        "nivanov",
+        "paulk",
+        "sergeykamov",
+        "smakov",
+        "wave"
+      ]
+    },
+    "mentors": [
+      [
+        "Roman Shaposhnik",
+        "rvs"
+      ],
+      [
+        "Furkan Kamaci",
+        "kamaci"
+      ],
+      [
+        "Evans Ye",
+        "evansye"
+      ],
+      [
+        "Paul King",
+        "paulk"
+      ],
+      [
+        "Konstantin I Boudnik",
+        "cos"
+      ],
+      [
+        "Dave Fisher",
+        "wave"
+      ]
+    ],
+    "news": [
+      "2020-02-13 Project enters incubation.",
+      "2020-02-24 JIRA project has been created.",
+      "2020-02-25 Mailing lists were requested through self-service portal.",
+      "2020-02-26 Mailing lists were created.",
+      "2020-02-28 Git repos are created.",
+      "2020-02-28 New committer accounts are created.",
+      "2020-03-05 Code migration has started: completed for nlpcraft-java-client.",
+      "2020-03-07 Code migration has been completed."
+    ],
+    "podlingName": "NLPCraft",
+    "rawReportingGroup": "group-2",
+    "releases": {
+      "apache-nlpcraft-incubating-0.7.4.zip": {
+        "dtm": "02/10/2021",
+        "folder": "nlpcraft",
+        "hash": "sha256",
+        "revision": "r45949",
+        "size": "24186913",
+        "user": "aradzins"
+      },
+      "apache-nlpcraft-incubating-0.7.5.zip": {
+        "dtm": "05/16/2021",
+        "folder": "nlpcraft",
+        "hash": "sha256",
+        "revision": "r47749",
+        "size": "24434068",
+        "user": "aradzins"
+      },
+      "apache-nlpcraft-incubating-0.8.0.zip": {
+        "dtm": "06/11/2021",
+        "folder": "nlpcraft",
+        "hash": "sha256",
+        "revision": "r48302",
+        "size": "24433120",
+        "user": "aradzins"
+      },
+      "apache-nlpcraft-incubating-0.9.0.zip": {
+        "dtm": "08/06/2021",
+        "folder": "nlpcraft",
+        "hash": "sha256",
+        "revision": "r49215",
+        "size": "24483165",
+        "user": "aradzins"
+      },
+      "apache-nlpcraft-java-client-incubating-0.7.2.zip": {
+        "dtm": "12/15/2020",
+        "folder": "java-client",
+        "hash": "sha256",
+        "revision": "r44973",
+        "size": "96071",
+        "user": "aradzins"
+      },
+      "apache-nlpcraft-java-client-incubating-0.7.5.zip": {
+        "dtm": "05/22/2021",
+        "folder": "java-client",
+        "hash": "sha256",
+        "revision": "r47868",
+        "size": "97726",
+        "user": "aradzins"
+      },
+      "apache-nlpcraft-java-client-incubating-0.9.0.zip": {
+        "dtm": "08/22/2021",
+        "folder": "java-client",
+        "hash": "sha256",
+        "revision": "r49591",
+        "size": "117451",
+        "user": "aradzins"
+      }
+    },
+    "reportingGroup": "February, May, August, November",
+    "reportingMonthly": false,
+    "repositories": [
+      [
+        "incubator-nlpcraft",
+        {
+          "description": "Apache NLPCraft - API to convert natural language into actions.",
+          "last_update_int": 1675446469,
+          "last_update_txt": "7 days ago"
+        }
+      ],
+      [
+        "incubator-nlpcraft-java-client",
+        {
+          "description": "Native Java Client for Apache NLPCraft.",
+          "last_update_int": 1664995253,
+          "last_update_txt": "18 weeks ago"
+        }
+      ],
+      [
+        "incubator-nlpcraft-ui",
+        {
+          "description": "Management UI for Apache NLPcraft",
+          "last_update_int": 1587905637,
+          "last_update_txt": "146 weeks ago"
+        }
+      ],
+      [
+        "incubator-nlpcraft-website",
+        {
+          "description": "Apache NLPCraft - API to convert natural language into actions.",
+          "last_update_int": 1674934587,
+          "last_update_txt": "13 days ago"
+        }
+      ]
+    ],
+    "resource": "nlpcraft",
+    "sponsor": "Incubator",
+    "startDate": "2020-02-13",
+    "statusAge": 856,
+    "statusLastUpdated": "2020-10-08",
+    "urls": {
+      "git": "https://gitbox.apache.org/repos/asf?p=incubator-nlpcraft.git;a=tree;hb=HEAD",
+      "keys": "https://downloads.apache.org/incubator/nlpcraft/KEYS",
+      "svn": "",
+      "tracker": "",
+      "wiki": "",
+      "www": "http://nlpcraft.incubator.apache.org"
+    },
+    "zFixMeList": [
+      [
+        "10",
+        "Has not provided an issue tracker link"
+      ],
+      [
+        "18",
+        "Has not provided a wiki link"
+      ],
+      [
+        "15",
+        "Project does not have 'dev' mailing list"
+      ],
+      [
+        "16",
+        "Project does not have 'commits' mailing list"
+      ]
+    ]
+  },
+  "pagespeed": {
+    "description": "\n            PageSpeed represents a series of open source technologies to help make the\n            web faster by rewriting web pages to reduce latency and bandwidth.\n        ",
+    "fullName": "PageSpeed",
+    "hasMailListCommits": "",
+    "hasMailListDev": "",
+    "ldap": {
+      "members": [
+        "ashishk1",
+        "huibao",
+        "jmarantz",
+        "kspoelstra",
+        "lofesa",
+        "morlovich",
+        "niq",
+        "oschaaf",
+        "zwoop"
+      ],
+      "numberCommitters": 9,
+      "numberCommittersNew": 0,
+      "numberPMCEquals": false,
+      "numberPMCMembers": 7,
+      "owners": [
+        "ashishk1",
+        "jmarantz",
+        "kspoelstra",
+        "morlovich",
+        "niq",
+        "oschaaf",
+        "zwoop"
+      ]
+    },
+    "mentors": [
+      [
+        "Leif Hedstrom",
+        "zwoop"
+      ],
+      [
+        "Nick Kew",
+        "niq"
+      ],
+      [
+        "Atri Sharma",
+        "atri"
+      ]
+    ],
+    "news": [
+      "2017-09-30 Project <a href=\"https://s.apache.org/eGgS\">enters incubation</a>."
+    ],
+    "podlingName": "PageSpeed",
+    "rawReportingGroup": "group-2",
+    "releases": {
+      "mod-pagespeed-apache-incubating-beta-1.14.36.1-r0.tar.bz2": {
+        "dtm": "06/22/2020",
+        "folder": "1.14.36.1",
+        "hash": "sha512",
+        "revision": "r40130",
+        "size": "45607133",
+        "user": "oschaaf"
+      },
+      "mod-pagespeed-apache-incubating-beta_1.14.36.1-r0_amd64.deb": {
+        "dtm": "06/22/2020",
+        "folder": "1.14.36.1/x64",
+        "hash": "sha512",
+        "revision": "r40130",
+        "size": "8776594",
+        "user": "oschaaf"
+      },
+      "psol-1.14.36.1-apache-incubating-x64.tar.gz": {
+        "dtm": "06/22/2020",
+        "folder": "1.14.36.1/x64",
+        "hash": "sha512",
+        "revision": "r40130",
+        "size": "19844644",
+        "user": "oschaaf"
+      }
+    },
+    "reportingGroup": "February, May, August, November",
+    "reportingMonthly": false,
+    "repositories": [
+      [
+        "incubator-pagespeed-cpanel",
+        {
+          "description": "mod_pagespeed module for CPanel WHM",
+          "last_update_int": 1542935167,
+          "last_update_txt": "220 weeks ago"
+        }
+      ],
+      [
+        "incubator-pagespeed-debian",
+        {
+          "description": "(Expiremental) Proper Debian packaging",
+          "last_update_int": 1532960445,
+          "last_update_txt": "237 weeks ago"
+        }
+      ],
+      [
+        "incubator-pagespeed-drp",
+        {
+          "description": "Automatically exported from code.google.com/p/domain-registry...",
+          "last_update_int": 1595512420,
+          "last_update_txt": "133 weeks ago"
+        }
+      ],
+      [
+        "incubator-pagespeed-icu",
+        {
+          "description": "ICU modified to work with PageSpeed",
+          "last_update_int": 1494331707,
+          "last_update_txt": "301 weeks ago"
+        }
+      ],
+      [
+        "incubator-pagespeed-mod",
+        {
+          "description": "Apache module for rewriting web pages to reduce latency and b...",
+          "last_update_int": 1667750791,
+          "last_update_txt": "14 weeks ago"
+        }
+      ],
+      [
+        "incubator-pagespeed-ngx",
+        {
+          "description": "Automatic PageSpeed optimization module for Nginx",
+          "last_update_int": 1656602532,
+          "last_update_txt": "32 weeks ago"
+        }
+      ],
+      [
+        "incubator-pagespeed-optipng",
+        {
+          "description": "Minimal OptiPNG bundled as a library for PageSpeed",
+          "last_update_int": 1558093961,
+          "last_update_txt": "195 weeks ago"
+        }
+      ],
+      [
+        "incubator-pagespeed-website",
+        {
+          "description": "Apache pagespeed website",
+          "last_update_int": 1659741806,
+          "last_update_txt": "27 weeks ago"
+        }
+      ],
+      [
+        "incubator-pagespeed-zlib",
+        {
+          "description": "gypified zlib for PageSpeed",
+          "last_update_int": 1515854936,
+          "last_update_txt": "265 weeks ago"
+        }
+      ]
+    ],
+    "resource": "pagespeed",
+    "sponsor": "Incubator",
+    "startDate": "2017-09-30",
+    "statusAge": 856,
+    "statusLastUpdated": "2020-10-08",
+    "urls": {
+      "git": "https://gitbox.apache.org/repos/asf?p=incubator-pagespeed-cpanel.git;a=tree;hb=HEAD",
+      "keys": "https://downloads.apache.org/incubator/pagespeed/KEYS",
+      "svn": "",
+      "tracker": "",
+      "wiki": "",
+      "www": "http://pagespeed.incubator.apache.org"
+    },
+    "zFixMeList": [
+      [
+        "10",
+        "Has not provided an issue tracker link"
+      ],
+      [
+        "18",
+        "Has not provided a wiki link"
+      ],
+      [
+        "31",
+        "ASF Foundation link is missing from website"
+      ],
+      [
+        "32",
+        "ASF Events link is missing from website"
+      ],
+      [
+        "33",
+        "Apache License link is missing from website"
+      ],
+      [
+        "34",
+        "Apache Thanks link is missing from website"
+      ],
+      [
+        "35",
+        "Apache Security link is missing from website"
+      ],
+      [
+        "36",
+        "Apache Sponsorship link is missing from website"
+      ],
+      [
+        "37",
+        "Trademarks are missing from website"
+      ],
+      [
+        "38",
+        "Copyright is missing from website"
+      ],
+      [
+        "15",
+        "Project does not have 'dev' mailing list"
+      ],
+      [
+        "16",
+        "Project does not have 'commits' mailing list"
+      ]
+    ]
+  },
+  "pegasus": {
+    "description": "Pegasus is a distributed key-value storage system which is designed to be simple, horizontally scalable, strongly consistent and high-performance.",
+    "fullName": "Pegasus",
+    "hasMailListCommits": "",
+    "hasMailListDev": "",
+    "ldap": {
+      "members": [
+        "cailiuyang",
+        "chenliang613",
+        "huangwei",
+        "jiashuo",
+        "laiyingchun",
+        "liuxun",
+        "qinzuoyan",
+        "smityz",
+        "sunweijie",
+        "vongosling",
+        "wangdan",
+        "wutao",
+        "yuchenhe",
+        "zhangduo",
+        "zhaoliwei"
+      ],
+      "numberCommitters": 15,
+      "numberCommittersNew": 0,
+      "numberPMCEquals": false,
+      "numberPMCMembers": 14,
+      "owners": [
+        "cailiuyang",
+        "chenliang613",
+        "huangwei",
+        "jiashuo",
+        "laiyingchun",
+        "liuxun",
+        "qinzuoyan",
+        "sunweijie",
+        "vongosling",
+        "wangdan",
+        "wutao",
+        "yuchenhe",
+        "zhangduo",
+        "zhaoliwei"
+      ]
+    },
+    "mentors": [
+      [
+        "Duo zhang",
+        "zhangduo"
+      ],
+      [
+        "Liang Chen",
+        "chenliang613"
+      ],
+      [
+        "Von Gosling",
+        "vongosling"
+      ],
+      [
+        "Liu Xun",
+        "liuxun"
+      ]
+    ],
+    "news": [
+      "2020-06-22 Project enters incubation."
+    ],
+    "podlingName": "Pegasus",
+    "rawReportingGroup": "group-1",
+    "releases": {
+      "apache-pegasus-2.4.0-incubating-src.zip": {
+        "dtm": "10/30/2022",
+        "folder": "2.4.0",
+        "hash": "sha512",
+        "revision": "r57658",
+        "size": "4462407",
+        "user": "jiashuo"
+      }
+    },
+    "reportingGroup": "January, April, July, October",
+    "reportingMonthly": false,
+    "repositories": [
+      [
+        "incubator-pegasus",
+        {
+          "description": "Apache Pegasus - A horizontally scalable, strongly consistent...",
+          "last_update_int": 1675816801,
+          "last_update_txt": "3 days ago"
+        }
+      ],
+      [
+        "incubator-pegasus-website",
+        {
+          "description": "Apache Pegasus Website",
+          "last_update_int": 1665217133,
+          "last_update_txt": "18 weeks ago"
+        }
+      ]
+    ],
+    "resource": "pegasus",
+    "sponsor": "Incubator",
+    "startDate": "2020-06-28",
+    "statusAge": 856,
+    "statusLastUpdated": "2020-10-08",
+    "urls": {
+      "git": "https://gitbox.apache.org/repos/asf?p=incubator-pegasus.git;a=tree;hb=HEAD",
+      "keys": "https://downloads.apache.org/incubator/pegasus/KEYS",
+      "svn": "",
+      "tracker": "https://issues.apache.org/jira/projects/PEGASUS",
+      "wiki": "https://cwiki.apache.org/confluence/display/pegasus",
+      "www": "http://pegasus.incubator.apache.org"
+    },
+    "zFixMeList": [
+      [
+        "32",
+        "ASF Events link is missing from website"
+      ],
+      [
+        "33",
+        "Apache License link is missing from website"
+      ],
+      [
+        "34",
+        "Apache Thanks link is missing from website"
+      ],
+      [
+        "35",
+        "Apache Security link is missing from website"
+      ],
+      [
+        "36",
+        "Apache Sponsorship link is missing from website"
+      ],
+      [
+        "37",
+        "Trademarks are missing from website"
+      ],
+      [
+        "15",
+        "Project does not have 'dev' mailing list"
+      ],
+      [
+        "16",
+        "Project does not have 'commits' mailing list"
+      ]
+    ]
+  },
+  "pekko": {
+    "description": "Pekko is a toolkit and an ecosystem for building highly concurrent, distributed, reactive and resilient applications for Java and Scala.",
+    "fullName": "Pekko",
+    "hasMailListCommits": "http://mail-archives.apache.org/mod_mbox/pekko-commits",
+    "hasMailListDev": "http://mail-archives.apache.org/mod_mbox/pekko-dev",
+    "ldap": {
+      "members": [
+        "alexelcu",
+        "andreatp",
+        "antex",
+        "claude",
+        "dsc",
+        "fanningpj",
+        "gregm",
+        "hepin",
+        "jbonofre",
+        "jchapuis",
+        "jlprat",
+        "jmclean",
+        "jrudolph",
+        "jzb",
+        "liguobin",
+        "mdedetrich",
+        "mwkohout",
+        "nivox",
+        "nvollmar",
+        "rskraba",
+        "rvs",
+        "salar",
+        "seanglover",
+        "wusheng"
+      ],
+      "numberCommitters": 24,
+      "numberCommittersNew": 0,
+      "numberPMCEquals": true,
+      "numberPMCMembers": 24,
+      "owners": [
+        "alexelcu",
+        "andreatp",
+        "antex",
+        "claude",
+        "dsc",
+        "fanningpj",
+        "gregm",
+        "hepin",
+        "jbonofre",
+        "jchapuis",
+        "jlprat",
+        "jmclean",
+        "jrudolph",
+        "jzb",
+        "liguobin",
+        "mdedetrich",
+        "mwkohout",
+        "nivox",
+        "nvollmar",
+        "rskraba",
+        "rvs",
+        "salar",
+        "seanglover",
+        "wusheng"
+      ]
+    },
+    "mentors": [
+      [
+        "PJ Fanning",
+        "fanningpj"
+      ],
+      [
+        "Justin McLean",
+        "jmclean"
+      ],
+      [
+        "Roman Shaposhnik",
+        "rvs"
+      ],
+      [
+        "Wu Sheng",
+        "wusheng"
+      ],
+      [
+        "Ryan Skraba",
+        "rskraba"
+      ],
+      [
+        "JB Onofré",
+        "jbonofre"
+      ],
+      [
+        "Claude Warren",
+        "claude"
+      ]
+    ],
+    "news": [
+      "2022-10-24 Project enters incubation."
+    ],
+    "podlingName": "Pekko",
+    "rawReportingGroup": "group-1",
+    "releases": [],
+    "reportingGroup": "January, April, July, October",
+    "reportingMonthly": false,
+    "repositories": [
+      [
+        "incubator-pekko",
+        {
+          "description": "Build highly concurrent, distributed, and resilient message-d...",
+          "last_update_int": 1676049237,
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+        }
+      ],
+      [
+        "incubator-pekko-connectors",
+        {
+          "description": "Apache Pekko Connectors is a Reactive Enterprise Integration ...",
+          "last_update_int": 1675690965,
+          "last_update_txt": "4 days ago"
+        }
+      ],
+      [
+        "incubator-pekko-connectors-kafka",
+        {
+          "description": "Apache Pekko Kafka Connector - Pekko-Connectors is a Reactive...",
+          "last_update_int": 1675983959,
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
+        }
+      ],
+      [
+        "incubator-pekko-grpc",
+        {
+          "description": "Apache Pekko gRPC",
+          "last_update_int": 1674902063,
+          "last_update_txt": "14 days ago"
+        }
+      ],
+      [
+        "incubator-pekko-http",
+        {
+          "description": "The Streaming-first HTTP server/module of Apache Pekko",
+          "last_update_int": 1676049765,
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+        }
+      ],
+      [
+        "incubator-pekko-management",
+        {
+          "description": "Apache Pekko Management is a suite of tools for operating Pek...",
+          "last_update_int": 1673961171,
+          "last_update_txt": "24 days ago"
+        }
+      ],
+      [
+        "incubator-pekko-persistence-cassandra",
+        {
+          "description": "A replicated Apache Pekko Persistence journal backed by Apach...",
+          "last_update_int": 1674041177,
+          "last_update_txt": "24 days ago"
+        }
+      ],
+      [
+        "incubator-pekko-persistence-dynamodb",
+        {
+          "description": "DynamoDBJournal for Apache Pekko Persistence",
+          "last_update_int": 1673991742,
+          "last_update_txt": "24 days ago"
+        }
+      ],
+      [
+        "incubator-pekko-persistence-jdbc",
+        {
+          "description": "Asynchronously writes journal and snapshot entries to configu...",
+          "last_update_int": 1673990566,
+          "last_update_txt": "24 days ago"
+        }
+      ],
+      [
+        "incubator-pekko-persistence-r2dbc",
+        {
+          "description": "Asynchronously writes journal and snapshot entries to configu...",
+          "last_update_int": 1674032591,
+          "last_update_txt": "24 days ago"
+        }
+      ],
+      [
+        "incubator-pekko-platform-guide",
+        {
+          "description": "Examples how to implement Microservices using Apache Pekko",
+          "last_update_int": 1673293854,
+          "last_update_txt": "5 weeks ago"
+        }
+      ],
+      [
+        "incubator-pekko-projection",
+        {
+          "description": "Apache Pekko Projections is intended for building systems wit...",
+          "last_update_int": 1674655453,
+          "last_update_txt": "16 days ago"
+        }
+      ],
+      [
+        "incubator-pekko-samples",
+        {
+          "description": "Apache Pekko Sample Projects",
+          "last_update_int": 1667418838,
+          "last_update_txt": "14 weeks ago"
+        }
+      ],
+      [
+        "incubator-pekko-sbt-paradox",
+        {
+          "description": "Theme and sbt-paradox settings used by Pekko projects",
+          "last_update_int": 1676019108,
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+        }
+      ],
+      [
+        "incubator-pekko-site",
+        {
+          "description": "Apache pekko",
+          "last_update_int": 1676048149,
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+        }
+      ]
+    ],
+    "resource": "pekko",
+    "sponsor": "Incubator",
+    "startDate": "2022-10-24",
+    "statusAge": 9,
+    "statusLastUpdated": "2023-02-02",
+    "urls": {
+      "git": "https://gitbox.apache.org/repos/asf?p=incubator-pekko.git;a=tree;hb=HEAD",
+      "keys": "",
+      "svn": "",
+      "tracker": "https://github.com/apache/incubator-pekko/issues",
+      "wiki": "https://cwiki.apache.org/confluence/display/Pekko",
+      "www": "https://pekko.apache.org"
+    },
+    "zFixMeList": [
+      [
+        "31",
+        "ASF Foundation link is missing from website"
+      ],
+      [
+        "32",
+        "ASF Events link is missing from website"
+      ],
+      [
+        "33",
+        "Apache License link is missing from website"
+      ],
+      [
+        "34",
+        "Apache Thanks link is missing from website"
+      ],
+      [
+        "35",
+        "Apache Security link is missing from website"
+      ],
+      [
+        "36",
+        "Apache Sponsorship link is missing from website"
+      ],
+      [
+        "37",
+        "Trademarks are missing from website"
+      ],
+      [
+        "38",
+        "Copyright is missing from website"
+      ],
+      [
+        "39",
+        "Disclaimer is missing from website"
+      ],
+      [
+        "12",
+        "Release distribution area is not setup"
+      ]
+    ]
+  },
+  "ponymail": {
+    "description": "Pony Mail is a mail-archiving, archive viewing, and interaction service, that can be integrated with many email platforms.",
+    "fullName": "Pony Mail",
+    "hasMailListCommits": "",
+    "hasMailListDev": "",
+    "ldap": {
+      "members": [
+        "curcuru",
+        "humbedooh",
+        "ilgrosso",
+        "jim",
+        "johndament",
+        "pctony",
+        "rbowen",
+        "rubys",
+        "sbp",
+        "sebb",
+        "testdooh",
+        "testsebb",
+        "ucb"
+      ],
+      "numberCommitters": 13,
+      "numberCommittersNew": 0,
+      "numberPMCEquals": false,
+      "numberPMCMembers": 11,
+      "owners": [
+        "curcuru",
+        "humbedooh",
+        "ilgrosso",
+        "jim",
+        "johndament",
+        "pctony",
+        "rbowen",
+        "rubys",
+        "testdooh",
+        "testsebb",
+        "ucb"
+      ]
+    },
+    "mentors": [
+      [
+        "John D. Ament",
+        "johndament"
+      ]
+    ],
+    "news": [
+      "2016-05-27 Project enters incubation.",
+      "2016-08-02 Apache Pony Mail (Incubating) 0.9 released.",
+      "2016-10-11 Sebastian Bazley joins as committer."
+    ],
+    "podlingName": "PonyMail",
+    "rawReportingGroup": "group-1",
+    "releases": {
+      "apache-pony-mail-0.11-incubating.tar.gz": {
+        "dtm": "03/25/2019",
+        "folder": "",
+        "hash": "sha256",
+        "revision": "r33191",
+        "size": "1055853",
+        "user": "humbedoo"
+      }
+    },
+    "reportingGroup": "January, April, July, October",
+    "reportingMonthly": true,
+    "repositories": [
+      [
+        "incubator-ponymail",
+        {
+          "description": "Apache Pony Mail (Incubating) - Email for Ponies & People",
+          "last_update_int": 1647314669,
+          "last_update_txt": "48 weeks ago"
+        }
+      ],
+      [
+        "incubator-ponymail-foal",
+        {
+          "description": "Apache Pony Mail Foal (Next Generation Suite)",
+          "last_update_int": 1662040365,
+          "last_update_txt": "23 weeks ago"
+        }
+      ],
+      [
+        "incubator-ponymail-site",
+        {
+          "description": "Apache Pony Mail (Incubating) Site",
+          "last_update_int": 1666642839,
+          "last_update_txt": "16 weeks ago"
+        }
+      ],
+      [
+        "incubator-ponymail-unit-tests",
+        {
+          "description": "Apache Pony Mail Unit Tests",
+          "last_update_int": 1633786410,
+          "last_update_txt": "70 weeks ago"
+        }
+      ]
+    ],
+    "resource": "ponymail",
+    "sponsor": "Incubator",
+    "startDate": "2016-05-27",
+    "statusAge": 855,
+    "statusLastUpdated": "2020-10-09",
+    "urls": {
+      "git": "https://gitbox.apache.org/repos/asf?p=incubator-ponymail.git;a=tree;hb=HEAD",
+      "keys": "https://downloads.apache.org/incubator/ponymail/KEYS",
+      "svn": "",
+      "tracker": "https://github.com/apache/incubator-ponymail/issues",
+      "wiki": "",
+      "www": "http://ponymail.incubator.apache.org"
+    },
+    "zFixMeList": [
+      [
+        "18",
+        "Has not provided a wiki link"
+      ],
+      [
+        "32",
+        "ASF Events link is missing from website"
+      ],
+      [
+        "37",
+        "Trademarks are missing from website"
+      ],
+      [
+        "38",
+        "Copyright is missing from website"
+      ],
+      [
+        "15",
+        "Project does not have 'dev' mailing list"
+      ],
+      [
+        "16",
+        "Project does not have 'commits' mailing list"
+      ]
+    ]
+  },
+  "sdap": {
+    "description": "SDAP is an integrated data analytic center for Big Science problems.",
+    "fullName": "SDAP",
+    "hasMailListCommits": "",
+    "hasMailListDev": "",
+    "ldap": {
+      "members": [
+        "eamonford",
+        "earmstro",
+        "echyam",
+        "fgreg",
+        "huang",
+        "jelya",
+        "jjacob",
+        "joern",
+        "kmarlis",
+        "lewismc",
+        "maya",
+        "nchung",
+        "rkk",
+        "skperez",
+        "tcram",
+        "tloubrieu",
+        "wphyo"
+      ],
+      "numberCommitters": 17,
+      "numberCommittersNew": 0,
+      "numberPMCEquals": false,
+      "numberPMCMembers": 18,
+      "owners": [
+        "eamonford",
+        "earmstro",
+        "echyam",
+        "fgreg",
+        "huang",
+        "jelya",
+        "jhyde",
+        "jjacob",
+        "joern",
+        "kmarlis",
+        "lewismc",
+        "maya",
+        "nchung",
+        "rkk",
+        "skperez",
+        "tcram",
+        "tloubrieu",
+        "wphyo"
+      ]
+    },
+    "mentors": [
+      [
+        "Julian Hyde",
+        "jhyde"
+      ],
+      [
+        "Jörn Rottmann",
+        "joern"
+      ]
+    ],
+    "news": [
+      "2017-10-22 Project enters incubation."
+    ],
+    "podlingName": "SDAP",
+    "rawReportingGroup": "group-2",
+    "releases": {
+      "apache-sdap-ingester-1.0.0-incubating-src.tar.gz": {
+        "dtm": "01/04/2023",
+        "folder": "1.0.0-incubating",
+        "hash": "sha512",
+        "revision": "r59130",
+        "size": "198151042",
+        "user": "rkk"
+      },
+      "apache-sdap-nexus-1.0.0-incubating-src.tar.gz": {
+        "dtm": "01/04/2023",
+        "folder": "1.0.0-incubating",
+        "hash": "sha512",
+        "revision": "r59130",
+        "size": "808806",
+        "user": "rkk"
+      },
+      "apache-sdap-nexusproto-1.0.0-incubating-src.tar.gz": {
+        "dtm": "01/04/2023",
+        "folder": "1.0.0-incubating",
+        "hash": "sha512",
+        "revision": "r59130",
+        "size": "19107",
+        "user": "rkk"
+      }
+    },
+    "reportingGroup": "February, May, August, November",
+    "reportingMonthly": false,
+    "repositories": [
+      [
+        "incubator-sdap-doms",
+        {
+          "description": "Apache sdap (Incubating)",
+          "last_update_int": 0,
+          "last_update_txt": "<span style='color: #777; font-style: italic;'>No commits</span>"
+        }
+      ],
+      [
+        "incubator-sdap-edge",
+        {
+          "description": "Apache sdap (Incubating)",
+          "last_update_int": 1575330012,
+          "last_update_txt": "167 weeks ago"
+        }
+      ],
+      [
+        "incubator-sdap-in-situ-data-services",
+        {
+          "description": "Software for in situ data analytics",
+          "last_update_int": 1668155048,
+          "last_update_txt": "13 weeks ago"
+        }
+      ],
+      [
+        "incubator-sdap-ingester",
+        {
+          "description": "Software for ingesting data into SDAP NEXUS",
+          "last_update_int": 1674669334,
+          "last_update_txt": "16 days ago"
+        }
+      ],
+      [
+        "incubator-sdap-mudrod",
+        {
+          "description": "Apache sdap (Incubating)",
+          "last_update_int": 1672697644,
+          "last_update_txt": "6 weeks ago"
+        }
+      ],
+      [
+        "incubator-sdap-nexus",
+        {
+          "description": "Apache sdap (Incubating)",
+          "last_update_int": 1675799140,
+          "last_update_txt": "3 days ago"
+        }
+      ],
+      [
+        "incubator-sdap-nexusproto",
+        {
+          "description": "Google Protobuf definition of a SDAP NEXUS Tile with bindings...",
+          "last_update_int": 1674499092,
+          "last_update_txt": "18 days ago"
+        }
+      ],
+      [
+        "incubator-sdap-ningester",
+        {
+          "description": "Java batch job used to ingest datasets into SDAP NEXUS",
+          "last_update_int": 1584657408,
+          "last_update_txt": "151 weeks ago"
+        }
+      ],
+      [
+        "incubator-sdap-ningesterpy",
+        {
+          "description": "Python module exposing an HTTP interface that can be used to ...",
+          "last_update_int": 1586745649,
+          "last_update_txt": "148 weeks ago"
+        }
+      ],
+      [
+        "incubator-sdap-website",
+        {
+          "description": "Apache sdap (Incubating)",
+          "last_update_int": 1674245252,
+          "last_update_txt": "21 days ago"
+        }
+      ]
+    ],
+    "resource": "sdap",
+    "sponsor": "Incubator",
+    "startDate": "2017-10-22",
+    "statusAge": 855,
+    "statusLastUpdated": "2020-10-09",
+    "urls": {
+      "git": "https://gitbox.apache.org/repos/asf?p=incubator-sdap-doms.git;a=tree;hb=HEAD",
+      "keys": "https://downloads.apache.org/incubator/sdap/KEYS",
+      "svn": "",
+      "tracker": "https://issues.apache.org/jira/browse/sdap",
+      "wiki": "https://cwiki.apache.org/confluence/display/sdap",
+      "www": "http://sdap.incubator.apache.org"
+    },
+    "zFixMeList": [
+      [
+        "31",
+        "ASF Foundation link is missing from website"
+      ],
+      [
+        "32",
+        "ASF Events link is missing from website"
+      ],
+      [
+        "33",
+        "Apache License link is missing from website"
+      ],
+      [
+        "35",
+        "Apache Security link is missing from website"
+      ],
+      [
+        "15",
+        "Project does not have 'dev' mailing list"
+      ],
+      [
+        "16",
+        "Project does not have 'commits' mailing list"
+      ]
+    ]
+  },
+  "seatunnel": {
+    "description": "SeaTunnel is a very easy-to-use ultra-high-performance distributed data integration platform that supports real-time synchronization of massive data.",
+    "fullName": "SeaTunnel",
+    "hasMailListCommits": "http://mail-archives.apache.org/mod_mbox/seatunnel-commits",
+    "hasMailListDev": "http://mail-archives.apache.org/mod_mbox/seatunnel-dev",
+    "ldap": {
+      "members": [
+        "benjobs",
+        "dijiekstra",
+        "djkevincr",
+        "fanjia",
+        "gaojun2048",
+        "gaoyingju",
+        "guowei",
+        "ic4y",
+        "jbonofre",
+        "kezhenxu94",
+        "kirs",
+        "leo65535",
+        "lidongdai",
+        "liugddx",
+        "ming",
+        "nielifeng",
+        "ningjiang",
+        "rickyhuo",
+        "ridxiong",
+        "songjian",
+        "tedliu",
+        "tyrantlucifer",
+        "wanghailin",
+        "wenjun",
+        "wuchunfu",
+        "yangxiang",
+        "zhongjiajie",
+        "zongwen"
+      ],
+      "numberCommitters": 28,
+      "numberCommittersNew": 0,
+      "numberPMCEquals": false,
+      "numberPMCMembers": 17,
+      "owners": [
+        "djkevincr",
+        "fanjia",
+        "gaojun2048",
+        "gaoyingju",
+        "guowei",
+        "jbonofre",
+        "kezhenxu94",
+        "kirs",
+        "lidongdai",
+        "nielifeng",
+        "ningjiang",
+        "rickyhuo",
+        "ridxiong",
+        "tedliu",
+        "tyrantlucifer",
+        "wenjun",
+        "zhongjiajie"
+      ]
+    },
+    "mentors": [
+      [
+        "Zhenxu Ke",
+        "kezhenxu94"
+      ],
+      [
+        "William-GuoWei",
+        "guowei"
+      ],
+      [
+        "Lidong Dai",
+        "lidongdai"
+      ],
+      [
+        "Ted Liu",
+        "tedliu"
+      ],
+      [
+        "Kevin Ratnasekera",
+        "djkevincr"
+      ],
+      [
+        "JB Onofré",
+        "jbonofre"
+      ],
+      [
+        "Willem Ning Jiang",
+        "ningjiang"
+      ]
+    ],
+    "news": [
+      "2021-12-09 Project enters incubation."
+    ],
+    "podlingName": "SeaTunnel",
+    "rawReportingGroup": "group-1",
+    "releases": {
+      "apache-seatunnel-incubating-2.1.0-bin.tar.gz": {
+        "dtm": "03/11/2022",
+        "folder": "2.1.0",
+        "hash": "sha512",
+        "revision": "r52976",
+        "size": "409016757",
+        "user": "kirs"
+      },
+      "apache-seatunnel-incubating-2.1.0-src.tar.gz": {
+        "dtm": "03/11/2022",
+        "folder": "2.1.0",
+        "hash": "sha512",
+        "revision": "r52974",
+        "size": "1307542",
+        "user": "kirs"
+      },
+      "apache-seatunnel-incubating-2.1.1-bin.tar.gz": {
+        "dtm": "04/18/2022",
+        "folder": "2.1.1",
+        "hash": "sha512",
+        "revision": "r53944",
+        "size": "429344942",
+        "user": "wenjun"
+      },
+      "apache-seatunnel-incubating-2.1.1-src.tar.gz": {
+        "dtm": "04/18/2022",
+        "folder": "2.1.1",
+        "hash": "sha512",
+        "revision": "r53944",
+        "size": "1946293",
+        "user": "wenjun"
+      },
+      "apache-seatunnel-incubating-2.1.2-bin.tar.gz": {
+        "dtm": "06/07/2022",
+        "folder": "2.1.2",
+        "hash": "sha512",
+        "revision": "r54939",
+        "size": "821112561",
+        "user": "fanjia"
+      },
+      "apache-seatunnel-incubating-2.1.2-src.tar.gz": {
+        "dtm": "06/07/2022",
+        "folder": "2.1.2",
+        "hash": "sha512",
+        "revision": "r54939",
+        "size": "1992974",
+        "user": "fanjia"
+      },
+      "apache-seatunnel-incubating-2.1.3-bin.tar.gz": {
+        "dtm": "07/27/2022",
+        "folder": "2.1.3",
+        "hash": "sha512",
+        "revision": "r55995",
+        "size": "835148149",
+        "user": "fanjia"
+      },
+      "apache-seatunnel-incubating-2.1.3-src.tar.gz": {
+        "dtm": "07/27/2022",
+        "folder": "2.1.3",
+        "hash": "sha512",
+        "revision": "r55995",
+        "size": "2055828",
+        "user": "fanjia"
+      },
+      "apache-seatunnel-incubating-2.2.0-beta-bin.tar.gz": {
+        "dtm": "09/25/2022",
+        "folder": "2.2.0-beta",
+        "hash": "sha512",
+        "revision": "r56972",
+        "size": "200736457",
+        "user": "zongwen"
+      },
+      "apache-seatunnel-incubating-2.2.0-beta-src.tar.gz": {
+        "dtm": "09/26/2022",
+        "folder": "2.2.0-beta",
+        "hash": "sha512",
+        "revision": "r56983",
+        "size": "3920406",
+        "user": "zongwen"
+      },
+      "apache-seatunnel-incubating-2.3.0-beta-bin.tar.gz": {
+        "dtm": "10/24/2022",
+        "folder": "2.3.0-beta",
+        "hash": "sha512",
+        "revision": "r57568",
+        "size": "228102550",
+        "user": "gaojun20"
+      },
+      "apache-seatunnel-incubating-2.3.0-beta-src.tar.gz": {
+        "dtm": "10/24/2022",
+        "folder": "2.3.0-beta",
+        "hash": "sha512",
+        "revision": "r57568",
+        "size": "4061397",
+        "user": "gaojun20"
+      },
+      "apache-seatunnel-incubating-2.3.0-bin.tar.gz": {
+        "dtm": "12/23/2022",
+        "folder": "2.3.0",
+        "hash": "sha512",
+        "revision": "r58878",
+        "size": "67077294",
+        "user": "tyrantlu"
+      },
+      "apache-seatunnel-incubating-2.3.0-src.tar.gz": {
+        "dtm": "12/23/2022",
+        "folder": "2.3.0",
+        "hash": "sha512",
+        "revision": "r58878",
+        "size": "4350812",
+        "user": "tyrantlu"
+      }
+    },
+    "reportingGroup": "January, April, July, October",
+    "reportingMonthly": false,
+    "repositories": [
+      [
+        "incubator-seatunnel",
+        {
+          "description": "SeaTunnel is a distributed, high-performance data integration...",
+          "last_update_int": 1676038763,
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+        }
+      ],
+      [
+        "incubator-seatunnel-datasource-sdk",
+        {
+          "description": "SeaTunnel is a distributed, high-performance data integration...",
+          "last_update_int": 1672370646,
+          "last_update_txt": "6 weeks ago"
+        }
+      ],
+      [
+        "incubator-seatunnel-shade",
+        {
+          "description": "Apache seatunnel",
+          "last_update_int": 0,
+          "last_update_txt": "<span style='color: #777; font-style: italic;'>No commits</span>"
+        }
+      ],
+      [
+        "incubator-seatunnel-web",
+        {
+          "description": "SeaTunnel is a distributed, high-performance data integration...",
+          "last_update_int": 1675911896,
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
+        }
+      ],
+      [
+        "incubator-seatunnel-website",
+        {
+          "description": "Apache SeaTunnel documents",
+          "last_update_int": 1676005908,
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+        }
+      ]
+    ],
+    "resource": "seatunnel",
+    "sponsor": "Incubator",
+    "startDate": "2021-12-09",
+    "statusAge": 408,
+    "statusLastUpdated": "2021-12-30",
+    "urls": {
+      "git": "https://gitbox.apache.org/repos/asf?p=incubator-seatunnel.git;a=tree;hb=HEAD",
+      "keys": "https://downloads.apache.org/incubator/seatunnel/KEYS",
+      "svn": "",
+      "tracker": "https://github.com/apache/incubator-seatunnel/issues",
+      "wiki": "",
+      "www": "https://seatunnel.apache.org"
+    },
+    "zFixMeList": [
+      [
+        "18",
+        "Has not provided a wiki link"
+      ],
+      [
+        "45",
+        "14 is a large number of release distributions. Non-current releases should be removed"
+      ]
+    ]
+  },
+  "spot": {
+    "description": "Apache Spot is a platform for network telemetry built on an open data model and Apache Hadoop.",
+    "fullName": "Spot",
+    "hasMailListCommits": "",
+    "hasMailListDev": "",
+    "ldap": {
+      "members": [
+        "alan",
+        "cesar",
+        "daortizh",
+        "jnelson",
+        "leahy",
+        "ledagl",
+        "mark",
+        "markschoeni",
+        "moyete",
+        "nathanael",
+        "rabarona",
+        "rpanduro",
+        "solrac901",
+        "taddwood",
+        "umamahesh",
+        "zrlram"
+      ],
+      "numberCommitters": 16,
+      "numberCommittersNew": 0,
+      "numberPMCEquals": false,
+      "numberPMCMembers": 15,
+      "owners": [
+        "alan",
+        "cesar",
+        "daortizh",
+        "jnelson",
+        "leahy",
+        "ledagl",
+        "mark",
+        "moyete",
+        "nathanael",
+        "rabarona",
+        "rpanduro",
+        "solrac901",
+        "taddwood",
+        "umamahesh",
+        "zrlram"
+      ]
+    },
+    "mentors": [
+      [
+        "Uma Maheswara Rao G",
+        "umamahesh"
+      ]
+    ],
+    "news": [
+      "2016-09-23: Project enters incubation."
+    ],
+    "podlingName": "Spot",
+    "rawReportingGroup": "group-3",
+    "releases": {
+      "apache-spot-1.0-incubating.tar.gz": {
+        "dtm": "08/16/2017",
+        "folder": "1.0-incubating",
+        "hash": "sha512",
+        "revision": "r21193",
+        "size": "797653",
+        "user": "rpanduro"
+      }
+    },
+    "reportingGroup": "March, June, September, December",
+    "reportingMonthly": false,
+    "repositories": [
+      [
+        "incubator-spot",
+        {
+          "description": "Apache Spot",
+          "last_update_int": 1676060018,
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+        }
+      ]
+    ],
+    "resource": "spot",
+    "sponsor": "Incubator",
+    "startDate": "2016-09-23",
+    "statusAge": 855,
+    "statusLastUpdated": "2020-10-09",
+    "urls": {
+      "git": "https://gitbox.apache.org/repos/asf?p=incubator-spot.git;a=tree;hb=HEAD",
+      "keys": "https://downloads.apache.org/incubator/spot/KEYS",
+      "svn": "",
+      "tracker": "https://issues.apache.org/jira/browse/SPOT",
+      "wiki": "",
+      "www": "http://spot.incubator.apache.org"
+    },
+    "zFixMeList": [
+      [
+        "18",
+        "Has not provided a wiki link"
+      ],
+      [
+        "31",
+        "ASF Foundation link is missing from website"
+      ],
+      [
+        "15",
+        "Project does not have 'dev' mailing list"
+      ],
+      [
+        "16",
+        "Project does not have 'commits' mailing list"
+      ]
+    ]
+  },
+  "streampark": {
+    "description": "StreamPark is a streaming application development platform.",
+    "fullName": "StreamPark",
+    "hasMailListCommits": "http://mail-archives.apache.org/mod_mbox/streampark-commits",
+    "hasMailListDev": "http://mail-archives.apache.org/mod_mbox/streampark-dev",
+    "ldap": {
+      "members": [
+        "benjobs",
+        "fanrui",
+        "kriszu",
+        "linying",
+        "lvshaokang",
+        "monreid",
+        "monster",
+        "muchunjin",
+        "ningjiang",
+        "sewen",
+        "tamer",
+        "thw",
+        "tison",
+        "yangzhou",
+        "zhangduo"
+      ],
+      "numberCommitters": 15,
+      "numberCommittersNew": 0,
+      "numberPMCEquals": false,
+      "numberPMCMembers": 12,
+      "owners": [
+        "benjobs",
+        "linying",
+        "lvshaokang",
+        "monreid",
+        "monster",
+        "ningjiang",
+        "sewen",
+        "tamer",
+        "thw",
+        "tison",
+        "yangzhou",
+        "zhangduo"
+      ]
+    },
+    "mentors": [
+      [
+        "tison",
+        "tison"
+      ],
+      [
+        "Willem Ning Jiang",
+        "ningjiang"
+      ],
+      [
+        "Stephan Ewen",
+        "sewen"
+      ],
+      [
+        "Thomas Weise",
+        "thw"
+      ],
+      [
+        "Duo Zhang",
+        "zhangduo"
+      ]
+    ],
+    "news": [
+      "2022-09-01 Project enters incubation."
+    ],
+    "podlingName": "StreamPark",
+    "rawReportingGroup": "group-2",
+    "releases": {},
+    "reportingGroup": "February, May, August, November",
+    "reportingMonthly": false,
+    "repositories": [
+      [
+        "incubator-streampark",
+        {
+          "description": "StreamPark, Make stream processing easier! easy-to-use stream...",
+          "last_update_int": 1675918641,
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
+        }
+      ],
+      [
+        "incubator-streampark-website",
+        {
+          "description": "Apache streampark Website",
+          "last_update_int": 1675314091,
+          "last_update_txt": "9 days ago"
+        }
+      ]
+    ],
+    "resource": "streampark",
+    "sponsor": "Incubator",
+    "startDate": "2022-09-01",
+    "statusAge": 162,
+    "statusLastUpdated": "2022-09-02",
+    "urls": {
+      "git": "https://gitbox.apache.org/repos/asf?p=incubator-streampark.git;a=tree;hb=HEAD",
+      "keys": "https://downloads.apache.org/incubator/streampark/KEYS",
+      "svn": "",
+      "tracker": "https://github.com/apache/incubator-streampark/issues",
+      "wiki": "",
+      "www": "http://streampark.apache.org"
+    },
+    "zFixMeList": [
+      [
+        "18",
+        "Has not provided a wiki link"
+      ],
+      [
+        "41",
+        "PGP KEYS file available without a distribution"
+      ]
+    ]
+  },
+  "teaclave": {
+    "description": "Teaclave is a universal secure computing platform.",
+    "fullName": "Teaclave",
+    "hasMailListCommits": "",
+    "hasMailListDev": "",
+    "ldap": {
+      "members": [
+        "daijy",
+        "dingyu",
+        "fanrong",
+        "felixcheung",
+        "garyw",
+        "hsun",
+        "kamaci",
+        "lenxwei",
+        "litongxin1991",
+        "mattsicker",
+        "mssun",
+        "qinkun",
+        "rduan",
+        "rundongzhou",
+        "sanhongli",
+        "shaojunwang",
+        "uraj",
+        "ya0guang",
+        "yjing",
+        "yuanz",
+        "yulei",
+        "yulongzhang",
+        "zfc",
+        "ziyilin",
+        "zjshen"
+      ],
+      "numberCommitters": 25,
+      "numberCommittersNew": 0,
+      "numberPMCEquals": false,
+      "numberPMCMembers": 17,
+      "owners": [
+        "daijy",
+        "dingyu",
+        "felixcheung",
+        "garyw",
+        "kamaci",
+        "lenxwei",
+        "litongxin1991",
+        "mattsicker",
+        "mssun",
+        "rduan",
+        "rundongzhou",
+        "uraj",
+        "yjing",
+        "yuanz",
+        "yulongzhang",
+        "zfc",
+        "zjshen"
+      ]
+    },
+    "mentors": [
+      [
+        "Felix Cheung",
+        "felixcheung"
+      ],
+      [
+        "Furkan Kamaci",
+        "kamaci"
+      ],
+      [
+        "Jianyong Dai",
+        "daijy"
+      ],
+      [
+        "Matt Sicker",
+        "mattsicker"
+      ],
+      [
+        "Zhijie Shen",
+        "zjshen"
+      ],
+      [
+        "Gordon King",
+        "garyw"
+      ]
+    ],
+    "news": [
+      "2019-08-19 Project enters incubation as MesaTee.",
+      "2020-01 Project renamed to Teaclave."
+    ],
+    "podlingName": "Teaclave",
+    "rawReportingGroup": "group-1",
+    "releases": {
+      "apache-teaclave-0.3.0-incubating.tar.gz": {
+        "dtm": "08/23/2021",
+        "folder": "0.3.0",
+        "hash": "sha512",
+        "revision": "r49610",
+        "size": "99735902",
+        "user": "mssun"
+      },
+      "apache-teaclave-0.4.0-incubating.tar.gz": {
+        "dtm": "04/18/2022",
+        "folder": "0.4.0",
+        "hash": "sha512",
+        "revision": "r53945",
+        "size": "100033940",
+        "user": "mssun"
+      },
+      "apache-teaclave-java-tee-sdk-0.1.0-incubating.tar.gz": {
+        "dtm": "01/18/2023",
+        "folder": "java-tee-sdk-v0.1.0",
+        "hash": "sha512",
+        "revision": "r59415",
+        "size": "747235",
+        "user": "shaojunw"
+      },
+      "apache-teaclave-trustzone-sdk-0.1.0-incubating.tar.gz": {
+        "dtm": "06/11/2021",
+        "folder": "trustzone-sdk-0.1.0",
+        "hash": "sha512",
+        "revision": "r48304",
+        "size": "14769747",
+        "user": "mssun"
+      },
+      "apache-teaclave-trustzone-sdk-0.2.0-incubating.tar.gz": {
+        "dtm": "04/18/2022",
+        "folder": "trustzone-sdk-0.2.0",
+        "hash": "sha512",
+        "revision": "r53935",
+        "size": "175835",
+        "user": "yuanz"
+      }
+    },
+    "reportingGroup": "January, April, July, October",
+    "reportingMonthly": false,
+    "repositories": [
+      [
+        "incubator-teaclave",
+        {
+          "description": "Apache Teaclave (incubating) is an open source universal secu...",
+          "last_update_int": 1675822779,
+          "last_update_txt": "3 days ago"
+        }
+      ],
+      [
+        "incubator-teaclave-crates",
+        {
+          "description": "Apache teaclave",
+          "last_update_int": 1671778027,
+          "last_update_txt": "7 weeks ago"
+        }
+      ],
+      [
+        "incubator-teaclave-java-tee-sdk",
+        {
+          "description": "Apache Teaclave (incubating) Java TEE SDK is an open source u...",
+          "last_update_int": 1675928727,
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
+        }
+      ],
+      [
+        "incubator-teaclave-sgx-sdk",
+        {
+          "description": "Apache Teaclave (incubating) SGX SDK helps developers to writ...",
+          "last_update_int": 1675663038,
+          "last_update_txt": "5 days ago"
+        }
+      ],
+      [
+        "incubator-teaclave-trustzone-sdk",
+        {
+          "description": "Teaclave TrustZone SDK enables safe, functional, and ergonomi...",
+          "last_update_int": 1671178065,
+          "last_update_txt": "8 weeks ago"
+        }
+      ],
+      [
+        "incubator-teaclave-verification",
+        {
+          "description": "Teaclave specification and proofs.",
+          "last_update_int": 1643487149,
+          "last_update_txt": "54 weeks ago"
+        }
+      ],
+      [
+        "incubator-teaclave-website",
+        {
+          "description": "Apache Teaclave Website",
+          "last_update_int": 1675409393,
+          "last_update_txt": "8 days ago"
+        }
+      ]
+    ],
+    "resource": "teaclave",
+    "sponsor": "Incubator",
+    "startDate": "2019-08-20",
+    "statusAge": 180,
+    "statusLastUpdated": "2022-08-15",
+    "urls": {
+      "git": "https://gitbox.apache.org/repos/asf?p=incubator-teaclave.git;a=tree;hb=HEAD",
+      "keys": "https://downloads.apache.org/incubator/teaclave/KEYS",
+      "svn": "",
+      "tracker": "https://issues.apache.org/jira/browse/XXX",
+      "wiki": "",
+      "www": "https://teaclave.incubator.apache.org"
+    },
+    "zFixMeList": [
+      [
+        "18",
+        "Has not provided a wiki link"
+      ],
+      [
+        "15",
+        "Project does not have 'dev' mailing list"
+      ],
+      [
+        "16",
+        "Project does not have 'commits' mailing list"
+      ]
+    ]
+  },
+  "toree": {
+    "description": "Toree provides applications with a mechanism to interactively and remotely access Apache Spark.",
+    "fullName": "Toree",
+    "hasMailListCommits": "",
+    "hasMailListDev": "",
+    "ldap": {
+      "members": [
+        "blue",
+        "chipsenkbeil",
+        "cstubbs",
+        "jodersky",
+        "kbates",
+        "lbustelo",
+        "lresende",
+        "mariusvniekerk",
+        "mwangcse",
+        "wwei"
+      ],
+      "numberCommitters": 10,
+      "numberCommittersNew": 3,
+      "numberPMCEquals": true,
+      "numberPMCMembers": 10,
+      "owners": [
+        "blue",
+        "chipsenkbeil",
+        "cstubbs",
+        "jodersky",
+        "kbates",
+        "lbustelo",
+        "lresende",
+        "mariusvniekerk",
+        "mwangcse",
+        "wwei"
+      ]
+    },
+    "mentors": [
+      [
+        "Luciano Resende",
+        "lresende"
+      ],
+      [
+        "Ryan Blue",
+        "blue"
+      ],
+      [
+        "Weiwei Yang",
+        "wwei"
+      ]
+    ],
+    "news": [
+      "2019-08-08 New Committer and PPMC, Kevin Bates",
+      "2018-11-13 Release 0.3.0-incubating.",
+      "2018-08-15 Release 0.2.0-incubating.",
+      "2017-04-03 New Committer and PPMC, Ryan Blue",
+      "2017-03-01 Release 0.1.0-incubating.",
+      "2016-10-10 New Committer and PPMC, Marius van Niekerk",
+      "2015-12-02 Project enters incubation."
+    ],
+    "podlingName": "Toree",
+    "rawReportingGroup": "group-2",
+    "releases": {
+      "apache-toree-0.5.0.tar.gz": {
+        "dtm": "02/16/2022",
+        "folder": "0.5.0-incubating/apache-toree-pip",
+        "hash": "sha512",
+        "revision": "r52585",
+        "size": "24267698",
+        "user": "lresende"
+      },
+      "toree-0.4.0-incubating-bin.tar.gz": {
+        "dtm": "07/16/2020",
+        "folder": "0.4.0-incubating/toree",
+        "hash": "sha512",
+        "revision": "r40523",
+        "size": "27182200",
+        "user": "lresende"
+      },
+      "toree-0.4.0-incubating-src.tar.gz": {
+        "dtm": "07/16/2020",
+        "folder": "0.4.0-incubating/toree",
+        "hash": "sha512",
+        "revision": "r40523",
+        "size": "313944",
+        "user": "lresende"
+      },
+      "toree-0.4.0.tar.gz": {
+        "dtm": "07/16/2020",
+        "folder": "0.4.0-incubating/toree-pip",
+        "hash": "sha512",
+        "revision": "r40523",
+        "size": "27173187",
+        "user": "lresende"
+      },
+      "toree-0.5.0-incubating-bin.tar.gz": {
+        "dtm": "02/16/2022",
+        "folder": "0.5.0-incubating/toree",
+        "hash": "sha512",
+        "revision": "r52585",
+        "size": "24268709",
+        "user": "lresende"
+      },
+      "toree-0.5.0-incubating-src.tar.gz": {
+        "dtm": "02/16/2022",
+        "folder": "0.5.0-incubating/toree",
+        "hash": "sha512",
+        "revision": "r52585",
+        "size": "313248",
+        "user": "lresende"
+      },
+      "toree-0.5.0.tar.gz": {
+        "dtm": "02/16/2022",
+        "folder": "0.5.0-incubating/toree-pip",
+        "hash": "sha512",
+        "revision": "r52585",
+        "size": "24267638",
+        "user": "lresende"
+      }
+    },
+    "reportingGroup": "February, May, August, November",
+    "reportingMonthly": false,
+    "repositories": [
+      [
+        "incubator-toree",
+        {
+          "description": "Apache Toree (Incubating)",
+          "last_update_int": 1675880723,
+          "last_update_txt": "2 days ago"
+        }
+      ],
+      [
+        "incubator-toree-website",
+        {
+          "description": "Apache Toree website (Incubating)",
+          "last_update_int": 1598215469,
+          "last_update_txt": "129 weeks ago"
+        }
+      ]
+    ],
+    "resource": "toree",
+    "sponsor": "Incubator",
+    "startDate": "2015-12-02",
+    "statusAge": 937,
+    "statusLastUpdated": "2020-07-19",
+    "urls": {
+      "git": "https://gitbox.apache.org/repos/asf?p=incubator-toree.git;a=tree;hb=HEAD",
+      "keys": "https://downloads.apache.org/incubator/toree/KEYS",
+      "svn": "",
+      "tracker": "https://issues.apache.org/jira/projects/TOREE",
+      "wiki": "",
+      "www": "https://toree.apache.org"
+    },
+    "zFixMeList": [
+      [
+        "42",
+        "Distribution is missing incubator/incubating in file name toree-0.4.0.tar.gz.asc"
+      ],
+      [
+        "42",
+        "Distribution is missing incubator/incubating in file name apache-toree-0.5.0.tar.gz.asc"
+      ],
+      [
+        "42",
+        "Distribution is missing incubator/incubating in file name toree-0.5.0.tar.gz.asc"
+      ],
+      [
+        "18",
+        "Has not provided a wiki link"
+      ],
+      [
+        "32",
+        "ASF Events link is missing from website"
+      ],
+      [
+        "33",
+        "Apache License link is missing from website"
+      ],
+      [
+        "35",
+        "Apache Security link is missing from website"
+      ],
+      [
+        "15",
+        "Project does not have 'dev' mailing list"
+      ],
+      [
+        "16",
+        "Project does not have 'commits' mailing list"
+      ]
+    ]
+  },
+  "training": {
+    "description": "The Training project aims to develop resources which can be used for training purposes in various media formats, languages and for various Apache and non-Apache target projects.",
+    "fullName": "Training",
+    "hasMailListCommits": "http://mail-archives.apache.org/mod_mbox/training-commits",
+    "hasMailListDev": "http://mail-archives.apache.org/mod_mbox/training-dev",
+    "ldap": {
+      "members": [
+        "cdutz",
+        "clr",
+        "crogowski",
+        "dpavlov",
+        "fmarmann",
+        "gautamgupta",
+        "hpz",
+        "jmclean",
+        "kamaci",
+        "kenn",
+        "larsfrancke",
+        "mspitzer",
+        "rskraba",
+        "sharan",
+        "soenkeliebau"
+      ],
+      "numberCommitters": 15,
+      "numberCommittersNew": 0,
+      "numberPMCEquals": false,
+      "numberPMCMembers": 13,
+      "owners": [
+        "cdutz",
+        "clr",
+        "crogowski",
+        "dpavlov",
+        "fmarmann",
+        "hpz",
+        "jmclean",
+        "kamaci",
+        "kenn",
+        "larsfrancke",
+        "mspitzer",
+        "sharan",
+        "soenkeliebau"
+      ]
+    },
+    "mentors": [
+      [
+        "Craig Russell",
+        "clr"
+      ],
+      [
+        "Christofer Dutz",
+        "cdutz"
+      ],
+      [
+        "Justin Mclean",
+        "jmclean"
+      ],
+      [
+        "Lars Francke",
+        "larsfrancke"
+      ]
+    ],
+    "news": [
+      "2019-02-21 Training enters incubation."
+    ],
+    "podlingName": "Training",
+    "rawReportingGroup": "group-2",
+    "releases": {
+      "apache-training-navigating-ASF-incubation-1.0-incubating.tar.gz": {
+        "dtm": "06/12/2019",
+        "folder": "ApacheWay/NavigatingASFIncubation/1.0",
+        "hash": "sha512",
+        "revision": "r34508",
+        "size": "6546166",
+        "user": "jmclean"
+      }
+    },
+    "reportingGroup": "February, May, August, November",
+    "reportingMonthly": false,
+    "repositories": [
+      [
+        "incubator-training",
+        {
+          "description": "Apache training",
+          "last_update_int": 1663666323,
+          "last_update_txt": "21 weeks ago"
+        }
+      ]
+    ],
+    "resource": "training",
+    "sponsor": "Incubator",
+    "startDate": "2019-02-21",
+    "statusAge": 1444,
+    "statusLastUpdated": "2019-02-28",
+    "urls": {
+      "git": "https://gitbox.apache.org/repos/asf?p=incubator-training.git;a=tree;hb=HEAD",
+      "keys": "https://downloads.apache.org/incubator/training/KEYS",
+      "svn": "",
+      "tracker": "https://issues.apache.org/jira/browse/TRAINING",
+      "wiki": "http://cwiki.apache.org/confluence/display/TRAINING",
+      "www": "http://training.incubator.apache.org"
+    },
+    "zFixMeList": [
+      [
+        "32",
+        "ASF Events link is missing from website"
+      ],
+      [
+        "35",
+        "Apache Security link is missing from website"
+      ]
+    ]
+  },
+  "tuweni": {
+    "description": "Tuweni is a set of libraries and other tools to aid development of blockchain and other decentralized software in Java and other JVM languages.",
+    "fullName": "Tuweni",
+    "hasMailListCommits": "http://mail-archives.apache.org/mod_mbox/tuweni-commits",
+    "hasMailListDev": "http://mail-archives.apache.org/mod_mbox/tuweni-dev",
+    "ldap": {
+      "members": [
+        "adrian",
+        "ddutta",
+        "gmartin",
+        "jbonofre",
+        "jon",
+        "jrhea",
+        "kamaci",
+        "lmccay",
+        "mkalinin",
+        "pierresmits",
+        "shemnon",
+        "sjs",
+        "sneethir",
+        "toulmean",
+        "vinayakumarb",
+        "wave"
+      ],
+      "numberCommitters": 16,
+      "numberCommittersNew": 6,
+      "numberPMCEquals": false,
+      "numberPMCMembers": 13,
+      "owners": [
+        "ddutta",
+        "jbonofre",
+        "jon",
+        "jrhea",
+        "kamaci",
+        "lmccay",
+        "mkalinin",
+        "pierresmits",
+        "sjs",
+        "sneethir",
+        "toulmean",
+        "vinayakumarb",
+        "wave"
+      ]
+    },
+    "mentors": [
+      [
+        "Jean-Baptiste Onofré",
+        "jbonofre"
+      ],
+      [
+        "Furkan Kamaci",
+        "kamaci"
+      ],
+      [
+        "Antoine Toulme",
+        "toulmean"
+      ],
+      [
+        "Dave Fisher",
+        "wave"
+      ]
+    ],
+    "news": [
+      "2022-10-20 Tuweni starts discussing graduating.",
+      "2022-05-12 New Committer, Stefan Pingel",
+      "2022-05-12 New Committer, Sally MacFarlane",
+      "2021-12-21 New Committer, Adrian Sutton",
+      "2021-05-06 New Committer, Nicolas Melendez",
+      "2020-06-08 New Committer, Danno Ferrin",
+      "2019-08-01 New Committer, Gordon Martin",
+      "2019-02-25 Tuweni enters incubation."
+    ],
+    "podlingName": "Tuweni",
+    "rawReportingGroup": "group-2",
+    "releases": {
+      "tuweni-bin-2.3.1-incubating.tgz": {
+        "dtm": "11/21/2022",
+        "folder": "2.3.1-incubating",
+        "hash": "sha512",
+        "revision": "r58159",
+        "size": "187344563",
+        "user": "toulmean"
+      },
+      "tuweni-bin-2.3.1-incubating.zip": {
+        "dtm": "11/21/2022",
+        "folder": "2.3.1-incubating",
+        "hash": "sha512",
+        "revision": "r58159",
+        "size": "187662013",
+        "user": "toulmean"
+      },
+      "tuweni-src-2.3.1-incubating.tgz": {
+        "dtm": "11/21/2022",
+        "folder": "2.3.1-incubating",
+        "hash": "sha512",
+        "revision": "r58159",
+        "size": "56081893",
+        "user": "toulmean"
+      },
+      "tuweni-src-2.3.1-incubating.zip": {
+        "dtm": "11/21/2022",
+        "folder": "2.3.1-incubating",
+        "hash": "sha512",
+        "revision": "r58159",
+        "size": "90160756",
+        "user": "toulmean"
+      }
+    },
+    "reportingGroup": "February, May, August, November",
+    "reportingMonthly": false,
+    "repositories": [
+      [
+        "incubator-tuweni",
+        {
+          "description": "Apache Tuweni is a set of libraries and other tools to aid de...",
+          "last_update_int": 1675822147,
+          "last_update_txt": "3 days ago"
+        }
+      ],
+      [
+        "incubator-tuweni-website",
+        {
+          "description": "Apache tuweni website",
+          "last_update_int": 1670138410,
+          "last_update_txt": "10 weeks ago"
+        }
+      ]
+    ],
+    "resource": "tuweni",
+    "sponsor": "Incubator",
+    "startDate": "2019-03-25",
+    "statusAge": 69,
+    "statusLastUpdated": "2022-12-04",
+    "urls": {
+      "git": "https://gitbox.apache.org/repos/asf?p=incubator-tuweni.git;a=tree;hb=HEAD",
+      "keys": "https://downloads.apache.org/incubator/tuweni/KEYS",
+      "svn": "",
+      "tracker": "https://www.github.com/apache/incubator-tuweni/issues",
+      "wiki": "http://cwiki.apache.org/confluence/display/TUWENI",
+      "www": "http://tuweni.apache.org"
+    },
+    "zFixMeList": []
+  },
+  "uniffle": {
+    "description": "Uniffle is an unified Remote Shuffle Service",
+    "fullName": "Uniffle",
+    "hasMailListCommits": "http://mail-archives.apache.org/mod_mbox/uniffle-commits",
+    "hasMailListDev": "http://mail-archives.apache.org/mod_mbox/uniffle-dev",
+    "ldap": {
+      "members": [
+        "ckj",
+        "colin",
+        "felixcheung",
+        "jiafuzha",
+        "jshao",
+        "junping_du",
+        "liuxun",
+        "macduan",
+        "roryqi",
+        "tfhgus",
+        "wwei",
+        "xianjin",
+        "xianjingfeng",
+        "yangjie01",
+        "zhifgli",
+        "zhowa",
+        "ztang",
+        "zuston"
+      ],
+      "numberCommitters": 18,
+      "numberCommittersNew": 1,
+      "numberPMCEquals": false,
+      "numberPMCMembers": 14,
+      "owners": [
+        "colin",
+        "felixcheung",
+        "jshao",
+        "junping_du",
+        "liuxun",
+        "macduan",
+        "roryqi",
+        "tfhgus",
+        "wwei",
+        "xianjin",
+        "yangjie01",
+        "zhifgli",
+        "zhowa",
+        "ztang"
+      ]
+    },
+    "mentors": [
+      [
+        "Felix Cheung",
+        "felixcheung"
+      ],
+      [
+        "Junping Du",
+        "junping_du"
+      ],
+      [
+        "Liu Xun",
+        "liuxun"
+      ],
+      [
+        "Weiwei Yang",
+        "wwei"
+      ],
+      [
+        "Zhankun Tang",
+        "ztang"
+      ]
+    ],
+    "news": [
+      "2022-06-06 Project enters incubation.",
+      "2022-09-23 Add New committer: Junfan Zhang",
+      "2022-10-21 Apache Uniffle (incubating) release v0.6.0"
+    ],
+    "podlingName": "Uniffle",
+    "rawReportingGroup": "group-3",
+    "releases": {
+      "apache-uniffle-0.6.0-incubating-src.tar.gz": {
+        "dtm": "10/13/2022",
+        "folder": "0.6.0",
+        "hash": "sha512",
+        "revision": "r57338",
+        "size": "782801",
+        "user": "roryqi"
+      },
+      "apache-uniffle-0.6.1-incubating-src.tar.gz": {
+        "dtm": "12/01/2022",
+        "folder": "0.6.1",
+        "hash": "sha512",
+        "revision": "r58368",
+        "size": "786241",
+        "user": "ckj"
+      }
+    },
+    "reportingGroup": "March, June, September, December",
+    "reportingMonthly": false,
+    "repositories": [
+      [
+        "incubator-uniffle",
+        {
+          "description": "Uniffle is a high performance, general purpose Remote Shuffle...",
+          "last_update_int": 1676019429,
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+        }
+      ],
+      [
+        "incubator-uniffle-website",
+        {
+          "description": "Apache Uniffle (Incubating) Website",
+          "last_update_int": 1674831382,
+          "last_update_txt": "14 days ago"
+        }
+      ]
+    ],
+    "resource": "uniffle",
+    "sponsor": "Incubator",
+    "startDate": "2022-06-06",
+    "statusAge": 110,
+    "statusLastUpdated": "2022-10-24",
+    "urls": {
+      "git": "https://gitbox.apache.org/repos/asf?p=incubator-uniffle.git;a=tree;hb=HEAD",
+      "keys": "https://downloads.apache.org/incubator/uniffle/KEYS",
+      "svn": "",
+      "tracker": "",
+      "wiki": "",
+      "www": "http://uniffle.apache.org"
+    },
+    "zFixMeList": [
+      [
+        "10",
+        "Has not provided an issue tracker link"
+      ],
+      [
+        "18",
+        "Has not provided a wiki link"
+      ]
+    ]
+  },
+  "wayang": {
+    "description": "Wayang is a cross-platform data processing system that aims at decoupling the business logic of data analytics applications from concrete data processing platforms, such as Apache Flink or Apache Spark. Hence, it tames the complexity that arises from the \"Cambrian explosion\" of novel data processing platforms that we currently witness.",
+    "fullName": "Wayang",
+    "hasMailListCommits": "http://mail-archives.apache.org/mod_mbox/wayang-commits",
+    "hasMailListDev": "http://mail-archives.apache.org/mod_mbox/wayang-dev",
+    "ldap": {
+      "members": [
+        "aloalt",
+        "atroudi",
+        "berndf",
+        "bertty",
+        "cdutz",
+        "ggevay",
+        "jbonofre",
+        "kirs",
+        "larsgeorge",
+        "quiaru",
+        "rpardomeza",
+        "zkaoudi"
+      ],
+      "numberCommitters": 12,
+      "numberCommittersNew": 0,
+      "numberPMCEquals": false,
+      "numberPMCMembers": 11,
+      "owners": [
+        "aloalt",
+        "atroudi",
+        "berndf",
+        "bertty",
+        "cdutz",
+        "ggevay",
+        "jbonofre",
+        "larsgeorge",
+        "quiaru",
+        "rpardomeza",
+        "zkaoudi"
+      ]
+    },
+    "mentors": [
+      [
+        "Christofer Dutz",
+        "cdutz"
+      ],
+      [
+        "Lars George",
+        "larsgeorge"
+      ],
+      [
+        "Bernd Fondermann",
+        "berndf"
+      ],
+      [
+        "Jean-Baptiste Onofré",
+        "jbonofre"
+      ]
+    ],
+    "news": [
+      "2020-12-29 Wayang Project Web Site created.",
+      "2020-12-16 Wayang enters incubation."
+    ],
+    "podlingName": "Wayang",
+    "rawReportingGroup": "group-3",
+    "releases": {
+      "apache-wayang-0.6.0-incubating-source-release.zip": {
+        "dtm": "12/01/2021",
+        "folder": "0.6.0",
+        "hash": "sha512",
+        "revision": "r51167",
+        "size": "4628033",
+        "user": "bertty"
+      }
+    },
+    "reportingGroup": "March, June, September, December",
+    "reportingMonthly": false,
+    "repositories": [
+      [
+        "incubator-wayang",
+        {
+          "description": "Apache Wayang(incubating) is the first cross-platform data pr...",
+          "last_update_int": 1675862616,
+          "last_update_txt": "2 days ago"
+        }
+      ],
+      [
+        "incubator-wayang-website",
+        {
+          "description": "Apache Wayang is an Cross-Platform processing system",
+          "last_update_int": 1673866565,
+          "last_update_txt": "26 days ago"
+        }
+      ]
+    ],
+    "resource": "wayang",
+    "sponsor": "Incubator",
+    "startDate": "2020-12-16",
+    "statusAge": 750,
+    "statusLastUpdated": "2021-01-22",
+    "urls": {
+      "git": "https://gitbox.apache.org/repos/asf?p=incubator-wayang.git;a=tree;hb=HEAD",
+      "keys": "https://downloads.apache.org/incubator/wayang/KEYS",
+      "svn": "",
+      "tracker": "",
+      "wiki": "",
+      "www": "http://wayang.incubator.apache.org"
+    },
+    "zFixMeList": [
+      [
+        "10",
+        "Has not provided an issue tracker link"
+      ],
+      [
+        "18",
+        "Has not provided a wiki link"
+      ]
+    ]
+  }
+}
