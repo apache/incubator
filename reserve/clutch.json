@@ -1442,7 +1442,7 @@
         {
           "description": "A graph database that supports more than 100+ billion data, h...",
           "last_update_int": 1677549583,
-          "last_update_txt": "<span style='color: #070;'>&lt;30 minutes ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt;1 hour ago</span>"
         }
       ],
       [
@@ -2874,8 +2874,8 @@
   "opendal": {
     "description": "Open Data Access Layer: Access data freely, painlessly, and efficiently.",
     "fullName": "OpenDAL",
-    "hasMailListCommits": "",
-    "hasMailListDev": "",
+    "hasMailListCommits": "http://mail-archives.apache.org/mod_mbox/opendal-commits",
+    "hasMailListDev": "http://mail-archives.apache.org/mod_mbox/opendal-dev",
     "ldap": {},
     "mentors": [
       [
@@ -2899,7 +2899,9 @@
         "hexiaoqiao"
       ]
     ],
-    "news": [],
+    "news": [
+      "2023-02-27 Project enters incubation."
+    ],
     "podlingName": "OpenDAL",
     "rawReportingGroup": "group-2",
     "releases": [],
@@ -2910,7 +2912,7 @@
     "sponsor": "Incubator",
     "startDate": "2023-02-27",
     "statusAge": 0,
-    "statusLastUpdated": "",
+    "statusLastUpdated": "2023-02-28",
     "urls": {
       "git": "",
       "keys": "",
@@ -2923,10 +2925,6 @@
       [
         "01",
         "No project LDAP"
-      ],
-      [
-        "07",
-        "Status file is missing"
       ],
       [
         "10",
@@ -2943,14 +2941,6 @@
       [
         "12",
         "Release distribution area is not setup"
-      ],
-      [
-        "15",
-        "Project does not have 'dev' mailing list"
-      ],
-      [
-        "16",
-        "Project does not have 'commits' mailing list"
       ],
       [
         "17",
@@ -4683,11 +4673,15 @@
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-teaclave.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/teaclave/KEYS",
       "svn": "",
-      "tracker": "https://issues.apache.org/jira/browse/XXX",
+      "tracker": "",
       "wiki": "",
       "www": "https://teaclave.incubator.apache.org"
     },
     "zFixMeList": [
+      [
+        "10",
+        "Has not provided an issue tracker link"
+      ],
       [
         "18",
         "Has not provided a wiki link"
@@ -5249,7 +5243,7 @@
         {
           "description": "Uniffle is a high performance, general purpose Remote Shuffle...",
           "last_update_int": 1677551082,
-          "last_update_txt": "<span style='color: #070;'>&lt;2 minutes ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt;15 minutes ago</span>"
         }
       ],
       [
