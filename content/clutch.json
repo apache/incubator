@@ -65,7 +65,7 @@
         {
           "description": "Apache Annotator provides annotation enabling code for browse...",
           "last_update_int": 1670692888,
-          "last_update_txt": "11 weeks ago"
+          "last_update_txt": "12 weeks ago"
         }
       ],
       [
@@ -86,11 +86,15 @@
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-annotator.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/annotator/KEYS",
       "svn": "",
-      "tracker": "https://issues.apache.org/jira/browse/ANNO",
+      "tracker": "",
       "wiki": "https://cwiki.apache.org/confluence/display/ANNO",
       "www": "http://annotator.incubator.apache.org"
     },
     "zFixMeList": [
+      [
+        "10",
+        "Has not provided an issue tracker link"
+      ],
       [
         "15",
         "Project does not have 'dev' mailing list"
@@ -178,7 +182,7 @@
         {
           "description": "Create custom vector tiles from OpenStreetMap and other data ...",
           "last_update_int": 1677629267,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
         }
       ],
       [
@@ -316,7 +320,24 @@
     ],
     "podlingName": "Celeborn",
     "rawReportingGroup": "group-2",
-    "releases": {},
+    "releases": {
+      "apache-celeborn-0.2.0-incubating-bin.tgz": {
+        "dtm": "02/20/2023",
+        "folder": "celeborn-0.2.0-incubating",
+        "hash": "sha512",
+        "revision": "r60223",
+        "size": "100480385",
+        "user": "ethanfen"
+      },
+      "apache-celeborn-0.2.0-incubating-source.tgz": {
+        "dtm": "02/20/2023",
+        "folder": "celeborn-0.2.0-incubating",
+        "hash": "sha512",
+        "revision": "r60223",
+        "size": "424549",
+        "user": "ethanfen"
+      }
+    },
     "reportingGroup": "February, May, August, November",
     "reportingMonthly": false,
     "repositories": [
@@ -324,16 +345,16 @@
         "incubator-celeborn",
         {
           "description": "Apache Celeborn is an elastic and high-performance service fo...",
-          "last_update_int": 1677587771,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_int": 1677661497,
+          "last_update_txt": "<span style='color: #070;'>&lt;30 minutes ago</span>"
         }
       ],
       [
         "incubator-celeborn-website",
         {
           "description": "Apache Celeborn Site",
-          "last_update_int": 1671596482,
-          "last_update_txt": "10 weeks ago"
+          "last_update_int": 1677662037,
+          "last_update_txt": "<span style='color: #070;'>&lt;15 minutes ago</span>"
         }
       ]
     ],
@@ -354,10 +375,6 @@
       [
         "18",
         "Has not provided a wiki link"
-      ],
-      [
-        "41",
-        "PGP KEYS file available without a distribution"
       ]
     ]
   },
@@ -502,7 +519,7 @@
         {
           "description": "Incubator Datalab",
           "last_update_int": 1677614705,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
         }
       ]
     ],
@@ -614,8 +631,8 @@
         "incubator-devlake",
         {
           "description": "Apache DevLake is an open-source dev data platform to ingest,...",
-          "last_update_int": 1677634048,
-          "last_update_txt": "<span style='color: #070;'>&lt;15 minutes ago</span>"
+          "last_update_int": 1677651151,
+          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
         }
       ],
       [
@@ -623,14 +640,14 @@
         {
           "description": "Apache DevLake Helm Chart",
           "last_update_int": 1677472145,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
+          "last_update_txt": "2 days ago"
         }
       ],
       [
         "incubator-devlake-website",
         {
           "description": "Apache Devlake Website",
-          "last_update_int": 1677597691,
+          "last_update_int": 1677636270,
           "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
         }
       ]
@@ -812,16 +829,16 @@
         "incubator-eventmesh",
         {
           "description": "EventMesh is a fully serverless platform used to build distri...",
-          "last_update_int": 1677630451,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
+          "last_update_int": 1677653987,
+          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
         }
       ],
       [
         "incubator-eventmesh-site",
         {
           "description": "Apache EventMesh (Incubating) Website",
-          "last_update_int": 1676560141,
-          "last_update_txt": "12 days ago"
+          "last_update_int": 1677657597,
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
         }
       ]
     ],
@@ -1008,8 +1025,8 @@
         "incubator-flagon-useralejs",
         {
           "description": "Apache Flagon UserALE.js is a comprehensive, thin-client beha...",
-          "last_update_int": 1675483790,
-          "last_update_txt": "25 days ago"
+          "last_update_int": 1677657444,
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
         }
       ]
     ],
@@ -1027,269 +1044,6 @@
       "www": "http://flagon.incubator.apache.org"
     },
     "zFixMeList": [
-      [
-        "15",
-        "Project does not have 'dev' mailing list"
-      ],
-      [
-        "16",
-        "Project does not have 'commits' mailing list"
-      ]
-    ]
-  },
-  "heron": {
-    "description": "A real-time, distributed, fault-tolerant stream processing engine.",
-    "fullName": "Heron",
-    "hasMailListCommits": "",
-    "hasMailListDev": "",
-    "ldap": {
-      "members": [
-        "aahmed",
-        "ashvin",
-        "avflor",
-        "billgraham",
-        "cckellogg",
-        "djkevincr",
-        "dnrusakov",
-        "eren",
-        "huijun",
-        "jerrypeng",
-        "jfarrell",
-        "joshfischer",
-        "karthikz",
-        "maosongfu",
-        "nicknezis",
-        "nlu90",
-        "nwang",
-        "objmagic",
-        "obristow",
-        "ptgoetz",
-        "saadurrahman",
-        "simingweng",
-        "sreev",
-        "supun",
-        "thinker0",
-        "wave",
-        "wenming",
-        "wwong",
-        "xiaoyao",
-        "yaliang",
-        "yaoli"
-      ],
-      "numberCommitters": 31,
-      "numberCommittersNew": 0,
-      "numberPMCEquals": false,
-      "numberPMCMembers": 20,
-      "owners": [
-        "ashvin",
-        "avflor",
-        "billgraham",
-        "cckellogg",
-        "djkevincr",
-        "huijun",
-        "jfarrell",
-        "joshfischer",
-        "karthikz",
-        "maosongfu",
-        "nicknezis",
-        "nlu90",
-        "nwang",
-        "objmagic",
-        "ptgoetz",
-        "sreev",
-        "supun",
-        "wave",
-        "wenming",
-        "yaliang"
-      ]
-    },
-    "mentors": [
-      [
-        "Jake Farrell",
-        "jfarrell"
-      ],
-      [
-        "P. Taylor Goetz",
-        "ptgoetz"
-      ],
-      [
-        "Dave Fisher",
-        "wave"
-      ],
-      [
-        "Ming Wen",
-        "wenming"
-      ],
-      [
-        "Kevin Ratnasekera",
-        "djkevincr"
-      ]
-    ],
-    "news": [
-      "2017-06-23 Project enters incubation."
-    ],
-    "podlingName": "Heron",
-    "rawReportingGroup": "group-2",
-    "releases": {
-      "heron-0.20.4-incubating-debian10.tar.gz": {
-        "dtm": "05/23/2021",
-        "folder": "heron-0.20.4-incubating",
-        "hash": "sha512",
-        "revision": "r47871",
-        "size": "734490059",
-        "user": "joshfisc"
-      },
-      "heron-0.20.4-incubating-src.tar.gz": {
-        "dtm": "05/23/2021",
-        "folder": "heron-0.20.4-incubating",
-        "hash": "sha512",
-        "revision": "r47871",
-        "size": "3247596",
-        "user": "joshfisc"
-      },
-      "heron-0.20.5-incubating-src.tar.gz": {
-        "dtm": "07/09/2022",
-        "folder": "heron-0.20.5-incubating",
-        "hash": "sha512",
-        "revision": "r55649",
-        "size": "13123391",
-        "user": "nicknezi"
-      },
-      "heron-0.20.5-incubating.tgz": {
-        "dtm": "07/09/2022",
-        "folder": "heron-0.20.5-incubating/helm",
-        "hash": "sha512",
-        "revision": "r55649",
-        "size": "12354",
-        "user": "nicknezi"
-      },
-      "heron-artifacts-0.20.5-incubating.tar.gz": {
-        "dtm": "07/09/2022",
-        "folder": "heron-0.20.5-incubating/maven",
-        "hash": "sha512",
-        "revision": "r55649",
-        "size": "20975641",
-        "user": "nicknezi"
-      },
-      "heron-install-0.20.4-incubating-centos7.sh": {
-        "dtm": "05/23/2021",
-        "folder": "heron-0.20.4-incubating",
-        "hash": "sha512",
-        "revision": "r47871",
-        "size": "732584114",
-        "user": "joshfisc"
-      },
-      "heron-install-0.20.4-incubating-debian10.sh": {
-        "dtm": "05/23/2021",
-        "folder": "heron-0.20.4-incubating",
-        "hash": "sha512",
-        "revision": "r47871",
-        "size": "734604396",
-        "user": "joshfisc"
-      },
-      "heron-install-0.20.4-incubating-ubuntu18.04.sh": {
-        "dtm": "05/23/2021",
-        "folder": "heron-0.20.4-incubating",
-        "hash": "sha512",
-        "revision": "r47871",
-        "size": "733829654",
-        "user": "joshfisc"
-      },
-      "heron-install-0.20.5-incubating-centos7.sh.tar.gz": {
-        "dtm": "07/09/2022",
-        "folder": "heron-0.20.5-incubating",
-        "hash": "sha512",
-        "revision": "r55650",
-        "size": "923432875",
-        "user": "nicknezi"
-      },
-      "heron-install-0.20.5-incubating-darwin.sh.tar.gz": {
-        "dtm": "07/09/2022",
-        "folder": "heron-0.20.5-incubating",
-        "hash": "sha512",
-        "revision": "r55651",
-        "size": "891051419",
-        "user": "nicknezi"
-      },
-      "heron-install-0.20.5-incubating-debian11.sh.tar.gz": {
-        "dtm": "07/09/2022",
-        "folder": "heron-0.20.5-incubating",
-        "hash": "sha512",
-        "revision": "r55652",
-        "size": "921788902",
-        "user": "nicknezi"
-      },
-      "heron-install-0.20.5-incubating-ubuntu22.04.sh.tar.gz": {
-        "dtm": "07/09/2022",
-        "folder": "heron-0.20.5-incubating",
-        "hash": "sha512",
-        "revision": "r55653",
-        "size": "911913019",
-        "user": "nicknezi"
-      },
-      "heronpy-0.20.5rc4-py3-none-any.whl": {
-        "dtm": "07/09/2022",
-        "folder": "heron-0.20.5-incubating/heronpy",
-        "hash": "sha512",
-        "revision": "r55649",
-        "size": "123330",
-        "user": "nicknezi"
-      },
-      "heronpy-0.20.5rc4.tar.gz": {
-        "dtm": "07/09/2022",
-        "folder": "heron-0.20.5-incubating/heronpy",
-        "hash": "sha512",
-        "revision": "r55649",
-        "size": "65561",
-        "user": "nicknezi"
-      }
-    },
-    "reportingGroup": "February, May, August, November",
-    "reportingMonthly": false,
-    "repositories": [
-      [
-        "incubator-heron",
-        {
-          "description": "Apache Heron (Incubating) is a realtime, distributed, fault-t...",
-          "last_update_int": 1673489303,
-          "last_update_txt": "7 weeks ago"
-        }
-      ]
-    ],
-    "resource": "heron",
-    "sponsor": "Incubator",
-    "startDate": "2017-06-23",
-    "statusAge": 873,
-    "statusLastUpdated": "2020-10-09",
-    "urls": {
-      "git": "https://gitbox.apache.org/repos/asf?p=incubator-heron.git;a=tree;hb=HEAD",
-      "keys": "https://downloads.apache.org/incubator/heron/KEYS",
-      "svn": "",
-      "tracker": "",
-      "wiki": "",
-      "www": "http://heron.incubator.apache.org"
-    },
-    "zFixMeList": [
-      [
-        "42",
-        "Distribution is missing incubator/incubating in file name heronpy-0.20.5rc4-py3-none-any.whl.asc"
-      ],
-      [
-        "42",
-        "Distribution is missing incubator/incubating in file name heronpy-0.20.5rc4.tar.gz.asc"
-      ],
-      [
-        "10",
-        "Has not provided an issue tracker link"
-      ],
-      [
-        "18",
-        "Has not provided a wiki link"
-      ],
-      [
-        "45",
-        "14 is a large number of release distributions. Non-current releases should be removed"
-      ],
       [
         "15",
         "Project does not have 'dev' mailing list"
@@ -1437,8 +1191,8 @@
         "incubator-hugegraph",
         {
           "description": "A graph database that supports more than 100+ billion data, h...",
-          "last_update_int": 1677629944,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
+          "last_update_int": 1677662376,
+          "last_update_txt": "<span style='color: #070;'>&lt;1 minute ago</span>"
         }
       ],
       [
@@ -1462,7 +1216,7 @@
         {
           "description": "HugeGraph Website and Doc",
           "last_update_int": 1677420818,
-          "last_update_txt": "2 days ago"
+          "last_update_txt": "3 days ago"
         }
       ],
       [
@@ -1727,8 +1481,8 @@
         "incubator-kvrocks",
         {
           "description": "Kvrocks is a distributed key value NoSQL database that uses R...",
-          "last_update_int": 1677572756,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_int": 1677643968,
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
         }
       ],
       [
@@ -1848,7 +1602,7 @@
         {
           "description": "Apache Liminals goal is to operationalise the machine learnin...",
           "last_update_int": 1677256046,
-          "last_update_txt": "4 days ago"
+          "last_update_txt": "5 days ago"
         }
       ],
       [
@@ -2094,7 +1848,7 @@
         {
           "description": "Apache Livy is an open source REST interface for interacting ...",
           "last_update_int": 1676045551,
-          "last_update_txt": "18 days ago"
+          "last_update_txt": "19 days ago"
         }
       ],
       [
@@ -2807,7 +2561,7 @@
         {
           "description": "Apache NLPCraft - API to convert natural language into actions.",
           "last_update_int": 1677082397,
-          "last_update_txt": "6 days ago"
+          "last_update_txt": "7 days ago"
         }
       ],
       [
@@ -2830,8 +2584,8 @@
         "incubator-nlpcraft-website",
         {
           "description": "Apache NLPCraft - API to convert natural language into actions.",
-          "last_update_int": 1677567568,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_int": 1677651449,
+          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
         }
       ]
     ],
@@ -3107,7 +2861,7 @@
         {
           "description": "gypified zlib for PageSpeed",
           "last_update_int": 1515854936,
-          "last_update_txt": "267 weeks ago"
+          "last_update_txt": "268 weeks ago"
         }
       ]
     ],
@@ -3260,8 +3014,8 @@
         "incubator-pegasus",
         {
           "description": "Apache Pegasus - A horizontally scalable, strongly consistent...",
-          "last_update_int": 1677553096,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_int": 1677656659,
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
         }
       ],
       [
@@ -3428,7 +3182,7 @@
         {
           "description": "Build highly concurrent, distributed, and resilient message-d...",
           "last_update_int": 1677608066,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
         }
       ],
       [
@@ -3452,7 +3206,7 @@
         {
           "description": "Apache Pekko gRPC",
           "last_update_int": 1677615497,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
         }
       ],
       [
@@ -3460,7 +3214,7 @@
         {
           "description": "The Streaming-first HTTP server/module of Apache Pekko",
           "last_update_int": 1677615650,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
         }
       ],
       [
@@ -3468,7 +3222,7 @@
         {
           "description": "Apache Pekko Management is a suite of tools for operating Pek...",
           "last_update_int": 1677615699,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
         }
       ],
       [
@@ -3484,7 +3238,7 @@
         {
           "description": "DynamoDBJournal for Apache Pekko Persistence",
           "last_update_int": 1677267923,
-          "last_update_txt": "4 days ago"
+          "last_update_txt": "5 days ago"
         }
       ],
       [
@@ -3492,7 +3246,7 @@
         {
           "description": "Asynchronously writes journal and snapshot entries to configu...",
           "last_update_int": 1676470768,
-          "last_update_txt": "13 days ago"
+          "last_update_txt": "14 days ago"
         }
       ],
       [
@@ -3532,7 +3286,7 @@
         {
           "description": "Theme and sbt-paradox settings used by Pekko projects",
           "last_update_int": 1677605292,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
         }
       ],
       [
@@ -3877,7 +3631,7 @@
         {
           "description": "Apache sdap (Incubating)",
           "last_update_int": 1677001335,
-          "last_update_txt": "7 days ago"
+          "last_update_txt": "8 days ago"
         }
       ],
       [
@@ -4193,16 +3947,16 @@
         "incubator-seatunnel-web",
         {
           "description": "SeaTunnel is a distributed, high-performance data integration...",
-          "last_update_int": 1677602260,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_int": 1677660753,
+          "last_update_txt": "<span style='color: #070;'>&lt;30 minutes ago</span>"
         }
       ],
       [
         "incubator-seatunnel-website",
         {
           "description": "Apache SeaTunnel documents",
-          "last_update_int": 1677561112,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_int": 1677647595,
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
         }
       ]
     ],
@@ -4305,7 +4059,7 @@
         {
           "description": "Apache Spot",
           "last_update_int": 1676060018,
-          "last_update_txt": "18 days ago"
+          "last_update_txt": "19 days ago"
         }
       ]
     ],
@@ -4443,8 +4197,8 @@
         "incubator-streampark",
         {
           "description": "StreamPark, Make stream processing easier! easy-to-use stream...",
-          "last_update_int": 1677634296,
-          "last_update_txt": "<span style='color: #070;'>&lt;15 minutes ago</span>"
+          "last_update_int": 1677659839,
+          "last_update_txt": "<span style='color: #070;'>&lt;1 hour ago</span>"
         }
       ],
       [
@@ -4663,7 +4417,7 @@
         {
           "description": "Teaclave specification and proofs.",
           "last_update_int": 1643487149,
-          "last_update_txt": "56 weeks ago"
+          "last_update_txt": "57 weeks ago"
         }
       ],
       [
@@ -4684,11 +4438,15 @@
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-teaclave.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/teaclave/KEYS",
       "svn": "",
-      "tracker": "https://issues.apache.org/jira/browse/XXX",
+      "tracker": "",
       "wiki": "",
       "www": "https://teaclave.incubator.apache.org"
     },
     "zFixMeList": [
+      [
+        "10",
+        "Has not provided an issue tracker link"
+      ],
       [
         "18",
         "Has not provided a wiki link"
@@ -4829,7 +4587,7 @@
         {
           "description": "Apache Toree (Incubating)",
           "last_update_int": 1675880723,
-          "last_update_txt": "20 days ago"
+          "last_update_txt": "21 days ago"
         }
       ],
       [
@@ -5121,7 +4879,7 @@
         {
           "description": "Apache Tuweni is a set of libraries and other tools to aid de...",
           "last_update_int": 1677553611,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
         }
       ],
       [
@@ -5257,8 +5015,8 @@
         "incubator-uniffle-website",
         {
           "description": "Apache Uniffle (Incubating) Website",
-          "last_update_int": 1677577202,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_int": 1677638820,
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
         }
       ]
     ],
@@ -5366,7 +5124,7 @@
         {
           "description": "Apache Wayang(incubating) is the first cross-platform data pr...",
           "last_update_int": 1676300033,
-          "last_update_txt": "15 days ago"
+          "last_update_txt": "16 days ago"
         }
       ],
       [
