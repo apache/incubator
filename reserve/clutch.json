@@ -2811,6 +2811,75 @@
       ]
     ]
   },
+  "paimon": {
+    "description": "Paimon is a unified lake storage to build dynamic tables for both stream and batch processing with big data compute engines, supporting high-speed data ingestion and real-time data query. ",
+    "fullName": "Paimon",
+    "hasMailListCommits": "http://mail-archives.apache.org/mod_mbox/paimon-commits",
+    "hasMailListDev": "http://mail-archives.apache.org/mod_mbox/paimon-dev",
+    "ldap": {},
+    "mentors": [
+      [
+        "Becket Qin",
+        "jqin"
+      ],
+      [
+        "Robert Metzger",
+        "rmetzger"
+      ],
+      [
+        "Stephan Ewen",
+        "sewen"
+      ],
+      [
+        "Yu Li",
+        "liyu"
+      ]
+    ],
+    "news": [
+      "2023-03-12 Project enters incubation."
+    ],
+    "podlingName": "Paimon",
+    "rawReportingGroup": "group-2",
+    "releases": [],
+    "reportingGroup": "February, May, August, November",
+    "reportingMonthly": true,
+    "repositories": "",
+    "resource": "paimon",
+    "sponsor": "Incubator",
+    "startDate": "2023-03-12",
+    "statusAge": 0,
+    "statusLastUpdated": "2023-03-12",
+    "urls": {
+      "git": "",
+      "keys": "",
+      "svn": "",
+      "tracker": "https://issues.apache.org/jira/projects/PAIMON",
+      "wiki": "",
+      "www": ""
+    },
+    "zFixMeList": [
+      [
+        "01",
+        "No project LDAP"
+      ],
+      [
+        "18",
+        "Has not provided a wiki link"
+      ],
+      [
+        "11",
+        "Website is missing"
+      ],
+      [
+        "12",
+        "Release distribution area is not setup"
+      ],
+      [
+        "17",
+        "No source code repository"
+      ]
+    ]
+  },
   "pegasus": {
     "description": "Pegasus is a distributed key-value storage system which is designed to be simple, horizontally scalable, strongly consistent and high-performance.",
     "fullName": "Pegasus",
