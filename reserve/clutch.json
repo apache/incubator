@@ -86,11 +86,15 @@
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-annotator.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/annotator/KEYS",
       "svn": "",
-      "tracker": "https://issues.apache.org/jira/browse/ANNO",
+      "tracker": "",
       "wiki": "https://cwiki.apache.org/confluence/display/ANNO",
       "www": "http://annotator.incubator.apache.org"
     },
     "zFixMeList": [
+      [
+        "10",
+        "Has not provided an issue tracker link"
+      ],
       [
         "15",
         "Project does not have 'dev' mailing list"
@@ -2853,7 +2857,7 @@
       "git": "",
       "keys": "",
       "svn": "",
-      "tracker": "https://issues.apache.org/jira/projects/PAIMON",
+      "tracker": "",
       "wiki": "",
       "www": ""
     },
@@ -2861,6 +2865,10 @@
       [
         "01",
         "No project LDAP"
+      ],
+      [
+        "10",
+        "Has not provided an issue tracker link"
       ],
       [
         "18",
