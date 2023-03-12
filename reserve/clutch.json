@@ -86,15 +86,11 @@
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-annotator.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/annotator/KEYS",
       "svn": "",
-      "tracker": "",
+      "tracker": "https://issues.apache.org/jira/browse/ANNO",
       "wiki": "https://cwiki.apache.org/confluence/display/ANNO",
       "www": "http://annotator.incubator.apache.org"
     },
     "zFixMeList": [
-      [
-        "10",
-        "Has not provided an issue tracker link"
-      ],
       [
         "15",
         "Project does not have 'dev' mailing list"
@@ -182,7 +178,7 @@
         {
           "description": "Create custom vector tiles from OpenStreetMap and other data ...",
           "last_update_int": 1678634124,
-          "last_update_txt": "<span style='color: #070;'>&lt;1 hour ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
         }
       ],
       [
@@ -311,6 +307,7 @@
       ]
     ],
     "news": [
+      "2023-03-01 Release 0.2.0 (the first apache release).",
       "2022-12-02 New Committer: Xia Yifan",
       "2022-10-18 Project enters incubation."
     ],
@@ -357,8 +354,8 @@
     "resource": "celeborn",
     "sponsor": "Incubator",
     "startDate": "2022-10-18",
-    "statusAge": 87,
-    "statusLastUpdated": "2022-12-15",
+    "statusAge": 0,
+    "statusLastUpdated": "2023-03-12",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-celeborn.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/celeborn/KEYS",
@@ -628,7 +625,7 @@
         {
           "description": "Apache DevLake is an open-source dev data platform to ingest,...",
           "last_update_int": 1678550708,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
         }
       ],
       [
@@ -2068,7 +2065,7 @@
         {
           "description": "[DEPRECATED] - Apache Milagro MFA SDK Android (archived)",
           "last_update_int": 1524112375,
-          "last_update_txt": "255 weeks ago"
+          "last_update_txt": "256 weeks ago"
         }
       ],
       [
@@ -2857,7 +2854,7 @@
       "git": "",
       "keys": "",
       "svn": "",
-      "tracker": "",
+      "tracker": "https://issues.apache.org/jira/projects/PAIMON",
       "wiki": "",
       "www": ""
     },
@@ -2865,10 +2862,6 @@
       [
         "01",
         "No project LDAP"
-      ],
-      [
-        "10",
-        "Has not provided an issue tracker link"
       ],
       [
         "18",
@@ -4972,7 +4965,7 @@
         {
           "description": "Uniffle is a high performance, general purpose Remote Shuffle...",
           "last_update_int": 1678465195,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
+          "last_update_txt": "2 days ago"
         }
       ],
       [
