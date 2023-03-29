@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8"/>
-    <title>Apache Incubator</title>
+    <title>Podling Source Control</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -10,15 +10,15 @@
     <meta name="generator" content="JBake">
 
     <!-- Le styles -->
-    <link href="css/incubator.css" rel="stylesheet">
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/asciidoctor.css" rel="stylesheet">
-    <link href="css/base.css" rel="stylesheet">
-    <link href="css/prettify.css" rel="stylesheet">
+    <link href="../css/incubator.css" rel="stylesheet">
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/asciidoctor.css" rel="stylesheet">
+    <link href="../css/base.css" rel="stylesheet">
+    <link href="../css/prettify.css" rel="stylesheet">
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
-      <script src="js/html5shiv.min.js"></script>
+      <script src="../js/html5shiv.min.js"></script>
     <![endif]-->
 
     <!-- Fav and touch icons -->
@@ -34,7 +34,7 @@
    
 
 
-		<!-- Fixed navbar -->
+	<!-- Fixed navbar -->
     <div class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
@@ -137,16 +137,160 @@
     </div>
     <div class="top-container container">
 
-	
-	<div class="page-header">
-		<h1>Blog Archive</h1>
-	</div>
-	
-	<!--<ul>-->
-		
-		
-	</ul>
-	
+
+<div class="page-header">
+    <h1>Guide :: Podling Source Control</h1>
+</div>
+
+<div class="article-body">
+
+Estimated Reading Time: <span class="eta"></span>
+
+<p><div id="toc" class="toc">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#set_up_a_podling_source_repository">Set up a Podling Source Repository</a>
+<ul class="sectlevel2">
+<li><a href="#set_up_a_git_repository">Set up a Git Repository</a></li>
+<li><a href="#set_up_an_svn_repository">Set up an SVN Repository</a></li>
+</ul>
+</li>
+<li><a href="#authorize_committers">Authorize Committers</a></li>
+<li><a href="#incubator_access_authorization">Incubator Access Authorization</a></li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="set_up_a_podling_source_repository">Set up a Podling Source Repository</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The most important responsibility for mentors is to set up the
+podling source repository. Podlings can choose between Subversion and
+Git for source control.  For Git, podlings may use repositories hosted at Apache, or within GitHub in the Apache organization.</p>
+</div>
+<div class="sect2">
+<h3 id="set_up_a_git_repository">Set up a Git Repository</h3>
+<div class="paragraph">
+<p>Request a new git repository via <a href="https://selfserve.apache.org/">selfserve.apache.org</a>.
+This service will initialize a new repository, set up github mirrors and enable integrations for that repository.</p>
+</div>
+<div class="paragraph">
+<p>Historically, the Foundation&#8217;s policy
+is to grant access to git repositories broadly to the incubator group,
+not narrowly podling-by-podling. So, once the repository
+exists, incubator group members gain access without further work. Once
+the podling graduates, a dedicated ldap group will be created to manage
+access and only those members will have access.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="set_up_an_svn_repository">Set up an SVN Repository</h3>
+<div class="paragraph">
+<p>If the podling chooses SVN, you must create the
+repository and give read/write access to the repository
+to all the committers for the podling. This involves requesting
+new committer accounts and granting access to mentors and existing
+Apache committers.</p>
+</div>
+<div class="paragraph">
+<p>Setting up a podling subversion repository has two steps: Creating the SVN space
+and configuring the authorization (in both SVN and Git).</p>
+</div>
+<div class="paragraph">
+<p>Create the workspace in SVN. This requires commit access to the
+incubator SVN repository. Each podling has its own subdirectory
+of the incubator SVN repository. To create the podling subdirectory,
+the mentor executes the SVN command to create a remote directory: <code>svn mkdir <a href="https://svn.apache.org/repos/asf/incubator/{podling}" class="bare">https://svn.apache.org/repos/asf/incubator/{podling}</a></code>.</p>
+</div>
+<div class="paragraph">
+<p>Raise an INFRA Jira ticket to get the SVN auth file updated.</p>
+</div>
+<div class="paragraph">
+<p>This is a convenient time to add <a href="#Authorize+Committers">authorization</a> for committers
+who have accounts.</p>
+</div>
+<div class="paragraph">
+<p><a href="#who-auth-karma">Authorization</a> karma is restricted. If no Mentor
+has this karma, post an email to IPMC private list requesting it.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="authorize_committers">Authorize Committers</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The process to add committers to the podling depends on whether
+the new committer is already an Apache committer and whether
+the new committer is in the list of original committers:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The committer is in the list of original committers in the
+podling proposal to the incubator and is not already an Apache
+committer:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Ask developers to send their ICLAs to <code>secretary@apache.org</code> according to
+<a href="http://apache.org/licenses/#submitting">standard procedure</a>.
+Note that you must sign ICLA forms, either by hand or by digital signature.</p>
+</li>
+<li>
+<p>Developers should choose an Apache ID that is not already listed
+<a href="http://people.apache.org/committer-index.html">here</a>.</p>
+</li>
+<li>
+<p>Developers should enter their preferred Apache ID on the ICLA
+and enter the podling name in the "notify" field of the ICLA.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>If the committer is in the list of original committers in the
+podling proposal to the incubator and is already an Apache committer, only
+<a href="#who-auth-karma">incubator authorization</a> is required.</p>
+</li>
+<li>
+<p>The committer was voted by the PPMC and approved by the incubator PMC:</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Perform one of the above procedures depending on whether the
+committer is already an Apache committer on another project.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="incubator_access_authorization">Incubator Access Authorization</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Special karma is required to authorize incubator access for committers.
+This karma is limited to:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>IPMC Members</p>
+</li>
+<li>
+<p>Secretary</p>
+</li>
+<li>
+<p>Infrastructure</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>IPMC Members should use <a href="https://whimsy.apache.org/roster/committee/incubator">Whimsy&#8217;s Roster Tool</a> to add existing commiters.</p>
+</div>
+</div>
+</div></p>
+
+</div>
+
 		</div>
 		<div id="push"></div>
     </div>
@@ -157,10 +301,10 @@
           Apache Incubator, Apache, the Apache feather logo, and the Apache Incubator project logo are trademarks or registered trademarks of The Apache Software Foundation.</p>
       </div>
     </div>
-    <script src="js/jquery-1.11.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/prettify.js"></script>
-    <script src="js/readingTime.js"></script>
-    <script src="js/incubator.js"></script>
+    <script src="../js/jquery-1.11.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/prettify.js"></script>
+    <script src="../js/readingTime.js"></script>
+    <script src="../js/incubator.js"></script>
   </body>
 </html>

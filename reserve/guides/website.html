@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8"/>
-    <title>Apache Incubator</title>
+    <title>Updating the top-level Incubator website</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -10,15 +10,15 @@
     <meta name="generator" content="JBake">
 
     <!-- Le styles -->
-    <link href="css/incubator.css" rel="stylesheet">
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/asciidoctor.css" rel="stylesheet">
-    <link href="css/base.css" rel="stylesheet">
-    <link href="css/prettify.css" rel="stylesheet">
+    <link href="../css/incubator.css" rel="stylesheet">
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/asciidoctor.css" rel="stylesheet">
+    <link href="../css/base.css" rel="stylesheet">
+    <link href="../css/prettify.css" rel="stylesheet">
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
-      <script src="js/html5shiv.min.js"></script>
+      <script src="../js/html5shiv.min.js"></script>
     <![endif]-->
 
     <!-- Fav and touch icons -->
@@ -34,7 +34,7 @@
    
 
 
-		<!-- Fixed navbar -->
+	<!-- Fixed navbar -->
     <div class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
@@ -137,16 +137,91 @@
     </div>
     <div class="top-container container">
 
-	
-	<div class="page-header">
-		<h1>Blog Archive</h1>
-	</div>
-	
-	<!--<ul>-->
-		
-		
-	</ul>
-	
+
+<div class="page-header">
+    <h1>Guide :: Updating the top-level Incubator website</h1>
+</div>
+
+<div class="article-body">
+
+Estimated Reading Time: <span class="eta"></span>
+
+<p><div id="toc" class="toc">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#repository">Repository</a></li>
+<li><a href="#maintaining_status_files">Maintaining Status files</a></li>
+<li><a href="#ip_clearance">IP Clearance</a></li>
+<li><a href="#building">Building</a></li>
+<li><a href="#help_wanted">Help Wanted!</a></li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="repository">Repository</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The Incubator website is generated from the content <a href="https://github.com/apache/incubator">here</a>. See instructions
+there for how to edit and publish the website.</p>
+</div>
+<div class="paragraph">
+<p>The system reports website build failures to <strong>cvs AT incubator.apache.org</strong>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="maintaining_status_files">Maintaining Status files</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Podling status files are in SVN, and you should continue to maintain them at <a href="https://svn.apache.org/repos/asf/incubator/public/trunk/content/projects/" class="bare">https://svn.apache.org/repos/asf/incubator/public/trunk/content/projects/</a> .</p>
+</div>
+<div class="paragraph">
+<p>Podling status files are in a particular XML format which the Clutch Analysis expects.</p>
+</div>
+<div class="paragraph">
+<p>Extra podling yaml files that communicate with Whimsy are also in SVN, and you should maintain them at <a href="https://svn.apache.org/repos/asf/incubator/public/trunk/content/podlings/" class="bare">https://svn.apache.org/repos/asf/incubator/public/trunk/content/podlings/</a> .</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="ip_clearance">IP Clearance</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>IP Clearance is in SVN, and you should continue to maintain it at <a href="https://svn.apache.org/repos/asf/incubator/public/trunk/content/ip-clearance/" class="bare">https://svn.apache.org/repos/asf/incubator/public/trunk/content/ip-clearance/</a> .</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="building">Building</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The website metadata is built by this <a href="https://ci-builds.apache.org/job/Incubator/job/Incubator-SVN-Clutch-Analysis-part-1/">Clutch Jenkins job</a>,
+and the website is built by this <a href="https://ci-builds.apache.org/job/Incubator/job/Incubator-GIT-Site-part-2/">Website Jenkins job</a>.
+If you have karma you can trigger a build yourself.
+Commits to the git repo trigger builds automatically, and the website builds daily for other changes after midnight UTC.
+Commits to the svn repo trigger builds automatically as well using this <a href="https://ci-builds.apache.org/job/Incubator/job/Trigger-Clutch-Analysis-on-SVN-Change/">SVN Trigger Jenkins job</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="help_wanted">Help Wanted!</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>People with commit access to the "incubator" git repository (any ASF Member and
+any committer to a current podling in incubation) can edit the source
+documents in the "content" directory. So you can all help to
+keep your project&#8217;s Status page up-to-date. If you find problems with
+the "guidelines" docs, you can immediately fix them.
+If you are unsure, discuss your proposed changes on the general mailing list.
+Note that the "policy" documents need special treatment and discussion on the general mailing list.</p>
+</div>
+<div class="paragraph">
+<p>Anyone else can send patches to those documents to the <a href="https://issues.apache.org/jira/projects/INCUBATOR">INCUBATOR issue tracker</a>.</p>
+</div>
+</div>
+</div></p>
+
+</div>
+
 		</div>
 		<div id="push"></div>
     </div>
@@ -157,10 +232,10 @@
           Apache Incubator, Apache, the Apache feather logo, and the Apache Incubator project logo are trademarks or registered trademarks of The Apache Software Foundation.</p>
       </div>
     </div>
-    <script src="js/jquery-1.11.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/prettify.js"></script>
-    <script src="js/readingTime.js"></script>
-    <script src="js/incubator.js"></script>
+    <script src="../js/jquery-1.11.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/prettify.js"></script>
+    <script src="../js/readingTime.js"></script>
+    <script src="../js/incubator.js"></script>
   </body>
 </html>

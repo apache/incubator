@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Release Management</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <meta name="generator" content="JBake">
+
+    <!-- Le styles -->
+    <link href="../css/incubator.css" rel="stylesheet">
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/asciidoctor.css" rel="stylesheet">
+    <link href="../css/base.css" rel="stylesheet">
+    <link href="../css/prettify.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <!--<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">-->
+    <link rel="shortcut icon" href="https://www.apache.org/favicon.ico">
+    <script src="https://www.apachecon.com/event-images/snippet.js"></script>
+  </head>
+  <body onload="prettyPrint()">
+    <div id="wrap">
+   
+
+
+	<!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/"><i class="icon-home"></i>Apache Incubator</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Policies <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="/policy/incubation.html">Incubation Policy</a></li>
+                <li><a href="/ip-clearance/">Intellectual Property Clearance</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Proposals <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="/guides/proposal.html">A Guide To Proposal Creation</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Podling Guides <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="/cookbook">Cookbook</a></li>
+              
+                <li><hr><a href="/guides/roles_and_responsibilities.html">Roles and Responsibilities</a></li>
+                <li><a href="/guides/committer.html">Committers</a></li>
+                <li><a href="/guides/ppmc.html">Podling Project Management Committee</a></li>
+                <li><a href="/guides/community.html">Guide to Successful Community Building</a></li>
+
+                <li><hr><a href="/guides/branding.html">Incubator Branding Guide</a></li>
+                <li><a href="/guides/publicity.html">Podling Publicity/Media Guidelines</a></li>
+                <li><a href="/guides/press-kit.html">Podling Press Kit</a></li>
+              
+                <li><hr><a href="/guides/transitioning_asf.html">Initial Code Import</a></li>
+                <li><a href="/guides/names.html">Podling Name Search Guide</a></li>
+                <li><a href="/guides/ip_clearance.html">Podling IP Clearance</a></li>
+
+                <li><hr><a href="/guides/sites.html">Podling Websites</a></li>
+                <li><a href="/guides/podling_sourcecontrol.html">Podling Source Control</a></li>
+
+                <li><hr><a href="/guides/releasemanagement.html">Release Management</a></li>
+                <li><a href="/guides/distribution.html">Release Distribution</a></li>
+              
+                <li><hr><a href="/guides/graduation.html">Guide to Successful Graduation</a></li>
+                <li><a href="/guides/retirement.html">Guide to Retirement</a></li>
+                <li><a href="/guides/transferring.html">Transferring Resources out of the Incubator</a></li>
+
+                <li><hr><a href="/projects/#current">Current Podlings</a></li>
+                <li><a href="/clutch/">Clutch Report</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">PMC Guides <b class="caret"></b></a>
+              <ul class="dropdown-menu">     
+                <li><a href="/guides/participation.html">Guide to Participation</a></li>
+                <li><a href="/guides/lists.html">Incubator Mailing Lists Guide</a></li>
+
+                <li><a href="/guides/chair.html">Incubator Chair Guide</a></li>  
+                <li><a href="/guides/mentor.html">Mentors' Guide</a></li>
+
+                <li><hr><a href="/guides/website.html">Updating the top-level Incubator website</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">ASF <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="https://www.apache.org/foundation/how-it-works.html">How Apache Works</a></li>
+                <li><a href="https://www.apache.org/dev/">Developer Documentation</a></li>
+                <li><a href="https://www.apache.org/foundation/">Foundation</a></li>
+                <li><a href="https://www.apache.org/legal/">Legal</a></li>
+		            <li><hr><a href="https://www.apache.org/licenses/">License</a></li>
+		            <li><a href="https://www.apache.org/security/">Security</a></li>
+                <li><a href="https://www.apache.org/foundation/sponsorship.html">Sponsorship</a></li>
+                <li><a href="https://www.apache.org/foundation/thanks.html">Thanks</a></li>
+		            <li><a href="https://www.apache.org/events/current-event">Current Events</a></li>
+              </ul>
+            </li>
+            <li><a href="/faq.html">FAQs</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 vcenter"><a href="https://www.apache.org/"><img src="https://www.apache.org/img/asf_logo.png" alt="The Apache Software Foundation" border="0" style="margin-top: 2px" width="200"></a></div>
+        <div class="col-md-4 vcenter"><a href="/"><img src="https://incubator.apache.org/images/incubator_feather_egg_logo_sm.png" alt="The Apache Software Foundation Incubator" border="0" style="margin-top: 2px" width="256"></a></div>
+        <div class="col-md-4 vcenter">
+	    <a href="https://www.apache.org/foundation/contributing.html"><img src="https://www.apache.org/images/SupportApache-small.png" height="64" width="64"></a>
+	    &nbsp;&nbsp;&nbsp;&nbsp;
+	    <a class="acevent" data-format="square" data-width="100" data-mode="light" data-event="random"></a>
+	</div>
+      </div>
+    </div>
+    <div class="top-container container">
+
+
+<div class="page-header">
+    <h1>Guide :: Release Management</h1>
+</div>
+
+<div class="article-body">
+
+Estimated Reading Time: <span class="eta"></span>
+
+<p><div id="toc" class="toc">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#what_goes_into_an_asf_release">What goes into an ASF release</a></li>
+<li><a href="#requesting_feedback_on_interim_non_asf_releases">Requesting feedback on interim non-ASF releases</a></li>
+<li><a href="#podling_constraints">Podling Constraints</a></li>
+<li><a href="#choice_of_disclaimers">Choice of Disclaimers</a></li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="what_goes_into_an_asf_release">What goes into an ASF release</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>One of the goals of incubation is to teach podling communities how to
+build ASF-compliant releases.  As part of the learning process, the podling community needs to be
+fully engaged in the review process.  A podling community should begin to familiarize themselves
+with the ASF policies for releases.  Those policies can be found at
+<a href="http://www.apache.org/dev/#releases">http://www.apache.org/dev/#releases</a>.</p>
+</div>
+<div class="paragraph">
+<p>Releases are always produced by an Apache PMC, and for podlings, this PMC is the IPMC.  This is
+why it is mandatory to have at least 3 +1 votes from
+<a href="/incubation/roles_and_responsibilities.html#incubator_project_management_committee_ipmc">IPMC members</a>.
+Usually, your <a href="/incubation/roles_and_responsibilities.html#mentor">mentors</a> (who are also IPMC members) will
+vote on your releases, but if needed, other IPMC members will as well.  IPMC members will check for
+compliance with the ASF policies and with <a href="/incubation/Incubation_Policy.html#Releases">Incubator policies</a>.</p>
+</div>
+<div class="paragraph">
+<p>Anybody reviewing your releases will explain what they checked and what they found.  They will also
+rate the severity of any issues.  Some issues may be blockers.
+Others issues may be resolved in later releases.  Those voting on the release will base their votes
+on this information.</p>
+</div>
+<div class="paragraph">
+<p>If you do not understand the feedback you receive, or if you believe that it is misguided,
+please say so! We are all learning, and discussion is an important part of open source development.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="requesting_feedback_on_interim_non_asf_releases">Requesting feedback on interim non-ASF releases</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>When existing active communities enter the ASF via incubation, they may already have an established
+release rhythm.  It may not be possible to conform to ASF release policies quickly enough to
+maintain that release rhythm.  We want to welcome projects with active communities.  To smooth this process,
+projects may need to make a few non-ASF releases after incubation begins.</p>
+</div>
+<div class="paragraph">
+<p>A non-ASF release may or may not be staged on ASF infrastructure for a vote, but it
+is distributed via non-ASF infrastructure, <strong>and</strong> is either not linked from a podling&#8217;s website, or is
+linked but clearly marked as a non-ASF release.</p>
+</div>
+<div class="paragraph">
+<p>Podlings can use non-ASF releases as an opportunity to find ASF policy violations and begin
+resolving them.  Podlings can request feedback by starting a "[DISCUSS]" thread on <a href="mailto:general@incubator.apache.org">general@incubator.apache.org</a>.
+Podlings can decide whether they prefer a "[DISCUSS]" thread or a "[VOTE]" thread.  Only a
+release which passes a vote by members of the IPMC is an official ASF release.</p>
+</div>
+<div class="paragraph">
+<p>Discussion should give podlings feedback on what they would need to do to
+bring their release in line with the requirements of an official ASF
+release.  Podlings will be responsible for capturing feedback in work items for
+their project.  Feedback provided in a discussion thread will not block a non-ASF release.
+But the ASF will not take on legal liability for these releases.  A podling will need to
+successfully make several ASF releases before it can graduate from the incubator.</p>
+</div>
+<div class="paragraph">
+<p>Asking for feedback for non-ASF releases is not obligatory.  It is one of the
+services that the Apache Incubator offers our podling communities.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="podling_constraints">Podling Constraints</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The <a href="/incubation/Incubation_Policy.html#Releases">Incubator policies</a> applys two additional constraints
+to podlings for their releases.  They are repeated here for clarity only.
+- Release artifacts must include <mark>incubating</mark> in the final file name
+- Release artifacts must include one of two <a href="/guides/branding.html#disclaimers">disclaimers</a></p>
+</div>
+<div class="paragraph">
+<p>For a podling to receive full permission from the IPMC to execute the release, the release
+vote must be held on the <a href="/guides/lists.html#general+at+incubator.apache.org">incubator general list</a>
+and pass based on the <a href="http://apache.org/foundation/voting.html#ReleaseVotes">standard Package Release voting rules</a>.
+Only Incubator PMC votes are binding, but everyone is encouraged to vote.</p>
+</div>
+<div class="paragraph">
+<p>The Incubator PMC expects the source releases to be staged on
+<mark><a href="https://dist.apache.org/repos/dist/dev/incubator/$podlingName" class="bare">https://dist.apache.org/repos/dist/dev/incubator/$podlingName</a></mark> so that they can easily be moved
+to the release location via <mark>svn mv</mark>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="choice_of_disclaimers">Choice of Disclaimers</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>When making a release, a podling has a choice of using one of two <a href="/policy/incubation.html#disclaimers">disclaimers</a>,
+the standard disclaimer or the work in progress disclaimer.</p>
+</div>
+<div class="paragraph">
+<p>If it is your first release, it is recommended that you use the work in progress DISCLAIMER. This disclaimer
+allows you to list any non-compliance with ASF policy and IPMC members are still be able to give your release
+a +1 vote. Think of it as training wheels for your release.</p>
+</div>
+<div class="paragraph">
+<p>Here is a minimal set of requirements, when using the work in progress disclaimer, a podlings release must abide by:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Include the word incubating in the release file name.</p>
+</li>
+<li>
+<p>Include an ASF LICENSE and NOTICE file.</p>
+</li>
+<li>
+<p>Have valid checksums or signatures.</p>
+</li>
+<li>
+<p>Be placed in the correct place on the ASF&#8217;s infrastructure.</p>
+</li>
+<li>
+<p>Have a KEYS file to validate the release.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Other issues, such as:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Missing ASF headers.</p>
+</li>
+<li>
+<p>Missing license information.</p>
+</li>
+<li>
+<p>Included unexpected binary code.</p>
+</li>
+<li>
+<p>Including code of unknown origin.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Will be allowed if the issue is listed in the disclaimer or added to the disclaimer shortly after the release is made.</p>
+</div>
+<div class="paragraph">
+<p>Any releases using the work in progress disclaimer must still be legal and follow the terms of any 3rd party licenses,
+even if they are not compatible with the Apache license.</p>
+</div>
+<div class="paragraph">
+<p>Please carefully read this <a href="https://issues.apache.org/jira/browse/LEGAL-469">Legal JIRA</a> for more details on
+what the IPMC and legal expectations are.</p>
+</div>
+<div class="paragraph">
+<p>By the time you graduate all issues listed in the disclaimer need to have been corrected,
+and you must use the standard disclaimer text.</p>
+</div>
+<div class="paragraph">
+<p>If a podling chooses uses the standards disclaimer, then the release must comply with all ASF policies.</p>
+</div>
+</div>
+</div></p>
+
+</div>
+
+		</div>
+		<div id="push"></div>
+    </div>
+
+    <div id="footer">
+      <div class="container">
+          <p class="muted credit">&copy; 2023 The Apache Software Foundation | Licensed under the Apache License, Version 2.0.<br/>
+          Apache Incubator, Apache, the Apache feather logo, and the Apache Incubator project logo are trademarks or registered trademarks of The Apache Software Foundation.</p>
+      </div>
+    </div>
+    <script src="../js/jquery-1.11.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/prettify.js"></script>
+    <script src="../js/readingTime.js"></script>
+    <script src="../js/incubator.js"></script>
+  </body>
+</html>
