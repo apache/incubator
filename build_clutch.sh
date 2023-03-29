@@ -1,4 +1,10 @@
 #!/bin/bash
+
+function fatal() {
+    echo $* >&2
+    exit 1
+}
+
 CURRENTDIR=`pwd`
 SVN_CO_DIR=/tmp/incubator-site-content
 SVN_BUILD_DIR=/tmp/incubator-site-build
@@ -50,7 +56,7 @@ cp $SVN_CO_DIR/content/clutch/_includes/*.ad pages/clutch/_includes/.
 cp $SVN_CO_DIR/content/clutch/*.ad pages/clutch/.
 
 # now bake the site
-./bake.sh -b . $WORKDIR
+./bake.sh -b . $WORKDIR || fatal "jbake failed"
 
 # push all of the results to asf-site
 git checkout asf-site
