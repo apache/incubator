@@ -1,5 +1,10 @@
 #!/bin/sh
 
+function fatal() {
+    echo $* >&2
+    exit 1
+}
+
 SUCCESS_FILE=$WORKDIR/.htaccess
 if [ -z ${JBAKE_HOME} ]
 then
@@ -8,7 +13,7 @@ then
 fi
 
 export JBAKE_OPTS="-Djavax.xml.accessExternalDTD=http"
-${JBAKE_HOME}/bin/jbake $@
+${JBAKE_HOME}/bin/jbake $@ || fatal "jbake failed, exiting"
 
 if [ ! -f $SUCCESS_FILE ]
 then
