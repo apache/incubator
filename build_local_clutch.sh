@@ -49,4 +49,5 @@ cp $SVN_CO_DIR/content/clutch/_includes/*.ad pages/clutch/_includes/.
 cp $SVN_CO_DIR/content/clutch/*.ad pages/clutch/.
 
 # now bake the site
+export WORKDIR
 ./bake.sh -b -s . $WORKDIR

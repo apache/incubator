@@ -12,5 +12,6 @@ rm -rf $WORKDIR
 mkdir -p $WORKDIR
 
 # just bake and serve the site
+export WORKDIR
 ./bake.sh -b -s . $WORKDIR || fatal "Build failed, exiting"
 

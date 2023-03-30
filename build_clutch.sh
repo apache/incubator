@@ -56,7 +56,8 @@ cp $SVN_CO_DIR/content/clutch/_includes/*.ad pages/clutch/_includes/.
 cp $SVN_CO_DIR/content/clutch/*.ad pages/clutch/.
 
 # now bake the site
-./bake.sh -b . $WORKDIR
+export WORKDIR
+./bake.sh -b . $WORKDIR || fatal "jbake failed, exiting"
 
 # push all of the results to asf-site
 git checkout asf-site

@@ -13,6 +13,7 @@ rm -rf $WORKDIR
 mkdir -p $WORKDIR
 
 # now bake the site
+export WORKDIR
 ./bake.sh -b . $WORKDIR || fatal "Build failed, exiting"
 
 # push all of the results to asf-site
