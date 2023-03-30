@@ -1,6 +1,5 @@
 #!/bin/bash
 
-CURRENTDIR=`pwd`
 export WORKDIR=/tmp/incubator-site
 ME=`basename $0`
 
@@ -13,7 +12,6 @@ rm -rf $WORKDIR
 mkdir -p $WORKDIR
 
 # now bake the site
-export WORKDIR
 ./bake.sh -b . $WORKDIR || fatal "Build failed, exiting"
 
 # push all of the results to asf-site
