@@ -5,22 +5,21 @@ function fatal() {
     exit 1
 }
 
-SUCCESS_FILE=$WORKDIR/.htaccess
 if [ -z ${JBAKE_HOME} ]
 then
-  fatal "Missing JBAKE_HOME variable" >&2
+  fatal "Missing JBAKE_HOME variable"
 fi
 
 if [ -z ${WORKDIR} ]
 then
-  fatal "Missing WORKDIR variable" >&2
+  fatal "Missing WORKDIR variable"
 fi
+SUCCESS_FILE=$WORKDIR/.htaccess
 
 export JBAKE_OPTS="-Djavax.xml.accessExternalDTD=http"
 ${JBAKE_HOME}/bin/jbake $@ || fatal "jbake failed, exiting"
 
 if [ ! -f $SUCCESS_FILE ]
 then
-    echo "Missing $SUCCESS_FILE , JBake build failed?" >&2
-    exit 1
+    fatal "Missing $SUCCESS_FILE , JBake build failed?"
 fi
