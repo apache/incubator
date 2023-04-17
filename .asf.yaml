@@ -5,3 +5,7 @@ github:
     - incubator
     - website
     - jbake
+
+notifications:
+  commits:      cvs@incubator.apache.org
+  pullrequests: cvs@incubator.apache.org
