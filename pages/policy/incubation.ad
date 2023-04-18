@@ -36,7 +36,7 @@ The Incubator has the following responsibilities:
 
 This document is the reference for the policies and procedures put in place by the Incubator PMC for the incubation process. 
 
-The document makes use of the terms MUST, MUST NOT, REQUIRED, SHALL, SHALL NOT, SHOULD, SHOULD NOT, RECOMMENDED, MAY and OPTIONAL. Where capitalized, we use these terms as defined in link:http://www.ietf.org/rfc/rfc2119.txt[RFC 2119].
+The document makes use of the terms MUST, MUST NOT, REQUIRED, SHALL, SHALL NOT, SHOULD, SHOULD NOT, RECOMMENDED, MAY and OPTIONAL. Where these are capitalized, we use these terms as defined in link:http://www.ietf.org/rfc/rfc2119.txt[RFC 2119].
 
 Like many policy documents, this is not the most fun thing to read. Our link:/cookbook[Cookbook] 
 provides more concrete information on the incubation process.
@@ -53,7 +53,7 @@ This document is the set of requirements for incubation. Where other documents s
 The Incubator PMC MUST approve changes to the content of this document.
 
 == Podling Reporting
-Each Podling in Incubation MUST report to the Incubator PMC. Podlings SHALL report monthly for their first three months, after that quarterly. The Incubator PMC MAY, at their discretion, ask a Podlings to report more frequently. The PPMC with the mentor(s) help, MUST produce a report for the Incubator PMC detailing overall progress toward graduation and any issues the Podling has encountered.
+Each Podling in Incubation MUST report to the Incubator PMC. Podlings SHALL report monthly for their first three months, after that quarterly. The Incubator PMC MAY, at their discretion, ask a Podling to report more frequently. The PPMC, with the mentor or mentors' help, MUST produce a report for the Incubator PMC detailing overall progress toward graduation and any issues the Podling has encountered.
 
 == Podling Constraints
 While in Incubation, Podlings are constrained in the actions they can undertake.
@@ -69,13 +69,13 @@ There are restrictions about how Podlings can use their own and other ASF brands
 Consult the link:/guides/branding.html[Podling Branding Guide] for details.
 
 === Publicity
-There are some restrictions about how Podlings can advertise themselves, especially in press releases related to Podlings.
+There are restrictions about how Podlings can advertise themselves, especially in press releases related to Podlings.
 
 Consult the link:/guides/publicity.html[Podling Publicity Guide] for details.
 
 == Disclaimers
 
-Podling web sites MUST include a clear disclaimer on their
+Podlings MUST include a clear disclaimer on their
 website and in all documentation, releases and release announcements
 stating that they are in incubation.
 
@@ -106,7 +106,7 @@ stored alongside the NOTICE and LICENSE files.
 
 === Work In Progress Disclaimer
 
-Podling wishing to make releases that may not follow all ASF policy SHOULD use the
+A Podling wishing to make releases that may not follow all ASF policy SHOULD use the
 following disclaimer (replace the underlined text where needed):
 
 ____
@@ -158,7 +158,7 @@ Releases for the *Podling* MUST be distributed through *++http://www.apache.org/
 After voting someone into the PPMC on the PPMC private list, the Podling MUST send a NOTICE email to the private@incubator list. Only after the NOTICE has been sent can the PPMC invite the new PPMC member to join the PPMC. See link:https://incubator.apache.org/guides/ppmc.html#voting_in_a_new_ppmc_member[Voting in a new PPMC member].
 
 == Joining the IPMC
-As with all PMCs, new the IPMC votes on proposed members on the private@incubator list. After a vote has finished, the IPMC MUST send a NOTICE email to the board before inviting the proposed member. Any ASF member can ask to be an IPMC member, without a vote, but the IPMC MUST still give notice to the board.
+As with all PMCs, the IPMC votes on proposed members on the private@incubator list. After a vote has finished, the IPMC MUST send a NOTICE email to the board before inviting the proposed member. Any ASF member can ask to be an IPMC member, without a vote, but the IPMC MUST still give notice to the board.
 
 == Termination
 The Incubator PMC SHOULD notify a Podling of any policy violations. It MAY consider termination of a Podling that does not correct such violations. 
