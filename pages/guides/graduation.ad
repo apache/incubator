@@ -20,21 +20,21 @@ Apache Incubator PMC
 
 The intent of this document is to help podlings
 understand the process of
-graduation and offer some views about how to approach it.
+graduation and to offer some views about how to approach it.
 It also links to the Incubator
 link:http://incubator.apache.org/incubation/Incubation_Policy.html#Graduating_from_the_Incubator[exit policies].
 It is not an inflexible standard but represents a
 consensus condensed from previous discussions on the
-incubator general list. It also describes some of
+Incubator general list. It also describes some of
 the first steps that should be taken after
 graduation.
 
 *This is just a guide. Policy is stated link:/policy/incubation.html[here].*
 
 Help to improve the system by posting a patch for
-this document to the incubator section of JIRA or a
+this document to the Incubator section of JIRA or a
 comment to the link:lists.html#general_at_incubator.apache.org[general] list at
-incubator.
+Incubator.
 
 == What is Graduation?
 
@@ -42,24 +42,24 @@ Graduation is the act of a podling becoming either a
 subproject under an already existing Apache project, or
 becoming a top level Apache project. Graduating is a
 democratic process: in the end, it comes down to a *link:http://www.apache.org/foundation/voting.html[VOTE]*. Note
-that during your stay in the incubator, you are already busy
+that during your stay in the Incubator, you are already busy
 with the process of Graduating: by adopting Apache procedures,
 growing and fostering your community, having (civil) fights
 concerning code style (tabs versus spaces), cutting releases
 and so forth. All these acts have an influence on your
-projects graduation.
+project's graduation.
 
 The road to graduation is pretty clear: depending on whether your
-project wants to become a top level project, or join as a
-subproject under an already existing project the steps are
+project wants to become a top level project or join as a
+subproject under an already existing project, the steps are
 fairly simple but do take time and effort. This document
-provides guidelines for making this process run smooth.
+provides guidelines for making this process run smoothly.
 
 This document is offered for guidance and education only.
 Actual policy is documented in the link:../incubation/Incubation_Policy.html[Incubation PolicyGuide] in 
 link:../incubation/Incubation_Policy.html#Graduating_from_the_Incubator[this]
 section. Please post any questions about graduation
-to the link:lists.html#general_at_incubator.apache.org[general incubator list].
+to the link:lists.html#general_at_incubator.apache.org[general Incubator list].
 
 == Whether to Graduate to Subproject or to Top Level Project
 
@@ -75,8 +75,8 @@ graduation approaches, this original preference should be
 reviewed based on where the project is now.
 
 Graduation as a subproject is only possible if the
-subproject still falls within the scope of the project and
-requires the consent of the project link:http://www.apache.org/foundation/how-it-works.html#structure[PMC].
+subproject still falls within the scope of the sponsoring project and
+requires the consent of that project link:http://www.apache.org/foundation/how-it-works.html#structure[PMC].
 Graduation as a top level project requires the formation of the new
 project by the link:/incubation/Roles_and_Responsibilities.html#board[Board].
 
@@ -94,7 +94,7 @@ the normal process.
 
 Before you start thinking about graduation, you need to make
 sure you are ready and meet the requirements imposed on Apache projects.
-This section will provide a shortlist for podlings to
+This section will provide a short list for podlings to
 determine if they meet the criteria for asking graduation.
 
 === Graduation Check List
@@ -152,20 +152,20 @@ There are two distinct parts to making releases:
 1. "Preparing a release" is something that is done by a release manager. Some documentation
 refers to this as "cutting" a release. Preparing a release means following the project-specific
 instructions for creating the release artifacts and putting them in a repository that is a
-staging area for voting and subsequent publishing the release.
+staging area for voting on and subsequently publishing the release.
 
 2. "Publishing a release" is done after the podling and then the IPMC approve the release
 that has been prepared, using a formal [VOTE] process. If the vote fails, the release manager
 can prepare an improved release. Publishing means that the release artifacts are moved to the
-official distribution area where they are picked up by the mirror system.
+official distribution area.
 
 It is an important step during your stay in the incubator to demonstrate the ability
-to prepare and publish an Apache Release. That means graduating podling:
+to prepare and publish an Apache Release. That means the graduating podling:
 
 - Knows the licensing requirements of what code is going into your *source release*
 - Knows where to stage the source release
 - Knows how to conduct votes on the releases
-- Knows how to archive old releases
+- Knows how to remove links to old releases from its website
 
 Please read the link:releasemanagement.html[Incubator Release Management Guide] for hints, tips and guidelines
 for making a release that will get approved by the
@@ -180,7 +180,7 @@ communities are more robust and productive than more
 closed ones.
 
 Apache projects are self-sustaining and self-governing
-communities. Long term success and health requires that
+communities. Long term success and health require that
 these communities understand how to:
 
 - recruit users, developers, committers and PMCers
@@ -200,7 +200,7 @@ new committers. A project needs to learn how it can
 recruit new developers and committers into the community.
 Accepting new committers usually increases the diversity
 of the project. So, this process is very beneficial. link:community.html[Community building] requires
-energy which could have been spent on code development but
+energy which could have been spent on code development, but
 this cost is an important investment for the future of the
 project.
 
@@ -215,13 +215,13 @@ looks bright.
 
 The project is considered to have a diverse community when
 it is not highly dependent on any single contributor
-(there are at least 3 legally independent committers and
+(there are at least three legally independent committers and
 there is no single company or entity that is vital to the
 success of the project). Basically this means that when a
 project mostly consists of contributors from one company,
 this is a sign of not being diverse enough. You can
 mitigate this requirement by admitting more external
-contributors to your project that have no tie to the
+contributors to your project who have no tie to the
 single entity.
 
 Growing an open and diverse meritocratic community is not
@@ -239,7 +239,7 @@ can only document the most common issues and it is
 possible that there are other concerns that may require
 resolution that are not covered.
 
-Podlings who are unsure if they are ready to graduate may want to consider completing the link:http://community.apache.org/apache-way/apache-project-maturity-model.html[Apache Project Maturity Model].  You may find this to be a useful guide when looking at various factors in your podling's community.
+Podlings that are unsure if they are ready to graduate may want to consider completing the link:http://community.apache.org/apache-way/apache-project-maturity-model.html[Apache Project Maturity Model].  You may find this to be a useful guide when looking at various factors in your podling's community.
 
 == The Graduation Process
 
@@ -287,8 +287,8 @@ is unlikely that link:/incubation/Roles_and_Responsibilities.html#Incubator_Proj
 will vote to approve graduation unless the link:/incubation/Roles_and_Responsibilities.html#Mentor[Mentors]
 and community positively express their readiness for
 graduation. It is wise to notify the 
-link:lists.html#general_at_incubator.apache.org[incubator general list] that the community vote is starting. Please do not Cc the
-vote to the general list as that creates confusion, instead you can either:
+link:lists.html#general_at_incubator.apache.org[incubator general list] that the community vote is starting. Please do not CC the
+vote to the general list as that creates confusion. Instead you can either:
 - FWD the [VOTE] e-mail to the general list, or
 - Send a different copy to the general list indicating that a graduation community [VOTE] is in progress 
 
@@ -309,7 +309,7 @@ evolve over time and some deviation from the original
 proposal may well prove acceptable. The 
 link:/incubation/Roles_and_Responsibilities.html#board[Board]
 resolution is the ultimate definition of the scope of
-an Apache project. So, it is important that it
+an Apache project. So it is important that it
 reflects the vision for the project as it appears on
 the eve of graduation.
 
@@ -330,7 +330,7 @@ person to act as the chair after graduation.
 The link:#tlp-resolution[resolution] should be proposed on the general
 link:mailto:general@incubator.apache.org[incubator list] before a *link:http://www.apache.org/foundation/voting.html[VOTE]*
 is started to allow feedback. Once a consensus has been reached, a *VOTE*
-should be started on the same general incubator list by a member of the link:ppmc.html[PPMC] proposing
+should be started on the same general Incubator list by a member of the link:ppmc.html[PPMC] proposing
 that the
 link:/incubation/Roles_and_Responsibilities.html#Incubator_Project_Management_Committee_IPMC[IPMC]
 recommends the resolution to the link:/incubation/Roles_and_Responsibilities.html#board[Board].
@@ -356,14 +356,14 @@ The usual link:http://www.apache.org/foundation/how-it-works.html#management[net
 for Apache private lists should be observed. So, it is
 recommended that only the podling and
 link:/guides/roles_and_responsibilities.html#incubator_project_management_committee_ipmc[IPMC]
-private lists are CC'd (rather than the general incubator
+private lists are CC'd (rather than the general Incubator
 list). Please treat responses with appropriate
 confidentiality.
 
 The submission should include:
 - A clear subject (for example *Establish Foo TLP*)
 - A brief introduction
-- The name of proposed VP
+- The name of proposed Chair, who will also become an Apache VP
 - Links to the *VOTE* threads
 - Summary of the *VOTE* results
 - The link:#tlp-resolution[resolution] text
@@ -440,7 +440,7 @@ right contact.
 
 === Graduation Approval Vote
 
-Once the accepting TLP have voted to accept the podling and the podling has voted to become a subproject, noticed should be sent to the IPMC via `general AT incubator.a.o` email list indicating that the podling will become a subproject.  If after 72 hours no issues are raised, the podling may be considered a subproject of the accepting TLP.  Likewise, if any IPMC member raises an issue, that should be discussed.  If the issue is addressed, the member raising the issue should indicate they rescind their concerns or otherwise consider them resolved.
+Once the accepting TLP has voted to accept the podling and the podling has voted to become a subproject, notice should be sent to the IPMC via `general AT incubator.a.o` email list indicating that the podling will become a subproject.  If after 72 hours no issues are raised, the podling may be considered a subproject of the accepting TLP.  Likewise, if any IPMC member raises an issue, that should be discussed.  If the issue is addressed, the member raising the issue should indicate they rescind their concerns or otherwise consider them resolved.
 
 === Final steps
 
