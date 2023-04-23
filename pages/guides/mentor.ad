@@ -48,8 +48,8 @@ this metadata.
 
 Add a *'reporting'* tag (after *'description'*) with the attribute *'monthly="true"'*
 and the appropriate "group" attribute, based on the month in which the podling
-entered incubation (1 for January, April, July, October, 2 for February, May,
-August, November or 3 for March, June, September, December). The text content
+entered incubation (1 for January, April, July, October; 2 for February, May,
+August, November; or 3 for March, June, September, December). The text content
 of the 'reporting' tag must contain the initial list of reporting months,
 starting with the month after the podling entered incubation.  Below is an example of the final XML snippet:
 
@@ -89,12 +89,12 @@ A mentor will also need to update it until
 link:ppmc.html#Project+Status+Updates[others in the project's PPMC can update it].
 
 The status
-page is the incubator's record of the progress the project makes.
+page is the Incubator's record of the progress the project makes.
 The mentor or the PPMC MUST keep it up to date during incubation.
 Some of the information for the page is available from the podling proposal.
-As the startup process continues and the project creates resources the PPMC SHOULD update the web page.
+As the startup process continues and the project creates resources, the PPMC SHOULD update the web page.
 
-The template contains lists of actions which you be need
+The template contains lists of actions which you need to perform
 to start up a podling. Delete all actions which do not apply to the podling you are initializing.
 
 The status page is a useful aid to workflow. Volunteers
@@ -106,7 +106,7 @@ committers subscribe, use the dev@ list for task discussion.
 
 You need to request resources in a particular order, based on paperwork processed. Do not request source repositories before SGAs are filed, for instance, if the source code is not already Apache licensed or Category A licensed.
 
-The proposal should include a list of required resources. All resources require active set up. The Infra team creates some after an appropriate
+The proposal should include a list of required resources. All resources require active set-up. The Infra team creates some after an appropriate
 request; IPMC members (typically mentors) can set others up.
 
 Infra has a guide, link:https://infra.apache.org/infra-incubator.html[Infra and the Incubator], to help you understand the flow of resource requests, and to guide you in requesting resources.  
@@ -121,7 +121,7 @@ Apache email lists require volunteer moderators. New moderators can be
 link:http://www.apache.org/dev/committers.html#mailing-list-moderators[added later]
 but at least one volunteer is required before you can set up the email lists.
 Moderation is a reasonably
-link:http://www.apache.org/dev/committers.html#mail-moderate[easy task]
+link:http://www.apache.org/dev/committers.html#mail-moderate[easy task],
 though moderators may want to set up
 link:http://spamassassin.apache.org/[spam filtering].
 We recommend that each podling have at least three moderators to spread the load.
@@ -134,7 +134,7 @@ For example:
 - commits@${podling}.incubator.apache.org
 - private@${podling}.incubator.apache.org
 
-For initial community building it is usually appropriate to only have a "dev" list, to keep the discussions focussed. Later add a "user" list when community size and activity requires it.  A podling that is already established and using an existing user interaction channel may want to keep those resources around until they feel they have transitioned to the ASF successfully.  Discuss this on your existing development lists.
+For initial community building it is usually appropriate to only have a "dev" list, to keep the discussions focussed. Later add a "user" list when community size and activity require it.  A podling that is already established and using an existing user interaction channel may want to keep those resources around until they feel they have transitioned to the ASF successfully.  Discuss this on your existing development lists.
 
 [NOTE]
 ====
@@ -143,7 +143,7 @@ commits under *http://svn.apache.org/repos/asf/incubator/_${podling}_* will be e
 Any deviation will require the IPMC to create a special configuration in the *asf-mailer.conf* file.
 ====
 
-Email list creation is a task for the link:#who-infra[infrastructure team]. Infra offers a tool, the link:https://selfserve.apache.org/mail.html[Incubator Email List Request Form^], that simplifies the creation of email lists.  A notification will be sent to private@incubator when the lists have been created.
+Email list creation is a task for the link:#who-infra[Infrastructure team]. Infra offers a tool, the link:https://selfserve.apache.org/mail.html[Incubator Email List Request Form^], that simplifies the creation of email lists.  A notification will be sent to private@incubator when the lists have been created.
 
 Remember to update the project status file with email list details. Prospective committers
 and mentors will need to subscribe. Email them once the status file has been updated. Inform
@@ -160,14 +160,14 @@ email lists will be set up as part of the mailing list creation process. Mentors
 as soon as posts have been made (and moderated) to these lists.
 
 You can also leverage link:https://lists.apache.org[lists.apache.org^] for
-email list archives.  There is a login link in the top right corner, which allows you to respond to
+email list archives.  There is a login link, in the top right corner, which allows you to respond to
 threads from within the web application.
 
 Many project email lists are archived externally (for example, at
 link:http://www.mail-archive.com/[The Mail Archive] and
 link:http://marc.info/?q=about[MARC]).
 Independent archives help
-increase project visibility and preserve an independent historic record.
+increase project visibility and preserve an independent historical record.
 We do not create these subscriptions automatically. If the project wants one, subscribe manually.
 
 You must also create subscriptions to news-to-mailing-list bridges (for example, link:http://www.nabble.com[Nabble])
@@ -183,9 +183,9 @@ for more details.
 
 ==== Email List Transition
 
-Independent email lists and groups are perfectly acceptable but development-related discussions and decisions should
+Independent email lists and groups are perfectly acceptable, but development-related discussions and decisions should
 happen on the official email lists at Apache. If a project has existing email lists,
-forums or groups the community needs to consider their future and plan for the transition
+forums or groups, the community needs to consider their future and plan for the transition
 to the official Apache email lists.
 
 It may be useful to move development first to the official lists, followed gradually
@@ -198,7 +198,7 @@ a footer to the old email list with some instructions.
 
 === Self Service Requests
 
-You can request most of the resources you will need via link:https://selfserve.apache.org/[Self Service]. This includes seeting up Git repositories, email lists, a project presence on Jira and project space on the Confluence Wiki.  If you do not have access to Self Serve, use link:https://issues.apache.org/jira/browse/INFRA[JIRA] instead.
+You can request most of the resources you will need via link:https://selfserve.apache.org/[Self Service]. This includes seeting up Git repositories, email lists, a project presence on Jira and project space on the Confluence Wiki.  If you do not have access to Self Serve, use link:https://issues.apache.org/jira/browse/INFRA[Jira] instead.
 
 ==== Jira Issue Tracking
 
@@ -206,17 +206,17 @@ To request access to Jira, visit https://selfserve.apache.org/jira.html.
 
 ==== Other Issue Trackers
 
-Request an issue tracker on the link:https://issues.apache.org/jira/browse/INFRA[infra jira].
+Request an issue tracker on the link:https://issues.apache.org/jira/browse/INFRA[Infra Jira].
 
 Remember to post an email announcing that the issue tracker is available.
 
 === Git Migrations
 
-To request a Git migration, file a link:https://issues.apache.org/jira/browse/INFRA[New Git Repository] infra ticket, requesting to migrate from an existing organization to the Apache organization.
+To request a Git migration, file a link:https://issues.apache.org/jira/browse/INFRA[New Git Repository] Infra ticket, requesting to migrate from an existing organization to the Apache organization.
 
 === Gitbox Requests
 
-To request Gitbox repositories for a new podling, first file a link:https://issues.apache.org/jira/browse/INFRA[GitBox Integration] infra ticket.  Once your podling has been added, you can use link:https://gitbox.apache.org/ to manage your Gitbox repositories and user information.
+To request Gitbox repositories for a new podling, first file a link:https://issues.apache.org/jira/browse/INFRA[GitBox Integration] Infra ticket.  Once your podling has been added, you can use link:https://gitbox.apache.org/ to manage your Gitbox repositories and user information.
 
 == Podling Bootstrap
 
@@ -225,8 +225,8 @@ Following podling creation, you need to bootstrap it. Here are some of the tasks
 * Ensure link:#mentors-ipmc[Mentors are on the IPMC]
 * Add the podling to the link:#Sending+in+an+Incubation+Report[reporting schedule]
 * link:#Initialize+Podling+Status+Page[Initialize the project status page]
-* Start link:#orientation[orientation] for link:#who-committers[Prospective committers]
-* Start *CLA* and *CCLA* submissions link:#who-committers[Prospective committers]
+* Start link:#orientation[orientation] for link:#who-committers[prospective committers]
+* Start *CLA* and *CCLA* submissions link:#who-committers[for prospective committers]
 * Request Required Resources  
 ** link:#request-mailing-lists[Email Lists]
 *** Consider and plan link:#transition-mailing-lists[transition to official email lists]
