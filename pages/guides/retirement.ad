@@ -83,7 +83,7 @@ link:http://archive.apache.org/dist/incubator[archive.apache.org/dist/incubator]
 source repository.  This should contain something like the following:
 ** This podling has been retired, please see: http://incubator.apache.org/projects/index.html##{podling-name}
 - If the podling has a DOAP referenced in the link:https://svn.apache.org/repos/asf/comdev/projects.apache.org/trunk/data/projects.xml[projects.xml] file used for generating link:http://projects.apache.org[projects.apache.org], remove the entry.
-- Open a "task" INFRA JIRA ticket entitled "Retire the ${podling} Incubator podling".  Open sub-tickets using "Create Sub-Task" as applicable:
+- Open a "task" INFRA JIRA ticket entitled "Retire the ${podling} Incubator podling". Do not open sub-task tickets but list bullet points as applicable:
 ** Close ${podling} mailing lists
 ** Make ${podling} version control read-only
 ** Move ${podling} JIRA to "retired" and set read-only
