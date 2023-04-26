@@ -22,19 +22,19 @@ Apache Incubator PMC
 
 The most important responsibility for mentors is to set up the
 podling source repository. Podlings can choose between Subversion and
-Git for source control.  For Git, podlings may use repositories hosted at Apache, or within GitHub in the Apache organization.
+Git for source control.  For Git, podlings can access their repositories through GitHub, or through Apache's GitBox alternative. They both point to the same files in the same repos, but some people have reservations about agreeing to Git's terms of service for GitHub, and prefer to use GitBox.
 
 === Set up a Git Repository
 
-Request a new git repository via link:https://selfserve.apache.org/[selfserve.apache.org].
-This service will initialize a new repository, set up github mirrors and enable integrations for that repository.
+Request a Git repository via link:https://selfserve.apache.org/[selfserve.apache.org].
+This service will initialize a repository, set up github mirrors and enable integrations for that repository.
 
 Historically, the Foundation's policy
-is to grant access to git repositories broadly to the incubator group,
-not narrowly podling-by-podling. So, once the repository
-exists, incubator group members gain access without further work. Once
-the podling graduates, a dedicated ldap group will be created to manage
-access and only those members will have access.
+is to grant access to Git repositories broadly to the Incubator group,
+not narrowly, podling-by-podling. So, once the repository
+exists, Incubator group members gain access to it without further work. Once
+the podling graduates, a dedicated LDAP group will be created to manage
+access and only people listed in that group (the project's committers and PMC members) will have access to its repos.
 
 === Set up an SVN Repository
 
@@ -44,21 +44,21 @@ to all the committers for the podling. This involves requesting
 new committer accounts and granting access to mentors and existing
 Apache committers.
 
-Setting up a podling subversion repository has two steps: Creating the SVN space
-and configuring the authorization (in both SVN and Git).
+Setting up a podling Subversion repository has two steps: Creating the SVN space
+and configuring its authorization.
 
-Create the workspace in SVN. This requires commit access to the
-incubator SVN repository. Each podling has its own subdirectory
-of the incubator SVN repository. To create the podling subdirectory,
+1. Create the workspace in SVN. This requires commit access to the
+Incubator SVN repository. Each podling has its own subdirectory
+of the Incubator SVN repository. To create the podling subdirectory,
 the mentor executes the SVN command to create a remote directory: `svn mkdir https://svn.apache.org/repos/asf/incubator/{podling}`.
 
-Raise an INFRA Jira ticket to get the SVN auth file updated.
+2. Raise an INFRA Jira ticket to get the SVN auth file updated.
 
 This is a convenient time to add link:#Authorize+Committers[authorization] for committers
-who have accounts.
+who have Apache accounts.
 
 link:#who-auth-karma[Authorization] karma is restricted. If no Mentor
-has this karma, post an email to IPMC private list requesting it.
+has this karma, post an email to the IPMC private list requesting it.
 
 == Authorize Committers
 
@@ -77,20 +77,20 @@ link:http://people.apache.org/committer-index.html[here].
 ** Developers should enter their preferred Apache ID on the ICLA
 and enter the podling name in the "notify" field of the ICLA.
 - If the committer is in the list of original committers in the
-podling proposal to the incubator and is already an Apache committer, only
-link:#who-auth-karma[incubator authorization] is required.
-- The committer was voted by the PPMC and approved by the incubator PMC:
+podling proposal to the Incubator and is already an Apache committer, only
+link:#who-auth-karma[Incubator authorization] is required.
+- The committer was voted by the PPMC and approved by the Incubator PMC:
 
 Perform one of the above procedures depending on whether the
 committer is already an Apache committer on another project.
 
 == Incubator Access Authorization
 
-Special karma is required to authorize incubator access for committers.
+Special karma is required to authorize Incubator access for committers.
 This karma is limited to:
 
 - IPMC Members
 - Secretary
-- Infrastructure
+- Infrastructure team members
 
-IPMC Members should use link:https://whimsy.apache.org/roster/committee/incubator[Whimsy's Roster Tool] to add existing commiters.
+IPMC Members should use link:https://whimsy.apache.org/roster/committee/incubator[Whimsy's Roster Tool] to add existing committers.
