@@ -165,21 +165,21 @@ Estimated Reading Time: <span class="eta"></span>
 <div class="paragraph">
 <p>The most important responsibility for mentors is to set up the
 podling source repository. Podlings can choose between Subversion and
-Git for source control.  For Git, podlings may use repositories hosted at Apache, or within GitHub in the Apache organization.</p>
+Git for source control.  For Git, podlings can access their repositories through GitHub, or through Apache&#8217;s GitBox alternative. They both point to the same files in the same repos, but some people have reservations about agreeing to Git&#8217;s terms of service for GitHub, and prefer to use GitBox.</p>
 </div>
 <div class="sect2">
 <h3 id="set_up_a_git_repository">Set up a Git Repository</h3>
 <div class="paragraph">
-<p>Request a new git repository via <a href="https://selfserve.apache.org/">selfserve.apache.org</a>.
-This service will initialize a new repository, set up github mirrors and enable integrations for that repository.</p>
+<p>Request a Git repository via <a href="https://selfserve.apache.org/">selfserve.apache.org</a>.
+This service will initialize a repository, set up github mirrors and enable integrations for that repository.</p>
 </div>
 <div class="paragraph">
 <p>Historically, the Foundation&#8217;s policy
-is to grant access to git repositories broadly to the incubator group,
-not narrowly podling-by-podling. So, once the repository
-exists, incubator group members gain access without further work. Once
-the podling graduates, a dedicated ldap group will be created to manage
-access and only those members will have access.</p>
+is to grant access to Git repositories broadly to the Incubator group,
+not narrowly, podling-by-podling. So, once the repository
+exists, Incubator group members gain access to it without further work. Once
+the podling graduates, a dedicated LDAP group will be created to manage
+access and only people listed in that group (the project&#8217;s committers and PMC members) will have access to its repos.</p>
 </div>
 </div>
 <div class="sect2">
@@ -192,25 +192,29 @@ new committer accounts and granting access to mentors and existing
 Apache committers.</p>
 </div>
 <div class="paragraph">
-<p>Setting up a podling subversion repository has two steps: Creating the SVN space
-and configuring the authorization (in both SVN and Git).</p>
+<p>Setting up a podling Subversion repository has two steps: Creating the SVN space
+and configuring its authorization.</p>
 </div>
-<div class="paragraph">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
 <p>Create the workspace in SVN. This requires commit access to the
-incubator SVN repository. Each podling has its own subdirectory
-of the incubator SVN repository. To create the podling subdirectory,
+Incubator SVN repository. Each podling has its own subdirectory
+of the Incubator SVN repository. To create the podling subdirectory,
 the mentor executes the SVN command to create a remote directory: <code>svn mkdir <a href="https://svn.apache.org/repos/asf/incubator/{podling}" class="bare">https://svn.apache.org/repos/asf/incubator/{podling}</a></code>.</p>
-</div>
-<div class="paragraph">
+</li>
+<li>
 <p>Raise an INFRA Jira ticket to get the SVN auth file updated.</p>
+</li>
+</ol>
 </div>
 <div class="paragraph">
 <p>This is a convenient time to add <a href="#Authorize+Committers">authorization</a> for committers
-who have accounts.</p>
+who have Apache accounts.</p>
 </div>
 <div class="paragraph">
 <p><a href="#who-auth-karma">Authorization</a> karma is restricted. If no Mentor
-has this karma, post an email to IPMC private list requesting it.</p>
+has this karma, post an email to the IPMC private list requesting it.</p>
 </div>
 </div>
 </div>
@@ -249,11 +253,11 @@ and enter the podling name in the "notify" field of the ICLA.</p>
 </li>
 <li>
 <p>If the committer is in the list of original committers in the
-podling proposal to the incubator and is already an Apache committer, only
-<a href="#who-auth-karma">incubator authorization</a> is required.</p>
+podling proposal to the Incubator and is already an Apache committer, only
+<a href="#who-auth-karma">Incubator authorization</a> is required.</p>
 </li>
 <li>
-<p>The committer was voted by the PPMC and approved by the incubator PMC:</p>
+<p>The committer was voted by the PPMC and approved by the Incubator PMC:</p>
 </li>
 </ul>
 </div>
@@ -267,7 +271,7 @@ committer is already an Apache committer on another project.</p>
 <h2 id="incubator_access_authorization">Incubator Access Authorization</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Special karma is required to authorize incubator access for committers.
+<p>Special karma is required to authorize Incubator access for committers.
 This karma is limited to:</p>
 </div>
 <div class="ulist">
@@ -279,12 +283,12 @@ This karma is limited to:</p>
 <p>Secretary</p>
 </li>
 <li>
-<p>Infrastructure</p>
+<p>Infrastructure team members</p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
-<p>IPMC Members should use <a href="https://whimsy.apache.org/roster/committee/incubator">Whimsy&#8217;s Roster Tool</a> to add existing commiters.</p>
+<p>IPMC Members should use <a href="https://whimsy.apache.org/roster/committee/incubator">Whimsy&#8217;s Roster Tool</a> to add existing committers.</p>
 </div>
 </div>
 </div></p>
