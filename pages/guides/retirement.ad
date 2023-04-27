@@ -11,7 +11,7 @@
 //limitations under the License.
 = Guide to Retirement
 Apache Incubator PMC
-2002-10-16
+
 :jbake-type: guide
 :jbake-status: published
 :idprefix:
@@ -19,8 +19,8 @@ Apache Incubator PMC
 :imagesdir: ../images/
 
 The intent of this document is to help Mentors and other
-community members understand retirement, both as a
-concept and a process.
+community members understand podling retirement, both as a
+concept and as a process.
 
 == What is Retirement?
 
@@ -31,7 +31,7 @@ any other duties.
 
 It's important to view this process as being the retirement of
 the podling community, not the code. It should not be implied
-that the code is not for use - just that it has no community.
+that the code is not for use - just that it has no community supporting or developing it.
 So long as the Incubator's copyright requirements are
 fulfilled by the podling prior to retirement, its source code
 will continue to be made available through version control.
@@ -40,15 +40,15 @@ Retiring a podling is analogous to moving a top-level Apache
 project to the link:http://attic.apache.org[Attic],
 but podlings receive a lower level of ongoing support -- for
 example, podling websites are deleted outright rather than
-munged to indicate retired status.
+edited to indicate retired status.
 
 == Deciding to retire
 
 In the vast majority of cases, a podling decides to retire on
-its own and that decision is later formally ratified by the
+its own, and that decision is later formally ratified by the
 Incubator PMC; very rarely, the IPMC may act unilaterally.
 (This is deliberate mimicry of Board oversight of TLPs --
-the language and role titles change but in general the Board
+the language and role titles change but, in general, the Board
 and the IMPC merely implement the wishes of the community.)
 
 Before the IPMC gets involved, a public discussion and
@@ -75,28 +75,28 @@ If it cannot be resolved, the podling's source code must
 be removed from version control.
 - It may be that the podling is moving or returning development elsewhere. If so, then modify the resolution attributes appropriately.
 - Delete the podling's dist dir, so that its releases will no
-longer be mirrored:
+longer be available:
 #svn remove https://dist.apache.org/repos/dist/release/incubator/${podling}#
-Any incubating releases will still be available via
+Any releases the podling made available will still be available via
 link:http://archive.apache.org/dist/incubator[archive.apache.org/dist/incubator].
 - Create a file RETIRED.txt at the top-level of each podling
 source repository.  This should contain something like the following:
-** This podling has been retired, please see: http://incubator.apache.org/projects/index.html##{podling-name}
+** This podling has been retired. Please see: http://incubator.apache.org/projects/index.html##{podling-name}
 - If the podling has a DOAP referenced in the link:https://svn.apache.org/repos/asf/comdev/projects.apache.org/trunk/data/projects.xml[projects.xml] file used for generating link:http://projects.apache.org[projects.apache.org], remove the entry.
-- Open a "task" INFRA JIRA ticket entitled "Retire the ${podling} Incubator podling". Do not open sub-task tickets but list bullet points as applicable:
+- Open a "task" INFRA Jira ticket entitled "Retire the ${podling} Incubator podling". Do not open sub-task tickets but list bullet points as applicable:
 ** Close ${podling} mailing lists
 ** Make ${podling} version control read-only
-** Move ${podling} JIRA to "retired" and set read-only
+** Move ${podling} Jira to "retired" and set read-only
 ** Make ${podling} wiki read-only
 ** Turn off ${podling} automatic builds
 ** Remove LDAP entry of ${podling}
 ** Update ${podling} Incubator SVN if the podling uses SVN repo.
 *** Add entries to asf-mailer.conf and send mail to cvs at incubator.apache.org
 *** Remove entries from asf-authorization - this makes the directory rw to the Incubator PMC.
-- Adding an empty index.html into the ${podling} directory as the other retired project does in https://github.com/apache/incubator/tree/master/assets/retired.
+- Add an empty index.html into the ${podling} directory as the other retired project do in https://github.com/apache/incubator/tree/master/assets/retired.
 The web server that hosts all the podling websites checks for a directory matching the host name, and redirects to the podling status file if it is present.
 - When all steps towards retirement are done, announce completeness on general@incubator.
 - Indicate that the podling is closed down in the next board report.
 
-The user accounts of the projects committers do not need
+The user accounts of the project's committers do not need
 to be removed.
