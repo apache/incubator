@@ -27,13 +27,13 @@ have completed ICLAs or SGAs.
 In either case, attach the code to be imported to a JIRA ticket and then import it. We recommend that you tag the previous version
 control system so we know the precise version you are importing.
 
-You MUST make a public record of the code you import. If you do not attach the import to a JIRA ticket, you MUST committed it to version control.
+You MUST make a public record of the code you import. If you do not attach the import to a JIRA ticket, you MUST commit it to version control.
 
 == Importing History
 
 You can commit the incoming code as a snapshot or as a complete version
 control export, including history (provided that the import is available in a format
-readable by Github or Subversion, depending on where the new repository is).
+readable by GitHub or Subversion, depending on where the new repository is).
 Importing with history allows existing open source projects that want to maintain
 older versions at Apache to easily perform source diffs and so on. Importing just the
 latest code allows a clean break to be made with the past. The choice is left to
@@ -59,7 +59,7 @@ Once you have created a JIRA ticket, it is time to clean up the source code.
 We recommend that you start the initial cleanup before you commit the code. You MUST complete it before creating any
 releases.
 
-== Clean Up Best Practice
+== Cleanup Best Practice
 
 We recommend that you use version control to create a
 public record of the cleanup process. This will assist anyone
@@ -75,13 +75,13 @@ lawyers and code auditors. Members of the public need to be
 able to follow and understand the process from these
 messages alone.
 
-We therefore recommend that, after you expand the initial source from the archive) you check it into a special directory (we suggest *${project}/trunk/import*) as is. This will preserve the original packaging, copyright statements
+We therefore recommend that, after you expand the initial source from the archive, you check it into a special directory (we suggest *${project}/trunk/import*) as is. This will preserve the original packaging, copyright statements
 and license notices. Add the standard Apache
 LICENSE and an appropriate NOTICE at the top
 for the copyright for the collective work (see link:http://www.apache.org/legal/src-headers.html[policy]). Take particular care with this commit message. As with
 any patch that contains code which is not the original work
 of the committer, you need to include the url of the Jira ticket (for the artifact imported), together with notes about the original
-copyright owner and any associated paperwork. Note that this is an exact import including original headers, to stop any queries about these foreign headers.
+copyright owner and any associated paperwork. Note that this is an exact import, including original headers, to stop any queries about these foreign headers.
 
 The cleanup should then proceed in a number of commits. If
 the source provenance is complex, break the process into
@@ -133,7 +133,7 @@ If the project uses link:http://maven.apache.org[Apache Maven], you need to upda
 If the project uses link:http://ant.apache.org[Apache Ant], the build script
 will probably need to be updated. In particular:
 - Ensure any MANIFESTs generated refer to Apache. We recommend that you use the standard Apache settings.
-- Check that *LICENSE*, *NOTICE* and - if appropriate - *DISCLAIMER* documents are copied into binary artifacts
+- Check that *LICENSE*, *NOTICE* and - if appropriate - *DISCLAIMER* documents are copied into binary artifacts.
 
 == Issue Tracking Transition
 
