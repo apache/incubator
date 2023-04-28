@@ -152,7 +152,7 @@ Estimated Reading Time: <span class="eta"></span>
 <li><a href="#importing_history">Importing History</a></li>
 <li><a href="#audit_cryptography">Audit Cryptography</a></li>
 <li><a href="#initial_clean_up">Initial Clean Up</a></li>
-<li><a href="#clean_up_best_practice">Clean Up Best Practice</a></li>
+<li><a href="#cleanup_best_practice">Cleanup Best Practice</a></li>
 <li><a href="#on_repackaging">On Repackaging</a></li>
 <li><a href="#update_documents">Update Documents</a>
 <ul class="sectlevel2">
@@ -177,7 +177,7 @@ have completed ICLAs or SGAs.</p>
 control system so we know the precise version you are importing.</p>
 </div>
 <div class="paragraph">
-<p>You MUST make a public record of the code you import. If you do not attach the import to a JIRA ticket, you MUST committed it to version control.</p>
+<p>You MUST make a public record of the code you import. If you do not attach the import to a JIRA ticket, you MUST commit it to version control.</p>
 </div>
 </div>
 </div>
@@ -187,7 +187,7 @@ control system so we know the precise version you are importing.</p>
 <div class="paragraph">
 <p>You can commit the incoming code as a snapshot or as a complete version
 control export, including history (provided that the import is available in a format
-readable by Github or Subversion, depending on where the new repository is).
+readable by GitHub or Subversion, depending on where the new repository is).
 Importing with history allows existing open source projects that want to maintain
 older versions at Apache to easily perform source diffs and so on. Importing just the
 latest code allows a clean break to be made with the past. The choice is left to
@@ -235,7 +235,7 @@ releases.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="clean_up_best_practice">Clean Up Best Practice</h2>
+<h2 id="cleanup_best_practice">Cleanup Best Practice</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>We recommend that you use version control to create a
@@ -254,13 +254,13 @@ able to follow and understand the process from these
 messages alone.</p>
 </div>
 <div class="paragraph">
-<p>We therefore recommend that, after you expand the initial source from the archive) you check it into a special directory (we suggest <strong>${project}/trunk/import</strong>) as is. This will preserve the original packaging, copyright statements
+<p>We therefore recommend that, after you expand the initial source from the archive, you check it into a special directory (we suggest <strong>${project}/trunk/import</strong>) as is. This will preserve the original packaging, copyright statements
 and license notices. Add the standard Apache
 LICENSE and an appropriate NOTICE at the top
 for the copyright for the collective work (see <a href="http://www.apache.org/legal/src-headers.html">policy</a>). Take particular care with this commit message. As with
 any patch that contains code which is not the original work
 of the committer, you need to include the url of the Jira ticket (for the artifact imported), together with notes about the original
-copyright owner and any associated paperwork. Note that this is an exact import including original headers, to stop any queries about these foreign headers.</p>
+copyright owner and any associated paperwork. Note that this is an exact import, including original headers, to stop any queries about these foreign headers.</p>
 </div>
 <div class="paragraph">
 <p>The cleanup should then proceed in a number of commits. If
@@ -352,7 +352,7 @@ Consider adding a <strong>DISCLAIMER</strong> text document.</p>
 <p>If the project uses <a href="http://ant.apache.org">Apache Ant</a>, the build script
 will probably need to be updated. In particular:
 - Ensure any MANIFESTs generated refer to Apache. We recommend that you use the standard Apache settings.
-- Check that <strong>LICENSE</strong>, <strong>NOTICE</strong> and - if appropriate - <strong>DISCLAIMER</strong> documents are copied into binary artifacts</p>
+- Check that <strong>LICENSE</strong>, <strong>NOTICE</strong> and - if appropriate - <strong>DISCLAIMER</strong> documents are copied into binary artifacts.</p>
 </div>
 </div>
 </div>
