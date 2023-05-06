@@ -58,7 +58,7 @@
       }
     },
     "reportingGroup": "January, April, July, October",
-    "reportingMonthly": false,
+    "reportingMonthly": true,
     "repositories": [
       [
         "incubator-annotator",
@@ -86,15 +86,11 @@
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-annotator.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/annotator/KEYS",
       "svn": "",
-      "tracker": "",
+      "tracker": "https://issues.apache.org/jira/browse/ANNO",
       "wiki": "https://cwiki.apache.org/confluence/display/ANNO",
       "www": "http://annotator.incubator.apache.org"
     },
     "zFixMeList": [
-      [
-        "10",
-        "Has not provided an issue tracker link"
-      ],
       [
         "15",
         "Project does not have 'dev' mailing list"
@@ -199,7 +195,7 @@
         {
           "description": "Create custom vector tiles from OpenStreetMap and other data ...",
           "last_update_int": 1683295601,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
         }
       ],
       [
@@ -377,8 +373,8 @@
         "incubator-celeborn",
         {
           "description": "Apache Celeborn is an elastic and high-performance service fo...",
-          "last_update_int": 1683298849,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_int": 1683343531,
+          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
         }
       ],
       [
@@ -657,8 +653,8 @@
         "incubator-devlake",
         {
           "description": "Apache DevLake is an open-source dev data platform to ingest,...",
-          "last_update_int": 1683336890,
-          "last_update_txt": "<span style='color: #070;'>&lt;5 minutes ago</span>"
+          "last_update_int": 1683338553,
+          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
         }
       ],
       [
@@ -847,7 +843,7 @@
         {
           "description": "HugeGraph Commons - include common library & RPC module",
           "last_update_int": 1682006825,
-          "last_update_txt": "15 days ago"
+          "last_update_txt": "16 days ago"
         }
       ],
       [
@@ -1141,7 +1137,7 @@
         {
           "description": "Apache Kvrocks Website",
           "last_update_int": 1683295270,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
         }
       ]
     ],
@@ -1246,7 +1242,7 @@
       }
     },
     "reportingGroup": "January, April, July, October",
-    "reportingMonthly": false,
+    "reportingMonthly": true,
     "repositories": [
       [
         "incubator-liminal",
@@ -1499,7 +1495,7 @@
         {
           "description": "Apache Livy is an open source REST interface for interacting ...",
           "last_update_int": 1682529274,
-          "last_update_txt": "9 days ago"
+          "last_update_txt": "10 days ago"
         }
       ],
       [
@@ -2085,14 +2081,14 @@
       }
     },
     "reportingGroup": "February, May, August, November",
-    "reportingMonthly": true,
+    "reportingMonthly": false,
     "repositories": [
       [
         "incubator-nlpcraft",
         {
           "description": "Apache NLPCraft - API to convert natural language into actions.",
           "last_update_int": 1682436256,
-          "last_update_txt": "10 days ago"
+          "last_update_txt": "11 days ago"
         }
       ],
       [
@@ -2224,7 +2220,7 @@
         {
           "description": "Apache OpenDAL: access data freely.",
           "last_update_int": 1683295733,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
         }
       ]
     ],
@@ -2352,7 +2348,7 @@
         {
           "description": "Apache Paimon Website",
           "last_update_int": 1683332953,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
         }
       ]
     ],
@@ -2642,7 +2638,7 @@
         {
           "description": "Apache Pekko Connectors is a Reactive Enterprise Integration ...",
           "last_update_int": 1683308239,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
         }
       ],
       [
@@ -2650,7 +2646,7 @@
         {
           "description": "Apache Pekko Kafka Connector - Pekko-Connectors is a Reactive...",
           "last_update_int": 1683128199,
-          "last_update_txt": "2 days ago"
+          "last_update_txt": "3 days ago"
         }
       ],
       [
@@ -2690,7 +2686,7 @@
         {
           "description": "A replicated Apache Pekko Persistence journal backed by Apach...",
           "last_update_int": 1683296097,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
         }
       ],
       [
@@ -3433,8 +3429,8 @@
         "incubator-seatunnel-website",
         {
           "description": "Apache SeaTunnel documents",
-          "last_update_int": 1683263795,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_int": 1683352175,
+          "last_update_txt": "<span style='color: #070;'>&lt;15 minutes ago</span>"
         }
       ]
     ],
@@ -3760,7 +3756,7 @@
       }
     },
     "reportingGroup": "January, April, July, October",
-    "reportingMonthly": false,
+    "reportingMonthly": true,
     "repositories": [
       [
         "incubator-teaclave",
@@ -4122,7 +4118,7 @@
       }
     },
     "reportingGroup": "February, May, August, November",
-    "reportingMonthly": true,
+    "reportingMonthly": false,
     "repositories": [
       [
         "incubator-training",
