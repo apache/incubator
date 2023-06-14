@@ -86,11 +86,15 @@
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-annotator.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/annotator/KEYS",
       "svn": "",
-      "tracker": "https://issues.apache.org/jira/browse/ANNO",
+      "tracker": "",
       "wiki": "https://cwiki.apache.org/confluence/display/ANNO",
       "www": "http://annotator.incubator.apache.org"
     },
     "zFixMeList": [
+      [
+        "10",
+        "Has not provided an issue tracker link"
+      ],
       [
         "15",
         "Project does not have 'dev' mailing list"
@@ -196,7 +200,7 @@
         {
           "description": "Create custom vector tiles from OpenStreetMap and other data ...",
           "last_update_int": 1686693683,
-          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
         }
       ],
       [
@@ -375,8 +379,8 @@
         "incubator-celeborn",
         {
           "description": "Apache Celeborn is an elastic and high-performance service fo...",
-          "last_update_int": 1686666678,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_int": 1686709776,
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
         }
       ],
       [
@@ -384,7 +388,7 @@
         {
           "description": "Apache Celeborn Site",
           "last_update_int": 1686705066,
-          "last_update_txt": "<span style='color: #070;'>&lt;30 minutes ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
         }
       ]
     ],
@@ -1049,7 +1053,7 @@
         "xiaobiao"
       ],
       "numberCommitters": 19,
-      "numberCommittersNew": 0,
+      "numberCommittersNew": 4,
       "numberPMCEquals": false,
       "numberPMCMembers": 10,
       "owners": [
@@ -1088,7 +1092,17 @@
       ]
     ],
     "news": [
-      "2022-04-23 Project enters incubation."
+      "2022-04-23 Project enters incubation.",
+      "2022-06-30 New Committer, PragmaTwice ",
+      "2023-08-04 Apache Kvrocks(incubating) 2.1.0 released ",
+      "2022-09-08 New PPMC, Invite committer PragmaTwice to PPMC ",
+      "2022-09-23 New Committer, torwig ",
+      "2022-10-25 New Committer, tanruixiang ",
+      "2022-11-17 Apache Kvrocks(incubating) 2.2.0 released ",
+      "2023-01-03 New Committer, xiaobiaozhao ",
+      "2023-02-22 Apache Kvrocks(incubating) 2.3.0 released ",
+      "2023-03-24 New PPMC, Invite committer torwig to PPMC ",
+      "2023-05-03 Apache Kvrocks(incubating) 2.4.0 released "
     ],
     "podlingName": "Kvrocks",
     "rawReportingGroup": "group-2",
@@ -1149,8 +1163,8 @@
     "resource": "kvrocks",
     "sponsor": "Incubator",
     "startDate": "2022-04-23",
-    "statusAge": 80,
-    "statusLastUpdated": "2023-03-26",
+    "statusAge": 0,
+    "statusLastUpdated": "2023-06-14",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-kvrocks.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/kvrocks/KEYS",
@@ -1918,7 +1932,7 @@
         {
           "description": "Apache Nemo Incubating",
           "last_update_int": 1684253014,
-          "last_update_txt": "28 days ago"
+          "last_update_txt": "29 days ago"
         }
       ],
       [
@@ -2346,7 +2360,7 @@
         {
           "description": "Apache Paimon(incubating) is a streaming data lake platform t...",
           "last_update_int": 1686665733,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
         }
       ],
       [
@@ -2378,7 +2392,7 @@
         {
           "description": "Apache Paimon Website",
           "last_update_int": 1686702685,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
         }
       ]
     ],
@@ -2489,7 +2503,7 @@
         {
           "description": "Apache Pegasus - A horizontally scalable, strongly consistent...",
           "last_update_int": 1686628210,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
         }
       ],
       [
@@ -2656,8 +2670,8 @@
         "incubator-pekko",
         {
           "description": "Build highly concurrent, distributed, and resilient message-d...",
-          "last_update_int": 1686681816,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_int": 1686712882,
+          "last_update_txt": "<span style='color: #070;'>&lt;1 hour ago</span>"
         }
       ],
       [
@@ -2688,8 +2702,8 @@
         "incubator-pekko-grpc",
         {
           "description": "Apache Pekko gRPC",
-          "last_update_int": 1686668680,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_int": 1686708181,
+          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
         }
       ],
       [
@@ -3328,7 +3342,7 @@
         {
           "description": "SeaTunnel is a distributed, high-performance data integration...",
           "last_update_int": 1686669915,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
         }
       ],
       [
@@ -3754,7 +3768,7 @@
         {
           "description": "Apache Teaclave (incubating) SGX SDK helps developers to writ...",
           "last_update_int": 1686536574,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
+          "last_update_txt": "2 days ago"
         }
       ],
       [
@@ -4375,8 +4389,8 @@
         "incubator-uniffle",
         {
           "description": "Uniffle is a high performance, general purpose Remote Shuffle...",
-          "last_update_int": 1686625625,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_int": 1686715160,
+          "last_update_txt": "<span style='color: #070;'>&lt;15 minutes ago</span>"
         }
       ],
       [
