@@ -1,0 +1,444 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+               "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--
+  Licensed to the Apache Software Foundation (ASF) under one
+  or more contributor license agreements.  See the NOTICE file
+  distributed with this work for additional information
+  regarding copyright ownership.  The ASF licenses this file
+  to you under the Apache License, Version 2.0 (the
+  "License"); you may not use this file except in compliance
+  with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing,
+  software distributed under the License is distributed on an
+  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  KIND, either express or implied.  See the License for the
+  specific language governing permissions and limitations
+  under the License. 
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" href="../style/bootstrap-1-3-0-min.css" type="text/css" />
+  <link rel="stylesheet" href="../style/style.css" type="text/css" />
+  <script src="https://www.apachecon.com/event-images/snippet.js"></script>
+        <title>Cassandra java-driver Codebase Intellectual Property (IP) Clearance Status - Apache Incubator</title>
+  
+ </head>
+ <body>
+ <div class="container">
+  <div class="row"><div class="span6"><a href="https://www.apache.org/"><img src="http://www.apache.org/img/asf_logo.png" alt="The Apache Software Foundation" border="0" style="margin-top: 2px" height="88"/></a></div>
+<div class="span7"><a href="/"><img src="https://incubator.apache.org/images/incubator_feather_egg_logo_sm.png" alt="The Apache Software Foundation Incubator" border="0" style="margin-top: 2px" height="88"/></a></div>
+<div class="span2"><a href="https://www.apache.org/foundation/contributing.html"><img src="https://www.apache.org/images/SupportApache-small.png" height="100" width="100"/></a></div>
+</div>
+  <div class="row"><div class="span16"><hr noshade="noshade" size="1"/></div></div>
+  <div class="row">
+   <div class="span4">
+    <form action="http://www.google.com/search" method="get">
+     <input value="incubator.apache.org" name="sitesearch" type="hidden"/>
+     <input size="20" name="q" id="query" type="text" value="search..."
+      onclick="if(this.value == 'search...') {this.value = ''}"/>
+     <input name="Search" value="Go" type="submit"/>
+    </form>
+          <div class="menuheader">General</div>
+    <menu compact="compact">
+          <li><a href="../index.html">Welcome</a></li> 
+          <li><a href="../cookbook/">Incubator Cookbook</a></li> 
+          <li><a href="../policy/incubation.html">Incubation Policy</a></li> 
+          <li><a href="../guides/roles_and_responsibilities.html">Roles and Responsibilities</a></li> 
+          <li><a href="../faq.html">General FAQ</a></li> 
+          <li><a href="http://wiki.apache.org/incubator">Incubator Wiki</a></li> 
+          <li><a href="../whoweare.html">Who We Are</a></li> 
+            </menu>
+      <div class="menuheader">Status</div>
+    <menu compact="compact">
+          <li><a href="../projects">Project List</a></li> 
+          <li><a href="../clutch">Clutch Report</a></li> 
+          <li><a href="../ip-clearance">IP Clearance</a></li> 
+            </menu>
+      <div class="menuheader">Entry Guides</div>
+    <menu compact="compact">
+          <li><a href="../guides/proposal.html">Proposal Guide</a></li> 
+            </menu>
+      <div class="menuheader">Podling Guides</div>
+    <menu compact="compact">
+          <li><a href="../guides/committer.html">Podling Committers</a></li> 
+          <li><a href="../guides/ppmc.html">Podling PMC (PPMC)</a></li> 
+          <li><a href="../guides/mentor.html">Podling Mentor</a></li> 
+          <li><a href="../guides/releasemanagement.html">Podling Releases</a></li> 
+          <li><a href="../guides/branding.html">Podling Branding/Publicity</a></li> 
+          <li><a href="../guides/sites.html">Podling Websites</a></li> 
+          <li><a href="../guides/graduation.html">Graduation</a></li> 
+          <li><a href="../guides/retirement.html">Retirement</a></li> 
+            </menu>
+      <div class="menuheader">Other Guides</div>
+    <menu compact="compact">
+          <li><a href="../guides/participation.html">Participation</a></li> 
+          <li><a href="../faq.html">General FAQ</a></li> 
+          <li><a href="../guides/chair.html">IPMC Chair</a></li> 
+          <li><a href="../guides/lists.html">Mailing Lists</a></li> 
+          <li><a href="../guides/website.html">Incubator Website</a></li> 
+            </menu>
+      <div class="menuheader">ASF</div>
+    <menu compact="compact">
+          <li><a href="http://www.apache.org/foundation/how-it-works.html">How Apache Works</a></li> 
+          <li><a href="http://www.apache.org/dev/">Developer Documentation</a></li> 
+          <li><a href="http://www.apache.org/foundation/">Foundation</a></li> 
+          <li><a href="http://www.apache.org/foundation/sponsorship.html">Sponsor Apache</a></li> 
+          <li><a href="http://www.apache.org/foundation/thanks.html">Thanks</a></li> 
+            </menu>
+    <div id="menuheader">
+      <a class="acevent" data-format="square" data-width="135" data-mode="light" data-event="random"></a>
+    </div>
+   </div>
+   
+   <div class="span12">
+            <h2 id='Cassandra-java-driver+Codebase+Intellectual+Property+%28IP%29+Clearance+Status'><img src="../images/redarrow.gif" />Cassandra java-driver Codebase Intellectual Property (IP) Clearance Status</h2>
+<div class="section-content">
+</div>
+        <h2 id='Description'><img src="../images/redarrow.gif" />Description</h2>
+<div class="section-content">
+<p>The Java Driver for Apache Cassandra, currently hosted by DataStax. This is the first of seven drivers from DataStax being donated. See https://cwiki.apache.org/confluence/display/CASSANDRA/CEP-8%3A+Datastax+Drivers+Donation </p>
+</div>
+        <h2 id='Project+info'><img src="../images/redarrow.gif" />Project info</h2>
+<div class="section-content">
+<ul>
+        <li>The Apache Cassandra PMC will be responsible for the code</li>
+      </ul>
+<ul>
+        <li>This contribution will be placed in a stand-alone repository under the name cassandra-java-driver</li>
+      </ul>
+<ul>
+        <li>The PMC has voted on subproject governance rules and procedures in preparation for this subproject. All donated drivers will exist as separate code repository, all in the one driver subproject.</li>
+      </ul>
+<ul>
+        <li>Officer or member managing donation: Mick Semb Wever (mck)</li>
+      </ul>
+<p>
+        <em>Completed tasks are shown by the completion date (YYYY-MM-dd).</em>
+      </p>
+<h3 id='Identify+the+codebase'>Identify the codebase</h3>
+<div class="section-content">
+<table class="colortable" width="100%">
+          <tr>
+            <th>date</th>
+            <th>item</th>
+          </tr>
+          <tr>
+            <td>2023-06-19</td>
+            <td><a href="https://github.com/datastax/java-driver">https://github.com/datastax/java-driver</a> </td>
+          </tr>
+        </table>
+<p>
+MD5 or SHA1 sum for donated software:  (<em>SHA1 for each branch and tag being donated using `git show-ref`</em>)
+<pre>
+5d3968b40cea5874fff500849c44b018f36e23d6 refs/heads/4.x
+864fbd159e5d6978e46ec7827f7dac89f39425b6 refs/remotes/origin/1.0
+499aa67aaf9f34b298da33cd467894da89bea450 refs/remotes/origin/2.0
+12f88409c7d509a15edf43d887e6911503d2ab3c refs/remotes/origin/2.0.10_fixes
+fd35ff8a363e7d265fa637d9753e78858e728d80 refs/remotes/origin/2.0.9_fixes
+377c16b18c537dd8e1b290c8bd0c7e8a57636871 refs/remotes/origin/2.1
+49bb860bb5709948442b7046fd31f528e762d64a refs/remotes/origin/2.2
+e37f128e694db67332844083a1a1cb1bd9645cbc refs/remotes/origin/3.0.x
+5234247cf2d60f8a1de49e490f7b208cfc019ed7 refs/remotes/origin/3.1.x
+6cb4d14bb322ea138337af27fc556d5cba83e961 refs/remotes/origin/3.10.2_fixes
+614d65448823f2db1ccc709c88e5bd41c886d3b8 refs/remotes/origin/3.10.x
+f1e7623d270f72b73eaf6624fb37820480dca573 refs/remotes/origin/3.2.x
+b517a46cc4bd325aa3e362f0c8e90eeecd8b6483 refs/remotes/origin/3.3.x
+fd3bba6e1eda0f8f2906b463e3465763f2adbad3 refs/remotes/origin/3.4.x
+cfbe3b07168824e43b287ac2ad7d92e996568709 refs/remotes/origin/3.5.x
+a9f13f468f73a76f69cfb267a406a3c2dd8199d9 refs/remotes/origin/3.x
+fb9a431692eba20f7156a56517f8c1a39fe6bc95 refs/remotes/origin/3x_4x_benchmarks
+cb19d372a8547db0dc86f4305d06fe609858d0e4 refs/remotes/origin/4.1.0_fixes
+508726b9af2d0d7a60ff6ffa5fb7a48c53932e46 refs/remotes/origin/4.11.x
+f9e0d4b08ef0c882c6a6f2ef606303c3ed3912b3 refs/remotes/origin/4.12.x
+4d380600bbfff362150a8706ebe9e6c0ce890a6b refs/remotes/origin/4.2.x
+f1a7b0c02bcde8d205e9c364f0991149b459f42a refs/remotes/origin/4.3.0_fixes
+4e49cdb15ab78611aecc560eed1a44ebc49d80c6 refs/remotes/origin/4.3.x
+520633d5d7692f407925458a998a3392d97cc966 refs/remotes/origin/4.4.0_fixes
+45cf439d016e2384378520e4f0de37e5a1120b09 refs/remotes/origin/4.5.0_fixes
+1c0a0be3b09cb3c699190478b9f108abfdb2e4e7 refs/remotes/origin/4.5.x
+5885495125d4dfc8eec05f907c8e7ea7768294a5 refs/remotes/origin/4.6.1_fixes
+1cbec0e7a3b1f4e03dc00afd699b0200546390cc refs/remotes/origin/4.6.x
+18bf89be9933aa85b5eef8e283d62dca623eae4c refs/remotes/origin/4.7.x
+842ca7695b9f707b24ee132ba7220b14e108487a refs/remotes/origin/4.8.0_fixes
+5d3968b40cea5874fff500849c44b018f36e23d6 refs/remotes/origin/4.x
+6a3f4fb18fea00c56903b438b742287036964ce3 refs/remotes/origin/4955-3.x
+58f62af0b6fe754d2354a6be22eae459e3499f45 refs/remotes/origin/DB-4955-3.x
+5d3968b40cea5874fff500849c44b018f36e23d6 refs/remotes/origin/HEAD
+84a73d3f33359b554326987776d86af357333ee8 refs/remotes/origin/JAVA-2589
+b4e49a7cdbb06d2cca34782b8b3bf13cb291dfe6 refs/remotes/origin/JAVA-3050
+e2c4c087892dd875480ca8134286c7b114923f1b refs/remotes/origin/docs-4.13
+5319fa39ab2f32f9d6f2c115b7a520772827f95a refs/remotes/origin/docs-4.13-bmcguire
+78cee41e3bcf9f71adb09424d55dc2ca8d8d9856 refs/remotes/origin/docs-4.14
+baab1191de3bbd5558dafcc12903091b4d3cc649 refs/remotes/origin/docs_yaml
+521c176cb3130d7a84b7cec55d88bd3af9393ed1 refs/remotes/origin/docs_yaml_311_fix
+727e170b584e0947d5312c25152de5967e76ce66 refs/remotes/origin/fix-dse-build-3x
+9466d67c4ff5cfd0720297d1a4b65dd16d8c9f29 refs/remotes/origin/gh-pages
+0e256ab35414aab013e30885c4a5b51b5114639e refs/remotes/origin/integration_tests_with_cql_proxy_bmcguire
+eefbbc4d08a2b6bed39af32026bd0ed657ff9e5f refs/remotes/origin/java-3062-an-experiment
+91823cdff14bd8c22c368e68be7be0ccf6af7ce1 refs/remotes/origin/java2264_types_match
+61eebc1cf3255e6604993850b3e149b071db5dd1 refs/remotes/origin/java2516_3.x
+f9b62e31bc0fe65874f0aa33af79bd9b7e736982 refs/remotes/origin/java2582
+1cd32985da67b2b6033d86e28f397fd0bb22892c refs/remotes/origin/java2723
+a3c9a03c5bc0a1af717566a6135c805e2f8ba2d9 refs/remotes/origin/java2742
+165ae5ef756d0f36b4965a99be8fb614d7fba68e refs/remotes/origin/java3021
+1639b812a7602a83f228657238c993be9dd37e65 refs/remotes/origin/java3033
+24cd104e7b3c2c73cba442a952d4eb71f172b2e9 refs/remotes/origin/msmygit-patch-1
+0930616fc621dc7050aa619b4c824113d35aa808 refs/remotes/origin/netty-4.1.74
+82389c9c17bcaafedcbb2d7b519945422690c930 refs/remotes/origin/pr1617_alternative
+c3592669a8d66bf3a1a780430c3dba40091a6866 refs/remotes/origin/snyk-monitor
+9cb8234d9b36d73e7ca7155c82a9a139775bc1aa refs/tags/1.0.0
+651f298b0eb35fe980931ad9dee2b25e52414c24 refs/tags/1.0.0-beta1
+7097ceb9805e2df0e6a64cd252e4bbf6e5f3f4cb refs/tags/1.0.0-beta2
+221735154e1873389ecb9f2ef593cdac7e9f67a4 refs/tags/1.0.0-rc1
+db8d95d8c4b5a43273ddf7ec8d4d986284247600 refs/tags/1.0.1
+7da6d8e58c09c107ca47558c16b5d56cf7076255 refs/tags/1.0.1-dse
+3dc6bc02a51339665f65ff6bdb488c1c0cbe42af refs/tags/1.0.2
+99d8b47c087c04d6c665498c9729f0afe52047d8 refs/tags/1.0.2-dse
+ba9ef69874732c564499f0bb99659ce067e536a7 refs/tags/1.0.2-dse2
+8e9391a8f0022874eaf2e6248564ec72516be662 refs/tags/1.0.3
+61df32e4687f11bf8af6bc0c8654b8ab6704349c refs/tags/1.0.3-dse
+d16c7108cad18c4f031ce7fef37b1070015af7b4 refs/tags/1.0.4
+bf33194b7440f4794bf55621c40e4821b6c4d090 refs/tags/1.0.4-dse
+824fb236c19077b251549bb6c76b96b31af7f582 refs/tags/1.0.5
+f935e9688bc03f002ca8cd93c45c50079db02476 refs/tags/1.0.5-dse
+6fe95191cb28048d49b94de1717c89b285ccf1ca refs/tags/1.0.6
+50f48b73e3152537f6d90ad8a0031c41d9e825d0 refs/tags/1.0.6-dse
+e28d99431d4cbc63b9249ebe63d3dd630258d185 refs/tags/1.0.7
+bd0b0a5b2a50574264dd85d77c5a552562838820 refs/tags/1.0.8
+e9533747bac7003b99b7fb195640f69a8d4ed828 refs/tags/2.0.0
+34720a919436cfe05d737bdf69179968652a9fd5 refs/tags/2.0.0-beta1
+acbe64332e232da97739c87c5d9bd8606a3c98f7 refs/tags/2.0.0-beta2
+3899b1bbbab7a2be852e28dcf79605f315ec95e9 refs/tags/2.0.0-rc1
+49f395b79f58026b1a039ce6b4ce5c3b8b67d1fe refs/tags/2.0.0-rc2
+0a5afec795a48bdc24fc6d547ef88d65891df9ca refs/tags/2.0.0-rc3
+a3925506ba10c54354d997e48c368bcbb46fbe94 refs/tags/2.0.1
+776b32e94fd28fc5e542b7481d79e989739a9dfb refs/tags/2.0.10
+f650bda63320a3244e68ef7380dc2b0a0ed869dd refs/tags/2.0.10.1
+bed35a03bed99ed9cba6acdaad03951466614513 refs/tags/2.0.11
+37acaea9a8b6050f761afdcdd11eea9df2746d10 refs/tags/2.0.12
+43280b5ce1c6f3a016bf6b2a7e365482662fdf87 refs/tags/2.0.12.1
+6e751336dc83d4a71ffe2fb568228f5984e20c57 refs/tags/2.0.12.2
+b720f41a946589174910a17f31de4ab291cf648c refs/tags/2.0.12.3
+9a4ae0bf2da14897b71157f8c7c22cd2445a8711 refs/tags/2.0.2
+cb133e736100a2c32a182c5819e8a9736b1bc89c refs/tags/2.0.3
+baf7dd68fcb874726039882d74b847a672f61661 refs/tags/2.0.4
+d4d0bbc6dc6e0145f82beb86c10f40d3ea63dd08 refs/tags/2.0.5
+d650243bcda701570a903915cf8bd7da39c458bd refs/tags/2.0.6
+91ea75feb1060f64ea004c27a9d3eda3497b1049 refs/tags/2.0.7
+5eb4903ad08765f492f16a210398f3db15e8e416 refs/tags/2.0.8
+45a077d710991ec2114cbec7e27dcca20c2cc4e9 refs/tags/2.0.9
+f272a85c3e15e29c454f5506f6208e5bda3ef2b3 refs/tags/2.0.9.1
+24eb6885462060f75979f4d29f7aa7bc2dd1c37b refs/tags/2.0.9.2
+aa00adb24dc525dc8a31f3878c9662138b11ad60 refs/tags/2.1.0
+51feab7c84d5e1473d4aa2a2f414489740d63ede refs/tags/2.1.0-beta1
+26acb10c420b0a64f7afbc662574e391b2dcaf62 refs/tags/2.1.0-rc1
+461380c68cc71024b81ec98d35ef4da738cb6720 refs/tags/2.1.1
+094fd551551f7ecec6ee26904830288030fd4618 refs/tags/2.1.10
+2417e35930fdda15789acea8481589a743806867 refs/tags/2.1.10.1
+162528e4c03a9bceef16de2717d141714ba086f4 refs/tags/2.1.10.2
+c068b137b66579b1dd351ebf5aec7359bdbc2f21 refs/tags/2.1.10.3
+ed4d1f64583f0082b6ae8a0c4ee5c182be4e636a refs/tags/2.1.2
+b4859e752aa1e8e997cb85a9bc3d9180bd4c9903 refs/tags/2.1.3
+9618a9c1cacaea61f45c4b47530897ff7a5425b6 refs/tags/2.1.4
+384bcf33eeb38737ef8404f50d822c00d5a8c211 refs/tags/2.1.5
+17de1c1a1e0c749f505434d9333ce521643e114f refs/tags/2.1.6
+47f5a9c9b68a42874b0c4d30c851a52edd9eb8dc refs/tags/2.1.7
+4c1da89149d9658b8dc74cb7c41fef8729992f93 refs/tags/2.1.7.1
+6976cdf08f9dbbcc77b79fd88659f4f9f4d6d40f refs/tags/2.1.8
+f495f0edf90f6b7171c882ccb60848d1b2147cd5 refs/tags/2.1.9
+ce13b11c67e2f0867cf8dc1e69183328f60b618d refs/tags/2.2.0-rc1
+5696fe1fd8bfa48348503f0477d9c03bd104ccc0 refs/tags/2.2.0-rc2
+707c5fb078c07a0b519c8cc9be8f6d89082936fc refs/tags/2.2.0-rc3
+641454ecde36de3f4ad4a858617f5484a04fc2d1 refs/tags/3.0.0
+b5ec09d4a26eaab241c3a27463209ae59564dcb2 refs/tags/3.0.0-alpha1
+25d294ead50a3f6d8aa7a18fada3e0594fdf759c refs/tags/3.0.0-alpha2
+8df9978434cb67933170e57beee90561f5a19593 refs/tags/3.0.0-alpha3
+fca0d11caf454940b0ce819665b0554fb61e61fd refs/tags/3.0.0-alpha4
+11e5b50daa86e61ff94073edd8800fb73c9827af refs/tags/3.0.0-alpha5
+415a3b325e084122aa6a90105d5db5a167dffb60 refs/tags/3.0.0-beta1
+2b39f0d37b6cd7f0dbd268f7ac4b2d3f31a4280e refs/tags/3.0.0-rc1
+d7ced2089755c3c9621ffae3516d34af00643872 refs/tags/3.0.1
+62e8f61bf21e145f0295b4cce0f4b9140c0af50c refs/tags/3.0.2
+754f5221b4bf0a906c8b13456e5f46a7df751183 refs/tags/3.0.3
+29da27dc6e68320ff3e6ef0557d804a5e3af449f refs/tags/3.0.4
+b758e552a696f9e9b3b1f9b7cfc5f18021a7576f refs/tags/3.0.5
+1b95da7b0752b5e90b2206d9a26f945dfc7768e7 refs/tags/3.0.6
+aafb4238f0792bcb020c90c42c3f09a726b9dc9c refs/tags/3.0.7
+d54049fb4af28ff7ee52e250690575e4b68afc9d refs/tags/3.0.8
+c158dffdfda600275087a1e9127ae3aec4a9d4f5 refs/tags/3.1.0
+a1637651bf4d0d200d8ec65c2a859660fdecfac4 refs/tags/3.1.1
+08779ea4c116da7611742494fe7e8ec447777912 refs/tags/3.1.2
+61b7514ee2d0d4d7827c8521579d1fcd5ea85ead refs/tags/3.1.3
+f12da95463419092999fc6db9fbb7e13dccfcddb refs/tags/3.1.4
+63665497968dc1b40d822d9bb16bf936d7dadae8 refs/tags/3.10.0
+fb6d632c52afd693f6f9624d3528bca600607af7 refs/tags/3.10.1
+bc45812c15ded851a8e322b98d516ac1525229b7 refs/tags/3.10.2
+ece7457968e0b1678a42f60bb33153444235ccbc refs/tags/3.11.0
+df5f6f002b05fb7b40faf0326793b4c48695eff4 refs/tags/3.11.1
+af5df63995aca86e2af17f0945fca2bf06f9d93f refs/tags/3.11.2
+edb4993ca3a0a9f83746da8663d5cb92106af096 refs/tags/3.11.3
+879eca5c249c86cfaf96b965078aa74ace3d3dc6 refs/tags/3.2.0
+d50730cab5c240bfdb1a8fbd7db820c52f02b0a4 refs/tags/3.3.0
+55afbab3e7013317599eace00c4879659763e489 refs/tags/3.3.1
+348b2c6b626210d747aabe7244f65451bc3a73e7 refs/tags/3.3.2
+cdde762453e0c39df8b18db10d4d35109bb831c8 refs/tags/3.4.0
+4acb2070614bbaa2631cae811bc60a4aa7f7523c refs/tags/3.5.0
+89536d64f5743a47a3c9aedebc6d4b75e98600e8 refs/tags/3.5.1
+13f4502b68c68d3a5bd84b82c5982363eb60e468 refs/tags/3.6.0
+b10ea1828aec026efbfd9df9b7097e859ca11a14 refs/tags/3.6.0_docs
+3830314da04f48006e56f76ffd7c7b41528c0055 refs/tags/3.7.0
+d932583a33e08ccc19b5c8b2fc33fd31aaa51375 refs/tags/3.7.1
+a6f242936a7588f7c800399f8d5b56dc966bb579 refs/tags/3.7.2
+4e8d6ca0b2f4c816197903a3c98c04bdf1383193 refs/tags/3.8.0
+c774276fe4789252e246a323a8f95e5da9f25c9b refs/tags/3.9.0
+fc72d0217ca7c0723eba2fd905bc5044e505b25f refs/tags/4.0.0
+fedf8a0359c4ed1f0af211c0613580ba726e0a3a refs/tags/4.0.0-alpha1
+bcc0b79ce7db1ac778d09ff12c90d89331513c95 refs/tags/4.0.0-alpha2
+69774972b99b1d11fd1e2757cded99c547ff4e08 refs/tags/4.0.0-alpha3
+0f184c2ce5633e9236e7bdfe1778fc4954240ad6 refs/tags/4.0.0-beta1
+a0f35b3826c092e22f46158d60bb7058b2faaa9e refs/tags/4.0.0-beta2
+b05ff7a744d72747415191cdfdae4ec7b67f6c54 refs/tags/4.0.0-beta3
+0e87a716ba967be7cdfce0e9743360ab3d5782e1 refs/tags/4.0.0-rc1
+ac672cc2a00687fb10523122e46f0cc0d6bbd71a refs/tags/4.0.1
+8ad6325df7282fba9cd07418be33e80a0d8bb127 refs/tags/4.1.0
+66c1ae3b7383bca5e4e6ca50ac00fd602617d8be refs/tags/4.10.0
+27efec1e441c7ca8fcb0ae7073463cf8c23c0d41 refs/tags/4.11.0
+c1d8a69c6966655f4a444af1624e351e278e5580 refs/tags/4.11.1
+c89efb6ccdca6c383fc76e75224b47653b2066d8 refs/tags/4.11.2
+da06472ef5c3d740e678b06091d95f25c5da6c3f refs/tags/4.11.3
+e74fde526897e670469e57c930e4835911cfd386 refs/tags/4.12.0
+b8da0ceffd2224d303ca8e28237262872d9f99d4 refs/tags/4.12.1
+764b483c725710af5e3cc852ff0697360431f932 refs/tags/4.13.0
+3b3e603bfa4e0ccf33071c6e2231bbb74c321997 refs/tags/4.14.0
+a0bf8f8099b29a6d27a1643069affd6654500f3f refs/tags/4.14.1
+86226ed5a5c803d6581ce39faf797992eb927444 refs/tags/4.15.0
+6d27525f93f03cd798b5ce78e0201f3a411bb11d refs/tags/4.16.0
+3121c02eed4664bd88ca3849d4f0abb391750868 refs/tags/4.2.0
+0a2c5fe4c0ca6d9f81ea867fe385ce7fdb69755b refs/tags/4.2.1
+a0e4af4835c52fbf870bc62cfcd2bbda0841dcfa refs/tags/4.2.2
+0b467b72c075a9daad339fcad4fb88dbd9f71b87 refs/tags/4.3.0
+a594799af753b5a0e0efa8157187c31c0fd12a42 refs/tags/4.3.1
+868f7cac2866701687fc98a2c9637b77e41037c0 refs/tags/4.4.0
+521c8621efc6bc75b31628ecb0a68818e960efc2 refs/tags/4.5.0
+c35747cc679e7c765cb9b816e85f2a843b5b4542 refs/tags/4.5.0-LABS-20200226
+2c7ffc3653dd4163fbaa2ee161a6abbb7808a665 refs/tags/4.5.1
+d567d2fc75e1f7dbde04fd886a99dfd23df83452 refs/tags/4.6.0
+55607ef5f2a3a61852724e6affb516215071a3da refs/tags/4.6.1
+ab720747e9c07f35e67509a6a349715cc65dcd14 refs/tags/4.7.0
+0004437a34d323d0451352cfe77bab8d9fb51c70 refs/tags/4.7.1
+29c1f52f62f3ceee60cf9b191e3c1aa75c9af2e3 refs/tags/4.7.2
+6ad883a4646af7458eb730828ca2b2d22ef1c537 refs/tags/4.8.0
+dbbe8e0b4679ee1cc09c621f2b8ff985439ca49b refs/tags/4.9.0
+98a4cfe989c2689339cdeb3f2382ac25823eb6a7 refs/tags/cassandra-driver-parent-2.0.9
+</pre>
+        </p>
+<h4 id='Copyright'>Copyright</h4>
+<div class="section-content">
+<table class="colortable" width="100%">
+            <tr>
+              <th>date</th>
+              <th>item</th>
+            </tr>
+            <tr>
+              <td>....-..-..</td>
+              <td>Check and make sure that the papers that transfer rights to
+                  the ASF been received. It is only necessary to transfer
+                  rights for the package, the core code, and any new code
+                  produced by the project.</td>
+            </tr>
+            <tr>
+              <td>....-..-..</td>
+              <td>Check and make sure that the files that have been donated
+                  have been updated to reflect the new ASF copyright.</td>
+            </tr>
+          </table>
+<p>
+Identify name recorded for software grant: <em>the name of the grant as recorded
+in the foundation/officers area, in either grants.txt or cclas.txt, so that the 
+grant can be easily identified. If recorded in the grants.txt document, use the 
+"for" or title. If recorded in the cclas.txt document, use the company name
+(field 2 without submitter name) and the "form on file" name (field 4, without 
+any people's names).</em>
+          </p>
+</div>
+<h4 id='Verify+distribution+rights'>Verify distribution rights</h4>
+<div class="section-content">
+<p>
+Corporations and individuals holding existing distribution rights:
+            </p>
+<ul>
+<li>
+<em>For individuals, use the name as recorded on the committers page</em>
+</li>
+            </ul>
+<table class="colortable" width="100%">
+            <tr>
+              <th>date</th>
+              <th>item</th>
+            </tr>
+            <tr>
+              <td>....-..-..</td>
+              <td>Check that all active committers have a signed CLA on
+                  record. TODO – attach list</td>
+            </tr>
+            <tr>
+              <td>2023-06-19</td>
+              <td>Remind active committers that they are responsible for
+                  ensuring that a Corporate CLA is recorded if such is
+                  required to authorize their contributions under their
+                  individual CLA.</td>
+            </tr>
+            <tr>
+              <td>....-..-..</td>
+              <td>Check and make sure that for all items included with the
+                  distribution that is not under the Apache license, we have
+                  the right to combine with Apache-licensed code and
+                  redistribute.</td>
+            </tr>
+            <tr>
+              <td>....-..-..</td>
+              <td>Check and make sure that all items depended upon by the
+                  project is covered by one or more of the following approved
+                  licenses: Apache, BSD, Artistic, MIT/X, MIT/W3C, MPL 1.1, or
+                  something with essentially the same terms.</td>
+            </tr>
+          </table>
+<p>Generally, the result of checking off these items will be a
+             Software Grant, CLA, and Corporate CLA for ASF licensed code,
+             which must have no dependencies upon items whose licenses that
+             are incompatible with the Apache License.</p>
+</div>
+</div>
+<h3 id='Organizational+acceptance+of+responsibility+for+the+project'>Organizational acceptance of responsibility for the project
+</h3>
+<div class="section-content">
+<p>
+Related VOTEs:
+        </p>
+<ul>
+          <li><em>The VOTE thread accepting the donation may happen either
+before or after IP clearance. Adoption by lazy concensus is acceptable but
+not recommended.</em></li>
+        </ul>
+</div>
+</div>
+       </div>
+   </div>
+  
+   <div class="row"><div class="span16"><hr noshade="noshade" size="1"/></div></div>
+  <div class="row">
+   <div class="span16 footer">
+     Copyright &#169; 2009-2023 The Apache Software Foundation<br />
+     Licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License, Version 2.0</a>.<br/>
+     Apache Incubator, Apache, the Apache feather logo, and the Apache Incubator project logo are trademarks of The Apache Software Foundation.
+     
+     
+    </div>
+  </div>
+ </div> 
+ </body>
+</html>
