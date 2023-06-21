@@ -1874,7 +1874,7 @@
       "2020-03-07 Code migration has been completed."
     ],
     "podlingName": "NLPCraft",
-    "rawReportingGroup": "group-2",
+    "rawReportingGroup": "month",
     "releases": {
       "apache-nlpcraft-incubating-0.7.4.zip": {
         "dtm": "02/10/2021",
@@ -1941,8 +1941,8 @@
         "user": "aradzins"
       }
     },
-    "reportingGroup": "February, May, August, November",
-    "reportingMonthly": true,
+    "reportingGroup": "Monthly",
+    "reportingMonthly": false,
     "repositories": [
       [
         "incubator-nlpcraft",
@@ -1991,6 +1991,10 @@
       "www": "http://nlpcraft.incubator.apache.org"
     },
     "zFixMeList": [
+      [
+        "05",
+        "Reporting group is either missing or a multiple"
+      ],
       [
         "10",
         "Has not provided an issue tracker link"
@@ -2092,7 +2096,7 @@
       }
     },
     "reportingGroup": "February, May, August, November",
-    "reportingMonthly": true,
+    "reportingMonthly": false,
     "repositories": [
       [
         "incubator-opendal",
@@ -2203,7 +2207,7 @@
       }
     },
     "reportingGroup": "February, May, August, November",
-    "reportingMonthly": true,
+    "reportingMonthly": false,
     "repositories": [
       [
         "incubator-paimon",
@@ -2935,7 +2939,7 @@
       }
     },
     "reportingGroup": "February, May, August, November",
-    "reportingMonthly": true,
+    "reportingMonthly": false,
     "repositories": [
       [
         "incubator-sdap-doms",
@@ -4094,7 +4098,7 @@
       }
     },
     "reportingGroup": "February, May, August, November",
-    "reportingMonthly": true,
+    "reportingMonthly": false,
     "repositories": [
       [
         "incubator-tuweni",
