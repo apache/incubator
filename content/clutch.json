@@ -86,11 +86,15 @@
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-annotator.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/annotator/KEYS",
       "svn": "",
-      "tracker": "https://issues.apache.org/jira/browse/ANNO",
+      "tracker": "",
       "wiki": "https://cwiki.apache.org/confluence/display/ANNO",
       "www": "http://annotator.incubator.apache.org"
     },
     "zFixMeList": [
+      [
+        "10",
+        "Has not provided an issue tracker link"
+      ],
       [
         "15",
         "Project does not have 'dev' mailing list"
@@ -375,8 +379,8 @@
         "incubator-celeborn",
         {
           "description": "Apache Celeborn is an elastic and high-performance service fo...",
-          "last_update_int": 1688042662,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_int": 1688096492,
+          "last_update_txt": "<span style='color: #070;'>&lt;15 minutes ago</span>"
         }
       ],
       [
@@ -2562,7 +2566,7 @@
         {
           "description": "The Streaming-first HTTP server/module of Apache Pekko",
           "last_update_int": 1688092779,
-          "last_update_txt": "<span style='color: #070;'>&lt;1 hour ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
         }
       ],
       [
@@ -2983,7 +2987,7 @@
         {
           "description": "Apache sdap (Incubating)",
           "last_update_int": 1688095293,
-          "last_update_txt": "<span style='color: #070;'>&lt;15 minutes ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt;30 minutes ago</span>"
         }
       ],
       [
@@ -2991,7 +2995,7 @@
         {
           "description": "Google Protobuf definition of a SDAP NEXUS Tile with bindings...",
           "last_update_int": 1687276187,
-          "last_update_txt": "9 days ago"
+          "last_update_txt": "10 days ago"
         }
       ],
       [
@@ -3056,208 +3060,6 @@
       [
         "16",
         "Project does not have 'commits' mailing list"
-      ]
-    ]
-  },
-  "seatunnel": {
-    "description": "SeaTunnel is a very easy-to-use ultra-high-performance distributed data integration platform that supports real-time synchronization of massive data.",
-    "fullName": "SeaTunnel",
-    "hasMailListCommits": "http://mail-archives.apache.org/mod_mbox/seatunnel-commits",
-    "hasMailListDev": "http://mail-archives.apache.org/mod_mbox/seatunnel-dev",
-    "ldap": {
-      "members": [
-        "benjobs",
-        "dijiekstra",
-        "djkevincr",
-        "fanjia",
-        "gaojun2048",
-        "gaoyingju",
-        "guowei",
-        "ic4y",
-        "jbonofre",
-        "kezhenxu94",
-        "kirs",
-        "leo65535",
-        "lidongdai",
-        "liugddx",
-        "ming",
-        "nielifeng",
-        "ningjiang",
-        "rickyhuo",
-        "ridxiong",
-        "songjian",
-        "tedliu",
-        "tyrantlucifer",
-        "wanghailin",
-        "wenjun",
-        "wuchunfu",
-        "yangxiang",
-        "zhongjiajie",
-        "zongwen"
-      ],
-      "numberCommitters": 28,
-      "numberCommittersNew": 0,
-      "numberPMCEquals": false,
-      "numberPMCMembers": 18,
-      "owners": [
-        "dijiekstra",
-        "djkevincr",
-        "fanjia",
-        "gaojun2048",
-        "gaoyingju",
-        "guowei",
-        "jbonofre",
-        "kezhenxu94",
-        "kirs",
-        "lidongdai",
-        "nielifeng",
-        "ningjiang",
-        "rickyhuo",
-        "ridxiong",
-        "tedliu",
-        "tyrantlucifer",
-        "wenjun",
-        "zhongjiajie"
-      ]
-    },
-    "mentors": [
-      [
-        "Zhenxu Ke",
-        "kezhenxu94"
-      ],
-      [
-        "William-GuoWei",
-        "guowei"
-      ],
-      [
-        "Lidong Dai",
-        "lidongdai"
-      ],
-      [
-        "Ted Liu",
-        "tedliu"
-      ],
-      [
-        "Kevin Ratnasekera",
-        "djkevincr"
-      ],
-      [
-        "JB Onofré",
-        "jbonofre"
-      ],
-      [
-        "Willem Ning Jiang",
-        "ningjiang"
-      ]
-    ],
-    "news": [
-      " 2023-03-26 SeaTunnel 2.3.1  released ",
-      " 2022-12-30 SeaTunnel 2.3.0 released ",
-      " 2022-10-31 SeaTunnel 2.3.0-beta released ",
-      " 2022-09-29 SeaTunnel 2.2.0-beta released ",
-      " 2022-08-04 SeaTunnel 2.1.3 released ",
-      " 2022-06-15 SeaTunnel 2.1.2 released ",
-      " 2022-04-27 SeaTunnel 2.1.1 released ",
-      " 2022-03-21 SeaTunnel 2.1.0 released ",
-      " 2022-11-30 guangdong liu committer ",
-      " 2022-11-30 jun gao PPMC ",
-      " 2022-11-21 chao tian PPMC ",
-      " 2022-11-14 hailin wang committer ",
-      " 2022-10-21 jian song committer ",
-      " 2022-10-18 li liu committer ",
-      " 2022-09-03 jun gao committer ",
-      " 2022-08-30 chao tian committer ",
-      " 2022-08-16 zongwen li committer ",
-      " 2022-08-15 jinxin shen committer ",
-      " 2022-08-05 fanjia PPMC ",
-      " 2022-06-20 wenjun PPMC ",
-      " 2022-05-19 fanjia committer ",
-      " 2022-04-07 wenjun committer ",
-      " 2022-03-27 shiming zhang committer ",
-      " 2022-03-17 xiang yang committer ",
-      " 2022-02-24 chunfu wu committer ",
-      " 2022-01-20 huajie wang committer ",
-      " 2022-01-17 Lei xie committer ",
-      " 2021-12-19 rickyhuo nielifeng gaoyingju kid xiong PPMC ",
-      " 2021-12-18 Calvin Kris Jiajie Zhong PPMC ",
-      " 2021-12-09 Project enters incubation "
-    ],
-    "podlingName": "SeaTunnel",
-    "rawReportingGroup": "month",
-    "releases": [],
-    "reportingGroup": "Monthly",
-    "reportingMonthly": false,
-    "repositories": [
-      [
-        "seatunnel",
-        {
-          "description": "SeaTunnel is a distributed, high-performance data integration...",
-          "last_update_int": 1688049429,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
-        }
-      ],
-      [
-        "seatunnel-datasource-sdk",
-        {
-          "description": "SeaTunnel is a distributed, high-performance data integration...",
-          "last_update_int": 1672370646,
-          "last_update_txt": "26 weeks ago"
-        }
-      ],
-      [
-        "seatunnel-shade",
-        {
-          "description": "Apache seatunnel",
-          "last_update_int": 0,
-          "last_update_txt": "<span style='color: #777; font-style: italic;'>No commits</span>"
-        }
-      ],
-      [
-        "seatunnel-web",
-        {
-          "description": "SeaTunnel is a distributed, high-performance data integration...",
-          "last_update_int": 1687249412,
-          "last_update_txt": "10 days ago"
-        }
-      ],
-      [
-        "seatunnel-website",
-        {
-          "description": "Apache SeaTunnel documents",
-          "last_update_int": 1687929301,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
-        }
-      ]
-    ],
-    "resource": "seatunnel",
-    "sponsor": "Incubator",
-    "startDate": "2021-12-09",
-    "statusAge": 92,
-    "statusLastUpdated": "2023-03-30",
-    "urls": {
-      "git": "https://gitbox.apache.org/repos/asf?p=seatunnel.git;a=tree;hb=HEAD",
-      "keys": "",
-      "svn": "",
-      "tracker": "https://github.com/apache/incubator-seatunnel/issues",
-      "wiki": "",
-      "www": "https://seatunnel.apache.org"
-    },
-    "zFixMeList": [
-      [
-        "05",
-        "Reporting group is either missing or a multiple"
-      ],
-      [
-        "18",
-        "Has not provided a wiki link"
-      ],
-      [
-        "39",
-        "Disclaimer is missing from website"
-      ],
-      [
-        "12",
-        "Release distribution area is not setup"
       ]
     ]
   },
@@ -3393,7 +3195,7 @@
         {
           "description": "StreamPark, Make stream processing easier! easy-to-use stream...",
           "last_update_int": 1688089199,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
         }
       ],
       [
