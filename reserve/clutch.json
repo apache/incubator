@@ -86,15 +86,11 @@
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-annotator.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/annotator/KEYS",
       "svn": "",
-      "tracker": "",
+      "tracker": "https://issues.apache.org/jira/browse/ANNO",
       "wiki": "https://cwiki.apache.org/confluence/display/ANNO",
       "www": "http://annotator.incubator.apache.org"
     },
     "zFixMeList": [
-      [
-        "10",
-        "Has not provided an issue tracker link"
-      ],
       [
         "15",
         "Project does not have 'dev' mailing list"
@@ -199,8 +195,8 @@
         "incubator-baremaps",
         {
           "description": "Create custom vector tiles from OpenStreetMap and other data ...",
-          "last_update_int": 1692019697,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_int": 1692135061,
+          "last_update_txt": "<span style='color: #070;'>&lt;15 minutes ago</span>"
         }
       ],
       [
@@ -208,7 +204,7 @@
         {
           "description": "Apache Baremaps is a toolkit and a set of infrastructure comp...",
           "last_update_int": 1692039592,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
         }
       ]
     ],
@@ -396,8 +392,8 @@
         "incubator-celeborn",
         {
           "description": "Apache Celeborn is an elastic and high-performance service fo...",
-          "last_update_int": 1692066740,
-          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
+          "last_update_int": 1692116811,
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
         }
       ],
       [
@@ -405,7 +401,7 @@
         {
           "description": "Apache Celeborn Site",
           "last_update_int": 1692061714,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
         }
       ]
     ],
@@ -560,7 +556,7 @@
         {
           "description": "Incubator Datalab",
           "last_update_int": 1691396985,
-          "last_update_txt": "8 days ago"
+          "last_update_txt": "9 days ago"
         }
       ]
     ],
@@ -684,8 +680,8 @@
         "incubator-devlake",
         {
           "description": "Apache DevLake is an open-source dev data platform to ingest,...",
-          "last_update_int": 1692018200,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_int": 1692109563,
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
         }
       ],
       [
@@ -693,7 +689,7 @@
         {
           "description": "Apache DevLake Helm Chart",
           "last_update_int": 1691650322,
-          "last_update_txt": "5 days ago"
+          "last_update_txt": "6 days ago"
         }
       ],
       [
@@ -701,7 +697,7 @@
         {
           "description": "Apache Devlake Website",
           "last_update_int": 1691730547,
-          "last_update_txt": "4 days ago"
+          "last_update_txt": "5 days ago"
         }
       ]
     ],
@@ -882,7 +878,7 @@
         {
           "description": "HugeGraph Computer - A distributed graph processing system fo...",
           "last_update_int": 1690519571,
-          "last_update_txt": "18 days ago"
+          "last_update_txt": "19 days ago"
         }
       ],
       [
@@ -937,7 +933,7 @@
   "kie": {
     "description": "KIE (Knowledge is Everything) is a community of solutions and supporting tooling for knowledge engineering and process automation, focusing on events, rules, and workflows.",
     "fullName": "KIE",
-    "hasMailListCommits": "",
+    "hasMailListCommits": "http://mail-archives.apache.org/mod_mbox/kie-commits",
     "hasMailListDev": "http://mail-archives.apache.org/mod_mbox/kie-dev",
     "ldap": {
       "members": [
@@ -995,17 +991,14 @@
       "numberCommitters": 50,
       "numberCommittersNew": 0,
       "numberPMCEquals": false,
-      "numberPMCMembers": 13,
+      "numberPMCMembers": 10,
       "owners": [
         "acosentino",
         "bkp",
-        "caponetto",
         "davsclaus",
         "ederign",
-        "kbowers",
         "krisv",
         "lightguardjp",
-        "ljmotta",
         "mdproctor",
         "porcelli",
         "tiagobento",
@@ -1038,14 +1031,14 @@
     "resource": "kie",
     "sponsor": "Incubator",
     "startDate": "2023-01-13",
-    "statusAge": 137,
-    "statusLastUpdated": "2023-03-31",
+    "statusAge": 0,
+    "statusLastUpdated": "2023-08-15",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf/incubator-kie.git",
       "keys": "",
       "svn": "",
       "tracker": "",
-      "wiki": "",
+      "wiki": "https://cwiki.apache.org/confluence/display/KIE/Apache+KIE+Home",
       "www": ""
     },
     "zFixMeList": [
@@ -1054,20 +1047,12 @@
         "Has not provided an issue tracker link"
       ],
       [
-        "18",
-        "Has not provided a wiki link"
-      ],
-      [
         "11",
         "Website is missing"
       ],
       [
         "12",
         "Release distribution area is not setup"
-      ],
-      [
-        "16",
-        "Project does not have 'commits' mailing list"
       ],
       [
         "17",
@@ -1163,7 +1148,7 @@
         {
           "description": "Apache Liminals goal is to operationalise the machine learnin...",
           "last_update_int": 1691783635,
-          "last_update_txt": "3 days ago (bot)"
+          "last_update_txt": "4 days ago (bot)"
         }
       ],
       [
@@ -1408,8 +1393,8 @@
         "incubator-livy",
         {
           "description": "Apache Livy is an open source REST interface for interacting ...",
-          "last_update_int": 1692079795,
-          "last_update_txt": "<span style='color: #070;'>&lt;15 minutes ago</span>"
+          "last_update_int": 1692111780,
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
         }
       ],
       [
@@ -1827,7 +1812,7 @@
         {
           "description": "Apache Nemo Incubating",
           "last_update_int": 1689797417,
-          "last_update_txt": "26 days ago (bot)"
+          "last_update_txt": "27 days ago (bot)"
         }
       ],
       [
@@ -2002,7 +1987,7 @@
         {
           "description": "Apache NLPCraft - API to convert natural language into actions.",
           "last_update_int": 1691181157,
-          "last_update_txt": "10 days ago"
+          "last_update_txt": "11 days ago"
         }
       ],
       [
@@ -2026,7 +2011,7 @@
         {
           "description": "Apache NLPCraft - API to convert natural language into actions.",
           "last_update_int": 1677910287,
-          "last_update_txt": "23 weeks ago"
+          "last_update_txt": "24 weeks ago"
         }
       ]
     ],
@@ -2169,8 +2154,8 @@
         "incubator-opendal",
         {
           "description": "Apache OpenDAL: access data freely.",
-          "last_update_int": 1692072403,
-          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
+          "last_update_int": 1692113500,
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
         }
       ]
     ],
@@ -2284,8 +2269,8 @@
         "incubator-paimon",
         {
           "description": "Apache Paimon(incubating) is a streaming data lake platform t...",
-          "last_update_int": 1692008060,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_int": 1692107506,
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
         }
       ],
       [
@@ -2293,7 +2278,7 @@
         {
           "description": "Apache Paimon(incubating) is a streaming data lake platform t...",
           "last_update_int": 1690353209,
-          "last_update_txt": "20 days ago"
+          "last_update_txt": "21 days ago"
         }
       ],
       [
@@ -2309,7 +2294,7 @@
         {
           "description": "Apache Paimon(incubating) is a streaming data lake platform t...",
           "last_update_int": 1690164911,
-          "last_update_txt": "22 days ago"
+          "last_update_txt": "23 days ago"
         }
       ],
       [
@@ -2317,7 +2302,7 @@
         {
           "description": "Apache Paimon Website",
           "last_update_int": 1692059346,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
         }
       ],
       [
@@ -2325,7 +2310,7 @@
         {
           "description": "Apache Paimon(incubating) is a streaming data lake platform t...",
           "last_update_int": 1691029109,
-          "last_update_txt": "12 days ago"
+          "last_update_txt": "13 days ago"
         }
       ]
     ],
@@ -2472,7 +2457,7 @@
         {
           "description": "Apache Pegasus - A horizontally scalable, strongly consistent...",
           "last_update_int": 1691743686,
-          "last_update_txt": "4 days ago"
+          "last_update_txt": "5 days ago"
         }
       ],
       [
@@ -2480,7 +2465,7 @@
         {
           "description": "Apache Pegasus Website",
           "last_update_int": 1665217133,
-          "last_update_txt": "44 weeks ago"
+          "last_update_txt": "45 weeks ago"
         }
       ]
     ],
@@ -2714,16 +2699,16 @@
         "incubator-pekko",
         {
           "description": "Build highly concurrent, distributed, and resilient message-d...",
-          "last_update_int": 1692010016,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_int": 1692116513,
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
         }
       ],
       [
         "incubator-pekko-connectors",
         {
           "description": "Apache Pekko Connectors is a Reactive Enterprise Integration ...",
-          "last_update_int": 1692007906,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_int": 1692092985,
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
         }
       ],
       [
@@ -2731,7 +2716,7 @@
         {
           "description": "Apache Pekko Kafka Connector - Pekko-Connectors is a Reactive...",
           "last_update_int": 1691569488,
-          "last_update_txt": "6 days ago"
+          "last_update_txt": "7 days ago"
         }
       ],
       [
@@ -2747,7 +2732,7 @@
         {
           "description": "Apache Pekko gRPC",
           "last_update_int": 1692005043,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
         }
       ],
       [
@@ -2755,7 +2740,7 @@
         {
           "description": "The Streaming-first HTTP server/module of Apache Pekko",
           "last_update_int": 1692001283,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
         }
       ],
       [
@@ -2771,7 +2756,7 @@
         {
           "description": "A replicated Apache Pekko Persistence journal backed by Apach...",
           "last_update_int": 1692001393,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
         }
       ],
       [
@@ -2786,7 +2771,7 @@
         "incubator-pekko-persistence-jdbc",
         {
           "description": "Asynchronously writes journal and snapshot entries to configu...",
-          "last_update_int": 1692054612,
+          "last_update_int": 1692116930,
           "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
         }
       ],
@@ -2794,8 +2779,8 @@
         "incubator-pekko-persistence-r2dbc",
         {
           "description": "Asynchronously writes journal and snapshot entries to configu...",
-          "last_update_int": 1691085476,
-          "last_update_txt": "12 days ago"
+          "last_update_int": 1692100255,
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
         }
       ],
       [
@@ -2810,8 +2795,8 @@
         "incubator-pekko-projection",
         {
           "description": "Apache Pekko Projections is intended for building systems wit...",
-          "last_update_int": 1691075374,
-          "last_update_txt": "12 days ago"
+          "last_update_int": 1692080206,
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
         }
       ],
       [
@@ -2827,15 +2812,15 @@
         {
           "description": "A minimal seed template for an Apache Pekko in Scala",
           "last_update_int": 1691741592,
-          "last_update_txt": "4 days ago"
+          "last_update_txt": "5 days ago"
         }
       ],
       [
         "incubator-pekko-samples",
         {
           "description": "Apache Pekko Sample Projects",
-          "last_update_int": 1692015091,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_int": 1692132897,
+          "last_update_txt": "<span style='color: #070;'>&lt;1 hour ago</span>"
         }
       ],
       [
@@ -2851,7 +2836,7 @@
         {
           "description": "Apache pekko",
           "last_update_int": 1692007718,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
         }
       ]
     ],
@@ -3153,7 +3138,7 @@
         {
           "description": "Software for ingesting data into SDAP NEXUS",
           "last_update_int": 1691005976,
-          "last_update_txt": "12 days ago"
+          "last_update_txt": "13 days ago"
         }
       ],
       [
@@ -3169,7 +3154,7 @@
         {
           "description": "Apache sdap (Incubating)",
           "last_update_int": 1692058242,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
         }
       ],
       [
@@ -3400,8 +3385,8 @@
         "incubator-streampark",
         {
           "description": "StreamPark, Make stream processing easier! easy-to-use stream...",
-          "last_update_int": 1691853373,
-          "last_update_txt": "3 days ago"
+          "last_update_int": 1692113834,
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
         }
       ],
       [
@@ -3616,7 +3601,7 @@
         {
           "description": "Apache Teaclave (incubating) is an open source universal secu...",
           "last_update_int": 1689569053,
-          "last_update_txt": "29 days ago"
+          "last_update_txt": "30 days ago"
         }
       ],
       [
@@ -3640,7 +3625,7 @@
         {
           "description": "Apache Teaclave (incubating) SGX SDK helps developers to writ...",
           "last_update_int": 1690335138,
-          "last_update_txt": "20 days ago"
+          "last_update_txt": "21 days ago"
         }
       ],
       [
@@ -4126,7 +4111,7 @@
         "incubator-uniffle",
         {
           "description": "Uniffle is a high performance, general purpose Remote Shuffle...",
-          "last_update_int": 1692005173,
+          "last_update_int": 1692086476,
           "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
         }
       ],
@@ -4135,7 +4120,7 @@
         {
           "description": "Apache Uniffle (Incubating) Website",
           "last_update_int": 1691828959,
-          "last_update_txt": "3 days ago"
+          "last_update_txt": "4 days ago"
         }
       ]
     ],
@@ -4247,8 +4232,8 @@
         "incubator-wayang",
         {
           "description": "Apache Wayang(incubating) is the first cross-platform data pr...",
-          "last_update_int": 1691352894,
-          "last_update_txt": "8 days ago"
+          "last_update_int": 1692102400,
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
         }
       ],
       [
