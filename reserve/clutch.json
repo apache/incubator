@@ -86,11 +86,15 @@
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-annotator.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/annotator/KEYS",
       "svn": "",
-      "tracker": "https://issues.apache.org/jira/browse/ANNO",
+      "tracker": "",
       "wiki": "https://cwiki.apache.org/confluence/display/ANNO",
       "www": "http://annotator.incubator.apache.org"
     },
     "zFixMeList": [
+      [
+        "10",
+        "Has not provided an issue tracker link"
+      ],
       [
         "15",
         "Project does not have 'dev' mailing list"
@@ -281,7 +285,7 @@
         "zhouky"
       ],
       "numberCommitters": 16,
-      "numberCommittersNew": 4,
+      "numberCommittersNew": 5,
       "numberPMCEquals": false,
       "numberPMCMembers": 12,
       "owners": [
@@ -322,6 +326,7 @@
       ]
     ],
     "news": [
+      "2023-08-04 New Committer: Fu Chen.",
       "2023-07-27 Release 0.3.0",
       "2023-07-01 New PPMC Member: Jiashu Xiong.",
       "2023-03-29 Release 0.2.1",
@@ -391,8 +396,8 @@
         "incubator-celeborn",
         {
           "description": "Apache Celeborn is an elastic and high-performance service fo...",
-          "last_update_int": 1691996098,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_int": 1692066740,
+          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
         }
       ],
       [
@@ -400,15 +405,15 @@
         {
           "description": "Apache Celeborn Site",
           "last_update_int": 1692061714,
-          "last_update_txt": "<span style='color: #070;'>&lt;30 minutes ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
         }
       ]
     ],
     "resource": "celeborn",
     "sponsor": "Incubator",
     "startDate": "2022-10-18",
-    "statusAge": 14,
-    "statusLastUpdated": "2023-08-01",
+    "statusAge": 0,
+    "statusLastUpdated": "2023-08-15",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-celeborn.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/celeborn/KEYS",
@@ -885,7 +890,7 @@
         {
           "description": "HugeGraph Website and Doc",
           "last_update_int": 1690818980,
-          "last_update_txt": "14 days ago"
+          "last_update_txt": "15 days ago"
         }
       ],
       [
@@ -893,7 +898,7 @@
         {
           "description": "HugeGraph toolchain - include a series useful graph modules",
           "last_update_int": 1691424216,
-          "last_update_txt": "7 days ago"
+          "last_update_txt": "8 days ago"
         }
       ],
       [
@@ -1403,8 +1408,8 @@
         "incubator-livy",
         {
           "description": "Apache Livy is an open source REST interface for interacting ...",
-          "last_update_int": 1691956575,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
+          "last_update_int": 1692079795,
+          "last_update_txt": "<span style='color: #070;'>&lt;15 minutes ago</span>"
         }
       ],
       [
@@ -1552,7 +1557,7 @@
         {
           "description": "Apache Milagro (Incubating)",
           "last_update_int": 1671198976,
-          "last_update_txt": "34 weeks ago"
+          "last_update_txt": "35 weeks ago"
         }
       ],
       [
@@ -2164,8 +2169,8 @@
         "incubator-opendal",
         {
           "description": "Apache OpenDAL: access data freely.",
-          "last_update_int": 1692063218,
-          "last_update_txt": "<span style='color: #070;'>&lt;5 minutes ago</span>"
+          "last_update_int": 1692072403,
+          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
         }
       ]
     ],
@@ -2211,7 +2216,7 @@
         "zjureel"
       ],
       "numberCommitters": 13,
-      "numberCommittersNew": 2,
+      "numberCommittersNew": 3,
       "numberPMCEquals": false,
       "numberPMCMembers": 10,
       "owners": [
@@ -2246,6 +2251,7 @@
       ]
     ],
     "news": [
+      "2023-08-10 New Committer: Ming Li.",
       "2023-08-01 New Committer: Chong Zhuang.",
       "2023-06-07 Release 0.4.0 (the first apache incubating release).",
       "2023-04-19 New Committer: Zelin Yu.",
@@ -2311,7 +2317,7 @@
         {
           "description": "Apache Paimon Website",
           "last_update_int": 1692059346,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
         }
       ],
       [
@@ -2326,8 +2332,8 @@
     "resource": "paimon",
     "sponsor": "Incubator",
     "startDate": "2023-03-12",
-    "statusAge": 14,
-    "statusLastUpdated": "2023-08-01",
+    "statusAge": 0,
+    "statusLastUpdated": "2023-08-15",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-paimon.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/paimon/KEYS",
@@ -2757,7 +2763,7 @@
         {
           "description": "Apache Pekko Management is a suite of tools for operating Pek...",
           "last_update_int": 1691258887,
-          "last_update_txt": "9 days ago"
+          "last_update_txt": "10 days ago"
         }
       ],
       [
@@ -2773,7 +2779,7 @@
         {
           "description": "DynamoDBJournal for Apache Pekko Persistence",
           "last_update_int": 1691252237,
-          "last_update_txt": "9 days ago"
+          "last_update_txt": "10 days ago"
         }
       ],
       [
@@ -2781,7 +2787,7 @@
         {
           "description": "Asynchronously writes journal and snapshot entries to configu...",
           "last_update_int": 1692054612,
-          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
         }
       ],
       [
@@ -2789,7 +2795,7 @@
         {
           "description": "Asynchronously writes journal and snapshot entries to configu...",
           "last_update_int": 1691085476,
-          "last_update_txt": "11 days ago"
+          "last_update_txt": "12 days ago"
         }
       ],
       [
@@ -2805,7 +2811,7 @@
         {
           "description": "Apache Pekko Projections is intended for building systems wit...",
           "last_update_int": 1691075374,
-          "last_update_txt": "11 days ago"
+          "last_update_txt": "12 days ago"
         }
       ],
       [
@@ -3163,7 +3169,7 @@
         {
           "description": "Apache sdap (Incubating)",
           "last_update_int": 1692058242,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
         }
       ],
       [
@@ -3395,7 +3401,7 @@
         {
           "description": "StreamPark, Make stream processing easier! easy-to-use stream...",
           "last_update_int": 1691853373,
-          "last_update_txt": "2 days ago"
+          "last_update_txt": "3 days ago"
         }
       ],
       [
@@ -3824,7 +3830,7 @@
         {
           "description": "Apache Toree (Incubating)",
           "last_update_int": 1691685867,
-          "last_update_txt": "4 days ago"
+          "last_update_txt": "5 days ago"
         }
       ],
       [
