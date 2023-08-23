@@ -58,7 +58,7 @@
       }
     },
     "reportingGroup": "January, April, July, October",
-    "reportingMonthly": true,
+    "reportingMonthly": false,
     "repositories": [
       [
         "incubator-annotator",
@@ -86,11 +86,15 @@
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-annotator.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/annotator/KEYS",
       "svn": "",
-      "tracker": "https://issues.apache.org/jira/browse/ANNO",
+      "tracker": "",
       "wiki": "https://cwiki.apache.org/confluence/display/ANNO",
       "www": "http://annotator.incubator.apache.org"
     },
     "zFixMeList": [
+      [
+        "10",
+        "Has not provided an issue tracker link"
+      ],
       [
         "15",
         "Project does not have 'dev' mailing list"
@@ -401,7 +405,7 @@
         {
           "description": "Apache Celeborn Site",
           "last_update_int": 1692752910,
-          "last_update_txt": "<span style='color: #070;'>&lt;30 minutes ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
         }
       ]
     ],
@@ -680,8 +684,8 @@
         "incubator-devlake",
         {
           "description": "Apache DevLake is an open-source dev data platform to ingest,...",
-          "last_update_int": 1692746449,
-          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
+          "last_update_int": 1692765164,
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
         }
       ],
       [
@@ -886,7 +890,7 @@
         {
           "description": "HugeGraph Website and Doc",
           "last_update_int": 1690818980,
-          "last_update_txt": "22 days ago"
+          "last_update_txt": "23 days ago"
         }
       ],
       [
@@ -2057,6 +2061,7 @@
         "cailue",
         "hexiaoqiao",
         "junouyang",
+        "liuqingyue",
         "messense",
         "ningjiang",
         "psiace",
@@ -2069,7 +2074,7 @@
         "xuanwo",
         "xyji"
       ],
-      "numberCommitters": 14,
+      "numberCommitters": 15,
       "numberCommittersNew": 0,
       "numberPMCEquals": false,
       "numberPMCMembers": 10,
@@ -2162,8 +2167,8 @@
         "incubator-opendal",
         {
           "description": "Apache OpenDAL: access data freely.",
-          "last_update_int": 1692713587,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_int": 1692767016,
+          "last_update_txt": "<span style='color: #070;'>&lt;1 hour ago</span>"
         }
       ]
     ],
@@ -2277,8 +2282,8 @@
         "incubator-paimon",
         {
           "description": "Apache Paimon(incubating) is a streaming data lake platform t...",
-          "last_update_int": 1692751837,
-          "last_update_txt": "<span style='color: #070;'>&lt;1 hour ago</span>"
+          "last_update_int": 1692769093,
+          "last_update_txt": "<span style='color: #070;'>&lt;30 minutes ago</span>"
         }
       ],
       [
@@ -2310,15 +2315,15 @@
         {
           "description": "Apache Paimon Website",
           "last_update_int": 1692750637,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
         }
       ],
       [
         "incubator-paimon-webui",
         {
           "description": "Apache Paimon(incubating) is a streaming data lake platform t...",
-          "last_update_int": 1692167857,
-          "last_update_txt": "7 days ago"
+          "last_update_int": 1692758336,
+          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
         }
       ]
     ],
@@ -2775,8 +2780,8 @@
         "incubator-pekko-persistence-cassandra",
         {
           "description": "A replicated Apache Pekko Persistence journal backed by Apach...",
-          "last_update_int": 1692711893,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_int": 1692769975,
+          "last_update_txt": "<span style='color: #070;'>&lt;15 minutes ago</span>"
         }
       ],
       [
@@ -2952,7 +2957,7 @@
       }
     },
     "reportingGroup": "January, April, July, October",
-    "reportingMonthly": true,
+    "reportingMonthly": false,
     "repositories": [
       [
         "incubator-ponymail",
@@ -3422,7 +3427,7 @@
         {
           "description": "Apache streampark Website",
           "last_update_int": 1692671878,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
         }
       ]
     ],
@@ -3828,14 +3833,14 @@
       }
     },
     "reportingGroup": "February, May, August, November",
-    "reportingMonthly": true,
+    "reportingMonthly": false,
     "repositories": [
       [
         "incubator-toree",
         {
           "description": "Apache Toree (Incubating)",
           "last_update_int": 1692673610,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
         }
       ],
       [
@@ -4141,7 +4146,7 @@
         {
           "description": "Apache Uniffle (Incubating) Website",
           "last_update_int": 1692455202,
-          "last_update_txt": "3 days ago"
+          "last_update_txt": "4 days ago"
         }
       ]
     ],
