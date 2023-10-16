@@ -86,15 +86,11 @@
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-annotator.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/annotator/KEYS",
       "svn": "",
-      "tracker": "",
+      "tracker": "https://issues.apache.org/jira/browse/ANNO",
       "wiki": "https://cwiki.apache.org/confluence/display/ANNO",
       "www": "http://annotator.incubator.apache.org"
     },
     "zFixMeList": [
-      [
-        "10",
-        "Has not provided an issue tracker link"
-      ],
       [
         "15",
         "Project does not have 'dev' mailing list"
@@ -108,8 +104,8 @@
   "answer": {
     "description": "A Q-and-A platform software for teams at any scales.",
     "fullName": "Answer",
-    "hasMailListCommits": "",
-    "hasMailListDev": "",
+    "hasMailListCommits": "http://mail-archives.apache.org/mod_mbox/answer-commits",
+    "hasMailListDev": "http://mail-archives.apache.org/mod_mbox/answer-dev",
     "ldap": {},
     "mentors": [
       [
@@ -129,7 +125,9 @@
         "cdutz"
       ]
     ],
-    "news": [],
+    "news": [
+      "2023-10-09 Project enters incubation."
+    ],
     "podlingName": "Answer",
     "rawReportingGroup": "group-2",
     "releases": [],
@@ -140,7 +138,7 @@
     "sponsor": "Incubator",
     "startDate": "2023-10-09",
     "statusAge": 0,
-    "statusLastUpdated": "",
+    "statusLastUpdated": "2023-10-16",
     "urls": {
       "git": "",
       "keys": "",
@@ -153,10 +151,6 @@
       [
         "01",
         "No project LDAP"
-      ],
-      [
-        "07",
-        "Status file is missing"
       ],
       [
         "10",
@@ -173,14 +167,6 @@
       [
         "12",
         "Release distribution area is not setup"
-      ],
-      [
-        "15",
-        "Project does not have 'dev' mailing list"
-      ],
-      [
-        "16",
-        "Project does not have 'commits' mailing list"
       ],
       [
         "17",
@@ -513,7 +499,7 @@
         {
           "description": "Apache Celeborn is an elastic and high-performance service fo...",
           "last_update_int": 1697455036,
-          "last_update_txt": "<span style='color: #070;'>&lt;30 minutes ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt;1 hour ago</span>"
         }
       ],
       [
@@ -3343,7 +3329,7 @@
         {
           "description": "Software for in situ data analytics",
           "last_update_int": 1683848971,
-          "last_update_txt": "22 weeks ago"
+          "last_update_txt": "23 weeks ago"
         }
       ],
       [
