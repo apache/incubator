@@ -73,7 +73,7 @@
         {
           "description": "Apache Annotator Site",
           "last_update_int": 1696192819,
-          "last_update_txt": "20 days ago"
+          "last_update_txt": "21 days ago"
         }
       ]
     ],
@@ -185,11 +185,15 @@
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-answer.git;a=tree;hb=HEAD",
       "keys": "",
       "svn": "",
-      "tracker": "https://github.com/apache/incubator-answer/issues",
+      "tracker": "",
       "wiki": "",
       "www": "http://answer.apache.org"
     },
     "zFixMeList": [
+      [
+        "10",
+        "Has not provided an issue tracker link"
+      ],
       [
         "18",
         "Has not provided a wiki link"
@@ -348,7 +352,7 @@
         {
           "description": "Create custom vector tiles from OpenStreetMap and other data ...",
           "last_update_int": 1697886652,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
         }
       ],
       [
@@ -560,8 +564,8 @@
         "incubator-celeborn",
         {
           "description": "Apache Celeborn is an elastic and high-performance service fo...",
-          "last_update_int": 1697801202,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
+          "last_update_int": 1697981498,
+          "last_update_txt": "<span style='color: #070;'>&lt;1 hour ago</span>"
         }
       ],
       [
@@ -569,7 +573,7 @@
         {
           "description": "Apache Celeborn Site",
           "last_update_int": 1697936947,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
         }
       ]
     ],
@@ -702,7 +706,7 @@
         {
           "description": "Apache DevLake is an open-source dev data platform to ingest,...",
           "last_update_int": 1697790482,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
+          "last_update_txt": "2 days ago"
         }
       ],
       [
@@ -710,7 +714,7 @@
         {
           "description": "Apache DevLake Helm Chart",
           "last_update_int": 1697809109,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
+          "last_update_txt": "2 days ago"
         }
       ],
       [
@@ -718,7 +722,7 @@
         {
           "description": "Apache Devlake Website",
           "last_update_int": 1697797920,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
+          "last_update_txt": "2 days ago"
         }
       ]
     ],
@@ -891,7 +895,7 @@
         {
           "description": "The integration of HugeGraph with artificial intelligence",
           "last_update_int": 1697797729,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
+          "last_update_txt": "2 days ago"
         }
       ],
       [
@@ -907,7 +911,7 @@
         {
           "description": "HugeGraph Computer - A distributed graph processing system fo...",
           "last_update_int": 1697946896,
-          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
         }
       ],
       [
@@ -1128,7 +1132,7 @@
         {
           "description": "Apache Kie",
           "last_update_int": 1696016120,
-          "last_update_txt": "22 days ago"
+          "last_update_txt": "23 days ago"
         }
       ],
       [
@@ -1160,7 +1164,7 @@
         {
           "description": "Apache Kie",
           "last_update_int": 1697483185,
-          "last_update_txt": "5 days ago"
+          "last_update_txt": "6 days ago"
         }
       ],
       [
@@ -1590,7 +1594,7 @@
         {
           "description": "Apache livy (Incubating)",
           "last_update_int": 1696961784,
-          "last_update_txt": "11 days ago"
+          "last_update_txt": "12 days ago"
         }
       ]
     ],
@@ -2000,7 +2004,7 @@
         {
           "description": "Apache Nemo Incubating",
           "last_update_int": 1689797417,
-          "last_update_txt": "13 weeks ago (bot)"
+          "last_update_txt": "14 weeks ago (bot)"
         }
       ],
       [
@@ -2371,7 +2375,7 @@
         {
           "description": "Apache OpenDAL: access data freely.",
           "last_update_int": 1697950372,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
         }
       ]
     ],
@@ -2528,7 +2532,7 @@
         {
           "description": "Apache Paimon Website",
           "last_update_int": 1697934819,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
         }
       ],
       [
@@ -2536,7 +2540,7 @@
         {
           "description": "Apache Paimon(incubating) is a streaming data lake platform t...",
           "last_update_int": 1697803243,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
+          "last_update_txt": "2 days ago"
         }
       ]
     ],
@@ -2623,7 +2627,7 @@
         "zhaoliwei"
       ],
       "numberCommitters": 18,
-      "numberCommittersNew": 0,
+      "numberCommittersNew": 5,
       "numberPMCEquals": false,
       "numberPMCMembers": 15,
       "owners": [
@@ -2663,7 +2667,20 @@
       ]
     ],
     "news": [
-      "2020-06-22 Project enters incubation."
+      "2020-06-22 Project enters incubation.",
+      "2020-11-30 Pegasus 2.1.0 released.",
+      "2021-06-27 Pegasus 2.2.0 released.",
+      "2021-07-07 New committer: Yanzhao Tang.",
+      "2021-09-25 A meetup held.",
+      "2021-11-26 Pegasus 2.3.0 released.",
+      "2022-07-08 New committer: Dan Wang.",
+      "2022-10-22 Pegasus 2.4.0 released.",
+      "2022-11-05 A meetup held.",
+      "2022-12-31 New PPMC member: Dan Wang.",
+      "2023-02-25 New PPMC member: Yanzhao Tang.",
+      "2023-05-12 New committer: Yifan Zhang.",
+      "2023-09-18 New committer: GehaFearless.",
+      "2023-09-18 New committer: WHBANG."
     ],
     "podlingName": "Pegasus",
     "rawReportingGroup": "group-1",
@@ -2700,13 +2717,13 @@
     "resource": "pegasus",
     "sponsor": "Incubator",
     "startDate": "2020-06-28",
-    "statusAge": 1109,
-    "statusLastUpdated": "2020-10-08",
+    "statusAge": 0,
+    "statusLastUpdated": "2023-10-22",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-pegasus.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/pegasus/KEYS",
       "svn": "",
-      "tracker": "https://issues.apache.org/jira/projects/PEGASUS",
+      "tracker": "https://github.com/apache/incubator-pegasus/issues",
       "wiki": "https://cwiki.apache.org/confluence/display/pegasus",
       "www": "http://pegasus.incubator.apache.org"
     },
@@ -2960,8 +2977,8 @@
         "incubator-pekko",
         {
           "description": "Build highly concurrent, distributed, and resilient message-d...",
-          "last_update_int": 1697954813,
-          "last_update_txt": "<span style='color: #070;'>&lt;5 minutes ago</span>"
+          "last_update_int": 1697971271,
+          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
         }
       ],
       [
@@ -3000,8 +3017,8 @@
         "incubator-pekko-http",
         {
           "description": "The Streaming-first HTTP server/module of Apache Pekko",
-          "last_update_int": 1697891679,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_int": 1697971286,
+          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
         }
       ],
       [
@@ -3081,7 +3098,7 @@
         {
           "description": "Apache Pekko Sample Projects",
           "last_update_int": 1697583772,
-          "last_update_txt": "4 days ago"
+          "last_update_txt": "5 days ago"
         }
       ],
       [
@@ -3407,7 +3424,7 @@
         {
           "description": "Apache sdap (Incubating)",
           "last_update_int": 1679520644,
-          "last_update_txt": "30 weeks ago (bot)"
+          "last_update_txt": "31 weeks ago (bot)"
         }
       ],
       [
@@ -3630,8 +3647,8 @@
         "incubator-streampark",
         {
           "description": "StreamPark, Make stream processing easier! easy-to-use stream...",
-          "last_update_int": 1697937652,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_int": 1697983742,
+          "last_update_txt": "<span style='color: #070;'>&lt;2 minutes ago</span>"
         }
       ],
       [
@@ -3846,7 +3863,7 @@
         {
           "description": "Apache Teaclave (incubating) is an open source universal secu...",
           "last_update_int": 1697655092,
-          "last_update_txt": "3 days ago (bot)"
+          "last_update_txt": "4 days ago (bot)"
         }
       ],
       [
@@ -4491,7 +4508,7 @@
         {
           "description": "Apache Wayang(incubating) is the first cross-platform data pr...",
           "last_update_int": 1697221740,
-          "last_update_txt": "8 days ago"
+          "last_update_txt": "9 days ago"
         }
       ],
       [
