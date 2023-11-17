@@ -255,7 +255,9 @@ be removed from version control.</p>
 longer be available:
 <mark>svn remove <a href="https://dist.apache.org/repos/dist/release/incubator/${podling}" class="bare">https://dist.apache.org/repos/dist/release/incubator/${podling}</a></mark>
 Any releases the podling made available will still be available via
-<a href="http://archive.apache.org/dist/incubator">archive.apache.org/dist/incubator</a>.</p>
+<a href="http://archive.apache.org/dist/incubator">archive.apache.org/dist/incubator</a>.
+Also delete the dist/dev dir, if present:
+<mark>svn remove <a href="https://dist.apache.org/repos/dist/dev/incubator/${podling}" class="bare">https://dist.apache.org/repos/dist/dev/incubator/${podling}</a></mark></p>
 </li>
 <li>
 <p>Create a file RETIRED.txt at the top-level of each podling
