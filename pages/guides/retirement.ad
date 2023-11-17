@@ -79,6 +79,8 @@ longer be available:
 #svn remove https://dist.apache.org/repos/dist/release/incubator/${podling}#
 Any releases the podling made available will still be available via
 link:http://archive.apache.org/dist/incubator[archive.apache.org/dist/incubator].
+Also delete the dist/dev dir, if present:
+#svn remove https://dist.apache.org/repos/dist/dev/incubator/${podling}#
 - Create a file RETIRED.txt at the top-level of each podling
 source repository.  This should contain something like the following:
 ** This podling has been retired. Please see: http://incubator.apache.org/projects/index.html##{podling-name}
