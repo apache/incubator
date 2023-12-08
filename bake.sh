@@ -16,7 +16,7 @@ then
 fi
 SUCCESS_FILE=$WORKDIR/.htaccess
 
-export JBAKE_OPTS="-Djavax.xml.accessExternalDTD=http"
+export JBAKE_OPTS="-Djavax.xml.accessExternalDTD=http,https"
 ${JBAKE_HOME}/bin/jbake $@ || fatal "jbake failed, exiting"
 
 if [ ! -f $SUCCESS_FILE ]
