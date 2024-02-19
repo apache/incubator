@@ -76,11 +76,13 @@
                 <li><a href="https://www.apache.org/dev/">Developer Documentation</a></li>
                 <li><a href="https://www.apache.org/foundation/">Foundation</a></li>
                 <li><a href="https://www.apache.org/legal/">Legal</a></li>
-		            <li><hr><a href="https://www.apache.org/licenses/">License</a></li>
-		            <li><a href="https://www.apache.org/security/">Security</a></li>
+		<hr/>
+                <li><a href="https://www.apache.org/licenses/">License</a></li>
+		<li><a href="https://privacy.apache.org/policies/privacy-policy-public.html">Privacy Policy</a></li>
+		<li><a href="https://www.apache.org/security/">Security</a></li>
                 <li><a href="https://www.apache.org/foundation/sponsorship.html">Sponsorship</a></li>
                 <li><a href="https://www.apache.org/foundation/thanks.html">Thanks</a></li>
-		            <li><a href="https://www.apache.org/events/current-event">Current Events</a></li>
+		<li><a href="https://www.apache.org/events/current-event">Current Events</a></li>
               </ul>
             </li>
             <li><a href="/faq.html">FAQs</a></li>
