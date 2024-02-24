@@ -86,11 +86,15 @@
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-annotator.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/annotator/KEYS",
       "svn": "",
-      "tracker": "https://issues.apache.org/jira/browse/ANNO",
+      "tracker": "",
       "wiki": "https://cwiki.apache.org/confluence/display/ANNO",
       "www": "http://annotator.incubator.apache.org"
     },
     "zFixMeList": [
+      [
+        "10",
+        "Has not provided an issue tracker link"
+      ],
       [
         "15",
         "Project does not have 'dev' mailing list"
@@ -476,7 +480,7 @@
         {
           "description": "Create custom vector tiles from OpenStreetMap and other data ...",
           "last_update_int": 1708778818,
-          "last_update_txt": "<span style='color: #070;'>&lt;30 minutes ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt;1 hour ago</span>"
         }
       ],
       [
@@ -738,7 +742,7 @@
         {
           "description": "Apache Celeborn Site",
           "last_update_int": 1708736900,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
         }
       ]
     ],
@@ -1425,14 +1429,14 @@
     ],
     "news": [
       "2024-01-15 New Committer: vgalaxies",
+      "2024-02-24 New Committer: Xiao Liu",
       "2023-12-28 Apache HugeGraph Release 1.2.0",
       "2023-03-12 New Committer: Simon Cheung",
       "2023-02-28 New Committer: Jing Wang",
       "2023-02-22 First Apache HugeGraph Release 1.0.0",
       "2023-02-18 New Committer: Lei Zou",
       "2023-02-14 New Committer: Jacky Yang",
-      "2022-01-23 Project enters incubation.",
-      "2023-02-24 New Committer: Xiao Liu"
+      "2022-01-23 Project enters incubation."
     ],
     "podlingName": "HugeGraph",
     "rawReportingGroup": "group-1",
@@ -3594,7 +3598,7 @@
         {
           "description": "Apache Pekko gRPC",
           "last_update_int": 1708779474,
-          "last_update_txt": "<span style='color: #070;'>&lt;5 minutes ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt;1 hour ago</span>"
         }
       ],
       [
@@ -4380,8 +4384,8 @@
         "incubator-seata",
         {
           "description": ":fire: Seata is an easy-to-use, high-performance, open source...",
-          "last_update_int": 1708653926,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
+          "last_update_int": 1708780616,
+          "last_update_txt": "<span style='color: #070;'>&lt;15 minutes ago</span>"
         }
       ],
       [
@@ -4397,7 +4401,7 @@
         {
           "description": "Go Implementation For Seata",
           "last_update_int": 1708608118,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
+          "last_update_txt": "2 days ago"
         }
       ],
       [
@@ -4429,7 +4433,7 @@
         {
           "description": "Apache Seata(incubating) Website",
           "last_update_int": 1708776511,
-          "last_update_txt": "<span style='color: #070;'>&lt;1 hour ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
         }
       ]
     ],
