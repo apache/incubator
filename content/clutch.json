@@ -1,4 +1,91 @@
 {
+  "amoro": {
+    "description": "Amoro is a Lakehouse management system built on open data lake formats like Apache Iceberg and Apache Paimon.",
+    "fullName": "Amoro",
+    "hasMailListCommits": "",
+    "hasMailListDev": "",
+    "ldap": {},
+    "mentors": [
+      [
+        "Justn Mclean",
+        "jmclean"
+      ],
+      [
+        "Zhongyi Tan",
+        "jerrytan"
+      ],
+      [
+        "Yu Li",
+        "liyu"
+      ],
+      [
+        "Xinyu Zhou",
+        "yukon"
+      ],
+      [
+        "Kent Yao",
+        "yao"
+      ]
+    ],
+    "news": [],
+    "podlingName": "Amoro",
+    "rawReportingGroup": "group-1",
+    "releases": [],
+    "reportingGroup": "January, April, July, October",
+    "reportingMonthly": true,
+    "repositories": "",
+    "resource": "amoro",
+    "sponsor": "Incubator",
+    "startDate": "2024-03-11",
+    "statusAge": 0,
+    "statusLastUpdated": "",
+    "urls": {
+      "git": "",
+      "keys": "",
+      "svn": "",
+      "tracker": "",
+      "wiki": "",
+      "www": ""
+    },
+    "zFixMeList": [
+      [
+        "01",
+        "No project LDAP"
+      ],
+      [
+        "07",
+        "Status file is missing"
+      ],
+      [
+        "10",
+        "Has not provided an issue tracker link"
+      ],
+      [
+        "18",
+        "Has not provided a wiki link"
+      ],
+      [
+        "11",
+        "Website is missing"
+      ],
+      [
+        "12",
+        "Release distribution area is not setup"
+      ],
+      [
+        "15",
+        "Project does not have 'dev' mailing list"
+      ],
+      [
+        "16",
+        "Project does not have 'commits' mailing list"
+      ],
+      [
+        "17",
+        "No source code repository"
+      ]
+    ]
+  },
   "annotator": {
     "description": "Annotator provides annotation enabling code for browsers, servers, and humans.",
     "fullName": "Annotator",
@@ -173,7 +260,7 @@
         "hash": "sha512",
         "revision": "r65304",
         "size": "20571510",
-        "user": "linkinst"
+        "user": "linkinstar"
       },
       "apache-answer-1.2.0-incubating-bin-darwin-arm64.tar.gz": {
         "dtm": "11/15/2023",
@@ -181,7 +268,7 @@
         "hash": "sha512",
         "revision": "r65304",
         "size": "20377146",
-        "user": "linkinst"
+        "user": "linkinstar"
       },
       "apache-answer-1.2.0-incubating-bin-linux-amd64.tar.gz": {
         "dtm": "11/15/2023",
@@ -189,7 +276,7 @@
         "hash": "sha512",
         "revision": "r65304",
         "size": "20159146",
-        "user": "linkinst"
+        "user": "linkinstar"
       },
       "apache-answer-1.2.0-incubating-bin-linux-arm64.tar.gz": {
         "dtm": "11/15/2023",
@@ -197,7 +284,7 @@
         "hash": "sha512",
         "revision": "r65304",
         "size": "19187166",
-        "user": "linkinst"
+        "user": "linkinstar"
       },
       "apache-answer-1.2.0-incubating-bin-windows-amd64.tar.gz": {
         "dtm": "11/15/2023",
@@ -205,7 +292,7 @@
         "hash": "sha512",
         "revision": "r65304",
         "size": "20290260",
-        "user": "linkinst"
+        "user": "linkinstar"
       },
       "apache-answer-1.2.0-incubating-src.tar.gz": {
         "dtm": "11/15/2023",
@@ -213,7 +300,7 @@
         "hash": "sha512",
         "revision": "r65304",
         "size": "2049839",
-        "user": "linkinst"
+        "user": "linkinstar"
       },
       "apache-answer-1.2.1-incubating-bin-darwin-amd64.tar.gz": {
         "dtm": "12/14/2023",
@@ -221,7 +308,7 @@
         "hash": "sha512",
         "revision": "r66052",
         "size": "20585004",
-        "user": "linkinst"
+        "user": "linkinstar"
       },
       "apache-answer-1.2.1-incubating-bin-darwin-arm64.tar.gz": {
         "dtm": "12/14/2023",
@@ -229,7 +316,7 @@
         "hash": "sha512",
         "revision": "r66052",
         "size": "20383030",
-        "user": "linkinst"
+        "user": "linkinstar"
       },
       "apache-answer-1.2.1-incubating-bin-linux-amd64.tar.gz": {
         "dtm": "12/14/2023",
@@ -237,7 +324,7 @@
         "hash": "sha512",
         "revision": "r66052",
         "size": "20175313",
-        "user": "linkinst"
+        "user": "linkinstar"
       },
       "apache-answer-1.2.1-incubating-bin-linux-arm64.tar.gz": {
         "dtm": "12/14/2023",
@@ -245,7 +332,7 @@
         "hash": "sha512",
         "revision": "r66052",
         "size": "19199564",
-        "user": "linkinst"
+        "user": "linkinstar"
       },
       "apache-answer-1.2.1-incubating-bin-windows-amd64.tar.gz": {
         "dtm": "12/14/2023",
@@ -253,7 +340,7 @@
         "hash": "sha512",
         "revision": "r66052",
         "size": "20317499",
-        "user": "linkinst"
+        "user": "linkinstar"
       },
       "apache-answer-1.2.1-incubating-src.tar.gz": {
         "dtm": "12/14/2023",
@@ -261,7 +348,7 @@
         "hash": "sha512",
         "revision": "r66052",
         "size": "2071135",
-        "user": "linkinst"
+        "user": "linkinstar"
       },
       "apache-answer-1.2.5-incubating-bin-darwin-amd64.tar.gz": {
         "dtm": "01/30/2024",
@@ -269,7 +356,7 @@
         "hash": "sha512",
         "revision": "r67005",
         "size": "20661837",
-        "user": "linkinst"
+        "user": "linkinstar"
       },
       "apache-answer-1.2.5-incubating-bin-darwin-arm64.tar.gz": {
         "dtm": "01/30/2024",
@@ -277,7 +364,7 @@
         "hash": "sha512",
         "revision": "r67005",
         "size": "20465473",
-        "user": "linkinst"
+        "user": "linkinstar"
       },
       "apache-answer-1.2.5-incubating-bin-linux-amd64.tar.gz": {
         "dtm": "01/30/2024",
@@ -285,7 +372,7 @@
         "hash": "sha512",
         "revision": "r67005",
         "size": "20251109",
-        "user": "linkinst"
+        "user": "linkinstar"
       },
       "apache-answer-1.2.5-incubating-bin-linux-arm64.tar.gz": {
         "dtm": "01/30/2024",
@@ -293,7 +380,7 @@
         "hash": "sha512",
         "revision": "r67005",
         "size": "19274516",
-        "user": "linkinst"
+        "user": "linkinstar"
       },
       "apache-answer-1.2.5-incubating-bin-windows-amd64.tar.gz": {
         "dtm": "01/30/2024",
@@ -301,7 +388,7 @@
         "hash": "sha512",
         "revision": "r67005",
         "size": "20383019",
-        "user": "linkinst"
+        "user": "linkinstar"
       },
       "apache-answer-1.2.5-incubating-src.tar.gz": {
         "dtm": "01/30/2024",
@@ -309,7 +396,7 @@
         "hash": "sha512",
         "revision": "r67005",
         "size": "2103445",
-        "user": "linkinst"
+        "user": "linkinstar"
       }
     },
     "reportingGroup": "February, May, August, November",
@@ -336,7 +423,7 @@
         {
           "description": "Apache Answer official website.",
           "last_update_int": 1710121852,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
         }
       ]
     ],
@@ -484,7 +571,7 @@
         {
           "description": "Apache Baremaps is a toolkit and a set of infrastructure comp...",
           "last_update_int": 1709995378,
-          "last_update_txt": "2 days ago"
+          "last_update_txt": "3 days ago"
         }
       ]
     ],
@@ -621,7 +708,7 @@
         "hash": "sha512",
         "revision": "r66358",
         "size": "136451898",
-        "user": "nicholas"
+        "user": "nicholasjiang"
       },
       "apache-celeborn-0.3.2-incubating-source.tgz": {
         "dtm": "12/29/2023",
@@ -629,7 +716,7 @@
         "hash": "sha512",
         "revision": "r66358",
         "size": "698717",
-        "user": "nicholas"
+        "user": "nicholasjiang"
       },
       "apache-celeborn-0.4.0-incubating-bin.tgz": {
         "dtm": "01/29/2024",
@@ -664,7 +751,7 @@
         {
           "description": "Apache Celeborn Site",
           "last_update_int": 1710205701,
-          "last_update_txt": "<span style='color: #070;'>&lt;30 minutes ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
         }
       ]
     ],
@@ -799,8 +886,8 @@
         "incubator-devlake",
         {
           "description": "Apache DevLake is an open-source dev data platform to ingest,...",
-          "last_update_int": 1709892451,
-          "last_update_txt": "4 days ago"
+          "last_update_int": 1710212482,
+          "last_update_txt": "<span style='color: #070;'>&lt;1 hour ago</span>"
         }
       ],
       [
@@ -923,7 +1010,7 @@
         {
           "description": "A blazing fast multi-language serialization framework powered...",
           "last_update_int": 1710166565,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
         }
       ],
       [
@@ -931,7 +1018,7 @@
         {
           "description": "Apache Fury Website",
           "last_update_int": 1710169621,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
         }
       ]
     ],
@@ -1066,15 +1153,15 @@
         {
           "description": "Gluten is a middle layer responsible for offloading JVM-based...",
           "last_update_int": 1710206858,
-          "last_update_txt": "<span style='color: #070;'>&lt;15 minutes ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
         }
       ],
       [
         "incubator-gluten-site",
         {
-          "description": "Incubator Gluten Website",
-          "last_update_int": 1708532980,
-          "last_update_txt": "19 days ago"
+          "description": "Apache Gluten is a middle layer responsible for offloading JV...",
+          "last_update_int": 1710212506,
+          "last_update_txt": "<span style='color: #070;'>&lt;1 hour ago</span>"
         }
       ]
     ],
@@ -1089,7 +1176,7 @@
       "svn": "",
       "tracker": "https://issues.apache.org/jira/projects/GLUTEN",
       "wiki": "",
-      "www": ""
+      "www": "http://gluten.apache.org"
     },
     "zFixMeList": [
       [
@@ -1097,8 +1184,40 @@
         "Has not provided a wiki link"
       ],
       [
-        "11",
-        "Website is missing"
+        "31",
+        "ASF Foundation link is missing from website"
+      ],
+      [
+        "32",
+        "ASF Events link is missing from website"
+      ],
+      [
+        "33",
+        "Apache License link is missing from website"
+      ],
+      [
+        "34",
+        "Apache Thanks link is missing from website"
+      ],
+      [
+        "35",
+        "Apache Security link is missing from website"
+      ],
+      [
+        "36",
+        "Apache Sponsorship link is missing from website"
+      ],
+      [
+        "37",
+        "Trademarks are missing from website"
+      ],
+      [
+        "38",
+        "Copyright is missing from website"
+      ],
+      [
+        "39",
+        "Disclaimer is missing from website"
       ],
       [
         "12",
@@ -1178,8 +1297,8 @@
         "incubator-horaedb",
         {
           "description": "HoraeDB is a high-performance, distributed, cloud native time...",
-          "last_update_int": 1710137473,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_int": 1710214482,
+          "last_update_txt": "<span style='color: #070;'>&lt;15 minutes ago</span>"
         }
       ],
       [
@@ -1525,7 +1644,7 @@
         {
           "description": "HugeGraph Website and Doc",
           "last_update_int": 1710122671,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
         }
       ],
       [
@@ -1687,7 +1806,7 @@
         {
           "description": "Apache Kie",
           "last_update_int": 1708437962,
-          "last_update_txt": "20 days ago"
+          "last_update_txt": "21 days ago"
         }
       ],
       [
@@ -1735,7 +1854,7 @@
         {
           "description": "Apache Kie",
           "last_update_int": 1710166771,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
         }
       ],
       [
@@ -1751,7 +1870,7 @@
         {
           "description": "Apache Kie",
           "last_update_int": 1708697224,
-          "last_update_txt": "17 days ago"
+          "last_update_txt": "18 days ago"
         }
       ],
       [
@@ -1775,7 +1894,7 @@
         {
           "description": "Apache Kie",
           "last_update_int": 1708526087,
-          "last_update_txt": "19 days ago"
+          "last_update_txt": "20 days ago"
         }
       ],
       [
@@ -1791,7 +1910,7 @@
         {
           "description": "Apache Kie",
           "last_update_int": 1710164536,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
         }
       ],
       [
@@ -1823,7 +1942,7 @@
         {
           "description": "Apache Kie",
           "last_update_int": 1708439839,
-          "last_update_txt": "20 days ago"
+          "last_update_txt": "21 days ago"
         }
       ],
       [
@@ -1948,7 +2067,7 @@
         "hash": "sha512",
         "revision": "r59577",
         "size": "4923896",
-        "user": "naturale"
+        "user": "naturalett"
       }
     },
     "reportingGroup": "January, April, July, October",
@@ -2212,7 +2331,7 @@
         "hash": "sha512",
         "revision": "r24450",
         "size": "74117432",
-        "user": "ajbozart"
+        "user": "ajbozarth"
       },
       "livy-0.5.0-incubating-src.zip": {
         "dtm": "01/25/2018",
@@ -2220,7 +2339,7 @@
         "hash": "sha512",
         "revision": "r24450",
         "size": "995368",
-        "user": "ajbozart"
+        "user": "ajbozarth"
       }
     },
     "reportingGroup": "January, April, July, October",
@@ -2757,7 +2876,7 @@
         "hash": "sha256",
         "revision": "r45949",
         "size": "24186913",
-        "user": "aradzins"
+        "user": "aradzinski"
       },
       "apache-nlpcraft-incubating-0.7.5.zip": {
         "dtm": "05/16/2021",
@@ -2765,7 +2884,7 @@
         "hash": "sha256",
         "revision": "r47749",
         "size": "24434068",
-        "user": "aradzins"
+        "user": "aradzinski"
       },
       "apache-nlpcraft-incubating-0.8.0.zip": {
         "dtm": "06/11/2021",
@@ -2773,7 +2892,7 @@
         "hash": "sha256",
         "revision": "r48302",
         "size": "24433120",
-        "user": "aradzins"
+        "user": "aradzinski"
       },
       "apache-nlpcraft-incubating-0.9.0.zip": {
         "dtm": "08/06/2021",
@@ -2781,7 +2900,7 @@
         "hash": "sha256",
         "revision": "r49215",
         "size": "24483165",
-        "user": "aradzins"
+        "user": "aradzinski"
       },
       "apache-nlpcraft-incubating-1.0.0.zip": {
         "dtm": "02/25/2023",
@@ -2789,7 +2908,7 @@
         "hash": "sha256",
         "revision": "r60346",
         "size": "1940677",
-        "user": "sergeyka"
+        "user": "sergeykamov"
       },
       "apache-nlpcraft-java-client-incubating-0.7.2.zip": {
         "dtm": "12/15/2020",
@@ -2797,7 +2916,7 @@
         "hash": "sha256",
         "revision": "r44973",
         "size": "96071",
-        "user": "aradzins"
+        "user": "aradzinski"
       },
       "apache-nlpcraft-java-client-incubating-0.7.5.zip": {
         "dtm": "05/22/2021",
@@ -2805,7 +2924,7 @@
         "hash": "sha256",
         "revision": "r47868",
         "size": "97726",
-        "user": "aradzins"
+        "user": "aradzinski"
       },
       "apache-nlpcraft-java-client-incubating-0.9.0.zip": {
         "dtm": "08/22/2021",
@@ -2813,7 +2932,7 @@
         "hash": "sha256",
         "revision": "r49591",
         "size": "117451",
-        "user": "aradzins"
+        "user": "aradzinski"
       }
     },
     "reportingGroup": "February, May, August, November",
@@ -2972,7 +3091,7 @@
         "hash": "sha512",
         "revision": "r62321",
         "size": "8691528",
-        "user": "lzljs362"
+        "user": "lzljs3620320"
       },
       "apache-paimon-0.5.0-incubating-src.tgz": {
         "dtm": "08/25/2023",
@@ -2980,7 +3099,7 @@
         "hash": "sha512",
         "revision": "r63622",
         "size": "11222315",
-        "user": "lzljs362"
+        "user": "lzljs3620320"
       },
       "apache-paimon-0.6.0-incubating-src.tgz": {
         "dtm": "12/02/2023",
@@ -2988,7 +3107,7 @@
         "hash": "sha512",
         "revision": "r65798",
         "size": "12137488",
-        "user": "lzljs362"
+        "user": "lzljs3620320"
       },
       "apache-paimon-0.6.1-incubating-src.tgz": {
         "dtm": "01/23/2024",
@@ -3012,7 +3131,7 @@
         "hash": "sha512",
         "revision": "r62321",
         "size": "41418",
-        "user": "lzljs362"
+        "user": "lzljs3620320"
       },
       "apache-paimon-shade-0.6.0-incubating-src.tgz": {
         "dtm": "01/09/2024",
@@ -3063,7 +3182,7 @@
         {
           "description": "Apache Paimon Website",
           "last_update_int": 1710203394,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
         }
       ],
       [
@@ -3205,8 +3324,8 @@
         "incubator-pegasus",
         {
           "description": "Apache Pegasus - A horizontally scalable, strongly consistent...",
-          "last_update_int": 1710126516,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_int": 1710214887,
+          "last_update_txt": "<span style='color: #070;'>&lt;5 minutes ago</span>"
         }
       ],
       [
@@ -3369,7 +3488,7 @@
         "hash": "sha512",
         "revision": "r65306",
         "size": "12553308",
-        "user": "fanningp"
+        "user": "fanningpj"
       },
       "apache-pekko-1.0.3-M1-incubating-src-20240215.tgz": {
         "dtm": "02/27/2024",
@@ -3385,7 +3504,7 @@
         "hash": "sha512",
         "revision": "r66508",
         "size": "82100888",
-        "user": "fanningp"
+        "user": "fanningpj"
       },
       "apache-pekko-connectors-kafka-1.0.0-incubating-src-20230726.tgz": {
         "dtm": "07/26/2023",
@@ -3393,7 +3512,7 @@
         "hash": "sha512",
         "revision": "r63211",
         "size": "275553",
-        "user": "mdedetri"
+        "user": "mdedetrich"
       },
       "apache-pekko-connectors-kafka-1.0.0-incubating-src-20230726.zip": {
         "dtm": "07/26/2023",
@@ -3401,7 +3520,7 @@
         "hash": "sha512",
         "revision": "r63211",
         "size": "503843",
-        "user": "mdedetri"
+        "user": "mdedetrich"
       },
       "apache-pekko-grpc-1.0.2-incubating-src-20231229.tgz": {
         "dtm": "12/29/2023",
@@ -3409,7 +3528,7 @@
         "hash": "sha512",
         "revision": "r66359",
         "size": "268159",
-        "user": "fanningp"
+        "user": "fanningpj"
       },
       "apache-pekko-http-1.0.1-incubating-src-20240128.tgz": {
         "dtm": "01/28/2024",
@@ -3417,7 +3536,7 @@
         "hash": "sha512",
         "revision": "r66896",
         "size": "1759869",
-        "user": "fanningp"
+        "user": "fanningpj"
       },
       "apache-pekko-management-1.0.0-incubating-src-20230805.tgz": {
         "dtm": "08/05/2023",
@@ -3425,7 +3544,7 @@
         "hash": "sha512",
         "revision": "r63368",
         "size": "14089646",
-        "user": "fanningp"
+        "user": "fanningpj"
       },
       "apache-pekko-persistence-cassandra-1.0.0-incubating-src-20230916.tgz": {
         "dtm": "09/16/2023",
@@ -3433,7 +3552,7 @@
         "hash": "sha512",
         "revision": "r64030",
         "size": "249657",
-        "user": "fanningp"
+        "user": "fanningpj"
       },
       "apache-pekko-persistence-dynamodb-1.0.0-incubating-src-20231110.tgz": {
         "dtm": "11/10/2023",
@@ -3441,7 +3560,7 @@
         "hash": "sha512",
         "revision": "r65207",
         "size": "59335",
-        "user": "fanningp"
+        "user": "fanningpj"
       },
       "apache-pekko-persistence-jdbc-1.0.0-incubating-src-20230829.tgz": {
         "dtm": "08/29/2023",
@@ -3449,7 +3568,7 @@
         "hash": "sha512",
         "revision": "r63694",
         "size": "124684",
-        "user": "fanningp"
+        "user": "fanningpj"
       },
       "apache-pekko-persistence-r2dbc-1.0.0-incubating-src-20231209.tgz": {
         "dtm": "12/09/2023",
@@ -3457,7 +3576,7 @@
         "hash": "sha512",
         "revision": "r65962",
         "size": "138983",
-        "user": "fanningp"
+        "user": "fanningpj"
       },
       "apache-pekko-projection-1.0.0-incubating-src-20231012.tgz": {
         "dtm": "10/12/2023",
@@ -3465,7 +3584,7 @@
         "hash": "sha512",
         "revision": "r64504",
         "size": "1045030",
-        "user": "fanningp"
+        "user": "fanningpj"
       },
       "apache-pekko-sbt-paradox-1.0.0-incubating-src-20230819.tgz": {
         "dtm": "08/19/2023",
@@ -3473,7 +3592,7 @@
         "hash": "sha512",
         "revision": "r63515",
         "size": "31181",
-        "user": "fanningp"
+        "user": "fanningpj"
       }
     },
     "reportingGroup": "January, April, July, October",
@@ -3508,7 +3627,7 @@
         {
           "description": "Example projects building Reactive Integrations using Apache ...",
           "last_update_int": 1707530541,
-          "last_update_txt": "31 days ago"
+          "last_update_txt": "4 weeks ago"
         }
       ],
       [
@@ -3572,7 +3691,7 @@
         {
           "description": "A replicated Apache Pekko Persistence journal backed by Apach...",
           "last_update_int": 1709906701,
-          "last_update_txt": "3 days ago"
+          "last_update_txt": "4 days ago"
         }
       ],
       [
@@ -3644,7 +3763,7 @@
         {
           "description": "Theme and sbt-paradox settings used by Pekko projects",
           "last_update_int": 1709567076,
-          "last_update_txt": "7 days ago"
+          "last_update_txt": "8 days ago"
         }
       ],
       [
@@ -3734,7 +3853,7 @@
         "hash": "sha256",
         "revision": "r33191",
         "size": "1055853",
-        "user": "humbedoo"
+        "user": "humbedooh"
       }
     },
     "reportingGroup": "January, April, July, October",
@@ -3959,8 +4078,8 @@
         "incubator-resilientdb-site",
         {
           "description": "Apache ResilientDB Podling",
-          "last_update_int": 1709314342,
-          "last_update_txt": "10 days ago"
+          "last_update_int": 1710213629,
+          "last_update_txt": "<span style='color: #070;'>&lt;30 minutes ago</span>"
         }
       ]
     ],
@@ -3975,7 +4094,7 @@
       "svn": "",
       "tracker": "",
       "wiki": "",
-      "www": ""
+      "www": "http://resilientdb.incubator.apache.org"
     },
     "zFixMeList": [
       [
@@ -3987,8 +4106,40 @@
         "Has not provided a wiki link"
       ],
       [
-        "11",
-        "Website is missing"
+        "31",
+        "ASF Foundation link is missing from website"
+      ],
+      [
+        "32",
+        "ASF Events link is missing from website"
+      ],
+      [
+        "33",
+        "Apache License link is missing from website"
+      ],
+      [
+        "34",
+        "Apache Thanks link is missing from website"
+      ],
+      [
+        "35",
+        "Apache Security link is missing from website"
+      ],
+      [
+        "36",
+        "Apache Sponsorship link is missing from website"
+      ],
+      [
+        "37",
+        "Trademarks are missing from website"
+      ],
+      [
+        "38",
+        "Copyright is missing from website"
+      ],
+      [
+        "39",
+        "Disclaimer is missing from website"
       ],
       [
         "12",
@@ -4310,7 +4461,7 @@
         {
           "description": ":fire: Seata is an easy-to-use, high-performance, open source...",
           "last_update_int": 1710164987,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
         }
       ],
       [
@@ -4358,7 +4509,7 @@
         {
           "description": "Apache Seata(incubating) Website",
           "last_update_int": 1710202526,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
         }
       ]
     ],
@@ -4477,7 +4628,7 @@
         "hash": "sha512",
         "revision": "r61571",
         "size": "1337532",
-        "user": "muchunji"
+        "user": "muchunjin"
       },
       "apache-streampark-2.1.1-incubating-src.tar.gz": {
         "dtm": "06/22/2023",
@@ -4485,7 +4636,7 @@
         "hash": "sha512",
         "revision": "r62560",
         "size": "1337628",
-        "user": "muchunji"
+        "user": "muchunjin"
       },
       "apache-streampark-2.1.2-incubating-src.tar.gz": {
         "dtm": "12/04/2023",
@@ -4493,7 +4644,7 @@
         "hash": "sha512",
         "revision": "r65812",
         "size": "1334150",
-        "user": "gongzhon"
+        "user": "gongzhongqiang"
       },
       "apache-streampark_2.11-2.0.0-incubating-bin.tar.gz": {
         "dtm": "02/14/2023",
@@ -4509,7 +4660,7 @@
         "hash": "sha512",
         "revision": "r61571",
         "size": "223150535",
-        "user": "muchunji"
+        "user": "muchunjin"
       },
       "apache-streampark_2.11-2.1.1-incubating-bin.tar.gz": {
         "dtm": "06/22/2023",
@@ -4517,7 +4668,7 @@
         "hash": "sha512",
         "revision": "r62560",
         "size": "223148188",
-        "user": "muchunji"
+        "user": "muchunjin"
       },
       "apache-streampark_2.11-2.1.2-incubating-bin.tar.gz": {
         "dtm": "12/04/2023",
@@ -4525,7 +4676,7 @@
         "hash": "sha512",
         "revision": "r65812",
         "size": "223393260",
-        "user": "gongzhon"
+        "user": "gongzhongqiang"
       },
       "apache-streampark_2.12-2.0.0-incubating-bin.tar.gz": {
         "dtm": "02/14/2023",
@@ -4541,7 +4692,7 @@
         "hash": "sha512",
         "revision": "r61571",
         "size": "216180712",
-        "user": "muchunji"
+        "user": "muchunjin"
       },
       "apache-streampark_2.12-2.1.1-incubating-bin.tar.gz": {
         "dtm": "06/22/2023",
@@ -4549,7 +4700,7 @@
         "hash": "sha512",
         "revision": "r62560",
         "size": "216186387",
-        "user": "muchunji"
+        "user": "muchunjin"
       },
       "apache-streampark_2.12-2.1.2-incubating-bin.tar.gz": {
         "dtm": "12/04/2023",
@@ -4557,7 +4708,7 @@
         "hash": "sha512",
         "revision": "r65812",
         "size": "216492085",
-        "user": "gongzhon"
+        "user": "gongzhongqiang"
       }
     },
     "reportingGroup": "February, May, August, November",
@@ -4756,7 +4907,7 @@
         "hash": "sha512",
         "revision": "r59415",
         "size": "747235",
-        "user": "shaojunw"
+        "user": "shaojunwang"
       },
       "apache-teaclave-trustzone-sdk-0.1.0-incubating.tar.gz": {
         "dtm": "06/11/2021",
@@ -5298,7 +5449,7 @@
         "hash": "sha512",
         "revision": "r65635",
         "size": "193133148",
-        "user": "xianjing"
+        "user": "xianjingfeng"
       },
       "apache-uniffle-0.8.0-incubating-src.tar.gz": {
         "dtm": "11/29/2023",
@@ -5306,7 +5457,7 @@
         "hash": "sha512",
         "revision": "r65635",
         "size": "4175374",
-        "user": "xianjing"
+        "user": "xianjingfeng"
       }
     },
     "reportingGroup": "March, June, September, December",
@@ -5317,7 +5468,7 @@
         {
           "description": "Uniffle is a high performance, general purpose Remote Shuffle...",
           "last_update_int": 1710122005,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
         }
       ],
       [
@@ -5435,7 +5586,7 @@
         "hash": "sha512",
         "revision": "r64121",
         "size": "6234288",
-        "user": "glauespp"
+        "user": "glauesppen"
       }
     },
     "reportingGroup": "March, June, September, December",
@@ -5557,7 +5708,7 @@
         {
           "description": "Apache xtable",
           "last_update_int": 1710035151,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
+          "last_update_txt": "2 days ago"
         }
       ]
     ],
