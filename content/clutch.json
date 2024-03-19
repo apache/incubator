@@ -2,8 +2,8 @@
   "amoro": {
     "description": "Amoro is a Lakehouse management system built on open data lake formats like Apache Iceberg and Apache Paimon.",
     "fullName": "Amoro",
-    "hasMailListCommits": "",
-    "hasMailListDev": "",
+    "hasMailListCommits": "http://mail-archives.apache.org/mod_mbox/amoro-commits",
+    "hasMailListDev": "http://mail-archives.apache.org/mod_mbox/amoro-dev",
     "ldap": {
       "members": [
         "jerrytan",
@@ -48,7 +48,9 @@
         "yao"
       ]
     ],
-    "news": [],
+    "news": [
+      "2024-03-11 Project enters incubation."
+    ],
     "podlingName": "Amoro",
     "rawReportingGroup": "group-1",
     "releases": [],
@@ -59,7 +61,7 @@
     "sponsor": "Incubator",
     "startDate": "2024-03-11",
     "statusAge": 0,
-    "statusLastUpdated": "",
+    "statusLastUpdated": "2024-03-19",
     "urls": {
       "git": "",
       "keys": "",
@@ -69,10 +71,6 @@
       "www": ""
     },
     "zFixMeList": [
-      [
-        "07",
-        "Status file is missing"
-      ],
       [
         "10",
         "Has not provided an issue tracker link"
@@ -88,14 +86,6 @@
       [
         "12",
         "Release distribution area is not setup"
-      ],
-      [
-        "15",
-        "Project does not have 'dev' mailing list"
-      ],
-      [
-        "16",
-        "Project does not have 'commits' mailing list"
       ],
       [
         "17",
@@ -752,7 +742,7 @@
         {
           "description": "Apache Celeborn is an elastic and high-performance service fo...",
           "last_update_int": 1710769739,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
         }
       ],
       [
@@ -760,7 +750,7 @@
         {
           "description": "Apache Celeborn Site",
           "last_update_int": 1710810513,
-          "last_update_txt": "<span style='color: #070;'>&lt;1 hour ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
         }
       ]
     ],
@@ -1162,7 +1152,7 @@
         {
           "description": "Gluten is a middle layer responsible for offloading JVM-based...",
           "last_update_int": 1710809381,
-          "last_update_txt": "<span style='color: #070;'>&lt;1 hour ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
         }
       ],
       [
@@ -1803,7 +1793,7 @@
         {
           "description": "Apache Kie",
           "last_update_int": 1708437962,
-          "last_update_txt": "27 days ago"
+          "last_update_txt": "28 days ago"
         }
       ],
       [
@@ -1867,7 +1857,7 @@
         {
           "description": "Apache Kie",
           "last_update_int": 1708697224,
-          "last_update_txt": "24 days ago"
+          "last_update_txt": "25 days ago"
         }
       ],
       [
