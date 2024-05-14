@@ -58,13 +58,13 @@ To comply with ASF release and distributions, please ensure the following:
 Additional guidelines and process for releasing Maven components can be found link:https://infra.apache.org/publishing-maven-artifacts.html[on this infra page].
 
 == GitHub
-Artifacts show up on **https://github.com/apache/incubator-<project>/releases**.
+Artifacts show up on **https://github.com/apache/<project>/releases**.
 To comply with ASF release and distributions please ensure the following:
 
 * Any releases need to include the text of the incubation disclaimer.
 * The release page must not contain release candidates, nightly or snapshots releases that have not been tagged as prereleases. (Ignoring that GitHub also displays tags on the release page.)
-* Any releases that exist before coming into incubation need to be clearly described on the release page and tagged as such on **https://github.com/apache/incubator-<project>/tags**.
-* Release candidates, nightlys or snapshots releases can be tagged and appear on **https://github.com/apache/incubator-<project>/tags**.
+* Any releases that exist before coming into incubation need to be clearly described on the release page and tagged as such on **https://github.com/apache/<project>/tags**.
+* Release candidates, nightlys or snapshots releases can be tagged and appear on **https://github.com/apache/<project>/tags**.
 
 == Docker
 Artifacts need to be placed in **https://hub.docker.com/r/apache/<project>** or **https://hub.docker.com/u/apache<project>/<project>**.
