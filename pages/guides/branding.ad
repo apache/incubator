@@ -41,7 +41,7 @@ _Podling-Name_' (see link:#Naming[Naming] below).
 A podling and affiliated persons can issue press releases that
 reference the podling, but cannot issue press releases with the
 specific intent of announcing the podling. The podling can conduct
-informal PR activities such as media outreach, blog publicity, etc.
+informal press releases activities such as media outreach, blog publicity, etc.
 The ASF will not issue any press releases for any podling at this
 stage. The
 link:http://www.apache.org/press/index.html#whoweare[Apache Press Team]
@@ -60,12 +60,14 @@ joint press release with any other affiliated organizations or groups.
 After a podling has been approved, the lists are created, and the initial
  code drop has commenced, you *MUST* refer to the podling as `Apache
  _Podling-Name_` *AND* mention that the project is
- under Incubation.  Suitable mentions include:
+ under Incubation. Suitable mentions include:
 
-- Inclusion of the `http://_podling-name_.incubator.apache.org/` URL
 - `Apache _Podling-Name_ is currently undergoing Incubation at the Apache Software Foundation`.
+- Referring the podling as `Apache _Podling-Name_ (Incubating)`.
 
 The Incubator PMC (IPMC) must approve other references before you publish them. You only need to make these statements upon the first reference to the podling in a document.
+
+Specifically, you SHOULD include these statements in the README file of each repository belonging to the podling. You CAN add a link to the link:#Disclaimers[Disclaimers] in the README file. You CAN also refer the podling as `Apache _Podling-Name_ (Incubating)` in the GitHub repository description.
 
 == Disclaimers
 
