@@ -204,7 +204,7 @@
         {
           "description": "Apache Annotator provides annotation enabling code for browse...",
           "last_update_int": 1711635467,
-          "last_update_txt": "10 weeks ago (bot)"
+          "last_update_txt": "11 weeks ago (bot)"
         }
       ],
       [
@@ -872,7 +872,7 @@
         {
           "description": "Apache DevLake is an open-source dev data platform to ingest,...",
           "last_update_int": 1717955170,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
         }
       ],
       [
@@ -1333,6 +1333,97 @@
       ]
     ]
   },
+  "gravitino": {
+    "description": "Gravitino is a high-performance, geo-distributed, and federated metadata like designed to manage metadata seamlessly across diverse data sources, vendors, and regions. Its primary goal is to provide users with unified metadata access for both data and AI assets.",
+    "fullName": "Gravitino",
+    "hasMailListCommits": "",
+    "hasMailListDev": "",
+    "ldap": {},
+    "mentors": [
+      [
+        "Daniel Dai",
+        "daijy"
+      ],
+      [
+        "Junping Du",
+        ""
+      ],
+      [
+        "Justin McLean",
+        "jmclean"
+      ],
+      [
+        "Shaofeng Shi",
+        "shaofengshi"
+      ],
+      [
+        "Larry McCay",
+        "lmccay"
+      ]
+    ],
+    "news": [],
+    "podlingName": "Gravitino",
+    "rawReportingGroup": "month",
+    "releases": [],
+    "reportingGroup": "Monthly",
+    "reportingMonthly": false,
+    "repositories": "",
+    "resource": "gravitino",
+    "sponsor": "Incubator",
+    "startDate": "2024-06-04",
+    "statusAge": 0,
+    "statusLastUpdated": "",
+    "urls": {
+      "git": "",
+      "keys": "",
+      "svn": "",
+      "tracker": "",
+      "wiki": "",
+      "www": ""
+    },
+    "zFixMeList": [
+      [
+        "01",
+        "No project LDAP"
+      ],
+      [
+        "05",
+        "Reporting group is either missing or a multiple"
+      ],
+      [
+        "07",
+        "Status file is missing"
+      ],
+      [
+        "10",
+        "Has not provided an issue tracker link"
+      ],
+      [
+        "18",
+        "Has not provided a wiki link"
+      ],
+      [
+        "11",
+        "Website is missing"
+      ],
+      [
+        "12",
+        "Release distribution area is not setup"
+      ],
+      [
+        "15",
+        "Project does not have 'dev' mailing list"
+      ],
+      [
+        "16",
+        "Project does not have 'commits' mailing list"
+      ],
+      [
+        "17",
+        "No source code repository"
+      ]
+    ]
+  },
   "hertzbeat": {
     "description": "HertzBeat is an easy-to-use, open source, real-time monitoring system. It features an agentless architecture, high-performance clustering, Prometheus compatibility, and powerful custom monitoring and status page building capabilities.",
     "fullName": "HertzBeat",
@@ -1401,7 +1492,32 @@
     ],
     "podlingName": "HertzBeat",
     "rawReportingGroup": "group-2",
-    "releases": {},
+    "releases": {
+      "apache-hertzbeat-1.6.0-incubating-bin.tar.gz": {
+        "dtm": "06/02/2024",
+        "folder": "1.6.0",
+        "hash": "sha512",
+        "revision": "r69502",
+        "size": "168954996",
+        "user": "gongchao"
+      },
+      "apache-hertzbeat-1.6.0-incubating-src.tar.gz": {
+        "dtm": "06/02/2024",
+        "folder": "1.6.0",
+        "hash": "sha512",
+        "revision": "r69502",
+        "size": "1655647",
+        "user": "gongchao"
+      },
+      "apache-hertzbeat-collector-1.6.0-incubating-bin.tar.gz": {
+        "dtm": "06/02/2024",
+        "folder": "1.6.0",
+        "hash": "sha512",
+        "revision": "r69502",
+        "size": "94116246",
+        "user": "gongchao"
+      }
+    },
     "reportingGroup": "February, May, August, November",
     "reportingMonthly": true,
     "repositories": [
@@ -1409,8 +1525,8 @@
         "hertzbeat",
         {
           "description": "Apache HertzBeat(incubating) is a real-time monitoring system...",
-          "last_update_int": 1717944880,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_int": 1718004612,
+          "last_update_txt": "<span style='color: #070;'>&lt;30 minutes ago</span>"
         }
       ]
     ],
@@ -1431,10 +1547,6 @@
       [
         "18",
         "Has not provided a wiki link"
-      ],
-      [
-        "41",
-        "PGP KEYS file available without a distribution"
       ]
     ]
   },
@@ -2072,8 +2184,8 @@
         "incubator-kie-drools",
         {
           "description": "Apache Kie",
-          "last_update_int": 1717741425,
-          "last_update_txt": "3 days ago"
+          "last_update_int": 1718003164,
+          "last_update_txt": "<span style='color: #070;'>&lt;1 hour ago</span>"
         }
       ],
       [
@@ -2105,7 +2217,7 @@
         {
           "description": "Apache Kie",
           "last_update_int": 1717702212,
-          "last_update_txt": "3 days ago"
+          "last_update_txt": "4 days ago"
         }
       ],
       [
@@ -2113,7 +2225,7 @@
         {
           "description": "Apache Kie",
           "last_update_int": 1717686408,
-          "last_update_txt": "3 days ago"
+          "last_update_txt": "4 days ago"
         }
       ],
       [
@@ -2121,7 +2233,7 @@
         {
           "description": "Apache Kie",
           "last_update_int": 1716916810,
-          "last_update_txt": "12 days ago"
+          "last_update_txt": "13 days ago"
         }
       ],
       [
@@ -2153,7 +2265,7 @@
         {
           "description": "Apache Kie",
           "last_update_int": 1716838805,
-          "last_update_txt": "13 days ago"
+          "last_update_txt": "14 days ago"
         }
       ],
       [
@@ -2184,7 +2296,7 @@
         "incubator-kie-optaplanner",
         {
           "description": "Apache Kie",
-          "last_update_int": 1717625311,
+          "last_update_int": 1717625544,
           "last_update_txt": "4 days ago"
         }
       ],
@@ -2193,7 +2305,7 @@
         {
           "description": "Apache Kie",
           "last_update_int": 1716393491,
-          "last_update_txt": "18 days ago"
+          "last_update_txt": "19 days ago"
         }
       ],
       [
@@ -2209,7 +2321,7 @@
         {
           "description": "Apache KIE",
           "last_update_int": 1717772285,
-          "last_update_txt": "2 days ago"
+          "last_update_txt": "3 days ago"
         }
       ],
       [
@@ -3201,7 +3313,7 @@
         {
           "description": "Apache Pony Mail (Incubating) Site",
           "last_update_int": 1715962031,
-          "last_update_txt": "23 days ago"
+          "last_update_txt": "24 days ago"
         }
       ],
       [
@@ -3538,7 +3650,7 @@
         {
           "description": "Go Implementation For Seata",
           "last_update_int": 1717508212,
-          "last_update_txt": "5 days ago"
+          "last_update_txt": "6 days ago"
         }
       ],
       [
@@ -3562,7 +3674,7 @@
         {
           "description": "Apache Seata(incubating) Samples for Java",
           "last_update_int": 1716479206,
-          "last_update_txt": "17 days ago"
+          "last_update_txt": "18 days ago"
         }
       ],
       [
@@ -3570,7 +3682,7 @@
         {
           "description": "Apache Seata(incubating) Website",
           "last_update_int": 1717978716,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
         }
       ]
     ],
@@ -3950,7 +4062,7 @@
         {
           "description": "Apache streampark Website",
           "last_update_int": 1717946169,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
         }
       ]
     ],
@@ -4819,7 +4931,7 @@
         {
           "description": "Apache Wayang Website",
           "last_update_int": 1717918682,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
         }
       ]
     ],
