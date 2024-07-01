@@ -83,14 +83,14 @@
     "rawReportingGroup": "group-1",
     "releases": {},
     "reportingGroup": "January, April, July, October",
-    "reportingMonthly": true,
+    "reportingMonthly": false,
     "repositories": [
       [
         "amoro",
         {
           "description": "Apache Amoro Podling",
-          "last_update_int": 1719568300,
-          "last_update_txt": "3 days ago"
+          "last_update_int": 1719800495,
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
         }
       ],
       [
@@ -197,7 +197,7 @@
       }
     },
     "reportingGroup": "January, April, July, October",
-    "reportingMonthly": true,
+    "reportingMonthly": false,
     "repositories": [
       [
         "incubator-annotator",
@@ -545,6 +545,54 @@
         "revision": "r69137",
         "size": "2181867",
         "user": "shuai"
+      },
+      "apache-answer-1.3.5-incubating-bin-darwin-amd64.tar.gz": {
+        "dtm": "06/18/2024",
+        "folder": "1.3.5-incubating",
+        "hash": "sha512",
+        "revision": "r69830",
+        "size": "19218852",
+        "user": "shuai"
+      },
+      "apache-answer-1.3.5-incubating-bin-darwin-arm64.tar.gz": {
+        "dtm": "06/18/2024",
+        "folder": "1.3.5-incubating",
+        "hash": "sha512",
+        "revision": "r69830",
+        "size": "19019574",
+        "user": "shuai"
+      },
+      "apache-answer-1.3.5-incubating-bin-linux-amd64.tar.gz": {
+        "dtm": "06/18/2024",
+        "folder": "1.3.5-incubating",
+        "hash": "sha512",
+        "revision": "r69830",
+        "size": "18802927",
+        "user": "shuai"
+      },
+      "apache-answer-1.3.5-incubating-bin-linux-arm64.tar.gz": {
+        "dtm": "06/18/2024",
+        "folder": "1.3.5-incubating",
+        "hash": "sha512",
+        "revision": "r69830",
+        "size": "17832242",
+        "user": "shuai"
+      },
+      "apache-answer-1.3.5-incubating-bin-windows-amd64.tar.gz": {
+        "dtm": "06/18/2024",
+        "folder": "1.3.5-incubating",
+        "hash": "sha512",
+        "revision": "r69830",
+        "size": "18946724",
+        "user": "shuai"
+      },
+      "apache-answer-1.3.5-incubating-src.tar.gz": {
+        "dtm": "06/18/2024",
+        "folder": "1.3.5-incubating",
+        "hash": "sha512",
+        "revision": "r69830",
+        "size": "2198060",
+        "user": "shuai"
       }
     },
     "reportingGroup": "February, May, August, November",
@@ -554,8 +602,8 @@
         "incubator-answer",
         {
           "description": "A Q&A platform software for teams at any scales. Whether it's...",
-          "last_update_int": 1719625533,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
+          "last_update_int": 1719625543,
+          "last_update_txt": "2 days ago"
         }
       ],
       [
@@ -570,8 +618,8 @@
         "incubator-answer-website",
         {
           "description": "Apache Answer official website.",
-          "last_update_int": 1719564397,
-          "last_update_txt": "3 days ago"
+          "last_update_int": 1719819288,
+          "last_update_txt": "<span style='color: #070;'>&lt;30 minutes ago</span>"
         }
       ]
     ],
@@ -595,7 +643,7 @@
       ],
       [
         "45",
-        "30 is a large number of release distributions. Non-current releases should be removed"
+        "36 is a large number of release distributions. Non-current releases should be removed"
       ]
     ]
   },
@@ -871,8 +919,8 @@
         "incubator-devlake",
         {
           "description": "Apache DevLake is an open-source dev data platform to ingest,...",
-          "last_update_int": 1719763220,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_int": 1719816260,
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
         }
       ],
       [
@@ -880,7 +928,7 @@
         {
           "description": "Apache DevLake Helm Chart",
           "last_update_int": 1719495999,
-          "last_update_txt": "3 days ago"
+          "last_update_txt": "4 days ago"
         }
       ],
       [
@@ -1019,7 +1067,7 @@
         {
           "description": "A blazingly fast multi-language serialization framework power...",
           "last_update_int": 1719759772,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
         }
       ],
       [
@@ -1027,7 +1075,7 @@
         {
           "description": "Apache Fury Website",
           "last_update_int": 1719238750,
-          "last_update_txt": "6 days ago"
+          "last_update_txt": "7 days ago"
         }
       ]
     ],
@@ -1163,8 +1211,8 @@
         "incubator-gluten",
         {
           "description": "Gluten is a middle layer responsible for offloading JVM-based...",
-          "last_update_int": 1719796672,
-          "last_update_txt": "<span style='color: #070;'>&lt;30 minutes ago</span>"
+          "last_update_int": 1719820143,
+          "last_update_txt": "<span style='color: #070;'>&lt;15 minutes ago</span>"
         }
       ],
       [
@@ -1414,10 +1462,10 @@
     ],
     "news": [],
     "podlingName": "Gravitino",
-    "rawReportingGroup": "month",
+    "rawReportingGroup": "group-3",
     "releases": [],
-    "reportingGroup": "Monthly",
-    "reportingMonthly": false,
+    "reportingGroup": "March, June, September, December",
+    "reportingMonthly": true,
     "repositories": "",
     "resource": "gravitino",
     "sponsor": "Incubator",
@@ -1433,10 +1481,6 @@
       "www": ""
     },
     "zFixMeList": [
-      [
-        "05",
-        "Reporting group is either missing or a multiple"
-      ],
       [
         "07",
         "Status file is missing"
@@ -1574,8 +1618,8 @@
         "hertzbeat",
         {
           "description": "Apache HertzBeat(incubating) is a real-time monitoring system...",
-          "last_update_int": 1719710654,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
+          "last_update_int": 1719813452,
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
         }
       ]
     ],
@@ -1728,7 +1772,7 @@
         {
           "description": "Protocol buffer files for HoraeDB",
           "last_update_int": 1717138416,
-          "last_update_txt": "31 days ago"
+          "last_update_txt": "4 weeks ago"
         }
       ]
     ],
@@ -2024,7 +2068,7 @@
         {
           "description": "A graph database that supports more than 100+ billion data, h...",
           "last_update_int": 1719585479,
-          "last_update_txt": "2 days ago"
+          "last_update_txt": "3 days ago"
         }
       ],
       [
@@ -2032,7 +2076,7 @@
         {
           "description": "The integration of HugeGraph with artificial intelligence",
           "last_update_int": 1719763066,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
         }
       ],
       [
@@ -2056,7 +2100,7 @@
         {
           "description": "HugeGraph Website and Doc",
           "last_update_int": 1718032701,
-          "last_update_txt": "20 days ago"
+          "last_update_txt": "21 days ago"
         }
       ],
       [
@@ -2064,7 +2108,7 @@
         {
           "description": "HugeGraph toolchain - include a series useful graph modules",
           "last_update_int": 1717945580,
-          "last_update_txt": "21 days ago"
+          "last_update_txt": "22 days ago"
         }
       ],
       [
@@ -2233,8 +2277,8 @@
         "incubator-kie-drools",
         {
           "description": "Apache Kie",
-          "last_update_int": 1719577002,
-          "last_update_txt": "3 days ago"
+          "last_update_int": 1719819296,
+          "last_update_txt": "<span style='color: #070;'>&lt;30 minutes ago</span>"
         }
       ],
       [
@@ -2250,7 +2294,7 @@
         {
           "description": "Apache Kie",
           "last_update_int": 1719239236,
-          "last_update_txt": "6 days ago"
+          "last_update_txt": "7 days ago"
         }
       ],
       [
@@ -2266,7 +2310,7 @@
         {
           "description": "Apache Kie",
           "last_update_int": 1719256594,
-          "last_update_txt": "6 days ago"
+          "last_update_txt": "7 days ago"
         }
       ],
       [
@@ -2321,8 +2365,8 @@
         "incubator-kie-kogito-runtimes",
         {
           "description": "Apache Kie",
-          "last_update_int": 1719240928,
-          "last_update_txt": "6 days ago"
+          "last_update_int": 1719817375,
+          "last_update_txt": "<span style='color: #070;'>&lt;1 hour ago</span>"
         }
       ],
       [
@@ -2330,7 +2374,7 @@
         {
           "description": "Apache Kie",
           "last_update_int": 1719516787,
-          "last_update_txt": "3 days ago"
+          "last_update_txt": "4 days ago"
         }
       ],
       [
@@ -2345,8 +2389,8 @@
         "incubator-kie-optaplanner",
         {
           "description": "Apache Kie",
-          "last_update_int": 1719417868,
-          "last_update_txt": "4 days ago"
+          "last_update_int": 1719418101,
+          "last_update_txt": "5 days ago"
         }
       ],
       [
@@ -2362,7 +2406,7 @@
         {
           "description": "Apache KIE",
           "last_update_int": 1719326906,
-          "last_update_txt": "5 days ago"
+          "last_update_txt": "6 days ago"
         }
       ],
       [
@@ -2378,7 +2422,7 @@
         {
           "description": "Apache KIE Website",
           "last_update_int": 1719325274,
-          "last_update_txt": "5 days ago"
+          "last_update_txt": "6 days ago"
         }
       ]
     ],
@@ -3345,8 +3389,8 @@
         "incubator-pegasus",
         {
           "description": "Apache Pegasus - A horizontally scalable, strongly consistent...",
-          "last_update_int": 1719483416,
-          "last_update_txt": "4 days ago"
+          "last_update_int": 1719803065,
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
         }
       ],
       [
@@ -3778,8 +3822,8 @@
         "incubator-seata",
         {
           "description": ":fire: Seata is an easy-to-use, high-performance, open source...",
-          "last_update_int": 1719469423,
-          "last_update_txt": "4 days ago"
+          "last_update_int": 1719819283,
+          "last_update_txt": "<span style='color: #070;'>&lt;30 minutes ago</span>"
         }
       ],
       [
@@ -3819,7 +3863,7 @@
         {
           "description": "Apache Seata(incubating) Samples for Java",
           "last_update_int": 1718904515,
-          "last_update_txt": "10 days ago"
+          "last_update_txt": "11 days ago"
         }
       ],
       [
@@ -3827,7 +3871,7 @@
         {
           "description": "Apache Seata(incubating) Website",
           "last_update_int": 1719793111,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
         }
       ]
     ],
@@ -4191,7 +4235,7 @@
         {
           "description": "Make stream processing easier! Easy-to-use streaming applicat...",
           "last_update_int": 1719720886,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
         }
       ],
       [
@@ -4207,7 +4251,7 @@
         {
           "description": "Apache streampark Website",
           "last_update_int": 1719759627,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
         }
       ]
     ],
@@ -4399,7 +4443,7 @@
       }
     },
     "reportingGroup": "January, April, July, October",
-    "reportingMonthly": true,
+    "reportingMonthly": false,
     "repositories": [
       [
         "incubator-teaclave",
@@ -4761,7 +4805,7 @@
       }
     },
     "reportingGroup": "February, May, August, November",
-    "reportingMonthly": true,
+    "reportingMonthly": false,
     "repositories": [
       [
         "incubator-training",
