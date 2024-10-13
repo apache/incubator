@@ -165,9 +165,12 @@
 				new code produced by the project.</td>
                         </tr>
                         <tr>
-                            <td>yyyy-mm-dd</td>
+                            <td>2024-10-12</td>
                             <td>Check and make sure that the files that have been donated have been updated to 
-				reflect the new ASF copyright.</td>
+				reflect the new ASF copyright.
+				A small handful of files, e.g. MANIFEST files and gradle build files are missing
+				ASF headers. The intention is to add these before the first release.
+				</td>
                         </tr>
                     </table>
 </div>
@@ -215,7 +218,12 @@
                             <td>Check and make sure that all items depended upon by the
                                 project is covered by one or more of the following approved
                                 licenses: Apache, BSD, Artistic, MIT/X, MIT/W3C, MPL 1.1, or
-                                something with essentially the same terms.</td>
+                                something with essentially the same terms.
+                                <p>The majority of the build/runtime dependencies are Apache licensed.
+                                A small number have other Cat A licenses (MIT, BSD, CC0).
+                                A smaller number still have Cat B licenses (EPL, MPL, CDDL) but
+                                are only expected in binary form in convenience binaries.</p>
+                                </td>
                         </tr>
                     </table>
 <p>Generally, the result of checking off these items will be a
