@@ -141,9 +141,9 @@
                         The Geb project has existed since 2010.</td>
                     </tr>
                     <tr>
-                        <td>2024-10-12</td>
+                        <td>2024-10-16</td>
                         <td>Original code:
-			https://github.com/geb/geb/commit/a2014c3687fb28abd90ac1e3453802c6a75cc28d</td>
+			https://github.com/geb/geb/commit/df51ea3b9aba</td>
                     </tr>
                     <tr>
                         <td>yyyy-mm-dd</td>
@@ -168,8 +168,10 @@
                             <td>2024-10-12</td>
                             <td>Check and make sure that the files that have been donated have been updated to 
 				reflect the new ASF copyright.
-				A small handful of files, e.g. MANIFEST files and gradle build files are missing
-				ASF headers. The intention is to add these before the first release.
+				<p>
+				You can run the rat gradle task to check that all files have acceptable headers but check rat exclusions in geb.groovy-module.gradle.
+				There are some TODOs there which represent some things we need to add to one or more NOTICE files before first release.
+				</p>
 				</td>
                         </tr>
                     </table>
@@ -219,10 +221,15 @@
                                 project is covered by one or more of the following approved
                                 licenses: Apache, BSD, Artistic, MIT/X, MIT/W3C, MPL 1.1, or
                                 something with essentially the same terms.
-                                <p>The majority of the build/runtime dependencies are Apache licensed.
+                                <p>
+                                The majority of the build/runtime dependencies are Apache licensed.
                                 A small number have other Cat A licenses (MIT, BSD, CC0).
                                 A smaller number still have Cat B licenses (EPL, MPL, CDDL) but
-                                are only expected in binary form in convenience binaries.</p>
+                                are only expected in binary form in convenience binaries.
+                                Use checkLicense and generateLicenseReport tasks to confirm
+                                and check the allowed-licenses.json config file, but
+                                note that the plugin isn't perfect.
+                                </p>
                                 </td>
                         </tr>
                     </table>
