@@ -1,0 +1,372 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+               "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--
+  Licensed to the Apache Software Foundation (ASF) under one
+  or more contributor license agreements.  See the NOTICE file
+  distributed with this work for additional information
+  regarding copyright ownership.  The ASF licenses this file
+  to you under the Apache License, Version 2.0 (the
+  "License"); you may not use this file except in compliance
+  with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing,
+  software distributed under the License is distributed on an
+  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  KIND, either express or implied.  See the License for the
+  specific language governing permissions and limitations
+  under the License. 
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" href="../style/bootstrap-1-3-0-min.css" type="text/css" />
+  <link rel="stylesheet" href="../style/style.css" type="text/css" />
+  <script src="https://www.apachecon.com/event-images/snippet.js"></script>
+        <title>Connector for Apache Spark to Apache Cassandra Codebase Intellectual Property (IP) Clearance Status - Apache Incubator</title>
+  
+ </head>
+ <body>
+ <div class="container">
+  <div class="row"><div class="span6"><a href="https://www.apache.org/"><img src="http://www.apache.org/img/asf_logo.png" alt="The Apache Software Foundation" border="0" style="margin-top: 2px" height="88"/></a></div>
+<div class="span7"><a href="/"><img src="https://incubator.apache.org/images/incubator_feather_egg_logo_sm.png" alt="The Apache Software Foundation Incubator" border="0" style="margin-top: 2px" height="88"/></a></div>
+<div class="span2"><a href="https://www.apache.org/foundation/contributing.html"><img src="https://www.apache.org/images/SupportApache-small.png" height="100" width="100"/></a></div>
+</div>
+  <div class="row"><div class="span16"><hr noshade="noshade" size="1"/></div></div>
+  <div class="row">
+   <div class="span4">
+    <form action="http://www.google.com/search" method="get">
+     <input value="incubator.apache.org" name="sitesearch" type="hidden"/>
+     <input size="20" name="q" id="query" type="text" value="search..."
+      onclick="if(this.value == 'search...') {this.value = ''}"/>
+     <input name="Search" value="Go" type="submit"/>
+    </form>
+          <div class="menuheader">General</div>
+    <menu compact="compact">
+          <li><a href="../index.html">Welcome</a></li> 
+          <li><a href="../cookbook/">Incubator Cookbook</a></li> 
+          <li><a href="../policy/incubation.html">Incubation Policy</a></li> 
+          <li><a href="../guides/roles_and_responsibilities.html">Roles and Responsibilities</a></li> 
+          <li><a href="../faq.html">General FAQ</a></li> 
+          <li><a href="http://wiki.apache.org/incubator">Incubator Wiki</a></li> 
+          <li><a href="../whoweare.html">Who We Are</a></li> 
+            </menu>
+      <div class="menuheader">Status</div>
+    <menu compact="compact">
+          <li><a href="../projects">Project List</a></li> 
+          <li><a href="../clutch">Clutch Report</a></li> 
+          <li><a href="../ip-clearance">IP Clearance</a></li> 
+            </menu>
+      <div class="menuheader">Entry Guides</div>
+    <menu compact="compact">
+          <li><a href="../guides/proposal.html">Proposal Guide</a></li> 
+            </menu>
+      <div class="menuheader">Podling Guides</div>
+    <menu compact="compact">
+          <li><a href="../guides/committer.html">Podling Committers</a></li> 
+          <li><a href="../guides/ppmc.html">Podling PMC (PPMC)</a></li> 
+          <li><a href="../guides/mentor.html">Podling Mentor</a></li> 
+          <li><a href="../guides/releasemanagement.html">Podling Releases</a></li> 
+          <li><a href="../guides/branding.html">Podling Branding/Publicity</a></li> 
+          <li><a href="../guides/sites.html">Podling Websites</a></li> 
+          <li><a href="../guides/graduation.html">Graduation</a></li> 
+          <li><a href="../guides/retirement.html">Retirement</a></li> 
+            </menu>
+      <div class="menuheader">Other Guides</div>
+    <menu compact="compact">
+          <li><a href="../guides/participation.html">Participation</a></li> 
+          <li><a href="../faq.html">General FAQ</a></li> 
+          <li><a href="../guides/chair.html">IPMC Chair</a></li> 
+          <li><a href="../guides/lists.html">Mailing Lists</a></li> 
+          <li><a href="../guides/website.html">Incubator Website</a></li> 
+            </menu>
+      <div class="menuheader">ASF</div>
+    <menu compact="compact">
+          <li><a href="http://www.apache.org/foundation/how-it-works.html">How Apache Works</a></li> 
+          <li><a href="http://www.apache.org/dev/">Developer Documentation</a></li> 
+          <li><a href="http://www.apache.org/foundation/">Foundation</a></li> 
+          <li><a href="http://www.apache.org/foundation/sponsorship.html">Sponsor Apache</a></li> 
+          <li><a href="http://www.apache.org/foundation/thanks.html">Thanks</a></li> 
+            </menu>
+    <div id="menuheader">
+      <a class="acevent" data-format="square" data-width="135" data-mode="light" data-event="random"></a>
+    </div>
+   </div>
+   
+   <div class="span12">
+            <h2 id='Cassandra-spark-cassandra-connector-driver+Codebase+Intellectual+Property+%28IP%29+Clearance+Status'><img src="../images/redarrow.gif" />Connector for Apache Spark to Apache Cassandra Codebase Intellectual Property (IP) Clearance Status</h2>
+<div class="section-content">
+</div>
+        <h2 id='Description'><img src="../images/redarrow.gif" />Description</h2>
+<div class="section-content">
+<p>Connector for Apache Spark to Apache Cassandra, being donated by DataStax. </p>
+</div>
+        <h2 id='Project+info'><img src="../images/redarrow.gif" />Project info</h2>
+<div class="section-content">
+<ul>
+        <li>The Apache Cassandra PMC will be responsible for the code</li>
+      </ul>
+<ul>
+        <li>This contribution will be placed in a stand-alone repository under the name cassandra-spark-connector</li>
+      </ul>
+<ul>
+        <li>The PMC has voted on subproject governance rules and procedures in preparation for this subproject. This code will exist as separate code repository, in the Analytics subproject alongside the bulk analytics project.</li>
+      </ul>
+<ul>
+        <li>Officer or member managing donation: Mick Semb Wever (mck)</li>
+      </ul>
+<p>
+        <em>Completed tasks are shown by the completion date (YYYY-MM-dd).</em>
+      </p>
+<h3 id='Identify+the+codebase'>Identify the codebase</h3>
+<div class="section-content">
+<table class="colortable" width="100%">
+          <tr>
+            <th>date</th>
+            <th>item</th>
+          </tr>
+          <tr>
+            <td>2024-11-08</td>
+            <td><a href="https://github.com/datastax/spark-cassandra-connector">https://github.com/datastax/spark-cassandra-connector</a> </td>
+          </tr>
+        </table>
+<p>
+MD5 or SHA1 sum for donated software:  (<em>SHA1 for each branch and tag being donated using `git show-ref`</em>)
+<pre>
+c2b5318f3da422780a3e6f4afc504a32e9a0ca13 refs/heads/gh-pages
+c3378317d478f8af5274b48eb646b3f1f5ab61a5 refs/heads/master
+b3ff7d07229ad2cf67c907c26cc61ea2da4e0539 refs/tags/0.1.0
+82f25dd3ce468e9f13df978d5d0fa4fd5048ba86 refs/tags/1.2.0-alpha2
+5575ebf515cc99c91b7d68a19ef93d94a7776cea refs/tags/3.0-alpha
+42b80ebebc65900ac7c9e02450f27079a5cb7177 refs/tags/v1.0.0
+6d9e271da0631fe69f7d67dd68900b90b9a3ea30 refs/tags/v1.0.0-beta1
+197d74024426a5492373c1eb1c6730aa892feb0b refs/tags/v1.0.0-beta2
+aaeeaeb250ba8fee387beb63c286f780b54ea18a refs/tags/v1.0.0-rc1
+efb0976e0da3408a0cc600e4bd8c98e94a2f7c0b refs/tags/v1.0.0-rc2
+4137202fe3224401cb15b7b3d7feb7ffe977eedf refs/tags/v1.0.0-rc3
+36ed5d3833ca9e9afcdf128c1ad9e14d3de33bfb refs/tags/v1.0.0-rc4
+42c36eeaa8aed6e6967e28f856e5b639472485bf refs/tags/v1.0.0-rc5
+ba984eef86a6ab4de43d01b814ade0f03e3db140 refs/tags/v1.0.0-rc6
+b87015ef09452437810a717c4eeb3f6685b8c7c8 refs/tags/v1.0.1
+e43537d2d9ffbc567d95faedf73e7e5196c41f29 refs/tags/v1.0.2
+e6e79e572cdb16e92f3339e37b7e70e6990bc6d3 refs/tags/v1.0.3
+e8cc808fd25ea28e33586e86f39038752ac352dd refs/tags/v1.0.4
+9115e5895d5e8aa961d757672bcdc2f2979038c7 refs/tags/v1.0.5
+c2dbd71212ce80c9b3dc21f61f632f0b37356cdb refs/tags/v1.0.6
+fee3cfd341a2fb8e71d8ca697fcffc84453e0ddd refs/tags/v1.1.0
+1b02c76b4940db29454f4176671dbbd13729217c refs/tags/v1.1.0-alpha1
+d1aa33c7cbdcba7e9c096a403a01d9c96d97ece8 refs/tags/v1.1.0-alpha2
+fcca16bf83f63b9465c306289eb8917fcc0c661f refs/tags/v1.1.0-alpha3
+ae77a5126fbf9907c3ab58ce349f4fad9649b277 refs/tags/v1.1.0-alpha4
+219f98d5645b401f933bc475f8df0b9fedc7fb35 refs/tags/v1.1.0-beta1
+abc50c6704074285d6be6aed8991319998546799 refs/tags/v1.1.0-beta2
+84fd72b875c31da0953ca2956d17993b80bb3d2a refs/tags/v1.1.0-rc1
+159578663ac7ff67216205f8223d77f53c126161 refs/tags/v1.1.0-rc2
+5b0ad29a1a9281975fda2d6b8f1508ea8a41155a refs/tags/v1.1.0-rc3
+c5746319f71e3c6226cbf93ef0d663020bbfc648 refs/tags/v1.1.1
+139788bcf078f9a96005f9728dbd582434160a87 refs/tags/v1.1.2
+86542858b08405f0a9364a2da1ad63a063bf56cd refs/tags/v1.2.0
+047fafeb79fc8ee275a56ca86520f0987cafb99c refs/tags/v1.2.0-alpha1
+98da00a46bb9898e3ede671632b0681e42819f8d refs/tags/v1.2.0-alpha2
+b6f9a636a7dbf761301117fa0839644fd2dd9759 refs/tags/v1.2.0-alpha3
+4c073e41837a6787de6860b621e429cf05f7f445 refs/tags/v1.2.0-rc1
+9d29e032b3fcef8469a93ca37ce8ea6850e5a287 refs/tags/v1.2.0-rc2
+9a287c89325b2401f57c6f1a3f694ee3f5ed37ef refs/tags/v1.2.0-rc3
+bce8192c62cfde254cf64b84bc5bbb62f2d613ca refs/tags/v1.2.1
+6cffebad6b98967396b4dbc2920b4416b4241d05 refs/tags/v1.2.2
+29e4228d9a1d06fbf335650c397206b38e04653e refs/tags/v1.2.3
+21c0b986ab5f82cfd79a6187bc2b9fce31514529 refs/tags/v1.2.4
+9cf836a8aec4687ef86dc2d471f75d3e97ab45bc refs/tags/v1.2.5
+43c2e2007bae44f8f71ce0d2fe55e5720e0c8734 refs/tags/v1.2.6
+3f8f2a6f3ff5cc3324613f4d037a0e79e05603fa refs/tags/v1.3.0
+7c2799bbfa64cb3da2f838e71c7513493b723ce7 refs/tags/v1.3.0-M1
+9b3275c5f854f5f9a1acc53c4a0d058c9385f773 refs/tags/v1.3.0-M2
+e6362092da014ef33428e64cd31bd9a26dcb1c65 refs/tags/v1.3.0-RC1
+d9777624e5a1861b42bef9c041bb1ad2b42114b6 refs/tags/v1.3.1
+3614507f40a4590cfa6f8c9d41747ae5fb1e2d54 refs/tags/v1.4.0
+9682c0a092bebe4cf529c64a512d2a963bba4bc2 refs/tags/v1.4.0-M1
+eb15e1bd9be8c7bffaa85d5d4d8ef919e7f3fb9e refs/tags/v1.4.0-M2
+44288c8a70339f98c4fe1a5815e21f69fb565622 refs/tags/v1.4.0-M3
+98018785a73434cda5184718de3dd69227a15749 refs/tags/v1.4.0-RC1
+edb59751ed9f1e1e3005a6ddee04bdfc1f431e85 refs/tags/v1.4.1
+e26dfef926d4393847ab4d69c047dfa64375a865 refs/tags/v1.4.2
+854bf60ee06c7097fb87863b59d3b2e613837b4c refs/tags/v1.4.3
+51e9d988a68757c1a811f066007f728c5d2fce2e refs/tags/v1.4.4
+dc9b353dac4745d6db79b1d026249e76a12f533c refs/tags/v1.4.5
+f871fea9c3fa90055cdd6feec828809eb3b71706 refs/tags/v1.5.0
+293e68a6fc481b4755b7c9003035cec540e935e3 refs/tags/v1.5.0-M1
+61e568968a9566b3f3a307a5305490aff874108a refs/tags/v1.5.0-M2
+39dcadbe40e833b610357ce84811201f03d8f350 refs/tags/v1.5.0-M3
+526e7b68f7a44da93e021b86a7658fa61c9cca10 refs/tags/v1.5.0-RC1
+50614cafc0625c79172b4562d0cf555cd2cbd0f7 refs/tags/v1.5.1
+193b930bcc4fd2c2743c532e6165ed754cddaf5f refs/tags/v1.5.2
+9a5e6ee9312ec0d7bccfea3be161db600a689587 refs/tags/v1.6.0
+084df4aa1d0ae6c570483443d834a7b8666be292 refs/tags/v1.6.0-M1
+0728bcded2c8b1540f98a5ddb8399d86165efdb5 refs/tags/v1.6.0-M2
+331038e30b22b1800a75f6156ffb21a850d142e3 refs/tags/v1.6.1
+5efd0c3018599073c81f8611f681b524771576cf refs/tags/v1.6.10
+b04a223ac9ac53db67c0a993a716012f99af620a refs/tags/v1.6.11
+b7f2ebc1db479aeba66f4b44a4f9df5f019f71e3 refs/tags/v1.6.12
+0107c02bf11f833ebe07188bd689e0046ffa1b3a refs/tags/v1.6.13
+d09986f6b54c5e9b27c616e69a68e1c42cb748fd refs/tags/v1.6.2
+07f734d7eaffa68ca8bdf17ecb64f6e4435160a8 refs/tags/v1.6.3
+b2db1046187011f051e3f5350258423e59e46483 refs/tags/v1.6.4
+f46b40e634c853bda12a3eb7b2f979293399e680 refs/tags/v1.6.5
+337d0d87b5c453cde0e2e3712e4ea4b80fc5aa5b refs/tags/v1.6.6
+ad72844459c9f6c395732f6b4063723f46dac57f refs/tags/v1.6.7
+84496977e0fb81c77a5f3b4c2611912c861917fa refs/tags/v1.6.8
+b042a6a470b6280b66a6bb801538f2eed5b45100 refs/tags/v1.6.9
+82ea4c6a1e123bdae55a1eadfb5e844531023cf3 refs/tags/v2.0.0
+3e5f09d80c00f05b444baa93d932b03b63c09f5f refs/tags/v2.0.0-M1
+25da2efbd19492e8e3d7b742e9dc48480b4c2c3c refs/tags/v2.0.0-M2
+4da73e9c7c09aa635e79e0e1541109b9609af15a refs/tags/v2.0.0-M3
+5ba099bae38a95c6e69d106d983b57c38a3c2c32 refs/tags/v2.0.0-RC1
+98b55f9372bb3588b557565308e934053d43e7d6 refs/tags/v2.0.1
+11570ab65fa44a0bb4d0f43c06b6cc69487df78d refs/tags/v2.0.10
+ea5102ddedc64f812d1cb4971db0b4f4654a8055 refs/tags/v2.0.11
+cc117b6861a4244f99c2302998ca59b5a39962cd refs/tags/v2.0.12
+8b2ecde8b2980070f61bf49cc509f8e85fc80f43 refs/tags/v2.0.13
+e63b771b2a00cdd771e0fa15eb0ce9056fc5f25d refs/tags/v2.0.2
+a145ff4de2c067e7ca39e20e0dd4d4fd16343ee6 refs/tags/v2.0.3
+b3177a0d869bd5edd9f8dca990814349a22f552d refs/tags/v2.0.4
+13417e1598b4f7fd57aca99585e2f91e11ec939c refs/tags/v2.0.5
+d05c635d0ef9117ca1d4145721bd960a2ef63b16 refs/tags/v2.0.6
+933c1468f614237f8383d5ab79aeabc6e30c3bef refs/tags/v2.0.7
+49659beb52c3ea28961b8a74438a899fcd02cc7f refs/tags/v2.0.8
+3a8c19849f065a95dc6769a8673e67964f25c061 refs/tags/v2.0.9
+a76cd9d4a29959965b2973397590c81bb91868c6 refs/tags/v2.3.0
+0721d8d9e5f2ac0e426bf35a8a8535f9d5b29ed1 refs/tags/v2.3.1
+a2011e1b898f1f505cada760057a16995b86ade1 refs/tags/v2.3.2
+e5d5ee7d73d802e9cc752973cbfe71e17ebf0edf refs/tags/v2.3.3
+f52c091de3ad001102c85c334faf18beaf937deb refs/tags/v2.4.0
+10d39dda37c6c270f66d7859db49901338d8bba2 refs/tags/v2.4.1
+912201b699a5a5bf9ca31ed9cf80cc78413db80c refs/tags/v2.4.2
+143f51aecbd8be35209671362260f4bb814845a7 refs/tags/v2.4.3
+8519ae5bc0f28f82f323b6476b7098e2dad33d21 refs/tags/v2.5.0
+bea11196bb6d7998963f9a04b30491c735f47f1d refs/tags/v2.5.1
+948da94af9c3d43b7c1148979e365a3181528029 refs/tags/v2.5.2
+5575ebf515cc99c91b7d68a19ef93d94a7776cea refs/tags/v3.0-alpha1
+8e5c5f689c732143116d792c875787fd08fe659a refs/tags/v3.0.0
+07818f772049ed03b49026f4e451bae193dba3f3 refs/tags/v3.0.0-alpha2
+472a2e4f27430f4bae746d6a116d4e51ac7f1258 refs/tags/v3.0.0-beta
+42937e1ed01dd5aefb37fea38dbafc49ed44250e refs/tags/v3.0.1
+531409838176256b9813383ca2e6a219e87caea9 refs/tags/v3.1.0
+7ae4271c3d61fca58e7a659d214b4f384176d017 refs/tags/v3.2.0
+7f554cacb1e550c191d4eb7a19b707724c1ee977 refs/tags/v3.3.0
+67e6e60f9a0f619cc2b74bb13bd5b28f868ae2de refs/tags/v3.4.0
+1d515281cee6f9f7c1518c43350f7f8f3127327b refs/tags/v3.4.1
+dbbf02890605692d163572cda4b2462993754d7b refs/tags/v3.5.0
+d2d13b26f65b16cb7745560e6d5c9ed2f8442af8 refs/tags/v3.5.1
+</pre>
+        </p>
+<h4 id='Copyright'>Copyright</h4>
+<div class="section-content">
+<table class="colortable" width="100%">
+            <tr>
+              <th>date</th>
+              <th>item</th>
+            </tr>
+            <tr>
+              <td>2024-XX-XX</td>
+              <td>Check and make sure that the papers that transfer rights to
+                  the ASF been received. It is only necessary to transfer
+                  rights for the package, the core code, and any new code
+                  produced by the project.<br />
+                  ref: https://lists.apache.org/thread/ TODO
+              </td>
+            </tr>
+            <tr>
+              <td>2024-XX-XX</td>
+              <td>Check and make sure that the files that have been donated
+                  have been updated to reflect the new ASF copyright.<br />
+                  ref: https://issues.apache.org/jira/browse/CASSANDRA- TODO
+              </td>
+            </tr>
+          </table>
+<p>
+Identify name recorded for software grant: <em>the name of the grant as recorded
+in the foundation/officers area, in either grants.txt or cclas.txt, so that the 
+grant can be easily identified. If recorded in the grants.txt document, use the 
+"for" or title. If recorded in the cclas.txt document, use the company name
+(field 2 without submitter name) and the "form on file" name (field 4, without 
+any people's names).</em>
+          </p>
+</div>
+<h4 id='Verify+distribution+rights'>Verify distribution rights</h4>
+<div class="section-content">
+<p>
+Corporations and individuals holding existing distribution rights:
+            </p>
+<ul>
+<li>
+<em>For individuals, use the name as recorded on the committers page</em>
+</li>
+            </ul>
+<table class="colortable" width="100%">
+            <tr>
+              <th>date</th>
+              <th>item</th>
+            </tr>
+            <tr>
+              <td>2024-XX-XX</td>
+              <td>Check that all active committers have a signed CLA on
+                  record.<br />
+                  ref: https://cwiki.apache.org/confluence/pages/viewpageattachments.action?pageId= TODO
+              </td>
+            </tr>
+            <tr>
+              <td>2024-XX-XX</td>
+              <td>Remind active committers that they are responsible for
+                  ensuring that a Corporate CLA is recorded if such is
+                  required to authorize their contributions under their
+                  individual CLA.</td>
+            </tr>
+            <tr>
+              <td>2024-XX-XX</td>
+              <td>Check and make sure that for all items included with the
+                  distribution that is not under the Apache license, we have
+                  the right to combine with Apache-licensed code and
+                  redistribute.</td>
+            </tr>
+            <tr>
+              <td>2024-XX-XX</td>
+              <td>Check and make sure that all items depended upon by the
+                  project is covered by one or more of the following approved
+                  licenses: Apache, BSD, Artistic, MIT/X, MIT/W3C, MPL 1.1, or
+                  something with essentially the same terms.</td>
+            </tr>
+          </table>
+<p>Generally, the result of checking off these items will be a
+             Software Grant, CLA, and Corporate CLA for ASF licensed code,
+             which must have no dependencies upon items whose licenses that
+             are incompatible with the Apache License.</p>
+</div>
+</div>
+<h3 id='Organizational+acceptance+of+responsibility+for+the+project'>Organizational acceptance of responsibility for the project
+</h3>
+<div class="section-content">
+<p>
+Related VOTEs:
+        </p>
+<ul>
+          <li><em>https://lists.apache.org/thread/ TODO</em></li>
+        </ul>
+</div>
+</div>
+       </div>
+   </div>
+  
+   <div class="row"><div class="span16"><hr noshade="noshade" size="1"/></div></div>
+  <div class="row">
+   <div class="span16 footer">
+     Copyright &#169; 2009-2024 The Apache Software Foundation<br />
+     Licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License, Version 2.0</a>.<br/>
+     Apache Incubator, Apache, the Apache feather logo, and the Apache Incubator project logo are trademarks of The Apache Software Foundation.
+     
+     
+    </div>
+  </div>
+ </div> 
+ </body>
+</html>
