@@ -230,6 +230,7 @@ RedirectMatch Permanent ^/xap(/.*)?$ http://incubator.apache.org/projects/xap.ht
 RedirectMatch Permanent ^/xmlbeanscxx(/.*)?$ http://incubator.apache.org/projects/xmlbeanscxx.html
 RedirectMatch Permanent ^/yoko(/.*)?$ http://incubator.apache.org/projects/yoko.html
 RedirectMatch Permanent ^/zetacomponents(/.*)?$ http://incubator.apache.org/projects/zetacomponents.html
+RedirectMatch Permanent ^/zipkin(/.*)?$ http://incubator.apache.org/projects/zipkin.html
 
 # from the old webiste
 Redirect Permanent /incubation/Incubation_Policy.html /policy/incubation.html
