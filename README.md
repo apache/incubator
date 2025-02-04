@@ -62,8 +62,14 @@ builds as `build_clutch.sh` mentioned below so it's not required unless you want
 
 ## Asciidoctor
 
-Most of the pages in the site are written using Asciidoctor.
+Most of the pages in the site are written using Asciidoctor (thos with file extension .ad).
 While it is a form of asciidoc it does have some [syntax differences that are worth reviewing](http://asciidoctor.org/docs/asciidoc-syntax-quick-reference/)
+
+Note that Asciidoctor automatically generates links for text that looks like an email address or a web address.
+Also, it can have problems with URLs that contain certain special characters.
+In such cases, the URL should be prefixed and suffixed with '++'.
+For example:
+- `++https://lists.apache.org/list.html?general@incubator.apache.org++[Incubator community]`
 
 ## Groovy Templates
 
