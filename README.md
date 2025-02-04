@@ -7,7 +7,7 @@ This is the content and build scripts for http://incubator.apache.org/
 You can fork from https://github.com/apache/incubator, test your changes as described below
 and raise a pull request.
 
-Use the [general@incubator.a.o](https://lists.apache.org/list.html?general@incubator.apache.org) mailing list to contact
+Use the [general@incubator.apache.org](https://lists.apache.org/list.html?general@incubator.apache.org) mailing list to contact
 the Incubator PMC which manages this website.
 
 ## Automated publishing - Website and Clutch data
@@ -27,7 +27,7 @@ For now that Clutch data is still managed in svn, at http://svn.apache.org/repos
 the build scripts for more info. The projects folder (podling status pages) and the ip-clearance folders are also still in svn
 and the html is built using `ant docs` in the `build_clutch.sh` script.
 
-Any build failures are reported to *[cvs@incubator.a.o](https://lists.apache.org/list.html?cvs@incubator.apache.org)*
+Any build failures are reported to *[cvs@incubator.apache.org](https://lists.apache.org/list.html?cvs@incubator.apache.org)*
 mailing list.
 
 ## Prerequisites for building the website locally
