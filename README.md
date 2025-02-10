@@ -62,7 +62,7 @@ builds as `build_clutch.sh` mentioned below so it's not required unless you want
 
 ## Asciidoctor
 
-Most of the pages in the site are written using Asciidoctor (thos with file extension .ad).
+Most of the pages in the site are written using Asciidoctor (those with file extension .ad).
 While it is a form of asciidoc it does have some [syntax differences that are worth reviewing](http://asciidoctor.org/docs/asciidoc-syntax-quick-reference/)
 
 Note that Asciidoctor automatically generates links for text that looks like an email address or a web address.
