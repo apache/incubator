@@ -6,33 +6,57 @@ Apache Incubator PMC
 :idprefix:
 :imagesdir: ./images/
 
-== About The Incubator
+The Apache Incubator provides services to projects seeking to enter the Apache Software Foundation (ASF).
 
-The Apache Incubator provides services to projects which want to enter the Apache Software Foundation (ASF).
+It helps those incoming projects (called "podlings") adopt the Apache link:http://apache.org/theapacheway/[style of governance and operation], and it guides them to services and resources they can use to become top-level ASF projects ("TLPs").
 
-It helps those incoming projects (called "podlings") adopt the Apache link:http://apache.org/theapacheway/[style of governance and operation] and guides them to the ASF services available to our projects so they can become top-level ASF projects ("TLPs").
+The Incubator delegates mentors to each podling. Mentors act as liaisons between podlings and various ASF teams, such as the link:http://incubator.apache.org/whoweare.html#the_incubator_project_management_commitee_pmc[Incubator PMC] and the link:https://selfserve.apache.org/[Infrastructure team], to facilitate podlings' operations and ongoing growth.
 
-The Incubator delegates a few mentors for each podling to act as liaisons with the various ASF teams: link:http://incubator.apache.org/whoweare.html#the_incubator_project_management_commitee_pmc[Incubator PMC], link:https://selfserve.apache.org/[Infrastructure team], etc., and facilitate the podling's growth and operations.
+== Responsibilities
 
-=== Incubator History
+The Incubator has the following responsibilities:
 
-The Incubator was created link:https://www.apache.org/foundation/records/minutes/2002/board_minutes_2002_10_16.txt[ in 2002].  As of April, 2023 it has helped 335 podlings, of which 239 have graduated. More than 300 mentors have guided and supported podlings. There are between 25 and 50 podlings in incubation at any one time, and incubation typically takes 1 1/2 years.
+- Welcoming new Podlings to become part of the Apache Software Foundation (ASF).
+- Guiding Podlings to govern and grow their communities according to *link:https://www.apache.org/theapacheway/[the Apache Way]*, the ASF's philosophy and guidelines for collaborative development.
+- Reporting monthly to the board on the progress of Podlings.
+- Graduating Podlings to top level Apache Software Foundation projects.
+- Retiring Podlings when needed.
+- Accepting IP donations.
 
+== Getting Started
+To get started with the Apache Incubator:
 
-=== Incubator Cookbook
+- Read the link:/cookbook[cookbook], which helps potential podlings decide whether the ASF is a good fit for them and guides them through the steps required to become an ASF podling.
+- Review the link:/policy/incubation.html[Incubation Policy], which outlines rules for participation
+- Submit a link:/guides/proposal.html[proposal] for your project to join the Incubator
 
-Our link:http://incubator.apache.org/cookbook/[cookbook] helps potential podlings decide whether the ASF is a good fit for them and guides them through the steps required to become an ASF podling.
+== Useful Resources
+For advice on applying to—and ultimately graduating from—Apache Incubator, review any of the following presentations.
 
-=== Incubator Talks
+- A keynote on link:https://www.youtube.com/watch?v=TQwrH0PlpZg[The Apache Way] by Rich Bowen at MesosCon Europe in 2017, which offers insights into both the ASF's values and its operations.
+- link:https://www.youtube.com/watch?v=I0-lp1t9ee0["How to get your release through the Incubator"], presented at ApacheCon North America 2017, for guidance on releases.
+- A more general talk on link:https://www.youtube.com/watch?v=hpAv54KIgK8[Effective open source management] by Shane Curcuru, from ApacheCon North America 2017.
+- John D. Ament's link:https://www.youtube.com/watch?v=yWurOHvm5WM["Navigating the Incubator Trenches"], from ApacheCon North America 2017, for details on how to graduate from the Incubator and become a successful TLP
+- link:https://www.youtube.com/watch?v=SCDv2hUgOjU["Apache Incubator: the gateway into the Apache Way"] by Roman Shaposhnik and Suresh Marru at ApacheCon North America 2014.
+- link:http://www.youtube.com/watch?v=KopPbWS87fw["Life In The Apache Incubator"], in which former Incubator PMC chair Jukka Zitting presents the Incubator, from ApacheCon Europe 2012.
 
-There have been many Incubator talks at many conferences over the years. Here are a few of them.
+== Incubator History
 
-  * See a keynote link:https://www.youtube.com/watch?v=TQwrH0PlpZg[The Apache Way], by Rich Bowen at MesosCon Europe in 2017 for a  good background of how the ASF operates and what its values are.
-  * For guidance on releases see link:https://www.youtube.com/watch?v=I0-lp1t9ee0[How to get your release through the Incubator], presented at ApacheCon North America 2017, and this link:http://training.apache.org/topics/ApacheWay/NavigatingASFIncubator/index.html[slide deck], presented at ApacheCon North America 2019.
-  * A more general talk on link:https://www.youtube.com/watch?v=hpAv54KIgK8[Effective open source management] by Shane Curcuru, from ApacheCon North America 2017.
-  * For how to get out of the Incubator and become a successful TLP see John D. Ament's talk link:https://www.youtube.com/watch?v=yWurOHvm5WM[Navigating the Incubator Trenches], from ApacheCon North America 2017.
-  * link:https://www.youtube.com/watch?v=SCDv2hUgOjU[Apache Incubator: the gateway into the Apache Way] by Roman Shaposhnik and Suresh Marru at ApacheCon North America 2014.
-  * See also the link:http://www.youtube.com/watch?v=KopPbWS87fw[Life In The Apache Incubator video], in which former Incubator PMC chair Jukka Zitting presents the Incubator, from ApacheCon Europe 2012.
+In October 2002, the Board of Directors of the Apache Software Foundation passed a resolution to establish the Apache Incubator PMC. It directed the ASF to: 
+
+[quote, ASF Board Meeting, October 16th 2002]
+...establish a Project Management Committee charged with
+       accepting **new products** into the Foundation, providing **guidance
+       and support** to help each new product engender their own
+       collaborative community, **educating new developers in the
+       philosophy and guidelines** for collaborative development as
+       defined by the members of the Foundation, and proposing to the
+       board **the promotion of such products to independent PMC
+       status** once their community has reached maturity.
+
+See the October 2002 link:https://www.apache.org/foundation/board/calendar-1999-2004.html#2002[Board report] for the complete resolution.
+
+As of April, 2023, the Incubator has assisted 335 podlings, 239 of which have graduated from the program. More than 300 mentors have guided and supported podlings. The Incubator supports between 25 and 50 podlings at any given time. Project incubation typically takes 1 1/2 years.
 
 == About The Apache Software Foundation
 
