@@ -311,15 +311,11 @@
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-annotator.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/annotator/KEYS",
       "svn": "",
-      "tracker": "",
+      "tracker": "https://issues.apache.org/jira/browse/ANNO",
       "wiki": "https://cwiki.apache.org/confluence/display/ANNO",
       "www": "http://annotator.incubator.apache.org"
     },
     "zFixMeList": [
-      [
-        "10",
-        "Has not provided an issue tracker link"
-      ],
       [
         "15",
         "Project does not have 'dev' mailing list"
@@ -784,8 +780,8 @@
         "cloudberry-site",
         {
           "description": "Website sources for Apache Cloudberry™️ (Incubating)",
-          "last_update_int": 1746695701,
-          "last_update_txt": "5 days ago"
+          "last_update_int": 1747110537,
+          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
         }
       ]
     ],
@@ -922,8 +918,8 @@
         "incubator-devlake",
         {
           "description": "Apache DevLake is an open-source dev data platform to ingest,...",
-          "last_update_int": 1747098700,
-          "last_update_txt": "<span style='color: #070;'>&lt;30 minutes ago</span>"
+          "last_update_int": 1747104103,
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
         }
       ],
       [
@@ -931,7 +927,7 @@
         {
           "description": "Apache DevLake Helm Chart",
           "last_update_int": 1747026204,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
         }
       ],
       [
@@ -992,6 +988,7 @@
         "liyu",
         "lofisu",
         "pandalee",
+        "shaokun",
         "suiliangliang",
         "tison",
         "twice",
@@ -1000,7 +997,7 @@
         "xuanwo",
         "zhaommmmomo"
       ],
-      "numberCommitters": 13,
+      "numberCommitters": 14,
       "numberCommittersNew": 0,
       "numberPMCEquals": false,
       "numberPMCMembers": 9,
@@ -1137,7 +1134,7 @@
         {
           "description": "A blazingly fast multi-language serialization framework power...",
           "last_update_int": 1747098780,
-          "last_update_txt": "<span style='color: #070;'>&lt;30 minutes ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
         }
       ],
       [
@@ -1410,8 +1407,8 @@
         "incubator-gluten",
         {
           "description": "Gluten is a middle layer responsible for offloading JVM-based...",
-          "last_update_int": 1747061083,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_int": 1747114730,
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
         }
       ],
       [
@@ -1512,7 +1509,7 @@
         {
           "description": "Apache Grails Cache",
           "last_update_int": 1744907697,
-          "last_update_txt": "25 days ago"
+          "last_update_txt": "26 days ago"
         }
       ],
       [
@@ -1520,7 +1517,7 @@
         {
           "description": "Apache Grails Core",
           "last_update_int": 1747073219,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
         }
       ],
       [
@@ -1536,7 +1533,7 @@
         {
           "description": "Apache Grails Data Mapping",
           "last_update_int": 1745332541,
-          "last_update_txt": "20 days ago"
+          "last_update_txt": "21 days ago"
         }
       ],
       [
@@ -1544,7 +1541,7 @@
         {
           "description": "Apache Grails Docs",
           "last_update_int": 1746810718,
-          "last_update_txt": "3 days ago"
+          "last_update_txt": "4 days ago"
         }
       ],
       [
@@ -1552,7 +1549,7 @@
         {
           "description": "Apache Grails Forge",
           "last_update_int": 1747098408,
-          "last_update_txt": "<span style='color: #070;'>&lt;30 minutes ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
         }
       ],
       [
@@ -1560,7 +1557,7 @@
         {
           "description": "Apache Grails Forge UI",
           "last_update_int": 1744646945,
-          "last_update_txt": "28 days ago"
+          "last_update_txt": "29 days ago"
         }
       ],
       [
@@ -1568,7 +1565,7 @@
         {
           "description": "Apache Grails GEB",
           "last_update_int": 1745332566,
-          "last_update_txt": "20 days ago"
+          "last_update_txt": "21 days ago"
         }
       ],
       [
@@ -1584,7 +1581,7 @@
         {
           "description": "Apache Grails Gradle Plugin",
           "last_update_int": 1744733556,
-          "last_update_txt": "27 days ago"
+          "last_update_txt": "28 days ago"
         }
       ],
       [
@@ -1600,7 +1597,7 @@
         {
           "description": "Apache Grails Profiles",
           "last_update_int": 1746201895,
-          "last_update_txt": "10 days ago"
+          "last_update_txt": "11 days ago"
         }
       ],
       [
@@ -1608,7 +1605,7 @@
         {
           "description": "Apache Grails Quartz",
           "last_update_int": 1744644882,
-          "last_update_txt": "28 days ago"
+          "last_update_txt": "29 days ago"
         }
       ],
       [
@@ -1616,7 +1613,7 @@
         {
           "description": "Apache Grails Redis",
           "last_update_int": 1744645168,
-          "last_update_txt": "28 days ago"
+          "last_update_txt": "29 days ago"
         }
       ],
       [
@@ -1624,7 +1621,7 @@
         {
           "description": "Apache Grails Springs Security",
           "last_update_int": 1746381237,
-          "last_update_txt": "8 days ago"
+          "last_update_txt": "9 days ago"
         }
       ],
       [
@@ -1632,7 +1629,7 @@
         {
           "description": "Apache Grails Static Website",
           "last_update_int": 1744646315,
-          "last_update_txt": "28 days ago"
+          "last_update_txt": "29 days ago"
         }
       ],
       [
@@ -1640,7 +1637,7 @@
         {
           "description": "Apache Grails Views",
           "last_update_int": 1744914122,
-          "last_update_txt": "25 days ago"
+          "last_update_txt": "26 days ago"
         }
       ],
       [
@@ -1648,7 +1645,7 @@
         {
           "description": "Apache Grails Wrapper",
           "last_update_int": 1746202822,
-          "last_update_txt": "10 days ago"
+          "last_update_txt": "11 days ago"
         }
       ]
     ],
@@ -1704,7 +1701,7 @@
         "yecol"
       ],
       "numberCommitters": 11,
-      "numberCommittersNew": 0,
+      "numberCommittersNew": 2,
       "numberPMCEquals": false,
       "numberPMCMembers": 9,
       "owners": [
@@ -1738,6 +1735,9 @@
       ]
     ],
     "news": [
+      "2024-08-16 New Committer: Jingbo Xu.",
+      "2024-08-13 New Committer: Jiajun Liu.",
+      "2024-07-02 Release 0.12.0 (the first apache release).",
       "2024-03-25 Project enters incubation."
     ],
     "podlingName": "GraphAr",
@@ -1783,8 +1783,8 @@
     "resource": "graphar",
     "sponsor": "Incubator",
     "startDate": "2024-03-25",
-    "statusAge": 401,
-    "statusLastUpdated": "2024-04-07",
+    "statusAge": 0,
+    "statusLastUpdated": "2025-05-13",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-graphar.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/graphar/KEYS",
@@ -1898,8 +1898,8 @@
         "gravitino",
         {
           "description": "World's most powerful open data catalog for building a high-p...",
-          "last_update_int": 1747064390,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_int": 1747116502,
+          "last_update_txt": "<span style='color: #070;'>&lt;1 hour ago</span>"
         }
       ],
       [
@@ -2235,8 +2235,8 @@
         "hertzbeat",
         {
           "description": "Apache HertzBeat(incubating) is a real-time monitoring system...",
-          "last_update_int": 1747095194,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
+          "last_update_int": 1747118311,
+          "last_update_txt": "<span style='color: #070;'>&lt;30 minutes ago</span>"
         }
       ],
       [
@@ -2244,7 +2244,7 @@
         {
           "description": "Apache HertzBeat(incubating) is a real-time monitoring system...",
           "last_update_int": 1744470887,
-          "last_update_txt": "30 days ago"
+          "last_update_txt": "31 days ago"
         }
       ]
     ],
@@ -3532,7 +3532,7 @@
         {
           "description": "Apache Kie",
           "last_update_int": 1746935155,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
+          "last_update_txt": "2 days ago"
         }
       ],
       [
@@ -3564,7 +3564,7 @@
         {
           "description": "Apache Kie",
           "last_update_int": 1746026964,
-          "last_update_txt": "12 days ago"
+          "last_update_txt": "13 days ago"
         }
       ],
       [
@@ -3572,7 +3572,7 @@
         {
           "description": "Apache Kie",
           "last_update_int": 1746107300,
-          "last_update_txt": "11 days ago"
+          "last_update_txt": "12 days ago"
         }
       ],
       [
@@ -3587,8 +3587,8 @@
         "incubator-kie-kogito-online",
         {
           "description": "Apache KIE",
-          "last_update_int": 1746931937,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
+          "last_update_int": 1747105328,
+          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
         }
       ],
       [
@@ -3644,7 +3644,7 @@
         {
           "description": "Apache Kie",
           "last_update_int": 1746941952,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
+          "last_update_txt": "2 days ago"
         }
       ],
       [
@@ -3668,7 +3668,7 @@
         {
           "description": "Apache KIE",
           "last_update_int": 1747072620,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
         }
       ],
       [
@@ -3896,7 +3896,7 @@
         {
           "description": "Apache Livy is an open source REST interface for interacting ...",
           "last_update_int": 1745415958,
-          "last_update_txt": "19 days ago"
+          "last_update_txt": "20 days ago"
         }
       ],
       [
@@ -4403,7 +4403,7 @@
         {
           "description": "Apache openserverless",
           "last_update_int": 1737123918,
-          "last_update_txt": "16 weeks ago"
+          "last_update_txt": "17 weeks ago"
         }
       ],
       [
@@ -4411,7 +4411,7 @@
         {
           "description": "Apache OpenServerless website",
           "last_update_int": 1747021248,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
         }
       ],
       [
@@ -4427,7 +4427,7 @@
         {
           "description": "Apache openserverless",
           "last_update_int": 1747057245,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
         }
       ],
       [
@@ -4443,7 +4443,7 @@
         {
           "description": "Apache openserverless",
           "last_update_int": 1746816645,
-          "last_update_txt": "3 days ago"
+          "last_update_txt": "4 days ago"
         }
       ],
       [
@@ -4878,7 +4878,7 @@
         {
           "description": "Apache Pegasus - A horizontally scalable, strongly consistent...",
           "last_update_int": 1747023393,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
         }
       ],
       [
@@ -5004,8 +5004,8 @@
         "polaris",
         {
           "description": "Apache Polaris, the interoperable, open source catalog for Ap...",
-          "last_update_int": 1747065688,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_int": 1747113546,
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
         }
       ],
       [
@@ -5021,7 +5021,7 @@
         {
           "description": "Apache Polaris Tools, additional tooling for Apache Polaris",
           "last_update_int": 1746463926,
-          "last_update_txt": "7 days ago"
+          "last_update_txt": "8 days ago"
         }
       ]
     ],
@@ -5131,7 +5131,7 @@
         {
           "description": "Apache Pony Mail (Incubating) Site",
           "last_update_int": 1721399779,
-          "last_update_txt": "42 weeks ago"
+          "last_update_txt": "43 weeks ago"
         }
       ],
       [
@@ -5399,7 +5399,7 @@
         {
           "description": "Apache Resilientdb incubator-resilientdb-ResLens",
           "last_update_int": 1745334464,
-          "last_update_txt": "20 days ago (bot)"
+          "last_update_txt": "21 days ago (bot)"
         }
       ],
       [
@@ -5487,7 +5487,7 @@
         {
           "description": "Apache Resilientdb incubator-resilientdb-resilient-node-cache",
           "last_update_int": 1743188416,
-          "last_update_txt": "6 weeks ago"
+          "last_update_txt": "7 weeks ago"
         }
       ],
       [
@@ -5511,7 +5511,7 @@
         {
           "description": "Apache Resilientdb incubator-resilientdb-resvault-sdk",
           "last_update_int": 1743188220,
-          "last_update_txt": "6 weeks ago"
+          "last_update_txt": "7 weeks ago"
         }
       ],
       [
@@ -5732,7 +5732,7 @@
         {
           "description": "The operational tool for Seata-Server.",
           "last_update_int": 1740758181,
-          "last_update_txt": "10 weeks ago"
+          "last_update_txt": "11 weeks ago"
         }
       ],
       [
@@ -6115,8 +6115,8 @@
         "incubator-teaclave-trustzone-sdk",
         {
           "description": "Teaclave TrustZone SDK enables safe, functional, and ergonomi...",
-          "last_update_int": 1747034947,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_int": 1747113500,
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
         }
       ],
       [
@@ -6560,7 +6560,7 @@
         {
           "description": "Apache training",
           "last_update_int": 1745247896,
-          "last_update_txt": "21 days ago"
+          "last_update_txt": "22 days ago"
         }
       ]
     ],
