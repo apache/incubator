@@ -94,7 +94,7 @@
         "hash": "sha512",
         "revision": "r70341",
         "size": "664813328",
-        "user": "jinsongzhou"
+        "user": "jinsongz"
       },
       "apache-amoro-0.7.0-incubating-bin-hadoop3.tar.gz": {
         "dtm": "07/16/2024",
@@ -102,7 +102,7 @@
         "hash": "sha512",
         "revision": "r70341",
         "size": "703606327",
-        "user": "jinsongzhou"
+        "user": "jinsongz"
       },
       "apache-amoro-0.7.0-incubating-src.tar.gz": {
         "dtm": "07/16/2024",
@@ -110,7 +110,7 @@
         "hash": "sha512",
         "revision": "r70341",
         "size": "15286839",
-        "user": "jinsongzhou"
+        "user": "jinsongz"
       },
       "apache-amoro-0.7.1-incubating-bin-hadoop2.tar.gz": {
         "dtm": "11/11/2024",
@@ -118,7 +118,7 @@
         "hash": "sha512",
         "revision": "r72951",
         "size": "285748753",
-        "user": "jinsongzhou"
+        "user": "jinsongz"
       },
       "apache-amoro-0.7.1-incubating-bin-hadoop3.tar.gz": {
         "dtm": "11/11/2024",
@@ -126,7 +126,7 @@
         "hash": "sha512",
         "revision": "r72951",
         "size": "299761241",
-        "user": "jinsongzhou"
+        "user": "jinsongz"
       },
       "apache-amoro-0.7.1-incubating-src.tar.gz": {
         "dtm": "11/11/2024",
@@ -134,7 +134,7 @@
         "hash": "sha512",
         "revision": "r72951",
         "size": "15483157",
-        "user": "jinsongzhou"
+        "user": "jinsongz"
       },
       "apache-amoro-0.8.0-incubating-bin-hadoop2.tar.gz": {
         "dtm": "04/23/2025",
@@ -166,7 +166,7 @@
         "hash": "sha512",
         "revision": "r70341",
         "size": "12102",
-        "user": "jinsongzhou"
+        "user": "jinsongz"
       }
     },
     "reportingGroup": "January, April, July, October",
@@ -200,7 +200,7 @@
     "resource": "amoro",
     "sponsor": "Incubator",
     "startDate": "2024-03-11",
-    "statusAge": 456,
+    "statusAge": 457,
     "statusLastUpdated": "2024-03-19",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=amoro.git;a=tree;hb=HEAD",
@@ -306,17 +306,21 @@
     "resource": "annotator",
     "sponsor": "Incubator",
     "startDate": "2016-08-30",
-    "statusAge": 1713,
+    "statusAge": 1714,
     "statusLastUpdated": "2020-10-09",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-annotator.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/annotator/KEYS",
       "svn": "",
       "tracker": "https://issues.apache.org/jira/browse/ANNO",
-      "wiki": "https://cwiki.apache.org/confluence/display/ANNO",
+      "wiki": "",
       "www": "http://annotator.incubator.apache.org"
     },
     "zFixMeList": [
+      [
+        "18",
+        "Has not provided a wiki link"
+      ],
       [
         "15",
         "Project does not have 'dev' mailing list"
@@ -488,7 +492,7 @@
         {
           "description": "Create custom vector tiles from OpenStreetMap and other data ...",
           "last_update_int": 1748092616,
-          "last_update_txt": "25 days ago"
+          "last_update_txt": "26 days ago"
         }
       ],
       [
@@ -503,7 +507,7 @@
     "resource": "baremaps",
     "sponsor": "Incubator",
     "startDate": "2022-10-10",
-    "statusAge": 972,
+    "statusAge": 973,
     "statusLastUpdated": "2022-10-20",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-baremaps.git;a=tree;hb=HEAD",
@@ -610,7 +614,7 @@
     "resource": "bifromq",
     "sponsor": "Incubator",
     "startDate": "2025-04-22",
-    "statusAge": 51,
+    "statusAge": 52,
     "statusLastUpdated": "2025-04-28",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=bifromq.git;a=tree;hb=HEAD",
@@ -695,14 +699,14 @@
         {
           "description": "Apache Burr",
           "last_update_int": 1750054876,
-          "last_update_txt": "2 days ago"
+          "last_update_txt": "3 days ago"
         }
       ]
     ],
     "resource": "burr",
     "sponsor": "Incubator",
     "startDate": "2025-05-24",
-    "statusAge": 25,
+    "statusAge": 26,
     "statusLastUpdated": "2025-05-24",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=burr.git;a=tree;hb=HEAD",
@@ -825,7 +829,7 @@
         {
           "description": "One advanced and mature open-source MPP (Massively Parallel P...",
           "last_update_int": 1750254262,
-          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
         }
       ],
       [
@@ -833,7 +837,7 @@
         {
           "description": "Try out Apache Cloudberry (Incubating) via the Docker-based S...",
           "last_update_int": 1749792845,
-          "last_update_txt": "5 days ago"
+          "last_update_txt": "6 days ago"
         }
       ],
       [
@@ -841,7 +845,7 @@
         {
           "description": "DevOps and Release for Apache Cloudberry (Incubating)",
           "last_update_int": 1749447195,
-          "last_update_txt": "9 days ago"
+          "last_update_txt": "10 days ago"
         }
       ],
       [
@@ -881,14 +885,14 @@
         {
           "description": "Website sources for Apache Cloudberry™️ (Incubating)",
           "last_update_int": 1749808663,
-          "last_update_txt": "5 days ago"
+          "last_update_txt": "6 days ago"
         }
       ]
     ],
     "resource": "cloudberry",
     "sponsor": "Incubator",
     "startDate": "2024-10-11",
-    "statusAge": 27,
+    "statusAge": 28,
     "statusLastUpdated": "2025-05-22",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=cloudberry.git;a=tree;hb=HEAD",
@@ -1060,7 +1064,7 @@
     "resource": "devlake",
     "sponsor": "Incubator",
     "startDate": "2022-04-29",
-    "statusAge": 1133,
+    "statusAge": 1134,
     "statusLastUpdated": "2022-05-12",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-devlake.git;a=tree;hb=HEAD",
@@ -1152,7 +1156,7 @@
     "resource": "fluss",
     "sponsor": "Incubator",
     "startDate": "2025-06-04",
-    "statusAge": 5,
+    "statusAge": 6,
     "statusLastUpdated": "2025-06-13",
     "urls": {
       "git": "",
@@ -1263,7 +1267,7 @@
         "hash": "sha512",
         "revision": "r77452",
         "size": "3989266",
-        "user": "chaokunyang"
+        "user": "chaokuny"
       }
     },
     "reportingGroup": "February, May, August, November",
@@ -1274,7 +1278,7 @@
         {
           "description": "A blazingly fast multi-language serialization framework power...",
           "last_update_int": 1750262219,
-          "last_update_txt": "<span style='color: #070;'>&lt;15 minutes ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
         }
       ],
       [
@@ -1282,14 +1286,14 @@
         {
           "description": "Apache Fory Website",
           "last_update_int": 1750262443,
-          "last_update_txt": "<span style='color: #070;'>&lt;15 minutes ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
         }
       ]
     ],
     "resource": "fory",
     "sponsor": "Incubator",
     "startDate": "2023-12-15",
-    "statusAge": 20,
+    "statusAge": 21,
     "statusLastUpdated": "2025-05-29",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=fory.git;a=tree;hb=HEAD",
@@ -1377,7 +1381,7 @@
     "resource": "geaflow",
     "sponsor": "Incubator",
     "startDate": "2025-06-06",
-    "statusAge": 11,
+    "statusAge": 12,
     "statusLastUpdated": "2025-06-07",
     "urls": {
       "git": "",
@@ -1529,7 +1533,7 @@
         "hash": "sha512",
         "revision": "r71026",
         "size": "120993480",
-        "user": "weitingchen"
+        "user": "weitingc"
       },
       "apache-gluten-1.2.0-incubating-bin-spark33.tar.gz": {
         "dtm": "08/21/2024",
@@ -1537,7 +1541,7 @@
         "hash": "sha512",
         "revision": "r71026",
         "size": "121007112",
-        "user": "weitingchen"
+        "user": "weitingc"
       },
       "apache-gluten-1.2.0-incubating-bin-spark34.tar.gz": {
         "dtm": "08/21/2024",
@@ -1545,7 +1549,7 @@
         "hash": "sha512",
         "revision": "r71026",
         "size": "120806829",
-        "user": "weitingchen"
+        "user": "weitingc"
       },
       "apache-gluten-1.2.0-incubating-bin-spark35.tar.gz": {
         "dtm": "08/21/2024",
@@ -1553,7 +1557,7 @@
         "hash": "sha512",
         "revision": "r71026",
         "size": "120753908",
-        "user": "weitingchen"
+        "user": "weitingc"
       },
       "apache-gluten-1.2.0-incubating-src.tar.gz": {
         "dtm": "08/21/2024",
@@ -1561,7 +1565,7 @@
         "hash": "sha512",
         "revision": "r71026",
         "size": "96046819",
-        "user": "weitingchen"
+        "user": "weitingc"
       },
       "apache-gluten-1.2.1-incubating-bin-spark32.tar.gz": {
         "dtm": "11/29/2024",
@@ -1569,7 +1573,7 @@
         "hash": "sha512",
         "revision": "r73335",
         "size": "122576866",
-        "user": "weitingchen"
+        "user": "weitingc"
       },
       "apache-gluten-1.2.1-incubating-bin-spark33.tar.gz": {
         "dtm": "11/29/2024",
@@ -1577,7 +1581,7 @@
         "hash": "sha512",
         "revision": "r73335",
         "size": "122590031",
-        "user": "weitingchen"
+        "user": "weitingc"
       },
       "apache-gluten-1.2.1-incubating-bin-spark34.tar.gz": {
         "dtm": "11/29/2024",
@@ -1585,7 +1589,7 @@
         "hash": "sha512",
         "revision": "r73335",
         "size": "122389540",
-        "user": "weitingchen"
+        "user": "weitingc"
       },
       "apache-gluten-1.2.1-incubating-bin-spark35.tar.gz": {
         "dtm": "11/29/2024",
@@ -1593,7 +1597,7 @@
         "hash": "sha512",
         "revision": "r73335",
         "size": "122337417",
-        "user": "weitingchen"
+        "user": "weitingc"
       },
       "apache-gluten-1.2.1-incubating-src.tar.gz": {
         "dtm": "11/29/2024",
@@ -1601,7 +1605,7 @@
         "hash": "sha512",
         "revision": "r73335",
         "size": "96048822",
-        "user": "weitingchen"
+        "user": "weitingc"
       },
       "apache-gluten-1.3.0-incubating-bin-spark32.tar.gz": {
         "dtm": "01/16/2025",
@@ -1609,7 +1613,7 @@
         "hash": "sha512",
         "revision": "r74237",
         "size": "101177173",
-        "user": "weitingchen"
+        "user": "weitingc"
       },
       "apache-gluten-1.3.0-incubating-bin-spark33.tar.gz": {
         "dtm": "01/16/2025",
@@ -1617,7 +1621,7 @@
         "hash": "sha512",
         "revision": "r74237",
         "size": "101171191",
-        "user": "weitingchen"
+        "user": "weitingc"
       },
       "apache-gluten-1.3.0-incubating-bin-spark34.tar.gz": {
         "dtm": "01/16/2025",
@@ -1625,7 +1629,7 @@
         "hash": "sha512",
         "revision": "r74237",
         "size": "100963737",
-        "user": "weitingchen"
+        "user": "weitingc"
       },
       "apache-gluten-1.3.0-incubating-bin-spark35.tar.gz": {
         "dtm": "01/16/2025",
@@ -1633,7 +1637,7 @@
         "hash": "sha512",
         "revision": "r74237",
         "size": "100906144",
-        "user": "weitingchen"
+        "user": "weitingc"
       },
       "apache-gluten-1.3.0-incubating-src.tar.gz": {
         "dtm": "01/16/2025",
@@ -1641,7 +1645,7 @@
         "hash": "sha512",
         "revision": "r74237",
         "size": "102400802",
-        "user": "weitingchen"
+        "user": "weitingc"
       }
     },
     "reportingGroup": "January, April, July, October",
@@ -1652,7 +1656,7 @@
         {
           "description": "Gluten is a middle layer responsible for offloading JVM-based...",
           "last_update_int": 1750259958,
-          "last_update_txt": "<span style='color: #070;'>&lt;1 hour ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
         }
       ],
       [
@@ -1667,7 +1671,7 @@
     "resource": "gluten",
     "sponsor": "Incubator",
     "startDate": "2024-01-11",
-    "statusAge": 520,
+    "statusAge": 521,
     "statusLastUpdated": "2024-01-15",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-gluten.git;a=tree;hb=HEAD",
@@ -1761,7 +1765,7 @@
         {
           "description": "Apache Grails Core",
           "last_update_int": 1750257858,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
         }
       ],
       [
@@ -1784,8 +1788,8 @@
         "grails-doc",
         {
           "description": "Apache Grails Docs",
-          "last_update_int": 1750099846,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
+          "last_update_int": 1750264302,
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
         }
       ],
       [
@@ -1817,7 +1821,7 @@
         {
           "description": "Apache Grails Github Actions",
           "last_update_int": 1750241665,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
         }
       ],
       [
@@ -1833,7 +1837,7 @@
         {
           "description": "Apache Grails Plugins Metadata",
           "last_update_int": 1749880644,
-          "last_update_txt": "4 days ago"
+          "last_update_txt": "5 days ago"
         }
       ],
       [
@@ -1857,7 +1861,7 @@
         {
           "description": "Apache Grails Redis",
           "last_update_int": 1750245697,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
         }
       ],
       [
@@ -1865,15 +1869,15 @@
         {
           "description": "Apache Grails Springs Security",
           "last_update_int": 1750245693,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
         }
       ],
       [
         "grails-static-website",
         {
           "description": "Apache Grails Website",
-          "last_update_int": 1750262732,
-          "last_update_txt": "<span style='color: #070;'>&lt;2 minutes ago</span>"
+          "last_update_int": 1750292097,
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
         }
       ],
       [
@@ -1896,7 +1900,7 @@
     "resource": "grails",
     "sponsor": "Groovy",
     "startDate": "2025-01-25",
-    "statusAge": 78,
+    "statusAge": 79,
     "statusLastUpdated": "2025-04-01",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=grails-cache.git;a=tree;hb=HEAD",
@@ -2035,7 +2039,7 @@
     "resource": "graphar",
     "sponsor": "Incubator",
     "startDate": "2024-03-25",
-    "statusAge": 36,
+    "statusAge": 37,
     "statusLastUpdated": "2025-05-13",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-graphar.git;a=tree;hb=HEAD",
@@ -2114,7 +2118,7 @@
         "hamilton",
         {
           "description": "Apache Hamilton helps data scientists and engineers define te...",
-          "last_update_int": 1750222299,
+          "last_update_int": 1750254898,
           "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
         }
       ],
@@ -2130,7 +2134,7 @@
     "resource": "hamilton",
     "sponsor": "Incubator",
     "startDate": "2025-04-12",
-    "statusAge": 25,
+    "statusAge": 26,
     "statusLastUpdated": "2025-05-24",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=hamilton.git;a=tree;hb=HEAD",
@@ -2301,7 +2305,7 @@
         "hash": "sha512",
         "revision": "r72579",
         "size": "165950200",
-        "user": "zhaoqingran"
+        "user": "zhaoqing"
       },
       "apache-hertzbeat-1.6.1-incubating-docker-compose.tar.gz": {
         "dtm": "10/23/2024",
@@ -2309,7 +2313,7 @@
         "hash": "sha512",
         "revision": "r72578",
         "size": "12774",
-        "user": "zhaoqingran"
+        "user": "zhaoqing"
       },
       "apache-hertzbeat-1.6.1-incubating-src.tar.gz": {
         "dtm": "10/23/2024",
@@ -2317,7 +2321,7 @@
         "hash": "sha512",
         "revision": "r72579",
         "size": "1840233",
-        "user": "zhaoqingran"
+        "user": "zhaoqing"
       },
       "apache-hertzbeat-1.7.0-incubating-bin.tar.gz": {
         "dtm": "03/25/2025",
@@ -2349,7 +2353,7 @@
         "hash": "sha512",
         "revision": "r76842",
         "size": "180104052",
-        "user": "shenghang"
+        "user": "shenghan"
       },
       "apache-hertzbeat-1.7.1-incubating-docker-compose.tar.gz": {
         "dtm": "05/15/2025",
@@ -2357,7 +2361,7 @@
         "hash": "sha512",
         "revision": "r76842",
         "size": "13210",
-        "user": "shenghang"
+        "user": "shenghan"
       },
       "apache-hertzbeat-1.7.1-incubating-src.tar.gz": {
         "dtm": "05/15/2025",
@@ -2365,7 +2369,7 @@
         "hash": "sha512",
         "revision": "r76842",
         "size": "2156591",
-        "user": "shenghang"
+        "user": "shenghan"
       },
       "apache-hertzbeat-collector-1.6.0-incubating-bin.tar.gz": {
         "dtm": "06/02/2024",
@@ -2381,7 +2385,7 @@
         "hash": "sha512",
         "revision": "r72579",
         "size": "112490675",
-        "user": "zhaoqingran"
+        "user": "zhaoqing"
       },
       "apache-hertzbeat-collector-1.7.0-incubating-bin.tar.gz": {
         "dtm": "03/25/2025",
@@ -2397,7 +2401,7 @@
         "hash": "sha512",
         "revision": "r76842",
         "size": "125333371",
-        "user": "shenghang"
+        "user": "shenghan"
       }
     },
     "reportingGroup": "January, April, July, October",
@@ -2407,8 +2411,8 @@
         "hertzbeat",
         {
           "description": "Apache HertzBeat(incubating) is a real-time monitoring system...",
-          "last_update_int": 1750260884,
-          "last_update_txt": "<span style='color: #070;'>&lt;1 hour ago</span>"
+          "last_update_int": 1750264909,
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
         }
       ],
       [
@@ -2423,7 +2427,7 @@
     "resource": "hertzbeat",
     "sponsor": "Incubator",
     "startDate": "2024-04-05",
-    "statusAge": 0,
+    "statusAge": 1,
     "statusLastUpdated": "2025-06-18",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=hertzbeat.git;a=tree;hb=HEAD",
@@ -2437,6 +2441,10 @@
       [
         "18",
         "Has not provided a wiki link"
+      ],
+      [
+        "32",
+        "ASF Events link is missing from website"
       ],
       [
         "45",
@@ -2518,7 +2526,7 @@
         "hash": "sha512",
         "revision": "r73595",
         "size": "29878",
-        "user": "jiacai2050"
+        "user": "jiacai20"
       },
       "apache-horaedb-incubating-rust-client-v2.0.0-src.tar.gz": {
         "dtm": "11/26/2024",
@@ -2526,7 +2534,7 @@
         "hash": "sha512",
         "revision": "r73248",
         "size": "44718",
-        "user": "jiacai2050"
+        "user": "jiacai20"
       },
       "apache-horaedb-incubating-v2.0.0-src.tar.gz": {
         "dtm": "10/18/2024",
@@ -2534,7 +2542,7 @@
         "hash": "sha512",
         "revision": "r72397",
         "size": "1773049",
-        "user": "jiacai2050"
+        "user": "jiacai20"
       },
       "apache-horaedb-incubating-v2.1.0-src.tar.gz": {
         "dtm": "11/18/2024",
@@ -2542,7 +2550,7 @@
         "hash": "sha512",
         "revision": "r73123",
         "size": "1847402",
-        "user": "jiacai2050"
+        "user": "jiacai20"
       }
     },
     "reportingGroup": "February, May, August, November",
@@ -2553,7 +2561,7 @@
         {
           "description": "Apache HoraeDB (incubating) is a high-performance, distribute...",
           "last_update_int": 1748246122,
-          "last_update_txt": "23 days ago"
+          "last_update_txt": "24 days ago"
         }
       ],
       [
@@ -2585,7 +2593,7 @@
         {
           "description": "Apache HoraeDB (Incubating) Rust Client.",
           "last_update_int": 1749799079,
-          "last_update_txt": "5 days ago"
+          "last_update_txt": "6 days ago"
         }
       ],
       [
@@ -2616,7 +2624,7 @@
     "resource": "horaedb",
     "sponsor": "Incubator",
     "startDate": "2023-12-11",
-    "statusAge": 550,
+    "statusAge": 551,
     "statusLastUpdated": "2023-12-16",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=horaedb.git;a=tree;hb=HEAD",
@@ -2745,7 +2753,7 @@
         "hash": "sha512",
         "revision": "r68106",
         "size": "61662",
-        "user": "yangjiaqi"
+        "user": "yangjiaq"
       },
       "apache-hugegraph-ai-incubating-1.5.0-src.tar.gz": {
         "dtm": "12/01/2024",
@@ -2753,7 +2761,7 @@
         "hash": "sha512",
         "revision": "r73355",
         "size": "160824",
-        "user": "vgalaxies"
+        "user": "vgalaxie"
       },
       "apache-hugegraph-commons-incubating-1.0.0-src.tar.gz": {
         "dtm": "02/10/2023",
@@ -2777,7 +2785,7 @@
         "hash": "sha512",
         "revision": "r68039",
         "size": "176361",
-        "user": "yangjiaqi"
+        "user": "yangjiaq"
       },
       "apache-hugegraph-computer-incubating-1.0.0-src.tar.gz": {
         "dtm": "02/10/2023",
@@ -2809,7 +2817,7 @@
         "hash": "sha512",
         "revision": "r72940",
         "size": "404911",
-        "user": "vgalaxies"
+        "user": "vgalaxie"
       },
       "apache-hugegraph-incubating-1.0.0-src.tar.gz": {
         "dtm": "02/10/2023",
@@ -2849,7 +2857,7 @@
         "hash": "sha512",
         "revision": "r68081",
         "size": "1050204",
-        "user": "yangjiaqi"
+        "user": "yangjiaq"
       },
       "apache-hugegraph-incubating-1.3.0.tar.gz": {
         "dtm": "03/24/2024",
@@ -2857,7 +2865,7 @@
         "hash": "sha512",
         "revision": "r68087",
         "size": "322415353",
-        "user": "yangjiaqi"
+        "user": "yangjiaq"
       },
       "apache-hugegraph-incubating-1.5.0-src.tar.gz": {
         "dtm": "11/26/2024",
@@ -2865,7 +2873,7 @@
         "hash": "sha512",
         "revision": "r73281",
         "size": "1847760",
-        "user": "vgalaxies"
+        "user": "vgalaxie"
       },
       "apache-hugegraph-incubating-1.5.0.tar.gz": {
         "dtm": "11/26/2024",
@@ -2873,7 +2881,7 @@
         "hash": "sha512",
         "revision": "r73281",
         "size": "693543924",
-        "user": "vgalaxies"
+        "user": "vgalaxie"
       },
       "apache-hugegraph-toolchain-incubating-1.0.0-src.tar.gz": {
         "dtm": "02/10/2023",
@@ -2913,7 +2921,7 @@
         "hash": "sha512",
         "revision": "r68088",
         "size": "1387554",
-        "user": "yangjiaqi"
+        "user": "yangjiaq"
       },
       "apache-hugegraph-toolchain-incubating-1.3.0.tar.gz": {
         "dtm": "03/24/2024",
@@ -2921,7 +2929,7 @@
         "hash": "sha512",
         "revision": "r68088",
         "size": "555747047",
-        "user": "yangjiaqi"
+        "user": "yangjiaq"
       },
       "apache-hugegraph-toolchain-incubating-1.5.0-src.tar.gz": {
         "dtm": "11/10/2024",
@@ -2929,7 +2937,7 @@
         "hash": "sha512",
         "revision": "r72935",
         "size": "1392005",
-        "user": "vgalaxies"
+        "user": "vgalaxie"
       },
       "apache-hugegraph-toolchain-incubating-1.5.0.tar.gz": {
         "dtm": "11/10/2024",
@@ -2937,7 +2945,7 @@
         "hash": "sha512",
         "revision": "r72935",
         "size": "555773593",
-        "user": "vgalaxies"
+        "user": "vgalaxie"
       }
     },
     "reportingGroup": "January, April, July, October",
@@ -2956,7 +2964,7 @@
         {
           "description": "The integration of HugeGraph with AI/LLM & GraphRAG",
           "last_update_int": 1750250999,
-          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
         }
       ],
       [
@@ -2980,7 +2988,7 @@
         {
           "description": "HugeGraph Website and Doc",
           "last_update_int": 1749821364,
-          "last_update_txt": "5 days ago"
+          "last_update_txt": "6 days ago"
         }
       ],
       [
@@ -2988,7 +2996,7 @@
         {
           "description": "HugeGraph toolchain - include a series useful graph modules",
           "last_update_int": 1749552453,
-          "last_update_txt": "8 days ago"
+          "last_update_txt": "9 days ago"
         }
       ],
       [
@@ -3003,7 +3011,7 @@
     "resource": "hugegraph",
     "sponsor": "Incubator",
     "startDate": "2022-01-23",
-    "statusAge": 187,
+    "statusAge": 188,
     "statusLastUpdated": "2024-12-13",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-hugegraph.git;a=tree;hb=HEAD",
@@ -3106,7 +3114,7 @@
         {
           "description": "Apache Iggy: Hyper-Efficient Message Streaming at Laser Speed",
           "last_update_int": 1750189345,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
         }
       ],
       [
@@ -3114,14 +3122,14 @@
         {
           "description": "Apache Iggy (Incubating) Website",
           "last_update_int": 1749192119,
-          "last_update_txt": "12 days ago"
+          "last_update_txt": "13 days ago"
         }
       ]
     ],
     "resource": "iggy",
     "sponsor": "Incubator",
     "startDate": "2025-02-04",
-    "statusAge": 103,
+    "statusAge": 104,
     "statusLastUpdated": "2025-03-07",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=iggy.git;a=tree;hb=HEAD",
@@ -3704,7 +3712,7 @@
         {
           "description": "Apache Kie",
           "last_update_int": 1749964061,
-          "last_update_txt": "3 days ago"
+          "last_update_txt": "4 days ago"
         }
       ],
       [
@@ -3720,7 +3728,7 @@
         {
           "description": "Apache Kie",
           "last_update_int": 1749983882,
-          "last_update_txt": "3 days ago"
+          "last_update_txt": "4 days ago"
         }
       ],
       [
@@ -3736,7 +3744,7 @@
         {
           "description": "Apache Kie",
           "last_update_int": 1750080207,
-          "last_update_txt": "2 days ago"
+          "last_update_txt": "3 days ago"
         }
       ],
       [
@@ -3744,7 +3752,7 @@
         {
           "description": "Apache Kie",
           "last_update_int": 1749215299,
-          "last_update_txt": "12 days ago"
+          "last_update_txt": "13 days ago"
         }
       ],
       [
@@ -3792,7 +3800,7 @@
         {
           "description": "Apache Kie",
           "last_update_int": 1749971132,
-          "last_update_txt": "3 days ago"
+          "last_update_txt": "4 days ago"
         }
       ],
       [
@@ -3816,7 +3824,7 @@
         {
           "description": "Apache Kie",
           "last_update_int": 1749966534,
-          "last_update_txt": "3 days ago"
+          "last_update_txt": "4 days ago"
         }
       ],
       [
@@ -3848,24 +3856,28 @@
         {
           "description": "Apache KIE Website",
           "last_update_int": 1750198915,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>"
         }
       ]
     ],
     "resource": "kie",
     "sponsor": "Incubator",
     "startDate": "2023-01-13",
-    "statusAge": 491,
+    "statusAge": 492,
     "statusLastUpdated": "2024-02-13",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-kie-benchmarks.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/kie/KEYS",
       "svn": "",
       "tracker": "https://github.com/apache/incubator-kie-issues/issues",
-      "wiki": "https://cwiki.apache.org/confluence/display/KIE/Apache+KIE+Home",
+      "wiki": "",
       "www": "https://kie.apache.org"
     },
     "zFixMeList": [
+      [
+        "18",
+        "Has not provided a wiki link"
+      ],
       [
         "45",
         "54 is a large number of release distributions. Non-current releases should be removed"
@@ -4049,7 +4061,7 @@
         "hash": "sha512",
         "revision": "r24450",
         "size": "74117432",
-        "user": "ajbozarth"
+        "user": "ajbozart"
       },
       "livy-0.5.0-incubating-src.zip": {
         "dtm": "01/25/2018",
@@ -4057,7 +4069,7 @@
         "hash": "sha512",
         "revision": "r24450",
         "size": "995368",
-        "user": "ajbozarth"
+        "user": "ajbozart"
       }
     },
     "reportingGroup": "January, April, July, October",
@@ -4083,7 +4095,7 @@
     "resource": "livy",
     "sponsor": "Incubator",
     "startDate": "2017-06-05",
-    "statusAge": 2917,
+    "statusAge": 2918,
     "statusLastUpdated": "2017-06-23",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-livy.git;a=tree;hb=HEAD",
@@ -4225,7 +4237,7 @@
     "resource": "nemo",
     "sponsor": "Incubator",
     "startDate": "2018-02-04",
-    "statusAge": 2666,
+    "statusAge": 2667,
     "statusLastUpdated": "2018-03-01",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-nemo.git;a=tree;hb=HEAD",
@@ -4308,7 +4320,7 @@
         "hash": "sha256",
         "revision": "r45949",
         "size": "24186913",
-        "user": "aradzinski"
+        "user": "aradzins"
       },
       "apache-nlpcraft-incubating-0.7.5.zip": {
         "dtm": "05/16/2021",
@@ -4316,7 +4328,7 @@
         "hash": "sha256",
         "revision": "r47749",
         "size": "24434068",
-        "user": "aradzinski"
+        "user": "aradzins"
       },
       "apache-nlpcraft-incubating-0.8.0.zip": {
         "dtm": "06/11/2021",
@@ -4324,7 +4336,7 @@
         "hash": "sha256",
         "revision": "r48302",
         "size": "24433120",
-        "user": "aradzinski"
+        "user": "aradzins"
       },
       "apache-nlpcraft-incubating-0.9.0.zip": {
         "dtm": "08/06/2021",
@@ -4332,7 +4344,7 @@
         "hash": "sha256",
         "revision": "r49215",
         "size": "24483165",
-        "user": "aradzinski"
+        "user": "aradzins"
       },
       "apache-nlpcraft-incubating-1.0.0.zip": {
         "dtm": "02/25/2023",
@@ -4340,7 +4352,7 @@
         "hash": "sha256",
         "revision": "r60346",
         "size": "1940677",
-        "user": "sergeykamov"
+        "user": "sergeyka"
       },
       "apache-nlpcraft-java-client-incubating-0.7.2.zip": {
         "dtm": "12/15/2020",
@@ -4348,7 +4360,7 @@
         "hash": "sha256",
         "revision": "r44973",
         "size": "96071",
-        "user": "aradzinski"
+        "user": "aradzins"
       },
       "apache-nlpcraft-java-client-incubating-0.7.5.zip": {
         "dtm": "05/22/2021",
@@ -4356,7 +4368,7 @@
         "hash": "sha256",
         "revision": "r47868",
         "size": "97726",
-        "user": "aradzinski"
+        "user": "aradzins"
       },
       "apache-nlpcraft-java-client-incubating-0.9.0.zip": {
         "dtm": "08/22/2021",
@@ -4364,7 +4376,7 @@
         "hash": "sha256",
         "revision": "r49591",
         "size": "117451",
-        "user": "aradzinski"
+        "user": "aradzins"
       }
     },
     "reportingGroup": "February, May, August, November",
@@ -4375,7 +4387,7 @@
         {
           "description": "Apache NLPCraft - API to convert natural language into actions.",
           "last_update_int": 1747900236,
-          "last_update_txt": "27 days ago"
+          "last_update_txt": "28 days ago"
         }
       ],
       [
@@ -4406,7 +4418,7 @@
     "resource": "nlpcraft",
     "sponsor": "Incubator",
     "startDate": "2020-02-13",
-    "statusAge": 1714,
+    "statusAge": 1715,
     "statusLastUpdated": "2020-10-08",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-nlpcraft.git;a=tree;hb=HEAD",
@@ -4591,7 +4603,7 @@
         {
           "description": "Apache openserverless",
           "last_update_int": 1749710418,
-          "last_update_txt": "6 days ago"
+          "last_update_txt": "7 days ago"
         }
       ],
       [
@@ -4615,7 +4627,7 @@
         {
           "description": "Apache openserverless",
           "last_update_int": 1750257293,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
         }
       ],
       [
@@ -4631,7 +4643,7 @@
         {
           "description": "Apache openserverless",
           "last_update_int": 1749980358,
-          "last_update_txt": "3 days ago"
+          "last_update_txt": "4 days ago"
         }
       ],
       [
@@ -4654,7 +4666,7 @@
     "resource": "openserverless",
     "sponsor": "Incubator",
     "startDate": "2024-06-17",
-    "statusAge": 333,
+    "statusAge": 334,
     "statusLastUpdated": "2024-07-20",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=openserverless.git;a=tree;hb=HEAD",
@@ -4757,7 +4769,7 @@
     "resource": "otava",
     "sponsor": "Incubator",
     "startDate": "2024-11-27",
-    "statusAge": 84,
+    "statusAge": 85,
     "statusLastUpdated": "2025-03-26",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=otava.git;a=tree;hb=HEAD",
@@ -4907,7 +4919,7 @@
         {
           "description": "Apache OzHera is an About Application Observable Platform in ...",
           "last_update_int": 1750233219,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
         }
       ],
       [
@@ -4922,7 +4934,7 @@
     "resource": "ozhera",
     "sponsor": "Incubator",
     "startDate": "2024-07-11",
-    "statusAge": 9,
+    "statusAge": 10,
     "statusLastUpdated": "2025-06-09",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=ozhera.git;a=tree;hb=HEAD",
@@ -5052,7 +5064,7 @@
         {
           "description": "Apache Pegasus - A horizontally scalable, strongly consistent...",
           "last_update_int": 1750047122,
-          "last_update_txt": "2 days ago"
+          "last_update_txt": "3 days ago"
         }
       ],
       [
@@ -5060,14 +5072,14 @@
         {
           "description": "Apache Pegasus Website",
           "last_update_int": 1749107449,
-          "last_update_txt": "13 days ago"
+          "last_update_txt": "14 days ago"
         }
       ]
     ],
     "resource": "pegasus",
     "sponsor": "Incubator",
     "startDate": "2020-06-28",
-    "statusAge": 49,
+    "statusAge": 50,
     "statusLastUpdated": "2025-04-30",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-pegasus.git;a=tree;hb=HEAD",
@@ -5179,8 +5191,8 @@
         "polaris",
         {
           "description": "Apache Polaris, the interoperable, open source catalog for Ap...",
-          "last_update_int": 1750253330,
-          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>"
+          "last_update_int": 1750282067,
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
         }
       ],
       [
@@ -5196,14 +5208,14 @@
         {
           "description": "Apache Polaris Tools, additional tooling for Apache Polaris",
           "last_update_int": 1749713315,
-          "last_update_txt": "6 days ago"
+          "last_update_txt": "7 days ago"
         }
       ]
     ],
     "resource": "polaris",
     "sponsor": "Incubator",
     "startDate": "2024-08-09",
-    "statusAge": 295,
+    "statusAge": 296,
     "statusLastUpdated": "2024-08-27",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=polaris.git;a=tree;hb=HEAD",
@@ -5279,7 +5291,7 @@
         "hash": "sha256",
         "revision": "r33191",
         "size": "1055853",
-        "user": "humbedooh"
+        "user": "humbedoo"
       }
     },
     "reportingGroup": "January, April, July, October",
@@ -5321,7 +5333,7 @@
     "resource": "ponymail",
     "sponsor": "Incubator",
     "startDate": "2016-05-27",
-    "statusAge": 334,
+    "statusAge": 335,
     "statusLastUpdated": "2024-07-19",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-ponymail.git;a=tree;hb=HEAD",
@@ -5395,7 +5407,7 @@
     "resource": "pouchdb",
     "sponsor": "Incubator",
     "startDate": "2025-04-15",
-    "statusAge": 43,
+    "statusAge": 44,
     "statusLastUpdated": "2025-05-06",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf/pouchdb.git",
@@ -5711,7 +5723,7 @@
     "resource": "resilientdb",
     "sponsor": "Incubator",
     "startDate": "2023-10-21",
-    "statusAge": 433,
+    "statusAge": 434,
     "statusLastUpdated": "2024-04-11",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-resilientdb.git;a=tree;hb=HEAD",
@@ -5894,7 +5906,7 @@
         "incubator-seata",
         {
           "description": ":fire: Seata is an easy-to-use, high-performance, open source...",
-          "last_update_int": 1750246176,
+          "last_update_int": 1750264989,
           "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
         }
       ],
@@ -5903,7 +5915,7 @@
         {
           "description": "The operational tool for Seata-Server.",
           "last_update_int": 1749894576,
-          "last_update_txt": "4 days ago"
+          "last_update_txt": "5 days ago"
         }
       ],
       [
@@ -5911,7 +5923,7 @@
         {
           "description": "Go Implementation For Seata",
           "last_update_int": 1749974140,
-          "last_update_txt": "3 days ago"
+          "last_update_txt": "4 days ago"
         }
       ],
       [
@@ -5919,7 +5931,7 @@
         {
           "description": "Samples for seata-go",
           "last_update_int": 1749894524,
-          "last_update_txt": "4 days ago"
+          "last_update_txt": "5 days ago"
         }
       ],
       [
@@ -5927,7 +5939,7 @@
         {
           "description": "Seata Kubernetes Operations Tool",
           "last_update_int": 1749894488,
-          "last_update_txt": "4 days ago"
+          "last_update_txt": "5 days ago"
         }
       ],
       [
@@ -5950,7 +5962,7 @@
     "resource": "seata",
     "sponsor": "Incubator",
     "startDate": "2023-10-29",
-    "statusAge": 564,
+    "statusAge": 565,
     "statusLastUpdated": "2023-12-02",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-seata.git;a=tree;hb=HEAD",
@@ -6112,7 +6124,7 @@
         "hash": "sha512",
         "revision": "r59415",
         "size": "747235",
-        "user": "shaojunwang"
+        "user": "shaojunw"
       },
       "apache-teaclave-trustzone-sdk-0.1.0-incubating.tar.gz": {
         "dtm": "06/11/2021",
@@ -6202,7 +6214,7 @@
     "resource": "teaclave",
     "sponsor": "Incubator",
     "startDate": "2019-08-20",
-    "statusAge": 806,
+    "statusAge": 807,
     "statusLastUpdated": "2023-04-04",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-teaclave.git;a=tree;hb=HEAD",
@@ -6304,7 +6316,7 @@
     "resource": "texera",
     "sponsor": "Incubator",
     "startDate": "2025-04-12",
-    "statusAge": 63,
+    "statusAge": 64,
     "statusLastUpdated": "2025-04-16",
     "urls": {
       "git": "",
@@ -6484,7 +6496,7 @@
     "resource": "toree",
     "sponsor": "Incubator",
     "startDate": "2015-12-02",
-    "statusAge": 1795,
+    "statusAge": 1796,
     "statusLastUpdated": "2020-07-19",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-toree.git;a=tree;hb=HEAD",
@@ -6636,7 +6648,7 @@
     "resource": "training",
     "sponsor": "Incubator",
     "startDate": "2019-02-21",
-    "statusAge": 2302,
+    "statusAge": 2303,
     "statusLastUpdated": "2019-02-28",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-training.git;a=tree;hb=HEAD",
@@ -6747,7 +6759,7 @@
         "hash": "sha512",
         "revision": "r64121",
         "size": "6234288",
-        "user": "glauesppen"
+        "user": "glauespp"
       },
       "apache-wayang-incubating-1.0.0-source-release.zip": {
         "dtm": "02/04/2025",
@@ -6766,7 +6778,7 @@
         {
           "description": "Apache Wayang(incubating) is the first cross-platform data pr...",
           "last_update_int": 1750248275,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>"
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>"
         }
       ],
       [
@@ -6774,14 +6786,14 @@
         {
           "description": "Apache Wayang Website",
           "last_update_int": 1750075689,
-          "last_update_txt": "2 days ago"
+          "last_update_txt": "3 days ago"
         }
       ]
     ],
     "resource": "wayang",
     "sponsor": "Incubator",
     "startDate": "2020-12-16",
-    "statusAge": 1608,
+    "statusAge": 1609,
     "statusLastUpdated": "2021-01-22",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-wayang.git;a=tree;hb=HEAD",
@@ -6897,7 +6909,7 @@
     "resource": "xtable",
     "sponsor": "Incubator",
     "startDate": "2024-02-11",
-    "statusAge": 398,
+    "statusAge": 399,
     "statusLastUpdated": "2024-05-16",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-xtable.git;a=tree;hb=HEAD",
