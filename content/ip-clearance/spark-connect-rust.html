@@ -1,0 +1,190 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+               "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--
+  Licensed to the Apache Software Foundation (ASF) under one
+  or more contributor license agreements.  See the NOTICE file
+  distributed with this work for additional information
+  regarding copyright ownership.  The ASF licenses this file
+  to you under the Apache License, Version 2.0 (the
+  "License"); you may not use this file except in compliance
+  with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing,
+  software distributed under the License is distributed on an
+  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  KIND, either express or implied.  See the License for the
+  specific language governing permissions and limitations
+  under the License. 
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" href="../style/bootstrap-1-3-0-min.css" type="text/css" />
+  <link rel="stylesheet" href="../style/style.css" type="text/css" />
+  <script src="https://www.apachecon.com/event-images/snippet.js"></script>
+        <title>Spark Connect Rust Codebase Intellectual Property (IP) Clearance Status - Apache Incubator</title>
+  
+ </head>
+ <body>
+ <div class="container">
+  <div class="row"><div class="span6"><a href="https://www.apache.org/"><img src="http://www.apache.org/img/asf_logo.png" alt="The Apache Software Foundation" border="0" style="margin-top: 2px" height="88"/></a></div>
+<div class="span7"><a href="/"><img src="https://incubator.apache.org/images/incubator_feather_egg_logo_sm.png" alt="The Apache Software Foundation Incubator" border="0" style="margin-top: 2px" height="88"/></a></div>
+<div class="span2"><a href="https://www.apache.org/foundation/contributing.html"><img src="https://www.apache.org/images/SupportApache-small.png" height="100" width="100"/></a></div>
+</div>
+  <div class="row"><div class="span16"><hr noshade="noshade" size="1"/></div></div>
+  <div class="row">
+   <div class="span4">
+    <form action="http://www.google.com/search" method="get">
+     <input value="incubator.apache.org" name="sitesearch" type="hidden"/>
+     <input size="20" name="q" id="query" type="text" value="search..."
+      onclick="if(this.value == 'search...') {this.value = ''}"/>
+     <input name="Search" value="Go" type="submit"/>
+    </form>
+          <div class="menuheader">General</div>
+    <menu compact="compact">
+          <li><a href="../index.html">Welcome</a></li> 
+          <li><a href="../cookbook/">Incubator Cookbook</a></li> 
+          <li><a href="../policy/incubation.html">Incubation Policy</a></li> 
+          <li><a href="../guides/roles_and_responsibilities.html">Roles and Responsibilities</a></li> 
+          <li><a href="../faq.html">General FAQ</a></li> 
+          <li><a href="http://wiki.apache.org/incubator">Incubator Wiki</a></li> 
+          <li><a href="../whoweare.html">Who We Are</a></li> 
+            </menu>
+      <div class="menuheader">Status</div>
+    <menu compact="compact">
+          <li><a href="../projects">Project List</a></li> 
+          <li><a href="../clutch">Clutch Report</a></li> 
+          <li><a href="../ip-clearance">IP Clearance</a></li> 
+            </menu>
+      <div class="menuheader">Entry Guides</div>
+    <menu compact="compact">
+          <li><a href="../guides/proposal.html">Proposal Guide</a></li> 
+            </menu>
+      <div class="menuheader">Podling Guides</div>
+    <menu compact="compact">
+          <li><a href="../guides/committer.html">Podling Committers</a></li> 
+          <li><a href="../guides/ppmc.html">Podling PMC (PPMC)</a></li> 
+          <li><a href="../guides/mentor.html">Podling Mentor</a></li> 
+          <li><a href="../guides/releasemanagement.html">Podling Releases</a></li> 
+          <li><a href="../guides/branding.html">Podling Branding/Publicity</a></li> 
+          <li><a href="../guides/sites.html">Podling Websites</a></li> 
+          <li><a href="../guides/graduation.html">Graduation</a></li> 
+          <li><a href="../guides/retirement.html">Retirement</a></li> 
+            </menu>
+      <div class="menuheader">Other Guides</div>
+    <menu compact="compact">
+          <li><a href="../guides/participation.html">Participation</a></li> 
+          <li><a href="../faq.html">General FAQ</a></li> 
+          <li><a href="../guides/chair.html">IPMC Chair</a></li> 
+          <li><a href="../guides/lists.html">Mailing Lists</a></li> 
+          <li><a href="../guides/website.html">Incubator Website</a></li> 
+            </menu>
+      <div class="menuheader">ASF</div>
+    <menu compact="compact">
+          <li><a href="http://www.apache.org/foundation/how-it-works.html">How Apache Works</a></li> 
+          <li><a href="http://www.apache.org/dev/">Developer Documentation</a></li> 
+          <li><a href="http://www.apache.org/foundation/">Foundation</a></li> 
+          <li><a href="http://www.apache.org/foundation/sponsorship.html">Sponsor Apache</a></li> 
+          <li><a href="http://www.apache.org/foundation/thanks.html">Thanks</a></li> 
+            </menu>
+    <div id="menuheader">
+      <a class="acevent" data-format="square" data-width="135" data-mode="light" data-event="random"></a>
+    </div>
+   </div>
+   
+   <div class="span12">
+            <h2 id='Spark+Connect+Rust+Codebase+Intellectual+Property+%28IP%29+Clearance+Status'><img src="../images/redarrow.gif" />Spark Connect Rust Codebase Intellectual Property (IP) Clearance Status</h2>
+<div class="section-content">
+</div>
+        <h2 id='Description'><img src="../images/redarrow.gif" />Description</h2>
+<div class="section-content">
+<p>The <b>Spark Connect Rust</b> project is a native <i>Rust</i> client implementation of the <a href="https://spark.apache.org/docs/latest/spark-connect.html">Apache Spark Connect</a> protocol. It enables Rust applications to build DataFrame and Dataset queries and execute them remotely on Apache Spark clusters.</p>
+</div>
+        <h2 id='Project+info'><img src="../images/redarrow.gif" />Project info</h2>
+<div class="section-content">
+<ul>
+        <li><b>Receiving PMC:</b> Apache Spark</li>
+        <li><b>Officer / Member managing donation:</b> Yuanjian Li</li>
+        <li><b>Source codebase:</b> <a href="https://github.com/sjrusso8/spark-connect-rs">https://github.com/sjrusso8/spark-connect-rs</a></li>
+        <li><b>Target repository:</b> <a href="https://github.com/apache/spark-connect-rust">https://github.com/apache/spark-connect-rust</a></li>
+        <li><b>Spark PMC acceptance vote:</b> <a href="https://lists.apache.org/thread/mj3ggbsqhjr2lblffmyn1rq5zcfckcrn">https://lists.apache.org/thread/mj3ggbsqhjr2lblffmyn1rq5zcfckcrn</a></li>
+      </ul>
+</div>
+        <h2 id='Identify+the+codebase'><img src="../images/redarrow.gif" />Identify the codebase</h2>
+<div class="section-content">
+<table class="colortable" width="100%">
+        <tr>
+          <th>2025‑07‑16</th>
+          <th>Source code confirmed from <a href="https://github.com/sjrusso8/spark-connect-rs">GitHub repository</a>. Commit snapshot to be imported: <em>(bb520be066b48bfc1a6f712770003c7ec8c1adbc)</em>.</th>
+        </tr>
+      </table>
+<p>The donation comprises the entire history of the repository up to (and including) the commit referenced above. Any subsequent contributions will follow normal ASF processes.</p>
+</div>
+        <h2 id='Copyright'><img src="../images/redarrow.gif" />Copyright</h2>
+<div class="section-content">
+<table class="colortable" width="100%">
+        <tr>
+          <td>2025‑06‑25</td>
+          <td>Individual CLA filed – Steve Russo</td>
+        </tr>
+        <tr>
+          <td>2025‑06‑25</td>
+          <td>Individual CLA filed – Stephen Carman</td>
+        </tr>
+        <tr>
+          <td>2025‑07‑03</td>
+          <td>Individual CLA filed – Alexander Brassel</td>
+        </tr>
+        <tr>
+          <td>2025‑07‑04</td>
+          <td>Individual CLA filed – Irfan Ghat</td>
+        </tr>
+        <tr>
+          <td>2025‑07‑16</td>
+          <td>All donated files updated to include ASF copyright header where required.</td>
+        </tr>
+      </table>
+<p>No Software Grant Agreement (SGA) is necessary because every material contributor has filed an ICLA covering their work and no corporate entity asserts copyright ownership.</p>
+</div>
+        <h2 id='Verify+distribution+rights'><img src="../images/redarrow.gif" />Verify distribution rights</h2>
+<div class="section-content">
+<table class="colortable" width="100%">
+        <tr>
+          <td>2025‑07‑16</td>
+          <td>Apache RAT report run – no incompatible licenses found; NOTICE and LICENSE files prepared.</td>
+        </tr>
+        <tr>
+          <td>2025‑07‑16</td>
+          <td>All third‑party dependencies are under Apache‑compatible licenses (Apache‑2.0, MIT, BSD, or equivalent).</td>
+        </tr>
+      </table>
+</div>
+        <h2 id='Organizational+acceptance+of+responsibility+for+the+project'><img src="../images/redarrow.gif" />Organizational acceptance of responsibility for the project</h2>
+<div class="section-content">
+<p>The Apache Spark PMC has voted to accept responsibility for the maintenance and future development of this codebase.</p>
+<p>Incubator PMC lazy‑consensus vote to clear the donation <em>(pending)</em>.</p>
+<table class="colortable" width="100%">
+        <tr>
+          <td><b>PENDING</b></td>
+          <td>Incubator PMC vote thread: (to be added after vote starts)</td>
+        </tr>
+      </table>
+</div>
+       </div>
+   </div>
+  
+   <div class="row"><div class="span16"><hr noshade="noshade" size="1"/></div></div>
+  <div class="row">
+   <div class="span16 footer">
+     Copyright &#169; 2009-2025 The Apache Software Foundation<br />
+     Licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License, Version 2.0</a>.<br/>
+     Apache Incubator, Apache, the Apache feather logo, and the Apache Incubator project logo are trademarks of The Apache Software Foundation.
+     
+     
+    </div>
+  </div>
+ </div> 
+ </body>
+</html>
