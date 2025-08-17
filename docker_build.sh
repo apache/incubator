@@ -11,7 +11,10 @@ function fatal() {
 # This is necessary to ensure the server accepts external requests
 # (The documentation says to use localhost, but that does not work)
 
-case "$1" in
+OPT=$1
+shift
+
+case "$OPT" in
     -s)
     # just serve the site
     docker run --rm \
@@ -36,7 +39,7 @@ case "$1" in
         -u jbake \
         -v "$PWD":/mnt/site \
         -e 'JBAKE_OPTS="-Djavax.xml.accessExternalDTD=http,https"' \
-        jbake/jbake:latest || fatal "Build failed, exiting"
+        jbake/jbake:latest "$@" || fatal "Build failed, exiting"
     ;;
     *) echo "Valid options are: -b (bake), -s (serve), -bs (bake and serve)"
     ;;
