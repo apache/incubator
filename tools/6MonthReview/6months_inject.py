@@ -127,7 +127,7 @@ def suggested_scores(row: Dict[str, Any]) -> Dict[str, int]:
 
     # -------- Releases & ASF Process (evidence-based) --------
     # 2 = dev@ release vote held; 1 = general@ mention OR process readiness (reports+sign-offs)
-    if dev_rel >= 1:
+    if dev_rel >= 2:
         scores["releases"] = 2
     elif gen_rel >= 1 or (reports_count >= 3 and avg_signoffs >= 1.5):
         scores["releases"] = 1
@@ -135,10 +135,9 @@ def suggested_scores(row: Dict[str, Any]) -> Dict[str, int]:
         scores["releases"] = 0
 
     # -------- Mentor Engagement (0–2 by avg sign-offs per report) --------
-    # Keep scale as requested: 0 / 1 / 2 for <1.0 / >=1.0 / >=2.0
-    if reports_count > 0 and avg_signoffs >= 2.0:
+    if reports_count > 3 and avg_signoffs >= 3.0:
         scores["mentors"] = 2
-    elif reports_count > 0 and avg_signoffs >= 1.0:
+    elif reports_count > 3 and avg_signoffs >= 1.0:
         scores["mentors"] = 1
     else:
         scores["mentors"] = 0
