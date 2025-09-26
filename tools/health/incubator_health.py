@@ -20,6 +20,7 @@ import csv
 import datetime as dt
 import math
 import os
+import time
 import random
 import re
 import statistics
@@ -27,6 +28,8 @@ import sys
 from dataclasses import dataclass
 from typing import Dict, List, Optional, Tuple
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from datetime import datetime, UTC
+from requests.exceptions import RequestException
 
 import requests
 import xml.etree.ElementTree as ET
@@ -42,6 +45,10 @@ AVG_DAYS_PER_MONTH = 30.44  # for rate normalization
 # Trend guards
 MIN_DAYS_FOR_WINDOW = 28
 MIN_EVENTS_FOR_TREND = 5
+
+CACHE_DIR = ".mbox_cache"
+os.makedirs(CACHE_DIR, exist_ok=True)
+CACHE_TTL_SECONDS_CURRENT_MONTH = 24 * 60 * 60  # 24 hours
 
 # ---------------- CLI ----------------
 
@@ -104,12 +111,35 @@ def window_days(start: dt.datetime, end: dt.datetime) -> int:
     return max(1, (end - start).days + 1)
 
 def canonical_repo(repo: str) -> str:
-    url = f"https://api.github.com/repos/{repo}"
-    r = requests.get(url, headers=gh_headers(), timeout=15)
-    if r.status_code == 404:
-        return repo  # leave unchanged if it truly doesn't exist
-    r.raise_for_status()
-    return r.json().get("full_name", repo)
+    def probe(r: str) -> str:
+        url = f"https://api.github.com/repos/{r}"
+        try:
+            resp = requests.get(url, headers=gh_headers(), timeout=20)
+        except RequestException:
+            return ""  # network issue → no change
+        if resp.status_code == 200:
+            return resp.json().get("full_name", r)
+        return ""  # 404/403/etc.
+
+    # 1) try as-is
+    hit = probe(repo)
+    if hit:
+        return hit
+
+    # 2) toggle "incubator-" once
+    try:
+        owner, name = repo.split("/", 1)
+    except ValueError:
+        return repo  # malformed; give up
+
+    if name.startswith("incubator-"):
+        alt = f"{owner}/{name[len('incubator-'):]}"
+    else:
+        alt = f"{owner}/incubator-{name}"
+
+    hit = probe(alt)
+    return hit or repo
+
 
 # ---------------- Trend arrows & scoring ----------------
 
@@ -365,9 +395,9 @@ def get_podling_start_date(root: ET.Element, name: str) -> Optional[dt.date]:
     target = name.lower()
     for el in root.findall(".//podling[@status='current']"):
         if el.attrib.get("name", "").lower() == target:
-            val = el.attrib.get("start")
-            if val:
-                return dt.date.fromisoformat(val[:10])
+            startdate = (el.attrib.get("startdate") or "").strip()
+            if startdate:
+                return dt.date.fromisoformat(startdate[:10])
     return None
 
 # ---------------- Mailing lists (release detection + activity) ----------------
@@ -389,14 +419,47 @@ def month_iter(start_date: dt.date, end_date: dt.date):
 def fetch_month_mbox(list_slug: str, y: int, m: int, debug: bool=False) -> Optional[bytes]:
     mm = f"{y}{m:02d}.mbox"
     url = f"{MOD_MBOX_BASE}/{list_slug}/{mm}"
+    cache_path = os.path.join(CACHE_DIR, f"{list_slug.replace('/', '_')}-{mm}")
+
+    now = datetime.now(UTC)
+    is_current = (y == now.year and m == now.month)
+
+    # Use cache if available:
+    if os.path.exists(cache_path):
+        if not is_current:
+            log(f"[lists] cached {cache_path}", debug)
+            with open(cache_path, "rb") as f:
+                return f.read()
+        else:
+            age = time.time() - os.path.getmtime(cache_path)
+            if age <= CACHE_TTL_SECONDS_CURRENT_MONTH:
+                log(f"[lists] cached (fresh) {cache_path}", debug)
+                with open(cache_path, "rb") as f:
+                    return f.read()
+
+    log(f"[lists] fetch {url}", debug)
     try:
         r = requests.get(url, timeout=30)
         if r.status_code == 404:
             return None
         r.raise_for_status()
-        return r.content
+        data = r.content
+        # Cache both current and past months (current month valid for 24h)
+        try:
+            with open(cache_path, "wb") as f:
+                f.write(data)
+        except Exception as e:
+            log(f"[lists] cache write fail {cache_path}: {e}", debug)
+        return data
     except Exception as e:
         log(f"[lists] fetch fail {url}: {e}", debug)
+        # Fallback to any existing (even stale) cache if fetch failed
+        if os.path.exists(cache_path):
+            try:
+                with open(cache_path, "rb") as f:
+                    return f.read()
+            except Exception:
+                pass
         return None
 
 def fast_scan_mbox_headers(mbox_bytes: bytes):
@@ -792,72 +855,6 @@ def select_windows_strict(today: dt.date, start_date: Optional[dt.date]) -> List
         wins.append(("12m", dt.datetime.combine(months_ago(today, 12), dt.time.min), dt.datetime.combine(today, dt.time.max)))
     return wins
 
-# ---------------- Summary scoring ----------------
-
-def composite_activity_score(short: "WindowMetrics", longw: "WindowMetrics") -> int:
-    scores: List[int] = []
-
-    def up(c, p):        scores.append(trend_score(c, p, lower_is_better=False))
-    def improve(c, p):   scores.append(trend_score(c, p, lower_is_better=True))
-
-    def guarded_rate(count: Optional[int], w: "WindowMetrics") -> Optional[float]:
-        if count is None:
-            return None
-        d = window_days(w.start, w.end)
-        if d < MIN_DAYS_FOR_WINDOW or count < MIN_EVENTS_FOR_TREND:
-            return None
-        return rate_per_month(count, w.start, w.end)
-
-    def up_rate(c_val, c_w, p_val, p_w):
-        scores.append(trend_score(
-            guarded_rate(c_val, c_w),
-            guarded_rate(p_val, p_w),
-            lower_is_better=False
-        ))
-
-    # Count metrics as rates (GUARDED)
-    up_rate(short.release_count, short, longw.release_count, longw)
-    up_rate(short.new_contributors, short, longw.new_contributors, longw)
-    up_rate(short.unique_committers, short, longw.unique_committers, longw)
-    up_rate(short.commits, short, longw.commits, longw)
-    up_rate(short.issues_opened, short, longw.issues_opened, longw)
-    up_rate(short.issues_closed, short, longw.issues_closed, longw)
-    up_rate(short.prs_opened, short, longw.prs_opened, longw)
-    up_rate(short.prs_merged, short, longw.prs_merged, longw)
-    up_rate(short.dev_messages, short, longw.dev_messages, longw)
-    up_rate(short.dev_unique_posters, short, longw.dev_unique_posters, longw)
-
-    # Diversity throughput proxies (counts → per-month, GUARDED)
-    up_rate(short.reviewer_unique_sampled, short, longw.reviewer_unique_sampled, longw)
-    up_rate(short.pr_author_unique_sampled, short, longw.pr_author_unique_sampled, longw)
-
-    # Latencies & indices (not event-count based)
-    improve(short.pr_median_merge_days or 0, longw.pr_median_merge_days or 0)
-    improve(short.release_median_days_between or 0, longw.release_median_days_between or 0)
-    up(short.bus_factor_50 or 0, longw.bus_factor_50 or 0)
-    up(short.bus_factor_75 or 0, longw.bus_factor_75 or 0)
-    up(short.reviewer_diversity_effective or 0, longw.reviewer_diversity_effective or 0)
-    up(short.pr_author_diversity_effective or 0, longw.pr_author_diversity_effective or 0)
-
-    nonzero = [s for s in scores if s != 0]
-    if not nonzero:
-        return 0
-    mean = sum(nonzero) / len(nonzero)
-
-    mag = abs(mean)
-    if mag < 0.5:
-        return 0
-    elif mag < 1.5:
-        n = 1
-    elif mag < 2.5:
-        n = 2
-    else:
-        n = 3
-    return n if mean > 0 else -n
-
-def arrows_from(score: int) -> str:
-    return "→" if score == 0 else ("↗" * min(3, abs(score)) if score > 0 else "↘" * min(3, abs(score)))
-
 # ---------------- Markdown (per-podling) ----------------
 
 def render_md(podling: str, today: dt.date, windows: List["WindowMetrics"]) -> str:
@@ -1141,7 +1138,7 @@ def main():
 
         # Markdown per podling
         if args.all:
-            out_path = os.path.join(args.out_md_dir, f"health_{re.sub(r'[^A-Za-z0-9_-]+','_', podling)}.md")
+            out_path = os.path.join(args.out_md_dir, f"{re.sub(r'[^A-Za-z0-9_-]+','_', podling)}.md")
             with open(out_path, "w", encoding="utf-8") as f:
                 f.write(render_md(podling, today, windows))
             log(f"  [write] {out_path}", args.debug)
@@ -1153,29 +1150,9 @@ def main():
             else:
                 print(render_md(podling, today, windows))
 
-        # Collect summary score (short vs long) for SUMMARY.md
-        if len(windows) >= 2:
-            short = windows[0]
-            longw = windows[2] if len(windows) > 2 else windows[-1]
-            score = composite_activity_score(short, longw)
-            summary_rows.append((podling, score))
-
     if csv_file:
         csv_file.close()
         log(f"[write] CSV -> {args.out_csv}", args.debug)
-
-    # SUMMARY.md in --all mode
-    if args.all:
-        summary_path = os.path.join(args.out_md_dir, "SUMMARY.md")
-        rows_sorted = sorted(summary_rows, key=lambda x: x[0].lower())
-        def arrows_from_local(score: int) -> str:
-            return "→" if score == 0 else ("↗" * min(3, abs(score)) if score > 0 else "↘" * min(3, abs(score)))
-        lines = ["# Incubator Activity Summary", f"_Generated on {today.isoformat()}_", "", "| Podling | Activity |", "|---|---|"]
-        for name, score in rows_sorted:
-            lines.append(f"| {name} | {arrows_from_local(score)} |")
-        with open(summary_path, "w", encoding="utf-8") as f:
-            f.write("\n".join(lines))
-        log(f"[write] {summary_path}", args.debug)
 
     print(f"[done] processed podlings: {len(podlings)}")
 
