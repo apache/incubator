@@ -28,8 +28,9 @@ import sys
 from dataclasses import dataclass
 from typing import Dict, List, Optional, Tuple
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from datetime import datetime, UTC
+from datetime import datetime, UTC, timezone
 from requests.exceptions import RequestException
+from typing import Dict
 
 import requests
 import xml.etree.ElementTree as ET
@@ -193,10 +194,59 @@ def gh_headers() -> Dict[str, str]:
         h["Authorization"] = f"Bearer {tok}"
     return h
 
-def gh_get(url: str, params: Dict[str, str] | None = None) -> requests.Response:
-    r = requests.get(url, headers=gh_headers(), params=params or {}, timeout=30)
-    r.raise_for_status()
-    return r
+def _parse_reset(headers) -> int:
+    """Return seconds until primary rate limit reset, or 0 if unknown."""
+    try:
+        rst = int(headers.get("X-RateLimit-Reset", "0"))
+        return max(0, rst - int(datetime.now(tz=timezone.utc).timestamp()))
+    except Exception:
+        return 0
+
+def gh_get(url: str, params: Dict[str, str] | None = None, max_retries: int = 6) -> requests.Response:
+    """GitHub GET with handling for primary & secondary rate limits."""
+    for attempt in range(max_retries):
+        resp = requests.get(url, headers=gh_headers(), params=params or {}, timeout=30)
+
+        if resp.status_code < 400:
+            return resp
+
+        msg = ""
+        try:
+            msg = resp.json().get("message", "")
+        except Exception:
+            pass
+
+        # --- Primary rate limit (X-RateLimit-Remaining == 0) ---
+        if resp.status_code == 403 and "rate limit" in msg.lower():
+            sleep_s = _parse_reset(resp.headers) or 60
+            print(f"[gh] primary rate limit hit, sleeping {sleep_s}s")
+            time.sleep(sleep_s + 2)
+            continue
+
+        # --- Secondary rate limit / abuse detection ---
+        if resp.status_code in (403, 429):
+            retry_after = resp.headers.get("Retry-After")
+            if retry_after:
+                sleep_s = int(retry_after)
+                print(f"[gh] secondary rate limit, sleeping {sleep_s}s (Retry-After)")
+            else:
+                base_sleep = 2 ** attempt
+                sleep_s = random.uniform(base_sleep, base_sleep * 1.5)
+                print(f"[gh] secondary rate limit, backing off {sleep_s:.1f}s (attempt {attempt+1})")
+            time.sleep(sleep_s)
+            continue
+
+        # --- Other 5xx transient errors ---
+        if 500 <= resp.status_code < 600:
+            sleep_s = min(60, 2 ** attempt)
+            print(f"[gh] server error {resp.status_code}, retrying in {sleep_s}s")
+            time.sleep(sleep_s)
+            continue
+
+        # --- Other client errors (not retryable) ---
+        resp.raise_for_status()
+
+    raise RuntimeError(f"GitHub GET failed after {max_retries} attempts: {url}")
 
 def gh_paginate(url: str, params: Dict[str, str]) -> List[dict]:
     out: List[dict] = []
