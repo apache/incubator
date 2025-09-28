@@ -85,6 +85,7 @@
 		<li><a href="https://www.apache.org/events/current-event">Current Events</a></li>
               </ul>
             </li>
+             <li><a href="/training/index.html">Training</a></li>
             <li><a href="/faq.html">FAQs</a></li>
           </ul>
         </div><!--/.nav-collapse -->
