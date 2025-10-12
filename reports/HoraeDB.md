@@ -1,5 +1,5 @@
 # HoraeDB — Incubator Health (Reports + GitHub + Mailing Lists)
-_Generated on 2025-09-27_
+_Generated on 2025-10-12_
 
 **Windows:** 3m, 6m, 12m
 
@@ -40,35 +40,35 @@ _Generated on 2025-09-27_
 - **Unique PR authors (sampled):** 0 (—)
 
 ## Window Details
-### 3m  (2025-06-27 → 2025-09-27)
+### 3m  (2025-07-12 → 2025-10-12)
 - **Releases (from list votes/results):** 0  |  **Median gap (days):** —
 - **New contributors:** 0  |  **Unique committers:** 0  |  **Commits:** 0
 - **Issues:** opened 0 / closed 0
 - **PRs:** opened 2 / merged 0  |  **Median merge time (days):** —
 - **Reviews (sampled):** median reviewers/PR **—**  |  reviewer diversity (eff.#) **—**  |  PR author diversity (eff.#) **—**  |  unique reviewers **0**, unique authors **0**
 - **Bus factor proxy (50% / 75%):** — / —
-- **Incubator reports:** 0  |  **Avg mentor sign-offs:** —
+- **Incubator reports:** 1  |  **Avg mentor sign-offs:** 1.0
 - **Mailing lists:** dev messages **5**, dev unique posters **4**
 
-### 6m  (2025-03-27 → 2025-09-27)
+### 6m  (2025-04-12 → 2025-10-12)
 - **Releases (from list votes/results):** 0  |  **Median gap (days):** —
 - **New contributors:** 0  |  **Unique committers:** 2  |  **Commits:** 4
 - **Issues:** opened 0 / closed 1
 - **PRs:** opened 4 / merged 2  |  **Median merge time (days):** 6.0
 - **Reviews (sampled):** median reviewers/PR **1.0**  |  reviewer diversity (eff.#) **2.0**  |  PR author diversity (eff.#) **2.0**  |  unique reviewers **2**, unique authors **2**
 - **Bus factor proxy (50% / 75%):** 1 / 1
-- **Incubator reports:** 2  |  **Avg mentor sign-offs:** 2.0
+- **Incubator reports:** 3  |  **Avg mentor sign-offs:** 1.67
 - **Mailing lists:** dev messages **6**, dev unique posters **4**
 
-### 12m  (2024-09-27 → 2025-09-27)
+### 12m  (2024-10-12 → 2025-10-12)
 - **Releases (from list votes/results):** 4  |  **Median gap (days):** 16
-- **New contributors:** 1  |  **Unique committers:** 8  |  **Commits:** 57
-- **Issues:** opened 9 / closed 99
-- **PRs:** opened 46 / merged 46  |  **Median merge time (days):** 0.9
-- **Reviews (sampled):** median reviewers/PR **1.0**  |  reviewer diversity (eff.#) **3.29**  |  PR author diversity (eff.#) **2.76**  |  unique reviewers **8**, unique authors **8**
+- **New contributors:** 1  |  **Unique committers:** 7  |  **Commits:** 56
+- **Issues:** opened 8 / closed 99
+- **PRs:** opened 45 / merged 45  |  **Median merge time (days):** 0.9
+- **Reviews (sampled):** median reviewers/PR **1**  |  reviewer diversity (eff.#) **3.33**  |  PR author diversity (eff.#) **2.64**  |  unique reviewers **8**, unique authors **7**
 - **Bus factor proxy (50% / 75%):** 1 / 3
-- **Incubator reports:** 3  |  **Avg mentor sign-offs:** 2.0
-- **Mailing lists:** dev messages **41**, dev unique posters **15**
+- **Incubator reports:** 4  |  **Avg mentor sign-offs:** 1.75
+- **Mailing lists:** dev messages **40**, dev unique posters **14**
 
 ## Reading the Indicators
 - **Use trend arrows** to compare available windows; when a window lacks ≥28 days or ≥5 events, trends show **—**.

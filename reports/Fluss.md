@@ -1,18 +1,18 @@
 # Fluss — Incubator Health (Reports + GitHub + Mailing Lists)
-_Generated on 2025-09-27_
+_Generated on 2025-10-12_
 
 **Windows:** 3m
 
 ## Window Details
-### 3m  (2025-06-27 → 2025-09-27)
+### 3m  (2025-07-12 → 2025-10-12)
 - **Releases (from list votes/results):** 1  |  **Median gap (days):** —
-- **New contributors:** 22  |  **Unique committers:** 38  |  **Commits:** 233
-- **Issues:** opened 235 / closed 176
-- **PRs:** opened 307 / merged 222  |  **Median merge time (days):** 1.9
-- **Reviews (sampled):** median reviewers/PR **1.0**  |  reviewer diversity (eff.#) **3.61**  |  PR author diversity (eff.#) **15.06**  |  unique reviewers **15**, unique authors **27**
+- **New contributors:** 18  |  **Unique committers:** 37  |  **Commits:** 219
+- **Issues:** opened 219 / closed 176
+- **PRs:** opened 270 / merged 213  |  **Median merge time (days):** 4.7
+- **Reviews (sampled):** median reviewers/PR **1.0**  |  reviewer diversity (eff.#) **4.18**  |  PR author diversity (eff.#) **17.42**  |  unique reviewers **16**, unique authors **27**
 - **Bus factor proxy (50% / 75%):** 6 / 11
 - **Incubator reports:** 1  |  **Avg mentor sign-offs:** 4.0
-- **Mailing lists:** dev messages **283**, dev unique posters **27**
+- **Mailing lists:** dev messages **237**, dev unique posters **27**
 
 ## Reading the Indicators
 - **Use trend arrows** to compare available windows; when a window lacks ≥28 days or ≥5 events, trends show **—**.
