@@ -1,18 +1,18 @@
 # BifroMQ — Incubator Health (Reports + GitHub + Mailing Lists)
-_Generated on 2025-09-27_
+_Generated on 2025-10-12_
 
 **Windows:** 3m
 
 ## Window Details
-### 3m  (2025-06-27 → 2025-09-27)
+### 3m  (2025-07-12 → 2025-10-12)
 - **Releases (from list votes/results):** 0  |  **Median gap (days):** —
-- **New contributors:** 1  |  **Unique committers:** 5  |  **Commits:** 25
-- **Issues:** opened 5 / closed 6
-- **PRs:** opened 25 / merged 25  |  **Median merge time (days):** 0.3
-- **Reviews (sampled):** median reviewers/PR **1**  |  reviewer diversity (eff.#) **3.28**  |  PR author diversity (eff.#) **2.68**  |  unique reviewers **5**, unique authors **5**
-- **Bus factor proxy (50% / 75%):** 1 / 3
-- **Incubator reports:** 1  |  **Avg mentor sign-offs:** 2.0
-- **Mailing lists:** dev messages **81**, dev unique posters **8**
+- **New contributors:** 1  |  **Unique committers:** 5  |  **Commits:** 23
+- **Issues:** opened 7 / closed 5
+- **PRs:** opened 23 / merged 23  |  **Median merge time (days):** 0.3
+- **Reviews (sampled):** median reviewers/PR **1**  |  reviewer diversity (eff.#) **3.09**  |  PR author diversity (eff.#) **2.37**  |  unique reviewers **4**, unique authors **5**
+- **Bus factor proxy (50% / 75%):** 1 / 2
+- **Incubator reports:** 2  |  **Avg mentor sign-offs:** 1.5
+- **Mailing lists:** dev messages **79**, dev unique posters **8**
 
 ## Reading the Indicators
 - **Use trend arrows** to compare available windows; when a window lacks ≥28 days or ≥5 events, trends show **—**.

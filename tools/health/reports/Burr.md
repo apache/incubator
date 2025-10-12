@@ -1,18 +1,18 @@
 # Burr — Incubator Health (Reports + GitHub + Mailing Lists)
-_Generated on 2025-09-27_
+_Generated on 2025-10-12_
 
 **Windows:** 3m
 
 ## Window Details
-### 3m  (2025-06-27 → 2025-09-27)
+### 3m  (2025-07-12 → 2025-10-12)
 - **Releases (from list votes/results):** 0  |  **Median gap (days):** —
-- **New contributors:** 4  |  **Unique committers:** 7  |  **Commits:** 13
-- **Issues:** opened 4 / closed 4
-- **PRs:** opened 20 / merged 12  |  **Median merge time (days):** 1.0
-- **Reviews (sampled):** median reviewers/PR **1.0**  |  reviewer diversity (eff.#) **3.17**  |  PR author diversity (eff.#) **3.57**  |  unique reviewers **5**, unique authors **5**
+- **New contributors:** 3  |  **Unique committers:** 5  |  **Commits:** 6
+- **Issues:** opened 4 / closed 2
+- **PRs:** opened 16 / merged 6  |  **Median merge time (days):** 9.2
+- **Reviews (sampled):** median reviewers/PR **1.0**  |  reviewer diversity (eff.#) **3.12**  |  PR author diversity (eff.#) **4.5**  |  unique reviewers **5**, unique authors **5**
 - **Bus factor proxy (50% / 75%):** 2 / 4
-- **Incubator reports:** 1  |  **Avg mentor sign-offs:** 2.0
-- **Mailing lists:** dev messages **11**, dev unique posters **6**
+- **Incubator reports:** 2  |  **Avg mentor sign-offs:** 2.0
+- **Mailing lists:** dev messages **8**, dev unique posters **5**
 
 ## Reading the Indicators
 - **Use trend arrows** to compare available windows; when a window lacks ≥28 days or ≥5 events, trends show **—**.
