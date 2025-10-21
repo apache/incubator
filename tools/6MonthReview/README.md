@@ -1,4 +1,4 @@
-# Apache Incubator 6-Month Review — README
+# Apache Incubator 6-Month Review
 
 This README explains how to review and update the **auto-generated 6-Month Podling Review reports** used by the Apache Incubator.  
 
