@@ -92,8 +92,7 @@ The outputs are meant to **support podling reporting and mentor guidance**, not 
 - **In podling reports**, aim to tell the **story of the community**, not just the activity metrics.  
   Use these results as a **cross-check** to help identify trends and prompt reflection.
 
-For guidance on what podling reports should contain, see the ASF Incubator reporting guide:  
-👉 [Apache Project Reporting Guide](https://cwiki.apache.org/confluence/x/_gnxFg)
+For guidance on what podling reports should contain, see the [ASF Incubator reporting guide](https://cwiki.apache.org/confluence/display/INCUBATOR/Reporting+Guide).
 
 ## Interpreting results
 
