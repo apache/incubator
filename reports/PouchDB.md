@@ -1,5 +1,5 @@
 # PouchDB — Incubator Health (Reports + GitHub + Mailing Lists)
-_Generated on 2025-10-12_
+_Generated on 2025-10-23_
 
 **Windows:** 3m, 6m
 
@@ -40,24 +40,24 @@ _Generated on 2025-10-12_
 - **Unique PR authors (sampled):** 0 (—)
 
 ## Window Details
-### 3m  (2025-07-12 → 2025-10-12)
+### 3m  (2025-07-23 → 2025-10-23)
 - **Releases (from list votes/results):** 0  |  **Median gap (days):** —
 - **New contributors:** 0  |  **Unique committers:** 0  |  **Commits:** 0
 - **Issues:** opened 0 / closed 0
 - **PRs:** opened 0 / merged 0  |  **Median merge time (days):** —
 - **Reviews (sampled):** median reviewers/PR **—**  |  reviewer diversity (eff.#) **—**  |  PR author diversity (eff.#) **—**  |  unique reviewers **0**, unique authors **0**
 - **Bus factor proxy (50% / 75%):** — / —
-- **Incubator reports:** 1  |  **Avg mentor sign-offs:** 1.0
+- **Incubator reports:** 1  |  **Avg mentor sign-offs:** 2.0
 - **Mailing lists:** dev messages **21**, dev unique posters **10**
 
-### 6m  (2025-04-12 → 2025-10-12)
+### 6m  (2025-04-23 → 2025-10-23)
 - **Releases (from list votes/results):** 0  |  **Median gap (days):** —
 - **New contributors:** 0  |  **Unique committers:** 0  |  **Commits:** 0
 - **Issues:** opened 0 / closed 0
 - **PRs:** opened 0 / merged 0  |  **Median merge time (days):** —
 - **Reviews (sampled):** median reviewers/PR **—**  |  reviewer diversity (eff.#) **—**  |  PR author diversity (eff.#) **—**  |  unique reviewers **0**, unique authors **0**
 - **Bus factor proxy (50% / 75%):** — / —
-- **Incubator reports:** 3  |  **Avg mentor sign-offs:** 1.33
+- **Incubator reports:** 4  |  **Avg mentor sign-offs:** 1.5
 - **Mailing lists:** dev messages **23**, dev unique posters **10**
 
 ## Reading the Indicators
