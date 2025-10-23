@@ -1,18 +1,18 @@
 # Auron — Incubator Health (Reports + GitHub + Mailing Lists)
-_Generated on 2025-10-12_
+_Generated on 2025-10-23_
 
 **Windows:** to-date
 
 ## Window Details
-### to-date  (2025-08-05 → 2025-10-12)
+### to-date  (2025-08-05 → 2025-10-23)
 - **Releases (from list votes/results):** 1  |  **Median gap (days):** —
-- **New contributors:** 6  |  **Unique committers:** 14  |  **Commits:** 187
-- **Issues:** opened 107 / closed 93
-- **PRs:** opened 225 / merged 187  |  **Median merge time (days):** 0.7
-- **Reviews (sampled):** median reviewers/PR **2.0**  |  reviewer diversity (eff.#) **4.44**  |  PR author diversity (eff.#) **5.96**  |  unique reviewers **11**, unique authors **11**
-- **Bus factor proxy (50% / 75%):** 3 / 5
-- **Incubator reports:** 0  |  **Avg mentor sign-offs:** —
-- **Mailing lists:** dev messages **28**, dev unique posters **12**
+- **New contributors:** 6  |  **Unique committers:** 15  |  **Commits:** 214
+- **Issues:** opened 135 / closed 119
+- **PRs:** opened 263 / merged 214  |  **Median merge time (days):** 0.8
+- **Reviews (sampled):** median reviewers/PR **2.0**  |  reviewer diversity (eff.#) **4.63**  |  PR author diversity (eff.#) **5.98**  |  unique reviewers **10**, unique authors **10**
+- **Bus factor proxy (50% / 75%):** 3 / 6
+- **Incubator reports:** 1  |  **Avg mentor sign-offs:** 4.0
+- **Mailing lists:** dev messages **31**, dev unique posters **13**
 
 ## Reading the Indicators
 - **Use trend arrows** to compare available windows; when a window lacks ≥28 days or ≥5 events, trends show **—**.
