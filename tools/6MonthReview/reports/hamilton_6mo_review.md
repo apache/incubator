@@ -25,7 +25,7 @@ Each category is scored **0–2**.
 ## Auto-filled Metrics (last 90 days)
 - **Start Date:** 2025-04-12  |  **Age:** 6 months  
 - **PPMC / Committers:** 9 / 9  
-- **New PPMC / Committers:**  /   
+- **New PPMC / Committers:**  0 / 9  
 - **Mentors / Reports / Sign-offs:** 3 / 4 / 7  
 - **Unique Posters (dev@):** 11  
 - **dev@ emails:** 106  
@@ -36,15 +36,16 @@ Each category is scored **0–2**.
 
 ## 1. Community Building (0–2)
 
-**Suggested Score:** 2  
+**Suggested Score:** 2
 
 **How to Score:**  
 - **0** = Mostly proposers active  
 - **1** = Some new contributors starting to join  
 - **2** = Multiple new contributors and more than one org involved  
 
+**Chosen Score:** 1
 **Notes:**  
-
+Have new contributors, but likely want to see this sustained before calling it a 2.
 ---
 
 ## 2. Decision-Making & Culture (0–2)
@@ -56,8 +57,9 @@ Each category is scored **0–2**.
 - **1** = Consensus emerging; participation uneven  
 - **2** = Podling shows clear ASF-style decision making  
 
+**Chosen Score:** 1
 **Notes:**  
-
+Still early days in getting more active participation via email.
 ---
 
 ## 3. Releases & Process Alignment (0–2)
@@ -69,6 +71,7 @@ Each category is scored **0–2**.
 - **1** = Preparing or in progress for first release  
 - **2** = One or more incubating releases completed  
 
+**Chosen Score:** 2
 **Notes:**  
 
 ---
@@ -82,6 +85,7 @@ Each category is scored **0–2**.
 - **1** = Some mentor activity but inconsistent  
 - **2** = Mentors active and supportive  
 
+**Chosen Score:** 1
 **Notes:**  
 
 ---
@@ -95,22 +99,23 @@ Each category is scored **0–2**.
 - **1** = Some concerns or uneven participation  
 - **2** = No major risks identified  
 
+**Chosen Score:** 1
 **Notes:**  
-
+Getting into the internals of Hamilton requires some ramp-up. Most contributions are peripheral. 
 ---
 
 ## Final Score
-- **Total:** 7 / 12  
+- **Suggested Total:** 7 / 12
+- **Chosen Total:** 6 / 12
 - **Category:** Making Progress  
 
 ### Summary Recommendation
 
-Reviewers should:  
-- Highlight the podling’s **key strengths and recent progress**  
-- Identify **1–2 improvement areas** to focus on in the next 3–6 months  
-- Confirm whether the suggested scores reflect the podling’s reality  
+Hamilton podling needs to:
 
-[Reviewer’s overall recommendation and suggested next steps]  
+1. get all packages out under apache to complete the transition.
+2. automate release work as much as possible and rotate through the PPMC committee to publish them.
+3. put up a roadmap to help attract contributors and assign work.
 
 ---
 
