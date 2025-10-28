@@ -13,8 +13,6 @@ Each category is scored **0–2**.
 - **1 = Emerging / developing**  
 - **2 = Established / healthy**  
 
-⚠️ **Note:** These scores are auto-suggested based on available data. They are **not definitive** and must be discussed and confirmed by mentors and IPMC reviewers.  
-
 ### Overall Rating
 - **10–12 points** → **On Track** — Podling shows strong signals of community health and ASF alignment. Maintain the current pace and begin planning toward graduation milestones.  
 - **6–9 points** → **Making Progress** — Podling is moving forward, but a few areas need extra attention. Work with mentors to set one to two clear goals for the next quarter.  
@@ -26,7 +24,7 @@ Each category is scored **0–2**.
 - **Start Date:** 2025-04-12  |  **Age:** 6 months  
 - **PPMC / Committers:** 14 / 14  
 - **New PPMC / Committers:**  /   
-- **Mentors / Reports / Sign-offs:** 2 / 4 / 7  
+- **Mentors / Reports / Sign-offs:** 4 / 4 / 7  
 - **Unique Posters (dev@):** 15  
 - **dev@ emails:** 1399  
 - **Release Votes:** dev@ 0 · general@incubator 0 · **Total 0**  
