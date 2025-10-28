@@ -13,8 +13,6 @@ Each category is scored **0–2**.
 - **1 = Emerging / developing**  
 - **2 = Established / healthy**  
 
-⚠️ **Note:** These scores are auto-suggested based on available data. They are **not definitive** and must be discussed and confirmed by mentors and IPMC reviewers.  
-
 ### Overall Rating
 - **10–12 points** → **On Track** — Podling shows strong signals of community health and ASF alignment. Maintain the current pace and begin planning toward graduation milestones.  
 - **6–9 points** → **Making Progress** — Podling is moving forward, but a few areas need extra attention. Work with mentors to set one to two clear goals for the next quarter.  
@@ -30,7 +28,7 @@ Each category is scored **0–2**.
 - **Unique Posters (dev@):** 15  
 - **dev@ emails:** 1399  
 - **Release Votes:** dev@ 0 · general@incubator 0 · **Total 0**  
-- **GitHub:** contributors 82 · issues open 116, closed 736 · PRs open 32, closed 3025  
+- **GitHub:** contributors 146 · issues open 116, closed 752 · PRs open 32, closed 3025  
 
 ---
 
@@ -43,20 +41,20 @@ Each category is scored **0–2**.
 - **1** = Some new contributors starting to join  
 - **2** = Multiple new contributors and more than one org involved  
 
-**Notes:**  
+**Notes:**  We are actively receiving contribution from external collaborators.
 
 ---
 
 ## 2. Decision-Making & Culture (0–2)
 
-**Suggested Score:** 1  
+**Suggested Score:** 2  
 
 **How to Score:**  
 - **0** = Decisions mainly off-list or mentor/vendor-driven  
 - **1** = Consensus emerging; participation uneven  
 - **2** = Podling shows clear ASF-style decision making  
 
-**Notes:**  
+**Notes:**  We take vote from all members and share the result publicly.
 
 ---
 
@@ -75,33 +73,33 @@ Each category is scored **0–2**.
 
 ## 4. Mentor Support & Guidance (0–2)
 
-**Suggested Score:** 1  
+**Suggested Score:** 2  
 
 **How to Score:**  
 - **0** = Mentors not visibly engaged  
 - **1** = Some mentor activity but inconsistent  
 - **2** = Mentors active and supportive  
 
-**Notes:**  
+**Notes:**  We contact and get help from our mentors more than once a week.
 
 ---
 
 ## 5. Sustainability & Risks (0–2, reverse scored)
 
-**Suggested Score:** 0  
+**Suggested Score:** 1  
 
 **How to Score:**  
 - **0** = Clear risks (single vendor, very low activity)  
 - **1** = Some concerns or uneven participation  
 - **2** = No major risks identified  
 
-**Notes:**  
+**Notes:**  We had the risk of using non-compatible licenses in our libraries which we are working on.
 
 ---
 
 ## Final Score
-- **Total:** 5 / 12  
-- **Category:** At Risk  
+- **Total:** 8 / 12  
+- **Category:** Making Progress  
 
 ### Summary Recommendation
 
