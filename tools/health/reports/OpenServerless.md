@@ -1,5 +1,5 @@
 # OpenServerless — Incubator Health (Reports + GitHub + Mailing Lists)
-_Generated on 2025-10-23_
+_Generated on 2025-10-29_
 
 **Windows:** 3m, 6m, 12m
 
@@ -10,11 +10,11 @@ _Generated on 2025-10-23_
 - **New contributors:** 0 (—)
 - **Unique committers:** 1 (—)
 - **Commits:** 1 (—)
-- **Issues opened/closed:** 15/9 (↘↘/↘↘)
+- **Issues opened/closed:** 14/8 (↘↘/↘↘)
 - **PRs opened/merged:** 2/1 (—/—)
 - **Median PR time-to-merge (days):** — (—)
 - **Bus factor proxy (contributors to reach 50% / 75% of commits):** 1 / 1 (→/→)
-- **Mailing list msgs (dev@):** 214 (↘)
+- **Mailing list msgs (dev@):** 176 (↘↘)
 - **Unique posters (dev@):** 4 (—)
 - **Reviewer diversity (eff.#, sampled):** 1.0 (—)
 - **PR author diversity (eff.#, sampled):** 1.0 (—)
@@ -28,11 +28,11 @@ _Generated on 2025-10-23_
 - **New contributors:** 0 (—)
 - **Unique committers:** 1 (—)
 - **Commits:** 1 (—)
-- **Issues opened/closed:** 15/9 (↘↘/↘↘)
+- **Issues opened/closed:** 14/8 (↘↘/↘↘)
 - **PRs opened/merged:** 2/1 (—/—)
 - **Median PR time-to-merge (days):** — (—)
 - **Bus factor proxy (contributors to reach 50% / 75% of commits):** 1 / 1 (→/↘↘)
-- **Mailing list msgs (dev@):** 214 (↘)
+- **Mailing list msgs (dev@):** 176 (↘↘)
 - **Unique posters (dev@):** 4 (—)
 - **Reviewer diversity (eff.#, sampled):** 1.0 (—)
 - **PR author diversity (eff.#, sampled):** 1.0 (—)
@@ -40,35 +40,35 @@ _Generated on 2025-10-23_
 - **Unique PR authors (sampled):** 1 (—)
 
 ## Window Details
-### 3m  (2025-07-23 → 2025-10-23)
+### 3m  (2025-07-29 → 2025-10-29)
 - **Releases (from list votes/results):** 0  |  **Median gap (days):** —
 - **New contributors:** 0  |  **Unique committers:** 1  |  **Commits:** 1
-- **Issues:** opened 15 / closed 9
+- **Issues:** opened 14 / closed 8
 - **PRs:** opened 2 / merged 1  |  **Median merge time (days):** 0.0
 - **Reviews (sampled):** median reviewers/PR **1**  |  reviewer diversity (eff.#) **1.0**  |  PR author diversity (eff.#) **1.0**  |  unique reviewers **1**, unique authors **1**
 - **Bus factor proxy (50% / 75%):** 1 / 1
 - **Incubator reports:** 1  |  **Avg mentor sign-offs:** 2.0
-- **Mailing lists:** dev messages **214**, dev unique posters **4**
+- **Mailing lists:** dev messages **176**, dev unique posters **4**
 
-### 6m  (2025-04-23 → 2025-10-23)
+### 6m  (2025-04-29 → 2025-10-29)
 - **Releases (from list votes/results):** 0  |  **Median gap (days):** —
 - **New contributors:** 0  |  **Unique committers:** 2  |  **Commits:** 6
-- **Issues:** opened 59 / closed 39
-- **PRs:** opened 8 / merged 6  |  **Median merge time (days):** 1.1
+- **Issues:** opened 53 / closed 37
+- **PRs:** opened 9 / merged 6  |  **Median merge time (days):** 1.1
 - **Reviews (sampled):** median reviewers/PR **1.0**  |  reviewer diversity (eff.#) **1.81**  |  PR author diversity (eff.#) **1.38**  |  unique reviewers **3**, unique authors **2**
 - **Bus factor proxy (50% / 75%):** 1 / 1
 - **Incubator reports:** 2  |  **Avg mentor sign-offs:** 2.0
-- **Mailing lists:** dev messages **560**, dev unique posters **6**
+- **Mailing lists:** dev messages **546**, dev unique posters **6**
 
-### 12m  (2024-10-23 → 2025-10-23)
+### 12m  (2024-10-29 → 2025-10-29)
 - **Releases (from list votes/results):** 0  |  **Median gap (days):** —
 - **New contributors:** 0  |  **Unique committers:** 3  |  **Commits:** 13
-- **Issues:** opened 91 / closed 71
-- **PRs:** opened 15 / merged 13  |  **Median merge time (days):** 0.0
+- **Issues:** opened 91 / closed 70
+- **PRs:** opened 16 / merged 13  |  **Median merge time (days):** 0.0
 - **Reviews (sampled):** median reviewers/PR **1**  |  reviewer diversity (eff.#) **1.81**  |  PR author diversity (eff.#) **2.09**  |  unique reviewers **3**, unique authors **3**
 - **Bus factor proxy (50% / 75%):** 1 / 2
 - **Incubator reports:** 4  |  **Avg mentor sign-offs:** 2.0
-- **Mailing lists:** dev messages **1018**, dev unique posters **9**
+- **Mailing lists:** dev messages **1000**, dev unique posters **9**
 
 ## Reading the Indicators
 - **Use trend arrows** to compare available windows; when a window lacks ≥28 days or ≥5 events, trends show **—**.

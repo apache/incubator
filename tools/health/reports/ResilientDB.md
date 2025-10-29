@@ -1,5 +1,5 @@
 # ResilientDB — Incubator Health (Reports + GitHub + Mailing Lists)
-_Generated on 2025-10-23_
+_Generated on 2025-10-29_
 
 **Windows:** 3m, 6m, 12m
 
@@ -40,7 +40,7 @@ _Generated on 2025-10-23_
 - **Unique PR authors (sampled):** 2 (—)
 
 ## Window Details
-### 3m  (2025-07-23 → 2025-10-23)
+### 3m  (2025-07-29 → 2025-10-29)
 - **Releases (from list votes/results):** 1  |  **Median gap (days):** —
 - **New contributors:** 1  |  **Unique committers:** 3  |  **Commits:** 8
 - **Issues:** opened 7 / closed 5
@@ -50,9 +50,9 @@ _Generated on 2025-10-23_
 - **Incubator reports:** 0  |  **Avg mentor sign-offs:** —
 - **Mailing lists:** dev messages **42**, dev unique posters **11**
 
-### 6m  (2025-04-23 → 2025-10-23)
+### 6m  (2025-04-29 → 2025-10-29)
 - **Releases (from list votes/results):** 1  |  **Median gap (days):** —
-- **New contributors:** 2  |  **Unique committers:** 5  |  **Commits:** 24
+- **New contributors:** 2  |  **Unique committers:** 5  |  **Commits:** 23
 - **Issues:** opened 8 / closed 7
 - **PRs:** opened 9 / merged 7  |  **Median merge time (days):** 0.1
 - **Reviews (sampled):** median reviewers/PR **1**  |  reviewer diversity (eff.#) **1.0**  |  PR author diversity (eff.#) **3.27**  |  unique reviewers **1**, unique authors **4**
@@ -60,7 +60,7 @@ _Generated on 2025-10-23_
 - **Incubator reports:** 3  |  **Avg mentor sign-offs:** 0.0
 - **Mailing lists:** dev messages **92**, dev unique posters **19**
 
-### 12m  (2024-10-23 → 2025-10-23)
+### 12m  (2024-10-29 → 2025-10-29)
 - **Releases (from list votes/results):** 1  |  **Median gap (days):** —
 - **New contributors:** 4  |  **Unique committers:** 8  |  **Commits:** 42
 - **Issues:** opened 10 / closed 7
@@ -68,7 +68,7 @@ _Generated on 2025-10-23_
 - **Reviews (sampled):** median reviewers/PR **0**  |  reviewer diversity (eff.#) **1.38**  |  PR author diversity (eff.#) **3.17**  |  unique reviewers **2**, unique authors **5**
 - **Bus factor proxy (50% / 75%):** 1 / 2
 - **Incubator reports:** 4  |  **Avg mentor sign-offs:** 0.0
-- **Mailing lists:** dev messages **129**, dev unique posters **23**
+- **Mailing lists:** dev messages **129**, dev unique posters **22**
 
 ## Reading the Indicators
 - **Use trend arrows** to compare available windows; when a window lacks ≥28 days or ≥5 events, trends show **—**.
