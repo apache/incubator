@@ -1,5 +1,5 @@
 # XTable — Incubator Health (Reports + GitHub + Mailing Lists)
-_Generated on 2025-10-29_
+_Generated on 2025-10-31_
 
 **Windows:** 3m, 6m, 12m
 
@@ -40,7 +40,7 @@ _Generated on 2025-10-29_
 - **Unique PR authors (sampled):** 5 (→)
 
 ## Window Details
-### 3m  (2025-07-29 → 2025-10-29)
+### 3m  (2025-07-31 → 2025-10-31)
 - **Releases (from list votes/results):** 0  |  **Median gap (days):** —
 - **New contributors:** 2  |  **Unique committers:** 6  |  **Commits:** 8
 - **Issues:** opened 5 / closed 1
@@ -50,25 +50,25 @@ _Generated on 2025-10-29_
 - **Incubator reports:** 1  |  **Avg mentor sign-offs:** 3.0
 - **Mailing lists:** dev messages **1**, dev unique posters **1**
 
-### 6m  (2025-04-29 → 2025-10-29)
+### 6m  (2025-04-30 → 2025-10-31)
 - **Releases (from list votes/results):** 1  |  **Median gap (days):** —
 - **New contributors:** 5  |  **Unique committers:** 11  |  **Commits:** 21
 - **Issues:** opened 14 / closed 5
-- **PRs:** opened 31 / merged 22  |  **Median merge time (days):** 9.6
+- **PRs:** opened 30 / merged 22  |  **Median merge time (days):** 9.6
 - **Reviews (sampled):** median reviewers/PR **1.0**  |  reviewer diversity (eff.#) **2.55**  |  PR author diversity (eff.#) **7.08**  |  unique reviewers **4**, unique authors **10**
 - **Bus factor proxy (50% / 75%):** 3 / 6
 - **Incubator reports:** 3  |  **Avg mentor sign-offs:** 3.0
 - **Mailing lists:** dev messages **20**, dev unique posters **8**
 
-### 12m  (2024-10-29 → 2025-10-29)
+### 12m  (2024-10-31 → 2025-10-31)
 - **Releases (from list votes/results):** 2  |  **Median gap (days):** 203
 - **New contributors:** 10  |  **Unique committers:** 21  |  **Commits:** 78
 - **Issues:** opened 53 / closed 24
-- **PRs:** opened 117 / merged 81  |  **Median merge time (days):** 1.8
+- **PRs:** opened 116 / merged 81  |  **Median merge time (days):** 1.8
 - **Reviews (sampled):** median reviewers/PR **1**  |  reviewer diversity (eff.#) **2.65**  |  PR author diversity (eff.#) **6.41**  |  unique reviewers **9**, unique authors **20**
 - **Bus factor proxy (50% / 75%):** 3 / 7
 - **Incubator reports:** 4  |  **Avg mentor sign-offs:** 3.0
-- **Mailing lists:** dev messages **69**, dev unique posters **12**
+- **Mailing lists:** dev messages **68**, dev unique posters **12**
 
 ## Reading the Indicators
 - **Use trend arrows** to compare available windows; when a window lacks ≥28 days or ≥5 events, trends show **—**.

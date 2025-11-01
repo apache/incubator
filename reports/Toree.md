@@ -1,5 +1,5 @@
 # Toree — Incubator Health (Reports + GitHub + Mailing Lists)
-_Generated on 2025-10-29_
+_Generated on 2025-10-31_
 
 **Windows:** 3m, 6m, 12m
 
@@ -40,7 +40,7 @@ _Generated on 2025-10-29_
 - **Unique PR authors (sampled):** 4 (—)
 
 ## Window Details
-### 3m  (2025-07-29 → 2025-10-29)
+### 3m  (2025-07-31 → 2025-10-31)
 - **Releases (from list votes/results):** 0  |  **Median gap (days):** —
 - **New contributors:** 0  |  **Unique committers:** 4  |  **Commits:** 15
 - **Issues:** opened 0 / closed 0
@@ -50,7 +50,7 @@ _Generated on 2025-10-29_
 - **Incubator reports:** 1  |  **Avg mentor sign-offs:** 1.0
 - **Mailing lists:** dev messages **10**, dev unique posters **6**
 
-### 6m  (2025-04-29 → 2025-10-29)
+### 6m  (2025-04-30 → 2025-10-31)
 - **Releases (from list votes/results):** 0  |  **Median gap (days):** —
 - **New contributors:** 0  |  **Unique committers:** 4  |  **Commits:** 19
 - **Issues:** opened 0 / closed 0
@@ -60,7 +60,7 @@ _Generated on 2025-10-29_
 - **Incubator reports:** 3  |  **Avg mentor sign-offs:** 1.0
 - **Mailing lists:** dev messages **15**, dev unique posters **7**
 
-### 12m  (2024-10-29 → 2025-10-29)
+### 12m  (2024-10-31 → 2025-10-31)
 - **Releases (from list votes/results):** 0  |  **Median gap (days):** —
 - **New contributors:** 1  |  **Unique committers:** 4  |  **Commits:** 22
 - **Issues:** opened 0 / closed 0

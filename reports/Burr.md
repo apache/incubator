@@ -1,10 +1,10 @@
 # Burr — Incubator Health (Reports + GitHub + Mailing Lists)
-_Generated on 2025-10-29_
+_Generated on 2025-10-31_
 
 **Windows:** 3m
 
 ## Window Details
-### 3m  (2025-07-29 → 2025-10-29)
+### 3m  (2025-07-31 → 2025-10-31)
 - **Releases (from list votes/results):** 0  |  **Median gap (days):** —
 - **New contributors:** 3  |  **Unique committers:** 5  |  **Commits:** 8
 - **Issues:** opened 4 / closed 3

@@ -1,5 +1,5 @@
 # Livy — Incubator Health (Reports + GitHub + Mailing Lists)
-_Generated on 2025-10-29_
+_Generated on 2025-10-31_
 
 **Windows:** 3m, 6m, 12m
 
@@ -40,7 +40,7 @@ _Generated on 2025-10-29_
 - **Unique PR authors (sampled):** 4 (—)
 
 ## Window Details
-### 3m  (2025-07-29 → 2025-10-29)
+### 3m  (2025-07-31 → 2025-10-31)
 - **Releases (from list votes/results):** 0  |  **Median gap (days):** —
 - **New contributors:** 1  |  **Unique committers:** 4  |  **Commits:** 5
 - **Issues:** opened 5 / closed 2
@@ -50,7 +50,7 @@ _Generated on 2025-10-29_
 - **Incubator reports:** 0  |  **Avg mentor sign-offs:** —
 - **Mailing lists:** dev messages **8**, dev unique posters **4**
 
-### 6m  (2025-04-29 → 2025-10-29)
+### 6m  (2025-04-30 → 2025-10-31)
 - **Releases (from list votes/results):** 0  |  **Median gap (days):** —
 - **New contributors:** 3  |  **Unique committers:** 6  |  **Commits:** 7
 - **Issues:** opened 7 / closed 2
@@ -60,7 +60,7 @@ _Generated on 2025-10-29_
 - **Incubator reports:** 1  |  **Avg mentor sign-offs:** 3.0
 - **Mailing lists:** dev messages **10**, dev unique posters **6**
 
-### 12m  (2024-10-29 → 2025-10-29)
+### 12m  (2024-10-31 → 2025-10-31)
 - **Releases (from list votes/results):** 0  |  **Median gap (days):** —
 - **New contributors:** 7  |  **Unique committers:** 8  |  **Commits:** 11
 - **Issues:** opened 11 / closed 3
