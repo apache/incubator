@@ -1,5 +1,5 @@
 # ResilientDB — Incubator Health (Reports + GitHub + Mailing Lists)
-_Generated on 2025-10-29_
+_Generated on 2025-10-31_
 
 **Windows:** 3m, 6m, 12m
 
@@ -10,8 +10,8 @@ _Generated on 2025-10-29_
 - **New contributors:** 1 (—)
 - **Unique committers:** 3 (—)
 - **Commits:** 8 (↘↘)
-- **Issues opened/closed:** 7/5 (↗↗/↗↗)
-- **PRs opened/merged:** 5/4 (→/—)
+- **Issues opened/closed:** 7/6 (↗↗/↗↗)
+- **PRs opened/merged:** 5/4 (↗/—)
 - **Median PR time-to-merge (days):** 5.1 (—)
 - **Bus factor proxy (contributors to reach 50% / 75% of commits):** 1 / 2 (→/→)
 - **Mailing list msgs (dev@):** 42 (→)
@@ -28,7 +28,7 @@ _Generated on 2025-10-29_
 - **New contributors:** 1 (—)
 - **Unique committers:** 3 (—)
 - **Commits:** 8 (↘↘)
-- **Issues opened/closed:** 7/5 (↗↗↗/↗↗↗)
+- **Issues opened/closed:** 7/6 (↗↗↗/↗↗↗)
 - **PRs opened/merged:** 5/4 (→/—)
 - **Median PR time-to-merge (days):** 5.1 (—)
 - **Bus factor proxy (contributors to reach 50% / 75% of commits):** 1 / 2 (→/→)
@@ -40,30 +40,30 @@ _Generated on 2025-10-29_
 - **Unique PR authors (sampled):** 2 (—)
 
 ## Window Details
-### 3m  (2025-07-29 → 2025-10-29)
+### 3m  (2025-07-31 → 2025-10-31)
 - **Releases (from list votes/results):** 1  |  **Median gap (days):** —
 - **New contributors:** 1  |  **Unique committers:** 3  |  **Commits:** 8
-- **Issues:** opened 7 / closed 5
+- **Issues:** opened 7 / closed 6
 - **PRs:** opened 5 / merged 4  |  **Median merge time (days):** 5.1
 - **Reviews (sampled):** median reviewers/PR **0.5**  |  reviewer diversity (eff.#) **1.0**  |  PR author diversity (eff.#) **1.6**  |  unique reviewers **1**, unique authors **2**
 - **Bus factor proxy (50% / 75%):** 1 / 2
 - **Incubator reports:** 0  |  **Avg mentor sign-offs:** —
 - **Mailing lists:** dev messages **42**, dev unique posters **11**
 
-### 6m  (2025-04-29 → 2025-10-29)
+### 6m  (2025-04-30 → 2025-10-31)
 - **Releases (from list votes/results):** 1  |  **Median gap (days):** —
 - **New contributors:** 2  |  **Unique committers:** 5  |  **Commits:** 23
-- **Issues:** opened 8 / closed 7
+- **Issues:** opened 8 / closed 8
 - **PRs:** opened 9 / merged 7  |  **Median merge time (days):** 0.1
 - **Reviews (sampled):** median reviewers/PR **1**  |  reviewer diversity (eff.#) **1.0**  |  PR author diversity (eff.#) **3.27**  |  unique reviewers **1**, unique authors **4**
 - **Bus factor proxy (50% / 75%):** 1 / 2
 - **Incubator reports:** 3  |  **Avg mentor sign-offs:** 0.0
-- **Mailing lists:** dev messages **92**, dev unique posters **19**
+- **Mailing lists:** dev messages **91**, dev unique posters **19**
 
-### 12m  (2024-10-29 → 2025-10-29)
+### 12m  (2024-10-31 → 2025-10-31)
 - **Releases (from list votes/results):** 1  |  **Median gap (days):** —
 - **New contributors:** 4  |  **Unique committers:** 8  |  **Commits:** 42
-- **Issues:** opened 10 / closed 7
+- **Issues:** opened 10 / closed 8
 - **PRs:** opened 19 / merged 15  |  **Median merge time (days):** 0.0
 - **Reviews (sampled):** median reviewers/PR **0**  |  reviewer diversity (eff.#) **1.38**  |  PR author diversity (eff.#) **3.17**  |  unique reviewers **2**, unique authors **5**
 - **Bus factor proxy (50% / 75%):** 1 / 2

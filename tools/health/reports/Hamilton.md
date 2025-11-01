@@ -1,5 +1,5 @@
 # Hamilton — Incubator Health (Reports + GitHub + Mailing Lists)
-_Generated on 2025-10-29_
+_Generated on 2025-10-31_
 
 **Windows:** 3m, 6m
 
@@ -10,7 +10,7 @@ _Generated on 2025-10-29_
 - **New contributors:** 3 (—)
 - **Unique committers:** 7 (↗↗)
 - **Commits:** 20 (↘↘)
-- **Issues opened/closed:** 11/3 (↘/—)
+- **Issues opened/closed:** 10/3 (↘↘/—)
 - **PRs opened/merged:** 29/20 (↘/↘↘)
 - **Median PR time-to-merge (days):** 6.4 (↗↗)
 - **Bus factor proxy (contributors to reach 50% / 75% of commits):** 2 / 3 (→/→)
@@ -28,7 +28,7 @@ _Generated on 2025-10-29_
 - **New contributors:** 3 (—)
 - **Unique committers:** 7 (↗↗)
 - **Commits:** 20 (↘↘)
-- **Issues opened/closed:** 11/3 (↘/—)
+- **Issues opened/closed:** 10/3 (↘↘/—)
 - **PRs opened/merged:** 29/20 (↘/↘↘)
 - **Median PR time-to-merge (days):** 6.4 (↗↗)
 - **Bus factor proxy (contributors to reach 50% / 75% of commits):** 2 / 3 (→/→)
@@ -40,17 +40,17 @@ _Generated on 2025-10-29_
 - **Unique PR authors (sampled):** 6 (↗↗)
 
 ## Window Details
-### 3m  (2025-07-29 → 2025-10-29)
+### 3m  (2025-07-31 → 2025-10-31)
 - **Releases (from list votes/results):** 1  |  **Median gap (days):** —
 - **New contributors:** 3  |  **Unique committers:** 7  |  **Commits:** 20
-- **Issues:** opened 11 / closed 3
+- **Issues:** opened 10 / closed 3
 - **PRs:** opened 29 / merged 20  |  **Median merge time (days):** 6.4
 - **Reviews (sampled):** median reviewers/PR **1.0**  |  reviewer diversity (eff.#) **3.84**  |  PR author diversity (eff.#) **3.16**  |  unique reviewers **7**, unique authors **6**
 - **Bus factor proxy (50% / 75%):** 2 / 3
 - **Incubator reports:** 1  |  **Avg mentor sign-offs:** 2.0
 - **Mailing lists:** dev messages **50**, dev unique posters **8**
 
-### 6m  (2025-04-29 → 2025-10-29)
+### 6m  (2025-04-30 → 2025-10-31)
 - **Releases (from list votes/results):** 1  |  **Median gap (days):** —
 - **New contributors:** 6  |  **Unique committers:** 9  |  **Commits:** 71
 - **Issues:** opened 29 / closed 7

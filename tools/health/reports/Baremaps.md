@@ -1,5 +1,5 @@
 # Baremaps — Incubator Health (Reports + GitHub + Mailing Lists)
-_Generated on 2025-10-29_
+_Generated on 2025-10-31_
 
 **Windows:** 3m, 6m, 12m
 
@@ -40,7 +40,7 @@ _Generated on 2025-10-29_
 - **Unique PR authors (sampled):** 1 (—)
 
 ## Window Details
-### 3m  (2025-07-29 → 2025-10-29)
+### 3m  (2025-07-31 → 2025-10-31)
 - **Releases (from list votes/results):** 0  |  **Median gap (days):** —
 - **New contributors:** 1  |  **Unique committers:** 1  |  **Commits:** 1
 - **Issues:** opened 2 / closed 1
@@ -50,7 +50,7 @@ _Generated on 2025-10-29_
 - **Incubator reports:** 1  |  **Avg mentor sign-offs:** 2.0
 - **Mailing lists:** dev messages **3**, dev unique posters **3**
 
-### 6m  (2025-04-29 → 2025-10-29)
+### 6m  (2025-04-30 → 2025-10-31)
 - **Releases (from list votes/results):** 0  |  **Median gap (days):** —
 - **New contributors:** 2  |  **Unique committers:** 3  |  **Commits:** 6
 - **Issues:** opened 2 / closed 1
@@ -60,11 +60,11 @@ _Generated on 2025-10-29_
 - **Incubator reports:** 2  |  **Avg mentor sign-offs:** 1.5
 - **Mailing lists:** dev messages **6**, dev unique posters **3**
 
-### 12m  (2024-10-29 → 2025-10-29)
+### 12m  (2024-10-31 → 2025-10-31)
 - **Releases (from list votes/results):** 2  |  **Median gap (days):** 91
-- **New contributors:** 5  |  **Unique committers:** 8  |  **Commits:** 39
-- **Issues:** opened 31 / closed 12
-- **PRs:** opened 31 / merged 26  |  **Median merge time (days):** 1.5
+- **New contributors:** 5  |  **Unique committers:** 8  |  **Commits:** 38
+- **Issues:** opened 31 / closed 11
+- **PRs:** opened 30 / merged 26  |  **Median merge time (days):** 1.5
 - **Reviews (sampled):** median reviewers/PR **0.0**  |  reviewer diversity (eff.#) **1.81**  |  PR author diversity (eff.#) **2.64**  |  unique reviewers **3**, unique authors **8**
 - **Bus factor proxy (50% / 75%):** 1 / 2
 - **Incubator reports:** 4  |  **Avg mentor sign-offs:** 1.5
