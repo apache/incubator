@@ -466,7 +466,7 @@ def month_iter(start_date: dt.date, end_date: dt.date):
         if m == 13:
             m = 1; y += 1
 
-def fetch_month_mbox(list_slug: str, y: int, m: int, debug: bool=False) -> Optional[bytes]:
+def fetch_month_mbox(list_slug: str, y: int, m: int, debug: bool = False) -> Optional[bytes]:
     mm = f"{y}{m:02d}.mbox"
     url = f"{MOD_MBOX_BASE}/{list_slug}/{mm}"
     cache_path = os.path.join(CACHE_DIR, f"{list_slug.replace('/', '_')}-{mm}")
@@ -474,19 +474,44 @@ def fetch_month_mbox(list_slug: str, y: int, m: int, debug: bool=False) -> Optio
     now = datetime.now(UTC)
     is_current = (y == now.year and m == now.month)
 
-    # Use cache if available:
+    # Helper: last day of this month as a date
+    if m == 12:
+        last_day = dt.date(y + 1, 1, 1) - dt.timedelta(days=1)
+    else:
+        last_day = dt.date(y, m + 1, 1) - dt.timedelta(days=1)
+
+    # Use cache if available
     if os.path.exists(cache_path):
-        if not is_current:
-            log(f"[lists] cached {cache_path}", debug)
+        cache_mtime = dt.datetime.fromtimestamp(os.path.getmtime(cache_path), tz=UTC)
+        cache_date = cache_mtime.date()
+
+        if is_current:
+            # Current month: keep a simple TTL to avoid hammering mod_mbox
+            age = time.time() - os.path.getmtime(cache_path)
+            if age <= CACHE_TTL_SECONDS_CURRENT_MONTH:
+                log(f"[lists] cached (fresh current) {cache_path}", debug)
             with open(cache_path, "rb") as f:
                 return f.read()
         else:
-            age = time.time() - os.path.getmtime(cache_path)
-            if age <= CACHE_TTL_SECONDS_CURRENT_MONTH:
-                log(f"[lists] cached (fresh) {cache_path}", debug)
+                log(f"[lists] current month cache stale, refetching {cache_path}", debug)
+
+        else:
+            # Month is NOT current. Decide if cache is "complete".
+            month_finished = now.date() > last_day
+
+            if month_finished and cache_date < last_day:
+                # Incomplete snapshot, now that month is finished → refresh once
+                log(
+                    f"[lists] cached {cache_path} is from {cache_date} < last day {last_day}, "
+                    f"refetching to get full month", 
+                    debug
+                )
+            else:
+                log(f"[lists] cached (trusted) {cache_path}", debug)
                 with open(cache_path, "rb") as f:
                     return f.read()
 
+    # If we reach here, we need to fetch (no cache, stale TTL, or incomplete month cache)
     log(f"[lists] fetch {url}", debug)
     try:
         r = requests.get(url, timeout=30)
@@ -503,7 +528,7 @@ def fetch_month_mbox(list_slug: str, y: int, m: int, debug: bool=False) -> Optio
         return data
     except Exception as e:
         log(f"[lists] fetch fail {url}: {e}", debug)
-        # Fallback to any existing (even stale) cache if fetch failed
+        # Fallback to ANY existing cache if fetch failed
         if os.path.exists(cache_path):
             try:
                 with open(cache_path, "rb") as f:
@@ -511,6 +536,7 @@ def fetch_month_mbox(list_slug: str, y: int, m: int, debug: bool=False) -> Optio
             except Exception:
                 pass
         return None
+
 
 def fast_scan_mbox_headers(mbox_bytes: bytes):
     def ensure_str(b):
