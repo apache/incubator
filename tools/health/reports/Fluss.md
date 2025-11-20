@@ -1,18 +1,18 @@
 # Fluss — Incubator Health (Reports + GitHub + Mailing Lists)
-_Generated on 2025-10-31_
+_Generated on 2025-11-20_
 
 **Windows:** 3m
 
 ## Window Details
-### 3m  (2025-07-31 → 2025-10-31)
-- **Releases (from list votes/results):** 2  |  **Median gap (days):** 75
-- **New contributors:** 13  |  **Unique committers:** 33  |  **Commits:** 230
-- **Issues:** opened 217 / closed 187
-- **PRs:** opened 271 / merged 214  |  **Median merge time (days):** 2.9
-- **Reviews (sampled):** median reviewers/PR **1.0**  |  reviewer diversity (eff.#) **3.96**  |  PR author diversity (eff.#) **12.76**  |  unique reviewers **14**, unique authors **28**
+### 3m  (2025-08-20 → 2025-11-20)
+- **Releases (from list votes/results):** 1  |  **Median gap (days):** —
+- **New contributors:** 10  |  **Unique committers:** 27  |  **Commits:** 205
+- **Issues:** opened 191 / closed 166
+- **PRs:** opened 242 / merged 188  |  **Median merge time (days):** 2.9
+- **Reviews (sampled):** median reviewers/PR **—**  |  reviewer diversity (eff.#) **5.37**  |  PR author diversity (eff.#) **13.4**  |  unique reviewers **19**, unique authors **24**
 - **Bus factor proxy (50% / 75%):** 5 / 9
-- **Incubator reports:** 0  |  **Avg mentor sign-offs:** —
-- **Mailing lists:** dev messages **215**, dev unique posters **28**
+- **Incubator reports:** 1  |  **Avg mentor sign-offs:** 4.0
+- **Mailing lists:** dev messages **144**, dev unique posters **27**
 
 ## Reading the Indicators
 - **Use trend arrows** to compare available windows; when a window lacks ≥28 days or ≥5 events, trends show **—**.
