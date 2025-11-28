@@ -215,6 +215,7 @@ def iter_mbox_messages(mbox_text: str):
         except Exception:
             headers, _, _ = chunk.partition("\n\n")
             msg = email.message.EmailMessage()
+            # TODO: this does not handle header wrapping
             for line in headers.splitlines():
                 if ":" in line:
                     k, v = line.split(":", 1)
