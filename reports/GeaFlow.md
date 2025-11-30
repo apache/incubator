@@ -1,18 +1,18 @@
 # GeaFlow — Incubator Health (Reports + GitHub + Mailing Lists)
-_Generated on 2025-11-20_
+_Generated on 2025-11-30_
 
 **Windows:** 3m
 
 ## Window Details
-### 3m  (2025-08-20 → 2025-11-20)
+### 3m  (2025-08-30 → 2025-11-30)
 - **Releases (from list votes/results):** 1  |  **Median gap (days):** —
-- **New contributors:** 5  |  **Unique committers:** 11  |  **Commits:** 20
-- **Issues:** opened 33 / closed 19
-- **PRs:** opened 56 / merged 20  |  **Median merge time (days):** 7.5
-- **Reviews (sampled):** median reviewers/PR **—**  |  reviewer diversity (eff.#) **4.77**  |  PR author diversity (eff.#) **8.33**  |  unique reviewers **9**, unique authors **11**
+- **New contributors:** 6  |  **Unique committers:** 12  |  **Commits:** 24
+- **Issues:** opened 34 / closed 21
+- **PRs:** opened 55 / merged 24  |  **Median merge time (days):** 8.3
+- **Reviews (sampled):** median reviewers/PR **2.0**  |  reviewer diversity (eff.#) **5.13**  |  PR author diversity (eff.#) **8.23**  |  unique reviewers **10**, unique authors **12**
 - **Bus factor proxy (50% / 75%):** 3 / 6
-- **Incubator reports:** 2  |  **Avg mentor sign-offs:** 3.0
-- **Mailing lists:** dev messages **76**, dev unique posters **15**
+- **Incubator reports:** 1  |  **Avg mentor sign-offs:** 1.0
+- **Mailing lists:** dev messages **77**, dev unique posters **15**
 
 ## Reading the Indicators
 - **Use trend arrows** to compare available windows; when a window lacks ≥28 days or ≥5 events, trends show **—**.
