@@ -493,9 +493,6 @@ def fetch_month_mbox(list_slug: str, y: int, m: int, debug: bool = False) -> Opt
             with open(cache_path, "rb") as f:
                 return f.read()
         else:
-                log(f"[lists] current month cache stale, refetching {cache_path}", debug)
-
-        else:
             # Month is NOT current. Decide if cache is "complete".
             month_finished = now.date() > last_day
 
