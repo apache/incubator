@@ -490,8 +490,10 @@ def fetch_month_mbox(list_slug: str, y: int, m: int, debug: bool = False) -> Opt
             age = time.time() - os.path.getmtime(cache_path)
             if age <= CACHE_TTL_SECONDS_CURRENT_MONTH:
                 log(f"[lists] cached (fresh current) {cache_path}", debug)
-            with open(cache_path, "rb") as f:
-                return f.read()
+                with open(cache_path, "rb") as f:
+                    return f.read()
+            else:
+                log(f"[lists] current-month cache stale {cache_path}, refetching", debug)
         else:
             # Month is NOT current. Decide if cache is "complete".
             month_finished = now.date() > last_day

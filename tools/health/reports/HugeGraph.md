@@ -1,5 +1,5 @@
 # HugeGraph — Incubator Health (Reports + GitHub + Mailing Lists)
-_Generated on 2025-11-20_
+_Generated on 2025-11-30_
 
 **Windows:** 3m, 6m, 12m
 
@@ -7,68 +7,68 @@ _Generated on 2025-11-20_
 
 - **Releases (from list votes/results):** 1 (—)
 - **Median days between releases:** — (—)
-- **New contributors:** 4 (—)
-- **Unique committers:** 8 (↗)
-- **Commits:** 87 (↗↗)
-- **Issues opened/closed:** 10/14 (↘↘/↘↘)
-- **PRs opened/merged:** 46/23 (↗↗/↗↗)
+- **New contributors:** 5 (↗)
+- **Unique committers:** 9 (↗↗)
+- **Commits:** 89 (↗↗)
+- **Issues opened/closed:** 8/11 (↘↘/↘↘)
+- **PRs opened/merged:** 47/25 (↗↗/↗↗)
 - **Median PR time-to-merge (days):** 1.3 (↗↗)
-- **Bus factor proxy (contributors to reach 50% / 75% of commits):** 2 / 3 (↘↘/↘↘)
+- **Bus factor proxy (contributors to reach 50% / 75% of commits):** 2 / 4 (↘↘/→)
 - **Mailing list msgs (dev@):** 40 (↘↘)
-- **Unique posters (dev@):** 7 (↗↗)
-- **Reviewer diversity (eff.#, sampled):** 3.05 (—)
-- **PR author diversity (eff.#, sampled):** 6.22 (↘↘)
+- **Unique posters (dev@):** 9 (↗↗)
+- **Reviewer diversity (eff.#, sampled):** 3.0 (—)
+- **PR author diversity (eff.#, sampled):** 6.87 (↘↘)
 - **Unique reviewers (sampled):** 4 (—)
-- **Unique PR authors (sampled):** 9 (↗↗)
+- **Unique PR authors (sampled):** 10 (↗↗)
 
 ## Trends (short vs long)
 
 - **Releases (from list votes/results):** 1 (—)
 - **Median days between releases:** — (—)
-- **New contributors:** 4 (—)
-- **Unique committers:** 8 (↗↗)
-- **Commits:** 87 (↗↗↗)
-- **Issues opened/closed:** 10/14 (↘↘/↘↘)
-- **PRs opened/merged:** 46/23 (↗↗↗/↗↗↗)
+- **New contributors:** 5 (↗↗)
+- **Unique committers:** 9 (↗↗)
+- **Commits:** 89 (↗↗↗)
+- **Issues opened/closed:** 8/11 (↘↘/↘↘)
+- **PRs opened/merged:** 47/25 (↗↗↗/↗↗↗)
 - **Median PR time-to-merge (days):** 1.3 (↗↗)
-- **Bus factor proxy (contributors to reach 50% / 75% of commits):** 2 / 3 (↘↘/↘↘)
+- **Bus factor proxy (contributors to reach 50% / 75% of commits):** 2 / 4 (↘↘/→)
 - **Mailing list msgs (dev@):** 40 (↘↘)
-- **Unique posters (dev@):** 7 (↗↗↗)
-- **Reviewer diversity (eff.#, sampled):** 3.05 (—)
-- **PR author diversity (eff.#, sampled):** 6.22 (↘↘)
+- **Unique posters (dev@):** 9 (↗↗↗)
+- **Reviewer diversity (eff.#, sampled):** 3.0 (—)
+- **PR author diversity (eff.#, sampled):** 6.87 (↘↘)
 - **Unique reviewers (sampled):** 4 (—)
-- **Unique PR authors (sampled):** 9 (↗↗)
+- **Unique PR authors (sampled):** 10 (↗↗)
 
 ## Window Details
-### 3m  (2025-08-20 → 2025-11-20)
+### 3m  (2025-08-30 → 2025-11-30)
 - **Releases (from list votes/results):** 1  |  **Median gap (days):** —
-- **New contributors:** 4  |  **Unique committers:** 8  |  **Commits:** 87
-- **Issues:** opened 10 / closed 14
-- **PRs:** opened 46 / merged 23  |  **Median merge time (days):** 1.3
-- **Reviews (sampled):** median reviewers/PR **—**  |  reviewer diversity (eff.#) **3.05**  |  PR author diversity (eff.#) **6.22**  |  unique reviewers **4**, unique authors **9**
-- **Bus factor proxy (50% / 75%):** 2 / 3
+- **New contributors:** 5  |  **Unique committers:** 9  |  **Commits:** 89
+- **Issues:** opened 8 / closed 11
+- **PRs:** opened 47 / merged 25  |  **Median merge time (days):** 1.3
+- **Reviews (sampled):** median reviewers/PR **2**  |  reviewer diversity (eff.#) **3.0**  |  PR author diversity (eff.#) **6.87**  |  unique reviewers **4**, unique authors **10**
+- **Bus factor proxy (50% / 75%):** 2 / 4
 - **Incubator reports:** 0  |  **Avg mentor sign-offs:** —
-- **Mailing lists:** dev messages **40**, dev unique posters **7**
+- **Mailing lists:** dev messages **40**, dev unique posters **9**
 
-### 6m  (2025-05-20 → 2025-11-20)
+### 6m  (2025-05-30 → 2025-11-30)
 - **Releases (from list votes/results):** 1  |  **Median gap (days):** —
-- **New contributors:** 8  |  **Unique committers:** 13  |  **Commits:** 93
-- **Issues:** opened 76 / closed 67
-- **PRs:** opened 61 / merged 29  |  **Median merge time (days):** 1.8
-- **Reviews (sampled):** median reviewers/PR **—**  |  reviewer diversity (eff.#) **2.98**  |  PR author diversity (eff.#) **8.85**  |  unique reviewers **4**, unique authors **13**
+- **New contributors:** 9  |  **Unique committers:** 14  |  **Commits:** 95
+- **Issues:** opened 65 / closed 59
+- **PRs:** opened 63 / merged 31  |  **Median merge time (days):** 1.8
+- **Reviews (sampled):** median reviewers/PR **2**  |  reviewer diversity (eff.#) **2.94**  |  PR author diversity (eff.#) **9.51**  |  unique reviewers **4**, unique authors **14**
 - **Bus factor proxy (50% / 75%):** 3 / 4
-- **Incubator reports:** 3  |  **Avg mentor sign-offs:** 0.67
-- **Mailing lists:** dev messages **197**, dev unique posters **11**
+- **Incubator reports:** 2  |  **Avg mentor sign-offs:** 0.5
+- **Mailing lists:** dev messages **168**, dev unique posters **10**
 
-### 12m  (2024-11-20 → 2025-11-20)
-- **Releases (from list votes/results):** 2  |  **Median gap (days):** 350
-- **New contributors:** 10  |  **Unique committers:** 19  |  **Commits:** 108
+### 12m  (2024-11-30 → 2025-11-30)
+- **Releases (from list votes/results):** 2  |  **Median gap (days):** 354
+- **New contributors:** 11  |  **Unique committers:** 20  |  **Commits:** 108
 - **Issues:** opened 108 / closed 90
-- **PRs:** opened 86 / merged 44  |  **Median merge time (days):** 2.0
-- **Reviews (sampled):** median reviewers/PR **—**  |  reviewer diversity (eff.#) **3.62**  |  PR author diversity (eff.#) **12.1**  |  unique reviewers **9**, unique authors **19**
+- **PRs:** opened 85 / merged 44  |  **Median merge time (days):** 2.3
+- **Reviews (sampled):** median reviewers/PR **2.0**  |  reviewer diversity (eff.#) **3.55**  |  PR author diversity (eff.#) **12.74**  |  unique reviewers **9**, unique authors **20**
 - **Bus factor proxy (50% / 75%):** 3 / 4
 - **Incubator reports:** 3  |  **Avg mentor sign-offs:** 0.67
-- **Mailing lists:** dev messages **432**, dev unique posters **12**
+- **Mailing lists:** dev messages **427**, dev unique posters **14**
 
 ## Reading the Indicators
 - **Use trend arrows** to compare available windows; when a window lacks ≥28 days or ≥5 events, trends show **—**.
