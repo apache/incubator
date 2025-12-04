@@ -2773,7 +2773,7 @@
         {
           "description": "Apache Iggy (Incubating) Website",
           "last_update_int": 1764183961,
-          "last_update_txt": "7 days ago",
+          "last_update_txt": "8 days ago",
           "nocommit": false
         }
       ]
@@ -5488,7 +5488,7 @@
         "weijiawang"
       ],
       "numberCommitters": 34,
-      "numberCommittersNew": 0,
+      "numberCommittersNew": 3,
       "numberPMCEquals": true,
       "numberPMCMembers": 34,
       "owners": [
@@ -5545,8 +5545,9 @@
     "news": [
       "2023-10-21 Project enters incubation",
       "2025-05-25 Shaokang Xie becomes a new PPMC.",
-      "2025-07-20 Bismanpal Singh Anandas becomes a new PPMC.",
-      "2025-07-20 Harish Krishnakumar becomes a new PPMC."
+      "2025-05-25 New Committer: Shaokang Xie.",
+      "2025-07-20 New Committer: Bismanpal Singh Anandas.",
+      "2025-07-20 New Committer: Harish Krishnakumar."
     ],
     "podlingName": "ResilientDB",
     "rawReportingGroup": "group-1",
@@ -5771,15 +5772,11 @@
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-resilientdb.git;a=tree;hb=HEAD",
       "keys": "https://downloads.apache.org/incubator/resilientdb/KEYS",
       "svn": "",
-      "tracker": "",
+      "tracker": "https://github.com/apache/incubator-resilientdb/issues",
       "wiki": "",
       "www": "https://resilientdb.incubator.apache.org"
     },
     "zFixMeList": [
-      [
-        "10",
-        "Has not provided an issue tracker link"
-      ],
       [
         "18",
         "Has not provided a wiki link"
