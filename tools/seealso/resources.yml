@@ -1,0 +1,726 @@
+themes:
+  branding: "Project identity, naming, and trademark-related practices."
+  community: "How contributor communities form, grow, communicate, and sustain participation."
+  committers: "Responsibilities, rights, and expectations of ASF and podling committers."
+  culture: "Shared values, behaviours, and social norms that define The Apache Way."
+  data-trends: "Long-term, evidence-based analysis of Incubator behaviour and outcomes."
+  governance: "How decisions are made, how authority is exercised, and how projects are formally run."
+  graduation: "Transition of a podling into a Top-Level Project (TLP)."
+  infrastructure: "Use of ASF-provided technical infrastructure and services."
+  ipmc-oversight: "IPMC-level supervision, review, and accountability across all podlings."
+  legal: "Licensing, contributor agreements, and other legal compliance requirements."
+  mentoring: "Practices and responsibilities of Incubator mentors supporting podlings."
+  neutrality: "Maintaining vendor-neutral, community-controlled governance."
+  orientation: "Introductory guidance for people or projects entering the ASF or Incubator for the first time."
+  podling-health: "Indicators of project sustainability, diversity, activity, and governance maturity."
+  privacy: "Handling of personal data and privacy obligations within ASF projects."
+  releases: "Practices, compliance, and governance of ASF release processes."
+  reporting: "Preparation of formal status reports to the IPMC and ASF Board."
+  retirement: "Processes for winding down inactive or unsuccessful podlings."
+  stewardship: "Long-term care of a project’s governance continuity, independence, and sustainability."
+
+topics:
+  access-rights: "Defines the technical permissions granted to committers, including repository access, voting rights, and release authority."
+  activity: "Measures the level of ongoing participation in a project, including commits, discussions, reporting, and contributor engagement."
+  apache-way: "Describes the cultural operating principles of the ASF, including consensus-based decision-making, meritocracy, and community over code."
+  approvals: "Formal endorsements given through documented votes, typically required for releases, governance changes, and key decisions."
+  artifacts: "The formal outputs of a release, including source distributions, binaries, cryptographic signatures, and compliance files."
+  asf-culture: "The shared values and norms of the Apache Software Foundation, including openness, collaboration, and respect for volunteer governance."
+  asf-infra: "ASF-provided technical services including source code hosting, CI, mailing lists, web services, and authentication systems."
+  asf-values: "The core ethical and operational values of the ASF, including transparency, merit-based participation, and community-led governance."
+  balance: "The maintenance of healthy diversity across organisations, contributors, and perspectives within a single project."
+  best-practices: "Proven and repeatable behaviours that consistently lead to healthy governance, mentoring, and community outcomes."
+  board-reports: "Formal reports submitted by the Incubator to the ASF Board, summarising podling status, risk, and progress."
+  branding: "The correct and compliant use of names, logos, and visual identity for ASF and incubating projects."
+  branding-practice: "How trademark and branding rules are applied in real-world websites, documentation, marketing, and community spaces."
+  case-studies: "Detailed examinations of real podlings used to extract lessons about governance, community growth, and failure modes."
+  cl-as: "Contributor License Agreements that formally grant the ASF rights to redistribute and manage contributions."
+  closure: "The final administrative and community steps required to formally wind down a podling or project."
+  community-over-code: "The principle that sustainable communities matter more than short-term technical output."
+  communication: "How information flows through ASF projects using public, archived, and consensus-driven channels."
+  compliance: "Adherence to ASF, legal, and regulatory requirements across licensing, data handling, branding, and governance."
+  conflict: "Interpersonal or structural disagreements that arise within a podling community and require careful resolution."
+  consensus: "Decision-making through general agreement rather than formal voting, often using lazy consensus."
+  continuity: "The stability of mentoring and governance practices through transitions and community change."
+  contributors-to-committers: "The long-term process of growing casual contributors into trusted committers and maintainers."
+  criteria: "The formal requirements that podlings must meet to graduate or complete major governance milestones."
+  cultural-awareness: "The ability to collaborate respectfully across languages, national cultures, and social norms."
+  culture-check: "A reflective assessment of how well an individual or project aligns with ASF cultural expectations."
+  data-handling: "The responsible collection, storage, and processing of personal or sensitive data within ASF projects."
+  decision-making: "The formal and informal processes by which choices are proposed, discussed, refined, and approved within podling, PMC, and IPMC governance structures."
+  decision-records: "The documentation trail of how and why decisions were made, preserved on public mailing lists."
+  difficult-conversations: "Structured approaches to handling sensitive, corrective, or emotionally charged discussions."
+  discussion-topics: "The evolving subject matter of conversations on Incubator mailing lists over long time periods."
+  diversity: "The representation of different backgrounds, organizations, and perspectives within a community."
+  engagement: "The sustained involvement of contributors in discussions, reviews, releases, and project support."
+  expectations: "The behavioural, governance, and participation standards placed on contributors, mentors, and podlings."
+  feedback: "Constructive input intended to improve technical work, behaviour, or governance practices."
+  general-list: "Activity on the incubator-general mailing list used as a proxy for IPMC and Incubator-wide engagement."
+  getting-started: "The first practical operational steps taken by new podlings after acceptance into incubation."
+  governance-fundamentals: "The structural principles of ASF governance, including autonomy, meritocracy, and public accountability."
+  governance-importance: "Why well-functioning governance is essential for trust, scalability, and long-term project survival."
+  governance-practice: "How governance rules and norms are applied in day-to-day project operations."
+  governance-risks: "Structural or behavioural patterns that threaten project independence or sustainability."
+  graduation-readiness: "Indicators that a podling has achieved sufficient technical, community, and governance maturity to graduate."
+  incubation-basics: "The fundamental mechanics of how projects operate while in the Apache Incubator."
+  incubation-facts: "Clarifications that address common misunderstandings about how incubation actually works."
+  independence: "Freedom of a project to operate without control by any single vendor or individual."
+  inclusivity: "The practice of ensuring broad and fair participation in community decision-making."
+  ipmc-processes: "The operational workflows used by the Incubator PMC to review, guide, and assess podlings."
+  ipmc-role: "The formal oversight and governance responsibilities of the Incubator PMC."
+  joining-incubator: "The motivations, trade-offs, and formal process involved in proposing a project for incubation."
+  legal-basics: "The minimum legal knowledge required to operate compliant ASF projects."
+  lessons: "Insights derived from historical analysis of podlings and governance outcomes."
+  licensing: "The governing rules for how code and content may be used, distributed, and combined."
+  mailing-lists: "The primary public communication mechanism for ASF projects and governance."
+  measuring-podling-health: "Quantitative and qualitative indicators used to assess podling vitality and risk."
+  membership: "The role, rights, and expectations of ASF Members in the governance of the Foundation."
+  mentor-best-practices: "Repeatable mentoring behaviours that consistently lead to positive podling outcomes."
+  mentor-checklist: "A practical operational list of responsibilities for mentors supporting podlings."
+  mentor-offboarding: "The structured process of transitioning a mentor out of active podling responsibility."
+  mentor-participation: "The measured level of engagement and responsiveness of mentors over time."
+  mentor-quick-start: "A rapid entry guide for new mentors focused on immediate practical responsibilities."
+  mentor-reference: "A comprehensive reference guide for all aspects of mentoring in the Incubator."
+  mentor-replacement: "The process of changing mentor assignments to rebalance workload or address gaps."
+  mentor-role: "The formal scope of responsibility held by Incubator mentors."
+  mentor-self-check: "A reflective or quiz-based assessment of mentor knowledge and readiness."
+  mentoring-basics: "The foundational concepts required to mentor effectively within the ASF."
+  mentoring-issues: "Recurring problems observed in mentoring patterns across podlings."
+  misconceptions: "Incorrect or oversimplified assumptions commonly held by newcomers about ASF governance, incubation, and community practices."
+  onboarding-assessment: "A structured evaluation of readiness following onboarding materials."
+  oversight: "The supervisory role exercised by mentors, PPMCs, and the IPMC."
+  oversight-consistency: "The degree to which oversight is applied uniformly across podlings."
+  patterns: "Recurring behavioural or structural trends observed across Incubator history."
+  pmc-chair: "The coordinating role responsible for guiding a project PMC."
+  podling-assessment: "Systematic evaluation of a podling’s health, risks, and progress."
+  podling-orientation: "Initial guidance that introduces podlings to ASF expectations and workflows."
+  podling-reports: "Regular public status updates submitted by podlings to the IPMC."
+  post-graduation: "The phase of a project’s life after leaving the Incubator."
+  practical-cases: "Real-world applications used to illustrate governance and neutrality concepts."
+  process: "The defined workflow for a formal governance or administrative action."
+  project-identity: "How a project presents itself clearly and independently within the ASF."
+  project-resources: "Technical infrastructure and services allocated to a project."
+  proposal: "The formal document used to apply for entry into the Incubator."
+  readiness: "Indicators that a project or release is prepared for formal approval."
+  real-world-examples: "Case-based scenarios demonstrating practical ASF governance."
+  rebalancing: "Adjusting mentor or governance distribution to maintain effective oversight."
+  red-flags: "Early warning indicators that a podling may be at governance or community risk."
+  release-process: "The formal sequence required to build and approve an ASF-compliant release."
+  release-votes: "Formal votes used to approve distributions for public release."
+  report-patterns: "Common recurring structures found in podling status reports."
+  responsibilities: "The expected duties associated with governance and contributor roles."
+  responsiveness: "How quickly and clearly projects respond to community input."
+  reviews: "The formal evaluation of project state, releases, reporting, or governance."
+  roles: "Defined positions within ASF project and foundation governance structures."
+  scenarios-ipmc: "Practice-based oversight exercises intended for IPMC training."
+  scenarios-mentors: "Practice-based decision scenarios for mentor development."
+  scenarios-reporting: "Simulation-based training for writing and reviewing podling reports."
+  scope-check: "Understanding the boundaries of governance authority."
+  sign-off: "Formal confirmation or approval, often given by mentors or PMC members."
+  stewardship: "Long-term caretaking of project governance and sustainability."
+  structure: "Organisational layout of ASF project and foundation governance."
+  transition: "Governance or role changes over time."
+  sustainability: "A project’s ability to remain active and healthy long-term."
+  third-party-use: "Use of non-ASF brands, tools, and identities in project materials."
+  tickets: "Formal requests submitted to ASF Infrastructure for support or changes."
+  time-zones: "Managing collaboration across globally distributed contributors."
+  tlp-transition: "The formal move from podling to Top-Level Project."
+  transparency: "Open, publicly documented decision-making processes."
+  trends: "Long-term behavioural movements observed through data analysis."
+  trust: "Confidence in community decision-making and governance integrity."
+  vendor-neutrality: "The principle that no single vendor should dominate a project."
+  voting: "Formal structured decision-making using +1, 0, and -1 votes."
+  warning-signs: "Signals that deeper governance or community issues may be emerging."
+
+resources:
+  - id: joining-the-incubator
+    title: Joining the Incubator
+    type: guide
+    themes: [orientation, governance]
+    topics: [joining-incubator, proposal, expectations]
+    description: "Explains what to expect before applying, reasons to join or not, and how the proposal process works."
+    url: https://cwiki.apache.org/confluence/display/INCUBATOR/Joining+the+Incubator
+
+  - id: podling-orientation-guide
+    title: Podling Orientation Guide
+    type: guide
+    themes: [orientation, governance, culture]
+    topics: [podling-orientation, asf-culture, incubation-basics]
+    description: "Introduces how incubation works and the core elements of ASF culture for new podlings."
+    url: https://cwiki.apache.org/confluence/display/INCUBATOR/Podling+Orientation+Guide
+
+  - id: asf-values-slides
+    title: ASF Values
+    type: slides
+    themes: [culture, governance]
+    topics: [asf-values, transparency, community-over-code]
+    description: "Slide deck on the principles and values that underpin Apache projects."
+    url: https://training.apache.org/presentations/apache/incubator/ASFvalues/index.html
+
+  - id: asf-values-video
+    title: ASF Values
+    type: video
+    themes: [culture, governance]
+    topics: [asf-values, transparency, community-over-code]
+    description: "Video on transparency, consensus, and community over code in Apache projects."
+    url: https://youtu.be/d9XFK3ZLr8I
+
+  - id: podling-orientation-video
+    title: "Podling Orientation: Starting Your Apache Journey"
+    type: video
+    themes: [orientation, governance]
+    topics: [podling-orientation, getting-started]
+    description: "Video introducing the first steps for new podlings joining the Apache Incubator."
+    url: https://youtu.be/0zvwak1iwhE
+
+  - id: communication-in-apache-projects
+    title: Communication in Apache Projects
+    type: guide
+    themes: [community, culture]
+    topics: [mailing-lists, communication, decision-records]
+    description: "Explains how to use mailing lists, chat, and meetings effectively in Apache communities."
+    url: https://cwiki.apache.org/confluence/display/INCUBATOR/Communication+in+Apache+Projects
+
+  - id: international-and-cultural-awareness
+    title: International and Cultural Awareness
+    type: guide
+    themes: [culture, community]
+    topics: [cultural-awareness, diversity, time-zones]
+    description: "Guidance on working respectfully across cultures, languages, and time zones."
+    url: https://cwiki.apache.org/confluence/display/INCUBATOR/International+and+Cultural+Awareness
+
+  - id: podling-committer-onboarding
+    title: Podling Committer Onboarding
+    type: guide
+    themes: [committers, governance]
+    topics: [committer-onboarding, access-rights, responsibilities]
+    description: "Outlines expectations, access rights, and responsibilities for new committers in podlings."
+    url: https://cwiki.apache.org/confluence/display/INCUBATOR/Podling+Committer+Onboarding
+
+  - id: committer-onboarding-slides
+    title: Committer Onboarding
+    type: slides
+    themes: [committers, governance]
+    topics: [committer-onboarding, access-rights, responsibilities]
+    description: "Slide deck on how committers participate in project work and votes."
+    url: https://training.apache.org/presentations/apache/incubator/committers/index.html
+
+  - id: committer-onboarding-video
+    title: Committer Onboarding
+    type: video
+    themes: [committers, governance]
+    topics: [committer-onboarding, access-rights, responsibilities]
+    description: "Video explaining committer rights, responsibilities, and good practices."
+    url: https://youtu.be/JdKAeaDKk9k
+
+  - id: podling-ppmc-onboarding
+    title: Podling PPMC Onboarding
+    type: guide
+    themes: [stewardship, governance]
+    topics: [ppmc-onboarding, decision-making, stewardship, governance-practice]
+    description: "Guidance for PPMC members on managing community decisions and governance."
+    url: https://cwiki.apache.org/confluence/display/INCUBATOR/Podling+PPMC+Onboarding
+
+  - id: ppmc-onboarding-slides
+    title: PPMC Onboarding
+    type: slides
+    themes: [stewardship, governance]
+    topics: [ppmc-onboarding, decision-making, stewardship, governance-practice]
+    description: "Slide deck on stewardship and governance responsibilities for podling PMCs."
+    url: https://training.apache.org/presentations/apache/incubator/PPMC/index.html
+
+  - id: ppmc-onboarding-video
+    title: PPMC Onboarding
+    type: video
+    themes: [stewardship, governance]
+    topics: [ppmc-onboarding, decision-making, stewardship, governance-practice]
+    description: "Video on how podlings self-govern and grow into sustainable communities."
+    url: https://youtu.be/yvlasJxYUTs
+
+  - id: release-vote-insights
+    title: Release Vote Insights
+    type: guide
+    themes: [releases, data-trends, governance]
+    topics: [release-votes, patterns, readiness]
+    description: "Patterns from ten years of Incubator release votes, with lessons that improve mentor guidance and podling readiness."
+    url: https://cwiki.apache.org/confluence/display/INCUBATOR/Release+Vote+Insights
+
+  - id: ipmc-scenarios
+    title: IPMC Scenarios
+    type: scenario
+    themes: [ipmc-oversight, governance, podling-health]
+    topics: [scenarios-ipmc, podling-assessment, graduation-readiness]
+    description: "Scenario-based exercises to assess governance, podling health, and readiness from an IPMC perspective."
+    url: https://canvas.instructure.com/enroll/C8994Y
+
+  - id: mentor-onboarding
+    title: Mentor Onboarding
+    type: guide
+    themes: [mentoring, governance]
+    topics: [mentor-role, mentoring-basics, expectations, responsibilities]
+    description: "Introduces how mentors guide and support podlings through incubation."
+    url: https://cwiki.apache.org/confluence/display/INCUBATOR/Mentor+Onboarding
+
+  - id: mentor-quick-start-guide
+    title: Incubator Mentor Quick Start Guide
+    type: guide
+    themes: [mentoring]
+    topics: [mentor-quick-start, mentor-checklist]
+    description: "Concise entry point for new mentors, focusing on immediate next steps and responsibilities."
+    url: https://cwiki.apache.org/confluence/display/INCUBATOR/Incubator+Mentor+Quick+Start+Guide
+
+  - id: mentor-onboarding-slides
+    title: Mentor Onboarding
+    type: slides
+    themes: [mentoring, governance]
+    topics: [mentor-role, mentoring-basics, expectations, responsibilities]
+    description: "Slide deck outlining expectations, responsibilities, and scope of Incubator mentors."
+    url: https://training.apache.org/presentations/apache/incubator/mentors/index.html
+
+  - id: mentor-onboarding-video
+    title: Mentor Onboarding
+    type: video
+    themes: [mentoring, governance]
+    topics: [mentor-role, mentoring-basics, expectations, responsibilities]
+    description: "Video on real-world mentoring practices and how to support podlings effectively."
+    url: https://youtu.be/kdxCJY97vZA
+
+  - id: mentor-handbook
+    title: Mentor Handbook
+    type: guide
+    themes: [mentoring, governance]
+    topics: [mentor-reference, best-practices, responsibilities]
+    description: "Comprehensive reference to mentoring practices, expectations, and tools."
+    url: https://cwiki.apache.org/confluence/display/INCUBATOR/Mentor+Handbook
+
+  - id: mentor-onboarding-quiz
+    title: ASF Mentor Onboarding Quiz
+    type: quiz
+    themes: [mentoring]
+    topics: [mentor-self-check, onboarding-assessment]
+    description: "Quiz for new mentors to self-check their understanding of roles and responsibilities."
+    url: https://canvas.instructure.com/enroll/JHL8BM
+
+  - id: mentor-scenarios
+    title: Mentor Scenarios
+    type: scenario
+    themes: [mentoring, podling-health]
+    topics: [scenarios-mentors, conflict, red-flags]
+    description: "Scenario-based exercises covering real-world mentoring challenges and decisions."
+    url: https://canvas.instructure.com/enroll/GXPFY3
+
+  - id: ipmc-onboarding
+    title: Incubator PMC Onboarding
+    type: guide
+    themes:  [ipmc-oversight, governance]
+    topics: [ipmc-role, oversight, reviews, responsibilities, decision-making]
+    description: "Explains the IPMC’s oversight role and responsibilities for podlings."
+    url: https://cwiki.apache.org/confluence/display/INCUBATOR/Incubator+PMC+Onboarding
+
+  - id: ipmc-onboarding-slides
+    title: IPMC Onboarding
+    type: slides
+    themes:  [ipmc-oversight, governance]
+    topics: [ipmc-role, oversight, reviews, responsibilities, decision-making]
+    description: "Slide deck on how the IPMC ensures project compliance and mentoring quality."
+    url: https://training.apache.org/presentations/apache/incubator/IPMC/index.html
+
+  - id: ipmc-onboarding-video
+    title: IPMC Onboarding
+    type: video
+    themes:  [ipmc-oversight, governance]
+    topics: [ipmc-role, oversight, reviews, responsibilities, decision-making]
+    description: "Video explaining IPMC review and decision processes."
+    url: https://youtu.be/e2Vcf4U-f08
+
+  - id: ipmc-onboarding-quiz
+    title: IPMC Onboarding Quiz
+    type: quiz
+    themes: [ipmc-oversight]
+    topics: [ipmc-role, ipmc-processes, scope-check]
+    description: "Quiz covering IPMC responsibilities, scope of authority, and oversight expectations."
+    url: https://canvas.instructure.com/enroll/N33MBP
+
+  - id: governance-in-practice
+    title: Governance in Practice
+    type: guide
+    themes: [governance, culture]
+    topics: [governance-fundamentals, inclusivity, practical-cases, decision-making, transparency]
+    description: "Shows how ASF values translate into day-to-day community decisions."
+    url: https://cwiki.apache.org/confluence/display/INCUBATOR/Governance+in+Practice
+
+  - id: governance-in-practice-slides
+    title: Governance in Practice
+    type: slides
+    themes: [governance, culture]
+    topics: [governance-fundamentals, inclusivity, practical-cases, decision-making, transparency]
+    description: "Slide deck on how governance works in practice in Apache communities."
+    url: https://training.apache.org/presentations/apache/incubator/Governance/index.html
+
+  - id: governance-in-practice-video
+    title: Governance in Practice
+    type: video
+    themes: [governance, culture]
+    topics: [governance-fundamentals, inclusivity, practical-cases, decision-making, transparency]
+    description: "Video illustrating transparency and inclusivity in Apache governance."
+    url: https://youtu.be/fMcasCOImyQ
+
+  - id: why-governance-matters
+    title: Why Governance Matters
+    type: guide
+    themes: [governance]
+    topics: [trust, transparency, sustainability, governance-importance]
+    description: "Explains how good governance builds long-term trust and sustainability in projects."
+    url: https://cwiki.apache.org/confluence/display/INCUBATOR/Why+Governance+Matters
+
+  - id: who-does-what
+    title: Who Does What
+    type: guide
+    themes: [governance]
+    topics: [roles, responsibilities, structure]
+    description: "Defines roles and responsibilities across ASF and Incubator bodies."
+    url: https://cwiki.apache.org/confluence/display/INCUBATOR/Who+Does+What
+
+  - id: voting-and-consensus-in-practice
+    title: Voting and Consensus in Practice
+    type: guide
+    themes: [governance]
+    topics: [voting, consensus, process, approvals]
+    description: "Explains ASF decision processes, including lazy consensus and formal votes."
+    url: https://cwiki.apache.org/confluence/display/INCUBATOR/Voting+and+Consensus+in+Practice
+
+  - id: voting-and-consensus-slides
+    title: Voting and Consensus
+    type: slides
+    themes: [governance]
+    topics: [voting, consensus, process, approvals]
+    description: "Slide deck on lazy consensus, formal voting, and recording decisions."
+    url: https://training.apache.org/presentations/apache/incubator/VotingAndConsensus/index.html
+
+  - id: voting-and-consensus-video
+    title: Voting and Consensus
+    type: video
+    themes: [governance]
+    topics: [voting, consensus, process, approvals]
+    description: "Video demonstrating consensus-building and voting in practice."
+    url: https://youtu.be/hdBaPzeCyk0
+
+  - id: selecting-a-pmc-chair
+    title: Selecting a PMC Chair
+    type: guide
+    themes: [stewardship, governance]
+    topics: [pmc-chair]
+    description: "Guidance on identifying and selecting long-term project stewardship."
+    url: https://cwiki.apache.org/confluence/display/INCUBATOR/Selecting+a+PMC+Chair
+
+  - id: common-myths
+    title: Common Myths
+    type: guide
+    themes: [orientation, governance]
+    topics: [misconceptions, incubation-facts]
+    description: "Corrects common misconceptions about incubation, voting, and ASF processes."
+    url: https://cwiki.apache.org/confluence/display/INCUBATOR/Common+Myths
+
+  - id: vendor-neutrality
+    title: Vendor Neutrality
+    type: guide
+    themes: [neutrality, governance]
+    topics: [vendor-neutrality, independence, balance]
+    description: "Guidance on ensuring balanced, community-led governance without single-vendor dominance."
+    url: https://cwiki.apache.org/confluence/display/INCUBATOR/Vendor+Neutrality
+
+  - id: neutrality-in-practice
+    title: Neutrality In Practice
+    type: guide
+    themes: [neutrality, governance, culture]
+    topics: [vendor-neutrality, practical-cases, governance-risks]
+    description: "Practical examples of how incubating projects maintain community-led, vendor-neutral governance."
+    url: https://cwiki.apache.org/confluence/display/INCUBATOR/Neutrality+In+Practice
+
+  - id: vendor-neutrality-slides
+    title: Vendor Neutrality
+    type: slides
+    themes: [neutrality, governance, culture]
+    topics: [vendor-neutrality, practical-cases, governance-risks]
+    description: "Slide deck on avoiding single-vendor dominance in incubating projects."
+    url: https://training.apache.org/presentations/apache/incubator/VendorNeutrality/index.html
+
+  - id: vendor-neutrality-video
+    title: Vendor Neutrality
+    type: video
+    themes: [neutrality, governance, culture]
+    topics: [vendor-neutrality, practical-cases, governance-risks]
+    description: "Video explaining why vendor neutrality matters for ASF project health."
+    url: https://youtu.be/WmmZYl3ZNr0
+
+  - id: practicing-the-apache-way
+    title: Practicing The Apache Way
+    type: guide
+    themes: [culture, governance]
+    topics: [apache-way, asf-culture, real-world-examples]
+    description: "Real-world examples of applying The Apache Way in day-to-day project work."
+    url: https://cwiki.apache.org/confluence/display/INCUBATOR/Practicing+The+Apache+Way
+
+  - id: asf-member-quiz
+    title: ASF Member Quiz
+    type: quiz
+    themes: [culture, governance]
+    topics: [asf-values, membership, culture-check]
+    description: "Quiz on ASF culture, values, and membership expectations."
+    url: https://canvas.instructure.com/enroll/R9C3C7
+
+  - id: third-party-branding-incubating-projects
+    title: Third-Party Branding and Incubating Projects
+    type: guide
+    themes: [branding, legal]
+    topics: [branding, third-party-use, trademarks, project-identity, branding-practice]
+    description: "Explains correct use of third-party branding, names, and logos for incubating projects."
+    url: https://cwiki.apache.org/confluence/display/INCUBATOR/Third-Party+Branding+Incubating+Projects
+
+  - id: branding-and-identity-slides
+    title: Branding and Identity
+    type: slides
+    themes: [branding, legal]
+    topics: [branding, third-party-use, trademarks, project-identity, branding-practice]
+    description: "Slide deck on trademarks, branding, and maintaining a clear project identity."
+    url: https://training.apache.org/presentations/apache/incubator/BrandingIdentity/index.html
+
+  - id: branding-and-identity-video
+    title: Branding and Identity
+    type: video
+    themes: [branding, legal]
+    topics: [branding, third-party-use, trademarks, project-identity, branding-practice]
+    description: "Video on maintaining brand clarity and compliance with ASF trademark policies."
+    url: https://youtu.be/EsrPHkDhNTU
+
+  - id: legal-basics
+    title: Legal Basics
+    type: guide
+    themes: [legal]
+    topics: [licensing, cl-as, legal-basics]
+    description: "Covers core legal concepts including licensing and contributor agreements in ASF projects."
+    url: https://cwiki.apache.org/confluence/display/INCUBATOR/Legal+Basics
+
+  - id: privacy-and-data-handling
+    title: Privacy and Data Handling
+    type: guide
+    themes: [privacy, legal]
+    topics: [privacy, data-handling, compliance]
+    description: "Guidance on responsible data handling and privacy obligations in Apache projects."
+    url: https://cwiki.apache.org/confluence/display/INCUBATOR/Privacy+and+Data+Handling
+
+  - id: interacting-with-asf-infra
+    title: Interacting with ASF Infrastructure
+    type: guide
+    themes: [infrastructure]
+    topics: [asf-infra, tickets, project-resources]
+    description: "Explains how to work effectively with ASF Infrastructure and manage project resources."
+    url: https://cwiki.apache.org/confluence/display/INCUBATOR/Interacting+with+ASF+Infra
+
+  - id: best-practices-for-mentors
+    title: Best Practices for Mentors
+    type: guide
+    themes: [mentoring]
+    topics: [mentor-best-practices, expectations]
+    description: "Examples of effective mentoring approaches and behaviours in the Incubator."
+    url: https://cwiki.apache.org/confluence/display/INCUBATOR/Best+Practices+for+Mentors
+
+  - id: common-red-flags
+    title: Common Red Flags
+    type: guide
+    themes: [mentoring, podling-health]
+    topics: [red-flags, warning-signs, podling-health]
+    description: "Lists issues to watch for during incubation that may indicate problems."
+    url: https://cwiki.apache.org/confluence/display/INCUBATOR/Common+Red+Flags
+
+  - id: mentors-tough-conversation-guide
+    title: Mentors’ Tough Conversation Guide
+    type: guide
+    themes: [mentoring, culture]
+    topics: [difficult-conversations, conflict, feedback]
+    description: "Helps mentors prepare for and conduct challenging but constructive conversations."
+    url: https://cwiki.apache.org/confluence/display/INCUBATOR/Mentors+Tough+Conversation+Guide
+
+  - id: mentor-offboarding
+    title: Mentor Offboarding
+    type: guide
+    themes: [mentoring, graduation]
+    topics: [mentor-offboarding, transition, graduation]
+    description: "Guidance on transitioning out of a podling as it graduates from the Incubator."
+    url: https://cwiki.apache.org/confluence/display/INCUBATOR/Mentor+Offboarding
+
+  - id: mentor-replacement
+    title: Mentor Replacement
+    type: guide
+    themes: [mentoring, governance]
+    topics: [mentor-replacement, rebalancing, continuity]
+    description: "Explains how to add, replace, or rebalance mentors for podlings."
+    url: https://cwiki.apache.org/confluence/display/INCUBATOR/Mentor+Replacement
+
+  - id: measuring-podling-health
+    title: Measuring Podling Health
+    type: guide
+    themes: [podling-health, data-trends]
+    topics: [activity, diversity, responsiveness]
+    description: "Framework for assessing podling activity, diversity, and responsiveness."
+    url: https://cwiki.apache.org/confluence/display/INCUBATOR/Measuring+Podling+Health
+
+  - id: community-building-in-practice-slides
+    title: Community Building in Practice
+    type: slides
+    themes: [community, podling-health]
+    topics: [contributors-to-committers, engagement]
+    description: "Slide deck on building diverse, healthy communities in incubating projects."
+    url: https://training.apache.org/presentations/apache/incubator/CommunityBuilding/index.html
+
+  - id: community-building-in-practice-video
+    title: Community Building in Practice
+    type: video
+    themes: [community, podling-health]
+    topics: [contributors-to-committers, engagement]
+    description: "Video on growing contributors into leaders and sustaining community health."
+    url: https://youtu.be/rCkqAn6f19Y
+
+  - id: incubator-discussion-trends
+    title: Incubator Discussion Trends
+    type: guide
+    themes: [data-trends, governance]
+    topics: [discussion-topics, general-list, trends]
+    description: "Analysis of a decade of topic shifts on the general@incubator.apache.org list."
+    url: https://cwiki.apache.org/confluence/display/INCUBATOR/Incubator+Discussion+Trends
+
+  - id: mentor-engagement-patterns
+    title: Mentor Engagement Patterns
+    type: guide
+    themes: [mentoring, data-trends]
+    topics: [mentor-participation, responsiveness, sign-off]
+    description: "Analysis of mentor participation, responsiveness, and sign-off behaviour across podlings."
+    url: https://cwiki.apache.org/confluence/display/INCUBATOR/Mentor+Engagement+Patterns
+
+  - id: mentor-trends
+    title: Mentor Trends
+    type: guide
+    themes: [mentoring, data-trends]
+    topics: [mentoring-issues, report-patterns]
+    description: "Highlights recurring issues in podling reports and typical mentor responses."
+    url: https://cwiki.apache.org/confluence/display/INCUBATOR/Mentor+Trends
+
+  - id: ipmc-reflection-and-oversight
+    title: IPMC Reflection and Oversight
+    type: guide
+    themes: [ipmc-oversight, governance, data-trends]
+    topics: [oversight-consistency, lessons, case-studies]
+    description: "Draws lessons from case studies to strengthen IPMC oversight and consistency."
+    url: https://cwiki.apache.org/confluence/display/INCUBATOR/IPMC+Reflection+and+Oversight
+
+  - id: incubator-case-studies
+    title: Incubator Case Studies
+    type: guide
+    themes: [governance, community, data-trends]
+    topics: [case-studies, red-flags, lessons]
+    description: "Examples of podling challenges and successes across the Incubator."
+    url: https://cwiki.apache.org/confluence/display/INCUBATOR/Incubator+Case+Studies
+
+  - id: reporting-guide
+    title: Reporting Guide
+    type: guide
+    themes: [reporting, governance]
+    topics: [podling-reports, board-reports, transparency]
+    description: "Explains how to prepare and submit clear, transparent reports for the ASF and IPMC."
+    url: https://cwiki.apache.org/confluence/display/INCUBATOR/Reporting+Guide
+
+  - id: reporting-scenarios
+    title: Reporting Scenarios
+    type: scenario
+    themes: [reporting, governance]
+    topics: [scenarios-reporting, podling-reports]
+    description: "Scenario-based practice for writing and reviewing podling reports."
+    url: https://canvas.instructure.com/enroll/EM7DCX
+
+  - id: graduation-criteria
+    title: Graduation Criteria
+    type: guide
+    themes: [graduation, governance]
+    topics: [graduation-readiness, criteria, independence]
+    description: "Lists readiness indicators and criteria for podlings to graduate from incubation."
+    url: https://cwiki.apache.org/confluence/display/INCUBATOR/Graduation+Criteria
+
+  - id: graduation-and-beyond
+    title: Graduation and Beyond
+    type: guide
+    themes: [graduation, governance]
+    topics: [post-graduation, tlp-transition]
+    description: "Guidance on transitioning from a podling to a Top-Level Project and beyond."
+    url: https://cwiki.apache.org/confluence/display/INCUBATOR/Graduation+and+Beyond
+
+  - id: incubator-releases-slides
+    title: Incubator Releases
+    type: slides
+    themes: [releases, legal]
+    topics: [release-process, compliance, artifacts]
+    description: "Slide deck on preparing compliant ASF releases within the Incubator."
+    url: https://training.apache.org/presentations/apache/incubator/incubator-releases/index.html
+
+  - id: retiring-podlings
+    title: Retiring Podlings
+    type: guide
+    themes: [retirement, governance]
+    topics: [criteria, process, closure]
+    description: "Explains when and how to retire inactive podlings gracefully."
+    url: https://cwiki.apache.org/confluence/display/INCUBATOR/Retiring+Podlings
+
+  - id: select-your-mentors
+    title: Select Your Mentors
+    type: guide
+    themes: [mentoring, governance, podling-health]
+    topics: [mentor-replacement, vendor-neutrality, independence]
+    description: "Guidance for podlings and the IPMC on selecting mentors with the right mix of experience, availability, and independence to support healthy incubation."
+    url: https://cwiki.apache.org/confluence/display/INCUBATOR/Select+Your+Mentors
+
+  - id: 10-years-of-the-incubator
+    title: 10 Years of the Incubator
+    type: guide
+    themes: [data-trends, governance, podling-health]
+    topics: [measuring-podling-health, governance-fundamentals]
+    description: "A data-driven retrospective (2015–2025) summarising podling lifecycles, governance patterns, and long-term structural and community trends across the Incubator."
+    url: https://cwiki.apache.org/confluence/display/INCUBATOR/10+years+of+the+Incubator
+
+  - id: 10-years-summary
+    title: 10 Years Summary
+    type: guide
+    themes: [data-trends, governance, podling-health]
+    topics: [measuring-podling-health, governance-fundamentals]
+    description: "A summary of ten years of the Incubator - covering podling lifecycles, governance trends, community evolution, and overall Incubator health over time."
+    url: https://cwiki.apache.org/confluence/display/INCUBATOR/10+Years+Summary
+
+  - id: ipmc-governance
+    title: IPMC Governance
+    type: guide
+    themes: [governance, data-trends, ipmc-oversight]
+    topics: [general-list, trends, oversight]
+    description: "A data-driven guide analysing how IPMC governance activity changes over time using incubator-general mailing list participation, showing how podling load shapes oversight concentration, continuity, renewal, and governance capacity."
+    url: https://cwiki.apache.org/confluence/display/INCUBATOR/IPMC+Governance
+
+  - id: governance-patterns
+    title: Governance Patterns
+    type: guide
+    themes: [data-trends, governance, podling-health]
+    topics: [general-list, trends, release-process]
+    description: "Data-driven analysis (2015–2025) of incubator-general mailing list activity, releases, votes, and how governance load, release cadence, and participation diversity correlate with podling population and project health."
+    url: https://cwiki.apache.org/confluence/display/INCUBATOR/Governance+Patterns
+
+  - id: podling-governance-patterns
+    title: Podling Governance Patterns
+    type: guide
+    themes: [data-trends, podling-health, governance]
+    topics: [general-list, trends, release-process]
+    description: "Analysis of ten years (2015–2025) of public-mailing-list data to surface common governance and release-behaviour patterns: distinguishing healthy podlings that graduate from those that stagnate and retire."
+    url: https://cwiki.apache.org/confluence/display/INCUBATOR/Podling+Governance+Patterns
+
+  - id: community-and-governance-growth
+    title: Community and Governance Growth
+    type: guide
+    themes: [data-trends, podling-health, governance]
+    topics: [general-list, trends, measuring-podling-health]
+    description: "Based on ten years of Incubator data (2016–2025), this guide highlights common patterns of healthy podling community and governance growth, contributor onboarding, governance maturity, and long-term sustainability. It distinguishes typical successful trajectories from struggling ones to help podlings, mentors, and IPMC reflect on community-building and governance practices."
+    url: https://cwiki.apache.org/confluence/display/INCUBATOR/Community+and+Governance+Growth
