@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Theme: governance</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <meta name="generator" content="JBake">
+
+    <!-- Le styles -->
+    <link href="../css/incubator.css" rel="stylesheet">
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/asciidoctor.css" rel="stylesheet">
+    <link href="../css/base.css" rel="stylesheet">
+    <link href="../css/prettify.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <!--<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">-->
+    <link rel="shortcut icon" href="https://www.apache.org/favicon.ico">
+    <script src="https://www.apachecon.com/event-images/snippet.js"></script>
+  </head>
+  <body onload="prettyPrint()">
+    <div id="wrap">
+   
+
+
+	<!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/"><i class="icon-home"></i>Apache Incubator</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Policies <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="/policy/incubation.html">Incubation Policy</a></li>
+                <li><a href="/ip-clearance/">Intellectual Property Clearance</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Proposals <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="/guides/proposal.html">A Guide To Proposal Creation</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Podling Guides <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="/cookbook">Cookbook</a></li>
+              
+                <li><hr><a href="/guides/roles_and_responsibilities.html">Roles and Responsibilities</a></li>
+                <li><a href="/guides/committer.html">Committers</a></li>
+                <li><a href="/guides/ppmc.html">Podling Project Management Committee</a></li>
+                <li><a href="/guides/community.html">Guide to Successful Community Building</a></li>
+
+                <li><hr><a href="/guides/branding.html">Incubator Branding Guide</a></li>
+                <li><a href="/guides/publicity.html">Podling Publicity/Media Guidelines</a></li>
+                <li><a href="/guides/press-kit.html">Podling Press Kit</a></li>
+              
+                <li><hr><a href="/guides/transitioning_asf.html">Initial Code Import</a></li>
+                <li><a href="/guides/names.html">Podling Name Search Guide</a></li>
+                <li><a href="/guides/ip_clearance.html">Podling IP Clearance</a></li>
+
+                <li><hr><a href="/guides/sites.html">Podling Websites</a></li>
+                <li><a href="/guides/podling_sourcecontrol.html">Podling Source Control</a></li>
+
+                <li><hr><a href="/guides/releasemanagement.html">Release Management</a></li>
+                <li><a href="/guides/distribution.html">Release Distribution</a></li>
+              
+                <li><hr><a href="/guides/graduation.html">Guide to Successful Graduation</a></li>
+                <li><a href="/guides/retirement.html">Guide to Retirement</a></li>
+                <li><a href="/guides/transferring.html">Transferring Resources out of the Incubator</a></li>
+
+                <li><hr><a href="/projects/#current">Current Podlings</a></li>
+                <li><a href="/clutch/">Clutch Report</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">PMC Guides <b class="caret"></b></a>
+              <ul class="dropdown-menu">     
+                <li><a href="/guides/participation.html">Guide to Participation</a></li>
+                <li><a href="/guides/lists.html">Incubator Mailing Lists Guide</a></li>
+
+                <li><a href="/guides/chair.html">Incubator Chair Guide</a></li>  
+                <li><a href="/guides/mentor.html">Mentors' Guide</a></li>
+
+                <li><hr><a href="/guides/website.html">Updating the top-level Incubator website</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">ASF <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="https://www.apache.org/foundation/how-it-works.html">How Apache Works</a></li>
+                <li><a href="https://www.apache.org/dev/">Developer Documentation</a></li>
+                <li><a href="https://www.apache.org/foundation/">Foundation</a></li>
+                <li><a href="https://www.apache.org/legal/">Legal</a></li>
+		<hr/>
+                <li><a href="https://www.apache.org/licenses/">License</a></li>
+		<li><a href="https://privacy.apache.org/policies/privacy-policy-public.html">Privacy Policy</a></li>
+		<li><a href="https://www.apache.org/security/">Security</a></li>
+                <li><a href="https://www.apache.org/foundation/sponsorship.html">Sponsorship</a></li>
+                <li><a href="https://www.apache.org/foundation/thanks.html">Thanks</a></li>
+		<li><a href="https://www.apache.org/events/current-event">Current Events</a></li>
+              </ul>
+            </li>
+            <li><a href="/training/index.html">Training</a></li>
+            <li><a href="/faq.html">FAQs</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 vcenter"><a href="https://www.apache.org/"><img src="https://www.apache.org/img/asf_logo.png" alt="The Apache Software Foundation" border="0" style="margin-top: 2px" width="200"></a></div>
+        <div class="col-md-4 vcenter"><a href="/"><img src="https://incubator.apache.org/images/incubator_feather_egg_logo_sm.png" alt="The Apache Software Foundation Incubator" border="0" style="margin-top: 2px" width="256"></a></div>
+        <div class="col-md-4 vcenter">
+	    <a href="https://www.apache.org/foundation/contributing.html"><img src="https://www.apache.org/images/SupportApache-small.png" height="64" width="64"></a>
+	    &nbsp;&nbsp;&nbsp;&nbsp;
+	    <a class="acevent" data-format="square" data-width="100" data-mode="light" data-event="random"></a>
+	</div>
+      </div>
+    </div>
+    <div class="top-container container">
+
+
+<div class="page-header">
+    <h1>Guide :: Theme: governance</h1>
+</div>
+
+<div class="article-body">
+
+Estimated Reading Time: <span class="eta"></span>
+
+<p><div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Resource Types: 📘 Guide  🖥️ Slide Deck  🎞️ Video  🧩 Quiz  🧠 Practice / Scenario</p>
+</div>
+<div class="paragraph">
+<p>How decisions are made, how authority is exercised, and how projects are formally run.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_guides">Guides</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>📘 <a href="https://cwiki.apache.org/confluence/display/INCUBATOR/10+years+of+the+Incubator">10 Years of the Incubator</a> - A data-driven retrospective (2015–2025) summarising podling lifecycles, governance patterns, and long-term structural and community trends across the Incubator.</p>
+</li>
+<li>
+<p>📘 <a href="https://cwiki.apache.org/confluence/display/INCUBATOR/10+Years+Summary">10 Years Summary</a> - A summary of ten years of the Incubator - covering podling lifecycles, governance trends, community evolution, and overall Incubator health over time.</p>
+</li>
+<li>
+<p>📘 <a href="https://cwiki.apache.org/confluence/display/INCUBATOR/Common+Myths">Common Myths</a> - Corrects common misconceptions about incubation, voting, and ASF processes.</p>
+</li>
+<li>
+<p>📘 <a href="https://cwiki.apache.org/confluence/display/INCUBATOR/Community+and+Governance+Growth">Community and Governance Growth</a> - Based on ten years of Incubator data (2016–2025), this guide highlights common patterns of healthy podling community and governance growth, contributor onboarding, governance maturity, and long-term sustainability. It distinguishes typical successful trajectories from struggling ones to help podlings, mentors, and IPMC reflect on community-building and governance practices.</p>
+</li>
+<li>
+<p>📘 <a href="https://cwiki.apache.org/confluence/display/INCUBATOR/Governance+in+Practice">Governance in Practice</a> - Shows how ASF values translate into day-to-day community decisions.</p>
+</li>
+<li>
+<p>📘 <a href="https://cwiki.apache.org/confluence/display/INCUBATOR/Governance+Patterns">Governance Patterns</a> - Data-driven analysis (2015–2025) of incubator-general mailing list activity, releases, votes, and how governance load, release cadence, and participation diversity correlate with podling population and project health.</p>
+</li>
+<li>
+<p>📘 <a href="https://cwiki.apache.org/confluence/display/INCUBATOR/Graduation+and+Beyond">Graduation and Beyond</a> - Guidance on transitioning from a podling to a Top-Level Project and beyond.</p>
+</li>
+<li>
+<p>📘 <a href="https://cwiki.apache.org/confluence/display/INCUBATOR/Graduation+Criteria">Graduation Criteria</a> - Lists readiness indicators and criteria for podlings to graduate from incubation.</p>
+</li>
+<li>
+<p>📘 <a href="https://cwiki.apache.org/confluence/display/INCUBATOR/Incubator+Case+Studies">Incubator Case Studies</a> - Examples of podling challenges and successes across the Incubator.</p>
+</li>
+<li>
+<p>📘 <a href="https://cwiki.apache.org/confluence/display/INCUBATOR/Incubator+Discussion+Trends">Incubator Discussion Trends</a> - Analysis of a decade of topic shifts on the <a href="mailto:general@incubator.apache.org">general@incubator.apache.org</a> list.</p>
+</li>
+<li>
+<p>📘 <a href="https://cwiki.apache.org/confluence/display/INCUBATOR/Incubator+PMC+Onboarding">Incubator PMC Onboarding</a> - Explains the IPMC’s oversight role and responsibilities for podlings.</p>
+</li>
+<li>
+<p>📘 <a href="https://cwiki.apache.org/confluence/display/INCUBATOR/IPMC+Governance">IPMC Governance</a> - A data-driven guide analysing how IPMC governance activity changes over time using incubator-general mailing list participation, showing how podling load shapes oversight concentration, continuity, renewal, and governance capacity.</p>
+</li>
+<li>
+<p>📘 <a href="https://cwiki.apache.org/confluence/display/INCUBATOR/IPMC+Reflection+and+Oversight">IPMC Reflection and Oversight</a> - Draws lessons from case studies to strengthen IPMC oversight and consistency.</p>
+</li>
+<li>
+<p>📘 <a href="https://cwiki.apache.org/confluence/display/INCUBATOR/Joining+the+Incubator">Joining the Incubator</a> - Explains what to expect before applying, reasons to join or not, and how the proposal process works.</p>
+</li>
+<li>
+<p>📘 <a href="https://cwiki.apache.org/confluence/display/INCUBATOR/Mentor+Handbook">Mentor Handbook</a> - Comprehensive reference to mentoring practices, expectations, and tools.</p>
+</li>
+<li>
+<p>📘 <a href="https://cwiki.apache.org/confluence/display/INCUBATOR/Mentor+Onboarding">Mentor Onboarding</a> - Introduces how mentors guide and support podlings through incubation.</p>
+</li>
+<li>
+<p>📘 <a href="https://cwiki.apache.org/confluence/display/INCUBATOR/Mentor+Replacement">Mentor Replacement</a> - Explains how to add, replace, or rebalance mentors for podlings.</p>
+</li>
+<li>
+<p>📘 <a href="https://cwiki.apache.org/confluence/display/INCUBATOR/Neutrality+In+Practice">Neutrality In Practice</a> - Practical examples of how incubating projects maintain community-led, vendor-neutral governance.</p>
+</li>
+<li>
+<p>📘 <a href="https://cwiki.apache.org/confluence/display/INCUBATOR/Podling+Committer+Onboarding">Podling Committer Onboarding</a> - Outlines expectations, access rights, and responsibilities for new committers in podlings.</p>
+</li>
+<li>
+<p>📘 <a href="https://cwiki.apache.org/confluence/display/INCUBATOR/Podling+Governance+Patterns">Podling Governance Patterns</a> - Analysis of ten years (2015–2025) of public-mailing-list data to surface common governance and release-behaviour patterns: distinguishing healthy podlings that graduate from those that stagnate and retire.</p>
+</li>
+<li>
+<p>📘 <a href="https://cwiki.apache.org/confluence/display/INCUBATOR/Podling+Orientation+Guide">Podling Orientation Guide</a> - Introduces how incubation works and the core elements of ASF culture for new podlings.</p>
+</li>
+<li>
+<p>📘 <a href="https://cwiki.apache.org/confluence/display/INCUBATOR/Podling+PPMC+Onboarding">Podling PPMC Onboarding</a> - Guidance for PPMC members on managing community decisions and governance.</p>
+</li>
+<li>
+<p>📘 <a href="https://cwiki.apache.org/confluence/display/INCUBATOR/Practicing+The+Apache+Way">Practicing The Apache Way</a> - Real-world examples of applying The Apache Way in day-to-day project work.</p>
+</li>
+<li>
+<p>📘 <a href="https://cwiki.apache.org/confluence/display/INCUBATOR/Release+Vote+Insights">Release Vote Insights</a> - Patterns from ten years of Incubator release votes, with lessons that improve mentor guidance and podling readiness.</p>
+</li>
+<li>
+<p>📘 <a href="https://cwiki.apache.org/confluence/display/INCUBATOR/Reporting+Guide">Reporting Guide</a> - Explains how to prepare and submit clear, transparent reports for the ASF and IPMC.</p>
+</li>
+<li>
+<p>📘 <a href="https://cwiki.apache.org/confluence/display/INCUBATOR/Retiring+Podlings">Retiring Podlings</a> - Explains when and how to retire inactive podlings gracefully.</p>
+</li>
+<li>
+<p>📘 <a href="https://cwiki.apache.org/confluence/display/INCUBATOR/Select+Your+Mentors">Select Your Mentors</a> - Guidance for podlings and the IPMC on selecting mentors with the right mix of experience, availability, and independence to support healthy incubation.</p>
+</li>
+<li>
+<p>📘 <a href="https://cwiki.apache.org/confluence/display/INCUBATOR/Selecting+a+PMC+Chair">Selecting a PMC Chair</a> - Guidance on identifying and selecting long-term project stewardship.</p>
+</li>
+<li>
+<p>📘 <a href="https://cwiki.apache.org/confluence/display/INCUBATOR/Vendor+Neutrality">Vendor Neutrality</a> - Guidance on ensuring balanced, community-led governance without single-vendor dominance.</p>
+</li>
+<li>
+<p>📘 <a href="https://cwiki.apache.org/confluence/display/INCUBATOR/Voting+and+Consensus+in+Practice">Voting and Consensus in Practice</a> - Explains ASF decision processes, including lazy consensus and formal votes.</p>
+</li>
+<li>
+<p>📘 <a href="https://cwiki.apache.org/confluence/display/INCUBATOR/Who+Does+What">Who Does What</a> - Defines roles and responsibilities across ASF and Incubator bodies.</p>
+</li>
+<li>
+<p>📘 <a href="https://cwiki.apache.org/confluence/display/INCUBATOR/Why+Governance+Matters">Why Governance Matters</a> - Explains how good governance builds long-term trust and sustainability in projects.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_slide_decks">Slide Decks</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>🖥️ <a href="https://training.apache.org/presentations/apache/incubator/ASFvalues/index.html">ASF Values</a> - Slide deck on the principles and values that underpin Apache projects.</p>
+</li>
+<li>
+<p>🖥️ <a href="https://training.apache.org/presentations/apache/incubator/committers/index.html">Committer Onboarding</a> - Slide deck on how committers participate in project work and votes.</p>
+</li>
+<li>
+<p>🖥️ <a href="https://training.apache.org/presentations/apache/incubator/Governance/index.html">Governance in Practice</a> - Slide deck on how governance works in practice in Apache communities.</p>
+</li>
+<li>
+<p>🖥️ <a href="https://training.apache.org/presentations/apache/incubator/IPMC/index.html">IPMC Onboarding</a> - Slide deck on how the IPMC ensures project compliance and mentoring quality.</p>
+</li>
+<li>
+<p>🖥️ <a href="https://training.apache.org/presentations/apache/incubator/mentors/index.html">Mentor Onboarding</a> - Slide deck outlining expectations, responsibilities, and scope of Incubator mentors.</p>
+</li>
+<li>
+<p>🖥️ <a href="https://training.apache.org/presentations/apache/incubator/PPMC/index.html">PPMC Onboarding</a> - Slide deck on stewardship and governance responsibilities for podling PMCs.</p>
+</li>
+<li>
+<p>🖥️ <a href="https://training.apache.org/presentations/apache/incubator/VendorNeutrality/index.html">Vendor Neutrality</a> - Slide deck on avoiding single-vendor dominance in incubating projects.</p>
+</li>
+<li>
+<p>🖥️ <a href="https://training.apache.org/presentations/apache/incubator/VotingAndConsensus/index.html">Voting and Consensus</a> - Slide deck on lazy consensus, formal voting, and recording decisions.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_videos">Videos</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>🎞️ <a href="https://youtu.be/d9XFK3ZLr8I">ASF Values</a> - Video on transparency, consensus, and community over code in Apache projects.</p>
+</li>
+<li>
+<p>🎞️ <a href="https://youtu.be/JdKAeaDKk9k">Committer Onboarding</a> - Video explaining committer rights, responsibilities, and good practices.</p>
+</li>
+<li>
+<p>🎞️ <a href="https://youtu.be/fMcasCOImyQ">Governance in Practice</a> - Video illustrating transparency and inclusivity in Apache governance.</p>
+</li>
+<li>
+<p>🎞️ <a href="https://youtu.be/e2Vcf4U-f08">IPMC Onboarding</a> - Video explaining IPMC review and decision processes.</p>
+</li>
+<li>
+<p>🎞️ <a href="https://youtu.be/kdxCJY97vZA">Mentor Onboarding</a> - Video on real-world mentoring practices and how to support podlings effectively.</p>
+</li>
+<li>
+<p>🎞️ <a href="https://youtu.be/0zvwak1iwhE">Podling Orientation: Starting Your Apache Journey</a> - Video introducing the first steps for new podlings joining the Apache Incubator.</p>
+</li>
+<li>
+<p>🎞️ <a href="https://youtu.be/yvlasJxYUTs">PPMC Onboarding</a> - Video on how podlings self-govern and grow into sustainable communities.</p>
+</li>
+<li>
+<p>🎞️ <a href="https://youtu.be/WmmZYl3ZNr0">Vendor Neutrality</a> - Video explaining why vendor neutrality matters for ASF project health.</p>
+</li>
+<li>
+<p>🎞️ <a href="https://youtu.be/hdBaPzeCyk0">Voting and Consensus</a> - Video demonstrating consensus-building and voting in practice.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_quizzes">Quizzes</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>🧩 <a href="https://canvas.instructure.com/enroll/R9C3C7">ASF Member Quiz</a> - Quiz on ASF culture, values, and membership expectations.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_practice_scenarios">Practice / Scenarios</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>🧠 <a href="https://canvas.instructure.com/enroll/C8994Y">IPMC Scenarios</a> - Scenario-based exercises to assess governance, podling health, and readiness from an IPMC perspective.</p>
+</li>
+<li>
+<p>🧠 <a href="https://canvas.instructure.com/enroll/EM7DCX">Reporting Scenarios</a> - Scenario-based practice for writing and reviewing podling reports.</p>
+</li>
+</ul>
+</div>
+</div>
+</div></p>
+
+</div>
+
+		</div>
+		<div id="push"></div>
+    </div>
+
+    <div id="footer">
+      <div class="container">
+          <p class="muted credit">&copy; 2025 The Apache Software Foundation | Licensed under the Apache License, Version 2.0.<br/>
+          Apache Incubator, Apache, the Apache feather logo, and the Apache Incubator project logo are trademarks or registered trademarks of The Apache Software Foundation.</p>
+      </div>
+    </div>
+    <script src="../js/jquery-1.11.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/prettify.js"></script>
+    <script src="../js/readingTime.js"></script>
+    <script src="../js/incubator.js"></script>
+  </body>
+</html>
