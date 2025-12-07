@@ -35,7 +35,7 @@ ICON_LEGEND = (
 
 LARGE_PAGE_THRESHOLD = 10
 MIN_TOPIC_CLUSTER_SIZE = 3
-MIN_CLUSTER_COVERAGE = 0.7  # 70%
+MIN_CLUSTER_COVERAGE = 0.7
 
 def load_yaml(path):
     if not path.exists():
@@ -55,6 +55,19 @@ def make_header(title):
         ":jbake-status: published\n"
         "\n"
     )
+
+def humanize_slug(slug):
+    ACRONYMS = {"ipmc", "pmc", "asf", "tlp", "ci", "api"}
+    words = slug.split("-")
+    out = []
+
+    for word in words:
+        if word.lower() in ACRONYMS:
+            out.append(word.upper())
+        else:
+            out.append(word.capitalize())
+
+    return " ".join(out)
 
 def item_line(item):
     raw_type = item.get("type", "").lower()
@@ -76,17 +89,13 @@ def write_page(path, title, description, items):
     if description:
         content += f"{description}\n\n"
 
-    # Small page → flat list
     if len(items) <= LARGE_PAGE_THRESHOLD:
-        items_sorted = sorted(items, key=lambda x: x["title"].lower())
-        for item in items_sorted:
+        for item in sorted(items, key=lambda x: x["title"].lower()):
             content += item_line(item) + "\n"
-
         content += "\n"
         path.write_text(content, encoding="utf-8")
         return
 
-    # Large page → split by TYPE
     grouped = defaultdict(list)
     for item in items:
         grouped[item.get("type", "")].append(item)
@@ -105,18 +114,13 @@ def write_page(path, title, description, items):
             continue
 
         section_items = sorted(grouped[key], key=lambda x: x["title"].lower())
-        title = section_titles[key]
+        content += f"== {section_titles[key]}\n\n"
 
-        content += f"== {title}\n\n"
-
-        # Only Guides are eligible for topic clustering
         if key != "guide" or len(section_items) <= LARGE_PAGE_THRESHOLD:
             for item in section_items:
                 content += item_line(item) + "\n"
             content += "\n"
             continue
-
-        # --- STRICT OPTION A GATING ---
 
         topic_groups = defaultdict(list)
         for item in section_items:
@@ -132,31 +136,25 @@ def write_page(path, title, description, items):
         total_guides = len(section_items)
         covered_by_major = sum(len(v) for v in major_groups.values())
 
-        # ❌ Abort topic splitting unless it truly consolidates
         if len(major_groups) < 2 or covered_by_major < int(total_guides * MIN_CLUSTER_COVERAGE):
             for item in section_items:
                 content += item_line(item) + "\n"
             content += "\n"
             continue
 
-        # ✅ Perform consolidated topic split
-        used_items = set()
+        used = set()
 
         for topic_id in sorted(major_groups.keys()):
-            topic_title = topic_id.replace("-", " ").title()
-            content += f"=== {topic_title}\n\n"
-
+            content += f"=== {humanize_slug(topic_id)}\n\n"
             for item in major_groups[topic_id]:
-                used_items.add(id(item))
+                used.add(id(item))
                 content += item_line(item) + "\n"
-
             content += "\n"
 
-        remaining_items = [i for i in section_items if id(i) not in used_items]
-
-        if remaining_items:
+        remaining = [i for i in section_items if id(i) not in used]
+        if remaining:
             content += "=== Additional Guides\n\n"
-            for item in remaining_items:
+            for item in remaining:
                 content += item_line(item) + "\n"
             content += "\n"
 
@@ -168,11 +166,12 @@ def write_themes_index(path, themes_map, theme_descriptions):
     lines.append("\nNavigation by theme.\n")
 
     for theme in sorted(themes_map.keys()):
+        display = humanize_slug(theme)
         desc = theme_descriptions.get(theme, "")
         if desc:
-            lines.append(f"- link:{theme}.html[{theme}] - {desc}")
+            lines.append(f"- link:{theme}.html[{display}] - {desc}")
         else:
-            lines.append(f"- link:{theme}.html[{theme}]")
+            lines.append(f"- link:{theme}.html[{display}]")
 
     lines.append("")
     path.write_text("\n".join(lines), encoding="utf-8")
@@ -183,19 +182,17 @@ def write_topics_index(path, topics_map, topic_descriptions):
     lines.append("\nNavigation by topic.\n")
 
     for topic in sorted(topics_map.keys()):
+        display = humanize_slug(topic)
         desc = topic_descriptions.get(topic, "")
         if desc:
-            lines.append(f"- link:{topic}.html[{topic}] - {desc}")
+            lines.append(f"- link:{topic}.html[{display}] - {desc}")
         else:
-            lines.append(f"- link:{topic}.html[{topic}]")
+            lines.append(f"- link:{topic}.html[{display}]")
 
     lines.append("")
     path.write_text("\n".join(lines), encoding="utf-8")
 
 def main():
-    print("Loading YAML from:", INPUT_YAML.resolve())
-    print("Output directory:", OUTPUT_DIR.resolve())
-
     data = load_yaml(INPUT_YAML)
     ensure_dirs()
 
@@ -213,16 +210,22 @@ def main():
             by_topic[topic].append(item)
 
     for theme in sorted(by_theme.keys()):
-        items = by_theme[theme]
         filename = THEMES_DIR / f"{theme}.adoc"
-        description = theme_descriptions.get(theme, "")
-        write_page(filename, f"Theme: {theme}", description, items)
+        write_page(
+            filename,
+            f"Theme: {theme}",
+            theme_descriptions.get(theme, ""),
+            by_theme[theme],
+        )
 
     for topic in sorted(by_topic.keys()):
-        items = by_topic[topic]
         filename = TOPICS_DIR / f"{topic}.adoc"
-        description = topic_descriptions.get(topic, "")
-        write_page(filename, f"Topic: {topic}", description, items)
+        write_page(
+            filename,
+            f"Topic: {topic}",
+            topic_descriptions.get(topic, ""),
+            by_topic[topic],
+        )
 
     write_themes_index(THEMES_DIR / "index.adoc", by_theme, theme_descriptions)
     write_topics_index(TOPICS_DIR / "index.adoc", by_topic, topic_descriptions)
