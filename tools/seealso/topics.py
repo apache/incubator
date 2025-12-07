@@ -57,7 +57,15 @@ def make_header(title):
     )
 
 def humanize_slug(slug):
+    SPECIAL_CASES = {
+        "clas": "CLAs",
+    }
+
+    if slug in SPECIAL_CASES:
+        return SPECIAL_CASES[slug]
+
     ACRONYMS = {"ipmc", "pmc", "asf", "tlp", "ci", "api"}
+
     words = slug.split("-")
     out = []
 
