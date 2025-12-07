@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Topics</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <meta name="generator" content="JBake">
+
+    <!-- Le styles -->
+    <link href="../../css/incubator.css" rel="stylesheet">
+    <link href="../../css/bootstrap.css" rel="stylesheet">
+    <link href="../../css/asciidoctor.css" rel="stylesheet">
+    <link href="../../css/base.css" rel="stylesheet">
+    <link href="../../css/prettify.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <!--<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">-->
+    <link rel="shortcut icon" href="https://www.apache.org/favicon.ico">
+    <script src="https://www.apachecon.com/event-images/snippet.js"></script>
+  </head>
+  <body onload="prettyPrint()">
+    <div id="wrap">
+   
+
+
+	<!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/"><i class="icon-home"></i>Apache Incubator</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Policies <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="/policy/incubation.html">Incubation Policy</a></li>
+                <li><a href="/ip-clearance/">Intellectual Property Clearance</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Proposals <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="/guides/proposal.html">A Guide To Proposal Creation</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Podling Guides <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="/cookbook">Cookbook</a></li>
+              
+                <li><hr><a href="/guides/roles_and_responsibilities.html">Roles and Responsibilities</a></li>
+                <li><a href="/guides/committer.html">Committers</a></li>
+                <li><a href="/guides/ppmc.html">Podling Project Management Committee</a></li>
+                <li><a href="/guides/community.html">Guide to Successful Community Building</a></li>
+
+                <li><hr><a href="/guides/branding.html">Incubator Branding Guide</a></li>
+                <li><a href="/guides/publicity.html">Podling Publicity/Media Guidelines</a></li>
+                <li><a href="/guides/press-kit.html">Podling Press Kit</a></li>
+              
+                <li><hr><a href="/guides/transitioning_asf.html">Initial Code Import</a></li>
+                <li><a href="/guides/names.html">Podling Name Search Guide</a></li>
+                <li><a href="/guides/ip_clearance.html">Podling IP Clearance</a></li>
+
+                <li><hr><a href="/guides/sites.html">Podling Websites</a></li>
+                <li><a href="/guides/podling_sourcecontrol.html">Podling Source Control</a></li>
+
+                <li><hr><a href="/guides/releasemanagement.html">Release Management</a></li>
+                <li><a href="/guides/distribution.html">Release Distribution</a></li>
+              
+                <li><hr><a href="/guides/graduation.html">Guide to Successful Graduation</a></li>
+                <li><a href="/guides/retirement.html">Guide to Retirement</a></li>
+                <li><a href="/guides/transferring.html">Transferring Resources out of the Incubator</a></li>
+
+                <li><hr><a href="/projects/#current">Current Podlings</a></li>
+                <li><a href="/clutch/">Clutch Report</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">PMC Guides <b class="caret"></b></a>
+              <ul class="dropdown-menu">     
+                <li><a href="/guides/participation.html">Guide to Participation</a></li>
+                <li><a href="/guides/lists.html">Incubator Mailing Lists Guide</a></li>
+
+                <li><a href="/guides/chair.html">Incubator Chair Guide</a></li>  
+                <li><a href="/guides/mentor.html">Mentors' Guide</a></li>
+
+                <li><hr><a href="/guides/website.html">Updating the top-level Incubator website</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">ASF <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="https://www.apache.org/foundation/how-it-works.html">How Apache Works</a></li>
+                <li><a href="https://www.apache.org/dev/">Developer Documentation</a></li>
+                <li><a href="https://www.apache.org/foundation/">Foundation</a></li>
+                <li><a href="https://www.apache.org/legal/">Legal</a></li>
+		<hr/>
+                <li><a href="https://www.apache.org/licenses/">License</a></li>
+		<li><a href="https://privacy.apache.org/policies/privacy-policy-public.html">Privacy Policy</a></li>
+		<li><a href="https://www.apache.org/security/">Security</a></li>
+                <li><a href="https://www.apache.org/foundation/sponsorship.html">Sponsorship</a></li>
+                <li><a href="https://www.apache.org/foundation/thanks.html">Thanks</a></li>
+		<li><a href="https://www.apache.org/events/current-event">Current Events</a></li>
+              </ul>
+            </li>
+            <li><a href="/training/index.html">Training</a></li>
+            <li><a href="/faq.html">FAQs</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 vcenter"><a href="https://www.apache.org/"><img src="https://www.apache.org/img/asf_logo.png" alt="The Apache Software Foundation" border="0" style="margin-top: 2px" width="200"></a></div>
+        <div class="col-md-4 vcenter"><a href="/"><img src="https://incubator.apache.org/images/incubator_feather_egg_logo_sm.png" alt="The Apache Software Foundation Incubator" border="0" style="margin-top: 2px" width="256"></a></div>
+        <div class="col-md-4 vcenter">
+	    <a href="https://www.apache.org/foundation/contributing.html"><img src="https://www.apache.org/images/SupportApache-small.png" height="64" width="64"></a>
+	    &nbsp;&nbsp;&nbsp;&nbsp;
+	    <a class="acevent" data-format="square" data-width="100" data-mode="light" data-event="random"></a>
+	</div>
+      </div>
+    </div>
+    <div class="top-container container">
+
+
+<div class="page-header">
+    <h1>Guide :: Topics</h1>
+</div>
+
+<div class="article-body">
+
+Estimated Reading Time: <span class="eta"></span>
+
+<p><div class="paragraph">
+<p>Resource Types: 📘 Guide  🖥️ Slide Deck  🎞️ Video  🧩 Quiz  🧠 Practice / Scenario</p>
+</div>
+<div class="paragraph">
+<p>Navigation by topic.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="access-rights.html">access-rights</a> - Defines the technical permissions granted to committers, including repository access, voting rights, and release authority.</p>
+</li>
+<li>
+<p><a href="activity.html">activity</a> - Measures the level of ongoing participation in a project, including commits, discussions, reporting, and contributor engagement.</p>
+</li>
+<li>
+<p><a href="apache-way.html">apache-way</a> - Describes the cultural operating principles of the ASF, including consensus-based decision-making, meritocracy, and community over code.</p>
+</li>
+<li>
+<p><a href="approvals.html">approvals</a> - Formal endorsements given through documented votes, typically required for releases, governance changes, and key decisions.</p>
+</li>
+<li>
+<p><a href="artifacts.html">artifacts</a> - The formal outputs of a release, including source distributions, binaries, cryptographic signatures, and compliance files.</p>
+</li>
+<li>
+<p><a href="asf-culture.html">asf-culture</a> - The shared values and norms of the Apache Software Foundation, including openness, collaboration, and respect for volunteer governance.</p>
+</li>
+<li>
+<p><a href="asf-infra.html">asf-infra</a> - ASF-provided technical services including source code hosting, CI, mailing lists, web services, and authentication systems.</p>
+</li>
+<li>
+<p><a href="asf-values.html">asf-values</a> - The core ethical and operational values of the ASF, including transparency, merit-based participation, and community-led governance.</p>
+</li>
+<li>
+<p><a href="balance.html">balance</a> - The maintenance of healthy diversity across organisations, contributors, and perspectives within a single project.</p>
+</li>
+<li>
+<p><a href="best-practices.html">best-practices</a> - Proven and repeatable behaviours that consistently lead to healthy governance, mentoring, and community outcomes.</p>
+</li>
+<li>
+<p><a href="board-reports.html">board-reports</a> - Formal reports submitted by the Incubator to the ASF Board, summarising podling status, risk, and progress.</p>
+</li>
+<li>
+<p><a href="branding.html">branding</a> - The correct and compliant use of names, logos, and visual identity for ASF and incubating projects.</p>
+</li>
+<li>
+<p><a href="branding-practice.html">branding-practice</a> - How trademark and branding rules are applied in real-world websites, documentation, marketing, and community spaces.</p>
+</li>
+<li>
+<p><a href="case-studies.html">case-studies</a> - Detailed examinations of real podlings used to extract lessons about governance, community growth, and failure modes.</p>
+</li>
+<li>
+<p><a href="cl-as.html">cl-as</a> - Contributor License Agreements that formally grant the ASF rights to redistribute and manage contributions.</p>
+</li>
+<li>
+<p><a href="closure.html">closure</a> - The final administrative and community steps required to formally wind down a podling or project.</p>
+</li>
+<li>
+<p><a href="committer-onboarding.html">committer-onboarding</a></p>
+</li>
+<li>
+<p><a href="communication.html">communication</a> - How information flows through ASF projects using public, archived, and consensus-driven channels.</p>
+</li>
+<li>
+<p><a href="community-over-code.html">community-over-code</a> - The principle that sustainable communities matter more than short-term technical output.</p>
+</li>
+<li>
+<p><a href="compliance.html">compliance</a> - Adherence to ASF, legal, and regulatory requirements across licensing, data handling, branding, and governance.</p>
+</li>
+<li>
+<p><a href="conflict.html">conflict</a> - Interpersonal or structural disagreements that arise within a podling community and require careful resolution.</p>
+</li>
+<li>
+<p><a href="consensus.html">consensus</a> - Decision-making through general agreement rather than formal voting, often using lazy consensus.</p>
+</li>
+<li>
+<p><a href="continuity.html">continuity</a> - The stability of mentoring and governance practices through transitions and community change.</p>
+</li>
+<li>
+<p><a href="contributors-to-committers.html">contributors-to-committers</a> - The long-term process of growing casual contributors into trusted committers and maintainers.</p>
+</li>
+<li>
+<p><a href="criteria.html">criteria</a> - The formal requirements that podlings must meet to graduate or complete major governance milestones.</p>
+</li>
+<li>
+<p><a href="cultural-awareness.html">cultural-awareness</a> - The ability to collaborate respectfully across languages, national cultures, and social norms.</p>
+</li>
+<li>
+<p><a href="culture-check.html">culture-check</a> - A reflective assessment of how well an individual or project aligns with ASF cultural expectations.</p>
+</li>
+<li>
+<p><a href="data-handling.html">data-handling</a> - The responsible collection, storage, and processing of personal or sensitive data within ASF projects.</p>
+</li>
+<li>
+<p><a href="decision-making.html">decision-making</a> - The formal and informal processes by which choices are proposed, discussed, refined, and approved within podling, PMC, and IPMC governance structures.</p>
+</li>
+<li>
+<p><a href="decision-records.html">decision-records</a> - The documentation trail of how and why decisions were made, preserved on public mailing lists.</p>
+</li>
+<li>
+<p><a href="difficult-conversations.html">difficult-conversations</a> - Structured approaches to handling sensitive, corrective, or emotionally charged discussions.</p>
+</li>
+<li>
+<p><a href="discussion-topics.html">discussion-topics</a> - The evolving subject matter of conversations on Incubator mailing lists over long time periods.</p>
+</li>
+<li>
+<p><a href="diversity.html">diversity</a> - The representation of different backgrounds, organizations, and perspectives within a community.</p>
+</li>
+<li>
+<p><a href="engagement.html">engagement</a> - The sustained involvement of contributors in discussions, reviews, releases, and project support.</p>
+</li>
+<li>
+<p><a href="expectations.html">expectations</a> - The behavioural, governance, and participation standards placed on contributors, mentors, and podlings.</p>
+</li>
+<li>
+<p><a href="feedback.html">feedback</a> - Constructive input intended to improve technical work, behaviour, or governance practices.</p>
+</li>
+<li>
+<p><a href="general-list.html">general-list</a> - Activity on the incubator-general mailing list used as a proxy for IPMC and Incubator-wide engagement.</p>
+</li>
+<li>
+<p><a href="getting-started.html">getting-started</a> - The first practical operational steps taken by new podlings after acceptance into incubation.</p>
+</li>
+<li>
+<p><a href="governance-fundamentals.html">governance-fundamentals</a> - The structural principles of ASF governance, including autonomy, meritocracy, and public accountability.</p>
+</li>
+<li>
+<p><a href="governance-importance.html">governance-importance</a> - Why well-functioning governance is essential for trust, scalability, and long-term project survival.</p>
+</li>
+<li>
+<p><a href="governance-practice.html">governance-practice</a> - How governance rules and norms are applied in day-to-day project operations.</p>
+</li>
+<li>
+<p><a href="governance-risks.html">governance-risks</a> - Structural or behavioural patterns that threaten project independence or sustainability.</p>
+</li>
+<li>
+<p><a href="graduation.html">graduation</a></p>
+</li>
+<li>
+<p><a href="graduation-readiness.html">graduation-readiness</a> - Indicators that a podling has achieved sufficient technical, community, and governance maturity to graduate.</p>
+</li>
+<li>
+<p><a href="inclusivity.html">inclusivity</a> - The practice of ensuring broad and fair participation in community decision-making.</p>
+</li>
+<li>
+<p><a href="incubation-basics.html">incubation-basics</a> - The fundamental mechanics of how projects operate while in the Apache Incubator.</p>
+</li>
+<li>
+<p><a href="incubation-facts.html">incubation-facts</a> - Clarifications that address common misunderstandings about how incubation actually works.</p>
+</li>
+<li>
+<p><a href="independence.html">independence</a> - Freedom of a project to operate without control by any single vendor or individual.</p>
+</li>
+<li>
+<p><a href="ipmc-processes.html">ipmc-processes</a> - The operational workflows used by the Incubator PMC to review, guide, and assess podlings.</p>
+</li>
+<li>
+<p><a href="ipmc-role.html">ipmc-role</a> - The formal oversight and governance responsibilities of the Incubator PMC.</p>
+</li>
+<li>
+<p><a href="joining-incubator.html">joining-incubator</a> - The motivations, trade-offs, and formal process involved in proposing a project for incubation.</p>
+</li>
+<li>
+<p><a href="legal-basics.html">legal-basics</a> - The minimum legal knowledge required to operate compliant ASF projects.</p>
+</li>
+<li>
+<p><a href="lessons.html">lessons</a> - Insights derived from historical analysis of podlings and governance outcomes.</p>
+</li>
+<li>
+<p><a href="licensing.html">licensing</a> - The governing rules for how code and content may be used, distributed, and combined.</p>
+</li>
+<li>
+<p><a href="mailing-lists.html">mailing-lists</a> - The primary public communication mechanism for ASF projects and governance.</p>
+</li>
+<li>
+<p><a href="measuring-podling-health.html">measuring-podling-health</a> - Quantitative and qualitative indicators used to assess podling vitality and risk.</p>
+</li>
+<li>
+<p><a href="membership.html">membership</a> - The role, rights, and expectations of ASF Members in the governance of the Foundation.</p>
+</li>
+<li>
+<p><a href="mentor-best-practices.html">mentor-best-practices</a> - Repeatable mentoring behaviours that consistently lead to positive podling outcomes.</p>
+</li>
+<li>
+<p><a href="mentor-checklist.html">mentor-checklist</a> - A practical operational list of responsibilities for mentors supporting podlings.</p>
+</li>
+<li>
+<p><a href="mentor-offboarding.html">mentor-offboarding</a> - The structured process of transitioning a mentor out of active podling responsibility.</p>
+</li>
+<li>
+<p><a href="mentor-participation.html">mentor-participation</a> - The measured level of engagement and responsiveness of mentors over time.</p>
+</li>
+<li>
+<p><a href="mentor-quick-start.html">mentor-quick-start</a> - A rapid entry guide for new mentors focused on immediate practical responsibilities.</p>
+</li>
+<li>
+<p><a href="mentor-reference.html">mentor-reference</a> - A comprehensive reference guide for all aspects of mentoring in the Incubator.</p>
+</li>
+<li>
+<p><a href="mentor-replacement.html">mentor-replacement</a> - The process of changing mentor assignments to rebalance workload or address gaps.</p>
+</li>
+<li>
+<p><a href="mentor-role.html">mentor-role</a> - The formal scope of responsibility held by Incubator mentors.</p>
+</li>
+<li>
+<p><a href="mentor-self-check.html">mentor-self-check</a> - A reflective or quiz-based assessment of mentor knowledge and readiness.</p>
+</li>
+<li>
+<p><a href="mentoring-basics.html">mentoring-basics</a> - The foundational concepts required to mentor effectively within the ASF.</p>
+</li>
+<li>
+<p><a href="mentoring-issues.html">mentoring-issues</a> - Recurring problems observed in mentoring patterns across podlings.</p>
+</li>
+<li>
+<p><a href="misconceptions.html">misconceptions</a> - Incorrect or oversimplified assumptions commonly held by newcomers about ASF governance, incubation, and community practices.</p>
+</li>
+<li>
+<p><a href="onboarding-assessment.html">onboarding-assessment</a> - A structured evaluation of readiness following onboarding materials.</p>
+</li>
+<li>
+<p><a href="oversight.html">oversight</a> - The supervisory role exercised by mentors, PPMCs, and the IPMC.</p>
+</li>
+<li>
+<p><a href="oversight-consistency.html">oversight-consistency</a> - The degree to which oversight is applied uniformly across podlings.</p>
+</li>
+<li>
+<p><a href="patterns.html">patterns</a> - Recurring behavioural or structural trends observed across Incubator history.</p>
+</li>
+<li>
+<p><a href="pmc-chair.html">pmc-chair</a> - The coordinating role responsible for guiding a project PMC.</p>
+</li>
+<li>
+<p><a href="podling-assessment.html">podling-assessment</a> - Systematic evaluation of a podling’s health, risks, and progress.</p>
+</li>
+<li>
+<p><a href="podling-health.html">podling-health</a></p>
+</li>
+<li>
+<p><a href="podling-orientation.html">podling-orientation</a> - Initial guidance that introduces podlings to ASF expectations and workflows.</p>
+</li>
+<li>
+<p><a href="podling-reports.html">podling-reports</a> - Regular public status updates submitted by podlings to the IPMC.</p>
+</li>
+<li>
+<p><a href="post-graduation.html">post-graduation</a> - The phase of a project’s life after leaving the Incubator.</p>
+</li>
+<li>
+<p><a href="ppmc-onboarding.html">ppmc-onboarding</a></p>
+</li>
+<li>
+<p><a href="practical-cases.html">practical-cases</a> - Real-world applications used to illustrate governance and neutrality concepts.</p>
+</li>
+<li>
+<p><a href="privacy.html">privacy</a></p>
+</li>
+<li>
+<p><a href="process.html">process</a> - The defined workflow for a formal governance or administrative action.</p>
+</li>
+<li>
+<p><a href="project-identity.html">project-identity</a> - How a project presents itself clearly and independently within the ASF.</p>
+</li>
+<li>
+<p><a href="project-resources.html">project-resources</a> - Technical infrastructure and services allocated to a project.</p>
+</li>
+<li>
+<p><a href="proposal.html">proposal</a> - The formal document used to apply for entry into the Incubator.</p>
+</li>
+<li>
+<p><a href="readiness.html">readiness</a> - Indicators that a project or release is prepared for formal approval.</p>
+</li>
+<li>
+<p><a href="real-world-examples.html">real-world-examples</a> - Case-based scenarios demonstrating practical ASF governance.</p>
+</li>
+<li>
+<p><a href="rebalancing.html">rebalancing</a> - Adjusting mentor or governance distribution to maintain effective oversight.</p>
+</li>
+<li>
+<p><a href="red-flags.html">red-flags</a> - Early warning indicators that a podling may be at governance or community risk.</p>
+</li>
+<li>
+<p><a href="release-process.html">release-process</a> - The formal sequence required to build and approve an ASF-compliant release.</p>
+</li>
+<li>
+<p><a href="release-votes.html">release-votes</a> - Formal votes used to approve distributions for public release.</p>
+</li>
+<li>
+<p><a href="report-patterns.html">report-patterns</a> - Common recurring structures found in podling status reports.</p>
+</li>
+<li>
+<p><a href="responsibilities.html">responsibilities</a> - The expected duties associated with governance and contributor roles.</p>
+</li>
+<li>
+<p><a href="responsiveness.html">responsiveness</a> - How quickly and clearly projects respond to community input.</p>
+</li>
+<li>
+<p><a href="reviews.html">reviews</a> - The formal evaluation of project state, releases, reporting, or governance.</p>
+</li>
+<li>
+<p><a href="roles.html">roles</a> - Defined positions within ASF project and foundation governance structures.</p>
+</li>
+<li>
+<p><a href="scenarios-ipmc.html">scenarios-ipmc</a> - Practice-based oversight exercises intended for IPMC training.</p>
+</li>
+<li>
+<p><a href="scenarios-mentors.html">scenarios-mentors</a> - Practice-based decision scenarios for mentor development.</p>
+</li>
+<li>
+<p><a href="scenarios-reporting.html">scenarios-reporting</a> - Simulation-based training for writing and reviewing podling reports.</p>
+</li>
+<li>
+<p><a href="scope-check.html">scope-check</a> - Understanding the boundaries of governance authority.</p>
+</li>
+<li>
+<p><a href="sign-off.html">sign-off</a> - Formal confirmation or approval, often given by mentors or PMC members.</p>
+</li>
+<li>
+<p><a href="stewardship.html">stewardship</a> - Long-term caretaking of project governance and sustainability.</p>
+</li>
+<li>
+<p><a href="structure.html">structure</a> - Organisational layout of ASF project and foundation governance.</p>
+</li>
+<li>
+<p><a href="sustainability.html">sustainability</a> - A project’s ability to remain active and healthy long-term.</p>
+</li>
+<li>
+<p><a href="third-party-use.html">third-party-use</a> - Use of non-ASF brands, tools, and identities in project materials.</p>
+</li>
+<li>
+<p><a href="tickets.html">tickets</a> - Formal requests submitted to ASF Infrastructure for support or changes.</p>
+</li>
+<li>
+<p><a href="time-zones.html">time-zones</a> - Managing collaboration across globally distributed contributors.</p>
+</li>
+<li>
+<p><a href="tlp-transition.html">tlp-transition</a> - The formal move from podling to Top-Level Project.</p>
+</li>
+<li>
+<p><a href="trademarks.html">trademarks</a></p>
+</li>
+<li>
+<p><a href="transition.html">transition</a> - Governance or role changes over time.</p>
+</li>
+<li>
+<p><a href="transparency.html">transparency</a> - Open, publicly documented decision-making processes.</p>
+</li>
+<li>
+<p><a href="trends.html">trends</a> - Long-term behavioural movements observed through data analysis.</p>
+</li>
+<li>
+<p><a href="trust.html">trust</a> - Confidence in community decision-making and governance integrity.</p>
+</li>
+<li>
+<p><a href="vendor-neutrality.html">vendor-neutrality</a> - The principle that no single vendor should dominate a project.</p>
+</li>
+<li>
+<p><a href="voting.html">voting</a> - Formal structured decision-making using +1, 0, and -1 votes.</p>
+</li>
+<li>
+<p><a href="warning-signs.html">warning-signs</a> - Signals that deeper governance or community issues may be emerging.</p>
+</li>
+</ul>
+</div></p>
+
+</div>
+
+		</div>
+		<div id="push"></div>
+    </div>
+
+    <div id="footer">
+      <div class="container">
+          <p class="muted credit">&copy; 2025 The Apache Software Foundation | Licensed under the Apache License, Version 2.0.<br/>
+          Apache Incubator, Apache, the Apache feather logo, and the Apache Incubator project logo are trademarks or registered trademarks of The Apache Software Foundation.</p>
+      </div>
+    </div>
+    <script src="../../js/jquery-1.11.1.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../js/prettify.js"></script>
+    <script src="../../js/readingTime.js"></script>
+    <script src="../../js/incubator.js"></script>
+  </body>
+</html>
