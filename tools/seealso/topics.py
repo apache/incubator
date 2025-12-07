@@ -10,7 +10,7 @@ from collections import defaultdict
 SCRIPT_DIR = Path(__file__).resolve().parent
 INPUT_YAML = SCRIPT_DIR / "resources.yml"
 
-OUTPUT_DIR = SCRIPT_DIR.parents[1] / "pages"
+OUTPUT_DIR = SCRIPT_DIR.parents[1] / "pages" / "training"
 THEMES_DIR = OUTPUT_DIR / "themes"
 TOPICS_DIR = OUTPUT_DIR / "topics"
 
