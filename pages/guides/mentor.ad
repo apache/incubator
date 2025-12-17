@@ -130,16 +130,16 @@ The proposal should contain the rest of the information that you need to request
 So the domain *MUST* be *incubator.apache.org*.
 For example:
 
-- dev@${podling}.incubator.apache.org
-- commits@${podling}.incubator.apache.org
-- private@${podling}.incubator.apache.org
+- dev@${podling}.apache.org
+- commits@${podling}.apache.org
+- private@${podling}.apache.org
 
 For initial community building it is usually appropriate to only have a "dev" list, to keep the discussions focussed. Later add a "user" list when community size and activity require it.  A podling that is already established and using an existing user interaction channel may want to keep those resources around until they feel they have transitioned to the ASF successfully.  Discuss this on your existing development lists.
 
 [NOTE]
 ====
 If you are using SVN,
-commits under *http://svn.apache.org/repos/asf/incubator/_${podling}_* will be emailed to *commits@${podling}.incubator.apache.org*.
+commits under *http://svn.apache.org/repos/asf/incubator/_${podling}_* will be emailed to *commits@${podling}.apache.org*.
 Any deviation will require the IPMC to create a special configuration in the *asf-mailer.conf* file.
 ====
 
