@@ -1,18 +1,18 @@
 # Fesod — Incubator Health (Reports + GitHub + Mailing Lists)
-_Generated on 2025-11-30_
+_Generated on 2025-12-19_
 
-**Windows:** to-date
+**Windows:** 3m
 
 ## Window Details
-### to-date  (2025-09-17 → 2025-11-30)
+### 3m  (2025-09-19 → 2025-12-19)
 - **Releases (from list votes/results):** 0  |  **Median gap (days):** —
-- **New contributors:** 9  |  **Unique committers:** 14  |  **Commits:** 76
-- **Issues:** opened 37 / closed 28
-- **PRs:** opened 98 / merged 74  |  **Median merge time (days):** 0.1
-- **Reviews (sampled):** median reviewers/PR **1.0**  |  reviewer diversity (eff.#) **2.83**  |  PR author diversity (eff.#) **5.04**  |  unique reviewers **3**, unique authors **13**
-- **Bus factor proxy (50% / 75%):** 3 / 5
-- **Incubator reports:** 1  |  **Avg mentor sign-offs:** 3.0
-- **Mailing lists:** dev messages **37**, dev unique posters **10**
+- **New contributors:** 11  |  **Unique committers:** 16  |  **Commits:** 90
+- **Issues:** opened 42 / closed 32
+- **PRs:** opened 110 / merged 88  |  **Median merge time (days):** 0.1
+- **Reviews (sampled):** median reviewers/PR **1.0**  |  reviewer diversity (eff.#) **2.69**  |  PR author diversity (eff.#) **5.84**  |  unique reviewers **3**, unique authors **15**
+- **Bus factor proxy (50% / 75%):** 3 / 6
+- **Incubator reports:** 2  |  **Avg mentor sign-offs:** 3.5
+- **Mailing lists:** dev messages **51**, dev unique posters **10**
 
 ## Reading the Indicators
 - **Use trend arrows** to compare available windows; when a window lacks ≥28 days or ≥5 events, trends show **—**.
