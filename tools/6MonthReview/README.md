@@ -72,5 +72,5 @@ Scores are guidance only — discussion and human interpretation matter more tha
 
 | Role | Responsibility |
 |------|----------------|
-| Mentors | Validate metrics and adjust suggested scores |
-| Podling PPMC (optional) | Provide factual clarifications if required |
+| Mentors (optional) | Validate metrics and adjust suggested scores |
+| Podling PPMC | Can drive process and provide information |
