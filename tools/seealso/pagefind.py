@@ -38,20 +38,33 @@ TYPE_ICONS = {
 }
 
 def main() -> int:
-    ap = argparse.ArgumentParser()
-    ap.add_argument("yaml_path", help="Path to resources.yml")
-    ap.add_argument("--out-dir", required=True, help="e.g. /tmp/incubator-site/training")
-    ap.add_argument("--items-dir", default="_pagefind_items")
+    ap = argparse.ArgumentParser(
+        description="Generate Pagefind item HTML files from resources.yml"
+    )
+    ap.add_argument("yaml_path", help="Path to resources.yml (or resources.yaml)")
+    ap.add_argument(
+        "--out-dir",
+        required=True,
+        help="Output directory to write item pages into (e.g. $WORKDIR/training)",
+    )
+    ap.add_argument(
+        "--items-dir",
+        default="_pagefind_items",
+        help="Subdirectory under --out-dir for generated HTML items",
+    )
     args = ap.parse_args()
 
     yaml_path = Path(args.yaml_path).resolve()
     out_dir = Path(args.out_dir).resolve()
     out_dir.mkdir(parents=True, exist_ok=True)
 
+    if not yaml_path.exists():
+        raise SystemExit(f"ERROR: YAML not found: {yaml_path}")
+
     data = yaml.safe_load(yaml_path.read_text(encoding="utf-8"))
     resources = data.get("resources", [])
     if not isinstance(resources, list):
-        raise SystemExit("ERROR: resources.yaml must contain top-level 'resources:' list")
+        raise SystemExit("ERROR: resources.yml must contain a top-level 'resources:' list")
 
     items_dir = out_dir / args.items_dir
     items_dir.mkdir(parents=True, exist_ok=True)
@@ -75,17 +88,18 @@ def main() -> int:
         desc = strip_leading_title_prefix(title, desc_raw)
 
         icon = TYPE_ICONS.get(rtype, "")
-        titled = f"{icon} {title}".strip() if icon else title
+        display_title = f"{icon} {title}".strip() if icon else title
 
         body = f"""
   <main data-pagefind-body>
+    <h1 hidden aria-hidden="true">{esc(title)}</h1>
     <p>{esc(desc)}</p>
   </main>
 """.strip()
         meta_filters = f"""
   <div hidden aria-hidden="true">
     <span data-pagefind-meta="url">{esc(url)}</span>
-    <span data-pagefind-meta="title">{esc(titled)}</span>
+    <span data-pagefind-meta="title">{esc(display_title)}</span>
 
     <span data-pagefind-filter="type">{esc(rtype)}</span>
     {''.join(f'<span data-pagefind-filter="theme">{esc(t)}</span>' for t in themes)}
