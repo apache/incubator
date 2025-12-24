@@ -724,3 +724,141 @@ resources:
     topics: [general-list, trends, measuring-podling-health]
     description: "Based on ten years of Incubator data (2016–2025), this guide highlights common patterns of healthy podling community and governance growth, contributor onboarding, governance maturity, and long-term sustainability. It distinguishes typical successful trajectories from struggling ones to help podlings, mentors, and IPMC reflect on community-building and governance practices."
     url: https://cwiki.apache.org/confluence/display/INCUBATOR/Community+and+Governance+Growth
+
+  - id: using-emerging-technology
+    title: Using Emerging Technology
+    type: guide
+    themes: [governance, culture]
+    topics: [decision-making, transparency, governance-practice, compliance]
+    description: "Guidance intended for Podling PPMCs on how projects should evaluate, adopt, and govern new tools, platforms, and workflows."
+    url: https://cwiki.apache.org/confluence/display/INCUBATOR/Using+Emerging+Technology
+
+    resources:
+  - id: community-governance
+    title: Community Governance
+    type: guide
+    themes: [community, governance, mentoring]
+    topics: [governance-practice, decision-making, expectations, warning-signs]
+    description: "Documents governance and process topics that arise in incubation discussions, reflecting what participants question and reinforce in practice."
+    url: https://cwiki.apache.org/confluence/display/INCUBATOR/Community+Governance
+
+  - id: community-proposals
+    title: Community Proposals
+    type: guide
+    themes: [community, governance, orientation]
+    topics: [proposal, joining-incubator, roles, expectations]
+    description: "Guidance on the community-related parts of proposals, focusing on how roles, groupings, and community structure are described during Incubator review."
+    url: https://cwiki.apache.org/confluence/display/INCUBATOR/Community+Proposals
+
+  - id: edge-cases
+    title: Edge Cases
+    type: guide
+    themes: [governance, ipmc-oversight, mentoring]
+    topics: [real-world-examples, scope-check, process, compliance]
+    description: "Covers uncommon or ambiguous situations raised during incubation, and how mentors/IPMC members typically reason about them in practice."
+    url: https://cwiki.apache.org/confluence/display/INCUBATOR/Edge+Cases
+
+  - id: graduation-identity
+    title: Graduation Identity
+    type: guide
+    themes: [branding, graduation]
+    topics: [project-identity, branding, branding-practice, tlp-transition]
+    description: "Highlights identity and public-presentation issues that commonly surface during graduation review, including name/brand clarity and what users perceive as ‘official’."
+    url: https://cwiki.apache.org/confluence/display/INCUBATOR/Graduation+Identity
+
+  - id: graduation-readiness
+    title: Graduation Readiness
+    type: guide
+    themes: [graduation, podling-health, governance]
+    topics: [graduation-readiness, criteria, sustainability, readiness]
+    description: "Summarises late-stage readiness checks that commonly surface near graduation, focusing on maturity signals and risks that are hard to fix at the end."
+    url: https://cwiki.apache.org/confluence/display/INCUBATOR/Graduation+Readiness
+
+  - id: graduation-votes
+    title: Graduation Votes
+    type: guide
+    themes: [graduation, governance, ipmc-oversight]
+    topics: [voting, approvals, process, tlp-transition]
+    description: "Explains how graduation vote discussions typically unfold and what kinds of concerns and evidence IPMC members look for before recommending graduation."
+    url: https://cwiki.apache.org/confluence/display/INCUBATOR/Graduation+Votes
+
+  - id: incubation-readiness
+    title: Incubation Readiness
+    type: guide
+    themes: [orientation, governance, community]
+    topics: [readiness, expectations, joining-incubator, proposal]
+    description: "Captures patterns seen when projects are (and are not) ready to enter incubation, reflecting the kinds of questions raised before moving to a vote."
+    url: https://cwiki.apache.org/confluence/display/INCUBATOR/Incubation+Readiness
+
+  - id: initial-committer-selection
+    title: Initial Committer Selection
+    type: guide
+    themes: [committers, governance, community]
+    topics: [contributors-to-committers, roles, responsibilities, balance]
+    description: "Explores early committer selection decisions in proposals and early incubation, and how those choices affect long-term governance, balance, and community trust."
+    url: https://cwiki.apache.org/confluence/display/INCUBATOR/Initial+Committer+Selection
+
+  - id: licensing-and-provenance
+    title: Licensing and Provenance
+    type: guide
+    themes: [legal, releases]
+    topics: [licensing, compliance, artifacts, reviews]
+    description: "Documents licensing and provenance topics that appear in Incubator discussions, including common concerns raised during release and compliance review."
+    url: https://cwiki.apache.org/confluence/display/INCUBATOR/Licensing+and+Provenance
+
+  - id: naming-and-branding
+    title: Naming and Branding
+    type: guide
+    themes: [branding, governance]
+    topics: [branding, branding-practice, project-identity, third-party-use]
+    description: "Records naming and branding issues raised during incubation, focusing on how project identity is presented to users and kept distinct from third-party ecosystems."
+    url: https://cwiki.apache.org/confluence/display/INCUBATOR/Naming+and+Branding
+
+  - id: naming-and-trademarks
+    title: Naming and Trademarks
+    type: guide
+    themes: [branding, legal, governance]
+    topics: [branding, branding-practice, compliance, project-identity]
+    description: "Explains how to handle branding, naming, trademark ownership, attribution, and project identity across the lifecycle of an Apache project."
+    url: https://cwiki.apache.org/confluence/display/INCUBATOR/Naming+and+Trademarks
+
+  - id: proposal-discussions
+    title: Proposal Discussions
+    type: guide
+    themes: [orientation, governance, ipmc-oversight]
+    topics: [proposal, decision-making, expectations, readiness]
+    description: "Summarises themes that recur in proposal discussion threads—what reviewers ask proposers to clarify, and what factors are treated as relevant to proceeding toward a vote."
+    url: https://cwiki.apache.org/confluence/display/INCUBATOR/Proposal+Discussions
+
+  - id: release-announcements
+    title: Release Announcements
+    type: guide
+    themes: [releases, communication]
+    topics: [artifacts, compliance, communication, release-process]
+    description: "Captures practical issues raised when announcing podling releases, including what reviewers object to and how projects correct announcements after feedback."
+    url: https://cwiki.apache.org/confluence/display/INCUBATOR/Release+Announcements
+
+  - id: release-review-issues
+    title: Release Review Issues
+    type: guide
+    themes: [releases, legal]
+    topics: [compliance, licensing, artifacts, reviews]
+    description: "Documents recurring problems found during podling release reviews and the kinds of fixes reviewers typically request before approval."
+    url: https://cwiki.apache.org/confluence/display/INCUBATOR/Release+Review+Issues
+
+  - id: releases
+    title: Releases
+    type: guide
+    themes: [releases, governance]
+    topics: [release-process, artifacts, compliance, readiness]
+    description: "Overview guidance for running releases during incubation, focusing on the practical steps and expectations that show up repeatedly in Incubator review."
+    url: https://cwiki.apache.org/confluence/display/INCUBATOR/Releases
+
+  - id: release-votes
+    title: Release Votes
+    type: guide
+    themes: [releases, governance, ipmc-oversight]
+    topics: [release-votes, voting, approvals, process]
+    description: "Explains patterns seen in release vote threads, including common vote mechanics issues and what reviewers look for when assessing readiness and compliance."
+    url: https://cwiki.apache.org/confluence/display/INCUBATOR/Release+Votes
+    
