@@ -15,7 +15,7 @@ mkdir -p "$WORKDIR"
 ./bake.sh -b . "$WORKDIR" || fatal "Build failed, exiting"
 
 # 2) Generate Pagefind inputs + index under /training
-python3 tools/seealso/pagefind.py tools/seealso/resources.yaml \
+python3 tools/seealso/pagefind.py tools/seealso/resources.yml \
   --out-dir "$WORKDIR/training" \
   || fatal "Pagefind item generation failed"
 
