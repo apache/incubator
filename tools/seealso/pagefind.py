@@ -20,14 +20,6 @@ def safe_filename_from_id(rid: str) -> str:
     return (rid or "item") + ".html"
 
 
-def strip_leading_title_prefix(title: str, desc: str) -> str:
-    t = (title or "").strip()
-    d = (desc or "").strip()
-    if not t or not d:
-        return d
-    pattern = r"^\s*" + re.escape(t) + r"\s*([.:—-])\s*"
-    return re.sub(pattern, "", d, count=1).strip()
-
 TYPE_ICONS = {
     "guide": "📘",
     "slides": "🖥️",
@@ -38,33 +30,20 @@ TYPE_ICONS = {
 }
 
 def main() -> int:
-    ap = argparse.ArgumentParser(
-        description="Generate Pagefind item HTML files from resources.yml"
-    )
-    ap.add_argument("yaml_path", help="Path to resources.yml (or resources.yaml)")
-    ap.add_argument(
-        "--out-dir",
-        required=True,
-        help="Output directory to write item pages into (e.g. $WORKDIR/training)",
-    )
-    ap.add_argument(
-        "--items-dir",
-        default="_pagefind_items",
-        help="Subdirectory under --out-dir for generated HTML items",
-    )
+    ap = argparse.ArgumentParser()
+    ap.add_argument("yaml_path", help="Path to resources.yml")
+    ap.add_argument("--out-dir", required=True)
+    ap.add_argument("--items-dir", default="_pagefind_items")
     args = ap.parse_args()
 
     yaml_path = Path(args.yaml_path).resolve()
     out_dir = Path(args.out_dir).resolve()
     out_dir.mkdir(parents=True, exist_ok=True)
 
-    if not yaml_path.exists():
-        raise SystemExit(f"ERROR: YAML not found: {yaml_path}")
-
     data = yaml.safe_load(yaml_path.read_text(encoding="utf-8"))
     resources = data.get("resources", [])
     if not isinstance(resources, list):
-        raise SystemExit("ERROR: resources.yml must contain a top-level 'resources:' list")
+        raise SystemExit("ERROR: resources.yml must contain top-level 'resources:' list")
 
     items_dir = out_dir / args.items_dir
     items_dir.mkdir(parents=True, exist_ok=True)
@@ -82,30 +61,15 @@ def main() -> int:
         if not rid or not title or not rtype or not url:
             raise SystemExit(f"ERROR: resource missing id/title/type/url: {r}")
 
+        desc = desc_raw
+        if desc.startswith(title):
+            desc = desc[len(title):].lstrip(" .:-—")
+
         themes = [str(x).strip() for x in (r.get("themes") or []) if str(x).strip()]
         topics = [str(x).strip() for x in (r.get("topics") or []) if str(x).strip()]
 
-        desc = strip_leading_title_prefix(title, desc_raw)
-
         icon = TYPE_ICONS.get(rtype, "")
         display_title = f"{icon} {title}".strip() if icon else title
-
-        body = f"""
-  <main data-pagefind-body>
-    <h1 hidden aria-hidden="true">{esc(title)}</h1>
-    <p>{esc(desc)}</p>
-  </main>
-""".strip()
-        meta_filters = f"""
-  <div hidden aria-hidden="true">
-    <span data-pagefind-meta="url">{esc(url)}</span>
-    <span data-pagefind-meta="title">{esc(display_title)}</span>
-
-    <span data-pagefind-filter="type">{esc(rtype)}</span>
-    {''.join(f'<span data-pagefind-filter="theme">{esc(t)}</span>' for t in themes)}
-    {''.join(f'<span data-pagefind-filter="topic">{esc(t)}</span>' for t in topics)}
-  </div>
-""".strip()
 
         html_doc = f"""<!doctype html>
 <html lang="en">
@@ -115,16 +79,28 @@ def main() -> int:
   <title>{esc(title)}</title>
 </head>
 <body>
-{body}
 
-{meta_filters}
+  <main data-pagefind-body>
+    <h1 hidden aria-hidden="true">{esc(title)}</h1>
+    <p>{esc(desc)}</p>
+  </main>
+
+  <div hidden aria-hidden="true">
+    <span data-pagefind-meta="url">{esc(url)}</span>
+    <span data-pagefind-meta="title">{esc(display_title)}</span>
+
+    <span data-pagefind-filter="type">{esc(rtype)}</span>
+    {''.join(f'<span data-pagefind-filter="theme">{esc(t)}</span>' for t in themes)}
+    {''.join(f'<span data-pagefind-filter="topic">{esc(t)}</span>' for t in topics)}
+  </div>
+
 </body>
 </html>
 """
         (items_dir / safe_filename_from_id(rid)).write_text(html_doc, encoding="utf-8")
 
-    print(f"Wrote items: {items_dir}")
+    print(f"Wrote Pagefind items to {items_dir}")
     return 0
 
 if __name__ == "__main__":
-    raise SystemExit(main())
+    raise SystemExit(main()
