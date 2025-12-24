@@ -1,14 +1,32 @@
 #!/bin/bash
+set -euo pipefail
 
 export WORKDIR=/tmp/incubator-site
 
 function fatal() {
-    echo $* >&2
+    echo "$*" >&2
     exit 1
 }
 
-rm -rf $WORKDIR
-mkdir -p $WORKDIR
+rm -rf "$WORKDIR"
+mkdir -p "$WORKDIR"
 
-# just bake and serve the site
-./bake.sh -b -s . $WORKDIR || fatal "Build failed, exiting"
+# 1) Bake the site 
+./bake.sh -b . "$WORKDIR" || fatal "Build failed, exiting"
+
+# 2) Generate Pagefind inputs + index under /training
+python3 tools/seealso/pagefind.py content/training/resources.yaml \
+  --out-dir "$WORKDIR/training" \
+  --bundle-path "/training/pagefind/" \
+  || fatal "Pagefind item generation failed"
+
+rm -rf "$WORKDIR/training/pagefind"
+npx -y pagefind \
+  --site "$WORKDIR/training" \
+  --glob "_pagefind_items/*.html" \
+  --output-subdir pagefind \
+  || fatal "Pagefind indexing failed"
+
+# 3) Serve the baked output
+cd "$WORKDIR"
+python3 -m http.server 8000

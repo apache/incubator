@@ -14,6 +14,19 @@ mkdir -p $WORKDIR
 # now bake the site
 ./bake.sh -b . $WORKDIR || fatal "Build failed, exiting"
 
+# generate pagefind items + index under /training
+python3 tools/seealso/pagefind.py tools/seealso/resources.yaml \
+  --out-dir $WORKDIR/training \
+  --bundle-path pagefind/ \
+  || fatal "Pagefind item generation failed"
+
+rm -rf $WORKDIR/training/pagefind
+npx -y pagefind \
+  --site $WORKDIR/training \
+  --glob "_pagefind_items/*.html" \
+  --output-subdir pagefind \
+  || fatal "Pagefind indexing failed"
+
 # push all of the results to asf-site
 git checkout asf-site
 git clean -f -d
