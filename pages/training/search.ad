@@ -1,0 +1,49 @@
+//Licensed under the Apache License, Version 2.0 (the "License");
+//you may not use this file except in compliance with the License.
+//You may obtain a copy of the License at
+//
+//http://www.apache.org/licenses/LICENSE-2.0
+//
+//Unless required by applicable law or agreed to in writing, software
+//distributed under the License is distributed on an "AS IS" BASIS,
+//WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+//See the License for the specific language governing permissions and
+//limitations under the License.
+
+= Search Training Resources
+Apache Incubator PMC
+2025-12-24
+:jbake-type: guide
+:jbake-status: published
+:idprefix:
+:toc:
+:imagesdir: ../images/
+
+++++
+<link rel="stylesheet" href="/training/pagefind/pagefind-ui.css" />
+
+<style>
+  /* Keep your spacing tweaks + remove dividers */
+  .pagefind-ui__results { margin-top: 0.5rem !important; gap: 0.25rem !important; }
+  .pagefind-ui__result, .pagefind-ui__result-inner, .pagefind-ui__result-link {
+    border: none !important; border-bottom: none !important; box-shadow: none !important;
+  }
+  .pagefind-ui__result { margin: 0 0 0.35rem 0 !important; padding: 0 0 0.35rem 0 !important; }
+  .pagefind-ui__result * { margin: 0 !important; padding: 0 !important; }
+  .pagefind-ui__result-title { margin-bottom: 0.15rem !important; line-height: 1.25 !important; }
+  .pagefind-ui__result-excerpt { line-height: 1.35 !important; }
+  .pagefind-ui__results li { margin: 0 !important; padding: 0 !important; }
+</style>
+
+<div id="training-search"></div>
+
+<script src="/training/pagefind/pagefind-ui.js"></script>
+<script>
+  new PagefindUI({
+    element: "#training-search",
+    bundlePath: "/training/pagefind/",
+    showEmptyFilters: false,
+    filters: { type: "Type", theme: "Theme", topic: "Topic" }
+  });
+</script>
+++++
