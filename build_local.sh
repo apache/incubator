@@ -11,13 +11,12 @@ function fatal() {
 rm -rf "$WORKDIR"
 mkdir -p "$WORKDIR"
 
-# 1) Bake the site 
+# 1) Bake the site
 ./bake.sh -b . "$WORKDIR" || fatal "Build failed, exiting"
 
 # 2) Generate Pagefind inputs + index under /training
-python3 tools/seealso/pagefind.py content/training/resources.yaml \
+python3 tools/seealso/pagefind.py tools/seealso/resources.yaml \
   --out-dir "$WORKDIR/training" \
-  --bundle-path "/training/pagefind/" \
   || fatal "Pagefind item generation failed"
 
 rm -rf "$WORKDIR/training/pagefind"

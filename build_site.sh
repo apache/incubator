@@ -17,7 +17,6 @@ mkdir -p $WORKDIR
 # generate pagefind items + index under /training
 python3 tools/seealso/pagefind.py tools/seealso/resources.yaml \
   --out-dir $WORKDIR/training \
-  --bundle-path pagefind/ \
   || fatal "Pagefind item generation failed"
 
 rm -rf $WORKDIR/training/pagefind
