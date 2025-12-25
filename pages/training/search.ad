@@ -44,7 +44,8 @@ Apache Incubator PMC
     bundlePath: "/training/pagefind/",
     showEmptyFilters: false,
     filters: { type: "Type", theme: "Theme", topic: "Topic" },
-     pageSize: 10
+    pageSize: 10,
+    placeholder: "Search mentoring, governance, releases, branding, and Incubator practices" 
   });
 </script>
 ++++
