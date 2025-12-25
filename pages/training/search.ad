@@ -38,7 +38,7 @@ Apache Incubator PMC
 
 Search across all Apache Incubator training materials, including guides, slide decks, videos, and scenarios.
 <div id="training-search"></div>
-See also: link:resources.html[All Resources] | link:stages.html[Stages of Incubation]
+See also link:resources.html[All Resources] | link:stages.html[Stages of Incubation]
 
 <script src="/training/pagefind/pagefind-ui.js"></script>
 <script>
@@ -48,7 +48,9 @@ See also: link:resources.html[All Resources] | link:stages.html[Stages of Incuba
     showEmptyFilters: false,
     filters: { type: "Type", theme: "Theme", topic: "Topic" },
     pageSize: 10,
-    placeholder: "Search mentoring, governance, releases, branding, and Incubator practices" 
+    translations: {
+      search_placeholder: "Search mentors, releases, governance, branding…"
+    }
   });
 
   document.addEventListener("pagefind:ui-ready", () => {
