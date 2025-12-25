@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8"/>
-    <title>Topic: release-process</title>
+    <title>Search Training Resources</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -10,15 +10,15 @@
     <meta name="generator" content="JBake">
 
     <!-- Le styles -->
-    <link href="../../css/incubator.css" rel="stylesheet">
-    <link href="../../css/bootstrap.css" rel="stylesheet">
-    <link href="../../css/asciidoctor.css" rel="stylesheet">
-    <link href="../../css/base.css" rel="stylesheet">
-    <link href="../../css/prettify.css" rel="stylesheet">
+    <link href="../css/incubator.css" rel="stylesheet">
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/asciidoctor.css" rel="stylesheet">
+    <link href="../css/base.css" rel="stylesheet">
+    <link href="../css/prettify.css" rel="stylesheet">
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
-      <script src="../../js/html5shiv.min.js"></script>
+      <script src="../js/html5shiv.min.js"></script>
     <![endif]-->
 
     <!-- Fav and touch icons -->
@@ -141,41 +141,37 @@
     <div class="top-container container">
 
 
-<div class="page-header">
-    <h1>Guide :: Topic: release-process</h1>
+<div class="incubator-page-header">
+    <h1>Search Training Resources</h1>
 </div>
 
-<div class="article-body">
+<link rel="stylesheet" href="/training/pagefind/pagefind-ui.css" />
 
-Estimated Reading Time: <span class="eta"></span>
+<style>
+  /* Keep your spacing tweaks + remove dividers */
+  .pagefind-ui__results { margin-top: 0.5rem !important; gap: 0.25rem !important; }
+  .pagefind-ui__result, .pagefind-ui__result-inner, .pagefind-ui__result-link {
+    border: none !important; border-bottom: none !important; box-shadow: none !important;
+  }
+  .pagefind-ui__result { margin: 0 0 0.35rem 0 !important; padding: 0 0 0.35rem 0 !important; }
+  .pagefind-ui__result * { margin: 0 !important; padding: 0 !important; }
+  .pagefind-ui__result-title { margin-bottom: 0.15rem !important; line-height: 1.25 !important; }
+  .pagefind-ui__result-excerpt { line-height: 1.35 !important; }
+  .pagefind-ui__results li { margin: 0 !important; padding: 0 !important; }
+</style>
 
-<p><div class="paragraph">
-<p>Resource Types: 📘 Guide  🖥️ Slide Deck  🎞️ Video  🧩 Quiz  🧠 Practice / Scenario</p>
-</div>
-<div class="paragraph">
-<p>The formal sequence required to build and approve an ASF-compliant release.</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>📘 <a href="https://cwiki.apache.org/confluence/display/INCUBATOR/Governance+Patterns">Governance Patterns</a> - Data-driven analysis (2015–2025) of incubator-general mailing list activity, releases, votes, and how governance load, release cadence, and participation diversity correlate with podling population and project health.</p>
-</li>
-<li>
-<p>🖥️ <a href="https://training.apache.org/presentations/apache/incubator/incubator-releases/index.html">Incubator Releases</a> - Slide deck on preparing compliant ASF releases within the Incubator.</p>
-</li>
-<li>
-<p>📘 <a href="https://cwiki.apache.org/confluence/display/INCUBATOR/Podling+Governance+Patterns">Podling Governance Patterns</a> - Analysis of ten years (2015–2025) of public-mailing-list data to surface common governance and release-behaviour patterns: distinguishing healthy podlings that graduate from those that stagnate and retire.</p>
-</li>
-<li>
-<p>📘 <a href="https://cwiki.apache.org/confluence/display/INCUBATOR/Release+Announcements">Release Announcements</a> - Captures practical issues raised when announcing podling releases, including what reviewers object to and how projects correct announcements after feedback.</p>
-</li>
-<li>
-<p>📘 <a href="https://cwiki.apache.org/confluence/display/INCUBATOR/Releases">Releases</a> - Overview guidance for running releases during incubation, focusing on the practical steps and expectations that show up repeatedly in Incubator review.</p>
-</li>
-</ul>
-</div></p>
+<div id="training-search"></div>
 
-</div>
+<script src="/training/pagefind/pagefind-ui.js"></script>
+<script>
+  new PagefindUI({
+    element: "#training-search",
+    bundlePath: "/training/pagefind/",
+    showEmptyFilters: false,
+    filters: { type: "Type", theme: "Theme", topic: "Topic" },
+     pageSize: 10
+  });
+</script>
 
 		</div>
 		<div id="push"></div>
@@ -187,10 +183,10 @@ Estimated Reading Time: <span class="eta"></span>
           Apache Incubator, Apache, the Apache feather logo, and the Apache Incubator project logo are trademarks or registered trademarks of The Apache Software Foundation.</p>
       </div>
     </div>
-    <script src="../../js/jquery-1.11.1.min.js"></script>
-    <script src="../../js/bootstrap.min.js"></script>
-    <script src="../../js/prettify.js"></script>
-    <script src="../../js/readingTime.js"></script>
-    <script src="../../js/incubator.js"></script>
+    <script src="../js/jquery-1.11.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/prettify.js"></script>
+    <script src="../js/readingTime.js"></script>
+    <script src="../js/incubator.js"></script>
   </body>
 </html>
