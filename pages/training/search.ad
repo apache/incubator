@@ -33,9 +33,13 @@ Apache Incubator PMC
   .pagefind-ui__result-title { margin-bottom: 0.15rem !important; line-height: 1.25 !important; }
   .pagefind-ui__result-excerpt { line-height: 1.35 !important; }
   .pagefind-ui__results li { margin: 0 !important; padding: 0 !important; }
+  .pagefind-ui__result-title { font-weight: 600; }
+  .pagefind-ui__result-excerpt { color: #333; }
 </style>
 
+Search across all Apache Incubator training materials, including guides, slide decks, videos, and scenarios.
 <div id="training-search"></div>
+See also: link:resources.html[All Resources] | link:stages.html[Stages of Incubation]
 
 <script src="/training/pagefind/pagefind-ui.js"></script>
 <script>
@@ -46,6 +50,14 @@ Apache Incubator PMC
     filters: { type: "Type", theme: "Theme", topic: "Topic" },
     pageSize: 10,
     placeholder: "Search mentoring, governance, releases, branding, and Incubator practices" 
+  });
+
+  document.addEventListener("pagefind:ui-ready", () => {
+    document.querySelectorAll(".pagefind-ui__filter-group ul").forEach(ul => {
+      [...ul.children]
+        .sort((a, b) => a.textContent.localeCompare(b.textContent))
+        .forEach(li => ul.appendChild(li));
+    });
   });
 </script>
 ++++
