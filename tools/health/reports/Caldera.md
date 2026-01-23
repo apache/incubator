@@ -1,18 +1,18 @@
-# Auron — Incubator Health (Reports + GitHub + Mailing Lists)
+# Caldera — Incubator Health (Reports + GitHub + Mailing Lists)
 _Generated on 2026-01-22_
 
-**Windows:** 3m
+**Windows:** to-date
 
 ## Window Details
-### 3m  (2025-10-22 → 2026-01-22)
+### to-date  (2025-12-19 → 2026-01-22)
 - **Releases (from list votes/results):** 0  |  **Median gap (days):** —
-- **New contributors:** 6  |  **Unique committers:** 16  |  **Commits:** 160
-- **Issues:** opened 238 / closed 175
-- **PRs:** opened 211 / merged 160  |  **Median merge time (days):** 2.6
-- **Reviews (sampled):** median reviewers/PR **1.0**  |  reviewer diversity (eff.#) **3.37**  |  PR author diversity (eff.#) **5.91**  |  unique reviewers **12**, unique authors **14**
-- **Bus factor proxy (50% / 75%):** 3 / 6
-- **Incubator reports:** 1  |  **Avg mentor sign-offs:** 4.0
-- **Mailing lists:** dev messages **66**, dev unique posters **24**
+- **New contributors:** 0  |  **Unique committers:** 0  |  **Commits:** 0
+- **Issues:** opened 0 / closed 0
+- **PRs:** opened 0 / merged 0  |  **Median merge time (days):** —
+- **Reviews (sampled):** median reviewers/PR **—**  |  reviewer diversity (eff.#) **—**  |  PR author diversity (eff.#) **—**  |  unique reviewers **0**, unique authors **0**
+- **Bus factor proxy (50% / 75%):** — / —
+- **Incubator reports:** 0  |  **Avg mentor sign-offs:** —
+- **Mailing lists:** dev messages **0**, dev unique posters **0**
 
 ## Reading the Indicators
 - **Use trend arrows** to compare available windows; when a window lacks ≥28 days or ≥5 events, trends show **—**.

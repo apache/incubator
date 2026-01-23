@@ -1,5 +1,5 @@
 # Amoro — Incubator Health (Reports + GitHub + Mailing Lists)
-_Generated on 2025-12-19_
+_Generated on 2026-01-22_
 
 **Windows:** 3m, 6m, 12m
 
@@ -7,68 +7,68 @@ _Generated on 2025-12-19_
 
 - **Releases (from list votes/results):** 0 (—)
 - **Median days between releases:** — (—)
-- **New contributors:** 11 (↗↗)
-- **Unique committers:** 26 (↗↗)
+- **New contributors:** 10 (↗)
+- **Unique committers:** 21 (↗)
 - **Commits:** 82 (→)
-- **Issues opened/closed:** 108/98 (↗/↗)
-- **PRs opened/merged:** 123/82 (↗/↗)
-- **Median PR time-to-merge (days):** 3.1 (→)
-- **Bus factor proxy (contributors to reach 50% / 75% of commits):** 2 / 7 (↘↘/↘↘)
-- **Mailing list msgs (dev@):** 8 (↘↘)
-- **Unique posters (dev@):** 5 (→)
-- **Reviewer diversity (eff.#, sampled):** 3.58 (↘)
-- **PR author diversity (eff.#, sampled):** 3.9 (↘↘)
-- **Unique reviewers (sampled):** 12 (↗↗)
-- **Unique PR authors (sampled):** 26 (↗↗)
+- **Issues opened/closed:** 96/80 (→/→)
+- **PRs opened/merged:** 127/82 (↗/→)
+- **Median PR time-to-merge (days):** 3.1 (↗↗)
+- **Bus factor proxy (contributors to reach 50% / 75% of commits):** 1 / 6 (↘↘/↘↘)
+- **Mailing list msgs (dev@):** 10 (↘↘)
+- **Unique posters (dev@):** 5 (↘↘)
+- **Reviewer diversity (eff.#, sampled):** 4.0 (↘)
+- **PR author diversity (eff.#, sampled):** 3.55 (↘↘)
+- **Unique reviewers (sampled):** 13 (↗↗)
+- **Unique PR authors (sampled):** 21 (↗↗)
 
 ## Trends (short vs long)
 
 - **Releases (from list votes/results):** 0 (—)
 - **Median days between releases:** — (—)
-- **New contributors:** 11 (↗↗)
-- **Unique committers:** 26 (↗↗)
+- **New contributors:** 10 (↗)
+- **Unique committers:** 21 (↗↗)
 - **Commits:** 82 (↗)
-- **Issues opened/closed:** 108/98 (↗↗/↗↗)
-- **PRs opened/merged:** 123/82 (↗↗/↗)
-- **Median PR time-to-merge (days):** 3.1 (→)
-- **Bus factor proxy (contributors to reach 50% / 75% of commits):** 2 / 7 (↘↘/↘↘)
-- **Mailing list msgs (dev@):** 8 (↘↘)
+- **Issues opened/closed:** 96/80 (↗↗/→)
+- **PRs opened/merged:** 127/82 (↗↗/↗)
+- **Median PR time-to-merge (days):** 3.1 (↗)
+- **Bus factor proxy (contributors to reach 50% / 75% of commits):** 1 / 6 (↘↘/↘↘)
+- **Mailing list msgs (dev@):** 10 (↘↘)
 - **Unique posters (dev@):** 5 (↘)
-- **Reviewer diversity (eff.#, sampled):** 3.58 (→)
-- **PR author diversity (eff.#, sampled):** 3.9 (↘↘)
-- **Unique reviewers (sampled):** 12 (↗↗↗)
-- **Unique PR authors (sampled):** 26 (↗↗↗)
+- **Reviewer diversity (eff.#, sampled):** 4.0 (→)
+- **PR author diversity (eff.#, sampled):** 3.55 (↘↘)
+- **Unique reviewers (sampled):** 13 (↗↗↗)
+- **Unique PR authors (sampled):** 21 (↗↗↗)
 
 ## Window Details
-### 3m  (2025-09-19 → 2025-12-19)
+### 3m  (2025-10-22 → 2026-01-22)
 - **Releases (from list votes/results):** 0  |  **Median gap (days):** —
-- **New contributors:** 11  |  **Unique committers:** 26  |  **Commits:** 82
-- **Issues:** opened 108 / closed 98
-- **PRs:** opened 123 / merged 82  |  **Median merge time (days):** 3.1
-- **Reviews (sampled):** median reviewers/PR **1.0**  |  reviewer diversity (eff.#) **3.58**  |  PR author diversity (eff.#) **3.9**  |  unique reviewers **12**, unique authors **26**
-- **Bus factor proxy (50% / 75%):** 2 / 7
-- **Incubator reports:** 1  |  **Avg mentor sign-offs:** 2.0
-- **Mailing lists:** dev messages **8**, dev unique posters **5**
+- **New contributors:** 10  |  **Unique committers:** 21  |  **Commits:** 82
+- **Issues:** opened 96 / closed 80
+- **PRs:** opened 127 / merged 82  |  **Median merge time (days):** 3.1
+- **Reviews (sampled):** median reviewers/PR **1.0**  |  reviewer diversity (eff.#) **4.0**  |  PR author diversity (eff.#) **3.55**  |  unique reviewers **13**, unique authors **21**
+- **Bus factor proxy (50% / 75%):** 1 / 6
+- **Incubator reports:** 0  |  **Avg mentor sign-offs:** —
+- **Mailing lists:** dev messages **10**, dev unique posters **5**
 
-### 6m  (2025-06-19 → 2025-12-19)
+### 6m  (2025-07-22 → 2026-01-22)
 - **Releases (from list votes/results):** 1  |  **Median gap (days):** —
-- **New contributors:** 17  |  **Unique committers:** 35  |  **Commits:** 150
-- **Issues:** opened 180 / closed 160
-- **PRs:** opened 204 / merged 144  |  **Median merge time (days):** 3.3
-- **Reviews (sampled):** median reviewers/PR **1.0**  |  reviewer diversity (eff.#) **4.43**  |  PR author diversity (eff.#) **9.26**  |  unique reviewers **14**, unique authors **27**
-- **Bus factor proxy (50% / 75%):** 5 / 11
-- **Incubator reports:** 2  |  **Avg mentor sign-offs:** 3.0
-- **Mailing lists:** dev messages **56**, dev unique posters **11**
+- **New contributors:** 18  |  **Unique committers:** 37  |  **Commits:** 160
+- **Issues:** opened 174 / closed 168
+- **PRs:** opened 207 / merged 154  |  **Median merge time (days):** 4.0
+- **Reviews (sampled):** median reviewers/PR **1.0**  |  reviewer diversity (eff.#) **4.96**  |  PR author diversity (eff.#) **10.08**  |  unique reviewers **14**, unique authors **31**
+- **Bus factor proxy (50% / 75%):** 4 / 12
+- **Incubator reports:** 1  |  **Avg mentor sign-offs:** 2.0
+- **Mailing lists:** dev messages **65**, dev unique posters **14**
 
-### 12m  (2024-12-19 → 2025-12-19)
+### 12m  (2025-01-22 → 2026-01-22)
 - **Releases (from list votes/results):** 2  |  **Median gap (days):** 128
-- **New contributors:** 35  |  **Unique committers:** 54  |  **Commits:** 268
-- **Issues:** opened 298 / closed 307
-- **PRs:** opened 341 / merged 262  |  **Median merge time (days):** 3.1
-- **Reviews (sampled):** median reviewers/PR **1.0**  |  reviewer diversity (eff.#) **3.92**  |  PR author diversity (eff.#) **14.75**  |  unique reviewers **15**, unique authors **35**
+- **New contributors:** 34  |  **Unique committers:** 54  |  **Commits:** 266
+- **Issues:** opened 290 / closed 298
+- **PRs:** opened 343 / merged 260  |  **Median merge time (days):** 3.7
+- **Reviews (sampled):** median reviewers/PR **1.0**  |  reviewer diversity (eff.#) **4.34**  |  PR author diversity (eff.#) **11.93**  |  unique reviewers **13**, unique authors **33**
 - **Bus factor proxy (50% / 75%):** 6 / 15
 - **Incubator reports:** 4  |  **Avg mentor sign-offs:** 2.5
-- **Mailing lists:** dev messages **134**, dev unique posters **24**
+- **Mailing lists:** dev messages **138**, dev unique posters **26**
 
 ## Reading the Indicators
 - **Use trend arrows** to compare available windows; when a window lacks ≥28 days or ≥5 events, trends show **—**.
