@@ -617,13 +617,6 @@ with tabs[0]:
             key="fallback_pod_select",
         )
 
-    preview_pod = st.session_state.get("selected_podling")
-    if preview_pod:
-        st.divider()
-        st.subheader(f"{preview_pod} — commentary preview")
-        row = combo[combo["podling"] == preview_pod].iloc[0]
-        st.code(draft_commentary_from_combo(preview_pod, row), language="markdown")
-
 with tabs[1]:
     st.subheader("Charts")
 
