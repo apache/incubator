@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+echo "Setting up incubator checkout (partial clone + sparse checkout)..."
+
+if [ -d incubator/.git ]; then
+  echo "incubator already exists"
+  exit 0
+fi
+
+git clone --filter=blob:none --no-checkout https://github.com/apache/incubator.git incubator
+cd incubator
+git sparse-checkout init --cone
+git sparse-checkout set tools/health/reports
+git checkout master
