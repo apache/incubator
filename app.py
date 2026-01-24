@@ -548,6 +548,7 @@ with st.sidebar:
 
 try:
     repo_root = resolve_incubator_repo(repo_input)
+    st.caption(f"Incubator repo: {repo_root}")
 except RuntimeError as e:
     st.error(str(e))
     st.stop()
