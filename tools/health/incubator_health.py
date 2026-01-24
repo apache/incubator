@@ -687,7 +687,7 @@ def is_bot_login(login: Optional[str]) -> bool:
     if not login:
         return False
     l = login.lower()
-    return l.endswith("[bot]") or l.endswith("-bot") or l.endswith("_bot") or l in {"dependabot", "renovate"}
+    return l.endswith("[bot]") or l.endswith("-bot") or l.endswith("_bot") or l.endswith("Bot") or l in {"dependabot", "renovate"}
 
 def effective_diversity(counts: Dict[str, int]) -> Optional[float]:
     total = sum(counts.values())
