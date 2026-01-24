@@ -31,30 +31,25 @@ def run_git(repo_dir: Path, args: list[str]) -> str:
 
 def resolve_incubator_repo() -> Path:
     """
-    This dashboard expects the Incubator repo to exist as a nested git repo at ./incubator.
-    We do NOT fall back to the dashboard repo, because the reports are inside ./incubator.
+    Use the dashboard repo itself as the git root.
+    This works locally and on Streamlit Community Cloud.
     """
-    repo = (Path.cwd().resolve() / "incubator")
+    cwd = Path.cwd().resolve()
 
-    # Use a robust git check (works for worktrees too)
-    p = subprocess.run(
-        ["git", "-C", str(repo), "rev-parse", "--show-toplevel"],
-        stdout=subprocess.PIPE,
-        stderr=subprocess.PIPE,
-        text=True,
-        check=False,
-        env={**dict(os.environ), "GIT_TERMINAL_PROMPT": "0"},
-    )
-    if p.returncode != 0:
-        raise RuntimeError(
-            "Incubator repo not found or not a git checkout.\n\n"
-            f"Expected: {repo}\n"
-            f"Error: {p.stderr.strip() or '(no stderr)'}\n\n"
-            "This app requires a nested incubator git repo at ./incubator.\n"
-            "On Streamlit Cloud, ensure the repo contents include ./incubator with a working .git directory."
+    try:
+        p = subprocess.run(
+            ["git", "-C", str(cwd), "rev-parse", "--show-toplevel"],
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+            text=True,
+            check=True,
         )
-
-    return Path(p.stdout.strip())
+        return Path(p.stdout.strip())
+    except subprocess.CalledProcessError as e:
+        raise RuntimeError(
+            "This app must be run from a git checkout.\n"
+            f"cwd={cwd}\n{e.stderr}"
+        )
 
 
 _RE_LS_TREE_BLOB = re.compile(r"^\d+\s+blob\s+([0-9a-f]{40})\t(.+)$")
