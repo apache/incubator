@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import os
 import re
 import subprocess
 from pathlib import Path
@@ -9,26 +10,9 @@ import pandas as pd
 import streamlit as st
 import altair as alt
 
-
 # ============================
-# Git helpers (robust from any subdir/worktree)
+# Git helpers (use THIS repo)
 # ============================
-
-def git_toplevel(start: Path) -> Path:
-    p = subprocess.run(
-        ["git", "-C", str(start), "rev-parse", "--show-toplevel"],
-        stdout=subprocess.PIPE,
-        stderr=subprocess.PIPE,
-        text=True,
-        check=False,
-    )
-    if p.returncode != 0:
-        raise RuntimeError(
-            p.stderr.strip()
-            or f"That path doesn't look like a git repo (no .git found). Start path: {start}"
-        )
-    return Path(p.stdout.strip())
-
 
 def run_git(repo_dir: Path, args: list[str]) -> str:
     p = subprocess.run(
@@ -37,35 +21,44 @@ def run_git(repo_dir: Path, args: list[str]) -> str:
         stderr=subprocess.PIPE,
         text=True,
         check=False,
-        env={**dict(**__import__("os").environ), "GIT_TERMINAL_PROMPT": "0"},
+        env={**dict(os.environ), "GIT_TERMINAL_PROMPT": "0"},
     )
     if p.returncode != 0:
         raise RuntimeError(p.stderr.strip() or "git command failed")
     return p.stdout
 
 
-def list_report_files(repo_dir: Path, reports_dir: str) -> list[str]:
-    out = run_git(repo_dir, ["ls-tree", "-r", "--name-only", "HEAD", reports_dir])
-    return [x.strip() for x in out.splitlines() if x.strip()]
+def resolve_repo_root() -> Path:
+    """
+    Use the dashboard repo itself as the git root.
+    This works locally and on Streamlit Community Cloud.
+    """
+    cwd = Path.cwd().resolve()
+    try:
+        p = subprocess.run(
+            ["git", "-C", str(cwd), "rev-parse", "--show-toplevel"],
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+            text=True,
+            check=True,
+        )
+        return Path(p.stdout.strip())
+    except subprocess.CalledProcessError as e:
+        raise RuntimeError(
+            "This app must be run from a git checkout.\n"
+            f"cwd={cwd}\n{e.stderr}"
+        )
 
 
-# ---- New: report-set commits (the key improvement)
+_RE_LS_TREE_BLOB = re.compile(r"^\d+\s+blob\s+([0-9a-f]{40})\t(.+)$")
+
+
 def report_set_commits(repo_dir: Path, reports_dir: str, max_sets: int) -> list[str]:
-    """
-    Treat each commit that touches reports_dir as a 'report run' snapshot set.
-    This matches the actual workflow (reports committed together).
-    """
     out = run_git(repo_dir, ["log", f"--max-count={max_sets}", "--pretty=format:%H", "--", reports_dir])
     return [x.strip() for x in out.splitlines() if x.strip()]
 
 
-# ---- New: list blobs at a commit and batch-read them (fast)
-_RE_LS_TREE_BLOB = re.compile(r"^\d+\s+blob\s+([0-9a-f]{40})\t(.+)$")
-
 def report_blobs_at_commit(repo_dir: Path, commit: str, reports_dir: str) -> list[tuple[str, str]]:
-    """
-    Return list of (path, oid) for all .md files under reports_dir at commit.
-    """
     out = run_git(repo_dir, ["ls-tree", "-r", commit, reports_dir])
     pairs: list[tuple[str, str]] = []
     for line in out.splitlines():
@@ -79,11 +72,6 @@ def report_blobs_at_commit(repo_dir: Path, commit: str, reports_dir: str) -> lis
 
 
 def cat_blobs(repo_dir: Path, oids: list[str]) -> dict[str, str]:
-    """
-    Read many blobs in one git process:
-      git cat-file --batch
-    Returns {oid: content_text}.
-    """
     if not oids:
         return {}
 
@@ -100,7 +88,6 @@ def cat_blobs(repo_dir: Path, oids: list[str]) -> dict[str, str]:
 
     out: dict[str, str] = {}
 
-    # Each entry: "<oid> <type> <size>\n<content><newline>"
     for _ in oids:
         header_b = proc.stdout.readline()
         if not header_b:
@@ -223,7 +210,7 @@ def parse_window_details_block(bullet_lines: list[str]) -> dict:
     return row
 
 
-def parse_report(text: str, podling: str) -> list[dict]:
+def parse_report(text: str, podling_stem: str) -> list[dict]:
     m = RE_GENERATED_ON.search(text)
     if not m:
         return []
@@ -246,36 +233,34 @@ def parse_report(text: str, podling: str) -> list[dict]:
         bullet_lines = [ln for ln in block.splitlines() if ln.strip().startswith("- ")]
         metrics = parse_window_details_block(bullet_lines)
 
-        out.append({
-            "podling": podling,
-            "snapshot_date": snapshot_date,
-            "window": window,
-            **metrics,
-        })
+        out.append(
+            {
+                "podling_key": podling_stem.casefold(),  # merge Hamalton/hamalton/etc
+                "podling_display": podling_stem,         # keep original for display; latest wins
+                "snapshot_date": snapshot_date,
+                "window": window,
+                **metrics,
+            }
+        )
 
     return out
 
 
 # ============================
-# Dataset build (ORIGINAL STRUCTURE, FAST HISTORY)
+# Dataset build (git history)
 # ============================
 
 @st.cache_data(show_spinner=True)
 def build_dataset(repo_root: str, reports_dir: str, max_commits: int) -> pd.DataFrame:
-    """
-    NOTE: 'max_commits' here is treated as 'max report runs' (commit sets touching reports_dir),
-    because reports are committed together and scanning per-file history is redundant/slow.
-    """
     repo_dir = Path(repo_root)
     rows: list[dict] = []
 
     commits = report_set_commits(repo_dir, reports_dir, max_sets=max_commits)
     for commit in commits:
-        pairs = report_blobs_at_commit(repo_dir, commit, reports_dir)  # [(path, oid), ...]
+        pairs = report_blobs_at_commit(repo_dir, commit, reports_dir)
         if not pairs:
             continue
 
-        # Batch read all blobs for this commit in one git process
         oids = [oid for (_path, oid) in pairs]
         blob_text = cat_blobs(repo_dir, oids)
 
@@ -283,8 +268,9 @@ def build_dataset(repo_root: str, reports_dir: str, max_commits: int) -> pd.Data
             text = blob_text.get(oid)
             if not text:
                 continue
-            podling = Path(path).stem
-            for r in parse_report(text, podling):
+
+            podling_stem = Path(path).stem
+            for r in parse_report(text, podling_stem):
                 r["commit"] = commit
                 r["path"] = path
                 rows.append(r)
@@ -296,33 +282,61 @@ def build_dataset(repo_root: str, reports_dir: str, max_commits: int) -> pd.Data
     df["snapshot_date"] = pd.to_datetime(df["snapshot_date"], errors="coerce")
     df = df.dropna(subset=["snapshot_date"])
 
-    df = df.sort_values(["podling", "window", "snapshot_date", "commit"])
-    df = df.drop_duplicates(["podling", "window", "snapshot_date"], keep="last")
+    # de-dupe
+    df = df.sort_values(["podling_key", "window", "snapshot_date", "commit"])
+    df = df.drop_duplicates(["podling_key", "window", "snapshot_date"], keep="last")
+
+    # ensure one display name per key: latest snapshot wins
+    latest_name = (
+        df.sort_values(["podling_key", "snapshot_date", "commit"])
+        .groupby("podling_key", as_index=False)
+        .tail(1)[["podling_key", "podling_display"]]
+    )
+    df = df.drop(columns=["podling_display"]).merge(latest_name, on="podling_key", how="left")
+
     return df.reset_index(drop=True)
 
 
 # ============================
-# Combined view (3m/6m/12m side-by-side)
+# Latest-only combined snapshot (STRICT)
+# - availability and signals come ONLY from the latest snapshot per podling_key
+# - windows count ONLY if present in that latest snapshot (no inference)
 # ============================
 
-def combined_snapshot(df: pd.DataFrame) -> pd.DataFrame:
-    d = df.sort_values(["podling", "window", "snapshot_date"])
-    latest = d.groupby(["podling", "window"], as_index=False).tail(1)
+def latest_combo(df: pd.DataFrame) -> pd.DataFrame:
+    if df.empty:
+        return df
 
-    metrics = [c for c in latest.columns if c not in ("podling", "window", "snapshot_date", "commit", "path")]
-    wide = latest.pivot(index="podling", columns="window", values=metrics)
+    # latest snapshot_date per podling_key
+    latest_dates = df.groupby("podling_key", as_index=False)["snapshot_date"].max()
+    latest = df.merge(latest_dates, on=["podling_key", "snapshot_date"], how="inner")
+
+    # if multiple commits same day, keep latest commit row per (key, window)
+    latest = latest.sort_values(["podling_key", "window", "snapshot_date", "commit"]).groupby(
+        ["podling_key", "window"], as_index=False
+    ).tail(1)
+
+    keep = ["podling_key", "podling_display", "window", "snapshot_date"]
+    metrics = [c for c in latest.columns if c not in (keep + ["commit", "path"])]
+
+    wide = latest.pivot(index="podling_key", columns="window", values=metrics)
     wide.columns = [f"{m}_{w}" for (m, w) in wide.columns]
     wide = wide.reset_index()
 
-    dates = latest.pivot(index="podling", columns="window", values="snapshot_date")
+    dates = latest.pivot(index="podling_key", columns="window", values="snapshot_date")
     dates.columns = [f"snapshot_date_{w}" for w in dates.columns]
     dates = dates.reset_index()
 
-    return wide.merge(dates, on="podling", how="left")
+    names = latest.groupby("podling_key", as_index=False).tail(1)[["podling_key", "podling_display"]]
+    out = wide.merge(dates, on="podling_key", how="left").merge(names, on="podling_key", how="left")
+
+    # add single "latest_snapshot_date" (for info / debugging if needed)
+    out["latest_snapshot_date"] = latest.groupby("podling_key")["snapshot_date"].max().reindex(out["podling_key"]).values
+    return out
 
 
 # ============================
-# Signals + commentary (copyable)
+# Signals + commentary (STRICT latest-only windows)
 # ============================
 
 PRIMARY = "primary"
@@ -341,41 +355,59 @@ def _val(row: pd.Series, key: str) -> Optional[float]:
     return None
 
 
-def build_signals_combined(row: pd.Series) -> list[dict]:
+def _has_window(row: pd.Series, w: str) -> bool:
+    d = row.get(f"snapshot_date_{w}")
+    return d is not None and not pd.isna(d)
+
+
+def window_availability_messages(row: pd.Series) -> list[str]:
+    # STRICT: only based on latest snapshot (presence of ### window section in that latest file)
+    msgs: list[str] = []
+    for w in ["12m", "6m", "3m"]:
+        msgs.append(f"- **{w}**: {'available' if _has_window(row, w) else 'not available'}")
+    return msgs
+
+
+def build_signals_latest_only(row: pd.Series) -> list[dict]:
     sig: list[dict] = []
 
     def add(level: str, text: str):
         sig.append({"level": level, "text": text})
 
-    r6 = _val(row, "releases_6m")
-    r12 = _val(row, "releases_12m")
+    has3 = _has_window(row, "3m")
+    has6 = _has_window(row, "6m")
+    has12 = _has_window(row, "12m")
 
-    p3 = _val(row, "dev_unique_posters_3m")
-    p12 = _val(row, "dev_unique_posters_12m")
+    # pull values ONLY if the window exists
+    r6 = _val(row, "releases_6m") if has6 else None
+    r12 = _val(row, "releases_12m") if has12 else None
 
-    m3 = _val(row, "dev_msgs_3m")
-    m12 = _val(row, "dev_msgs_12m")
+    p3 = _val(row, "dev_unique_posters_3m") if has3 else None
+    p12 = _val(row, "dev_unique_posters_12m") if has12 else None
 
-    bus3 = _val(row, "bus50_3m")
-    committers12 = _val(row, "unique_committers_12m")
+    m3 = _val(row, "dev_msgs_3m") if has3 else None
+    m12 = _val(row, "dev_msgs_12m") if has12 else None
 
-    merge3 = _val(row, "median_merge_days_3m")
-    merge12 = _val(row, "median_merge_days_12m")
+    bus3 = _val(row, "bus50_3m") if has3 else None
+    committers12 = _val(row, "unique_committers_12m") if has12 else None
 
-    prs3 = _val(row, "prs_merged_3m")
-    revdiv3 = _val(row, "reviewer_div_eff_3m")
-    authdiv3 = _val(row, "pr_author_div_eff_3m")
+    merge3 = _val(row, "median_merge_days_3m") if has3 else None
+    merge12 = _val(row, "median_merge_days_12m") if has12 else None
 
-    commits3 = _val(row, "commits_3m")
+    prs3 = _val(row, "prs_merged_3m") if has3 else None
+    revdiv3 = _val(row, "reviewer_div_eff_3m") if has3 else None
+    authdiv3 = _val(row, "pr_author_div_eff_3m") if has3 else None
 
-    # Releases: danger line at 12m, check-in at 6m
-    if r12 is not None and r12 == 0:
+    commits3 = _val(row, "commits_3m") if has3 else None
+
+    # Releases checks: only when the relevant windows exist in the LATEST report
+    if has12 and r12 is not None and r12 == 0:
         add(PRIMARY, "No releases in 12m — likely needs mentor/IPMC attention (blockers/ownership/process).")
-    elif r6 is not None and r6 == 0 and (r12 is not None and r12 > 0):
+    elif has6 and has12 and r6 is not None and r6 == 0 and (r12 is not None and r12 > 0):
         add(SECONDARY, "No releases in 6m but releases exist in 12m — check-in: planned pause or emerging blockers?")
 
-    # dev@ participation: neutral wording + tighter trigger
-    if p3 is not None and p12 is not None and p12 > 0:
+    # Participation vs baseline: only compare if BOTH windows exist in the LATEST report
+    if has3 and has12 and p3 is not None and p12 is not None and p12 > 0:
         ratio = p3 / p12
         if p12 >= 15 and p3 <= 6 and ratio <= 0.25:
             add(
@@ -383,7 +415,7 @@ def build_signals_combined(row: pd.Series) -> list[dict]:
                 "Recent dev@ participation (3m) is materially lower than the 12m baseline — confirm whether discussion moved channels or participation narrowed."
             )
 
-    if m3 is not None and m12 is not None and m12 > 0:
+    if has3 and has12 and m3 is not None and m12 is not None and m12 > 0:
         drop = (m12 - m3) / m12
         if m3 <= 20 and drop >= 0.50:
             add(
@@ -391,27 +423,27 @@ def build_signals_combined(row: pd.Series) -> list[dict]:
                 "Recent dev@ message volume (3m) is lower than the 12m baseline — interpret alongside other indicators (releases/review activity)."
             )
 
-    # Concentration: only meaningful with small committer base
-    if bus3 is not None and bus3 <= 2 and committers12 is not None and committers12 <= 10:
+    # Bus factor: needs 3m and 12m in the LATEST report
+    if has3 and has12 and bus3 is not None and bus3 <= 2 and committers12 is not None and committers12 <= 10:
         add(SECONDARY, "Contribution concentration signal (bus50 ≤ 2) with small 12m committer base — check dominance risk.")
 
-    # Review/throughput cross-checks in short window
-    if prs3 is not None and prs3 >= 50:
+    # PR throughput concentration: only needs 3m
+    if has3 and prs3 is not None and prs3 >= 50:
         if revdiv3 is not None and revdiv3 <= 3.0:
             add(SECONDARY, "High PR throughput but low reviewer diversity (3m) — are reviews concentrated?")
         if authdiv3 is not None and authdiv3 <= 3.0:
             add(SECONDARY, "Activity concentrated among few PR authors (3m) — is funnel broadening?")
 
-    # Merge time: short vs long baseline
-    if merge3 is not None and merge12 is not None and merge12 > 0:
+    # Merge time baseline comparison: only if BOTH windows exist in the LATEST report
+    if has3 and has12 and merge3 is not None and merge12 is not None and merge12 > 0:
         ch = (merge3 - merge12) / merge12
         if ch >= 0.50 and merge3 >= 7:
             add(SECONDARY, "3m PR merge time much slower than 12m baseline — backlog/review capacity/process change?")
         elif ch >= 0.25 and merge3 >= 7:
             add(FYI, "3m PR merge time trending slower than 12m baseline — FYI (watch next snapshot).")
 
-    # Cross-check: lots of code activity but low dev@ participation (FYI)
-    if commits3 is not None and commits3 >= 100 and (p3 is not None and p3 <= 5):
+    # Commit activity vs participation: only needs 3m
+    if has3 and commits3 is not None and commits3 >= 100 and (p3 is not None and p3 <= 5):
         add(FYI, "High commit activity with low dev@ participation (3m) — FYI: check on-list socialisation norms.")
 
     return sig
@@ -425,7 +457,7 @@ def signals_summary(sig: list[dict]) -> str:
     return " • ".join([f"[{s['level']}] {s['text']}" for s in sig])
 
 
-def draft_commentary_from_combo(pod: str, row: pd.Series) -> str:
+def draft_commentary_from_latest(pod_display: str, row: pd.Series) -> str:
     sigs = row.get("signals") or []
     order = {PRIMARY: 0, SECONDARY: 1, FYI: 2}
     sigs = sorted(sigs, key=lambda x: order.get(x["level"], 9))
@@ -435,14 +467,17 @@ def draft_commentary_from_combo(pod: str, row: pd.Series) -> str:
     fyi = [s for s in sigs if s["level"] == FYI]
 
     lines: list[str] = []
-    lines.append(f"### {pod} — health cross-check summary")
+    lines.append(f"### {pod_display} — health cross-check summary")
     lines.append("")
+    lines.append("**Data availability:**")
+    lines.extend(window_availability_messages(row))
+    lines.append("")
+    lines.append("**Indicators:**")
 
-    if not sigs:
-        lines.append("No indicators triggered in the latest snapshot.")
+    if not (primary or secondary or fyi):
+        lines.append("- —")
         return "\n".join(lines)
 
-    lines.append("**Indicators:**")
     if primary:
         lines.append("- **Primary:**")
         for s in primary:
@@ -455,11 +490,12 @@ def draft_commentary_from_combo(pod: str, row: pd.Series) -> str:
         lines.append("- **FYI:**")
         for s in fyi:
             lines.append(f"  - {s['text']}")
+
     return "\n".join(lines)
 
 
 # ============================
-# Chart helper (legend bottom horizontal) — no extra caption
+# Charts
 # ============================
 
 def altair_metric_chart(pod_df: pd.DataFrame, metric: str, title: str):
@@ -489,7 +525,6 @@ def altair_metric_chart(pod_df: pd.DataFrame, metric: str, title: str):
         )
         .properties(title=title)
     )
-
     st.altair_chart(c, use_container_width=True)
 
 
@@ -520,23 +555,22 @@ def charts_panel(pod_df: pd.DataFrame):
 
 
 # ============================
-# Streamlit UI (same layout as before)
+# UI (same layout)
 # ============================
 
 st.set_page_config(layout="wide")
 st.title("Incubator Health — combined view (3m/6m/12m)")
 
-if "selected_podling" not in st.session_state:
-    st.session_state["selected_podling"] = None
+if "selected_podling_key" not in st.session_state:
+    st.session_state["selected_podling_key"] = None
 
 with st.sidebar:
-    repo_input = st.text_input("Any path inside the incubator repo", value=str(Path.cwd() / "incubator"))
-    reports_dir = st.text_input("Reports directory", "tools/health/reports")
+    reports_dir = st.text_input("Reports directory", "reports")
     max_commits = st.slider("Max report runs (commits touching reports/)", 10, 300, 120, 10)
     rebuild = st.button("Rebuild dataset (clear cache)")
 
 try:
-    repo_root = git_toplevel(Path(repo_input))
+    repo_root = resolve_repo_root()
 except RuntimeError as e:
     st.error(str(e))
     st.stop()
@@ -545,14 +579,23 @@ if rebuild:
     build_dataset.clear()
 
 df = build_dataset(str(repo_root), reports_dir, max_commits)
-st.caption(f"Repo: {repo_root}")
 
 if df.empty:
     st.warning("No data parsed. Check reports_dir.")
+    try:
+        st.write("cwd:", str(Path.cwd().resolve()))
+        st.write("repo_root:", str(repo_root))
+        st.write("reports_dir:", reports_dir)
+        st.write("reports_dir exists on disk:", (Path(repo_root) / reports_dir).exists())
+        out = run_git(repo_root, ["ls-tree", "-r", "--name-only", "HEAD", reports_dir])
+        st.write("git ls-tree (first 20 lines):", out.splitlines()[:20])
+    except Exception as e:
+        st.error(f"Debug: {e}")
     st.stop()
 
-combo = combined_snapshot(df)
-combo["signals"] = combo.apply(build_signals_combined, axis=1)
+# STRICT latest-only combo for indicators/availability
+combo = latest_combo(df)
+combo["signals"] = combo.apply(build_signals_latest_only, axis=1)
 combo["primary_count"] = combo["signals"].apply(lambda xs: sum(1 for x in xs if x["level"] == PRIMARY))
 combo["secondary_count"] = combo["signals"].apply(lambda xs: sum(1 for x in xs if x["level"] == SECONDARY))
 combo["fyi_count"] = combo["signals"].apply(lambda xs: sum(1 for x in xs if x["level"] == FYI))
@@ -560,19 +603,15 @@ combo["signal_summary"] = combo["signals"].apply(signals_summary)
 
 tabs = st.tabs(["📋 Podling queue", "📈 Charts", "📝 Commentary builder"])
 
-
-# -------------------------
-# Tab 1: Podling queue (NO charts here now)
-# -------------------------
 with tabs[0]:
-    st.subheader("Podling queue (combined windows)")
+    st.subheader("Podling queue (latest report per podling)")
 
     c1, c2, c3 = st.columns(3)
     with c1:
         show_level = st.selectbox(
             "Show",
             ["Primary only", "Primary + Secondary", "All (incl FYI)"],
-            index=1,  # default Primary + Secondary
+            index=1,
         )
     with c2:
         contains = st.text_input("Filter signals containing (optional)", value="")
@@ -580,26 +619,28 @@ with tabs[0]:
         sort_by = st.selectbox("Sort by", ["Most primary", "Most secondary", "Podling name"], index=0)
 
     q = combo.copy()
+
     if show_level == "Primary only":
         q = q[q["primary_count"] >= 1]
     elif show_level == "Primary + Secondary":
         q = q[(q["primary_count"] + q["secondary_count"]) >= 1]
     else:
-        q = q[(q["primary_count"] + q["secondary_count"] + q["fyi_count"]) >= 1]
+        # All projects (no filtering-out by default would also be fine, but keep your UI)
+        q = q.copy()
 
     if contains.strip():
         needle = contains.strip().lower()
         q = q[q["signal_summary"].str.lower().str.contains(needle, na=False)]
 
     if sort_by == "Most primary":
-        q = q.sort_values(["primary_count", "secondary_count", "podling"], ascending=[False, False, True])
+        q = q.sort_values(["primary_count", "secondary_count", "podling_display"], ascending=[False, False, True])
     elif sort_by == "Most secondary":
-        q = q.sort_values(["secondary_count", "primary_count", "podling"], ascending=[False, False, True])
+        q = q.sort_values(["secondary_count", "primary_count", "podling_display"], ascending=[False, False, True])
     else:
-        q = q.sort_values(["podling"], ascending=[True])
+        q = q.sort_values(["podling_display"], ascending=[True])
 
     cols = [
-        "podling",
+        "podling_display",
         "primary_count",
         "secondary_count",
         "fyi_count",
@@ -624,59 +665,90 @@ with tabs[0]:
         )
         sel_rows = event.selection.rows
         if sel_rows:
-            st.session_state["selected_podling"] = q.iloc[sel_rows[0]]["podling"]
+            # map selected display back to key deterministically via the selected row in q
+            st.session_state["selected_podling_key"] = q.iloc[sel_rows[0]]["podling_key"]
     except Exception:
         st.info(
             "Row selection isn’t available in this Streamlit version. "
-            "Use the dropdown below (or upgrade Streamlit to enable row-click selection)."
+            "Use the dropdown below."
         )
-        st.session_state["selected_podling"] = st.selectbox(
-            "Select podling",
-            q["podling"].tolist() if len(q) else sorted(df["podling"].unique()),
-            index=0,
-            key="fallback_pod_select",
+        # fallback list: ALL projects
+        pods_all = (
+            combo[["podling_key", "podling_display"]]
+            .drop_duplicates()
+            .sort_values("podling_display")
+            .reset_index(drop=True)
         )
+        display = pods_all["podling_display"].tolist()
+        # no extra widgets elsewhere; only used when dataframe selection is unavailable
+        chosen_display = st.selectbox("Select podling", display, key="fallback_pod_select")
+        chosen_key = pods_all[pods_all["podling_display"] == chosen_display].iloc[0]["podling_key"]
+        st.session_state["selected_podling_key"] = chosen_key
 
-    preview_pod = st.session_state.get("selected_podling")
-    if preview_pod:
-        st.divider()
-        st.subheader(f"{preview_pod} — commentary preview")
-        row = combo[combo["podling"] == preview_pod].iloc[0]
-        st.code(draft_commentary_from_combo(preview_pod, row), language="markdown")
-
-
-# -------------------------
-# Tab 2: Charts (single place for charts)
-# -------------------------
 with tabs[1]:
     st.subheader("Charts")
 
-    pods_all = sorted(df["podling"].unique())
+    pods_all = (
+        combo[["podling_key", "podling_display"]]
+        .drop_duplicates()
+        .sort_values("podling_display")
+        .reset_index(drop=True)
+    )
+    options = pods_all["podling_key"].tolist()
+    fmt = dict(zip(pods_all["podling_key"], pods_all["podling_display"]))
 
-    # Keep selector synced with table selection
-    sel = st.session_state.get("selected_podling")
-    if sel and st.session_state.get("charts_pod") != sel:
-        st.session_state["charts_pod"] = sel
+    sel_key = st.session_state.get("selected_podling_key")
+    if sel_key is None and options:
+        sel_key = options[0]
+        st.session_state["selected_podling_key"] = sel_key
 
-    pod = st.selectbox("Podling", pods_all, key="charts_pod")
-    pod_df = df[df["podling"] == pod].sort_values("snapshot_date")
+    # keep the charts selectbox in sync WITHOUT warnings: set session_state value, do not pass index
+    if "charts_pod_key" not in st.session_state:
+        st.session_state["charts_pod_key"] = sel_key
+    elif sel_key is not None and st.session_state["charts_pod_key"] != sel_key and sel_key in options:
+        st.session_state["charts_pod_key"] = sel_key
+
+    chosen_key = st.selectbox(
+        "Podling",
+        options,
+        format_func=lambda k: fmt.get(k, k),
+        key="charts_pod_key",
+    )
+    st.session_state["selected_podling_key"] = chosen_key
+
+    pod_df = df[df["podling_key"] == chosen_key].sort_values("snapshot_date")
     charts_panel(pod_df)
 
-
-# -------------------------
-# Tab 3: Commentary builder (copyable) + synced selector
-# -------------------------
 with tabs[2]:
     st.subheader("Commentary builder (copyable)")
 
-    pods_all = sorted(df["podling"].unique())
+    pods_all = (
+        combo[["podling_key", "podling_display"]]
+        .drop_duplicates()
+        .sort_values("podling_display")
+        .reset_index(drop=True)
+    )
+    options = pods_all["podling_key"].tolist()
+    fmt = dict(zip(pods_all["podling_key"], pods_all["podling_display"]))
 
-    # Keep selector synced with table selection
-    sel = st.session_state.get("selected_podling")
-    if sel and st.session_state.get("commentary_pod") != sel:
-        st.session_state["commentary_pod"] = sel
+    sel_key = st.session_state.get("selected_podling_key")
+    if sel_key is None and options:
+        sel_key = options[0]
+        st.session_state["selected_podling_key"] = sel_key
 
-    pod = st.selectbox("Podling", pods_all, key="commentary_pod")
+    if "commentary_pod_key" not in st.session_state:
+        st.session_state["commentary_pod_key"] = sel_key
+    elif sel_key is not None and st.session_state["commentary_pod_key"] != sel_key and sel_key in options:
+        st.session_state["commentary_pod_key"] = sel_key
 
-    row = combo[combo["podling"] == pod].iloc[0]
-    st.code(draft_commentary_from_combo(pod, row), language="markdown")
+    chosen_key = st.selectbox(
+        "Podling",
+        options,
+        format_func=lambda k: fmt.get(k, k),
+        key="commentary_pod_key",
+    )
+    st.session_state["selected_podling_key"] = chosen_key
+
+    row = combo[combo["podling_key"] == chosen_key].iloc[0]
+    pod_display = fmt.get(chosen_key, chosen_key)
+    st.code(draft_commentary_from_latest(pod_display, row), language="markdown")
