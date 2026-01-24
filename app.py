@@ -1,18 +1,23 @@
 from __future__ import annotations
 
+import os
 import re
 import subprocess
 from pathlib import Path
 from typing import Optional
 
+import altair as alt
 import pandas as pd
 import streamlit as st
-import altair as alt
 
 
 # ============================
-# Git helpers (use incubator repo clone)
+# Git helpers (always run against the INCUBATOR repo)
 # ============================
+
+def _git_env() -> dict:
+    return {**os.environ, "GIT_TERMINAL_PROMPT": "0"}
+
 
 def run_git(repo_dir: Path, args: list[str]) -> str:
     p = subprocess.run(
@@ -21,7 +26,7 @@ def run_git(repo_dir: Path, args: list[str]) -> str:
         stderr=subprocess.PIPE,
         text=True,
         check=False,
-        env={**dict(__import__("os").environ), "GIT_TERMINAL_PROMPT": "0"},
+        env=_git_env(),
     )
     if p.returncode != 0:
         raise RuntimeError(p.stderr.strip() or "git command failed")
@@ -29,16 +34,13 @@ def run_git(repo_dir: Path, args: list[str]) -> str:
 
 
 def is_git_repo(path: Path) -> bool:
-    """
-    True if `path` is inside a git work tree (works for .git dir or .git file).
-    """
     p = subprocess.run(
         ["git", "-C", str(path), "rev-parse", "--is-inside-work-tree"],
         stdout=subprocess.PIPE,
         stderr=subprocess.PIPE,
         text=True,
         check=False,
-        env={**dict(__import__("os").environ), "GIT_TERMINAL_PROMPT": "0"},
+        env=_git_env(),
     )
     return p.returncode == 0 and p.stdout.strip().lower() == "true"
 
@@ -50,41 +52,38 @@ def git_toplevel(start: Path) -> Path:
         stderr=subprocess.PIPE,
         text=True,
         check=False,
-        env={**dict(__import__("os").environ), "GIT_TERMINAL_PROMPT": "0"},
+        env=_git_env(),
     )
     if p.returncode != 0:
         raise RuntimeError(p.stderr.strip() or f"Not a git repo: {start}")
     return Path(p.stdout.strip())
 
 
-def resolve_repo_root(repo_input: str) -> Path:
+def resolve_incubator_repo(repo_input: str) -> Path:
     """
-    Resolve the INCUBATOR repo root.
-
-    We prefer a nested ./incubator clone (Streamlit Cloud postBuild, or local sparse clone).
-    We fall back to user-provided path if it is inside a git repo.
-    We do NOT walk upward from the dashboard repo unless the user explicitly points us at incubator.
+    Prefer a nested ./incubator repo (Streamlit Cloud + your dashboard layout),
+    otherwise accept a direct path to an incubator checkout.
     """
     cwd = Path.cwd().resolve()
-    default_incubator = cwd / "incubator"
+    nested = cwd / "incubator"
 
-    # 1) Prefer ./incubator if it is a git repo
-    if default_incubator.exists() and is_git_repo(default_incubator):
-        return git_toplevel(default_incubator)
+    if nested.exists() and is_git_repo(nested):
+        return git_toplevel(nested)
 
-    # 2) Otherwise try the user-provided path
     p = Path(repo_input).expanduser().resolve()
     if p.exists() and is_git_repo(p):
         return git_toplevel(p)
 
     raise RuntimeError(
         "Incubator repo not found.\n\n"
-        f"- Looked for default clone at: {default_incubator} (not a git repo)\n"
-        f"- Provided path is not inside a git repo: {p}\n\n"
-        "If running on Streamlit Cloud, ensure postBuild successfully clones apache/incubator into ./incubator.\n"
-        "If running locally, create a sparse clone at ./incubator (recommended) or set the repo path to your incubator checkout."
+        f"- Looked for nested repo at: {nested}\n"
+        f"- Provided path: {p}\n\n"
+        "Expected a git checkout of apache/incubator (with a .git directory).\n"
+        "On Streamlit Cloud, ensure ./incubator exists and is a git repo."
     )
 
+
+# ---- fast history scan: “report sets” (commits touching reports dir) ----
 
 _RE_LS_TREE_BLOB = re.compile(r"^\d+\s+blob\s+([0-9a-f]{40})\t(.+)$")
 
@@ -280,7 +279,7 @@ def parse_report(text: str, podling: str) -> list[dict]:
 
 
 # ============================
-# Dataset build (git history from incubator repo)
+# Dataset build
 # ============================
 
 @st.cache_data(show_spinner=True)
@@ -313,7 +312,6 @@ def build_dataset(repo_root: str, reports_dir: str, max_commits: int) -> pd.Data
 
     df["snapshot_date"] = pd.to_datetime(df["snapshot_date"], errors="coerce")
     df = df.dropna(subset=["snapshot_date"])
-
     df = df.sort_values(["podling", "window", "snapshot_date", "commit"])
     df = df.drop_duplicates(["podling", "window", "snapshot_date"], keep="last")
     return df.reset_index(drop=True)
@@ -541,14 +539,15 @@ if "selected_podling" not in st.session_state:
     st.session_state["selected_podling"] = None
 
 with st.sidebar:
-    # Default to ./incubator (local + Streamlit Cloud postBuild)
+    # IMPORTANT: default to the nested incubator repo
     repo_input = st.text_input("Incubator repo path", value=str(Path.cwd() / "incubator"))
+    # IMPORTANT: relative to the incubator repo root
     reports_dir = st.text_input("Reports directory", "tools/health/reports")
     max_commits = st.slider("Max report runs (commits touching reports/)", 10, 300, 120, 10)
     rebuild = st.button("Rebuild dataset (clear cache)")
 
 try:
-    repo_root = resolve_repo_root(repo_input)
+    repo_root = resolve_incubator_repo(repo_input)
 except RuntimeError as e:
     st.error(str(e))
     st.stop()
@@ -562,15 +561,17 @@ df = build_dataset(str(repo_root), reports_dir, max_commits)
 
 if df.empty:
     st.warning("No data parsed. Check reports_dir.")
+    # Minimal debug
     try:
         st.write("cwd:", str(Path.cwd().resolve()))
         st.write("repo_input:", repo_input)
         st.write("resolved_repo_root:", str(repo_root))
         st.write("reports_dir:", reports_dir)
+        st.write("reports_dir exists on disk:", (Path(repo_root) / reports_dir).exists())
         out = run_git(repo_root, ["ls-tree", "-r", "--name-only", "HEAD", reports_dir])
         st.write("git ls-tree (first 20 lines):", out.splitlines()[:20])
-    except Exception as e:
-        st.error(f"Debug: {e}")
+    except Exception as e2:
+        st.error(f"Debug: {e2}")
     st.stop()
 
 combo = combined_snapshot(df)
