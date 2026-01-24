@@ -11,24 +11,8 @@ import altair as alt
 
 
 # ============================
-# Git helpers (robust from any subdir/worktree)
+# Git helpers
 # ============================
-
-def git_toplevel(start: Path) -> Path:
-    p = subprocess.run(
-        ["git", "-C", str(start), "rev-parse", "--show-toplevel"],
-        stdout=subprocess.PIPE,
-        stderr=subprocess.PIPE,
-        text=True,
-        check=False,
-    )
-    if p.returncode != 0:
-        raise RuntimeError(
-            p.stderr.strip()
-            or f"That path doesn't look like a git repo (no .git found). Start path: {start}"
-        )
-    return Path(p.stdout.strip())
-
 
 def run_git(repo_dir: Path, args: list[str]) -> str:
     p = subprocess.run(
@@ -37,11 +21,47 @@ def run_git(repo_dir: Path, args: list[str]) -> str:
         stderr=subprocess.PIPE,
         text=True,
         check=False,
-        env={**dict(**__import__("os").environ), "GIT_TERMINAL_PROMPT": "0"},
+        env={**dict(__import__("os").environ), "GIT_TERMINAL_PROMPT": "0"},
     )
     if p.returncode != 0:
         raise RuntimeError(p.stderr.strip() or "git command failed")
     return p.stdout
+
+
+def resolve_incubator_repo(repo_input: str) -> Path:
+    """
+    Deployment-safe resolver.
+
+    Streamlit Cloud layout:
+      /mount/src/<dashboard-repo>/
+        app.py
+        postBuild
+        incubator/          <-- cloned by postBuild
+          .git/
+
+    We MUST use the nested incubator clone, not the dashboard repo.
+    So:
+      1) Prefer ./incubator if it is a git repo.
+      2) Else require repo_input itself to be a git repo (contains .git).
+      3) Never walk upward to a parent repo.
+    """
+    cwd = Path.cwd().resolve()
+    default_incubator = cwd / "incubator"
+
+    if (default_incubator / ".git").exists():
+        return default_incubator
+
+    p = Path(repo_input).expanduser().resolve()
+    if (p / ".git").exists():
+        return p
+
+    raise RuntimeError(
+        "Incubator repo not found.\n\n"
+        f"- Looked for default clone at: {default_incubator} (missing .git)\n"
+        f"- Provided path is not a git repo: {p} (missing .git)\n\n"
+        "If running on Streamlit Cloud, ensure postBuild successfully clones "
+        "apache/incubator into ./incubator."
+    )
 
 
 def list_report_files(repo_dir: Path, reports_dir: str) -> list[str]:
@@ -49,23 +69,15 @@ def list_report_files(repo_dir: Path, reports_dir: str) -> list[str]:
     return [x.strip() for x in out.splitlines() if x.strip()]
 
 
-# ---- New: report-set commits (the key improvement)
 def report_set_commits(repo_dir: Path, reports_dir: str, max_sets: int) -> list[str]:
-    """
-    Treat each commit that touches reports_dir as a 'report run' snapshot set.
-    This matches the actual workflow (reports committed together).
-    """
     out = run_git(repo_dir, ["log", f"--max-count={max_sets}", "--pretty=format:%H", "--", reports_dir])
     return [x.strip() for x in out.splitlines() if x.strip()]
 
 
-# ---- New: list blobs at a commit and batch-read them (fast)
 _RE_LS_TREE_BLOB = re.compile(r"^\d+\s+blob\s+([0-9a-f]{40})\t(.+)$")
 
+
 def report_blobs_at_commit(repo_dir: Path, commit: str, reports_dir: str) -> list[tuple[str, str]]:
-    """
-    Return list of (path, oid) for all .md files under reports_dir at commit.
-    """
     out = run_git(repo_dir, ["ls-tree", "-r", commit, reports_dir])
     pairs: list[tuple[str, str]] = []
     for line in out.splitlines():
@@ -79,11 +91,6 @@ def report_blobs_at_commit(repo_dir: Path, commit: str, reports_dir: str) -> lis
 
 
 def cat_blobs(repo_dir: Path, oids: list[str]) -> dict[str, str]:
-    """
-    Read many blobs in one git process:
-      git cat-file --batch
-    Returns {oid: content_text}.
-    """
     if not oids:
         return {}
 
@@ -100,7 +107,6 @@ def cat_blobs(repo_dir: Path, oids: list[str]) -> dict[str, str]:
 
     out: dict[str, str] = {}
 
-    # Each entry: "<oid> <type> <size>\n<content><newline>"
     for _ in oids:
         header_b = proc.stdout.readline()
         if not header_b:
@@ -257,25 +263,20 @@ def parse_report(text: str, podling: str) -> list[dict]:
 
 
 # ============================
-# Dataset build (ORIGINAL STRUCTURE, FAST HISTORY)
+# Dataset build
 # ============================
 
 @st.cache_data(show_spinner=True)
 def build_dataset(repo_root: str, reports_dir: str, max_commits: int) -> pd.DataFrame:
-    """
-    NOTE: 'max_commits' here is treated as 'max report runs' (commit sets touching reports_dir),
-    because reports are committed together and scanning per-file history is redundant/slow.
-    """
     repo_dir = Path(repo_root)
     rows: list[dict] = []
 
     commits = report_set_commits(repo_dir, reports_dir, max_sets=max_commits)
     for commit in commits:
-        pairs = report_blobs_at_commit(repo_dir, commit, reports_dir)  # [(path, oid), ...]
+        pairs = report_blobs_at_commit(repo_dir, commit, reports_dir)
         if not pairs:
             continue
 
-        # Batch read all blobs for this commit in one git process
         oids = [oid for (_path, oid) in pairs]
         blob_text = cat_blobs(repo_dir, oids)
 
@@ -368,13 +369,11 @@ def build_signals_combined(row: pd.Series) -> list[dict]:
 
     commits3 = _val(row, "commits_3m")
 
-    # Releases: danger line at 12m, check-in at 6m
     if r12 is not None and r12 == 0:
         add(PRIMARY, "No releases in 12m — likely needs mentor/IPMC attention (blockers/ownership/process).")
     elif r6 is not None and r6 == 0 and (r12 is not None and r12 > 0):
         add(SECONDARY, "No releases in 6m but releases exist in 12m — check-in: planned pause or emerging blockers?")
 
-    # dev@ participation: neutral wording + tighter trigger
     if p3 is not None and p12 is not None and p12 > 0:
         ratio = p3 / p12
         if p12 >= 15 and p3 <= 6 and ratio <= 0.25:
@@ -391,18 +390,15 @@ def build_signals_combined(row: pd.Series) -> list[dict]:
                 "Recent dev@ message volume (3m) is lower than the 12m baseline — interpret alongside other indicators (releases/review activity)."
             )
 
-    # Concentration: only meaningful with small committer base
     if bus3 is not None and bus3 <= 2 and committers12 is not None and committers12 <= 10:
         add(SECONDARY, "Contribution concentration signal (bus50 ≤ 2) with small 12m committer base — check dominance risk.")
 
-    # Review/throughput cross-checks in short window
     if prs3 is not None and prs3 >= 50:
         if revdiv3 is not None and revdiv3 <= 3.0:
             add(SECONDARY, "High PR throughput but low reviewer diversity (3m) — are reviews concentrated?")
         if authdiv3 is not None and authdiv3 <= 3.0:
             add(SECONDARY, "Activity concentrated among few PR authors (3m) — is funnel broadening?")
 
-    # Merge time: short vs long baseline
     if merge3 is not None and merge12 is not None and merge12 > 0:
         ch = (merge3 - merge12) / merge12
         if ch >= 0.50 and merge3 >= 7:
@@ -410,7 +406,6 @@ def build_signals_combined(row: pd.Series) -> list[dict]:
         elif ch >= 0.25 and merge3 >= 7:
             add(FYI, "3m PR merge time trending slower than 12m baseline — FYI (watch next snapshot).")
 
-    # Cross-check: lots of code activity but low dev@ participation (FYI)
     if commits3 is not None and commits3 >= 100 and (p3 is not None and p3 <= 5):
         add(FYI, "High commit activity with low dev@ participation (3m) — FYI: check on-list socialisation norms.")
 
@@ -459,7 +454,7 @@ def draft_commentary_from_combo(pod: str, row: pd.Series) -> str:
 
 
 # ============================
-# Chart helper (legend bottom horizontal) — no extra caption
+# Charts
 # ============================
 
 def altair_metric_chart(pod_df: pd.DataFrame, metric: str, title: str):
@@ -489,7 +484,6 @@ def altair_metric_chart(pod_df: pd.DataFrame, metric: str, title: str):
         )
         .properties(title=title)
     )
-
     st.altair_chart(c, use_container_width=True)
 
 
@@ -520,7 +514,7 @@ def charts_panel(pod_df: pd.DataFrame):
 
 
 # ============================
-# Streamlit UI (same layout as before)
+# UI
 # ============================
 
 st.set_page_config(layout="wide")
@@ -530,13 +524,14 @@ if "selected_podling" not in st.session_state:
     st.session_state["selected_podling"] = None
 
 with st.sidebar:
-    repo_input = st.text_input("Any path inside the incubator repo", value=str(Path.cwd() / "incubator"))
+    # For Cloud this can be left alone; resolver will prefer ./incubator if it exists
+    repo_input = st.text_input("Incubator repo path", value=str(Path.cwd() / "incubator"))
     reports_dir = st.text_input("Reports directory", "tools/health/reports")
     max_commits = st.slider("Max report runs (commits touching reports/)", 10, 300, 120, 10)
     rebuild = st.button("Rebuild dataset (clear cache)")
 
 try:
-    repo_root = git_toplevel(Path(repo_input))
+    repo_root = resolve_incubator_repo(repo_input)
 except RuntimeError as e:
     st.error(str(e))
     st.stop()
@@ -544,11 +539,23 @@ except RuntimeError as e:
 if rebuild:
     build_dataset.clear()
 
-df = build_dataset(str(repo_root), reports_dir, max_commits)
 st.caption(f"Repo: {repo_root}")
+
+df = build_dataset(str(repo_root), reports_dir, max_commits)
 
 if df.empty:
     st.warning("No data parsed. Check reports_dir.")
+    # Minimal debug that doesn't change layout when things work
+    try:
+        st.write("cwd:", str(Path.cwd().resolve()))
+        st.write("repo_input:", repo_input)
+        st.write("resolved_repo_root:", str(repo_root))
+        st.write("reports_dir:", reports_dir)
+        st.write("incubator/.git exists:", (Path.cwd().resolve() / "incubator" / ".git").exists())
+        out = run_git(repo_root, ["ls-tree", "-r", "--name-only", "HEAD", reports_dir])
+        st.write("git ls-tree (first 20 lines):", out.splitlines()[:20])
+    except Exception as e:
+        st.error(f"Debug: {e}")
     st.stop()
 
 combo = combined_snapshot(df)
@@ -560,10 +567,6 @@ combo["signal_summary"] = combo["signals"].apply(signals_summary)
 
 tabs = st.tabs(["📋 Podling queue", "📈 Charts", "📝 Commentary builder"])
 
-
-# -------------------------
-# Tab 1: Podling queue (NO charts here now)
-# -------------------------
 with tabs[0]:
     st.subheader("Podling queue (combined windows)")
 
@@ -572,7 +575,7 @@ with tabs[0]:
         show_level = st.selectbox(
             "Show",
             ["Primary only", "Primary + Secondary", "All (incl FYI)"],
-            index=1,  # default Primary + Secondary
+            index=1,
         )
     with c2:
         contains = st.text_input("Filter signals containing (optional)", value="")
@@ -644,16 +647,11 @@ with tabs[0]:
         row = combo[combo["podling"] == preview_pod].iloc[0]
         st.code(draft_commentary_from_combo(preview_pod, row), language="markdown")
 
-
-# -------------------------
-# Tab 2: Charts (single place for charts)
-# -------------------------
 with tabs[1]:
     st.subheader("Charts")
 
     pods_all = sorted(df["podling"].unique())
 
-    # Keep selector synced with table selection
     sel = st.session_state.get("selected_podling")
     if sel and st.session_state.get("charts_pod") != sel:
         st.session_state["charts_pod"] = sel
@@ -662,21 +660,15 @@ with tabs[1]:
     pod_df = df[df["podling"] == pod].sort_values("snapshot_date")
     charts_panel(pod_df)
 
-
-# -------------------------
-# Tab 3: Commentary builder (copyable) + synced selector
-# -------------------------
 with tabs[2]:
     st.subheader("Commentary builder (copyable)")
 
     pods_all = sorted(df["podling"].unique())
 
-    # Keep selector synced with table selection
     sel = st.session_state.get("selected_podling")
     if sel and st.session_state.get("commentary_pod") != sel:
         st.session_state["commentary_pod"] = sel
 
     pod = st.selectbox("Podling", pods_all, key="commentary_pod")
-
     row = combo[combo["podling"] == pod].iloc[0]
     st.code(draft_commentary_from_combo(pod, row), language="markdown")
