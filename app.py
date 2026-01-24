@@ -11,7 +11,7 @@ import altair as alt
 
 
 # ============================
-# Git helpers
+# Git helpers (use incubator repo clone)
 # ============================
 
 def run_git(repo_dir: Path, args: list[str]) -> str:
@@ -28,53 +28,70 @@ def run_git(repo_dir: Path, args: list[str]) -> str:
     return p.stdout
 
 
-def resolve_incubator_repo(repo_input: str) -> Path:
+def is_git_repo(path: Path) -> bool:
     """
-    Deployment-safe resolver.
+    True if `path` is inside a git work tree (works for .git dir or .git file).
+    """
+    p = subprocess.run(
+        ["git", "-C", str(path), "rev-parse", "--is-inside-work-tree"],
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE,
+        text=True,
+        check=False,
+        env={**dict(__import__("os").environ), "GIT_TERMINAL_PROMPT": "0"},
+    )
+    return p.returncode == 0 and p.stdout.strip().lower() == "true"
 
-    Streamlit Cloud layout:
-      /mount/src/<dashboard-repo>/
-        app.py
-        postBuild
-        incubator/          <-- cloned by postBuild
-          .git/
 
-    We MUST use the nested incubator clone, not the dashboard repo.
-    So:
-      1) Prefer ./incubator if it is a git repo.
-      2) Else require repo_input itself to be a git repo (contains .git).
-      3) Never walk upward to a parent repo.
+def git_toplevel(start: Path) -> Path:
+    p = subprocess.run(
+        ["git", "-C", str(start), "rev-parse", "--show-toplevel"],
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE,
+        text=True,
+        check=False,
+        env={**dict(__import__("os").environ), "GIT_TERMINAL_PROMPT": "0"},
+    )
+    if p.returncode != 0:
+        raise RuntimeError(p.stderr.strip() or f"Not a git repo: {start}")
+    return Path(p.stdout.strip())
+
+
+def resolve_repo_root(repo_input: str) -> Path:
+    """
+    Resolve the INCUBATOR repo root.
+
+    We prefer a nested ./incubator clone (Streamlit Cloud postBuild, or local sparse clone).
+    We fall back to user-provided path if it is inside a git repo.
+    We do NOT walk upward from the dashboard repo unless the user explicitly points us at incubator.
     """
     cwd = Path.cwd().resolve()
     default_incubator = cwd / "incubator"
 
-    if (default_incubator / ".git").exists():
-        return default_incubator
+    # 1) Prefer ./incubator if it is a git repo
+    if default_incubator.exists() and is_git_repo(default_incubator):
+        return git_toplevel(default_incubator)
 
+    # 2) Otherwise try the user-provided path
     p = Path(repo_input).expanduser().resolve()
-    if (p / ".git").exists():
-        return p
+    if p.exists() and is_git_repo(p):
+        return git_toplevel(p)
 
     raise RuntimeError(
         "Incubator repo not found.\n\n"
-        f"- Looked for default clone at: {default_incubator} (missing .git)\n"
-        f"- Provided path is not a git repo: {p} (missing .git)\n\n"
-        "If running on Streamlit Cloud, ensure postBuild successfully clones "
-        "apache/incubator into ./incubator."
+        f"- Looked for default clone at: {default_incubator} (not a git repo)\n"
+        f"- Provided path is not inside a git repo: {p}\n\n"
+        "If running on Streamlit Cloud, ensure postBuild successfully clones apache/incubator into ./incubator.\n"
+        "If running locally, create a sparse clone at ./incubator (recommended) or set the repo path to your incubator checkout."
     )
 
 
-def list_report_files(repo_dir: Path, reports_dir: str) -> list[str]:
-    out = run_git(repo_dir, ["ls-tree", "-r", "--name-only", "HEAD", reports_dir])
-    return [x.strip() for x in out.splitlines() if x.strip()]
+_RE_LS_TREE_BLOB = re.compile(r"^\d+\s+blob\s+([0-9a-f]{40})\t(.+)$")
 
 
 def report_set_commits(repo_dir: Path, reports_dir: str, max_sets: int) -> list[str]:
     out = run_git(repo_dir, ["log", f"--max-count={max_sets}", "--pretty=format:%H", "--", reports_dir])
     return [x.strip() for x in out.splitlines() if x.strip()]
-
-
-_RE_LS_TREE_BLOB = re.compile(r"^\d+\s+blob\s+([0-9a-f]{40})\t(.+)$")
 
 
 def report_blobs_at_commit(repo_dir: Path, commit: str, reports_dir: str) -> list[tuple[str, str]]:
@@ -263,7 +280,7 @@ def parse_report(text: str, podling: str) -> list[dict]:
 
 
 # ============================
-# Dataset build
+# Dataset build (git history from incubator repo)
 # ============================
 
 @st.cache_data(show_spinner=True)
@@ -514,7 +531,7 @@ def charts_panel(pod_df: pd.DataFrame):
 
 
 # ============================
-# UI
+# UI (kept the same layout)
 # ============================
 
 st.set_page_config(layout="wide")
@@ -524,14 +541,14 @@ if "selected_podling" not in st.session_state:
     st.session_state["selected_podling"] = None
 
 with st.sidebar:
-    # For Cloud this can be left alone; resolver will prefer ./incubator if it exists
+    # Default to ./incubator (local + Streamlit Cloud postBuild)
     repo_input = st.text_input("Incubator repo path", value=str(Path.cwd() / "incubator"))
-    reports_dir = st.text_input("Reports directory", "reports")
+    reports_dir = st.text_input("Reports directory", "tools/health/reports")
     max_commits = st.slider("Max report runs (commits touching reports/)", 10, 300, 120, 10)
     rebuild = st.button("Rebuild dataset (clear cache)")
 
 try:
-    repo_root = resolve_incubator_repo(repo_input)
+    repo_root = resolve_repo_root(repo_input)
 except RuntimeError as e:
     st.error(str(e))
     st.stop()
@@ -545,13 +562,11 @@ df = build_dataset(str(repo_root), reports_dir, max_commits)
 
 if df.empty:
     st.warning("No data parsed. Check reports_dir.")
-    # Minimal debug that doesn't change layout when things work
     try:
         st.write("cwd:", str(Path.cwd().resolve()))
         st.write("repo_input:", repo_input)
         st.write("resolved_repo_root:", str(repo_root))
         st.write("reports_dir:", reports_dir)
-        st.write("incubator/.git exists:", (Path.cwd().resolve() / "incubator" / ".git").exists())
         out = run_git(repo_root, ["ls-tree", "-r", "--name-only", "HEAD", reports_dir])
         st.write("git ls-tree (first 20 lines):", out.splitlines()[:20])
     except Exception as e:
