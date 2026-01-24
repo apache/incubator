@@ -578,8 +578,6 @@ except RuntimeError as e:
 if rebuild:
     build_dataset.clear()
 
-st.caption(f"Repo: {repo_root}")
-
 df = build_dataset(str(repo_root), reports_dir, max_commits)
 
 if df.empty:
