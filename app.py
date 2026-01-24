@@ -526,7 +526,7 @@ if "selected_podling" not in st.session_state:
 with st.sidebar:
     # For Cloud this can be left alone; resolver will prefer ./incubator if it exists
     repo_input = st.text_input("Incubator repo path", value=str(Path.cwd() / "incubator"))
-    reports_dir = st.text_input("Reports directory", "tools/health/reports")
+    reports_dir = st.text_input("Reports directory", "reports")
     max_commits = st.slider("Max report runs (commits touching reports/)", 10, 300, 120, 10)
     rebuild = st.button("Rebuild dataset (clear cache)")
 
