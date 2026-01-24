@@ -6,18 +6,14 @@ import subprocess
 from pathlib import Path
 from typing import Optional
 
-import altair as alt
 import pandas as pd
 import streamlit as st
+import altair as alt
 
 
 # ============================
-# Git helpers (always run against the INCUBATOR repo)
+# Git helpers (ALWAYS use ./incubator)
 # ============================
-
-def _git_env() -> dict:
-    return {**os.environ, "GIT_TERMINAL_PROMPT": "0"}
-
 
 def run_git(repo_dir: Path, args: list[str]) -> str:
     p = subprocess.run(
@@ -26,64 +22,40 @@ def run_git(repo_dir: Path, args: list[str]) -> str:
         stderr=subprocess.PIPE,
         text=True,
         check=False,
-        env=_git_env(),
+        env={**dict(os.environ), "GIT_TERMINAL_PROMPT": "0"},
     )
     if p.returncode != 0:
         raise RuntimeError(p.stderr.strip() or "git command failed")
     return p.stdout
 
 
-def is_git_repo(path: Path) -> bool:
+def resolve_incubator_repo() -> Path:
+    """
+    This dashboard expects the Incubator repo to exist as a nested git repo at ./incubator.
+    We do NOT fall back to the dashboard repo, because the reports are inside ./incubator.
+    """
+    repo = (Path.cwd().resolve() / "incubator")
+
+    # Use a robust git check (works for worktrees too)
     p = subprocess.run(
-        ["git", "-C", str(path), "rev-parse", "--is-inside-work-tree"],
+        ["git", "-C", str(repo), "rev-parse", "--show-toplevel"],
         stdout=subprocess.PIPE,
         stderr=subprocess.PIPE,
         text=True,
         check=False,
-        env=_git_env(),
-    )
-    return p.returncode == 0 and p.stdout.strip().lower() == "true"
-
-
-def git_toplevel(start: Path) -> Path:
-    p = subprocess.run(
-        ["git", "-C", str(start), "rev-parse", "--show-toplevel"],
-        stdout=subprocess.PIPE,
-        stderr=subprocess.PIPE,
-        text=True,
-        check=False,
-        env=_git_env(),
+        env={**dict(os.environ), "GIT_TERMINAL_PROMPT": "0"},
     )
     if p.returncode != 0:
-        raise RuntimeError(p.stderr.strip() or f"Not a git repo: {start}")
+        raise RuntimeError(
+            "Incubator repo not found or not a git checkout.\n\n"
+            f"Expected: {repo}\n"
+            f"Error: {p.stderr.strip() or '(no stderr)'}\n\n"
+            "This app requires a nested incubator git repo at ./incubator.\n"
+            "On Streamlit Cloud, ensure the repo contents include ./incubator with a working .git directory."
+        )
+
     return Path(p.stdout.strip())
 
-
-def resolve_incubator_repo(repo_input: str) -> Path:
-    """
-    Prefer a nested ./incubator repo (Streamlit Cloud + your dashboard layout),
-    otherwise accept a direct path to an incubator checkout.
-    """
-    cwd = Path.cwd().resolve()
-    nested = cwd / "incubator"
-
-    if nested.exists() and is_git_repo(nested):
-        return git_toplevel(nested)
-
-    p = Path(repo_input).expanduser().resolve()
-    if p.exists() and is_git_repo(p):
-        return git_toplevel(p)
-
-    raise RuntimeError(
-        "Incubator repo not found.\n\n"
-        f"- Looked for nested repo at: {nested}\n"
-        f"- Provided path: {p}\n\n"
-        "Expected a git checkout of apache/incubator (with a .git directory).\n"
-        "On Streamlit Cloud, ensure ./incubator exists and is a git repo."
-    )
-
-
-# ---- fast history scan: “report sets” (commits touching reports dir) ----
 
 _RE_LS_TREE_BLOB = re.compile(r"^\d+\s+blob\s+([0-9a-f]{40})\t(.+)$")
 
@@ -279,7 +251,7 @@ def parse_report(text: str, podling: str) -> list[dict]:
 
 
 # ============================
-# Dataset build
+# Dataset build (git history from incubator repo)
 # ============================
 
 @st.cache_data(show_spinner=True)
@@ -312,14 +284,11 @@ def build_dataset(repo_root: str, reports_dir: str, max_commits: int) -> pd.Data
 
     df["snapshot_date"] = pd.to_datetime(df["snapshot_date"], errors="coerce")
     df = df.dropna(subset=["snapshot_date"])
+
     df = df.sort_values(["podling", "window", "snapshot_date", "commit"])
     df = df.drop_duplicates(["podling", "window", "snapshot_date"], keep="last")
     return df.reset_index(drop=True)
 
-
-# ============================
-# Combined view (3m/6m/12m side-by-side)
-# ============================
 
 def combined_snapshot(df: pd.DataFrame) -> pd.DataFrame:
     d = df.sort_values(["podling", "window", "snapshot_date"])
@@ -529,7 +498,7 @@ def charts_panel(pod_df: pd.DataFrame):
 
 
 # ============================
-# UI (kept the same layout)
+# UI (same layout)
 # ============================
 
 st.set_page_config(layout="wide")
@@ -539,16 +508,13 @@ if "selected_podling" not in st.session_state:
     st.session_state["selected_podling"] = None
 
 with st.sidebar:
-    # IMPORTANT: default to the nested incubator repo
-    repo_input = st.text_input("Incubator repo path", value=str(Path.cwd() / "incubator"))
-    # IMPORTANT: relative to the incubator repo root
+    # Reports are always relative to the incubator repo root
     reports_dir = st.text_input("Reports directory", "tools/health/reports")
     max_commits = st.slider("Max report runs (commits touching reports/)", 10, 300, 120, 10)
     rebuild = st.button("Rebuild dataset (clear cache)")
 
 try:
-    repo_root = resolve_incubator_repo(repo_input)
-    st.caption(f"Incubator repo: {repo_root}")
+    repo_root = resolve_incubator_repo()
 except RuntimeError as e:
     st.error(str(e))
     st.stop()
@@ -556,23 +522,22 @@ except RuntimeError as e:
 if rebuild:
     build_dataset.clear()
 
-st.caption(f"Repo: {repo_root}")
+st.caption(f"Incubator repo: {repo_root}")
 
 df = build_dataset(str(repo_root), reports_dir, max_commits)
 
 if df.empty:
     st.warning("No data parsed. Check reports_dir.")
-    # Minimal debug
+    # Debug that is actually meaningful for this layout
     try:
         st.write("cwd:", str(Path.cwd().resolve()))
-        st.write("repo_input:", repo_input)
-        st.write("resolved_repo_root:", str(repo_root))
+        st.write("incubator repo_root:", str(repo_root))
         st.write("reports_dir:", reports_dir)
         st.write("reports_dir exists on disk:", (Path(repo_root) / reports_dir).exists())
         out = run_git(repo_root, ["ls-tree", "-r", "--name-only", "HEAD", reports_dir])
         st.write("git ls-tree (first 20 lines):", out.splitlines()[:20])
-    except Exception as e2:
-        st.error(f"Debug: {e2}")
+    except Exception as e:
+        st.error(f"Debug: {e}")
     st.stop()
 
 combo = combined_snapshot(df)
@@ -648,7 +613,7 @@ with tabs[0]:
     except Exception:
         st.info(
             "Row selection isn’t available in this Streamlit version. "
-            "Use the dropdown below (or upgrade Streamlit to enable row-click selection)."
+            "Use the dropdown below."
         )
         st.session_state["selected_podling"] = st.selectbox(
             "Select podling",
