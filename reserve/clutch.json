@@ -202,7 +202,7 @@
         "amoro",
         {
           "description": "Apache Amoro(incubating) is a Lakehouse management system bui...",
-          "last_update_int": 1769482309,
+          "last_update_int": 1769579971,
           "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>",
           "nocommit": false
         }
@@ -221,7 +221,7 @@
         {
           "description": "Apache Amoro Website",
           "last_update_int": 1767794594,
-          "last_update_txt": "20 days ago",
+          "last_update_txt": "21 days ago",
           "nocommit": false
         }
       ]
@@ -329,8 +329,8 @@
         "auron",
         {
           "description": "The Auron accelerator for distributed computing framework (e....",
-          "last_update_int": 1769530220,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>",
+          "last_update_int": 1769620610,
+          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>",
           "nocommit": false
         }
       ],
@@ -645,7 +645,32 @@
     ],
     "podlingName": "BifroMQ",
     "rawReportingGroup": "group-3",
-    "releases": {},
+    "releases": {
+      "apache-bifromq-4.0.0-incubating-src.tar.gz": {
+        "dtm": "12/30/2025",
+        "folder": "4.0.0-incubating",
+        "hash": "sha512",
+        "revision": "r81561",
+        "size": "1295518",
+        "user": "popduke"
+      },
+      "apache-bifromq-4.0.0-incubating-windows.zip": {
+        "dtm": "12/30/2025",
+        "folder": "4.0.0-incubating",
+        "hash": "sha512",
+        "revision": "r81561",
+        "size": "117490249",
+        "user": "popduke"
+      },
+      "apache-bifromq-4.0.0-incubating.tar.gz": {
+        "dtm": "12/30/2025",
+        "folder": "4.0.0-incubating",
+        "hash": "sha512",
+        "revision": "r81561",
+        "size": "117357904",
+        "user": "popduke"
+      }
+    },
     "reportingGroup": "March, June, September, December",
     "reportingMonthly": false,
     "repositories": [
@@ -653,8 +678,8 @@
         "bifromq",
         {
           "description": "Apache BifroMQ (Incubating) is a high-performance, distribute...",
-          "last_update_int": 1768271478,
-          "last_update_txt": "15 days ago",
+          "last_update_int": 1769180604,
+          "last_update_txt": "5 days ago",
           "nocommit": false
         }
       ],
@@ -662,8 +687,8 @@
         "bifromq-sites",
         {
           "description": "Apache BifroMQ (Incubating) Website",
-          "last_update_int": 1768277967,
-          "last_update_txt": "15 days ago",
+          "last_update_int": 1769592109,
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>",
           "nocommit": false
         }
       ]
@@ -685,10 +710,6 @@
       [
         "18",
         "Has not provided a wiki link"
-      ],
-      [
-        "41",
-        "PGP KEYS file available without a distribution"
       ]
     ]
   },
@@ -784,7 +805,7 @@
         {
           "description": "Build applications that make decisions (chatbots, agents, sim...",
           "last_update_int": 1769235750,
-          "last_update_txt": "4 days ago",
+          "last_update_txt": "5 days ago",
           "nocommit": false
         }
       ]
@@ -1019,8 +1040,8 @@
         "cloudberry",
         {
           "description": "One advanced and mature open-source MPP (Massively Parallel P...",
-          "last_update_int": 1769532794,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>",
+          "last_update_int": 1769616634,
+          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>",
           "nocommit": false
         }
       ],
@@ -1073,8 +1094,8 @@
         "cloudberry-pxf",
         {
           "description": "Platform Extension Framework (PXF) for Apache Cloudberry (Inc...",
-          "last_update_int": 1769501412,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>",
+          "last_update_int": 1769590343,
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>",
           "nocommit": false
         }
       ],
@@ -1082,8 +1103,8 @@
         "cloudberry-site",
         {
           "description": "Website sources for Apache Cloudberry™️ (Incubating)",
-          "last_update_int": 1767861259,
-          "last_update_txt": "20 days ago",
+          "last_update_int": 1769585719,
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>",
           "nocommit": false
         }
       ]
@@ -1178,8 +1199,8 @@
         "fesod",
         {
           "description": "Fast. Easy. Done. Processing spreadsheets without worrying ab...",
-          "last_update_int": 1769449409,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>",
+          "last_update_int": 1769619294,
+          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>",
           "nocommit": false
         }
       ]
@@ -1325,8 +1346,8 @@
         "fluss",
         {
           "description": "Apache Fluss is a streaming storage built for real-time analy...",
-          "last_update_int": 1769526935,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>",
+          "last_update_int": 1769572292,
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>",
           "nocommit": false
         }
       ],
@@ -1343,8 +1364,8 @@
         "fluss-rust",
         {
           "description": "Rust Client for Apache Fluss (Incubating)",
-          "last_update_int": 1769519872,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>",
+          "last_update_int": 1769616287,
+          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>",
           "nocommit": false
         }
       ],
@@ -1353,7 +1374,7 @@
         {
           "description": "Apache Fluss (Incubating) shaded artifacts repository",
           "last_update_int": 1768720463,
-          "last_update_txt": "10 days ago",
+          "last_update_txt": "11 days ago",
           "nocommit": false
         }
       ],
@@ -1361,7 +1382,7 @@
         "fluss-website",
         {
           "description": "Apache Fluss Website",
-          "last_update_int": 1769513179,
+          "last_update_int": 1769573242,
           "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>",
           "nocommit": false
         }
@@ -1472,8 +1493,8 @@
         "geaflow",
         {
           "description": "Apache GeaFlow: A Streaming Graph Computing Engine.",
-          "last_update_int": 1768982888,
-          "last_update_txt": "7 days ago",
+          "last_update_int": 1769565970,
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago (bot)</span>",
           "nocommit": false
         }
       ],
@@ -1482,7 +1503,7 @@
         {
           "description": "Apache GeaFlow (Incubating): A Streaming Graph Computing Engine.",
           "last_update_int": 1763866439,
-          "last_update_txt": "9 weeks ago",
+          "last_update_txt": "10 weeks ago",
           "nocommit": false
         }
       ]
@@ -1855,8 +1876,8 @@
         "incubator-gluten",
         {
           "description": "Gluten is a middle layer responsible for offloading JVM-based...",
-          "last_update_int": 1769527574,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>",
+          "last_update_int": 1769617306,
+          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>",
           "nocommit": false
         }
       ],
@@ -1984,7 +2005,7 @@
         {
           "description": "An open source, standard data file format for graph data stor...",
           "last_update_int": 1769484092,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>",
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>",
           "nocommit": false
         }
       ],
@@ -2113,7 +2134,7 @@
         {
           "description": "Apache Hamilton helps data scientists and engineers define te...",
           "last_update_int": 1769290264,
-          "last_update_txt": "3 days ago",
+          "last_update_txt": "4 days ago",
           "nocommit": false
         }
       ],
@@ -2709,7 +2730,7 @@
         {
           "description": "A graph database that supports more than 100+ billion data, h...",
           "last_update_int": 1769410758,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>",
+          "last_update_txt": "3 days ago",
           "nocommit": false
         }
       ],
@@ -2754,7 +2775,7 @@
         {
           "description": "HugeGraph toolchain - include a series useful graph modules",
           "last_update_int": 1769006673,
-          "last_update_txt": "6 days ago",
+          "last_update_txt": "7 days ago",
           "nocommit": false
         }
       ],
@@ -2889,8 +2910,8 @@
         "iggy",
         {
           "description": "Apache Iggy: Hyper-Efficient Message Streaming at Laser Speed",
-          "last_update_int": 1769550454,
-          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>",
+          "last_update_int": 1769627477,
+          "last_update_txt": "<span style='color: #070;'>&lt;30 minutes ago</span>",
           "nocommit": false
         }
       ],
@@ -3948,7 +3969,7 @@
         {
           "description": "Apache Kie",
           "last_update_int": 1769389131,
-          "last_update_txt": "2 days ago",
+          "last_update_txt": "3 days ago",
           "nocommit": false
         }
       ],
@@ -3956,8 +3977,8 @@
         "incubator-kie-drools",
         {
           "description": "Apache Kie",
-          "last_update_int": 1769526870,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>",
+          "last_update_int": 1769579313,
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>",
           "nocommit": false
         }
       ],
@@ -3975,7 +3996,7 @@
         {
           "description": "Apache Kie",
           "last_update_int": 1768401855,
-          "last_update_txt": "13 days ago",
+          "last_update_txt": "14 days ago",
           "nocommit": false
         }
       ],
@@ -4001,8 +4022,8 @@
         "incubator-kie-kogito-examples",
         {
           "description": "Apache Kie",
-          "last_update_int": 1769560639,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago (bot)</span>",
+          "last_update_int": 1769560818,
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago (bot)</span>",
           "nocommit": false
         }
       ],
@@ -4020,7 +4041,7 @@
         {
           "description": "Apache KIE",
           "last_update_int": 1756607607,
-          "last_update_txt": "21 weeks ago",
+          "last_update_txt": "22 weeks ago",
           "nocommit": false
         }
       ],
@@ -4055,8 +4076,8 @@
         "incubator-kie-kogito-runtimes",
         {
           "description": "Apache Kie",
-          "last_update_int": 1769499890,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>",
+          "last_update_int": 1769615960,
+          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>",
           "nocommit": false
         }
       ],
@@ -4074,7 +4095,7 @@
         {
           "description": "Apache Kie",
           "last_update_int": 1756002965,
-          "last_update_txt": "22 weeks ago",
+          "last_update_txt": "23 weeks ago",
           "nocommit": false
         }
       ],
@@ -4083,7 +4104,7 @@
         {
           "description": "Apache Kie",
           "last_update_int": 1769319819,
-          "last_update_txt": "3 days ago",
+          "last_update_txt": "4 days ago",
           "nocommit": false
         }
       ],
@@ -4109,8 +4130,8 @@
         "incubator-kie-tools",
         {
           "description": "Apache KIE",
-          "last_update_int": 1769279692,
-          "last_update_txt": "3 days ago",
+          "last_update_int": 1769610510,
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>",
           "nocommit": false
         }
       ],
@@ -4340,7 +4361,7 @@
         {
           "description": "Apache Livy is an open source REST interface for interacting ...",
           "last_update_int": 1769023860,
-          "last_update_txt": "6 days ago",
+          "last_update_txt": "7 days ago",
           "nocommit": false
         }
       ],
@@ -4349,7 +4370,7 @@
         {
           "description": "Apache livy (Incubating)",
           "last_update_int": 1766252390,
-          "last_update_txt": "5 weeks ago",
+          "last_update_txt": "6 weeks ago",
           "nocommit": false
         }
       ]
@@ -4493,7 +4514,7 @@
         {
           "description": "Apache openserverless",
           "last_update_int": 1749327005,
-          "last_update_txt": "33 weeks ago",
+          "last_update_txt": "34 weeks ago",
           "nocommit": false
         }
       ],
@@ -4574,7 +4595,7 @@
         {
           "description": "Apache openserverless",
           "last_update_int": 1769203207,
-          "last_update_txt": "4 days ago (bot)",
+          "last_update_txt": "5 days ago (bot)",
           "nocommit": false
         }
       ],
@@ -4601,7 +4622,7 @@
         {
           "description": "Apache openserverless",
           "last_update_int": 1768405089,
-          "last_update_txt": "13 days ago",
+          "last_update_txt": "14 days ago",
           "nocommit": false
         }
       ],
@@ -4741,8 +4762,8 @@
         "otava",
         {
           "description": "Change Detection for Continuous Performance Engineering",
-          "last_update_int": 1766443345,
-          "last_update_txt": "5 weeks ago",
+          "last_update_int": 1769609513,
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>",
           "nocommit": false
         }
       ],
@@ -4873,7 +4894,7 @@
         {
           "description": "Apache OzHera is an About Application Observable Platform in ...",
           "last_update_int": 1768891367,
-          "last_update_txt": "8 days ago",
+          "last_update_txt": "9 days ago",
           "nocommit": false
         }
       ],
@@ -5020,7 +5041,7 @@
         {
           "description": "Apache Pegasus - A horizontally scalable, strongly consistent...",
           "last_update_int": 1769501239,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>",
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>",
           "nocommit": false
         }
       ],
@@ -5184,8 +5205,8 @@
         "polaris",
         {
           "description": "Apache Polaris, the interoperable, open source catalog for Ap...",
-          "last_update_int": 1769559482,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>",
+          "last_update_int": 1769628356,
+          "last_update_txt": "<span style='color: #070;'>&lt;1 minute ago</span>",
           "nocommit": false
         }
       ],
@@ -5194,7 +5215,7 @@
         {
           "description": "Apache Polaris Tools, additional tooling for Apache Polaris",
           "last_update_int": 1769517773,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago (bot)</span>",
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago (bot)</span>",
           "nocommit": false
         }
       ]
@@ -5419,7 +5440,7 @@
         {
           "description": "Apache Pouchdb",
           "last_update_int": 1769106312,
-          "last_update_txt": "5 days ago",
+          "last_update_txt": "6 days ago",
           "nocommit": false
         }
       ]
@@ -5578,7 +5599,7 @@
         {
           "description": "Global-Scale Sustainable Blockchain Fabric",
           "last_update_int": 1769541411,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>",
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>",
           "nocommit": false
         }
       ],
@@ -5613,8 +5634,8 @@
         "incubator-resilientdb-ResLens",
         {
           "description": "Global-Scale Sustainable Blockchain Fabric",
-          "last_update_int": 1769043207,
-          "last_update_txt": "6 days ago (bot)",
+          "last_update_int": 1769624230,
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago (bot)</span>",
           "nocommit": false
         }
       ],
@@ -5623,7 +5644,7 @@
         {
           "description": "Global-Scale Sustainable Blockchain Fabric",
           "last_update_int": 1767120091,
-          "last_update_txt": "28 days ago",
+          "last_update_txt": "29 days ago",
           "nocommit": false
         }
       ],
@@ -5650,7 +5671,7 @@
         {
           "description": "Apache ResilientDB CDN",
           "last_update_int": 1767992466,
-          "last_update_txt": "18 days ago",
+          "last_update_txt": "19 days ago",
           "nocommit": false
         }
       ],
@@ -5758,7 +5779,7 @@
         {
           "description": "Apache ResilientDB Podling",
           "last_update_int": 1769414611,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>",
+          "last_update_txt": "2 days ago",
           "nocommit": false
         }
       ],
@@ -5968,8 +5989,8 @@
         "incubator-seata",
         {
           "description": ":fire: Seata is an easy-to-use, high-performance, open source...",
-          "last_update_int": 1769521951,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>",
+          "last_update_int": 1769615471,
+          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>",
           "nocommit": false
         }
       ],
@@ -6014,7 +6035,7 @@
         {
           "description": "Apache Seata(incubating) Samples for Java",
           "last_update_int": 1769351206,
-          "last_update_txt": "2 days ago",
+          "last_update_txt": "3 days ago",
           "nocommit": false
         }
       ],
@@ -6022,8 +6043,8 @@
         "incubator-seata-website",
         {
           "description": "Apache Seata(incubating) Website",
-          "last_update_int": 1769559926,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>",
+          "last_update_int": 1769602507,
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>",
           "nocommit": false
         }
       ]
@@ -6133,7 +6154,7 @@
         "texera",
         {
           "description": "Collaborative Machine-Learning-Centric Data Analytics Using W...",
-          "last_update_int": 1769548604,
+          "last_update_int": 1769586816,
           "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>",
           "nocommit": false
         }
@@ -6452,7 +6473,7 @@
         {
           "description": "Apache xtable",
           "last_update_int": 1768598329,
-          "last_update_txt": "11 days ago",
+          "last_update_txt": "12 days ago",
           "nocommit": false
         }
       ]
