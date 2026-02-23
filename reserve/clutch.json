@@ -1,4 +1,77 @@
 {
+  "": {
+    "description": "Casbin is a powerful, open-source access control framework that\n            provides a unified, model-driven approach to authorization.",
+    "fullName": "",
+    "hasMailListCommits": "http://mail-archives.apache.org/mod_mbox/casbin-commits",
+    "hasMailListDev": "http://mail-archives.apache.org/mod_mbox/casbin-dev",
+    "ldap": {},
+    "mentors": [
+      [
+        "Hao Ding",
+        "xuanwo"
+      ],
+      [
+        "Huajie Wang",
+        "benjobs"
+      ],
+      [
+        "Hulk Lin",
+        "hulk"
+      ],
+      [
+        "Jerry Shao",
+        "jshao"
+      ]
+    ],
+    "news": [
+      "2026-02-07 Project enters incubation."
+    ],
+    "podlingName": "",
+    "rawReportingGroup": "group-3",
+    "releases": [],
+    "reportingGroup": "March, June, September, December",
+    "reportingMonthly": false,
+    "repositories": "",
+    "resource": "casbin",
+    "sponsor": "Incubator",
+    "startDate": "2026-02-07",
+    "statusAge": 0,
+    "statusLastUpdated": "2026-02-23",
+    "urls": {
+      "git": "",
+      "keys": "",
+      "svn": "",
+      "tracker": "",
+      "wiki": "",
+      "www": ""
+    },
+    "zFixMeList": [
+      [
+        "01",
+        "No project LDAP"
+      ],
+      [
+        "10",
+        "Has not provided an issue tracker link"
+      ],
+      [
+        "18",
+        "Has not provided a wiki link"
+      ],
+      [
+        "11",
+        "Website is missing"
+      ],
+      [
+        "12",
+        "Release distribution area is not setup"
+      ],
+      [
+        "17",
+        "No source code repository"
+      ]
+    ]
+  },
   "amoro": {
     "description": "Amoro is a Lakehouse management system built on open data lake formats like\n            Apache Iceberg and Apache Paimon.",
     "fullName": "Amoro",
@@ -329,8 +402,8 @@
         "auron",
         {
           "description": "The Auron accelerator for distributed computing framework (e....",
-          "last_update_int": 1771554242,
-          "last_update_txt": "3 days ago",
+          "last_update_int": 1771820476,
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>",
           "nocommit": false
         }
       ],
@@ -804,8 +877,8 @@
         "burr",
         {
           "description": "Build applications that make decisions (chatbots, agents, sim...",
-          "last_update_int": 1771185463,
-          "last_update_txt": "7 days ago",
+          "last_update_int": 1771701454,
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>",
           "nocommit": false
         }
       ]
@@ -1208,8 +1281,8 @@
         "fesod",
         {
           "description": "Fast. Easy. Done. Processing spreadsheets without worrying ab...",
-          "last_update_int": 1771759896,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>",
+          "last_update_int": 1771816913,
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>",
           "nocommit": false
         }
       ]
@@ -1374,7 +1447,7 @@
         {
           "description": "Rust Client for Apache Fluss (Incubating)",
           "last_update_int": 1771771268,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>",
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>",
           "nocommit": false
         }
       ],
@@ -1756,8 +1829,8 @@
         "hamilton",
         {
           "description": "Apache Hamilton helps data scientists and engineers define te...",
-          "last_update_int": 1771725391,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>",
+          "last_update_int": 1771829867,
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>",
           "nocommit": false
         }
       ],
@@ -2546,8 +2619,8 @@
         "iggy",
         {
           "description": "Apache Iggy: Hyper-Efficient Message Streaming at Laser Speed",
-          "last_update_int": 1771619986,
-          "last_update_txt": "2 days ago",
+          "last_update_int": 1771846987,
+          "last_update_txt": "<span style='color: #070;'>&lt;15 minutes ago</span>",
           "nocommit": false
         }
       ],
@@ -3636,9 +3709,9 @@
       [
         "incubator-kie-drools",
         {
-          "description": "Apache Kie",
-          "last_update_int": 1771737493,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>",
+          "description": "Drools is a rule engine, DMN engine and complex event process...",
+          "last_update_int": 1771834476,
+          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>",
           "nocommit": false
         }
       ],
@@ -3674,7 +3747,7 @@
         {
           "description": "Apache KIE SonataFlow documentation repository",
           "last_update_int": 1771518656,
-          "last_update_txt": "3 days ago",
+          "last_update_txt": "4 days ago",
           "nocommit": false
         }
       ],
@@ -3683,7 +3756,7 @@
         {
           "description": "Apache KIE Examples repository with showcases on how to use K...",
           "last_update_int": 1771605018,
-          "last_update_txt": "2 days ago",
+          "last_update_txt": "3 days ago",
           "nocommit": false
         }
       ],
@@ -3728,7 +3801,7 @@
         {
           "description": "Apache Kie",
           "last_update_int": 1770141977,
-          "last_update_txt": "19 days ago",
+          "last_update_txt": "20 days ago",
           "nocommit": false
         }
       ],
@@ -3736,8 +3809,8 @@
         "incubator-kie-kogito-runtimes",
         {
           "description": "Kogito Runtimes is a cloud-native business automation technol...",
-          "last_update_int": 1771608115,
-          "last_update_txt": "2 days ago",
+          "last_update_int": 1771834233,
+          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>",
           "nocommit": false
         }
       ],
@@ -3764,7 +3837,7 @@
         {
           "description": "Apache Kie",
           "last_update_int": 1771738876,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>",
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>",
           "nocommit": false
         }
       ],
@@ -3790,8 +3863,8 @@
         "incubator-kie-tools",
         {
           "description": "Apache KIE",
-          "last_update_int": 1771623643,
-          "last_update_txt": "2 days ago",
+          "last_update_int": 1771846169,
+          "last_update_txt": "<span style='color: #070;'>&lt;30 minutes ago</span>",
           "nocommit": false
         }
       ],
@@ -4054,7 +4127,7 @@
         {
           "description": "Apache livy (Incubating)",
           "last_update_int": 1770832925,
-          "last_update_txt": "11 days ago",
+          "last_update_txt": "12 days ago",
           "nocommit": false
         }
       ]
@@ -4279,7 +4352,7 @@
         {
           "description": "Apache openserverless",
           "last_update_int": 1769203207,
-          "last_update_txt": "30 days ago (bot)",
+          "last_update_txt": "31 days ago (bot)",
           "nocommit": false
         }
       ],
@@ -4836,7 +4909,7 @@
         {
           "description": "Apache Pony Mail Foal (Next Generation Suite)",
           "last_update_int": 1770764394,
-          "last_update_txt": "12 days ago",
+          "last_update_txt": "13 days ago",
           "nocommit": false
         }
       ],
@@ -4949,8 +5022,8 @@
         "pouchdb",
         {
           "description": "Apache Pouchdb",
-          "last_update_int": 1771748064,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>",
+          "last_update_int": 1771843090,
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>",
           "nocommit": false
         }
       ],
@@ -5336,7 +5409,7 @@
         {
           "description": "Apache ResilientDB Podling",
           "last_update_int": 1771198925,
-          "last_update_txt": "7 days ago",
+          "last_update_txt": "8 days ago",
           "nocommit": false
         }
       ],
@@ -5566,7 +5639,7 @@
         {
           "description": "Go Implementation For Seata",
           "last_update_int": 1770557979,
-          "last_update_txt": "14 days ago",
+          "last_update_txt": "15 days ago",
           "nocommit": false
         }
       ],
@@ -5602,7 +5675,7 @@
         {
           "description": "Apache Seata(incubating) Website",
           "last_update_int": 1771806635,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>",
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>",
           "nocommit": false
         }
       ]
@@ -5704,7 +5777,7 @@
         {
           "description": "Apache Texera Website",
           "last_update_int": 1769635596,
-          "last_update_txt": "25 days ago",
+          "last_update_txt": "26 days ago",
           "nocommit": false
         }
       ],
@@ -5712,8 +5785,8 @@
         "texera",
         {
           "description": "Collaborative Machine-Learning-Centric Data Analytics Using W...",
-          "last_update_int": 1771800105,
-          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>",
+          "last_update_int": 1771824618,
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>",
           "nocommit": false
         }
       ]
@@ -6022,7 +6095,7 @@
         {
           "description": "Apache XTable (incubating) is a cross-table converter for lak...",
           "last_update_int": 1771795083,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>",
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>",
           "nocommit": false
         }
       ],
