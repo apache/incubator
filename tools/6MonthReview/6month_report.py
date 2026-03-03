@@ -2,7 +2,7 @@
 # podling_6mo_values.py
 # Generate <=6mo podling metrics (CSV/MD).
 
-import argparse, csv, os, sys, re, glob, email, json
+import argparse, csv, os, sys, re, glob, email, json, time
 from email.parser import BytesParser
 from email.policy import default as EMAIL_DEFAULT
 from datetime import datetime, timezone, timedelta, date
@@ -553,6 +553,19 @@ def discover_apache_repos_from_xml(meta: Dict[str, Any], debug: bool=False) -> L
                 pass
     return sorted(set(found))
 
+def matches_podling(meta, rid, target):
+    if not target:
+        return False
+    t = target.lower()
+    if rid.lower() == t:
+        return True
+    if (meta.get("name") or "").lower() == t:
+        return True
+    for a in (meta.get("aliases") or []):
+        if a.lower() == t:
+            return True
+    return False
+
 # ---------------- Main ----------------
 
 def main():
@@ -568,6 +581,7 @@ def main():
     parser.set_defaults(auto_repos=True)
     parser.add_argument("--debug", action="store_true", help="Verbose debug logging")
     parser.add_argument("--audit-pod", default="", help="Audit board_agenda matches for this pod (id or name) and exit")
+    parser.add_argument("--podling", default="", help="Generate report for a specific podling (id or name)")
     args = parser.parse_args()
 
     if (args.repos or args.auto_repos) and not GITHUB_TOKEN:
@@ -589,6 +603,10 @@ def main():
         lower = args.audit_pod.lower()
         pid = None; pname = None
         for rid, meta in podlings_xml.items():
+            if (meta.get("status") or "").lower() != "current":
+                continue
+            if args.podling and not matches_podling(meta, rid, args.podling):
+                continue
             if rid.lower() == lower or meta.get("name","").lower() == lower:
                 pid = rid; pname = meta.get("name", rid); break
         if not pid:
@@ -605,6 +623,8 @@ def main():
     for rid, meta in podlings_xml.items():
         if (meta.get("status") or "").lower() != "current":
             continue
+        if args.podling and not matches_podling(meta, rid, args.podling):
+            continue
         start = meta.get("startdate") or meta.get("start_date")
         if not start:
             continue
@@ -613,9 +633,9 @@ def main():
         except Exception:
             continue
         age_mo = months_between(sdate, TODAY)
-        if age_mo != 6:
+        if not args.podling and age_mo != 6:
             continue
-
+            
         pod_id = rid
         pod_name = meta.get("name", pod_id)
         print(f"\nProcessing podling: {pod_name} (age {age_mo} months)")
@@ -734,9 +754,14 @@ def main():
             "reviewer_diversity": "",
         }
         rows.append(row)
+        if args.podling:
+            break
 
     if not rows:
-        print("\nNo podlings 6 months old found.")
+        if args.podling:
+            print(f"\nNo current podling matched: {args.podling}")
+        else:
+            print("\nNo podlings 6 months old found.")
         return
 
     rows.sort(key=lambda r: (r["age_months"], r["start_date"], r["podling"]))
