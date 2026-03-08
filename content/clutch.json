@@ -221,7 +221,7 @@
         {
           "description": "Apache Amoro Website",
           "last_update_int": 1767794594,
-          "last_update_txt": "8 weeks ago",
+          "last_update_txt": "9 weeks ago",
           "nocommit": false
         }
       ]
@@ -352,7 +352,7 @@
         {
           "description": "Apache Auron Site",
           "last_update_int": 1772636105,
-          "last_update_txt": "3 days ago",
+          "last_update_txt": "4 days ago",
           "nocommit": false
         }
       ]
@@ -840,7 +840,7 @@
     ]
   },
   "caldera": {
-    "description": "Caldera provides a modular platform for modeling, scripting, and executing adversary\n        behavior. It allows users to construct emulation plans, provides agents for communicating\n        with the command and control server, and enables users to evaluate security detections in\n        a structured, scalable, and repeatable way. With the use of plug-ins and\n        community-contributed features, Caldera supports a range of use cases including adversary\n        emulation, purple teaming, detection engineering, and continuous security validation.\n        Using Caldera, defenders can emulate known threat actor behavior and perform other red team\n        activity to evaluate their organization’s defensive capabilities, test analytics, and find\n        detection gaps. As a modular tool based on the MITRE ATT&CK framework, Caldera is designed to\n        be extensible, intelligence-driven, and automation-friendly.",
+    "description": "Caldera provides a modular platform for modeling, scripting, and executing\n            adversary behavior. It allows users to construct emulation plans, provides agents for\n            communicating with the command and control server, and enables users to evaluate\n            security detections in a structured, scalable, and repeatable way. With the use of\n            plug-ins and community-contributed features, Caldera supports a range of use cases\n            including adversary emulation, purple teaming, detection engineering, and continuous\n            security validation. Using Caldera, defenders can emulate known threat actor behavior\n            and perform other red team activity to evaluate their organization’s defensive\n            capabilities, test analytics, and find detection gaps. As a modular tool based on the\n            MITRE ATT&CK framework, Caldera is designed to be extensible, intelligence-driven,\n            and automation-friendly.",
     "fullName": "Caldera",
     "hasMailListCommits": "http://mail-archives.apache.org/mod_mbox/caldera-commits",
     "hasMailListDev": "http://mail-archives.apache.org/mod_mbox/caldera-dev",
@@ -933,7 +933,7 @@
     ]
   },
   "casbin": {
-    "description": "Casbin is a powerful, open-source access control framework that\n            provides a unified, model-driven approach to authorization.",
+    "description": "Casbin is a powerful, open-source access control framework that provides a\n            unified, model-driven approach to authorization.",
     "fullName": "Casbin",
     "hasMailListCommits": "http://mail-archives.apache.org/mod_mbox/casbin-commits",
     "hasMailListDev": "http://mail-archives.apache.org/mod_mbox/casbin-dev",
@@ -1150,8 +1150,8 @@
         "cloudberry",
         {
           "description": "One advanced and mature open-source MPP (Massively Parallel P...",
-          "last_update_int": 1772771741,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>",
+          "last_update_int": 1772938979,
+          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>",
           "nocommit": false
         }
       ],
@@ -1929,223 +1929,6 @@
       "www": "https://hamilton.apache.org"
     },
     "zFixMeList": []
-  },
-  "horaedb": {
-    "description": "HoraeDB is a high-performance, distributed, cloud native time-series database.",
-    "fullName": "HoraeDB",
-    "hasMailListCommits": "http://mail-archives.apache.org/mod_mbox/horaedb-commits",
-    "hasMailListDev": "http://mail-archives.apache.org/mod_mbox/horaedb-dev",
-    "ldap": {
-      "members": [
-        "baojinri",
-        "chunshao",
-        "coolfrog",
-        "evenyag",
-        "jiacai2050",
-        "kamille",
-        "lgcareer",
-        "michaellee",
-        "neochen",
-        "shaofengshi",
-        "tanruixiang",
-        "tison",
-        "vongosling",
-        "wayne",
-        "xikai"
-      ],
-      "numberCommitters": 15,
-      "numberCommittersNew": 0,
-      "numberPMCEquals": false,
-      "numberPMCMembers": 14,
-      "owners": [
-        "baojinri",
-        "chunshao",
-        "coolfrog",
-        "evenyag",
-        "jiacai2050",
-        "kamille",
-        "lgcareer",
-        "michaellee",
-        "shaofengshi",
-        "tanruixiang",
-        "tison",
-        "vongosling",
-        "wayne",
-        "xikai"
-      ]
-    },
-    "mentors": [
-      [
-        "tison",
-        "tison"
-      ],
-      [
-        "Shaofeng Shi",
-        "shaofengshi"
-      ],
-      [
-        "Gang Li",
-        "lgcareer"
-      ],
-      [
-        "Von Gosling",
-        "vongosling"
-      ]
-    ],
-    "news": [
-      "2023-12-11 Project enters incubation."
-    ],
-    "podlingName": "HoraeDB",
-    "rawReportingGroup": "group-2",
-    "releases": {
-      "apache-horaedb-incubating-python-client-v2.0.0-src.tar.gz": {
-        "dtm": "12/10/2024",
-        "folder": "horaedb-client-python/v2.0.0",
-        "hash": "sha512",
-        "revision": "r73595",
-        "size": "29878",
-        "user": "jiacai2050"
-      },
-      "apache-horaedb-incubating-rust-client-v2.0.0-src.tar.gz": {
-        "dtm": "11/26/2024",
-        "folder": "horaedb-client-rust/v2.0.0",
-        "hash": "sha512",
-        "revision": "r73248",
-        "size": "44718",
-        "user": "jiacai2050"
-      },
-      "apache-horaedb-incubating-v2.0.0-src.tar.gz": {
-        "dtm": "10/18/2024",
-        "folder": "horaedb/v2.0.0",
-        "hash": "sha512",
-        "revision": "r72397",
-        "size": "1773049",
-        "user": "jiacai2050"
-      },
-      "apache-horaedb-incubating-v2.1.0-src.tar.gz": {
-        "dtm": "11/18/2024",
-        "folder": "horaedb/v2.1.0",
-        "hash": "sha512",
-        "revision": "r73123",
-        "size": "1847402",
-        "user": "jiacai2050"
-      }
-    },
-    "reportingGroup": "February, May, August, November",
-    "reportingMonthly": true,
-    "repositories": [
-      [
-        "horaedb",
-        {
-          "description": "Apache HoraeDB (incubating) is a high-performance, distribute...",
-          "last_update_int": 1765439423,
-          "last_update_txt": "12 weeks ago",
-          "nocommit": false
-        }
-      ],
-      [
-        "horaedb-client-go",
-        {
-          "description": "Apache HoraeDB",
-          "last_update_int": 1717051965,
-          "last_update_txt": "2 years ago",
-          "nocommit": false
-        }
-      ],
-      [
-        "horaedb-client-java",
-        {
-          "description": "Apache HoraeDB (Incubating) Java Client.",
-          "last_update_int": 1723621834,
-          "last_update_txt": "2 years ago",
-          "nocommit": false
-        }
-      ],
-      [
-        "horaedb-client-py",
-        {
-          "description": "Apache HoraeDB (Incubating) Python Client.",
-          "last_update_int": 1732604120,
-          "last_update_txt": "1 years ago",
-          "nocommit": false
-        }
-      ],
-      [
-        "horaedb-client-rs",
-        {
-          "description": "Apache HoraeDB (Incubating) Rust Client.",
-          "last_update_int": 1749799079,
-          "last_update_txt": "38 weeks ago",
-          "nocommit": false
-        }
-      ],
-      [
-        "horaedb-docs",
-        {
-          "description": "Apache HoraeDB (incubating) Website.",
-          "last_update_int": 1765439970,
-          "last_update_txt": "12 weeks ago",
-          "nocommit": false
-        }
-      ],
-      [
-        "incubator-horaedb-meta",
-        {
-          "description": "Meta service of HoraeDB cluster.-- Archived (archived)",
-          "last_update_int": 1706695980,
-          "last_update_txt": "2 years ago",
-          "nocommit": true
-        }
-      ],
-      [
-        "incubator-horaedb-proto",
-        {
-          "description": "Apache HoraeDB (Incubating) Protocol Buffer Files",
-          "last_update_int": 1727692391,
-          "last_update_txt": "1 years ago",
-          "nocommit": false
-        }
-      ]
-    ],
-    "resource": "horaedb",
-    "sponsor": "Incubator",
-    "startDate": "2023-12-11",
-    "statusAge": 813,
-    "statusLastUpdated": "2023-12-16",
-    "urls": {
-      "git": "https://gitbox.apache.org/repos/asf?p=horaedb.git;a=tree;hb=HEAD",
-      "keys": "https://downloads.apache.org/incubator/horaedb/KEYS",
-      "svn": "",
-      "tracker": "https://github.com/apache/incubator-horaedb/issues",
-      "wiki": "",
-      "www": "http://horaedb.apache.org"
-    },
-    "zFixMeList": [
-      [
-        "18",
-        "Has not provided a wiki link"
-      ],
-      [
-        "31",
-        "ASF Foundation link is missing from website"
-      ],
-      [
-        "33",
-        "Apache License link is missing from website"
-      ],
-      [
-        "34",
-        "Apache Thanks link is missing from website"
-      ],
-      [
-        "35",
-        "Apache Security link is missing from website"
-      ],
-      [
-        "36",
-        "Apache Sponsorship link is missing from website"
-      ]
-    ]
   },
   "hugegraph": {
     "description": "A large-scale and easy-to-use graph database",
@@ -3540,8 +3323,8 @@
         "incubator-kie-drools",
         {
           "description": "Drools is a rule engine, DMN engine and complex event process...",
-          "last_update_int": 1772824959,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>",
+          "last_update_int": 1772946671,
+          "last_update_txt": "<span style='color: #070;'>&lt;30 minutes ago</span>",
           "nocommit": false
         }
       ],
@@ -3631,7 +3414,7 @@
         {
           "description": "Apache Kie",
           "last_update_int": 1771947032,
-          "last_update_txt": "11 days ago",
+          "last_update_txt": "12 days ago",
           "nocommit": false
         }
       ],
@@ -3703,7 +3486,7 @@
         {
           "description": "Apache KIE Website",
           "last_update_int": 1771867964,
-          "last_update_txt": "12 days ago",
+          "last_update_txt": "13 days ago",
           "nocommit": false
         }
       ]
@@ -3948,7 +3731,7 @@
         {
           "description": "Apache Livy is an open source REST interface for interacting ...",
           "last_update_int": 1772470291,
-          "last_update_txt": "5 days ago",
+          "last_update_txt": "6 days ago",
           "nocommit": false
         }
       ],
@@ -5487,7 +5270,7 @@
         {
           "description": "Seata Kubernetes Operations Tool",
           "last_update_int": 1772035358,
-          "last_update_txt": "10 days ago",
+          "last_update_txt": "11 days ago",
           "nocommit": false
         }
       ],
@@ -5505,7 +5288,7 @@
         {
           "description": "Apache Seata(incubating) Website",
           "last_update_int": 1772929810,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>",
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>",
           "nocommit": false
         }
       ]
@@ -5615,8 +5398,8 @@
         "texera",
         {
           "description": "Collaborative Machine-Learning-Centric Data Analytics Using W...",
-          "last_update_int": 1772911499,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>",
+          "last_update_int": 1772947195,
+          "last_update_txt": "<span style='color: #070;'>&lt;15 minutes ago</span>",
           "nocommit": false
         }
       ]
