@@ -1,10 +1,10 @@
 # Caldera — Incubator Health (Reports + GitHub + Mailing Lists)
-_Generated on 2026-01-22_
+_Generated on 2026-03-18_
 
 **Windows:** to-date
 
 ## Window Details
-### to-date  (2025-12-19 → 2026-01-22)
+### to-date  (2025-12-19 → 2026-03-18)
 - **Releases (from list votes/results):** 0  |  **Median gap (days):** —
 - **New contributors:** 0  |  **Unique committers:** 0  |  **Commits:** 0
 - **Issues:** opened 0 / closed 0
