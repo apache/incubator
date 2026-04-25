@@ -283,20 +283,20 @@ If the proposal involves cryptographic code either directly or indirectly, Apach
 
 #### Mailing lists:
 
-The minimum required lists are private@{podling}.incubator.apache.org (for confidential PPMC discussions) and dev@{podling}.incubator.apache.org lists. Note that projects historically misnamed the private list PMC. To avoid confusion over appropriate usage, it was resolved that all such lists be renamed.
+The minimum required lists are private@{podling}.apache.org (for confidential PPMC discussions) and dev@{podling}.apache.org lists. Note that projects historically misnamed the private list PMC. To avoid confusion over appropriate usage, it was resolved that all such lists be renamed.
 
 If this project is new to open source, then starting with these minimum lists is the best approach. The initial focus needs to be on recruiting new developers. Early adopters are potential developers. As momentum is gained, the community may decide to create commit and user lists as they become necessary.
 
 Existing open source projects moving to Apache will probably want to adopt the same mailing list set up here as they have already. However, there is no necessity that all mailing lists be created during bootstrapping. New mailing lists can be added by a VOTE on the Podling list.
 
-By default, commits for {podling} will be emailed to commits@{podling}.incubator.apache.org. It is therefore recommended that this naming convention is adopted.
+By default, commits for {podling} will be emailed to commits@{podling}.apache.org. It is therefore recommended that this naming convention is adopted.
 
 Mailing list options are described at greater length elsewhere.
 
 Example (Beehive):
-> * private@beehive.incubator.apache.org (with moderated subscriptions)
-> * dev@beehive.incubator.apache.org
-> * commits@beehive.incubator.apache.org
+> * private@beehive.apache.org (with moderated subscriptions)
+> * dev@beehive.apache.org
+> * commits@beehive.apache.org
 
  #### Subversion Directory:
 
