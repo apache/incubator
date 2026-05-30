@@ -1,18 +1,18 @@
 # Casbin — Incubator Health (Reports + GitHub + Mailing Lists)
-_Generated on 2026-04-21_
+_Generated on 2026-05-29_
 
-**Windows:** to-date
+**Windows:** 3m
 
 ## Window Details
-### to-date  (2026-02-07 → 2026-04-21)
+### 3m  (2026-02-28 → 2026-05-29)
 - **Releases (from list votes/results):** 0  |  **Median gap (days):** —
-- **New contributors:** 1  |  **Unique committers:** 2  |  **Commits:** 2
-- **Issues:** opened 7 / closed 2
-- **PRs:** opened 8 / merged 1  |  **Median merge time (days):** 0.1
-- **Reviews (sampled):** median reviewers/PR **0**  |  reviewer diversity (eff.#) **—**  |  PR author diversity (eff.#) **1.0**  |  unique reviewers **0**, unique authors **1**
-- **Bus factor proxy (50% / 75%):** 1 / 2
+- **New contributors:** 3  |  **Unique committers:** 4  |  **Commits:** 5
+- **Issues:** opened 7 / closed 4
+- **PRs:** opened 14 / merged 6  |  **Median merge time (days):** 0.1
+- **Reviews (sampled):** median reviewers/PR **0.0**  |  reviewer diversity (eff.#) **—**  |  PR author diversity (eff.#) **2.0**  |  unique reviewers **0**, unique authors **3**
+- **Bus factor proxy (50% / 75%):** 2 / 3
 - **Incubator reports:** 0  |  **Avg mentor sign-offs:** —
-- **Mailing lists:** dev messages **47**, dev unique posters **4**
+- **Mailing lists:** dev messages **65**, dev unique posters **6**
 
 ## Reading the Indicators
 - **Use trend arrows** to compare available windows; when a window lacks ≥28 days or ≥5 events, trends show **—**.

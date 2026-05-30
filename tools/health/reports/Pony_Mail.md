@@ -1,12 +1,12 @@
 # Pony Mail — Incubator Health (Reports + GitHub + Mailing Lists)
-_Generated on 2026-04-21_
+_Generated on 2026-05-29_
 
 **Windows:** 3m, 6m, 12m
 
 ## Trends (short vs medium)
 
-- **Releases (from list votes/results):** 11 (↗↗)
-- **Median days between releases:** 6.0 (↗↗)
+- **Releases (from list votes/results):** 10 (↗)
+- **Median days between releases:** 8 (→)
 - **New contributors:** 0 (—)
 - **Unique committers:** 0 (—)
 - **Commits:** 0 (—)
@@ -23,8 +23,8 @@ _Generated on 2026-04-21_
 
 ## Trends (short vs long)
 
-- **Releases (from list votes/results):** 11 (↗)
-- **Median days between releases:** 6.0 (→)
+- **Releases (from list votes/results):** 10 (→)
+- **Median days between releases:** 8 (↘)
 - **New contributors:** 0 (—)
 - **Unique committers:** 0 (—)
 - **Commits:** 0 (—)
@@ -40,8 +40,8 @@ _Generated on 2026-04-21_
 - **Unique PR authors (sampled):** 0 (—)
 
 ## Window Details
-### 3m  (2026-01-21 → 2026-04-21)
-- **Releases (from list votes/results):** 11  |  **Median gap (days):** 6.0
+### 3m  (2026-02-28 → 2026-05-29)
+- **Releases (from list votes/results):** 10  |  **Median gap (days):** 8
 - **New contributors:** 0  |  **Unique committers:** 0  |  **Commits:** 0
 - **Issues:** opened 0 / closed 0
 - **PRs:** opened 0 / merged 0  |  **Median merge time (days):** —
@@ -50,8 +50,8 @@ _Generated on 2026-04-21_
 - **Incubator reports:** 0  |  **Avg mentor sign-offs:** —
 - **Mailing lists:** dev messages **0**, dev unique posters **0**
 
-### 6m  (2025-10-21 → 2026-04-21)
-- **Releases (from list votes/results):** 17  |  **Median gap (days):** 8.5
+### 6m  (2025-11-29 → 2026-05-29)
+- **Releases (from list votes/results):** 18  |  **Median gap (days):** 8
 - **New contributors:** 0  |  **Unique committers:** 0  |  **Commits:** 0
 - **Issues:** opened 0 / closed 0
 - **PRs:** opened 0 / merged 0  |  **Median merge time (days):** —
@@ -60,8 +60,8 @@ _Generated on 2026-04-21_
 - **Incubator reports:** 0  |  **Avg mentor sign-offs:** —
 - **Mailing lists:** dev messages **0**, dev unique posters **0**
 
-### 12m  (2025-04-21 → 2026-04-21)
-- **Releases (from list votes/results):** 39  |  **Median gap (days):** 6.0
+### 12m  (2025-05-29 → 2026-05-29)
+- **Releases (from list votes/results):** 38  |  **Median gap (days):** 7
 - **New contributors:** 0  |  **Unique committers:** 0  |  **Commits:** 0
 - **Issues:** opened 0 / closed 0
 - **PRs:** opened 0 / merged 0  |  **Median merge time (days):** —
