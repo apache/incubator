@@ -584,8 +584,25 @@ def _to_naive_utc(d: dt.datetime) -> dt.datetime:
         return d.replace(tzinfo=dt.timezone.utc).astimezone(dt.timezone.utc).replace(tzinfo=None)
     return d.astimezone(dt.timezone.utc).replace(tzinfo=None)
 
-VOTE_RE = re.compile(r"\[VOTE[^\]]*\].*RELEASE", re.I)
-RESULT_RE = re.compile(r"\[RESULT[^\]]*\].*RELEASE", re.I)
+# Subject-only matchers, anchored on a leading [VOTE]/[RESULT] tag.
+# Body content must never be scanned: vote threads routinely link to other
+# projects' archives and to ponymail/lists.apache.org URLs, which is what
+# was poisoning the Pony Mail release count.
+#
+# We tolerate optional Re:/Fwd: prefixes and additional bracketed tags
+# before the VOTE/RESULT tag (e.g. "[RESULT] [VOTE] ...", "[FOO][VOTE] ...").
+_SUBJ_PREFIX = r"^\s*(?:(?:Re|Fwd|Fw)\s*:\s*)*(?:\[[^\]]*\]\s*)*"
+VOTE_RE = re.compile(_SUBJ_PREFIX + r"\[VOTE\][^\r\n]*\b(release|rc\d+)\b", re.I)
+RESULT_RE = re.compile(_SUBJ_PREFIX + r"\[RESULT\][^\r\n]*\b(release|rc\d+)\b", re.I)
+RELEASE_THREAD_RE = re.compile(
+    _SUBJ_PREFIX + r"\[(?:VOTE|RESULT)\][^\r\n]*\b(release|rc\d+)\b", re.I
+)
+# Strip ONLY the leading bracketed tags and Re:/Fwd: prefixes — not the
+# rest of the subject. (The earlier version greedily ate everything up to
+# the next ']', which usually doesn't exist, blanking the subject.)
+LEADING_TAG_RE = re.compile(
+    r"^\s*(?:(?:Re|Fwd|Fw)\s*:\s*)*(?:\[[^\]]*\]\s*)+", re.I
+)
 
 VERSION_TOKEN_RE = re.compile(r"\b[vV]?(\d+(?:\.\d+){1,3}(?:-[A-Za-z0-9_.-]+)?)\b")
 NAME_NORMALIZE_RE = re.compile(r"[^a-z0-9]+")
@@ -593,10 +610,36 @@ NAME_NORMALIZE_RE = re.compile(r"[^a-z0-9]+")
 def _tokens(s: str) -> set[str]:
     return set(t for t in re.split(r"[^a-z0-9]+", s.lower()) if t)
 
+def _podling_match_tokens(podling: str) -> List[str]:
+    """Whole-name variants to look for inside a tag-stripped subject.
+
+    For "Pony Mail" this returns variants like {"pony mail", "pony-mail",
+    "ponymail", "apache-pony-mail", "apache pony mail"}. Single-word tokens
+    like "mail" are deliberately NOT included — that's what caused false
+    positives against unrelated [VOTE] subjects.
+    """
+    name = (podling or "").lower().strip()
+    name = re.sub(r"\b(apache|incubator|incubating|podling)\b", " ", name)
+    spaced = re.sub(r"[^a-z0-9]+", " ", name).strip()
+    if not spaced:
+        return []
+    dashed = spaced.replace(" ", "-")
+    joined = spaced.replace(" ", "")
+    tokens = {spaced, dashed, joined,
+              f"apache-{dashed}", f"apache {spaced}", f"apache{joined}"}
+    return [t for t in tokens if t]
+
+def _strip_leading_tag(subj: str) -> str:
+    return LEADING_TAG_RE.sub("", subj or "", count=1)
+
 def _subject_mentions_podling(subj: str, podling: str) -> bool:
-    subj_tokens = _tokens(subj)
-    pod_tokens = [t for t in _tokens(podling) if t not in {"apache", "incubator"}]
-    return any(t in subj_tokens for t in pod_tokens)
+    inner = _strip_leading_tag(subj).lower()
+    if not inner:
+        return False
+    for tok in _podling_match_tokens(podling):
+        if re.search(r"(?<![A-Za-z0-9])" + re.escape(tok) + r"(?![A-Za-z0-9])", inner):
+            return True
+    return False
 
 def _extract_release_version(subj: str) -> Optional[str]:
     m = VERSION_TOKEN_RE.search(subj)
@@ -640,9 +683,7 @@ def scan_lists_for_window(podling: str, start: dt.datetime, end: dt.datetime, de
             if frm:
                 dev_posters.add(frm)
 
-        up = subj.upper()
-        is_release_thread = ("RELEASE" in up) and ("[VOTE" in up or "[RESULT" in up)
-        if not is_release_thread:
+        if not RELEASE_THREAD_RE.search(subj):
             return
 
         if (not track_dev) and (not _subject_mentions_podling(subj, podling)):
