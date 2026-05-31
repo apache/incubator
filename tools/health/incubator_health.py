@@ -18,6 +18,7 @@ from __future__ import annotations
 import argparse
 import csv
 import datetime as dt
+import json
 import math
 import os
 import time
@@ -63,6 +64,18 @@ def parse_args() -> argparse.Namespace:
 
     p.add_argument("--minutes-dir", required=True, help="Path to ASF board archived agendas (txt files).")
     p.add_argument("--repos", nargs="*", default=[], help="GitHub repos (owner/name). Default guess is apache/<slug>.")
+    p.add_argument("--auto-discover-repos",
+                   action=argparse.BooleanOptionalAction,
+                   default=True,
+                   help="Discover apache/* repos per podling via GitHub search "
+                        "(name matches slug or incubator-<slug>). On by default; "
+                        "captures multi-repo podlings like KIE and OpenServerless. "
+                        "Pass --no-auto-discover-repos to force the apache/<slug> guess. "
+                        "Ignored if --repos is given.")
+    p.add_argument("--repos-cache-dir", default=".repo_cache",
+                   help="Directory for cached repo-discovery results (default: .repo_cache).")
+    p.add_argument("--repos-cache-ttl-days", type=int, default=7,
+                   help="Discovery cache TTL in days (default: 7).")
     p.add_argument("--today", default=None, help="Override today YYYY-MM-DD.")
 
     # Output
@@ -140,6 +153,117 @@ def canonical_repo(repo: str) -> str:
 
     hit = probe(alt)
     return hit or repo
+
+
+# ---------------- Repo auto-discovery ----------------
+
+def _slug_variants(slug: str) -> List[str]:
+    """All accepted spellings of a podling slug for repo-name matching.
+
+    Some podlings use the dashed form in their podling name but the joined
+    form in their repo names (Pony Mail → apache/incubator-ponymail-*).
+    """
+    s = (slug or "").strip().lower()
+    if not s:
+        return []
+    dashed = re.sub(r"[^a-z0-9]+", "-", s).strip("-")
+    joined = re.sub(r"[^a-z0-9]+", "", s)
+    return [v for v in dict.fromkeys([dashed, joined]) if v]
+
+
+def _repo_name_matches_slug(repo_name: str, slug: str) -> bool:
+    """Whole-segment match against the slug (or its joined variant) and
+    optional `incubator-` prefix.
+
+    Accepts:  <slug>, incubator-<slug>, <slug>-..., incubator-<slug>-...
+              where <slug> may be either the dashed or joined spelling.
+    Rejects:  other-<slug>, <slug>foo (substring matches without a segment break)
+    """
+    name = repo_name.lower()
+    for v in _slug_variants(slug):
+        s = re.escape(v)
+        if re.match(rf"^(incubator-)?{s}(-.+)?$", name):
+            return True
+    return False
+
+
+def discover_apache_repos(
+    slug: str,
+    cache_dir: Optional[str] = None,
+    ttl_days: int = 7,
+    debug: bool = False,
+) -> List[str]:
+    """Find apache/* repos belonging to a podling via GitHub repo search.
+
+    Filters search hits to repos whose name matches the podling slug in a
+    whole-segment way (see `_repo_name_matches_slug`). Results are cached to
+    `<cache_dir>/<slug>.json` for `ttl_days` so reruns don't burn rate-limit.
+    Returns `[]` if discovery turns up nothing — caller decides on fallback.
+    """
+    slug = (slug or "").strip().lower()
+    if not slug:
+        return []
+
+    cache_file = None
+    if cache_dir:
+        try:
+            os.makedirs(cache_dir, exist_ok=True)
+            cache_file = os.path.join(cache_dir, f"{slug}.json")
+            if os.path.exists(cache_file):
+                age = time.time() - os.path.getmtime(cache_file)
+                if age < ttl_days * 86400:
+                    try:
+                        with open(cache_file, "r") as f:
+                            data = json.load(f)
+                        repos = data.get("repos", [])
+                        if isinstance(repos, list) and all(isinstance(r, str) for r in repos):
+                            log(f"    [discover] cache hit ({len(repos)} repos, {int(age)}s old) — {slug}", debug)
+                            return repos
+                    except Exception as e:
+                        log(f"    [discover] cache read failed for {slug}: {e}", debug)
+        except OSError as e:
+            log(f"    [discover] cache dir unusable ({cache_dir}): {e}", debug)
+            cache_file = None
+
+    q = f"org:apache {slug} in:name"
+    log(f"    [discover] GitHub search: {q!r}", debug)
+    try:
+        items = gh_paginate(
+            "https://api.github.com/search/repositories",
+            {"q": q, "per_page": "100"},
+        )
+    except Exception as e:
+        log(f"    [discover] search failed for {slug}: {e}", debug)
+        return []
+
+    matched: List[str] = []
+    skipped: List[str] = []
+    for it in items:
+        full = it.get("full_name", "") if isinstance(it, dict) else ""
+        if not full or "/" not in full:
+            continue
+        owner, name = full.split("/", 1)
+        if owner.lower() != "apache":
+            continue
+        if _repo_name_matches_slug(name, slug):
+            matched.append(full)
+        else:
+            skipped.append(full)
+
+    matched = sorted(set(matched))
+    if debug and skipped:
+        log(f"    [discover] filtered out {len(skipped)} unrelated hits (e.g. {', '.join(skipped[:3])}{' …' if len(skipped) > 3 else ''})", debug)
+    log(f"    [discover] kept {len(matched)} repo(s) for {slug}", debug)
+
+    if cache_file:
+        try:
+            with open(cache_file, "w") as f:
+                json.dump({"fetched": dt.datetime.utcnow().isoformat() + "Z",
+                           "slug": slug, "query": q, "repos": matched}, f, indent=2)
+        except OSError as e:
+            log(f"    [discover] cache write failed for {slug}: {e}", debug)
+
+    return matched
 
 
 # ---------------- Trend arrows & scoring ----------------
@@ -249,11 +373,13 @@ def gh_get(url: str, params: Dict[str, str] | None = None, max_retries: int = 6)
     raise RuntimeError(f"GitHub GET failed after {max_retries} attempts: {url}")
 
 def gh_paginate(url: str, params: Dict[str, str]) -> List[dict]:
+    """Walk GitHub's Link: rel="next" pagination through gh_get so all
+    callers inherit primary/secondary rate-limit back-off."""
     out: List[dict] = []
-    sess = requests.Session()
-    while True:
-        r = sess.get(url, params=params, headers=gh_headers(), timeout=30)
-        r.raise_for_status()
+    next_url: Optional[str] = url
+    next_params: Optional[Dict[str, str]] = params
+    while next_url:
+        r = gh_get(next_url, next_params)
         data = r.json()
         if isinstance(data, list):
             chunk = data
@@ -266,12 +392,13 @@ def gh_paginate(url: str, params: Dict[str, str]) -> List[dict]:
         nxt = None
         for part in ln.split(","):
             if 'rel="next"' in part:
-                nxt = part[part.find("<")+1:part.find(">")]
+                nxt = part[part.find("<") + 1:part.find(">")]
                 break
         if not nxt:
             break
-        url = nxt
-        params = {}
+        # Subsequent requests carry params inline in the Link URL.
+        next_url = nxt
+        next_params = None
     return out
 
 def gh_search_issues(q: str) -> int:
@@ -288,7 +415,16 @@ def gh_get_pr(repo: str, number: int) -> dict:
 
 def gh_list_commits(repo: str, since: dt.datetime, until: dt.datetime) -> List[dict]:
     url = f"https://api.github.com/repos/{repo}/commits"
-    return gh_paginate(url, {"since": since.strftime(ISO), "until": until.strftime(ISO), "per_page": "100"})
+    try:
+        return gh_paginate(url, {"since": since.strftime(ISO), "until": until.strftime(ISO), "per_page": "100"})
+    except requests.HTTPError as e:
+        # 409: "Git Repository is empty" (placeholder repo, no commits yet).
+        # 404: repo deleted, renamed, or otherwise unreachable.
+        # Treat as zero commits — no point logging a stack-trace per window.
+        status = getattr(e.response, "status_code", None)
+        if status in (404, 409):
+            return []
+        raise
 
 def median_days_between(dts: List[dt.datetime]) -> Optional[float]:
     if len(dts) < 2:
@@ -798,16 +934,94 @@ def compute_bus_factor_proxies(by_ident_counts: Dict[str, int], total: int) -> T
             break
     return k50, k75
 
-def compute_github_metrics(repos: List[str], start: dt.datetime, end: dt.datetime, debug: bool=False) -> Dict[str, any]:
+def gh_list_contributor_idents(repo: str, debug: bool = False) -> set:
+    """Set of identity strings for everyone who has ever committed to `repo`.
+
+    Uses /repos/<r>/contributors?anon=true, which returns ONE row per identity
+    (with a `contributions` count) rather than one row per commit — orders of
+    magnitude cheaper than walking /commits when you only need membership.
+
+    Anonymous entries (commits whose author email is not linked to a GitHub
+    user) have no `login` but do carry `name` and `email`; we fall back to
+    those so coverage matches the /commits-based prior we used to compute.
+
+    Caveat: GitHub caps this endpoint at the top ~500 contributors per repo.
+    For the few podlings with very long tails this can truncate the prior set
+    slightly; in practice the cap is well above what every current ASF
+    podling repo carries.
+    """
+    url = f"https://api.github.com/repos/{repo}/contributors"
+    try:
+        rows = gh_paginate(url, {"anon": "true", "per_page": "100"})
+    except requests.HTTPError as e:
+        status = getattr(e.response, "status_code", None)
+        # 204: no content (no contributors yet). 404: missing. 403/451: blocked.
+        if status in (204, 404, 403, 451):
+            return set()
+        raise
+    out: set = set()
+    for row in rows:
+        if not isinstance(row, dict):
+            continue
+        login = (row.get("login") or "").strip()
+        # Anonymous entries: type == "Anonymous", with name + email.
+        name = (row.get("name") or "").strip()
+        ident = login or name
+        if ident:
+            out.add(ident)
+    log(f"    [prior] {repo}: {len(out)} identities", debug)
+    return out
+
+
+def collect_prior_committer_idents(
+    repos: List[str],
+    debug: bool = False,
+) -> set:
+    """Cross-repo set of identities that have ever committed to any repo.
+
+    Used as the "returning contributor" set when classifying who's new in a
+    given window. Computed once per podling; not date-bounded because the
+    underlying /contributors endpoint isn't date-filterable, and "ever
+    contributed before" is the strict reading of "returning."
+    """
+    prior: set = set()
+    for r in repos:
+        try:
+            prior |= gh_list_contributor_idents(r, debug=debug)
+        except Exception as e:
+            log(f"[gh] prior contributors {r}: {e}", debug)
+    log(f"  [prior] {len(prior)} identities across {len(repos)} repo(s) (all-time)", debug)
+    return prior
+
+
+def compute_github_metrics(
+    repos: List[str],
+    start: dt.datetime,
+    end: dt.datetime,
+    debug: bool = False,
+    *,
+    prior_idents: Optional[set] = None,
+) -> Dict[str, any]:
+    """Compute GH metrics for a pre-canonicalized list of repos.
+
+    The caller is responsible for canonicalization. Doing it here would mean
+    re-probing every repo on every window (3×), which burns rate-limit; for
+    auto-discovered repos canonicalization is also pure waste because
+    `full_name` from /search/repositories is canonical by definition.
+
+    `prior_idents` is the cross-repo set of identities that have committed to
+    any repo before this window. Passed in once per podling so the prior fetch
+    isn't repeated per window. If not provided, it's computed lazily here via
+    /contributors.
+    """
     commit_authors_window: set = set()
-    commit_authors_prior: set = set()
     total_commits = 0
     by_ident_counts: Dict[str, int] = {}
-    horizon_start = start - dt.timedelta(days=365 * 5)
 
-    repos = [canonical_repo(r) for r in repos]
+    if prior_idents is None:
+        prior_idents = collect_prior_committer_idents(repos, debug=debug)
+
     for r in repos:
-        r = canonical_repo(r)
         try:
             commits = gh_list_commits(r, start, end)
             total_commits += len(commits)
@@ -819,20 +1033,10 @@ def compute_github_metrics(repos: List[str], start: dt.datetime, end: dt.datetim
                 if ident:
                     commit_authors_window.add((r, ident))
                     by_ident_counts[ident] = by_ident_counts.get(ident, 0) + 1
-
-            prior = gh_list_commits(r, horizon_start, start - dt.timedelta(seconds=1))
-            for c in prior:
-                a = c.get("author") or {}
-                login = a.get("login")
-                name = (c.get("commit") or {}).get("author", {}).get("name")
-                ident = (login or name or "").strip()
-                if ident:
-                    commit_authors_prior.add((r, ident))
         except Exception as e:
             log(f"[gh] commits {r}: {e}", debug)
 
     window_idents = {ident for (_, ident) in commit_authors_window}
-    prior_idents = {ident for (_, ident) in commit_authors_prior}
 
     bus50, bus75 = compute_bus_factor_proxies(by_ident_counts, total_commits)
 
@@ -1181,12 +1385,32 @@ def main():
     for idx, podling in enumerate(podlings, 1):
         log(f"[{idx}/{total}] {podling}", args.debug)
 
-        # Repo guess if not provided — prefer apache/<slug> only
+        # Repo guess if not provided.
+        # Precedence: --repos (literal) > --auto-discover-repos > apache/<slug>.
+        # `needs_canonical` tracks whether the list came from a source where
+        # `incubator-<name>` toggling might be needed. Discovery results come
+        # straight from /search/repositories and are already canonical, so we
+        # skip the canonical_repo() probes for them — that probe fires up to
+        # 2 API calls per repo and otherwise runs once per podling.
+        needs_canonical = True
         if args.repos:
             repos = args.repos[:]
         else:
-            slug = re.sub(r"[^a-z0-9]+", "-", podling.lower())
-            repos = [f"apache/{slug}"]
+            slug = re.sub(r"[^a-z0-9]+", "-", podling.lower()).strip("-")
+            repos = []
+            if args.auto_discover_repos:
+                repos = discover_apache_repos(
+                    slug,
+                    cache_dir=args.repos_cache_dir,
+                    ttl_days=args.repos_cache_ttl_days,
+                    debug=args.debug,
+                )
+                if repos:
+                    needs_canonical = False
+            if not repos:
+                repos = [f"apache/{slug}"]
+        if needs_canonical:
+            repos = [canonical_repo(r) for r in repos]
         log(f"  [repos] {', '.join(repos)}", args.debug)
 
         # Strict window selection by podling age
@@ -1197,6 +1421,11 @@ def main():
             log(f"  [age] start UNKNOWN — defaulting to full 3m/6m/12m", args.debug)
 
         win_specs = select_windows_strict(today, pod_start)
+
+        # Prior-committer set: built once per podling via /contributors
+        # (one row per identity, not per commit). Not date-bounded — used
+        # only as a membership check for the "new contributor" metric.
+        prior_idents = collect_prior_committer_idents(repos, debug=args.debug)
 
         windows: List[WindowMetrics] = []
         for label, start, end in win_specs:
@@ -1228,7 +1457,9 @@ def main():
 
             # GitHub metrics (incl. bus factor + diversity)
             log("    [gh] commits/issues/prs/diversity …", args.debug)
-            gh = compute_github_metrics(repos, start, end, debug=args.debug)
+            gh = compute_github_metrics(
+                repos, start, end, debug=args.debug, prior_idents=prior_idents
+            )
             for k, v in gh.items():
                 setattr(wm, k, v)
 
