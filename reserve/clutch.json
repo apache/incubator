@@ -203,7 +203,7 @@
         {
           "description": "Apache Amoro(incubating) is a Lakehouse management system bui...",
           "last_update_int": 1782370498,
-          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>",
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>",
           "nocommit": false
         }
       ],
@@ -347,7 +347,7 @@
         {
           "description": "The Auron accelerator for distributed computing framework (e....",
           "last_update_int": 1782355972,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>",
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>",
           "nocommit": false
         }
       ],
@@ -477,7 +477,7 @@
         {
           "description": "Apache BifroMQ (Incubating) is a high-performance, distribute...",
           "last_update_int": 1781228512,
-          "last_update_txt": "13 days ago",
+          "last_update_txt": "14 days ago",
           "nocommit": false
         }
       ],
@@ -3272,7 +3272,7 @@
         {
           "description": "One advanced and mature open-source MPP (Massively Parallel P...",
           "last_update_int": 1782381933,
-          "last_update_txt": "<span style='color: #070;'>&lt;1 hour ago</span>",
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>",
           "nocommit": false
         }
       ],
@@ -3281,7 +3281,7 @@
         {
           "description": "Backup Utility for Apache Cloudberry (Incubating)",
           "last_update_int": 1781226410,
-          "last_update_txt": "13 days ago",
+          "last_update_txt": "14 days ago",
           "nocommit": false
         }
       ],
@@ -3450,7 +3450,7 @@
         {
           "description": "Fast. Easy. Done. Processing spreadsheets without worrying ab...",
           "last_update_int": 1782353570,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>",
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>",
           "nocommit": false
         }
       ]
@@ -3686,8 +3686,8 @@
         "fluss",
         {
           "description": "Apache Fluss is a streaming storage built for real-time analy...",
-          "last_update_int": 1782379122,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>",
+          "last_update_int": 1782398209,
+          "last_update_txt": "<span style='color: #070;'>&lt;30 minutes ago</span>",
           "nocommit": false
         }
       ],
@@ -3714,7 +3714,7 @@
         {
           "description": "Rust Client for Apache Fluss (Incubating)",
           "last_update_int": 1782307338,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>",
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>",
           "nocommit": false
         }
       ],
@@ -4250,7 +4250,7 @@
         {
           "description": "A graph database that supports more than 100+ billion data, h...",
           "last_update_int": 1782215093,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>",
+          "last_update_txt": "2 days ago",
           "nocommit": false
         }
       ],
@@ -4462,8 +4462,8 @@
         "iggy",
         {
           "description": "Apache Iggy: Hyper-Efficient Message Streaming at Laser Speed",
-          "last_update_int": 1782378368,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>",
+          "last_update_int": 1782392117,
+          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>",
           "nocommit": false
         }
       ],
@@ -6069,7 +6069,7 @@
         {
           "description": "Kogito Runtimes is a cloud-native business automation technol...",
           "last_update_int": 1782380417,
-          "last_update_txt": "<span style='color: #070;'>&lt;1 hour ago</span>",
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>",
           "nocommit": false
         }
       ],
@@ -6096,7 +6096,7 @@
         {
           "description": "Apache Kie",
           "last_update_int": 1781737496,
-          "last_update_txt": "7 days ago",
+          "last_update_txt": "8 days ago",
           "nocommit": false
         }
       ],
@@ -6123,7 +6123,7 @@
         {
           "description": "Apache KIE",
           "last_update_int": 1782378085,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>",
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>",
           "nocommit": false
         }
       ],
@@ -6251,7 +6251,7 @@
         {
           "description": "OpenServerless Admin API",
           "last_update_int": 1781659858,
-          "last_update_txt": "8 days ago (bot)",
+          "last_update_txt": "9 days ago (bot)",
           "nocommit": false
         }
       ],
@@ -6456,6 +6456,79 @@
       ]
     ]
   },
+  "ossie": {
+    "description": "Apache Ossie comes from Open Semantic Interchange. It is an open specification that \n            defines a vendor-neutral format for expressing business metrics, dimensions, and their \n            relationships. It enables any tool to consume and produce semantic definitions without loss \n            of meaning.",
+    "fullName": "Ossie",
+    "hasMailListCommits": "http://mail-archives.apache.org/mod_mbox/polaris-commits",
+    "hasMailListDev": "http://mail-archives.apache.org/mod_mbox/polaris-dev",
+    "ldap": {},
+    "mentors": [
+      [
+        "Jean-Baptiste Onofré",
+        "jbonofre"
+      ],
+      [
+        "Zili Chen",
+        "tison"
+      ],
+      [
+        "Russell Spitzer",
+        "russellspitzer"
+      ],
+      [
+        "Holden Karau",
+        "holden"
+      ]
+    ],
+    "news": [
+      "2026-06-22 Project enters incubation."
+    ],
+    "podlingName": "Ossie",
+    "rawReportingGroup": "group-3",
+    "releases": [],
+    "reportingGroup": "March, June, September, December",
+    "reportingMonthly": false,
+    "repositories": "",
+    "resource": "ossie",
+    "sponsor": "Incubator",
+    "startDate": "2026-06-19",
+    "statusAge": 0,
+    "statusLastUpdated": "2026-06-25",
+    "urls": {
+      "git": "",
+      "keys": "",
+      "svn": "",
+      "tracker": "",
+      "wiki": "",
+      "www": ""
+    },
+    "zFixMeList": [
+      [
+        "01",
+        "No project LDAP"
+      ],
+      [
+        "10",
+        "Has not provided an issue tracker link"
+      ],
+      [
+        "18",
+        "Has not provided a wiki link"
+      ],
+      [
+        "11",
+        "Website is missing"
+      ],
+      [
+        "12",
+        "Release distribution area is not setup"
+      ],
+      [
+        "17",
+        "No source code repository"
+      ]
+    ]
+  },
   "otava": {
     "description": " Otava, a command-line tool, written in Python, that detects statistically\n            significant changes in time-series data stored either in databases or CSV files. Otava\n            entered Incubation as Hunter ",
     "fullName": "Otava",
@@ -6631,7 +6704,7 @@
         {
           "description": "Apache Otava",
           "last_update_int": 1780885880,
-          "last_update_txt": "17 days ago",
+          "last_update_txt": "18 days ago",
           "nocommit": false
         }
       ],
@@ -6640,7 +6713,7 @@
         {
           "description": "Website for Apache Otava (incubating)",
           "last_update_int": 1780885331,
-          "last_update_txt": "17 days ago",
+          "last_update_txt": "18 days ago",
           "nocommit": false
         }
       ]
@@ -6803,7 +6876,7 @@
         {
           "description": "Apache OzHera is an About Application Observable Platform in ...",
           "last_update_int": 1781048792,
-          "last_update_txt": "15 days ago",
+          "last_update_txt": "16 days ago",
           "nocommit": false
         }
       ],
@@ -7408,7 +7481,7 @@
         {
           "description": "Global-Scale Sustainable Blockchain Fabric https://resilientd...",
           "last_update_int": 1765763819,
-          "last_update_txt": "27 weeks ago",
+          "last_update_txt": "28 weeks ago",
           "nocommit": false
         }
       ],
@@ -7435,7 +7508,7 @@
         {
           "description": "Global-Scale Sustainable Blockchain Fabric",
           "last_update_int": 1765763762,
-          "last_update_txt": "27 weeks ago",
+          "last_update_txt": "28 weeks ago",
           "nocommit": false
         }
       ],
@@ -7453,7 +7526,7 @@
         {
           "description": "Global-Scale Sustainable Blockchain Fabric",
           "last_update_int": 1765762095,
-          "last_update_txt": "27 weeks ago",
+          "last_update_txt": "28 weeks ago",
           "nocommit": false
         }
       ],
@@ -7462,7 +7535,7 @@
         {
           "description": "Global-Scale Sustainable Blockchain Fabric",
           "last_update_int": 1765763796,
-          "last_update_txt": "27 weeks ago",
+          "last_update_txt": "28 weeks ago",
           "nocommit": false
         }
       ],
@@ -7480,7 +7553,7 @@
         {
           "description": "Global-Scale Sustainable Blockchain Fabric",
           "last_update_int": 1765762720,
-          "last_update_txt": "27 weeks ago",
+          "last_update_txt": "28 weeks ago",
           "nocommit": false
         }
       ],
@@ -7498,7 +7571,7 @@
         {
           "description": "Global-Scale Sustainable Blockchain Fabric",
           "last_update_int": 1765763399,
-          "last_update_txt": "27 weeks ago",
+          "last_update_txt": "28 weeks ago",
           "nocommit": false
         }
       ],
@@ -7507,7 +7580,7 @@
         {
           "description": "Global-Scale Sustainable Blockchain Fabric",
           "last_update_int": 1765763782,
-          "last_update_txt": "27 weeks ago",
+          "last_update_txt": "28 weeks ago",
           "nocommit": false
         }
       ],
@@ -7516,7 +7589,7 @@
         {
           "description": "Global-Scale Sustainable Blockchain Fabric",
           "last_update_int": 1765763581,
-          "last_update_txt": "27 weeks ago",
+          "last_update_txt": "28 weeks ago",
           "nocommit": false
         }
       ],
@@ -7525,7 +7598,7 @@
         {
           "description": "Global-Scale Sustainable Blockchain Fabric",
           "last_update_int": 1765763442,
-          "last_update_txt": "27 weeks ago",
+          "last_update_txt": "28 weeks ago",
           "nocommit": false
         }
       ],
@@ -7534,7 +7607,7 @@
         {
           "description": "Apache ResilientDB Podling",
           "last_update_int": 1781742229,
-          "last_update_txt": "7 days ago",
+          "last_update_txt": "8 days ago",
           "nocommit": false
         }
       ],
@@ -7543,7 +7616,7 @@
         {
           "description": "Global-Scale Sustainable Blockchain Fabric",
           "last_update_int": 1765762532,
-          "last_update_txt": "27 weeks ago",
+          "last_update_txt": "28 weeks ago",
           "nocommit": false
         }
       ]
@@ -7749,7 +7822,7 @@
         {
           "description": ":fire: Seata is an easy-to-use, high-performance, open source...",
           "last_update_int": 1782378281,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>",
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>",
           "nocommit": false
         }
       ],
@@ -7775,8 +7848,8 @@
         "incubator-seata-go-samples",
         {
           "description": "Samples for seata-go",
-          "last_update_int": 1782359285,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>",
+          "last_update_int": 1782389497,
+          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>",
           "nocommit": false
         }
       ],
@@ -7802,8 +7875,8 @@
         "incubator-seata-website",
         {
           "description": "Apache Seata(incubating) Website",
-          "last_update_int": 1782348811,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>",
+          "last_update_int": 1782392315,
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>",
           "nocommit": false
         }
       ]
@@ -7932,8 +8005,8 @@
         "texera",
         {
           "description": "Human-AI Collaborative Data Science Using Visual Workflows",
-          "last_update_int": 1782372694,
-          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>",
+          "last_update_int": 1782394911,
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>",
           "nocommit": false
         }
       ]
