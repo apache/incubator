@@ -381,201 +381,6 @@
       ]
     ]
   },
-  "baremaps": {
-    "description": "Apache Baremaps is a toolkit and a set of infrastructure components for\n            creating, publishing, and operating online maps.",
-    "fullName": "Baremaps",
-    "hasMailListCommits": "http://mail-archives.apache.org/mod_mbox/baremaps-commits",
-    "hasMailListDev": "http://mail-archives.apache.org/mod_mbox/baremaps-dev",
-    "ldap": {
-      "members": [
-        "adrabble",
-        "bchapuis",
-        "bdelacretaz",
-        "danduk82",
-        "desruisseaux",
-        "jhyde",
-        "joshfischer",
-        "jsmith",
-        "kirs",
-        "lbesseau",
-        "leonardcs",
-        "percivall",
-        "perdjesk",
-        "sebr72"
-      ],
-      "numberCommitters": 14,
-      "numberCommittersNew": 0,
-      "numberPMCEquals": false,
-      "numberPMCMembers": 11,
-      "owners": [
-        "adrabble",
-        "bchapuis",
-        "bdelacretaz",
-        "danduk82",
-        "desruisseaux",
-        "jhyde",
-        "joshfischer",
-        "jsmith",
-        "kirs",
-        "lbesseau",
-        "percivall"
-      ]
-    },
-    "mentors": [
-      [
-        "Bertrand Delacrétaz",
-        "bdelacretaz"
-      ],
-      [
-        "Martin Desruisseaux",
-        "desruisseaux"
-      ],
-      [
-        "Julian Hyde",
-        "jhyde"
-      ],
-      [
-        "Calvin Kirs",
-        "kirs"
-      ],
-      [
-        "George Percivall",
-        "percivall"
-      ]
-    ],
-    "news": [
-      "2022-10-10 Baremaps enters incubation."
-    ],
-    "podlingName": "Baremaps",
-    "rawReportingGroup": "group-3",
-    "releases": {
-      "apache-baremaps-0.7.2-incubating-bin.tar.gz": {
-        "dtm": "10/02/2023",
-        "folder": "0.7.2",
-        "hash": "sha512",
-        "revision": "r64302",
-        "size": "121133540",
-        "user": "bchapuis"
-      },
-      "apache-baremaps-0.7.2-incubating-src.tar.gz": {
-        "dtm": "10/02/2023",
-        "folder": "0.7.2",
-        "hash": "sha512",
-        "revision": "r64302",
-        "size": "11956000",
-        "user": "bchapuis"
-      },
-      "apache-baremaps-0.7.3-incubating-bin.tar.gz": {
-        "dtm": "04/09/2024",
-        "folder": "0.7.3",
-        "hash": "sha512",
-        "revision": "r68409",
-        "size": "123781845",
-        "user": "bchapuis"
-      },
-      "apache-baremaps-0.7.3-incubating-src.tar.gz": {
-        "dtm": "04/09/2024",
-        "folder": "0.7.3",
-        "hash": "sha512",
-        "revision": "r68409",
-        "size": "1778807",
-        "user": "bchapuis"
-      },
-      "apache-baremaps-0.8.1-incubating-bin.tar.gz": {
-        "dtm": "12/20/2024",
-        "folder": "0.8.1",
-        "hash": "sha512",
-        "revision": "r73761",
-        "size": "208349101",
-        "user": "bchapuis"
-      },
-      "apache-baremaps-0.8.1-incubating-src.tar.gz": {
-        "dtm": "12/20/2024",
-        "folder": "0.8.1",
-        "hash": "sha512",
-        "revision": "r73761",
-        "size": "1946135",
-        "user": "bchapuis"
-      },
-      "apache-baremaps-0.8.2-incubating-bin.tar.gz": {
-        "dtm": "02/26/2025",
-        "folder": "0.8.2",
-        "hash": "sha512",
-        "revision": "r75170",
-        "size": "208365040",
-        "user": "bchapuis"
-      },
-      "apache-baremaps-0.8.2-incubating-src.tar.gz": {
-        "dtm": "02/26/2025",
-        "folder": "0.8.2",
-        "hash": "sha512",
-        "revision": "r75170",
-        "size": "1949077",
-        "user": "bchapuis"
-      },
-      "baremaps-0.7.1-incubating-bin.tar.gz": {
-        "dtm": "03/14/2023",
-        "folder": "0.7.1",
-        "hash": "sha512",
-        "revision": "r60599",
-        "size": "105354289",
-        "user": "bchapuis"
-      },
-      "baremaps-0.7.1-incubating-src.tar.gz": {
-        "dtm": "03/14/2023",
-        "folder": "0.7.1",
-        "hash": "sha512",
-        "revision": "r60599",
-        "size": "11481477",
-        "user": "bchapuis"
-      }
-    },
-    "reportingGroup": "March, June, September, December",
-    "reportingMonthly": false,
-    "repositories": [
-      [
-        "incubator-baremaps",
-        {
-          "description": "Create custom vector tiles from OpenStreetMap and other data ...",
-          "last_update_int": 1779103847,
-          "last_update_txt": "5 weeks ago",
-          "nocommit": false
-        }
-      ],
-      [
-        "incubator-baremaps-site",
-        {
-          "description": "Apache Baremaps is a toolkit and a set of infrastructure comp...",
-          "last_update_int": 1759501840,
-          "last_update_txt": "38 weeks ago",
-          "nocommit": false
-        }
-      ]
-    ],
-    "resource": "baremaps",
-    "sponsor": "Incubator",
-    "startDate": "2022-10-10",
-    "statusAge": 1344,
-    "statusLastUpdated": "2022-10-20",
-    "urls": {
-      "git": "https://gitbox.apache.org/repos/asf?p=incubator-baremaps.git;a=tree;hb=HEAD",
-      "keys": "https://downloads.apache.org/incubator/baremaps/KEYS",
-      "svn": "",
-      "tracker": "https://github.com/apache/baremaps/issues",
-      "wiki": "",
-      "www": "https://baremaps.apache.org"
-    },
-    "zFixMeList": [
-      [
-        "18",
-        "Has not provided a wiki link"
-      ],
-      [
-        "45",
-        "10 is a large number of release distributions. Non-current releases should be removed"
-      ]
-    ]
-  },
   "bifromq": {
     "description": "BifroMQ is a Java-based, high-performance, distributed MQTT broker with native\n            multi-tenancy support, designed for large-scale connections and message delivery.",
     "fullName": "BifroMQ",
@@ -3466,8 +3271,8 @@
         "cloudberry",
         {
           "description": "One advanced and mature open-source MPP (Massively Parallel P...",
-          "last_update_int": 1782371724,
-          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>",
+          "last_update_int": 1782381933,
+          "last_update_txt": "<span style='color: #070;'>&lt;1 hour ago</span>",
           "nocommit": false
         }
       ],
@@ -3882,7 +3687,7 @@
         {
           "description": "Apache Fluss is a streaming storage built for real-time analy...",
           "last_update_int": 1782379122,
-          "last_update_txt": "<span style='color: #070;'>&lt;1 hour ago</span>",
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>",
           "nocommit": false
         }
       ],
@@ -4658,7 +4463,7 @@
         {
           "description": "Apache Iggy: Hyper-Efficient Message Streaming at Laser Speed",
           "last_update_int": 1782378368,
-          "last_update_txt": "<span style='color: #070;'>&lt;1 hour ago</span>",
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>",
           "nocommit": false
         }
       ],
@@ -6264,7 +6069,7 @@
         {
           "description": "Kogito Runtimes is a cloud-native business automation technol...",
           "last_update_int": 1782380417,
-          "last_update_txt": "<span style='color: #070;'>&lt;30 minutes ago</span>",
+          "last_update_txt": "<span style='color: #070;'>&lt;1 hour ago</span>",
           "nocommit": false
         }
       ],
@@ -6349,278 +6154,6 @@
       [
         "45",
         "163 is a large number of release distributions. Non-current releases should be removed"
-      ]
-    ]
-  },
-  "livy": {
-    "description": "Livy is web service that exposes a REST interface for managing long running\n            Apache Spark contexts in your cluster. With Livy, new applications can be built on top\n            of Apache Spark that require fine grained interaction with many Spark contexts.",
-    "fullName": "Livy",
-    "hasMailListCommits": "",
-    "hasMailListDev": "",
-    "ldap": {
-      "members": [
-        "ajbozarth",
-        "arnavbalyan",
-        "asif",
-        "bikas",
-        "brahma",
-        "dacort",
-        "ggal",
-        "irashid",
-        "jbonofre",
-        "jianzhenwu",
-        "jshao",
-        "kostas",
-        "ksumit",
-        "leesf",
-        "lmccay",
-        "lresende",
-        "madhawa",
-        "mgaido",
-        "pralabhkumar",
-        "shrprasa",
-        "vanzin",
-        "vinodkv",
-        "wypoon",
-        "xilangyan",
-        "zjffdu"
-      ],
-      "numberCommitters": 25,
-      "numberCommittersNew": 0,
-      "numberPMCEquals": false,
-      "numberPMCMembers": 21,
-      "owners": [
-        "ajbozarth",
-        "arnavbalyan",
-        "asif",
-        "bikas",
-        "brahma",
-        "dacort",
-        "ggal",
-        "irashid",
-        "jbonofre",
-        "jianzhenwu",
-        "ksumit",
-        "leesf",
-        "lmccay",
-        "lresende",
-        "madhawa",
-        "mgaido",
-        "pralabhkumar",
-        "shrprasa",
-        "vinodkv",
-        "wypoon",
-        "xilangyan"
-      ]
-    },
-    "mentors": [
-      [
-        "Bikas Saha",
-        "bikas"
-      ],
-      [
-        "Luciano Resende",
-        "lresende"
-      ],
-      [
-        "Jean-Baptiste Onofré",
-        "jbonofre"
-      ],
-      [
-        "Madhawa Kasun Gunasekara",
-        "madhawa"
-      ]
-    ],
-    "news": [
-      "2017-06-05 Project enters incubation."
-    ],
-    "podlingName": "Livy",
-    "rawReportingGroup": "group-1",
-    "releases": {
-      "apache-livy-0.6.0-incubating-bin.zip": {
-        "dtm": "03/19/2019",
-        "folder": "0.6.0-incubating",
-        "hash": "sha512",
-        "revision": "r33080",
-        "size": "96137660",
-        "user": "vanzin"
-      },
-      "apache-livy-0.6.0-incubating-src.zip": {
-        "dtm": "03/19/2019",
-        "folder": "0.6.0-incubating",
-        "hash": "sha512",
-        "revision": "r33080",
-        "size": "1130526",
-        "user": "vanzin"
-      },
-      "apache-livy-0.7.0-incubating-bin.zip": {
-        "dtm": "01/07/2020",
-        "folder": "0.7.0-incubating",
-        "hash": "sha512",
-        "revision": "r37499",
-        "size": "92791460",
-        "user": "jshao"
-      },
-      "apache-livy-0.7.0-incubating-src.zip": {
-        "dtm": "01/07/2020",
-        "folder": "0.7.0-incubating",
-        "hash": "sha512",
-        "revision": "r37499",
-        "size": "1180275",
-        "user": "jshao"
-      },
-      "apache-livy-0.7.1-incubating-bin.zip": {
-        "dtm": "02/04/2021",
-        "folder": "0.7.1-incubating",
-        "hash": "sha512",
-        "revision": "r45798",
-        "size": "92791356",
-        "user": "jshao"
-      },
-      "apache-livy-0.7.1-incubating-src.zip": {
-        "dtm": "02/04/2021",
-        "folder": "0.7.1-incubating",
-        "hash": "sha512",
-        "revision": "r45798",
-        "size": "1180340",
-        "user": "jshao"
-      },
-      "apache-livy-0.8.0-incubating-src.zip": {
-        "dtm": "09/25/2023",
-        "folder": "0.8.0-incubating",
-        "hash": "sha512",
-        "revision": "r64177",
-        "size": "1230568",
-        "user": "dacort"
-      },
-      "apache-livy-0.8.0-incubating_2.11-bin.zip": {
-        "dtm": "09/25/2023",
-        "folder": "0.8.0-incubating",
-        "hash": "sha512",
-        "revision": "r64177",
-        "size": "65327377",
-        "user": "dacort"
-      },
-      "apache-livy-0.8.0-incubating_2.12-bin.zip": {
-        "dtm": "09/25/2023",
-        "folder": "0.8.0-incubating",
-        "hash": "sha512",
-        "revision": "r64177",
-        "size": "63343202",
-        "user": "dacort"
-      },
-      "apache-livy-0.9.0-incubating-src.zip": {
-        "dtm": "01/09/2026",
-        "folder": "0.9.0-incubating",
-        "hash": "sha512",
-        "revision": "r81776",
-        "size": "1255524",
-        "user": "ggal"
-      },
-      "apache-livy-0.9.0-incubating_2.11-bin.zip": {
-        "dtm": "01/09/2026",
-        "folder": "0.9.0-incubating",
-        "hash": "sha512",
-        "revision": "r81776",
-        "size": "75659406",
-        "user": "ggal"
-      },
-      "apache-livy-0.9.0-incubating_2.12-bin.zip": {
-        "dtm": "01/09/2026",
-        "folder": "0.9.0-incubating",
-        "hash": "sha512",
-        "revision": "r81776",
-        "size": "73599655",
-        "user": "ggal"
-      },
-      "livy-0.4.0-incubating-bin.zip": {
-        "dtm": "08/30/2017",
-        "folder": "0.4.0-incubating",
-        "hash": "sha512",
-        "revision": "r21356",
-        "size": "71578490",
-        "user": "jshao"
-      },
-      "livy-0.4.0-incubating-src.zip": {
-        "dtm": "08/30/2017",
-        "folder": "0.4.0-incubating",
-        "hash": "sha512",
-        "revision": "r21356",
-        "size": "986021",
-        "user": "jshao"
-      },
-      "livy-0.5.0-incubating-bin.zip": {
-        "dtm": "01/25/2018",
-        "folder": "0.5.0-incubating",
-        "hash": "sha512",
-        "revision": "r24450",
-        "size": "74117432",
-        "user": "ajbozarth"
-      },
-      "livy-0.5.0-incubating-src.zip": {
-        "dtm": "01/25/2018",
-        "folder": "0.5.0-incubating",
-        "hash": "sha512",
-        "revision": "r24450",
-        "size": "995368",
-        "user": "ajbozarth"
-      }
-    },
-    "reportingGroup": "January, April, July, October",
-    "reportingMonthly": false,
-    "repositories": [
-      [
-        "livy",
-        {
-          "description": "Apache Livy is an open source REST interface for interacting ...",
-          "last_update_int": 1781713152,
-          "last_update_txt": "8 days ago",
-          "nocommit": false
-        }
-      ],
-      [
-        "livy-website",
-        {
-          "description": "Apache livy (Incubating)",
-          "last_update_int": 1781717815,
-          "last_update_txt": "8 days ago",
-          "nocommit": false
-        }
-      ]
-    ],
-    "resource": "livy",
-    "sponsor": "Incubator",
-    "startDate": "2017-06-05",
-    "statusAge": 63,
-    "statusLastUpdated": "2026-04-23",
-    "urls": {
-      "git": "https://gitbox.apache.org/repos/asf?p=livy.git;a=tree;hb=HEAD",
-      "keys": "https://downloads.apache.org/incubator/livy/KEYS",
-      "svn": "",
-      "tracker": "https://issues.apache.org/jira/projects/LIVY",
-      "wiki": "",
-      "www": "https://livy.incubator.apache.org"
-    },
-    "zFixMeList": [
-      [
-        "18",
-        "Has not provided a wiki link"
-      ],
-      [
-        "39",
-        "Disclaimer is missing from website"
-      ],
-      [
-        "45",
-        "16 is a large number of release distributions. Non-current releases should be removed"
-      ],
-      [
-        "15",
-        "Project does not have 'dev' mailing list"
-      ],
-      [
-        "16",
-        "Project does not have 'commits' mailing list"
       ]
     ]
   },
@@ -7821,7 +7354,7 @@
         {
           "description": "Global-Scale Sustainable Blockchain Fabric",
           "last_update_int": 1781907413,
-          "last_update_txt": "5 days ago",
+          "last_update_txt": "6 days ago",
           "nocommit": false
         }
       ],
@@ -8216,7 +7749,7 @@
         {
           "description": ":fire: Seata is an easy-to-use, high-performance, open source...",
           "last_update_int": 1782378281,
-          "last_update_txt": "<span style='color: #070;'>&lt;1 hour ago</span>",
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>",
           "nocommit": false
         }
       ],
