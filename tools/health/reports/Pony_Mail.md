@@ -1,5 +1,5 @@
 # Pony Mail — Incubator Health (Reports + GitHub + Mailing Lists)
-_Generated on 2026-05-31_
+_Generated on 2026-06-29_
 
 **Windows:** 3m, 6m, 12m
 
@@ -40,7 +40,7 @@ _Generated on 2026-05-31_
 - **Unique PR authors (sampled):** 0 (—)
 
 ## Window Details
-### 3m  (2026-02-28 → 2026-05-31)
+### 3m  (2026-03-29 → 2026-06-29)
 - **Releases (from list votes/results):** 0  |  **Median gap (days):** —
 - **New contributors:** 0  |  **Unique committers:** 0  |  **Commits:** 0
 - **Issues:** opened 0 / closed 0
@@ -50,7 +50,7 @@ _Generated on 2026-05-31_
 - **Incubator reports:** 0  |  **Avg mentor sign-offs:** —
 - **Mailing lists:** dev messages **0**, dev unique posters **0**
 
-### 6m  (2025-11-30 → 2026-05-31)
+### 6m  (2025-12-29 → 2026-06-29)
 - **Releases (from list votes/results):** 0  |  **Median gap (days):** —
 - **New contributors:** 0  |  **Unique committers:** 0  |  **Commits:** 0
 - **Issues:** opened 0 / closed 0
@@ -60,7 +60,7 @@ _Generated on 2026-05-31_
 - **Incubator reports:** 0  |  **Avg mentor sign-offs:** —
 - **Mailing lists:** dev messages **0**, dev unique posters **0**
 
-### 12m  (2025-05-31 → 2026-05-31)
+### 12m  (2025-06-29 → 2026-06-29)
 - **Releases (from list votes/results):** 0  |  **Median gap (days):** —
 - **New contributors:** 0  |  **Unique committers:** 0  |  **Commits:** 0
 - **Issues:** opened 0 / closed 0
