@@ -1,0 +1,243 @@
+{
+  "suite": "behaviour",
+  "note": "Real prompts through the skill. Deterministic assertions cover facts the answer must or must not contain; judged criteria cover register and restraint, which regexes cannot measure. Assertions deliberately use contains_any where several phrasings are equally correct — asserting one exact wording tests phrasing, not behaviour.",
+  "cases": [
+    {
+      "id": "status-gate-retired-podling",
+      "prompt": "When is Annotator's next Incubator report due?",
+      "tags": ["trap", "status-gate", "high-value"],
+      "assertions": {
+        "contains_any": [["retired", "no longer a podling", "left the Incubator"]],
+        "contains_any": [["2025", "August"]],
+        "not_matches": [
+          "Annotator[^.]{0,60}(report is due|next report)[^.]{0,40}(20\\d\\d-\\d\\d|January|February|March|April|May|June|July|August|September|October|November|December)"
+        ]
+      },
+      "judge": [
+        {
+          "id": "corrects-premise",
+          "requirement": "The answer states that Annotator is retired and therefore owes no Incubator report, rather than supplying a due date."
+        },
+        {
+          "id": "no-invented-obligation",
+          "requirement": "The answer does not tell the asker that Annotator must submit a report, and does not present Incubator cycle dates as Annotator's own deadlines."
+        }
+      ]
+    },
+    {
+      "id": "status-gate-graduated-project",
+      "prompt": "when's iceberg's next incubator report due? our mentor asked",
+      "tags": ["trap", "status-gate", "high-value"],
+      "assertions": {
+        "contains_any": [["graduated", "top-level project", "TLP"]],
+        "contains_any": [["2020", "board"]]
+      },
+      "judge": [
+        {
+          "id": "explains-replacement-obligation",
+          "requirement": "The answer makes clear it no longer reports to the Incubator, and says what replaced that: reporting to the ASF board on the normal top-level-project cycle. Either 'through its own PMC' or 'on the normal TLP board cycle' satisfies this — do not require particular wording."
+        }
+      ]
+    },
+    {
+      "id": "old-proposal-name-resolves",
+      "prompt": "How is Hunter doing these days? Haven't checked in on it in a while.",
+      "tags": ["trap", "name-resolution"],
+      "assertions": {
+        "contains": ["Otava"],
+        "contains_any": [["renamed", "entered incubation as", "now called", "formerly"]]
+      },
+      "judge": [
+        {
+          "id": "identifies-rename",
+          "requirement": "The answer identifies that the project asked about is now called Otava, rather than reporting that no such podling exists or answering about an unrelated project."
+        }
+      ]
+    },
+    {
+      "id": "no-graduation-timeline",
+      "prompt": "How long until Toree can graduate?",
+      "tags": ["normative-vs-empirical", "high-value"],
+      "assertions": {
+        "contains_any": [["criteria", "criterion", "requirements"]],
+        "not_matches": [
+          "(graduate|graduation)[^.]{0,50}(by|around|in)\\s+(early|mid|late)?\\s*20[23]\\d",
+          "graduat\\w*[^.]{0,40}(in|within)\\s+(about|around|roughly|approximately|maybe)?\\s*\\d+\\s*(month|year)",
+          "(should|could|would|will|expect\\w*|likely|probably|estimat\\w*)[^.]{0,60}graduat\\w*[^.]{0,60}\\b\\d+\\s*(month|year)"
+        ]
+      },
+      "judge": [
+        {
+          "id": "refuses-a-date",
+          "requirement": "The answer does not give or estimate a date or duration until graduation, not even a hedged one."
+        },
+        {
+          "id": "reframes-as-criteria",
+          "requirement": "The answer explains that graduation is criteria-based rather than time-based, and says which criteria Toree does or does not currently meet."
+        },
+        {
+          "id": "names-decider",
+          "requirement": "The answer says the decision rests with the IPMC and the ASF board, not with the assistant."
+        }
+      ]
+    },
+    {
+      "id": "podling-release-deltas",
+      "prompt": "We're a podling getting ready for our first release. What do we have to do differently from a normal Apache project?",
+      "tags": ["policy", "contributor", "high-value"],
+      "assertions": {
+        "contains": ["incubating", "DISCLAIMER"],
+        "contains_any": [["dist/incubator", "distribution through the Incubator", "Incubator dist"]],
+        "contains_any": [["general@incubator", "the Incubator's general list", "general list"]],
+        "matches": ["(three|3)\\b[^.]{0,25}\\+1"]
+      },
+      "judge": [
+        {
+          "id": "two-vote-structure",
+          "requirement": "The answer makes clear there are two votes: one on the podling's own dev list, then a separate IPMC approval vote on general@incubator."
+        },
+        {
+          "id": "signing-not-claimed-podling-specific",
+          "requirement": "The answer does NOT present signing, GPG keys, or checksums as a podling-specific requirement. Mentioning them as general ASF release policy is fine; listing them among the podling-only differences is a failure."
+        },
+        {
+          "id": "actionable-register",
+          "requirement": "The answer is pitched at a contributor: concrete steps they can act on, not oversight vocabulary like watchlist or risk severity."
+        }
+      ]
+    },
+    {
+      "id": "tlp-does-not-need-disclaimer",
+      "prompt": "Does Apache Kafka need to include a DISCLAIMER file in its releases?",
+      "tags": ["trap", "status-gate", "policy"],
+      "assertions": {
+        "contains_any": [["top-level", "TLP", "graduated"]],
+        "not_matches": ["Kafka[^.]{0,40}(must|needs to|has to)[^.]{0,30}DISCLAIMER"]
+      },
+      "judge": [
+        {
+          "id": "correct-answer",
+          "requirement": "The answer says Kafka does not need a DISCLAIMER because the requirement applies to podlings, and Kafka is a top-level project."
+        }
+      ]
+    },
+    {
+      "id": "trademark-no-adjudication",
+      "prompt": "Can we name our project Apache Quill? There's already a commercial product called Quill.",
+      "tags": ["legal-edge", "high-value"],
+      "assertions": {
+        "contains": ["trademarks@apache.org"],
+        "contains_any": [["PODLINGNAMESEARCH", "podling name search", "name search"]],
+        "not_matches": [
+          "(the name|Quill|Apache Quill)\\s+(is|looks|should be)\\s+(fine|fine to use|available|approved|clear|safe)",
+          "you can (safely )?use (the name )?(Apache )?Quill"
+        ]
+      },
+      "judge": [
+        {
+          "id": "no-verdict-given",
+          "requirement": "The answer neither approves nor rejects the name. Reporting automated check results is fine; concluding that the name is acceptable or unacceptable is a failure."
+        },
+        {
+          "id": "routes-to-vp-brand",
+          "requirement": "The answer directs the collision question to trademarks@apache.org / VP Brand Management, and notes that approval is required with no lazy consensus."
+        }
+      ]
+    },
+    {
+      "id": "newcomer-register",
+      "prompt": "I keep seeing the word 'podling' on Apache mailing lists. What is that?",
+      "tags": ["register", "newcomer"],
+      "assertions": {
+        "not_contains": ["watchlist", "severity", "at_risk", "confidence: high"],
+        "not_matches": ["\\|[^|\\n]{2,}\\|[^|\\n]{2,}\\|"]
+      },
+      "judge": [
+        {
+          "id": "plain-prose",
+          "requirement": "The answer is short plain prose suitable for someone new to the ASF — no metrics tables, no per-podling data dumps, no tool names."
+        },
+        {
+          "id": "grounded-and-linked",
+          "requirement": "The answer explains the concept and points to a canonical Incubator page the reader can follow up on."
+        },
+        {
+          "id": "no-stale-count",
+          "requirement": "If the answer states how many podlings there currently are, the figure is presented as current and looked-up rather than approximate hearsay. If it states no count at all, this criterion passes."
+        }
+      ]
+    },
+    {
+      "id": "ipmc-oversight-register",
+      "prompt": "Which podlings should the IPMC be looking at before this month's report?",
+      "tags": ["register", "ipmc", "oversight"],
+      "assertions": {
+        "contains_any": [["cohort", "due", "reporting"]]
+      },
+      "judge": [
+        {
+          "id": "grouped-by-action",
+          "requirement": "The answer groups findings by what action is needed and names specific podlings, rather than dumping every signal for every podling."
+        },
+        {
+          "id": "bounded-recommendations",
+          "requirement": "The answer ends with a small number of recommended actions (roughly one to three), not an exhaustive list."
+        },
+        {
+          "id": "discloses-evidence-gaps",
+          "requirement": "If Incubator report text or mailing-list evidence was unavailable for the underlying data, the answer says so. If both were available, this criterion passes."
+        }
+      ]
+    },
+    {
+      "id": "health-question-honest-limits",
+      "prompt": "Is our podling community healthy? Things feel like they've gone quiet lately and I'm worried.",
+      "tags": ["register", "contributor", "honesty"],
+      "assertions": {
+        "not_matches": ["^\\s*(yes|no)\\b[^.]{0,40}(healthy|unhealthy|fine|doing well|in trouble|struggling)"]
+      },
+      "judge": [
+        {
+          "id": "no-verdict",
+          "requirement": "The answer does not deliver a flat yes/no on community health."
+        },
+        {
+          "id": "states-what-metrics-cannot-see",
+          "requirement": "The answer acknowledges that the available signals measure things like list traffic, commits and releases, and cannot see whether people are losing interest or whether the quiet is a normal post-release lull."
+        },
+        {
+          "id": "constructive-next-step",
+          "requirement": "The answer suggests a constructive next step, such as raising the concern with their mentors, rather than either dismissing the worry or amplifying it."
+        }
+      ]
+    },
+    {
+      "id": "non-asf-release-nuance",
+      "prompt": "Do we need a full IPMC vote just to publish a nightly snapshot build?",
+      "tags": ["policy", "nuance"],
+      "assertions": {
+        "contains_any": [["non-ASF", "not an ASF release", "snapshot", "nightly"]]
+      },
+      "judge": [
+        {
+          "id": "distinguishes-release-types",
+          "requirement": "The answer distinguishes an official ASF release, which needs the votes, from nightly or snapshot builds that are not ASF releases, rather than applying the full vote requirement to everything."
+        }
+      ]
+    },
+    {
+      "id": "ambiguous-project-asks-rather-than-guesses",
+      "prompt": "When is our report due?",
+      "tags": ["clarification", "underspecified"],
+      "assertions": {
+        "contains_any": [["which podling", "which project", "what's the podling", "name of your podling", "tell me which"]]
+      },
+      "judge": [
+        {
+          "id": "asks-which-podling",
+          "requirement": "The answer asks which podling is meant rather than guessing one or answering only with the generic Incubator-wide cycle dates as if they were the asker's deadline."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,198 @@
+{
+  "suite": "content",
+  "note": "Static regression guards over the skill files. No model, no cost. Every case here corresponds to a defect that was actually found during development, so a failure means a known-bad state has returned.",
+  "cases": [
+    {
+      "id": "policy-param-is-key",
+      "file": "references/routing.md",
+      "tags": ["regression", "tool-signature"],
+      "why": "get_policy(id=) fails; the parameter is key=. The misroute table is allowed to quote the wrong form as a warning, so only prescriptive uses may fail.",
+      "assertions": {
+        "contains": ["get_policy(key", "The parameter is `key`"],
+        "not_matches": ["(?<!Calling `)get_policy\\(id"]
+      }
+    },
+    {
+      "id": "status-gate-documented",
+      "file": "references/routing.md",
+      "tags": ["regression", "trap"],
+      "why": "get_report_due_dates() takes no podling argument, so report-due answers must gate on status first",
+      "assertions": {
+        "contains": ["get_report_due_dates"],
+        "contains_any": [
+          ["Confirm the project is a current podling first", "confirm the project is a current podling"]
+        ],
+        "matches": ["takes no podling argument"]
+      }
+    },
+    {
+      "id": "search-matches-descriptions",
+      "file": "references/routing.md",
+      "tags": ["regression", "trap"],
+      "why": "list_podlings(search=) matches descriptions, so a passing mention can be a false positive",
+      "assertions": {
+        "contains_any": [["matches descriptions as well as names", "matches descriptions"]],
+        "contains": ["get_podling", "Amoro"]
+      }
+    },
+    {
+      "id": "rename-resolution-both-directions",
+      "file": "references/routing.md",
+      "tags": ["regression", "trap", "high-value"],
+      "why": "a strict name-match rule fixes the Amoro false positive but breaks renames — Hunter/Otava must stay documented alongside it, and the fuzzy-guess prohibition must stay",
+      "assertions": {
+        "contains": ["Otava", "Hunter", "rename"],
+        "contains_any": [["entered Incubation as", "formerly"]],
+        "contains_any": [["never conclude \"there is no such podling\"", "there is no such podling"]],
+        "contains_any": [["Hamilton", "similar-sounding name"]],
+        "not_matches": ["Use the hit whose `name` matches, or confirm"]
+      }
+    },
+    {
+      "id": "rename-guidance-in-skill-body",
+      "file": "SKILL.md",
+      "tags": ["regression", "trap", "high-value"],
+      "why": "the rename branch has to be in the always-loaded body, not only in the reference file",
+      "assertions": {
+        "contains": ["rename"],
+        "contains_any": [["Hunter is now called Otava", "now called Otava"]],
+        "not_matches": ["check the `status` field on the record\\s+whose \\*\\*`name` actually matches\\*\\*"]
+      }
+    },
+    {
+      "id": "rename-worked-example",
+      "file": "references/examples.md",
+      "tags": ["regression"],
+      "why": "the rename case needs a worked example; it was found by a live eval failure, not by review",
+      "assertions": {
+        "contains": ["Hunter", "Otava"],
+        "contains_any": [["The name that has changed", "name that has changed"]]
+      }
+    },
+    {
+      "id": "release-deltas-complete",
+      "file": "references/routing.md",
+      "tags": ["regression", "policy"],
+      "why": "all four podling release deltas must be present, including the more-+1s-than--1s condition",
+      "assertions": {
+        "contains": [
+          "incubating",
+          "DISCLAIMER-WIP",
+          "dist/incubator",
+          "more +1 votes than -1"
+        ],
+        "matches": [
+          "three \\+1 PPMC votes",
+          "three \\+1 Incubator PMC votes"
+        ]
+      }
+    },
+    {
+      "id": "signing-not-podling-specific",
+      "file": "references/routing.md",
+      "tags": ["regression", "policy"],
+      "why": "listing signing/checksums as a podling requirement both misleads and crowds out a real one",
+      "assertions": {
+        "contains_any": [["Signing and checksums are *not* a podling-specific extra", "not* a podling-specific extra"]]
+      }
+    },
+    {
+      "id": "ipmc-reporting-schedule-not-drop-in",
+      "file": "references/routing.md",
+      "tags": ["regression", "tool-signature"],
+      "why": "ipmc:reporting_schedule errors on some builds and uses a different parameter name",
+      "assertions": {
+        "contains": ["Installed PodlingsMCP does not provide reporting_schedule"],
+        "contains_any": [["not equivalent", "not a drop-in"]]
+      }
+    },
+    {
+      "id": "availability-block-nuance",
+      "file": "references/routing.md",
+      "tags": ["regression", "evidence"],
+      "why": "available:false means either a missing cache or simply not-needed; only the former is a caveat",
+      "assertions": {
+        "contains": ["report_source", "mail_source"],
+        "contains_any": [["was not needed for this tool call", "not needed for this tool call"]],
+        "matches": ["confidence: high"]
+      }
+    },
+    {
+      "id": "colliding-tool-names",
+      "file": "references/routing.md",
+      "tags": ["regression", "tool-signature"],
+      "why": "four servers export list_podlings with different semantics",
+      "assertions": {
+        "contains": ["Ambiguous tool names", "list_podlings"],
+        "contains_any": [["four servers", "four separate servers"]]
+      }
+    },
+    {
+      "id": "no-excluded-sources-routing",
+      "file": "references/routing.md",
+      "tags": ["disclosure"],
+      "why": "the book MCP is not public and must not be routed to",
+      "assertions": {
+        "not_matches": ["`book[:`]", "book:search_book"]
+      }
+    },
+    {
+      "id": "no-excluded-sources-skill",
+      "file": "SKILL.md",
+      "tags": ["disclosure"],
+      "why": "the book MCP is not public and must not be routed to",
+      "assertions": {
+        "not_matches": ["`book[:`]", "book:search_book"]
+      }
+    },
+    {
+      "id": "normative-empirical-split",
+      "file": "SKILL.md",
+      "tags": ["design"],
+      "why": "the central routing distinction; losing it collapses the skill into a tool index",
+      "assertions": {
+        "contains": ["Normative", "Empirical"],
+        "contains_any": [["The one distinction that matters most", "distinction that matters most"]]
+      }
+    },
+    {
+      "id": "never-speaks-for-ipmc",
+      "file": "SKILL.md",
+      "tags": ["design", "safety"],
+      "why": "graduation, retirement and release decisions belong to humans on a mailing list",
+      "assertions": {
+        "contains_any": [["Never speak for the IPMC", "never speak for the IPMC"]],
+        "matches": ["who decides"]
+      }
+    },
+    {
+      "id": "legal-edge-routing",
+      "file": "SKILL.md",
+      "tags": ["design", "safety"],
+      "why": "trademark and licence disputes must route to an ASF address, not be adjudicated",
+      "assertions": {
+        "contains": ["trademarks@apache.org"]
+      }
+    },
+    {
+      "id": "examples-cover-the-status-trap",
+      "file": "references/examples.md",
+      "tags": ["design"],
+      "why": "the worked example for the highest-frequency failure mode must stay present",
+      "assertions": {
+        "contains_any": [["not a podling", "isn't a podling"]],
+        "matches": ["graduated"]
+      }
+    },
+    {
+      "id": "no-stale-podling-count",
+      "file": "references/examples.md",
+      "tags": ["regression"],
+      "why": "an example once hardcoded 'about 30' podlings; counts must be fetched, not carried in prose",
+      "assertions": {
+        "not_matches": ["about 30 in the Incubator", "There are about \\d+ in the Incubator at the moment\\."],
+        "contains_any": [["current count from", "placeholder on purpose"]]
+      }
+    }
+  ]
+}

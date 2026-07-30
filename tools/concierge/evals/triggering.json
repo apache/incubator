@@ -1,0 +1,102 @@
+{
+  "suite": "triggering",
+  "note": "Grades the SKILL.md description, not the body. Negatives are deliberately near-misses that share vocabulary with the skill but need something else — an obviously irrelevant prompt tests nothing. Note that Claude consults skills for substantive tasks and often handles trivial one-step asks directly, so positives are written with real detail.",
+  "cases": [
+    {
+      "id": "pos-new-podling-reporting-cadence",
+      "should_trigger": true,
+      "tags": ["contributor"],
+      "prompt": "hey so we just got voted into the incubator last month and honestly i have no idea whats expected of us reporting wise. do we report every month or is it quarterly? and who signs it off before it goes in?"
+    },
+    {
+      "id": "pos-disclaimer-veto-on-vote",
+      "should_trigger": true,
+      "tags": ["contributor", "release"],
+      "prompt": "our release vote on general@ picked up a -1 from one of the mentors saying our DISCLAIMER file is wrong. what is actually required in there, and does the vote have to start over?"
+    },
+    {
+      "id": "pos-what-does-ipmc-do",
+      "should_trigger": true,
+      "tags": ["newcomer"],
+      "prompt": "I've been asked to volunteer as a mentor and I'm not clear what the IPMC actually does versus what the board does. Can you explain how oversight works in the Incubator and what I'd be signing up for?"
+    },
+    {
+      "id": "pos-status-check",
+      "should_trigger": true,
+      "tags": ["lifecycle"],
+      "prompt": "is Pegasus still in the incubator or did it graduate at some point? i'm writing up a comparison of key-value stores and don't want to get the apache branding wrong"
+    },
+    {
+      "id": "pos-rename-before-graduation",
+      "should_trigger": true,
+      "tags": ["trademark"],
+      "prompt": "We want to change our project name before we graduate because there's a naming clash with a startup. What's the process for getting a new name approved, and who has to sign off?"
+    },
+    {
+      "id": "pos-mentored-podlings-sweep",
+      "should_trigger": true,
+      "tags": ["ipmc", "oversight"],
+      "prompt": "I mentor four podlings and I've lost track. Which of them haven't filed a report recently, and is there anything I should be chasing before the next board cycle?"
+    },
+    {
+      "id": "pos-graduation-bar-for-blog",
+      "should_trigger": true,
+      "tags": ["newcomer"],
+      "prompt": "I'm writing a blog post about Apache incubation aimed at people who've never contributed to open source. What does a project actually have to prove before it's allowed to graduate?"
+    },
+    {
+      "id": "pos-incubating-in-filenames",
+      "should_trigger": true,
+      "tags": ["release", "detail"],
+      "prompt": "do we need -incubating in the jar filenames we push to maven central, or is it only the source tarball that needs it? we got conflicting advice on our dev list"
+    },
+    {
+      "id": "neg-lab-incubator-hardware",
+      "should_trigger": false,
+      "tags": ["homonym"],
+      "prompt": "the incubator in our lab isn't holding temperature overnight, it drifts down about 3 degrees. the thermostat reads correctly so i think it's the door seal. what should i check first?"
+    },
+    {
+      "id": "neg-calendar-with-mentor",
+      "should_trigger": false,
+      "tags": ["homonym", "calendar"],
+      "prompt": "book me a 30 minute call with my mentor next Tuesday afternoon, and send her the agenda doc I wrote yesterday"
+    },
+    {
+      "id": "neg-kafka-consumer-config",
+      "should_trigger": false,
+      "tags": ["apache-but-technical"],
+      "prompt": "my kafka consumer group keeps rebalancing every few minutes and dropping messages. session.timeout.ms is 10s and max.poll.interval.ms is 300000. what's likely causing the churn?"
+    },
+    {
+      "id": "neg-magpie-pr-triage",
+      "should_trigger": false,
+      "tags": ["other-skill"],
+      "prompt": "run the morning triage over the open PR queue in my magpie checkout and tell me which ones need action from me today"
+    },
+    {
+      "id": "neg-report-to-word-doc",
+      "should_trigger": false,
+      "tags": ["other-skill", "near-miss"],
+      "prompt": "take the podling report markdown in ~/Documents/reports/june.md and turn it into a properly formatted Word document with our letterhead and a table of contents"
+    },
+    {
+      "id": "neg-write-tests-for-repo",
+      "should_trigger": false,
+      "tags": ["coding", "near-miss"],
+      "prompt": "write unit tests for the readiness_assessment function in ipmc/analysis.py, covering the strict_mode branch and the case where no health metrics are present"
+    },
+    {
+      "id": "neg-grad-students",
+      "should_trigger": false,
+      "tags": ["homonym"],
+      "prompt": "two of my graduate students are ready to move on to their own projects and I need to figure out how to hand over the equipment they've been maintaining. any advice on making that transition smooth?"
+    },
+    {
+      "id": "neg-parse-xml-script",
+      "should_trigger": false,
+      "tags": ["coding", "near-miss"],
+      "prompt": "write me a python script that parses podlings.xml and dumps name, startdate and mentor count to a csv, sorted by start date"
+    }
+  ]
+}
