@@ -1,6 +1,6 @@
 # Incubator Concierge
 
-A AI skill that acts as a front door for questions about the Apache
+An AI skill that acts as a front door for questions about the Apache
 Incubator, for anyone asking: podling contributors, mentors, IPMC members, ASF
 newcomers, and people just curious how incubation works.
 
