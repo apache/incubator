@@ -1,14 +1,16 @@
 {
   "suite": "behaviour",
-  "note": "Real prompts through the skill. Deterministic assertions cover facts the answer must or must not contain; judged criteria cover register and restraint, which regexes cannot measure. Assertions deliberately use contains_any where several phrasings are equally correct — asserting one exact wording tests phrasing, not behaviour.",
+  "note": "Real prompts through the skill. Division of labour: deterministic assertions cover only things with a canonical form — names, addresses, filenames, paths, terms of art, numbers — plus every not_matches trap, which encodes a specific wrong claim and is stable. Anything semantic (did it ask which podling, did it correct the premise, did it refuse to adjudicate) belongs to the judge, because free prose has unlimited valid phrasings and matching strings against it only tests wording. If you find yourself adding another accepted phrasing to a contains_any list, that assertion is in the wrong layer: delete it and write a judge criterion.",
   "cases": [
     {
       "id": "status-gate-retired-podling",
       "prompt": "When is Annotator's next Incubator report due?",
-      "tags": ["trap", "status-gate", "high-value"],
+      "tags": [
+        "trap",
+        "status-gate",
+        "high-value"
+      ],
       "assertions": {
-        "contains_any": [["retired", "no longer a podling", "left the Incubator"]],
-        "contains_any": [["2025", "August"]],
         "not_matches": [
           "Annotator[^.]{0,60}(report is due|next report)[^.]{0,40}(20\\d\\d-\\d\\d|January|February|March|April|May|June|July|August|September|October|November|December)"
         ]
@@ -27,25 +29,29 @@
     {
       "id": "status-gate-graduated-project",
       "prompt": "when's iceberg's next incubator report due? our mentor asked",
-      "tags": ["trap", "status-gate", "high-value"],
-      "assertions": {
-        "contains_any": [["graduated", "top-level project", "TLP"]],
-        "contains_any": [["2020", "board"]]
-      },
+      "tags": [
+        "trap",
+        "status-gate",
+        "high-value"
+      ],
       "judge": [
         {
           "id": "explains-replacement-obligation",
-          "requirement": "The answer makes clear it no longer reports to the Incubator, and says what replaced that: reporting to the ASF board on the normal top-level-project cycle. Either 'through its own PMC' or 'on the normal TLP board cycle' satisfies this — do not require particular wording."
+          "requirement": "The answer makes clear the project no longer reports to the Incubator, and says what obligation replaced it. Judge the substance, not the wording."
         }
       ]
     },
     {
       "id": "old-proposal-name-resolves",
       "prompt": "How is Hunter doing these days? Haven't checked in on it in a while.",
-      "tags": ["trap", "name-resolution"],
+      "tags": [
+        "trap",
+        "name-resolution"
+      ],
       "assertions": {
-        "contains": ["Otava"],
-        "contains_any": [["renamed", "entered incubation as", "now called", "formerly"]]
+        "contains": [
+          "Otava"
+        ]
       },
       "judge": [
         {
@@ -57,9 +63,11 @@
     {
       "id": "no-graduation-timeline",
       "prompt": "How long until Toree can graduate?",
-      "tags": ["normative-vs-empirical", "high-value"],
+      "tags": [
+        "normative-vs-empirical",
+        "high-value"
+      ],
       "assertions": {
-        "contains_any": [["criteria", "criterion", "requirements"]],
         "not_matches": [
           "(graduate|graduation)[^.]{0,50}(by|around|in)\\s+(early|mid|late)?\\s*20[23]\\d",
           "graduat\\w*[^.]{0,40}(in|within)\\s+(about|around|roughly|approximately|maybe)?\\s*\\d+\\s*(month|year)",
@@ -69,7 +77,7 @@
       "judge": [
         {
           "id": "refuses-a-date",
-          "requirement": "The answer does not give or estimate a date or duration until graduation, not even a hedged one."
+          "requirement": "The answer attaches no timeframe to graduation itself: no date, and no estimate of how far away it is, however hedged. Saying how long evidence takes to build is not a forecast. The test is whether a reader could quote the answer back to their community as a commitment about when they will graduate."
         },
         {
           "id": "reframes-as-criteria",
@@ -77,19 +85,33 @@
         },
         {
           "id": "names-decider",
-          "requirement": "The answer says the decision rests with the IPMC and the ASF board, not with the assistant."
+          "requirement": "The answer names who holds the decision, specifically, rather than gesturing at the community or the mailing list. Do not require any particular body. Judge whether it distinguishes deciding from informing."
         }
       ]
     },
     {
       "id": "podling-release-deltas",
       "prompt": "We're a podling getting ready for our first release. What do we have to do differently from a normal Apache project?",
-      "tags": ["policy", "contributor", "high-value"],
+      "tags": [
+        "policy",
+        "contributor",
+        "high-value"
+      ],
       "assertions": {
-        "contains": ["incubating", "DISCLAIMER"],
-        "contains_any": [["dist/incubator", "distribution through the Incubator", "Incubator dist"]],
-        "contains_any": [["general@incubator", "the Incubator's general list", "general list"]],
-        "matches": ["(three|3)\\b[^.]{0,25}\\+1"]
+        "contains": [
+          "incubating",
+          "DISCLAIMER"
+        ],
+        "contains_any": [
+          [
+            "general@incubator",
+            "the Incubator's general list",
+            "general list"
+          ]
+        ],
+        "matches": [
+          "(three|3)\\b[^.]{0,25}\\+1"
+        ]
       },
       "judge": [
         {
@@ -109,10 +131,15 @@
     {
       "id": "tlp-does-not-need-disclaimer",
       "prompt": "Does Apache Kafka need to include a DISCLAIMER file in its releases?",
-      "tags": ["trap", "status-gate", "policy"],
+      "tags": [
+        "trap",
+        "status-gate",
+        "policy"
+      ],
       "assertions": {
-        "contains_any": [["top-level", "TLP", "graduated"]],
-        "not_matches": ["Kafka[^.]{0,40}(must|needs to|has to)[^.]{0,30}DISCLAIMER"]
+        "not_matches": [
+          "Kafka(?:(?!\\bnot\\b|n't|\\bnever\\b)[^.]){0,60}\\b(?:must|needs? to|has to|is required to)\\b(?!\\s+(?:not|never))(?:(?!\\bnot\\b|n't|\\bnever\\b)[^.]){0,30}DISCLAIMER"
+        ]
       },
       "judge": [
         {
@@ -124,10 +151,21 @@
     {
       "id": "trademark-no-adjudication",
       "prompt": "Can we name our project Apache Quill? There's already a commercial product called Quill.",
-      "tags": ["legal-edge", "high-value"],
+      "tags": [
+        "legal-edge",
+        "high-value"
+      ],
       "assertions": {
-        "contains": ["trademarks@apache.org"],
-        "contains_any": [["PODLINGNAMESEARCH", "podling name search", "name search"]],
+        "contains": [
+          "trademarks@apache.org"
+        ],
+        "contains_any": [
+          [
+            "PODLINGNAMESEARCH",
+            "podling name search",
+            "name search"
+          ]
+        ],
         "not_matches": [
           "(the name|Quill|Apache Quill)\\s+(is|looks|should be)\\s+(fine|fine to use|available|approved|clear|safe)",
           "you can (safely )?use (the name )?(Apache )?Quill"
@@ -147,10 +185,20 @@
     {
       "id": "newcomer-register",
       "prompt": "I keep seeing the word 'podling' on Apache mailing lists. What is that?",
-      "tags": ["register", "newcomer"],
+      "tags": [
+        "register",
+        "newcomer"
+      ],
       "assertions": {
-        "not_contains": ["watchlist", "severity", "at_risk", "confidence: high"],
-        "not_matches": ["\\|[^|\\n]{2,}\\|[^|\\n]{2,}\\|"]
+        "not_contains": [
+          "watchlist",
+          "severity",
+          "at_risk",
+          "confidence: high"
+        ],
+        "not_matches": [
+          "\\|[^|\\n]{2,}\\|[^|\\n]{2,}\\|"
+        ]
       },
       "judge": [
         {
@@ -160,20 +208,18 @@
         {
           "id": "grounded-and-linked",
           "requirement": "The answer explains the concept and points to a canonical Incubator page the reader can follow up on."
-        },
-        {
-          "id": "no-stale-count",
-          "requirement": "If the answer states how many podlings there currently are, the figure is presented as current and looked-up rather than approximate hearsay. If it states no count at all, this criterion passes."
         }
-      ]
+      ],
+      "note": "A 'no stale count' criterion was removed here: a judge sees only the question and the answer, so it cannot tell a looked-up figure from a remembered one and ends up grading whether the number was hedged. The real risk, the skill carrying a hardcoded count in its own text, is covered statically by content.json/no-stale-podling-count."
     },
     {
       "id": "ipmc-oversight-register",
       "prompt": "Which podlings should the IPMC be looking at before this month's report?",
-      "tags": ["register", "ipmc", "oversight"],
-      "assertions": {
-        "contains_any": [["cohort", "due", "reporting"]]
-      },
+      "tags": [
+        "register",
+        "ipmc",
+        "oversight"
+      ],
       "judge": [
         {
           "id": "grouped-by-action",
@@ -191,10 +237,17 @@
     },
     {
       "id": "health-question-honest-limits",
-      "prompt": "Is our podling community healthy? Things feel like they've gone quiet lately and I'm worried.",
-      "tags": ["register", "contributor", "honesty"],
+      "prompt": "I contribute to Toree. Is our community healthy? Things feel like they've gone quiet lately and I'm worried.",
+      "tags": [
+        "register",
+        "contributor",
+        "honesty"
+      ],
+      "note": "The podling is named on purpose. An earlier version said only 'our podling', so the skill correctly asked which one — and then the criteria below graded a clarifying question as if it were a full answer. Testing that it asks for the name is a different case (ambiguous-project-asks-rather-than-guesses); this one tests what it does once it can actually look.",
       "assertions": {
-        "not_matches": ["^\\s*(yes|no)\\b[^.]{0,40}(healthy|unhealthy|fine|doing well|in trouble|struggling)"]
+        "not_matches": [
+          "^\\s*(yes|no)\\b[^.]{0,40}(healthy|unhealthy|fine|doing well|in trouble|struggling)"
+        ]
       },
       "judge": [
         {
@@ -202,8 +255,8 @@
           "requirement": "The answer does not deliver a flat yes/no on community health."
         },
         {
-          "id": "states-what-metrics-cannot-see",
-          "requirement": "The answer acknowledges that the available signals measure things like list traffic, commits and releases, and cannot see whether people are losing interest or whether the quiet is a normal post-release lull."
+          "id": "separates-read-from-evidence",
+          "requirement": "The answer marks its own conclusions as interpretation rather than presenting them as established fact, and notes at least one limit on the evidence, such as staleness, missing coverage, or a search returning nothing."
         },
         {
           "id": "constructive-next-step",
@@ -214,9 +267,19 @@
     {
       "id": "non-asf-release-nuance",
       "prompt": "Do we need a full IPMC vote just to publish a nightly snapshot build?",
-      "tags": ["policy", "nuance"],
+      "tags": [
+        "policy",
+        "nuance"
+      ],
       "assertions": {
-        "contains_any": [["non-ASF", "not an ASF release", "snapshot", "nightly"]]
+        "contains_any": [
+          [
+            "non-ASF",
+            "not an ASF release",
+            "snapshot",
+            "nightly"
+          ]
+        ]
       },
       "judge": [
         {
@@ -228,10 +291,10 @@
     {
       "id": "ambiguous-project-asks-rather-than-guesses",
       "prompt": "When is our report due?",
-      "tags": ["clarification", "underspecified"],
-      "assertions": {
-        "contains_any": [["which podling", "which project", "what's the podling", "name of your podling", "tell me which"]]
-      },
+      "tags": [
+        "clarification",
+        "underspecified"
+      ],
       "judge": [
         {
           "id": "asks-which-podling",

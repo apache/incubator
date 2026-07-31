@@ -52,9 +52,30 @@ Deterministic assertions handle facts. The vocabulary is `contains`,
 `not_contains`, `contains_any`, `matches`, `not_matches`; all are
 case-insensitive and whitespace-folded so they survive line wrapping.
 
-`contains_any` exists because a correct answer often has several acceptable
-phrasings — "graduated", "is now a top-level project" — and pinning one exact
-wording tests phrasing rather than behaviour.
+**Which layer gets which job.** Deterministic assertions are for things with a
+canonical form: a project name, an email address, a filename, a path, a term of
+art, a number. Plus every `not_matches` trap, which encodes a specific wrong
+claim and stays stable because wrong claims have a shape.
+
+Everything semantic belongs to the judge. "Did it ask which podling", "did it
+correct the premise", "did it decline to adjudicate" have unlimited valid
+phrasings, and matching strings against free prose tests wording rather than
+behaviour.
+
+The warning sign is extending a `contains_any` list because a good answer used a
+phrasing you had not listed. That means the assertion is in the wrong layer.
+Delete it and write a judge criterion — do not add the phrasing. A suite tuned
+that way converges on whatever the model said last, stops failing, and therefore
+stops catching anything.
+
+`contains_any` still has a narrow use: several canonical tokens where any one
+would do, such as an identifier that might appear qualified or bare.
+
+**Watch for negation.** A `not_matches` pattern looking for "Kafka must …
+DISCLAIMER" happily matches "Kafka must **not** include a DISCLAIMER", which is
+the correct answer. The patterns here use tempered repetition — `(?:(?!\bnot\b|n't)[^.]){0,60}` — so no negation can sit between the subject and the
+claim. If you add a pattern asserting someone said something wrong, always test
+it against the correctly-negated form too.
 
 The `not_matches` patterns are the sharp end: they encode the specific wrong
 answer, not the absence of a right one. `no-graduation-timeline` fails on
@@ -72,6 +93,14 @@ skip them.
 
 The judge is told to **default to failing when uncertain**, because a lenient
 judge is worse than no judge: it reports green on bad answers.
+
+**Never quote the passing answer into the criterion.** When a good answer fails,
+the tempting fix is to add "phrasing X satisfies this" — but a judge handed the
+winning wording is pattern-matching, not judging, and the criterion stops
+generalising to answers phrased any other way. State the principle and the
+reason it matters instead. Naming what *failure* looks like is safer than naming
+what success looks like: rejecting vagueness generalises, blessing one sentence
+does not.
 
 ## Adding a case
 

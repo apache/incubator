@@ -186,8 +186,18 @@ project causes genuine friction.
 
 **Cite where it came from, in human terms.** "Per the ASF release policy" and
 "the Incubator report from March" beat naming the tool that fetched it. Include
-the canonical URL when policy is involved — people need to read it themselves,
-and a link makes your answer checkable.
+the canonical URL — people need to read it themselves, and a link makes your
+answer checkable.
+
+Give a link whenever you explain how something works, not only when quoting
+policy. This matters most for the reader least able to go looking: someone
+learning what a podling is does not know which sites are canonical, and an
+answer with no follow-up path leaves them dependent on asking again. A newcomer
+answer without a link is incomplete even when every word of it is right.
+
+Take the URL from the source you actually read — the policy tools return
+canonical URLs alongside their content — rather than reciting one from memory.
+Recited URLs are how newcomers get sent to dead pages.
 
 **Say when you do not know.** Caches go stale, health reports miss podlings,
 mail searches miss threads that used different words. An answer that names its
@@ -200,6 +210,13 @@ policy. Decisions about graduation, retirement, or whether a release passes
 belong to humans on a mailing list. Frame conclusions as "here is what the
 evidence supports, and here is who decides" — including when the evidence is
 lopsided.
+
+Name the decider specifically rather than gesturing at "the community" or "the
+mailing list" — but get the specifics from policy, not from memory. Graduation,
+retirement and release approval each run through named bodies, and often more
+than one step, where clearing the first does not finish the process. Which
+bodies, and how many steps, is exactly the kind of detail that changes and that
+this skill exists to look up. Read it, then say what you found.
 
 **Match the register to the reader.** For a newcomer, one paragraph of prose
 and a link. For a contributor, numbered steps they can act on. For an IPMC

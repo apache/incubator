@@ -175,6 +175,15 @@ def run_behaviour_suite(
             if use_judge and criteria:
                 judge_prompt = build_judge_prompt(case["prompt"], answer, criteria)
                 _, reply = runner.run(judge_prompt)
+                if extract_json(reply) is None:
+                    # A judge that answers in prose fails every criterion, which
+                    # reads as a broken answer rather than a broken grader. Give
+                    # it exactly one stricter retry before believing the verdict.
+                    _, reply = runner.run(
+                        judge_prompt
+                        + "\n\nYour previous reply could not be parsed. Reply with ONLY the JSON "
+                        "object described above: no prose before or after it, no code fence."
+                    )
                 result.checks += grade_judge_reply(reply, criteria)
             elif criteria:
                 result.checks += [

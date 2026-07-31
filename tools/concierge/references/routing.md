@@ -279,11 +279,17 @@ prose — but summarise it rather than quoting the artifact listing.
 `ipmc:release_vote_evidence(podling=)`.
 
 ### "Are we ready to graduate?"
-Normative bar from `asf-policy:get_policy("incubator")` and the Incubator
+Normative bar from `asf-policy:get_policy(key="incubator")` and the Incubator
 graduation guide via `cwiki`. Evidence from
 `ipmc:graduation_readiness(podling=, include_evidence=true)`. Present the bar,
-then the evidence against it, then note that the IPMC and board decide.
+then the evidence against it, then say who decides.
 Use `strict_mode=true` when they want the conservative read.
+
+Get the decision steps from the graduation guide rather than stating them here.
+Graduation is not a single vote, and an answer that names only the first body
+involved implies the process finishes earlier than it does. Read the guide, name
+the bodies it names, and distinguish the steps that decide from the discussion
+that informs them.
 
 ### "Which podlings need attention?" (IPMC)
 Hand to the `ipmc` skill. Failing that: `ipmc:ipmc_watchlist` (with `limit`),

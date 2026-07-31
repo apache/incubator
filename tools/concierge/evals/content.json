@@ -156,6 +156,33 @@
       }
     },
     {
+      "id": "decider-is-looked-up-not-recited",
+      "file": "SKILL.md",
+      "tags": ["regression", "policy", "high-value"],
+      "why": "an eval failure was once 'fixed' by writing the graduation process into SKILL.md. That inflates the score without generalising, and puts policy that changes into the one file that is never refreshed. The instruction must stay a lookup, and the process facts must stay out.",
+      "assertions": {
+        "contains_any": [["from policy, not from memory", "not from memory"]],
+        "contains_any": [["Name the decider specifically", "name the decider"]],
+        "not_matches": [
+          "board passes the resolution",
+          "IPMC votes to recommend",
+          "PPMC vote followed by the IPMC",
+          "retirement is an IPMC decision"
+        ]
+      }
+    },
+    {
+      "id": "no-recited-policy-urls-in-skill-body",
+      "file": "SKILL.md",
+      "tags": ["regression", "staleness"],
+      "why": "URLs recited from memory go stale and get sent to newcomers; take them from the source that was actually read",
+      "assertions": {
+        "contains_any": [["Take the URL from the source you actually read", "canonical URLs alongside their content"]],
+        "contains_any": [["without a link is incomplete", "no follow-up path"]],
+        "not_matches": ["https?://(www\\.)?(incubator\\.)?apache\\.org/[a-z]"]
+      }
+    },
+    {
       "id": "never-speaks-for-ipmc",
       "file": "SKILL.md",
       "tags": ["design", "safety"],

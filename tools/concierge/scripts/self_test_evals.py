@@ -161,6 +161,26 @@ checks = grade_assertions(prose, newcomer_case["assertions"])
 check("plain prose passes", all(c.passed for c in checks))
 
 # --------------------------------------------------------------------------- #
+print("\n[6b] negation is not mistaken for the claim it denies")
+# "must not include a DISCLAIMER" is the correct answer and once failed this case,
+# because a naive pattern matched the "must" inside "must not".
+tlp_case = case_by_id(suites["behaviour"], "tlp-does-not-need-disclaimer")
+for bad in [
+    "Kafka must include a DISCLAIMER in its releases.",
+    "Apache Kafka has to ship a DISCLAIMER file with each release.",
+    "Yes, Kafka is required to include a DISCLAIMER.",
+]:
+    checks = grade_assertions(bad, {"not_matches": tlp_case["assertions"]["not_matches"]})
+    check(f"catches wrong claim: {bad[:45]}…", any(not c.passed for c in checks))
+for good in [
+    "Kafka release still must not include a DISCLAIMER",
+    "Kafka does not need to include a DISCLAIMER.",
+    "Kafka must never ship a DISCLAIMER now that it is a TLP.",
+    "Kafka is a top-level project. Podlings must include a DISCLAIMER in every release.",
+]:
+    checks = grade_assertions(good, {"not_matches": tlp_case["assertions"]["not_matches"]})
+    check(f"allows correct answer: {good[:45]}…", all(c.passed for c in checks))
+
 print("\n[7] judge reply parsing")
 # --------------------------------------------------------------------------- #
 
