@@ -37,7 +37,7 @@ make package    # -> build/incubator-concierge.skill
 ```
 
 The resulting `.skill` file is a zip containing a single top-level
-`incubator-concierge/` directory. Deliver it to a Claude session to install it.
+`incubator-concierge/` directory. Deliver it to a AI session to install it.
 
 ## Test
 
