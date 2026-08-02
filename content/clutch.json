@@ -196,7 +196,7 @@
       }
     },
     "reportingGroup": "January, April, July, October",
-    "reportingMonthly": false,
+    "reportingMonthly": true,
     "repositories": [
       [
         "amoro",
@@ -221,7 +221,7 @@
         {
           "description": "Apache Amoro Website",
           "last_update_int": 1767794594,
-          "last_update_txt": "29 weeks ago",
+          "last_update_txt": "30 weeks ago",
           "nocommit": false
         }
       ]
@@ -737,7 +737,7 @@
     "rawReportingGroup": "group-1",
     "releases": [],
     "reportingGroup": "January, April, July, October",
-    "reportingMonthly": true,
+    "reportingMonthly": false,
     "repositories": [
       [
         "caldera",
@@ -870,7 +870,7 @@
     "rawReportingGroup": "group-2",
     "releases": {},
     "reportingGroup": "February, May, August, November",
-    "reportingMonthly": true,
+    "reportingMonthly": false,
     "repositories": [
       [
         "casbin",
@@ -3285,7 +3285,7 @@
         {
           "description": "One advanced and mature open-source MPP (Massively Parallel P...",
           "last_update_int": 1785632436,
-          "last_update_txt": "<span style='color: #070;'>&lt;1 hour ago</span>",
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>",
           "nocommit": false
         }
       ],
@@ -3485,296 +3485,6 @@
       [
         "18",
         "Has not provided a wiki link"
-      ]
-    ]
-  },
-  "fluss": {
-    "description": "Fluss is a streaming storage built for real-time analytics which can serve as\n            the real-time data layer for Lakehouse architectures.",
-    "fullName": "Fluss",
-    "hasMailListCommits": "http://mail-archives.apache.org/mod_mbox/fluss-commits",
-    "hasMailListDev": "http://mail-archives.apache.org/mod_mbox/fluss-dev",
-    "ldap": {
-      "members": [
-        "aborisov",
-        "chengwang",
-        "fengwang",
-        "hongshun",
-        "ipolyzos",
-        "jark",
-        "jbonofre",
-        "jqin",
-        "leekei",
-        "leonard",
-        "libenchao",
-        "liebing",
-        "liyu",
-        "lzljs3620320",
-        "mehulbatra",
-        "michaelkoepf",
-        "nicholasjiang",
-        "tison",
-        "yunhong",
-        "yuxia",
-        "zcoo"
-      ],
-      "numberCommitters": 21,
-      "numberCommittersNew": 7,
-      "numberPMCEquals": false,
-      "numberPMCMembers": 14,
-      "owners": [
-        "aborisov",
-        "ipolyzos",
-        "jark",
-        "jbonofre",
-        "jqin",
-        "leekei",
-        "liyu",
-        "lzljs3620320",
-        "mehulbatra",
-        "michaelkoepf",
-        "nicholasjiang",
-        "tison",
-        "yunhong",
-        "yuxia"
-      ]
-    },
-    "mentors": [
-      [
-        "Jean-Baptiste Onofré",
-        "jbonofre"
-      ],
-      [
-        "Becket Qin",
-        "jqin"
-      ],
-      [
-        "Yu Li",
-        "liyu"
-      ],
-      [
-        "Jingsong Lee",
-        "lzljs3620320"
-      ],
-      [
-        "Zili Chen",
-        "tison"
-      ]
-    ],
-    "news": [
-      "2026-05-13 New Committer: Anton Borisob.",
-      "2026-05-04 Release 0.9.1",
-      "2026-04-08 Release fluss-rust 0.1.0",
-      "2026-03-27 New Committer: Keith Lee.",
-      "2026-03-27 New Committer: Liebing Yu.",
-      "2026-03-04 Release 0.9.0",
-      "2026-03-02 New PPMC Member: Mehul Batra.",
-      "2025-12-24 New Committer: Cheng Wang.",
-      "2025-11-20 New Committer: Leonard Xu.",
-      "2025-11-10 Release 0.8.0 (the first apache incubating release).",
-      "2025-08-18 Release fluss-shaded 1.0",
-      "2025-07-23 New Committer: Hongshun Wang.",
-      "2025-07-23 New Committer: Mehul Batra.",
-      "2025-06-05 Project enters incubation."
-    ],
-    "podlingName": "Fluss",
-    "rawReportingGroup": "group-1",
-    "releases": {
-      "fluss-0.8.0-incubating-bin.tgz": {
-        "dtm": "10/25/2025",
-        "folder": "fluss-0.8.0-incubating",
-        "hash": "sha512",
-        "revision": "r80289",
-        "size": "481145706",
-        "user": "jark"
-      },
-      "fluss-0.8.0-incubating-src.tgz": {
-        "dtm": "10/25/2025",
-        "folder": "fluss-0.8.0-incubating",
-        "hash": "sha512",
-        "revision": "r80289",
-        "size": "2087154",
-        "user": "jark"
-      },
-      "fluss-0.8.0-incubating.tgz": {
-        "dtm": "10/25/2025",
-        "folder": "helm-chart/0.8.0-incubating",
-        "hash": "sha512",
-        "revision": "r80289",
-        "size": "9191",
-        "user": "jark"
-      },
-      "fluss-0.8.0-incubating.tgz.prov": {
-        "dtm": "10/25/2025",
-        "folder": "helm-chart/0.8.0-incubating",
-        "hash": "sha512",
-        "revision": "r80289",
-        "size": "1376",
-        "user": "jark"
-      },
-      "fluss-0.9.0-incubating-bin.tgz": {
-        "dtm": "02/21/2026",
-        "folder": "fluss-0.9.0-incubating",
-        "hash": "sha512",
-        "revision": "r82647",
-        "size": "487686380",
-        "user": "yuxia"
-      },
-      "fluss-0.9.0-incubating-src.tgz": {
-        "dtm": "02/21/2026",
-        "folder": "fluss-0.9.0-incubating",
-        "hash": "sha512",
-        "revision": "r82647",
-        "size": "2904131",
-        "user": "yuxia"
-      },
-      "fluss-0.9.0-incubating.tgz": {
-        "dtm": "02/21/2026",
-        "folder": "helm-chart/0.9.0-incubating",
-        "hash": "sha512",
-        "revision": "r82647",
-        "size": "9581",
-        "user": "yuxia"
-      },
-      "fluss-0.9.0-incubating.tgz.prov": {
-        "dtm": "02/21/2026",
-        "folder": "helm-chart/0.9.0-incubating",
-        "hash": "sha512",
-        "revision": "r82647",
-        "size": "1376",
-        "user": "yuxia"
-      },
-      "fluss-0.9.1-incubating-bin.tgz": {
-        "dtm": "04/27/2026",
-        "folder": "fluss-0.9.1-incubating",
-        "hash": "sha512",
-        "revision": "r84121",
-        "size": "489753542",
-        "user": "ipolyzos"
-      },
-      "fluss-0.9.1-incubating-src.tgz": {
-        "dtm": "04/27/2026",
-        "folder": "fluss-0.9.1-incubating",
-        "hash": "sha512",
-        "revision": "r84121",
-        "size": "2934826",
-        "user": "ipolyzos"
-      },
-      "fluss-0.9.1-incubating.tgz": {
-        "dtm": "04/27/2026",
-        "folder": "helm-chart/0.9.1-incubating",
-        "hash": "sha512",
-        "revision": "r84121",
-        "size": "14829",
-        "user": "ipolyzos"
-      },
-      "fluss-0.9.1-incubating.tgz.prov": {
-        "dtm": "04/27/2026",
-        "folder": "helm-chart/0.9.1-incubating",
-        "hash": "sha512",
-        "revision": "r84121",
-        "size": "1376",
-        "user": "ipolyzos"
-      },
-      "fluss-rust-0.1.0-incubating.tgz": {
-        "dtm": "03/23/2026",
-        "folder": "fluss-rust-0.1.0-incubating",
-        "hash": "sha512",
-        "revision": "r83313",
-        "size": "877939",
-        "user": "yunhong"
-      },
-      "fluss-shaded-1.0-incubating-src.tgz": {
-        "dtm": "08/07/2025",
-        "folder": "fluss-shaded-1.0-incubating",
-        "hash": "sha512",
-        "revision": "r78594",
-        "size": "47051",
-        "user": "jark"
-      }
-    },
-    "reportingGroup": "January, April, July, October",
-    "reportingMonthly": false,
-    "repositories": [
-      [
-        "fluss",
-        {
-          "description": "Apache Fluss is a streaming storage built for real-time analy...",
-          "last_update_int": 1785464000,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>",
-          "nocommit": false
-        }
-      ],
-      [
-        "fluss-benchmarks",
-        {
-          "description": "Benchmarks for Apache Fluss (Incubating)",
-          "last_update_int": 1754363867,
-          "last_update_txt": "52 weeks ago",
-          "nocommit": false
-        }
-      ],
-      [
-        "fluss-blog",
-        {
-          "description": "Apache Fluss Blog",
-          "last_update_int": 1781062997,
-          "last_update_txt": "8 weeks ago",
-          "nocommit": false
-        }
-      ],
-      [
-        "fluss-rust",
-        {
-          "description": "Rust Client for Apache Fluss (Incubating)",
-          "last_update_int": 1785045207,
-          "last_update_txt": "7 days ago",
-          "nocommit": false
-        }
-      ],
-      [
-        "fluss-shaded",
-        {
-          "description": "Apache Fluss (Incubating) shaded artifacts repository",
-          "last_update_int": 1782869980,
-          "last_update_txt": "5 weeks ago",
-          "nocommit": false
-        }
-      ],
-      [
-        "fluss-website",
-        {
-          "description": "Apache Fluss Website",
-          "last_update_int": 1785463165,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>",
-          "nocommit": false
-        }
-      ]
-    ],
-    "resource": "fluss",
-    "sponsor": "Incubator",
-    "startDate": "2025-06-04",
-    "statusAge": 80,
-    "statusLastUpdated": "2026-05-14",
-    "urls": {
-      "git": "https://gitbox.apache.org/repos/asf?p=fluss.git;a=tree;hb=HEAD",
-      "keys": "https://downloads.apache.org/incubator/fluss/KEYS",
-      "svn": "",
-      "tracker": "https://github.com/apache/fluss/issues",
-      "wiki": "",
-      "www": "http://fluss.apache.org"
-    },
-    "zFixMeList": [
-      [
-        "18",
-        "Has not provided a wiki link"
-      ],
-      [
-        "39",
-        "Disclaimer is missing from website"
-      ],
-      [
-        "45",
-        "14 is a large number of release distributions. Non-current releases should be removed"
       ]
     ]
   },
@@ -6419,7 +6129,7 @@
         {
           "description": "Apache Ossie",
           "last_update_int": 1784644926,
-          "last_update_txt": "11 days ago",
+          "last_update_txt": "12 days ago",
           "nocommit": false
         }
       ],
@@ -6944,7 +6654,7 @@
       }
     },
     "reportingGroup": "January, April, July, October",
-    "reportingMonthly": false,
+    "reportingMonthly": true,
     "repositories": [
       [
         "incubator-pegasus",
@@ -7668,7 +7378,7 @@
         {
           "description": "Apache Seata(incubating) Website",
           "last_update_int": 1785631349,
-          "last_update_txt": "<span style='color: #070;'>&lt;1 hour ago</span>",
+          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>",
           "nocommit": false
         }
       ]
@@ -7797,8 +7507,8 @@
         "texera",
         {
           "description": "Human-AI Collaborative Data Science Using Visual Workflows",
-          "last_update_int": 1785599972,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>",
+          "last_update_int": 1785634740,
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>",
           "nocommit": false
         }
       ]
