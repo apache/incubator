@@ -1,5 +1,5 @@
 # Otava — Incubator Health (Reports + GitHub + Mailing Lists)
-_Generated on 2026-06-29_
+_Generated on 2026-08-02_
 
 **Windows:** 3m, 6m, 12m
 
@@ -8,67 +8,67 @@ _Generated on 2026-06-29_
 - **Releases (from list votes/results):** 1 (—)
 - **Median days between releases:** — (—)
 - **New contributors:** 0 (—)
-- **Unique committers:** 6 (↗↗)
-- **Commits:** 41 (↘)
+- **Unique committers:** 7 (↗↗)
+- **Commits:** 49 (↗)
 - **Issues opened/closed:** 1/0 (—/—)
-- **PRs opened/merged:** 35/29 (↗↗/↗↗)
-- **Median PR time-to-merge (days):** 1.4 (↗↗↗)
+- **PRs opened/merged:** 39/35 (↗/↗↗)
+- **Median PR time-to-merge (days):** 1.5 (↗↗↗)
 - **Bus factor proxy (contributors to reach 50% / 75% of commits):** 2 / 3 (→/→)
-- **Mailing list msgs (dev@):** 58 (↗)
-- **Unique posters (dev@):** 10 (↗↗)
-- **Reviewer diversity (eff.#, sampled):** 2.51 (→)
-- **PR author diversity (eff.#, sampled):** 2.81 (→)
-- **Unique reviewers (sampled):** 8 (↗↗)
-- **Unique PR authors (sampled):** 5 (↗↗)
+- **Mailing list msgs (dev@):** 29 (↘↘)
+- **Unique posters (dev@):** 7 (→)
+- **Reviewer diversity (eff.#, sampled):** 1.48 (↘)
+- **PR author diversity (eff.#, sampled):** 3.6 (↗)
+- **Unique reviewers (sampled):** 5 (↗)
+- **Unique PR authors (sampled):** 6 (↗↗)
 
 ## Trends (short vs long)
 
 - **Releases (from list votes/results):** 1 (—)
 - **Median days between releases:** — (—)
 - **New contributors:** 0 (—)
-- **Unique committers:** 6 (↗↗↗)
-- **Commits:** 41 (→)
+- **Unique committers:** 7 (↗↗↗)
+- **Commits:** 49 (↗)
 - **Issues opened/closed:** 1/0 (—/—)
-- **PRs opened/merged:** 35/29 (↗↗/↗↗)
-- **Median PR time-to-merge (days):** 1.4 (↗↗↗)
+- **PRs opened/merged:** 39/35 (↗↗/↗↗)
+- **Median PR time-to-merge (days):** 1.5 (↗↗↗)
 - **Bus factor proxy (contributors to reach 50% / 75% of commits):** 2 / 3 (→/→)
-- **Mailing list msgs (dev@):** 58 (→)
-- **Unique posters (dev@):** 10 (↗↗↗)
-- **Reviewer diversity (eff.#, sampled):** 2.51 (→)
-- **PR author diversity (eff.#, sampled):** 2.81 (↗↗)
-- **Unique reviewers (sampled):** 8 (↗↗↗)
-- **Unique PR authors (sampled):** 5 (↗↗↗)
+- **Mailing list msgs (dev@):** 29 (↘↘)
+- **Unique posters (dev@):** 7 (↗↗)
+- **Reviewer diversity (eff.#, sampled):** 1.48 (↘↘)
+- **PR author diversity (eff.#, sampled):** 3.6 (↗↗)
+- **Unique reviewers (sampled):** 5 (↗↗↗)
+- **Unique PR authors (sampled):** 6 (↗↗↗)
 
 ## Window Details
-### 3m  (2026-03-29 → 2026-06-29)
+### 3m  (2026-05-02 → 2026-08-02)
 - **Releases (from list votes/results):** 1  |  **Median gap (days):** —
-- **New contributors:** 0  |  **Unique committers:** 6  |  **Commits:** 41
+- **New contributors:** 0  |  **Unique committers:** 7  |  **Commits:** 49
 - **Issues:** opened 1 / closed 0
-- **PRs:** opened 35 / merged 29  |  **Median merge time (days):** 1.4
-- **Reviews (sampled):** median reviewers/PR **1**  |  reviewer diversity (eff.#) **2.51**  |  PR author diversity (eff.#) **2.81**  |  unique reviewers **8**, unique authors **5**
+- **PRs:** opened 39 / merged 35  |  **Median merge time (days):** 1.5
+- **Reviews (sampled):** median reviewers/PR **1**  |  reviewer diversity (eff.#) **1.48**  |  PR author diversity (eff.#) **3.6**  |  unique reviewers **5**, unique authors **6**
 - **Bus factor proxy (50% / 75%):** 2 / 3
-- **Incubator reports:** 0  |  **Avg mentor sign-offs:** —
-- **Mailing lists:** dev messages **58**, dev unique posters **10**
+- **Incubator reports:** 1  |  **Avg mentor sign-offs:** 3.0
+- **Mailing lists:** dev messages **29**, dev unique posters **7**
 
-### 6m  (2025-12-29 → 2026-06-29)
+### 6m  (2026-02-02 → 2026-08-02)
 - **Releases (from list votes/results):** 1  |  **Median gap (days):** —
-- **New contributors:** 0  |  **Unique committers:** 8  |  **Commits:** 102
-- **Issues:** opened 3 / closed 3
-- **PRs:** opened 54 / merged 38  |  **Median merge time (days):** 2.9
-- **Reviews (sampled):** median reviewers/PR **1.0**  |  reviewer diversity (eff.#) **2.37**  |  PR author diversity (eff.#) **2.74**  |  unique reviewers **8**, unique authors **7**
+- **New contributors:** 0  |  **Unique committers:** 9  |  **Commits:** 84
+- **Issues:** opened 3 / closed 1
+- **PRs:** opened 63 / merged 51  |  **Median merge time (days):** 3.0
+- **Reviews (sampled):** median reviewers/PR **1**  |  reviewer diversity (eff.#) **1.81**  |  PR author diversity (eff.#) **3.02**  |  unique reviewers **8**, unique authors **8**
 - **Bus factor proxy (50% / 75%):** 2 / 3
-- **Incubator reports:** 1  |  **Avg mentor sign-offs:** 4.0
-- **Mailing lists:** dev messages **97**, dev unique posters **13**
+- **Incubator reports:** 2  |  **Avg mentor sign-offs:** 3.5
+- **Mailing lists:** dev messages **103**, dev unique posters **14**
 
-### 12m  (2025-06-29 → 2026-06-29)
-- **Releases (from list votes/results):** 4  |  **Median gap (days):** 119
-- **New contributors:** 0  |  **Unique committers:** 10  |  **Commits:** 148
-- **Issues:** opened 29 / closed 14
-- **PRs:** opened 92 / merged 73  |  **Median merge time (days):** 3.0
-- **Reviews (sampled):** median reviewers/PR **1**  |  reviewer diversity (eff.#) **2.66**  |  PR author diversity (eff.#) **1.63**  |  unique reviewers **8**, unique authors **8**
+### 12m  (2025-08-02 → 2026-08-02)
+- **Releases (from list votes/results):** 2  |  **Median gap (days):** 161
+- **New contributors:** 0  |  **Unique committers:** 11  |  **Commits:** 155
+- **Issues:** opened 17 / closed 11
+- **PRs:** opened 91 / merged 76  |  **Median merge time (days):** 3.2
+- **Reviews (sampled):** median reviewers/PR **1.0**  |  reviewer diversity (eff.#) **2.61**  |  PR author diversity (eff.#) **1.95**  |  unique reviewers **8**, unique authors **9**
 - **Bus factor proxy (50% / 75%):** 2 / 3
-- **Incubator reports:** 3  |  **Avg mentor sign-offs:** 3.0
-- **Mailing lists:** dev messages **222**, dev unique posters **19**
+- **Incubator reports:** 4  |  **Avg mentor sign-offs:** 3.0
+- **Mailing lists:** dev messages **203**, dev unique posters **17**
 
 ## Reading the Indicators
 - **Use trend arrows** to compare available windows; when a window lacks ≥28 days or ≥5 events, trends show **—**.

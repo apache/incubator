@@ -1,18 +1,18 @@
 # Casbin — Incubator Health (Reports + GitHub + Mailing Lists)
-_Generated on 2026-06-29_
+_Generated on 2026-08-02_
 
 **Windows:** 3m
 
 ## Window Details
-### 3m  (2026-03-29 → 2026-06-29)
-- **Releases (from list votes/results):** 0  |  **Median gap (days):** —
-- **New contributors:** 0  |  **Unique committers:** 9  |  **Commits:** 62
-- **Issues:** opened 19 / closed 34
-- **PRs:** opened 442 / merged 20  |  **Median merge time (days):** 0.1
-- **Reviews (sampled):** median reviewers/PR **0.0**  |  reviewer diversity (eff.#) **1.0**  |  PR author diversity (eff.#) **1.74**  |  unique reviewers **1**, unique authors **6**
-- **Bus factor proxy (50% / 75%):** 1 / 1
-- **Incubator reports:** 1  |  **Avg mentor sign-offs:** 1.0
-- **Mailing lists:** dev messages **50**, dev unique posters **9**
+### 3m  (2026-05-02 → 2026-08-02)
+- **Releases (from list votes/results):** 1  |  **Median gap (days):** —
+- **New contributors:** 0  |  **Unique committers:** 8  |  **Commits:** 37
+- **Issues:** opened 14 / closed 7
+- **PRs:** opened 326 / merged 10  |  **Median merge time (days):** 0.1
+- **Reviews (sampled):** median reviewers/PR **0.0**  |  reviewer diversity (eff.#) **1.0**  |  PR author diversity (eff.#) **4.55**  |  unique reviewers **1**, unique authors **6**
+- **Bus factor proxy (50% / 75%):** 1 / 2
+- **Incubator reports:** 2  |  **Avg mentor sign-offs:** 2.0
+- **Mailing lists:** dev messages **36**, dev unique posters **9**
 
 ## Reading the Indicators
 - **Use trend arrows** to compare available windows; when a window lacks ≥28 days or ≥5 events, trends show **—**.

@@ -1,18 +1,18 @@
 # Ossie — Incubator Health (Reports + GitHub + Mailing Lists)
-_Generated on 2026-06-29_
+_Generated on 2026-08-02_
 
 **Windows:** to-date
 
 ## Window Details
-### to-date  (2026-06-19 → 2026-06-29)
+### to-date  (2026-06-19 → 2026-08-02)
 - **Releases (from list votes/results):** 0  |  **Median gap (days):** —
-- **New contributors:** 0  |  **Unique committers:** 0  |  **Commits:** 0
-- **Issues:** opened 0 / closed 0
-- **PRs:** opened 0 / merged 0  |  **Median merge time (days):** —
-- **Reviews (sampled):** median reviewers/PR **—**  |  reviewer diversity (eff.#) **—**  |  PR author diversity (eff.#) **—**  |  unique reviewers **0**, unique authors **0**
-- **Bus factor proxy (50% / 75%):** — / —
+- **New contributors:** 0  |  **Unique committers:** 28  |  **Commits:** 113
+- **Issues:** opened 21 / closed 5
+- **PRs:** opened 136 / merged 73  |  **Median merge time (days):** 0.6
+- **Reviews (sampled):** median reviewers/PR **1**  |  reviewer diversity (eff.#) **2.71**  |  PR author diversity (eff.#) **9.61**  |  unique reviewers **13**, unique authors **28**
+- **Bus factor proxy (50% / 75%):** 3 / 7
 - **Incubator reports:** 0  |  **Avg mentor sign-offs:** —
-- **Mailing lists:** dev messages **0**, dev unique posters **0**
+- **Mailing lists:** dev messages **116**, dev unique posters **19**
 
 ## Reading the Indicators
 - **Use trend arrows** to compare available windows; when a window lacks ≥28 days or ≥5 events, trends show **—**.
