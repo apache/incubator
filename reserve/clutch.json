@@ -4092,7 +4092,7 @@
         {
           "description": "Apache Iggy: Hyper-Efficient Message Streaming at Laser Speed",
           "last_update_int": 1786722313,
-          "last_update_txt": "<span style='color: #070;'>&lt;30 minutes ago</span>",
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>",
           "nocommit": false
         }
       ],
@@ -5557,8 +5557,8 @@
         "incubator-kie",
         {
           "description": "Apache KIE (Knowledge Is Everything) is the home of Drools, O...",
-          "last_update_int": 1786704840,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>",
+          "last_update_int": 1786724906,
+          "last_update_txt": "<span style='color: #070;'>&lt;30 minutes ago</span>",
           "nocommit": false
         }
       ],
@@ -5768,7 +5768,26 @@
     "fullName": "Maka",
     "hasMailListCommits": "http://mail-archives.apache.org/mod_mbox/maka-commits",
     "hasMailListDev": "http://mail-archives.apache.org/mod_mbox/maka-dev",
-    "ldap": {},
+    "ldap": {
+      "members": [
+        "benjobs",
+        "psiace",
+        "tanxinyu",
+        "tison",
+        "xuanwo"
+      ],
+      "numberCommitters": 5,
+      "numberCommittersNew": 0,
+      "numberPMCEquals": true,
+      "numberPMCMembers": 5,
+      "owners": [
+        "benjobs",
+        "psiace",
+        "tanxinyu",
+        "tison",
+        "xuanwo"
+      ]
+    },
     "mentors": [
       [
         "Hao Ding",
@@ -5814,10 +5833,6 @@
       "www": ""
     },
     "zFixMeList": [
-      [
-        "01",
-        "No project LDAP"
-      ],
       [
         "10",
         "Has not provided an issue tracker link"
@@ -7464,7 +7479,7 @@
         {
           "description": "Apache Seata(incubating) Website",
           "last_update_int": 1786710381,
-          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>",
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>",
           "nocommit": false
         }
       ]
