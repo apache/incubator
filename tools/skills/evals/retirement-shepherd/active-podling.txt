@@ -1,0 +1,189 @@
+=========================================================================
+SIMULATED RETIREMENT DOSSIER INPUTS — ACTIVE PODLING, SHOULD NOT RETIRE
+Podling: Apache Osprey (incubating)
+=========================================================================
+
+This fixture stands in for the live IncubatorMCP / HealthMCP / PodlingsMCP /
+ReportMCP responses the retirement-shepherd skill would otherwise pull live
+for Step 1 (stalled-evidence assessment) and Step 2 (mentor consultation
+record). This is a deliberately non-trivial case: ONE of the three
+configurable inactivity signals (3-month commits) does fire, because the
+podling's sole active committer was on parental leave for six weeks — but
+mailing-list traffic and releases are both healthy, the IPMC's strict
+stalled definition does not match (it requires all three low-commit /
+low-committer / no-release signals together, and releases are present),
+and the PPMC has already responded to mentor outreach with a concrete,
+credible revival plan. The expected outcome is that this podling should
+NOT be retired, per the skill's own documented guidance: "PPMC responds
+and commits to a revival plan — do not proceed to a vote."
+
+===== FIXTURE METADATA: PodlingsMCP.tool_get_podling =====
+{
+  "podling": {
+    "name": "Osprey",
+    "resource": "osprey",
+    "status": "current",
+    "sponsor": "Incubator",
+    "champion": "Becket Qin",
+    "mentors": ["Becket Qin", "Liang Chen"],
+    "mentor_count": 2,
+    "startdate": "2025-06-10",
+    "months_in_incubation": 14,
+    "description": "Apache Osprey is a schema-registry and compatibility
+      checker for streaming data pipelines."
+  }
+}
+===== END FIXTURE METADATA =====
+
+-------------------------------------------------------------------------
+Step 1 — Stalled evidence assessment
+-------------------------------------------------------------------------
+
+INACTIVITY_CONFIG (default thresholds, unmodified):
+  commits:    window=3m,  metric=commits,      threshold<=5
+  mail_posts: window=6m,  metric=dev_messages, threshold<=5
+  releases:   window=12m, metric=releases,     threshold=0
+
+===== FIXTURE METADATA: HealthMCP.get_report_summary("Osprey") =====
+{
+  "podling": "Osprey",
+  "latest_metrics": {
+    "3m":  {"date_range": "2026-05-18 -> 2026-08-18", "commits": 4,  "unique_committers": 4, "unique_authors": 5,  "releases": 0, "new_contributors": 1, "dev_messages": 31, "dev_unique_posters": 8,  "bus50": 2, "avg_mentor_signoffs": 2.0},
+    "6m":  {"date_range": "2026-02-18 -> 2026-08-18", "commits": 68, "unique_committers": 7, "unique_authors": 9,  "releases": 1, "new_contributors": 3, "dev_messages": 84, "dev_unique_posters": 12, "bus50": 3, "avg_mentor_signoffs": 2.0},
+    "12m": {"date_range": "2025-08-18 -> 2026-08-18", "commits": 151,"unique_committers": 8, "unique_authors": 11, "releases": 2, "new_contributors": 5, "dev_messages": 167,"dev_unique_posters": 15, "bus50": 3, "avg_mentor_signoffs": 2.0}
+  }
+}
+# Note the 3m/6m contrast: the 3-month window (2026-05-18 -> 2026-08-18)
+# covers the primary committer's six-week parental leave (2026-06-01 ->
+# 2026-07-15), which suppressed commit volume specifically in that window
+# without affecting the 6m/12m trend.
+===== END FIXTURE METADATA =====
+
+Inactivity detection table (computed from the health snapshot above against
+the default thresholds):
+
+  Signal                Window  Observed  Threshold  Flagged
+  ------------------------------------------------------------
+  Commits (3m)           3m         4        <=5      *** YES ***
+  dev@ messages (6m)     6m        84        <=5      no
+  Releases (12m)         12m        2         =0      no
+
+  Confirmed flags: 1 / 3 (commits)
+
+===== FIXTURE METADATA: IncubatorMCP.tool_stalled_podlings
+      ({"health_source": "/Users/justinmclean/incubator/reports"}) =====
+{
+  "items": []
+}
+# Osprey is NOT present in tool_stalled_podlings' results: the IPMC strict
+# definition requires low commits AND low committers AND zero 12m releases
+# together. Unique committers (3m) is 4 and releases (12m) is 2, so the
+# strict definition does not match even though the commits signal alone
+# fired.
+===== END FIXTURE METADATA =====
+
+===== FIXTURE METADATA: IncubatorMCP.tool_ipmc_watchlist
+      ({"health_source": "...", "severity_at_least": "medium"}) =====
+{
+  "items": [
+    {
+      "podling": "Osprey",
+      "severity": "medium",
+      "reasons": ["temporary dip in 3-month commit volume — flagged for mentor awareness, not retirement"]
+    }
+  ]
+}
+===== END FIXTURE METADATA =====
+
+===== FIXTURE METADATA: IncubatorMCP.tool_podling_brief
+      ({"podling": "Osprey", "focus": ["status", "health", "risk"], "brief_format": "detailed"}) =====
+{
+  "status_summary": "Apache Osprey remains an active, growing community.
+    A short-term dip in commit volume this quarter is attributable to the
+    lead committer's parental leave; mailing-list activity, releases, and
+    contributor growth all remain healthy.",
+  "active_concerns": [
+    "3-month commit count is temporarily low due to a known, disclosed leave of absence"
+  ],
+  "outlook": "healthy"
+}
+===== END FIXTURE METADATA =====
+
+===== FIXTURE METADATA: ReportMCP.get_podling_reports("Osprey") (no limit; all cached, newest-first) =====
+{
+  "reports": [
+    {"report_period": "2026-07", "mentor_signoffs": 2, "issues": ["Commit volume temporarily low — lead committer on leave through mid-July"]},
+    {"report_period": "2026-04", "mentor_signoffs": 2, "issues": []},
+    {"report_period": "2026-01", "mentor_signoffs": 2, "issues": []},
+    {"report_period": "2025-10", "mentor_signoffs": 2, "issues": ["New podling ramp-up; building initial committer base"]}
+  ]
+}
+# No chronic issue: the only repeated theme (ramp-up in 2025-10) does not
+# recur, and the 2026-07 note is a one-off, explained dip, not a chronic
+# unresolved problem (appears in only 1 of 4 reports; chronic threshold is
+# >= 3).
+===== END FIXTURE METADATA =====
+
+Long incubation: 14 months (well under the 24-month guideline) -> long_incubation = False
+
+Retirement case strength (per the skill's own rule: "strong" if all three
+configurable flags triggered OR IPMC stalled signal severity is "high";
+"moderate" if one or two flags fired or a watchlist entry is present;
+"weak" if none):
+  all_three_flagged = False (only 1/3)
+  ipmc_high = False (not on tool_stalled_podlings at all)
+  confirmed_flags non-empty (commits) and watchlist_entry present (medium)
+  => retirement_case_strength = "moderate"
+
+-------------------------------------------------------------------------
+Step 2 — Mentor consultation record
+-------------------------------------------------------------------------
+
+===== FIXTURE METADATA: consultation.json (mentor-filled, per Step 2) =====
+{
+  "podling": "Osprey",
+  "contact_attempts": [
+    {"date": "2026-08-01", "method": "email to dev@osprey.apache.org", "response": "PPMC chair replied within 3 days"}
+  ],
+  "ppmc_willing_to_continue": true,
+  "mentor_recommendation": "continue",
+  "notes": "PPMC chair confirmed the lead committer is back from leave as
+    of 2026-07-15 and pointed to 6 merged PRs and 2 new contributor
+    sign-ups since their return. The PPMC committed to a concrete plan:
+    resume the normal review cadence and target the next dot release by
+    2026-09-30. Mentors are satisfied this is a temporary, explained dip,
+    not stall. Recommend a 90-day follow-up check via the monthly report
+    review skill rather than proceeding toward retirement."
+}
+===== END FIXTURE METADATA =====
+
+=========================================================================
+EXPECTED RETIREMENT DOSSIER OUTCOME
+=========================================================================
+
+Inactivity signals: 1 / 3 confirmed (commits only; mail_posts and
+  releases both pass comfortably)
+IPMC strict stalled definition: NOT matched (not present in
+  tool_stalled_podlings results at all)
+IPMC watchlist: present, severity MEDIUM (explicitly noted as "for mentor
+  awareness, not retirement")
+Long incubation: 14 months (well under the 24-month guideline)
+Chronic unresolved issue: none (the one flagged issue is a one-off,
+  explained cause, not a recurring pattern)
+Mentor consultation: 1 contact attempt, prompt PPMC response, PPMC
+  willing to continue, mentor recommendation = "continue", concrete
+  revival/continuation plan with a committed date
+
+Retirement case strength: MODERATE (on paper) — but see reasoning below
+
+Expected verdict: DO NOT RETIRE
+Reason: Although one configurable inactivity signal technically fired
+(3-month commits), the underlying cause is a disclosed, temporary leave of
+absence rather than genuine community collapse — mailing-list traffic,
+releases, and contributor growth all remain healthy, and the IPMC's own
+strict stalled definition (which requires all three signals together)
+does not match. The PPMC responded promptly to mentor outreach with a
+concrete, dated revival/continuation plan and evidence of renewed activity
+since the committer's return. Per the skill's own documented guidance,
+when the PPMC responds and commits to a credible plan, the shepherd should
+not proceed to a retirement vote — schedule a 90-day follow-up instead.

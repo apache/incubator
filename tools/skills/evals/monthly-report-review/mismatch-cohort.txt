@@ -1,0 +1,182 @@
+=========================================================================
+SIMULATED MONTHLY REPORT COHORT — NARRATIVE/HEALTH MISMATCH (Baremaps)
+Report period: 2026-08 | Reports due: 2026-08-05 | Mentor sign-off due:
+2026-08-12 | Board meeting: 2026-08-19
+=========================================================================
+
+This fixture stands in for the live ReportMCP / IncubatorMCP / HealthMCP /
+PodlingsMCP responses the monthly-report-review skill would otherwise pull
+live. It represents a three-podling reporting cohort for the 2026-08 period.
+Two podlings (Fluss, GeaFlow) are clean and included for contrast. The
+third, Baremaps, has filed a narrative that describes a healthy, active
+quarter and a shipped release — while the underlying health and release
+evidence show the podling is nearly inactive and the claimed release has no
+dist-tree corroboration. The expected outcome is a FLAGGED review that
+escalates Baremaps to the IPMC.
+
+-------------------------------------------------------------------------
+Podling 1 of 3: Fluss
+-------------------------------------------------------------------------
+
+===== FIXTURE METADATA: Step 2 — filing status (ReportMCP.get_podling_reports) =====
+# cached reports (newest first):
+#   report_period: 2026-08  <- matches current period: filed_this_period = True
+===== END FIXTURE METADATA =====
+
+Cached narrative (2026-08, filed 2026-08-03):
+
+  "Fluss continues steady development this quarter. We merged 34 PRs and
+  welcomed 2 new committers to the project. There are no blockers to
+  report."
+
+===== FIXTURE METADATA: Step 3 — health snapshot (HealthMCP.get_report_summary) =====
+# Fluss — latest_metrics['3m']: commits 41, unique_committers 8, bus50 3,
+#   bus75 5, releases 0, dev_messages 62, prs_merged 34,
+#   avg_mentor_signoffs 1.3, new_contributors 4
+# Narrative fully corroborated by health data (MATCH)
+===== END FIXTURE METADATA =====
+
+===== FIXTURE METADATA: Step 4 — cross-source checks (IncubatorMCP) =====
+# tool_cross_source_mismatches -> Fluss: []
+# tool_report_narrative_signals -> Fluss: []
+===== END FIXTURE METADATA =====
+
+-------------------------------------------------------------------------
+Podling 2 of 3: GeaFlow
+-------------------------------------------------------------------------
+
+===== FIXTURE METADATA: Step 2 — filing status (ReportMCP.get_podling_reports) =====
+# cached reports (newest first):
+#   report_period: 2026-08  <- matches current period: filed_this_period = True
+===== END FIXTURE METADATA =====
+
+Cached narrative (2026-08, filed 2026-08-04):
+
+  "GeaFlow shipped release 0.7.0-incubating in July, confirmed by three
+  binding IPMC +1 votes on the release thread. Community activity remains
+  stable."
+
+===== FIXTURE METADATA: Step 3 — health snapshot (HealthMCP.get_report_summary) =====
+# GeaFlow — latest_metrics['3m']: commits 19, unique_committers 6, bus50 3,
+#   bus75 4, releases 1, dev_messages 28, prs_merged 15,
+#   avg_mentor_signoffs 1.0, new_contributors 1
+# Narrative fully corroborated by health data (MATCH)
+===== END FIXTURE METADATA =====
+
+===== FIXTURE METADATA: Step 4 — cross-source checks (IncubatorMCP) =====
+# tool_cross_source_mismatches -> GeaFlow: []
+# tool_report_narrative_signals -> GeaFlow: []
+===== END FIXTURE METADATA =====
+
+-------------------------------------------------------------------------
+Podling 3 of 3: Baremaps  *** RED FLAG ***
+-------------------------------------------------------------------------
+
+===== FIXTURE METADATA: Step 1 — cohort (PodlingsMCP) =====
+# name: Baremaps  mentors: [Jean Bono, Raphael Luta]  startdate: 2023-01-09
+# months_in_incubation: 43
+===== END FIXTURE METADATA =====
+
+===== FIXTURE METADATA: Step 2 — filing status (ReportMCP.get_podling_reports) =====
+# cached reports (newest first):
+#   report_period: 2026-08  <- matches current period: filed_this_period = True
+#   report_period: 2026-05
+#   report_period: 2026-02
+#   report_period: 2025-11
+===== END FIXTURE METADATA =====
+
+Cached narrative (2026-08, filed 2026-08-05):
+
+  "Baremaps had a great quarter! Community engagement is strong, and we
+  shipped a new release. We're on track to begin graduation discussions
+  soon."
+
+  [Note: this text is nearly word-for-word identical to the "great
+  quarter... community engagement is strong" phrasing used in the
+  2026-05 cached narrative, with only "shipped a new release" swapped in.]
+
+===== FIXTURE METADATA: Step 3 — health snapshot (HealthMCP.get_report_summary) =====
+# Baremaps — latest_metrics['3m'] (2025-05-18 -> 2026-08-18):
+#   commits: 2
+#   unique_committers: 1
+#   bus50: 1   bus75: 1
+#   releases: 0
+#   dev_messages: 3
+#   prs_merged: 0
+#   avg_mentor_signoffs: 0.3
+#   new_contributors: 0
+#
+# Narrative says: "great quarter... community engagement is strong" ->
+#   health: commits 2, dev_messages 3, prs_merged 0, new_contributors 0
+#   in the 3m window (MISMATCH — this is one of the lowest-activity
+#   windows in the cohort, not a "great quarter")
+# Narrative says: "we shipped a new release" -> health: releases 0 in 3m
+#   window; no matching entry in the dist-tree release records for the
+#   period (MISMATCH — no corroborating evidence of a release)
+# avg_mentor_signoffs 0.3 (well below the expected ~1.0 count)
+===== END FIXTURE METADATA =====
+
+===== FIXTURE METADATA: Step 4 — cross-source checks (IncubatorMCP) =====
+# tool_cross_source_mismatches -> Baremaps:
+#   - signal: report_release_visibility_mismatch
+#     severity: high
+#     reason: "Narrative claims a release was shipped in the 2026-08
+#              report; no corresponding entry found in dist.apache.org
+#              release records or release-vote thread archive for the
+#              2026-05..2026-08 window."
+#
+# tool_report_narrative_signals -> Baremaps:
+#   - signal: release_without_evidence
+#     detail: "Report claims 'shipped a new release' with no dist
+#              evidence located."
+#   - signal: possible_report_copy_forward
+#     detail: "2026-08 narrative reuses 'great quarter... community
+#              engagement is strong' phrasing from the 2026-05 report
+#              nearly verbatim."
+#   - signal: low_mentor_signoff_count
+#     detail: "avg_mentor_signoffs 0.3 over the 3m window, below the
+#              expected sign-off cadence."
+===== END FIXTURE METADATA =====
+
+=========================================================================
+EXPECTED MONTHLY REPORT REVIEW OUTCOME
+=========================================================================
+
+Filing status:
+  Fluss     filed 2026-08-03 for 2026-08  (on time)
+  GeaFlow   filed 2026-08-04 for 2026-08  (on time)
+  Baremaps  filed 2026-08-05 for 2026-08  (on time — filing status is not
+            the problem here)
+
+Cross-source mismatches:
+  Baremaps  report_release_visibility_mismatch  severity: high
+
+Narrative signals:
+  Baremaps  release_without_evidence
+  Baremaps  possible_report_copy_forward
+  Baremaps  low_mentor_signoff_count
+
+Narrative-vs-health cross-check, per podling:
+  Fluss     MATCH
+  GeaFlow   MATCH
+  Baremaps  MISMATCH — narrative claims a strong, active quarter and a
+            shipped release; health snapshot shows 2 commits, 1 unique
+            committer, 0 PRs merged, 0 new contributors, and 0 releases
+            in the same 3-month window, with no dist evidence for the
+            claimed release
+
+Overall result: FLAGGED (1 of 3 cohort podlings)
+  - Baremaps: high-severity cross-source mismatch
+  - Baremaps: 3 narrative signals (release-without-evidence, copy-forward,
+    low mentor sign-off count)
+  - Fluss and GeaFlow: clean, no action needed
+
+Expected verdict: FLAGGED
+Reason: Baremaps' 2026-08 narrative describes a "great quarter" and a
+shipped release, but the health snapshot for the same window shows
+activity at its lowest levels in the cohort (2 commits, 1 unique
+committer) with no dist-tree evidence corroborating the claimed release,
+and the narrative text is largely reused from the prior period. This is a
+health-vs-narrative mismatch that should be escalated in the shepherd
+comment and flagged to the IPMC ahead of the 2026-08-19 board meeting —
+not treated as a routine filing.

@@ -1,0 +1,230 @@
+=========================================================================
+SIMULATED GRADUATION PACKET INPUTS — NOT YET READY TO GRADUATE
+Podling: Apache Grouse (incubating)
+=========================================================================
+
+This fixture stands in for the live IncubatorMCP / HealthMCP / PodlingsMCP /
+ReportMCP responses the graduation-packet-builder skill would otherwise pull
+live for Steps 1-4. It represents a podling whose mentors have asked about
+graduation prematurely: the community is effectively single-vendor and
+single-committer, its one release vote never ran on general@, and its name
+check turned up a live conflict. The expected outcome is assessment
+"not_yet_ready" with multiple explicit blockers, and a DISCUSS email that
+does NOT gloss over them.
+
+===== FIXTURE METADATA: PodlingsMCP.tool_get_podling =====
+{
+  "podling": {
+    "name": "Grouse",
+    "resource": "grouse",
+    "status": "current",
+    "sponsor": "Incubator",
+    "champion": "Alice Wang",
+    "mentors": ["Alice Wang", "David Okafor"],
+    "mentor_count": 2,
+    "startdate": "2024-09-01",
+    "months_in_incubation": 23,
+    "description": "Apache Grouse is a configuration-management toolkit
+      for edge-device fleets, originally contributed by a single vendor."
+  }
+}
+===== END FIXTURE METADATA =====
+
+-------------------------------------------------------------------------
+Step 1 — Graduation readiness assessment
+-------------------------------------------------------------------------
+
+===== FIXTURE METADATA: IncubatorMCP.tool_graduation_readiness
+      ({"podling": "Grouse", "include_evidence": true, "strict_mode": false}) =====
+{
+  "podling": "Grouse",
+  "assessment": "not_yet_ready",
+  "confidence": "medium",
+  "summary": "Apache Grouse has made technical progress but has not yet
+    demonstrated an independent, self-sustaining community. Commit activity
+    remains concentrated in a single committer employed by the founding
+    vendor, the sole release vote never ran on general@, and the proposed
+    name has an unresolved external conflict.",
+  "strengths": [
+    {"dimension": "ip_clearance", "statement": "SGA filed; all committer ICLAs on file"},
+    {"dimension": "reporting", "statement": "Board reports filed for 6 of the last 8 cycles"}
+  ],
+  "blockers": [
+    {"dimension": "community_diversity", "statement": "Bus-factor-50% is 1: a single committer employed by the founding vendor accounts for 71% of 12m commits. No evidence of an independent community forming outside the vendor."},
+    {"dimension": "release_governance", "statement": "The podling's only release vote (0.2.0-incubating) ran solely on dev@grouse.apache.org; no corresponding [VOTE] or [RESULT] thread was found on general@incubator.apache.org, so the release was never actually ratified by the IPMC."},
+    {"dimension": "naming", "statement": "Automated trademark check found a live conflict: an existing commercial product 'GrouseConfig' in the same software category. PODLINGNAMESEARCH JIRA has not been filed."},
+    {"dimension": "reporting", "statement": "2 of the last 8 board reports were not filed (2025-07, 2026-01), and the two most recent filed reports each re-raise the same open issue ('need more committers') without progress."}
+  ],
+  "missing_evidence": [
+    "No evidence of PPMC members from organisations other than the founding vendor"
+  ],
+  "dimension_scores": {
+    "release_maturity": 0.31,
+    "community_diversity": 0.18,
+    "ip_clearance": 0.80,
+    "reporting": 0.55,
+    "mentoring": 0.60
+  },
+  "evidence": [
+    {"dimension": "community_diversity", "statement": "9 of 11 committers, and the top committer by commit share, are employed by the founding vendor", "source": "HealthMCP + roster cross-check"},
+    {"dimension": "release_governance", "statement": "0 VOTE/RESULT threads for 0.2.0-incubating found on general@incubator.apache.org", "source": "IncubatorMCP.tool_release_vote_evidence"},
+    {"dimension": "naming", "statement": "'GrouseConfig' is an actively marketed commercial product in the same space", "source": "external trademark search"}
+  ],
+  "recommended_next_steps": [
+    "Recruit and elect committers/PPMC members from outside the founding vendor",
+    "Re-run the 0.2.0-incubating (or a new) release vote on general@incubator.apache.org",
+    "File a PODLINGNAMESEARCH JIRA and resolve the 'GrouseConfig' conflict, or propose an alternate name",
+    "Close the gap on the two missed board reports before requesting a graduation discussion"
+  ]
+}
+===== END FIXTURE METADATA =====
+
+-------------------------------------------------------------------------
+Step 2 — Name search status
+-------------------------------------------------------------------------
+
+===== FIXTURE METADATA: IncubatorMCP.tool_trademark_naming_check
+      ({"proposed_name": "Grouse", "include_external_search": true}) =====
+{
+  "podling": "Grouse",
+  "verdict": "WARN",
+  "apache_form": "Apache Grouse",
+  "blocking_issues": [],
+  "warnings": [
+    "External search found 'GrouseConfig', an actively marketed commercial configuration-management product in the same software category. Recommend trademarks@apache.org review before proceeding."
+  ],
+  "asf_name_conflicts": [],
+  "fuzzy_asf_results": [],
+  "external_search": {
+    "github": {"conflicts": 1, "notes": "'grouseconfig/grouseconfig-core' — actively maintained, unrelated org"},
+    "pypi": {"conflicts": 1, "notes": "package 'grouseconfig' published, same problem domain"},
+    "npm": {"conflicts": 0}
+  },
+  "summary": "WARN — a same-category commercial product with a confusingly
+    similar name exists. Not an automatic blocker, but must be resolved
+    with trademarks@apache.org before a graduation vote.",
+  "recommended_ipmc_action": "Escalate to trademarks@apache.org for a manual opinion before filing PODLINGNAMESEARCH.",
+  "podlingnamesearch_jira": "not yet filed"
+}
+===== END FIXTURE METADATA =====
+
+-------------------------------------------------------------------------
+Step 3 — Community history
+-------------------------------------------------------------------------
+
+===== FIXTURE METADATA: HealthMCP.get_report_summary("Grouse") =====
+{
+  "podling": "Grouse",
+  "latest_metrics": {
+    "3m":  {"commits": 22, "unique_committers": 3, "releases": 0, "bus50": 1, "bus75": 1, "dev_messages": 9,  "prs_merged": 6,  "avg_mentor_signoffs": 1.0, "new_contributors": 0},
+    "6m":  {"commits": 47, "unique_committers": 4, "releases": 1, "bus50": 1, "bus75": 2, "dev_messages": 17, "prs_merged": 14, "avg_mentor_signoffs": 1.0, "new_contributors": 1},
+    "12m": {"commits": 96, "unique_committers": 6, "releases": 1, "bus50": 1, "bus75": 2, "dev_messages": 33, "prs_merged": 29, "avg_mentor_signoffs": 0.9, "new_contributors": 2}
+  }
+}
+# bus50=1 across all windows: one committer alone accounts for >=50% of
+# commits in every window, including 12m. This is the single strongest
+# quantitative signal behind the community_diversity blocker above.
+===== END FIXTURE METADATA =====
+
+===== FIXTURE METADATA: ReportMCP.get_podling_reports("Grouse", limit=8) =====
+[
+  {"report_period": "2024-10", "mentor_signoffs": 2, "issues": []},
+  {"report_period": "2025-01", "mentor_signoffs": 1, "issues": ["Need more committers outside founding vendor"]},
+  {"report_period": "2025-04", "mentor_signoffs": 1, "issues": ["Need more committers outside founding vendor"]},
+  {"report_period": "2025-07", "mentor_signoffs": null, "issues": null, "note": "NOT FILED"},
+  {"report_period": "2025-10", "mentor_signoffs": 1, "issues": ["Need more committers outside founding vendor"]},
+  {"report_period": "2026-01", "mentor_signoffs": null, "issues": null, "note": "NOT FILED"},
+  {"report_period": "2026-04", "mentor_signoffs": 1, "issues": ["Need more committers outside founding vendor"]},
+  {"report_period": "2026-07", "mentor_signoffs": 1, "issues": ["Need more committers outside founding vendor"]}
+]
+# Same open issue ("need more committers outside founding vendor") recurs
+# in 5 of the 6 filed reports over 21 months with no resolution. 2 of the
+# 8 expected reports were never filed.
+===== END FIXTURE METADATA =====
+
+===== FIXTURE METADATA: IncubatorMCP.tool_cross_source_mismatches
+      ({"podling": "Grouse"}) =====
+[
+  {
+    "signal": "recurring_reported_issue",
+    "severity": "medium",
+    "reason": "'Need more committers outside founding vendor' has appeared verbatim or near-verbatim in 5 consecutive filed reports (2025-01 through 2026-07) with no measurable change in bus50."
+  }
+]
+===== END FIXTURE METADATA =====
+
+-------------------------------------------------------------------------
+Step 4 — Release history
+-------------------------------------------------------------------------
+
+===== FIXTURE METADATA: IncubatorMCP.tool_release_artifact_evidence
+      ({"podling": "Grouse", "include_platforms": true}) =====
+{
+  "podling": "Grouse",
+  "release_count": 1,
+  "last_release_date": "2025-04-30",
+  "cadence": "single release only, no established cadence",
+  "releases": [
+    {"version": "0.2.0-incubating", "date": "2025-04-30", "has_incubating": true, "vote_thread_id": "vote-grouse-0.2.0-20250428"}
+  ],
+  "incubator_naming": {"all_artifacts_include_incubating": true},
+  "platform_hints": {"github_tags": 1, "pypi_versions": 1, "maven_central": "n/a"},
+  "naming_violations": [],
+  "release_governance_concerns": [
+    "Only one release in 23 months of incubation; no cadence established."
+  ]
+}
+===== END FIXTURE METADATA =====
+
+===== FIXTURE METADATA: IncubatorMCP.tool_release_vote_evidence
+      ({"podling": "Grouse"}) =====
+{
+  "podling": "Grouse",
+  "observed": {"vote_count": 1, "result_count": 1},
+  "votes": [
+    {"version": "0.2.0-incubating", "list": "dev@grouse.apache.org", "binding_plus1": 4, "outcome": "PASS (podling dev@ only)"}
+  ],
+  "results": [
+    {"version": "0.2.0-incubating", "list": "dev@grouse.apache.org", "outcome": "RESULT posted to dev@ only"}
+  ],
+  "release_visibility_signals": [
+    {
+      "signal": "release_vote_missing_from_general",
+      "severity": "high",
+      "reason": "No [VOTE] or [RESULT] thread for 0.2.0-incubating was found on general@incubator.apache.org. Podling releases require an IPMC-binding vote on general@; a dev@-only vote does not satisfy Incubator policy."
+    }
+  ]
+}
+===== END FIXTURE METADATA =====
+
+=========================================================================
+EXPECTED GRADUATION PACKET OUTCOME
+=========================================================================
+
+Readiness assessment: NOT_YET_READY (confidence: medium)
+Blockers (4):
+  1. community_diversity — bus-factor-50% is 1 in every window; single
+     founding-vendor committer dominates all activity
+  2. release_governance — the only release vote never ran on
+     general@incubator.apache.org (high-severity release_visibility_signal)
+  3. naming — live external conflict with commercial product
+     "GrouseConfig"; PODLINGNAMESEARCH not yet filed
+  4. reporting — 2 of the last 8 board reports not filed; same open issue
+     recurring across 5 consecutive filed reports (medium-severity
+     cross-source mismatch)
+
+Name check: WARN (unresolved conflict, escalate to trademarks@apache.org)
+Release history: 1 release in 23 months, ratified only on the podling's
+  own dev@ list, never on general@
+Community: bus50=1 across 3m/6m/12m windows; no committers or PPMC members
+  from outside the founding vendor
+Reporting: 6/8 reports filed, 2 missed, 1 recurring unresolved issue
+
+Expected verdict: NOT GRADUATION-READY
+Reason: Multiple maturity-model dimensions fail: the community is not
+independent of its founding vendor (bus50=1), the sole release was never
+IPMC-ratified on general@, the proposed name has an unresolved external
+conflict, and reporting has gaps with a recurring, unaddressed issue. The
+packet and DISCUSS email must list every blocker explicitly rather than
+advocate for graduation; a graduation vote should not be proposed until
+these are resolved.

@@ -1,0 +1,195 @@
+=========================================================================
+SIMULATED GRADUATION PACKET INPUTS — READY TO GRADUATE
+Podling: Apache Kestrel (incubating)
+=========================================================================
+
+This fixture stands in for the live IncubatorMCP / HealthMCP / PodlingsMCP /
+ReportMCP responses the graduation-packet-builder skill would otherwise pull
+live for Steps 1-4. It represents a podling that meets every dimension of
+the Incubator maturity model. The expected outcome is assessment "ready"
+with zero blockers, a DISCUSS email ready to post as-is, and a clean board
+resolution draft.
+
+===== FIXTURE METADATA: PodlingsMCP.tool_get_podling =====
+{
+  "podling": {
+    "name": "Kestrel",
+    "resource": "kestrel",
+    "status": "current",
+    "sponsor": "Incubator",
+    "champion": "Priya Nair",
+    "mentors": ["Priya Nair", "Marcus Johansson", "Sarah Kim"],
+    "mentor_count": 3,
+    "startdate": "2023-05-08",
+    "months_in_incubation": 27,
+    "description": "Apache Kestrel is a lightweight distributed task-scheduling
+      framework for cloud-native batch and streaming workloads."
+  }
+}
+===== END FIXTURE METADATA =====
+
+-------------------------------------------------------------------------
+Step 1 — Graduation readiness assessment
+-------------------------------------------------------------------------
+
+===== FIXTURE METADATA: IncubatorMCP.tool_graduation_readiness
+      ({"podling": "Kestrel", "include_evidence": true, "strict_mode": false}) =====
+{
+  "podling": "Kestrel",
+  "assessment": "ready",
+  "confidence": "high",
+  "summary": "Apache Kestrel demonstrates strong maturity across all
+    required dimensions. The project has made 5 releases on Apache
+    infrastructure, maintains a PPMC spanning four organisations, files
+    board reports consistently with mentor sign-off, and has cleared the
+    PODLINGNAMESEARCH process.",
+  "strengths": [
+    {"dimension": "release_maturity", "statement": "5 releases on dist.apache.org, all correctly named with 'incubating'; all release votes passed on general@"},
+    {"dimension": "community_diversity", "statement": "PPMC spans 4 organisations; bus-factor-50% is 5 (to-date)"},
+    {"dimension": "reporting", "statement": "12 consecutive board reports filed with no gaps; avg mentor sign-offs 2.7"},
+    {"dimension": "ip_clearance", "statement": "SGA filed; all committer ICLAs on file; no open licensing issues"},
+    {"dimension": "independence", "statement": "No single organisation or committer accounts for more than 30% of 12m commits"}
+  ],
+  "blockers": [],
+  "missing_evidence": [],
+  "dimension_scores": {
+    "release_maturity": 0.93,
+    "community_diversity": 0.88,
+    "ip_clearance": 0.95,
+    "reporting": 0.91,
+    "mentoring": 0.89
+  },
+  "evidence": [
+    {"dimension": "release_maturity", "statement": "5 releases since May 2023, most recent 2026-06-30", "source": "dist.apache.org"},
+    {"dimension": "community_diversity", "statement": "16 unique committers in 12m window, bus50=5", "source": "HealthMCP"},
+    {"dimension": "reporting", "statement": "12 board reports filed, 0 missed months, avg 2.7 mentor sign-offs", "source": "ReportMCP"}
+  ],
+  "recommended_next_steps": [
+    "Confirm multi-org PPMC on Whimsy",
+    "Propose initial PMC and chair on general@incubator.apache.org",
+    "File the graduation resolution for the next board agenda"
+  ]
+}
+===== END FIXTURE METADATA =====
+
+-------------------------------------------------------------------------
+Step 2 — Name search status
+-------------------------------------------------------------------------
+
+===== FIXTURE METADATA: IncubatorMCP.tool_trademark_naming_check
+      ({"proposed_name": "Kestrel", "include_external_search": true}) =====
+{
+  "podling": "Kestrel",
+  "verdict": "PASS",
+  "apache_form": "Apache Kestrel",
+  "blocking_issues": [],
+  "warnings": [],
+  "asf_name_conflicts": [],
+  "fuzzy_asf_results": [],
+  "external_search": {
+    "github": {"conflicts": 0, "notes": "several unrelated small repos named 'kestrel'; no software-suite-level conflict"},
+    "pypi": {"conflicts": 0},
+    "npm": {"conflicts": 0}
+  },
+  "summary": "No conflicting trademarks or ASF namespace collisions found for 'Kestrel' in the software/technology class.",
+  "recommended_ipmc_action": "Proceed with PODLINGNAMESEARCH JIRA filing; automated checks are clean.",
+  "podlingnamesearch_jira": "PODLINGNAMESEARCH-812 (filed 2026-06-02, VP Brand Management approved 2026-06-20)"
+}
+===== END FIXTURE METADATA =====
+
+-------------------------------------------------------------------------
+Step 3 — Community history
+-------------------------------------------------------------------------
+
+===== FIXTURE METADATA: HealthMCP.get_report_summary("Kestrel") =====
+{
+  "podling": "Kestrel",
+  "latest_metrics": {
+    "3m":  {"commits": 58, "unique_committers": 9,  "releases": 1, "bus50": 4, "bus75": 6, "dev_messages": 140, "prs_merged": 39, "avg_mentor_signoffs": 2.7, "new_contributors": 3},
+    "6m":  {"commits": 115,"unique_committers": 12, "releases": 2, "bus50": 5, "bus75": 8, "dev_messages": 310, "prs_merged": 76, "avg_mentor_signoffs": 2.7, "new_contributors": 6},
+    "12m": {"commits": 233,"unique_committers": 16, "releases": 3, "bus50": 5, "bus75": 9, "dev_messages": 640, "prs_merged": 151,"avg_mentor_signoffs": 2.7, "new_contributors": 11}
+  }
+}
+===== END FIXTURE METADATA =====
+
+===== FIXTURE METADATA: ReportMCP.get_podling_reports("Kestrel", limit=12) =====
+[
+  {"report_period": "2023-10", "mentor_signoffs": 2, "issues": []},
+  {"report_period": "2024-01", "mentor_signoffs": 3, "issues": []},
+  {"report_period": "2024-04", "mentor_signoffs": 3, "issues": ["Needs more diverse reviewer base"]},
+  {"report_period": "2024-07", "mentor_signoffs": 2, "issues": []},
+  {"report_period": "2024-10", "mentor_signoffs": 3, "issues": []},
+  {"report_period": "2025-01", "mentor_signoffs": 3, "issues": []},
+  {"report_period": "2025-04", "mentor_signoffs": 3, "issues": []},
+  {"report_period": "2025-07", "mentor_signoffs": 3, "issues": []},
+  {"report_period": "2025-10", "mentor_signoffs": 3, "issues": []},
+  {"report_period": "2026-01", "mentor_signoffs": 3, "issues": []},
+  {"report_period": "2026-04", "mentor_signoffs": 3, "issues": []},
+  {"report_period": "2026-07", "mentor_signoffs": 3, "issues": []}
+]
+# No missed months across 12 cycles; the one reviewer-diversity issue raised
+# in 2024-04 does not recur in any later report.
+===== END FIXTURE METADATA =====
+
+===== FIXTURE METADATA: IncubatorMCP.tool_cross_source_mismatches
+      ({"podling": "Kestrel"}) =====
+[]
+===== END FIXTURE METADATA =====
+
+-------------------------------------------------------------------------
+Step 4 — Release history
+-------------------------------------------------------------------------
+
+===== FIXTURE METADATA: IncubatorMCP.tool_release_artifact_evidence
+      ({"podling": "Kestrel", "include_platforms": true}) =====
+{
+  "podling": "Kestrel",
+  "release_count": 5,
+  "last_release_date": "2026-06-30",
+  "cadence": "approximately quarterly",
+  "releases": [
+    {"version": "0.1.0-incubating", "date": "2023-09-12", "has_incubating": true, "vote_thread_id": "vote-kestrel-0.1.0-20230912"},
+    {"version": "0.3.0-incubating", "date": "2024-03-04", "has_incubating": true, "vote_thread_id": "vote-kestrel-0.3.0-20240304"},
+    {"version": "0.6.0-incubating", "date": "2024-11-18", "has_incubating": true, "vote_thread_id": "vote-kestrel-0.6.0-20241118"},
+    {"version": "1.0.0-incubating", "date": "2025-08-05", "has_incubating": true, "vote_thread_id": "vote-kestrel-1.0.0-20250805"},
+    {"version": "1.1.0-incubating", "date": "2026-06-30", "has_incubating": true, "vote_thread_id": "vote-kestrel-1.1.0-20260630"}
+  ],
+  "incubator_naming": {"all_artifacts_include_incubating": true},
+  "platform_hints": {"github_tags": 5, "pypi_versions": 5, "maven_central": "n/a"},
+  "naming_violations": [],
+  "release_governance_concerns": []
+}
+===== END FIXTURE METADATA =====
+
+===== FIXTURE METADATA: IncubatorMCP.tool_release_vote_evidence
+      ({"podling": "Kestrel"}) =====
+{
+  "podling": "Kestrel",
+  "observed": {"vote_count": 5, "result_count": 5},
+  "votes": [
+    {"version": "1.1.0-incubating", "list": "general@incubator.apache.org", "binding_plus1": 3, "outcome": "PASS"}
+  ],
+  "release_visibility_signals": []
+}
+===== END FIXTURE METADATA =====
+
+=========================================================================
+EXPECTED GRADUATION PACKET OUTCOME
+=========================================================================
+
+Readiness assessment: READY (confidence: high)
+Blockers: none
+Name check: PASS (PODLINGNAMESEARCH-812 filed and approved)
+Release history: 5 releases on Apache infra, all named with "incubating",
+  all release votes passed on general@incubator.apache.org
+Community: 16 unique committers (12m), bus-factor-50% = 5, PPMC spans 4
+  organisations, no single-org or single-committer dominance
+Reporting: 12/12 board reports filed, 0 gaps, avg mentor sign-offs 2.7
+Cross-source mismatches: none
+
+Expected verdict: GRADUATION-READY
+Reason: Every maturity-model dimension (release maturity, community
+diversity, IP clearance, reporting, mentoring) is satisfied with high
+confidence and zero blockers. The DISCUSS email and board resolution
+should be drafted as-is, with no caveats beyond the routine "PPMC list
+subject to mentor confirmation" note.

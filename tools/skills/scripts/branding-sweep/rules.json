@@ -1,0 +1,157 @@
+[
+  {
+    "id": "incubating-disclaimer",
+    "category": "legal",
+    "severity": "critical",
+    "description": "Every page/document must carry the standard ASF incubating disclaimer",
+    "requirement": "The required disclaimer text must appear verbatim on the project website and in release artifacts. Accepted forms: full paragraph beginning 'Apache <Name> is an effort undergoing incubation at The Apache Software Foundation (ASF)…' or the short form approved by the IPMC.",
+    "check": {
+      "type": "text_contains",
+      "targets": ["homepage", "release_notes", "readme"],
+      "patterns": [
+        "is an effort undergoing incubation at The Apache Software Foundation",
+        "undergoing incubation at the Apache Software Foundation"
+      ],
+      "case_insensitive": true
+    },
+    "references": [
+      "https://incubator.apache.org/policy/incubation.html#disclaimers"
+    ]
+  },
+  {
+    "id": "apache-name-prefix",
+    "category": "naming",
+    "severity": "critical",
+    "description": "The project must use 'Apache <Name> (Incubating)' as its full name in all formal contexts",
+    "requirement": "The project name must be prefixed with 'Apache' and suffixed with '(Incubating)' in all formal contexts including the project homepage title, navigation, release artifact names, and announcement emails. Informal shorthand (e.g. just the project name) is acceptable in conversational contexts only.",
+    "check": {
+      "type": "text_contains",
+      "targets": ["homepage_title", "release_artifact_names"],
+      "patterns": [
+        "Apache {name} (Incubating)",
+        "Apache {name}\\s*\\(Incubating\\)"
+      ],
+      "case_insensitive": false
+    },
+    "references": [
+      "https://incubator.apache.org/policy/incubation.html#project_name_and_description"
+    ]
+  },
+  {
+    "id": "disclaimer-file-present",
+    "category": "legal",
+    "severity": "critical",
+    "description": "A DISCLAIMER or DISCLAIMER-WIP file must be present in the root of every source and binary release",
+    "requirement": "Release archives must contain a file named DISCLAIMER or DISCLAIMER-WIP at the archive root. The file must contain the standard ASF incubating disclaimer text.",
+    "check": {
+      "type": "file_exists",
+      "targets": ["release_archive_root"],
+      "filenames": ["DISCLAIMER", "DISCLAIMER-WIP"]
+    },
+    "references": [
+      "https://incubator.apache.org/policy/incubation.html#disclaimers",
+      "https://www.apache.org/legal/resolved.html"
+    ]
+  },
+  {
+    "id": "notice-file-present",
+    "category": "legal",
+    "severity": "critical",
+    "description": "A NOTICE file must be present at the root of every release artifact",
+    "requirement": "Release archives must contain a NOTICE file at the archive root. The NOTICE file must include the project copyright statement and any legally required third-party notices.",
+    "check": {
+      "type": "file_exists",
+      "targets": ["release_archive_root", "source_repo_root"],
+      "filenames": ["NOTICE"]
+    },
+    "references": [
+      "https://www.apache.org/legal/src-headers.html#notice"
+    ]
+  },
+  {
+    "id": "license-file-present",
+    "category": "legal",
+    "severity": "critical",
+    "description": "A LICENSE file containing the Apache License 2.0 text must be present in every release artifact",
+    "requirement": "Release archives and source repositories must contain a LICENSE file at the root. The file must contain the full Apache License 2.0 text, plus any bundled dependency license texts as required.",
+    "check": {
+      "type": "file_exists",
+      "targets": ["release_archive_root", "source_repo_root"],
+      "filenames": ["LICENSE"]
+    },
+    "references": [
+      "https://www.apache.org/legal/src-headers.html#license"
+    ]
+  },
+  {
+    "id": "homepage-asf-branding",
+    "category": "branding",
+    "severity": "high",
+    "description": "Project homepage must link to apache.org and display ASF affiliation",
+    "requirement": "The project homepage must include a visible link to https://www.apache.org/ and identify the project as part of the Apache Software Foundation. The ASF feather logo or equivalent attribution is strongly recommended.",
+    "check": {
+      "type": "link_exists",
+      "targets": ["homepage"],
+      "urls": ["https://www.apache.org", "http://www.apache.org"],
+      "link_text_patterns": ["Apache Software Foundation", "ASF"]
+    },
+    "references": [
+      "https://www.apache.org/foundation/marks/pmcs#websites"
+    ]
+  },
+  {
+    "id": "homepage-incubator-branding",
+    "category": "branding",
+    "severity": "high",
+    "description": "Project homepage must link to the Apache Incubator",
+    "requirement": "The project homepage must include a visible link to https://incubator.apache.org/ identifying that the project is undergoing incubation.",
+    "check": {
+      "type": "link_exists",
+      "targets": ["homepage"],
+      "urls": ["https://incubator.apache.org", "http://incubator.apache.org"]
+    },
+    "references": [
+      "https://incubator.apache.org/policy/incubation.html"
+    ]
+  },
+  {
+    "id": "no-graduated-claim",
+    "category": "naming",
+    "severity": "high",
+    "description": "Project must not claim to be a top-level Apache project while incubating",
+    "requirement": "While in the Incubator, the project must not describe itself as a 'Top-Level Project (TLP)' or omit the '(Incubating)' qualifier in formal contexts. Marketing materials must not imply graduation has occurred.",
+    "check": {
+      "type": "text_absent",
+      "targets": ["homepage", "readme", "release_notes"],
+      "patterns": [
+        "Apache Top-Level Project",
+        "graduated from",
+        "is now a top-level"
+      ],
+      "case_insensitive": true
+    },
+    "references": [
+      "https://incubator.apache.org/policy/incubation.html"
+    ]
+  },
+  {
+    "id": "trademark-attribution",
+    "category": "branding",
+    "severity": "medium",
+    "description": "Website must include ASF trademark attribution statement",
+    "requirement": "The project website footer or about page should include a statement that the Apache feather logo and 'Apache' are trademarks of The Apache Software Foundation, per ASF brand policy.",
+    "check": {
+      "type": "text_contains",
+      "targets": ["homepage_footer", "about_page"],
+      "patterns": [
+        "trademark of The Apache Software Foundation",
+        "trademarks of the Apache Software Foundation",
+        "Apache® is a registered trademark"
+      ],
+      "case_insensitive": true
+    },
+    "references": [
+      "https://www.apache.org/foundation/marks/"
+    ]
+  }
+]

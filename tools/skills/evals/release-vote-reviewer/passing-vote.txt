@@ -1,0 +1,204 @@
+=========================================================================
+SIMULATED VOTE THREAD — ALL CHECKS PASS
+Thread: general@incubator.apache.org
+=========================================================================
+
+------------------------------------------------------------------------
+Message 1 of 5
+From:    Alice Wang <alice@apache.org>
+To:      general@incubator.apache.org
+Date:    Mon, 10 Aug 2026 09:00:00 +0000
+Subject: [VOTE] Release Apache Sparrow 1.2.0 (incubating)
+Message-ID: <vote-sparrow-1.2.0-20260810@apache.org>
+------------------------------------------------------------------------
+
+Hello Incubator PMC,
+
+The Apache Sparrow (incubating) community has voted to release
+Apache Sparrow 1.2.0-incubating on the podling dev list. We now ask
+the Incubator PMC to cast their votes.
+
+Release artifacts are available at:
+  https://dist.apache.org/repos/dist/dev/incubator/sparrow/1.2.0-incubating/
+
+The following files are available for review:
+
+  apache-sparrow-1.2.0-incubating-src.tar.gz
+  apache-sparrow-1.2.0-incubating-src.tar.gz.asc
+  apache-sparrow-1.2.0-incubating-src.tar.gz.sha512
+  apache-sparrow-1.2.0-incubating-bin.tar.gz
+  apache-sparrow-1.2.0-incubating-bin.tar.gz.asc
+  apache-sparrow-1.2.0-incubating-bin.tar.gz.sha512
+
+KEYS file:
+  https://dist.apache.org/repos/dist/dev/incubator/sparrow/KEYS
+
+Git tag: v1.2.0-incubating
+  https://github.com/apache/incubator-sparrow/releases/tag/v1.2.0-incubating
+
+The release notes are available here:
+  https://github.com/apache/incubator-sparrow/blob/v1.2.0-incubating/RELEASE-NOTES.md
+
+The vote will be open for 72 hours. Please cast your vote.
+
+[ ] +1 Release this package
+[ ]  0 I don't feel strongly about it, but I'll help if needed
+[ ] -1 Do not release this package because...
+
+Alice Wang
+Apache Sparrow (incubating) Release Manager
+
+===== FIXTURE METADATA =====
+# Staging directory listing (simulated incubator-releases MCP response):
+#
+#   apache-sparrow-1.2.0-incubating-src.tar.gz        (45,231,204 bytes)
+#   apache-sparrow-1.2.0-incubating-src.tar.gz.asc    (833 bytes)
+#   apache-sparrow-1.2.0-incubating-src.tar.gz.sha512 (128 bytes)
+#   apache-sparrow-1.2.0-incubating-bin.tar.gz        (38,104,512 bytes)
+#   apache-sparrow-1.2.0-incubating-bin.tar.gz.asc    (833 bytes)
+#   apache-sparrow-1.2.0-incubating-bin.tar.gz.sha512 (128 bytes)
+#
+# All filenames contain the substring "incubating": PASS
+#
+# SHA-512 sidecar contents (simulated):
+#   apache-sparrow-1.2.0-incubating-src.tar.gz.sha512:
+#     3d7f2a1bc04e98f1a2b3c4d5e6f70819293a4b5c6d7e8f9a0b1c2d3e4f5a6b7
+#     c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8
+#   apache-sparrow-1.2.0-incubating-bin.tar.gz.sha512:
+#     9a8b7c6d5e4f3a2b1c0d9e8f7a6b5c4d3e2f1a0b9c8d7e6f5a4b3c2d1e0f9a8
+#     b7c6d5e4f3a2b1c0d9e8f7a6b5c4d3e2f1a0b9c8d7e6f5a4b3c2d1e0f9a8b7
+#
+# Computed SHA-512 digests match published sidecars: PASS (both artifacts)
+#
+# GPG signature verification (simulated):
+#   KEYS file imported: 3 keys (Alice Wang <alice@apache.org>,
+#                                Bob Chen <bob@apache.org>,
+#                                Carol Singh <carol@apache.org>)
+#   apache-sparrow-1.2.0-incubating-src.tar.gz.asc:
+#     Signed by: 0xABCD1234 Alice Wang <alice@apache.org> — key in KEYS: yes
+#     Verification: PASS
+#   apache-sparrow-1.2.0-incubating-bin.tar.gz.asc:
+#     Signed by: 0xABCD1234 Alice Wang <alice@apache.org> — key in KEYS: yes
+#     Verification: PASS
+#
+# Source archive top-level contents (simulated unpack):
+#   apache-sparrow-1.2.0-incubating-src/
+#     DISCLAIMER          ← present
+#     LICENSE
+#     NOTICE
+#     README.md
+#     src/
+#
+# DISCLAIMER file contents:
+#   Apache Sparrow is an effort undergoing incubation at The Apache Software
+#   Foundation (ASF), sponsored by the Apache Incubator. Incubation is
+#   required of all newly accepted projects until a further review indicates
+#   that the infrastructure, communications, and decision making process have
+#   stabilized in a manner consistent with other successful ASF projects.
+#   While incubation status is not necessarily a reflection of the
+#   completeness or stability of the code, it does indicate that the project
+#   has yet to be fully endorsed by the ASF.
+#
+# DISCLAIMER contents match canonical Apache Incubator template: PASS
+===== END FIXTURE METADATA =====
+
+------------------------------------------------------------------------
+Message 2 of 5
+From:    David Okafor <david@apache.org>
+To:      general@incubator.apache.org
+Date:    Mon, 10 Aug 2026 11:23:45 +0000
+Subject: Re: [VOTE] Release Apache Sparrow 1.2.0 (incubating)
+In-Reply-To: <vote-sparrow-1.2.0-20260810@apache.org>
+------------------------------------------------------------------------
+
++1 (binding)
+
+I checked:
+- All artifact filenames include "incubating": yes
+- GPG signatures verify against the KEYS file (key 0xABCD1234): yes
+- SHA-512 checksums match: yes
+- DISCLAIMER present and correct: yes
+- Source and binary archives look complete
+
+David Okafor
+IPMC Member
+
+------------------------------------------------------------------------
+Message 3 of 5
+From:    Priya Nair <priya@apache.org>
+To:      general@incubator.apache.org
+Date:    Mon, 10 Aug 2026 14:07:12 +0000
+Subject: Re: [VOTE] Release Apache Sparrow 1.2.0 (incubating)
+In-Reply-To: <vote-sparrow-1.2.0-20260810@apache.org>
+------------------------------------------------------------------------
+
++1 (binding)
+
+Verified signatures, checksums, and DISCLAIMER. Filenames all correctly
+include "incubating". Nice clean release.
+
+Priya Nair
+IPMC Member / Sparrow Mentor
+
+------------------------------------------------------------------------
+Message 4 of 5
+From:    Marcus Johansson <marcus@apache.org>
+To:      general@incubator.apache.org
+Date:    Tue, 11 Aug 2026 08:45:33 +0000
+Subject: Re: [VOTE] Release Apache Sparrow 1.2.0 (incubating)
+In-Reply-To: <vote-sparrow-1.2.0-20260810@apache.org>
+------------------------------------------------------------------------
+
++1 (binding)
+
+Ran through the full checklist:
+[x] Artifacts present and all named with "incubating"
+[x] GPG sigs valid (Alice's key 0xABCD1234 in KEYS file)
+[x] SHA-512 checksums match
+[x] DISCLAIMER file present with correct wording
+[x] License headers spot-checked in source archive
+
+Marcus Johansson
+IPMC Member
+
+------------------------------------------------------------------------
+Message 5 of 5
+From:    Sarah Kim <sarah@apache.org>
+To:      general@incubator.apache.org
+Date:    Tue, 11 Aug 2026 10:02:18 +0000
+Subject: Re: [VOTE] Release Apache Sparrow 1.2.0 (incubating)
+In-Reply-To: <vote-sparrow-1.2.0-20260810@apache.org>
+------------------------------------------------------------------------
+
++1 (non-binding)
+
+Checked the source archive and signatures. Everything looks good.
+
+Sarah Kim
+Apache Sparrow PPMC Member
+
+=========================================================================
+EXPECTED VOTE REVIEW OUTCOME
+=========================================================================
+
+Binding votes:
+  +1  David Okafor   (IPMC)
+  +1  Priya Nair     (IPMC)
+  +1  Marcus Johansson (IPMC)
+   0  (none)
+  -1  (none)
+
+Non-binding votes:
+  +1  Sarah Kim (PPMC, not IPMC)
+
+Overall result: PASS
+  - 3 binding +1s (threshold met)
+  - 0 binding -1s (no blockers)
+
+All technical checks: PASS
+  - Filenames: PASS (all contain "incubating")
+  - GPG signatures: PASS (both artifacts)
+  - Checksums: PASS (both artifacts)
+  - DISCLAIMER: PASS (present, correct wording)
+
+Expected draft vote: +1 (binding)

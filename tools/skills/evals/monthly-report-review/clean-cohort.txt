@@ -1,0 +1,185 @@
+=========================================================================
+SIMULATED MONTHLY REPORT COHORT — ALL NARRATIVES MATCH HEALTH DATA
+Report period: 2026-08 | Reports due: 2026-08-05 | Mentor sign-off due:
+2026-08-12 | Board meeting: 2026-08-19
+=========================================================================
+
+This fixture stands in for the live ReportMCP / IncubatorMCP / HealthMCP /
+PodlingsMCP responses the monthly-report-review skill would otherwise pull
+live. It represents a three-podling reporting cohort for the 2026-08 period
+where every filed narrative is a faithful reflection of the underlying
+health signals — the expected outcome is a clean review with no shepherd
+escalations required.
+
+===== FIXTURE METADATA: Step 1 — cohort (ReportMCP.report_due_dates /
+      PodlingsMCP.tool_reporting_schedule) =====
+# report_period: 2026-08
+# reports_due:        2026-08-05
+# mentor_signoff_due: 2026-08-12
+# board_meeting:      2026-08-19
+#
+# Cohort (due_this_month=True):
+#   - name: Fluss    mentors: [Jark Wu, Becket Qin]      startdate: 2024-11-01  months_in_incubation: 21
+#   - name: GeaFlow  mentors: [Liang Chen, PJ Fanning]    startdate: 2023-06-14  months_in_incubation: 38
+#   - name: Otava    mentors: [Calvin Kirs, Yu Xiao]      startdate: 2025-02-10  months_in_incubation: 18
+===== END FIXTURE METADATA =====
+
+-------------------------------------------------------------------------
+Podling 1 of 3: Fluss
+-------------------------------------------------------------------------
+
+===== FIXTURE METADATA: Step 2 — filing status (ReportMCP.get_podling_reports) =====
+# cached reports (newest first):
+#   report_period: 2026-08  <- matches current period: filed_this_period = True
+#   report_period: 2026-05
+#   report_period: 2026-02
+===== END FIXTURE METADATA =====
+
+Cached narrative (2026-08, filed 2026-08-03):
+
+  "Fluss continues steady development this quarter. We merged 34 PRs and
+  welcomed 2 new committers to the project. There are no blockers to
+  report. The community is working toward its first Apache release,
+  targeted for Q4 2026, and has opened the release-process discussion on
+  dev@."
+
+===== FIXTURE METADATA: Step 3 — health snapshot (HealthMCP.get_report_summary) =====
+# Fluss — latest_metrics['3m'] (2025-05-18 -> 2026-08-18):
+#   commits: 41
+#   unique_committers: 8
+#   bus50: 3   bus75: 5
+#   releases: 0
+#   dev_messages: 62
+#   prs_merged: 34
+#   avg_mentor_signoffs: 1.3
+#   new_contributors: 4
+#
+# Narrative says: "merged 34 PRs" -> health: prs_merged 34 (MATCH)
+# Narrative says: "2 new committers" -> health: new_contributors 4, consistent
+#   with committer growth, no overstatement
+# Narrative says: "working toward its first release" (no release claimed
+#   yet) -> health: releases 0 in 3m (MATCH, no premature release claim)
+===== END FIXTURE METADATA =====
+
+===== FIXTURE METADATA: Step 4 — cross-source checks (IncubatorMCP) =====
+# tool_cross_source_mismatches -> Fluss: [] (none)
+# tool_report_narrative_signals -> Fluss: [] (none)
+===== END FIXTURE METADATA =====
+
+-------------------------------------------------------------------------
+Podling 2 of 3: GeaFlow
+-------------------------------------------------------------------------
+
+===== FIXTURE METADATA: Step 2 — filing status (ReportMCP.get_podling_reports) =====
+# cached reports (newest first):
+#   report_period: 2026-08  <- matches current period: filed_this_period = True
+#   report_period: 2026-05
+#   report_period: 2026-02
+===== END FIXTURE METADATA =====
+
+Cached narrative (2026-08, filed 2026-08-04):
+
+  "GeaFlow shipped release 0.7.0-incubating in July, confirmed by three
+  binding IPMC +1 votes on the release thread. Community activity remains
+  stable, with regular design discussion on dev@ and no open licensing
+  issues."
+
+===== FIXTURE METADATA: Step 3 — health snapshot (HealthMCP.get_report_summary) =====
+# GeaFlow — latest_metrics['3m'] (2025-05-18 -> 2026-08-18):
+#   commits: 19
+#   unique_committers: 6
+#   bus50: 3   bus75: 4
+#   releases: 1
+#   dev_messages: 28
+#   prs_merged: 15
+#   avg_mentor_signoffs: 1.0
+#   new_contributors: 1
+#
+# Narrative says: "shipped release 0.7.0-incubating in July" -> health:
+#   releases 1 in 3m window (MATCH — dist evidence and release record
+#   corroborate the claim)
+# Narrative says: "community activity remains stable" -> health: commits
+#   19, dev_messages 28, in line with prior quarter (no overstatement)
+===== END FIXTURE METADATA =====
+
+===== FIXTURE METADATA: Step 4 — cross-source checks (IncubatorMCP) =====
+# tool_cross_source_mismatches -> GeaFlow: [] (none)
+# tool_report_narrative_signals -> GeaFlow: [] (none)
+===== END FIXTURE METADATA =====
+
+-------------------------------------------------------------------------
+Podling 3 of 3: Otava
+-------------------------------------------------------------------------
+
+===== FIXTURE METADATA: Step 2 — filing status (ReportMCP.get_podling_reports) =====
+# cached reports (newest first):
+#   report_period: 2026-08  <- matches current period: filed_this_period = True
+#   report_period: 2026-05
+===== END FIXTURE METADATA =====
+
+Cached narrative (2026-08, filed 2026-08-05):
+
+  "Otava's growth has been modest but steady this quarter. Bus factor
+  remains a concern for the project — the majority of commits still come
+  from two committers. We have opened a 'good first issue' initiative and
+  are actively recruiting new contributors to broaden that base."
+
+===== FIXTURE METADATA: Step 3 — health snapshot (HealthMCP.get_report_summary) =====
+# Otava — latest_metrics['3m'] (2025-05-18 -> 2026-08-18):
+#   commits: 11
+#   unique_committers: 3
+#   bus50: 2   bus75: 2
+#   releases: 0
+#   dev_messages: 14
+#   prs_merged: 6
+#   avg_mentor_signoffs: 1.0
+#   new_contributors: 1
+#
+# Narrative says: "bus factor remains a concern, majority of commits from
+#   two committers" -> health: bus50 2 (MATCH — narrative self-reports the
+#   same concern the health data shows; this is accurate disclosure, not a
+#   mismatch)
+# Narrative says: "modest but steady growth" -> health: commits 11,
+#   unique_committers 3, both low but consistent with "modest" framing
+#   (no overstatement)
+===== END FIXTURE METADATA =====
+
+===== FIXTURE METADATA: Step 4 — cross-source checks (IncubatorMCP) =====
+# tool_cross_source_mismatches -> Otava: [] (none)
+# tool_report_narrative_signals -> Otava: [] (none)
+#   (avg_mentor_signoffs 1.0 is at the expected count; not flagged as
+#   low_mentor_signoff_count)
+===== END FIXTURE METADATA =====
+
+=========================================================================
+EXPECTED MONTHLY REPORT REVIEW OUTCOME
+=========================================================================
+
+Filing status:
+  Fluss    filed 2026-08-03 for 2026-08  (on time)
+  GeaFlow  filed 2026-08-04 for 2026-08  (on time)
+  Otava    filed 2026-08-05 for 2026-08  (on time, due date)
+
+Cross-source mismatches: none (0 podlings with medium/high severity findings)
+Narrative signals: none (no copy-forward, no release-without-evidence, no
+  low mentor sign-off counts)
+
+Narrative-vs-health cross-check, per podling:
+  Fluss    MATCH — PR count and release status corroborated by health data
+  GeaFlow  MATCH — claimed release corroborated by release count and dist
+           evidence
+  Otava    MATCH — narrative candidly discloses the same bus-factor
+           concern the health snapshot shows; accurate self-reporting is
+           not a mismatch even though the underlying metric is weak
+
+Overall result: CLEAN
+  - All 3 cohort podlings filed on time
+  - 0 cross-source mismatches
+  - 0 narrative signals
+  - 0 narrative/health discrepancies requiring a shepherd escalation
+
+Expected verdict: NO CONCERNS
+Reason: Every filed narrative in this cohort is corroborated by (or
+candidly consistent with) the underlying health and release evidence.
+Shepherd comments should be routine/light-touch (filing confirmation,
+open-issue follow-up) with no red-flag escalations to general@.

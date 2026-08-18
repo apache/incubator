@@ -1,0 +1,169 @@
+=========================================================================
+SIMULATED RETIREMENT DOSSIER INPUTS — GENUINELY STALLED PODLING
+Podling: Apache Bittern (incubating)
+=========================================================================
+
+This fixture stands in for the live IncubatorMCP / HealthMCP / PodlingsMCP /
+ReportMCP responses the retirement-shepherd skill would otherwise pull live
+for Step 1 (stalled-evidence assessment) and Step 2 (mentor consultation
+record). All three configurable inactivity signals fire, the IPMC strict
+stalled definition also fires at high severity, and mentor outreach has
+gone unanswered. The expected outcome is a "strong" retirement case and a
+mentor recommendation to retire.
+
+===== FIXTURE METADATA: PodlingsMCP.tool_get_podling =====
+{
+  "podling": {
+    "name": "Bittern",
+    "resource": "bittern",
+    "status": "current",
+    "sponsor": "Incubator",
+    "champion": "Hideo Tanaka",
+    "mentors": ["Hideo Tanaka", "Amara Osei", "Carol Singh"],
+    "mentor_count": 3,
+    "startdate": "2024-02-01",
+    "months_in_incubation": 30,
+    "description": "Apache Bittern is a lightweight metrics-aggregation
+      library for embedded telemetry pipelines."
+  }
+}
+===== END FIXTURE METADATA =====
+
+-------------------------------------------------------------------------
+Step 1 — Stalled evidence assessment
+-------------------------------------------------------------------------
+
+INACTIVITY_CONFIG (default thresholds, unmodified):
+  commits:    window=3m,  metric=commits,      threshold<=5
+  mail_posts: window=6m,  metric=dev_messages, threshold<=5
+  releases:   window=12m, metric=releases,     threshold=0
+
+===== FIXTURE METADATA: HealthMCP.get_report_summary("Bittern") =====
+{
+  "podling": "Bittern",
+  "latest_metrics": {
+    "3m":  {"date_range": "2026-05-18 -> 2026-08-18", "commits": 1, "unique_committers": 1, "unique_authors": 1, "releases": 0, "new_contributors": 0, "dev_messages": 2, "dev_unique_posters": 1, "bus50": 1, "avg_mentor_signoffs": 1.0},
+    "6m":  {"date_range": "2026-02-18 -> 2026-08-18", "commits": 3, "unique_committers": 1, "unique_authors": 1, "releases": 0, "new_contributors": 0, "dev_messages": 4, "dev_unique_posters": 2, "bus50": 1, "avg_mentor_signoffs": 1.0},
+    "12m": {"date_range": "2025-08-18 -> 2026-08-18", "commits": 7, "unique_committers": 1, "unique_authors": 2, "releases": 0, "new_contributors": 0, "dev_messages": 9, "dev_unique_posters": 3, "bus50": 1, "avg_mentor_signoffs": 1.0}
+  }
+}
+===== END FIXTURE METADATA =====
+
+Inactivity detection table (computed from the health snapshot above against
+the default thresholds):
+
+  Signal                Window  Observed  Threshold  Flagged
+  ------------------------------------------------------------
+  Commits (3m)           3m         1        <=5      *** YES ***
+  dev@ messages (6m)     6m         4        <=5      *** YES ***
+  Releases (12m)         12m        0         =0      *** YES ***
+
+  Confirmed flags: 3 / 3 (commits, mail_posts, releases)
+
+===== FIXTURE METADATA: IncubatorMCP.tool_stalled_podlings
+      ({"health_source": "/Users/justinmclean/incubator/reports"}) =====
+{
+  "items": [
+    {
+      "podling": "Bittern",
+      "severity": "high",
+      "definition_matched": ["low_commits", "low_committers", "no_releases_12m"],
+      "observed": {"commits": 1, "unique_committers": 1, "dev_messages": 2, "releases_12m": 0},
+      "summary": "All three IPMC stalled signals fired: low commits, single committer, zero releases in 12m.",
+      "recommended_ipmc_action": "retirement"
+    }
+  ]
+}
+===== END FIXTURE METADATA =====
+
+===== FIXTURE METADATA: IncubatorMCP.tool_ipmc_watchlist
+      ({"health_source": "...", "severity_at_least": "medium"}) =====
+{
+  "items": [
+    {
+      "podling": "Bittern",
+      "severity": "high",
+      "reasons": ["no releases in 12 months", "single active committer", "near-silent mailing list"]
+    }
+  ]
+}
+===== END FIXTURE METADATA =====
+
+===== FIXTURE METADATA: IncubatorMCP.tool_podling_brief
+      ({"podling": "Bittern", "focus": ["status", "health", "risk"], "brief_format": "detailed"}) =====
+{
+  "status_summary": "Apache Bittern has shown no meaningful development
+    activity for over a year. The PPMC has not responded to repeated
+    mentor outreach.",
+  "active_concerns": [
+    "Zero releases in 12+ months",
+    "Single active committer — bus factor 1 across every window",
+    "PPMC non-responsive to two rounds of mentor contact"
+  ],
+  "outlook": "poor"
+}
+===== END FIXTURE METADATA =====
+
+===== FIXTURE METADATA: ReportMCP.get_podling_reports("Bittern") (no limit; all cached, newest-first) =====
+{
+  "reports": [
+    {"report_period": "2026-07", "mentor_signoffs": 1, "issues": ["No releases produced", "Low community activity"]},
+    {"report_period": "2026-04", "mentor_signoffs": 1, "issues": ["No releases produced", "Low community activity"]},
+    {"report_period": "2026-01", "mentor_signoffs": 1, "issues": ["No releases produced", "PPMC non-responsive"]},
+    {"report_period": "2025-10", "mentor_signoffs": 2, "issues": ["No releases produced", "Low community activity"]},
+    {"report_period": "2025-07", "mentor_signoffs": 2, "issues": ["Low community activity"]},
+    {"report_period": "2025-04", "mentor_signoffs": 2, "issues": []}
+  ]
+}
+# Chronic issue: "No releases produced" appears in 4 of the last 5 filed
+# reports (>= 3 threshold for "chronic").
+===== END FIXTURE METADATA =====
+
+Long incubation: 30 months > 24-month threshold -> long_incubation = True
+
+Retirement case strength (per the skill's own rule: "strong" if all three
+configurable flags triggered OR IPMC stalled signal severity is "high"):
+  all_three_flagged = True
+  ipmc_high = True
+  => retirement_case_strength = "strong"
+
+-------------------------------------------------------------------------
+Step 2 — Mentor consultation record
+-------------------------------------------------------------------------
+
+===== FIXTURE METADATA: consultation.json (mentor-filled, per Step 2) =====
+{
+  "podling": "Bittern",
+  "contact_attempts": [
+    {"date": "2026-06-01", "method": "email to dev@bittern.apache.org", "response": "no reply after 14 days"},
+    {"date": "2026-06-20", "method": "direct email to PPMC chair", "response": "no reply after 14 days"}
+  ],
+  "ppmc_willing_to_continue": false,
+  "mentor_recommendation": "retire",
+  "notes": "Two attempts to contact the PPMC over 6 weeks produced no
+    response of any kind. Mentors recommend proceeding to retirement."
+}
+===== END FIXTURE METADATA =====
+
+=========================================================================
+EXPECTED RETIREMENT DOSSIER OUTCOME
+=========================================================================
+
+Inactivity signals: 3 / 3 confirmed (commits, mail_posts, releases)
+IPMC strict stalled definition: MATCHED, severity HIGH
+IPMC watchlist: present, severity HIGH
+Long incubation: 30 months (> 24-month guideline)
+Chronic unresolved issue: "No releases produced" in 4 of last 5 reports
+Mentor consultation: 2 contact attempts, no PPMC response, PPMC not
+  willing to continue, mentor recommendation = "retire"
+
+Retirement case strength: STRONG
+
+Expected verdict: RECOMMEND RETIREMENT
+Reason: All three independent inactivity signals and the IPMC's strict
+stalled definition agree — commits, mailing-list traffic, and releases
+have all been effectively zero for a year or more, the community is a
+single committer, and the PPMC has been given two opportunities over six
+weeks to respond and has not. This is not a temporary lull; it is a
+genuinely dormant podling. The shepherd should proceed to draft the
+[DISCUSS] retirement email and shutdown checklist.
