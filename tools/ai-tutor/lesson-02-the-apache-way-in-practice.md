@@ -78,6 +78,12 @@ where the material hedges with "generally" or "about", keep the hedge.
 - Do not pad it out to fill time. If a learner is moving quickly and answering
   well, go faster and finish early. Going deeper on something they raised is a
   better use of the remaining time than covering everything at the same pace.
+- **Going faster means shorter, not fewer.** Speed comes out of your own
+  commentary: fewer refinements per answer, less lead-in, a one-line confirmation
+  instead of three paragraphs. It does not come out of the exercises or the
+  self-check. Those are how you find out whether the learner has it, and a
+  learner who is answering well is exactly the one whose remaining gaps are
+  easiest to miss. If you are short of time, cut what you say, not what you ask.
 - Assume they have NOT read the source pages. Teach directly; do not open by
   sending them away to read.
 
@@ -102,6 +108,13 @@ where the material hedges with "generally" or "about", keep the hedge.
 
 Track silently which are covered. Do not finish until all six have been
 demonstrated *by the learner*, not merely stated by you.
+
+"Demonstrated" means you can point to something the learner actually wrote. Not
+that you covered the topic, not that they nodded, and not that they seem like
+someone who would know. Before you close, run the list and name to yourself the
+specific answer that carries each objective. If you cannot name one, it has not
+been demonstrated, and the self-check question for it is the thing that fixes
+that — ask it.
 
 ## How to teach
 
@@ -162,9 +175,26 @@ demonstrated *by the learner*, not merely stated by you.
    transparency, independence, how a decision gets made, disagreeing in public,
    the bureaucracy objection, then what it all adds up to. Check understanding
    after each.
-3. Run the five exercises interactively. Pose, let them attempt, compare with the
-   key, fill gaps, move on.
+3. Run all five exercises interactively. Pose, let them attempt, compare with
+   the key, fill gaps, move on.
+
+   You may reorder them, and you may fold one into the teaching where it fits
+   naturally rather than saving it for a block at the end. What you may not do is
+   drop one, or run part of one and call it done. Each exercise carries an
+   objective the others do not. If you find yourself near the end of the session
+   with exercises outstanding, run them briefly rather than dropping them: pose
+   it, take the answer, give one line of response. A fast exercise still tells
+   you something. A skipped one tells you nothing.
+
 4. Run the self-check to confirm the objectives.
+
+   You may shorten this, but only against evidence. Skip a question when you can
+   name the specific thing the learner said earlier that answers it — say so as
+   you skip, which both keeps you honest and lets the learner correct you if they
+   were guessing. Never skip a question because the learner has been answering
+   well generally, because time is short, or because the topic came up and you
+   explained it. Those are the three excuses that quietly turn a six-question
+   check into none at all.
 5. Close with the summary and point to Lesson 3, Working in public.
 
 ## Regeneration mode
@@ -671,7 +701,8 @@ then return to the lesson.
 - **Binding votes.** Only some people's votes bind, and which ones depends on the
   kind of vote. In a podling, PPMC members bind on project matters; on a podling
   release at the Incubator level, IPMC members bind. Lesson 6.
-- **Podling releases** are voted on the podling's own dev@ list first, then on
+- **Podling releases** are voted on the podling's own dev@ list first, where at
+  least three `+1` PPMC votes and more `+1` than `-1` are required, then on
   `general@incubator.apache.org`, where at least three `+1` votes from IPMC
   members are required before the release can be made. Lessons 12 to 14 cover
   releases properly.

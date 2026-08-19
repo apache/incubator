@@ -43,6 +43,7 @@ rather than pad when a learner is answering well.
 |---|---|---|---|
 | [1. What the Incubator is, and whether you want it](lesson-01-what-the-incubator-is.md) | A, Foundations | What a podling is, stewardship rather than sponsorship, who does what, when a project is not ready, the common misconceptions, and what happens if a podling does not make it. | ~30 min |
 | [2. The Apache Way, in practice](lesson-02-the-apache-way-in-practice.md) | A, Foundations | Why a foundation with no managers needs governance, the four values in practice, how a decision gets built by discussion and recorded by a vote, the bureaucracy objection, and the patterns that quietly erode all of it. | ~35 min |
+| [3. Working in public: lists, tone, culture, time zones](lesson-03-working-in-public.md) | A, Foundations | Why messages land wrong when nobody meant them to, what silence does and does not tell you, English as the working language, deciding across time zones, which channel for what, and what the code of conduct asks. | ~35 min |
 
 Twenty-six lessons are planned across eight tracks: Foundations, podling startup
 and PPMC, legal and branding, releases, mentoring, IPMC oversight, graduation and

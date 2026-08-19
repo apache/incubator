@@ -31,7 +31,7 @@ the ASF at all.
 |---|---|---|---|
 | 1 | What the Incubator is, and whether you want it | Joining the Incubator, Podling Orientation Guide, Incubation Readiness, Common Myths, Glossary of Incubator Terms, Who Does What | **Done** |
 | 2 | The Apache Way, in practice | Practicing The Apache Way, Governance in Practice, Why Governance Matters | **Done** |
-| 3 | Working in public: lists, tone, culture, time zones | Communication in Apache Projects, International and Cultural Awareness, and the [ASF Code of Conduct](https://www.apache.org/foundation/policies/conduct) | Planned |
+| 3 | Working in public: lists, tone, culture, time zones | Communication in Apache Projects, International and Cultural Awareness, and the [ASF Code of Conduct](https://www.apache.org/foundation/policies/conduct) | **Done** |
 
 Lesson 2 took a wider slice of Practicing The Apache Way than first scoped, using
 twelve of its scenarios. No source moved, since that guide was only ever lesson
@@ -51,7 +51,7 @@ scratch:
 
 | # | Lesson | Source pages | Status |
 |---|---|---|---|
-| 4 | From proposal to podling | Proposal Discussions, Community Proposals, Initial Committer Selection | Planned |
+| 4 | From proposal to podling | Proposal Discussions, Community Proposals, Initial Committer Selection | Next |
 | 5 | Getting set up with Infra | Interacting with ASF Infra | Planned |
 | 6 | How decisions get made: lazy consensus, votes, vetoes | Voting and Consensus in Practice | Planned |
 | 7 | Growing committers and the PPMC | Podling Committer Onboarding, Podling PPMC Onboarding, Community Governance | Planned |
