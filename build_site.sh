@@ -11,6 +11,10 @@ function fatal() {
 rm -rf $WORKDIR
 mkdir -p $WORKDIR
 
+# validate the training resource index before anything else uses it
+python3 tools/seealso/validate_resources.py tools/seealso/resources.yml \
+  || fatal "resources.yml failed validation"
+
 # now bake the site
 ./bake.sh -b . $WORKDIR || fatal "Build failed, exiting"
 
