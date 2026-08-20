@@ -196,7 +196,7 @@
       }
     },
     "reportingGroup": "January, April, July, October",
-    "reportingMonthly": true,
+    "reportingMonthly": false,
     "repositories": [
       [
         "amoro",
@@ -578,7 +578,7 @@
         {
           "description": "Apache BifroMQ (Incubating) Website",
           "last_update_int": 1786975309,
-          "last_update_txt": "2 days ago",
+          "last_update_txt": "3 days ago",
           "nocommit": false
         }
       ],
@@ -1497,8 +1497,8 @@
         "casbin-gateway",
         {
           "description": "Apache Casbin",
-          "last_update_int": 1787189768,
-          "last_update_txt": "<span style='color: #070;'>&lt;5 minutes ago</span>",
+          "last_update_int": 1787191724,
+          "last_update_txt": "<span style='color: #070;'>&lt;15 minutes ago</span>",
           "nocommit": false
         }
       ],
@@ -2524,7 +2524,7 @@
         {
           "description": "Apache Casbin",
           "last_update_int": 1769955116,
-          "last_update_txt": "28 weeks ago",
+          "last_update_txt": "29 weeks ago",
           "nocommit": false
         }
       ],
@@ -4051,165 +4051,6 @@
       [
         "45",
         "12 is a large number of release distributions. Non-current releases should be removed"
-      ]
-    ]
-  },
-  "iggy": {
-    "description": "Iggy is a high-performance, ultra-low latency and large-scale persistent\n            message streaming platform written in Rust.",
-    "fullName": "Iggy",
-    "hasMailListCommits": "http://mail-archives.apache.org/mod_mbox/iggy-commits",
-    "hasMailListDev": "http://mail-archives.apache.org/mod_mbox/iggy-dev",
-    "ldap": {
-      "members": [
-        "atharva",
-        "bashirbekov",
-        "bciesla",
-        "gkoszyk",
-        "hgruszecki",
-        "hulk",
-        "kdowney",
-        "kranti",
-        "krishna",
-        "lzborek",
-        "maciej",
-        "patryk",
-        "piotr",
-        "raviyerraguntla",
-        "rimuksh",
-        "t1b0",
-        "tison",
-        "xuanwo",
-        "yonik"
-      ],
-      "numberCommitters": 19,
-      "numberCommittersNew": 0,
-      "numberPMCEquals": false,
-      "numberPMCMembers": 9,
-      "owners": [
-        "gkoszyk",
-        "hgruszecki",
-        "hulk",
-        "kranti",
-        "patryk",
-        "piotr",
-        "tison",
-        "xuanwo",
-        "yonik"
-      ]
-    },
-    "mentors": [
-      [
-        "Hao Ding",
-        "xuanwo"
-      ],
-      [
-        "Yonik Seeley",
-        "yonik"
-      ],
-      [
-        "Zili Chen",
-        "tison"
-      ],
-      [
-        "Hulk Lin",
-        "hulk"
-      ]
-    ],
-    "news": [
-      "2025-02-04 Project enters incubation."
-    ],
-    "podlingName": "Iggy",
-    "rawReportingGroup": "group-3",
-    "releases": {
-      "iggy-0.4.300-incubating-src.tar.gz": {
-        "dtm": "04/15/2025",
-        "folder": "0.4.300",
-        "hash": "sha512",
-        "revision": "r76266",
-        "size": "612606",
-        "user": "piotr"
-      },
-      "iggy-0.5.0-incubating-src.tar.gz": {
-        "dtm": "08/10/2025",
-        "folder": "0.5.0",
-        "hash": "sha512",
-        "revision": "r78621",
-        "size": "4488284",
-        "user": "piotr"
-      },
-      "iggy-0.6.0-incubating-src.tar.gz": {
-        "dtm": "12/09/2025",
-        "folder": "0.6.0",
-        "hash": "sha512",
-        "revision": "r81265",
-        "size": "4278895",
-        "user": "piotr"
-      },
-      "iggy-0.7.0-incubating-src.tar.gz": {
-        "dtm": "02/24/2026",
-        "folder": "0.7.0",
-        "hash": "sha512",
-        "revision": "r82732",
-        "size": "2035973",
-        "user": "gkoszyk"
-      },
-      "iggy-0.8.0-incubating-src.tar.gz": {
-        "dtm": "04/14/2026",
-        "folder": "0.8.0",
-        "hash": "sha512",
-        "revision": "r83798",
-        "size": "2531871",
-        "user": "hgruszecki"
-      }
-    },
-    "reportingGroup": "March, June, September, December",
-    "reportingMonthly": false,
-    "repositories": [
-      [
-        "iggy",
-        {
-          "description": "Apache Iggy: Hyper-Efficient Message Streaming at Laser Speed",
-          "last_update_int": 1787163975,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>",
-          "nocommit": false
-        }
-      ],
-      [
-        "iggy-setup",
-        {
-          "description": "Apache Iggy: Hyper-Efficient Message Streaming at Laser Speed",
-          "last_update_int": 1754856118,
-          "last_update_txt": "1 years ago",
-          "nocommit": false
-        }
-      ],
-      [
-        "iggy-website",
-        {
-          "description": "Apache Iggy (Incubating) Website",
-          "last_update_int": 1787137494,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>",
-          "nocommit": false
-        }
-      ]
-    ],
-    "resource": "iggy",
-    "sponsor": "Incubator",
-    "startDate": "2025-02-04",
-    "statusAge": 6,
-    "statusLastUpdated": "2026-08-14",
-    "urls": {
-      "git": "https://gitbox.apache.org/repos/asf?p=iggy.git;a=tree;hb=HEAD",
-      "keys": "https://downloads.apache.org/incubator/iggy/KEYS",
-      "svn": "",
-      "tracker": "https://github.com/apache/iggy/issues",
-      "wiki": "",
-      "www": "http://iggy.apache.org"
-    },
-    "zFixMeList": [
-      [
-        "18",
-        "Has not provided a wiki link"
       ]
     ]
   },
@@ -5807,7 +5648,7 @@
         {
           "description": "Apache KIE",
           "last_update_int": 1787183164,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>",
+          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>",
           "nocommit": false
         }
       ],
@@ -5913,8 +5754,8 @@
         "maka",
         {
           "description": "Apache Maka",
-          "last_update_int": 1787188901,
-          "last_update_txt": "<span style='color: #070;'>&lt;30 minutes ago</span>",
+          "last_update_int": 1787191514,
+          "last_update_txt": "<span style='color: #070;'>&lt;15 minutes ago</span>",
           "nocommit": false
         }
       ]
@@ -6331,7 +6172,7 @@
         {
           "description": "Apache Ossie Website",
           "last_update_int": 1787177211,
-          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>",
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>",
           "nocommit": false
         }
       ]
@@ -6526,7 +6367,7 @@
         {
           "description": "Change Detection for Continuous Performance Engineering",
           "last_update_int": 1787189696,
-          "last_update_txt": "<span style='color: #070;'>&lt;5 minutes ago</span>",
+          "last_update_txt": "<span style='color: #070;'>&lt;1 hour ago</span>",
           "nocommit": false
         }
       ],
@@ -6847,7 +6688,7 @@
       }
     },
     "reportingGroup": "January, April, July, October",
-    "reportingMonthly": true,
+    "reportingMonthly": false,
     "repositories": [
       [
         "incubator-pegasus",
@@ -6863,7 +6704,7 @@
         {
           "description": "Apache Pegasus Website",
           "last_update_int": 1763302334,
-          "last_update_txt": "39 weeks ago",
+          "last_update_txt": "40 weeks ago",
           "nocommit": false
         }
       ]
@@ -7717,7 +7558,7 @@
         {
           "description": "Human-AI Collaborative Data Science Using Visual Workflows",
           "last_update_int": 1787189334,
-          "last_update_txt": "<span style='color: #070;'>&lt;15 minutes ago</span>",
+          "last_update_txt": "<span style='color: #070;'>&lt;1 hour ago</span>",
           "nocommit": false
         }
       ]
