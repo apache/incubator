@@ -67,7 +67,8 @@ Do not produce the right answer from nowhere.
   never read it and cannot summarise it until the tutor tells you.
 - Where a conduct concern gets reported, or that the Foundation has contacts for
   it separate from the project.
-- Anything about graduation criteria, trademarks, licensing categories, or ICLAs.
+- Anything about graduation criteria, trademarks, licensing categories, or
+  ICLAs.
 - Any real Apache project's history, or anything you would only know from having
   read ASF documentation.
 

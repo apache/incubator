@@ -33,15 +33,16 @@ the ASF at all.
 | 2 | The Apache Way, in practice | Practicing The Apache Way, Governance in Practice, Why Governance Matters | **Done** |
 | 3 | Working in public: lists, tone, culture, time zones | Communication in Apache Projects, International and Cultural Awareness, and the [ASF Code of Conduct](https://www.apache.org/foundation/policies/conduct) | **Done** |
 
-Lesson 2 took a wider slice of Practicing The Apache Way than first scoped, using
-twelve of its scenarios. No source moved, since that guide was only ever lesson
-2's, but two later lessons can now start deeper rather than introduce from
-scratch:
+Lesson 2 took a wider slice of Practicing The Apache Way than first scoped,
+using twelve of its scenarios. No source moved, since that guide was only ever
+lesson 2's, but two later lessons can now start deeper rather than introduce
+from scratch:
 
-- **Lesson 3** can assume public disagreement has been introduced, including why
-  it is expected and what it costs when a thread turns personal. It should start
-  at cultural difference in how directness reads, and at the Code of Conduct,
-  rather than at working in public generally.
+- **Lesson 3** assumed public disagreement had been introduced, including why it
+  is expected and what it costs when a thread turns personal. As written it
+  opens at how a message lands wrong, then silence, then time zones, and reaches
+  the Code of Conduct near the end, which suits a learner who arrives with a
+  tone or time zone problem of their own.
 - **Lesson 6** can assume the learner knows discussion builds consensus and a
   vote records it, and knows roughly what lazy consensus is. It should start at
   mechanics: which votes bind, who is eligible, what a veto is and when it
@@ -51,17 +52,60 @@ scratch:
 
 | # | Lesson | Source pages | Status |
 |---|---|---|---|
-| 4 | From proposal to podling | Proposal Discussions, Community Proposals, Initial Committer Selection | Next |
-| 5 | Getting set up with Infra | Interacting with ASF Infra | Planned |
-| 6 | How decisions get made: lazy consensus, votes, vetoes | Voting and Consensus in Practice | Planned |
-| 7 | Growing committers and the PPMC | Podling Committer Onboarding, Podling PPMC Onboarding, Community Governance | Planned |
-| 8 | Writing a report the IPMC can use | Reporting Guide | Planned |
+| 4 | From proposal to podling | Proposal Discussions, Community Proposals, Initial Committer Selection | **Done** |
+| 5 | Getting set up with Infra | Interacting with ASF Infra | **Done** |
+| 6 | How decisions get made: lazy consensus, votes, vetoes | Voting and Consensus in Practice | **Done** |
+| 7 | Growing committers and the PPMC | Podling Committer Onboarding, Podling PPMC Onboarding, Community Governance | **Done** |
+| 8 | Writing a report the IPMC can use | Reporting Guide | **Done** |
+
+Lesson 4 read the proposal template alongside its three guides, since the
+template's Known Risks headings are the same concerns the guides describe from
+the reviewers' side. It touches naming, licensing and IP only as far as a
+proposal has to disclose them, so Lessons 9 and 10 keep their sources.
+
+Lesson 6's wiki guide covers consensus and the podling vote types but says
+nothing about vetoes, so the veto material, the vote values and the approval
+definitions come from the ASF voting process page and the release policy. Those
+are Foundation policy rather than Incubator practice, and the lesson says which
+is which. Note for anyone revising it: the Incubator's PPMC guide and the
+incubation policy word the binding-vote question differently, and incubation
+policy governs, since it states that it takes precedence where other documents
+differ.
+
+Lesson 7's three wiki pages describe practice, and incubation policy says almost
+nothing on the subject: one line about adding PPMC members, which is a pointer
+to the Incubator's PPMC guide, and nothing at all about adding committers. So
+the lesson is cross-checked against that guide and teaches the whole sequence as
+what podlings do rather than as what they must do. Two things for anyone
+revising it. The public acceptance on `dev@` comes from the wiki alone, not from
+the guide or policy, so it is taught as strong practice rather than as a rule.
+And "majority approval" is a defined ASF term meaning at least three binding
+`+1` votes, while the voting page also calls procedural votes simple majority,
+so the threshold for a vote on a person is genuinely unsettled and the lesson
+says so instead of picking one.
+
+Lesson 8 has a constraint no other lesson has. The Reporting Guide requires
+reports to be written by humans and names AI-generated text as something to
+leave out, so the tutor is told several times that it must not draft, polish or
+ghostwrite any part of a real report, and its exercises use invented podlings
+for that reason. It also draws on the live monthly report page as well as the
+guide, because the guide's list of sections and the page's actual headings are
+related but not the same, and the page carries the formatting rules and the real
+dates.
+
+Lesson 5 has only one wiki guide behind it, so it also draws on the
+Infrastructure team's own pages for the setup sequence and on the incubation
+policy for what a podling may set up. It is the lesson most exposed to things
+moving, so it teaches the routing question and the etiquette rather than portal
+menus, and points at `infra.apache.org` and `selfserve.apache.org` for anything
+current. Committer onboarding, reporting, releases and the disclaimer wording
+are named but handed on to Lessons 7, 8, 10 and Track D.
 
 ## Track C: Legal, branding and IP
 
 | # | Lesson | Source pages | Status |
 |---|---|---|---|
-| 9 | Legal basics: licences, ICLAs, provenance | Legal Basics, Licensing and Provenance | Planned |
+| 9 | Legal basics: licences, ICLAs, provenance | Legal Basics, Licensing and Provenance | Next |
 | 10 | Names, trademarks and branding | Naming and Trademarks, Naming and Branding, Third-Party Branding and Incubating Projects, Graduation Identity | Planned |
 | 11 | Privacy and data handling | Privacy and Data Handling | Planned |
 
@@ -121,8 +165,8 @@ with themes and links.
 - **Lesson 25 wraps eight data guides** and is closer to a seminar than a
   lesson. It may be worth splitting, or leaving as a reading list rather than a
   tutored lesson.
-- **Lesson 24 can assume retirement is known.** Lesson 1 introduces retirement as
-  a normal outcome, so 24 can go straight to how it works.
+- **Lesson 24 can assume retirement is known.** Lesson 1 introduces retirement
+  as a normal outcome, so 24 can go straight to how it works.
 
 ## Licence
 

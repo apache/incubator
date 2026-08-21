@@ -5,11 +5,10 @@ per lesson. Each file turns a capable chat model into a tutor for a single
 lesson: it teaches the material one idea at a time, runs the exercises, and
 grades the learner's answers against the lesson's answer keys.
 
-These are built from the Incubator guides on the
-[Incubator wiki](https://cwiki.apache.org/confluence/display/INCUBATOR/). The
-wiki pages remain the reference; a tutor adds structure on top of them, so a
-learner can work through a topic with someone to answer back rather than only
-reading.
+These are built from the Incubator guides on the [Incubator
+wiki](https://cwiki.apache.org/confluence/display/INCUBATOR/). The wiki pages
+remain the reference; a tutor adds structure on top of them, so a learner can
+work through a topic with someone to answer back rather than only reading.
 
 ## How to use one
 
@@ -44,12 +43,17 @@ rather than pad when a learner is answering well.
 | [1. What the Incubator is, and whether you want it](lesson-01-what-the-incubator-is.md) | A, Foundations | What a podling is, stewardship rather than sponsorship, who does what, when a project is not ready, the common misconceptions, and what happens if a podling does not make it. | ~30 min |
 | [2. The Apache Way, in practice](lesson-02-the-apache-way-in-practice.md) | A, Foundations | Why a foundation with no managers needs governance, the four values in practice, how a decision gets built by discussion and recorded by a vote, the bureaucracy objection, and the patterns that quietly erode all of it. | ~35 min |
 | [3. Working in public: lists, tone, culture, time zones](lesson-03-working-in-public.md) | A, Foundations | Why messages land wrong when nobody meant them to, what silence does and does not tell you, English as the working language, deciding across time zones, which channel for what, and what the code of conduct asks. | ~35 min |
+| [4. From proposal to podling](lesson-04-from-proposal-to-podling.md) | B, Podling startup and PPMC | What goes in a proposal, describing a community truthfully, what makes an initial committer list credible, writing Known Risks honestly, what reviewers ask, and what "not yet" means. | ~40 min |
+| [5. Getting set up with Infra](lesson-05-getting-set-up-with-infra.md) | B, Podling startup and PPMC | What ASF Infrastructure does and what the project does, choosing between self-serve, a ticket, the roster tools and a private security address, writing a request that works, and what a mentor should hand over. | ~30 min |
+| [6. How decisions get made: lazy consensus, votes, vetoes](lesson-06-how-decisions-get-made.md) | B, Podling startup and PPMC | When a decision needs no vote, a discussion, or a formal vote; who casts binding votes and where; the two-stage podling release vote; what a veto is and is not; and how to run and close a vote. | ~35 min |
+| [7. Growing committers and the PPMC](lesson-07-growing-committers-and-the-ppmc.md) | B, Podling startup and PPMC | What separates a committer from a PPMC member, how to decide who to invite and how to tell when a bar has drifted, both addition processes and where each step happens, the awkward cases, and why committer growth is what graduation reads. | ~30 min |
+| [8. Writing a report the IPMC can use](lesson-08-writing-a-report-the-ipmc-can-use.md) | B, Podling startup and PPMC | Who reads a podling report and what they look for, what belongs in each section, facts that mean something versus statistics that do not, reporting a bad month honestly, the submission mechanics, and what happens when a report is late or missed. | ~30 min |
 
 Twenty-six lessons are planned across eight tracks: Foundations, podling startup
-and PPMC, legal and branding, releases, mentoring, IPMC oversight, graduation and
-exit, and data and trends. See [ROADMAP.md](ROADMAP.md) for the full list and
-what is built so far, and [SOURCES.md](SOURCES.md) to go the other way, from an
-Incubator guide to the lesson that teaches it.
+and PPMC, legal and branding, releases, mentoring, IPMC oversight, graduation
+and exit, and data and trends. See [ROADMAP.md](ROADMAP.md) for the full list
+and what is built so far, and [SOURCES.md](SOURCES.md) to go the other way, from
+an Incubator guide to the lesson that teaches it.
 
 ## Writing a new one
 
