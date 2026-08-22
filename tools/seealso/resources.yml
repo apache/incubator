@@ -936,3 +936,163 @@ resources:
     topics: [release-votes, voting, approvals, process]
     description: "Explains patterns seen in release vote threads, including common vote mechanics issues and what reviewers look for when assessing readiness and compliance."
     url: https://cwiki.apache.org/confluence/display/INCUBATOR/Release+Votes
+
+  - id: lesson-incubator-basics
+    title: "Lesson 1: What the Incubator is, and whether you want it"
+    type: lesson
+    themes: [orientation, governance, community]
+    topics: [incubation-basics, joining-incubator, misconceptions, roles]
+    description: "Tutored lesson on what a podling is, what a project hands over and gets back, who
+    does what, and whether a community is ready to propose."
+    url: https://incubator.apache.org/training/lessons.html#lesson-1
+
+  - id: lesson-apache-way
+    title: "Lesson 2: The Apache Way, in practice"
+    type: lesson
+    themes: [culture, governance]
+    topics: [apache-way, asf-values, community-over-code, consensus, decision-making]
+    description: "Tutored lesson on consensus, merit, community over code, transparency and
+    independence, and how to judge whether a decision was made the Apache way."
+    url: https://incubator.apache.org/training/lessons.html#lesson-2
+
+  - id: lesson-working-in-public
+    title: "Lesson 3: Working in public: lists, tone, culture, time zones"
+    type: lesson
+    themes: [community, culture]
+    topics: [mailing-lists, communication, cultural-awareness, time-zones, transparency]
+    description: "Tutored lesson on why messages read as rude when nobody meant it, choosing the
+    right channel, working across time zones, and what the code of conduct asks."
+    url: https://incubator.apache.org/training/lessons.html#lesson-3
+
+  - id: lesson-proposal-to-podling
+    title: "Lesson 4: From proposal to podling"
+    type: lesson
+    themes: [orientation, governance, podling-health]
+    topics: [proposal, joining-incubator, readiness, red-flags, decision-making]
+    description: "Tutored lesson on the path from idea to podling: what a champion does, what a
+    proposal has to establish, credible initial committers, and honest known risks."
+    url: https://incubator.apache.org/training/lessons.html#lesson-4
+
+  - id: lesson-infra-setup
+    title: "Lesson 5: Getting set up with Infra"
+    type: lesson
+    themes: [infrastructure]
+    topics: [asf-infra, getting-started, tickets, project-resources, access-rights]
+    description: "Tutored lesson on what Infra does and what the project does, choosing between
+    self-serve, a ticket and Whimsy, and writing a request that needs no round trip."
+    url: https://incubator.apache.org/training/lessons.html#lesson-5
+
+  - id: lesson-decisions-votes-vetoes
+    title: "Lesson 6: How decisions get made: lazy consensus, votes, vetoes"
+    type: lesson
+    themes: [governance, releases]
+    topics: [decision-making, consensus, voting, approvals, release-votes]
+    description: "Tutored lesson on when something needs no vote, consensus or a formal vote, who is
+    binding, the two-stage podling release vote, and what makes a veto valid."
+    url: https://incubator.apache.org/training/lessons.html#lesson-6
+
+  - id: lesson-growing-committers
+    title: "Lesson 7: Growing committers and the PPMC"
+    type: lesson
+    themes: [committers, community, podling-health]
+    topics: [contributors-to-committers, committer-onboarding, ppmc-onboarding, access-rights, voting]
+    description: "Tutored lesson on what committers and PPMC members can and cannot do, running each
+    process end to end, who to invite, and the awkward cases."
+    url: https://incubator.apache.org/training/lessons.html#lesson-7
+
+  - id: lesson-writing-a-report
+    title: "Lesson 8: Writing a report the IPMC can use"
+    type: lesson
+    themes: [reporting, ipmc-oversight]
+    topics: [podling-reports, report-patterns, board-reports, sign-off, transparency]
+    description: "Tutored lesson on who reads a podling report and what they look for, what belongs
+    in each section, reporting a bad month honestly, and the submission mechanics."
+    url: https://incubator.apache.org/training/lessons.html#lesson-8
+
+  - id: scenario-practicing-the-apache-way
+    title: "Practicing The Apache Way"
+    type: interactive
+    themes: [culture, mentoring]
+    topics: [apache-way, asf-values, best-practices, culture-check]
+    description: "Short interactive exercises exploring real-world mentoring and governance
+    situations in the ASF Incubator."
+    url: https://incubator.apache.org/scenarios/PracticingTheApacheWay.html
+
+  - id: scenario-brand-and-governance-blur
+    title: "Brand and Governance Blur"
+    type: interactive
+    themes: [branding, neutrality, governance]
+    topics: [branding-practice, project-identity, vendor-neutrality, trademarks]
+    description: "Interactive module on what to do when a project's public identity and company
+    branding begin to overlap."
+    url: https://incubator.apache.org/scenarios/BrandandGovernanceBlur.html
+
+  - id: scenario-conflicting-mentor-advice
+    title: "Conflicting Mentor Advice"
+    type: interactive
+    themes: [mentoring]
+    topics: [mentor-role, mentoring-issues, continuity, feedback]
+    description: "Interactive module on how mentors can coordinate when they are giving a podling
+    different guidance."
+    url: https://incubator.apache.org/scenarios/ConflictingMentorAdvice.html
+
+  - id: scenario-cross-list-release-vote-confusion
+    title: "Cross-List Release Vote Confusion"
+    type: interactive
+    themes: [releases, governance]
+    topics: [release-votes, voting, mailing-lists, communication]
+    description: "Interactive module on what happens when unclear communication leads to duplicate
+    or conflicting release votes."
+    url: https://incubator.apache.org/scenarios/CrossListReleaseVoteConfusion.html
+
+  - id: scenario-cultural-misunderstanding
+    title: "Cultural Misunderstanding"
+    type: interactive
+    themes: [community, culture]
+    topics: [cultural-awareness, communication, inclusivity, conflict]
+    description: "Interactive module on recognising and resolving cross-cultural communication
+    problems in a podling."
+    url: https://incubator.apache.org/scenarios/CulturalMisunderstanding.html
+
+  - id: scenario-lazy-consensus-gone-wrong
+    title: "Lazy Consensus Gone Wrong"
+    type: interactive
+    themes: [governance, community]
+    topics: [consensus, decision-making, mailing-lists, communication]
+    description: "Interactive module on what goes wrong when silence is misread as agreement."
+    url: https://incubator.apache.org/scenarios/LazyConsensusGoneWrong.html
+
+  - id: scenario-mentor-dependency
+    title: "Mentor Dependency"
+    type: interactive
+    themes: [mentoring, podling-health]
+    topics: [mentor-role, mentoring-issues, sustainability, independence]
+    description: "Interactive module on supporting rather than steering a developing community."
+    url: https://incubator.apache.org/scenarios/MentorDependency.html
+
+  - id: scenario-employer-dominated-podling
+    title: "The Employer-Dominated Podling"
+    type: interactive
+    themes: [neutrality, podling-health]
+    topics: [vendor-neutrality, balance, diversity, independence]
+    description: "Interactive module on maintaining independence when one company leads most of the
+    activity."
+    url: https://incubator.apache.org/scenarios/TheEmployerDominatedPodling.html
+
+  - id: scenario-the-heated-thread
+    title: "The Heated Thread"
+    type: interactive
+    themes: [community, culture]
+    topics: [conflict, difficult-conversations, communication, transparency]
+    description: "Interactive module on de-escalating tension while keeping the discussion
+    transparent."
+    url: https://incubator.apache.org/scenarios/TheHeatedThread.html
+
+  - id: scenario-the-silent-mentor
+    title: "The Silent Mentor"
+    type: interactive
+    themes: [mentoring]
+    topics: [mentor-participation, mentor-replacement, responsiveness, mentoring-issues]
+    description: "Interactive module on handling mentor absence or inactivity during key stages of
+    incubation."
+    url: https://incubator.apache.org/scenarios/TheSilentMentor.html

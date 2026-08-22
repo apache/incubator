@@ -53,6 +53,8 @@ TYPE_PRIORITY = {
     "slide": 2,
     "video": 3,
     "quiz": 4,
+    "lesson": 5,
+    "interactive": 6,
 }
 
 TYPE_LABELS = {
@@ -61,6 +63,8 @@ TYPE_LABELS = {
     "slide": "Slide Deck",
     "video": "Video",
     "quiz": "Quiz",
+    "lesson": "Tutored Lesson",
+    "interactive": "Interactive Module",
 }
 
 

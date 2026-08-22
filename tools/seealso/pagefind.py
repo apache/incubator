@@ -26,6 +26,7 @@ TYPE_ICONS = {
     "video": "🎞️",
     "quiz": "🧩",
     "scenario": "🧠",
+    "lesson": "🎓",
     "interactive": "🎮",
 }
 
