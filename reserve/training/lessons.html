@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8"/>
-    <title>Apache XTable (Incubating)</title>
+    <title>Tutored Lessons</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -141,142 +141,246 @@
     <div class="top-container container">
 
 
-<div class="incubator-page-header">
-    <h1>Apache XTable (Incubating)</h1>
+<div class="page-header">
+    <h1>Guide :: Tutored Lessons</h1>
 </div>
 
-<div id="preamble">
+<div class="article-body">
+
+Estimated Reading Time: <span class="eta"></span>
+
+<p><div id="toc" class="toc">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#tutored_lessons">Tutored Lessons</a></li>
+<li><a href="#how_to_run_one">How to run one</a></li>
+<li><a href="#getting_started">Getting Started</a>
+<ul class="sectlevel2">
+<li><a href="#lesson-1">1. What the Incubator is, and whether you want it</a></li>
+<li><a href="#lesson-2">2. The Apache Way, in practice</a></li>
+<li><a href="#lesson-3">3. Working in public: lists, tone, culture, time zones</a></li>
+</ul>
+</li>
+<li><a href="#podling_startup_and_the_ppmc">Podling Startup and the PPMC</a>
+<ul class="sectlevel2">
+<li><a href="#lesson-4">4. From proposal to podling</a></li>
+<li><a href="#lesson-5">5. Getting set up with Infra</a></li>
+<li><a href="#lesson-6">6. How decisions get made: lazy consensus, votes, vetoes</a></li>
+<li><a href="#lesson-7">7. Growing committers and the PPMC</a></li>
+<li><a href="#lesson-8">8. Writing a report the IPMC can use</a></li>
+</ul>
+</li>
+<li><a href="#as_an_installable_skill">As an installable skill</a></li>
+<li><a href="#a_caution">A caution</a></li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="tutored_lessons">Tutored Lessons</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>XTable is an omni-directional converter for table formats that facilitates interoperability across data processing systems and query engines.</p>
+<p>Each lesson is an interactive session with an AI tutor rather than a document
+to read. You paste the lesson into a chat model, and it teaches you one idea at
+a time, sets exercises, waits for your answer before giving its own, and
+finishes with a self-check.</p>
 </div>
-<div class="ulist">
-<ul>
-<li>
-<p>Resources: xtable</p>
-</li>
-<li>
-<p>Started: 2024-02-11; Last Status Update: 2024-05-16</p>
-</li>
-<li>
-<p>Reporting: February, May, August, November</p>
-</li>
-<li>
-<p>Committers: 12</p>
-</li>
-<li>
-<p>All Committers are PPMC members</p>
-</li>
-<li>
-<p>Mentors: Jesús Camacho Rodríguez (jcamacho), Stamatis Zampetakis (zabetak), Jean-Baptiste Onofré (jbonofre)</p>
-</li>
-</ul>
+<div class="paragraph">
+<p>The lessons are written and fact-checked against ASF policy, the Incubator&#8217;s
+guides and the Incubator wiki, and they are explicit about which of those a
+given statement comes from.</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="news">News</h2>
+<h2 id="how_to_run_one">How to run one</h2>
 <div class="sectionbody">
-<div class="ulist">
-<ul>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
-<p>2024-02-11 Project enters incubation.</p>
+<p>Find the lesson you want below and click <strong>Copy prompt</strong>.</p>
 </li>
-</ul>
+<li>
+<p>Open any capable chat model.</p>
+</li>
+<li>
+<p>Paste the prompt as the first message, or into a system prompt field if the
+tool has one.</p>
+</li>
+<li>
+<p>Say hello. The tutor takes it from there.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Nothing is installed and nothing is recorded. If you prefer, <strong>View the prompt</strong>
+opens the plain text so you can read it first or copy it by hand.</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="resources">Resources</h2>
+<h2 id="getting_started">Getting Started</h2>
 <div class="sectionbody">
-<div class="sect2">
-<h3 id="project_website">Project Website</h3>
 <div class="paragraph">
-<p><a href="http://xtable.apache.org" class="bare">http://xtable.apache.org</a></p>
-</div>
+<p>These three come first. They are the prerequisite for everything below, and
+they assume no prior knowledge of the ASF.</p>
 </div>
 <div class="sect2">
-<h3 id="mailing_lists">Mailing Lists</h3>
-<div class="ulist">
-<ul>
-<li>
-<p>Developer mailing list: <a href="http://mail-archives.apache.org/mod_mbox/xtable-dev" class="bare">http://mail-archives.apache.org/mod_mbox/xtable-dev</a></p>
-</li>
-<li>
-<p>Commits mailing list: <a href="http://mail-archives.apache.org/mod_mbox/xtable-commits" class="bare">http://mail-archives.apache.org/mod_mbox/xtable-commits</a></p>
-</li>
-</ul>
+<h3 id="lesson-1">1. What the Incubator is, and whether you want it</h3>
+<div class="paragraph">
+<p>What a podling is, what a project hands over and gets back, who does what, and
+whether a community is ready to propose.</p>
+</div>
+<div class="paragraph">
+<p><a href="lessons/lesson-01.md">View the prompt</a> |
+<a href="lessons/lesson-01.md" class="copy-lesson">Copy prompt</a></p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="issue_tracker">Issue Tracker</h3>
+<h3 id="lesson-2">2. The Apache Way, in practice</h3>
 <div class="paragraph">
-<p><a href="https://github.com/apache/incubator-xtable/issues" class="bare">https://github.com/apache/incubator-xtable/issues</a></p>
+<p>Consensus, merit, community over code, transparency and independence, and how to
+tell whether a decision was made the Apache way.</p>
+</div>
+<div class="paragraph">
+<p><a href="lessons/lesson-02.md">View the prompt</a> |
+<a href="lessons/lesson-02.md" class="copy-lesson">Copy prompt</a></p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="repositories">Repositories</h3>
-<div class="sect3">
-<h4 id="1_incubator_xtable">1: incubator-xtable</h4>
+<h3 id="lesson-3">3. Working in public: lists, tone, culture, time zones</h3>
 <div class="paragraph">
-<p>| <strong><a href="https://gitbox.apache.org/repos/asf?p=incubator-xtable.git;a=tree;hb=HEAD">Gitbox</a></strong> | <strong><a href="https://github.com/apache/incubator-xtable/">Github</a></strong> | Apache XTable (incubating) is a cross-table converter for lak&#8230;&#8203;&#8201;&#8212;&#8201;Updated: 08/21/2026</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="2_incubator_xtable_site">2: incubator-xtable-site</h4>
-<div class="paragraph">
-<p>| <strong><a href="https://gitbox.apache.org/repos/asf?p=incubator-xtable-site.git;a=tree;hb=HEAD">Gitbox</a></strong> | <strong><a href="https://github.com/apache/incubator-xtable-site/">Github</a></strong> | Apache xtable&#8201;&#8212;&#8201;Updated: 08/06/2026</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="releases">Releases</h2>
-<div class="sectionbody">
-<div class="sect2">
-<h3 id="current">Current</h3>
-<div class="paragraph">
-<p><strong><a href="https://downloads.apache.org/incubator/xtable/KEYS">Signing Keys</a></strong></p>
+<p>Why messages read as rude when nobody meant it, choosing the right channel,
+working across time zones, and what the code of conduct asks.</p>
 </div>
 <div class="paragraph">
-<p>It is essential that you verify the integrity of release downloads. See <a href="https://www.apache.org/dyn/closer.cgi#verify">instructions here</a></p>
-</div>
-<div class="sect3">
-<h4 id="1_apache_xtable_0_2_0_incubating_src_tgz">1: apache-xtable-0.2.0-incubating.src.tgz</h4>
-<div class="paragraph">
-<p>| <strong><a href="https://www.apache.org/dyn/closer.lua/incubator/xtable/0.2.0-incubating/apache-xtable-0.2.0-incubating.src.tgz">Download</a></strong> | <strong><a href="https://downloads.apache.org/incubator/xtable/0.2.0-incubating/apache-xtable-0.2.0-incubating.src.tgz.asc">Signature</a></strong> | <strong><a href="https://downloads.apache.org/incubator/xtable/0.2.0-incubating/apache-xtable-0.2.0-incubating.src.tgz.sha512">Hash</a></strong> | apache-xtable-0.2.0-incubating.src.tgz&#8201;&#8212;&#8201;Filesize: 236.54 KB&#8201;&#8212;&#8201;Released: 11/08/2024 by vinish in r72889</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="2_apache_xtable_0_3_0_incubating_src_tgz">2: apache-xtable-0.3.0-incubating.src.tgz</h4>
-<div class="paragraph">
-<p>| <strong><a href="https://www.apache.org/dyn/closer.lua/incubator/xtable/0.3.0-incubating/apache-xtable-0.3.0-incubating.src.tgz">Download</a></strong> | <strong><a href="https://downloads.apache.org/incubator/xtable/0.3.0-incubating/apache-xtable-0.3.0-incubating.src.tgz.asc">Signature</a></strong> | <strong><a href="https://downloads.apache.org/incubator/xtable/0.3.0-incubating/apache-xtable-0.3.0-incubating.src.tgz.sha512">Hash</a></strong> | apache-xtable-0.3.0-incubating.src.tgz&#8201;&#8212;&#8201;Filesize: 406.32 KB&#8201;&#8212;&#8201;Released: 06/04/2025 by vinish in r77377</p>
-</div>
-<div class="paragraph">
-<p>Total size of all downloads = 642.85 KB</p>
-</div>
+<p><a href="lessons/lesson-03.md">View the prompt</a> |
+<a href="lessons/lesson-03.md" class="copy-lesson">Copy prompt</a></p>
 </div>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="errata">Errata</h2>
+<h2 id="podling_startup_and_the_ppmc">Podling Startup and the PPMC</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Please investigate the following potential issues</p>
+<p>For people running a podling day to day. These five can be taken in any order.</p>
 </div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="/guides/sites.html#using_a_wiki_to_create_documentation">Has not provided a wiki link</a></p>
-</li>
-</ul>
+<div class="sect2">
+<h3 id="lesson-4">4. From proposal to podling</h3>
+<div class="paragraph">
+<p>The path from idea to podling: what a champion does, what a proposal has to
+establish, credible initial committers, and honest known risks.</p>
 </div>
 <div class="paragraph">
-<p>The podling website scan does the best it can. Details are found <a href="https://whimsy.apache.org/pods/project/xtable">here</a></p>
+<p><a href="lessons/lesson-04.md">View the prompt</a> |
+<a href="lessons/lesson-04.md" class="copy-lesson">Copy prompt</a></p>
 </div>
 </div>
+<div class="sect2">
+<h3 id="lesson-5">5. Getting set up with Infra</h3>
+<div class="paragraph">
+<p>What Infra does and what the project does, choosing between self-serve, a ticket
+and Whimsy, and writing a request that needs no round trip.</p>
+</div>
+<div class="paragraph">
+<p><a href="lessons/lesson-05.md">View the prompt</a> |
+<a href="lessons/lesson-05.md" class="copy-lesson">Copy prompt</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="lesson-6">6. How decisions get made: lazy consensus, votes, vetoes</h3>
+<div class="paragraph">
+<p>When something needs no vote, consensus or a formal vote, who is binding, the
+two-stage release vote, and what makes a veto valid.</p>
+</div>
+<div class="paragraph">
+<p><a href="lessons/lesson-06.md">View the prompt</a> |
+<a href="lessons/lesson-06.md" class="copy-lesson">Copy prompt</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="lesson-7">7. Growing committers and the PPMC</h3>
+<div class="paragraph">
+<p>What committers and PPMC members can and cannot do, running each process end to
+end, who to invite, and the awkward cases.</p>
+</div>
+<div class="paragraph">
+<p><a href="lessons/lesson-07.md">View the prompt</a> |
+<a href="lessons/lesson-07.md" class="copy-lesson">Copy prompt</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="lesson-8">8. Writing a report the IPMC can use</h3>
+<div class="paragraph">
+<p>Who reads a podling report and what they look for, what belongs in each section,
+reporting a bad month honestly, and the submission mechanics.</p>
+</div>
+<div class="paragraph">
+<p><a href="lessons/lesson-08.md">View the prompt</a> |
+<a href="lessons/lesson-08.md" class="copy-lesson">Copy prompt</a></p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="as_an_installable_skill">As an installable skill</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Some AI tools can install a skill, which saves the pasting. The eight lessons
+build into one, so <code>/incubator-lesson list</code> shows the catalogue and
+<code>/incubator-lesson 6</code> starts that lesson.</p>
+</div>
+<div class="paragraph">
+<p>Build it from a checkout with <code>python3 tools/ai-tutor/build-skill.py</code>, then
+install the result the way your tool expects. The lesson text inside it is
+copied from the same files this page publishes, so both routes run the same
+tutor.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="a_caution">A caution</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>These are teaching prompts, not policy. Where a lesson and an ASF policy page
+disagree, the policy page is correct. Models also make mistakes, so if you need
+a definitive answer for a real decision, ask your mentors or the Incubator&#8217;s
+<a href="https://lists.apache.org/list.html?general@incubator.apache.org">general mailing list</a>.</p>
+</div>
+<div class="paragraph">
+<p>Corrections are welcome on that list. The lessons live in
+<a href="https://github.com/apache/incubator/tree/master/tools/ai-tutor">tools/ai-tutor</a>
+in the website repository.</p>
+</div>
+<script>
+(function () {
+  function flash(el, text) {
+    var original = el.textContent;
+    el.textContent = text;
+    setTimeout(function () { el.textContent = original; }, 2000);
+  }
+  document.addEventListener('click', function (event) {
+    var link = event.target.closest ? event.target.closest('a.copy-lesson') : null;
+    if (!link) { return; }
+    event.preventDefault();
+    var url = link.getAttribute('href');
+    fetch(url).then(function (response) {
+      if (!response.ok) { throw new Error(response.status); }
+      return response.text();
+    }).then(function (text) {
+      return navigator.clipboard.writeText(text);
+    }).then(function () {
+      flash(link, 'Copied');
+    }).catch(function () {
+      // Clipboard access can be blocked, and older browsers lack it entirely.
+      // Send the reader to the file rather than leaving them with nothing.
+      window.location.href = url;
+    });
+  });
+})();
+</script>
+</div>
+</div></p>
+
 </div>
 
 		</div>
