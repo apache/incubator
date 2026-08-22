@@ -14,6 +14,35 @@ covers material the lessons do not draw on. Lesson 3 additionally uses the
 [ASF Code of Conduct](https://www.apache.org/foundation/policies/conduct), which
 lives on the main ASF site rather than the wiki.
 
+Track C is the exception to "wiki guides feed the lessons". Its subject is
+Foundation-wide rather than Incubator practice, so Lessons 9, 10 and 11 take
+their teaching shape from the wiki guides listed below but take anything
+normative from ASF pages that are not in the index:
+
+| Source | Lesson | What it covers |
+|---|---|---|
+| [Third-party licensing policy](https://www.apache.org/legal/resolved.html) | 9 | Category A, B and X, the binary-only and labelling conditions, optional dependencies, build-time use. |
+| [Contributor agreements](https://www.apache.org/licenses/contributor-agreements.html) | 9 | ICLA, CCLA and Software Grant: who files what, and where it goes. |
+| [IP clearance](https://incubator.apache.org/ip-clearance/) | 9 | When incoming code needs clearance, who does the work, how it is signed off. |
+| [Release policy](https://www.apache.org/legal/release-policy.html) | 9 | What a release is, source and binary packages, LICENSE and NOTICE. |
+| [Generative tooling guidance](https://www.apache.org/legal/generative-tooling.html) | 9 | Conditions on contributions produced with generative tools. |
+| [Trademark policy](https://www.apache.org/foundation/marks/) | 10 | Ownership of ASF marks, nominative use, third-party limits, logos. |
+| [Project branding requirements](https://www.apache.org/foundation/marks/pmcs) | 10 | What a project website must carry, and the graduation gate. |
+| [Selecting new product names](https://www.apache.org/foundation/marks/naming) | 10 | The suitable name search, who approves it, which searches are required. |
+| [Trademark usage FAQs](https://www.apache.org/foundation/marks/faq) | 10 | Powered by, books, creator wording, donated brands. |
+| [Incubator branding guide](https://incubator.apache.org/guides/branding.html) | 10 | What a podling calls itself, disclaimers, publicity coordination. |
+| [Podling name search guide](https://incubator.apache.org/guides/names.html) | 10 | Filing and closing a PODLINGNAMESEARCH issue. |
+| [Privacy policy for project websites](https://privacy.apache.org/policies/website-policy.html) | 11 | Analytics, cookies, third-party assets, embeds, social media. |
+| [ASF privacy policy](https://privacy.apache.org/policies/privacy-policy-public.html) | 11 | Matomo, mailing list exposure, log retention, processors. |
+| [Committers' privacy FAQ](https://privacy.apache.org/faq/committers.html) | 11 | Practical guidance on fonts, embeds, analytics and DPAs. |
+| [Mailing list privacy policy](https://privacy.apache.org/policies/mailinglist-policy.html) | 11 | What happens to a request to remove an archived message. |
+| [Slack policy](https://infra.apache.org/slack-policy.html) | 11 | Private channels, and decisions returning to the list. |
+
+Incubation policy at
+[incubator.apache.org/policy/incubation.html](https://incubator.apache.org/policy/incubation.html)
+feeds every lesson that touches a requirement, and is the only source in Track C
+that declares RFC 2119.
+
 ## By source
 
 | Source | Lesson | Themes | What it covers |

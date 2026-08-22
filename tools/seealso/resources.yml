@@ -1096,3 +1096,33 @@ resources:
     description: "Interactive module on handling mentor absence or inactivity during key stages of
     incubation."
     url: https://incubator.apache.org/scenarios/TheSilentMentor.html
+
+  - id: lesson-legal-basics
+    title: "Lesson 9: Legal basics: licences, ICLAs, provenance"
+    type: lesson
+    themes: [legal, releases]
+    topics: [legal-basics, licensing, clas, compliance, artifacts]
+    description: "Tutored lesson on who owns contributed code, who files an ICLA, CCLA or software
+    grant, what may be included in a release, what LICENSE and NOTICE are for, and when code needs
+    IP clearance."
+    url: https://incubator.apache.org/training/lessons.html#lesson-9
+
+  - id: lesson-names-and-trademarks
+    title: "Lesson 10: Names, trademarks and branding"
+    type: lesson
+    themes: [branding, legal, neutrality]
+    topics: [branding, trademarks, project-identity, branding-practice, third-party-use]
+    description: "Tutored lesson on what a podling must call itself, who owns the name, the suitable
+    name search and who approves it, what a project website has to carry, and what third parties may
+    and may not do."
+    url: https://incubator.apache.org/training/lessons.html#lesson-10
+
+  - id: lesson-privacy-and-data
+    title: "Lesson 11: Privacy and data handling"
+    type: lesson
+    themes: [privacy, legal, infrastructure]
+    topics: [data-handling, compliance, project-resources, mailing-lists, transparency]
+    description: "Tutored lesson on who maintains privacy policy at the ASF, the project website
+    rules on analytics, cookies and embeds, the public mailing list record and removal requests, and
+    handling personal data."
+    url: https://incubator.apache.org/training/lessons.html#lesson-11

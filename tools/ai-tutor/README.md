@@ -49,6 +49,10 @@ rather than pad when a learner is answering well.
 | [7. Growing committers and the PPMC](lesson-07-growing-committers-and-the-ppmc.md) | B, Podling startup and PPMC | What separates a committer from a PPMC member, how to decide who to invite and how to tell when a bar has drifted, both addition processes and where each step happens, the awkward cases, and why committer growth is what graduation reads. | ~30 min |
 | [8. Writing a report the IPMC can use](lesson-08-writing-a-report-the-ipmc-can-use.md) | B, Podling startup and PPMC | Who reads a podling report and what they look for, what belongs in each section, facts that mean something versus statistics that do not, reporting a bad month honestly, the submission mechanics, and what happens when a report is late or missed. | ~30 min |
 
+| [9. Legal basics: licences, ICLAs, provenance](lesson-09-legal-basics.md) | C, Legal, branding and IP | Who owns contributed code and what the Foundation gets, who files an ICLA, a CCLA or a software grant, what may be included in a release and in what form, what LICENSE and NOTICE are for, when code needs IP clearance, and where to stop and ask. | ~40 min |
+| [10. Names, trademarks and branding](lesson-10-names-trademarks-and-branding.md) | C, Legal, branding and IP | What a podling must call itself and where the incubation statement goes, who owns the name and what happens to a donated brand, the suitable name search and who approves it, what a project website has to carry, and what third parties may and may not do. | ~35 min |
+| [11. Privacy and data handling](lesson-11-privacy-and-data-handling.md) | C, Legal, branding and IP | Who maintains privacy policy at the ASF, the project website rules on analytics, cookies, third-party assets and embeds, the public mailing list record and removal requests, handling personal data and ICLAs, and who may agree things on the project's behalf. | ~30 min |
+
 Twenty-six lessons are planned across eight tracks: Foundations, podling startup
 and PPMC, legal and branding, releases, mentoring, IPMC oversight, graduation
 and exit, and data and trends. See [ROADMAP.md](ROADMAP.md) for the full list

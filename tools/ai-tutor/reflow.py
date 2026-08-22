@@ -19,7 +19,9 @@ HTML = re.compile(r'^\s*<')
 QUOTE = re.compile(r'^\s*>')
 INDENTED = re.compile(r'^ {4,}\S')
 # "- foo", "* foo", "1. foo", "> - foo", "> 1. foo", "> foo"
-MARKER = re.compile(r'^(?P<lead>\s*(?:>\s?)*)(?P<mark>(?:[-*+]\s+|\d+\.\s+)?)(?P<rest>\S.*)$')
+# A list marker is at most three digits. Longer runs are prose, most often a
+# year or a section number that happens to land at the start of a line.
+MARKER = re.compile(r'^(?P<lead>\s*(?:>\s?)*)(?P<mark>(?:[-*+]\s+|\d{1,3}\.\s+)?)(?P<rest>\S.*)$')
 
 
 def is_structural(line):

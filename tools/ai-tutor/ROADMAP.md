@@ -105,15 +105,26 @@ are named but handed on to Lessons 7, 8, 10 and Track D.
 
 | # | Lesson | Source pages | Status |
 |---|---|---|---|
-| 9 | Legal basics: licences, ICLAs, provenance | Legal Basics, Licensing and Provenance | Next |
-| 10 | Names, trademarks and branding | Naming and Trademarks, Naming and Branding, Third-Party Branding and Incubating Projects, Graduation Identity | Planned |
-| 11 | Privacy and data handling | Privacy and Data Handling | Planned |
+| 9 | Legal basics: licences, ICLAs, provenance | Legal Basics, Licensing and Provenance | **Done** |
+| 10 | Names, trademarks and branding | Naming and Trademarks, Naming and Branding, Third-Party Branding and Incubating Projects, Graduation Identity | **Done** |
+| 11 | Privacy and data handling | Privacy and Data Handling | **Done** |
+
+Track C draws more on Foundation documents than on Incubator guides, because the
+rules here are ASF-wide. Lesson 9 works from ASF Legal's third-party licensing
+policy, the contributor agreements page, the IP clearance pages and the release
+policy; Lesson 10 from the trademark policy, the project branding requirements
+and the naming process; Lesson 11 from the privacy policy for project websites
+and the committers' privacy FAQ. Incubation policy is silent on most of Lesson
+9's subject, which the lesson says rather than leaving a learner to look for a
+rule that is not there.
+
+The next lesson is 12, which begins Track D.
 
 ## Track D: Releases
 
 | # | Lesson | Source pages | Status |
 |---|---|---|---|
-| 12 | Anatomy of a podling release | Releases | Planned |
+| 12 | Anatomy of a podling release | Releases | Next |
 | 13 | Running a release vote | Release Votes, Release Vote Insights, Release Review Issues | Planned |
 | 14 | Announcing and distributing | Release Announcements | Planned |
 

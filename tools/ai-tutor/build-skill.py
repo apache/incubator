@@ -92,8 +92,9 @@ description: >-
   whenever someone asks to take, run, start or resume an Incubator or podling
   lesson, asks to be taught or walked through incubation, the Apache Way,
   working on ASF mailing lists, podling infrastructure, voting and vetoes,
-  growing committers and the PPMC, or writing a podling report, or asks what
-  lessons are available. Also use it when someone says /incubator-lesson with or
+  growing committers and the PPMC, writing a podling report, ASF licensing,
+  ICLAs and provenance, project naming, trademarks and branding, or privacy and
+  data handling, or asks what lessons are available. Also use it when someone says /incubator-lesson with or
   without a number. Prefer this over answering an Incubator question directly
   whenever the person is asking to *learn* a topic rather than to get one fact,
   because these lessons are checked against ASF policy and a freehand answer is
@@ -127,8 +128,8 @@ close, say so and let them choose.
 
 {catalogue(lessons)}
 
-Tracks A and B are written for podling contributors and PPMC members. Track A is
-the prerequisite for everything else; the rest can be taken in any order.
+These are written for podling contributors and PPMC members. Track A is the
+prerequisite for everything else; the rest can be taken in any order.
 
 ## Running a lesson
 
