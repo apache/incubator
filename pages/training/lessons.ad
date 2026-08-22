@@ -1,0 +1,167 @@
+//Licensed under the Apache License, Version 2.0 (the "License");
+//you may not use this file except in compliance with the License.
+//You may obtain a copy of the License at
+//
+//http://www.apache.org/licenses/LICENSE-2.0
+//
+//Unless required by applicable law or agreed to in writing, software
+//distributed under the License is distributed on an "AS IS" BASIS,
+//WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+//See the License for the specific language governing permissions and
+//limitations under the License.
+= Tutored Lessons
+Apache Incubator PMC
+2026-08-22
+:jbake-type: guide
+:jbake-status: published
+:idprefix:
+:toc:
+:imagesdir: ../images/
+
+== Tutored Lessons
+
+Each lesson is an interactive session with an AI tutor rather than a document
+to read. You paste the lesson into a chat model, and it teaches you one idea at
+a time, sets exercises, waits for your answer before giving its own, and
+finishes with a self-check.
+
+The lessons are written and fact-checked against ASF policy, the Incubator's
+guides and the Incubator wiki, and they are explicit about which of those a
+given statement comes from.
+
+== How to run one
+
+. Click *Copy prompt* next to the lesson you want.
+. Open any capable chat model.
+. Paste the prompt as the first message, or into a system prompt field if the
+tool has one.
+. Say hello. The tutor takes it from there.
+
+Nothing is installed and nothing is recorded. If you prefer, *View* opens the
+plain text so you can read it first or copy it by hand.
+
+== Foundations
+
+Start here. These three are the prerequisite for everything below, and they
+assume no prior knowledge of the ASF.
+
+[cols="1,5,2",options="header"]
+|===
+| # | Lesson | Prompt
+
+| 1
+| *What the Incubator is, and whether you want it* +
+What a podling is, what a project hands over and gets back, who does what, and
+whether a community is ready to propose.
+| link:lessons/lesson-01.md[View] +
+  link:lessons/lesson-01.md[Copy prompt, role="copy-lesson"]
+
+| 2
+| *The Apache Way, in practice* +
+Consensus, merit, community over code, transparency and independence, and how to
+tell whether a decision was made the Apache way.
+| link:lessons/lesson-02.md[View] +
+  link:lessons/lesson-02.md[Copy prompt, role="copy-lesson"]
+
+| 3
+| *Working in public: lists, tone, culture, time zones* +
+Why messages read as rude when nobody meant it, choosing the right channel,
+working across time zones, and what the code of conduct asks.
+| link:lessons/lesson-03.md[View] +
+  link:lessons/lesson-03.md[Copy prompt, role="copy-lesson"]
+|===
+
+== Podling startup and the PPMC
+
+For people running a podling day to day. These five can be taken in any order.
+
+[cols="1,5,2",options="header"]
+|===
+| # | Lesson | Prompt
+
+| 4
+| *From proposal to podling* +
+The path from idea to podling: what a champion does, what a proposal has to
+establish, credible initial committers, and honest known risks.
+| link:lessons/lesson-04.md[View] +
+  link:lessons/lesson-04.md[Copy prompt, role="copy-lesson"]
+
+| 5
+| *Getting set up with Infra* +
+What Infra does and what the project does, choosing between self-serve, a ticket
+and Whimsy, and writing a request that needs no round trip.
+| link:lessons/lesson-05.md[View] +
+  link:lessons/lesson-05.md[Copy prompt, role="copy-lesson"]
+
+| 6
+| *How decisions get made: lazy consensus, votes, vetoes* +
+When something needs no vote, consensus or a formal vote, who is binding, the
+two-stage release vote, and what makes a veto valid.
+| link:lessons/lesson-06.md[View] +
+  link:lessons/lesson-06.md[Copy prompt, role="copy-lesson"]
+
+| 7
+| *Growing committers and the PPMC* +
+What committers and PPMC members can and cannot do, running each process end to
+end, who to invite, and the awkward cases.
+| link:lessons/lesson-07.md[View] +
+  link:lessons/lesson-07.md[Copy prompt, role="copy-lesson"]
+
+| 8
+| *Writing a report the IPMC can use* +
+Who reads a podling report and what they look for, what belongs in each section,
+reporting a bad month honestly, and the submission mechanics.
+| link:lessons/lesson-08.md[View] +
+  link:lessons/lesson-08.md[Copy prompt, role="copy-lesson"]
+|===
+
+== If you use Claude
+
+The same eight lessons are packaged as a Claude skill, which saves the pasting.
+Install it once, then `/incubator-lesson list` shows the catalogue and
+`/incubator-lesson 6` starts that lesson. The lesson text in the skill is copied
+from the same files this page publishes, so both routes run the same tutor.
+
+Build it from a checkout with `python3 tools/ai-tutor/build-skill.py`, then
+upload the packaged skill in your Claude settings.
+
+== A caution
+
+These are teaching prompts, not policy. Where a lesson and an ASF policy page
+disagree, the policy page is correct. Models also make mistakes, so if you need
+a definitive answer for a real decision, ask your mentors or
+link:https://lists.apache.org/list.html?general@incubator.apache.org[general@incubator.apache.org].
+
+Corrections are welcome on that list. The lessons live in
+link:https://github.com/apache/incubator/tree/master/tools/ai-tutor[tools/ai-tutor]
+in the website repository.
+
+++++
+<script>
+(function () {
+  function flash(el, text) {
+    var original = el.textContent;
+    el.textContent = text;
+    setTimeout(function () { el.textContent = original; }, 2000);
+  }
+  document.addEventListener('click', function (event) {
+    var link = event.target.closest ? event.target.closest('a.copy-lesson') : null;
+    if (!link) { return; }
+    event.preventDefault();
+    var url = link.getAttribute('href');
+    fetch(url).then(function (response) {
+      if (!response.ok) { throw new Error(response.status); }
+      return response.text();
+    }).then(function (text) {
+      return navigator.clipboard.writeText(text);
+    }).then(function () {
+      flash(link, 'Copied');
+    }).catch(function () {
+      // Clipboard access can be blocked, and older browsers lack it entirely.
+      // Send the reader to the file rather than leaving them with nothing.
+      window.location.href = url;
+    });
+  });
+})();
+</script>
+++++

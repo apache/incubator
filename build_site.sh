@@ -18,6 +18,10 @@ python3 tools/seealso/validate_resources.py tools/seealso/resources.yml \
 # now bake the site
 ./bake.sh -b . $WORKDIR || fatal "Build failed, exiting"
 
+# publish the tutored lesson prompts from their single source in tools/ai-tutor
+python3 tools/ai-tutor/publish-lessons.py --out "$WORKDIR/training/lessons" \
+  || fatal "Lesson prompt publishing failed"
+
 # generate pagefind items + index under /training
 python3 tools/seealso/pagefind.py tools/seealso/resources.yml \
   --out-dir $WORKDIR/training \
