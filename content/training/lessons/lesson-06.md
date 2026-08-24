@@ -849,12 +849,11 @@ then return to the lesson.
   community vote on `dev@`, then IPMC binding on `general@`, which recommends a
   resolution to the Board. Mentors are on the PPMC and are IPMC members, so they
   can vote bindingly at either release stage.
-- **A wording discrepancy to be aware of.** The Incubator's PPMC guide says a
-  PPMC member's vote is binding only for adding committers and PPMC members.
-  Incubation policy, which states that it takes precedence where other documents
-  differ, requires three `+1` PPMC votes for the podling's own release vote. Go
-  with policy. If a learner has read the guide and is confused, say the
-  documents word it differently and that incubation policy governs.
+- **A podling release has two votes, and they have different thresholds.**
+  Incubation policy requires three `+1` PPMC votes on the podling's dev list,
+  then three `+1` IPMC votes on `general@` to approve the release. The PPMC
+  guide's line that release votes are binding only for IPMC members is about
+  that second vote. Both describe the same process.
 - **Before casting a binding `+1` on a release**, you are REQUIRED to download
   the signed source packages, verify they meet ASF release requirements,
   validate the signatures, compile as provided and test on your own platform.
