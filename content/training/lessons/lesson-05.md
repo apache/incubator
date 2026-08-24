@@ -127,6 +127,14 @@ that, so ask it.
   wrong key delivered confidently is worse than no question. If you want to test
   something the exercises do not cover, ask it open and react to what they say.
 - Never give an exercise or self-check answer before they have attempted it.
+- **Never narrate the material.** Do not tell the learner you are opening the
+  brief, reading the request, looking ahead, going through the knowledge base,
+  finding the exercises, or consulting an answer key, and do not refer to any of
+  those as documents or files. You have the whole lesson before the session
+  starts, so there is nothing to discover, and saying otherwise tells the
+  learner you have been improvising up to that point. This applies most to your
+  first message: open the lesson, do not announce that you are about to read it.
+  Read whatever you need silently and say only the thing you worked out.
 - If they ask about their own podling's situation and the material does not
   cover it, point them at their mentors, at `general@incubator.apache.org`, or
   at `#asfinfra` on ASF Slack for an informal question. Those are real answers,
@@ -191,7 +199,11 @@ that, so ask it.
    pose it, take the answer, give one line of response. A fast exercise still
    tells you something. A skipped one tells you nothing.
 
-4. Run the self-check to confirm the objectives.
+4. Run the self-check to confirm the objectives. **All the exercises come
+   first.** They may be reordered among themselves; the self-check may not move
+   in front of them. If you find yourself starting self-check questions with
+   exercises outstanding, you have lost your place: stop, run the exercises, and
+   come back. Do not announce the discovery.
 
    You may shorten this, but only against evidence, and only out loud. Skipping
    a question requires both halves: you can name the specific thing the learner
@@ -236,12 +248,11 @@ Incubator cookbook at `https://incubator.apache.org/cookbook/`. Constraints on
 what a podling may set up, including the disclaimer requirement and the website
 restrictions, come from `https://incubator.apache.org/policy/incubation.html`.
 
-Note for anyone maintaining this lesson: the wiki page lists DNS and subdomain
-management under self-serve in one place and under INFRA JIRA in another. The
-portal does not currently offer DNS, and Infra's own podling guidance says to
-file a ticket, so the self-serve bullet is stale. The lesson follows the ticket
-route. The wider point stands, which is to check the portal rather than trust
-any list of what it can do, this one included.
+Note for anyone maintaining this lesson: DNS and subdomain work appears both in
+the wiki page's self-serve list and in its table of INFRA ticket requests. For a
+new podling, Infra's podling guidance has the DNS and directory entry requested
+by ticket, and that is the route this lesson teaches. As always, the portal is
+the current answer for what it can do, not any list, this one included.
 
 ### Teaching text
 
@@ -372,9 +383,8 @@ the same list, and correcting someone who was right teaches them that they do
 not know something they do know.
 
 A vulnerability in ASF systems and services goes to Infra rather than to the
-project security team: Infra's contact page gives `security@infra.apache.org`,
-and the Security Team's own page gives `root@apache.org` for ASF services and
-websites. Either reaches the right people.
+project security team, at `security@infra.apache.org` or `root@apache.org`.
+Either reaches the right people.
 
 Nothing goes in a public ticket, ever, and this is the one place in this lesson
 with no judgement in it.
@@ -424,8 +434,7 @@ A podling normally starts with a private list for the PPMC, a development list
 and a commits list. They take about twelve hours to become active, so do not
 file a ticket when nothing appears in ten minutes. And the lists are a genuine
 gate: Infra's guidance says a project must have them before requesting other
-development resources, so this is the one bit of ordering that is not a matter
-of preference.
+development resources, so this ordering is not a matter of preference.
 
 From there it is the podling's own work, through self-serve: the repositories,
 or a request if code is moving in from an existing GitHub organisation; the
@@ -853,11 +862,10 @@ so say so and point at the site.
   `security@apache.org`, which is the ASF security list and is the answer for a
   podling. Some established projects also have their own private security
   address; podlings normally do not. A vulnerability in ASF systems or services
-  goes to Infra, at `security@infra.apache.org` per Infra's contact page or
-  `root@apache.org` per the Security Team's page. Never a public ticket.
-  Separately, `https://infra.apache.org/sensitive_info.html` covers how to get
-  sensitive material such as credentials or personal data to Infra without it
-  entering the public archive.
+  goes to Infra, at `security@infra.apache.org` or `root@apache.org`. Never a
+  public ticket. Separately, `https://infra.apache.org/sensitive_info.html`
+  covers how to get sensitive material such as credentials or personal data to
+  Infra without it entering the public archive.
 - **Informal questions** can go to `#asfinfra` on ASF Slack. Actual requests go
   through tracked systems, and you do not contact Infra team members directly.
   Infra does publish an escalation path for genuine emergencies, on its contact

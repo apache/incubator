@@ -128,6 +128,14 @@ that, so ask it.
   wrong key delivered confidently is worse than no question. If you want to test
   something the exercises do not cover, ask it open and react to what they say.
 - Never give an exercise or self-check answer before they have attempted it.
+- **Never narrate the material.** Do not tell the learner you are opening the
+  brief, reading the request, looking ahead, going through the knowledge base,
+  finding the exercises, or consulting an answer key, and do not refer to any of
+  those as documents or files. You have the whole lesson before the session
+  starts, so there is nothing to discover, and saying otherwise tells the
+  learner you have been improvising up to that point. This applies most to your
+  first message: open the lesson, do not announce that you are about to read it.
+  Read whatever you need silently and say only the thing you worked out.
 - If they ask about their own project's situation and the material does not
   settle it, say so and point at their mentors or
   `general@incubator.apache.org`. The IPMC's role there is advisory: it helps a
@@ -173,7 +181,11 @@ that, so ask it.
    briefly: pose it, take the answer, give one line of response. A fast exercise
    still tells you something. A skipped one tells you nothing.
 
-4. Run the self-check to confirm the objectives.
+4. Run the self-check to confirm the objectives. **All the exercises come
+   first.** They may be reordered among themselves; the self-check may not move
+   in front of them. If you find yourself starting self-check questions with
+   exercises outstanding, you have lost your place: stop, run the exercises, and
+   come back. Do not announce the discovery.
 
    You may shorten this, but only against evidence, and only out loud. Skipping
    a question requires both halves: you can name the specific thing the learner
@@ -275,14 +287,12 @@ Routine matters go on `dev@` and are informal. Anyone may take part and nothing
 is binding, because nothing is being formally decided.
 
 Adding a committer or a PPMC member is decided by the PPMC, on the private list,
-because it is a discussion about a named individual. This is the one place a
-PPMC member's vote is binding, and the PPMC guide says so in those words. Note
-the discrepancy rather than repeating that flatly: incubation policy also
-requires three `+1` PPMC votes on the podling's own release, and where the
-documents differ policy governs. So this is the place the guide names, not the
-only place PPMC votes count. Most projects run a formal `[DISCUSS]` then
-`[VOTE]`; some use lazy consensus on the private list instead, and both are
-allowed for committers.
+because it is a discussion about a named individual. The PPMC guide names this
+as a place PPMC votes bind. PPMC votes also bind on the podling's own release
+candidate at stage one, where incubation policy requires three `+1` PPMC votes,
+so do not teach the private list as the only place they count. Most projects run
+a formal `[DISCUSS]` then `[VOTE]`; some use lazy consensus on the private list
+instead, and both are allowed for committers.
 
 A podling release is voted twice, which the next section covers.
 
@@ -418,11 +428,16 @@ occurs.
 
 #### Running a vote, and closing it
 
-Start it after the discussion, not instead of it. Say what is being voted on,
-where the thing being voted on is, and when the vote closes, as an absolute time
-with a time zone and the words "at least". At least 72 hours is standard
-practice and it exists so that people in other time zones can take part; longer
-is encouraged for anything complex or contentious. There is no maximum.
+Start it after the discussion, not instead of it. Say what is being voted on and
+where the thing being voted on is. At least 72 hours is standard practice and it
+exists so that people in other time zones can take part; longer is encouraged
+for anything complex or contentious. There is no maximum.
+
+The 72 hours is a minimum, not a deadline, and nothing requires the vote email
+to name a closing time. Many do, and it is helpful; if you name one, an absolute
+time with a time zone and the words "at least" is clearer than a duration. What
+you must not teach is that a vote is defective for leaving it out, or that the
+minimum having passed is a reason to close.
 
 Closing it is the part podlings skip and it is the part that leaves a usable
 record. Post a result that lists binding and non-binding votes separately,
@@ -556,12 +571,11 @@ lazy consensus does not apply. Credit a learner who asks which policy applies.
 
 **b. A PPMC decision on the private list, where PPMC votes bind.** It is a
 discussion about a named individual, which is one of the few things that
-legitimately stays private. Do not say this is the only place a PPMC vote is
-binding: the PPMC guide describes it that way, incubation policy also requires
-three `+1` PPMC votes on the podling's own release, and policy governs where the
-documents differ. Most projects run a formal `[DISCUSS]` and `[VOTE]`; lazy
-consensus on the private list is also allowed for committers, so accept either.
-Lesson 7 covers the process properly.
+legitimately stays private. PPMC votes also bind on the podling's own release
+candidate at stage one, where incubation policy requires three `+1` PPMC votes,
+so do not tell a learner the private list is the only place. Most projects run a
+formal `[DISCUSS]` and `[VOTE]`; lazy consensus on the private list is also
+allowed for committers, so accept either. Lesson 7 covers the process properly.
 
 **c. Formal vote, twice.** Stage one on the podling's `dev@`, needing at least
 three `+1` PPMC votes and more `+1` than `-1`; then stage two on
@@ -602,13 +616,10 @@ from a passer-by with no binding vote on code is not a veto however good the
 reasoning. Ask the learner who it was from; a learner who asks that unprompted
 has understood the rule properly.
 
-Who holds a binding vote on code is project-specific. The ASF voting page says
-so explicitly, and for a podling it is not cleanly settled, since the PPMC guide
-restricts binding PPMC votes to adding committers and PPMC members. The honest
-answer to give a learner is that the voting page says only that PMC members have
-formally binding votes and that the rest is community-specific, that no source
-settles it for a podling, that their project should know, and that if it does
-not, that is a question for their mentors.
+Who holds a binding vote on code is community-specific. The ASF voting page says
+only that PMC members have formally binding votes and leaves the rest to the
+project. No source fixes it for a podling. Their project should know, and if it
+does not, that is a question for their mentors.
 
 Assuming it is qualified: it stops the change, it cannot be overridden by
 anyone, and it stands until the voter withdraws it. What happens next is
@@ -641,15 +652,14 @@ the ASF voting page says the community generally cancels a release vote when
 someone identifies serious problems, with the decision usually resting with the
 release manager. Stage two would not approve it in any case.
 
-**d. Not a veto.** The veto right is defined for code modifications, and ASF
-policy's default elsewhere is simple majority unless a project says otherwise.
-But do not let a learner conclude they can count past it. In practice a `-1` on
-a person stops the nomination and gets worked through, because adding someone
-over a colleague's stated objection is not something a healthy PPMC does. "I
-don't think they're ready" is thin, and the right response is to ask what would
-need to be different, which is a useful conversation whichever way it goes. Note
-also that this is on the private list, which is what allows it to be said at
-all.
+**d. Not a veto.** The veto right is defined for code modifications, and no ASF
+source sets a threshold for votes on people at all. But do not let a learner
+conclude they can count past it. In practice a `-1` on a person stops the
+nomination and gets worked through, because adding someone over a colleague's
+stated objection is not something a healthy PPMC does. "I don't think they're
+ready" is thin, and the right response is to ask what would need to be
+different, which is a useful conversation whichever way it goes. Note also that
+this is on the private list, which is what allows it to be said at all.
 
 **Exercise 3.**
 
@@ -737,8 +747,9 @@ are ordinary. And ask specific people directly, which is the thing that actually
 works and which learners under-use.
 
 The message should say plainly where it stands, name the gap, ask named people,
-and give a new closing time as an absolute time with a zone. Something in the
-shape of:
+and say that it is staying open. Here it is worth being concrete about how long,
+because people have already stopped watching the thread and need a reason to
+come back. Something in the shape of:
 
 > Update on the 0.4.0-RC2 vote: we have 2 binding +1 and 1 non-binding +1, and
 > no objections. Three binding +1 votes are needed, so this has not passed yet
@@ -811,8 +822,8 @@ rather than counted past.
 non-binding votes, states the outcome in a sentence, and links the discussion.
 Only votes on official ASF lists count. Nobody has an implicit `+1`, including
 the release manager. If the vote has not reached what it needs, say so and
-either extend with a stated new closing time or cancel and re-run; do not make
-up the difference from silence.
+either leave it open and say so, saying how long, or cancel and re-run; do not
+make up the difference from silence.
 
 **Q6. Name a way voting goes wrong in a podling and say what you would do.** Any
 of: voting before discussing; a vote closing far too quickly for other time
@@ -849,11 +860,11 @@ then return to the lesson.
   community vote on `dev@`, then IPMC binding on `general@`, which recommends a
   resolution to the Board. Mentors are on the PPMC and are IPMC members, so they
   can vote bindingly at either release stage.
-- **A podling release has two votes, and they have different thresholds.**
-  Incubation policy requires three `+1` PPMC votes on the podling's dev list,
-  then three `+1` IPMC votes on `general@` to approve the release. The PPMC
-  guide's line that release votes are binding only for IPMC members is about
-  that second vote. Both describe the same process.
+- **A podling release is voted twice, and a different body binds at each
+  stage.** Incubation policy requires three `+1` PPMC votes on the podling's dev
+  list, then three `+1` IPMC votes on `general@` to approve the release. The
+  PPMC guide's line that release votes are binding only for IPMC members is
+  about that second vote.
 - **Before casting a binding `+1` on a release**, you are REQUIRED to download
   the signed source packages, verify they meet ASF release requirements,
   validate the signatures, compile as provided and test on your own platform.
@@ -920,10 +931,11 @@ same outcome by a different route.
 For votes generally the ASF voting page says periods should generally run at
 least 72 hours; for release votes release policy says they SHOULD remain open at
 least 72 hours, and a shorter one MUST explain in the vote email why the release
-is expedited. Longer when it matters, and state the closing time as an absolute
-time with a zone. Close them properly: binding and non-binding listed
-separately, a one-line outcome, a link to the thread. Nobody has an implicit
-`+1`, including you. Only votes on ASF lists count.
+is expedited. Longer when it matters. The 72 hours is a minimum rather than a
+deadline, and no source requires the email to name a closing time; if it names
+one, an absolute time with a zone is clearest. Close them properly: binding and
+non-binding listed separately, a one-line outcome, a link to the thread. Nobody
+has an implicit `+1`, including you. Only votes on ASF lists count.
 
 All of this ends up in the record, and the record is what graduation looks at. A
 vote thread says what kind of community this is, which is why the mechanics

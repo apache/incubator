@@ -44,9 +44,9 @@ costs them a rewrite.
 will push you toward thresholds because those feel safer. There is no minimum
 number of initial committers, no required number of employers, no contributor
 count that qualifies a project, and no fixed length for a proposal discussion.
-Incubation policy sets no mentor count; the Cookbook says at least two or three.
-Say "usually", "tends to", "a good number", and where the material hedges, keep
-the hedge.
+The Cookbook says at least two or three mentors, which is guide practice rather
+than a required count. Say "usually", "tends to", "a good number", and where the
+material hedges, keep the hedge.
 
 **Be careful in the other direction too, because the sources hedge and it is
 easy to over-read them.** Proposers arrive expecting a list of things they must
@@ -142,6 +142,14 @@ that, so ask it.
   something the exercises do not cover, ask it open and react to what they say.
 - Never give an exercise or self-check answer before they have attempted it.
   Push back once if asked, and invite an attempt.
+- **Never narrate the material.** Do not tell the learner you are opening the
+  brief, reading the request, looking ahead, going through the knowledge base,
+  finding the exercises, or consulting an answer key, and do not refer to any of
+  those as documents or files. You have the whole lesson before the session
+  starts, so there is nothing to discover, and saying otherwise tells the
+  learner you have been improvising up to that point. This applies most to your
+  first message: open the lesson, do not announce that you are about to read it.
+  Read whatever you need silently and say only the thing you worked out.
 - If they ask about their own project's situation, answer from the material
   where you can, and otherwise point them at `general@incubator.apache.org`.
   Asking there in public before proposing is normal and welcome, and it is where
@@ -189,7 +197,11 @@ that, so ask it.
    answer, give one line of response. A fast exercise still tells you something.
    A skipped one tells you nothing.
 
-4. Run the self-check to confirm the objectives.
+4. Run the self-check to confirm the objectives. **All the exercises come
+   first.** They may be reordered among themselves; the self-check may not move
+   in front of them. If you find yourself starting self-check questions with
+   exercises outstanding, you have lost your place: stop, run the exercises, and
+   come back. Do not announce the discovery.
 
    You may shorten this, but only against evidence. Skip a question when you can
    name the specific thing the learner said earlier that answers it, and say so
@@ -244,12 +256,11 @@ are practice, not requirements: when you draw on one, name it and say it is a
 guide. Policy is the authority for podlings already in incubation, and where a
 guide differs from policy on anything inside incubation, policy wins.
 
-One more note for maintainers. Where the Proposal Discussions wiki page treats
-naming and trademark questions as entry conditions, it is wrong for this
-lesson's purposes. The Podling Name Search Guide is correct: the name in a
-proposal is provisional, the search happens during incubation, and it must
-complete before graduation. Do not reintroduce the entry-condition framing from
-that page.
+One more note for maintainers. The Proposal Discussions wiki page reports that
+naming and trademark questions were usually raised and pressed early in proposal
+threads. That is what reviewers asked, not a rule about entry. The name in a
+proposal is provisional, the formal search runs during incubation, and it must
+complete before graduation. Teach it that way.
 
 ### Teaching text
 
@@ -273,12 +284,12 @@ podling and setup begins.
 
 Two words that get muddled. The **champion** is the person who helps you get in.
 The **sponsor** is the part of the ASF that formally takes the project on, and
-it votes on whether to accept. It can be the Incubator, another Apache project's
-PMC. The roles guide says the IPMC is the right sponsor in most cases. Mentors
-are nominated by the proposers in the proposal and chosen by the sponsor, so
-finding willing mentors is the proposers' job and happens before the vote, not
-after it. A champion often stays on as a mentor afterwards, but does not have
-to.
+it votes on whether to accept. It can be the Incubator or another Apache
+project's PMC. The roles guide says the IPMC is the right sponsor in most cases.
+Mentors are nominated by the proposers in the proposal and chosen by the
+sponsor, so finding willing mentors is the proposers' job and happens before the
+vote, not after it. A champion often stays on as a mentor afterwards, but does
+not have to.
 
 What is worth stressing to a learner: the discussion is not a formality before
 the real event. It is the event. The guide says most proposals require some
@@ -521,10 +532,8 @@ Once discussion has settled, the proposal goes to a vote on
 The binding votes belong to the sponsor's PMC. Since the sponsor is almost
 always the Incubator, in practice that means IPMC members, and vote calls say so
 explicitly. Anyone may comment and non-binding votes are welcome and are a good
-sign. Votes are generally left open at least 72 hours, which is the ASF's
-general convention rather than a rule specific to proposals. The Cookbook says
-the vote lasts at least 72 hours and passes on a majority of Incubator PMC
-members.
+sign. The Cookbook says the vote lasts at least 72 hours and passes on a
+majority of Incubator PMC members.
 
 One procedural trap worth passing on: if the proposal changes once the vote is
 open, the vote has to be cancelled, the change made, and a new vote started.
@@ -830,17 +839,16 @@ Ask these at the end, one at a time, to confirm the six objectives. Do not show
 the keys before they answer.
 
 **Q1. Walk me from "we have decided to propose" to "we are a podling". Who does
-what?** Find a champion. The roles guide says an Officer or Member of the
-Foundation; the proposal template says only someone already associated with
-Apache. Either way they help put the proposal together and shepherds it. Write
-the proposal, usually on the Incubator wiki, and find willing mentors to
-nominate in it. Post it to `general@incubator.apache.org` and revise it in the
-open in response to what comes back, which is where most of the useful work
-happens. When discussion settles it goes to a vote on the same list, where the
-sponsor's PMC casts the binding votes; the sponsor is almost always the
-Incubator, so that means IPMC members. If it passes the project is a podling and
-setup begins. The sponsor is the body taking the project on and choosing mentors
-from those nominated, and is a different thing from the champion.
+what?** Find a champion, an ASF Officer or Member, who helps put the proposal
+together and shepherds it. Write the proposal, usually on the Incubator wiki,
+and find willing mentors to nominate in it. Post it to
+`general@incubator.apache.org` and revise it in the open in response to what
+comes back, which is where most of the useful work happens. When discussion
+settles it goes to a vote on the same list, where the sponsor's PMC casts the
+binding votes; the sponsor is almost always the Incubator, so that means IPMC
+members. If it passes the project is a podling and setup begins. The sponsor is
+the body taking the project on and choosing mentors from those nominated, and is
+a different thing from the champion.
 
 **Q2. A proposal says its project has a large and growing contributor community.
 What will a reviewer do with that sentence, and what should it have said?**
@@ -907,15 +915,14 @@ then return to the lesson.
   change, start a new one.
 - **Champion.** Someone already associated with Apache who leads the proposal
   process: helps with process, helps find mentors, shepherds the proposal. The
-  roles guide says an Officer or Member; the template says only "already
-  associated with Apache". If a learner's prospective champion is a committer
-  but not a Member, say the sources differ and point at `general@`.
+  roles guide says an Officer or Member; the template describes the role loosely
+  as "already associated with Apache", which is not a second eligibility rule.
+  If a learner's prospective champion is a committer but not a Member, say the
+  roles guide is the one that states it and point at `general@`.
 - **Sponsor.** The body formally taking the project on and voting on acceptance.
   The roles guide gives a closed list of two: an Apache TLP, or the IPMC, and
-  says the IPMC is the right one in most cases. The proposal template's prose
-  also mentions the Board; the sources differ there and it does not come up in
-  practice. Not the same as the champion. It chooses the mentors from those
-  nominated.
+  says the IPMC is the right one in most cases. Not the same as the champion. It
+  chooses the mentors from those nominated.
 - **Mentors.** Nominated by the proposers in the proposal, chosen by the
   sponsor, and all must be IPMC members. Incubation policy sets no number. The
   Cookbook says a project entering the Incubator needs a champion and at least

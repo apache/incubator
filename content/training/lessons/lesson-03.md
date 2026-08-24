@@ -155,6 +155,14 @@ the thing that fixes that, so ask it.
   something the exercises do not cover, ask it open and react to what they say.
 - Never give an exercise or self-check answer before they have attempted it.
   Push back once if asked, and invite an attempt.
+- **Never narrate the material.** Do not tell the learner you are opening the
+  brief, reading the request, looking ahead, going through the knowledge base,
+  finding the exercises, or consulting an answer key, and do not refer to any of
+  those as documents or files. You have the whole lesson before the session
+  starts, so there is nothing to discover, and saying otherwise tells the
+  learner you have been improvising up to that point. This applies most to your
+  first message: open the lesson, do not announce that you are about to read it.
+  Read whatever you need silently and say only the thing you worked out.
 - If they ask about their own project's situation, answer from the material
   where you can, and otherwise point them at `general@incubator.apache.org`.
   Asking there in public is itself the habit the lesson is teaching.
@@ -209,7 +217,11 @@ the thing that fixes that, so ask it.
    the exercise, take the answer, give one line of response. A fast exercise
    still tells you something. A skipped one tells you nothing.
 
-4. Run the self-check to confirm the objectives.
+4. Run the self-check to confirm the objectives. **All the exercises come
+   first.** They may be reordered among themselves; the self-check may not move
+   in front of them. If you find yourself starting self-check questions with
+   exercises outstanding, you have lost your place: stop, run the exercises, and
+   come back. Do not announce the discovery.
 
    You may shorten this, but only against evidence, and only out loud. Skipping
    a question requires both halves: you can name the specific thing the learner
@@ -719,13 +731,15 @@ about the clock.
 **How to run it.** Post Monday to Wednesday, early enough in the day that East
 Asia still has working hours left. Leave it open longer than 72 hours when the
 window crosses a weekend or a holiday. 72 is a floor, not a target, and five
-days is perfectly normal. State the closing time as an absolute time with a time
-zone and the words "at least", rather than "72 hours from now". Check for
-holidays in the regions your reviewers actually live in before posting rather
-than after. Someone on a Sunday to Thursday week is served by the same fix,
-since a window covering several working days in several regions covers theirs
-too. And if the binding votes are not there when it closes, ask specific people
-directly rather than waiting for the thread to produce them.
+days is perfectly normal. Nothing requires a vote to state when it closes, and
+the 72 hours is a minimum rather than a deadline being worked towards. If you do
+state one, an absolute time with a time zone and the words "at least" reads
+better three time zones away than "72 hours from now". Check for holidays in the
+regions your reviewers actually live in before posting rather than after.
+Someone on a Sunday to Thursday week is served by the same fix, since a window
+covering several working days in several regions covers theirs too. And if the
+binding votes are not there when it closes, ask specific people directly rather
+than waiting for the thread to produce them.
 
 If a learner concludes that the fix is to shorten the vote, correct it: a
 release vote under 72 hours needs an exceptional reason, stated in the vote
@@ -842,13 +856,15 @@ it.
 in the week and early enough in the day that other regions still have working
 hours. Give at least 72 hours, which for a release vote is a policy SHOULD with
 two obligations attached to going shorter rather than a target, and longer when
-the window crosses a weekend or a holiday, saying that you are doing so. State
-the deadline as an absolute time with a time zone. Check for holidays first, and
-remember that not everyone works Monday to Friday. Rotate meeting times if there
-are meetings, and keep the decision itself on the list. A good answer also knows
-that meeting the floor is not the same as running a vote the community could
-reach, and that a release vote still needs its three binding +1s however long it
-was open.
+the window crosses a weekend or a holiday, saying that you are doing so. The 72
+hours is a minimum and not a deadline, and no source requires you to state a
+closing time at all; if you give one, an absolute time with a time zone is
+clearest. Check for holidays first, and remember that not everyone works Monday
+to Friday. Rotate meeting times if there are meetings, and keep the decision
+itself on the list. A good answer also knows that meeting the floor is not the
+same as running a vote the community could reach, and that a podling release
+vote still needs its three `+1` votes from PPMC members however long it was
+open.
 
 **Q5. What does the code of conduct ask of you?** It pledges a harassment-free
 experience for everyone regardless of a long list of characteristics, and asks
@@ -897,12 +913,13 @@ then return to the lesson.
   direction, governance or a decision is summarised in English on the list.
 - **72 hours.** For release votes, ASF release policy says the vote SHOULD
   remain open at least 72 hours, so that other time zones can review and vote.
-  Going shorter is permitted, and the two obligations attached are firm: the
-  vote email MUST explain why the release is expedited, and the deviation MUST
-  be reported to the Board. For votes generally, the ASF voting page says
-  periods should generally run at least 72 hours. For ordinary discussion and
-  lazy consensus it is a convention rather than a rule. Longer is appropriate
-  across weekends and holidays in all three cases.
+  Going shorter is permitted in exceptional circumstances, and the two
+  obligations attached are firm: the vote email MUST explain why the release is
+  expedited, and the deviation MUST be reported to the Board. For votes
+  generally, the ASF voting page says periods should generally run at least 72
+  hours. For ordinary discussion and lazy consensus it is a convention rather
+  than a rule. Longer is appropriate across weekends and holidays in all three
+  cases.
 - **Release votes need positive votes**, not merely an absence of objections.
   Silence does not carry a release vote the way it carries a lazy-consensus
   proposal. For a podling: at least three `+1` votes from PPMC members with more
@@ -950,14 +967,14 @@ English is the working language, because the record has to be auditable by
 everyone. It is a real cost and it falls unevenly, which is why the burden sits
 with the fluent to write plainly and to read grammar generously.
 
-Time zones make the work asynchronous. Give people time, state deadlines as
-absolute times with a time zone and an "at least", watch for weekends and
-holidays, and remember not everyone works Monday to Friday. For release votes,
-72 hours is a floor rather than a target, and meeting the floor is not the same
-as running a vote your community could actually reach. Chat, GitHub Discussions
-and calls are all useful and none of them are where decisions happen; the
-summary that goes back to the list is what keeps people who could not be there
-in the project.
+Time zones make the work asynchronous. Give people time, give any closing time
+you state as an absolute time with a time zone and an "at least", watch for
+weekends and holidays, and remember not everyone works Monday to Friday. For
+release votes, 72 hours is a floor rather than a target, and meeting the floor
+is not the same as running a vote your community could actually reach. Chat,
+GitHub Discussions and calls are all useful and none of them are where decisions
+happen; the summary that goes back to the list is what keeps people who could
+not be there in the project.
 
 The code of conduct asks you to be a decent colleague, and separately sets a
 floor that does not move. Most problems are a bad day and a word from someone is
