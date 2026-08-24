@@ -17,7 +17,10 @@ lives on the main ASF site rather than the wiki.
 Tracks C and D are the exception to "wiki guides feed the lessons". Their
 subjects are Foundation-wide rather than Incubator practice, so Lessons 9 to 14
 take their teaching shape from the wiki guides listed below but take anything
-normative from ASF and Infrastructure pages that are not in the index:
+normative from ASF and Infrastructure pages that are not in the index. Lesson 18
+is a smaller exception of the same kind: the mentor wiki pages describe the
+practice, while the eligibility rule and the mechanics for changing a mentor
+sit on the Incubator's own site guides. Those sources:
 
 | Source | Lesson | What it covers |
 |---|---|---|
@@ -48,6 +51,9 @@ normative from ASF and Infrastructure pages that are not in the index:
 | [Incubator distribution guidelines](https://incubator.apache.org/guides/distribution.html) | 12, 14 | Convenience binaries, and the conditions on Maven, GitHub, Docker Hub and package registries. |
 | [Incubator publicity guide](https://incubator.apache.org/guides/publicity.html) | 14 | What a podling is encouraged to do publicly, and the newswire restriction. |
 | [Handling cryptography](https://infra.apache.org/crypto.html) | 12 | When the export control obligation attaches, and what the steps are. |
+| [PPMC guide](https://incubator.apache.org/guides/ppmc.html) | 18 | Adding and removing a mentor via the Whimsy podling roster, and that a mentor must be an IPMC member. |
+| [Mentors' guide](https://incubator.apache.org/guides/mentor.html) | 18 | That mentors must be on the IPMC, and the route for a prospective mentor to join. |
+| [Guide to retirement](https://incubator.apache.org/guides/retirement.html) | 18 | Who decides retirement, the IPMC vote, and that a mentor or other volunteer performs the wind-up. |
 
 Incubation policy at
 [incubator.apache.org/policy/incubation.html](https://incubator.apache.org/policy/incubation.html)

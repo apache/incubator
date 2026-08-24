@@ -144,10 +144,19 @@ The next lesson is 15, which begins Track E.
 
 | # | Lesson | Source pages | Status |
 |---|---|---|---|
-| 15 | What a mentor actually does | Incubator Mentor Quick Start Guide, Mentor Onboarding, Mentor Handbook | Next |
-| 16 | Reading the signals | Common Red Flags, Measuring Podling Health, Mentor Engagement Patterns, Best Practices for Mentors | Planned |
-| 17 | Difficult conversations | Mentors Tough Conversation Guide | Planned |
-| 18 | Mentor lifecycle: selection, replacement, offboarding | Select Your Mentors, Mentor Replacement, Mentor Offboarding | Planned |
+| 15 | What a mentor actually does | Incubator Mentor Quick Start Guide, Mentor Onboarding, Mentor Handbook | **Done** |
+| 16 | Reading the signals | Common Red Flags, Measuring Podling Health, Mentor Engagement Patterns, Best Practices for Mentors | **Done** |
+| 17 | Difficult conversations | Mentors Tough Conversation Guide | **Done** |
+| 18 | Mentor lifecycle: selection, replacement, offboarding | Select Your Mentors, Mentor Replacement, Mentor Offboarding | **Done** |
+
+Track E is the first track written for mentors rather than podling members,
+which changes the hard rule in every lesson: the tutor teaches the judgement and
+refuses to exercise it. Lesson 15 works from the mentor quick start, onboarding
+and handbook pages; Lesson 16 from the red flags sheet, the health and
+engagement analyses and Best Practices; Lesson 17 from the Tough Conversation
+Guide; Lesson 18 from Select Your Mentors, Mentor Replacement and Mentor
+Offboarding, with the PPMC and Mentors' guides for the mechanics the wiki pages
+do not carry.
 
 ## Track F: IPMC oversight
 
