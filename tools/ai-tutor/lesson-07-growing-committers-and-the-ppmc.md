@@ -1077,12 +1077,11 @@ then return to the lesson.
   right rule to teach.
 - **A wording discrepancy to be aware of.** The Incubator's PPMC guide says a
   PPMC member's vote is binding only for adding committers and PPMC members, and
-  that release votes are binding only for IPMC members. Incubation policy, which
-  states that it takes precedence where other documents differ, requires at
-  least three `+1` PPMC votes for the podling's own release vote, and the wiki's
-  Podling Committer Onboarding page says only PPMC members and mentors have
-  binding votes on releases during incubation. Go with policy. If a learner has
-  read the guide and is confused, say the documents word it differently and that
+  that release votes are binding only for IPMC members, which is about the IPMC
+  vote that approves the release. Incubation policy requires at least three `+1`
+  PPMC votes on the podling's own dev list, which is the earlier vote. Two
+  votes, two thresholds. Go with policy on the threshold. If a learner has read
+  the guide and is confused, say the documents word it differently and that
   incubation policy governs. The guide adds one line worth quoting either way:
   the binding status of a person's vote is not related to the email list the
   vote occurs on.

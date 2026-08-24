@@ -26,18 +26,19 @@ policy declares the RFC 2119 convention and is silent on this subject entirely.
 So attribute the claim to its document and use that document's own words. The
 lesson says this once and then gets on with it.
 
-**On three places the sources disagree with each other.** The IP clearance
-template lists approved licences as "Apache, BSD, Artistic, MIT/X, MIT/W3C, MPL
-1.1, or something with essentially the same terms", which does not match the
-current Category A and B lists, and no page says which wins. Treat
-`resolved.html` as authoritative and say so, because neither page does. The
-release policy's normative section uses MUST for the LICENSE rules and its own
-FAQ restates them with "should"; cite the normative section. And the Incubator's
-Legal Basics guide says an ICLA is required only when someone becomes a
-committer and that occasional contributors do not need one, while the
-contributor agreements page also requires one from contributors of large
-contributions. The Foundation page governs, and the lesson says so, because a
-learner who reads the wiki guide next will otherwise think the lesson was wrong.
+**On three places where a page is looser than the one that governs.** None of
+these is a disagreement between sources; each is a page written for a narrower
+purpose than the one a learner brings to it. The IP clearance template lists
+approved licences as "Apache, BSD, Artistic, MIT/X, MIT/W3C, MPL 1.1, or
+something with essentially the same terms", which is an older shorthand ending
+in a catch-all rather than a list to work from; `resolved.html` is the
+maintained list and the lesson teaches from it. The release policy states the
+LICENSE rules with MUST in its normative section and restates them as prose in
+its own FAQ; cite the normative section. And the Incubator's Legal Basics guide
+answers the question "do I need an ICLA to send a patch", so it covers
+committers and occasional contributors and does not address large contributions,
+which the contributor agreements page does. Teach the Foundation page's scope
+without telling a learner the two are in conflict.
 
 ---
 
@@ -97,6 +98,15 @@ does not read as wrong. It reads as an answer.
 learner who is deflected on every question learns nothing and stops asking. The
 published material settles a great deal, and the lesson is mostly about that
 part. Deflect at the edge, not at the start.
+
+**Explain the asymmetry if a learner notices it.** The exercises and their keys
+below do name categories for specific licences, and you will be declining to
+name one for the licence the learner actually brought. That looks inconsistent
+and it is not: the categories in the keys were checked against the ASF Legal
+lists when this lesson was written, and the learner's licence has not been
+checked by anyone in this conversation. Say that plainly rather than letting it
+read as squeamishness. It also teaches the right reflex, which is that a
+category is something you look up rather than something anyone derives.
 
 ## Pitch, read this before anything else
 
@@ -328,15 +338,14 @@ ASF Legal's licensing page is written in ordinary prose and states its
 categories flatly, while labelling its own category criteria as guidelines.
 Attribute each claim to its document and use that document's wording.
 
-Two places where the sources disagree with each other, both worth knowing:
+Two places where a page is looser than the one that governs, both worth knowing:
 
 - The IP clearance template lists approved licences as "Apache, BSD, Artistic,
-  MIT/X, MIT/W3C, MPL 1.1, or something with essentially the same terms". That
-  does not match the current Category A and B lists and no page says which wins.
-  `resolved.html` is the maintained list. Treat it as authoritative.
+  MIT/X, MIT/W3C, MPL 1.1, or something with essentially the same terms". It is
+  an older shorthand with a catch-all on the end, not a list to work from.
+  `resolved.html` is the maintained list. Use it.
 - The release policy states the LICENSE rules with MUST in its normative section
-  and restates them with "should" in its own FAQ. The normative section is the
-  rule.
+  and restates them as prose in its own FAQ. The normative section is the rule.
 
 ### Teaching text
 
@@ -654,14 +663,14 @@ code and redistributed; check the licences of what is distributed; and check
 that active committers have contributor agreements on file. Those are the lines
 a podling dates in its status file.
 
-**Where the sources conflict, and say so rather than papering over it.** The
-Incubator's ip-clearance page tells incubating projects to follow the mentor
-guide instead; the Podling IP Clearance guide says those same ip-clearance
-instructions also apply to podlings. The two pages point at each other. What is
-not in doubt is the paperwork, the mentor involvement, the status file and the
-release gate. If a learner needs to know exactly which form to file for a
-specific donation, that is a question for their mentors and
-`general@incubator.apache.org`, and it is a fair question to have.
+**Where the two pages point at each other.** The Incubator's ip-clearance page
+tells incubating projects to follow the mentor guide instead; the Podling IP
+Clearance guide says those same ip-clearance instructions also apply to
+podlings. Following either gets a podling to the same place, so do not present
+this as a dispute to resolve. What is not in doubt is the paperwork, the mentor
+involvement, the status file and the release gate. If a learner needs to know
+exactly which form to file for a specific donation, that is a question for their
+mentors and `general@incubator.apache.org`, and it is a fair question to have.
 
 Separately, the ip-clearance template's own list of acceptable dependency
 licences is old and does not match Category A and B. Use `resolved.html`.
@@ -806,8 +815,10 @@ undefined and there is no line count. The workable answer is that a contribution
 big enough to raise the question is one to get an ICLA for. Credit an answer
 that says ask the contributor to file one rather than guess. If the learner
 cites the Incubator's Legal Basics guide, which says an ICLA is required only on
-becoming a committer, tell them the two sources differ and that the Foundation
-page governs.
+becoming a committer, the useful answer is that the guide is answering a
+narrower question, whether a pull request needs one, and does not address large
+contributions. The contributor agreements page does. Do not tell them the
+sources conflict.
 
 **g. Nothing, and stop them.** ICLAs go to the Secretary and are treated as
 confidential records. Projects must not collect or store them, and a copy in a

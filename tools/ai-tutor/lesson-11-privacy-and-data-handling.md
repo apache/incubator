@@ -19,9 +19,8 @@ surprising, the Project Branding Requirements.
 
 **On strength of claim.** The project website policy is the clearest set of
 rules in this area: short, numbered, and written as flat prohibitions and
-conditions. Quote it in its own words. Where the sources differ in force on the
-same point, and they do on Google Analytics, say which one you are teaching
-from.
+conditions. Quote it in its own words, and teach from it where several pages
+cover the same ground.
 
 **On where the rules live.** Three of the rules a podling most often asks about
 are not on the privacy site at all. The prohibition on a project publishing its
@@ -309,11 +308,12 @@ II verdict. If a project needs analytics, the Foundation runs a self-hosted
 Matomo instance, and projects ask `privacy@apache.org` for a site ID. Projects
 should not run their own Matomo instances.
 
-The sources vary in force on Google Analytics. The website policy states it
-flatly, the Committers' FAQ says both that the ASF discourages it and that
-projects shall not use it at all, and the Incubator page frames it as needing
-written approval from the privacy team. Teach the website policy's version, and
-say that is what you are doing.
+Several pages say this in different words. The website policy states it flatly,
+the Committers' FAQ says the ASF discourages Google Analytics and that projects
+shall not use it at all, and the Incubator page puts it as needing written
+approval from the privacy team, which in practice means asking the same people
+whose answer is no. They all land in the same place. Teach the website policy's
+version, which is the plainest.
 
 Two details worth having: the Foundation's Matomo anonymises IP addresses by
 dropping the last two octets, uses no cookies for this, and respects Do Not

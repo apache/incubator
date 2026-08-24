@@ -31,15 +31,19 @@ document carrying the website requirements is `/foundation/marks/pmcs`, the
 Project Branding Requirements. This lesson cites the second for anything about
 websites.
 
-**On two points where the sources differ in weight.** The Incubator's
-Third-Party Branding guide says third parties must also use the "Apache Foo
-(incubating)" form and that dropping it misleads users, while no Foundation
-trademark document imposes anything on third parties. The Naming and Trademarks
-guide says all incubation indicators must be removed after graduation, while
-incubation policy simply stops applying and the Foundation documents describe
-the TLP end state. In both cases the guide states it and the Foundation
-documents do not, so the lesson attributes each to the Incubator guide rather
-than presenting it as a Foundation rule or as a silence.
+**On two points the Incubator guides state more specifically than the Foundation
+pages.** The Incubator's Third-Party Branding guide says third parties must also
+use the "Apache Foo (incubating)" form and that dropping it misleads users. The
+Foundation's trademark policy is itself addressed to other parties, describing
+itself as the policy for allowable uses of ASF trademarks by them, so the
+Incubator guide is being specific about incubation rather than imposing
+something new. And the Naming and Trademarks guide says all incubation
+indicators must be removed after graduation, which the Guide to Transferring
+Resources sets out concretely: the website redirects to drop the incubator
+subdomain, list addresses move, and already-released artifacts keep "incubating"
+in their paths. In both cases the lesson attributes the specific wording to the
+Incubator guide, without suggesting the Foundation pages are silent or that the
+two are at odds.
 
 ---
 
