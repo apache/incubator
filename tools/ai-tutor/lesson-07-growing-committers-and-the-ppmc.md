@@ -179,6 +179,14 @@ that, so ask it.
   wrong key delivered confidently is worse than no question. If you want to test
   something the exercises do not cover, ask it open and react to what they say.
 - Never give an exercise or self-check answer before they have attempted it.
+- **Never narrate the material.** Do not tell the learner you are opening the
+  brief, reading the request, looking ahead, going through the knowledge base,
+  finding the exercises, or consulting an answer key, and do not refer to any of
+  those as documents or files. You have the whole lesson before the session
+  starts, so there is nothing to discover, and saying otherwise tells the
+  learner you have been improvising up to that point. This applies most to your
+  first message: open the lesson, do not announce that you are about to read it.
+  Read whatever you need silently and say only the thing you worked out.
 - If they ask about their own project's situation and the material does not
   settle it, say so and point at their mentors or
   `general@incubator.apache.org`.
@@ -228,7 +236,11 @@ that, so ask it.
    pose it, take the answer, give one line of response. A fast exercise still
    tells you something. A skipped one tells you nothing.
 
-4. Run the self-check to confirm the objectives.
+4. Run the self-check to confirm the objectives. **All the exercises come
+   first.** They may be reordered among themselves; the self-check may not move
+   in front of them. If you find yourself starting self-check questions with
+   exercises outstanding, you have lost your place: stop, run the exercises, and
+   come back. Do not announce the discovery.
 
    You may shorten this, but only against evidence, and only out loud. Skipping
    a question requires both halves: you can name the specific thing the learner
@@ -354,19 +366,15 @@ than as a rule, because projects vary and the guides allow them to.
 2. **The PPMC discusses, then votes, on the private list.** The Incubator's PPMC
    guide reports that "Most projects use formal [DISCUSS] and [VOTE] threads on
    the private email list, and others use a more 'lazy' consensus approach". The
-   wiki's PPMC Onboarding page instead describes committer additions as a
-   majority approval vote on the private list that should run at least 72 hours.
-   The sources differ, podlings do both, and no policy settles it. What is not
-   in dispute is that this is one of the few things that legitimately belongs on
-   the private list, because it is a frank discussion about a named person.
+   wiki's PPMC Onboarding page says committers are added by a majority approval
+   vote on the private list that should run at least 72 hours. This is one of
+   the few things that legitimately belongs on the private list, because it is a
+   frank discussion about a named person.
 
-   Be careful with the phrase "majority approval". It is a defined term at the
-   ASF, and the voting page defines it as at least three binding `+1` votes with
-   more positive than negative, which is the release rule. The same page says
-   procedural votes follow simple majority. So the threshold for a committer
-   vote is not settled by the sources. A podling should decide what it requires
-   and say so before it calls the vote; most want at least three `+1` and no
-   unresolved `-1`.
+   "Majority approval" is a defined term at the ASF: the voting page defines it
+   as at least three binding `+1` votes with more positive than negative. The
+   wiki uses that term for committer additions, so that is the threshold it is
+   naming.
 3. **If it passes, the invitation goes to the nominee.**
 4. **The nominee accepts, and normally does so publicly on the `dev@` list.**
    The wiki's PPMC Onboarding page states this plainly. The Incubator's PPMC
@@ -447,10 +455,9 @@ from the guide:
 1. Any PPMC member proposes a candidate. *(guide)*
 2. `[DISCUSS] Joe Bob PPMC membership` on the PPMC's private list. *(guide)*
 3. If there is consensus that the candidate is suitable, `[VOTE] Joe Bob PPMC
-   membership` on the private list. *(guide.* The guide sets no threshold and no
-   duration. The wiki's PPMC Onboarding page calls it a majority approval vote
-   and says it should run at least 72 hours, with the same caution about that
-   phrase as before.*)*
+   membership` on the private list. *(guide.* The wiki's PPMC Onboarding page
+   says new PPMC members are elected by a majority approval vote on the private
+   list, and that formal votes should run at least 72 hours.*)*
 4. A `[VOTE][RESULT]` message on the private list. *(guide)*
 5. The PPMC invites the new member to join, on the private list. *(guide says to
    invite; the private list is the wiki's.)*
@@ -517,17 +524,14 @@ can.
 #### All committers on the PPMC
 
 Worth teaching separately, because it is the thing learners are least likely to
-have thought about, and because the guide says two things about it that pull in
-slightly different directions.
+have thought about.
 
 The Incubator's PPMC guide says it should be a goal of a podling to have **all
 committers participate in the PPMC**, and that the PPMC should watch committers
 develop as community participants, identify those participating at a community
 level rather than only a technical one, and approach them with an offer. It also
 says, elsewhere on the same page, that projects **which wish** to have all
-committers be PPMC members should follow its process for voting one in. So it is
-put as a goal in one place and as a project's own choice in another. Give a
-learner both rather than picking the stronger one.
+committers be PPMC members should follow its process for voting one in.
 
 **Do not tell them this makes podlings unlike top level projects.** ASF projects
 vary: some run the PMC as a subset of the committers and some put every
@@ -716,8 +720,8 @@ ASF account", which is the accurate answer, and accept "both", which is what it
 amounts to in practice. What to correct is any answer that treats it as a
 committer-only step, or that assumes a new PPMC member must already have one.
 
-**f. PPMC member.** This is the one kind of vote the Incubator's PPMC guide
-names without qualification as binding for PPMC members.
+**f. PPMC member.** The Incubator's PPMC guide says a PPMC member's vote is
+binding on adding committers and PPMC members.
 
 **Exercise 2.**
 
@@ -801,21 +805,17 @@ they could name it in advance.
 
 **a. Ask named people directly, on the private list.** Two votes is short and
 the thread has gone quiet, which is the normal way nominations die. Post an
-update saying where it stands, name people and ask them to look, and extend with
-a stated closing time. Ask the mentors specifically; they are on the PPMC, their
-vote counts, and they are usually willing. An answer that just waits will still
-be waiting next month.
+update saying where it stands, name people and ask them to look, and say the
+vote is staying open and roughly how long. The 72 hours is a minimum rather than
+a deadline, so nothing has expired and there is no closing time you are obliged
+to have set. Ask the mentors specifically; they are on the PPMC, their vote
+counts, and they are usually willing. An answer that just waits will still be
+waiting next month.
 
-There is a real ambiguity buried in this one, and it is worth surfacing rather
-than pretending it away. Has the vote already passed? The wiki calls a committer
-vote a majority approval vote, and under the ASF definition of that term it
-needs three binding `+1` votes, so two is short. The ASF voting page also says
-procedural votes go by simple majority, under which two `+1` and no `-1` has
-carried. The sources do not settle it. So the honest answer is that the podling
-should have decided its own threshold before calling the vote, and if it has
-not, that is the thing to fix. Credit a learner who spots the ambiguity, and
-credit one who says "get a third `+1` anyway", which is what most podlings would
-do.
+Two votes is short. The wiki calls a committer addition a majority approval
+vote, and the ASF voting page defines that term as at least three binding `+1`
+with more positive than negative. Credit a learner who knows that, and credit
+one who says "get a third `+1` anyway", which is what most podlings would do.
 
 **b. Find out what the concern is.** The veto right is defined for code
 modifications and does not formally extend to votes on people, so this is not a
@@ -1019,13 +1019,10 @@ then return to the lesson.
   announcing the result publicly leaks the shape of it. The PPMC guide says most
   projects use formal `[DISCUSS]` and `[VOTE]` threads on the private list and
   others use a more lazy consensus approach; the wiki's PPMC Onboarding page
-  instead calls it a majority approval vote. The sources differ and no policy
-  settles it.
+  says committers are added by a majority approval vote on the private list.
 - **"Majority approval" is a defined term.** The ASF voting page defines it as
-  at least three binding `+1` votes with more positive than negative, which is
-  the release rule, and separately says procedural votes follow simple majority.
-  So the threshold for a vote on a person is not settled by the sources. A
-  podling should decide and state its own before calling the vote.
+  at least three binding `+1` votes with more positive than negative. The wiki's
+  PPMC Onboarding page uses that term for adding committers and PPMC members.
 - **Duration.** The ASF voting page says voting periods should generally run for
   at least 72 hours. The wiki says formal votes should last at least 72 hours
   and may be shorter in rare cases with a clear reason. It is the norm, not a
@@ -1044,8 +1041,8 @@ then return to the lesson.
   goal of a podling to have all committers participate in the PPMC, and that the
   PPMC should watch for committers participating at a community level and
   approach them. The same page also refers to projects "which wish to" have all
-  committers as PPMC members, so it reads as a goal in one place and a choice in
-  another. The reason it matters in a podling is that incubation is meant to
+  committers as PPMC members, and describes the process for projects that wish
+  to do it. The reason it matters in a podling is that incubation is meant to
   produce a body that can govern.
 - **Not a podling-versus-TLP difference.** ASF projects run both ways, some with
   the PMC as a subset of committers and some with everyone on it, and no source
@@ -1075,16 +1072,16 @@ then return to the lesson.
   made on the mailing lists rather than on Slack, in GitHub comments or in
   private chats. Policy states this only for release votes, and it is still the
   right rule to teach.
-- **A wording discrepancy to be aware of.** The Incubator's PPMC guide says a
-  PPMC member's vote is binding only for adding committers and PPMC members, and
-  that release votes are binding only for IPMC members, which is about the IPMC
-  vote that approves the release. Incubation policy requires at least three `+1`
-  PPMC votes on the podling's own dev list, which is the earlier vote. Two
-  votes, two thresholds. Go with policy on the threshold. If a learner has read
-  the guide and is confused, say the documents word it differently and that
-  incubation policy governs. The guide adds one line worth quoting either way:
-  the binding status of a person's vote is not related to the email list the
-  vote occurs on.
+- **Two different votes, often misread as one.** The Incubator's PPMC guide says
+  a PPMC member's vote is binding only for adding committers and PPMC members,
+  and that release votes are binding only for IPMC members, which is about the
+  IPMC vote that approves the release. Incubation policy requires at least three
+  `+1` PPMC votes on the podling's own dev list, which is the earlier vote. Two
+  votes, two sets of binding voters, and the two documents are describing
+  different votes rather than disagreeing. If a learner has read the guide and
+  is confused, that is the thing to show them. The guide adds one line worth
+  quoting either way: the binding status of a person's vote is not related to
+  the email list the vote occurs on.
 - **Escalation.** Discuss on `dev@`; if unresolved, take it to the mentors; if
   the mentors do not respond, raise it on `general@incubator.apache.org`.
 - **PMC means the committee, not an individual.** No single member acts for the

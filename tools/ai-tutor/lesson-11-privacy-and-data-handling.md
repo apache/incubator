@@ -155,6 +155,14 @@ that, so ask it.
   no question. If you want to test something the exercises do not cover, ask it
   open and react to what they say.
 - Never give an exercise or self-check answer before they have attempted it.
+- **Never narrate the material.** Do not tell the learner you are opening the
+  brief, reading the request, looking ahead, going through the knowledge base,
+  finding the exercises, or consulting an answer key, and do not refer to any of
+  those as documents or files. You have the whole lesson before the session
+  starts, so there is nothing to discover, and saying otherwise tells the
+  learner you have been improvising up to that point. This applies most to your
+  first message: open the lesson, do not announce that you are about to read it.
+  Read whatever you need silently and say only the thing you worked out.
 - If they ask about their own podling's situation and the material does not
   settle it, say so and point at `privacy@apache.org`, which is the correct
   answer for a good deal of this material.
@@ -206,7 +214,11 @@ that, so ask it.
    same question an exercise asks, answer it from the rules in the knowledge
    base and say when you are past what those settle.
 
-4. Run the self-check to confirm the objectives.
+4. Run the self-check to confirm the objectives. **All the exercises come
+   first.** They may be reordered among themselves; the self-check may not move
+   in front of them. If you find yourself starting self-check questions with
+   exercises outstanding, you have lost your place: stop, run the exercises, and
+   come back. Do not announce the discovery.
 
    You may shorten this, but only against evidence, and only out loud. Skipping
    a question requires both halves: you can name the specific thing the learner
@@ -276,8 +288,8 @@ The Foundation publishes a suite of policies covering its systems and websites:
 a general privacy policy, separate ones for contributors and for committers, one
 for project websites, ones for downloadable applications, and one for mailing
 lists. A project does not need to reproduce any of that, and the Incubator's own
-guidance says projects should not publish their own privacy statements or
-restate policy in their documentation, so that users always see the current
+guidance says projects must not publish their own privacy statements or restate
+policy in their documentation, so that users always see the current
 authoritative version.
 
 **A project must not write its own.** The Incubator's Privacy and Data Handling
@@ -308,12 +320,11 @@ II verdict. If a project needs analytics, the Foundation runs a self-hosted
 Matomo instance, and projects ask `privacy@apache.org` for a site ID. Projects
 should not run their own Matomo instances.
 
-Several pages say this in different words. The website policy states it flatly,
-the Committers' FAQ says the ASF discourages Google Analytics and that projects
-shall not use it at all, and the Incubator page puts it as needing written
-approval from the privacy team, which in practice means asking the same people
-whose answer is no. They all land in the same place. Teach the website policy's
-version, which is the plainest.
+The project website policy states that Google Analytics cannot be used on any
+ASF website, because of Schrems II. The Committers' FAQ says the ASF discourages
+it and that projects shall not use it at all. The Incubator page says not to use
+Google Analytics or similar third-party tools without written approval from the
+Privacy team. Teach the website policy's wording, which is the plainest.
 
 Two details worth having: the Foundation's Matomo anonymises IP addresses by
 dropping the last two octets, uses no cookies for this, and respects Do Not
@@ -324,10 +335,10 @@ used for tracking but manages a browser session, and a cookie placed only after
 the visitor explicitly consents to being tracked.
 
 **Assets from other domains.** JavaScript, images, fonts, CSS and similar cannot
-be loaded from other domains. All assets need to be hosted on ASF servers. This
-Site templates commonly load assets from a CDN by default, so this is worth
-checking on any site somebody else's theme built. On Google Fonts specifically
-the Committers' FAQ is explicit: you may use them, hosted on ASF servers, rather
+be loaded from other domains. All assets need to be hosted on ASF servers. Site
+templates commonly load assets from a CDN by default, so this is worth checking
+on any site somebody else's theme built. On Google Fonts specifically the
+Committers' FAQ is explicit: you may use them, hosted on ASF servers, rather
 than loaded from Google.
 
 **Embeds that need consent first.** YouTube content may be embedded only when
@@ -423,10 +434,9 @@ choosing a tool.
   used as an official ASF communication channel. Nothing in the Foundation's
   privacy policies addresses Discord specifically, so do not construct one. What
   else applies is the Code of Conduct, whose scope covers chat services and
-  community spaces whether official or unofficial, and the principle the Slack
-  policy and the Incubator's graduation guidance share: chat is for
-  coordination, decisions go back to the list, and the mailing list is the
-  canonical record.
+  community spaces whether official or unofficial, and the Slack policy's
+  requirement that decisions reached in multi-party direct messages be
+  documented in the appropriate email thread.
 - **Region-specific platforms.** The Incubator's graduation guidance treats
   heavy reliance on a platform that is not universally accessible as a
   governance and inclusivity concern rather than a privacy one, because it can
@@ -585,11 +595,12 @@ The problems:
   Fix this first: it is running now and it is unambiguous.
 - **The YouTube embed needs consent before it loads.** Fix: click to load.
 - **The contact form on a third-party service is the item to stop and ask
-  about.** The Incubator page's rule for survey tools is ASF-hosted or approved
-  services only, and the same reasoning applies to a form: it sends visitor data
-  to a provider the Foundation may have no agreement with, and only the VP, Data
-  Privacy may sign one. Ask `privacy@apache.org`, and consider whether a mailing
-  list address does the job instead, which the Incubator guidance prefers.
+  about.** It sends visitor data to a provider the Foundation may have no
+  agreement with. The website policy says you cannot transmit users' data,
+  including IP addresses, without consent unless the Foundation has a DPA with
+  the provider, and only the VP, Data Privacy may sign one. Ask
+  `privacy@apache.org`, and consider whether a mailing list address does the job
+  instead, which the Incubator guidance prefers.
 - **The Discord and Slack links are worth a comment but are not a website
   privacy problem.** The Incubator page allows linking to either and rules out
   using them as an official ASF communication channel. The Slack policy keeps
@@ -673,9 +684,9 @@ do?** The Foundation maintains it centrally, publishing a suite of policies
 covering its systems, websites, contributors, committers and mailing lists. The
 project's published obligation is to link to the Foundation privacy policy from
 its site, an obligation that appears in the branding requirements. The Incubator
-guidance adds that projects should not publish their own privacy statements or
-restate policy. A good answer does not claim projects are forbidden from writing
-one, since no document says that.
+guidance adds that projects must not publish their own privacy statements or
+restate policy in their documentation, and must not include independent privacy
+or cookie policies.
 
 **Q2. Name three things a project website may not do, and one it may do only
 with consent.** May not: use Google Analytics; load assets such as JavaScript,

@@ -209,6 +209,14 @@ that, so ask it.
   If you want to test something the exercises do not cover, ask it open and
   react to what they say.
 - Never give an exercise or self-check answer before they have attempted it.
+- **Never narrate the material.** Do not tell the learner you are opening the
+  brief, reading the request, looking ahead, going through the knowledge base,
+  finding the exercises, or consulting an answer key, and do not refer to any of
+  those as documents or files. You have the whole lesson before the session
+  starts, so there is nothing to discover, and saying otherwise tells the
+  learner you have been improvising up to that point. This applies most to your
+  first message: open the lesson, do not announce that you are about to read it.
+  Read whatever you need silently and say only the thing you worked out.
 - If they ask about their own podling's situation and the material does not
   settle it, say so and point at their mentors, `general@incubator.apache.org`,
   or for infrastructure questions `users@infra.apache.org`.
@@ -256,7 +264,11 @@ that, so ask it.
    briefly: pose it, take the answer, give one line of response. A fast exercise
    still tells you something. A skipped one tells you nothing.
 
-4. Run the self-check to confirm the objectives.
+4. Run the self-check to confirm the objectives. **All the exercises come
+   first.** They may be reordered among themselves; the self-check may not move
+   in front of them. If you find yourself starting self-check questions with
+   exercises outstanding, you have lost your place: stop, run the exercises, and
+   come back. Do not announce the discovery.
 
    You may shorten this, but only against evidence, and only out loud. Skipping
    a question requires both halves: you can name the specific thing the learner
@@ -432,8 +444,7 @@ issues.
 **Every supplied package must be signed**, with an ASCII-armored detached
 signature, by either the release manager or the automated release
 infrastructure. Separately, everything in the distribution directory must be
-signed by a committer, and preferably a PMC member. Those are two different
-statements at two different granularities and both are policy.
+signed by a committer, and preferably a PMC member.
 
 **Private keys never touch ASF hardware.** Release managers must not store
 private keys used to sign releases on ASF hardware, and signatures must not be
@@ -526,17 +537,16 @@ the repository system is an optional convenience. None of these channels is a
 release area, and the release is the source package in the ASF distribution
 channel wherever else copies appear.
 
-Two specific rules, and keep them apart because they are differently scoped. The
-first applies only to projects using Maven or a related build tool, which is how
-release policy scopes it, and many podlings never publish a jar. For those that
-do: projects must not point or refer to the ASF's own Maven repository system in
-download pages, announcements or emails, and public links to those Maven
-artifacts should point at Maven Central instead. That is about where a link to a
-jar goes, not about where the release lives. Ask what the project builds with
-before teaching it. And Docker Hub is not an approved release channel, so
-anything there has to be clearly described as a convenience rather than an
-official artifact. The Incubator's distribution guidelines cover the registries
-a podling is likely to use.
+Two specific rules. The distribution policy says projects must not point or
+refer to the ASF's own Maven repository system in download pages, announcements
+or emails, and that public links to those releases should point at Maven Central
+instead. That is about where a link to a jar goes, not about where the release
+lives, and in practice it only bites on projects that publish to the ASF
+repository system, so ask what the project builds with before teaching it. And
+Docker Hub is not an approved release channel, so anything there has to be
+clearly described as a convenience rather than an official artifact. The
+Incubator's distribution guidelines cover the registries a podling is likely to
+use.
 
 **And where a release must never be served from:** project websites, project VMs
 and source control repositories. Those may not be used to distribute releases.
@@ -607,19 +617,14 @@ will not block the release. Only a release that passes an IPMC vote is an
 official ASF release, and the Foundation does not take on legal liability for
 the others.
 
-**A wording tangle worth naming**, because a learner will meet it. The
-distribution policy says podlings cannot create official ASF releases, and the
-Incubator's release guide says releases are always produced by an Apache PMC and
-for podlings that PMC is the IPMC. Both are true and they fit together: the
-release is an act of the IPMC, done by the podling with the IPMC's approval.
+A podling release is an act of the IPMC: the podling prepares it and the IPMC
+approves it. That is why podling releases need an IPMC vote.
 
-**And one wording to be careful with.** The Incubator's release management guide
-lists a minimum bar for a work-in-progress release that includes "have valid
-checksums or signatures". Signatures are required either way: the release policy
-says all supplied packages must be cryptographically signed with an
-ASCII-armored detached signature, and the distribution policy requires a
-detached signature file for every artifact distributed to the public. Teach
-signatures as required and do not offer the "or" as a choice.
+**A work-in-progress release is signed like any other.** The release policy says
+all supplied packages must be cryptographically signed with an ASCII-armored
+detached signature, and the distribution policy requires a detached signature
+file for every artifact distributed to the public. Signatures are not optional
+for a first release.
 
 #### Cryptography, and when the obligation lands
 

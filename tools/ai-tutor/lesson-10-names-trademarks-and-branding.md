@@ -174,6 +174,14 @@ that, so ask it.
   no question. If you want to test something the exercises do not cover, ask it
   open and react to what they say.
 - Never give an exercise or self-check answer before they have attempted it.
+- **Never narrate the material.** Do not tell the learner you are opening the
+  brief, reading the request, looking ahead, going through the knowledge base,
+  finding the exercises, or consulting an answer key, and do not refer to any of
+  those as documents or files. You have the whole lesson before the session
+  starts, so there is nothing to discover, and saying otherwise tells the
+  learner you have been improvising up to that point. This applies most to your
+  first message: open the lesson, do not announce that you are about to read it.
+  Read whatever you need silently and say only the thing you worked out.
 - If they ask about their own podling's situation and the material does not
   settle it, say so and point at their mentors or `trademarks@apache.org`.
 
@@ -223,7 +231,11 @@ that, so ask it.
    it. The exercise has a checked key and their situation does not, so run the
    keyed version first and then apply it to the real one.
 
-4. Run the self-check to confirm the objectives.
+4. Run the self-check to confirm the objectives. **All the exercises come
+   first.** They may be reordered among themselves; the self-check may not move
+   in front of them. If you find yourself starting self-check questions with
+   exercises outstanding, you have lost your place: stop, run the exercises, and
+   come back. Do not announce the discovery.
 
    You may shorten this, but only against evidence, and only out loud. Skipping
    a question requires both halves: you can name the specific thing the learner
@@ -366,11 +378,8 @@ do.** The Incubator's Third-Party Branding guide says that until graduation the
 correct form is always "Apache Foo (incubating)", that third parties must also
 use this form, and that dropping it in blogs, product pages or press releases
 misleads users. It also lists conference booths, banners and swag without the
-marker as a common risk. No Foundation trademark document places any such
-obligation on a third party. So a podling asking a vendor to use the full form
-is asking for something its own guide states, and it is not enforcing Foundation
-trademark policy. Teach that difference, because the tone of the request follows
-from it.
+marker as a common risk. Attribute the request to that guide when a podling asks
+a vendor to fix it, because the tone of the request follows from it.
 
 #### Who owns the name
 
@@ -419,14 +428,13 @@ often discover their name is a problem.
 up with a new project name, naming a new subproject or product, or establishing
 a new TLP. Every podling that wants to graduate is in scope.
 
-**When.** The sources differ in emphasis and it is worth being straight about
-that. The Incubator branding guide says a podling SHOULD perform a name search
-before entering incubation and get the VP, Brand Management to approve the name.
-The naming policy says to start preferably well before graduation, releases or
-public websites, and adds that podlings could run it after acceptance but before
-requesting resources. It also notes that approvals will typically not be issued
-until the podling is nearing graduation. The Name Search Guide treats completion
-as a graduation gate.
+**When.** One timeline: start early, finish late. The Incubator branding guide
+says a podling SHOULD perform a name search before entering incubation and get
+the VP, Brand Management to approve the name. The naming policy says to start
+preferably well before graduation, releases or public websites, and adds that
+podlings could run it after acceptance but before requesting resources. It also
+notes that approvals will typically not be issued until the podling is nearing
+graduation. The Name Search Guide treats completion as a graduation gate.
 
 The honest summary: file early, expect approval late, and treat completion as
 required before graduation.
@@ -625,10 +633,9 @@ On removing the incubating marker, the Incubator's Naming and Trademarks guide
 is direct: after graduation all incubation indicators must be removed, and
 incubation status must not persist in public identity after graduation. It also
 notes that delay signals immaturity, slows adoption and causes misclassification
-downstream. The Foundation documents get to the same place differently:
-incubation policy says it does not apply outside the process of incubation, so
-the disclaimer obligations stop applying, and the branding requirements describe
-the TLP end state, "Apache Foo".
+downstream. Incubation policy does not apply outside the process of incubation,
+so the disclaimer obligations stop at graduation, and the branding requirements
+describe the TLP end state, "Apache Foo".
 
 Two practical notes. Resources move as part of transferring out of the
 Incubator, including websites and any addresses still using the incubator
@@ -765,13 +772,11 @@ recommendation. Watch for a learner who states the DISCLAIMER filename as
 mandatory, and note the contrast with e, where the archive filename really is
 mandatory.
 
-**g. Not something the podling can enforce, and worth asking about.** The
-Incubator's Third-Party Branding guide says third parties must also use the
-"Apache Foo (incubating)" form and that dropping it misleads users, so the
-podling has a published basis for asking. No Foundation trademark document
-places that obligation on a third party, so it is a request rather than a
-trademark breach. Credit either answer if the learner marks the distinction;
-correct one who treats it as a clear violation of ASF trademark policy.
+**g. Worth asking about.** The Incubator's Third-Party Branding guide says third
+parties must also use the "Apache Foo (incubating)" form and that dropping it
+misleads users, so the podling has a published basis for asking. Frame it as a
+request citing that guide. Credit a learner who says they would ask the vendor;
+correct one who asserts it is a trademark violation the podling can enforce.
 
 **Exercise 2.**
 
@@ -962,12 +967,13 @@ the first and most prominent reference on every page; a prominent reference to
 "Apache Foo software" plus a one-sentence description of what it does; the
 navigation links to License, Sponsorship or Donate, Sponsors or Thanks, Security
 and Privacy, plus a prominent link to `www.apache.org`; a prominent trademark
-attribution on the homepage; attribution of any non-ASF marks shown; a logo
-carrying a TM symbol and using no ASF graphic marks; a DOAP file or equivalent
-structured data. A good answer places the trademark attribution on the homepage
-without insisting on the footer, and treats the ™ symbol next to the project
-name as expected rather than mandatory, which is a different sentence from the
-one about the logo.
+attribution on the homepage; attribution of any non-ASF marks shown; if the
+project has a logo, that it uses no ASF graphic marks and that the requirements
+say to ensure it carries a small TM; a DOAP file or equivalent structured data.
+A good answer places the trademark attribution on the homepage without insisting
+on the footer, and treats the ™ symbol next to the project name as expected
+rather than mandatory, which is a different sentence from the one about the
+logo.
 
 **Q5. A vendor is calling their product "BigCo Foo Enterprise". What is wrong
 and what do you do?** Apache marks may not be used in the primary or secondary
@@ -1069,14 +1075,12 @@ then return to the lesson.
   years after TLP status, then only in historical material.
 - **Third parties and "(incubating)".** The Incubator's Third-Party Branding
   guide says third parties must also use the "Apache Foo (incubating)" form and
-  that dropping it misleads users. No Foundation trademark document imposes
-  this. Attribute it to the guide when you ask.
+  that dropping it misleads users. Attribute it to the guide when you ask.
 - **Removing the marker at graduation.** The Incubator's Naming and Trademarks
   guide says all incubation indicators must be removed after graduation and that
-  incubation status must not persist in public identity. The Foundation
-  documents reach the same place differently: incubation policy stops applying
-  and the TLP branding requirements take over. Released archives keep
-  "incubating" in their filenames.
+  incubation status must not persist in public identity. Incubation policy stops
+  applying at graduation and the TLP branding requirements apply. Released
+  archives keep "incubating" in their filenames.
 - **Publicity.** The Incubator branding guide says podlings must coordinate with
   the Apache Public Relations Committee on all publicity activities, and that
   the Apache Press Team must review releases by affiliated organisations or

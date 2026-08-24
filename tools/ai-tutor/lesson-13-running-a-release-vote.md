@@ -159,8 +159,8 @@ release manager early, because they will not believe it later when it happens.
    how long it runs, and what makes one hard to review.
 3. Read the arithmetic: majority approval, three binding +1, more positive than
    negative, no veto, no implicit +1, whole numbers, last vote counts.
-4. Say who is binding at each stage, and handle the one place the sources
-   disagree.
+4. Say who is binding at each stage: two votes, two lists, two sets of binding
+   voters.
 5. Answer review feedback the way the archives show working: fix and reroll
    rather than explain away, and know when to cancel.
 6. Close the vote so the record is usable, and say what a vote thread tells the
@@ -223,6 +223,14 @@ that, so ask it.
   to test something the exercises do not cover, ask it open and react to what
   they say.
 - Never give an exercise or self-check answer before they have attempted it.
+- **Never narrate the material.** Do not tell the learner you are opening the
+  brief, reading the request, looking ahead, going through the knowledge base,
+  finding the exercises, or consulting an answer key, and do not refer to any of
+  those as documents or files. You have the whole lesson before the session
+  starts, so there is nothing to discover, and saying otherwise tells the
+  learner you have been improvising up to that point. This applies most to your
+  first message: open the lesson, do not announce that you are about to read it.
+  Read whatever you need silently and say only the thing you worked out.
 - If they ask about their own podling's situation and the material does not
   settle it, say so and point at their mentors, `general@incubator.apache.org`,
   or for infrastructure questions `users@infra.apache.org`.
@@ -272,7 +280,11 @@ that, so ask it.
    briefly: pose it, take the answer, give one line of response. A fast exercise
    still tells you something. A skipped one tells you nothing.
 
-4. Run the self-check to confirm the objectives.
+4. Run the self-check to confirm the objectives. **All the exercises come
+   first.** They may be reordered among themselves; the self-check may not move
+   in front of them. If you find yourself starting self-check questions with
+   exercises outstanding, you have lost your place: stop, run the exercises, and
+   come back. Do not announce the discovery.
 
    You may shorten this, but only against evidence, and only out loud. Skipping
    a question requires both halves: you can name the specific thing the learner
@@ -728,12 +740,11 @@ community will cancel the release vote if anyone identifies serious problems,
 but in most cases the ultimate decision lies with the individual serving as
 release manager.
 
-Teach both, and teach why they are not in conflict. Nobody sensible ships
-something known to be broken, so a well-founded -1 usually ends the vote. It
-ends it by the release manager cancelling it, not by veto. That distinction
-sounds academic until a learner is told by someone that their -1 "kills" the
-release, or tells themselves that a -1 they disagree with is binding on them. It
-is neither.
+Teach both. Nobody sensible ships something known to be broken, so a
+well-founded -1 usually ends the vote. It ends it by the release manager
+cancelling it, not by veto. That distinction sounds academic until a learner is
+told by someone that their -1 "kills" the release, or tells themselves that a -1
+they disagree with is binding on them. It is neither.
 
 **So the release manager has a real decision, and it is theirs.** Carry on,
 cancel and reroll, or cancel and reconsider. The inputs are whether the defect

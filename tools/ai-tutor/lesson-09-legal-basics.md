@@ -223,6 +223,14 @@ that, so ask it.
   guessable. If you want to test something the exercises do not cover, ask it
   open and react to what they say.
 - Never give an exercise or self-check answer before they have attempted it.
+- **Never narrate the material.** Do not tell the learner you are opening the
+  brief, reading the request, looking ahead, going through the knowledge base,
+  finding the exercises, or consulting an answer key, and do not refer to any of
+  those as documents or files. You have the whole lesson before the session
+  starts, so there is nothing to discover, and saying otherwise tells the
+  learner you have been improvising up to that point. This applies most to your
+  first message: open the lesson, do not announce that you are about to read it.
+  Read whatever you need silently and say only the thing you worked out.
 - If they ask about their own podling's situation and the material does not
   settle it, say so and point at their mentors, `legal-discuss@apache.org`, or
   for names and logos `trademarks@apache.org`.
@@ -275,7 +283,11 @@ that, so ask it.
    keyed version first and then apply it. Keep the hard rule throughout: teach
    the questions, do not deliver a verdict.
 
-4. Run the self-check to confirm the objectives.
+4. Run the self-check to confirm the objectives. **All the exercises come
+   first.** They may be reordered among themselves; the self-check may not move
+   in front of them. If you find yourself starting self-check questions with
+   exercises outstanding, you have lost your place: stop, run the exercises, and
+   come back. Do not announce the discovery.
 
    You may shorten this, but only against evidence, and only out loud. Skipping
    a question requires both halves: you can name the specific thing the learner
@@ -518,11 +530,10 @@ On AI-generated code, the ASF's Generative Tooling Guidance permits the use of
 these tools and sets conditions about the tool's terms of use and about
 third-party material in the output, and it says that indicating the tooling used
 is a recommended practice rather than a requirement. The Incubator's Legal
-Basics guide goes further, saying projects must review AI-assisted contributions
-and that human oversight determines suitability. Attribute those separately: the
-Foundation guidance is the policy, the Incubator guide is the Incubator's
-expectation, and the committer's responsibility for third-party material in the
-output holds either way.
+Basics guide says projects must review AI-assisted contributions and that human
+oversight determines suitability. Attribute each to its page, and note that the
+committer's responsibility for third-party material in the output holds either
+way.
 
 #### LICENSE and NOTICE
 
@@ -602,8 +613,8 @@ process that is not theirs.
 
 If a learner has read about `[IP CLEARANCE]` mail and a 72 hour window, tell
 them plainly that this is the top-level project route and that theirs is
-different. It is a reasonable thing to have picked up, because the two pages
-cross-reference each other confusingly.
+different. It is a reasonable thing to have picked up, because the short form is
+the route that is written up in most detail.
 
 **What a podling actually does.**
 
@@ -663,14 +674,14 @@ code and redistributed; check the licences of what is distributed; and check
 that active committers have contributor agreements on file. Those are the lines
 a podling dates in its status file.
 
-**Where the two pages point at each other.** The Incubator's ip-clearance page
-tells incubating projects to follow the mentor guide instead; the Podling IP
-Clearance guide says those same ip-clearance instructions also apply to
-podlings. Following either gets a podling to the same place, so do not present
-this as a dispute to resolve. What is not in doubt is the paperwork, the mentor
-involvement, the status file and the release gate. If a learner needs to know
-exactly which form to file for a specific donation, that is a question for their
-mentors and `general@incubator.apache.org`, and it is a fair question to have.
+**What each page says.** The Incubator's ip-clearance page says its short form
+is not for new projects and sends incubating projects to the Incubator's own
+guides and to status tracking. The Podling IP Clearance guide sets out what a
+podling does: paperwork from everyone with rights, mentor involvement, a public
+record of the import, the status file, and the release gate. Teach that. If a
+learner needs to know exactly which form to file for a specific donation, that
+is a question for their mentors and `general@incubator.apache.org`, and it is a
+fair question to have.
 
 Separately, the ip-clearance template's own list of acceptable dependency
 licences is old and does not match Category A and B. Use `resolved.html`.
@@ -821,9 +832,11 @@ contributions. The contributor agreements page does. Do not tell them the
 sources conflict.
 
 **g. Nothing, and stop them.** ICLAs go to the Secretary and are treated as
-confidential records. Projects must not collect or store them, and a copy in a
-project repository, mailing list or private archive is a mistake to undo. If the
-PPMC wants to know whether someone's ICLA is on file, they ask the Secretary.
+confidential records. The Incubator's Legal Basics guide says projects and
+mentors should never collect or store them, and the Incubator's privacy guidance
+says not to hold them at all, so a copy in a project repository, mailing list or
+private archive is a mistake to undo. If the PPMC wants to know whether
+someone's ICLA is on file, they ask the Secretary.
 
 **Exercise 2.**
 
