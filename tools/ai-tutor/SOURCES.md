@@ -14,10 +14,10 @@ covers material the lessons do not draw on. Lesson 3 additionally uses the
 [ASF Code of Conduct](https://www.apache.org/foundation/policies/conduct), which
 lives on the main ASF site rather than the wiki.
 
-Track C is the exception to "wiki guides feed the lessons". Its subject is
-Foundation-wide rather than Incubator practice, so Lessons 9, 10 and 11 take
-their teaching shape from the wiki guides listed below but take anything
-normative from ASF pages that are not in the index:
+Tracks C and D are the exception to "wiki guides feed the lessons". Their
+subjects are Foundation-wide rather than Incubator practice, so Lessons 9 to 14
+take their teaching shape from the wiki guides listed below but take anything
+normative from ASF and Infrastructure pages that are not in the index:
 
 | Source | Lesson | What it covers |
 |---|---|---|
@@ -37,6 +37,17 @@ normative from ASF pages that are not in the index:
 | [Committers' privacy FAQ](https://privacy.apache.org/faq/committers.html) | 11 | Practical guidance on fonts, embeds, analytics and DPAs. |
 | [Mailing list privacy policy](https://privacy.apache.org/policies/mailinglist-policy.html) | 11 | What happens to a request to remove an archived message. |
 | [Slack policy](https://infra.apache.org/slack-policy.html) | 11 | Private channels, and decisions returning to the list. |
+| [Release policy](https://www.apache.org/legal/release-policy) | 12, 13, 14 | What a release is, approval and voting requirements, publication and download pages, announcements. |
+| [Release distribution policy](https://infra.apache.org/release-distribution.html) | 12, 14 | Distribution channels, signatures and checksums, KEYS, archiving, Maven and Docker Hub. |
+| [Signing releases](https://infra.apache.org/release-signing.html) | 12 | Detached signatures, key requirements, where a private key must not live. |
+| [Release creation process](https://infra.apache.org/release-publishing.html) | 12, 14 | Staging and publishing, and the availability schedule that sets the wait before announcing. |
+| [Release download pages](https://infra.apache.org/release-download-pages.html) | 12, 14 | What a download page must, must not and should contain, and the `closer.lua` utility. |
+| [ASF voting process](https://www.apache.org/foundation/voting.html) | 13 | Majority approval, binding votes, why releases cannot be vetoed, expressing votes. |
+| [Incubator cookbook](https://incubator.apache.org/cookbook/) | 13 | The two-phase podling vote, annotating a vote, and carrying the dev list tally across. |
+| [Incubator release management guide](https://incubator.apache.org/guides/releasemanagement.html) | 12, 13 | Where a podling release vote is held and whose votes are binding. |
+| [Incubator distribution guidelines](https://incubator.apache.org/guides/distribution.html) | 12, 14 | Convenience binaries, and the conditions on Maven, GitHub, Docker Hub and package registries. |
+| [Incubator publicity guide](https://incubator.apache.org/guides/publicity.html) | 14 | What a podling is encouraged to do publicly, and the newswire restriction. |
+| [Handling cryptography](https://infra.apache.org/crypto.html) | 12 | When the export control obligation attaches, and what the steps are. |
 
 Incubation policy at
 [incubator.apache.org/policy/incubation.html](https://incubator.apache.org/policy/incubation.html)
@@ -49,7 +60,7 @@ that declares RFC 2119.
 |---|---|---|---|
 | [10 Years of the Incubator](https://cwiki.apache.org/confluence/display/INCUBATOR/10+years+of+the+Incubator) | 25 | data-trends, governance, podling-health | A data-driven retrospective (2015-2025) of podling lifecycles, governance patterns, and long-term community trends. |
 | [10 Years Summary](https://cwiki.apache.org/confluence/display/INCUBATOR/10+Years+Summary) | 25 | data-trends, governance, podling-health | Ten years of the Incubator in summary: lifecycles, governance trends, community evolution, overall health. |
-| [An Incubator Learns](https://cwiki.apache.org/confluence/display/INCUBATOR/An+Incubator+Learns) | 21 | governance, ipmc-oversight | How the Incubator applies judgement rather than checklists, when guidance becomes policy, and how concerns escalate. |
+| [An Incubator Learns](https://cwiki.apache.org/confluence/display/INCUBATOR/An+Incubator+Learns) | 21 | ipmc-oversight, governance, mentoring | How the Incubator applies judgement rather than checklists, when guidance becomes policy, and how concerns escalate. |
 | [Best Practices for Mentors](https://cwiki.apache.org/confluence/display/INCUBATOR/Best+Practices+for+Mentors) | 16 | mentoring | Examples of effective mentoring approaches and behaviours. |
 | [Common Myths](https://cwiki.apache.org/confluence/display/INCUBATOR/Common+Myths) | 1 | orientation, governance | Corrects common misconceptions about incubation, voting, and ASF processes. |
 | [Common Red Flags](https://cwiki.apache.org/confluence/display/INCUBATOR/Mentor+Quick+Reference+-+Common+Red+Flags) | 16 | mentoring, podling-health | Issues to watch for during incubation that may indicate problems. |
@@ -98,7 +109,7 @@ that declares RFC 2119.
 | [Practicing The Apache Way](https://cwiki.apache.org/confluence/display/INCUBATOR/Practicing+The+Apache+Way) | 2 | culture, governance | Real-world examples of applying The Apache Way day to day. |
 | [Privacy and Data Handling](https://cwiki.apache.org/confluence/display/INCUBATOR/Privacy+and+Data+Handling) | 11 | privacy, legal | Responsible data handling and privacy obligations. |
 | [Proposal Discussions](https://cwiki.apache.org/confluence/display/INCUBATOR/Proposal+Discussions) | 4 | orientation, governance, ipmc-oversight | Recurring themes in proposal threads: what reviewers ask proposers to clarify. |
-| [Release Announcements](https://cwiki.apache.org/confluence/display/INCUBATOR/Release+Announcements) | 14 | releases, communication | Issues raised when announcing podling releases, and how projects correct them. |
+| [Release Announcements](https://cwiki.apache.org/confluence/display/INCUBATOR/Release+Announcements) | 14 | releases, community | Issues raised when announcing podling releases, and how projects correct them. |
 | [Release Review Issues](https://cwiki.apache.org/confluence/display/INCUBATOR/Release+Review+Issues) | 13 | releases, legal | Recurring problems found during release review, and the fixes reviewers request. |
 | [Release Vote Insights](https://cwiki.apache.org/confluence/display/INCUBATOR/Release+Vote+Insights) | 13 | releases, data-trends, governance | Patterns from ten years of release votes. |
 | [Release Votes](https://cwiki.apache.org/confluence/display/INCUBATOR/Release+Votes) | 13 | releases, governance, ipmc-oversight | Vote mechanics issues, and what reviewers look for when assessing readiness. |

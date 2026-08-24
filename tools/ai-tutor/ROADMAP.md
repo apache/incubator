@@ -118,21 +118,33 @@ and the committers' privacy FAQ. Incubation policy is silent on most of Lesson
 9's subject, which the lesson says rather than leaving a learner to look for a
 rule that is not there.
 
-The next lesson is 12, which begins Track D.
+Track D follows.
 
 ## Track D: Releases
 
 | # | Lesson | Source pages | Status |
 |---|---|---|---|
-| 12 | Anatomy of a podling release | Releases | Next |
-| 13 | Running a release vote | Release Votes, Release Vote Insights, Release Review Issues | Planned |
-| 14 | Announcing and distributing | Release Announcements | Planned |
+| 12 | Anatomy of a podling release | Releases | **Done** |
+| 13 | Running a release vote | Release Votes, Release Vote Insights, Release Review Issues | **Done** |
+| 14 | Announcing and distributing | Release Announcements | **Done** |
+
+Track D also leans on Foundation and Infrastructure documents rather than
+Incubator guides, because the release rules are ASF-wide. Lesson 12 works from
+the release policy, the release distribution policy and Infra's signing and
+publishing pages; Lesson 13 from the ASF voting process page, the release policy
+and the Incubator cookbook; Lesson 14 from the release download pages policy,
+the distribution policy and the Incubator publicity guide. Incubation policy
+supplies everything podling-specific in all three, and each lesson says where a
+Foundation page and an Incubator guide pull in different directions rather than
+picking one quietly.
+
+The next lesson is 15, which begins Track E.
 
 ## Track E: Mentoring
 
 | # | Lesson | Source pages | Status |
 |---|---|---|---|
-| 15 | What a mentor actually does | Incubator Mentor Quick Start Guide, Mentor Onboarding, Mentor Handbook | Planned |
+| 15 | What a mentor actually does | Incubator Mentor Quick Start Guide, Mentor Onboarding, Mentor Handbook | Next |
 | 16 | Reading the signals | Common Red Flags, Measuring Podling Health, Mentor Engagement Patterns, Best Practices for Mentors | Planned |
 | 17 | Difficult conversations | Mentors Tough Conversation Guide | Planned |
 | 18 | Mentor lifecycle: selection, replacement, offboarding | Select Your Mentors, Mentor Replacement, Mentor Offboarding | Planned |

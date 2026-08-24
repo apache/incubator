@@ -1126,3 +1126,33 @@ resources:
     rules on analytics, cookies and embeds, the public mailing list record and removal requests, and
     handling personal data."
     url: https://incubator.apache.org/training/lessons.html#lesson-11
+
+  - id: lesson-anatomy-of-a-release
+    title: "Lesson 12: Anatomy of a podling release"
+    type: lesson
+    themes: [releases, legal, infrastructure]
+    topics: [release-process, artifacts, compliance, licensing]
+    description: "Tutored lesson on what counts as a release, what a source package must contain,
+    signing, checksums and KEYS, where artifacts live from staging to archive, and what is different
+    because the project is a podling."
+    url: https://incubator.apache.org/training/lessons.html#lesson-12
+
+  - id: lesson-running-a-release-vote
+    title: "Lesson 13: Running a release vote"
+    type: lesson
+    themes: [releases, governance]
+    topics: [release-votes, release-process, voting, consensus, decision-making]
+    description: "Tutored lesson on the two stages of a podling release vote and what travels
+    between them, calling a vote reviewers can act on, the arithmetic of majority approval,
+    answering a -1, and closing the vote."
+    url: https://incubator.apache.org/training/lessons.html#lesson-13
+
+  - id: lesson-announcing-and-distributing
+    title: "Lesson 14: Announcing and distributing"
+    type: lesson
+    themes: [releases, community, infrastructure]
+    topics: [release-process, communication, project-resources, compliance]
+    description: "Tutored lesson on what happens between a passed vote and an announcement, what a
+    download page must contain, what an announcement must link and never point at, the other
+    channels projects publish to, and correcting something already published."
+    url: https://incubator.apache.org/training/lessons.html#lesson-14
