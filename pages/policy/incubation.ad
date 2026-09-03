@@ -117,14 +117,16 @@ link:/guides/releasemanagement.html#requesting_feedback_on_interim_non_asf_relea
 
 During incubation, PPMC members learn how to govern an ASF project. A PPMC operates like a PMC but reports to the Incubator PMC rather than to the ASF Board. The PPMC release vote ensures that the Podling community participates in producing and reviewing ASF releases. Because the PPMC cannot make formal decisions on behalf of the ASF, the Incubator PMC provides the binding approval required for a Podling release to become an ASF release.
 
-When a Podling proposes an ASF release, it MUST hold a vote on its public dev list to seek endorsement from the PPMC and MUST request approval from the Incubator PMC on the Incubator's link:/howtoparticipate.html#Mailing+lists[general] list. The PPMC vote and the Incubator PMC vote MAY be conducted concurrently or, at the Podling's discretion, sequentially. The timing and conduct of the votes MUST follow the applicable requirements of the http://www.apache.org/foundation/voting.html[Apache Voting Process] and the https://www.apache.org/legal/release-policy.html[ASF Release Policy].
+When a Podling proposes an ASF release, it MUST hold a vote on its public dev list to seek endorsement from the PPMC and MUST request approval from the Incubator PMC on the Incubator's link:/howtoparticipate.html#Mailing+lists[general] list. The PPMC vote and the Incubator PMC vote MAY be conducted sequentially or, at the Podling's discretion, concurrently. The timing and conduct of the votes MUST follow the applicable requirements of the http://www.apache.org/foundation/voting.html[Apache Voting Process] and the https://www.apache.org/legal/release-policy.html[ASF Release Policy].
 
 The proposed release is approved only when both of the following requirements have been satisfied:
 
 - At least three PPMC members have voted +1, and there are more +1 than -1 votes from PPMC members.
 - At least three Incubator PMC members have cast binding +1 votes, and there are more binding +1 than binding -1 votes.
 
-Only votes from Incubator PMC members are binding for the purpose of ASF release approval. The PPMC vote is a separate incubation requirement intended to ensure that the Podling community participates in the release process.
+The individuals counted toward these two requirements need not be distinct. An individual who is both a PPMC member and an Incubator PMC member, including a Podling mentor, may be counted toward both requirements.
+
+Only votes from Incubator PMC members are binding for ASF release approval.
 
 Below are examples of the two kinds of release vote requests:
 
