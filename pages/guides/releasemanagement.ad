@@ -77,12 +77,15 @@ to podlings for their releases.  They are repeated here for clarity only.
 
 For a podling to receive full permission from the IPMC to execute the release, the release
 vote must be held on the link:/guides/lists.html#general+at+incubator.apache.org[incubator general list]
-and pass based on the link:http://apache.org/foundation/voting.html#ReleaseVotes[standard Package Release voting rules].
+and pass based on the link:https://apache.org/foundation/voting.html#ReleaseVotes[standard Package Release voting rules].
 Only Incubator PMC votes are binding, but everyone is encouraged to vote.
 
 The Incubator PMC expects the source releases to be staged on
 #https://dist.apache.org/repos/dist/dev/incubator/$podlingName# so that they can easily be moved
 to the release location via #svn mv#.
+
+Alternatively the new link:https://releases.apache.org[Apache Trusted Releases] platform handles both staging and commiting
+to the release location as part of a managed process.
 
 == Choice of Disclaimers
 
