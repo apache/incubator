@@ -1,18 +1,18 @@
-# Ossie — Incubator Health (Reports + GitHub + Mailing Lists)
+# Maka — Incubator Health (Reports + GitHub + Mailing Lists)
 _Generated on 2026-09-06_
 
 **Windows:** to-date
 
 ## Window Details
-### to-date  (2026-06-19 → 2026-09-06)
+### to-date  (2026-08-13 → 2026-09-06)
 - **Releases (from list votes/results):** 0  |  **Median gap (days):** —
-- **New contributors:** 0  |  **Unique committers:** 42  |  **Commits:** 135
-- **Issues:** opened 45 / closed 9
-- **PRs:** opened 191 / merged 95  |  **Median merge time (days):** 0.9
-- **Reviews (sampled):** median reviewers/PR **1**  |  reviewer diversity (eff.#) **3.39**  |  PR author diversity (eff.#) **14.44**  |  unique reviewers **15**, unique authors **41**
-- **Bus factor proxy (50% / 75%):** 4 / 12
+- **New contributors:** 0  |  **Unique committers:** 90  |  **Commits:** 977
+- **Issues:** opened 641 / closed 499
+- **PRs:** opened 1262 / merged 981  |  **Median merge time (days):** 0.4
+- **Reviews (sampled):** median reviewers/PR **1**  |  reviewer diversity (eff.#) **3.85**  |  PR author diversity (eff.#) **10.96**  |  unique reviewers **14**, unique authors **49**
+- **Bus factor proxy (50% / 75%):** 5 / 13
 - **Incubator reports:** 0  |  **Avg mentor sign-offs:** —
-- **Mailing lists:** dev messages **217**, dev unique posters **36**
+- **Mailing lists:** dev messages **300**, dev unique posters **10**
 
 ## Reading the Indicators
 - **Use trend arrows** to compare available windows; when a window lacks ≥28 days or ≥5 events, trends show **—**.
