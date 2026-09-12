@@ -27,8 +27,10 @@ compiled packages in one place and the sources somewhere else:
 Output: dist/<skill-name>.skill next to this script. Exit status is the
 number of skills that failed to package (0 = all good).
 
-Excluded from packages: __pycache__/, *.pyc, .DS_Store, node_modules/, and a
-skill's root-level evals/ or output/ directories — evals live in the repo,
+Excluded from packages: __pycache__/, *.pyc, .DS_Store, node_modules/, a
+skill's root-level evals/ or output/ directories, its root-level build and
+maintainer files (Makefile, README.md, .gitignore), and test files
+(test_*.py, *_test.py, conftest.py) at any depth — those live in the repo,
 not in the shipped skill.
 """
 
@@ -40,10 +42,17 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
 DIST = ROOT / "dist"
-EXCLUDE_DIRS = {"__pycache__", "node_modules"}
-EXCLUDE_GLOBS = {"*.pyc"}
+EXCLUDE_DIRS = {"__pycache__", "node_modules", ".pytest_cache"}
+# Tests are repo artefacts like the Makefile: they gate a build, they are not
+# part of what gets installed. Matched at any depth, not just the root.
+EXCLUDE_GLOBS = {"*.pyc", "test_*.py", "*_test.py", "conftest.py"}
 EXCLUDE_FILES = {".DS_Store"}
 ROOT_EXCLUDE_DIRS = {"evals", "output"}
+# Build and maintainer files at a skill's root. Same reasoning as evals/:
+# they belong in the repo, not in the thing people install. A Makefile is the
+# clearest case, since it drives this packager and cannot work once unpacked.
+ROOT_EXCLUDE_FILES = {"Makefile", "makefile", "GNUmakefile", ".gitignore",
+                      ".gitattributes", "README.md"}
 
 
 def validate(md: Path) -> str | None:
@@ -66,6 +75,8 @@ def should_exclude(arcname: Path) -> bool:
     if any(p in EXCLUDE_DIRS for p in parts):
         return True
     if len(parts) > 1 and parts[1] in ROOT_EXCLUDE_DIRS:
+        return True
+    if len(parts) == 2 and parts[1] in ROOT_EXCLUDE_FILES:
         return True
     if arcname.name in EXCLUDE_FILES:
         return True
