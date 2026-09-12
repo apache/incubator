@@ -1,4 +1,4 @@
-# releasecheck
+# Release Check
 
 Check a podling release candidate before or during its vote: signatures,
 checksums, naming, DISCLAIMER, LICENSE and NOTICE, headers, bundled code,
