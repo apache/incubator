@@ -77,9 +77,10 @@ carry on. Do not skip the step. All of these were checked and answer:
   dist/dev to dist/release, so the voted bytes are served over plain HTTP at
   `https://archive.apache.org/dist/incubator/<podling>/<version>/`. Download
   from there: it is far faster than an svn export and needs no revision
-  archaeology. The file names can differ, since an `-rcN` in the name stays
-  in the released file. Keep the svn route for RCs that were cancelled or
-  voted down, which never reach the archive.
+  archaeology. Don't assume the released file has the RC's name: an `-rcN` in
+  the name may be stripped on release or kept, and both happen. List the
+  archive directory rather than guessing the name. Keep the svn route for RCs
+  that were cancelled or voted down, which never reach the archive.
 - KEYS moves when a podling graduates. `downloads.apache.org/incubator/
   <podling>/KEYS` starts returning 404 and the file is then at
   `downloads.apache.org/<podling>/KEYS`, with the copy that was live during
