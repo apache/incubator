@@ -10,19 +10,34 @@ SKILLS   := $(abspath $(CURDIR)/..)
 PACKAGER := $(SKILLS)/package-skills.py
 DIST     := $(SKILLS)/dist
 PACKAGE  := $(DIST)/$(SKILL).skill
-INSTALL  := $(HOME)/.claude/skills
+
+# make install puts the skill into each client that is present. OpenCode also
+# reads ~/.claude/skills, so it only gets its own copy when there is no
+# ~/.claude; two copies just produce "duplicate skill name" warnings.
+CLAUDE_HOME     ?= $(HOME)/.claude
+CLAUDE_SKILLS   ?= $(CLAUDE_HOME)/skills
+CODEX_HOME      ?= $(HOME)/.codex
+CODEX_SKILLS    ?= $(CODEX_HOME)/skills
+XDG_CONFIG_HOME ?= $(HOME)/.config
+OPENCODE_HOME   ?= $(XDG_CONFIG_HOME)/opencode
+OPENCODE_SKILLS ?= $(OPENCODE_HOME)/skills
+OPENCODE        ?= $(shell command -v opencode)
 
 PYTHON   ?= python3
 OUT      ?= output
 TAGDIR   ?=
+MCP_ARGS ?=
 
 .DEFAULT_GOAL := help
-.PHONY: help test build install check clean
+.PHONY: help test build install mcp check clean
 
 help:
 	@echo "make test      run the regression test (44 planted faults, 20 unit checks)"
 	@echo "make build     test, then package to $(DIST)/$(SKILL).skill"
-	@echo "make install   build, then unpack into $(INSTALL)/"
+	@echo "make install   build, then unpack into the skills directory of each client present:"
+	@echo "               Claude Code, Codex, and OpenCode when there is no ~/.claude"
+	@echo "make mcp       install the six MCP servers and register them with Claude Code,"
+	@echo "               asking first: make mcp [MCP_ARGS=\"--desktop --codex --opencode\"]"
 	@echo "make check     run the checker on a real RC:"
 	@echo "               make check URL=<dist/dev RC dir> PODLING=<slug> [TAGDIR=<checkout>] [OUT=dir]"
 	@echo "make clean     remove $(OUT)/, __pycache__ and the built package"
@@ -39,10 +54,21 @@ build: test
 	@$(PYTHON) $(PACKAGER) $(CURDIR)
 
 install: build
-	@mkdir -p $(INSTALL)
-	@rm -rf $(INSTALL)/$(SKILL)
-	@unzip -q $(PACKAGE) -d $(INSTALL)
-	@echo "installed to $(INSTALL)/$(SKILL)"
+	@installed=; \
+	put() { mkdir -p "$$1" && rm -rf "$$1/$(SKILL)" && unzip -q $(PACKAGE) -d "$$1" || exit 1; \
+	        echo "installed to $$1/$(SKILL)"; installed=1; }; \
+	if [ -d "$(CLAUDE_HOME)" ]; then put "$(CLAUDE_SKILLS)"; fi; \
+	if [ -d "$(CODEX_HOME)" ]; then put "$(CODEX_SKILLS)"; fi; \
+	if [ ! -d "$(CLAUDE_HOME)" ] && { [ -d "$(OPENCODE_HOME)" ] || [ -n "$(OPENCODE)" ]; }; then \
+	  put "$(OPENCODE_SKILLS)"; fi; \
+	if [ -z "$$installed" ]; then \
+	  echo "no Claude Code, Codex or OpenCode found; using the Claude Code location"; \
+	  put "$(CLAUDE_SKILLS)"; fi
+
+# Separate from install: the skill works without the servers, and this clones
+# and pip-installs from GitHub and asks before touching any client config.
+mcp:
+	@$(PYTHON) scripts/setup_mcps.py $(MCP_ARGS)
 
 check:
 	@test -n "$(URL)$(RCDIR)" || { \

@@ -15,6 +15,7 @@ a review.
 | --- | --- |
 | `SKILL.md` | The review process, eight steps. The agent's entry point. |
 | `scripts/check_rc.py` | The mechanical checks. Standard library plus the `gpg` binary, no MCP, no third-party packages. |
+| `scripts/setup_mcps.py` | Installs the MCP servers below and registers them, asking first. Not needed to run the checker. |
 | `scripts/test_check_rc.py` | Regression test. Builds a release candidate with known faults, runs the checker over it, asserts every planted fault is found and that known false positives stay absent. |
 | `references/checks.md` | What each check means and how to judge it. Read when working through candidates. |
 | `references/tools.md` | Quirks of the MCP servers the review steps use. |
@@ -61,6 +62,56 @@ and a review still works without them at reduced coverage.
 
 `references/tools.md` records each server's quirks and, for each one, the
 public endpoint to fetch directly when it is not installed.
+
+### Installing them
+
+```
+make mcp                          # or: python3 scripts/setup_mcps.py
+make mcp MCP_ARGS=--desktop       # also register with Claude Desktop
+make mcp MCP_ARGS=--codex         # also register with Codex
+make mcp MCP_ARGS=--opencode      # also register with OpenCode
+make mcp MCP_ARGS=--dry-run       # show the steps, change nothing
+```
+
+`scripts/setup_mcps.py` needs git, Python 3.12 or later, and Node with npm
+for `apache-projects-mcp`. It clones each server into `~/.asf-mcp/src`
+(`--dir` to change), installs the Python ones into a single virtual
+environment there, and runs `npm install` for the Node one. Running it again
+pulls updates into the existing checkouts.
+
+Before changing any config it lists what it would add to which file and asks.
+On a yes it backs up each file it is about to change, next to the original as
+`<file>.<timestamp>.bak`, then registers the servers:
+
+| Client | Where | How |
+| --- | --- | --- |
+| Claude Code | `~/.claude.json` | `claude mcp add -s user` |
+| Claude Desktop, `--desktop` | `claude_desktop_config.json` | `mcpServers` entries |
+| Codex, `--codex` | `~/.codex/config.toml` (`$CODEX_HOME`) | `[mcp_servers.<name>]` tables appended to the end, so nothing already there is rewritten |
+| OpenCode, `--opencode` | `~/.config/opencode/opencode.jsonc` or `.json` | `mcp` entries of type `local` |
+
+A server already registered under the same name is left as it is, so an
+existing setup is never overwritten, and a file with nothing to add is neither
+changed nor backed up. A client that is not installed is skipped. A config
+file the script cannot parse safely, such as an `opencode.jsonc` with
+comments, is left alone and the entries are printed to paste in by hand.
+`--no-claude-code` registers only the clients named, `--yes` skips the question, `--no-register` installs without touching config,
+and `--only <name>...` limits it to some servers.
+
+`make install` does not run this, and needs neither the servers nor any
+desktop app. It unpacks the skill into each client that is present:
+
+| Present | Installed to |
+| --- | --- |
+| `~/.claude` | `~/.claude/skills` |
+| `~/.codex` | `~/.codex/skills` |
+| OpenCode, and no `~/.claude` | `~/.config/opencode/skills` |
+| none of them | `~/.claude/skills` |
+
+OpenCode also reads `~/.claude/skills`, so when both are present it uses that
+copy; a second one would only give "duplicate skill name" warnings. OpenCode
+counts as present when `~/.config/opencode` exists or `opencode` is on the
+PATH.
 
 ## Running the checker on its own
 
