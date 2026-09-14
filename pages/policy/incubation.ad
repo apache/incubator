@@ -115,12 +115,23 @@ stored alongside the NOTICE and LICENSE files.
 See the guidelines for link:/guides/releasemanagement.html[Podling releases] for good practices for making releases. The Podling can make
 link:/guides/releasemanagement.html#requesting_feedback_on_interim_non_asf_releases[non-ASF releases] while incubating as long as it is moving towards making ASF releases.
 
-Podlings are not yet fully accepted as official projects within the Apache Software Foundation. Podlings MUST NOT perform any ASF releases of software without the approval of the Incubator PMC. When a Podling decides it wants to make an ASF release, the Podling MUST hold a vote on their public dev list. At least three +1 PPMC votes are required (see the http://www.apache.org/foundation/voting.html[Apache Voting Process] page) and more +1 votes than -1 votes. If the vote passes, the Podling MUST send a summary of that vote to the Incubator's link:/howtoparticipate.html#Mailing+lists[general] list and request that the Incubator PMC approve the release. Three +1 Incubator PMC votes are required to approve a release. Below is an example showing how an incubating project managed this process:
+During incubation, PPMC members learn how to govern an ASF project. A PPMC operates like a PMC but reports to the Incubator PMC rather than to the ASF Board. The PPMC release vote ensures that the Podling community participates in producing and reviewing ASF releases. Podlings MUST NOT perform any ASF releases of software without the approval of the Incubator PMC. Because the PPMC cannot make formal decisions on behalf of the ASF, the Incubator PMC provides the binding approval required for a Podling release to become an ASF release.
 
-- link:++https://lists.apache.org/thread.html/7e9c475d07c0e12f813226aa123f54969ebb21a2277b32e9bd366d96@%3Cdev.plc4x.apache.org%3E++[Post to the Podling dev list calling the vote.]
+When a Podling proposes an ASF release, it MUST hold a vote on its public dev list to seek endorsement from the PPMC and MUST request approval from the Incubator PMC on the Incubator's link:/howtoparticipate.html#Mailing+lists[general] list. The PPMC vote and the Incubator PMC vote MAY be conducted sequentially or, at the Podling's discretion, concurrently. The timing and conduct of the votes MUST follow the applicable requirements of the http://www.apache.org/foundation/voting.html[Apache Voting Process] and the https://www.apache.org/legal/release-policy.html[ASF Release Policy].
+
+The proposed release is approved only when both of the following requirements have been satisfied:
+
+- At least three PPMC members have voted +1, and there are more +1 than -1 votes from PPMC members.
+- At least three Incubator PMC members have cast binding +1 votes, and there are more binding +1 than binding -1 votes.
+
+Only votes from Incubator PMC members are binding for ASF release approval.
+
+Below are examples of the two kinds of release vote requests:
+
+- link:++https://lists.apache.org/thread.html/7e9c475d07c0e12f813226aa123f54969ebb21a2277b32e9bd366d96@%3Cdev.plc4x.apache.org%3E++[Post to the Podling dev list calling the PPMC vote.]
 - link:++https://lists.apache.org/thread.html/06655226ba08c16a8cb273f9b45e0b0a15ebaed0d06783fdd06a03f6@%3Cgeneral.incubator.apache.org%3E++[Post to the Incubator's general list requesting approval from the Incubator PMC.]
 
-Should the Incubator PMC vote to approve a release, the Podling MAY make that release available to the public under these conditions:
+Once both voting requirements have been satisfied, the Podling MAY make the release available to the public under these conditions:
 
 - The release archive(s) MUST include the word "incubating" in the filename.
 - The release archive(s) MUST contain a disclaimer (see above), which SHOULD be placed in a DISCLAIMER or DISCLAIMER-WIP file.
