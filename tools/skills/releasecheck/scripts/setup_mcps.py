@@ -296,7 +296,10 @@ class Codex(Target):
     def block(name, cmd):
         # JSON string escapes are valid TOML basic strings.
         args = ", ".join(json.dumps(a) for a in cmd[1:])
-        return f"\n[mcp_servers.{name}]\ncommand = {json.dumps(cmd[0])}\nargs = [{args}]\n"
+        # codex exec never asks for approval, so without this every MCP call is
+        # refused. These servers are all read-only.
+        return (f"\n[mcp_servers.{name}]\ncommand = {json.dumps(cmd[0])}\nargs = [{args}]\n"
+                'default_tools_approval_mode = "approve"\n')
 
     def snippet(self, commands):
         return "".join(self.block(n, c) for n, c in commands.items())

@@ -24,6 +24,11 @@ looked at.
 Get the podling, RC, tag and dist/dev URL from the vote email. If only a name
 is given, confirm it's a current podling with `podlings:get_podling`.
 
+Read only the opening message of this RC's vote threads, on dev@ and
+general@, until step 7. Replies, including other people's votes and "I
+checked" lists, come after your own checks. Otherwise their findings can't be
+told apart from yours, and their severity replaces your judgement.
+
 Step 4 needs a shell with network access. Without one, do the other steps and
 say the archive contents were not checked.
 
@@ -51,7 +56,8 @@ then read every -1, 0, CANCEL and "I checked" message in full with
 `get_incubator_general_email`. Check the dev list for the PPMC vote with
 `search_podling_mail`. Each issue found becomes a check in step 5: is it
 fixed in this RC? Read the messages rather than adding up a tally
-(`references/tools.md`).
+(`references/tools.md`). This means earlier RCs and releases only; skip
+replies in this RC's own threads, which are step 7.
 
 ## 3. Inventory
 
@@ -106,6 +112,16 @@ the IPMC vote has passed?
 
 ## 7. Report
 
+Write your findings down first. Then read the replies in this RC's vote
+threads and reconcile:
+
+- A finding a voter also raised stays yours; add "also raised by" and a link.
+- Something a voter raised that you missed goes in with "raised in the
+  thread by" and a link, and is not in "I checked".
+- Judge each voter's point against policy yourself. A -1 is not a blocker
+  because it is a -1: release votes can't be vetoed, and plenty of -1s are
+  about bugs or next-release cleanup rather than what may be released.
+
 1. Previously raised: each issue, fixed or not, with a link.
 2. Must fix, needs a new RC: findings that change what is inside an archive,
    so the artifacts have to be rebuilt and re-signed. Path, evidence and
@@ -123,8 +139,8 @@ Sorting between 2 and 3 is the useful judgement. Ask whether fixing it
 changes a byte of any artifact. If it does not, the release manager can fix
 it during the vote and the vote stands.
 
-For a mailing list, use the IPMC style: an "I checked:" list, then the
-issues, no headings or bold, no vote. If nothing is found, say what was
+For a mailing list, use the IPMC style: an "I checked:" list of what you
+checked yourself, then the issues, no headings or bold, no vote. If nothing is found, say what was
 checked; don't call the release compliant.
 
 ## 8. Vote result (only when asked)
