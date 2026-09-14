@@ -36,9 +36,12 @@ carry on. Do not skip the step. All of these were checked and answer:
   roster; that was corrected and its `binding` flags can be relied on. Two
   things still need care. It returns one row per message, not per voter, so
   someone who votes and then joins the discussion appears several times, and
-  the opening [VOTE] call itself appears as a row. A message with no vote in
-  it is reported as a 0. So take each person's latest actual vote rather than
-  adding the rows up, which is what step 8 says to do anyway.
+  the opening [VOTE] call itself appears as a row, with no vote. So take each
+  person's latest actual vote rather than adding the rows up, which is what
+  step 8 says to do anyway.
+- `summarize_release_vote_thread` takes no `podling` argument. For a dev@
+  thread pass `list_name="dev"` and `domain`, which
+  `resolve_podling_mail_domain(podling, list_name="dev")` returns.
 - `search_incubator_general_mail` ignores quotation marks. Narrow with
   `timespan`.
 - An empty search means nothing matched, not that nothing was said. Check
