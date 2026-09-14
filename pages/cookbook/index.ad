@@ -153,15 +153,19 @@ Note that Apache Releases consist of source code only. However, it is common for
 link:http://www.apache.org/legal/release-policy.html#compiled-packages[compiled packages] along with their releases, as a convenience to users of the application. The focus is on the actual
 source code releases, and all distributed compiled packages are based on those "official" releases.
 
-== Two-phase vote on Podling Releases
+== PPMC and Incubator PMC votes on Podling Releases
 
-Voting on podling releases happens in two phases:
+A podling release needs two votes:
 
- * First, the podling votes on the release on their dev mailing list. The main goal of this vote is for the podling community
+ * The podling votes on the release on their dev mailing list. The main goal of this vote is for the podling community
    to practice and learn voting on releases. The vote is successful if there are at least three +1 votes from PPMC members,
    and more +1 than -1 votes from PPMC members.
- * Then, if that first vote is successful, the Incubator PMC holds a vote on the Incubator general mailing list. This is required
-   to make the vote an Act of the Foundation, as for all ASF releases.
+ * The Incubator PMC votes on the Incubator general mailing list. This is required
+   to make the vote an Act of the Foundation, as for all ASF releases. The vote is successful if there are at least three
+   binding +1 votes from Incubator PMC members, and more binding +1 than binding -1 votes.
+
+The podling can hold these votes one after the other or, at its discretion, at the same time. The release is approved
+only when both votes have passed. See the link:/policy/incubation.html#releases[Incubation Policy] for details.
 
 Many committers in podlings use several names when communicating with the project: their real name, their nickname, their github id, and
 their ASF id. When voting on releases, in order to make it clear who is voting, it is best practice to add your ASF id and your role(s)
@@ -169,11 +173,12 @@ to your vote email. For example, if you are in the podling's PPMC and also in th
 
 +1 clr (PPMC) (IPMC)
 
-Voting in this way also makes it easier to tally the two phase votes.
+Voting in this way also makes it easier to tally both votes.
 
-Report votes from the podling dev list to the Incubator PMC vote in the Incubator PMC [VOTE] message, by explicitly mentioning the podling vote result
+When the votes are held one after the other, report votes from the podling dev list to the Incubator PMC vote in the Incubator PMC [VOTE] message, by explicitly mentioning the podling vote result
 and including a link:http://lists.apache.org[lists.apache.org] link to the podling vote tally. This
 allows votes from mentors and other Incubator PMC members to be binding in the Incubator PMC vote, without people having to vote twice.
+When the votes are held at the same time, link each vote thread from the other so reviewers can follow both.
 
 Both the podling and Incubator votes follow the standard link:https://www.apache.org/foundation/voting[ASF voting principles]: they
 are majority votes that last at least 72 hours, and if people vote several times only their last vote counts.

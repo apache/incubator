@@ -80,6 +80,10 @@ vote must be held on the link:/guides/lists.html#general+at+incubator.apache.org
 and pass based on the link:https://apache.org/foundation/voting.html#ReleaseVotes[standard Package Release voting rules].
 Only Incubator PMC votes are binding, but everyone is encouraged to vote.
 
+The podling also votes on the release on its dev list, where at least three +1 votes from PPMC members and more +1
+than -1 votes are required. The podling can hold the two votes one after the other or at the same time, and the
+release is approved only when both have passed. See the link:/policy/incubation.html#releases[Incubation Policy].
+
 The Incubator PMC expects the source releases to be staged on
 #https://dist.apache.org/repos/dist/dev/incubator/$podlingName# so that they can easily be moved
 to the release location via #svn mv#.
