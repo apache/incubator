@@ -98,6 +98,9 @@ LEGAL_DIR_NAMES = {"licenses", "licences", "license", "licence", "legal", "licen
 # "licenses/LICENSE-[project].txt". A path that runs into one of these is a
 # worked example for the reader, not a file the archive is meant to contain.
 PLACEHOLDER_OPENERS = "[<{(%$*"
+# Suffixes a real LICENSE/NOTICE file can carry. Anything else after the
+# stem (LICENSE.header, NOTICE.vm) is a build input, not the document.
+TEXT_SUFFIXES = {"", ".txt", ".md", ".rst", ".adoc"}
 HIDDEN_JUNK = {".DS_Store", "Thumbs.db", ".git", ".svn", ".idea", ".vscode"}
 # macOS resource-fork sidecars. bsdtar folds them back into extended attributes
 # and does not list them, so a reviewer on macOS never sees them; GNU tar and
@@ -641,9 +644,13 @@ def compare_al2(text):
 
 def check_root_files(root, label, rc_year, f, templates=None):
     templates = templates or {}
-    names = set(os.listdir(root))
+    # Sorted, because the choice between LICENSE and LICENSE.header must not
+    # depend on the order the filesystem happens to return.
+    names = sorted(os.listdir(root))
     for req in ("LICENSE", "NOTICE"):
-        hits = [n for n in names if n == req or n.startswith(req + ".")]
+        hits = [n for n in names if n == req] + \
+               [n for n in names if n != req and n.startswith(req + ".")
+                and os.path.splitext(n)[1].lower() in TEXT_SUFFIXES]
         if hits:
             f.ok("root-files", f"{req} present", path=f"{label}/{hits[0]}")
         else:
@@ -707,7 +714,12 @@ def check_root_files(root, label, rc_year, f, templates=None):
                         path=f"{label}/{notice}", evidence=text[max(0, m.start() - 150):m.end() + 150])
         f.info("notice", "NOTICE text for review", path=f"{label}/{notice}", evidence=text[:4000])
 
-    lic = next((n for n in names if n == "LICENSE" or n.startswith("LICENSE.")), None)
+    # "LICENSE" itself first, then a plain-text variant. Never LICENSE.header,
+    # which is the header template a build stamps into source files, not the
+    # licence of the release.
+    lic = next((n for n in sorted(names) if n == "LICENSE"), None) or \
+          next((n for n in sorted(names) if n.startswith("LICENSE.")
+                and os.path.splitext(n)[1].lower() in TEXT_SUFFIXES), None)
     if lic:
         text = read_text(os.path.join(root, lic)) or ""
         if "Apache License" not in text[:400] or "Version 2.0" not in text[:600]:

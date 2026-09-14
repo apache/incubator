@@ -122,6 +122,10 @@ def build(tmp):
                           "dist-material/licenses/ui-licenses/license-vben.txt\n")
     w(f"{s}/dist-material/licenses/ui-licenses/license-vben.txt", "MIT\n")
     w(f"{s}/licenses/LICENSE-unused.txt", "MIT stub\n")
+    # A build input, not the licence of the release. Picking this instead of
+    # LICENSE made the whole AL2 text look missing, and which one won depended
+    # on the order the filesystem listed them in.
+    w(f"{s}/LICENSE.header", "Licensed to the Apache Software Foundation (ASF) under one\n")
     w(f"{s}/licenses/LICENSE-mitlib.txt", "Copyright (c) 2014 Someone\nPermission is hereby granted\n")
     w(f"{s}/test/data.xlsx", b"PK\x03\x04\x00\x00xlsx")
     w(f"{s}/NOTICE", "Apache Demo (Incubating)\nCopyright 2024 The Apache Software Foundation\n\n"
@@ -318,6 +322,8 @@ def main():
                      or (i["check"] == "license" and "LICENSES/" in (i["path"] or ""))
                      or ("DISCLAIMER-BINARIES" in (i["path"] or "")
                          and i["kind"] in ("fail", "candidate"))
+                     or ("LICENSE.header" in (i["path"] or "")
+                         and i["check"] in ("license", "license-text", "root-files"))
                      or (i["check"] == "license" and i["kind"] == "fail"
                          and "vben" in json.dumps(i["evidence"] or ""))
                      or (i["check"] in ("root-files", "disclaimer") and i["kind"] == "fail"
