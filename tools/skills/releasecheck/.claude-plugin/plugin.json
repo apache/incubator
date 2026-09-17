@@ -1,0 +1,19 @@
+{
+  "name": "releasecheck",
+  "description": "Checks an Apache Incubator podling release candidate before or during its vote: signatures, checksums, naming, DISCLAIMER, LICENSE and NOTICE, headers, bundled code, binaries, and whether issues from earlier votes are fixed.",
+  "version": "0.5",
+  "author": {
+    "name": "Apache Incubator",
+    "url": "https://incubator.apache.org/"
+  },
+  "homepage": "https://github.com/apache/incubator/tree/master/tools/skills/releasecheck",
+  "repository": "https://github.com/apache/incubator",
+  "license": "Apache-2.0",
+  "keywords": [
+    "apache",
+    "incubator",
+    "podling",
+    "release"
+  ],
+  "skills": "./"
+}

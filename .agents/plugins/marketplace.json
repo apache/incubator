@@ -1,0 +1,19 @@
+{
+  "name": "apache-incubator",
+  "interface": {
+    "displayName": "Apache Incubator"
+  },
+  "plugins": [
+    {
+      "name": "releasecheck",
+      "source": {
+        "source": "local",
+        "path": "./tools/skills/releasecheck"
+      },
+      "category": "release-management",
+      "policy": {
+        "installation": "AVAILABLE"
+      }
+    }
+  ]
+}
