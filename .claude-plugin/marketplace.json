@@ -1,0 +1,16 @@
+{
+  "name": "apache-incubator",
+  "owner": {
+    "name": "Apache Incubator",
+    "url": "https://incubator.apache.org/"
+  },
+  "description": "Skills from the Apache Incubator for podlings, mentors and the IPMC.",
+  "plugins": [
+    {
+      "name": "releasecheck",
+      "source": "./tools/skills/releasecheck",
+      "description": "Checks an Apache Incubator podling release candidate before or during its vote. Produces findings for a person to review, never a vote.",
+      "category": "release-management"
+    }
+  ]
+}

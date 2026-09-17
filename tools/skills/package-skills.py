@@ -28,10 +28,10 @@ Output: dist/<skill-name>.skill next to this script. Exit status is the
 number of skills that failed to package (0 = all good).
 
 Excluded from packages: __pycache__/, *.pyc, .DS_Store, node_modules/, a
-skill's root-level evals/ or output/ directories, its root-level build and
-maintainer files (Makefile, README.md, .gitignore), and test files
-(test_*.py, *_test.py, conftest.py) at any depth — those live in the repo,
-not in the shipped skill.
+skill's root-level evals/, output/ or .claude-plugin/ directories, its
+root-level build and maintainer files (Makefile, README.md, .gitignore), and
+test files (test_*.py, *_test.py, conftest.py) at any depth — those live in
+the repo, not in the shipped skill.
 """
 
 import fnmatch
@@ -47,7 +47,9 @@ EXCLUDE_DIRS = {"__pycache__", "node_modules", ".pytest_cache"}
 # part of what gets installed. Matched at any depth, not just the root.
 EXCLUDE_GLOBS = {"*.pyc", "test_*.py", "*_test.py", "conftest.py"}
 EXCLUDE_FILES = {".DS_Store"}
-ROOT_EXCLUDE_DIRS = {"evals", "output"}
+# .claude-plugin/ is the marketplace manifest. It matters to a plugin install
+# from the repo, not to an unpacked skill.
+ROOT_EXCLUDE_DIRS = {"evals", "output", ".claude-plugin"}
 # Build and maintainer files at a skill's root. Same reasoning as evals/:
 # they belong in the repo, not in the thing people install. A Makefile is the
 # clearest case, since it drives this packager and cannot work once unpacked.

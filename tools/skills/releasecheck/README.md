@@ -9,11 +9,42 @@ person; it never votes.
 These are maintainer notes. The skill itself is `SKILL.md`; read that to run
 a review.
 
+## Installing from the marketplace
+
+The Incubator repo is a plugin marketplace, and this skill is the
+`releasecheck` plugin in it. In Claude Code:
+
+```
+claude plugin marketplace add apache/incubator
+claude plugin install releasecheck@apache-incubator
+```
+
+The skill is then `/releasecheck:podling-release-check`. To update:
+
+```
+claude plugin marketplace update apache-incubator
+claude plugin update releasecheck@apache-incubator
+```
+
+In Codex:
+
+```
+codex plugin marketplace add apache/incubator
+codex plugin add releasecheck@apache-incubator
+```
+
+An update only reaches installed copies when the `version` in
+`.claude-plugin/plugin.json` changes, so bump it with any change people
+should get. The marketplace installs the skill only. The MCP servers are
+still `make mcp`, below. `make install` still works for OpenCode and for
+anyone not using a marketplace.
+
 ## Layout
 
 | Path | What it is |
 | --- | --- |
 | `SKILL.md` | The review process, eight steps. The agent's entry point. |
+| `.claude-plugin/plugin.json` | Plugin manifest. The repo's `.claude-plugin/marketplace.json` (Claude Code) and `.agents/plugins/marketplace.json` (Codex) list this directory as the `releasecheck` plugin. |
 | `scripts/check_rc.py` | The mechanical checks. Standard library plus the `gpg` binary, no MCP, no third-party packages. |
 | `scripts/setup_mcps.py` | Installs the MCP servers below and registers them, asking first. Not needed to run the checker. |
 | `scripts/test_check_rc.py` | Regression test. Builds a release candidate with known faults, runs the checker over it, asserts every planted fault is found and that known false positives stay absent. |
