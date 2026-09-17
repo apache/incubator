@@ -11,6 +11,8 @@ description: >
   call a PPMC or IPMC release vote, is voting on a [VOTE] Release thread on
   general@incubator, or wants to know why an earlier RC was voted down. It
   produces findings for a person to review, never a vote.
+license: Apache-2.0
+capability: capability:review
 ---
 
 # Podling release check
