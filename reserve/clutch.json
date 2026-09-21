@@ -204,7 +204,7 @@
         {
           "description": "Apache Amoro(incubating) is a Lakehouse management system bui...",
           "last_update_int": 1789889366,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>",
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>",
           "nocommit": false
         }
       ],
@@ -322,8 +322,8 @@
         "asyncband",
         {
           "description": "This crate provides concurrency control and async coordinatio...",
-          "last_update_int": 1789920943,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>",
+          "last_update_int": 1789973862,
+          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>",
           "nocommit": false
         }
       ],
@@ -332,7 +332,7 @@
         {
           "description": "Apache Asyncband (Incubating) Website",
           "last_update_int": 1789141827,
-          "last_update_txt": "9 days ago",
+          "last_update_txt": "10 days ago",
           "nocommit": false
         }
       ]
@@ -356,162 +356,6 @@
         "Has not provided a wiki link"
       ]
     ]
-  },
-  "auron": {
-    "description": "Auron accelerates Apache Spark SQL by providing an alternative vectorized\n            execution layer implemented in Rust, enabling native performance while maintaining full\n            Spark compatibility.",
-    "fullName": "Auron",
-    "hasMailListCommits": "http://mail-archives.apache.org/mod_mbox/auron-commits",
-    "hasMailListDev": "http://mail-archives.apache.org/mod_mbox/auron-dev",
-    "ldap": {
-      "members": [
-        "csy",
-        "feiwang",
-        "guihuawen",
-        "jqin",
-        "kirs",
-        "lihao",
-        "liyuance",
-        "maruilei",
-        "mingwei",
-        "nicholasjiang",
-        "rexxiong",
-        "richox",
-        "shreyesh",
-        "slfan1989",
-        "wanglei",
-        "wangzhen",
-        "weiqing",
-        "xuanwo",
-        "yew1eb",
-        "yjshen",
-        "zhangmang",
-        "zuston"
-      ],
-      "numberCommitters": 22,
-      "numberCommittersNew": 7,
-      "numberPMCEquals": true,
-      "numberPMCMembers": 22,
-      "owners": [
-        "csy",
-        "feiwang",
-        "guihuawen",
-        "jqin",
-        "kirs",
-        "lihao",
-        "liyuance",
-        "maruilei",
-        "mingwei",
-        "nicholasjiang",
-        "rexxiong",
-        "richox",
-        "shreyesh",
-        "slfan1989",
-        "wanglei",
-        "wangzhen",
-        "weiqing",
-        "xuanwo",
-        "yew1eb",
-        "yjshen",
-        "zhangmang",
-        "zuston"
-      ]
-    },
-    "mentors": [
-      [
-        "Becket Qin",
-        "jqin"
-      ],
-      [
-        "Calvin Kirs",
-        "kirs"
-      ],
-      [
-        "Hao Ding",
-        "xuanwo"
-      ],
-      [
-        "Nicholas Jiang",
-        "nicholasjiang"
-      ]
-    ],
-    "news": [
-      "2026-07-18 Release 8.0.0-incubating.",
-      "2026-06-26 New Committer: Gui Huawen.",
-      "2026-06-16 New Committer: Hai Zhou.",
-      "2026-06-12 New PPMC Member: Ruilei Ma.",
-      "2026-03-31 New Committer: Shreyesh Arangath.",
-      "2026-03-31 New Committer: Shilun Fan.",
-      "2026-03-04 Release 7.0.0-incubating.",
-      "2025-12-22 New Committer: Mang Zhang.",
-      "2025-10-17 Release 6.0.0-incubating (the first apache incubating release).",
-      "2025-09-26 New Committer: Ruilei Ma.",
-      "2025-09-01 New Committer: Fei Wang.",
-      "2025-08-05 Project enters incubation."
-    ],
-    "podlingName": "Auron",
-    "rawReportingGroup": "group-3",
-    "releases": {
-      "apache-auron-6.0.0-incubating-source.tgz": {
-        "dtm": "09/30/2025",
-        "folder": "auron-6.0.0-incubating",
-        "hash": "sha512",
-        "revision": "r79669",
-        "size": "556709",
-        "user": "richox"
-      },
-      "apache-auron-7.0.0-incubating-source.tgz": {
-        "dtm": "02/13/2026",
-        "folder": "auron-7.0.0-incubating",
-        "hash": "sha512",
-        "revision": "r82480",
-        "size": "1208707",
-        "user": "maruilei"
-      },
-      "apache-auron-8.0.0-incubating-source.tgz": {
-        "dtm": "07/07/2026",
-        "folder": "auron-8.0.0-incubating",
-        "hash": "sha512",
-        "revision": "r85720",
-        "size": "1480746",
-        "user": "richox"
-      }
-    },
-    "reportingGroup": "March, June, September, December",
-    "reportingMonthly": false,
-    "repositories": [
-      [
-        "auron",
-        {
-          "description": "Apache Auron(Incubating) is an accelerator for big data engin...",
-          "last_update_int": 1789783306,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>",
-          "nocommit": false
-        }
-      ],
-      [
-        "auron-sites",
-        {
-          "description": "Apache Auron (Incubating) Site",
-          "last_update_int": 1788167553,
-          "last_update_txt": "21 days ago",
-          "nocommit": false
-        }
-      ]
-    ],
-    "resource": "auron",
-    "sponsor": "Incubator",
-    "startDate": "2025-08-05",
-    "statusAge": 47,
-    "statusLastUpdated": "2026-08-05",
-    "urls": {
-      "git": "https://gitbox.apache.org/repos/asf?p=auron.git;a=tree;hb=HEAD",
-      "keys": "https://downloads.apache.org/incubator/auron/KEYS",
-      "svn": "",
-      "tracker": "https://github.com/apache/auron/issues",
-      "wiki": "https://cwiki.apache.org/confluence/display/AURON",
-      "www": "https://auron.apache.org"
-    },
-    "zFixMeList": []
   },
   "bifromq": {
     "description": "BifroMQ is a Java-based, high-performance, distributed MQTT broker with native\n            multi-tenancy support, designed for large-scale connections and message delivery.",
@@ -620,7 +464,7 @@
         {
           "description": "Apache BifroMQ (Incubating) Website",
           "last_update_int": 1788539304,
-          "last_update_txt": "16 days ago",
+          "last_update_txt": "17 days ago",
           "nocommit": false
         }
       ],
@@ -796,7 +640,7 @@
         {
           "description": "Build applications that make decisions (chatbots, agents, sim...",
           "last_update_int": 1789933109,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>",
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>",
           "nocommit": false
         }
       ]
@@ -899,7 +743,7 @@
         {
           "description": "Automated Adversary Emulation Platform",
           "last_update_int": 1787839278,
-          "last_update_txt": "24 days ago",
+          "last_update_txt": "25 days ago",
           "nocommit": false
         }
       ],
@@ -1430,7 +1274,7 @@
         {
           "description": "Apache Casbin",
           "last_update_int": 1767274720,
-          "last_update_txt": "37 weeks ago",
+          "last_update_txt": "38 weeks ago",
           "nocommit": false
         }
       ],
@@ -1520,7 +1364,7 @@
         {
           "description": "Apache Casbin",
           "last_update_int": 1786026633,
-          "last_update_txt": "6 weeks ago",
+          "last_update_txt": "7 weeks ago",
           "nocommit": false
         }
       ],
@@ -1682,7 +1526,7 @@
         {
           "description": "Apache Casbin",
           "last_update_int": 1788964771,
-          "last_update_txt": "11 days ago",
+          "last_update_txt": "12 days ago",
           "nocommit": false
         }
       ],
@@ -1745,7 +1589,7 @@
         {
           "description": "Apache Casbin",
           "last_update_int": 1789656455,
-          "last_update_txt": "3 days ago",
+          "last_update_txt": "4 days ago",
           "nocommit": false
         }
       ],
@@ -1817,7 +1661,7 @@
         {
           "description": "Apache Casbin",
           "last_update_int": 1770911566,
-          "last_update_txt": "31 weeks ago",
+          "last_update_txt": "32 weeks ago",
           "nocommit": false
         }
       ],
@@ -2024,7 +1868,7 @@
         {
           "description": "Apache Casbin: an authorization library that supports access ...",
           "last_update_int": 1773324601,
-          "last_update_txt": "27 weeks ago",
+          "last_update_txt": "28 weeks ago",
           "nocommit": false
         }
       ],
@@ -2042,7 +1886,7 @@
         {
           "description": "Apache Casbin",
           "last_update_int": 1767883829,
-          "last_update_txt": "36 weeks ago",
+          "last_update_txt": "37 weeks ago",
           "nocommit": false
         }
       ],
@@ -2123,7 +1967,7 @@
         {
           "description": "Apache Casbin",
           "last_update_int": 1786030789,
-          "last_update_txt": "6 weeks ago",
+          "last_update_txt": "7 weeks ago",
           "nocommit": false
         }
       ],
@@ -2276,7 +2120,7 @@
         {
           "description": "Apache Casbin",
           "last_update_int": 1788965019,
-          "last_update_txt": "11 days ago",
+          "last_update_txt": "12 days ago",
           "nocommit": false
         }
       ],
@@ -2636,7 +2480,7 @@
         {
           "description": "Apache Casbin",
           "last_update_int": 1767890739,
-          "last_update_txt": "36 weeks ago",
+          "last_update_txt": "37 weeks ago",
           "nocommit": false
         }
       ],
@@ -2969,7 +2813,7 @@
         {
           "description": "Apache Casbin",
           "last_update_int": 1787277383,
-          "last_update_txt": "31 days ago",
+          "last_update_txt": "4 weeks ago",
           "nocommit": false
         }
       ],
@@ -3140,7 +2984,7 @@
         {
           "description": "Apache Casbin",
           "last_update_int": 1789652675,
-          "last_update_txt": "3 days ago",
+          "last_update_txt": "4 days ago",
           "nocommit": false
         }
       ],
@@ -3212,7 +3056,7 @@
         {
           "description": "Apache Casbin Website",
           "last_update_int": 1787248013,
-          "last_update_txt": "4 weeks ago",
+          "last_update_txt": "5 weeks ago",
           "nocommit": false
         }
       ],
@@ -3456,7 +3300,7 @@
         {
           "description": "Backup Utility for Apache Cloudberry (Incubating)",
           "last_update_int": 1789480795,
-          "last_update_txt": "5 days ago",
+          "last_update_txt": "6 days ago",
           "nocommit": false
         }
       ],
@@ -3492,7 +3336,7 @@
         {
           "description": "go-libs for Apache Cloudberry (Incubating)",
           "last_update_int": 1789480865,
-          "last_update_txt": "5 days ago",
+          "last_update_txt": "6 days ago",
           "nocommit": false
         }
       ],
@@ -4077,7 +3921,7 @@
         {
           "description": "Apache Hamilton helps data scientists and engineers define te...",
           "last_update_int": 1789933130,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>",
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>",
           "nocommit": false
         }
       ],
@@ -5554,7 +5398,7 @@
         {
           "description": "Apache KIE (Knowledge Is Everything) is the home of Drools, O...",
           "last_update_int": 1789934418,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>",
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>",
           "nocommit": false
         }
       ],
@@ -5581,7 +5425,7 @@
         {
           "description": "Apache KIE Examples repository with showcases on how to use K...",
           "last_update_int": 1789052391,
-          "last_update_txt": "10 days ago",
+          "last_update_txt": "11 days ago",
           "nocommit": false
         }
       ],
@@ -5847,7 +5691,7 @@
         "maka",
         {
           "description": "Apache Maka (Incubating) is a high-performance agent workspac...",
-          "last_update_int": 1789953589,
+          "last_update_int": 1789980455,
           "last_update_txt": "<span style='color: #070;'>&lt;30 minutes ago</span>",
           "nocommit": false
         }
@@ -6098,7 +5942,7 @@
         {
           "description": "Apache OpenServerless website",
           "last_update_int": 1788985853,
-          "last_update_txt": "11 days ago",
+          "last_update_txt": "12 days ago",
           "nocommit": false
         }
       ],
@@ -6252,8 +6096,8 @@
         "ossie",
         {
           "description": "Apache Ossie, industry wide specification effort to standardi...",
-          "last_update_int": 1789886693,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>",
+          "last_update_int": 1789954975,
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>",
           "nocommit": false
         }
       ],
@@ -6484,7 +6328,7 @@
         {
           "description": "Website for Apache Otava (incubating)",
           "last_update_int": 1789323523,
-          "last_update_txt": "7 days ago",
+          "last_update_txt": "8 days ago",
           "nocommit": false
         }
       ]
@@ -6891,7 +6735,7 @@
         {
           "description": "Apache pouchdb",
           "last_update_int": 1787667017,
-          "last_update_txt": "26 days ago",
+          "last_update_txt": "27 days ago",
           "nocommit": false
         }
       ]
@@ -7457,7 +7301,7 @@
         {
           "description": ":fire: Seata is an easy-to-use, high-performance, open source...",
           "last_update_int": 1789871976,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>",
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>",
           "nocommit": false
         }
       ],
@@ -7466,7 +7310,7 @@
         {
           "description": "The operational tool for Seata-Server.",
           "last_update_int": 1787591440,
-          "last_update_txt": "27 days ago",
+          "last_update_txt": "28 days ago",
           "nocommit": false
         }
       ],
@@ -7474,8 +7318,8 @@
         "incubator-seata-go",
         {
           "description": "Go Implementation For Seata",
-          "last_update_int": 1789885672,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>",
+          "last_update_int": 1789971382,
+          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>",
           "nocommit": false
         }
       ],
@@ -7511,7 +7355,7 @@
         {
           "description": "Apache Seata(incubating) Website",
           "last_update_int": 1789950652,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>",
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>",
           "nocommit": false
         }
       ]
@@ -7656,8 +7500,8 @@
         "texera",
         {
           "description": "Human-AI Collaborative Data Science Using Visual Workflows",
-          "last_update_int": 1789954082,
-          "last_update_txt": "<span style='color: #070;'>&lt;15 minutes ago</span>",
+          "last_update_int": 1789975562,
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>",
           "nocommit": false
         }
       ]
@@ -7812,7 +7656,7 @@
         {
           "description": "Apache Toree (Incubating)",
           "last_update_int": 1789882935,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>",
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>",
           "nocommit": false
         }
       ],
@@ -7970,7 +7814,7 @@
         {
           "description": "Apache XTable (incubating) is a cross-table converter for lak...",
           "last_update_int": 1789756213,
-          "last_update_txt": "2 days ago",
+          "last_update_txt": "3 days ago",
           "nocommit": false
         }
       ],
@@ -7979,7 +7823,7 @@
         {
           "description": "Apache xtable",
           "last_update_int": 1789409645,
-          "last_update_txt": "6 days ago",
+          "last_update_txt": "7 days ago",
           "nocommit": false
         }
       ]
