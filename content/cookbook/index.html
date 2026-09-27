@@ -160,7 +160,7 @@
 <li><a href="#importing_the_initial_code">Importing the Initial Code</a></li>
 <li><a href="#community_building">Community building</a></li>
 <li><a href="#podling_releases">Podling Releases</a></li>
-<li><a href="#two_phase_vote_on_podling_releases">Two-phase vote on Podling Releases</a></li>
+<li><a href="#ppmc_and_incubator_pmc_votes_on_podling_releases">PPMC and Incubator PMC votes on Podling Releases</a></li>
 <li><a href="#podling_top_level_project_what_are_the_differences">Podling, Top-level Project: what are the differences?</a></li>
 <li><a href="#graduation_readiness_assessment">Graduation Readiness Assessment</a></li>
 <li><a href="#graduation_discussion">Graduation discussion</a></li>
@@ -449,23 +449,28 @@ source code releases, and all distributed compiled packages are based on those "
 </div>
 </div>
 <div class="sect1">
-<h2 id="two_phase_vote_on_podling_releases">Two-phase vote on Podling Releases</h2>
+<h2 id="ppmc_and_incubator_pmc_votes_on_podling_releases">PPMC and Incubator PMC votes on Podling Releases</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Voting on podling releases happens in two phases:</p>
+<p>A podling release needs two votes:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>First, the podling votes on the release on their dev mailing list. The main goal of this vote is for the podling community
+<p>The podling votes on the release on their dev mailing list. The main goal of this vote is for the podling community
 to practice and learn voting on releases. The vote is successful if there are at least three +1 votes from PPMC members,
 and more +1 than -1 votes from PPMC members.</p>
 </li>
 <li>
-<p>Then, if that first vote is successful, the Incubator PMC holds a vote on the Incubator general mailing list. This is required
-to make the vote an Act of the Foundation, as for all ASF releases.</p>
+<p>The Incubator PMC votes on the Incubator general mailing list. This is required
+to make the vote an Act of the Foundation, as for all ASF releases. The vote is successful if there are at least three
+binding +1 votes from Incubator PMC members, and more binding +1 than binding -1 votes.</p>
 </li>
 </ul>
+</div>
+<div class="paragraph">
+<p>The podling can hold these votes one after the other or, at its discretion, at the same time. The release is approved
+only when both votes have passed. See the <a href="/policy/incubation.html#releases">Incubation Policy</a> for details.</p>
 </div>
 <div class="paragraph">
 <p>Many committers in podlings use several names when communicating with the project: their real name, their nickname, their github id, and
@@ -476,12 +481,13 @@ to your vote email. For example, if you are in the podling&#8217;s PPMC and also
 <p>+1 clr (PPMC) (IPMC)</p>
 </div>
 <div class="paragraph">
-<p>Voting in this way also makes it easier to tally the two phase votes.</p>
+<p>Voting in this way also makes it easier to tally both votes.</p>
 </div>
 <div class="paragraph">
-<p>Report votes from the podling dev list to the Incubator PMC vote in the Incubator PMC [VOTE] message, by explicitly mentioning the podling vote result
+<p>When the votes are held one after the other, report votes from the podling dev list to the Incubator PMC vote in the Incubator PMC [VOTE] message, by explicitly mentioning the podling vote result
 and including a <a href="http://lists.apache.org">lists.apache.org</a> link to the podling vote tally. This
-allows votes from mentors and other Incubator PMC members to be binding in the Incubator PMC vote, without people having to vote twice.</p>
+allows votes from mentors and other Incubator PMC members to be binding in the Incubator PMC vote, without people having to vote twice.
+When the votes are held at the same time, link each vote thread from the other so reviewers can follow both.</p>
 </div>
 <div class="paragraph">
 <p>Both the podling and Incubator votes follow the standard <a href="https://www.apache.org/foundation/voting">ASF voting principles</a>: they
