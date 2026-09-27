@@ -548,10 +548,10 @@ So the working default in a podling is: if somebody is a committer and is
 engaging with how the project is run, they should probably be on the PPMC too.
 The PPMC's job includes watching for exactly that.
 
-There is a second reason that is purely practical. Release votes need three
-binding `+1` votes at stage one, and only PPMC members and mentors supply them.
-A podling with a small PPMC will stall on releases whenever two people are on
-holiday.
+There is a second reason that is purely practical. The podling's own release
+vote needs at least three `+1` votes from PPMC members, including its mentors,
+and more `+1` than `-1` from PPMC members. A podling with a small PPMC will
+stall on releases whenever two people are on holiday.
 
 #### When it goes sideways
 
@@ -700,8 +700,7 @@ as incomplete; draw out that PPMC members have all the committer rights as well.
 
 **b. PPMC member.** Committers have no binding vote on releases. Worth adding,
 if it does not come up on its own, that mentors are on the PPMC and are IPMC
-members, so they can vote bindingly at both release stages. Lesson 6 covered
-this.
+members, so their votes count in both release votes. Lesson 6 covered this.
 
 **c. PPMC member.** Committers do not have access to the private list. The
 Podling Committer Onboarding page answers this explicitly in its FAQ. A learner

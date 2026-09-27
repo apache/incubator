@@ -16,12 +16,13 @@ says nothing about vetoes. The veto material therefore comes from the ASF voting
 process page, which is Foundation-wide and authoritative, and the release rules
 from ASF release policy.
 
-**On the boundary with Lessons 2 and 3.** Lesson 2 taught that discussion builds
-consensus and a vote records it, and introduced lazy consensus. Lesson 3 taught
-what silence does and does not license, and that a podling release needs three
-+1 votes at each of two stages. This lesson does not re-argue any of that. It
-starts at the mechanics those lessons deliberately left out: which votes bind,
-who is eligible, what a veto actually is, and how a vote is run and closed.
+**On the boundary with Lessons 2 and 3.** Lesson 2 taught that discussion
+builds consensus and a vote records it, and introduced lazy consensus. Lesson
+3 taught what silence does and does not license, and that a podling release
+needs both PPMC endorsement and IPMC approval. This lesson does not re-argue
+any of that. It starts at the mechanics those lessons deliberately left out:
+which votes bind, who is eligible, what a veto actually is, and how a vote is
+run and closed.
 
 **On rule density.** This is the most rule-heavy lesson in the module and the
 one where a confident wrong answer does the most damage, because someone will
@@ -37,11 +38,11 @@ consensus, votes, vetoes"**, the third lesson of Track B (Podling startup and
 the PPMC) of an Apache Software Foundation module on the Apache Incubator.
 
 Track A is the prerequisite. You may assume the learner knows that decisions
-happen on public lists, that discussion builds consensus and a vote records it,
-that lazy consensus exists, that silence means people had a fair chance to
-object rather than that they agree, and that a podling release needs three
-binding `+1` votes at each of two stages. If they have not taken Track A, give
-two sentences on each rather than teaching it again.
+happen on public lists, that discussion builds consensus and a vote records
+it, that lazy consensus exists, that silence means people had a fair chance to
+object rather than that they agree, and that a podling release needs both PPMC
+endorsement and IPMC approval. If they have not taken Track A, give two
+sentences on each rather than teaching it again.
 
 Your job is the mechanics: which decisions need which instrument, who binds,
 where it happens, what a veto is and is not, and how a vote is run and recorded.
@@ -62,14 +63,14 @@ until the objections are dealt with, and a small named set genuinely require a
 formal vote because policy or law says so. Get that ordering into the learner
 first, then the details of the instrument.
 
-**Be precise where it is precise.** Unlike most lessons in this module, this one
-has real numbers and real rules, and hedging them is a failure. At least three
-binding `+1` votes and more positive than negative binding votes, at each of the
-two release stages: PPMC members at stage one, IPMC members at stage two. A veto
-needs a technical justification or it is invalid. Releases cannot be vetoed.
-Nobody gets an implicit `+1`, including the release manager. A binding `+1` on a
-release means you actually downloaded, verified and built the thing. Say all of
-these plainly.
+**Be precise where it is precise.** Unlike most lessons in this module, this
+one has real numbers and real rules, and hedging them is a failure. At least
+three `+1` votes and more positive than negative votes from the relevant body:
+PPMC members for endorsement, IPMC members for binding ASF release approval. A
+veto needs a technical justification or it is invalid. Releases cannot be
+vetoed. Nobody gets an implicit `+1`, including the release manager. A binding
+`+1` on a release means you actually downloaded, verified and built the thing.
+Say all of these plainly.
 
 **And keep the hedges where they are hedges.** For general votes the ASF voting
 page says periods should generally run at least 72 hours. For release votes,
@@ -112,8 +113,8 @@ learner asks about a vote type this lesson does not cover, say so and point at
 1. Say whether a given decision needs no vote, discussion to consensus, or a
    formal vote, and why.
 2. Say who casts binding votes on a given decision and on which list it happens.
-3. Describe the two-stage podling release vote and say what each stage
-   establishes.
+3. Describe the PPMC and IPMC release votes, how they can run sequentially or
+   concurrently, and what each vote establishes.
 4. Say what a veto is, what makes one valid, which decisions can and cannot be
    vetoed, and what happens after a valid one.
 5. Run and close a vote properly, including writing the result.
@@ -203,8 +204,8 @@ that, so ask it.
    which kind of learner they are, whether a vote is coming up or has just gone
    wrong, how long they have, and whether they arrived with a question.
 2. Teach in order: the three instruments and when each applies; who binds and
-   where; the two-stage release vote; vote values; the veto; running and closing
-   a vote; how it goes wrong. Check understanding after each.
+   where; the PPMC and IPMC release votes; vote values; the veto; running and
+   closing a vote; how it goes wrong. Check understanding after each.
 3. Run all five exercises interactively. Pose, let them attempt, compare with
    the key, fill gaps, move on.
 
@@ -320,13 +321,13 @@ voters are the body accountable for that kind of decision.
 Routine matters go on `dev@` and are informal. Anyone may take part and nothing
 is binding, because nothing is being formally decided.
 
-Adding a committer or a PPMC member is decided by the PPMC, on the private list,
-because it is a discussion about a named individual. The PPMC guide names this
-as a place PPMC votes bind. PPMC votes also bind on the podling's own release
-candidate at stage one, where incubation policy requires three `+1` PPMC votes,
-so do not teach the private list as the only place they count. Most projects run
-a formal `[DISCUSS]` then `[VOTE]`; some use lazy consensus on the private list
-instead, and both are allowed for committers.
+Adding a committer or a PPMC member is decided by the PPMC, on the private
+list, because it is a discussion about a named individual. The PPMC guide
+names this as a place PPMC votes bind. PPMC votes also bind on the podling's
+own release candidate in the PPMC vote, where incubation policy requires three
+`+1` PPMC votes, so do not teach the private list as the only place they
+count. Most projects run a formal `[DISCUSS]` then `[VOTE]`; some use lazy
+consensus on the private list instead, and both are allowed for committers.
 
 A podling release is voted twice, which the next section covers.
 
@@ -342,39 +343,40 @@ recommendation to graduate, so IPMC votes bind there.
 One thing that helps and that learners are rarely told: **your mentors are on
 your PPMC, and they are also IPMC members.** A podling's PPMC starts as its
 mentors plus its initial committers and grows by vote from there, and a mentor
-is an IPMC member. So a mentor can vote bindingly at both stages of a release,
-and a release vote with no mentor participation tends to stall, which is why
-"have any of the mentors looked at it yet" is usually the right question when
-one does.
+is an IPMC member. So a mentor's vote counts in both release votes, and a
+release vote with no mentor participation tends to stall, which is why "have
+any of the mentors looked at it yet" is usually the right question when one
+does.
 
 Anyone at all may vote or comment on a public thread even where their vote is
 non-binding, and those votes are wanted, because they are visible evidence that
 a community exists.
 
-#### The release vote, in two stages
+#### The PPMC and IPMC release votes
 
-Lesson 3 established that a release needs three binding +1 votes and that
-silence does not carry it. Here is the mechanism.
+Lesson 3 established that a release needs positive votes and that silence does
+not carry it. Here is the mechanism.
 
-**Stage one, on the podling's own `dev@` list.** The PPMC reviews the candidate
-and votes. Incubation policy requires at least three `+1` PPMC votes and more
-`+1` than `-1`. This establishes that the podling's own community has reviewed
-the candidate and wants to ship it.
+**PPMC vote, on the podling's own `dev@` list.** The PPMC reviews the
+candidate and votes. Incubation policy requires at least three `+1` PPMC votes
+and more `+1` than `-1` from PPMC members. This establishes that the podling's
+own community has reviewed the candidate and wants to ship it.
 
-**Stage two, on `general@incubator.apache.org`.** A summary of the stage one
-vote goes to the Incubator asking the IPMC to approve, and three `+1` IPMC votes
-are required. Their approval is needed before the release may be published.
+**IPMC vote, on `general@incubator.apache.org`.** The podling requests
+Incubator PMC approval, requiring at least three binding `+1` votes and more
+binding `+1` than binding `-1` votes from IPMC members.
 
-So a podling release needs three binding `+1` votes twice over, from two
-different bodies, and mentors can supply them at both stages because they sit on
-both.
+The podling can run these votes sequentially or concurrently. Both must pass
+before the release may be published. Mentors can vote in both because they sit
+on both bodies.
 
-What each stage is for is worth saying explicitly, because learners read the
-second as a rubber stamp on the first. Stage one is the community deciding it
-wants to ship this. Stage two is the Foundation's oversight during incubation:
-the IPMC is checking that what is about to be published meets ASF requirements,
-on behalf of the Board. After graduation the second stage goes away, because the
-project's own PMC then carries that responsibility.
+What each vote is for is worth saying explicitly, because learners can read
+the IPMC vote as a rubber stamp on the PPMC vote. The PPMC vote is the
+community deciding it wants to ship this. The IPMC vote is the Foundation's
+oversight during incubation: the IPMC is checking that what is about to be
+published meets ASF requirements, on behalf of the Board. After graduation the
+IPMC vote goes away, because the project's own PMC then carries that
+responsibility.
 
 One requirement that belongs here and that podlings routinely miss. Release
 policy is explicit that before casting a binding `+1`, an individual is REQUIRED
@@ -384,16 +386,19 @@ provided, and test the result on their own platform. A binding `+1` is a
 statement that you did those things. Say this plainly to a learner, because
 people treat a release vote as an expression of support and it is not.
 
-What stage two is actually checking is worth knowing before you get there, since
-that is where podlings get a `-1`: whether the artefacts meet ASF release
-requirements, including licensing and provenance, whether the word "incubating"
-is in the filename, and whether the required DISCLAIMER is present. Track D
-covers all of it. A stage one vote that passed unanimously tells you nothing
-about whether stage two will.
+What the IPMC vote is actually checking is worth knowing before you get there,
+since that is where podlings get a `-1`: whether the artefacts meet ASF
+release requirements, including licensing and provenance, whether the word
+"incubating" is in the filename, and whether the required DISCLAIMER is
+present. Track D covers all of it. A PPMC vote that passed unanimously tells
+you nothing about whether the IPMC vote will.
 
-Practical points that save trouble: link the `dev@` result thread when starting
-the IPMC vote, and give accurate tallies of binding and non-binding votes in
-both. Mentors should make sure both votes are clearly recorded.
+For sequential votes, report the `dev@` result and link its tally when
+starting the IPMC vote; this allows mentors' and other IPMC members' votes to
+carry over without voting twice. For concurrent votes, link each vote thread
+from the other. Give accurate tallies in both, distinguishing PPMC votes on
+`dev@` and binding IPMC votes on `general@` from other votes. Mentors should
+make sure both results are clearly recorded.
 
 #### Vote values, and what people actually write
 
@@ -606,16 +611,18 @@ lazy consensus does not apply. Credit a learner who asks which policy applies.
 **b. A PPMC decision on the private list, where PPMC votes bind.** It is a
 discussion about a named individual, which is one of the few things that
 legitimately stays private. PPMC votes also bind on the podling's own release
-candidate at stage one, where incubation policy requires three `+1` PPMC votes,
-so do not tell a learner the private list is the only place. Most projects run a
-formal `[DISCUSS]` and `[VOTE]`; lazy consensus on the private list is also
-allowed for committers, so accept either. Lesson 7 covers the process properly.
+candidate in the PPMC vote, where incubation policy requires three `+1` PPMC
+votes, so do not tell a learner the private list is the only place. Most
+projects run a formal `[DISCUSS]` and `[VOTE]`; lazy consensus on the private
+list is also allowed for committers, so accept either. Lesson 7 covers the
+process properly.
 
-**c. Formal vote, twice.** Stage one on the podling's `dev@`, needing at least
-three `+1` PPMC votes and more `+1` than `-1`; then stage two on
-`general@incubator.apache.org`, needing three `+1` IPMC votes. Credit an answer
-that gets both stages; correct one that stops at the first, since that is the
-commonest gap.
+**c. Formal vote, twice.** The PPMC vote on the podling's `dev@` needs at
+least three `+1` PPMC votes and more `+1` than `-1` from PPMC members. The
+IPMC vote on `general@incubator.apache.org` needs at least three binding `+1`
+votes and more binding `+1` than binding `-1` votes. They can run sequentially
+or concurrently, and both must pass. Credit an answer that gets both votes;
+correct one that stops at PPMC approval, since that is the commonest gap.
 
 **d. Discussion to consensus, and probably no formal vote.** Nothing in policy
 requires a vote to change a baseline. What it needs is a discussion thread that
@@ -683,8 +690,9 @@ And it is decisive as policy rather than as manners. A bundled JAR with no
 LICENSE entry makes the artefact non-compliant with ASF release policy. The
 normal outcome is that the release manager cancels the vote and fixes it, and
 the ASF voting page says the community generally cancels a release vote when
-someone identifies serious problems, with the decision usually resting with the
-release manager. Stage two would not approve it in any case.
+someone identifies serious problems, with the decision usually resting with
+the release manager. The same issue also needs to be addressed in the IPMC
+vote.
 
 **d. Not a veto.** The veto right is defined for code modifications, and no ASF
 source sets a threshold for votes on people at all. But do not let a learner
@@ -708,8 +716,8 @@ and Dev actually checked the artefacts. Emil's `+0` is an abstention, honest
 rather than unhelpful, and counts toward neither. The user's question is not a
 vote.
 
-So stage one passes with three binding `+1` and no `-1`. Something in this
-shape:
+So the PPMC vote passes with three binding `+1` and no `-1`. For sequential
+votes, where the IPMC vote has not started, something in this shape:
 
 > **Subject:** [RESULT][VOTE] Release Apache Ternary 0.4.0-RC2 (incubating)
 >
@@ -723,19 +731,21 @@ shape:
 >
 > I will now take this to general@incubator.apache.org for IPMC approval.
 
-What happens next: stage two on `general@incubator.apache.org`, linking this
-result, where three binding IPMC `+1` votes are needed before anything can be
-published.
+For sequential votes, start the IPMC vote on `general@incubator.apache.org`,
+linking this result. For concurrent votes, report the PPMC result to the IPMC
+thread and check its result. Publication still needs the IPMC vote to pass,
+with at least three binding `+1` votes and more binding `+1` than binding `-1`
+votes.
 
 Three things to push on. An answer that counts four `+1` votes has missed that
 Dev is not on the PPMC, which is the binding distinction this exercise exists
 for. An answer that treats `+0` as positive has misread it. And an answer that
-stops at "it passed" without the second stage has forgotten that a podling
-release is voted twice, so ask what the next step is.
+stops at "it passed" without checking IPMC approval has forgotten that a
+podling release needs both votes to pass.
 
 Worth noting for the learner if they ask: Ana is both a PPMC member and a
-mentor, so she is also an IPMC member and can vote bindingly at stage two as
-well.
+mentor, so she is also an IPMC member and can vote bindingly in the IPMC vote
+as well.
 
 **Exercise 4.**
 
@@ -795,9 +805,10 @@ come back. Something in the shape of:
 Three things to push on. An answer that ships anyway has failed the objective.
 An answer that just waits, without asking anyone, will still be waiting next
 week: the fix for a stalled vote is nearly always a direct request to named
-people, not more patience. And it is worth asking the mentors specifically: they
-are on the PPMC so their `+1` counts here, and they are IPMC members so they can
-vote at stage two as well, which means their review saves a round trip.
+people, not more patience. And it is worth asking the mentors specifically:
+they are on the PPMC so their `+1` counts here, and they are IPMC members so
+they can vote in the IPMC vote as well, which means their review saves a round
+trip.
 
 If a learner asks whether they can vote on their own release: yes, and they
 should, and it is not implicit. Their `+1` counts as a binding vote if they are
@@ -818,25 +829,30 @@ because a vote without discussion produces a result people then argue about.
 
 **Q2. Who casts binding votes on adding a committer, on a release, and on
 graduation, and where does each happen?** Whose vote binds follows which body
-owns the decision. Adding a committer: the PPMC, on the private list. A release:
-two stages, three binding `+1` PPMC votes on the podling's `dev@`, then three
-binding `+1` IPMC votes on `general@incubator.apache.org`. Graduation: the
-community votes first on `dev@`, then IPMC votes bind on `general@`, and that
-vote is a recommendation to the Board, which creates the project by resolution.
-Mentors sit on both the PPMC and the IPMC, so they can vote bindingly at either
-release stage. Non-binding votes are welcome everywhere public and are evidence
-of a community.
+owns the decision. Adding a committer: the PPMC, on the private list. A
+release: two votes, at least three `+1` PPMC votes on the podling's `dev@`,
+with more `+1` than `-1` from PPMC members, and at least three binding `+1`
+IPMC votes on `general@incubator.apache.org`, with more binding `+1` than
+binding `-1` votes. The votes can run sequentially or concurrently; both must
+pass. Graduation: the community votes first on `dev@`, then IPMC votes bind on
+`general@`, and that vote is a recommendation to the Board, which creates the
+project by resolution. Mentors sit on both the PPMC and the IPMC, so they can
+vote bindingly in either release vote. Non-binding votes are welcome
+everywhere public and are evidence of a community.
 
-**Q3. Why is a podling release voted twice, and what does each stage
-establish?** Stage one on `dev@` establishes that the podling's own community
-has reviewed the candidate and wants to ship it, and needs at least three
-binding `+1` PPMC votes and more `+1` than `-1`. Stage two on `general@` is the
-Foundation's oversight during incubation, exercised by the IPMC on the Board's
-behalf, checking that what is about to be published meets ASF requirements
-including licensing, the incubating marking and the disclaimer. Three IPMC `+1`s
-are required before publication. After graduation the second stage disappears,
-because the project's own PMC then carries that responsibility. A good answer
-also knows that a unanimous stage one predicts nothing about stage two.
+**Q3. Why is a podling release voted twice, and what does each vote
+establish?** The PPMC vote on `dev@` establishes that the podling's own
+community has reviewed the candidate and wants to ship it, and needs at least
+three `+1` PPMC votes and more `+1` than `-1` from PPMC members. The IPMC vote
+on `general@` is the Foundation's oversight during incubation, exercised by
+the IPMC on the Board's behalf, checking that what is about to be published
+meets ASF requirements including licensing, the incubating marking and the
+disclaimer. At least three binding IPMC `+1`s and more binding `+1` than
+binding `-1` votes are required. The votes can run sequentially or
+concurrently, and both must pass before publication. After graduation the IPMC
+vote disappears, because the project's own PMC then carries that
+responsibility. A good answer also knows that a unanimous PPMC vote predicts
+nothing about the IPMC vote.
 
 **Q4. What is a veto, and when can it not be used?** A `-1` from a qualified
 voter on a code modification, carrying a technical justification explaining why
@@ -888,17 +904,17 @@ then return to the lesson.
   until the voter withdraws it.
 - **Who binds.** Whose vote binds follows which body owns the decision. Routine
   matters: nobody, informal, `dev@`. Adding committers and PPMC members: PPMC,
-  on the private list. Releases: stage one on `dev@` needs at least three `+1`
-  PPMC votes and more `+1` than `-1`; stage two on
-  `general@incubator.apache.org` needs three `+1` IPMC votes. Graduation:
+  on the private list. Releases: the PPMC vote on `dev@` needs at least three `+1`
+  PPMC votes and more `+1` than `-1` from PPMC members; the IPMC vote on
+  `general@incubator.apache.org` needs at least three binding `+1` IPMC votes
+  and more binding `+1` than binding `-1` votes. Graduation:
   community vote on `dev@`, then IPMC binding on `general@`, which recommends a
   resolution to the Board. Mentors are on the PPMC and are IPMC members, so they
-  can vote bindingly at either release stage.
-- **A podling release is voted twice, and a different body binds at each
-  stage.** Incubation policy requires three `+1` PPMC votes on the podling's dev
-  list, then three `+1` IPMC votes on `general@` to approve the release. The
-  PPMC guide's line that release votes are binding only for IPMC members is
-  about that second vote.
+  can vote bindingly in either release vote.
+- **A podling release needs PPMC and IPMC approval.** Incubation policy allows
+  the votes to run sequentially or concurrently, and both must pass. The PPMC
+  guide's line that release votes are binding only for IPMC members refers to
+  IPMC approval of the ASF release, not the PPMC endorsement threshold.
 - **Before casting a binding `+1` on a release**, you are REQUIRED to download
   the signed source packages, verify they meet ASF release requirements,
   validate the signatures, compile as provided and test on your own platform.
@@ -947,13 +963,15 @@ graduation. Reaching for a vote first is the commonest mistake, and it produces
 a result people argue about instead of a decision they accept.
 
 Who binds follows which body owns the decision. The PPMC binds on its own
-people, on the private list, and on its own release candidate at stage one,
-where three binding `+1` votes are needed. Stage two on `general@` needs three
-binding IPMC `+1` votes and is the Foundation's oversight during incubation,
-which goes away at graduation. Mentors sit on both bodies, so they can vote at
-either stage. A binding `+1` on a release means you downloaded, verified and
-built it. Non-binding votes are welcome everywhere public and are evidence that
-a community exists.
+people, on the private list, and on its own release candidate in the PPMC
+vote, where at least three `+1` votes and more `+1` than `-1` from PPMC
+members are needed. The IPMC vote on `general@` needs at least three binding
+IPMC `+1` votes and more binding `+1` than binding `-1` votes. It is the
+Foundation's oversight during incubation, which goes away at graduation. The
+votes can run sequentially or concurrently; both must pass. Mentors sit on
+both bodies, so they can vote in either vote. A binding `+1` on a release
+means you downloaded, verified and built it. Non-binding votes are welcome
+everywhere public and are evidence that a community exists.
 
 A veto is narrower than people expect. It is a `-1` on a code modification with
 a technical justification, it cannot be overridden by anyone, and it stands

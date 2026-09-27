@@ -238,12 +238,13 @@ The podling-specific deltas, quoting Incubation Policy §Releases
 against the policy text, so they can be stated as requirements rather than
 hedged:
 
-1. **Two votes, not one.** The podling votes on its own public dev list, where
-   "at least three +1 PPMC votes are required … and more +1 votes than -1
-   votes". If it passes, the podling sends a summary to general@incubator and
-   requests IPMC approval, where "three +1 Incubator PMC votes are required to
-   approve a release". Note the second condition on the podling vote — three +1s
-   is not sufficient on its own if there are three or more -1s.
+1. **Two votes, not one.** The podling votes on its public dev list, needing at
+   least three +1 PPMC votes and more +1 votes than -1 votes from PPMC members.
+   It also requests IPMC approval on general@incubator, needing at least three
+   +1 Incubator PMC votes and more binding +1 than binding -1 votes. Only IPMC
+   members' votes bind for ASF release approval. The votes may run sequentially
+   or concurrently at the podling's discretion, and both must pass. Three PPMC
+   +1s are not sufficient if there are three or more PPMC -1s.
 2. **`incubating` in the filename.** "The release archive(s) MUST include the
    word 'incubating' in the filename."
 3. **A disclaimer in the archive.** The archive MUST contain a disclaimer, which

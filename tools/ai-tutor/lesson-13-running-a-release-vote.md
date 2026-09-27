@@ -106,14 +106,16 @@ everything practical follows from it. If something is wrong in the artifact, the
 answer is a new candidate and a new vote. That is why a -1 is survivable and why
 arguing is usually the wrong move.
 
-The second idea: **the two stages ask different questions of different people.**
-Stage one, on the podling's own dev list, is the community deciding it wants to
-ship this, and the cookbook is explicit that its main goal is for the podling
-community to practise and learn voting on releases. Stage two, on the
-Incubator's general list, is the IPMC acting as proxy for a body that cannot
-make the decision itself: a podling is not formally part of the ASF's structure,
-so the Incubator PMC is what turns an approved candidate into an Act of the
-Foundation. A unanimous stage one tells you very little about stage two.
+The second idea: **the two votes ask different questions of different
+people.** The PPMC vote, on the podling's own dev list, is the community
+deciding it wants to ship this, and the cookbook is explicit that its main
+goal is for the podling community to practise and learn voting on releases.
+The IPMC vote, on the Incubator's general list, is the IPMC acting as proxy
+for a body that cannot make the decision itself: a podling is not formally
+part of the ASF's structure, so the Incubator PMC is what turns an approved
+candidate into an Act of the Foundation. A unanimous PPMC vote tells you very
+little about the IPMC vote. The votes may run sequentially or concurrently,
+and both must pass.
 
 The third idea, and the one that changes behaviour: **when questions arise they
 usually relate to clarity rather than intent**, which is the Release Review
@@ -135,7 +137,7 @@ release manager early, because they will not believe it later when it happens.
 - Learners are usually the person about to call their podling's first release
   vote, or a PPMC member who has been asked to review a candidate and does not
   know what casting a vote commits them to, or a mentor who wants to run the
-  second stage properly. Ask early which, rather than assuming.
+  IPMC vote properly. Ask early which, rather than assuming.
 - Ask early whether they have a vote in flight, one that has closed, or none
   yet. A vote in flight changes what they need and it is also where the hard
   rule bites, so say the limit at the same time.
@@ -153,13 +155,13 @@ release manager early, because they will not believe it later when it happens.
 
 ## Objectives
 
-1. Chain the two stages correctly: what each is for, who must vote in each, what
-   has to be carried from the first into the second.
+1. Coordinate the PPMC and IPMC votes: what each is for, who must vote in each,
+   how to run them sequentially or concurrently, and how to link their records.
 2. Call a vote so a reviewer can act on it: what the email has to make possible,
    how long it runs, and what makes one hard to review.
 3. Read the arithmetic: majority approval, three binding +1, more positive than
    negative, no veto, no implicit +1, whole numbers, last vote counts.
-4. Say who is binding at each stage: two votes, two lists, two sets of binding
+4. Say whose votes count in each decision: two votes, two lists, two sets of
    voters.
 5. Answer review feedback the way the archives show working: fix and reroll
    rather than explain away, and know when to cancel.
@@ -265,7 +267,7 @@ that, so ask it.
    the limit up front: you will teach how a vote is run and read, you will not
    count their vote for them or tell them whether it passed. Ask which kind of
    learner they are and whether they have a vote in flight.
-2. Teach in order: what the vote is and the two stages; calling it; the
+2. Teach in order: what the PPMC and IPMC votes decide; calling them; the
    arithmetic; who binds; what reviewers raise; answering it; cancelling and
    rerolling; closing it; what the thread says about the podling. Check
    understanding after each.
@@ -351,7 +353,7 @@ for anything podling-specific.
 
 ### Teaching text
 
-#### What the vote is, and the two stages
+#### What the PPMC and IPMC votes decide
 
 Start with the principle, because the rest is detail hanging off it.
 
@@ -366,54 +368,48 @@ That is the unifying principle of the Release Votes field guide, and a learner
 who holds it will make good decisions about situations this lesson does not
 cover.
 
-**Stage one, the podling's own dev list.** Incubation policy: when a podling
-decides it wants to make an ASF release, it MUST hold a vote on its public dev
-list. At least three +1 PPMC votes are required, and more +1 votes than -1
-votes. The cookbook adds what this stage is *for*: the main goal is for the
-podling community to practise and learn voting on releases. It is not a warm-up
-in the dismissive sense, but it is a rehearsal, and treating it as one is
-correct.
+**PPMC vote, on the podling's own dev list.** Incubation policy: when a
+podling proposes an ASF release, it MUST hold a vote on its public dev list to
+seek PPMC endorsement. At least three +1 votes from PPMC members and more +1
+than -1 votes from PPMC members are required. The cookbook adds what this vote
+is *for*: the main goal is for the podling community to practise and learn
+voting on releases. It is not a warm-up in the dismissive sense, but it is a
+rehearsal, and treating it as one is correct.
 
-**Stage two, the Incubator's general list.** Incubation policy: if the stage one
-vote passes, the podling MUST send a summary of that vote to the Incubator's
-general list and request that the IPMC approve the release. Three +1 Incubator
-PMC votes are required to approve. The Incubator release management guide says
-the same thing from the other side: for a podling to receive full permission
-from the IPMC to execute the release, the vote must be held on the general list
-and pass under the standard package release voting rules, with at least three +1
-votes from IPMC members.
+**IPMC vote, on the Incubator's general list.** The podling MUST request IPMC
+approval on the general list. At least three binding +1 votes from Incubator
+PMC members and more binding +1 than binding -1 votes are required. The
+Incubator release management guide says the same thing from the other side:
+for a podling to receive full permission from the IPMC to execute the release,
+the vote must be held on the general list and pass under the standard package
+release voting rules.
 
-**What each is asking.** Stage one is the community deciding it wants to ship
-this thing. Stage two exists because a podling cannot make the decision itself.
-The cookbook is direct about why: podlings cannot make formal decisions on the
-ASF's behalf, as they are not formally part of the ASF's structure and are not
-mentioned in the bylaws, so the Incubator PMC needs to act as a proxy for the
-podlings to formalise things like ASF releases and make them Acts of the
-Foundation. After graduation stage two disappears, because the project's own PMC
-can make that act itself. This is also why a unanimous stage one predicts very
-little about stage two: the two stages are looking at different things.
+**What each is asking.** The PPMC vote is the community deciding it wants to
+ship this thing. The IPMC vote exists because a podling cannot make the
+decision itself. The cookbook is direct about why: podlings cannot make formal
+decisions on the ASF's behalf, as they are not formally part of the ASF's
+structure and are not mentioned in the bylaws, so the Incubator PMC needs to
+act as a proxy for the podlings to formalise things like ASF releases and make
+them Acts of the Foundation. After graduation the IPMC vote disappears,
+because the project's own PMC can make that act itself. This is also why a
+unanimous PPMC vote predicts very little about the IPMC vote: the two votes
+are looking at different things.
 
-**Two votes, and one connection between them that matters.** They are two votes
-on two lists, each with its own threshold. But the cookbook describes an
-explicit link: reporting the podling vote result in the Incubator PMC `[VOTE]`
-message, with a `lists.apache.org` link to the tally, "allows votes from mentors
-and other Incubator PMC members to be binding in the Incubator PMC vote, without
-people having to vote twice".
+**Sequential or concurrent, at the podling's discretion.** Incubation policy
+allows either. The IPMC vote does not have to wait for a passed PPMC vote, but
+both votes must pass before the release is approved. Starting only a general
+list vote still misses the required PPMC endorsement on the public dev list.
 
-So carrying the dev list tally across is not merely a courtesy to reviewers. It
-is the mechanism by which an IPMC member's dev list `+1` can count in stage two.
-Teach it that way, because a learner who thinks the two votes are sealed off
-from each other will either ask mentors to vote twice or conclude a vote is
-short when it is not.
+**Link the records according to how the votes run.** For sequential votes, the
+cookbook says to report the podling vote result in the Incubator PMC `[VOTE]`
+message, with a `lists.apache.org` link to the tally. This allows votes from
+mentors and other IPMC members to count in the IPMC vote without voting twice.
+For concurrent votes, link each vote thread from the other so reviewers can
+follow both; do not require a result that does not exist yet.
 
-Do not go beyond what the cookbook says here. It covers mentors and other IPMC
-members; it does not license you to invent rules about anyone else's vote
-carrying across.
-
-**Order matters and it is a MUST.** The general list vote follows a passed dev
-list vote. A podling that goes straight to the general list has skipped a step
-that incubation policy requires, and the summary it is supposed to be sending
-does not exist yet.
+The sequential carry-over advice covers mentors and other IPMC members. Do not
+invent rules about anyone else's vote carrying across, or automatic carry-over
+between concurrent threads.
 
 #### Calling the vote
 
@@ -469,11 +465,11 @@ Teach both halves together or a learner will hear a licence to explain instead
 of fix.
 
 **Duration.** Release policy: release votes SHOULD remain open for at least 72
-hours. The voting page gives the reason: so that people can take part regardless
-of geographic location. The cookbook says both phases are majority votes lasting
-at least 72 hours. The sources set a floor and no ceiling, so running longer is
-not a policy problem, and longer is sensible over a holiday period or for
-anything contentious.
+hours. The voting page gives the reason: so that people can take part
+regardless of geographic location. The cookbook says both votes are majority
+votes lasting at least 72 hours. The sources set a floor and no ceiling, so
+running longer is not a policy problem, and longer is sensible over a holiday
+period or for anything contentious.
 
 **Shorter than 72 hours is possible and expensive.** Release policy has an
 expedited releases section: an email calling for a release vote that runs for
@@ -523,10 +519,10 @@ line that it does not apply to releases.
 **Only binding votes count towards the threshold**, and non-binding votes are
 wanted anyway. Release policy: votes cast by PMC members are binding, however
 non-binding votes are greatly encouraged and a sign of a healthy project. The
-release management guide says the same for the Incubator stage: only Incubator
-PMC votes are binding, but everyone is encouraged to vote. A vote thread with
-one binding +1 and six non-binding ones has not passed and is nonetheless
-telling you something good about the community.
+release management guide says the same for the IPMC vote: only Incubator PMC
+votes are binding, but everyone is encouraged to vote. A vote thread with one
+binding +1 and six non-binding ones has not passed and is nonetheless telling
+you something good about the community.
 
 **No implicit +1, from anyone.** The voting page is explicit: there is no
 implicit +1 from the release manager, or from anyone in any ASF vote, and only
@@ -558,7 +554,7 @@ and your roles to your vote email so it is clear who is voting, giving the form
 `+1 clr (PPMC) (IPMC)`. This costs nothing and saves the person tallying from
 guessing.
 
-#### Who binds at each stage
+#### Whose votes count in each decision
 
 Lesson 6 gives the general principle: a vote binds when it is cast by a member
 of the body that owns the decision. Here is what that comes to for a release.
@@ -569,25 +565,25 @@ confusion here comes from collapsing them into one.
 incubation policy requires three +1 Incubator PMC votes, and the release
 management guide says only IPMC votes are binding.
 
-**Mentors vote at both stages.** A mentor is an IPMC member, which is required,
-and a mentor is a PPMC member: the PPMC is composed of the podling's mentors and
-its committers, and a mentor added later is added to the podling roster, which
-is the PPMC. So a mentor's vote counts on the dev list and on `general@`. There
-is nothing awkward about this and no hedge to teach; do not present a mentor's
-position on the PPMC as uncertain.
+**Mentors participate in both votes.** A mentor is an IPMC member, which is
+required, and a mentor is a PPMC member: the PPMC is composed of the podling's
+mentors and its committers, and a mentor added later is added to the podling
+roster, which is the PPMC. So a mentor's vote counts on the dev list and on
+`general@`. There is nothing awkward about this and no hedge to teach; do not
+present a mentor's position on the PPMC as uncertain.
 
 Release Vote Insights lists "no mentor reply within three days" as an
 early-warning sign of disengagement, so "have any of the mentors looked at it
 yet" is usually a useful question when a vote is quiet.
 
 **On the podling's dev list, the threshold is PPMC votes.** Incubation policy
-requires at least three +1 PPMC votes and more +1 than -1. That is the podling's
-own vote on its own candidate.
+requires at least three +1 PPMC votes and more +1 than -1 from PPMC members.
+That is the podling's own vote on its own candidate.
 
 The PPMC guide's line that release votes are only binding for IPMC members is
-about the second vote, the one that approves the release as an ASF release. It
-is not saying PPMC votes on the dev list do not count towards the dev list
-threshold. Two votes, two lists, two thresholds.
+about the IPMC vote, which approves the release as an ASF release. It is not
+saying PPMC votes on the dev list do not count towards the dev list threshold.
+Two votes, two lists, two thresholds.
 
 **One line from the PPMC guide that resolves more confusion than anything else
 in this lesson:** "The binding status of a person's vote is not related to the
@@ -603,11 +599,12 @@ roster rather than the label. This is also why the cookbook's annotation habit
 helps: it makes the claim visible so it can be checked, not so it can be taken
 on trust.
 
-The cookbook settles the question learners ask most often here: report the
+For sequential votes, the cookbook settles a common question: report the
 podling vote result explicitly with a link to the tally, and that is what lets
-mentors' and other IPMC members' dev list votes be binding in the Incubator vote
-without them voting twice. Report the votes accurately and let the general list
-read them. Do not go beyond the cookbook's wording.
+mentors' and other IPMC members' dev list votes be binding in the Incubator
+vote without them voting twice. Report the votes accurately and let the
+general list read them. For concurrent votes, link each thread from the other.
+Do not go beyond the cookbook's wording.
 
 #### What reviewers actually raise
 
@@ -772,14 +769,12 @@ does not prescribe a format. The widely followed convention is to state the
 outcome in a sentence, list binding and non-binding votes separately with names,
 and link the thread. Teach it as the convention it is.
 
-**Carry stage one into stage two properly.** The cookbook is specific: report
-the votes from the podling dev list in the Incubator PMC `[VOTE]` message, by
-explicitly mentioning the podling vote result and including a `lists.apache.org`
-link to the podling vote tally. Incubation policy requires the summary of the
-dev list vote to go to the general list along with the request for approval. So
-the stage two email carries the stage one outcome, the link to it, and
-everything a fresh reviewer needs, because the IPMC members reading it have not
-been following your dev list.
+**Keep both vote records connected.** For sequential votes, the cookbook says
+to report the podling vote result in the Incubator PMC `[VOTE]` message and
+include a `lists.apache.org` link to the tally. For concurrent votes, link
+each thread from the other and post the results as each closes. The release is
+only approved once both have passed. In either case, give IPMC reviewers
+everything they need without assuming they have been following the dev list.
 
 **Why the record matters beyond tidiness.** Somebody auditing this in two years,
 which includes the IPMC at graduation, needs to be able to find what was decided
@@ -815,13 +810,13 @@ not be presented as one.
 Say this near the end, because it is what a learner takes into situations this
 lesson does not cover.
 
-**Written rules** in this area: three binding +1 and more positive than negative
-binding votes; releases may not be vetoed; no implicit +1; whole numbers for
-binding release votes; at least 72 hours, with an explanation required for
-anything shorter and the deviation reported to the Board; the dev list vote and
-its three +1 PPMC votes; the summary to the general list and the request for
-IPMC approval; three +1 IPMC votes; the five things required before a binding
-+1.
+**Written rules** in this area: three binding +1 and more positive than
+negative binding votes; releases may not be vetoed; no implicit +1; whole
+numbers for binding release votes; at least 72 hours, with an explanation
+required for anything shorter and the deviation reported to the Board; the dev
+list vote and its PPMC threshold; the request for IPMC approval on the general
+list and its binding vote threshold; both votes passing, whether sequential or
+concurrent; the five things required before a binding +1.
 
 **Conventions**, widely followed and worth following, and not rules: the
 `[VOTE]` and `[RESULT][VOTE]` subject lines; annotating a vote with your ASF id
@@ -843,18 +838,18 @@ this lesson is really for.
 **Exercise 1: Does it pass?** For each, say whether the vote passes, and name
 the rule you used. Assume the vote ran the full 72 hours on the correct list.
 
-a. Stage two, on the general list. Four +1 votes: three from IPMC members, one
+a. IPMC vote, on the general list. Four +1 votes: three from IPMC members, one
 from a committer on the podling. No other votes.
 
-b. Stage two. Three +1 from IPMC members, two -1 from IPMC members.
+b. IPMC vote. Three +1 from IPMC members, two -1 from IPMC members.
 
-c. Stage two. Three +1 from IPMC members, one -1 from a podling committer who is
-not on the IPMC.
+c. IPMC vote. Three +1 from IPMC members, one -1 from a podling committer who
+is not on the IPMC.
 
-d. Stage two. Two +1 from IPMC members, one +0.5 from a third IPMC member who
+d. IPMC vote. Two +1 from IPMC members, one +0.5 from a third IPMC member who
 says the artifact is fine but they only had time to check the signatures.
 
-e. Stage one, on the podling dev list. Three +1 from PPMC members and one -1
+e. PPMC vote, on the podling dev list. Three +1 from PPMC members and one -1
 from a PPMC member. The release manager, who is on the PPMC, wrote the vote
 email but did not vote.
 
@@ -896,25 +891,26 @@ e. "I would have split this into two releases. The scope is too broad."
 **Exercise 4: Something has gone wrong mid-vote.** For each, say what you do,
 and say who the decision belongs to.
 
-a. Twenty-four hours into stage two, a reviewer points out that a GitHub release
-with the same version number has been publicly visible since before the vote
-started.
+a. Twenty-four hours into the IPMC vote, a reviewer points out that a GitHub
+release with the same version number has been publicly visible since before
+the vote started.
 
-b. Forty-eight hours into stage two, an IPMC member who voted +1 on day one
-posts "changing my vote to -1, I have found a file with no header and no
+b. Forty-eight hours into the IPMC vote, an IPMC member who voted +1 on day
+one posts "changing my vote to -1, I have found a file with no header and no
 provenance".
 
-c. Seventy-two hours have passed on stage two and there are two binding +1s and
-nothing else.
+c. Seventy-two hours have passed on the IPMC vote and there are two binding
++1s and nothing else.
 
 d. A reviewer raises a stale copyright year in NOTICE, with no other issues, and
 you already have three binding +1s.
 
-**Exercise 5: Write the stage two opening.** Your stage one vote has just passed
-on the podling dev list. Without writing the whole email, list everything that
-has to be in the message you now send to `general@incubator.apache.org`,
-separating what incubation policy requires from what is there to make the
-reviewer's job possible.
+**Exercise 5: Write the IPMC vote opening.** Consider two cases: your PPMC
+vote has just passed on the podling dev list, or you are starting the two
+votes concurrently. Without writing the whole email, list what belongs in the
+message you send to `general@incubator.apache.org` in each case, separating
+what incubation policy requires from what is there to make the reviewer's job
+possible. What has to happen before the release is approved?
 
 ### Exercise answer keys
 
@@ -960,11 +956,11 @@ on a release, because binding release votes from PMC members must be +1, 0 or
    testing. So even a +1 from them would have been a +1 they were not in a
    position to cast.
 
-e. **Passes.** Incubation policy requires at least three +1 PPMC votes and more
-+1 than -1, and three is more than one. The release manager not voting does not
-change it: there is no implicit +1 from anyone, including the release manager,
-so their silence is silence, not a vote either way. They are encouraged to vote
-like any reviewer.
+e. **Passes.** Incubation policy requires at least three +1 PPMC votes and
+more +1 than -1 from PPMC members, and three is more than one. The release
+manager not voting does not change it: there is no implicit +1 from anyone,
+including the release manager, so their silence is silence, not a vote either
+way. They are encouraged to vote like any reviewer.
 
 **Exercise 2.** What is missing, and the question each gap produces.
 
@@ -986,10 +982,11 @@ like any reviewer.
   explanatory paragraph helps reviewers navigate, particularly about what
   third-party material is bundled. Its absence produces exactly the LICENSE
   questions the guides describe.
-- **No link to the dev list vote result**, if this is the stage two email. The
-  cookbook asks for the podling vote result to be mentioned explicitly with a
-  `lists.apache.org` link to the tally, and incubation policy requires the
-  summary.
+- **No link to the dev list vote**, if this is the IPMC vote email. For
+  sequential votes, the cookbook asks for the podling result to be mentioned
+  explicitly with a `lists.apache.org` link to the tally. For concurrent votes,
+  link to the ongoing dev list thread and link back from that thread; a result
+  cannot be required before the vote finishes.
 
 Two things the learner may raise that should be handled carefully rather than
 marked wrong:
@@ -1096,16 +1093,19 @@ not on completeness.
 
 **Required by incubation policy:**
 
-- A summary of the dev list vote.
-- An explicit request that the IPMC approve the release.
+- An explicit request that the IPMC approve the release on the general list.
+- The podling must also hold the PPMC vote on its public dev list. The votes
+  may run sequentially or concurrently, and both must pass before approval.
 
 **Required in practice for anyone to be able to review it**, drawing on the
 cookbook and the field guides:
 
-- The podling vote result stated explicitly, with a `lists.apache.org` link to
-  the tally. The cookbook gives the reason and it is worth drawing out of the
-  learner: reporting it this way allows votes from mentors and other IPMC
-  members to be binding in the Incubator vote without them voting twice.
+- For sequential votes, the podling vote result stated explicitly, with a
+  `lists.apache.org` link to the tally. The cookbook gives the reason: reporting
+  it this way allows mentors' and other IPMC members' votes to count in the
+  Incubator vote without them voting twice.
+- For concurrent votes, a link to the ongoing dev list vote, with a link back
+  from that thread. Do not ask for a completed result in this case.
 - What is being voted on: project, version, candidate.
 - Where the artifact is staged.
 - Signature and checksum links.
@@ -1120,31 +1120,32 @@ cookbook and the field guides:
 - If the vote is running less than 72 hours, an explanation of why, which
   release policy requires.
 
-Two things to check for. A learner who writes "the IPMC have been following our
-dev list" has missed the point of the second list: assume the reader has seen
-nothing. And a learner who copies the stage one email unchanged has skipped both
-of the policy requirements, which is the most common real-world version of this
-mistake.
+Three things to check for. A learner who writes "the IPMC have been following
+our dev list" has missed the point of the second list: assume the reader has
+seen nothing. A learner who copies the PPMC vote email unchanged has missed
+the explicit request for IPMC approval and the link between the threads. A
+learner who requires a completed dev list tally for concurrent votes has
+imposed an order that the policy does not require.
 
 ### Self-check questions and answer keys
 
 Ask these at the close. One at a time. Never show the key first.
 
-**Q1. What are the two stages of a podling release vote, what is each one for,
-and what has to travel from the first to the second?**
+**Q1. What are the two votes for a podling release, what is each one for, and
+how do you connect them when they run sequentially or concurrently?**
 
-Key: stage one on the podling's public dev list, at least three +1 PPMC votes
-and more +1 than -1, and its purpose is the podling community deciding it wants
-to ship this and learning to run a release vote. Stage two on
-`general@incubator.apache.org`, three +1 IPMC votes, and its purpose is that a
-podling cannot make an Act of the Foundation itself, so the IPMC acts as proxy.
-What travels: a summary of the dev list vote and a request for approval, both
-required by incubation policy, plus the result stated explicitly with a
-`lists.apache.org` link to the tally, and everything a reviewer who has not seen
-the dev list needs. Full marks include the reason for the link: the cookbook
-says reporting the podling result that way is what allows mentors' and other
-IPMC members' dev list votes to be binding in the Incubator vote without them
-voting twice.
+Key: the PPMC vote on the public dev list needs at least three +1 votes and
+more +1 than -1 from PPMC members. It is the podling community deciding it
+wants to ship this and learning to run a release vote. The IPMC vote on
+`general@incubator.apache.org` needs at least three binding +1 votes and more
+binding +1 than binding -1 votes. It provides ASF approval because a podling
+cannot make an Act of the Foundation itself. Both votes must pass, and the
+podling may run them sequentially or concurrently. For sequential votes,
+report the dev list result with a `lists.apache.org` link to the tally in the
+IPMC request; this allows mentors' and other IPMC members' votes to carry over
+without voting twice. For concurrent votes, link each thread from the other.
+Give IPMC reviewers everything they need without assuming they have seen the
+dev list.
 
 **Q2. A vote email arrives with the artifact location and nothing else. Name
 three things a reviewer will have to ask for, and say why that matters more than
@@ -1160,7 +1161,7 @@ the archives. A reviewer who cannot verify cannot cast a binding +1, so an
 unclear email does not merely annoy people, it prevents the vote from
 progressing.
 
-**Q3. A stage two vote closes with three +1 from IPMC members, two -1 from IPMC
+**Q3. An IPMC vote closes with three +1 from IPMC members, two -1 from IPMC
 members, and four +1 from podling committers. Has it passed? What else is true
 that the arithmetic does not capture?**
 
@@ -1172,12 +1173,13 @@ well-founded binding -1s are a strong signal, the release manager generally
 decides whether to cancel when serious problems are identified, and publishing
 over sustained objections is a choice with consequences the numbers do not show.
 
-**Q4. Who has a binding vote at each stage?**
+**Q4. Whose votes count towards the PPMC and IPMC thresholds?**
 
 Key: two votes on two lists. On the podling's dev list, incubation policy
-requires at least three +1 PPMC votes and more +1 than -1. On the general list,
-three +1 IPMC votes approve the release. Mentors are both IPMC and PPMC members,
-so they vote at both stages. Bonus if they quote the PPMC guide's line that
+requires at least three +1 PPMC votes and more +1 than -1 from PPMC members.
+On the general list, at least three binding +1 IPMC votes and more binding +1
+than binding -1 votes are required. Mentors are both IPMC and PPMC members, so
+they participate in both votes. Bonus if they quote the PPMC guide's line that
 binding status is not related to which list the vote occurs on.
 
 **Q5. A reviewer -1s your candidate over something you think is a convention
@@ -1194,10 +1196,11 @@ cheaper than the argument, which is a judgement call rather than a rule.
 **Q6. Your vote passed. What do you post, and who is that record for?**
 
 Key: a result on the thread stating the outcome in a sentence, listing binding
-and non-binding votes separately with names, and linking the vote thread. It is
-for the next reviewer, for the IPMC at graduation, and for anyone auditing in
-two years who needs to see what was decided and by whom. For a stage one result,
-it is also the thing that gets summarised into the stage two email. Accept any
+and non-binding votes separately with names, and linking the vote thread. It
+is for the next reviewer, for the IPMC at graduation, and for anyone auditing
+in two years who needs to see what was decided and by whom. For sequential
+votes, the PPMC result is summarised in the IPMC vote request; for concurrent
+votes, report it to the linked IPMC thread when it is available. Accept any
 answer that has the outcome, the separated tallies and a reason the record
 outlives the moment.
 
@@ -1219,7 +1222,7 @@ Use this to answer a direct question. Do not read it out as teaching material.
   counts. From the cookbook.
 - **Duration.** Release votes SHOULD remain open at least 72 hours, so that
   people in any time zone can take part. The sources give a floor and no
-  ceiling. The cookbook says both phases are at least 72 hours.
+  ceiling. The cookbook says both votes are at least 72 hours.
 - **Expedited.** A vote email for a vote running less than 72 hours MUST include
   an explanation of why. As much notice as possible SHOULD be given. Deviations
   from policy MUST be reported to the Board; unless there are pressing reasons
@@ -1231,32 +1234,30 @@ Use this to answer a direct question. Do not read it out as teaching material.
   all signed source packages onto their own hardware, verify they meet all ASF
   release requirements, validate all cryptographic signatures, compile as
   provided, and test the result on their own platform.
-- **Stage one.** Incubation policy: the podling MUST hold a vote on its public
-  dev list, with at least three +1 PPMC votes and more +1 than -1. The
-  cookbook's framing: the main goal is for the podling community to practise and
-  learn voting on releases.
-- **Stage two.** Incubation policy: the podling MUST send a summary of the stage
-  one vote to the Incubator's general list and request that the IPMC approve the
-  release; three +1 IPMC votes are required. The release management guide: only
-  IPMC votes are binding, everyone is encouraged to vote, at least three +1 from
-  IPMC members.
-- **Binding.** Two votes on two lists. Incubation policy: at least three +1 PPMC
-  votes and more +1 than -1 on the podling's dev list, then three +1 IPMC votes
-  on `general@` to approve the release. The PPMC guide's line that release votes
-  are only binding for IPMC members is about that second vote, the one that
-  makes it an ASF release. Also from the PPMC guide: the binding status of a
-  person's vote is not related to the list the vote occurs on.
-- **Mentors.** Mentors are IPMC members and PPMC members, so they vote at both
-  stages.
+- **PPMC vote.** Incubation policy: the podling MUST hold a vote on its public
+  dev list, with at least three +1 PPMC votes and more +1 than -1 from PPMC
+  members. The cookbook's framing: the main goal is for the podling community
+  to practise and learn voting on releases.
+- **IPMC vote.** Incubation policy: the podling MUST request IPMC approval on
+  the Incubator's general list. At least three binding +1 IPMC votes and more
+  binding +1 than binding -1 votes are required. Everyone is encouraged to vote,
+  but only IPMC members' votes bind for ASF release approval.
+- **Timing.** The PPMC and IPMC votes may run sequentially or concurrently at
+  the podling's discretion. Both must pass before the release is approved.
+- **Binding.** Two votes on two lists, each with its own electorate. The PPMC
+  guide's line that release votes bind only for IPMC members refers to ASF
+  release approval, not the PPMC endorsement threshold. Binding status is not
+  related to which list the vote occurs on.
+- **Mentors.** Mentors are IPMC members and PPMC members, so their votes count
+  towards both thresholds.
 - **Annotating a vote.** Cookbook best practice: add your ASF id and your roles,
   in the form `+1 clr (PPMC) (IPMC)`.
-- **Carrying stage one into stage two.** Cookbook: report the dev list votes in
-  the Incubator PMC `[VOTE]` message by explicitly mentioning the podling vote
-  result and including a `lists.apache.org` link to the tally. The cookbook
-  gives the reason: this "allows votes from mentors and other Incubator PMC
-  members to be binding in the Incubator PMC vote, without people having to vote
-  twice".
-- **Why stage two exists.** Cookbook: podlings cannot make formal decisions on
+- **Connecting the votes.** For sequential votes, the cookbook says to report
+  the dev list result in the Incubator PMC `[VOTE]` message with a
+  `lists.apache.org` link to the tally. This allows mentors' and other IPMC
+  members' votes to count in the IPMC vote without them voting twice. For
+  concurrent votes, link each vote thread from the other.
+- **Why the IPMC vote exists.** Cookbook: podlings cannot make formal decisions on
   the ASF's behalf as they are not formally part of the ASF's structure and are
   not mentioned in the bylaws, so the Incubator PMC needs to act as a proxy for
   the podlings to formalise things like ASF releases and make them Acts of the
@@ -1308,12 +1309,14 @@ project, not on the release manager. If something is wrong in the artifact, the
 answer is a new candidate and a new vote, and that is a normal outcome rather
 than a failure.
 
-Two stages, two bodies, two questions. The podling's dev list decides it wants
-to ship this, needing three +1 PPMC votes and more +1 than -1. The Incubator's
-general list turns it into an Act of the Foundation, needing three +1 IPMC
-votes, because a podling cannot make that act itself. A summary of the first and
-a request for approval must go to the second, with a link to the tally, and the
-people reading the second have not seen the first.
+Two votes, two bodies, two questions. The podling's dev list decides it wants
+to ship this, needing at least three +1 PPMC votes and more +1 than -1 from
+PPMC members. The Incubator's general list gives ASF approval, needing at
+least three binding +1 IPMC votes and more binding +1 than binding -1 votes.
+The podling can run the votes sequentially or concurrently, but both must
+pass. For sequential votes, carry the dev list result and tally link into the
+IPMC request. For concurrent votes, link the threads to each other. In either
+case, assume the IPMC reviewers have not been following the dev list.
 
 The arithmetic: majority approval, three binding +1s, more positive than
 negative binding votes. Releases cannot be vetoed. Nobody gets an implicit +1,

@@ -988,7 +988,7 @@ resources:
     themes: [governance, releases]
     topics: [decision-making, consensus, voting, approvals, release-votes]
     description: "Tutored lesson on when something needs no vote, consensus or a formal vote, who is
-    binding, the two-stage podling release vote, and what makes a veto valid."
+    binding, sequential or concurrent PPMC and IPMC release votes, and what makes a veto valid."
     url: https://incubator.apache.org/training/lessons.html#lesson-6
 
   - id: lesson-growing-committers
@@ -1142,8 +1142,8 @@ resources:
     type: lesson
     themes: [releases, governance]
     topics: [release-votes, release-process, voting, consensus, decision-making]
-    description: "Tutored lesson on the two stages of a podling release vote and what travels
-    between them, calling a vote reviewers can act on, the arithmetic of majority approval,
+    description: "Tutored lesson on sequential or concurrent PPMC and IPMC release votes
+    and how to link their records, calling a vote reviewers can act on, the arithmetic of majority approval,
     answering a -1, and closing the vote."
     url: https://incubator.apache.org/training/lessons.html#lesson-13
 
