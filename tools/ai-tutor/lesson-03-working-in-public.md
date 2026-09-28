@@ -314,13 +314,16 @@ The statements about release votes come from ASF release policy at
 practice, and are stated at the strength the documents use: the 72 hours is a
 SHOULD with two MUSTs attached to going shorter, not an absolute floor.
 
-Note that the release arithmetic in those two documents is the general ASF rule.
-For a podling, incubation policy adds a stage: at least three `+1` PPMC votes
-and more `+1` than `-1` on the podling's own `dev@` list, then three `+1` IPMC
-votes on `general@incubator.apache.org`. Exercise 3 is a podling scenario, so
-the podling rule is the one that applies to it, and it is in the teaching text
-rather than only in the reference. Releases are covered properly in Track D;
-here they appear only as the worked example of deciding across time zones.
+Note that the release arithmetic in those two documents is the general ASF
+rule. For a podling, incubation policy also requires PPMC endorsement: at
+least three `+1` votes and more `+1` than `-1` from PPMC members on the public
+`dev@` list. The IPMC vote on `general@incubator.apache.org` needs at least
+three binding `+1` votes and more binding `+1` than binding `-1` votes. The
+votes may run sequentially or concurrently, and both must pass. Exercise 3 is
+a podling scenario, so the podling rule is the one that applies to it, and it
+is in the teaching text rather than only in the reference. Releases are
+covered properly in Track D; here they appear only as the worked example of
+deciding across time zones.
 
 ### Teaching text
 
@@ -452,14 +455,15 @@ release vote therefore does not merely get a thin response. It fails, and the
 release manager starts again.
 
 The arithmetic, since Exercise 3 turns on it and it is podling-specific. For a
-podling, incubation policy requires at least three `+1` votes from PPMC members
-on the podling's own `dev@` list, with more `+1` than `-1`. If that passes, a
-summary goes to `general@incubator.apache.org` and three `+1` votes from IPMC
-members are needed before anything can be published. Say "three `+1` votes from
-PPMC members" rather than "three binding votes" when talking about the first
-stage, because a podling has committers who are not on the PPMC and the
-distinction is exactly what a learner has to get right. Lesson 6 does this
-properly.
+podling, incubation policy requires at least three `+1` votes from PPMC
+members on the podling's public `dev@` list, with more `+1` than `-1` from
+PPMC members. The vote on `general@incubator.apache.org` needs at least three
+binding `+1` votes from IPMC members and more binding `+1` than binding `-1`
+votes. The votes may run sequentially or concurrently, and both must pass
+before publication. Explain whose votes are binding in each vote: PPMC members
+in the PPMC vote, and IPMC members in the IPMC vote. A podling has committers
+who are not on the PPMC, so commit access alone does not give them a binding
+vote in the PPMC vote. Lesson 6 does this properly.
 
 Weeks are not the same everywhere either. Some contributors work Sunday to
 Thursday. National holidays and religious observances fall at different times,
@@ -959,16 +963,17 @@ then return to the lesson.
   cases.
 - **Release votes need positive votes**, not merely an absence of objections.
   Silence does not carry a release vote the way it carries a lazy-consensus
-  proposal. For a podling: at least three `+1` votes from PPMC members with more
-  `+1` than `-1` on the podling's `dev@`, then three `+1` votes from IPMC
-  members on `general@`. Say "PPMC members" rather than "binding" for the first
-  stage, since a podling has committers who are not on the PPMC.
-- **A podling release is voted twice.** First on the podling's own dev@ list,
-  where at least three +1 PPMC votes and more +1 than -1 are required. If that
-  passes, a summary of the vote goes to `general@incubator.apache.org` asking
-  the Incubator PMC to approve, where three +1 IPMC votes are required. Give
-  this if a learner asks, because Exercise 3 turns on it. The rest of release
-  mechanics belongs to a later track.
+  proposal. For a podling: at least three `+1` votes and more `+1` than `-1`
+  from PPMC members on `dev@`, and at least three binding `+1` votes and more
+  binding `+1` than binding `-1` from IPMC members on `general@`. Say "PPMC
+  members" when explaining the dev list threshold, since a podling has
+  committers who are not on the PPMC.
+- **A podling release is voted twice.** The PPMC vote on the podling's public
+  dev@ list and the IPMC vote on `general@incubator.apache.org` may run
+  sequentially or concurrently. Both must pass. For sequential votes, report
+  the dev list result and link the tally in the IPMC request; for concurrent
+  votes, link each thread from the other. Give this if a learner asks, because
+  Exercise 3 turns on it. The rest of release mechanics belongs to a later track.
 - **GitHub Discussions** can be configured through `.asf.yaml` to post new
   threads to `dev@` automatically.
 - **Code of Conduct.** `https://www.apache.org/foundation/policies/conduct` is
