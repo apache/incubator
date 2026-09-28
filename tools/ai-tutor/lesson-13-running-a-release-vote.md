@@ -561,29 +561,29 @@ of the body that owns the decision. Here is what that comes to for a release.
 There are two votes, on two lists, owned by two bodies, and almost all the
 confusion here comes from collapsing them into one.
 
-**On the general list, IPMC members are binding.** That is unambiguous:
-incubation policy requires three +1 Incubator PMC votes, and the release
-management guide says only IPMC votes are binding.
+**For the IPMC vote, only IPMC members' votes are binding.** Incubation policy
+requires at least three binding +1 votes and more binding +1 than binding -1
+votes from IPMC members for ASF release approval.
 
 **Mentors participate in both votes.** A mentor is an IPMC member, which is
 required, and a mentor is a PPMC member: the PPMC is composed of the podling's
 mentors and its committers, and a mentor added later is added to the podling
-roster, which is the PPMC. So a mentor's vote counts on the dev list and on
-`general@`. There is nothing awkward about this and no hedge to teach; do not
-present a mentor's position on the PPMC as uncertain.
+roster, which is the PPMC. A mentor's vote is binding in the PPMC vote because
+they are a PPMC member, and in the IPMC vote because they are an IPMC member.
+There is nothing awkward about this and no hedge to teach; do not present a
+mentor's position on the PPMC as uncertain.
 
 Release Vote Insights lists "no mentor reply within three days" as an
 early-warning sign of disengagement, so "have any of the mentors looked at it
 yet" is usually a useful question when a vote is quiet.
 
-**On the podling's dev list, the threshold is PPMC votes.** Incubation policy
+**For the PPMC vote, PPMC members' votes are binding.** Incubation policy
 requires at least three +1 PPMC votes and more +1 than -1 from PPMC members.
-That is the podling's own vote on its own candidate.
-
-The PPMC guide's line that release votes are only binding for IPMC members is
-about the IPMC vote, which approves the release as an ASF release. It is not
-saying PPMC votes on the dev list do not count towards the dev list threshold.
-Two votes, two lists, two thresholds.
+These votes decide the podling's endorsement of its candidate. They do not
+count toward the IPMC threshold unless the voters are also IPMC members.
+Conversely, an IPMC member who is not on the podling's PPMC does not have a
+binding vote in that PPMC's vote. Both votes must pass before an ASF release
+is approved.
 
 **One line from the PPMC guide that resolves more confusion than anything else
 in this lesson:** "The binding status of a person's vote is not related to the
@@ -1175,11 +1175,12 @@ over sustained objections is a choice with consequences the numbers do not show.
 
 **Q4. Whose votes count towards the PPMC and IPMC thresholds?**
 
-Key: two votes on two lists. On the podling's dev list, incubation policy
-requires at least three +1 PPMC votes and more +1 than -1 from PPMC members.
-On the general list, at least three binding +1 IPMC votes and more binding +1
-than binding -1 votes are required. Mentors are both IPMC and PPMC members, so
-they participate in both votes. Bonus if they quote the PPMC guide's line that
+Key: PPMC members' votes are binding in the PPMC vote, which needs at least
+three +1 votes and more +1 than -1 from PPMC members. Only IPMC members' votes
+are binding in the IPMC vote, which needs at least three binding +1 votes and
+more binding +1 than binding -1 votes. Mentors belong to both bodies, so their
+votes are binding in both. Membership in one body alone does not confer a
+binding vote in the other. Bonus if they quote the PPMC guide's line that
 binding status is not related to which list the vote occurs on.
 
 **Q5. A reviewer -1s your candidate over something you think is a convention
@@ -1244,12 +1245,13 @@ Use this to answer a direct question. Do not read it out as teaching material.
   but only IPMC members' votes bind for ASF release approval.
 - **Timing.** The PPMC and IPMC votes may run sequentially or concurrently at
   the podling's discretion. Both must pass before the release is approved.
-- **Binding.** Two votes on two lists, each with its own electorate. The PPMC
-  guide's line that release votes bind only for IPMC members refers to ASF
-  release approval, not the PPMC endorsement threshold. Binding status is not
-  related to which list the vote occurs on.
-- **Mentors.** Mentors are IPMC members and PPMC members, so their votes count
-  towards both thresholds.
+- **Binding in each vote.** PPMC members' votes are binding in the PPMC vote
+  on the podling's endorsement. Only IPMC members' votes are binding in the
+  IPMC release-approval vote. A vote's binding status depends on membership in
+  the body making that decision, not the mailing list. Both votes must pass;
+  PPMC approval alone does not authorize an ASF release.
+- **Mentors.** Mentors belong to both the podling's PPMC and the IPMC, so their
+  votes are binding in both votes.
 - **Annotating a vote.** Cookbook best practice: add your ASF id and your roles,
   in the form `+1 clr (PPMC) (IPMC)`.
 - **Connecting the votes.** For sequential votes, the cookbook says to report

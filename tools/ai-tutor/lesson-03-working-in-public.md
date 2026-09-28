@@ -460,10 +460,10 @@ members on the podling's public `dev@` list, with more `+1` than `-1` from
 PPMC members. The vote on `general@incubator.apache.org` needs at least three
 binding `+1` votes from IPMC members and more binding `+1` than binding `-1`
 votes. The votes may run sequentially or concurrently, and both must pass
-before publication. Say "three `+1` votes from PPMC members" rather than
-"three binding votes" when explaining the PPMC threshold, because a podling
-has committers who are not on the PPMC and the distinction is exactly what a
-learner has to get right. Lesson 6 does this properly.
+before publication. Explain whose votes are binding in each vote: PPMC members
+in the PPMC vote, and IPMC members in the IPMC vote. A podling has committers
+who are not on the PPMC, so commit access alone does not give them a binding
+vote in the PPMC vote. Lesson 6 does this properly.
 
 Weeks are not the same everywhere either. Some contributors work Sunday to
 Thursday. National holidays and religious observances fall at different times,

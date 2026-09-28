@@ -24,8 +24,8 @@ learner who thinks the steps are mandated will argue with a project that does it
 differently and is not doing anything wrong.
 
 **On the boundary with Lessons 5 and 6.** Lesson 5 covered account creation and
-Infra requests. Lesson 6 covered who binds and where, and named committer and
-PPMC votes as the one place a PPMC member's vote is uncontroversially binding.
+Infra requests. Lesson 6 covered whose votes are binding for each decision,
+including the PPMC's votes on adding people and endorsing release candidates.
 This lesson does not re-argue either. It is the process itself and, more
 importantly, the judgement about who to invite and when.
 
@@ -630,7 +630,7 @@ lesson, and why it is worth asking twice.
 committer, a PPMC member, both, or neither. All six in one message.
 
 > a. Can merge a pull request.
-> b. Can cast a binding vote on a release candidate.
+> b. Can cast a binding vote in the podling's PPMC release vote.
 > c. Can read the podling's private list.
 > d. Can suggest that somebody be made a committer.
 > e. Must have a signed ICLA on file with the ASF Secretary.
@@ -698,9 +698,10 @@ Then say in one line where you send it and what happens next.
 podling are committers too. A learner who says "committer" is not wrong so much
 as incomplete; draw out that PPMC members have all the committer rights as well.
 
-**b. PPMC member.** Committers have no binding vote on releases. Worth adding,
-if it does not come up on its own, that mentors are on the PPMC and are IPMC
-members, so their votes count in both release votes. Lesson 6 covered this.
+**b. PPMC member.** Commit access alone does not give someone a binding vote in
+the PPMC release vote. Only IPMC members have binding votes in the separate
+IPMC release-approval vote. Mentors belong to both bodies, so their votes are
+binding in both. Lesson 6 covered this.
 
 **c. PPMC member.** Committers do not have access to the private list. The
 Podling Committer Onboarding page answers this explicitly in its FAQ. A learner
@@ -988,12 +989,13 @@ then return to the lesson.
 - **Committer.** Write access to the project's repositories. No binding vote on
   releases, on adding committers, or on adding PPMC members. No access to the
   private list. May propose a candidate but not vote on one.
-- **PPMC member.** On the committee that governs the podling. Binding votes on
-  releases, on adding committers and on adding PPMC members. Has private list
-  access. Usually holds commit access too, but that is practice rather than a
-  stated rule: the guide describes the PPMC as composed of the mentors and the
-  initial committers, which does not establish that every PPMC member is a
-  committer on the podling.
+- **PPMC member.** On the committee that governs the podling. Binding votes in
+  the PPMC release vote, on adding committers and on adding PPMC members. PPMC
+  membership alone does not give a binding vote in the IPMC release-approval
+  vote. Has private list access. Usually holds commit access too, but that is
+  practice rather than a stated rule: the guide describes the PPMC as composed
+  of the mentors and the initial committers, which does not establish that
+  every PPMC member is a committer on the podling.
 - **ICLA and accounts.** The rule that always holds: an ICLA must be on file
   with the ASF Secretary before an ASF account can be created. Do not assume a
   PPMC addition skips this because the person is already a committer; check
@@ -1071,16 +1073,13 @@ then return to the lesson.
   made on the mailing lists rather than on Slack, in GitHub comments or in
   private chats. Policy states this only for release votes, and it is still the
   right rule to teach.
-- **Two different votes, often misread as one.** The Incubator's PPMC guide says
-  a PPMC member's vote is binding only for adding committers and PPMC members,
-  and that release votes are binding only for IPMC members, which is about the
-  IPMC vote that approves the release. Incubation policy requires at least three
-  `+1` PPMC votes on the podling's own dev list, which is the earlier vote. Two
-  votes, two sets of binding voters, and the two documents are describing
-  different votes rather than disagreeing. If a learner has read the guide and
-  is confused, that is the thing to show them. The guide adds one line worth
-  quoting either way: the binding status of a person's vote is not related to
-  the email list the vote occurs on.
+- **Two different votes, often misread as one.** PPMC members' votes are
+  binding in the PPMC release vote; only IPMC members' votes are binding in the
+  IPMC release-approval vote. The podling's mentors belong to both bodies, so
+  their votes are binding in both. The votes may run sequentially or
+  concurrently, and both must pass. PPMC approval alone does not authorize an
+  ASF release. The binding status of a person's vote depends on membership in
+  the body making the decision, not the email list the vote occurs on.
 - **Escalation.** Discuss on `dev@`; if unresolved, take it to the mentors; if
   the mentors do not respond, raise it on `general@incubator.apache.org`.
 - **PMC means the committee, not an individual.** No single member acts for the

@@ -335,10 +335,10 @@ Graduation starts with the podling's own community and ends at the Board, which
 the next section but one covers.
 
 The principle underneath all of it: **whose vote binds depends on which body is
-deciding.** A vote is binding when it is cast by a member of the body that owns
-that decision. The PPMC owns its own people and its own release candidate, so
-PPMC votes bind there. The IPMC owns approval of a podling release and the
-recommendation to graduate, so IPMC votes bind there.
+deciding.** PPMC members' votes are binding for the PPMC's decisions on adding
+people and endorsing a release candidate. Only IPMC members' votes are binding
+for the IPMC's approval of an ASF release and recommendation to graduate.
+Passing the PPMC release vote does not by itself authorize an ASF release.
 
 One thing that helps and that learners are rarely told: **your mentors are on
 your PPMC, and they are also IPMC members.** A podling's PPMC starts as its
@@ -358,9 +358,10 @@ Lesson 3 established that a release needs positive votes and that silence does
 not carry it. Here is the mechanism.
 
 **PPMC vote, on the podling's own `dev@` list.** The PPMC reviews the
-candidate and votes. Incubation policy requires at least three `+1` PPMC votes
-and more `+1` than `-1` from PPMC members. This establishes that the podling's
-own community has reviewed the candidate and wants to ship it.
+candidate and votes. PPMC members' votes are binding in this vote. Incubation
+policy requires at least three `+1` PPMC votes and more `+1` than `-1` from
+PPMC members. This establishes that the podling's own community has reviewed
+the candidate and wants to ship it.
 
 **IPMC vote, on `general@incubator.apache.org`.** The podling requests
 Incubator PMC approval, requiring at least three binding `+1` votes and more
@@ -579,6 +580,8 @@ you are given.
 > - `+0` from Emil (PPMC), who said they had not had time to check properly
 > - one reply from a user asking when it would be on the download page
 
+Ana is the only IPMC member among these voters.
+
 Write the result email you would send to `dev@`. Then say in one line what
 happens next.
 
@@ -705,26 +708,25 @@ this is on the private list, which is what allows it to be said at all.
 
 **Exercise 3.**
 
-No fixed key, since it is a writing exercise, but a good result email separates
-binding from non-binding, states the outcome in a sentence, and links or
-references the vote thread.
+No fixed key, since it is a writing exercise, but a good result email identifies
+which body's vote it reports, separates binding from non-binding votes for
+that body, states the outcome, and links or references the vote thread.
 
-The tally: three binding `+1` votes, from Ana, Bo and Chen, who are the PPMC
-members. Dev is a committer but not on the PPMC, so their `+1` is non-binding
-and worth listing anyway, because non-binding votes are evidence of a community
-and Dev actually checked the artefacts. Emil's `+0` is an abstention, honest
-rather than unhelpful, and counts toward neither. The user's question is not a
-vote.
+The PPMC tally: three binding `+1` votes, from Ana, Bo and Chen, because they
+are PPMC members. Dev is a committer but not on the PPMC, so their `+1` is
+non-binding in this vote and worth listing anyway: Dev actually checked the
+artefacts. Emil's `+0` is an abstention and counts toward neither positive nor
+negative votes. The user's question is not a vote.
 
 So the PPMC vote passes with three binding `+1` and no `-1`. For sequential
 votes, where the IPMC vote has not started, something in this shape:
 
 > **Subject:** [RESULT][VOTE] Release Apache Ternary 0.4.0-RC2 (incubating)
 >
-> The vote passes with 3 binding +1 votes and no -1 votes.
+> The PPMC vote passes with 3 binding +1 votes and no -1 votes.
 >
-> Binding (+1): Ana, Bo, Chen
-> Non-binding (+1): Dev (verified signatures and build)
+> Binding for the PPMC vote (+1): Ana (PPMC, IPMC), Bo (PPMC), Chen (PPMC)
+> Non-binding for the PPMC vote (+1): Dev (verified signatures and build)
 > Abstain (+0): Emil
 >
 > Vote thread: <link>
@@ -743,9 +745,11 @@ for. An answer that treats `+0` as positive has misread it. And an answer that
 stops at "it passed" without checking IPMC approval has forgotten that a
 podling release needs both votes to pass.
 
-Worth noting for the learner if they ask: Ana is both a PPMC member and a
-mentor, so she is also an IPMC member and can vote bindingly in the IPMC vote
-as well.
+Ana's vote is binding in the PPMC vote because she is a PPMC member, and she
+also has a binding vote in the IPMC vote because she is an IPMC member. Bo and
+Chen are not IPMC members in this example, so their votes do not count toward
+the IPMC threshold. The three binding PPMC `+1`s are not three binding IPMC
+`+1`s.
 
 **Exercise 4.**
 
@@ -912,9 +916,10 @@ then return to the lesson.
   resolution to the Board. Mentors are on the PPMC and are IPMC members, so they
   can vote bindingly in either release vote.
 - **A podling release needs PPMC and IPMC approval.** Incubation policy allows
-  the votes to run sequentially or concurrently, and both must pass. The PPMC
-  guide's line that release votes are binding only for IPMC members refers to
-  IPMC approval of the ASF release, not the PPMC endorsement threshold.
+  the votes to run sequentially or concurrently, and both must pass. PPMC
+  members' votes are binding in the PPMC vote; only IPMC members' votes are
+  binding in the IPMC release-approval vote. The podling's mentors belong to
+  both bodies, so their votes are binding in both.
 - **Before casting a binding `+1` on a release**, you are REQUIRED to download
   the signed source packages, verify they meet ASF release requirements,
   validate the signatures, compile as provided and test on your own platform.

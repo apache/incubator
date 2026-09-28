@@ -739,9 +739,9 @@ then return to the lesson.
 - **Binding votes.** Which votes bind depends on the kind of vote. Incubation
   policy requires at least three `+1` PPMC votes on the podling's own release
   vote, and three `+1` IPMC votes to approve the release on `general@`. The
-  Incubator PPMC guide's line that release votes bind only for IPMC members is
-  about the IPMC vote on `general@`. Do not generalise beyond these
-  cases. Lesson 6.
+  Incubator PPMC guide distinguishes binding PPMC votes on the podling's
+  endorsement from binding IPMC votes on ASF release approval. Do not
+  generalise beyond these cases. Lesson 6.
 - **Podling releases** need votes on the podling's public dev@ list and on
   `general@incubator.apache.org`. The PPMC vote needs at least three `+1` votes
   and more `+1` than `-1` from PPMC members. The IPMC vote needs at least three
