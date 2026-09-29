@@ -204,7 +204,7 @@
         {
           "description": "Apache Amoro(incubating) is a Lakehouse management system bui...",
           "last_update_int": 1790654643,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>",
+          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>",
           "nocommit": false
         }
       ],
@@ -5569,7 +5569,7 @@
         {
           "description": "Apache KIE",
           "last_update_int": 1790657810,
-          "last_update_txt": "<span style='color: #070;'>&lt;1 hour ago</span>",
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>",
           "nocommit": false
         }
       ],
@@ -5697,7 +5697,7 @@
         {
           "description": "Apache Maka (Incubating) is a high-performance agent workspac...",
           "last_update_int": 1790660665,
-          "last_update_txt": "<span style='color: #070;'>&lt;15 minutes ago</span>",
+          "last_update_txt": "<span style='color: #070;'>&lt;30 minutes ago</span>",
           "nocommit": false
         }
       ]
@@ -5729,8 +5729,8 @@
   "nullaway": {
     "description": "NullAway is a fast, annotation-based nullness checker for Java that helps eliminate NullPointerExceptions at build time with minimal overhead.",
     "fullName": "NullAway",
-    "hasMailListCommits": "",
-    "hasMailListDev": "",
+    "hasMailListCommits": "http://mail-archives.apache.org/mod_mbox/nullaway-commits",
+    "hasMailListDev": "http://mail-archives.apache.org/mod_mbox/nullaway-dev",
     "ldap": {},
     "mentors": [
       [
@@ -5746,7 +5746,9 @@
         "paulk"
       ]
     ],
-    "news": [],
+    "news": [
+      "2026-09-28 Project enters incubation."
+    ],
     "podlingName": "NullAway",
     "rawReportingGroup": "group-1",
     "releases": [],
@@ -5757,7 +5759,7 @@
     "sponsor": "Incubator",
     "startDate": "2026-09-28",
     "statusAge": 0,
-    "statusLastUpdated": "",
+    "statusLastUpdated": "2026-09-29",
     "urls": {
       "git": "",
       "keys": "",
@@ -5770,10 +5772,6 @@
       [
         "01",
         "No project LDAP"
-      ],
-      [
-        "07",
-        "Status file is missing"
       ],
       [
         "10",
@@ -5790,14 +5788,6 @@
       [
         "12",
         "Release distribution area is not setup"
-      ],
-      [
-        "15",
-        "Project does not have 'dev' mailing list"
-      ],
-      [
-        "16",
-        "Project does not have 'commits' mailing list"
       ],
       [
         "17",
@@ -6190,7 +6180,7 @@
         {
           "description": "Apache Ossie, industry wide specification effort to standardi...",
           "last_update_int": 1790660974,
-          "last_update_txt": "<span style='color: #070;'>&lt;2 minutes ago</span>",
+          "last_update_txt": "<span style='color: #070;'>&lt;30 minutes ago</span>",
           "nocommit": false
         }
       ],
@@ -6208,7 +6198,7 @@
         {
           "description": "Apache Ossie Website",
           "last_update_int": 1790654087,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>",
+          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>",
           "nocommit": false
         }
       ]
