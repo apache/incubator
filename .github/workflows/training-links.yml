@@ -1,0 +1,66 @@
+# Licensed to the Apache Software Foundation (ASF) under one or more
+# contributor license agreements.  See the NOTICE file distributed with
+# this work for additional information regarding copyright ownership.
+# The ASF licenses this file to You under the Apache License, Version 2.0
+# (the "License"); you may not use this file except in compliance with
+# the License.  You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# Bakes the site and checks internal links in the training section.
+# Publishing is still done by the Jenkins job running build_site.sh.
+
+name: Training links
+
+on:
+  pull_request:
+  push:
+    branches-ignore: [asf-site]
+
+permissions:
+  contents: read
+
+env:
+  JBAKE_VERSION: 2.7.0
+  WORKDIR: /tmp/incubator-site
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install JBake and Python dependencies
+        run: |
+          curl -fsSL -o /tmp/jbake.zip \
+            "https://github.com/jbake-org/jbake/releases/download/v${JBAKE_VERSION}/jbake-${JBAKE_VERSION}-bin.zip"
+          unzip -q /tmp/jbake.zip -d /tmp
+          echo "JBAKE_HOME=/tmp/jbake-${JBAKE_VERSION}-bin" >> "$GITHUB_ENV"
+          pip install pyyaml
+
+      - name: Bake the site
+        run: |
+          python3 tools/seealso/validate_resources.py tools/seealso/resources.yml
+          mkdir -p "$WORKDIR"
+          ./bake.sh -b . "$WORKDIR"
+          python3 tools/ai-tutor/publish-lessons.py --out "$WORKDIR/training/lessons"
+          python3 tools/seealso/pagefind.py tools/seealso/resources.yml --out-dir "$WORKDIR/training"
+          npx -y pagefind --site "$WORKDIR/training" --glob "_pagefind_items/*.html" --output-subdir pagefind
+
+      - name: Check internal links
+        run: python3 tools/linkcheck/check_links.py "$WORKDIR" --section training
