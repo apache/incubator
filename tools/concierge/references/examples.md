@@ -54,8 +54,10 @@ general ASF release mechanics.
 
 **Answer shape:** the four podling-specific deltas stated plainly and in order:
 
-1. Two votes — at least 3 +1 PPMC votes on the podling dev list *and* more +1s
-   than -1s, then 3 +1 IPMC votes on general@incubator.
+1. Two votes — at least 3 +1 votes and more +1s than -1s from PPMC members on
+   the public dev list, and at least 3 binding +1 IPMC votes with more binding
+   +1s than binding -1s on general@incubator. The votes may run sequentially or
+   concurrently, and both must pass.
 2. `incubating` in the release filename.
 3. A disclaimer in the archive, in a `DISCLAIMER` or `DISCLAIMER-WIP` file.
 4. Distribution through `www.apache.org/dist/incubator/<Podling>`; other

@@ -620,13 +620,13 @@ Do not teach from this section. Use it when a learner asks a specific question,
 so you can answer in a sentence rather than guess or refuse. Then return to the
 lesson.
 
-- **Release votes.** Two stages, and each needs three binding +1 votes. The
-  podling votes on its own public development list, where at least three +1 PPMC
-  votes and more +1 than -1 are required. It then sends a summary of that vote
-  to the Incubator's general list and asks the Incubator PMC to approve, where
-  three +1 Incubator PMC votes are required. The point worth making if it comes
-  up: a release is not carried by silence, unlike a decision running under lazy
-  consensus. Lesson 13 covers this properly.
+- **Release votes.** The podling votes on its public development list, where
+  at least three +1 votes and more +1 than -1 from PPMC members are required.
+  It also requests approval on the Incubator's general list, where at least
+  three binding +1 votes from IPMC members and more binding +1 than binding -1
+  votes are required. The votes may run sequentially or concurrently, and both
+  must pass. A release is not carried by silence, unlike a decision running
+  under lazy consensus. Lesson 13 covers this properly.
 - **Licensing.** Some licences are fine, some come with conditions, and some the
   ASF will not distribute at all, with GPL and its relatives in the last group.
   That much is worth knowing here. Which licence sits where, and why, is Lesson

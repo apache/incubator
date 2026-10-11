@@ -46,7 +46,7 @@ sit on the Incubator's own site guides. Those sources:
 | [Release creation process](https://infra.apache.org/release-publishing.html) | 12, 14 | Staging and publishing, and the availability schedule that sets the wait before announcing. |
 | [Release download pages](https://infra.apache.org/release-download-pages.html) | 12, 14 | What a download page must, must not and should contain, and the `closer.lua` utility. |
 | [ASF voting process](https://www.apache.org/foundation/voting.html) | 13 | Majority approval, binding votes, why releases cannot be vetoed, expressing votes. |
-| [Incubator cookbook](https://incubator.apache.org/cookbook/) | 13 | The two-phase podling vote, annotating a vote, and carrying the dev list tally across. |
+| [Incubator cookbook](https://incubator.apache.org/cookbook/) | 13 | Sequential or concurrent PPMC and IPMC votes, annotating a vote, and linking the threads or carrying the dev list tally across. |
 | [Incubator release management guide](https://incubator.apache.org/guides/releasemanagement.html) | 12, 13 | Where a podling release vote is held and whose votes are binding. |
 | [Incubator distribution guidelines](https://incubator.apache.org/guides/distribution.html) | 12, 14 | Convenience binaries, and the conditions on Maven, GitHub, Docker Hub and package registries. |
 | [Incubator publicity guide](https://incubator.apache.org/guides/publicity.html) | 14 | What a podling is encouraged to do publicly, and the newswire restriction. |

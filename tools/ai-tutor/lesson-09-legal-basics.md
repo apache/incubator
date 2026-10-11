@@ -1082,9 +1082,11 @@ then return to the lesson.
 - **What counts as a release.** Anything published beyond the group that owns
   it. Nightly builds, snapshots and release candidates are not releases and must
   not be offered to the public as substitutes.
-- **Podling release specifics.** No ASF release without IPMC approval. Three +1
-  PPMC votes on the podling's dev list with more +1 than -1, then three +1 IPMC
-  votes on the Incubator's general list. The archive filename must include the
+- **Podling release specifics.** Both the PPMC and IPMC votes must pass, whether
+  run sequentially or concurrently. The public dev list vote needs at least
+  three +1 votes and more +1 than -1 from PPMC members; the general list vote
+  needs at least three binding +1 IPMC votes and more binding +1 than binding
+  -1 votes. The archive filename must include the
   word "incubating". The archive must contain a disclaimer, which should be in a
   DISCLAIMER or DISCLAIMER-WIP file. Releases must be distributed through the
   incubator dist area, and a podling may also distribute approved releases

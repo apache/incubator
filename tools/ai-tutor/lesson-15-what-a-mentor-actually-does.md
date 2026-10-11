@@ -796,12 +796,13 @@ b. **The PPMC.** The mentor may encourage the podling to recognise contributors
 and help them grow toward committership, which the guides list as a day-to-day
 duty, but the decision and the vote belong to the PPMC.
 
-c. **The IPMC**, on `general@incubator.apache.org`, needing three +1 IPMC votes.
-The podling votes first on its **public dev list**, where incubation policy
-requires at least three +1 PPMC votes and more +1 than -1. Mark down an answer
-that puts the first vote on a private list: it is a MUST that it be public, and
-a mentor who gets this wrong will let a podling invalidate its own vote. Mentors
-take part in both because they sit on both bodies. Track D is the material.
+c. **The IPMC**, on `general@incubator.apache.org`, needing at least three
+binding +1 IPMC votes and more binding +1 than binding -1 votes. The podling
+also votes on its **public dev list**, needing at least three +1 votes and
+more +1 than -1 from PPMC members. The votes may run sequentially or
+concurrently, and both must pass. Mark down an answer that puts the PPMC vote
+on a private list: it is a MUST that it be public. Mentors take part in both
+because they sit on both bodies. Track D is the material.
 
 d. **The mentor**, and this is one of the few things assigned to a mentor
 specifically: after acceptance one of the mentors sets the podling up, adds the
