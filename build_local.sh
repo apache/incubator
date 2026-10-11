@@ -34,6 +34,10 @@ npx -y pagefind \
   --output-subdir pagefind \
   || fatal "Pagefind indexing failed"
 
+# report broken internal links under /training without stopping the local preview
+python3 tools/linkcheck/check_links.py "$WORKDIR" --section training \
+  || echo "WARNING: broken internal links under /training" >&2
+
 # 3) Serve the baked output
 cd "$WORKDIR"
 python3 -m http.server 8000
