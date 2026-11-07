@@ -127,13 +127,13 @@ def window_days(start: dt.datetime, end: dt.datetime) -> int:
 def canonical_repo(repo: str) -> str:
     def probe(r: str) -> str:
         url = f"https://api.github.com/repos/{r}"
+        # gh_get waits out rate limits and raises GitHubUnavailable if GitHub
+        # can't be read, so a throttled probe never falls back to a wrong name.
         try:
-            resp = requests.get(url, headers=gh_headers(), timeout=20)
-        except RequestException:
-            return ""  # network issue → no change
-        if resp.status_code == 200:
-            return resp.json().get("full_name", r)
-        return ""  # 404/403/etc.
+            resp = gh_get(url)
+        except requests.HTTPError:
+            return ""  # 404 etc: no such repo under this name
+        return resp.json().get("full_name", r)
 
     # 1) try as-is
     hit = probe(repo)
@@ -232,6 +232,8 @@ def discover_apache_repos(
             "https://api.github.com/search/repositories",
             {"q": q, "per_page": "100"},
         )
+    except GitHubUnavailable:
+        raise
     except Exception as e:
         log(f"    [discover] search failed for {slug}: {e}", debug)
         return []
@@ -326,10 +328,30 @@ def _parse_reset(headers) -> int:
     except Exception:
         return 0
 
+class GitHubUnavailable(RuntimeError):
+    """GitHub could not be read (rate limit, outage or network failure).
+
+    Raised instead of returning partial data. Callers that skip individual
+    repos on ordinary errors must re-raise this, so a report is never written
+    with zeros standing in for data that was never fetched."""
+
+
 def gh_get(url: str, params: Dict[str, str] | None = None, max_retries: int = 6) -> requests.Response:
-    """GitHub GET with handling for primary & secondary rate limits."""
+    """GitHub GET with handling for primary & secondary rate limits.
+
+    Waits out primary limits until the reset time, backs off on secondary
+    limits, 5xx and network errors, and raises GitHubUnavailable once the
+    retries are used up."""
+    last_problem = ""
     for attempt in range(max_retries):
-        resp = requests.get(url, headers=gh_headers(), params=params or {}, timeout=30)
+        try:
+            resp = requests.get(url, headers=gh_headers(), params=params or {}, timeout=30)
+        except RequestException as e:
+            last_problem = f"network error: {e}"
+            sleep_s = min(60, 2 ** attempt)
+            print(f"[gh] {last_problem}, retrying in {sleep_s}s")
+            time.sleep(sleep_s)
+            continue
 
         if resp.status_code < 400:
             return resp
@@ -340,28 +362,31 @@ def gh_get(url: str, params: Dict[str, str] | None = None, max_retries: int = 6)
         except Exception:
             pass
 
-        # --- Primary rate limit (X-RateLimit-Remaining == 0) ---
-        if resp.status_code == 403 and "rate limit" in msg.lower():
+        # --- Primary rate limit: 403 or 429 with no requests left ---
+        # Waiting for the reset does not use up a retry.
+        if resp.status_code in (403, 429) and resp.headers.get("X-RateLimit-Remaining") == "0":
             sleep_s = _parse_reset(resp.headers) or 60
-            print(f"[gh] primary rate limit hit, sleeping {sleep_s}s")
+            print(f"[gh] primary rate limit hit, sleeping {sleep_s}s until reset")
             time.sleep(sleep_s + 2)
-            continue
+            return gh_get(url, params, max_retries)
 
         # --- Secondary rate limit / abuse detection ---
-        if resp.status_code in (403, 429):
+        if resp.status_code == 429 or (resp.status_code == 403 and "rate limit" in msg.lower()):
+            last_problem = f"secondary rate limit ({resp.status_code}: {msg})"
             retry_after = resp.headers.get("Retry-After")
             if retry_after:
                 sleep_s = int(retry_after)
                 print(f"[gh] secondary rate limit, sleeping {sleep_s}s (Retry-After)")
             else:
-                base_sleep = 2 ** attempt
-                sleep_s = random.uniform(base_sleep, base_sleep * 1.5)
-                print(f"[gh] secondary rate limit, backing off {sleep_s:.1f}s (attempt {attempt+1})")
+                # GitHub asks for at least a minute when no Retry-After is given.
+                sleep_s = 60 * (attempt + 1) + random.uniform(0, 5)
+                print(f"[gh] secondary rate limit, backing off {sleep_s:.0f}s (attempt {attempt+1})")
             time.sleep(sleep_s)
             continue
 
         # --- Other 5xx transient errors ---
         if 500 <= resp.status_code < 600:
+            last_problem = f"server error {resp.status_code}"
             sleep_s = min(60, 2 ** attempt)
             print(f"[gh] server error {resp.status_code}, retrying in {sleep_s}s")
             time.sleep(sleep_s)
@@ -370,7 +395,7 @@ def gh_get(url: str, params: Dict[str, str] | None = None, max_retries: int = 6)
         # --- Other client errors (not retryable) ---
         resp.raise_for_status()
 
-    raise RuntimeError(f"GitHub GET failed after {max_retries} attempts: {url}")
+    raise GitHubUnavailable(f"GitHub GET failed after {max_retries} attempts ({last_problem}): {url}")
 
 def gh_paginate(url: str, params: Dict[str, str]) -> List[dict]:
     """Walk GitHub's Link: rel="next" pagination through gh_get so all
@@ -988,6 +1013,8 @@ def collect_prior_committer_idents(
     for r in repos:
         try:
             prior |= gh_list_contributor_idents(r, debug=debug)
+        except GitHubUnavailable:
+            raise
         except Exception as e:
             log(f"[gh] prior contributors {r}: {e}", debug)
     log(f"  [prior] {len(prior)} identities across {len(repos)} repo(s) (all-time)", debug)
@@ -1033,6 +1060,8 @@ def compute_github_metrics(
                 if ident:
                     commit_authors_window.add((r, ident))
                     by_ident_counts[ident] = by_ident_counts.get(ident, 0) + 1
+        except GitHubUnavailable:
+            raise
         except Exception as e:
             log(f"[gh] commits {r}: {e}", debug)
 
@@ -1056,6 +1085,8 @@ def compute_github_metrics(
             prs_opened += gh_search_issues(f"repo:{r} is:pr created:{dr(start,end)}")
             merged_items = gh_search_issue_items(f"repo:{r} is:pr is:merged merged:{dr(start,end)}")
             prs_merged += len(merged_items)
+        except GitHubUnavailable:
+            raise
         except Exception as e:
             log(f"[gh] search {r}: {e}", debug)
             merged_items = []
@@ -1094,6 +1125,8 @@ def compute_github_metrics(
                             f"https://api.github.com/repos/{r}/pulls/{int(number)}/reviews",
                             {"per_page": "100"}
                         )
+                    except GitHubUnavailable:
+                        raise
                     except Exception:
                         revs = []
 
@@ -1108,6 +1141,8 @@ def compute_github_metrics(
                         "author_login": author_login,
                         "reviewers": list(reviewers),
                     }
+                except GitHubUnavailable:
+                    raise
                 except Exception as e:
                     log(f"[gh] get PR {r}#{number}: {e}", debug)
                     return None
@@ -1382,92 +1417,95 @@ def main():
     total = len(podlings)
     summary_rows: List[Tuple[str, int]] = []
 
+    failed: List[Tuple[str, str]] = []
+
     for idx, podling in enumerate(podlings, 1):
         log(f"[{idx}/{total}] {podling}", args.debug)
 
-        # Repo guess if not provided.
-        # Precedence: --repos (literal) > --auto-discover-repos > apache/<slug>.
-        # `needs_canonical` tracks whether the list came from a source where
-        # `incubator-<name>` toggling might be needed. Discovery results come
-        # straight from /search/repositories and are already canonical, so we
-        # skip the canonical_repo() probes for them — that probe fires up to
-        # 2 API calls per repo and otherwise runs once per podling.
-        needs_canonical = True
-        if args.repos:
-            repos = args.repos[:]
-        else:
-            slug = re.sub(r"[^a-z0-9]+", "-", podling.lower()).strip("-")
-            repos = []
-            if args.auto_discover_repos:
-                repos = discover_apache_repos(
-                    slug,
-                    cache_dir=args.repos_cache_dir,
-                    ttl_days=args.repos_cache_ttl_days,
-                    debug=args.debug,
+        csv_rows: List[list] = []
+        try:
+            # Repo guess if not provided.
+            # Precedence: --repos (literal) > --auto-discover-repos > apache/<slug>.
+            # `needs_canonical` tracks whether the list came from a source where
+            # `incubator-<name>` toggling might be needed. Discovery results come
+            # straight from /search/repositories and are already canonical, so we
+            # skip the canonical_repo() probes for them — that probe fires up to
+            # 2 API calls per repo and otherwise runs once per podling.
+            needs_canonical = True
+            if args.repos:
+                repos = args.repos[:]
+            else:
+                slug = re.sub(r"[^a-z0-9]+", "-", podling.lower()).strip("-")
+                repos = []
+                if args.auto_discover_repos:
+                    repos = discover_apache_repos(
+                        slug,
+                        cache_dir=args.repos_cache_dir,
+                        ttl_days=args.repos_cache_ttl_days,
+                        debug=args.debug,
+                    )
+                    if repos:
+                        needs_canonical = False
+                if not repos:
+                    repos = [f"apache/{slug}"]
+            if needs_canonical:
+                repos = [canonical_repo(r) for r in repos]
+            log(f"  [repos] {', '.join(repos)}", args.debug)
+
+            # Strict window selection by podling age
+            pod_start = get_podling_start_date(root, podling)
+            if pod_start:
+                log(f"  [age] start {pod_start.isoformat()} (age {(today - pod_start).days} days)", args.debug)
+            else:
+                log(f"  [age] start UNKNOWN — defaulting to full 3m/6m/12m", args.debug)
+
+            win_specs = select_windows_strict(today, pod_start)
+
+            # Prior-committer set: built once per podling via /contributors
+            # (one row per identity, not per commit). Not date-bounded — used
+            # only as a membership check for the "new contributor" metric.
+            prior_idents = collect_prior_committer_idents(repos, debug=args.debug)
+
+            windows: List[WindowMetrics] = []
+            for label, start, end in win_specs:
+                log(f"  [win {label}] {to_iso_date(start)} → {to_iso_date(end)}", args.debug)
+
+                wm = WindowMetrics(window=label, start=start, end=end)
+
+                # Reports (mentor sign-offs)
+                log("    [reports] agendas …", args.debug)
+                rep = collect_reports(args.minutes_dir, podling, start, end)
+                wm.reports_count = len(rep)
+                if wm.reports_count:
+                    signoff_counts = [len(set(r.get("signoffs") or [])) for r in rep]
+                    wm.avg_mentor_signoffs = round(sum(signoff_counts) / len(signoff_counts), 2) if signoff_counts else None
+
+                # Mailing lists (activity + official releases)
+                log("    [lists] dev@ + incubator-general …", args.debug)
+                ml = scan_lists_for_window(podling, start, end, debug=args.debug)
+                wm.dev_messages = ml["dev_messages"]
+                wm.dev_unique_posters = ml["dev_unique_posters"]
+
+                release_dates = ml.get("release_event_dates", [])
+                wm.release_count = len(release_dates)
+                wm.release_median_days_between = median_days_between(release_dates) if release_dates else None
+                log(f"    [lists] releases found: {wm.release_count}", args.debug)
+                if args.debug and release_dates[:3]:
+                    samp = ", ".join(d.date().isoformat() for d in release_dates[:3])
+                    log(f"      sample release dates: {samp}{' …' if len(release_dates)>3 else ''}", args.debug)
+
+                # GitHub metrics (incl. bus factor + diversity)
+                log("    [gh] commits/issues/prs/diversity …", args.debug)
+                gh = compute_github_metrics(
+                    repos, start, end, debug=args.debug, prior_idents=prior_idents
                 )
-                if repos:
-                    needs_canonical = False
-            if not repos:
-                repos = [f"apache/{slug}"]
-        if needs_canonical:
-            repos = [canonical_repo(r) for r in repos]
-        log(f"  [repos] {', '.join(repos)}", args.debug)
+                for k, v in gh.items():
+                    setattr(wm, k, v)
 
-        # Strict window selection by podling age
-        pod_start = get_podling_start_date(root, podling)
-        if pod_start:
-            log(f"  [age] start {pod_start.isoformat()} (age {(today - pod_start).days} days)", args.debug)
-        else:
-            log(f"  [age] start UNKNOWN — defaulting to full 3m/6m/12m", args.debug)
+                windows.append(wm)
 
-        win_specs = select_windows_strict(today, pod_start)
-
-        # Prior-committer set: built once per podling via /contributors
-        # (one row per identity, not per commit). Not date-bounded — used
-        # only as a membership check for the "new contributor" metric.
-        prior_idents = collect_prior_committer_idents(repos, debug=args.debug)
-
-        windows: List[WindowMetrics] = []
-        for label, start, end in win_specs:
-            log(f"  [win {label}] {to_iso_date(start)} → {to_iso_date(end)}", args.debug)
-
-            wm = WindowMetrics(window=label, start=start, end=end)
-
-            # Reports (mentor sign-offs)
-            log("    [reports] agendas …", args.debug)
-            rep = collect_reports(args.minutes_dir, podling, start, end)
-            wm.reports_count = len(rep)
-            if wm.reports_count:
-                signoff_counts = [len(set(r.get("signoffs") or [])) for r in rep]
-                wm.avg_mentor_signoffs = round(sum(signoff_counts) / len(signoff_counts), 2) if signoff_counts else None
-
-            # Mailing lists (activity + official releases)
-            log("    [lists] dev@ + incubator-general …", args.debug)
-            ml = scan_lists_for_window(podling, start, end, debug=args.debug)
-            wm.dev_messages = ml["dev_messages"]
-            wm.dev_unique_posters = ml["dev_unique_posters"]
-
-            release_dates = ml.get("release_event_dates", [])
-            wm.release_count = len(release_dates)
-            wm.release_median_days_between = median_days_between(release_dates) if release_dates else None
-            log(f"    [lists] releases found: {wm.release_count}", args.debug)
-            if args.debug and release_dates[:3]:
-                samp = ", ".join(d.date().isoformat() for d in release_dates[:3])
-                log(f"      sample release dates: {samp}{' …' if len(release_dates)>3 else ''}", args.debug)
-
-            # GitHub metrics (incl. bus factor + diversity)
-            log("    [gh] commits/issues/prs/diversity …", args.debug)
-            gh = compute_github_metrics(
-                repos, start, end, debug=args.debug, prior_idents=prior_idents
-            )
-            for k, v in gh.items():
-                setattr(wm, k, v)
-
-            windows.append(wm)
-
-            # CSV row
-            if csv_writer:
-                csv_writer.writerow([
+                # CSV row
+                csv_rows.append([
                     podling, wm.window, wm.start.date(), wm.end.date(),
                     wm.release_count, wm.release_median_days_between if wm.release_median_days_between is not None else "",
                     wm.commits, wm.unique_committers, wm.new_contributors,
@@ -1482,6 +1520,15 @@ def main():
                     wm.reports_count, wm.avg_mentor_signoffs if wm.avg_mentor_signoffs is not None else "",
                     wm.dev_messages, wm.dev_unique_posters
                 ])
+        except GitHubUnavailable as e:
+            # Skip the podling rather than write zeros for data never fetched.
+            print(f"[error] {podling}: GitHub unavailable, no report written: {e}", file=sys.stderr)
+            failed.append((podling, str(e)))
+            continue
+
+        if csv_writer:
+            csv_writer.writerows(csv_rows)
+
 
         # Markdown per podling
         if args.all:
@@ -1501,7 +1548,11 @@ def main():
         csv_file.close()
         log(f"[write] CSV -> {args.out_csv}", args.debug)
 
-    print(f"[done] processed podlings: {len(podlings)}")
+    print(f"[done] processed podlings: {len(podlings) - len(failed)} of {len(podlings)}")
+    if failed:
+        for podling, err in failed:
+            print(f"[error] no report for {podling}: {err}", file=sys.stderr)
+        sys.exit(1)
 
 if __name__ == "__main__":
     main()
