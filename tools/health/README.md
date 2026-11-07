@@ -34,7 +34,9 @@ Install dependencies:
 
 ## Usage
 
-    ./incubator_health.py --podling <podling> --minutes-dir <archived board agendas>
+    ./incubator_health.py --podling <podling> --minutes-dir <archived board agendas> [<current board agendas>]
+
+`--minutes-dir` takes one or more folders, so recent agendas that have not been archived yet can be included, e.g. `--minutes-dir ~/foundation/board/archived_agendas ~/foundation/board`. If a meeting appears in more than one folder, the one named last is used.
 
 ### Common flags
 

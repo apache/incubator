@@ -62,7 +62,10 @@ def parse_args() -> argparse.Namespace:
     g.add_argument("--podling", help="Single podling name as appears in board agendas.")
     g.add_argument("--all", action="store_true", help="Process all current podlings from podlings.xml.")
 
-    p.add_argument("--minutes-dir", required=True, help="Path to ASF board archived agendas (txt files).")
+    p.add_argument("--minutes-dir", required=True, nargs="+",
+                   help="One or more folders of ASF board agendas (board_agenda_YYYY_MM_DD.txt), "
+                        "e.g. foundation/board/archived_agendas foundation/board. "
+                        "If a meeting is in more than one, the folder named last wins.")
     p.add_argument("--repos", nargs="*", default=[], help="GitHub repos (owner/name). Default guess is apache/<slug>.")
     p.add_argument("--auto-discover-repos",
                    action=argparse.BooleanOptionalAction,
@@ -556,19 +559,24 @@ def parse_podling_reports_from_agenda(path: str, podling_name: str) -> Optional[
 
 AGENDA_RE = re.compile(r"board_agenda_(\d{4})_(\d{2})_(\d{2})\.txt$", re.I)
 
-def list_agenda_files(minutes_dir: str | os.PathLike) -> list[str]:
-    files = []
-    for name in os.listdir(minutes_dir):
-        m = AGENDA_RE.match(name)
-        if not m:
-            continue
-        path = os.path.join(minutes_dir, name)
-        y, mo, d = int(m.group(1)), int(m.group(2)), int(m.group(3))
-        files.append(((y, mo, d), path))
-    files.sort(key=lambda t: t[0])
-    return [p for _, p in files]
+def list_agenda_files(minutes_dirs: str | os.PathLike | List[str]) -> list[str]:
+    """Agenda files from one or more folders, oldest first.
 
-def collect_reports(minutes_dir: str, podling_name: str, since: dt.datetime, until: dt.datetime) -> List[dict]:
+    If the same meeting's agenda is in more than one folder, the copy in the
+    folder named last wins (e.g. the current board/ folder over archived_agendas/)."""
+    if isinstance(minutes_dirs, (str, os.PathLike)):
+        minutes_dirs = [minutes_dirs]
+    by_date: Dict[Tuple[int, int, int], str] = {}
+    for minutes_dir in minutes_dirs:
+        for name in os.listdir(minutes_dir):
+            m = AGENDA_RE.match(name)
+            if not m:
+                continue
+            y, mo, d = int(m.group(1)), int(m.group(2)), int(m.group(3))
+            by_date[(y, mo, d)] = os.path.join(minutes_dir, name)
+    return [by_date[k] for k in sorted(by_date)]
+
+def collect_reports(minutes_dir: str | List[str], podling_name: str, since: dt.datetime, until: dt.datetime) -> List[dict]:
     items: List[dict] = []
     for p in list_agenda_files(minutes_dir):
         m = re.search(r"(\d{4})_(\d{2})_(\d{2})", os.path.basename(p))
