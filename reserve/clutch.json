@@ -3821,8 +3821,8 @@
   "hamilton": {
     "description": "Hamilton is a lightweight in-process framework to define, execute, and observe\n            directed acyclic graphs (DAGs) that express data transformations. In Hamilton, one can\n            express complex DAGs of transformations, e.g. from dataframe transformations (using\n            pandas, polars, PySpark), machine learning pipelines, through to regular software\n            engineering API request and LLM API based workflows. Observability hooks are built into\n            the framework. The Hamilton UI is a self-hostable service to capture observability\n            output from workflow runs.",
     "fullName": "Hamilton",
-    "hasMailListCommits": "",
-    "hasMailListDev": "",
+    "hasMailListCommits": "http://mail-archives.apache.org/mod_mbox/hamilton-commits",
+    "hasMailListDev": "http://mail-archives.apache.org/mod_mbox/hamilton-dev",
     "ldap": {
       "members": [
         "ayushsaxena",
@@ -4035,22 +4035,14 @@
       [
         "45",
         "12 is a large number of release distributions. Non-current releases should be removed"
-      ],
-      [
-        "15",
-        "Project does not have 'dev' mailing list"
-      ],
-      [
-        "16",
-        "Project does not have 'commits' mailing list"
       ]
     ]
   },
   "kie": {
     "description": "KIE (Knowledge is Everything) is a community of solutions and supporting\n            tooling for knowledge engineering and process automation, focusing on events, rules, and\n            workflows.",
     "fullName": "KIE",
-    "hasMailListCommits": "",
-    "hasMailListDev": "",
+    "hasMailListCommits": "http://mail-archives.apache.org/mod_mbox/kie-users",
+    "hasMailListDev": "http://mail-archives.apache.org/mod_mbox/kie-dev",
     "ldap": {
       "members": [
         "abhiram",
@@ -5672,22 +5664,14 @@
       [
         "45",
         "163 is a large number of release distributions. Non-current releases should be removed"
-      ],
-      [
-        "15",
-        "Project does not have 'dev' mailing list"
-      ],
-      [
-        "16",
-        "Project does not have 'commits' mailing list"
       ]
     ]
   },
   "maka": {
     "description": "Maka is a local-first AI agent runtime and workspace. It records model messages, tool calls, tool results, permission decisions, and termination events in append-only logs.",
     "fullName": "Maka",
-    "hasMailListCommits": "",
-    "hasMailListDev": "",
+    "hasMailListCommits": "http://mail-archives.apache.org/mod_mbox/maka-commits",
+    "hasMailListDev": "http://mail-archives.apache.org/mod_mbox/maka-dev",
     "ldap": {
       "members": [
         "are404",
@@ -5799,7 +5783,7 @@
         {
           "description": "Apache Maka (Incubating) is a high-performance agent workspac...",
           "last_update_int": 1794176236,
-          "last_update_txt": "<span style='color: #070;'>&lt;2 minutes ago</span>",
+          "last_update_txt": "<span style='color: #070;'>&lt;15 minutes ago</span>",
           "nocommit": false
         }
       ]
@@ -5821,22 +5805,14 @@
       [
         "18",
         "Has not provided a wiki link"
-      ],
-      [
-        "15",
-        "Project does not have 'dev' mailing list"
-      ],
-      [
-        "16",
-        "Project does not have 'commits' mailing list"
       ]
     ]
   },
   "nullaway": {
     "description": "NullAway is a fast, annotation-based nullness checker for Java that helps eliminate NullPointerExceptions at build time with minimal overhead.",
     "fullName": "NullAway",
-    "hasMailListCommits": "",
-    "hasMailListDev": "",
+    "hasMailListCommits": "http://mail-archives.apache.org/mod_mbox/nullaway-commits",
+    "hasMailListDev": "http://mail-archives.apache.org/mod_mbox/nullaway-dev",
     "ldap": {
       "members": [
         "jmclean",
@@ -5913,14 +5889,6 @@
         "Release distribution area is not setup"
       ],
       [
-        "15",
-        "Project does not have 'dev' mailing list"
-      ],
-      [
-        "16",
-        "Project does not have 'commits' mailing list"
-      ],
-      [
         "17",
         "No source code repository"
       ]
@@ -5929,8 +5897,8 @@
   "openserverless": {
     "description": "OpenServerless is an open source, cloud-agnostic, serverless platform. It\n            offers a complete environment for serverless applications development, based on\n            Kubernetes. With Apache OpenWhisk as its FaaS engine, it provides an unified developer\n            experience with a plethora of services (SQL or noSQL databases, key-value stores, object\n            storage, LLMs services, function schedulers) managed by the platform's core: the\n            operator, along with tooling (the CLI) to simplify (and interact with) deployments,\n            integrated ide and starter application and optimized runtimes integrated with the\n            staters.",
     "fullName": "OpenServerless",
-    "hasMailListCommits": "",
-    "hasMailListDev": "",
+    "hasMailListCommits": "http://mail-archives.apache.org/mod_mbox/openserverless-commits",
+    "hasMailListDev": "http://mail-archives.apache.org/mod_mbox/openserverless-dev",
     "ldap": {
       "members": [
         "bdelacretaz",
@@ -6241,22 +6209,14 @@
       [
         "41",
         "PGP KEYS file available without a distribution"
-      ],
-      [
-        "15",
-        "Project does not have 'dev' mailing list"
-      ],
-      [
-        "16",
-        "Project does not have 'commits' mailing list"
       ]
     ]
   },
   "ossie": {
     "description": "Apache Ossie comes from Open Semantic Interchange. It is an open specification that \n            defines a vendor-neutral format for expressing business metrics, dimensions, and their \n            relationships. It enables any tool to consume and produce semantic definitions without loss \n            of meaning.",
     "fullName": "Ossie",
-    "hasMailListCommits": "",
-    "hasMailListDev": "",
+    "hasMailListCommits": "http://mail-archives.apache.org/mod_mbox/ossie-commits",
+    "hasMailListDev": "http://mail-archives.apache.org/mod_mbox/ossie-dev",
     "ldap": {
       "members": [
         "celestehorgan",
@@ -6376,22 +6336,14 @@
       [
         "12",
         "Release distribution area is not setup"
-      ],
-      [
-        "15",
-        "Project does not have 'dev' mailing list"
-      ],
-      [
-        "16",
-        "Project does not have 'commits' mailing list"
       ]
     ]
   },
   "otava": {
     "description": " Otava, a command-line tool, written in Python, that detects statistically\n            significant changes in time-series data stored either in databases or CSV files. Otava\n            entered Incubation as Hunter ",
     "fullName": "Otava",
-    "hasMailListCommits": "",
-    "hasMailListDev": "",
+    "hasMailListCommits": "http://mail-archives.apache.org/mod_mbox/otava-commits",
+    "hasMailListDev": "http://mail-archives.apache.org/mod_mbox/otava-dev",
     "ldap": {
       "members": [
         "asorokoumov",
@@ -6633,22 +6585,14 @@
       [
         "45",
         "12 is a large number of release distributions. Non-current releases should be removed"
-      ],
-      [
-        "15",
-        "Project does not have 'dev' mailing list"
-      ],
-      [
-        "16",
-        "Project does not have 'commits' mailing list"
       ]
     ]
   },
   "ozhera": {
     "description": "OzHera is an application observation platform (APM) in the era of cloud native,\n            with the application as its core, integrating capabilities such as metric monitoring,\n            trace tracking, logging, and alerting",
     "fullName": "OzHera",
-    "hasMailListCommits": "",
-    "hasMailListDev": "",
+    "hasMailListCommits": "http://mail-archives.apache.org/mod_mbox/ozhera-commits",
+    "hasMailListDev": "http://mail-archives.apache.org/mod_mbox/ozhera-dev",
     "ldap": {
       "members": [
         "dingtao",
@@ -6773,22 +6717,14 @@
       [
         "18",
         "Has not provided a wiki link"
-      ],
-      [
-        "15",
-        "Project does not have 'dev' mailing list"
-      ],
-      [
-        "16",
-        "Project does not have 'commits' mailing list"
       ]
     ]
   },
   "pegasus": {
     "description": "Pegasus is a distributed key-value storage system which is designed to be\n            simple, horizontally scalable, strongly consistent and high-performance.",
     "fullName": "Pegasus",
-    "hasMailListCommits": "",
-    "hasMailListDev": "",
+    "hasMailListCommits": "http://mail-archives.apache.org/mod_mbox/pegasus-commits",
+    "hasMailListDev": "http://mail-archives.apache.org/mod_mbox/pegasus-dev",
     "ldap": {
       "members": [
         "cailiuyang",
@@ -6924,22 +6860,13 @@
       "wiki": "https://cwiki.apache.org/confluence/display/pegasus",
       "www": "http://pegasus.incubator.apache.org"
     },
-    "zFixMeList": [
-      [
-        "15",
-        "Project does not have 'dev' mailing list"
-      ],
-      [
-        "16",
-        "Project does not have 'commits' mailing list"
-      ]
-    ]
+    "zFixMeList": []
   },
   "pouchdb": {
     "description": "PouchDB is an open-source JavaScript database inspired by Apache CouchDB that\n            is designed to run well within the browser.",
     "fullName": "PouchDB",
     "hasMailListCommits": "http://mail-archives.apache.org/mod_mbox/pouchdb-commits",
-    "hasMailListDev": "",
+    "hasMailListDev": "http://mail-archives.apache.org/mod_mbox/pouchdb-dev",
     "ldap": {
       "members": [
         "alba",
@@ -7033,10 +6960,6 @@
       [
         "12",
         "Release distribution area is not setup"
-      ],
-      [
-        "15",
-        "Project does not have 'dev' mailing list"
       ]
     ]
   },
