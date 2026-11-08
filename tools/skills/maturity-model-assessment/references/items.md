@@ -355,8 +355,8 @@ months; from the CD50 sample, how many distinct people merged. One person mergin
 signal, not a verdict.
 
 Also read `.asf.yaml` for `required_approving_review_count` and set it
-against the self-merge count in the sample: Pegasus had a two-review rule
-and 26 of 30 self-merges.
+against the self-merge count in the sample: a two-review rule alongside
+mostly self-merges is a finding.
 
 Human: Does one person decide contested questions on the list? Are
 decisions ever made by announcement rather than discussion?
