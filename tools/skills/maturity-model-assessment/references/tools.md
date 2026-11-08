@@ -13,7 +13,7 @@ the step.
 | Rosters | `apache-projects-mcp:get_project_people(<slug>)` |
 | Repositories | `apache-projects-mcp:get_repositories` |
 | Releases | `ipmc:release_artifact_evidence` or `incubator-releases:podling_releases`; curl listing (below) for a source the tool reports as incomplete |
-| Roster history, SGA, name search status | podling status page `incubator.apache.org/projects/<slug>.html`; often stale, sometimes empty (KIE has no roster, Hamilton's reads "Pending"), so compare with LDAP and the proposal and report the gap under CS10 |
+| Roster history, SGA, name search status | podling status page `incubator.apache.org/projects/<slug>.html`; often stale, sometimes empty (no roster, or a roster that reads "Pending"), so compare with LDAP and the proposal and report the gap under CS10 |
 
 A graduated project also appears in podlings.xml with an end date. This
 skill reads Incubator sources, so it is for current podlings; say so and
@@ -22,9 +22,9 @@ stop if the name has graduated.
 ## GitHub (`gh` in a shell)
 
 `gh` is the workhorse for repository facts and needs no MCP. Most podling
-repositories are `apache/incubator-<slug>`, but not all (apache/hamilton,
-apache/amoro); always take the names from `get_repositories`. KIE has
-dozens; pick the main one by 90-day commits and say which. Useful calls:
+repositories are `apache/incubator-<slug>`, but some are `apache/<slug>`;
+always take the names from `get_repositories`. A podling can have dozens;
+pick the main one by 90-day commits and say which. Useful calls:
 
 ```bash
 gh api repos/apache/<repo>                                   # private flag, default branch, created_at
@@ -41,8 +41,8 @@ gh run list --repo apache/<repo> --branch <default> --limit 20   # CD30; check-r
 gh api repos/apache/<repo>/git/tags/<sha>                     # date of an annotated tag (git/ref/tags gives the tag object, not the commit)
 ```
 
-For CD50, a squash merge keeps the author (GraphAr) but a true merge
-commit carries the merger as Author (OpenServerless); when the merge commit
+For CD50, a squash merge keeps the author but a true merge commit
+carries the merger as Author; when the merge commit
 shows the merger, read the PR's own commits. Pass the full 40-character
 sha to `git/tags/<sha>`; a short sha returns 404. Percent-encode quotes in
 `search/issues` URLs.
@@ -69,8 +69,8 @@ each term separately. Narrow with `timespan` (`lte=12M`). The private list
 is not readable and nothing here should try.
 
 `podling_release_vote_history` searches "<podling> VOTE release", so it
-returns nothing when subjects omit the word release ("[VOTE] Apache Toree
-0.6.0 RC5") or the podling name (XTable's dev@ results read "[RESULT][VOTE]
+returns nothing when subjects omit the word release ("[VOTE] Apache <Name>
+0.6.0 RC5") or the podling name (a dev@ result reading "[RESULT][VOTE]
 Release 0.4.0-incubating"). When it returns zero or fewer threads than
 there are releases, fall back to `search_podling_mail` and
 `search_incubator_general_mail` with the plain query "VOTE" or "RESULT"
@@ -89,12 +89,11 @@ rather than reading it.
 
 For vote tallies read the [RESULT] message itself with
 `get_incubator_general_email(id)` or `get_podling_email(podling, "dev", id)`;
-`summarize_release_vote_thread` fetched only the opening message in the
-GraphAr run and counted no votes. A 404 from `get_podling_email` on a
-thread id quoted in a general@ message means the thread is on private@
-(Pegasus); record that as the fact it is. GitHub Discussions mirrored to
-dev@ arrive with "[D]" subjects and inflate [DISCUSS] and [VOTE] counts
-(Texera); count native threads from the subject lines. The stats.lua
+`summarize_release_vote_thread` can fetch only the opening message and
+count no votes. A 404 from `get_podling_email` on a thread id quoted in a
+general@ message means the thread is on private@; record that as the fact
+it is. GitHub Discussions mirrored to dev@ arrive with "[D]" subjects and
+inflate [DISCUSS] and [VOTE] counts; count native threads from the subject lines. The stats.lua
 participants list shows only the top ten senders, usually GitHub relays;
 use apache-health `dev_unique_posters` for human poster counts. For a list
 that may not exist, stats.lua returns no `hits` field; confirm the list
@@ -110,7 +109,7 @@ which list and timespan were searched.
 
 | Metric | Items |
 | --- | --- |
-| `new_contributors`, `unique_authors` | CO20, CO40 (new_contributors read 0 for GraphAr while four reports named new contributors; quote both) |
+| `new_contributors`, `unique_authors` | CO20, CO40 (new_contributors can read 0 while the reports name new contributors; quote both) |
 | `unique_committers`, `unique_reviewers`, `bus50`, `bus75`, `pr_author_div_eff`, `reviewer_div_eff` | CO60, IN10 |
 | `issues_opened`, `issues_closed`, `median_merge_days`, `median_gap_days` | QU50 |
 | `dev_messages`, `dev_unique_posters`, `commits` | CS20 |
@@ -120,45 +119,43 @@ which list and timespan were searched.
 with each number, and the report's `generated_on` date: the health reports
 are regenerated periodically and can be a couple of months old.
 
-Known disagreements with other sources, seen across six podlings. Quote
-the metric and the other source side by side, never the metric alone:
+Known disagreements with other sources. Quote the metric and the other
+source side by side, never the metric alone:
 
-- `new_contributors` read 0 for GraphAr and Amoro while four consecutive
-  reports named new contributors with merged PRs.
-- `dev_messages` (48 for Amoro) was lower than the raw count of [VOTE]
-  plus [DISCUSS] hits on dev@ over the same year.
-- `unique_committers` (25 for Hamilton) exceeded the 10-person roster.
-- `releases` counted 1 for Toree in a window with no completed release
-  (an rc tag, most likely).
-- `issues_opened` and `issues_closed` read GitHub Issues only. Toree uses
-  JIRA: `https://issues.apache.org/jira/rest/api/2/search?jql=project=<KEY>...`
+- `new_contributors` can read 0 while consecutive reports name new
+  contributors with merged PRs.
+- `dev_messages` can be lower than the raw count of [VOTE] plus
+  [DISCUSS] hits on dev@ over the same year.
+- `unique_committers` can exceed the roster, since it counts commit
+  authors.
+- `releases` can count a release vote that never completed.
+- `issues_opened` and `issues_closed` read GitHub Issues only. For a
+  podling on JIRA, `https://issues.apache.org/jira/rest/api/2/search?jql=project=<KEY>...`
   answers anonymously and gives the QU50 counts.
 
 ## Incubator reports (`incubator-reports`, `ipmc`)
 
 `incubator-reports:get_podling_reports(podling)` gives the
-quarterly reports (the cache held one Hamilton report twice under one id,
-so count distinct periods); new committers and PPMC members (CO40), mentor
+quarterly reports (the cache can hold one report twice under one id, so
+count distinct periods); new committers and PPMC members (CO40), mentor
 comments and off-list concerns (CS50), self-assessed maturity boxes. The
 graduation-self-assessment skill reads the same reports for graduation;
 run it alongside this one when the question is graduation.
 
 `ipmc:graduation_readiness(podling, include_evidence=true)` is a metric
 score. Quote its dimension scores as proxies where they map to an item
-(release_maturity to RE items, community dimensions to CO items). Never
-quote its verdict: it rated OpenServerless "near_ready" with strong
-community scores while the podling had never released and coordinated on
-WhatsApp, and Seata "ready, high confidence" with its mail source
-unavailable. Its output, `get_podling_reports` (76 KB for Pegasus) and
-`trademark_list` (98 KB) can exceed the tool output limit and be saved to
+(release_maturity to RE items, community dimensions to CO items), and its
+`graduation_guide` entries (name search, IPMC release result, committers or
+PPMC members added) as evidence with their sources. Never quote its verdict:
+the maturity model has no levels. Its output, `get_podling_reports` and
+`trademark_list` can exceed the tool output limit and be saved to
 a file; use jq or grep on the file rather than re-reading.
 
 ## Releases
 
 `ipmc:release_artifact_evidence` and `incubator-releases:podling_releases`
 list downloads.apache.org and archive.apache.org together, down to
-`<version>/<subproject>/` trees (Toree keeps `toree/` and `toree-pip/`
-under each version), and answer in 3 to 9 seconds. Use them first. Each
+`<version>/<subproject>/` trees, and answer in 3 to 9 seconds. Use them first. Each
 source in `source_statuses` (under `release_source` in the ipmc output)
 carries an `error` when a directory could not be read; only then list
 that source by hand. archive.apache.org can be
@@ -180,10 +177,9 @@ Registries, all fast and anonymous: Maven Central
 PyPI `https://pypi.org/pypi/<name>/json` (author and project_urls say who
 publishes, uploads are not attributed); Docker Hub
 `https://hub.docker.com/v2/repositories/apache/<slug>/` and also
-`apache/incubator-<slug>/` (Cloudberry publishes under the latter); crates.io
+`apache/incubator-<slug>/`; crates.io
 `https://crates.io/api/v1/crates/<name>` (send a User-Agent). Also look for
-packages under the project's name published by the originating company
-(GraphAr found pygraphar by the GraphScope team).
+packages under the project's name published by the originating company.
 
 For LICENSE, NOTICE, DISCLAIMER, headers and sidecars, download the
 release from downloads.apache.org into a fresh scratchpad directory
@@ -192,29 +188,26 @@ podling-release-check skill's script:
 `scripts/check_rc.py --rc-dir <dir> --keys <KEYS> --disclaimer-template
 <path> --wip-template <path> --out <dir>`. Without the templates it will not
 compare disclaimer text. It verifies signatures only when gpg is
-installed. Note any expired key in KEYS (Hamilton's only key had expired);
+installed. Note any expired key in KEYS;
 `gpg --show-keys KEYS` prints an expiry only for keys that have one, so
 "no expired key" needs the count of keys with no expiry alongside it.
 
-For a podling older than three years, `lte=36M` misses earlier releases:
-Pegasus needed `lte=80M` on general@ to recover all five RESULT emails.
+For a podling older than three years, `lte=36M` misses earlier releases.
 Match the window to the incubation length for RE20 and RE50.
 
 Release directory names are not consistent even within one podling
-(seata-go has `2.0.0/` and `v2.1.0/`); list the parent, never guess.
+(`2.0.0/` next to `v2.1.0/`); list the parent, never guess.
 
 When a release directory has no matching [RESULT], search general@ for
-"<podling> <version>" and read the hits: XTable's 0.1.0 had a cancelled
-IPMC vote and a "release without IPMC vote" thread that the vote-history
-tool never surfaced.
+"<podling> <version>" and read the hits: a cancelled IPMC vote or a
+"release without IPMC vote" thread may not show in the vote-history tool.
 
 ## Website content
 
 When a live page returns 404 or an empty shell, read the page source from
 the website repository (`apache/<slug>-website` or `-site`) with `gh api
-.../contents/...`; Seata's English release, committer, team and security
-pages are "Placeholder. DO NOT DELETE." files while the text sits under
-`i18n/zh-cn/`. Say which language the content exists in. Versioned docs
+.../contents/...`; English pages can be "Placeholder. DO NOT DELETE."
+files while the text sits under another language such as `i18n/zh-cn/`. Say which language the content exists in. Versioned docs
 sites move paths (`/docs/v1.2.0/...`), so take links from the page rather
 than guessing.
 
@@ -222,23 +215,22 @@ than guessing.
 
 Use one fresh directory per podling and per download, named with the
 podling and date (`<slug>-<version>-<yyyymmdd>`); a shared scratchpad with
-stale `keys` and `wiki` entries from another run broke a mkdir chain and
-dropped a download into the root in the OpenServerless run.
+stale `keys` and `wiki` entries from another run can break a mkdir chain
+and drop a download into the root.
 
 ## Branding (`asf-trademark`, `ipmc`)
 
 `asf-trademark:check_project_website(url, stage="podling", project_name)` for CO10, QU30 (Security link), TB10, TB20. Pass
-`project_name` with the project's own capitalisation (GraphAr, not
-Graphar). `ipmc:trademark_branding_check` wraps the same checks but
+`project_name` with the project's own capitalisation. `ipmc:trademark_branding_check` wraps the same checks but
 returns SKIP when the ipmc server was installed without its trademark
 dependency (`pip install -e ~/TrademarkMCP` into the Python that runs
 the ipmc server fixes that); use the standalone server first.
 
 Two of its rules need a second look before recording: the "(Incubating)"
-check flagged Amoro although the page text uses "(incubating)" in lower
-case elsewhere, so confirm by reading the heading yourself; and the
+check can flag a page whose text uses "(incubating)" in lower case
+elsewhere, so confirm by reading the heading yourself; and the
 Privacy navigation rule flags a site that links its own privacy page
-rather than privacy.apache.org (Toree), which is a different finding. `asf-trademark:get_branding_checklist(stage)` lists what
+rather than privacy.apache.org, which is a different finding. `asf-trademark:get_branding_checklist(stage)` lists what
 it checks. For TB30 use the status page's name-check date and the reports'
 PODLINGNAMESEARCH reference; `asf-trademark:validate_name` is for new
 names and reports an existing podling as a conflict with itself.
@@ -257,12 +249,11 @@ and compare its version line with `references/items.md`.
 ## Incubation proposal (`cwiki`)
 
 `cwiki:cwiki_search_pages(query="<Name>Proposal")` with the default
-full-text search finds the proposal page; titles vary ("GraphArProposal",
-"XTable Proposal", "KIE Proposal") and `title_only=true` matches whole
-tokens only, so it returned nothing for Texera, OpenServerless, Cloudberry
-and Pegasus whose titles are one token. Then `cwiki_get_page(title=...)`.
+full-text search finds the proposal page; titles vary ("<Name>Proposal",
+"<Name> Proposal") and `title_only=true` matches whole tokens only, so it
+returns nothing for one-token titles. Then `cwiki_get_page(title=...)`.
 The proposal can be 50 KB and get spilled to a file; grep it.
-Podlings from before 2016 have no cwiki proposal (Toree's lived on the old
+Podlings from before 2016 have no cwiki proposal (they lived on the old
 MoinMoin wiki, now gone); the text survives in the general@ [DISCUSS]
 thread. The proposal gives: initial committers with affiliations (IN10), the
 dependency list at donation (LC20), the "Reliance on Salaried Developers"
@@ -274,12 +265,11 @@ string and the search result returns it as a number.
 Meeting notes may live in the repository wiki. The web page hides dates;
 clone it instead:
 `git clone --depth 50 https://github.com/apache/<repo>.wiki.git` into the
-scratchpad, then `git log --format='%ad %s' --date=short`. The GraphAr run
-found the "meetings no longer held" note this way while the website still
-advertised a weekly meeting. A wiki with no pages, or a disabled wiki,
+scratchpad, then `git log --format='%ad %s' --date=short`. This can find a "meetings no
+longer held" note while the website still advertises a meeting. A wiki with no pages, or a disabled wiki,
 clones as "Repository not found" even when `has_wiki` is true; say so and
 move on. Minutes may instead be in GitHub Discussions, sometimes on a
-different repository (KIE kept them on incubator-kie-issues); the GraphQL
+different repository; the GraphQL
 `discussions` query lists them.
 
 ## Example self-assessments
