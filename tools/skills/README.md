@@ -16,6 +16,9 @@ is built:
 scripts/<skill-name>/…              helper scripts it runs
 templates/<skill-name>/…            email and document templates it fills in
 references/<skill-name>/…           long reference material it reads on demand
+<skill-name>/SKILL.md               a directory skill that carries its own
+                                    references/ and scripts/ (releasecheck,
+                                    maturity-model-assessment)
 package-skills.py                   builds installable .skill packages
 evals/                              golden-scenario tests
 draft/                              not yet published
@@ -31,6 +34,7 @@ and are not committed — see Building.
 | `monthly-report-review.md` | The monthly IPMC report review: pull the cohort due this month, flag who hasn't filed, cross-check narratives against health data and cross-source mismatches, draft shepherd comments per podling. |
 | `release-vote-reviewer.md` | Given a release vote thread on general@, walk the full check — artifacts, GPG signatures, checksums, DISCLAIMER, "incubating" in filenames, vote maths — and draft the +1 or the -1 with reasons. |
 | `graduation-packet-builder.md` | Assemble a podling's graduation case: maturity evidence, name search status, community and release history; draft the DISCUSS email and the board resolution. |
+| `maturity-model-assessment/` | Build an evidence pack against the 38 items of the Apache Project Maturity Model: gather what the MCP servers, GitHub and the list archives show for each item, mark it evidenced, proxy or human, and write the question the PPMC still has to answer. Never a score or verdict. Calls the MCP servers as tools. |
 | `retirement-shepherd.md` | The counterpart to graduation: assess whether a stalled podling should retire, gather the evidence, draft the retirement discussion and announcement emails, and the shutdown checklist. |
 | `board-report.md` | Draft the VP Incubator's quarterly report to the ASF board: podling statistics, graduations and retirements, cohort summary, items requiring board attention. |
 | `branding-sweep.md` | Batch trademark and branding compliance check across all current podlings; produces a ranked fix list. Suited to a periodic run. |
