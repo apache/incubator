@@ -1,18 +1,18 @@
 # Maka — Incubator Health (Reports + GitHub + Mailing Lists)
-_Generated on 2026-09-06_
+_Generated on 2026-11-08_
 
 **Windows:** to-date
 
 ## Window Details
-### to-date  (2026-08-13 → 2026-09-06)
-- **Releases (from list votes/results):** 0  |  **Median gap (days):** —
-- **New contributors:** 0  |  **Unique committers:** 90  |  **Commits:** 977
-- **Issues:** opened 641 / closed 499
-- **PRs:** opened 1262 / merged 981  |  **Median merge time (days):** 0.4
-- **Reviews (sampled):** median reviewers/PR **1**  |  reviewer diversity (eff.#) **3.85**  |  PR author diversity (eff.#) **10.96**  |  unique reviewers **14**, unique authors **49**
-- **Bus factor proxy (50% / 75%):** 5 / 13
-- **Incubator reports:** 0  |  **Avg mentor sign-offs:** —
-- **Mailing lists:** dev messages **300**, dev unique posters **10**
+### to-date  (2026-08-13 → 2026-11-08)
+- **Releases (from list votes/results):** 3  |  **Median gap (days):** 19.5
+- **New contributors:** 1  |  **Unique committers:** 121  |  **Commits:** 1753
+- **Issues:** opened 1099 / closed 955
+- **PRs:** opened 2561 / merged 1000  |  **Median merge time (days):** 0.4
+- **Reviews (sampled):** median reviewers/PR **1.0**  |  reviewer diversity (eff.#) **4.84**  |  PR author diversity (eff.#) **12.05**  |  unique reviewers **22**, unique authors **40**
+- **Bus factor proxy (50% / 75%):** 6 / 16
+- **Incubator reports:** 1  |  **Avg mentor sign-offs:** 3.0
+- **Mailing lists:** dev messages **545**, dev unique posters **24**
 
 ## Reading the Indicators
 - **Use trend arrows** to compare available windows; when a window lacks ≥28 days or ≥5 events, trends show **—**.
