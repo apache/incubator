@@ -142,3 +142,19 @@ span.code {
   border-radius: 4px;
   text-shadow: none;
 }
+/* Clutch table: vertical column labels (top header and repeated bottom row) */
+table.clutch-table thead th,
+table.clutch-table tbody tr:last-child td {
+  vertical-align: bottom;
+  height: 12em;
+  padding: 0.3em 0.2em;
+}
+table.clutch-table tbody tr:last-child td {
+  vertical-align: top;
+}
+table.clutch-table thead th:nth-child(n+3) a,
+table.clutch-table tbody tr:last-child td:nth-child(n+3) a {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  white-space: nowrap;
+}
