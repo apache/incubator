@@ -1,0 +1,20 @@
+{
+  "name": "release-vote-reviewer",
+  "description": "Walks an Apache Incubator release vote thread on general@ and drafts the +1 or the -1 with reasons.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Apache Incubator",
+    "url": "https://incubator.apache.org/"
+  },
+  "homepage": "https://github.com/apache/incubator/tree/master/tools/skills/release-vote-reviewer",
+  "repository": "https://github.com/apache/incubator",
+  "license": "Apache-2.0",
+  "keywords": [
+    "apache",
+    "incubator",
+    "podling",
+    "release",
+    "vote"
+  ],
+  "skills": "./"
+}

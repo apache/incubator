@@ -11,6 +11,66 @@
       "source": "./tools/skills/releasecheck",
       "description": "Checks an Apache Incubator podling release candidate before or during its vote. Produces findings for a person to review, never a vote.",
       "category": "release-management"
+    },
+    {
+      "name": "maturity-model-assessment",
+      "source": "./tools/skills/maturity-model-assessment",
+      "description": "Builds an evidence pack for an Apache Incubator podling against the 38 items of the Apache Project Maturity Model, marking each evidenced, proxy or human. Never a score or verdict.",
+      "category": "governance"
+    },
+    {
+      "name": "graduation-self-assessment",
+      "source": "./tools/skills/graduation-self-assessment",
+      "description": "Compares the ipmc MCP's graduation-readiness verdict with what an Apache Incubator podling says in its own reports, checked against the mail archives.",
+      "category": "governance"
+    },
+    {
+      "name": "graduation-packet-builder",
+      "source": "./tools/skills/graduation-packet-builder",
+      "description": "Assembles an Apache Incubator podling's graduation case and drafts the DISCUSS email and the board resolution.",
+      "category": "governance"
+    },
+    {
+      "name": "retirement-shepherd",
+      "source": "./tools/skills/retirement-shepherd",
+      "description": "Assesses whether a stalled Apache Incubator podling should retire and drafts the discussion, the announcement and the shutdown checklist.",
+      "category": "governance"
+    },
+    {
+      "name": "monthly-report-review",
+      "source": "./tools/skills/monthly-report-review",
+      "description": "The monthly IPMC report review: flags podlings that have not filed, cross-checks narratives against health data and drafts shepherd comments.",
+      "category": "governance"
+    },
+    {
+      "name": "release-vote-reviewer",
+      "source": "./tools/skills/release-vote-reviewer",
+      "description": "Walks an Apache Incubator release vote thread on general@ and drafts the +1 or the -1 with reasons.",
+      "category": "release-management"
+    },
+    {
+      "name": "board-report",
+      "source": "./tools/skills/board-report",
+      "description": "Drafts the VP Incubator's quarterly report to the ASF board.",
+      "category": "governance"
+    },
+    {
+      "name": "branding-sweep",
+      "source": "./tools/skills/branding-sweep",
+      "description": "Trademark and branding compliance check across all current Apache Incubator podlings, as a ranked fix list.",
+      "category": "governance"
+    },
+    {
+      "name": "podling-onboarding",
+      "source": "./tools/skills/podling-onboarding",
+      "description": "Reviews a new Apache Incubator podling's proposal against the checklist and bootstraps its tracking: SGA, ICLAs, infrastructure, first report date.",
+      "category": "governance"
+    },
+    {
+      "name": "podling-name-clearance",
+      "source": "./tools/skills/podling-name-clearance",
+      "description": "Runs the Apache Incubator podling name search end to end and writes it up in the required format.",
+      "category": "governance"
     }
   ]
 }

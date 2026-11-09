@@ -1,0 +1,20 @@
+{
+  "name": "monthly-report-review",
+  "description": "The monthly IPMC report review: flags podlings that have not filed, cross-checks narratives against health data and drafts shepherd comments.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Apache Incubator",
+    "url": "https://incubator.apache.org/"
+  },
+  "homepage": "https://github.com/apache/incubator/tree/master/tools/skills/monthly-report-review",
+  "repository": "https://github.com/apache/incubator",
+  "license": "Apache-2.0",
+  "keywords": [
+    "apache",
+    "incubator",
+    "podling",
+    "reports",
+    "ipmc"
+  ],
+  "skills": "./"
+}
