@@ -6,6 +6,8 @@
 # .skill file, so a stale one can never ship.
 
 SKILL    := releasecheck
+# The skill itself sits in skills/<name>/, where plugin installers look for it.
+SKILLDIR := skills/$(SKILL)
 SKILLS   := $(abspath $(CURDIR)/..)
 PACKAGER := $(SKILLS)/package-skills.py
 DIST     := $(SKILLS)/dist
@@ -43,7 +45,7 @@ help:
 	@echo "make clean     remove $(OUT)/, __pycache__ and the built package"
 
 test:
-	@$(PYTHON) scripts/test_check_rc.py
+	@$(PYTHON) $(SKILLDIR)/scripts/test_check_rc.py
 
 # Tests gate the package: never ship something that has not passed.
 build: test
@@ -51,7 +53,7 @@ build: test
 	  echo "no packager at $(PACKAGER)"; \
 	  echo "build runs from the skill's place in the tools/skills tree, not from an installed copy"; \
 	  exit 2; }
-	@$(PYTHON) $(PACKAGER) $(CURDIR)
+	@$(PYTHON) $(PACKAGER) $(CURDIR)/$(SKILLDIR)
 
 install: build
 	@installed=; \
@@ -68,20 +70,20 @@ install: build
 # Separate from install: the skill works without the servers, and this clones
 # and pip-installs from GitHub and asks before touching any client config.
 mcp:
-	@$(PYTHON) scripts/setup_mcps.py $(MCP_ARGS)
+	@$(PYTHON) $(SKILLDIR)/scripts/setup_mcps.py $(MCP_ARGS)
 
 check:
 	@test -n "$(URL)$(RCDIR)" || { \
 	  echo "usage: make check URL=<dist/dev RC dir> PODLING=<slug> [TAGDIR=<checkout>]"; \
 	  echo "   or: make check RCDIR=<downloaded artifacts> PODLING=<slug>"; exit 2; }
-	@$(PYTHON) scripts/check_rc.py \
+	@$(PYTHON) $(SKILLDIR)/scripts/check_rc.py \
 	  $(if $(URL),--url "$(URL)") $(if $(RCDIR),--rc-dir "$(RCDIR)") \
 	  $(if $(PODLING),--podling "$(PODLING)") $(if $(TAGDIR),--tag-dir "$(TAGDIR)") \
-	  --disclaimer-template references/disclaimer-standard.txt \
-	  --wip-template references/disclaimer-wip.txt \
+	  --disclaimer-template $(SKILLDIR)/references/disclaimer-standard.txt \
+	  --wip-template $(SKILLDIR)/references/disclaimer-wip.txt \
 	  --out "$(OUT)" || true
 	@echo; echo "read $(OUT)/findings.md"
 
 clean:
-	@rm -rf $(OUT) scripts/__pycache__ .pytest_cache $(PACKAGE)
+	@rm -rf $(OUT) $(SKILLDIR)/scripts/__pycache__ .pytest_cache $(PACKAGE)
 	@echo "cleaned"

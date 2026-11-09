@@ -5,16 +5,18 @@ the monthly report review, release vote review, graduation and retirement,
 the quarterly board report, branding sweeps, podling onboarding and name
 clearance.
 
-Each skill is a directory holding a `SKILL.md` — YAML frontmatter naming the
-skill and describing when it applies, followed by the workflow an agent
-follows — plus any supporting files it needs:
+Each skill is a plugin directory. The skill itself is a `SKILL.md` — YAML
+frontmatter naming the skill and describing when it applies, followed by the
+workflow an agent follows — plus any supporting files it needs, kept in
+`skills/<skill-name>/` inside the plugin, which is where plugin installers
+look for it:
 
 ```
-<skill-name>/SKILL.md                    the skill
-<skill-name>/scripts/…                   helper scripts it runs
-<skill-name>/templates/…                 email and document templates it fills in
-<skill-name>/references/…                long reference material it reads on demand
-<skill-name>/.claude-plugin/plugin.json  its plugin manifest (see Installing)
+<skill-name>/.claude-plugin/plugin.json             its plugin manifest (see Installing)
+<skill-name>/skills/<skill-name>/SKILL.md           the skill
+<skill-name>/skills/<skill-name>/scripts/…          helper scripts it runs
+<skill-name>/skills/<skill-name>/templates/…        email and document templates it fills in
+<skill-name>/skills/<skill-name>/references/…       long reference material it reads on demand
 package-skills.py                        builds installable .skill packages
 evals/<skill-name>/                      golden-scenario tests
 draft/                                   not yet published
@@ -72,10 +74,12 @@ agent reads, all listing the same plugins:
 | Claude Code | `/plugin marketplace add apache/incubator`, then `/plugin install graduation-self-assessment@apache-incubator` | `.claude-plugin/marketplace.json` |
 | OpenAI Codex CLI | `codex plugin marketplace add apache/incubator`, then install the plugin | `.agents/plugins/marketplace.json` |
 | VS Code / GitHub Copilot | add `apache/incubator` as a plugin marketplace | `marketplace.json` |
-| Kiro | install from the skill's GitHub subdirectory, e.g. `https://github.com/apache/incubator/tree/<tag>/tools/skills/graduation-self-assessment` | none; reads `SKILL.md` |
+| Kiro | install from the skill's GitHub subdirectory, e.g. `https://github.com/apache/incubator/tree/<tag>/tools/skills/graduation-self-assessment/skills/graduation-self-assessment` | none; reads `SKILL.md` |
 
 Updating is the agent's own plugin update (`/plugin update` in Claude Code).
-Keep the three catalogs listing the same plugins when adding one.
+Keep the three catalogs listing the same plugins when adding one, and keep
+the skill under `skills/<skill-name>/`: Codex finds a plugin's skills only
+there, not in a `SKILL.md` at the plugin root.
 
 Projects that use [Apache Magpie](https://github.com/apache/magpie) can pull
 the same skills through Magpie instead, for any agent: the ASF organization
