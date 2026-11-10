@@ -41,6 +41,10 @@ anyone not using a marketplace.
 
 ## Layout
 
+This directory is the plugin; the skill itself is in `skills/releasecheck/`,
+where plugin installers look for it. Paths below are relative to that
+directory, and the commands are run from it (the Makefile runs from here).
+
 | Path | What it is |
 | --- | --- |
 | `SKILL.md` | The review process, eight steps. The agent's entry point. |

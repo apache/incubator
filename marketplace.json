@@ -1,0 +1,98 @@
+{
+  "name": "apache-incubator",
+  "owner": {
+    "name": "Apache Incubator",
+    "url": "https://incubator.apache.org/"
+  },
+  "description": "Skills from the Apache Incubator for podlings, mentors and the IPMC. (GitHub Copilot plugin marketplace catalog.)",
+  "plugins": [
+    {
+      "name": "releasecheck",
+      "source": "./tools/skills/releasecheck",
+      "category": "release-management",
+      "policy": {
+        "installation": "AVAILABLE"
+      }
+    },
+    {
+      "name": "maturity-model-assessment",
+      "source": "./tools/skills/maturity-model-assessment",
+      "category": "governance",
+      "policy": {
+        "installation": "AVAILABLE"
+      }
+    },
+    {
+      "name": "graduation-self-assessment",
+      "source": "./tools/skills/graduation-self-assessment",
+      "category": "governance",
+      "policy": {
+        "installation": "AVAILABLE"
+      }
+    },
+    {
+      "name": "graduation-packet-builder",
+      "source": "./tools/skills/graduation-packet-builder",
+      "category": "governance",
+      "policy": {
+        "installation": "AVAILABLE"
+      }
+    },
+    {
+      "name": "retirement-shepherd",
+      "source": "./tools/skills/retirement-shepherd",
+      "category": "governance",
+      "policy": {
+        "installation": "AVAILABLE"
+      }
+    },
+    {
+      "name": "monthly-report-review",
+      "source": "./tools/skills/monthly-report-review",
+      "category": "governance",
+      "policy": {
+        "installation": "AVAILABLE"
+      }
+    },
+    {
+      "name": "release-vote-reviewer",
+      "source": "./tools/skills/release-vote-reviewer",
+      "category": "release-management",
+      "policy": {
+        "installation": "AVAILABLE"
+      }
+    },
+    {
+      "name": "board-report",
+      "source": "./tools/skills/board-report",
+      "category": "governance",
+      "policy": {
+        "installation": "AVAILABLE"
+      }
+    },
+    {
+      "name": "branding-sweep",
+      "source": "./tools/skills/branding-sweep",
+      "category": "governance",
+      "policy": {
+        "installation": "AVAILABLE"
+      }
+    },
+    {
+      "name": "podling-onboarding",
+      "source": "./tools/skills/podling-onboarding",
+      "category": "governance",
+      "policy": {
+        "installation": "AVAILABLE"
+      }
+    },
+    {
+      "name": "podling-name-clearance",
+      "source": "./tools/skills/podling-name-clearance",
+      "category": "governance",
+      "policy": {
+        "installation": "AVAILABLE"
+      }
+    }
+  ]
+}

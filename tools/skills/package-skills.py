@@ -5,7 +5,10 @@ A .skill file is a zip archive whose entries live under the skill's folder
 name (skill-name/SKILL.md, skill-name/templates/..., ...) — the format the
 Claude apps accept for installing a skill.
 
-Works with both layouts:
+Works with these layouts:
+  - a plugin directory: <skill-name>/.claude-plugin/ with the skill in
+    <skill-name>/skills/<skill-name>/SKILL.md (how the skills here are kept,
+    so marketplace installers find them); the skill directory is packaged
   - a flat single-file skill: <skill-name>.md, with any supporting files in
     sibling shared directories keyed by skill name --
         scripts/<skill-name>/...      -> <skill-name>/scripts/... in the package
@@ -85,8 +88,16 @@ def should_exclude(arcname: Path) -> bool:
     return any(fnmatch.fnmatch(arcname.name, pat) for pat in EXCLUDE_GLOBS)
 
 
+def resolve_plugin(target: Path) -> Path:
+    """A plugin directory carries its skill in skills/<name>/: package that."""
+    nested = target / "skills" / target.name
+    if target.is_dir() and not (target / "SKILL.md").exists() and (nested / "SKILL.md").exists():
+        return nested
+    return target
+
+
 def package(target: Path) -> bool:
-    target = target.resolve()
+    target = resolve_plugin(target.resolve())
     if target.is_dir():
         name = target.name
         md = target / "SKILL.md"
@@ -143,6 +154,7 @@ def main() -> int:
             print(f"Not a directory: {src}")
             return 1
         dirs = sorted(p.parent for p in src.glob("*/SKILL.md"))
+        dirs += sorted(p.parent for p in src.glob("*/skills/*/SKILL.md"))
         # A top-level .md counts as a flat skill only if it actually carries
         # skill frontmatter — otherwise it's a README, a todo list, or some
         # other stray document that would report as a spurious failure.
