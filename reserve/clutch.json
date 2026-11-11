@@ -187,6 +187,30 @@
         "size": "15613951",
         "user": "klion26"
       },
+      "apache-amoro-0.9.0-incubating-bin-hadoop2.tar.gz": {
+        "dtm": "11/01/2026",
+        "folder": "0.9.0-incubating",
+        "hash": "sha512",
+        "revision": "r88965",
+        "size": "302643263",
+        "user": "czy006"
+      },
+      "apache-amoro-0.9.0-incubating-bin-hadoop3.tar.gz": {
+        "dtm": "11/01/2026",
+        "folder": "0.9.0-incubating",
+        "hash": "sha512",
+        "revision": "r88965",
+        "size": "338629545",
+        "user": "czy006"
+      },
+      "apache-amoro-0.9.0-incubating-src.tar.gz": {
+        "dtm": "11/01/2026",
+        "folder": "0.9.0-incubating",
+        "hash": "sha512",
+        "revision": "r88965",
+        "size": "16344154",
+        "user": "czy006"
+      },
       "apache-amoro-shade-0.7.0-incubating-src.tar.gz": {
         "dtm": "07/16/2024",
         "folder": "0.7.0-incubating",
@@ -203,8 +227,8 @@
         "amoro",
         {
           "description": "Apache Amoro(incubating) is a Lakehouse management system bui...",
-          "last_update_int": 1793955941,
-          "last_update_txt": "4 days ago",
+          "last_update_int": 1794233077,
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>",
           "nocommit": false
         }
       ],
@@ -213,7 +237,7 @@
         {
           "description": "Apache Amoro(incubating) is a Lakehouse management system bui...",
           "last_update_int": 1793975267,
-          "last_update_txt": "3 days ago",
+          "last_update_txt": "4 days ago",
           "nocommit": false
         }
       ],
@@ -230,7 +254,7 @@
     "resource": "amoro",
     "sponsor": "Incubator",
     "startDate": "2024-03-11",
-    "statusAge": 966,
+    "statusAge": 967,
     "statusLastUpdated": "2024-03-19",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=amoro.git;a=tree;hb=HEAD",
@@ -247,7 +271,7 @@
       ],
       [
         "45",
-        "13 is a large number of release distributions. Non-current releases should be removed"
+        "16 is a large number of release distributions. Non-current releases should be removed"
       ]
     ]
   },
@@ -330,7 +354,7 @@
         {
           "description": "This crate provides concurrency control and async coordinatio...",
           "last_update_int": 1794275429,
-          "last_update_txt": "<span style='color: #070;'>&lt;15 minutes ago</span>",
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>",
           "nocommit": false
         }
       ],
@@ -339,7 +363,7 @@
         {
           "description": "Apache Asyncband (Incubating) Website",
           "last_update_int": 1793716204,
-          "last_update_txt": "6 days ago",
+          "last_update_txt": "7 days ago",
           "nocommit": false
         }
       ]
@@ -347,7 +371,7 @@
     "resource": "asyncband",
     "sponsor": "Incubator",
     "startDate": "2026-08-18",
-    "statusAge": 0,
+    "statusAge": 1,
     "statusLastUpdated": "2026-11-10",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=asyncband.git;a=tree;hb=HEAD",
@@ -466,7 +490,7 @@
         {
           "description": "Apache BifroMQ (Incubating) is a high-performance, distribute...",
           "last_update_int": 1794218143,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>",
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>",
           "nocommit": false
         }
       ],
@@ -475,7 +499,7 @@
         {
           "description": "Apache BifroMQ (Incubating) Website",
           "last_update_int": 1792690345,
-          "last_update_txt": "18 days ago",
+          "last_update_txt": "19 days ago",
           "nocommit": false
         }
       ],
@@ -484,7 +508,7 @@
         {
           "description": "Apache BifroMQ Tenon is a satellite project of Apache BifroMQ...",
           "last_update_int": 1793756545,
-          "last_update_txt": "6 days ago",
+          "last_update_txt": "7 days ago",
           "nocommit": false
         }
       ]
@@ -492,7 +516,7 @@
     "resource": "bifromq",
     "sponsor": "Incubator",
     "startDate": "2025-04-22",
-    "statusAge": 561,
+    "statusAge": 562,
     "statusLastUpdated": "2025-04-28",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=bifromq.git;a=tree;hb=HEAD",
@@ -651,7 +675,7 @@
         {
           "description": "Build applications that make decisions (chatbots, agents, sim...",
           "last_update_int": 1794243029,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>",
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>",
           "nocommit": false
         }
       ]
@@ -659,7 +683,7 @@
     "resource": "burr",
     "sponsor": "Incubator",
     "startDate": "2025-05-24",
-    "statusAge": 326,
+    "statusAge": 327,
     "statusLastUpdated": "2025-12-19",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=burr.git;a=tree;hb=HEAD",
@@ -754,7 +778,7 @@
         {
           "description": "Automated Adversary Emulation Platform",
           "last_update_int": 1791832552,
-          "last_update_txt": "28 days ago",
+          "last_update_txt": "29 days ago",
           "nocommit": false
         }
       ],
@@ -763,7 +787,7 @@
         {
           "description": "Apache Caldera Website",
           "last_update_int": 1791832552,
-          "last_update_txt": "28 days ago",
+          "last_update_txt": "29 days ago",
           "nocommit": false
         }
       ]
@@ -771,7 +795,7 @@
     "resource": "caldera",
     "sponsor": "Incubator",
     "startDate": "2025-12-19",
-    "statusAge": 326,
+    "statusAge": 327,
     "statusLastUpdated": "2025-12-19",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=caldera.git;a=tree;hb=HEAD",
@@ -922,7 +946,7 @@
         {
           "description": "Apache Casbin: an authorization library that supports access ...",
           "last_update_int": 1793811808,
-          "last_update_txt": "5 days ago",
+          "last_update_txt": "6 days ago",
           "nocommit": false
         }
       ],
@@ -940,7 +964,7 @@
         {
           "description": "Apache Casbin",
           "last_update_int": 1794066556,
-          "last_update_txt": "2 days ago",
+          "last_update_txt": "3 days ago",
           "nocommit": false
         }
       ],
@@ -1192,7 +1216,7 @@
         {
           "description": "Apache Casbin",
           "last_update_int": 1791565171,
-          "last_update_txt": "4 weeks ago",
+          "last_update_txt": "5 weeks ago",
           "nocommit": false
         }
       ],
@@ -1219,7 +1243,7 @@
         {
           "description": "Apache Casbin",
           "last_update_int": 1794067086,
-          "last_update_txt": "2 days ago",
+          "last_update_txt": "3 days ago",
           "nocommit": false
         }
       ],
@@ -1246,7 +1270,7 @@
         {
           "description": "Apache Casbin",
           "last_update_int": 1778308348,
-          "last_update_txt": "26 weeks ago (bot)",
+          "last_update_txt": "27 weeks ago (bot)",
           "nocommit": false
         }
       ],
@@ -1255,7 +1279,7 @@
         {
           "description": "Apache Casbin",
           "last_update_int": 1794033133,
-          "last_update_txt": "3 days ago",
+          "last_update_txt": "4 days ago",
           "nocommit": false
         }
       ],
@@ -1327,7 +1351,7 @@
         {
           "description": "Apache Casbin",
           "last_update_int": 1778324917,
-          "last_update_txt": "26 weeks ago (bot)",
+          "last_update_txt": "27 weeks ago (bot)",
           "nocommit": false
         }
       ],
@@ -1363,7 +1387,7 @@
         {
           "description": "Apache Casbin Editor",
           "last_update_int": 1794107667,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>",
+          "last_update_txt": "3 days ago",
           "nocommit": false
         }
       ],
@@ -1426,7 +1450,7 @@
         {
           "description": "Apache Casbin",
           "last_update_int": 1794106479,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>",
+          "last_update_txt": "3 days ago",
           "nocommit": false
         }
       ],
@@ -1435,7 +1459,7 @@
         {
           "description": "Apache Casbin",
           "last_update_int": 1791571810,
-          "last_update_txt": "4 weeks ago",
+          "last_update_txt": "5 weeks ago",
           "nocommit": false
         }
       ],
@@ -1444,7 +1468,7 @@
         {
           "description": "Apache Casbin",
           "last_update_int": 1778872113,
-          "last_update_txt": "25 weeks ago",
+          "last_update_txt": "26 weeks ago",
           "nocommit": false
         }
       ],
@@ -1453,7 +1477,7 @@
         {
           "description": "See what every AI coding agent on your machine is doing, and ...",
           "last_update_int": 1793443655,
-          "last_update_txt": "10 days ago",
+          "last_update_txt": "11 days ago",
           "nocommit": false
         }
       ],
@@ -1489,7 +1513,7 @@
         {
           "description": "Apache Casbin",
           "last_update_int": 1770992516,
-          "last_update_txt": "38 weeks ago",
+          "last_update_txt": "39 weeks ago",
           "nocommit": false
         }
       ],
@@ -1507,7 +1531,7 @@
         {
           "description": "Apache Casbin",
           "last_update_int": 1794065712,
-          "last_update_txt": "2 days ago",
+          "last_update_txt": "3 days ago",
           "nocommit": false
         }
       ],
@@ -1570,7 +1594,7 @@
         {
           "description": "Apache Casbin jcasbin",
           "last_update_int": 1793847022,
-          "last_update_txt": "5 days ago",
+          "last_update_txt": "6 days ago",
           "nocommit": false
         }
       ],
@@ -1732,7 +1756,7 @@
         {
           "description": "Apache Casbin",
           "last_update_int": 1778872249,
-          "last_update_txt": "25 weeks ago",
+          "last_update_txt": "26 weeks ago",
           "nocommit": false
         }
       ],
@@ -1750,7 +1774,7 @@
         {
           "description": "Apache Casbin",
           "last_update_int": 1778872258,
-          "last_update_txt": "25 weeks ago",
+          "last_update_txt": "26 weeks ago",
           "nocommit": false
         }
       ],
@@ -1894,7 +1918,7 @@
         {
           "description": "Apache Casbin",
           "last_update_int": 1778872337,
-          "last_update_txt": "25 weeks ago",
+          "last_update_txt": "26 weeks ago",
           "nocommit": false
         }
       ],
@@ -2002,7 +2026,7 @@
         {
           "description": "Apache Casbin",
           "last_update_int": 1794066494,
-          "last_update_txt": "2 days ago",
+          "last_update_txt": "3 days ago",
           "nocommit": false
         }
       ],
@@ -2029,7 +2053,7 @@
         {
           "description": "Apache Casbin",
           "last_update_int": 1791566148,
-          "last_update_txt": "4 weeks ago",
+          "last_update_txt": "5 weeks ago",
           "nocommit": false
         }
       ],
@@ -2047,7 +2071,7 @@
         {
           "description": "Apache Casbin",
           "last_update_int": 1778309796,
-          "last_update_txt": "26 weeks ago (bot)",
+          "last_update_txt": "27 weeks ago (bot)",
           "nocommit": false
         }
       ],
@@ -2065,7 +2089,7 @@
         {
           "description": "Apache Casbin",
           "last_update_int": 1793812644,
-          "last_update_txt": "5 days ago",
+          "last_update_txt": "6 days ago",
           "nocommit": false
         }
       ],
@@ -2155,7 +2179,7 @@
         {
           "description": "Apache Casbin",
           "last_update_int": 1794065281,
-          "last_update_txt": "2 days ago",
+          "last_update_txt": "3 days ago",
           "nocommit": false
         }
       ],
@@ -2164,7 +2188,7 @@
         {
           "description": "Apache Casbin",
           "last_update_int": 1778872449,
-          "last_update_txt": "25 weeks ago",
+          "last_update_txt": "26 weeks ago",
           "nocommit": false
         }
       ],
@@ -2182,7 +2206,7 @@
         {
           "description": "Apache Casbin",
           "last_update_int": 1778872458,
-          "last_update_txt": "25 weeks ago",
+          "last_update_txt": "26 weeks ago",
           "nocommit": false
         }
       ],
@@ -2191,7 +2215,7 @@
         {
           "description": "Apache Casbin",
           "last_update_int": 1778872462,
-          "last_update_txt": "25 weeks ago",
+          "last_update_txt": "26 weeks ago",
           "nocommit": false
         }
       ],
@@ -2227,7 +2251,7 @@
         {
           "description": "Apache Casbin",
           "last_update_int": 1778326514,
-          "last_update_txt": "26 weeks ago (bot)",
+          "last_update_txt": "27 weeks ago (bot)",
           "nocommit": false
         }
       ],
@@ -2254,7 +2278,7 @@
         {
           "description": "Apache Casbin",
           "last_update_int": 1778872499,
-          "last_update_txt": "25 weeks ago",
+          "last_update_txt": "26 weeks ago",
           "nocommit": false
         }
       ],
@@ -2290,7 +2314,7 @@
         {
           "description": "Apache Casbin",
           "last_update_int": 1778872516,
-          "last_update_txt": "25 weeks ago",
+          "last_update_txt": "26 weeks ago",
           "nocommit": false
         }
       ],
@@ -2317,7 +2341,7 @@
         {
           "description": "Apache Casbin",
           "last_update_int": 1778872530,
-          "last_update_txt": "25 weeks ago",
+          "last_update_txt": "26 weeks ago",
           "nocommit": false
         }
       ],
@@ -2344,7 +2368,7 @@
         {
           "description": "Apache Casbin",
           "last_update_int": 1778872558,
-          "last_update_txt": "25 weeks ago",
+          "last_update_txt": "26 weeks ago",
           "nocommit": false
         }
       ],
@@ -2388,8 +2412,8 @@
         "casbin-node-extensions",
         {
           "description": "Apache Casbin Node Extensions: storage adapters, watchers, fr...",
-          "last_update_int": 1794237800,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>",
+          "last_update_int": 1794315344,
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>",
           "nocommit": false
         }
       ],
@@ -2461,7 +2485,7 @@
         {
           "description": "Apache Casbin",
           "last_update_int": 1767978321,
-          "last_update_txt": "43 weeks ago",
+          "last_update_txt": "44 weeks ago",
           "nocommit": false
         }
       ],
@@ -2479,7 +2503,7 @@
         {
           "description": "Apache Casbin",
           "last_update_int": 1778872600,
-          "last_update_txt": "25 weeks ago",
+          "last_update_txt": "26 weeks ago",
           "nocommit": false
         }
       ],
@@ -2515,7 +2539,7 @@
         {
           "description": "Apache Casbin pycasbin",
           "last_update_int": 1794045481,
-          "last_update_txt": "3 days ago",
+          "last_update_txt": "4 days ago",
           "nocommit": false
         }
       ],
@@ -2542,7 +2566,7 @@
         {
           "description": "Apache Casbin",
           "last_update_int": 1792508463,
-          "last_update_txt": "20 days ago",
+          "last_update_txt": "21 days ago",
           "nocommit": false
         }
       ],
@@ -2569,7 +2593,7 @@
         {
           "description": "Apache Casbin",
           "last_update_int": 1763137682,
-          "last_update_txt": "51 weeks ago",
+          "last_update_txt": "52 weeks ago",
           "nocommit": false
         }
       ],
@@ -2632,7 +2656,7 @@
         {
           "description": "Apache Casbin",
           "last_update_int": 1778872674,
-          "last_update_txt": "25 weeks ago",
+          "last_update_txt": "26 weeks ago",
           "nocommit": false
         }
       ],
@@ -2650,7 +2674,7 @@
         {
           "description": "Apache Casbin",
           "last_update_int": 1778872682,
-          "last_update_txt": "25 weeks ago",
+          "last_update_txt": "26 weeks ago",
           "nocommit": false
         }
       ],
@@ -2695,7 +2719,7 @@
         {
           "description": "Apache Casbin",
           "last_update_int": 1791563231,
-          "last_update_txt": "4 weeks ago",
+          "last_update_txt": "5 weeks ago",
           "nocommit": false
         }
       ],
@@ -2740,7 +2764,7 @@
         {
           "description": "Apache Casbin",
           "last_update_int": 1715444025,
-          "last_update_txt": "2 years ago",
+          "last_update_txt": "3 years ago",
           "nocommit": false
         }
       ],
@@ -2767,7 +2791,7 @@
         {
           "description": "Apache Casbin",
           "last_update_int": 1792421201,
-          "last_update_txt": "21 days ago",
+          "last_update_txt": "22 days ago",
           "nocommit": false
         }
       ],
@@ -2785,7 +2809,7 @@
         {
           "description": "Apache Casbin Rust",
           "last_update_int": 1794066200,
-          "last_update_txt": "2 days ago",
+          "last_update_txt": "3 days ago",
           "nocommit": false
         }
       ],
@@ -2911,7 +2935,7 @@
         {
           "description": "Apache Casbin",
           "last_update_int": 1778872810,
-          "last_update_txt": "25 weeks ago",
+          "last_update_txt": "26 weeks ago",
           "nocommit": false
         }
       ],
@@ -2992,7 +3016,7 @@
         {
           "description": "Apache Casbin",
           "last_update_int": 1791596380,
-          "last_update_txt": "4 weeks ago",
+          "last_update_txt": "5 weeks ago",
           "nocommit": false
         }
       ],
@@ -3100,7 +3124,7 @@
         {
           "description": "Apache Casbin Website",
           "last_update_int": 1793702950,
-          "last_update_txt": "7 days ago",
+          "last_update_txt": "8 days ago",
           "nocommit": false
         }
       ],
@@ -3171,7 +3195,7 @@
     "resource": "casbin",
     "sponsor": "Incubator",
     "startDate": "2026-02-07",
-    "statusAge": 260,
+    "statusAge": 261,
     "statusLastUpdated": "2026-02-23",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=casbin.git;a=tree;hb=HEAD",
@@ -3346,8 +3370,8 @@
         "cloudberry",
         {
           "description": "One advanced and mature open-source MPP (Massively Parallel P...",
-          "last_update_int": 1794263557,
-          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>",
+          "last_update_int": 1794357928,
+          "last_update_txt": "<span style='color: #070;'>&lt;1 hour ago</span>",
           "nocommit": false
         }
       ],
@@ -3355,7 +3379,7 @@
         "cloudberry-backup",
         {
           "description": "Backup Utility for Apache Cloudberry (Incubating)",
-          "last_update_int": 1794219434,
+          "last_update_int": 1794315646,
           "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>",
           "nocommit": false
         }
@@ -3392,7 +3416,7 @@
         {
           "description": "go-libs for Apache Cloudberry (Incubating)",
           "last_update_int": 1793281011,
-          "last_update_txt": "12 days ago",
+          "last_update_txt": "13 days ago",
           "nocommit": false
         }
       ],
@@ -3410,7 +3434,7 @@
         {
           "description": "Platform Extension Framework (PXF) for Apache Cloudberry (Inc...",
           "last_update_int": 1793939233,
-          "last_update_txt": "4 days ago",
+          "last_update_txt": "5 days ago",
           "nocommit": false
         }
       ],
@@ -3418,7 +3442,7 @@
         "cloudberry-site",
         {
           "description": "Website sources for Apache Cloudberry™️ (Incubating)",
-          "last_update_int": 1794209474,
+          "last_update_int": 1794312715,
           "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>",
           "nocommit": false
         }
@@ -3427,7 +3451,7 @@
     "resource": "cloudberry",
     "sponsor": "Incubator",
     "startDate": "2024-10-11",
-    "statusAge": 0,
+    "statusAge": 1,
     "statusLastUpdated": "2026-11-10",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=cloudberry.git;a=tree;hb=HEAD",
@@ -3543,7 +3567,7 @@
         "fesod",
         {
           "description": "Fast. Easy. Done. Processing spreadsheets without worrying ab...",
-          "last_update_int": 1794231515,
+          "last_update_int": 1794295592,
           "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>",
           "nocommit": false
         }
@@ -3552,7 +3576,7 @@
     "resource": "fesod",
     "sponsor": "Incubator",
     "startDate": "2025-09-17",
-    "statusAge": 12,
+    "statusAge": 13,
     "statusLastUpdated": "2026-10-29",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=fesod.git;a=tree;hb=HEAD",
@@ -3661,7 +3685,7 @@
         {
           "description": "Apache GeaFlow: A Streaming Graph Computing Engine.",
           "last_update_int": 1793453114,
-          "last_update_txt": "10 days ago",
+          "last_update_txt": "11 days ago",
           "nocommit": false
         }
       ],
@@ -3678,7 +3702,7 @@
     "resource": "geaflow",
     "sponsor": "Incubator",
     "startDate": "2025-06-06",
-    "statusAge": 450,
+    "statusAge": 451,
     "statusLastUpdated": "2025-08-17",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=geaflow.git;a=tree;hb=HEAD",
@@ -3787,7 +3811,7 @@
         {
           "description": "An open source, standard data file format for graph data stor...",
           "last_update_int": 1791632062,
-          "last_update_txt": "31 days ago",
+          "last_update_txt": "5 weeks ago",
           "nocommit": false
         }
       ],
@@ -3813,7 +3837,7 @@
     "resource": "graphar",
     "sponsor": "Incubator",
     "startDate": "2024-03-25",
-    "statusAge": 438,
+    "statusAge": 439,
     "statusLastUpdated": "2025-08-29",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-graphar.git;a=tree;hb=HEAD",
@@ -3996,7 +4020,7 @@
         {
           "description": "Apache Hamilton helps data scientists and engineers define te...",
           "last_update_int": 1794246739,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>",
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>",
           "nocommit": false
         }
       ],
@@ -4013,7 +4037,7 @@
     "resource": "hamilton",
     "sponsor": "Incubator",
     "startDate": "2025-04-12",
-    "statusAge": 326,
+    "statusAge": 327,
     "statusLastUpdated": "2025-12-19",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=hamilton.git;a=tree;hb=HEAD",
@@ -5473,8 +5497,8 @@
         "incubator-kie",
         {
           "description": "Apache KIE (Knowledge Is Everything) is the home of Drools, O...",
-          "last_update_int": 1794272803,
-          "last_update_txt": "<span style='color: #070;'>&lt;1 hour ago</span>",
+          "last_update_int": 1794331583,
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>",
           "nocommit": false
         }
       ],
@@ -5492,7 +5516,7 @@
         {
           "description": "Apache KIE documentation repository for Kogito",
           "last_update_int": 1793350533,
-          "last_update_txt": "11 days ago",
+          "last_update_txt": "12 days ago",
           "nocommit": false
         }
       ],
@@ -5501,7 +5525,7 @@
         {
           "description": "Apache KIE Examples repository with showcases on how to use K...",
           "last_update_int": 1793961729,
-          "last_update_txt": "4 days ago",
+          "last_update_txt": "5 days ago",
           "nocommit": false
         }
       ],
@@ -5636,7 +5660,7 @@
         {
           "description": "Apache KIE SonataFlow documentation repository. This reposito...",
           "last_update_int": 1792164966,
-          "last_update_txt": "24 days ago",
+          "last_update_txt": "25 days ago",
           "nocommit": true
         }
       ],
@@ -5645,7 +5669,7 @@
         {
           "description": "Apache KIE",
           "last_update_int": 1794158843,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>",
+          "last_update_txt": "2 days ago",
           "nocommit": false
         }
       ],
@@ -5654,7 +5678,7 @@
         {
           "description": "Apache KIE Website",
           "last_update_int": 1794103448,
-          "last_update_txt": "2 days ago",
+          "last_update_txt": "3 days ago",
           "nocommit": false
         }
       ]
@@ -5662,7 +5686,7 @@
     "resource": "kie",
     "sponsor": "Incubator",
     "startDate": "2023-01-13",
-    "statusAge": 1001,
+    "statusAge": 1002,
     "statusLastUpdated": "2024-02-13",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-kie.git;a=tree;hb=HEAD",
@@ -5794,8 +5818,8 @@
         "maka",
         {
           "description": "Apache Maka (Incubating) is a high-performance agent workspac...",
-          "last_update_int": 1794274330,
-          "last_update_txt": "<span style='color: #070;'>&lt;1 hour ago</span>",
+          "last_update_int": 1794360922,
+          "last_update_txt": "<span style='color: #070;'>&lt;5 minutes ago</span>",
           "nocommit": false
         }
       ]
@@ -5803,7 +5827,7 @@
     "resource": "maka",
     "sponsor": "Incubator",
     "startDate": "2026-08-13",
-    "statusAge": 88,
+    "statusAge": 89,
     "statusLastUpdated": "2026-08-14",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=maka.git;a=tree;hb=HEAD",
@@ -5873,7 +5897,7 @@
     "resource": "nullaway",
     "sponsor": "Incubator",
     "startDate": "2026-09-28",
-    "statusAge": 42,
+    "statusAge": 43,
     "statusLastUpdated": "2026-09-29",
     "urls": {
       "git": "",
@@ -5983,7 +6007,7 @@
         {
           "description": "Apache OpenServerless (incubating)",
           "last_update_int": 1793907708,
-          "last_update_txt": "4 days ago",
+          "last_update_txt": "5 days ago",
           "nocommit": false
         }
       ],
@@ -6001,7 +6025,7 @@
         {
           "description": "OpenServerless Admin API",
           "last_update_int": 1793900774,
-          "last_update_txt": "4 days ago",
+          "last_update_txt": "5 days ago",
           "nocommit": false
         }
       ],
@@ -6019,7 +6043,7 @@
         {
           "description": "Apache openserverless",
           "last_update_int": 1793797418,
-          "last_update_txt": "6 days ago",
+          "last_update_txt": "7 days ago",
           "nocommit": false
         }
       ],
@@ -6028,7 +6052,7 @@
         {
           "description": "Apache openserverless",
           "last_update_int": 1792668595,
-          "last_update_txt": "19 days ago",
+          "last_update_txt": "20 days ago",
           "nocommit": false
         }
       ],
@@ -6046,7 +6070,7 @@
         {
           "description": "Apache openserverless",
           "last_update_int": 1792667551,
-          "last_update_txt": "19 days ago",
+          "last_update_txt": "20 days ago",
           "nocommit": false
         }
       ],
@@ -6064,7 +6088,7 @@
         {
           "description": "Apache openserverless",
           "last_update_int": 1793484407,
-          "last_update_txt": "9 days ago (bot)",
+          "last_update_txt": "10 days ago (bot)",
           "nocommit": false
         }
       ],
@@ -6091,7 +6115,7 @@
         {
           "description": "Apache openserverless",
           "last_update_int": 1794149069,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>",
+          "last_update_txt": "2 days ago",
           "nocommit": false
         }
       ],
@@ -6100,7 +6124,7 @@
         {
           "description": "Apache openserverless",
           "last_update_int": 1789216020,
-          "last_update_txt": "8 weeks ago",
+          "last_update_txt": "9 weeks ago",
           "nocommit": false
         }
       ],
@@ -6127,7 +6151,7 @@
         {
           "description": "Apache openserverless",
           "last_update_int": 1792668063,
-          "last_update_txt": "19 days ago",
+          "last_update_txt": "20 days ago",
           "nocommit": false
         }
       ],
@@ -6136,7 +6160,7 @@
         {
           "description": "Apache OpenServerless website",
           "last_update_int": 1793781388,
-          "last_update_txt": "6 days ago",
+          "last_update_txt": "7 days ago",
           "nocommit": false
         }
       ],
@@ -6145,7 +6169,7 @@
         {
           "description": "Apache OpenServerless (incubating)",
           "last_update_int": 1792671653,
-          "last_update_txt": "19 days ago",
+          "last_update_txt": "20 days ago",
           "nocommit": false
         }
       ],
@@ -6154,7 +6178,7 @@
         {
           "description": "Apache openserverless",
           "last_update_int": 1793782061,
-          "last_update_txt": "6 days ago",
+          "last_update_txt": "7 days ago",
           "nocommit": false
         }
       ],
@@ -6172,7 +6196,7 @@
         {
           "description": "Apache openserverless",
           "last_update_int": 1792667811,
-          "last_update_txt": "19 days ago",
+          "last_update_txt": "20 days ago",
           "nocommit": false
         }
       ],
@@ -6207,7 +6231,7 @@
     "resource": "openserverless",
     "sponsor": "Incubator",
     "startDate": "2024-06-17",
-    "statusAge": 843,
+    "statusAge": 844,
     "statusLastUpdated": "2024-07-20",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=openserverless.git;a=tree;hb=HEAD",
@@ -6294,8 +6318,8 @@
         "ossie",
         {
           "description": "Apache Ossie, industry wide specification effort to standardi...",
-          "last_update_int": 1794269763,
-          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>",
+          "last_update_int": 1794315861,
+          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>",
           "nocommit": false
         }
       ],
@@ -6303,8 +6327,8 @@
         "ossie-converters",
         {
           "description": "Apache Ossie, industry wide specification effort to standardi...",
-          "last_update_int": 1794263922,
-          "last_update_txt": "<span style='color: #070;'>&lt; 4 hours ago</span>",
+          "last_update_int": 1794346236,
+          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>",
           "nocommit": false
         }
       ],
@@ -6313,7 +6337,7 @@
         {
           "description": "Apache Ossie-- Archived (archived)",
           "last_update_int": 1784911999,
-          "last_update_txt": "15 weeks ago",
+          "last_update_txt": "16 weeks ago",
           "nocommit": true
         }
       ],
@@ -6322,7 +6346,7 @@
         {
           "description": "Apache Ossie Website",
           "last_update_int": 1794026962,
-          "last_update_txt": "3 days ago",
+          "last_update_txt": "4 days ago",
           "nocommit": false
         }
       ]
@@ -6330,7 +6354,7 @@
     "resource": "ossie",
     "sponsor": "Incubator",
     "startDate": "2026-06-19",
-    "statusAge": 117,
+    "statusAge": 118,
     "statusLastUpdated": "2026-07-16",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=ossie.git;a=tree;hb=HEAD",
@@ -6516,8 +6540,8 @@
         "otava",
         {
           "description": "Change Detection for Continuous Performance Engineering",
-          "last_update_int": 1794261663,
-          "last_update_txt": "<span style='color: #070;'>&lt; 12 hours ago</span>",
+          "last_update_int": 1794358359,
+          "last_update_txt": "<span style='color: #070;'>&lt;1 hour ago</span>",
           "nocommit": false
         }
       ],
@@ -6534,8 +6558,8 @@
         "otava-website",
         {
           "description": "Website for Apache Otava (incubating)",
-          "last_update_int": 1793565398,
-          "last_update_txt": "8 days ago",
+          "last_update_int": 1794359831,
+          "last_update_txt": "<span style='color: #070;'>&lt;30 minutes ago</span>",
           "nocommit": false
         }
       ]
@@ -6543,7 +6567,7 @@
     "resource": "otava",
     "sponsor": "Incubator",
     "startDate": "2024-11-27",
-    "statusAge": 594,
+    "statusAge": 595,
     "statusLastUpdated": "2025-03-26",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=otava.git;a=tree;hb=HEAD",
@@ -6698,7 +6722,7 @@
         {
           "description": "Apache OzHera is an About Application Observable Platform in ...",
           "last_update_int": 1791786837,
-          "last_update_txt": "29 days ago",
+          "last_update_txt": "30 days ago",
           "nocommit": false
         }
       ],
@@ -6715,7 +6739,7 @@
     "resource": "ozhera",
     "sponsor": "Incubator",
     "startDate": "2024-07-11",
-    "statusAge": 519,
+    "statusAge": 520,
     "statusLastUpdated": "2025-06-09",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=ozhera.git;a=tree;hb=HEAD",
@@ -6862,7 +6886,7 @@
     "resource": "pegasus",
     "sponsor": "Incubator",
     "startDate": "2020-06-28",
-    "statusAge": 559,
+    "statusAge": 560,
     "statusLastUpdated": "2025-04-30",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-pegasus.git;a=tree;hb=HEAD",
@@ -6933,7 +6957,7 @@
         {
           "description": "Apache Pouchdb",
           "last_update_int": 1793829544,
-          "last_update_txt": "5 days ago",
+          "last_update_txt": "6 days ago",
           "nocommit": false
         }
       ],
@@ -6950,7 +6974,7 @@
     "resource": "pouchdb",
     "sponsor": "Incubator",
     "startDate": "2025-04-15",
-    "statusAge": 553,
+    "statusAge": 554,
     "statusLastUpdated": "2025-05-06",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=pouchdb.git;a=tree;hb=HEAD",
@@ -7157,7 +7181,7 @@
         {
           "description": ":fire: Seata is an easy-to-use, high-performance, open source...",
           "last_update_int": 1793469554,
-          "last_update_txt": "9 days ago",
+          "last_update_txt": "10 days ago",
           "nocommit": false
         }
       ],
@@ -7175,7 +7199,7 @@
         {
           "description": "Go Implementation For Seata",
           "last_update_int": 1794051978,
-          "last_update_txt": "3 days ago",
+          "last_update_txt": "4 days ago",
           "nocommit": false
         }
       ],
@@ -7210,7 +7234,7 @@
         "incubator-seata-website",
         {
           "description": "Apache Seata(incubating) Website",
-          "last_update_int": 1794270126,
+          "last_update_int": 1794356540,
           "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>",
           "nocommit": false
         }
@@ -7219,7 +7243,7 @@
     "resource": "seata",
     "sponsor": "Incubator",
     "startDate": "2023-10-29",
-    "statusAge": 447,
+    "statusAge": 448,
     "statusLastUpdated": "2025-08-20",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-seata.git;a=tree;hb=HEAD",
@@ -7348,7 +7372,7 @@
         {
           "description": "Apache Texera Website",
           "last_update_int": 1792729373,
-          "last_update_txt": "18 days ago",
+          "last_update_txt": "19 days ago",
           "nocommit": false
         }
       ],
@@ -7356,8 +7380,8 @@
         "texera",
         {
           "description": "Human-AI Collaborative Data Science Using Visual Workflows",
-          "last_update_int": 1794274029,
-          "last_update_txt": "<span style='color: #070;'>&lt;1 hour ago</span>",
+          "last_update_int": 1794355781,
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 hours ago</span>",
           "nocommit": false
         }
       ],
@@ -7374,7 +7398,7 @@
     "resource": "texera",
     "sponsor": "Incubator",
     "startDate": "2025-04-12",
-    "statusAge": 573,
+    "statusAge": 574,
     "statusLastUpdated": "2025-04-16",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-texera-site.git;a=tree;hb=HEAD",
@@ -7521,7 +7545,7 @@
         {
           "description": "Apache Toree (Incubating)",
           "last_update_int": 1793668023,
-          "last_update_txt": "7 days ago",
+          "last_update_txt": "8 days ago",
           "nocommit": false
         }
       ],
@@ -7530,7 +7554,7 @@
         {
           "description": "Apache Toree website (Incubating)",
           "last_update_int": 1794199269,
-          "last_update_txt": "<span style='color: #070;'>&lt; 1 day ago</span>",
+          "last_update_txt": "<span style='color: #070;'>&lt; 2 days ago</span>",
           "nocommit": false
         }
       ]
@@ -7538,7 +7562,7 @@
     "resource": "toree",
     "sponsor": "Incubator",
     "startDate": "2015-12-02",
-    "statusAge": 2305,
+    "statusAge": 2306,
     "statusLastUpdated": "2020-07-19",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-toree.git;a=tree;hb=HEAD",
@@ -7667,7 +7691,7 @@
         {
           "description": "Apache XTable (incubating) is a cross-table converter for lak...",
           "last_update_int": 1794082869,
-          "last_update_txt": "2 days ago",
+          "last_update_txt": "3 days ago",
           "nocommit": false
         }
       ],
@@ -7676,7 +7700,7 @@
         {
           "description": "Apache xtable",
           "last_update_int": 1793391288,
-          "last_update_txt": "10 days ago",
+          "last_update_txt": "11 days ago",
           "nocommit": false
         }
       ]
@@ -7684,7 +7708,7 @@
     "resource": "xtable",
     "sponsor": "Incubator",
     "startDate": "2024-02-11",
-    "statusAge": 908,
+    "statusAge": 909,
     "statusLastUpdated": "2024-05-16",
     "urls": {
       "git": "https://gitbox.apache.org/repos/asf?p=incubator-xtable.git;a=tree;hb=HEAD",
